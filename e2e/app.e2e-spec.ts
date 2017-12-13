@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('showcase-app-v4 App', () => {
+describe('Amexio5API App', () => {
   let page: AppPage;
 
   beforeEach(() => {
