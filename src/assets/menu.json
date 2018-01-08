@@ -5,7 +5,7 @@
       "children": [
         {
           "text" : "Text Input",
-          "link" : "text"
+          "link" : "getting-started"
         },
         {
           "text" : "Email Input",
@@ -97,8 +97,8 @@
           ]
         },
         {
-          "text" : "Fieldset",
-          "link" : "fieldset"
+          "text" : "Accordion",
+          "link" : "accordion"
         }
       ]
     },

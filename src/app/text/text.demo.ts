@@ -11,53 +11,21 @@ import {AmexioFormsModule, AmexioLayoutModule, AmexioWidgetModule} from "amexio-
 @Component({
   selector: 'text-demo',
   template: `
-    <h1>Text Input Demo</h1>
-        <amexio-tab-view>
-          <amexio-tab title="Demo" active="true">
-            <div fxLayout="column">
-              <div style="width: 300px;">
-                <amexio-text-input [fieldLabel]="'First Name'" name ="name"
-                                   [placeholder]="'Enter First name'"
-                                   [iconFeedBack]="true">
-                </amexio-text-input>
-              </div>
+     <amexio-card>
+        <amexio-pane-header>
+          <h1>Getting Started</h1>
+        </amexio-pane-header>
+        <amexio-pane-body>
+          <div style="padding-left: 400px;">
+            <img alt="Amexio" src="https://image.ibb.co/kdy6Ev/logo.png" width="200">
+          </div>
+          <div style="padding-left: 325px;">
+            <h2>Amexio Angular Extensions V4.0 </h2>
+          </div>
+          
 
-              <div style="width: 300px;">
-                <amexio-text-input  [fieldLabel]="'Last Name'" name ="name"
-                                    [placeholder]="'Enter Last name'"
-                                    [allowBlank]="false" [errorMsg] ="'Please enter last name'"
-                                    [minLength]="1" [minErrorMsg]="'Minimum 1 char required'"
-                                    [maxLength]="10"  [maxErrorMsg]="'Maximum 10 char allowed'"
-                                    [iconFeedBack]="true"  [enablePopOver]="true">
-                </amexio-text-input>
-              </div>
-
-              <div style="width: 300px;">
-
-                <amexio-text-input name ="name"
-                                   [fieldLabel]="'Username'"
-                                   [placeholder]="'Login'"
-                                   [pattern]="'[a-z]'"
-                                   [iconFeedBack]="true">
-                </amexio-text-input>
-              </div>
-              
-              <div style="width: 300px;">
-                <amexio-text-input name ="name"
-                                   [placeholder]="'Enter name'"
-                                   [iconFeedBack]="false"
-                                   [hasLabel]="false">
-                </amexio-text-input>
-              </div>
-            </div>
-          </amexio-tab>
-          <amexio-tab title="Source">
-            Code
-          </amexio-tab>
-          <amexio-tab title="Live">
-            Live
-          </amexio-tab>
-        </amexio-tab-view>
+        </amexio-pane-body>
+      </amexio-card>
     
   `
 })

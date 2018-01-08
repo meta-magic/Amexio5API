@@ -1,16 +1,59 @@
-<div class="container">
-  <div fxLayout="row" fxLayoutAlign="start" class="content">
-    <div class="blocks" fxFlex = "20%">
+  <div class="navbar-wrapper">
+
+    <ul class="navbarcontainer">
+      <li class="navbaritem" [ngClass]="{'float-left':true}">
+        <!--<i class="fa fa-bars fa-2x" aria-hidden="true"></i>-->
+        <span style="font-weight: bolder;font-size: large">Amexio</span>
+      </li>
+
+      <li class="navbaritem" [ngClass]="{'float-right':true}">
+       <a>Home</a>
+      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
+       <a>Features</a>
+      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
+       <a>Home</a>
+      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
+       <a>Home</a>
+      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
+       <a>Home</a>
+      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
+       <a>Home</a>
+      </li>
+    </ul>
+
+  </div>
+  <br><br>
+  <amexio-row>
+    <amexio-column size="3">
       <amexio-side-nav
         [sidenavtitle]="'amexio-ng-extensions'"
         [httpUrl]="'assets/menu.json'"
         [httpMethod]="'get'"
         [dataReader]="'data'"
+        [titleimage]="'http://amexio.org/showcaseapp/v3.2/assets/images/logos/amexio-logo.png'"
         (nodeClick)="onNodeClick($event)">
       </amexio-side-nav>
-    </div>
-    <div class="blocks" fxFlex = "80%">
+    </amexio-column>
+
+    <amexio-column size="9">
+      <br><br>
       <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
+    </amexio-column>
+
+  </amexio-row>
+
+  <!--<div fxLayout="row" fxLayoutAlign="start" class="content">-->
+    <!--<div class="blocks" fxFlex = "20%">-->
+      <!--<amexio-side-nav-->
+        <!--[sidenavtitle]="'amexio-ng-extensions'"-->
+        <!--[httpUrl]="'assets/menu.json'"-->
+        <!--[httpMethod]="'get'"-->
+        <!--[dataReader]="'data'"-->
+        <!--[titleimage]="'http://amexio.org/showcaseapp/v3.2/assets/images/logos/amexio-logo.png'"-->
+        <!--(nodeClick)="onNodeClick($event)">-->
+      <!--</amexio-side-nav>-->
+    <!--</div>-->
+    <!--<div class="blocks" fxFlex = "80%">-->
+    <!---->
+    <!--</div>-->
+  <!--</div>-->

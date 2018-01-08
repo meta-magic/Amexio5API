@@ -10,6 +10,7 @@ export class AppComponent {
 
   }
   onNodeClick(node : any){
+    debugger;
     if(node.hasOwnProperty('link'))
       this.router.navigate([node.link])
   }
