@@ -1,0 +1,177 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+$color: #404c51;
+
+$oppColor: white;
+
+$backgroundcolor: white;
+
+$borderSize : 1px;
+
+$borderRadius : 2px;
+
+$borderColor : #ced4da;
+
+$borderColor-focus: #5cb3fd;
+
+$primaryBGColor: #0275d8;
+
+$secondaryBGColor: #ffffff;
+
+$successBGColor : #5cb85c;
+
+$dangerBGColor : #d9534f;
+
+$warningBGColor : #f0ad4e;
+
+$primaryColor: $oppColor;
+
+$secondaryColor: $color;
+
+$successColor : $oppColor;
+
+$dangerColor : $oppColor;
+
+$warningColor : $oppColor;
+
+$success: $successBGColor;
+
+$error : $dangerBGColor;
+
+$hoverColor : $primaryColor;
+
+$hoverBGColor : $primaryBGColor;
+
+
+$sidenavHeaderBGColor: white;
+$sidenavHeaderColor: $color;
+$sidenavBGColor : white;
+$sidenavColor: black;
+$sidenavactive:#eee;
+
+$tabBorderSize: $borderSize;
+$tabBorderColor : $borderColor;
+$tabActiveBorder : red;
+$tabActiveBGColor : $borderColor;
+$tabActiveBorderSize : 3px;
+
+$menubarBGColor : #3498DB;
+$menubarColor : white;
+$menuHoverColor: orange;
+$subMenuCotentBGColor : white;
+$subMenuCotentColor : #777;
+
+$modalBGColor: lighten(black,50%);
+$cardHeaderColor: lighten($borderColor,10%);
+$cardFooterColor: lighten($borderColor,10%);
+
+$toastBGColor : $primaryBGColor;
+$toastColor : $primaryColor;
+/* You can add global styles to this file, and also import other style files */
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+
+
+$borderLayoutBorder : 1px;
+$borderLayoutBorderColor : red;
+
+$menubarBGColor : black;
+$menubarColor : white;
+$menuHoverColor: orange;
+
+$subMenuCotentBGColor : white;
+$subMenuCotentColor : #777;
+$menuborderColor:#ced4da;
+$menuborderSize:1px;
+
+$navbarBGColor :#292b2c;
+$navbarBoxShadow:#666;
+$navbarColor : white;
+
+
+
+body {
+  background: $backgroundcolor;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
+  font-weight: 400;
+  color: $color;
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+@import "../node_modules/amexio-ng-extensions/themes/default/common.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/input.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/button.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/dropdown.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/paginator.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/inputbox.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/datatable.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/treenode.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/listbox.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/horizontaltreeview.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/sidenav.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/accordion.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/nav.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/navbar.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/tab.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/steps.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/notification.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/cards.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/window.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/carousel.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/navbar.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/rowcol.scss";
+
+.material-icons{
+  font-size: inherit !important;
+}
+
+
+.flex-col-25{
+  max-width: 20.8333325%;
+}
+
+.flex-col-75{
+  max-width: 79.1666635%;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .flex-col-2pt5,.flex-col-9pt5{
+    max-width: 100%;
+  }
+}

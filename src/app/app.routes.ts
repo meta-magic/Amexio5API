@@ -4,6 +4,7 @@
 import { Routes } from '@angular/router';
 
 export const APP_ROUTE: Routes = [
+
   {
     path: '', redirectTo: 'getting-started', pathMatch: 'full'
   },
@@ -11,7 +12,10 @@ export const APP_ROUTE: Routes = [
     path: 'getting-started', loadChildren: './text/text.demo#TextDemoModule'
   },
   {
-    path: 'text', loadChildren: './email/email.demo#EmailDemoModule'
+    path: 'textinput', loadChildren: './forminput/text/text.demo#TextDemoModule'
+  },
+  {
+    path: 'email', loadChildren: './email/email.demo#EmailDemoModule'
   },
   {
     path: 'number', loadChildren: './number/number.demo#NumberDemoModule'

@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import {FlexLayoutModule} from "@angular/flex-layout";
 import {RouterModule} from "@angular/router";
 import {APP_ROUTE} from "./app.routes";
-import {AmexioLayoutModule, AmexioNavModule, CommonDataService, DeviceQueryService} from "amexio-ng-extensions";
+
+import {
+  AmexioDataModule, AmexioLayoutModule, AmexioNavModule, AmexioWidgetModule, CommonDataService, DeviceQueryService
+} from "amexio-ng-extensions";
 
 
 @NgModule({
@@ -18,6 +21,8 @@ import {AmexioLayoutModule, AmexioNavModule, CommonDataService, DeviceQueryServi
     FlexLayoutModule,
     AmexioNavModule,
     AmexioLayoutModule,
+    AmexioDataModule,
+    AmexioWidgetModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
   providers: [CommonDataService,DeviceQueryService],

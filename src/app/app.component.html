@@ -1,59 +1,30 @@
-  <div class="navbar-wrapper">
+<amexio-nav [title]="'Amexio'" [logo]="'./assets/images/logos/amexio-logo.png'">
+  <amexio-nav-item position-right *ngFor="let topMenu of topMenuData">
+    <a style="padding-left: 30px;color: white;text-decoration:none" [attr.href]="topMenu.link"
+       [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
+  </amexio-nav-item>
 
-    <ul class="navbarcontainer">
-      <li class="navbaritem" [ngClass]="{'float-left':true}">
-        <!--<i class="fa fa-bars fa-2x" aria-hidden="true"></i>-->
-        <span style="font-weight: bolder;font-size: large">Amexio</span>
-      </li>
+  <!--<amexio-nav-item position-right>-->
+    <!--<a style="padding-left: 20px;color: white;text-decoration:none" href="https://github.com/meta-magic/amexio.github.io" (click)="starGitRepo()" target="_blank">-->
+      <!--<img alt src="assets/images/logos/git.png">-->
+    <!--</a>-->
+  <!--</amexio-nav-item>-->
 
-      <li class="navbaritem" [ngClass]="{'float-right':true}">
-       <a>Home</a>
-      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
-       <a>Features</a>
-      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
-       <a>Home</a>
-      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
-       <a>Home</a>
-      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
-       <a>Home</a>
-      </li> <li class="navbaritem" [ngClass]="{'float-right':true}">
-       <a>Home</a>
-      </li>
-    </ul>
-
-  </div>
-  <br><br>
-  <amexio-row>
-    <amexio-column size="3">
-      <amexio-side-nav
-        [sidenavtitle]="'amexio-ng-extensions'"
-        [httpUrl]="'assets/menu.json'"
-        [httpMethod]="'get'"
-        [dataReader]="'data'"
-        [titleimage]="'http://amexio.org/showcaseapp/v3.2/assets/images/logos/amexio-logo.png'"
-        (nodeClick)="onNodeClick($event)">
-      </amexio-side-nav>
-    </amexio-column>
-
-    <amexio-column size="9">
-      <br><br>
-      <router-outlet></router-outlet>
-    </amexio-column>
-
-  </amexio-row>
-
-  <!--<div fxLayout="row" fxLayoutAlign="start" class="content">-->
-    <!--<div class="blocks" fxFlex = "20%">-->
-      <!--<amexio-side-nav-->
-        <!--[sidenavtitle]="'amexio-ng-extensions'"-->
-        <!--[httpUrl]="'assets/menu.json'"-->
-        <!--[httpMethod]="'get'"-->
-        <!--[dataReader]="'data'"-->
-        <!--[titleimage]="'http://amexio.org/showcaseapp/v3.2/assets/images/logos/amexio-logo.png'"-->
-        <!--(nodeClick)="onNodeClick($event)">-->
-      <!--</amexio-side-nav>-->
-    <!--</div>-->
-    <!--<div class="blocks" fxFlex = "80%">-->
-    <!---->
-    <!--</div>-->
-  <!--</div>-->
+  <!--<amexio-nav-item position-right style="padding-left: 50px">-->
+    <!--<div id="google_translate_element"></div>-->
+  <!--</amexio-nav-item>-->
+</amexio-nav>
+<br><br><br><br>
+<amexio-row>
+  <amexio-column size="25">
+    <amexio-side-nav
+      [httpUrl]="'assets/data/menus/menu.json'"
+      [httpMethod]="'get'"
+      [dataReader]="'data'"
+      (nodeClick)="onNodeClick($event)">
+    </amexio-side-nav>
+  </amexio-column>
+  <amexio-column size="75">
+    <router-outlet></router-outlet>
+  </amexio-column>
+</amexio-row>
