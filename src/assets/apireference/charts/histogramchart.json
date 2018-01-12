@@ -1,0 +1,60 @@
+{
+  "chart": [
+    {
+      "name": "height",
+      "type": "number",
+      "default": "null",
+      "description": "height of chart"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "null",
+      "description": "width of chart"
+    },
+    {
+      "name": "data",
+      "type": "Array",
+      "default": "null",
+      "description": "For the use of local data "
+    }
+  ],
+  "chartTitle": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "null",
+      "description": "title to display above the chart."
+    },
+    {
+      "name": "titleColor",
+      "type": "string",
+      "default": "null",
+      "description": "color of chart title."
+    },
+    {
+      "name": "titleFontName",
+      "type": "string",
+      "default": "null",
+      "description": "font name of chart title."
+    },
+    {
+      "name": "titleFontSize",
+      "type": "number",
+      "default": "null",
+      "description": "font size of chart title."
+    },
+    {
+      "name": "isTitleBold",
+      "type": "boolean",
+      "default": "false",
+      "description": "title in bold."
+    },
+    {
+      "name": "isTitleItalic",
+      "type": "boolean",
+      "default": "false",
+      "description": "title text in italic."
+    }
+  ]
+}

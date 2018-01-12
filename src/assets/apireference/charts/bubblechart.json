@@ -1,0 +1,138 @@
+{
+  "chart": [
+    {
+      "name": "height",
+      "type": "number",
+      "default": "null",
+      "description": "height of chart"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "null",
+      "description": "width of chart"
+    },
+    {
+      "name": "data",
+      "type": "Array",
+      "default": "null",
+      "description": "For the use of local data "
+    },
+    {
+      "name": "colorAxis",
+      "type": "Array",
+      "default": "false",
+      "description": "An object that specifies a mapping between color column values and colors or a gradient scale.example:['#FF0000', '#00FF00'] or ['yellow', 'red']"
+    }
+  ],
+  "chartTitle": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "null",
+      "description": "title to display above the chart."
+    },
+    {
+      "name": "titleColor",
+      "type": "string",
+      "default": "null",
+      "description": "color of chart title."
+    },
+    {
+      "name": "titleFontName",
+      "type": "string",
+      "default": "null",
+      "description": "font name of chart title."
+    },
+    {
+      "name": "titleFontSize",
+      "type": "number",
+      "default": "null",
+      "description": "font size of chart title."
+    },
+    {
+      "name": "isTitleBold",
+      "type": "boolean",
+      "default": "false",
+      "description": "title in bold."
+    },
+    {
+      "name": "isTitleItalic",
+      "type": "boolean",
+      "default": "false",
+      "description": "title text in italic."
+    }
+  ],
+  "chartLegend": [
+    {
+      "name": "legendPosition",
+      "type": "string",
+      "default": "null",
+      "description": "Position of the legend.'bottom' - Below the chart.'top' - Above the chart."
+    },
+    {
+      "name": "legendAlignment",
+      "type": "string",
+      "default": "null",
+      "description": "Alignment of the legend.'start' - Aligned to the start of the area allocated for the legend.'center' - Centered in the area allocated for the legend 'end' - Aligned to the end of the area allocated for the legend."
+    },
+    {
+      "name": "legendColor",
+      "type": "string",
+      "default": "null",
+      "description": "color of chart legend. for example: 'red' or '#00cc00'."
+    },
+    {
+      "name": "legendFontName",
+      "type": "string",
+      "default": "null",
+      "description": "font name of chart legend"
+    },
+    {
+      "name": "legendFontSize",
+      "type": "number",
+      "default": "null",
+      "description": "font size of chart legend"
+    },
+    {
+      "name": "isLegendBold",
+      "type": "boolean",
+      "default": "false",
+      "description": "legend text in bold"
+    },
+    {
+      "name": "maxLinesOfLegend",
+      "type": "number",
+      "default": "null",
+      "description": "maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend."
+    }
+  ],
+  "horizontalAxis": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "null",
+      "description": "title of the chart for the horizontal axis."
+    },
+    {
+      "name": "titleTextColor",
+      "type": "string",
+      "default": "null",
+      "description": "the color of the chart for the horizontal axis."
+    }
+  ],
+  "verticalAxis": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "null",
+      "description": "title of the chart for the Vertical axis."
+    },
+    {
+      "name": "titleTextColor",
+      "type": "string",
+      "default": "null",
+      "description": "the color of the chart for the Vertical axis."
+    }
+  ]
+}

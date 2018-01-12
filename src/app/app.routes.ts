@@ -1,80 +1,53 @@
 /**
  * Created by pratik on 11/12/17.
  */
-import { Routes } from '@angular/router';
+import {Routes} from '@angular/router';
 
 export const APP_ROUTE: Routes = [
 
   {
     path: '', redirectTo: 'getting-started', pathMatch: 'full'
-  },
-  {
-    path: 'getting-started', loadChildren: './text/text.demo#TextDemoModule'
-  },
-  {
-    path: 'textinput', loadChildren: './forminput/text/text.demo#TextDemoModule'
-  },
-  {
-    path: 'email', loadChildren: './email/email.demo#EmailDemoModule'
-  },
-  {
-    path: 'number', loadChildren: './number/number.demo#NumberDemoModule'
-  },
-  {
-    path: 'password', loadChildren: './password/password.demo#PasswordDemoModule'
-  },
-  {
-    path: 'textarea', loadChildren: './textarea/textarea.demo#TextAreaDemoModule'
-  },
-  {
-    path: 'dropdown', loadChildren: './dropdown/dropdown.demo#DropDownDemoModule'
-  },
-  {
-    path: 'checkbox', loadChildren: './checkbox/checkbox.demo#CheckBoxDemoModule'
-  },
-  {
-    path: 'checkboxgrp', loadChildren: './checkboxgrp/checkboxgrp.demo#CheckBoxGroupDemoModule'
-  },
-  {
-    path: 'typeahead', loadChildren: './typeahead/typeahead.demo#TypeAheadDemoModule'
-  },
-  {
-    path: 'radio', loadChildren: './radio/radio.demo#RadioDemoModule'
-  },
-  {
-    path: 'button', loadChildren: './button/button.demo#ButtonDemoModule'
-  },
-  {
-    path: 'buttongrp', loadChildren: './buttongroup/button.group.demo#ButtonGroupDemoModule'
-  },
-  {
-    path: 'paginator', loadChildren: './paginator/paginator.demo#PaginatorDemoModule'
-  },
-  {
-    path: 'rating', loadChildren: './rating/rating.demo#RatingDemoModule'
-  },
-  {
-    path: 'sidenav', loadChildren: './sidenav/sidenav.demo#SideNavDemoModule'
-  },
-  {
-    path: 'tab', loadChildren: './tab/tab.demo#TabDemoModule'
-  },
-  {
-    path: 'rvtab', loadChildren: './tab/rvtab.demo#RVTabDemoModule'
-  },
-  {
-    path: 'vtab', loadChildren: './tab/vtab.demo#VTabDemoModule'
-  },
-  {
-    path: 'toggle', loadChildren: './toggle/toggle.demo#ToggleDemoModule'
-  },
-  {
-    path: 'tree', loadChildren: './tree/tree.demo#TreeDemoModule'
-  },
-  {
-    path: 'listbox', loadChildren: './listbox/listbox.demo#ListDemoModule'
-  },
-  {
-    path: 'accordion', loadChildren: './fieldset/fieldset.demo#FieldSetDemoModule'
+  }, {
+    path: 'getting-started', loadChildren: './forminput/text/text.module#TextDemoModule'
+  }, {
+    path: 'textinput', loadChildren: './forminput/text/text.module#TextDemoModule'
   }
-];
+  /**Chart Routes*/, {
+    path: 'area-chart-demo', loadChildren: './charts/areachart/areachart.demo.module#AreaChartDemoModule'
+  }, {
+    path: 'bar-chart-demo', loadChildren: './charts/barchart/barchart.demo.module#BarChartDemoModule'
+  }, {
+    path: 'bubble-chart-demo', loadChildren: './charts/bubblechart/bubblechart.demo.module#BubbleChartDemoModule'
+  }, {
+    path: 'candlestick-chart-demo',
+    loadChildren: './charts/candlestickchart/candlestickchart.demo.module#CandlestickChartDemoModule'
+  }, {
+    path: 'candlestickwaterfall-chart-demo',
+    loadChildren: './charts/candlestickwaterfallchart/candlestickchartwaterfall.demo.module#CandlestickWaterfallChartDemoModule'
+  }, {
+    path: 'column-chart-demo', loadChildren: './charts/columnchart/columnchart.demo.module#ColumnChartDemoModule'
+  }, {
+    path: 'combo-chart-demo', loadChildren: './charts/combochart/combochart.demo.module#ComboChartDemoModule'
+  }, {
+    path: 'donut-chart-demo', loadChildren: './charts/donutchart/donutchart.demo.module#DonutChartDemoModule'
+  }, {
+    path: 'gauge-dashboard-demo', loadChildren: './dashboard/gauge/gauge.demo.module#GaugeDemoModule'
+  }, {
+    path: 'histogram-chart-demo',
+    loadChildren: './charts/histogramchart/histogramchart.demo.module#HistogramChartDemoModule'
+  }, {
+    path: 'line-chart-demo', loadChildren: './charts/linechart/linechart.demo.module#LineChartDemoModule'
+  }, {
+    path: 'pie-chart-demo', loadChildren: './charts/piechart/piechart.demo.module#PieChartDemoModule'
+  }, {
+    path: 'scatter-chart-demo', loadChildren: './charts/scatterchart/scatterchart.demo.module#ScatterChartDemoModule'
+  }, {
+    path: 'timeline-chart-demo',
+    loadChildren: './charts/timelinechart/timelinechart.demo.module#TimelineChartDemoModule'
+  }, {
+    path: 'geo-chart-demo', loadChildren: './map/geochart/geochart.demo.module#GeoChartDemoModule'
+  }, {
+    path: 'tree-map-demo', loadChildren: './map/treemap/treemap.demo.module#TreeMapDemoModule'
+  }, {
+    path: 'datapoint', loadChildren: './dashboard/datapoints/datapoint.demo.module#DatapointsModule'
+  }];

@@ -2,26 +2,16 @@
  * Created by sagar on 9/1/18.
  */
 
-import {NgModule, Component} from '@angular/core'
-import {RouterModule} from '@angular/router'
-import {FormsModule} from "@angular/forms";
-import {Http, HttpModule} from "@angular/http";
-import {CommonModule} from "@angular/common";
-import {AmexioWidgetModule} from "amexio-ng-extensions";
-
-/* Import prism core */
-import 'prismjs/prism';
-/* Import the language you need to highlight */
-import 'prismjs/components/prism-typescript';
-import {PrismComponent} from 'angular-prism';
+import {Component} from '@angular/core'
+import {Http} from "@angular/http";
 
 @Component({
   selector: 'text-demo', template: `
     <amexio-card enableHeader="true">
-      <amexio-pane-header>
+      <amexio-header>
         <h2>Text Input Component</h2>
-      </amexio-pane-header>
-      <amexio-pane-body>
+      </amexio-header>
+      <amexio-body>
         <p>Text input component has been created with different configurable attributes for validation (min/max length,
           allow blank, custom regex), custom error message, help, custom styles.</p>
         <amexio-tab-view>
@@ -29,39 +19,39 @@ import {PrismComponent} from 'angular-prism';
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card enableHeader="true">
-                  <amexio-pane-header>
+                  <amexio-header>
                     <h4>Basic Text Field</h4>
-                  </amexio-pane-header>
-                  <amexio-pane-body>
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-text-input fieldLabel="Name" name="name"
                                        placeholder="Enter name"
                                        iconFeedBack="true"
                     ></amexio-text-input>
-                  </amexio-pane-body>
+                  </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true">
-                  <amexio-pane-header>
+                  <amexio-header>
                     <h4>Input Without Label and Icon feedback</h4>
-                  </amexio-pane-header>
-                  <amexio-pane-body>
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-text-input name="name"
                                        placeholder="Enter name"
                                        iconFeedBack="false"
                                        hasLabel="false"
                     ></amexio-text-input>
-                  </amexio-pane-body>
+                  </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card [enableHeader]="true">
-                  <amexio-pane-header>
+                  <amexio-header>
                     <h4>Min/Max Validations</h4>
-                  </amexio-pane-header>
-                  <amexio-pane-body>
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-text-input enablePopOver="true"
                                        fieldLabel="Name" name="name"
                                        placeholder="Enter name"
@@ -70,74 +60,76 @@ import {PrismComponent} from 'angular-prism';
                                        maxLength="10" maxErrorMsg="Maximum 10 char allowed"
                                        iconFeedBack="true"
                     ></amexio-text-input>
-                  </amexio-pane-body>
+                  </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true">
-                  <amexio-pane-header>
+                  <amexio-header>
                     <h4>Disabled Text Field</h4>
-                  </amexio-pane-header>
-                  <amexio-pane-body>
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-text-input name="name"
                                        fieldLabel="Name"
                                        placeholder="Enter name"
                                        disabled="true"
                     ></amexio-text-input>
-                  </amexio-pane-body>
+                  </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card enableHeader="true">
-                  <amexio-pane-header>
+                  <amexio-header>
                     <h4>Font Styling</h4>
-                  </amexio-pane-header>
-                  <amexio-pane-body>
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-text-input fieldLabel="Name" name="name"
                                        placeholder="Enter name"
                                        iconFeedBack="true"
                                        fontStyle="italic"
                     ></amexio-text-input>
-                  </amexio-pane-body>
+                  </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column size="6">
                 <amexio-card enableHeader="true">
-                  <amexio-pane-header>
+                  <amexio-header>
                     <h4>Font Size & Family Styling</h4>
-                  </amexio-pane-header>
-                  <amexio-pane-body>
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-text-input [fieldLabel]="'Name'" name="name"
                                        [placeholder]="'Enter name'"
                                        [iconFeedBack]="true"
                                        [fontStyle]="'italic'"
                     ></amexio-text-input>
-                  </amexio-pane-body>
+                  </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
             <amexio-row>
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true">
-                  <amexio-pane-header>
+                  <amexio-header>
                     <h4>Input with Pattern</h4>
-                  </amexio-pane-header>
-                  <amexio-pane-body>
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-text-input name="name" [fieldLabel]="'Name'"
                                        [placeholder]="'Enter name'"
                                        [pattern]="'[a-z]'"
                                        [iconFeedBack]="true"
                     ></amexio-text-input>
-                  </amexio-pane-body>
+                  </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" httpMethod="get"  [columnToggle]="false"
-                             httpUrl="assets/apireference/attribute/textinput.json" dataReader="attributes"
+            <amexio-datagrid title="Properties" [columnToggle]="false"
+                             [httpMethod]="'get'"
+                             [httpUrl]="'assets/apireference/attribute/forminput/textinput.json'" 
+                             [dataReader]="'properties'"
                              [filtering]="false" >
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -150,16 +142,7 @@ import {PrismComponent} from 'angular-prism';
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [httpMethod]="'get'" 
-                             [httpUrl]="'assets/apireference/attribute/textinput.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
-                                        [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
-                                        [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid>
-            <br>
-            <amexio-datagrid title="Styling" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/attribute/textinput.json'" [dataReader]="'css'"
+                             [httpUrl]="'assets/apireference/attribute/forminput/textinput.json'" [dataReader]="'events'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -189,14 +172,13 @@ import {PrismComponent} from 'angular-prism';
                     allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
-      </amexio-pane-body>
+      </amexio-body>
     </amexio-card>
     <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
 
   `
 })
 export class TextDemo {
-  name: string;
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -207,19 +189,25 @@ export class TextDemo {
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
-    let responseData: any;
-    this.http.get('assets/data/code/textinput/textinput.html').subscribe(data => {
-      responseData = data.text();
+    let responseHtml: any;
+    let responseTs:any;
+
+    //HTML FILE
+    this.http.get('assets/data/code/forminput/textinput/form.html').subscribe(data => {
+      responseHtml = data.text();
     }, error => {
     }, () => {
-      this.htmlCode = responseData;
+      this.htmlCode = responseHtml;
     });
-    this.http.get('assets/data/code/textinput/textinput.ts').subscribe(data => {
-      responseData = data.text();
+
+    //TS FILE
+    this.http.get('assets/data/code/forminput/textinput/form.ts').subscribe(data => {
+      responseTs = data.text();
     }, error => {
     }, () => {
-      this.typeScriptCode = responseData;
+      this.typeScriptCode = responseTs;
     });
+
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
@@ -233,13 +221,4 @@ export class TextDemo {
   }
 }
 
-@NgModule({
-  declarations: [TextDemo, PrismComponent],
-  imports: [CommonModule, FormsModule, HttpModule, AmexioWidgetModule, RouterModule.forChild([{
-    path: '', component: TextDemo, pathMatch: 'full'
-  }])],
-  providers: []
-})
-export class TextDemoModule {
 
-}

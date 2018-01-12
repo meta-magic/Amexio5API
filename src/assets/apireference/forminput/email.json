@@ -1,5 +1,5 @@
 {
-  "attributes": [
+  "properties": [
     {
       "name": "fieldLabel",
       "type": "string",
@@ -93,6 +93,16 @@
       "type": "boolean",
       "default": "false",
       "description":"hide/unhide field label"
+    },{
+      "name": "enablePopOver",
+      "type": "boolean",
+      "default": "false",
+      "description":"set enable / disable popover."
+    },{
+      "name": "popoverPlacement",
+      "type": "string",
+      "default": "null",
+      "description":"set popover postion like :top,bottom,right,left"
     }
 
   ],

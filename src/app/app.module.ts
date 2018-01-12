@@ -3,14 +3,12 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import {FlexLayoutModule} from "@angular/flex-layout";
 import {RouterModule} from "@angular/router";
 import {APP_ROUTE} from "./app.routes";
-
 import {
-  AmexioDataModule, AmexioLayoutModule, AmexioNavModule, AmexioWidgetModule, CommonDataService, DeviceQueryService
+  AmexioFormsModule, AmexioLayoutModule, AmexioNavModule, AmexioWidgetModule, DeviceQueryService, CommonDataService,
+  AmexioMapModule, AmexioChartsModule, ChartLoaderService, MapLoaderService, AmexioDashBoardModule,DashboardLoaderService
 } from "amexio-ng-extensions";
-
 
 @NgModule({
   declarations: [
@@ -18,14 +16,10 @@ import {
   ],
   imports: [
     BrowserModule,
-    FlexLayoutModule,
-    AmexioNavModule,
-    AmexioLayoutModule,
-    AmexioDataModule,
-    AmexioWidgetModule,
+    AmexioFormsModule, AmexioLayoutModule, AmexioNavModule, AmexioWidgetModule,AmexioChartsModule,AmexioMapModule,AmexioDashBoardModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
-  providers: [CommonDataService,DeviceQueryService],
+  providers: [CommonDataService,DeviceQueryService,ChartLoaderService,MapLoaderService,DashboardLoaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

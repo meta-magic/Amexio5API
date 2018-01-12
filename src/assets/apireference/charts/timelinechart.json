@@ -1,0 +1,16 @@
+{
+  "chart": [
+    {
+      "name": "width",
+      "type": "number",
+      "default": "null",
+      "description": "width of chart"
+    },
+    {
+      "name": "data",
+      "type": "Array",
+      "default": "null",
+      "description": "For the use of local data "
+    }
+  ]
+}

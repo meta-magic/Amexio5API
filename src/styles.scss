@@ -1,11 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-
 $color: #404c51;
 
 $oppColor: white;
 
-$backgroundcolor: white;
+$backgroundcolor: #ECEFF1;
 
 $borderSize : 1px;
 
@@ -15,7 +14,7 @@ $borderColor : #ced4da;
 
 $borderColor-focus: #5cb3fd;
 
-$primaryBGColor: #0275d8;
+$primaryBGColor: #455A64;
 
 $secondaryBGColor: #ffffff;
 
@@ -25,7 +24,8 @@ $dangerBGColor : #d9534f;
 
 $warningBGColor : #f0ad4e;
 
-$primaryColor: $oppColor;
+
+$primaryColor: #FFFFFF;
 
 $secondaryColor: $color;
 
@@ -50,6 +50,10 @@ $sidenavBGColor : white;
 $sidenavColor: black;
 $sidenavactive:#eee;
 
+$treeNodeActiveBGColor : $sidenavactive;
+$treeNodeActiveColor : $sidenavColor;
+
+
 $tabBorderSize: $borderSize;
 $tabBorderColor : $borderColor;
 $tabActiveBorder : red;
@@ -63,8 +67,15 @@ $subMenuCotentBGColor : white;
 $subMenuCotentColor : #777;
 
 $modalBGColor: lighten(black,50%);
-$cardHeaderColor: lighten($borderColor,10%);
-$cardFooterColor: lighten($borderColor,10%);
+
+$cardBGColor: #FFFFFF;
+$cardColor: black;
+
+$cardHeaderBGColor: #455A64;
+$cardHeaderColor: #FFFFFF;
+$cardFooterBGColor: #455A64;
+$cardFooterColor: #FFFFFF;
+$cardBorderColor: $borderColor;
 
 $toastBGColor : $primaryBGColor;
 $toastColor : $primaryColor;
@@ -80,8 +91,8 @@ $toastColor : $primaryColor;
 
 
 
-$borderLayoutBorder : 1px;
-$borderLayoutBorderColor : red;
+$borderLayoutBorder : 0px;
+$borderLayoutBorderColor : none;
 
 $menubarBGColor : black;
 $menubarColor : white;
@@ -92,18 +103,89 @@ $subMenuCotentColor : #777;
 $menuborderColor:#ced4da;
 $menuborderSize:1px;
 
-$navbarBGColor :#292b2c;
+$navbarBGColor : #90A4AE;
 $navbarBoxShadow:#666;
 $navbarColor : white;
 
 
+$datapointBGColor : #ffffff;
+$datapointColor : #455A64;
+$datapointBorderColor : $borderColor;
+
+$componentBGColor: #ffffff;
+
+
+
+
+$borderLayoutBorder : 0px;
+$borderLayoutBorderColor : none;
+
+$menubarBGColor : black;
+$menubarColor : white;
+$menuHoverColor: orange;
+
+$subMenuCotentBGColor : white;
+$subMenuCotentColor : #777;
+$menuborderColor:#ced4da;
+$menuborderSize:1px;
+
+$navbarBGColor : #90A4AE;
+$navbarBoxShadow:#666;
+$navbarColor : white;
+
+
+$datapointBGColor : #ffffff;
+$datapointColor : #455A64;
+$datapointBorderColor : $borderColor;
+
+$componentBGColor: #ffffff;
+
+$cardHeaderBGColor: #1976d2;
+$cardHeaderColor: #FFFFFF;
+$cardFooterBGColor: #1976d2;
+$cardFooterColor: #FFFFFF;
+$cardBorderColor: $borderColor;
+
+$toastBGColor: $primaryBGColor;
+$toastColor: $primaryColor;
+/* You can add global styles to this file, and also import other style files */
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+$borderLayoutBorder: 1px;
+$borderLayoutBorderColor: red;
+
+$menubarBGColor: black;
+$menubarColor: white;
+$menuHoverColor: orange;
+
+$subMenuCotentBGColor: white;
+$subMenuCotentColor: #777;
+$menuborderColor: #ced4da;
+$menuborderSize: 1px;
+
+$navbarBGColor: #292b2c;
+$navbarBoxShadow: #666;
+$navbarColor: white;
+
+$datapointBGColor: #ffffff;
+$datapointColor: #455A64;
+$datapointBorderColor: $borderColor;
+
+$componentBGColor: #ffffff;
 
 body {
   background: $backgroundcolor;
   min-height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
+  font-family: Roboto, Trebuchet MS, Arial, Helvetica, sans-serif;
   font-weight: 400;
   color: $color;
   font-size: 1em;
@@ -156,22 +238,41 @@ body {
 
 @import "../node_modules/amexio-ng-extensions/themes/default/rowcol.scss";
 
-.material-icons{
+@import "../node_modules/amexio-ng-extensions/themes/default/itemselector.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/datapoint.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/progress.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/toggle.scss";
+
+@import "../node_modules/amexio-ng-extensions/themes/default/borderlayout.scss";
+
+.material-icons {
   font-size: inherit !important;
 }
 
-
-.flex-col-25{
+.flex-col-25 {
   max-width: 20.8333325%;
 }
 
-.flex-col-75{
+.flex-col-75 {
   max-width: 79.1666635%;
 }
 
 @media only screen and (max-width: 500px) {
 
-  .flex-col-2pt5,.flex-col-9pt5{
+  .flex-col-2pt5, .flex-col-9pt5 {
     max-width: 100%;
   }
+}
+
+.card-header {
+  padding: 0px 10px;
+}
+.datapoint-north{
+  color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+.datapoint-center{
+  font-size: 20px;
 }

@@ -1,0 +1,81 @@
+{
+  "chart": [
+    {
+      "name": "height",
+      "type": "number",
+      "default": "null",
+      "description": "height of chart"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "null",
+      "description": "width of chart"
+    },
+    {
+      "name": "data",
+      "type": "Array",
+      "default": "null",
+      "description": "For the use of local data "
+    },{
+      "name": "maxColor",
+      "type": "string",
+      "default": "null",
+      "description": "The color for a rectangle with a column 3 value of maxColorValue. Specify an HTML color value. "
+    },{
+      "name": "midColor",
+      "type": "string",
+      "default": "null",
+      "description": "The color for a rectangle with a column 3 value midway between maxColorValue and minColorValue. Specify an HTML color value."
+    },{
+      "name": "minColor",
+      "type": "string",
+      "default": "null",
+      "description": "The color for a rectangle with the column 3 value of minColorValue. Specify an HTML color value.TolorValue. Specify an HTML color value."
+    },{
+      "name": "maxPostDepth",
+      "type": "number",
+      "default": "null",
+      "description": "How many levels of nodes beyond maxDepth to show in 'hinted' fashion."
+    },{
+      "name": "showScale",
+      "type": "boolean",
+      "default": "null",
+      "description": "Whether or not to show a color gradient scale from minColor to maxColor along the top of the chart. Specify true to show the scale."
+    }
+  ],
+  "chartTitle":[
+    {
+      "name": "title",
+      "type": "string",
+      "default": "null",
+      "description": "title to display above the chart."
+    },  {
+      "name": "titleColor",
+      "type": "string",
+      "default": "null",
+      "description": "titleColor of chart title."
+    },  {
+      "name": "titleFontName",
+      "type": "string",
+      "default": "null",
+      "description": "font name of chart title."
+    },  {
+      "name": "titleFontSize",
+      "type": "number",
+      "default": "null",
+      "description": "font size of chart title."
+    },  {
+      "name": "isTitleBold",
+      "type": "boolean",
+      "default": "null",
+      "description": "title in bold."
+    },
+    {
+      "name": "isTitleItalic",
+      "type": "string",
+      "default": "null",
+      "description": "title text in in italic."
+    }
+  ]
+}

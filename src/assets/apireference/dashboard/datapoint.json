@@ -1,0 +1,74 @@
+{
+  "datapoint": [
+    {
+      "name": "north",
+      "type": "boolean",
+      "default": "false",
+      "description":"enable north position"
+    },{
+      "name": "south",
+      "type": "boolean",
+      "default": "false",
+      "description":"enable south position"
+    },{
+      "name": "west",
+      "type": "boolean",
+      "default": "false",
+      "description":"enable west position"
+    },{
+      "name": "center",
+      "type": "boolean",
+      "default": "false",
+      "description":"enable center position"
+    },
+    {
+      "name": "east",
+      "type": "boolean",
+      "default": "false",
+      "description":"enable east position"
+    }, {
+      "name": "backgroundColor",
+      "type": "string",
+      "default": "false",
+      "description":"Background color for datapoint."
+    }, {
+      "name": "fontColor",
+      "type": "string",
+      "default": "false",
+      "description":"Font color for datapoint."
+    }
+  ],
+  "location": [
+    {
+      "name": "backgroundColor",
+      "type": "string",
+      "default": "null",
+      "description":"set background color"
+    }, {
+      "name": "fontColor",
+      "type": "string",
+      "default": "null",
+      "description":"set font color"
+    }, {
+      "name": "contentalign",
+      "type": "string",
+      "default": "null",
+      "description":"set content align like : center,left,right"
+    }, {
+      "name": "width",
+      "type": "string",
+      "default": "null",
+      "description":"set width"
+    }, {
+      "name": "height",
+      "type": "string",
+      "default": "null",
+      "description":"set height"
+    }, {
+      "name": "cClass",
+      "type": "string",
+      "default": "null",
+      "description":"to use custom css class"
+    }
+  ]
+}

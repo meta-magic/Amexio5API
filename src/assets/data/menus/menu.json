@@ -2,6 +2,7 @@
   "data":[
     {
       "text": "Forms",
+      "icon" : "fa fa-clone fa-fw",
       "children": [
         {
           "text" : "Text Input",
@@ -63,6 +64,7 @@
     },
     {
       "text": "Navigation",
+      "icon":"fa fa-bars fa-fw",
       "children": [
         {
           "text": "SideNav",
@@ -78,6 +80,7 @@
     },
     {
       "text": "Layout",
+      "icon":"fa fa-desktop fa-fw",
       "children": [
         {
           "text": "Tab",
@@ -104,6 +107,7 @@
     },
     {
       "text": "Data",
+      "icon":"fa fa-th fa-fw",
       "children": [
         {
           "text": "Tree",
@@ -112,6 +116,109 @@
         {
           "text": "ListBox",
           "link": "listbox"
+        }
+      ]
+    },
+    {
+      "text": "Charts",
+      "icon" : "fa fa-keyboard-o fa-fw",
+      "children": [
+        {
+          "text": "Area Chart",
+          "icon" : "fa fa-area-chart fa-fw",
+          "link":"area-chart-demo"
+        },
+        {
+          "text": "Bar Chart",
+          "icon" : "fa fa-bar-chart fa-fw",
+          "link":"bar-chart-demo"
+        },
+        {
+          "text": "Bubble Chart",
+          "icon" : "fa fa-circle fa-fw",
+          "link":"bubble-chart-demo"
+        },
+        {
+          "text": "Candlestick Chart",
+          "icon" : "fa fa-stack-exchange fa-fw",
+          "link":"candlestick-chart-demo"
+        },
+        {
+          "text": "Candlestick Waterfall charts",
+          "icon" : "fa fa-tint fa-fw",
+          "link":"candlestickwaterfall-chart-demo"
+        },
+        {
+          "text": "Column Chart",
+          "icon" : "fa fa-columns fa-fw",
+          "link":"column-chart-demo"
+        },
+        {
+          "text": "Combo Chart",
+          "icon" : "fa fa-area-chart fa-fw",
+          "link":"combo-chart-demo"
+        },
+        {
+          "text": "Donut Chart",
+          "icon" : "fa fa-pie-chart fa-fw",
+          "link":"donut-chart-demo"
+        },
+        {
+          "text": "Histogram Chart",
+          "icon" : "fa fa-bars fa-fw",
+          "link":"histogram-chart-demo"
+        },
+        {
+          "text": "Line Chart",
+          "icon" : "fa fa-line-chart fa-fw",
+          "link":"line-chart-demo"
+        },
+        {
+          "text": "Pie Chart",
+          "icon" : "fa fa-pie-chart fa-fw",
+          "link":"pie-chart-demo"
+        },
+        {
+          "text": "Scatter Chart",
+          "icon" : "fa fa-dot-circle-o fa-fw",
+          "link":"scatter-chart-demo"
+        },
+        {
+          "text": "Timeline Chart",
+          "icon" : "fa fa-calendar fa-fw",
+          "link":"timeline-chart-demo"
+        }
+
+      ]
+    }, {
+      "text": "Dashboard",
+      "icon" : "fa fa-dashcube fa-fw",
+      "children": [
+        {
+          "text": "Gauge Chart",
+          "icon" : "fa fa-tachometer fa-fw",
+          "link":"gauge-dashboard-demo"
+        },
+        {
+          "text": "Data Points",
+          "icon" : "fa fa-address-card-o fa-fw",
+          "link":"datapoint"
+        }
+      ]
+    },
+    {
+      "text": "Map",
+      "icon" : "fa fa-globe fa-fw",
+      "children": [
+        {
+          "text": "Geo Chart",
+          "icon" : "fa fa-globe fa-fw",
+          "link":"geo-chart-demo"
+        },
+        {
+          "text": "Tree Map",
+          "icon" : "fa fa-trello fa-fw",
+          "link":"tree-map-demo"
         }
       ]
     }
