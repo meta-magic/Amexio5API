@@ -83,25 +83,26 @@
       "icon":"fa fa-desktop fa-fw",
       "children": [
         {
-          "text": "Tab",
-          "children": [
-            {
-              "text": "Tab Pane",
-              "link" : "tab"
-            },
-            {
-              "text": "Vertical Tab Pane",
-              "link" : "vtab"
-            },
-            {
-              "text": "Right Vertical Tab",
-              "link" : "rvtab"
-            }
-          ]
+          "text": "Card",
+          "icon":"fa fa-id-card-o fa-fw",
+          "children": [{
+            "text" : "Form",
+            "link" : "card-form-demo"
+          },{
+            "text" : "Image",
+            "link" : "card-image-demo"
+          }]
+
         },
         {
-          "text" : "Accordion",
-          "link" : "accordion"
+          "text" : "Amexio Column",
+          "link" : "column-demo",
+          "icon":"fa fa-columns fa-fw"
+        },
+        {
+          "text" : "Amexio Row",
+          "link" : "row-demo",
+          "icon":"fa fa-bars fa-fw"
         }
       ]
     },

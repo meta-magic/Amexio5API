@@ -14,7 +14,7 @@ $borderColor : #ced4da;
 
 $borderColor-focus: #5cb3fd;
 
-$primaryBGColor: #455A64;
+$primaryBGColor: #0275d8;
 
 $secondaryBGColor: #ffffff;
 
@@ -23,7 +23,6 @@ $successBGColor : #5cb85c;
 $dangerBGColor : #d9534f;
 
 $warningBGColor : #f0ad4e;
-
 
 $primaryColor: #FFFFFF;
 
@@ -71,7 +70,7 @@ $modalBGColor: lighten(black,50%);
 $cardBGColor: #FFFFFF;
 $cardColor: black;
 
-$cardHeaderBGColor: #455A64;
+$cardHeaderBGColor: #1976d2;
 $cardHeaderColor: #FFFFFF;
 $cardFooterBGColor: #455A64;
 $cardFooterColor: #FFFFFF;
@@ -88,32 +87,6 @@ $toastColor : $primaryColor;
 .float-left {
   float: left;
 }
-
-
-
-$borderLayoutBorder : 0px;
-$borderLayoutBorderColor : none;
-
-$menubarBGColor : black;
-$menubarColor : white;
-$menuHoverColor: orange;
-
-$subMenuCotentBGColor : white;
-$subMenuCotentColor : #777;
-$menuborderColor:#ced4da;
-$menuborderSize:1px;
-
-$navbarBGColor : #90A4AE;
-$navbarBoxShadow:#666;
-$navbarColor : white;
-
-
-$datapointBGColor : #ffffff;
-$datapointColor : #455A64;
-$datapointBorderColor : $borderColor;
-
-$componentBGColor: #ffffff;
-
 
 
 
@@ -270,9 +243,7 @@ body {
 .card-header {
   padding: 0px 10px;
 }
-.datapoint-north{
-  color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
-}
-.datapoint-center{
-  font-size: 20px;
+
+.column-border{
+  border: 1px solid red
 }

@@ -3,16 +3,31 @@
  */
 import {Routes} from '@angular/router';
 
-export const APP_ROUTE: Routes = [
-
+export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: '', redirectTo: 'getting-started', pathMatch: 'full'
   }, {
-    path: 'getting-started', loadChildren: './forminput/text/text.module#TextDemoModule'
+    path: 'getting-started', loadChildren: './forms/text/text.module#TextDemoModule'
   }, {
-    path: 'textinput', loadChildren: './forminput/text/text.module#TextDemoModule'
-  }
-  /**Chart Routes*/, {
+    path: 'textinput', loadChildren: './forms/text/text.module#TextDemoModule'
+  },
+
+  /**Layout Routes*/
+  {
+    path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'
+  },
+  {
+    path: 'card-image-demo', loadChildren: './layout/card/cardimage/cardimage.demo.module#CardImageDemoModule'
+  },
+  {
+    path: 'column-demo', loadChildren: './layout/column/column.demo.module#ColumnDemoModule'
+  },
+  {
+    path: 'row-demo', loadChildren: './layout/row/row.demo.module#RowDemoModule'
+  },
+
+  /**Chart Routes*/
+  {
     path: 'area-chart-demo', loadChildren: './charts/areachart/areachart.demo.module#AreaChartDemoModule'
   }, {
     path: 'bar-chart-demo', loadChildren: './charts/barchart/barchart.demo.module#BarChartDemoModule'
@@ -31,8 +46,6 @@ export const APP_ROUTE: Routes = [
   }, {
     path: 'donut-chart-demo', loadChildren: './charts/donutchart/donutchart.demo.module#DonutChartDemoModule'
   }, {
-    path: 'gauge-dashboard-demo', loadChildren: './dashboard/gauge/gauge.demo.module#GaugeDemoModule'
-  }, {
     path: 'histogram-chart-demo',
     loadChildren: './charts/histogramchart/histogramchart.demo.module#HistogramChartDemoModule'
   }, {
@@ -44,10 +57,21 @@ export const APP_ROUTE: Routes = [
   }, {
     path: 'timeline-chart-demo',
     loadChildren: './charts/timelinechart/timelinechart.demo.module#TimelineChartDemoModule'
+  },
+
+  /**Dashboard Routes*/
+  {
+    path: 'gauge-dashboard-demo', loadChildren: './dashboard/gauge/gauge.demo.module#GaugeDemoModule'
   }, {
+    path: 'datapoint', loadChildren: './dashboard/datapoints/datapoint.demo.module#DatapointsModule'
+  },
+
+  /**Map Routes*/
+  {
     path: 'geo-chart-demo', loadChildren: './map/geochart/geochart.demo.module#GeoChartDemoModule'
   }, {
     path: 'tree-map-demo', loadChildren: './map/treemap/treemap.demo.module#TreeMapDemoModule'
-  }, {
-    path: 'datapoint', loadChildren: './dashboard/datapoints/datapoint.demo.module#DatapointsModule'
-  }];
+  }
+
+
+];

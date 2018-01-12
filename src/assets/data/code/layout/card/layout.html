@@ -1,0 +1,39 @@
+<amexio-button [label]="'Hide/UnHide Card'" [type]="'primary'" [tooltipMessage]="'Hide/UnHide Card'" (click)="toggle()"> </amexio-button>
+<amexio-card [enableHeader]="true" [enableFooter]="true" [showCard]="flag" [footeralign]="'right'">
+  <amexio-header>
+    <h5> Employee Registration</h5>
+  </amexio-header>
+  <amexio-body>
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-text-input [fieldLabel]="'Name'" name ="name"
+                           [placeholder]="'Enter name'"
+                           [iconFeedBack]="true">
+        </amexio-text-input>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-text-input [fieldLabel]="'Address'" name ="address"
+                           [placeholder]="'Enter address'"
+                           [iconFeedBack]="true">
+        </amexio-text-input>
+      </amexio-column>
+    </amexio-row>
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-text-input [fieldLabel]="'Phone'" name ="phone"
+                           [placeholder]="'Enter phone'"
+                           [iconFeedBack]="true">
+        </amexio-text-input>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-text-input [fieldLabel]="'Email'" name ="email"
+                           [placeholder]="'Enter Email'"
+                           [iconFeedBack]="true">
+        </amexio-text-input>
+      </amexio-column>
+    </amexio-row>
+  </amexio-body>
+  <amexio-action >
+    <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
+  </amexio-action>
+</amexio-card>

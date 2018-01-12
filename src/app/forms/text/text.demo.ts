@@ -128,7 +128,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/attribute/forminput/textinput.json'" 
+                             [httpUrl]="'assets/apireference/forms/textinput.json'" 
                              [dataReader]="'properties'"
                              [filtering]="false" >
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -142,7 +142,7 @@ import {Http} from "@angular/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [httpMethod]="'get'" 
-                             [httpUrl]="'assets/apireference/attribute/forminput/textinput.json'" [dataReader]="'events'"
+                             [httpUrl]="'assets/apireference/forms/textinput.json'" [dataReader]="'events'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -167,9 +167,7 @@ import {Http} from "@angular/http";
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
-            <p class="text-md-center text-primary">Amexio Sandbox</p>
-            <iframe style="width: 100%; height: 600px" src="https://embed.plnkr.co/kR94Gf/" frameborder="0"
-                    allowfullscren="allowfullscren"></iframe>
+           Work in Progress
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -193,7 +191,7 @@ export class TextDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forminput/textinput/form.html').subscribe(data => {
+    this.http.get('assets/data/code/forms/textinput/form.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -201,7 +199,7 @@ export class TextDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forminput/textinput/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/textinput/form.ts').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
