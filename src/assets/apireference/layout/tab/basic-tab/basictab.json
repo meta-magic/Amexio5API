@@ -1,0 +1,36 @@
+{
+  "properties": [
+    {
+      "name": "closable",
+      "type": "boolean",
+      "default": "false",
+      "description":"This flag will make tab closable."
+    }
+  ],
+  "tabproperties": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "null",
+      "description":"Title on Tab Button/Pill."
+    },
+    {
+      "name": "active",
+      "type": "boolean",
+      "default": "false",
+      "description":"Will specific tab open by default."
+    },
+    {
+      "name": "icon",
+      "type": "string",
+      "default": "null",
+      "description":"Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home"
+    }
+  ],
+  "events": [
+    {
+      "name": "activatedTab",
+      "description":"Callback to invoke on activated tab event."
+    }
+  ]
+}

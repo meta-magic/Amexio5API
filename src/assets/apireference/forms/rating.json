@@ -1,0 +1,49 @@
+{
+  "properties": [
+    {
+      "name": "fieldLabel",
+      "type": "string",
+      "default": "null",
+      "description":"field label."
+    },
+    {
+      "name": "max",
+      "type": "number",
+      "default": "null",
+      "description":"number of stars for rating component."
+    },
+    {
+      "name": "readonly",
+      "type": "boolean",
+      "default": "false",
+      "description":"if true will not react on any user events."
+    }, {
+      "name": "titles",
+      "type": "string[]",
+      "default": "null",
+      "description":"array of titles, default:1,2,3.."
+    },{
+      "name": "disabled",
+      "type": "boolean",
+      "default": "false",
+      "description":"if true will not react on any user events and show disable icon over"
+    },{
+      "name": "required",
+      "type": "boolean",
+      "default": "false",
+      "description":"validate field"
+    },
+    {
+      "name": "fullIcon",
+      "type": "string ",
+      "default": "null",
+      "description":"icon for selected rating .this attribute use only user have custom rating icons.example ☑"
+    },
+    {
+      "name": "emptyIcon",
+      "type": "string ",
+      "default": "null",
+      "description":"icon for non-selected rating .this attribute use only user have custom rating icons.example ☐"
+    }
+  ]
+}

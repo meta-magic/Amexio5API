@@ -26,7 +26,7 @@
         },
         {
           "text" : "Checkbox Input",
-          "link" : "checkbox"
+          "link" : "singlecheckbox-demo"
         },
         {
           "text" : "Checkbox Group",
@@ -34,7 +34,7 @@
         },
         {
           "text" : "Rating Input",
-          "link" : "rating"
+          "link" : "rating-demo"
         },
         {
           "text" : "Radio Input",
@@ -42,7 +42,7 @@
         },
         {
           "text" : "Toggle Input",
-          "link" : "toggle"
+          "link" : "toggle-demo"
         },
         {
           "text" : "Typeahhead Input",
@@ -87,10 +87,12 @@
           "icon":"fa fa-id-card-o fa-fw",
           "children": [{
             "text" : "Form",
-            "link" : "card-form-demo"
+            "link" : "card-form-demo",
+            "icon":"fa fa-leaf fa-fw"
           },{
             "text" : "Image",
-            "link" : "card-image-demo"
+            "link" : "card-image-demo",
+            "icon":"fa fa-leaf fa-fw"
           }]
 
         },
@@ -103,6 +105,62 @@
           "text" : "Amexio Row",
           "link" : "row-demo",
           "icon":"fa fa-bars fa-fw"
+        },{
+          "text": "Tab",
+          "icon" : "fa fa-folder fa-fw",
+          "children": [
+            {
+              "text": "Horizontal",
+              "icon" : "fa fa-indent fa-fw",
+              "children":[
+                {
+                  "text": "Basic",
+                  "link":"basic-tab-demo",
+                  "icon":"fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Closable",
+                  "link":"closable-tab-demo",
+                  "icon":"fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Tab with Icon",
+                  "link":"icon-tab-demo",
+                  "icon":"fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Scrollable",
+                  "link":"scrollable-tab-demo",
+                  "icon":"fa fa-leaf fa-fw"
+                }
+              ]
+            },
+            {
+              "text": "Vertical",
+              "icon" : "fa fa-outdent fa-fw",
+              "children":[
+                {
+                  "text": "Left Aligned",
+                  "link":"vertical-tab-demo",
+                  "icon":"fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Right Aligned",
+                  "link":"verticalright-tab-demo",
+                  "icon":"fa fa-leaf fa-fw"
+                }
+              ]
+            }]},
+        {
+          "text":"Steps",
+          "icon":"fa fa-step-forward",
+          "children":[{
+            "text" : "Step Box",
+            "link" : "step-box"
+          },{
+            "text" : "Step Box Icon",
+            "link" : "step-box-icon"
+          }]
         }
       ]
     },

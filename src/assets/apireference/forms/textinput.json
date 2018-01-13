@@ -83,11 +83,6 @@
       "type": "string",
       "default": "null",
       "description":"Set font size to field"
-    },{
-      "name": "fieldIcon",
-      "type": "string",
-      "default": "null",
-      "description":"Set field icon to field"
     }, {
       "name": "hasLabel",
       "type": "boolean",
@@ -98,13 +93,7 @@
       "type": "boolean",
       "default": "false",
       "description":"set enable / disable popover."
-    },{
-      "name": "popoverPlacement",
-      "type": "string",
-      "default": "null",
-      "description":"set popover postion like :top,bottom,right,left"
     }
-
   ],
   "events":[
     {

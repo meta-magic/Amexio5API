@@ -1,108 +1,57 @@
-<amexio-row>
-  <amexio-column [size]="6">
-    <amexio-card>
-      <amexio-pane-header>
-        <h4>Basic Text Field</h4>
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <amexio-text-input [fieldLabel]="'Name'" name="name"
-                           [placeholder]="'Enter name'"
-                           [iconFeedBack]="true"
-        ></amexio-text-input>
-      </amexio-pane-body>
-    </amexio-card>
-  </amexio-column>
-  <amexio-column [size]="6">
-    <amexio-card>
-      <amexio-pane-header>
-        <h4>Input Without Label and Icon feedback</h4>
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <amexio-text-input name="name"
-                           [placeholder]="'Enter name'"
-                           [iconFeedBack]="false"
-                           [hasLabel]="false"
-        ></amexio-text-input>
-      </amexio-pane-body>
-    </amexio-card>
-  </amexio-column>
-</amexio-row>
-<amexio-row>
-  <amexio-column [size]="6">
-    <amexio-card>
-      <amexio-pane-header>
-        <h4>Min/Max Validations</h4>
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <amexio-text-input [enablePopOver]="true"
-                           [fieldLabel]="'Name'" name="name"
-                           [placeholder]="'Enter name'"
-                           [allowBlank]="false" [errorMsg]="'Please enter last name'"
-                           [minLength]="1" [minErrorMsg]="'Minimum 1 char required'"
-                           [maxLength]="10" [maxErrorMsg]="'Maximum 10 char allowed'"
-                           [iconFeedBack]="true"
-        ></amexio-text-input>
-      </amexio-pane-body>
-    </amexio-card>
-  </amexio-column>
-  <amexio-column [size]="6">
-    <amexio-card>
-      <amexio-pane-header>
-        <h4>Disabled Text Field</h4>
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <amexio-text-input name="name"
-                           [fieldLabel]="'Name'"
-                           [placeholder]="'Enter name'"
-                           [disabled]="true"
-        ></amexio-text-input>
-      </amexio-pane-body>
-    </amexio-card>
-  </amexio-column>
-</amexio-row>
-<amexio-row>
-  <amexio-column [size]="6">
-    <amexio-card>
-      <amexio-pane-header>
-        <h4>Font Styling</h4>
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <amexio-text-input [fieldLabel]="'Name'" name="name"
-                           [placeholder]="'Enter name'"
-                           [iconFeedBack]="true"
-                           [fontStyle]="'italic'"
-        ></amexio-text-input>
-      </amexio-pane-body>
-    </amexio-card>
-  </amexio-column>
-  <amexio-column [size]="6">
-    <amexio-card>
-      <amexio-pane-header>
-        <h4>Font Size & Family Styling</h4>
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <amexio-text-input name="name" [fieldLabel]="'Name'"
-                           [placeholder]="'Enter name'"
-                           [fontFamily]="'Times New Roman'"
-                           [fontSize]="'large'"
-        ></amexio-text-input>
-      </amexio-pane-body>
-    </amexio-card>
-  </amexio-column>
-</amexio-row>
-<amexio-row>
-  <amexio-column [size]="6">
-    <amexio-card>
-      <amexio-pane-header>
-        <h4>Input with Pattern</h4>
-      </amexio-pane-header>
-      <amexio-pane-body>
-        <amexio-text-input name="name" [fieldLabel]="'Name'"
-                           [placeholder]="'Enter name'"
-                           [pattern]="'[a-z]'"
-                           [iconFeedBack]="true"
-        ></amexio-text-input>
-      </amexio-pane-body>
-    </amexio-card>
-  </amexio-column>
-</amexio-row>
+<!--Basic Text Field-->
+
+<amexio-text-input fieldLabel="Name" name="name"
+                   placeholder="Enter name"
+                   iconFeedBack="true"
+></amexio-text-input>
+
+<!--Input Without Label and Icon feedback-->
+
+<amexio-text-input name="name"
+                   placeholder="Enter name"
+                   iconFeedBack="false"
+                   hasLabel="false"
+></amexio-text-input>
+
+<!--Min/Max Validations-->
+
+<amexio-text-input enablePopOver="true"
+                   fieldLabel="Name" name="name"
+                   placeholder="Enter name"
+                   allowBlank="false" errorMsg="Please enter last name"
+                   minLength="1" minErrorMsg="Minimum 1 char required"
+                   maxLength="10" maxErrorMsg="Maximum 10 char allowed"
+                   iconFeedBack="true"
+></amexio-text-input>
+
+<!--Disabled Text Field-->
+
+<amexio-text-input name="name"
+                   fieldLabel="Name"
+                   placeholder="Enter name"
+                   disabled="true"
+></amexio-text-input>
+
+<!--Font Styling-->
+
+<amexio-text-input fieldLabel="Name" name="name"
+                   placeholder="Enter name"
+                   iconFeedBack="true"
+                   fontStyle="italic"
+></amexio-text-input>
+
+<!--Font Size & Family Styling-->
+
+<amexio-text-input [fieldLabel]="'Name'" name="name"
+                   [placeholder]="'Enter name'"
+                   [iconFeedBack]="true"
+                   [fontStyle]="'italic'"
+></amexio-text-input>
+
+<!--Input with Pattern-->
+
+<amexio-text-input name="name" [fieldLabel]="'Name'"
+                   [placeholder]="'Enter name'"
+                   [pattern]="'[a-z]'"
+                   [iconFeedBack]="true"
+></amexio-text-input>

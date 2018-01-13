@@ -52,7 +52,7 @@ import {Http} from "@angular/http";
                     <h4>Min/Max Validations</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input enablePopOver="true"
+                    <amexio-text-input enablePopOver="true" [enablePopOver]="true" 
                                        fieldLabel="Name" name="name"
                                        placeholder="Enter name"
                                        allowBlank="false" errorMsg="Please enter last name"

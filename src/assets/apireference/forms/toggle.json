@@ -1,0 +1,22 @@
+{
+  "properties": [
+    {
+      "name": "shape",
+      "type": "string",
+      "default": "round",
+      "description":"Round or Square example shape=round,square "
+    },
+    {
+      "name": "fieldLabel",
+      "type": "string",
+      "default": "null",
+      "description":"field label "
+    }
+  ],
+  "events":[
+    {
+      "name": "onChange",
+      "description":"event fired on toggle component click"
+    }
+  ]
+}

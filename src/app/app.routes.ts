@@ -7,10 +7,20 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: '', redirectTo: 'getting-started', pathMatch: 'full'
   }, {
-    path: 'getting-started', loadChildren: './forms/text/text.module#TextDemoModule'
+    path: 'getting-started', loadChildren: './forms/text/text.demo.module#TextDemoModule'
   }, {
-    path: 'textinput', loadChildren: './forms/text/text.module#TextDemoModule'
+    path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
   },
+  {
+    path: 'rating-demo', loadChildren: './forms/rating/rating.demo.module#RatingDemoModule'
+  },
+  {
+    path: 'toggle-demo', loadChildren: './forms/toggle/toggle.demo.module#ToggleDemoModule'
+  },
+  {
+    path: 'singlecheckbox-demo', loadChildren: './forms/singlecheckbox/singlecheckbox.demo.module#SinglecheckboxDemoModule'
+  },
+
 
   /**Layout Routes*/
   {
@@ -25,6 +35,29 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'row-demo', loadChildren: './layout/row/row.demo.module#RowDemoModule'
   },
+  {
+    path: 'basic-tab-demo', loadChildren: './layout/tab/tab.demo.module#TabDemoModule'
+  },
+  {
+    path: 'closable-tab-demo', loadChildren: './layout/tab/closabletab/closabletab.demo.module#ClosableTabDemoModule'
+  },
+  {
+    path: 'icon-tab-demo', loadChildren: './layout/tab/iconwithtab/iconwithtab.demo.module#IconWithTabDemoModule'
+  },
+  {
+    path: 'scrollable-tab-demo', loadChildren: './layout/tab/scrollabletab/scrollabletab.demo.module#ScrollableTabDemoModule'
+  },
+  {
+    path: 'vertical-tab-demo', loadChildren: './layout/tab/verticaltab/verticaltab.demo.module#VerticalTabDemoModule'
+  },
+  {
+    path: 'verticalright-tab-demo', loadChildren: './layout/tab/verticalrighttab/verticalrighttab.demo.module#VerticalRightTabDemoModule'
+  },
+  {
+    path: 'step-box', loadChildren: './layout/steps/stepbox/stepbox.demo.module#StepBoxDemoModule'
+  },
+
+
 
   /**Chart Routes*/
   {
