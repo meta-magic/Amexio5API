@@ -10,11 +10,11 @@
         },
         {
           "text" : "Email Input",
-          "link" : "email"
+          "link" : "email-demo"
         },
         {
           "text" : "Number Input",
-          "link" : "number"
+          "link" : "number-demo"
         },
         {
           "text" : "Password Input",

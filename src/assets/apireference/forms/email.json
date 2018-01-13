@@ -7,38 +7,10 @@
       "description":"The label of this field"
     },
     {
-      "name": "maxLength",
-      "type": "number",
-      "default": "null",
-      "description":"the largest positive representable number. The largest negative representable number is maxLength."
-    },
-    {
-      "name": "maxErrorMsg",
-      "type": "string",
-      "default": "null",
-      "description":"Error Message required to displayed after validation of maxLength "
-    },   {
-      "name": "minLength",
-      "type": "number",
-      "default": "null",
-      "description":"The smallest positive representable number -- that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
-    },
-    {
-      "name": "minErrorMsg",
-      "type": "string",
-      "default": "null",
-      "description":"Error Message required to displayed after validation of minLength"
-    },
-    {
-      "name": "fieldName",
-      "type": "string",
-      "default": "null",
-      "description":"Field name for text input."
-    }, {
       "name": "pattern",
       "type": "string",
       "default": "null",
-      "description":"Accept RegEx patterns for text fields"
+      "description":"Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
     },{
       "name": "allowBlank",
       "type": "boolean",
@@ -84,25 +56,10 @@
       "default": "null",
       "description":"Set font size to field"
     },{
-      "name": "fieldIcon",
-      "type": "string",
-      "default": "null",
-      "description":"Set field icon to field"
-    }, {
-      "name": "hasLabel",
-      "type": "boolean",
-      "default": "false",
-      "description":"hide/unhide field label"
-    },{
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
       "description":"set enable / disable popover."
-    },{
-      "name": "popoverPlacement",
-      "type": "string",
-      "default": "null",
-      "description":"set popover postion like :top,bottom,right,left"
     }
 
   ],
@@ -123,9 +80,6 @@
     }
   ],
   "css": [
-    {
-      "name": "input-control",
-      "description":"extual form controls—like <input>s,<textarea>s—are styled with the .input-control class"
-    }
+
   ]
 }

@@ -1,0 +1,28 @@
+<!--Basic Number Input-->
+<amexio-number-input [fieldLabel]="'Number Input'"
+                     [placeholder]="'Enter Age'">
+</amexio-number-input>
+
+<!--Number Input With Disable-->
+<amexio-number-input
+  [placeholder]="'Enter age'"
+  [iconFeedBack]="false"
+  [hasLabel]="false" [disabled]="true">
+</amexio-number-input>
+
+<!--Number Input Font Style-->
+<amexio-number-input [fieldLabel]="'Age'"
+                     [placeholder]="'Enter Age'"
+                     [fontStyle]="'italic'">
+</amexio-number-input>
+
+<!--Number Input With Min/Max Validation-->
+
+<amexio-number-input  [enablePopOver]="true" [fieldLabel]="'Age'"
+                      [placeholder]="'Enter age'"
+                      [allowBlank]="false" [errorMsg] ="'Please enter age'"
+                      [minValue]="1"
+                      [minErrorMsg]="'age can not be less than 1'"
+                      [maxValue]="100"  [maxErrorMsg]="'age can not be greater than 100'"
+                      [iconFeedBack]="true"
+></amexio-number-input>

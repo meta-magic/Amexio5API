@@ -5,8 +5,7 @@
       "type": "string",
       "default": "null",
       "description":"The label of this field"
-    },
-    {
+    }, {
       "name": "maxLength",
       "type": "number",
       "default": "null",
@@ -30,16 +29,6 @@
       "description":"Error Message required to displayed after validation of minLength"
     },
     {
-      "name": "fieldName",
-      "type": "string",
-      "default": "null",
-      "description":"Field name for text input."
-    }, {
-      "name": "pattern",
-      "type": "string",
-      "default": "null",
-      "description":"Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
-    },{
       "name": "allowBlank",
       "type": "boolean",
       "default": "false",
@@ -63,11 +52,6 @@
       "description":"Error Message required to displayed after validation"
     },
     {
-      "name": "iconFeedBack",
-      "type": "boolean",
-      "default": "false",
-      "description":"Enable/Disabled validation icon"
-    },{
       "name": "fontStyle",
       "type": "string",
       "default": "null",
@@ -83,17 +67,13 @@
       "type": "string",
       "default": "null",
       "description":"Set font size to field"
-    }, {
-      "name": "hasLabel",
-      "type": "boolean",
-      "default": "false",
-      "description":"hide/unhide field label"
     },{
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
       "description":"set enable / disable popover."
     }
+
   ],
   "events":[
     {
@@ -112,9 +92,6 @@
     }
   ],
   "css": [
-    {
-      "name": "input-control",
-      "description":"extual form controls—like <input>s,<textarea>s—are styled with the .input-control class"
-    }
+
   ]
 }

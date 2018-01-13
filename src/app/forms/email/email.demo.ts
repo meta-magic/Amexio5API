@@ -6,41 +6,42 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'text-demo', template: `
+  selector: 'email-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
-        <h2>Text Input Component</h2>
+        <h2>Email Input Component</h2>
       </amexio-header>
       <amexio-body>
-        <p>Text input component has been created with different configurable attributes for validation (min/max length,
-          allow blank, custom regex), custom error message, help, custom styles.</p>
+        <p>Email input special component has been created, which restrict user to enter only email format. 
+          User can configure attributes for validation(Allow Blank), custom error message, help, custom styles.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card enableHeader="true">
                   <amexio-header>
-                    <h4>Basic Text Field</h4>
+                    <h4>Basic Email Input</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input fieldLabel="Name" name="name"
-                                       placeholder="Enter name"
-                                       iconFeedBack="true" 
-                    ></amexio-text-input>
+                    <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                                        [placeholder]="'Enter Email Id'"
+                                        [allowBlank]="false" [errorMsg] ="'Please Enter Email Id'"
+                                        [enablePopOver]="true"
+                                        [iconFeedBack]="true">
+                    </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h4>Input Without Label and Icon feedback</h4>
+                    <h4>Email Input With Disable</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input name="name"
-                                       placeholder="Enter name"
-                                       iconFeedBack="false"
-                                       hasLabel="false"
-                    ></amexio-text-input>
+                    <amexio-email-input name ="email" [fieldLabel]="'Email Id'"
+                                        [placeholder]="'Enter Email Id'"
+                                        [disabled]="true">
+                    </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -49,86 +50,38 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h4>Min/Max Validations</h4>
+                    <h4>Email Input Font Style</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input enablePopOver="true" [enablePopOver]="true" 
-                                       fieldLabel="Name" name="name"
-                                       placeholder="Enter name"
-                                       allowBlank="false" errorMsg="Please enter last name"
-                                       minLength="1" minErrorMsg="Minimum 1 char required"
-                                       maxLength="10" maxErrorMsg="Maximum 10 char allowed"
-                                       iconFeedBack="true"
-                    ></amexio-text-input>
+                    <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                                        [placeholder]="'Enter Email Id'"
+                                        [iconFeedBack]="true"
+                                        [fontStyle]="'italic'">
+                    </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h4>Disabled Text Field</h4>
+                    <h4>Font Family</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input name="name"
-                                       fieldLabel="Name"
-                                       placeholder="Enter name"
-                                       disabled="true"
-                    ></amexio-text-input>
+                    <amexio-email-input name ="email" [fieldLabel]="'Email Id'"
+                                        [placeholder]="'Enter Email Id'"
+                                        [fontFamily]="'Times New Roman'"
+                                        [fontSize]="'large'">
+                    </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
-            <amexio-row>
-              <amexio-column size="6">
-                <amexio-card enableHeader="true">
-                  <amexio-header>
-                    <h4>Font Styling</h4>
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-text-input fieldLabel="Name" name="name"
-                                       placeholder="Enter name"
-                                       iconFeedBack="true"
-                                       fontStyle="italic"
-                    ></amexio-text-input>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="6">
-                <amexio-card enableHeader="true">
-                  <amexio-header>
-                    <h4>Font Size & Family Styling</h4>
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-text-input [fieldLabel]="'Name'" name="name"
-                                       [placeholder]="'Enter name'"
-                                       [iconFeedBack]="true"
-                                       [fontStyle]="'italic'"
-                    ></amexio-text-input>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
-            <amexio-row>
-              <amexio-column [size]="6">
-                <amexio-card [enableHeader]="true">
-                  <amexio-header>
-                    <h4>Input with Pattern</h4>
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-text-input name="name" [fieldLabel]="'Name'"
-                                       [placeholder]="'Enter name'"
-                                       [pattern]="'[a-z]'"
-                                       [iconFeedBack]="true"
-                    ></amexio-text-input>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
+            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/textinput.json'" 
+                             [httpUrl]="'assets/apireference/forms/email.json'" 
                              [dataReader]="'properties'"
                              [filtering]="false" >
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -142,7 +95,7 @@ import {Http} from "@angular/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [httpMethod]="'get'" 
-                             [httpUrl]="'assets/apireference/forms/textinput.json'" [dataReader]="'events'"
+                             [httpUrl]="'assets/apireference/forms/email.json'" [dataReader]="'events'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -176,7 +129,7 @@ import {Http} from "@angular/http";
 
   `
 })
-export class TextDemo {
+export class EmailDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -191,7 +144,7 @@ export class TextDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/textinput/form.html').subscribe(data => {
+    this.http.get('assets/data/code/forms/email/form.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -199,7 +152,7 @@ export class TextDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/textinput/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/email/form.ts').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

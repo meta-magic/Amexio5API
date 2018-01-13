@@ -12,6 +12,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
   },
   {
+    path: 'email-demo', loadChildren: './forms/email/email.demo.module#EmailDemoModule'
+  },
+  {
+    path: 'number-demo', loadChildren: './forms/number/number.demo.module#NumberDemoModule'
+  },
+  {
     path: 'rating-demo', loadChildren: './forms/rating/rating.demo.module#RatingDemoModule'
   },
   {
