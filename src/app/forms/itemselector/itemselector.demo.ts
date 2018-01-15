@@ -84,6 +84,11 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="Data Source">
+                <ng-container *ngIf="dataSource">
+                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+                </ng-container>
+              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -101,6 +106,7 @@ export class ItemSelectorDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   selectedData: any;
+  dataSource:string;
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -111,7 +117,7 @@ export class ItemSelectorDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-
+    let responseData:any;
     //HTML FILE
     this.http.get('assets/data/code/forms/itemselector/form.html').subscribe(data => {
       responseHtml = data.text();
@@ -126,6 +132,13 @@ export class ItemSelectorDemo {
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
+    });
+    //JSON FILE
+    this.http.get('assets/data/componentdata/selectordata.json').subscribe(data => {
+      responseData = data.text();
+    }, error => {
+    }, () => {
+      this.dataSource = responseData;
     });
 
   }

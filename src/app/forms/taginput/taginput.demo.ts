@@ -87,6 +87,11 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="Data Source">
+                <ng-container *ngIf="dataSource">
+                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+                </ng-container>
+              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -104,6 +109,7 @@ export class TagInputDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   countryNameList: string;
+  dataSource:string;
   onRecordSelect(data:any){
     this.countryNameList=data;
   }
@@ -115,7 +121,7 @@ export class TagInputDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-
+    let responseData:any;
     //HTML FILE
     this.http.get('assets/data/code/forms/taginput/form.html').subscribe(data => {
       responseHtml = data.text();
@@ -130,6 +136,13 @@ export class TagInputDemo {
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
+    });
+    //JSON FILE
+    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
+      responseData = data.text();
+    }, error => {
+    }, () => {
+      this.dataSource = responseData;
     });
 
   }

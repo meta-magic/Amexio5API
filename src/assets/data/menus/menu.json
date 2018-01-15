@@ -103,11 +103,6 @@
               "text": "Button Dropdown",
               "icon": "fa fa-building fa-fw",
               "link": "buttondropdown-demo"
-            },
-            {
-              "text": "Button Split Dropdown",
-              "icon": "fa fa-building-o fa-fw",
-              "link": "drpdwnsplitbtn-demo"
             }
           ]
         }

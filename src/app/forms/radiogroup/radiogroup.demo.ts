@@ -93,6 +93,11 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="Data Source">
+                <ng-container *ngIf="dataSource">
+                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+                </ng-container>
+              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -109,6 +114,7 @@ export class RadioGroupDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
+  dataSource:string;
   radioGroupData: any;
   //selected Checkbox event
   setSelectedGender(data:any){
@@ -134,7 +140,7 @@ export class RadioGroupDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-
+    let responseData:any;
     //HTML FILE
     this.http.get('assets/data/code/forms/radiogroup/form.html').subscribe(data => {
       responseHtml = data.text();
@@ -150,7 +156,13 @@ export class RadioGroupDemo {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-
+  //JSON FILE
+    this.http.get('assets/data/componentdata/radiogroup.json').subscribe(data => {
+      responseData = data.text();
+    }, error => {
+    }, () => {
+      this.dataSource = responseData;
+    });
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

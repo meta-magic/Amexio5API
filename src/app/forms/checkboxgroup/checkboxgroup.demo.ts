@@ -93,6 +93,11 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="Data Source">
+                <ng-container *ngIf="dataSource">
+                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+                </ng-container>
+              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -108,6 +113,7 @@ import {Http} from "@angular/http";
 export class CheckBoxGroupDemo {
   htmlCode: string;
   typeScriptCode: string;
+  dataSource:string;
   copyMsgArray: any[];
   checkboxGroupdata: any;
   //selected Checkbox event
@@ -133,7 +139,7 @@ export class CheckBoxGroupDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-
+    let responseData:any;
     //HTML FILE
     this.http.get('assets/data/code/forms/checkboxgroup/form.html').subscribe(data => {
       responseHtml = data.text();
@@ -149,7 +155,13 @@ export class CheckBoxGroupDemo {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-
+    //TS FILE
+    this.http.get('assets/data/componentdata/checkgroup.json').subscribe(data => {
+      responseData = data.text();
+    }, error => {
+    }, () => {
+      this.dataSource = responseData;
+    });
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

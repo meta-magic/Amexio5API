@@ -80,6 +80,11 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="Data Source">
+                <ng-container *ngIf="dataSource">
+                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+                </ng-container>
+              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -98,7 +103,7 @@ export class TypeAheadDemo {
   copyMsgArray: any[];
   typeAHeadData: any;
   name: string;
-
+  dataSource:string;
   constructor(private http: Http) {
     this.typeAHeadData = {
       "data": [{"sportName": "Cricket", "code": "Ck"}, {"sportName": "Swimming", "code": "Sw"}, {
@@ -116,7 +121,7 @@ export class TypeAheadDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-
+    let responseData:any;
     //HTML FILE
     this.http.get('assets/data/code/forms/typeahead/form.html').subscribe(data => {
       responseHtml = data.text();
@@ -132,6 +137,14 @@ export class TypeAheadDemo {
     }, () => {
       this.typeScriptCode = responseTs;
     });
+    //JSON FILE
+    this.http.get('assets/data/componentdata/typeahead.json').subscribe(data => {
+      responseData = data.text();
+    }, error => {
+    }, () => {
+      this.dataSource = responseData;
+    });
+
 
   }
 
