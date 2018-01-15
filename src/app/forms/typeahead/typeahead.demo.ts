@@ -25,7 +25,7 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-typeahead [dataReader]="'data'"
                                       [key]="'sportName'"
-                                      [displayField]="sportName"
+                                      [displayField]="'sportName'"
                                       [placeholder]="'Search'"
                                       [httpUrl]="'assets/data/componentdata/typeahead.json'"
                                       [httpMethod]="'get'"

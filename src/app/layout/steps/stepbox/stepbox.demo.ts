@@ -31,11 +31,11 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <!--showBlockBox is true for showing step box  -->
                 <p><strong>Step box with clickabel</strong></p>
-                <amexio-steps [showBlockBox]="true" [showIndex]="true" (onBlockClick)="stepBlockClick($event)">
-                  <amexio-step-block [label]="'User'" [active]="user" ></amexio-step-block>
-                  <amexio-step-block [label]="'Shop'" [active]="shop" ></amexio-step-block>
-                  <amexio-step-block [label]="'Payment'" [active]="payment"></amexio-step-block>
-                  <amexio-step-block [label]="'Confirmation'" [active]="confirmation"></amexio-step-block>
+                <amexio-steps [showBlockBox]="true" [showIndex]="true">
+                  <amexio-step-block [label]="'User'" [active]="'user'" ></amexio-step-block>
+                  <amexio-step-block [label]="'Shop'" [active]="'shop'" ></amexio-step-block>
+                  <amexio-step-block [label]="'Payment'" [active]="'payment'"></amexio-step-block>
+                  <amexio-step-block [label]="'Confirmation'" [active]="'confirmation'"></amexio-step-block>
                 </amexio-steps>
               </amexio-column>
             </amexio-row>
