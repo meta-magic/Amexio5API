@@ -12,8 +12,7 @@ import {Http} from "@angular/http";
         <h2>Button Group Component</h2>
       </amexio-header>
       <amexio-body>
-        <p>Button groups are containers for related action amexio-btn-dropdown-items. 
-          They're great when you need to display a group of actions in a bar.
+        <p>Button groups are containers for related action amexio-button.
         </p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
@@ -27,7 +26,7 @@ import {Http} from "@angular/http";
                     <amexio-row>
                    <amexio-column [size]="12">
                      <amexio-btn-group>
-                       <amexio-button [label]="'Secondary'"></amexio-button>
+                       <amexio-button [label]="'Secondary'" (onClick)="getData($event)"></amexio-button>
                        <amexio-button [label]="'primary'"  [type]="'primary'"  ></amexio-button>
                        <amexio-button [label]="'Success'" [type]="'success'" ></amexio-button>
                        <amexio-button [label]="'Danger'" [type]="'danger'" ></amexio-button>
@@ -89,11 +88,18 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
-                      <amexio-column [size]="12">
-                        <amexio-btn-group>
-                          <amexio-button [label]="'Next'" [type]="'primary'" [tooltipMessage]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
-                          <amexio-button [label]="'Download'" [type]="'success'" [tooltipMessage]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
-                          <amexio-button [label]="'Delete'" [type]="'danger'" [tooltipMessage]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                      <amexio-column [size]="6">
+                        <amexio-btn-group  >
+                          <amexio-button [size]="'large'" [label]="'Next'" [type]="'primary'" [tooltipMessage]="'Next'" [icon]="'fa fa-chevron-right'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Download'" [type]="'success'" [tooltipMessage]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Delete'" [type]="'danger'" [tooltipMessage]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                        </amexio-btn-group>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-btn-group >
+                          <amexio-button [size]="'small'" [label]="'Next'" [type]="'primary'" [tooltipMessage]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Download'" [type]="'success'" [tooltipMessage]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Delete'" [type]="'danger'" [tooltipMessage]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>
@@ -106,7 +112,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/buttongroup.json'"
+                             [httpUrl]="'assets/apireference/forms/button.json'"
                              [dataReader]="'properties'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -120,7 +126,7 @@ import {Http} from "@angular/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/buttongroup.json'" [dataReader]="'events'"
+                             [httpUrl]="'assets/apireference/forms/button.json'" [dataReader]="'events'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -158,7 +164,7 @@ export class ButtonGroupDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  sss(ss){
+  getData(ss:any){
     debugger;
   }
 
