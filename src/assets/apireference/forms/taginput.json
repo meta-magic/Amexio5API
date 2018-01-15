@@ -1,0 +1,65 @@
+{
+  "properties": [
+    {
+      "name": "fieldLabel",
+      "type": "string",
+      "default": "null",
+      "description": "The label of this field"
+    },
+    {
+      "name": "key",
+      "type": "string",
+      "default": "null",
+      "description": "The key that must be used while searching in data provided"
+    },
+    {
+      "name": "triggerChar",
+      "type": "number",
+      "default": "1",
+      "description": "The number of characters to trigger search"
+    },
+    {
+      "name": "httpUrl",
+      "type": "string",
+      "default": "null",
+      "description": "REST url for fetching datasource."
+    },
+    {
+      "name": "httpMethod",
+      "type": "string",
+      "default": "null",
+      "description": "Type of HTTP call, POST,GET."
+    },
+    {
+      "name": "dataReader",
+      "type": "string",
+      "default": "null",
+      "description": "Key in JSON datasource for records"
+    },
+    {
+      "name": "displayField",
+      "type": "string",
+      "default": "null",
+      "description": "Name of key inside response data to display on ui."
+    },
+    {
+      "name": "valueField",
+      "type": "string",
+      "default": "null",
+      "description": "Name of key inside response data.use to send to backend"
+    },{
+      "name": "data",
+      "type": "any",
+      "default": "null",
+      "description": "Local data for checkboxGroup."
+    }
+  ],
+  "events": [
+    {
+      "name": "onChange",
+      "description": "fire when select value from input tag "
+    }
+  ],
+  "css": [
+  ]
+}

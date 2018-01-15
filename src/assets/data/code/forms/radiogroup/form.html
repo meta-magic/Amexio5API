@@ -1,0 +1,20 @@
+<!--Horizontal Radio Group with lcoal data-->
+
+<amexio-radio-group [fieldLabel]="'Horizontal Radio Group'" name ="gender"
+                    [dataReader]="'response.data'"
+                    [displayField]="'gender'"
+                    [valueField]="'genderId'"
+                    [horizontal]="true"
+                    [data]="radioGroupData"
+                    (selectedValue)="setSelectedGender($event)">
+</amexio-radio-group>
+
+<!--Vertical Radio Group With Http URL-->
+
+<amexio-radio-group [fieldLabel]="'Vertical RadioGroup'" name ="gender"
+                    [dataReader]="'data'"
+                    [displayField]="'gender'"
+                    [valueField]="'genderId'"
+                    [httpUrl]="'assets/data/componentdata/radiogroup.json'"
+                    (selectedValue)="setSelectedGender($event)">
+</amexio-radio-group>

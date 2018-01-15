@@ -6,59 +6,105 @@
       "children": [
         {
           "text" : "Text Input",
-          "link" : "textinput"
+          "link" : "textinput",
+          "icon" : "fa fa-file-text-o fa-fw"
         },
         {
           "text" : "Email Input",
+          "icon" : "fa fa-envelope-o fa-fw",
           "link" : "email-demo"
         },
         {
           "text" : "Number Input",
+          "icon" : "fa fa-phone fa-fw",
           "link" : "number-demo"
         },
         {
           "text" : "Password Input",
-          "link" : "password"
+          "icon" : "fa fa-text-width fa-fw",
+          "link" : "password-demo"
         },
         {
           "text" : "TextArea Input",
-          "link" : "textarea"
+          "icon" : "fa fa-text-width fa-fw",
+          "link" : "textarea-demo"
         },
         {
           "text" : "Checkbox Input",
+          "icon" : "fa fa-check-square-o",
           "link" : "singlecheckbox-demo"
         },
         {
           "text" : "Checkbox Group",
-          "link" : "checkboxgrp"
+          "icon" : "fa fa-list",
+          "link" : "checkboxgroup-demo"
         },
         {
           "text" : "Rating Input",
+          "icon" : "fa fa-star-half-empty fa-fw",
           "link" : "rating-demo"
         },
         {
           "text" : "Radio Input",
-          "link" : "radio"
+          "icon" : "fa fa-stop-circle-o fa-fw",
+          "link" : "radiogroup-demo"
         },
         {
           "text" : "Toggle Input",
+          "icon" : "fa fa-toggle-on",
           "link" : "toggle-demo"
         },
         {
-          "text" : "Typeahhead Input",
-          "link" : "typeahead"
+          "text": "Slider",
+          "icon" : "fa fa-sliders",
+          "link":"slider-demo"
         },
         {
-          "text" : "Button",
-          "link" : "button"
+          "text" : "Type Ahead Input",
+          "icon" : "fa fa-search-minus fa-fw",
+          "link" : "typeahead-demo"
         },
         {
-          "text" : "Button Group",
-          "link" : "buttongrp"
+          "text": "Tags Input",
+          "icon" : "fa fa-tags",
+          "link" : "taginput-demo"
         },
         {
-          "text" : "Dropdown",
-          "link" : "dropdown"
+          "text": "Date & Time Picker",
+          "icon" : "fa fa-calendar fa-fw",
+          "link":"datepicker-demo"
+        },
+        {
+          "text": "Item Selector",
+          "icon" : "fa fa-exchange fa-fw",
+          "link":"itemselector-demo"
+        },
+        {
+          "text": "Buttons",
+          "icon" : "fa fa-keyboard-o fa-fw",
+          "children": [
+            {
+              "text": "Button",
+              "icon" : "fa fa-building-o fa-fw",
+              "link":"button-demo"
+            },
+            {
+              "text": "ButtonGroup",
+              "icon" : "fa fa-newspaper-o fa-fw",
+              "link":"buttongroup-demo"
+            },
+            {
+              "text": "Button Dropdown",
+              "icon" : "fa fa-building fa-fw",
+              "link":"buttondropdown-demo"
+            },
+            {
+              "text": "Button Split Dropdown",
+              "icon" : "fa fa-building-o fa-fw",
+              "link":"drpdwnsplitbtn-demo"
+            }
+
+          ]
         }
       ]
     },

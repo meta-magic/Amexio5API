@@ -1,0 +1,35 @@
+{
+  "properties": [
+    {
+      "name": "minValue",
+      "type": "number",
+      "default": "null",
+      "description":"Minimum of slider value"
+    },
+    {
+      "name": "maxValue",
+      "type": "number",
+      "default": "null",
+      "description":"Maximum of slider value"
+    },
+    {
+      "name": "stepValue",
+      "type": "number",
+      "default": "null",
+      "description":"Step value in slider"
+    }
+  ],
+  "events":[
+    {
+      "name": "onBlur",
+      "description":"On blur event"
+    },
+   {
+      "name": "focus",
+      "description":"On field focus event"
+    },{
+      "name": "change",
+      "description":"On field value change event"
+    }
+  ]
+}

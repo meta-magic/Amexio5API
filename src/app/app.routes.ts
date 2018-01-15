@@ -18,16 +18,52 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'number-demo', loadChildren: './forms/number/number.demo.module#NumberDemoModule'
   },
   {
+    path: 'password-demo', loadChildren: './forms/password/password.demo.module#PasswordDemoModule'
+  },
+  {
+    path: 'textarea-demo', loadChildren: './forms/textarea/textarea.demo.module#TextareaDemoModule'
+  },
+  {
+    path: 'checkboxgroup-demo', loadChildren: './forms/checkboxgroup/checkboxgroup.demo.module#CheckBoxGroupDemoModule'
+  },
+  {
+    path: 'radiogroup-demo', loadChildren: './forms/radiogroup/radiogroup.demo.module#RadioGroupDemoModule'
+  },
+  {
+    path: 'typeahead-demo', loadChildren: './forms/typeahead/typeahead.demo.module#TypeAheadDemoModule'
+  },
+  {
     path: 'rating-demo', loadChildren: './forms/rating/rating.demo.module#RatingDemoModule'
   },
   {
     path: 'toggle-demo', loadChildren: './forms/toggle/toggle.demo.module#ToggleDemoModule'
   },
   {
+    path: 'slider-demo', loadChildren: './forms/slider/slider.demo.module#SliderDemoModule'
+  },
+  {
     path: 'singlecheckbox-demo', loadChildren: './forms/singlecheckbox/singlecheckbox.demo.module#SinglecheckboxDemoModule'
   },
+  {
+    path: 'datepicker-demo', loadChildren: './forms/datepicker/datepicker.demo.module#DateTimeDemoModule'
+  },
+  {
+    path: 'taginput-demo', loadChildren: './forms/taginput/taginput.demo.module#TagInputDemoModule'
+  },
+  {
+    path: 'itemselector-demo', loadChildren: './forms/itemselector/itemselector.demo.module#ItemSelectorDemoModule'
+  },
 
-
+  /**Button */
+  {
+    path: 'button-demo', loadChildren: './forms/button/button.demo.module#ButtonDemoModule'
+  },
+  {
+    path: 'buttongroup-demo', loadChildren: './forms/buttongroup/buttongroup.demo.module#ButtonGroupDemoModule'
+  },
+  {
+    path: 'buttondropdown-demo', loadChildren: './forms/buttondropdown/buttondropdown.demo.module#ButtonDropDownDemoModule'
+  },
   /**Layout Routes*/
   {
     path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'

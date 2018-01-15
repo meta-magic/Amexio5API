@@ -136,65 +136,7 @@ body {
 
 }
 
-@import "../node_modules/amexio-ng-extensions/themes/default/common.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/input.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/button.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/dropdown.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/paginator.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/inputbox.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/datatable.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/treenode.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/listbox.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/horizontaltreeview.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/sidenav.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/accordion.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/nav.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/navbar.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/tab.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/steps.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/notification.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/cards.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/window.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/carousel.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/navbar.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/rowcol.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/itemselector.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/datapoint.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/progress.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/toggle.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/borderlayout.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/rating.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/taginput.scss";
-
-@import "../node_modules/amexio-ng-extensions/themes/default/datetime.scss";
+@import "../node_modules/amexio-ng-extensions/styles/mdb/mdb-blueberry.scss";
 .material-icons {
   font-size: inherit !important;
 }

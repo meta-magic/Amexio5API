@@ -1,0 +1,39 @@
+{
+  "properties": [
+    {
+      "name": "fieldLabel",
+      "type": "string",
+      "default": "null",
+      "description":"field label "
+    },
+    {
+      "name": "datepicker",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enable/Disable Date Picker "
+    },
+    {
+      "name": "timepicker",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enable/Disable Time Picker "
+    }
+
+  ],
+  "events":[
+    {
+      "name": "onBlur",
+      "description":"On blur event"
+    },
+    {
+      "name": "input",
+      "description":"On input event field."
+    },{
+      "name": "focus",
+      "description":"On field focus event"
+    },{
+      "name": "change",
+      "description":"On field value change event"
+    }
+  ]
+}
