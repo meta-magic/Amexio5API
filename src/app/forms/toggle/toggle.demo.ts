@@ -118,7 +118,7 @@ export class ToggleDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/toggle/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/toggle/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

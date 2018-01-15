@@ -161,7 +161,7 @@ export class ScatterChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/scatterchart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/scatterchart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

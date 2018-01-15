@@ -112,7 +112,7 @@ export class SliderDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/slider/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/slider/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

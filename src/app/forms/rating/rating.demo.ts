@@ -157,7 +157,7 @@ export class RatingDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/rating/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/rating/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

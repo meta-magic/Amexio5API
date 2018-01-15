@@ -131,7 +131,7 @@ export class PasswordDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/password/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/password/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

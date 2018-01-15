@@ -99,7 +99,7 @@ export class GeoChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/map/geochart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/map/geochart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

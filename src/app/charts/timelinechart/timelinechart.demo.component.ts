@@ -98,7 +98,7 @@ export class TimelineChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/timelinechart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/timelinechart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

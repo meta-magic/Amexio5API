@@ -121,7 +121,7 @@ export class ItemSelectorDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/itemselector/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/itemselector/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

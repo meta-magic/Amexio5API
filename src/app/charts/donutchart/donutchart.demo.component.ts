@@ -129,7 +129,7 @@ export class DonutChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/donutchart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/donutchart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

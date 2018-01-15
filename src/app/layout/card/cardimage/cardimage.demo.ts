@@ -112,7 +112,7 @@ export class CardImageDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/card/cardimage/layout.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/card/cardimage/layout.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

@@ -122,7 +122,7 @@ export class SinglecheckboxDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/singlecheckbox/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/singlecheckbox/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

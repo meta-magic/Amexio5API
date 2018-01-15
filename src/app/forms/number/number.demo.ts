@@ -152,7 +152,7 @@ export class NumberDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/number/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/number/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

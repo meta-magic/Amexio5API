@@ -161,7 +161,7 @@ export class ComboChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/combochart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/combochart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

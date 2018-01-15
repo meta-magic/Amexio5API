@@ -146,7 +146,7 @@ export class DateTimePickerDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/datepicker/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/datepicker/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

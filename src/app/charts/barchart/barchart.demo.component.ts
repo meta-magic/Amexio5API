@@ -143,7 +143,7 @@ export class BarChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/barchart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/barchart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

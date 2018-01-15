@@ -108,7 +108,7 @@ export class HistogramChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/histogramchart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/histogramchart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

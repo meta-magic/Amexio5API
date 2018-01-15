@@ -142,7 +142,7 @@ export class CandlestickChart implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/candlestickchart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/candlestickchart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

@@ -68,7 +68,7 @@ export class RowDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/row/layout.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/row/layout.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

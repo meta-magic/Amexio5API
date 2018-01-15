@@ -121,7 +121,7 @@ export class TreeMapDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/map/treemap/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/map/treemap/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

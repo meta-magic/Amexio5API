@@ -216,7 +216,7 @@ export class ColumnDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/column/layout.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/column/layout.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

@@ -199,7 +199,7 @@ export class TextDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/textinput/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/textinput/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

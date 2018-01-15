@@ -125,7 +125,7 @@ export class TagInputDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/taginput/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/taginput/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

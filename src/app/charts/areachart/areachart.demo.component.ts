@@ -130,7 +130,7 @@ export class AreaChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/areachart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/areachart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

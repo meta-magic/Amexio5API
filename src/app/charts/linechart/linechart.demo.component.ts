@@ -125,7 +125,7 @@ export class LineChartDemoComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/linechart/chart.ts').subscribe(data => {
+    this.http.get('assets/data/code/charts/linechart/chart.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

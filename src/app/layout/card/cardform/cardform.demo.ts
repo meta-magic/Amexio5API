@@ -125,7 +125,7 @@ export class CardFormDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/card/layout.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/card/layout.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

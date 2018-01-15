@@ -144,7 +144,7 @@ export class RadioGroupDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/radiogroup/form.ts').subscribe(data => {
+    this.http.get('assets/data/code/forms/radiogroup/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
