@@ -16,7 +16,7 @@ import {
   ],
   imports: [
     BrowserModule,
-    AmexioFormsModule, AmexioLayoutModule, AmexioNavModule, AmexioWidgetModule,AmexioChartsModule,AmexioMapModule,AmexioDashBoardModule,
+    AmexioWidgetModule,AmexioChartsModule,AmexioMapModule,AmexioDashBoardModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
   providers: [CommonDataService,DeviceQueryService,ChartLoaderService,MapLoaderService,DashboardLoaderService],
