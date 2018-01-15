@@ -189,7 +189,7 @@ export class ButtonDemo {
     constructor(private http: Http) {
       this.getHtmlAndTypeScriptCode();
   }
-  switchasyncFlag() {
+  getDta() {
     this.asyncFlag = true;
     setTimeout(() => {
       this.asyncFlag = false;

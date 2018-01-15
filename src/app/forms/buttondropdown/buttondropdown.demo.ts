@@ -6,7 +6,7 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'buttongroup-demo', template: `
+  selector: 'buttondropdown-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
         <h2>DropDown Button Component</h2>
@@ -17,7 +17,7 @@ import {Http} from "@angular/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column [size]="12">
+              <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
                     <h2>DropDown Button</h2>
@@ -33,14 +33,55 @@ import {Http} from "@angular/http";
                     </amexio-row>
                   </amexio-body>
                 </amexio-card>
-
+              </amexio-column>
+              <amexio-column size="6">
+                <amexio-card [enableHeader]="true">
+                  <amexio-header>
+                    <h2> Dropdown Button with size</h2>
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column size="6">
+                        <amexio-btn-dropdown [label]="'Button'" [type]="'primary'" [size]="'large'">
+                          <amexio-btn-dropdown-item [label]="'Link 1'" ></amexio-btn-dropdown-item>
+                          <amexio-btn-dropdown-item [label]="'Link 2'" ></amexio-btn-dropdown-item>
+                        </amexio-btn-dropdown>
+                      </amexio-column>
+                      <amexio-column size="6">
+                        <amexio-btn-dropdown [label]="'Button'" [type]="'primary'" [size]="'small'">
+                          <amexio-btn-dropdown-item [label]="'Link 1'" ></amexio-btn-dropdown-item>
+                          <amexio-btn-dropdown-item [label]="'Link 2'" ></amexio-btn-dropdown-item>
+                        </amexio-btn-dropdown>
+                      </amexio-column>
+                    </amexio-row>
+                  </amexio-body>
+                </amexio-card>
               </amexio-column>
             </amexio-row>
+            <br><br>
+            <amexio-row>
+              <amexio-column size="6">
+                <amexio-card [enableHeader]="true">
+                  <amexio-header>
+                    <h2> Dropdown Button with Disebled link</h2>
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-btn-dropdown [label]="'Disebled Link'" [type]="'primary'" [size]="'default'">
+                        <amexio-btn-dropdown-item [label]="'Disebled'"  [icon]="'fa fa-fullscreen'" [disabled]="true"></amexio-btn-dropdown-item>
+                        <amexio-btn-dropdown-item [label]="'Link 2'" [icon]="'fa fa-trash'"></amexio-btn-dropdown-item>
+                      </amexio-btn-dropdown>
+                    </amexio-row>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/buttongroup.json'"
+                             [httpUrl]="'assets/apireference/forms/buttondropdown.json'"
                              [dataReader]="'properties'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -54,7 +95,7 @@ import {Http} from "@angular/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/buttongroup.json'" [dataReader]="'events'"
+                             [httpUrl]="'assets/apireference/forms/buttondropdown.json'" [dataReader]="'events'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -106,7 +147,7 @@ export class ButtonDropDownDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/buttongroup/form.html').subscribe(data => {
+    this.http.get('assets/data/code/forms/buttondropdown/form.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -114,7 +155,7 @@ export class ButtonDropDownDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/buttongroup/form.text').subscribe(data => {
+    this.http.get('assets/data/code/forms/buttondropdown/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

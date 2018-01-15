@@ -39,8 +39,8 @@
   ],
   "events": [
     {
-      "name": "onClick",
-      "description": "fire when button click "
+      "name": "onItemClick",
+      "description": "fire when button-dropdown item button/link click "
     }
   ],
   "css": [
