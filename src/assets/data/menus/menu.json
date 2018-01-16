@@ -139,7 +139,13 @@
       "text": "Navigation",
       "icon": "fa fa-bars fa-fw",
       "children" : [
+       {
+          "text": "Dockbar",
+          "icon" : "fa fa-bars fa-fw",
+          "link":"dockbar-demo"
+        },
         {
+
           "text" : "Vertical",
           "icon" : "fa fa-indent fa-fw",
           "children" : [

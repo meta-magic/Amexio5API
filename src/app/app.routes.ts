@@ -76,6 +76,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'buttondropdown-demo', loadChildren: './forms/buttondropdown/buttondropdown.demo.module#ButtonDropDownDemoModule'
   },
+
+  /** Navigation*/
+  {
+    path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
+  },
+
   /**Layout Routes*/
   {
     path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'
