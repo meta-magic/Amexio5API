@@ -1,0 +1,35 @@
+
+  import {Component, OnInit} from '@angular/core';
+
+  @Component({
+    selector : 'window-demo',
+    templateUrl : 'window.demo.html'
+  })
+  export class WindowDemo {
+
+  showBasicWindow : boolean;
+  showMaxWindow : boolean;
+  showClosable : boolean;
+  showDialog : boolean;
+ constructor() { }
+
+ ngOnInit() { }
+
+  toggleBasicWindow(){
+   this.showBasicWindow = true;
+  }
+
+  toggleMaxWindow(){
+    this.showMaxWindow = true;
+  }
+
+  toggleClosable(){
+    this.showClosable = true;
+  }
+
+  toggleDialog(){
+    this.showDialog = true;
+  }
+  constructor() {
+  }
+  }
