@@ -6,49 +6,56 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'dropdownbasic', template: `
+  selector: 'image-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
-        <h2>Basic Dropdown Component</h2>
+        <h2>Image Component</h2>
       </amexio-header>
       <amexio-body>
-        <p>Drop-Down component has been created to render N numbers of drop-down items based on data-set configured.
-          Data-set can be configured using HTTP call OR Define fix number of dropdown-items. 
-          User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.
-        </p>
+        <p>An image is an artifact that depicts visual perception.amexio support icons (material / font-awesome)/image</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column size="6">
-                <amexio-card enableHeader="true">
+              <amexio-column size="12">
+                <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h4>Dropdown Component</h4>
+                    <h2>Image</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
+                      <!--<amexio-column size="6">-->
+                        <!--<amexio-row>-->
+                          <!--<amexio-column size="12">-->
+                            <!--Material Icon-->
+                            <!--<amexio-image [imageClass]="'material-icons'" [mdbClass]="'cloud'" [tooltipMessage]="'Material cloud icon'"></amexio-image>-->
+                          <!--</amexio-column>-->
+                        <!--</amexio-row>-->
+                       <!--</amexio-column>-->
+
                       <amexio-column size="12">
-                        <amexio-dropdown [(ngModel)]="sportName"
-                                         [placeholder]="'Choose'"
-                                         name="sportName"
-                                         [dataReader]="'data'"
-                                         [fieldLabel]="'Choose Sport'"
-                                         [httpUrl]="'assets/data/componentdata/sports.json'"
-                                         [httpMethod]="'get'"
-                                         [displayField]="'sportName'"
-                                         [valueField]="'code'"
-                        >
-                        </amexio-dropdown>
+                        <amexio-row>
+                          <amexio-column size="12">
+                            Font Awesome Icon
+                            <amexio-image [imageClass]="'fa fa-address-book fa-lg'" [tooltipMessage]="'Fontawesome address book'"></amexio-image>
+                          </amexio-column>
+                        </amexio-row>
+                      </amexio-column>                    
+                    </amexio-row>
+                    <br>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <amexio-card  enableHeader="true">
+                          <amexio-header><h2>Simple Image</h2></amexio-header>
+                          <amexio-body>
+                            <amexio-row>
+                              <amexio-column size="12">
+                                <amexio-image [imagePath]="'./../../../assets/images/soap-bubble.jpg'"  [cClass]="'img-style'" [tooltipMessage]="'Image'"></amexio-image>
+                              </amexio-column>
+                            </amexio-row>
+                          </amexio-body>
+                        </amexio-card>
                       </amexio-column>
                     </amexio-row>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column [size]="6">
-                <amexio-card>
-                  <amexio-body>
-                  <ng-container *ngIf="sportName">
-                    {{sportName}}
-                  </ng-container>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -57,7 +64,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/dropdown.json'"
+                             [httpUrl]="'assets/apireference/media/image.json'"
                              [dataReader]="'properties'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -70,15 +77,16 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/dropdown.json'" [dataReader]="'events'"
+            <amexio-datagrid title="Event" [columnToggle]="false"
+                             [httpMethod]="'get'"
+                             [httpUrl]="'assets/apireference/media/image.json'"
+                             [dataReader]="'events'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+               <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-
           </amexio-tab>
           <amexio-tab title="Source">
             <amexio-vertical-tab-view>
@@ -93,11 +101,6 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
-              <amexio-tab title="Data Source">
-                <ng-container *ngIf="dataSource">
-                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
-                </ng-container>
-              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -107,15 +110,12 @@ import {Http} from "@angular/http";
       </amexio-body>
     </amexio-card>
     <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
-
   `
 })
-export class DropDownDemo {
+export class ImageDemo {
   htmlCode: string;
   typeScriptCode: string;
-  dataSource:string;
   copyMsgArray: any[];
-  sportName:string;
 
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
@@ -125,9 +125,9 @@ export class DropDownDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-    let responseData:any;
+
     //HTML FILE
-    this.http.get('assets/data/code/forms/dropdown/form.html').subscribe(data => {
+    this.http.get('assets/data/code/media/image/media.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -135,19 +135,13 @@ export class DropDownDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/dropdown/form.text').subscribe(data => {
+    this.http.get('assets/data/code/media/image/media.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-    //TS FILE
-    this.http.get('assets/data/componentdata/sports.json').subscribe(data => {
-      responseData = data.text();
-    }, error => {
-    }, () => {
-      this.dataSource = responseData;
-    });
+
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
