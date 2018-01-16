@@ -7,16 +7,12 @@
       "description": "The label of this field"
     },
     {
-      "name": "column",
+      "name": "placeholder",
       "type": "string",
       "default": "null",
-      "description": "Divide checkbox option into equal column."
-    }, {
-      "name": "horizontal",
-      "type": "boolean",
-      "default": "false",
-      "description": "set true for horizontal checkbox "
+      "description": "show placeholder inside dropdown component"
     },
+
     {
       "name": "httpUrl",
       "type": "string",
@@ -51,12 +47,24 @@
       "type": "string",
       "default": "null",
       "description": "Key in JSON datasource for records"
+    },
+    {
+      "name": "searchBox",
+      "type": "boolean",
+      "default": "false",
+      "description": "true for search box enable"
+    },{
+      "name": "multiSelect",
+      "type": "boolean",
+      "default": "false",
+      "description": "true for select multiple options"
+
     }
   ],
   "events": [
     {
-      "name": "selectedValue",
-      "description": "fire when check box click "
+      "name": "onSingleSelect",
+      "description": "fire when drop item click "
     }
   ],
   "css": [

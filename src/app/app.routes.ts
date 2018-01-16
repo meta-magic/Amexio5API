@@ -39,6 +39,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'toggle-demo', loadChildren: './forms/toggle/toggle.demo.module#ToggleDemoModule'
   },
   {
+    path: 'fileupload-demo', loadChildren: './forms/fileupload/fileupload.demo.module#FileUploadDemoModule'
+  },
+  {
     path: 'slider-demo', loadChildren: './forms/slider/slider.demo.module#SliderDemoModule'
   },
   {
@@ -53,7 +56,16 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'itemselector-demo', loadChildren: './forms/itemselector/itemselector.demo.module#ItemSelectorDemoModule'
   },
-
+  /** Drop Down*/
+  {
+    path: 'dropdownbasic', loadChildren: './forms/dropdown/dropdown.demo.module#DropDownDemoModule'
+  },
+  {
+    path: 'dropdownfilter', loadChildren: './forms/dropdownfilter/dropdownfilter.demo.module#DropDownFilterDemoModule'
+  },
+  {
+    path: 'dropdownmulti', loadChildren: './forms/dropdownmulti/dropdownmulti.demo.module#DropDownMultiDemoModule'
+  },
   /**Button */
   {
     path: 'button-demo', loadChildren: './forms/button/button.demo.module#ButtonDemoModule'
