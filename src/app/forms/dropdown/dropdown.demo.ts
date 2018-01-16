@@ -35,8 +35,7 @@ import {Http} from "@angular/http";
                                          [httpUrl]="'assets/data/componentdata/sports.json'"
                                          [httpMethod]="'get'"
                                          [displayField]="'sportName'"
-                                         [valueField]="'code'"
-                                         (onSingleSelect)="getSingleVal($event)">
+                                         [valueField]="'code'">
                         </amexio-dropdown>
                       </amexio-column>
                     </amexio-row>
@@ -115,13 +114,8 @@ export class DropDownDemo {
   typeScriptCode: string;
   dataSource:string;
   copyMsgArray: any[];
-  dropDownDatadata: any;
   sportName:string;
-  //selected Checkbox event
-  getSingleVal(data:any){
-    debugger;
-    this.dropDownDatadata=data;
-  }
+
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
