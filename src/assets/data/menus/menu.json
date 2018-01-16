@@ -50,6 +50,28 @@
           "link": "taginput-demo"
         },
         {
+          "text": "DropDown",
+          "icon" : "fa fa-caret-square-o-down fa-fw",
+          "children": [
+            {
+              "text": "Basic",
+              "icon" : "fa fa-caret-down fa-fw",
+              "link":"dropdownbasic"
+            },
+            {
+              "text": "Filter Search",
+              "icon" : "fa fa-arrow-circle-down fa-fw",
+              "link":"dropdownfilter"
+            },
+            {
+              "text": "Multi Select",
+              "icon" : "fa fa-chevron-circle-down fa-fw",
+              "link":"dropdownmulti"
+            }
+
+          ]
+        },
+        {
           "text": "Form Utilities",
           "icon": "fa fa-clone fa-fw",
           "children": [
@@ -72,6 +94,11 @@
               "text": "Toggle Input",
               "icon": "fa fa-toggle-on",
               "link": "toggle-demo"
+            },
+            {
+              "text": "File Upload",
+              "icon" : "fa fa-file fa-fw",
+              "link":"fileupload-demo"
             },
             {
               "text": "Slider",
