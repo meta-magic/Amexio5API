@@ -123,7 +123,7 @@ export class TypeAheadDemo {
     let responseTs: any;
     let responseData:any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/typeahead/form.html').subscribe(data => {
+    this.http.get('assets/data/code/forms/typehead/form.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -131,7 +131,7 @@ export class TypeAheadDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/typeahead/form.text').subscribe(data => {
+    this.http.get('assets/data/code/forms/typehead/form.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
