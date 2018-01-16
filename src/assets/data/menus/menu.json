@@ -111,16 +111,45 @@
     {
       "text": "Navigation",
       "icon": "fa fa-bars fa-fw",
-      "children": [
+      "children" : [
         {
-          "text": "SideNav",
-          "icon": "fa fa-sitemap",
-          "link": "sidenav"
+          "text" : "Vertical",
+          "icon" : "fa fa-indent fa-fw",
+          "children" : [
+            {
+              "text" : "Simple Menu Bar",
+              "icon" : "",
+              "link" : ""
+            },
+            {
+              "text" : "Menu Bar with template",
+              "icon" : "",
+              "link" : ""
+            },
+            {
+              "text" : "Menu Bar at bottom",
+              "icon" : "",
+              "link" : ""
+            }
+          ]
         },
         {
-          "text": "Pagination",
-          "icon": "fa fa-camera",
-          "link": "paginator"
+          "text" : "Horizontal",
+          "icon": "fa fa-outdent fa-fw",
+          "children": [
+                {
+                  "text" : "Side Menu Bar",
+                  "icon" : ""
+                },
+                {
+                  "text" : "Side Menu with template",
+                  "icon" : ""
+                },
+                {
+                  "text" : "Right Side Menu",
+                  "icon" : ""
+                }
+              ]
         }
       ]
     },
@@ -208,13 +237,35 @@
           "children": [
             {
               "text": "Step Box",
-              "link": "step-box"
+              "link": "step-box",
+              "icon" : ""
             },
             {
               "text": "Step Box Icon",
-              "link": "step-box-icon"
+              "link": "step-box-icon",
+              "icon": ""
             }
           ]
+        },
+        {
+          "text" : "Accordion",
+          "icon" : "fa fa-bars fa-fw",
+          "link" : ""
+        },
+        {
+          "text" : "Carousel",
+          "icon" : "fa fa-indent",
+          "link" : ""
+        },
+        {
+          "text" : "Window Pane",
+          "icon" : "fa fa-window-maximize",
+          "link" : ""
+        },
+        {
+          "text" : "Fieldset",
+          "icon": "fa fa-id-card-o",
+          "link" : ""
         }
       ]
     },
