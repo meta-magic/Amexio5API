@@ -2,6 +2,7 @@
  * Created by pratik on 16/1/18.
  */
 import { Component, OnInit } from '@angular/core';
+import {Http} from "@angular/http";
 
 @Component({
  selector: 'fieldset-demo',
@@ -66,7 +67,7 @@ import { Component, OnInit } from '@angular/core';
          <amexio-tab title="API Reference">
            <amexio-datagrid title="Properties" [columnToggle]="false"
                             [httpMethod]="'get'"
-                            [httpUrl]="'assets/apireference/layout/accordion/acc.json'"
+                            [httpUrl]="'assets/apireference/layout/fieldset/fieldset.json'"
                             [dataReader]="'properties'"
                             [filtering]="false" >
              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -79,23 +80,7 @@ import { Component, OnInit } from '@angular/core';
                                        [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 
-
-           <amexio-datagrid title="Events" [columnToggle]="false"
-                            [httpMethod]="'get'"
-                            [httpUrl]="'assets/apireference/layout/accordion/acc_event.json'"
-                            [dataReader]="'properties'"
-                            [filtering]="false" >
-             <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
-                                       [text]="'Name'"></amexio-data-table-column>
-             <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
-                                       [text]="'Type'"></amexio-data-table-column>
-             <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
-                                       [text]="'Default'"></amexio-data-table-column>
-             <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
-                                       [text]="'Description'"></amexio-data-table-column>
-           </amexio-datagrid>
-
-
+           
          </amexio-tab>
          <amexio-tab title="Source">
            <amexio-vertical-tab-view>
@@ -121,8 +106,50 @@ import { Component, OnInit } from '@angular/core';
  `
 })
 
-export class FieldSetDemoComponent implements OnInit {
- constructor() { }
+export class FieldSetDemoComponent  {
+  htmlCode: string;
+  typeScriptCode: string;
+  copyMsgArray: any[];
+  asyncFlag : boolean;
+  constructor(private http: Http) {
+    this.getHtmlAndTypeScriptCode();
+  }
+  getDta() {
+    this.asyncFlag = true;
+    setTimeout(() => {
+      this.asyncFlag = false;
+    }, 3000);
+  }
+  //TO LOAD HTML AND TYPESCRIPT CODE
+  getHtmlAndTypeScriptCode() {
+    let responseHtml: any;
+    let responseTs: any;
 
- ngOnInit() { }
+    //HTML FILE
+    this.http.get('assets/data/code/layout/fieldset/fieldset.html').subscribe(data => {
+      responseHtml = data.text();
+    }, error => {
+    }, () => {
+      this.htmlCode = responseHtml;
+    });
+
+    //TS FILE
+    this.http.get('assets/data/code/layout/fieldset/fieldset.text').subscribe(data => {
+      responseTs = data.text();
+    }, error => {
+    }, () => {
+      this.typeScriptCode = responseTs;
+    });
+
+  }
+
+  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
+  onCopyClick() {
+    if (this.copyMsgArray.length >= 1) {
+      this.copyMsgArray = [];
+      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+    } else {
+      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+    }
+  }
 }

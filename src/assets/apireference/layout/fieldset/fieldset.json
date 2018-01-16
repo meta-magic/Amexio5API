@@ -1,0 +1,15 @@
+{
+  "properties": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "",
+      "description":"Title for fieldset"
+    },{
+      "name": "collapsible",
+      "type": "boolean",
+      "default": "",
+      "description":"set value true for collapsible fieldset"
+    }
+  ]
+}
