@@ -9,13 +9,14 @@ import {CommonModule} from "@angular/common";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
+import {SharedModule} from "../../shared.module";
 
 const routes: Routes = [
   { path: '', component: AccordionDemoComponent },
 ];
 
 @NgModule({
-  imports: [CommonModule,HttpModule,FormsModule,AmexioWidgetModule,RouterModule.forChild(routes)],
+  imports: [CommonModule,HttpModule,FormsModule,AmexioWidgetModule,SharedModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
   declarations : [AccordionDemoComponent]
 })

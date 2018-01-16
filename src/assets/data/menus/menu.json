@@ -288,17 +288,17 @@
         {
           "text" : "Carousel",
           "icon" : "fa fa-indent",
-          "link" : ""
+          "link" : "carousel"
         },
         {
           "text" : "Window Pane",
           "icon" : "fa fa-window-maximize",
-          "link" : ""
+          "link" : "window"
         },
         {
           "text" : "Fieldset",
           "icon": "fa fa-id-card-o",
-          "link" : ""
+          "link" : "fieldset"
         }
       ]
     },

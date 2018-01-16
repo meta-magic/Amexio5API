@@ -122,6 +122,15 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path : 'accordion', loadChildren : './panes/accordion/accordion.demo.module#AccordionDemoModule'
   },
+  {
+    path : 'carousel', loadChildren : './panes/carousel/carousel.demo.module#CarouselDemoModule'
+  },
+  {
+    path : 'fieldset', loadChildren : './panes/fieldset/fieldset.demo.module#FieldSetDemoModule'
+  },
+  {
+    path : 'window', loadChildren : './panes/window/window.demo.module#WindowDemoModule'
+  },
 
 
   /**Chart Routes*/
