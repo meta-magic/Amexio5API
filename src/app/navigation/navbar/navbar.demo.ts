@@ -17,13 +17,16 @@ import {Http} from "@angular/http";
           <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column [size]="6">
-                <amexio-nav [title]="'Amexio'" [logo]="'./assets/images/logos/amexio-logo.png'">
-                  <amexio-nav-item position-center *ngFor="let topMenu of topMenuData">
-                    <a style="padding-left: 30px;color: white;text-decoration:none;cursor: pointer" 
-                       [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
-                  </amexio-nav-item>
-                </amexio-nav>
+              <amexio-column [size]="12">
+                <div class="navbardemo">
+                  <amexio-nav [title]="'Amexio'" [logo]="'./assets/images/logos/amexio-logo.png'">
+                    <amexio-nav-item position-center *ngFor="let topMenu of topMenuData">
+                      <a style="padding-left: 30px;color: white;text-decoration:none;cursor: pointer"
+                         [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
+                    </amexio-nav-item>
+                  </amexio-nav>
+                </div>
+               
               </amexio-column>
             </amexio-row>
           
