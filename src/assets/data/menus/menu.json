@@ -299,6 +299,11 @@
           "text" : "Fieldset",
           "icon": "fa fa-id-card-o",
           "link" : "fieldset"
+        },
+        {
+          "text" : "Border Layout",
+          "icon": "fa fa-id-card-o",
+          "link" : "border"
         }
       ]
     },
