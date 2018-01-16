@@ -1,0 +1,35 @@
+{
+  "properties": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "null",
+      "description": "title of navbar."
+    },{
+      "name": "logo",
+      "type": "string",
+      "default": "null",
+      "description": "logo of navbar."
+    }
+  ],
+  "propertiesitem": [
+    {
+      "name": "position-center",
+      "type": "string",
+      "default": "null",
+      "description": "show the content in center. <amexio-nav-item position-center></amexio-nav-item>."
+    },
+    {
+      "name": "position-left",
+      "type": "string",
+      "default": "null",
+      "description": "show the content left side .<amexio-nav-item position-left></amexio-nav-item>."
+    },
+    {
+      "name": "position-right",
+      "type": "string",
+      "default": "null",
+      "description": "show the content right side. <amexio-nav-item position-right></amexio-nav-item>."
+    }
+  ]
+}

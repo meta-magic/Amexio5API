@@ -6,58 +6,32 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'dropdownfilter', template: `
+  selector: 'navbar-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
-        <h2>Dropdown Filter Component</h2>
+        <h2>Nav Bar Component</h2>
       </amexio-header>
       <amexio-body>
-        <p>Drop-Down component has been created to render N numbers of drop-down items based on data-set configured.
-          Data-set can be configured using HTTP call OR Define fix number of dropdown-items. 
-          User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.
+        <p>The Nav Bar Component is a familiar top navigation pattern for users.
         </p>
-        <amexio-tab-view>
+          <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column size="6">
-                <amexio-card enableHeader="true">
-                  <amexio-header>
-                    <h4>Dropdown Filter Component</h4>
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-row>
-                      <amexio-column size="12">
-                        <amexio-dropdown [(ngModel)]="countryCode1"
-                                         [placeholder]="'Choose'"
-                                         name="countryCode1"
-                                         [searchBox]="true"
-                                         [dataReader]="'data'"
-                                         [fieldLabel]="'Choose Country'"
-                                         [httpUrl]="'assets/data/componentdata/country.json'"
-                                         [httpMethod]="'get'"
-                                         [displayField]="'countryName'"
-                                         [valueField]="'countryCode1'">
-                        </amexio-dropdown>
-                      </amexio-column>
-                    </amexio-row>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card>
-                  <amexio-body>
-                  <ng-container *ngIf="countryCode1">
-                    {{countryCode1}}
-                  </ng-container>
-                  </amexio-body>
-                </amexio-card>
+                <amexio-nav [title]="'Amexio'" [logo]="'./assets/images/logos/amexio-logo.png'">
+                  <amexio-nav-item position-center *ngFor="let topMenu of topMenuData">
+                    <a style="padding-left: 30px;color: white;text-decoration:none;cursor: pointer" 
+                       [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
+                  </amexio-nav-item>
+                </amexio-nav>
               </amexio-column>
             </amexio-row>
+          
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
+            <amexio-datagrid title="Properties:amexio-nav" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/dropdown.json'"
+                             [httpUrl]="'assets/apireference/navigation/navbar.json'"
                              [dataReader]="'properties'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -70,8 +44,10 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/dropdown.json'" [dataReader]="'events'"
+            <amexio-datagrid title="Properties:amexio-nav-item" [columnToggle]="false"
+                             [httpMethod]="'get'"
+                             [httpUrl]="'assets/apireference/navigation/navbar.json'"
+                             [dataReader]="'propertiesitem'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -110,13 +86,37 @@ import {Http} from "@angular/http";
 
   `
 })
-export class DropDownFilterDemo {
+export class NavbarDemo {
   htmlCode: string;
   typeScriptCode: string;
-  dataSource:string;
   copyMsgArray: any[];
-  countryCode1:string;
+  dataSource:any;
+  topMenuData:any;
   constructor(private http: Http) {
+    this.topMenuData = JSON.parse(`[
+    {
+      "label" : "Home"
+    },
+    {
+      "label" : "Features"
+    },{
+    
+      "label" : "Roadmap"
+    },
+    {
+      "label" : "Downloads"
+    },
+    {
+      "label" : "Forum"
+    },
+    {
+      "label" : "Blogs"
+    },
+    {
+      "label" : "MetaMagic"
+    }
+  ]
+`);
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -124,9 +124,9 @@ export class DropDownFilterDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-    let responseData:any;
+  let datasourceData:any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/dropdownfilter/form.html').subscribe(data => {
+    this.http.get('assets/data/code/navigation/navbar/navigation.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -134,18 +134,18 @@ export class DropDownFilterDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/dropdownfilter/form.text').subscribe(data => {
+    this.http.get('assets/data/code/navigation/navbar/navigation.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //TS FILE
-    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
-      responseData = data.text();
+    this.http.get('assets/data/componentdata/navbar.json').subscribe(data => {
+      datasourceData = data.text();
     }, error => {
     }, () => {
-      this.dataSource = responseData;
+      this.dataSource = datasourceData;
     });
   }
 

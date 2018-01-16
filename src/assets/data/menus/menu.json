@@ -145,44 +145,33 @@
           "link":"dockbar-demo"
         },
         {
+          "text": "Notification",
+          "icon" : "fa fa-comments fa-fw",
+          "link":"notification-demo"
+        },
+        {
 
-          "text" : "Vertical",
+          "text" : "Vertical Menu Bar",
           "icon" : "fa fa-indent fa-fw",
           "children" : [
             {
-              "text" : "Simple Menu Bar",
-              "icon" : "",
-              "link" : ""
-            },
-            {
-              "text" : "Menu Bar with template",
-              "icon" : "",
-              "link" : ""
-            },
-            {
-              "text" : "Menu Bar at bottom",
-              "icon" : "",
-              "link" : ""
+              "text" : "Side Nav Bar",
+              "icon": "fa fa-leaf fa-fw",
+              "link":"sidenav-demo"
             }
+
           ]
         },
         {
-          "text" : "Horizontal",
+          "text" : "Horizontal Menu Bar",
           "icon": "fa fa-outdent fa-fw",
           "children": [
-                {
-                  "text" : "Side Menu Bar",
-                  "icon" : ""
-                },
-                {
-                  "text" : "Side Menu with template",
-                  "icon" : ""
-                },
-                {
-                  "text" : "Right Side Menu",
-                  "icon" : ""
-                }
-              ]
+            {
+              "text" : "Nav Bar",
+              "icon": "fa fa-leaf fa-fw",
+              "link":"navbar-demo"
+            }
+          ]
         }
       ]
     },

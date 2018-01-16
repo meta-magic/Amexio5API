@@ -63,8 +63,18 @@
   ],
   "events": [
     {
-      "name": "onSingleSelect",
-      "description": "fire when drop item click "
+      "name": "onBlur",
+      "description":"On blur event"
+    },
+    {
+      "name": "input",
+      "description":"On input event field."
+    },{
+      "name": "focus",
+      "description":"On field focus event"
+    },{
+      "name": "change",
+      "description":"On field value change event"
     }
   ],
   "css": [

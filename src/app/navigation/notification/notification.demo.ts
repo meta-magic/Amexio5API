@@ -6,58 +6,57 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'dropdownfilter', template: `
+  selector: 'notification-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
-        <h2>Dropdown Filter Component</h2>
+        <h2>App Notification's</h2>
       </amexio-header>
       <amexio-body>
-        <p>Drop-Down component has been created to render N numbers of drop-down items based on data-set configured.
-          Data-set can be configured using HTTP call OR Define fix number of dropdown-items. 
-          User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.
-        </p>
+        <p>Notification provides a way to let user know through pop-up messages.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card enableHeader="true">
-                  <amexio-header>
-                    <h4>Dropdown Filter Component</h4>
-                  </amexio-header>
+                <amexio-card [enableHeader]="true">
+                  <amexio-header><h2>Top Notification</h2></amexio-header>
                   <amexio-body>
-                    <amexio-row>
-                      <amexio-column size="12">
-                        <amexio-dropdown [(ngModel)]="countryCode1"
-                                         [placeholder]="'Choose'"
-                                         name="countryCode1"
-                                         [searchBox]="true"
-                                         [dataReader]="'data'"
-                                         [fieldLabel]="'Choose Country'"
-                                         [httpUrl]="'assets/data/componentdata/country.json'"
-                                         [httpMethod]="'get'"
-                                         [displayField]="'countryName'"
-                                         [valueField]="'countryCode1'">
-                        </amexio-dropdown>
-                      </amexio-column>
-                    </amexio-row>
+                    <amexio-notification [messageData]="topMessageArray"
+                                         [verticalposition]="'top'"
+                                         [horizontalposition]="'right'" [autodismissmsg]="true"
+                                         [autodismissmsginterval]="2000">
+                    </amexio-notification>
+                    <amexio-button (onClick)="topNotification()"
+                                   [label]="'Info Popup'" [type]="'primary'"
+                                   [tooltipMessage]="'Primary Button'">
+                    </amexio-button>
                   </amexio-body>
                 </amexio-card>
+              
               </amexio-column>
-              <amexio-column [size]="6">
-                <amexio-card>
+              <amexio-column size="6">
+                <amexio-card [enableHeader]="true">
+                  <amexio-header><h2>Bottom Notification</h2></amexio-header>
                   <amexio-body>
-                  <ng-container *ngIf="countryCode1">
-                    {{countryCode1}}
-                  </ng-container>
+                    <amexio-notification [messageData]="bottomMessageArray"
+                                         [verticalposition]="'bottom'"
+                                         [horizontalposition]="'right'" [autodismissmsg]="true"
+                                         [autodismissmsginterval]="2000">
+                    </amexio-notification>
+                    <amexio-button (onClick)="bottomNotification()"
+                                   [label]="'Info On Bottom'" [type]="'primary'"
+                                   [tooltipMessage]="'Primary Button'">
+                    </amexio-button>
                   </amexio-body>
                 </amexio-card>
+             
               </amexio-column>
             </amexio-row>
+           
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
+            <amexio-datagrid title="API Reference : amexio-dockbar" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/dropdown.json'"
+                             [httpUrl]="'assets/apireference/navigation/notification.json'"
                              [dataReader]="'properties'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -66,15 +65,6 @@ import {Http} from "@angular/http";
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
-                                        [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid>
-            <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/dropdown.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
-                                        [text]="'Name'"></amexio-data-table-column>
               <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
@@ -93,11 +83,6 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
-              <amexio-tab title="Data Source">
-                <ng-container *ngIf="dataSource">
-                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
-                </ng-container>
-              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -110,12 +95,18 @@ import {Http} from "@angular/http";
 
   `
 })
-export class DropDownFilterDemo {
+export class NotificationDemo {
   htmlCode: string;
   typeScriptCode: string;
-  dataSource:string;
   copyMsgArray: any[];
-  countryCode1:string;
+  topMessageArray:any=[];
+  bottomMessageArray:any=[];
+  topNotification(){
+    this.topMessageArray.push('Top Notification!!!')
+  }
+  bottomNotification(){
+    this.bottomMessageArray.push('Bootom Notification!!!')
+  }
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -124,9 +115,9 @@ export class DropDownFilterDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-    let responseData:any;
+
     //HTML FILE
-    this.http.get('assets/data/code/forms/dropdownfilter/form.html').subscribe(data => {
+    this.http.get('assets/data/code/navigation/notification/navigation.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -134,19 +125,13 @@ export class DropDownFilterDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/dropdownfilter/form.text').subscribe(data => {
+    this.http.get('assets/data/code/navigation/notification/navigation.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-    //TS FILE
-    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
-      responseData = data.text();
-    }, error => {
-    }, () => {
-      this.dataSource = responseData;
-    });
+
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

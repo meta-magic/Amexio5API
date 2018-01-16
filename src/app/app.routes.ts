@@ -81,7 +81,15 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
   },
-
+  {
+    path: 'notification-demo', loadChildren: './navigation/notification/notification.demo.module#NotificationDemoModule'
+  },
+  {
+    path: 'sidenav-demo', loadChildren: './navigation/sidenav/sidenav.demo.module#SideNavDemoModule'
+  },
+  {
+    path: 'navbar-demo', loadChildren: './navigation/navbar/navbar.demo.module#NavBarDemoModule'
+  },
   /**Layout Routes*/
   {
     path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'

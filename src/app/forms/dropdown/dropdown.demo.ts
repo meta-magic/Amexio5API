@@ -27,7 +27,7 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column size="12">
-                        <amexio-dropdown [(ngModel)]="sportName"
+                        <amexio-dropdown [ngModel]="sportName"
                                          [placeholder]="'Choose'"
                                          name="sportName"
                                          [dataReader]="'data'"
@@ -36,7 +36,7 @@ import {Http} from "@angular/http";
                                          [httpMethod]="'get'"
                                          [displayField]="'sportName'"
                                          [valueField]="'code'"
-                                         (onItemClick)="getSingleVal($event)">
+                                         (onSingleSelect)="getSingleVal($event)">
                         </amexio-dropdown>
                       </amexio-column>
                     </amexio-row>
@@ -119,6 +119,7 @@ export class DropDownDemo {
   sportName:string;
   //selected Checkbox event
   getSingleVal(data:any){
+    debugger;
     this.dropDownDatadata=data;
   }
   constructor(private http: Http) {

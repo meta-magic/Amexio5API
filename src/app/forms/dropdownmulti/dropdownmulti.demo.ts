@@ -44,7 +44,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card>
                   <amexio-body>
-                    <ng-container *ngIf="sportName">
+                    <ng-container *ngIf="listOfFriut">
                       {{listOfFriut}}
                     </ng-container>
                   </amexio-body>
