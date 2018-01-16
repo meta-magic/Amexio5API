@@ -1,0 +1,16 @@
+{
+  "properties": [
+    {
+      "name": "path",
+      "type": "string",
+      "default": "null",
+      "description": "path of video"
+    },
+    {
+      "name": "extension",
+      "type": "string",
+      "default": "null",
+      "description": "video extension"
+    }
+  ]
+}

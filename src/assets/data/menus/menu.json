@@ -421,6 +421,11 @@
           "text": "Image",
           "icon": "fa fa-picture-o fa-fw",
           "link": "image-demo"
+        },
+        {
+          "text": "Video Player",
+          "icon" : "fa fa-video-camera",
+          "link":"video-demo"
         }
       ]
     }

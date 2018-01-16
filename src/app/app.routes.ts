@@ -90,6 +90,13 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'navbar-demo', loadChildren: './navigation/navbar/navbar.demo.module#NavBarDemoModule'
   },
+  /** Media*/
+  {
+    path: 'image-demo', loadChildren: './media/image/image.demo.module#ImageDemoModule'
+  },
+  {
+    path: 'video-demo', loadChildren: './media/video/video.demo.module#VideoDemoModule'
+  },
   /**Layout Routes*/
   {
     path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'
