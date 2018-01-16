@@ -73,8 +73,12 @@
       "name": "focus",
       "description":"On field focus event"
     },{
-      "name": "change",
-      "description":"On field value change event"
+      "name": "onSingleSelect",
+      "description":"fire when drop down item selected."
+    },
+    {
+      "name": "onMultiSelect",
+      "description":"fire when multiple record select in drop down.this event is only applied multiSelect=true"
     }
   ],
   "css": [

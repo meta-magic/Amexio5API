@@ -34,7 +34,9 @@ import {Http} from "@angular/http";
                           [httpMethod]="'get'" [httpUrl]="'assets/data/componentdata/fruits.json'"
                           [displayField]="'fruitName'" [valueField]="'code'"
                           [dataReader]="'data'"
-                          [multiSelect]="true">
+                          [multiSelect]="true"
+                          (onMultiSelect)="onMultiSelectValue($event)"
+                        >
                         </amexio-dropdown>
                       </amexio-column>
                     </amexio-row>
@@ -45,7 +47,7 @@ import {Http} from "@angular/http";
                 <amexio-card>
                   <amexio-body>
                     <ng-container *ngIf="listOfFriut">
-                      {{listOfFriut}}
+                      {{listOfFriut|json}}
                     </ng-container>
                   </amexio-body>
                 </amexio-card>
@@ -113,9 +115,16 @@ export class DropDownMultiDemo {
   typeScriptCode: string;
   dataSource: string;
   copyMsgArray: any[];
-  listOfFriut:any;
+  listOfFriut: any = [];
+
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
+  }
+
+  onMultiSelectValue(data: any) {
+    data.forEach((obj) => {
+      this.listOfFriut.push(obj);
+    });
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
