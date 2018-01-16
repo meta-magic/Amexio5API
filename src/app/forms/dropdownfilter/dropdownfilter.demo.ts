@@ -116,6 +116,7 @@ export class DropDownFilterDemo {
   dataSource:string;
   copyMsgArray: any[];
   countryCode1:string;
+  sportName: any;
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }

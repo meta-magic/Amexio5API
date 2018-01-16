@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <!--showBlockBox is true for showing step box  -->
                 <p><strong>Step box</strong></p>
-                <amexio-steps [showBlockBox]="true" [showIndex]="true" >
+                <amexio-steps [showBlockBox]="true" [showIndex]="true" (onBlockClick)="stepBlockClick($event)">
                   <amexio-step-block [label]="'User'" [active]="true" ></amexio-step-block>
                   <amexio-step-block [label]="'Shop'" [active]="false" ></amexio-step-block>
                   <amexio-step-block [label]="'Payment'" [active]="false"></amexio-step-block>
@@ -31,7 +31,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <!--showBlockBox is true for showing step box  -->
                 <p><strong>Step box with clickabel</strong></p>
-                <amexio-steps [showBlockBox]="true" [showIndex]="true">
+                <amexio-steps [showBlockBox]="true" [showIndex]="true" (onBlockClick)="stepBlockClick($event)">
                   <amexio-step-block [label]="'User'" [active]="'user'" ></amexio-step-block>
                   <amexio-step-block [label]="'Shop'" [active]="'shop'" ></amexio-step-block>
                   <amexio-step-block [label]="'Payment'" [active]="'payment'"></amexio-step-block>
@@ -43,7 +43,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 showIndex is true for number inside circle 
                 <p><strong>Step-box index</strong></p>
-                <amexio-steps [showIndex]="true">
+                <amexio-steps [showIndex]="true" (onBlockClick)="stepBlockClick($event)">
                   <amexio-step-block [label]="'step-1'" [active]="true"></amexio-step-block>
                   <amexio-step-block [label]="'step-2'" [active]="false"></amexio-step-block>
                   <amexio-step-block [label]="'step-3'" [active]="false"></amexio-step-block>
@@ -91,7 +91,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <amexio-notification [messageData]="clickMsgArray" verticalposition="top" horizontalposition="right"></amexio-notification>
 
   `
 })
@@ -99,9 +99,49 @@ export class StepBoxDemoComponent {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
+  user:boolean;
+  shop:boolean;
+  payment:boolean;
+  confirmation:boolean;
+  clickMsgArray:any=[];
+
+// step box click event
+  stepBlockClick(event:any){
+    if(event.label=="User"){
+      this.updateFlag(true,false,false,false);
+      this.showMsg("Step 1 User");
+    }else if(event.label=="Shop"){
+      this.updateFlag(false,true,false,false);
+      this.showMsg("Step 2 Shop");
+    }else if(event.label=="Payment"){
+      this.showMsg("Step 3 Payment");
+      this.updateFlag(false,false,true,false);
+    }else if(event.label=="Confirmation"){
+      this.updateFlag(false,false,false,true);
+      this.showMsg("Step 4 Confirmation");
+    }
+  }
+  updateFlag(user:boolean,shop:boolean,payment:boolean,confirmation:boolean){
+    this.user=user;
+    this.shop=shop;
+    this.payment=payment;
+    this.confirmation=confirmation;
+  }
+  showMsg(msg){
+    if(this.clickMsgArray.length>=1){
+      this.clickMsgArray=[];
+      this.clickMsgArray.push(msg);
+    }else{
+      this.clickMsgArray.push(msg);
+    }
+  }
 
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
+    this.user=false;
+    this.shop=true;
+    this.payment=false;
+    this.confirmation=false;
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE

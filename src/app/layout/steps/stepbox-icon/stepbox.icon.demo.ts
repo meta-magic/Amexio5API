@@ -2,6 +2,7 @@
  * Created by pratik on 15/1/18.
  */
 import { Component, OnInit } from '@angular/core';
+import {Http} from "@angular/http";
 
 @Component({
  selector: 'stepbox-icon-demo',
@@ -19,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
                <!--showBlockBox is true for showing step box  -->
                <p><strong>Step box</strong></p>
                <!--Step-box with fontawesome icons-->
-               <amexio-steps [showIcon]="true">
+               <amexio-steps [showIcon]="true" (onBlockClick)="stepBlockClick($event)">
                  <amexio-step-block [label]="'User'" [active]="true" [icon]="'fa fa-user'" ></amexio-step-block>
                  <amexio-step-block [label]="'Address'" [active]="false" [icon]="'fa fa-address-card'"></amexio-step-block>
                  <amexio-step-block [label]="'Shop'" [active]="false" [icon]="'fa fa-shopping-cart'"></amexio-step-block>
@@ -83,8 +84,85 @@ import { Component, OnInit } from '@angular/core';
  `
 })
 
-export class StepBoxIconComponent implements OnInit {
- constructor() { }
+export class StepBoxIconComponent {
+  htmlCode: string;
+  typeScriptCode: string;
+  copyMsgArray: any[];
+  user:boolean;
+  shop:boolean;
+  payment:boolean;
+  confirmation:boolean;
+  clickMsgArray:any=[];
 
- ngOnInit() { }
+// step box click event
+  stepBlockClick(event:any){
+    if(event.label=="User"){
+      this.updateFlag(true,false,false,false);
+      this.showMsg("Step 1 User");
+    }else if(event.label=="Shop"){
+      this.updateFlag(false,true,false,false);
+      this.showMsg("Step 2 Shop");
+    }else if(event.label=="Payment"){
+      this.showMsg("Step 3 Payment");
+      this.updateFlag(false,false,true,false);
+    }else if(event.label=="Confirmation"){
+      this.updateFlag(false,false,false,true);
+      this.showMsg("Step 4 Confirmation");
+    }
+  }
+  updateFlag(user:boolean,shop:boolean,payment:boolean,confirmation:boolean){
+    this.user=user;
+    this.shop=shop;
+    this.payment=payment;
+    this.confirmation=confirmation;
+  }
+  showMsg(msg){
+    if(this.clickMsgArray.length>=1){
+      this.clickMsgArray=[];
+      this.clickMsgArray.push(msg);
+    }else{
+      this.clickMsgArray.push(msg);
+    }
+  }
+
+  constructor(private http: Http) {
+    this.getHtmlAndTypeScriptCode();
+    this.user=false;
+    this.shop=true;
+    this.payment=false;
+    this.confirmation=false;
+  }
+
+  //TO LOAD HTML AND TYPESCRIPT CODE
+  getHtmlAndTypeScriptCode() {
+    let responseHtml: any;
+    let responseTs: any;
+
+    //HTML FILE
+    this.http.get('assets/data/code/layout/steps/stepbox/step.html').subscribe(data => {
+      responseHtml = data.text();
+    }, error => {
+    }, () => {
+      this.htmlCode = responseHtml;
+    });
+
+    //TS FILE
+    this.http.get('assets/data/code/layout/steps/stepbox/step.ts').subscribe(data => {
+      responseTs = data.text();
+    }, error => {
+    }, () => {
+      this.typeScriptCode = responseTs;
+    });
+
+  }
+
+  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
+  onCopyClick() {
+    if (this.copyMsgArray.length >= 1) {
+      this.copyMsgArray = [];
+      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+    } else {
+      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+    }
+  }
 }
