@@ -136,7 +136,7 @@ body {
 
 }
 
-@import "../node_modules/amexio-ng-extensions/styles/mdb/mdb-black";
+@import "../node_modules/amexio-ng-extensions/styles/mdb/mdb-blue";
 .material-icons {
   font-size: inherit !important;
 }
@@ -168,4 +168,8 @@ body {
 //toggle width
 .toggle{
   width: 60px;
+}
+.navbardemo .navbar-container{
+  position: inherit!important;
+  width: inherit!important;
 }
