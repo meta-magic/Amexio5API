@@ -116,10 +116,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'step-box', loadChildren: './layout/steps/stepbox/stepbox.demo.module#StepBoxDemoModule'
   },
-/*  {
-    path : 'step-box-icon', loadChildren : './layout/steps/stepbox-icon/'
-  },*/
-
+  {
+    path : 'step-box-icon', loadChildren : './layout/steps/stepbox-icon/stepbox.icon.demo.module#StepBoxIconDemoModule'
+  },
+  {
+    path : 'accordion', loadChildren : './panes/accordion/accordion.demo.module#AccordionDemoModule'
+  },
 
 
   /**Chart Routes*/

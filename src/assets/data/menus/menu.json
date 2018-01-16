@@ -283,7 +283,7 @@
         {
           "text" : "Accordion",
           "icon" : "fa fa-bars fa-fw",
-          "link" : ""
+          "link" : "accordion"
         },
         {
           "text" : "Carousel",
