@@ -329,7 +329,7 @@
             },
             {
               "text": "Grid with scroll",
-              "link": "tree"
+              "link": "scroll-grid"
             },
             {
               "text": "Tree Data Grid",

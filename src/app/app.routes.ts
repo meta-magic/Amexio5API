@@ -222,6 +222,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'custom-col-grid', loadChildren: './data/customcolsize/customcolsizegrid.demo.module#CustomColSizeDemoModule'
+  },
+  {
+    path: 'scroll-grid', loadChildren: './data/gridwithscroll/gridwithscroll.demo.module#GridWithScrollDemoModule'
   }
 
 ];
