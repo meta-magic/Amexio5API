@@ -36,17 +36,12 @@
       "description": "Type of HTTP call, POST,GET."
     },
     {
-      "name": "displayField",
+      "name": "dataReader",
       "type": "string",
       "default": "",
-      "description": "Name of key inside response data to display on ui."
+      "description": "Key in JSON datasource for records"
     },
     {
-      "name": "valueField",
-      "type": "string",
-      "default": "",
-      "description": "Name of key inside response data.use to send to backend"
-    },{
       "name": "data",
       "type": "any",
       "default": "",

@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "httpUrl",
+      "type": "string",
+      "default": "",
+      "description": "REST url for fetching datasource."
+    },
+    {
+      "name": "httpMethod",
+      "type": "string",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET."
+    },
+   {
+      "name": "data",
+      "type": "any",
+      "default": "",
+      "description": "Local data for checkboxGroup."
+    }
+  ],
+  "events":[
+    {
+      "name": "nodeClick",
+      "description": "fire when menubar bar click"
+
+    }
+  ]
+}
