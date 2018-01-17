@@ -34,13 +34,13 @@
       "name": "tooltipMessage",
       "type": "string",
       "default": "",
-      "description": "showing tooltip over button"
+      "description": "Showing tooltip over button"
     }
   ],
   "events": [
     {
       "name": "onClick",
-      "description": "fire when button click "
+      "description": "Fire when button click "
     }
   ],
   "css": [

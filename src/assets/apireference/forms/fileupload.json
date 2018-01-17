@@ -28,19 +28,19 @@
       "name": "fileType",
       "type": "string",
       "default": "",
-      "description": "allow to show only given file type at the time of file upload.example for 1.image [fileType]=image/* 2.for pdf [fileType]=application/pdf"
+      "description": "Allow to show only given file type at the time of file upload.example for 1.image [fileType]=image/* 2.for pdf [fileType]=application/pdf"
     },
     {
       "name": "multipleFile",
       "type": "string",
       "default": "",
-      "description": "for multiple file upload."
+      "description": "For multiple file upload."
     },
     {
       "name": "requestParamName",
       "type": "string",
       "default": "",
-      "description": "used to specify URL query param name. same with backend rest controller paramater object name Default :file"
+      "description": "Used to specify URL query param name. same with backend rest controller paramater object name Default :file"
     }
   ],
   "css": [

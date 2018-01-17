@@ -4,46 +4,46 @@
       "name": "fieldLabel",
       "type": "string",
       "default": "",
-      "description":"field label."
+      "description":"The label of this field."
     },
     {
       "name": "max",
       "type": "number",
       "default": "",
-      "description":"number of stars for rating component."
+      "description":"Number of stars for rating component."
     },
     {
       "name": "readonly",
       "type": "boolean",
       "default": "false",
-      "description":"if true will not react on any user events."
+      "description":"If true will not react on any user events."
     }, {
       "name": "titles",
       "type": "string[]",
       "default": "",
-      "description":"array of titles, default:1,2,3.."
+      "description":"Array of titles, default:1,2,3.."
     },{
       "name": "disabled",
       "type": "boolean",
       "default": "false",
-      "description":"if true will not react on any user events and show disable icon over"
+      "description":"If true will not react on any user events and show disable icon over"
     },{
       "name": "required",
       "type": "boolean",
       "default": "false",
-      "description":"validate field"
+      "description":"Validate field"
     },
     {
       "name": "fullIcon",
       "type": "string ",
       "default": "",
-      "description":"icon for selected rating .this attribute use only user have custom rating icons.example ☑"
+      "description":"Icon for selected rating .this attribute use only user have custom rating icons.example ☑"
     },
     {
       "name": "emptyIcon",
       "type": "string ",
       "default": "",
-      "description":"icon for non-selected rating .this attribute use only user have custom rating icons.example ☐"
+      "description":"Icon for non-selected rating .this attribute use only user have custom rating icons.example ☐"
     }
   ]
 }

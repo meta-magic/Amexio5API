@@ -3,7 +3,7 @@
     {  "name": "height",
       "type": "string",
       "default": "",
-      "description": "height of item selector"
+      "description": "Height of item selector"
     },
     {
       "name": "httpUrl",
@@ -45,10 +45,10 @@
   "events":[
     {
       "name": "selectedRecords",
-      "description":"get selected value Object."
+      "description":"Get selected value Object."
     },{
       "name": "availableRecords",
-      "description":"get available values objects.."
+      "description":"Get available values objects.."
     }
   ]
 }
