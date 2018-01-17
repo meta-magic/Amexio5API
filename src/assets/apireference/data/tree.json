@@ -1,0 +1,40 @@
+{
+  "properties": [
+    {
+      "name": "httpUrl",
+      "type": "string",
+      "default": "",
+      "description":"REST url for fetching data."
+    },
+    {
+      "name": "httpMethod",
+      "type": "string",
+      "default": "",
+      "description":"Type of HTTP call, POST,GET etc."
+    },
+    {
+      "name": "data",
+      "type": "any[]",
+      "default": "",
+      "description":"Local Data binding."
+    },
+    {
+      "name": "dataReader",
+      "type": "string",
+      "default": "",
+      "description":"Key in JSON Datasource for records."
+    },
+    {
+      "name": "enableCheckBox",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enables checkbox for each row, this allows user for multi selection."
+    }
+  ],
+  "events":[
+    {
+      "name": "nodeClick",
+      "description":"It will gives you clicked node data."
+    }
+  ]
+}

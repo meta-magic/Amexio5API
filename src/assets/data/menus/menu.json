@@ -339,7 +339,25 @@
         },
         {
           "text": "Tree",
-          "link": "tree"
+          "link": "tree",
+          "children": [
+            {
+              "text": "Simple Tree",
+              "link": "simple-tree"
+            },
+            {
+              "text": "Tree Data Grid",
+              "link": "tree-data-grid"
+            },
+            {
+              "text": "Tree Data Grid",
+              "link": "tree-data-grid"
+            },
+            {
+              "text": "Tree Data Grid",
+              "link": "tree-data-grid"
+            }
+          ]
         },
         {
           "text": "Paginator",

@@ -228,6 +228,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'tree-data-grid', loadChildren: './data/treedatagrid/treedatagrid.demo.module#TreeDataGridDemoModule'
+  },
+  {
+    path: 'simple-tree', loadChildren: './data/tree/simpletree/simpletree.demo.module#SimpleTreeDemoModule'
   }
 
 ];
