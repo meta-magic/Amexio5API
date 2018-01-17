@@ -90,6 +90,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'navbar-demo', loadChildren: './navigation/navbar/navbar.demo.module#NavBarDemoModule'
   },
+  {
+    path: 'menubar-demo', loadChildren: './navigation/menubar/menubar.demo.module#MenuBarDemoModule'
+  },
   /** Media*/
   {
     path: 'image-demo', loadChildren: './media/image/image.demo.module#ImageDemoModule'
@@ -201,6 +204,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   /**Data Routes*/
   {
     path: 'paginator-demo', loadChildren: './data/paginator/paginator.demo.module#PaginatorDemoModule'
+  },
+  {
+    path: 'listbox-demo', loadChildren: './data/listbox/listbox.demo.module#ListBoxDemoModule'
   }
 
 

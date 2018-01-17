@@ -152,31 +152,31 @@ import {Http} from "@angular/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Chart Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/datapoint/datapoint.json'"
-                             [dataReader]="'dashboard'"
+                             [httpUrl]="'assets/apireference/dashboard/datapoint.json'"
+                             [dataReader]="'datapoint'"
                              [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Chart Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/datapoint/datapoint.json'"
+                             [httpUrl]="'assets/apireference/dashboard/datapoint.json'"
                              [dataReader]="'location'"
                              [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
@@ -230,7 +230,7 @@ export class DataPointComponent implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/dashboard/datapoint/datapoint.ts').subscribe(data => {
+    this.http.get('assets/data/code/dashboard/datapoint/datapoint.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

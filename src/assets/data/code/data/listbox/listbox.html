@@ -1,0 +1,26 @@
+<!--Simple ListBox-->
+<amexio-listbox [enableCheckBox]="true" [height]="400"
+                [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
+                [data]="localData" [filter]="true"
+                [dataReader]="'response.data'"
+                [displayField]="'name_official'" (selectedRows)="getSelectedData($event)">
+</amexio-listbox>
+
+<!--ListBox with template-->
+
+<amexio-listbox [height]="400" [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
+                [data]="localData" [filter]="false"
+                [enableCheckBox]="false" [dataReader]="'response.data'"
+                [displayField]="'name'" (rowClick)="rowClick($event)">
+                <ng-template #amexioBodyTmpl let-row="row">
+                  <amexio-row>
+                    <amexio-column [size]="12">
+                      <div class="profile-image">
+                        <img src="assets/images/profile/{{row.profile}}">
+                        <a>{{row.name}}</a>
+                      </div>
+                    </amexio-column>
+
+                  </amexio-row>
+                </ng-template>
+</amexio-listbox>

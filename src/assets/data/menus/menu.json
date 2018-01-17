@@ -170,6 +170,10 @@
               "text" : "Nav Bar",
               "icon": "fa fa-leaf fa-fw",
               "link":"navbar-demo"
+            },{
+              "text" : "Top Menu Bar",
+              "icon": "fa fa-leaf fa-fw",
+              "link":"menubar-demo"
             }
           ]
         }
@@ -305,12 +309,12 @@
           "link": "tree"
         },
         {
-          "text": "ListBox",
-          "link": "listbox"
-        },
-        {
           "text": "Paginator",
           "link": "paginator-demo"
+        },
+        {
+          "text": "ListBox",
+          "link": "listbox-demo"
         }
       ]
     },

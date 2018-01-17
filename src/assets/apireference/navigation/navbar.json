@@ -10,6 +10,29 @@
       "type": "string",
       "default": "",
       "description": "logo of navbar."
+    },  {
+      "name": "httpUrl",
+      "type": "string",
+      "default": "",
+      "description": "REST url for fetching datasource."
+    },
+    {
+      "name": "httpMethod",
+      "type": "string",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET."
+    },
+   {
+      "name": "data",
+      "type": "any",
+      "default": "",
+      "description": "Local data for dropdown."
+    },
+    {
+      "name": "dataReader",
+      "type": "string",
+      "default": "",
+      "description": "Key in JSON datasource for records"
     }
   ],
   "propertiesitem": [

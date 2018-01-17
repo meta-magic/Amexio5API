@@ -70,8 +70,8 @@
       "name": "input",
       "description":"On input event field."
     },{
-      "name": "focus",
-      "description":"On field focus event"
+      "name": "onClick",
+      "description":"On record select event.this event is only for normal dropdown."
     },{
       "name": "onSingleSelect",
       "description":"Fire when drop down item selected."

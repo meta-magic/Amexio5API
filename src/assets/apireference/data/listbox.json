@@ -1,0 +1,75 @@
+{
+  "properties": [
+    {
+      "name": "httpUrl",
+      "type": "string",
+      "default": "",
+      "description":"REST url for fetching data."
+    },
+    {
+      "name": "httpMethod",
+      "type": "string",
+      "default": "",
+      "description":"Type of HTTP call, POST,GET etc."
+    },
+    {
+      "name": "data",
+      "type": "any[]",
+      "default": "",
+      "description":"Local Data binding."
+    },
+    {
+      "name": "dataReader",
+      "type": "string",
+      "default": "",
+      "description":"Key in JSON Datasource for records."
+    },
+
+    {
+      "name": "displayField",
+      "type": "string",
+      "default": "",
+      "description":"Key in JSON for display particular column from data."
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "default": "",
+      "description":"height for ListBox."
+    },
+    {
+      "name": "header",
+      "type": "string",
+      "default": "",
+      "description":"Heading for ListBox."
+    },
+    {
+      "name": "enableCheckBox",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enables checkbox for each row, this allows user for multi selection."
+    },
+    {
+      "name": "searchPlaceHolder",
+      "type": "string",
+      "default": "",
+      "description":"placeholder for searchbox."
+    },
+    {
+      "name": "filter",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enables user to filter data based on 'displayField' configured."
+    }
+  ],
+  "events":[
+    {
+      "name": "selectedRows",
+      "description":"It will fire only on selection of checkbox and gives you selected record data."
+    },
+    {
+      "name": "rowClick",
+      "description":"It will gives you row clicked data."
+    }
+  ]
+}
