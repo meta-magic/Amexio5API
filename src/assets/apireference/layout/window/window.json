@@ -4,25 +4,25 @@
       "name": "footeralign",
       "type": "string",
       "default": "right",
-      "description":"Alignment of footer contents to right or left"
+      "description":"Alignment of footer contents to right or left."
     },
     {
       "name": "showWindow",
       "type": "boolean",
       "default": "false",
-      "description":"Show / Hide Window"
+      "description":"Show / Hide Window."
     },
     {
       "name": "maximize",
       "type": "boolean",
       "default": "false",
-      "description":"User can maximize the window to full screen"
+      "description":"User can maximize the window to full screen."
     },
     {
       "name": "closable",
       "type": "boolean",
       "default": "",
-      "description":"User can close the window"
+      "description":"User can close the window."
     },{
       "name": "type",
       "type": "string",

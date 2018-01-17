@@ -4,12 +4,12 @@
       "name": "title",
       "type": "string",
       "default": "",
-      "description":"Title for fieldset"
+      "description":"Title for fieldset."
     },{
       "name": "collapsible",
       "type": "boolean",
       "default": "",
-      "description":"set value true for collapsible fieldset"
+      "description":"Set value true for collapsible fieldset."
     }
   ]
 }
