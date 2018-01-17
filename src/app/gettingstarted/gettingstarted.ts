@@ -33,91 +33,80 @@ import {SharedModule} from "../shared.module";
              <h2>Table Of Contents</h2>
             </amexio-header>
             <amexio-body>
+              <amexio-row>
+                <amexio-column size="12">
+                  1. Getting Started
+                </amexio-column>
+              </amexio-row>
+              <amexio-row>
+                <amexio-column size="12">
+                  2. Installation Details
+                </amexio-column>
+              </amexio-row>
+              <amexio-row>
+                <amexio-column size="12">
+                  3. License
+                </amexio-column>
+              </amexio-row>
+              
             </amexio-body>
           </amexio-card>
         </amexio-column>
       </amexio-row>
       <br>
-      <div id="gettingStarted" class="row col-lg-12">
-        <amexio-card header="true">
-          <amexio-header><h2>Getting Started</h2></amexio-header>
-          <amexio-body>
-            <amexio-row>
-              <amexio-column size="12">
-                <p>Amexio (Angular MetaMagic EXtensions for Inputs and Outputs) is a rich set of Angular 4 components powered by Bootstrap 4. We provide modular import for using our rich set of components,charts, maps & dashboard  and can be easily configured and implemented in a project.
-                  Check out the Show case App for the Amexio UI Library Demo and API documentation.</p>
-              </amexio-column>
-            </amexio-row>
-          </amexio-body>
-        </amexio-card>
-      </div>
+      <amexio-row>
+        <div id="gettingStarted">
+          <amexio-card header="true">
+            <amexio-header><h2>Getting Started</h2></amexio-header>
+            <amexio-body>
+              <amexio-row>
+                <amexio-column size="12">
+                  <p>Amexio (Angular MetaMagic EXtensions for Inputs and Outputs) is a pure Typescript Compnent Library of Angular. We provide modular import for using our rich set of components,charts, maps , dashboard, forms, data, media, layout etc and can be easily configured and implemented in a project.
+                    Check out the Demo App built using Amexio. For the Amexio UI Library refer API documentation.</p>
+                </amexio-column>
+              </amexio-row>
+            </amexio-body>
+          </amexio-card>
+        </div>    
+      </amexio-row>
+    
 
       <br>
-      <div id="InstallationInstruc" class="row col-lg-12">
-        <amexio-card header="12">
-          <amexio-header><h2>Installation Details</h2></amexio-header>
-          <amexio-body>
-            <amexio-row>
-              <amexio-column size="12">
-                <p><b>To install this library, follow the steps given below:</b><br> <code>npm install amexio-ng-extensions --save</code></p>
-                <p class="text-muted">Please make sure you have the latest version of <code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code> Installed.
-                  <br><b>and then from your Angular AppModule:</b></p>
-              </amexio-column>
-            </amexio-row>
-            <br>
-            <amexio-row>
-              <amexio-column size="12">
-                <ng-container *ngIf="tsCode">
-                  <prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
-                </ng-container>
-              </amexio-column>
-            </amexio-row>
-          </amexio-body>
-        </amexio-card>
-
-      <div id="deptLib" class="row">
-        <div class="col-lg-8">
-          <div class="panel panel-default">
-            <!-- Default panel contents -->
-            <div class="panel-heading"><b>Dependent Libraries</b></div>
-
-            <!-- Table -->
-            <ul class="list-group">
-              <li class="list-group-item">
-                <code>jQuery</code>
-                <span class="badge badge-pill badge-default">v3.2.1</span>
-              </li>
-              <li class="list-group-item">
-                <code>Bootstrap 4 (Requires Tether.js & Popper.js)</code>
-                <span class="badge badge-pill badge-default">v4.0.0-alpha.6</span>
-              </li>
-              <li class="list-group-item">
-                <code style="text-decoration: line-through;">bootstrap-datepicker</code>
-                <span style="text-decoration: line-through;" class="badge badge-pill badge-default">v1.7.1 </span>&nbsp;<span>Deprecated From v3.0</span>
-              </li>
-              <li class="list-group-item">
-                <code style="text-decoration: line-through;">bootstrap-timepicker</code>
-                <span style="text-decoration: line-through;" class="badge badge-pill badge-default">v0.5.2 </span>&nbsp;<span>Deprecated From v3.0</span>
-              </li>
-              <li class="list-group-item">
-                <code>font-awesome</code>
-                <span class="badge badge-pill badge-default">v4.7.0</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <amexio-row>
+        <amexio-column size="12">
+          <amexio-card header="true">
+            <amexio-header><h2>Installation Details</h2></amexio-header>
+            <amexio-body>
+              <amexio-row>
+                <amexio-column size="12">
+                  <p><b>To install this library, follow the steps given below:</b><br> <code>npm install amexio-ng-extensions --save</code></p>
+                  <p class="text-muted">Please make sure you have the latest version of <code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code> Installed.
+                    <br><b>and then from your Angular AppModule:</b></p>
+                </amexio-column>
+              </amexio-row>
+              <br>
+              <amexio-row>
+                <amexio-column size="12">
+                  <ng-container *ngIf="tsCode">
+                    <prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
+                  </ng-container>
+                </amexio-column>
+              </amexio-row>
+            </amexio-body>
+          </amexio-card>    
+        </amexio-column>
+      
+        
       <br>
-      <div class="row">
-        <div class="col-lg-12">
+     <!-- <amexio-row>
+        <amexio-column>
           <p>Include these in your app's .angular-cli.json </p>
           <img src="https://preview.ibb.co/b4F1gG/dependecy.png"/>
-          <p> If not using cli then simply add it to the index.html head.</p>
-        </div>
-      </div>
-
-    </div>
-    </div>
+          <p> If not using cli then simply add css it to the index.html head.</p>
+        </amexio-column>
+      </amexio-row>-->
+      
+      
   `
 })
 export class GettingStatedDemo {
