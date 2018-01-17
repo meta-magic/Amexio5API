@@ -4,40 +4,35 @@
       "name": "imagePath",
       "type": "string",
       "default": "",
-      "description": "Specifies the URL of an image.this is attribute use only for images."
+      "description": "Specifies the URL of an image.This attribute is useful only for images."
     },
     {
       "name": "tooltipMessage",
       "type": "string",
       "default": "",
-      "description": "tooltipMessage on image / icon."
+      "description": "TooltipMessage on image / icon."
     },
     {
       "name": "imageClass",
       "type": "string",
       "default": "",
-      "description": "material icon class name.Material Example:imageClass='material-icons' mdbClass='cloud' Fontawesome Example:imageClass='fa fa-address-book fa-lg'"
+      "description": "Material icon class name.Material Example:imageClass='material-icons' mdbClass='cloud' Fontawesome Example:imageClass='fa fa-address-book fa-lg'"
     },
     {
       "name": "mdbClass",
       "type": "string",
       "default": "",
-      "description": "Specifies the URL of an image.this is attribute use only for images."
-    },{
-      "name": "imagePath",
-      "type": "string",
-      "default": "",
-      "description": "this attribute use for only material icons.Material Example:mdbClass='cloud'"
+      "description": "This attribute is useful for only material icons.Material Example:mdbClass='cloud'"
     },
     {
       "name": "title",
       "type": "string",
       "default": "",
-      "description": "title of image."
+      "description": "Title of image."
     }
   ],
   "events":[  {
     "name": "onClick",
-    "description": "get image / icon click event.'"
+    "description": "Get image / icon click event."
   }]
 }
