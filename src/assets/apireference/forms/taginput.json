@@ -3,13 +3,13 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "The label of this field"
     },
     {
       "name": "key",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "The key that must be used while searching in data provided"
     },
     {
@@ -21,43 +21,43 @@
     {
       "name": "httpUrl",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "REST url for fetching datasource."
     },
     {
       "name": "httpMethod",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
     {
       "name": "dataReader",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Key in JSON datasource for records"
     },
     {
       "name": "displayField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data to display on ui."
     },
     {
       "name": "valueField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data.use to send to backend"
     },{
       "name": "data",
       "type": "any",
-      "default": "null",
-      "description": "Local data for checkboxGroup."
+      "default": "",
+      "description": "Local data for Tag Input"
     }
   ],
   "events": [
     {
       "name": "onChange",
-      "description": "fire when select value from input tag "
+      "description": "Fire when select value from input tag "
     }
   ],
   "css": [

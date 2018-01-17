@@ -1,0 +1,10 @@
+<!--Simple type head-->
+<amexio-typeahead [dataReader]="'data'"
+                  [key]="'sportName'"
+                  [displayField]="'sportName'"
+                  [placeholder]="'Search'"
+                  [httpUrl]="'assets/data/componentdata/typeahead.json'"
+                  [httpMethod]="'get'"
+                  (change)="selectedValue($event)"
+                  [fieldLabel]="'Sport Name'">
+</amexio-typeahead>

@@ -3,7 +3,7 @@
     {
       "name": "size",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"column size"
     }
   ]

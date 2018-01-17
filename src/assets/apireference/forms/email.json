@@ -3,13 +3,13 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"The label of this field"
     },
     {
       "name": "pattern",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
     },{
       "name": "allowBlank",
@@ -20,7 +20,7 @@
     {
       "name": "placeholder",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"A string value displayed in the input (if supported) when the control is empty."
     },{
       "name": "disabled",
@@ -31,7 +31,7 @@
     {
       "name": "errorMsg",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Error Message required to displayed after validation"
     },
     {
@@ -42,24 +42,24 @@
     },{
       "name": "fontStyle",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set fontstyle to field"
     },{
       "name": "fontFamily",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set font family to field"
     },
     {
       "name": "fontSize",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set font size to field"
     },{
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
-      "description":"set enable / disable popover."
+      "description":"Set enable / disable popover."
     }
 
   ],

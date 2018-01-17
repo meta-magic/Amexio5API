@@ -3,19 +3,19 @@
     {
       "name": "minValue",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"Minimum of slider value"
     },
     {
       "name": "maxValue",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"Maximum of slider value"
     },
     {
       "name": "stepValue",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"Step value in slider"
     }
   ],

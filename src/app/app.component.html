@@ -1,15 +1,15 @@
 <amexio-nav [title]="'Amexio'" [logo]="'./assets/images/logos/amexio-logo.png'">
   <amexio-nav-item position-right *ngFor="let topMenu of topMenuData">
-    <a style="padding-left: 30px;color: white;text-decoration:none" [attr.href]="topMenu.link"
+    <a style="padding-left: 10px;color: white;text-decoration:none" [attr.href]="topMenu.link"
        [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
   </amexio-nav-item>
 
-  <!--<amexio-nav-item position-right>-->
-    <!--<a style="padding-left: 20px;color: white;text-decoration:none" href="https://github.com/meta-magic/amexio.github.io" (click)="starGitRepo()" target="_blank">-->
-      <!--<img alt src="assets/images/logos/git.png">-->
-    <!--</a>-->
-  <!--</amexio-nav-item>-->
-
+  <amexio-nav-item position-right>
+    <a href="https://github.com/meta-magic/amexio.github.io">
+      <img style="height: 20px;width: 20px;padding-left: 5px;" alt src="assets/images/logos/git.png">
+    </a>
+   </amexio-nav-item>
+<!--<amexio-nav-item position-right>  <div id="google_translate_element"></div> </amexio-nav-item>-->
   <!--<amexio-nav-item position-right style="padding-left: 50px">-->
     <!--<div id="google_translate_element"></div>-->
   <!--</amexio-nav-item>-->

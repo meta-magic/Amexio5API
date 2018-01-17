@@ -3,29 +3,29 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"The label of this field"
     }, {
-      "name": "maxLength",
+      "name": "maxValue",
       "type": "number",
-      "default": "null",
-      "description":"the largest positive representable number. The largest negative representable number is maxLength."
+      "default": "",
+      "description":"The largest positive representable number. The largest negative representable number is maxLength."
     },
     {
       "name": "maxErrorMsg",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Error Message required to displayed after validation of maxLength "
     },   {
-      "name": "minLength",
+      "name": "minValue",
       "type": "number",
-      "default": "null",
-      "description":"The smallest positive representable number -- that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
+      "default": "",
+      "description":"The smallest positive representable number -that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
     },
     {
       "name": "minErrorMsg",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Error Message required to displayed after validation of minLength"
     },
     {
@@ -37,7 +37,7 @@
     {
       "name": "placeholder",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"A string value displayed in the input (if supported) when the control is empty."
     },{
       "name": "disabled",
@@ -48,30 +48,30 @@
     {
       "name": "errorMsg",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Error Message required to displayed after validation"
     },
     {
       "name": "fontStyle",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set fontstyle to field"
     },{
       "name": "fontFamily",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set font family to field"
     },
     {
       "name": "fontSize",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set font size to field"
     },{
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
-      "description":"set enable / disable popover."
+      "description":"Set enable / disable popover."
     }
 
   ],

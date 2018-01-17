@@ -1,4 +1,4 @@
-export class ButtonGroupDownDemo {
+export class ButtonGroupDemo {
 constructor() {
 }
 }

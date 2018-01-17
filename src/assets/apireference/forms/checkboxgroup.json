@@ -3,53 +3,53 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "The label of this field"
     },
     {
       "name": "column",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Divide checkbox option into equal column."
     }, {
       "name": "horizontal",
       "type": "boolean",
       "default": "false",
-      "description": "set true for horizontal checkbox "
+      "description": "Set true for horizontal checkbox "
     },
     {
       "name": "httpUrl",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "REST url for fetching datasource."
     },
     {
       "name": "httpMethod",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
     {
       "name": "displayField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data to display on ui."
     },
     {
       "name": "valueField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data.use to send to backend"
     },{
       "name": "data",
       "type": "any",
-      "default": "null",
+      "default": "",
       "description": "Local data for checkboxGroup."
     },
     {
       "name": "dataReader",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Key in JSON datasource for records"
     }
   ],

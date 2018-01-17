@@ -3,49 +3,49 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "The label of this field"
     },
     {
       "name": "placeholder",
       "type": "string",
-      "default": "null",
-      "description": "show placeholder inside dropdown component"
+      "default": "",
+      "description": "Show placeholder inside dropdown component"
     },
 
     {
       "name": "httpUrl",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "REST url for fetching datasource."
     },
     {
       "name": "httpMethod",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
     {
       "name": "displayField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data to display on ui."
     },
     {
       "name": "valueField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data.use to send to backend"
     },{
       "name": "data",
       "type": "any",
-      "default": "null",
-      "description": "Local data for checkboxGroup."
+      "default": "",
+      "description": "Local data for dropdown."
     },
     {
       "name": "dataReader",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Key in JSON datasource for records"
     },
     {
@@ -74,11 +74,11 @@
       "description":"On field focus event"
     },{
       "name": "onSingleSelect",
-      "description":"fire when drop down item selected."
+      "description":"Fire when drop down item selected."
     },
     {
       "name": "onMultiSelect",
-      "description":"fire when multiple record select in drop down.this event is only applied multiSelect=true"
+      "description":"Fire when multiple record select in drop down.this event is only applied when multiSelect=true"
     }
   ],
   "css": [

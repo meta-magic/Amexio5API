@@ -21,7 +21,7 @@
     {
       "name": "closable",
       "type": "boolean",
-      "default": "null",
+      "default": "",
       "description":"User can close the window"
     },{
       "name": "type",

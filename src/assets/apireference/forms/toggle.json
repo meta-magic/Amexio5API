@@ -4,19 +4,19 @@
       "name": "shape",
       "type": "string",
       "default": "round",
-      "description":"Round or Square example shape=round,square "
+      "description":" Round or Square Shape for toggle switch ,example shape=round,square ."
     },
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
-      "description":"field label "
+      "default": "",
+      "description":"The label of this field."
     }
   ],
   "events":[
     {
       "name": "onChange",
-      "description":"event fired on toggle component click"
+      "description":"Event fired on toggle component click"
     }
   ]
 }

@@ -3,36 +3,36 @@
     {
       "name": "height",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"height of chart"
     },
     {
       "name": "width",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"width of chart"
     },{
       "name": "data",
       "type": "Array",
-      "default": "null",
+      "default": "",
       "description":"For the use of local data "
     },
     {
       "name": "barWidthGroup",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"to remove the space between the bars."
     },
     {
       "name": "fallingColorOfBar",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"The fill color of falling candles, as an HTML color string.Example:'#FF0000' or 'red'"
     },
     {
       "name": "risingColorOfBar",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"The fill color of rising candles, as an HTML color string.Example:'#0f9d58' or 'green'"
     }
   ],
@@ -40,23 +40,23 @@
     {
       "name": "title",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"title to display above the chart."
     },
     {
       "name": "titleColor",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"color of chart title."
     },{
       "name": "titleFontName",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"font name of chart title."
     },{
       "name": "titleFontSize",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"font size of chart title."
     },{
       "name": "isTitleBold",
@@ -74,13 +74,13 @@
     {
       "name": "title",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "title of the chart for the horizontal axis."
     },
     {
       "name": "titleTextColor",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "the color of the chart for the horizontal axis."
     }
   ],
@@ -88,13 +88,13 @@
     {
       "name": "title",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "title of the chart for the Vertical axis."
     },
     {
       "name": "titleTextColor",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "the color of the chart for the Vertical axis."
     }
   ]

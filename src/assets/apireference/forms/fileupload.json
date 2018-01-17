@@ -3,19 +3,19 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "The label of this field"
     },
     {
       "name": "httpUrl",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "REST url for fetching datasource."
     },
     {
       "name": "httpMethod",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
   {
@@ -27,20 +27,20 @@
     {
       "name": "fileType",
       "type": "string",
-      "default": "null",
-      "description": "allow to show only given file type at the time of file upload.example for 1.image [fileType]=image/* 2.for pdf [fileType]=application/pdf"
+      "default": "",
+      "description": "Allow to show only given file type at the time of file upload.example for 1.image [fileType]=image/* 2.for pdf [fileType]=application/pdf"
     },
     {
       "name": "multipleFile",
       "type": "string",
-      "default": "null",
-      "description": "for multiple file upload."
+      "default": "",
+      "description": "For multiple file upload."
     },
     {
       "name": "requestParamName",
       "type": "string",
-      "default": "null",
-      "description": "used to specify URL query param name. same with backend rest controller paramater object name Default :file"
+      "default": "",
+      "description": "Used to specify URL query param name. same with backend rest controller paramater object name Default :file"
     }
   ],
   "css": [

@@ -3,8 +3,8 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
-      "description":"field label "
+      "default": "",
+      "description":"The label of this field"
     },
     {
       "name": "datepicker",

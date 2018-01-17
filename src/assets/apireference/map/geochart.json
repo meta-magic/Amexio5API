@@ -3,19 +3,19 @@
     {
       "name": "height",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description": "height of chart"
     },
     {
       "name": "width",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description": "width of chart"
     },
     {
       "name": "data",
       "type": "Array",
-      "default": "null",
+      "default": "",
       "description": "For the use of local data "
     }
   ]

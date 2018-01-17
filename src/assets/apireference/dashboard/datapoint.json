@@ -42,32 +42,32 @@
     {
       "name": "backgroundColor",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"set background color"
     }, {
       "name": "fontColor",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"set font color"
     }, {
       "name": "contentalign",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"set content align like : center,left,right"
     }, {
       "name": "width",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"set width"
     }, {
       "name": "height",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"set height"
     }, {
       "name": "cClass",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"to use custom css class"
     }
   ]

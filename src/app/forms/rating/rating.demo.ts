@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true" [enableFooter]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h2>Sample rating with label</h2>
+                    <h2>Sample Rating With Label</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="rate" [fieldLabel]="'Film Rating'"
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true" [enableFooter]="true"  [footeralign]="'center'">
                   <amexio-header>
-                    <h2> Rating with rate titles</h2>
+                    <h2> Rating With Rate Titles</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="profileRate"
@@ -54,7 +54,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [enableHeader]="true" [enableFooter]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h2>Custom rating icons</h2>
+                    <h2>Custom Rating Icons</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="customRate" [fullIcon]="'☑'" [emptyIcon]="'☐'"
@@ -70,7 +70,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h2> Rating with disable</h2>
+                    <h2> Rating With Read Only</h2>
                   </amexio-header>
                   <amexio-body>
                     <!--Read only Rating-->
@@ -90,13 +90,13 @@ import {Http} from "@angular/http";
                              [httpUrl]="'assets/apireference/forms/rating.json'" 
                              [dataReader]="'properties'"
                              [filtering]="false" >
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
