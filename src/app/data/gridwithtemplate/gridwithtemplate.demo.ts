@@ -6,32 +6,36 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'simplegridr-demo', template: `
+  selector: 'grid-template-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
-        <h2>Simple Data Grid</h2>
+        <h2>Data Grid Template</h2>
       </amexio-header>
       <amexio-body>
-        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.</p>
+        <p>To define the detail template, nest an ng-template tag inside the AmexioColumn component. The template context is set to the current row.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h2>Simple Data Grid</h2>
+                    <h2>Data Grid Template</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-datagrid
-                      [columnToggle]="true" title="Country Grid" [checkboxSelect]="false"  [httpMethod]="'get'" [httpUrl]="'assets/data/componentdata/country.json'" [dataReader]="'data'"  [pageSize] = "10">
-                      <amexio-data-table-column [dataIndex]="'countryName'" 
-                                                [dataType]="'string'" 
-                                                [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
+                    <amexio-datagrid  title="Country Grid" [httpMethod]="'get'" [httpUrl]="'assets/data/componentdata/gridtemplate.json'"
+                                      [dataReader]="'data'"  [pageSize] = "10" 
+                                      [filtering]="false" (rowSelect)="getRowData($event)">
+                      <amexio-data-table-column [width]="50" [dataIndex]="'name_official'" [dataType]="'string'" [hidden]="false" [text]="'Name'">
+                        <ng-template #amexioBodyTmpl let-column let-row="row">
+                        <span>
+                            <img src="" [attr.src]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32">&nbsp;{{row.name}} ( {{row.name_official}} )
+                        </span>
+                        </ng-template>
                       </amexio-data-table-column>
-                      <amexio-data-table-column [dataIndex]="'countryCode1'" [dataType]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
-                      <amexio-data-table-column [dataIndex]="'currencyName'" [dataType]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+                      <amexio-data-table-column [width]="20" [dataIndex]="'latitude'" [dataType]="'string'" [hidden]="false" [text]="'Latitude'"></amexio-data-table-column>
+                      <amexio-data-table-column [width]="20" [dataIndex]="'longitude'" [dataType]="'number'" [hidden]="false" [text]="'Longitude'"></amexio-data-table-column>
                     </amexio-datagrid>
-                 <!--   <p><b>Selected row data : </b>{{selectedData | json}}</p>-->
+                    <p><b>Clicked row data :</b> {{clickedRowData | json}}</p>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -105,12 +109,12 @@ import {Http} from "@angular/http";
     </amexio-card>
   `
 })
-export class SimpleGridDemo {
+export class GridWithTemplateDemo {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
   copyMsgArray: any[];
-  selectedData: any;
+  clickedRowData: any;
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -121,7 +125,7 @@ export class SimpleGridDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/simplegrid/simplegrid.html').subscribe(data => {
+    this.http.get('assets/data/code/data/templategrid/templategrid.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -129,14 +133,14 @@ export class SimpleGridDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/simplegrid/simplegrid.text').subscribe(data => {
+    this.http.get('assets/data/code/data/templategrid/templategrid.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/gridtemplate.json').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
@@ -155,9 +159,8 @@ export class SimpleGridDemo {
     }
   }
 
-  getSelectedData(data: any) {
-    debugger;
-    this.selectedData = data;
+  getRowData(data: any) {
+    this.clickedRowData = data;
   }
 }
 

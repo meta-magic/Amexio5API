@@ -210,6 +210,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
+  },
+  {
+    path: 'template-grid', loadChildren: './data/gridwithtemplate/gridwithtemplate.demo.module#GridWithTemplateDemoModule'
   }
 
 ];
