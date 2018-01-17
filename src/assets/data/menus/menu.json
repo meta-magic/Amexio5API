@@ -317,7 +317,7 @@
             },
             {
               "text": "Filter",
-              "link": "tree"
+              "link": "filter-grid"
             },
             {
               "text": "Group By",

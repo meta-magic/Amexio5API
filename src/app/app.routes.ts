@@ -213,6 +213,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'template-grid', loadChildren: './data/gridwithtemplate/gridwithtemplate.demo.module#GridWithTemplateDemoModule'
+  },
+  {
+    path: 'filter-grid', loadChildren: './data/filtergrid/filtergrid.demo.module#FilterGridDemoModule'
   }
 
 ];
