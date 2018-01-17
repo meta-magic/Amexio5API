@@ -9,13 +9,14 @@ import {CommonModule} from "@angular/common";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {SharedModule} from "../../shared.module";
+import {AmexioWidgetModule} from "amexio-ng-extensions";
 
 const routes: Routes = [
   { path: '', component: CarouselDemoComponent },
 ];
 
 @NgModule({
-  imports: [CommonModule,HttpModule,FormsModule,SharedModule,RouterModule.forChild(routes)],
+  imports: [CommonModule,HttpModule,FormsModule,SharedModule,RouterModule.forChild(routes),AmexioWidgetModule],
   exports: [RouterModule],
   declarations : [CarouselDemoComponent]
 })

@@ -10,7 +10,7 @@
       "name": "horizontal",
       "type": "string",
       "default": "false",
-      "description": "set true for horizontal checkbox "
+      "description": "Set true for horizontal checkbox "
     },
     {
       "name": "httpUrl",
@@ -52,7 +52,7 @@
   "events": [
     {
       "name": "selectedValue",
-      "description": "fire when radio click "
+      "description": "Fire when radio click "
     }
   ],
   "css": [

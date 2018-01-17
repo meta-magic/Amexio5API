@@ -39,13 +39,13 @@
       "name": "data",
       "type": "any",
       "default": "",
-      "description": "Local data for radio group."
+      "description": "Local data for Typeahead"
     }
   ],
   "events": [
     {
       "name": "selectedValue",
-      "description": "fire when typeahead item click "
+      "description": "Fire when typeahead item click "
     }
   ],
   "css": [

@@ -15,7 +15,7 @@
       "name": "horizontal",
       "type": "boolean",
       "default": "false",
-      "description": "set true for horizontal checkbox "
+      "description": "Set true for horizontal checkbox "
     },
     {
       "name": "httpUrl",

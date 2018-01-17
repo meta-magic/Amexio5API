@@ -55,7 +55,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/layout/step/step.json'"
+                             [httpUrl]="'assets/apireference/layout/steps/step.json'"
                              [dataReader]="'properties'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -150,7 +150,7 @@ export class StepBoxDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/steps/stepbox/step.html').subscribe(data => {
+    this.http.get('assets/data/code/layout/steps/steps.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -158,7 +158,7 @@ export class StepBoxDemoComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/steps/stepbox/step.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/steps/steps.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
@@ -171,9 +171,9 @@ export class StepBoxDemoComponent {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push('Code Copied');
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push('Code Copied');
     }
   }
 }

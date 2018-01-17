@@ -34,13 +34,13 @@
       "name": "tooltipMessage",
       "type": "string",
       "default": "",
-      "description": "showing tooltip over button"
+      "description": "Showing tooltip over button"
     }
   ],
   "events": [
     {
       "name": "onItemClick",
-      "description": "fire when button-dropdown item button/link click "
+      "description": "Fire when button-dropdown item button/link click "
     }
   ],
   "css": [

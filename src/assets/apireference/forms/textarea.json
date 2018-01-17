@@ -10,19 +10,19 @@
       "name": "noOfrows",
       "type": "number",
       "default": "",
-      "description":"number of rows for textarea."
+      "description":"Number of rows for textarea."
     },
     {
       "name": "noOfCols",
       "type": "number",
       "default": "",
-      "description":"number of column for textarea."
+      "description":"Number of column for textarea."
     },
     {
       "name": "maxLength",
       "type": "number",
       "default": "",
-      "description":"the largest positive representable number. The largest negative representable number is maxLength."
+      "description":"The largest positive representable number. The largest negative representable number is maxLength."
     },
     {
       "name": "maxErrorMsg",
@@ -104,7 +104,7 @@
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
-      "description":"set enable / disable popover."
+      "description":"Set enable / disable popover."
     }
   ],
   "events":[

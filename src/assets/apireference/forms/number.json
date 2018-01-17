@@ -6,10 +6,10 @@
       "default": "",
       "description":"The label of this field"
     }, {
-      "name": "maxLength",
+      "name": "maxValue",
       "type": "number",
       "default": "",
-      "description":"the largest positive representable number. The largest negative representable number is maxLength."
+      "description":"The largest positive representable number. The largest negative representable number is maxLength."
     },
     {
       "name": "maxErrorMsg",
@@ -17,10 +17,10 @@
       "default": "",
       "description":"Error Message required to displayed after validation of maxLength "
     },   {
-      "name": "minLength",
+      "name": "minValue",
       "type": "number",
       "default": "",
-      "description":"The smallest positive representable number -- that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
+      "description":"The smallest positive representable number -that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
     },
     {
       "name": "minErrorMsg",
@@ -71,7 +71,7 @@
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
-      "description":"set enable / disable popover."
+      "description":"Set enable / disable popover."
     }
 
   ],

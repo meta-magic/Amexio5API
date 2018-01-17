@@ -10,7 +10,7 @@
       "name": "maxLength",
       "type": "number",
       "default": "",
-      "description":"the largest positive representable number. The largest negative representable number is maxLength."
+      "description":"The largest positive representable number. The largest negative representable number is maxLength."
     },
     {
       "name": "maxErrorMsg",
@@ -87,12 +87,12 @@
       "name": "hasLabel",
       "type": "boolean",
       "default": "false",
-      "description":"hide/unhide field label"
+      "description":"Hide/unhide field label"
     },{
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
-      "description":"set enable / disable popover."
+      "description":"Set enable / disable popover."
     }
   ],
   "events":[

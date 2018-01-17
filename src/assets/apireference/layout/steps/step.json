@@ -1,0 +1,43 @@
+{
+  "properties": [
+    {
+      "name": "active",
+      "type": "boolean",
+      "default": "",
+      "description":"the current active step"
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "default": "",
+      "description":"Label for step"
+    },
+    {
+      "name": "icon",
+      "type": "string",
+      "default": "",
+      "description":"Icon for step box"
+    },
+    {
+      "name": "showIndex",
+      "type": "boolean",
+      "default": "false",
+      "description":"Show the indexes of steps"
+    },{
+      "name": "showIcon",
+      "type": "boolean",
+      "default": "false",
+      "description":"Show icon based on boolean"
+    },{
+      "name": "showBlockBox",
+      "type": "boolean",
+      "default": "false",
+      "description":"Show block based on boolean"
+    },{
+      "name": "onBlockClick",
+      "type": "event",
+      "default": "",
+      "description":"Event emitted on block click"
+    }
+  ]
+}
