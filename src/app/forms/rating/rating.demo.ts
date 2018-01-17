@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true" [enableFooter]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h2>Sample rating with label</h2>
+                    <h2>Sample Rating With Label</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="rate" [fieldLabel]="'Film Rating'"
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true" [enableFooter]="true"  [footeralign]="'center'">
                   <amexio-header>
-                    <h2> Rating with rate titles</h2>
+                    <h2> Rating With Rate Titles</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="profileRate"
@@ -54,7 +54,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [enableHeader]="true" [enableFooter]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h2>Custom rating icons</h2>
+                    <h2>Custom Rating Icons</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="customRate" [fullIcon]="'☑'" [emptyIcon]="'☐'"
@@ -70,7 +70,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h2> Rating with disable</h2>
+                    <h2> Rating With Read Only</h2>
                   </amexio-header>
                   <amexio-body>
                     <!--Read only Rating-->
