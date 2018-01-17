@@ -4,13 +4,13 @@
       "name": "height",
       "type": "number",
       "default": "",
-      "description":"height of chart"
+      "description":"Height of chart"
     },
     {
       "name": "width",
       "type": "number",
       "default": "",
-      "description":"width of chart"
+      "description":"Width of chart"
     },{
       "name": "data",
       "type": "Array",
@@ -23,55 +23,55 @@
       "name": "title",
       "type": "string",
       "default": "",
-      "description":"title to display above the chart."
+      "description":"Title to display above the chart."
     },
     {
       "name": "titleColor",
       "type": "string",
       "default": "",
-      "description":"color of chart title."
+      "description":"Color of chart title."
     },{
       "name": "titleFontName",
       "type": "string",
       "default": "",
-      "description":"font name of chart title."
+      "description":"Font name of chart title."
     },{
       "name": "titleFontSize",
       "type": "number",
       "default": "",
-      "description":"font size of chart title."
+      "description":"Font size of chart title."
     },{
       "name": "isTitleBold",
       "type": "boolean",
       "default": "false",
-      "description":"title in bold."
+      "description":"Set true for title in bold font."
     },{
       "name": "isTitleItalic",
       "type": "boolean",
       "default": "false",
-      "description":"title text in italic."
+      "description":"Set true for title text in italic style."
     }
   ],
   "horizontalAxis":[  {
     "name": "title",
     "type": "string",
     "default": "",
-    "description":"title of the chart for the horizontal axis."
+    "description":"Title of the chart for the horizontal axis."
   },{
     "name": "titleTextColor",
     "type": "string",
     "default": "",
-    "description":"the color of the chart for the horizontal axis."
+    "description":"The color of the chart for the horizontal axis."
   }],
   "verticalAxis":[  {
     "name": "title",
     "type": "string",
     "default": "",
-    "description":"title of the chart for the Vertical axis."
+    "description":"Title of the chart for the Vertical axis."
   },{
     "name": "titleTextColor",
     "type": "string",
     "default": "",
-    "description":"the color of the chart for the Vertical axis."
+    "description":"The color of the chart for the Vertical axis."
   }]
 }

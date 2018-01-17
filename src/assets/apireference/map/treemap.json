@@ -40,7 +40,7 @@
     },{
       "name": "showScale",
       "type": "boolean",
-      "default": "",
+      "default": "false",
       "description": "Whether or not to show a color gradient scale from minColor to maxColor along the top of the chart. Specify true to show the scale."
     }
   ],
@@ -68,13 +68,13 @@
     },  {
       "name": "isTitleBold",
       "type": "boolean",
-      "default": "",
+      "default": "false",
       "description": "Set true for title with bold font."
     },
     {
       "name": "isTitleItalic",
       "type": "string",
-      "default": "",
+      "default": "false",
       "description": "title text in in italic."
     }
   ]
