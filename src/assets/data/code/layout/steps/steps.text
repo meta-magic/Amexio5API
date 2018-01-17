@@ -1,0 +1,12 @@
+
+  import {Component, OnInit} from '@angular/core';
+
+  @Component({
+    selector : 'steps-demo',
+    templateUrl : 'steps.demo.html'
+  })
+  export class WindowDemo {
+
+  constructor() {
+  }
+  }

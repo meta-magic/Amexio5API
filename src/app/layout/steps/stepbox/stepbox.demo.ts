@@ -150,7 +150,7 @@ export class StepBoxDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/steps/stepbox/step.html').subscribe(data => {
+    this.http.get('assets/data/code/layout/steps/steps.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -158,7 +158,7 @@ export class StepBoxDemoComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/steps/stepbox/step.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/steps/steps.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

@@ -45,7 +45,7 @@ import {Http} from "@angular/http";
          <amexio-tab title="API Reference">
            <amexio-datagrid title="Properties" [columnToggle]="false"
                             [httpMethod]="'get'"
-                            [httpUrl]="'assets/apireference/layout/step/step.json'"
+                            [httpUrl]="'assets/apireference/layout/steps/step.json'"
                             [dataReader]="'properties'"
                             [filtering]="false">
              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
@@ -139,7 +139,7 @@ export class StepBoxIconComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/steps/stepbox/step.html').subscribe(data => {
+    this.http.get('assets/data/code/layout/steps/steps_icon.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -147,7 +147,7 @@ export class StepBoxIconComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/steps/stepbox/step.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/steps/steps.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
