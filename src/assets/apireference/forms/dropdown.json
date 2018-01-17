@@ -10,7 +10,7 @@
       "name": "placeholder",
       "type": "string",
       "default": "",
-      "description": "show placeholder inside dropdown component"
+      "description": "Show placeholder inside dropdown component"
     },
 
     {
@@ -40,7 +40,7 @@
       "name": "data",
       "type": "any",
       "default": "",
-      "description": "Local data for checkboxGroup."
+      "description": "Local data for dropdown."
     },
     {
       "name": "dataReader",
@@ -74,11 +74,11 @@
       "description":"On field focus event"
     },{
       "name": "onSingleSelect",
-      "description":"fire when drop down item selected."
+      "description":"Fire when drop down item selected."
     },
     {
       "name": "onMultiSelect",
-      "description":"fire when multiple record select in drop down.this event is only applied multiSelect=true"
+      "description":"Fire when multiple record select in drop down.this event is only applied when multiSelect=true"
     }
   ],
   "css": [

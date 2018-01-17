@@ -4,25 +4,25 @@
       "name": "fieldLabel",
       "type": "string",
       "default": "",
-      "description":"field label "
+      "description":"The label of this field"
     },
     {
       "name": "disabled",
       "type": "boolean",
       "default": "false",
-      "description":"if true will not react on any user events and show disable icon over"
+      "description":"If true will not react on any user events and show disable icon over"
     },
     {
       "name": "required",
       "type": "boolean",
       "default": "false",
-      "description":"validate field"
+      "description":"Validate field"
     }
   ],
   "events":[
     {
       "name": "selectedValue",
-      "description":"event fired on checkbox click."
+      "description":"Event fired on checkbox click."
     }
   ]
 }

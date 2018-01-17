@@ -59,7 +59,7 @@
       "name": "enablePopOver",
       "type": "boolean",
       "default": "false",
-      "description":"set enable / disable popover."
+      "description":"Set enable / disable popover."
     }
 
   ],

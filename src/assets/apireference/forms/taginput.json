@@ -51,13 +51,13 @@
       "name": "data",
       "type": "any",
       "default": "",
-      "description": "Local data for checkboxGroup."
+      "description": "Local data for Tag Input"
     }
   ],
   "events": [
     {
       "name": "onChange",
-      "description": "fire when select value from input tag "
+      "description": "Fire when select value from input tag "
     }
   ],
   "css": [
