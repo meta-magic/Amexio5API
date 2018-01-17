@@ -4,7 +4,7 @@
       "name": "showCard",
       "type": "boolean",
       "default": "true",
-      "description":"User can bind variable to this and hide/unhide based on requirement"
+      "description":"User can bind variable to this and hide/unhide card based on requirement."
     },
     {
       "name": "enableHeader",
@@ -16,18 +16,18 @@
       "name": "enableFooter",
       "type": "boolean",
       "default": "false",
-      "description":"User can enable footer of card by setting this flag to true"
+      "description":"User can enable footer of card by setting this flag to true."
     },
     {
       "name": "headeralign",
       "type": "string",
       "default": "",
-      "description":"align of item elements inside card header example : right,center,left"
+      "description":"Align of item elements inside card header example : right,center,left."
     },{
       "name": "footeralign",
       "type": "string",
       "default": "",
-      "description":"align of item elements inside card footer example : right,center,left"
+      "description":"Align of item elements inside card footer example : right,center,left."
     }
   ]
 }
