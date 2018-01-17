@@ -160,7 +160,7 @@ export class ScrollableTabDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/scrollabletab/tab.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/scrollabletab/tab.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

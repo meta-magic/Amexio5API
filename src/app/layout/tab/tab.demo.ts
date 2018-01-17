@@ -119,7 +119,7 @@ export class TabDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/tab/basic-tab/tab.html').subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/basictab/layout.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -127,7 +127,7 @@ export class TabDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/basic-tab/tab.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/basictab/tab.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

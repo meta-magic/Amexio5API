@@ -127,7 +127,7 @@ export class IconWithTabDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/iconwithtab/tab.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/iconwithtab/tab.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

@@ -127,7 +127,7 @@ export class ClosableTabDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/closabletab/tab.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/closabletab/tab.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

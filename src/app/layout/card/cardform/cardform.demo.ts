@@ -37,16 +37,17 @@ import {Http} from "@angular/http";
                 </amexio-row>
                 <amexio-row>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Phone'" name ="phone"
-                                       [placeholder]="'Enter phone'"
-                                       [iconFeedBack]="true">
-                    </amexio-text-input>
+                    <amexio-number-input [fieldLabel]="'Number Input'"
+                                         [placeholder]="'Enter Age'">
+                    </amexio-number-input>
                   </amexio-column>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Email'" name ="email"
-                                       [placeholder]="'Enter Email'"
-                                       [iconFeedBack]="true">
-                    </amexio-text-input>
+                    <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                                        [placeholder]="'Enter Email Id'"
+                                        [allowBlank]="false" [errorMsg] ="'Please Enter Email Id'"
+                                        [enablePopOver]="true"
+                                        [iconFeedBack]="true">
+                    </amexio-email-input>
                   </amexio-column>
                 </amexio-row>
               </amexio-body>

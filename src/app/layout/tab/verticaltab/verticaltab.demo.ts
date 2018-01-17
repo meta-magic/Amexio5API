@@ -106,7 +106,7 @@ export class VerticalTabDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/verticaltab/tab.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/verticaltab/tab.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
