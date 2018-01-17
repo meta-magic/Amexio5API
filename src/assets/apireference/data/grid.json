@@ -1,0 +1,134 @@
+{
+  "properties": [
+    {
+      "name": "httpUrl",
+      "type": "string",
+      "default": "",
+      "description":"REST url for fetching data."
+    },
+    {
+      "name": "httpMethod",
+      "type": "string",
+      "default": "",
+      "description":"Type of HTTP call, POST,GET etc."
+    },
+    {
+      "name": "data",
+      "type": "any[]",
+      "default": "",
+      "description":"Local Data binding."
+    },
+    {
+      "name": "dataReader",
+      "type": "string",
+      "default": "",
+      "description":"Key in JSON Datasource for records."
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "default": "",
+      "description":"height for ListBox."
+    },
+    {
+      "name": "pageSize",
+      "type": "number",
+      "default": "",
+      "description":"Number of records show on one page."
+    },
+    {
+      "name": "header",
+      "type": "string",
+      "default": "",
+      "description":"Heading for ListBox."
+    },
+    {
+      "name": "checkboxSelect",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enables checkbox for each row, this allows user for multi selection."
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "default": "",
+      "description":"Title for grid."
+    },
+    {
+      "name": "filtering",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enables user to filter data."
+    },
+    {
+      "name": "groupByColumn",
+      "type": "boolean",
+      "default": "false",
+      "description":"set True for Enable group by functionality."
+    },
+    {
+      "name": "groupByColumnIndex",
+      "type": "string",
+      "default": "",
+      "description":"Primary dataIndex name of the column for Grouping."
+    },
+    {
+      "name": "columnDefinition",
+      "type": "any[]",
+      "default": "",
+      "description":"If you don't want to use '<amexio-data-table-column>' tag then pass JSON data."
+    },
+    {
+      "name": "columnToggle",
+      "type": "boolean",
+      "default": "true",
+      "description":"set false to hide Column toggle functionality."
+    }
+  ],
+  "events":[
+    {
+      "name": "selectedRowData",
+      "description":"It will fire only on selection of checkbox and gives you selected record data."
+    },
+    {
+      "name": "rowSelect",
+      "description":"It will gives you row clicked data."
+    },
+    {
+      "name": "onHeaderClick",
+      "description":"It will gives you click event and column info."
+    }
+  ],
+  "columnProperties":[
+    {
+      "name": "text",
+      "type": "boolean",
+      "default": "false",
+      "description":"Set column label."
+    },
+    {
+      "name": "dataIndex",
+      "type": "string",
+      "default": "",
+      "description":"JSON key from datasource."
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "default": "false",
+      "description":"Hide column."
+    },
+    {
+      "name": "dataType",
+      "type": "string",
+      "default": "",
+      "description":"Data type of column (string/number)."
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "description":"Custom width for each column.Width must be in % but no need to mention %."
+    }
+  ]
+}

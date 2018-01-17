@@ -204,7 +204,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'listbox-demo', loadChildren: './data/listbox/listbox.demo.module#ListBoxDemoModule'
+  },
+  {
+    path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
   }
-
 
 ];

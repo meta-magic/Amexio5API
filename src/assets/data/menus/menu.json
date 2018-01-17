@@ -301,6 +301,39 @@
       "icon": "fa fa-th fa-fw",
       "children": [
         {
+          "text": "Grid",
+          "children": [
+            {
+              "text": "Simple",
+              "link": "simple-grid"
+            },
+            {
+              "text": "Grid with Template",
+              "link": "tree"
+            },
+            {
+              "text": "Filter",
+              "link": "tree"
+            },
+            {
+              "text": "Group By",
+              "link": "tree"
+            },
+            {
+              "text": "Custom Column",
+              "link": "tree"
+            },
+            {
+              "text": "Grid with scroll",
+              "link": "tree"
+            },
+            {
+              "text": "Tree Data Grid",
+              "link": "tree"
+            }
+          ]
+        },
+        {
           "text": "Tree",
           "link": "tree"
         },
