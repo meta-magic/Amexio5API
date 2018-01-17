@@ -225,6 +225,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'scroll-grid', loadChildren: './data/gridwithscroll/gridwithscroll.demo.module#GridWithScrollDemoModule'
+  },
+  {
+    path: 'tree-data-grid', loadChildren: './data/treedatagrid/treedatagrid.demo.module#TreeDataGridDemoModule'
   }
 
 ];

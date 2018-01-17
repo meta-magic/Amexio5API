@@ -1,0 +1,14 @@
+<!--tree data grid-->
+<amexio-tree-data-table [httpMethod]="'get'"
+                        [httpUrl]="'assets/data/componentdata/treedatatable.json'"
+                        [dataReader]="'data'"
+                        (selectedRecord)="getSelectedData($event)">
+  <amexio-data-table-column [dataIndex]="'user'"
+                            [dataType]="'string'" [hidden]="false"
+                            [text]="'User'">
+  </amexio-data-table-column>
+  <amexio-data-table-column [dataIndex]="'duration'"
+                            [dataType]="'number'" [hidden]="false"
+                            [text]="'Duration'">
+  </amexio-data-table-column>
+</amexio-tree-data-table>
