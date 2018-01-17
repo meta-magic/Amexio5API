@@ -216,6 +216,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'filter-grid', loadChildren: './data/filtergrid/filtergrid.demo.module#FilterGridDemoModule'
+  },
+  {
+    path: 'groupby-grid', loadChildren: './data/groupby/groupbygrid.demo.module#GroupByGridDemoModule'
   }
 
 ];

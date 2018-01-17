@@ -1,0 +1,15 @@
+<!--data grid groupby-->
+<amexio-datagrid
+  [title]="'Employee Data'"
+  [pageSize] = "10"
+  [dataReader]="'data'"
+  [groupByColumn]="true"
+  [groupByColumnIndex]="'jobTitle'"
+  [httpUrl]="'assets/data/componentdata/datagridgroupby.json'"
+  [httpMethod]="'get'"
+  (selectedRowData)="onRowSelect($event)">
+  <amexio-data-table-column [dataIndex]="'preferredFullName'" [dataType]="'string'" [hidden]="false" [text]="'FullName'"></amexio-data-table-column>
+  <amexio-data-table-column [dataIndex]="'jobTitle'" [dataType]="'string'" [hidden]="false" [text]="'Job Title'">
+  </amexio-data-table-column>
+  <amexio-data-table-column [dataIndex]="'salary'" [dataType]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
+</amexio-datagrid>
