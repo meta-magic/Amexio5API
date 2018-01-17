@@ -4,12 +4,12 @@
       "name": "title",
       "type": "string",
       "default": "",
-      "description": "title of navbar."
+      "description": "Title of navbar."
     },{
       "name": "logo",
       "type": "string",
       "default": "",
-      "description": "logo of navbar."
+      "description": "Logo of navbar."
     },  {
       "name": "httpUrl",
       "type": "string",
@@ -26,13 +26,13 @@
       "name": "data",
       "type": "any",
       "default": "",
-      "description": "Local data for dropdown."
+      "description": "Local data for navbar."
     },
     {
       "name": "dataReader",
       "type": "string",
       "default": "",
-      "description": "Key in JSON datasource for records"
+      "description": "Key in JSON datasource for records."
     }
   ],
   "propertiesitem": [
@@ -40,19 +40,19 @@
       "name": "position-center",
       "type": "string",
       "default": "",
-      "description": "show the content in center. <amexio-nav-item position-center></amexio-nav-item>."
+      "description": "Show the content in center. <amexio-nav-item position-center></amexio-nav-item>."
     },
     {
       "name": "position-left",
       "type": "string",
       "default": "",
-      "description": "show the content left side .<amexio-nav-item position-left></amexio-nav-item>."
+      "description": "Show the content left side .<amexio-nav-item position-left></amexio-nav-item>."
     },
     {
       "name": "position-right",
       "type": "string",
       "default": "",
-      "description": "show the content right side. <amexio-nav-item position-right></amexio-nav-item>."
+      "description": "Show the content right side. <amexio-nav-item position-right></amexio-nav-item>."
     }
   ]
 }

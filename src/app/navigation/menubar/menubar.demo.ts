@@ -31,33 +31,33 @@ import {Http} from "@angular/http";
             </amexio-card>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="API Reference : amexio-dockbar" [columnToggle]="false"
+            <amexio-datagrid title="Propeties" [columnToggle]="false"
                              [httpMethod]="'get'"
                              [httpUrl]="'assets/apireference/navigation/menubar.json'"
                              [dataReader]="'properties'"
                              [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="API Reference : amexio-dockbar-item" [columnToggle]="false"
+            <amexio-datagrid title="Events" [columnToggle]="false"
                              [httpMethod]="'get'"
                              [httpUrl]="'assets/apireference/navigation/menubar.json'"
                              [dataReader]="'events'"
                              [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

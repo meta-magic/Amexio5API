@@ -16,13 +16,13 @@
       "name": "data",
       "type": "any",
       "default": "",
-      "description": "Local data for checkboxGroup."
+      "description": "Local data for menubar."
     }
   ],
   "events":[
     {
       "name": "nodeClick",
-      "description": "fire when menubar bar click"
+      "description": "Fire when menubar bar click."
 
     }
   ]

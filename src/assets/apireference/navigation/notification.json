@@ -4,36 +4,36 @@
       "name": "messageData",
       "type": "Array",
       "default": "",
-      "description": "list of notification with key msg."
+      "description": "List of notification with key msg."
     },
     {
       "name": "closable",
       "type": "boolean",
       "default": "true",
-      "description": "closable icon on notification."
+      "description": "Closable icon on notification."
     },
     {
       "name": "verticalposition",
       "type": "string",
       "default": "",
-      "description": "vertical position of notification.Example top,bottom"
+      "description": "Vertical position of notification.Example:top,bottom."
     },
     {
       "name": "horizontalposition",
       "type": "string",
       "default": "",
-      "description": "Horizontal position of notification.Example right,left"
+      "description": "Horizontal position of notification.Example:right,left."
     }, {
       "name": "autodismissmsg",
       "type": "boolean",
       "default": "false",
-      "description": "set true to Automatically dismiss notification "
+      "description": "Set true to Automatically dismiss notification."
     },
     {
       "name": "autodismissmsginterval",
       "type": "number",
       "default": "",
-      "description": "add time interval for shown msg "
+      "description": "Add time interval for shown msg."
     }
   ]
 }
