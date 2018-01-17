@@ -28,19 +28,13 @@
       "name": "height",
       "type": "number",
       "default": "",
-      "description":"height for ListBox."
+      "description":"Height for grid."
     },
     {
       "name": "pageSize",
       "type": "number",
       "default": "",
       "description":"Number of records show on one page."
-    },
-    {
-      "name": "header",
-      "type": "string",
-      "default": "",
-      "description":"Heading for ListBox."
     },
     {
       "name": "checkboxSelect",
@@ -64,7 +58,7 @@
       "name": "groupByColumn",
       "type": "boolean",
       "default": "false",
-      "description":"set True for Enable group by functionality."
+      "description":"Set True for Enable group by functionality."
     },
     {
       "name": "groupByColumnIndex",
@@ -82,7 +76,7 @@
       "name": "columnToggle",
       "type": "boolean",
       "default": "true",
-      "description":"set false to hide Column toggle functionality."
+      "description":"Set false to hide Column toggle functionality."
     }
   ],
   "events":[
@@ -102,8 +96,8 @@
   "columnProperties":[
     {
       "name": "text",
-      "type": "boolean",
-      "default": "false",
+      "type": "string",
+      "default": "",
       "description":"Set column label."
     },
     {
