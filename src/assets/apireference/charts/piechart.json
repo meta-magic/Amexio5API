@@ -3,23 +3,23 @@
     {
       "name": "height",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"height of chart"
     },
     {
       "name": "width",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"width of chart"
     },{
       "name": "data",
       "type": "Array",
-      "default": "null",
+      "default": "",
       "description":"For the use of local data "
     },{
       "name": "is3D",
       "type": "boolean",
-      "default": "null",
+      "default": "",
       "description":"If you set the is3D option to true, your pie chart will be drawn as though it has three dimensions"
     }
   ],
@@ -27,23 +27,23 @@
     {
       "name": "title",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"title to display above the chart."
     },
     {
       "name": "titleColor",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"color of chart title."
     },{
       "name": "titleFontName",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"font name of chart title."
     },{
       "name": "titleFontSize",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"font size of chart title."
     },{
       "name": "isTitleBold",
@@ -61,28 +61,28 @@
     {
       "name": "legendPosition",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Position of the legend.'bottom' - Below the chart.'top' - Above the chart."
     },
     {
       "name": "legendAlignment",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Alignment of the legend.'start' - Aligned to the start of the area allocated for the legend.'center' - Centered in the area allocated for the legend 'end' - Aligned to the end of the area allocated for the legend."
     }, {
       "name": "legendColor",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"color of chart legend. for example: 'red' or '#00cc00'."
     }, {
       "name": "legendFontName",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"font name of chart legend"
     },{
       "name": "legendFontSize",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"font size of chart legend"
     },{
       "name": "isLegendBold",
@@ -92,7 +92,7 @@
     },{
       "name": "maxLinesOfLegend",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend."
     }
   ]

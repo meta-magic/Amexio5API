@@ -3,53 +3,53 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"The label of this field"
     },
     {
       "name": "noOfrows",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"number of rows for textarea."
     },
     {
       "name": "noOfCols",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"number of column for textarea."
     },
     {
       "name": "maxLength",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"the largest positive representable number. The largest negative representable number is maxLength."
     },
     {
       "name": "maxErrorMsg",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Error Message required to displayed after validation of maxLength "
     },   {
       "name": "minLength",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"The smallest positive representable number -- that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
     },
     {
       "name": "minErrorMsg",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Error Message required to displayed after validation of minLength"
     },
     {
       "name": "fieldName",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Field name for text input."
     }, {
       "name": "pattern",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
     },{
       "name": "allowBlank",
@@ -60,7 +60,7 @@
     {
       "name": "placeholder",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"A string value displayed in the input (if supported) when the control is empty."
     },{
       "name": "disabled",
@@ -71,7 +71,7 @@
     {
       "name": "errorMsg",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Error Message required to displayed after validation"
     },
     {
@@ -82,18 +82,18 @@
     },{
       "name": "fontStyle",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set fontstyle to field"
     },{
       "name": "fontFamily",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set font family to field"
     },
     {
       "name": "fontSize",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Set font size to field"
     }, {
       "name": "hasLabel",

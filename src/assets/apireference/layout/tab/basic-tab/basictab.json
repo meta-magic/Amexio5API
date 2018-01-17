@@ -11,7 +11,7 @@
     {
       "name": "title",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Title on Tab Button/Pill."
     },
     {
@@ -23,7 +23,7 @@
     {
       "name": "icon",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home"
     }
   ],

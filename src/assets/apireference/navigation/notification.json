@@ -3,7 +3,7 @@
     {
       "name": "messageData",
       "type": "Array",
-      "default": "null",
+      "default": "",
       "description": "list of notification with key msg."
     },
     {
@@ -15,13 +15,13 @@
     {
       "name": "verticalposition",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "vertical position of notification.Example top,bottom"
     },
     {
       "name": "horizontalposition",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Horizontal position of notification.Example right,left"
     }, {
       "name": "autodismissmsg",
@@ -32,7 +32,7 @@
     {
       "name": "autodismissmsginterval",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description": "add time interval for shown msg "
     }
   ]

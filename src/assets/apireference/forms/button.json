@@ -3,37 +3,37 @@
     {
       "name": "label",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Label on button"
     },
     {
       "name": "type",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Type of button : default, primary, success , danger & warning"
     },
     {
       "name": "icon",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Fa icon class name"
     },
     {
       "name": "disabled",
       "type": "boolean",
-      "default": "null",
+      "default": "",
       "description": "Enable/Disables the button"
     },
     {
       "name": "size",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Different Sizes of Buttons availabe : large, default, small & xsmall"
     },
     {
       "name": "tooltipMessage",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "showing tooltip over button"
     }
   ],

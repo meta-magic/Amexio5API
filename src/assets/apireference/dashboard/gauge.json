@@ -3,42 +3,42 @@
     {
       "name": "height",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"height of chart"
     },{
       "name": "width",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"width of chart"
     },{
       "name": "data",
       "type": "Array",
-      "default": "null",
+      "default": "",
       "description":"For the use of local datasource ."
     },{
       "name": "redColorFrom",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"The lowest value for a range marked by a red color."
     },{
       "name": "redColorTo",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"The highest value for a range marked by a red color."
     },{
       "name": "yellowColorFrom",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"The lowest value for a range marked by a yellow color."
     },{
       "name": "yellowColorTo",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"The highest value for a range marked by a yellow color."
     },{
       "name": "minorTicks",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"The number of minor tick section in each major tick section."
     }
   ]

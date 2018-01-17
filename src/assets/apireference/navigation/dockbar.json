@@ -3,7 +3,7 @@
     {
       "name": "height",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "height of dockbar."
     }
   ],
@@ -11,31 +11,31 @@
     {
       "name": "title",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "title of dockbar item"
     },
     {
       "name": "width",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "width of dockbar item"
     },
     {
       "name": "imagePath",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Specifies the URL of an image.this is attribute use only for images"
     },
     {
       "name": "icon",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "icon name Material Example: icon='home'  Fontawesome Example: icon='fa fa-address-book'"
     },
     {
       "name": "mdbClass",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "this attribute use for only material icons.Material Example:mdbClass='material-icons'"
     }
   ]

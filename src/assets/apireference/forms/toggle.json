@@ -9,7 +9,7 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"field label "
     }
   ],

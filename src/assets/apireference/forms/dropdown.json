@@ -3,49 +3,49 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "The label of this field"
     },
     {
       "name": "placeholder",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "show placeholder inside dropdown component"
     },
 
     {
       "name": "httpUrl",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "REST url for fetching datasource."
     },
     {
       "name": "httpMethod",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
     {
       "name": "displayField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data to display on ui."
     },
     {
       "name": "valueField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data.use to send to backend"
     },{
       "name": "data",
       "type": "any",
-      "default": "null",
+      "default": "",
       "description": "Local data for checkboxGroup."
     },
     {
       "name": "dataReader",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Key in JSON datasource for records"
     },
     {

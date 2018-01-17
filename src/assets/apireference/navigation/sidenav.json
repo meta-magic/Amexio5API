@@ -3,53 +3,53 @@
     {
       "name": "width",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "width of sidenav"
     },{
       "name": "position",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "sidenav bar rendering position. example position='relative','right' "
     },
     {
       "name": "sidenavtitle",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "title of sidenav bar "
     },
     {
       "name": "titleimage",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "title image of sidenav bar "
     },
     {
       "name": "httpUrl",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "REST url for fetching datasource."
     },
     {
       "name": "httpMethod",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
     {
       "name": "displayField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data to display on ui."
     },
     {
       "name": "valueField",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "Name of key inside response data.use to send to backend"
     },{
       "name": "data",
       "type": "any",
-      "default": "null",
+      "default": "",
       "description": "Local data for checkboxGroup."
     }
   ],

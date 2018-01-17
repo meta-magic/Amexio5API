@@ -3,13 +3,13 @@
     {
       "name": "fieldLabel",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"field label."
     },
     {
       "name": "max",
       "type": "number",
-      "default": "null",
+      "default": "",
       "description":"number of stars for rating component."
     },
     {
@@ -20,7 +20,7 @@
     }, {
       "name": "titles",
       "type": "string[]",
-      "default": "null",
+      "default": "",
       "description":"array of titles, default:1,2,3.."
     },{
       "name": "disabled",
@@ -36,13 +36,13 @@
     {
       "name": "fullIcon",
       "type": "string ",
-      "default": "null",
+      "default": "",
       "description":"icon for selected rating .this attribute use only user have custom rating icons.example ☑"
     },
     {
       "name": "emptyIcon",
       "type": "string ",
-      "default": "null",
+      "default": "",
       "description":"icon for non-selected rating .this attribute use only user have custom rating icons.example ☐"
     }
   ]

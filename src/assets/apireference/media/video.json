@@ -3,13 +3,13 @@
     {
       "name": "path",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "path of video"
     },
     {
       "name": "extension",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description": "video extension"
     }
   ]

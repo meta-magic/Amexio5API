@@ -21,12 +21,12 @@
     {
       "name": "headeralign",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"align of item elements inside card header example : right,center,left"
     },{
       "name": "footeralign",
       "type": "string",
-      "default": "null",
+      "default": "",
       "description":"align of item elements inside card footer example : right,center,left"
     }
   ]
