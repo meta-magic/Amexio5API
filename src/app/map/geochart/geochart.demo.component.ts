@@ -11,7 +11,7 @@ import {Http} from "@angular/http";
         <h2>Geo Chart Component</h2>
       </amexio-header>
       <amexio-body>
-        <p>Data can be plotted on a Map using Amexio's <code>AmexioMapsModule</code>. All Mapping widgets are available under <code>amexio-ng-extensions/maps</code></p>
+        <p>Data can be plotted on a Map using Amexio's <code>AmexioMapModule</code>. All Mapping widgets are available under <code>amexio-ng-extensions/maps</code></p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
            <amexio-row>
