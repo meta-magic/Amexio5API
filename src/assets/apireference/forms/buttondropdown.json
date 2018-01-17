@@ -21,7 +21,7 @@
     {
       "name": "disabled",
       "type": "boolean",
-      "default": "",
+      "default": "false",
       "description": "Enable/Disables the button"
     },
     {

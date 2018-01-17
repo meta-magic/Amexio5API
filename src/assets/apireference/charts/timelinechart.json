@@ -4,7 +4,7 @@
       "name": "width",
       "type": "number",
       "default": "",
-      "description": "width of chart"
+      "description": "Width of chart"
     },
     {
       "name": "data",
