@@ -4,19 +4,19 @@
       "name": "height",
       "type": "number",
       "default": "",
-      "description": "height of chart"
+      "description": "Height of chart"
     },
     {
       "name": "width",
       "type": "number",
       "default": "",
-      "description": "width of chart"
+      "description": "Width of chart"
     },
     {
       "name": "data",
-      "type": "Array",
+      "type": "array",
       "default": "",
-      "description": "For the use of local data "
+      "description": "Local data for TreeMap"
     },{
       "name": "maxColor",
       "type": "string",
@@ -31,7 +31,7 @@
       "name": "minColor",
       "type": "string",
       "default": "",
-      "description": "The color for a rectangle with the column 3 value of minColorValue. Specify an HTML color value.TolorValue. Specify an HTML color value."
+      "description": "The color for a rectangle with the column 3 value of minColorValue. Specify an HTML color value."
     },{
       "name": "maxPostDepth",
       "type": "number",
@@ -40,7 +40,7 @@
     },{
       "name": "showScale",
       "type": "boolean",
-      "default": "",
+      "default": "false",
       "description": "Whether or not to show a color gradient scale from minColor to maxColor along the top of the chart. Specify true to show the scale."
     }
   ],
@@ -49,32 +49,32 @@
       "name": "title",
       "type": "string",
       "default": "",
-      "description": "title to display above the chart."
+      "description": "Title to display above the chart."
     },  {
       "name": "titleColor",
       "type": "string",
       "default": "",
-      "description": "titleColor of chart title."
+      "description": "TitleColor of chart title."
     },  {
       "name": "titleFontName",
       "type": "string",
       "default": "",
-      "description": "font name of chart title."
+      "description": "Font name of chart title."
     },  {
       "name": "titleFontSize",
       "type": "number",
       "default": "",
-      "description": "font size of chart title."
+      "description": "Font size of chart title."
     },  {
       "name": "isTitleBold",
       "type": "boolean",
-      "default": "",
-      "description": "title in bold."
+      "default": "false",
+      "description": "Set true for title with bold font."
     },
     {
       "name": "isTitleItalic",
       "type": "string",
-      "default": "",
+      "default": "false",
       "description": "title text in in italic."
     }
   ]

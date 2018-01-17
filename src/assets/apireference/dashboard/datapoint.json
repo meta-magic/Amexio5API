@@ -4,28 +4,28 @@
       "name": "north",
       "type": "boolean",
       "default": "false",
-      "description":"enable north position"
+      "description":"Enable north position"
     },{
       "name": "south",
       "type": "boolean",
       "default": "false",
-      "description":"enable south position"
+      "description":"Enable south position"
     },{
       "name": "west",
       "type": "boolean",
       "default": "false",
-      "description":"enable west position"
+      "description":"Enable west position"
     },{
       "name": "center",
       "type": "boolean",
       "default": "false",
-      "description":"enable center position"
+      "description":"Enable center position"
     },
     {
       "name": "east",
       "type": "boolean",
       "default": "false",
-      "description":"enable east position"
+      "description":"Enable east position"
     }, {
       "name": "backgroundColor",
       "type": "string",
@@ -43,32 +43,32 @@
       "name": "backgroundColor",
       "type": "string",
       "default": "",
-      "description":"set background color"
+      "description":"Set background color"
     }, {
       "name": "fontColor",
       "type": "string",
       "default": "",
-      "description":"set font color"
+      "description":"Set font color"
     }, {
       "name": "contentalign",
       "type": "string",
       "default": "",
-      "description":"set content align like : center,left,right"
+      "description":"Set content align like : center,left,right"
     }, {
       "name": "width",
       "type": "string",
       "default": "",
-      "description":"set width"
+      "description":"Set width"
     }, {
       "name": "height",
       "type": "string",
       "default": "",
-      "description":"set height"
+      "description":"Set height"
     }, {
       "name": "cClass",
       "type": "string",
       "default": "",
-      "description":"to use custom css class"
+      "description":"To use custom css class"
     }
   ]
 }

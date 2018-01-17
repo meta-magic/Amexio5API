@@ -14,10 +14,10 @@ import { Component, OnInit } from '@angular/core';
        <p>The CarouselView displays a collection of images or other content in a horizontal layout with built-in navigation between the items.</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
-           <amexio-carousel [headerName]="'Mobiles'" [data]="[1,2,3,4,5,6,7,8,9,10,11]" mode="single">
+           <amexio-carousel [headerName]="'Mobiles'" [data]="[1,2,3,4,5,6,7,8,9,10,11]" mode="multiple" autoShuffleTime="2000">
              <ng-template let-car amexioTemplate="item">
                <div style="height: 300px;width: 300px;border: 1px solid red;display : inline-block">
-                 {{car}}
+                <div style="text-align: center">CAR {{car}}</div>
                </div>
              </ng-template>
            </amexio-carousel>

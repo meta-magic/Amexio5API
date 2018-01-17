@@ -4,17 +4,17 @@
       "name": "height",
       "type": "number",
       "default": "",
-      "description":"height of chart"
+      "description":"Height of chart"
     },{
       "name": "width",
       "type": "number",
       "default": "",
-      "description":"width of chart"
+      "description":"Width of chart"
     },{
       "name": "data",
       "type": "Array",
       "default": "",
-      "description":"For the use of local datasource ."
+      "description":"Local data for gauge chart"
     },{
       "name": "redColorFrom",
       "type": "number",

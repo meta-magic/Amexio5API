@@ -4,13 +4,13 @@
       "name": "height",
       "type": "number",
       "default": "",
-      "description": "height of chart"
+      "description": "Height of chart"
     },
     {
       "name": "width",
       "type": "number",
       "default": "",
-      "description": "width of chart"
+      "description": "Width of chart"
     },
     {
       "name": "data",

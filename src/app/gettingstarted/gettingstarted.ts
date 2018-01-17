@@ -33,15 +33,6 @@ import {SharedModule} from "../shared.module";
              <h2>Table Of Contents</h2>
             </amexio-header>
             <amexio-body>
-              <ol>
-                <li><a style="cursor: pointer" (click)="scrollTo('gettingStarted')">Getting Started</a></li>
-
-                <li><a style="cursor: pointer" (click)="scrollTo('InstallationInstruc')">Installation instructions</a></li>
-                <li><a style="cursor: pointer" (click)="scrollTo('deptLib')">Dependent Libraries</a></li>
-                <li><span style="cursor: pointer" routerLink="/home/license">License</span></li>
-                <!--<li><a>License</a></li>-->
-              </ol>
-
             </amexio-body>
           </amexio-card>
         </amexio-column>

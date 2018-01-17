@@ -170,6 +170,10 @@
               "text" : "Nav Bar",
               "icon": "fa fa-leaf fa-fw",
               "link":"navbar-demo"
+            },{
+              "text" : "Top Menu Bar",
+              "icon": "fa fa-leaf fa-fw",
+              "link":"menubar-demo"
             }
           ]
         }

@@ -37,13 +37,13 @@
       "name": "fullIcon",
       "type": "string ",
       "default": "",
-      "description":"Icon for selected rating .this attribute use only user have custom rating icons.example ☑"
+      "description":"Icon for selected rating .This attribute is  useful only when user have custom rating icons.example ☐"
     },
     {
       "name": "emptyIcon",
       "type": "string ",
       "default": "",
-      "description":"Icon for non-selected rating .this attribute use only user have custom rating icons.example ☐"
+      "description":"Icon for non-selected rating .This attribute is  useful only when user have custom rating icons.example ☐"
     }
   ]
 }

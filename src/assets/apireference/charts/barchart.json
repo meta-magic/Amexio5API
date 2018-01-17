@@ -4,13 +4,13 @@
       "name": "height",
       "type": "number",
       "default": "",
-      "description": "height of chart"
+      "description": "Height of chart"
     },
     {
       "name": "width",
       "type": "number",
       "default": "",
-      "description": "width of chart"
+      "description": "Width of chart"
     },
     {
       "name": "data",
@@ -30,37 +30,37 @@
       "name": "title",
       "type": "string",
       "default": "",
-      "description": "title to display above the chart."
+      "description": "Title to display above the chart."
     },
     {
       "name": "titleColor",
       "type": "string",
       "default": "",
-      "description": "color of chart title."
+      "description": "Color of chart title."
     },
     {
       "name": "titleFontName",
       "type": "string",
       "default": "",
-      "description": "font name of chart title."
+      "description": "Font name of chart title."
     },
     {
       "name": "titleFontSize",
       "type": "number",
       "default": "",
-      "description": "font size of chart title."
+      "description": "Font size of chart title."
     },
     {
       "name": "isTitleBold",
       "type": "boolean",
       "default": "false",
-      "description": "title in bold."
+      "description": "Set true for title in bold font"
     },
     {
       "name": "isTitleItalic",
       "type": "boolean",
       "default": "false",
-      "description": "title text in italic."
+      "description": "Set true for title text in italic style."
     }
   ],
   "chartLegend": [
@@ -80,31 +80,31 @@
       "name": "legendColor",
       "type": "string",
       "default": "",
-      "description": "color of chart legend. for example: 'red' or '#00cc00'."
+      "description": "Color of chart legend. for example: 'red' or '#00cc00'."
     },
     {
       "name": "legendFontName",
       "type": "string",
       "default": "",
-      "description": "font name of chart legend"
+      "description": "Font name of chart legend"
     },
     {
       "name": "legendFontSize",
       "type": "number",
       "default": "",
-      "description": "font size of chart legend"
+      "description": "Font size of chart legend"
     },
     {
       "name": "isLegendBold",
       "type": "boolean",
       "default": "false",
-      "description": "legend text in bold"
+      "description": "Set true for legend text in bold"
     },
     {
       "name": "maxLinesOfLegend",
       "type": "number",
       "default": "",
-      "description": "maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend."
+      "description": "Maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend."
     }
   ]
 }
