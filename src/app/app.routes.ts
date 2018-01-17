@@ -196,6 +196,11 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'geo-chart-demo', loadChildren: './map/geochart/geochart.demo.module#GeoChartDemoModule'
   }, {
     path: 'tree-map-demo', loadChildren: './map/treemap/treemap.demo.module#TreeMapDemoModule'
+  },
+
+  /**Data Routes*/
+  {
+    path: 'paginator-demo', loadChildren: './data/paginator/paginator.demo.module#PaginatorDemoModule'
   }
 
 
