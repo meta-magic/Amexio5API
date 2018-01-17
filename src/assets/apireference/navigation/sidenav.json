@@ -4,24 +4,24 @@
       "name": "width",
       "type": "string",
       "default": "",
-      "description": "width of sidenav"
+      "description": "Width of sidenav"
     },{
       "name": "position",
       "type": "string",
       "default": "",
-      "description": "sidenav bar rendering position. example position='relative','right' "
+      "description": "Sidenav bar rendering position. example position='relative','right' "
     },
     {
       "name": "sidenavtitle",
       "type": "string",
       "default": "",
-      "description": "title of sidenav bar "
+      "description": "Title of sidenav bar "
     },
     {
       "name": "titleimage",
       "type": "string",
       "default": "",
-      "description": "title image of sidenav bar "
+      "description": "Title image of sidenav bar "
     },
     {
       "name": "httpUrl",
@@ -45,13 +45,13 @@
       "name": "data",
       "type": "any",
       "default": "",
-      "description": "Local data for checkboxGroup."
+      "description": "Local data for sidenav."
     }
   ],
   "events":[
     {
       "name": "nodeclick",
-       "description": "fire when sidenav bar menu click"
+       "description": "Fire when sidenav bar menu click"
 
     }
   ]
