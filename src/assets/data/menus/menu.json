@@ -307,6 +307,10 @@
         {
           "text": "ListBox",
           "link": "listbox"
+        },
+        {
+          "text": "Paginator",
+          "link": "paginator-demo"
         }
       ]
     },
