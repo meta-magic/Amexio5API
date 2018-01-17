@@ -4,13 +4,13 @@
       "name": "path",
       "type": "string",
       "default": "",
-      "description": "path of video"
+      "description": "Path of video"
     },
     {
       "name": "extension",
       "type": "string",
       "default": "",
-      "description": "video extension"
+      "description": "Video extension"
     }
   ]
 }

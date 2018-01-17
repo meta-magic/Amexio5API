@@ -204,6 +204,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   /**Data Routes*/
   {
     path: 'paginator-demo', loadChildren: './data/paginator/paginator.demo.module#PaginatorDemoModule'
+  },
+  {
+    path: 'listbox-demo', loadChildren: './data/listbox/listbox.demo.module#ListBoxDemoModule'
   }
 
 
