@@ -125,7 +125,7 @@ import {Http} from "@angular/http";
               </amexio-column>
             </amexio-row>
           </amexio-tab>
-          <amexio-tab title="API Reference">
+          <amexio-tab title="API Reference"> 
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
                              [httpUrl]="'assets/apireference/forms/textinput.json'" 
