@@ -305,12 +305,12 @@
           "link": "tree"
         },
         {
-          "text": "ListBox",
-          "link": "listbox"
-        },
-        {
           "text": "Paginator",
           "link": "paginator-demo"
+        },
+        {
+          "text": "ListBox",
+          "link": "listbox-demo"
         }
       ]
     },
