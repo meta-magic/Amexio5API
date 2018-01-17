@@ -122,6 +122,7 @@ export class DropDownMultiDemo {
   }
 
   onMultiSelectValue(data: any) {
+    this.listOfFriut=[];
     data.forEach((obj) => {
       this.listOfFriut.push(obj);
     });

@@ -102,7 +102,7 @@ import {Http} from "@angular/http";
                     <amexio-text-input [fieldLabel]="'Name'" name="name"
                                        [placeholder]="'Enter name'"
                                        [iconFeedBack]="true"
-                                       [fontStyle]="'italic'"
+                                       [fontSize]="'large'"
                     ></amexio-text-input>
                   </amexio-body>
                 </amexio-card>
