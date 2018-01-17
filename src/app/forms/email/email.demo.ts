@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h4>Email Input With Disable</h4>
+                    <h4>Email Input With Disable Property</h4>
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input name ="email" [fieldLabel]="'Email Id'"
