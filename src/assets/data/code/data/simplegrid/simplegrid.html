@@ -1,0 +1,18 @@
+<!--Simple Data grid-->
+<amexio-datagrid
+  [columnToggle]="true"  title="Country Grid"
+  [httpMethod]="'get'" [httpUrl]="'assets/data/componentdata/country.json'"
+  [dataReader]="'data'"  [pageSize] = "10">
+  <amexio-data-table-column [dataIndex]="'countryName'"
+                            [dataType]="'string'" [hidden]="false"
+                            [text]="'Name'">
+  </amexio-data-table-column>
+  <amexio-data-table-column [dataIndex]="'countryCode1'"
+                            [dataType]="'string'" [hidden]="false"
+                            [text]="'Code'">
+  </amexio-data-table-column>
+  <amexio-data-table-column [dataIndex]="'currencyName'"
+                            [dataType]="'string'" [hidden]="false"
+                            [text]="'Currency'">
+  </amexio-data-table-column>
+</amexio-datagrid>

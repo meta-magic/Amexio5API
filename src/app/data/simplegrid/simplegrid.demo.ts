@@ -6,53 +6,53 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'paginator-demo', template: `
+  selector: 'simplegridr-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
-        <h2>Paginator</h2>
+        <h2>Simple Data Grid</h2>
       </amexio-header>
       <amexio-body>
-        <p>Paginator is a generic widget to display content in paged format.</p>
+        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h2>Paginator with page size 10</h2>
+                    <h2>Simple Data Grid</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-paginator [pages]="50" 
-                                      [rows]="10"
-                                      (onPageChange)="loadPageData($event)">
-                    </amexio-paginator>
-                    <p>Current active page :  {{currentPage}}</p>
+                    <amexio-datagrid
+                      [columnToggle]="true" title="Country Grid"   [httpMethod]="'get'" [httpUrl]="'assets/data/componentdata/country.json'" [dataReader]="'data'"  [pageSize] = "10">
+                      <amexio-data-table-column [dataIndex]="'countryName'" [dataType]="'string'" [hidden]="false" [text]="'Name'">
+                      </amexio-data-table-column>
+                      <amexio-data-table-column [dataIndex]="'countryCode1'" [dataType]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
+                      <amexio-data-table-column [dataIndex]="'currencyName'" [dataType]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+                    </amexio-datagrid>
                   </amexio-body>
                 </amexio-card>
-
-              </amexio-column>
-            </amexio-row>
-          <amexio-row>
-              <amexio-column size="12">
-                <amexio-card [enableHeader]="true">
-                  <amexio-header>
-                    <h2>Paginator with page size 5</h2>
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-paginator [pages]="30"
-                                      [rows]="5">
-                    </amexio-paginator>
-                  </amexio-body>
-                </amexio-card>
-
               </amexio-column>
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [columnToggle]="false"
                              [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/paginator.json'"
+                             [httpUrl]="'assets/apireference/data/grid.json'"
                              [dataReader]="'properties'"
+                             [filtering]="false">
+              <amexio-data-table-column [dataIndex]="'name'" [width]="20" [dataType]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [dataIndex]="'type'" [width]="10" [dataType]="'string'" [hidden]="false"
+                                        [text]="'Type'"></amexio-data-table-column>
+              <amexio-data-table-column [dataIndex]="'default'" [width]="10" [dataType]="'string'" [hidden]="false"
+                                        [text]="'Default'"></amexio-data-table-column>
+              <amexio-data-table-column [dataIndex]="'description'" [width]="65" [dataType]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid><br>
+            <amexio-datagrid title="Column Properties" [columnToggle]="false"
+                             [httpMethod]="'get'"
+                             [httpUrl]="'assets/apireference/data/grid.json'"
+                             [dataReader]="'columnProperties'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [width]="15" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -65,11 +65,11 @@ import {Http} from "@angular/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/paginator.json'" [dataReader]="'events'"
+                             [httpUrl]="'assets/apireference/data/grid.json'" [dataReader]="'events'"
                              [filtering]="false">
               <amexio-data-table-column [dataIndex]="'name'" [width]="20" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [width]="70" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataIndex]="'description'" [width]="65" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
@@ -87,6 +87,11 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="DataSource">
+                <ng-container *ngIf="dataSource">
+                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+                </ng-container>
+              </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -97,11 +102,14 @@ import {Http} from "@angular/http";
     </amexio-card>
   `
 })
-export class PaginatorDemo {
+export class SimpleGridDemo {
   htmlCode: string;
   typeScriptCode: string;
+  dataSource: string;
   copyMsgArray: any[];
-  currentPage: number;
+  gridApiData: any[];
+  columnApiData: any[];
+  eventApiData:any[];
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -112,7 +120,7 @@ export class PaginatorDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/paginator/paginator.html').subscribe(data => {
+    this.http.get('assets/data/code/data/simplegrid/simplegrid.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -120,11 +128,18 @@ export class PaginatorDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/paginator/paginator.text').subscribe(data => {
+    this.http.get('assets/data/code/data/simplegrid/simplegrid.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
+    });
+
+    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
+      responseTs = data.text();
+    }, error => {
+    }, () => {
+      this.dataSource = responseTs;
     });
 
   }
@@ -137,10 +152,6 @@ export class PaginatorDemo {
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
-  }
-
-  loadPageData(pageNumber:number) {
-   this.currentPage = pageNumber;
   }
 }
 
