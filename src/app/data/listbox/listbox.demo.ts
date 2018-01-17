@@ -59,9 +59,9 @@ import {Http} from "@angular/http";
                         </amexio-row>
                       </ng-template>
                     </amexio-listbox>
-                    <p>
+                   <!-- <p>
                       <b>clicked record data</b> : {{rowClickData | json}}
-                    </p>
+                    </p>-->
                   </amexio-body>
                 </amexio-card>
 

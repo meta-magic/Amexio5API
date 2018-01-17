@@ -324,8 +324,8 @@
               "link": "groupby-grid"
             },
             {
-              "text": "Custom Column",
-              "link": "tree"
+              "text": "Custom Column Size",
+              "link": "custom-col-grid"
             },
             {
               "text": "Grid with scroll",

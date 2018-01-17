@@ -6,35 +6,38 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'groupbygrid-demo', template: `
+  selector: 'custom-col-size-grid-demo', template: `
     <amexio-card enableHeader="true">
       <amexio-header>
-        <h2>Data Grid Group By</h2>
+        <h2>Data Grid With Custom Column Size</h2>
       </amexio-header>
       <amexio-body>
-        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Filtering(enable only for string and number type data) user define template for rendering for column header and column data, displaying summation of numeric column.</p>
+        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card [enableHeader]="true">
                   <amexio-header>
-                    <h2>Data Grid Group By</h2>
+                    <h2>Data Grid With Custom Column Size</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-datagrid
-                      [title]="'Employee Data'"
-                      [pageSize] = "10"
-                      [dataReader]="'data'"
-                      [groupByColumn]="true"
-                      [groupByColumnIndex]="'jobTitle'"
-                      [httpUrl]="'assets/data/componentdata/datagridgroupby.json'"
-                      [httpMethod]="'get'">
-                      <amexio-data-table-column [dataIndex]="'preferredFullName'" [dataType]="'string'" [hidden]="false" [text]="'FullName'"></amexio-data-table-column>
-                      <amexio-data-table-column [dataIndex]="'jobTitle'" [dataType]="'string'" [hidden]="false" [text]="'Job Title'">
+                    <amexio-datagrid 
+                      title="Country Grid" [httpMethod]="'get'" 
+                      [httpUrl]="'assets/data/componentdata/gridtemplate.json'"
+                                      [dataReader]="'data'"  [pageSize] = "10" 
+                                      [filtering]="false" (rowSelect)="getRowData($event)">
+                      <amexio-data-table-column [width]="70" [dataIndex]="'name_official'" [dataType]="'string'" [hidden]="false" [text]="'Name'">
+                        <ng-template #amexioBodyTmpl let-column let-row="row">
+                        <span>
+                            <img src="" [attr.src]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32">&nbsp;{{row.name}} ( {{row.name_official}} )
+                        </span>
+                        </ng-template>
                       </amexio-data-table-column>
-                      <amexio-data-table-column [dataIndex]="'salary'" [dataType]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
+                      <amexio-data-table-column [width]="15" [dataIndex]="'latitude'" [dataType]="'string'" [hidden]="false" [text]="'Latitude'"></amexio-data-table-column>
+                      <amexio-data-table-column [width]="15" [dataIndex]="'longitude'" [dataType]="'number'" [hidden]="false" [text]="'Longitude'"></amexio-data-table-column>
                     </amexio-datagrid>
+                    <p><b>Clicked row data :</b> {{clickedRowData | json}}</p>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -108,21 +111,23 @@ import {Http} from "@angular/http";
     </amexio-card>
   `
 })
-export class GroupByGridDemo {
+export class CustomColSizeDemo {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
   copyMsgArray: any[];
-  selectedData: any;
+  clickedRowData: any;
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
+
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
+
     //HTML FILE
-    this.http.get('assets/data/code/data/groupby/groupby.html').subscribe(data => {
+    this.http.get('assets/data/code/data/customcolsize/customcolsize.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -130,14 +135,14 @@ export class GroupByGridDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/groupby/groupby.text').subscribe(data => {
+    this.http.get('assets/data/code/data/customcolsize/customcolsize.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/datagridgroupby.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/gridtemplate.json').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
@@ -154,6 +159,10 @@ export class GroupByGridDemo {
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
+  }
+
+  getRowData(data: any) {
+    this.clickedRowData = data;
   }
 }
 

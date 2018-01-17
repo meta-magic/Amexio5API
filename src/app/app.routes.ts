@@ -219,6 +219,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'groupby-grid', loadChildren: './data/groupby/groupbygrid.demo.module#GroupByGridDemoModule'
+  },
+  {
+    path: 'custom-col-grid', loadChildren: './data/customcolsize/customcolsizegrid.demo.module#CustomColSizeDemoModule'
   }
 
 ];
