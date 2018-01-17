@@ -12,7 +12,7 @@ import {Http} from "@angular/http";
         <h2>Row Component</h2>
       </amexio-header>
       <amexio-body>
-        <p>Amexio uses a series of rows, and columns to layout and align content and is fully responsive.</p>
+        <p>Amexio uses a series of rows and columns to layout and align content and is fully responsive.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>

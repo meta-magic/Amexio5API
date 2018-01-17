@@ -10,13 +10,13 @@
       "name": "active",
       "type": "boolean",
       "default": "false",
-      "description":"Will specific tab open by default."
+      "description":"Set true for specific tab open as default tab."
     },
     {
       "name": "icon",
       "type": "string",
       "default": "",
-      "description":"Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home"
+      "description":"Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home."
     }
   ],
   "events": [

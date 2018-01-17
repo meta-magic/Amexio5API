@@ -37,16 +37,17 @@ import {Http} from "@angular/http";
                 </amexio-row>
                 <amexio-row>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Phone'" name ="phone"
-                                       [placeholder]="'Enter phone'"
-                                       [iconFeedBack]="true">
-                    </amexio-text-input>
+                    <amexio-number-input [fieldLabel]="'Number Input'"
+                                         [placeholder]="'Enter Age'">
+                    </amexio-number-input>
                   </amexio-column>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Email'" name ="email"
-                                       [placeholder]="'Enter Email'"
-                                       [iconFeedBack]="true">
-                    </amexio-text-input>
+                    <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                                        [placeholder]="'Enter Email Id'"
+                                        [allowBlank]="false" [errorMsg] ="'Please Enter Email Id'"
+                                        [enablePopOver]="true"
+                                        [iconFeedBack]="true">
+                    </amexio-email-input>
                   </amexio-column>
                 </amexio-row>
               </amexio-body>
@@ -61,16 +62,15 @@ import {Http} from "@angular/http";
                              [httpUrl]="'assets/apireference/layout/card.json'" 
                              [dataReader]="'properties'"
                              [filtering]="false" >
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-           
             
           </amexio-tab>
           <amexio-tab title="Source">

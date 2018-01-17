@@ -43,13 +43,13 @@ import {Http} from "@angular/http";
                              [httpUrl]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
                              [dataReader]="'properties'"
                              [filtering]="false" >
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
@@ -58,13 +58,13 @@ import {Http} from "@angular/http";
                              [httpUrl]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
                              [dataReader]="'tabproperties'"
                              [filtering]="false" >
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
@@ -73,9 +73,9 @@ import {Http} from "@angular/http";
                              [httpUrl]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
                              [dataReader]="'events'"
                              [filtering]="false" >
-              <amexio-data-table-column [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
@@ -127,7 +127,7 @@ export class ClosableTabDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/closabletab/tab.ts').subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/closabletab/tab.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
