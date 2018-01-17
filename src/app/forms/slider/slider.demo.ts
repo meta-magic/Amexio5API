@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'slider-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Slider Component</h2>
       </amexio-header>
@@ -17,18 +17,18 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>Simple Slider</h2>
                   </amexio-header>
                   <amexio-body>
                    <amexio-row>
                      <amexio-column [size]="6">
-                       <amexio-slider minValue="10" maxValue="100"  stepValue="10" [(ngModel)]="stepVal1"></amexio-slider>
+                       <amexio-slider minvalue="10" maxvalue="100"  stepvalue="10" [(ngModel)]="stepVal1"></amexio-slider>
                       {{stepVal1}}
                      </amexio-column>
                      <amexio-column [size]="6">
-                       <amexio-slider minValue="0" maxValue="50" stepValue="5" [(ngModel)]="stepVal2"></amexio-slider>
+                       <amexio-slider minvalue="0" maxvalue="50" stepvalue="5" [(ngModel)]="stepVal2"></amexio-slider>
                        {{stepVal2}}
                      </amexio-column>
                    </amexio-row>
@@ -39,27 +39,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/slider.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/slider.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/slider.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/slider.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

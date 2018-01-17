@@ -1,13 +1,13 @@
 {
   "properties": [
     {
-      "name": "httpUrl",
+      "name": "httpurl",
       "type": "string",
       "default": "",
       "description":"REST url for fetching data."
     },
     {
-      "name": "httpMethod",
+      "name": "httpmethod",
       "type": "string",
       "default": "",
       "description":"Type of HTTP call, POST,GET etc."
@@ -19,7 +19,7 @@
       "description":"Local Data binding."
     },
     {
-      "name": "dataReader",
+      "name": "datareader",
       "type": "string",
       "default": "",
       "description":"Key in JSON Datasource for records."
@@ -31,13 +31,13 @@
       "description":"Height for grid."
     },
     {
-      "name": "pageSize",
+      "name": "pagesize",
       "type": "number",
       "default": "",
       "description":"Number of records show on one page."
     },
     {
-      "name": "checkboxSelect",
+      "name": "enablecheckbox",
       "type": "boolean",
       "default": "false",
       "description":"Enables checkbox for each row, this allows user for multi selection."
@@ -49,31 +49,31 @@
       "description":"Title for grid."
     },
     {
-      "name": "filtering",
+      "name": "enabledatafilter",
       "type": "boolean",
       "default": "false",
       "description":"Enables user to filter data."
     },
     {
-      "name": "groupByColumn",
+      "name": "groupby",
       "type": "boolean",
       "default": "false",
       "description":"Set True for Enable group by functionality."
     },
     {
-      "name": "groupByColumnIndex",
+      "name": "groupbydataindex",
       "type": "string",
       "default": "",
-      "description":"Primary dataIndex name of the column for Grouping."
+      "description":"Primary dataindex name of the column for Grouping."
     },
     {
-      "name": "columnDefinition",
+      "name": "columndefintion",
       "type": "any[]",
       "default": "",
       "description":"If you don't want to use '<amexio-data-table-column>' tag then pass JSON data."
     },
     {
-      "name": "columnToggle",
+      "name": "enablecolumnfiter",
       "type": "boolean",
       "default": "true",
       "description":"Set false to hide Column toggle functionality."
@@ -101,7 +101,7 @@
       "description":"Set column label."
     },
     {
-      "name": "dataIndex",
+      "name": "dataindex",
       "type": "string",
       "default": "",
       "description":"JSON key from datasource."
@@ -113,7 +113,7 @@
       "description":"Hide column."
     },
     {
-      "name": "dataType",
+      "name": "datatype",
       "type": "string",
       "default": "",
       "description":"Data type of column (string/number)."

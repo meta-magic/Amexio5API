@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'vertical-tab-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Left Aligned Vertical Tab Component</h2>
       </amexio-header>
@@ -32,29 +32,29 @@ import {Http} from "@angular/http";
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Tab Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/layout/tab/vertical-tab/basictab.json'"
-                             [dataReader]="'tabproperties'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Tab Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/layout/tab/vertical-tab/basictab.json'"
+                             [datareader]="'tabproperties'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Tab Events" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/layout/tab/vertical-tab/basictab.json'"
-                             [dataReader]="'events'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Tab Events" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/layout/tab/vertical-tab/basictab.json'"
+                             [datareader]="'events'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

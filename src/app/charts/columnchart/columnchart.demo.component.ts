@@ -6,7 +6,7 @@ import {Http} from "@angular/http";
 @Component({
   selector: 'column-chart-demo',
   template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Column Chart Component</h2>
       </amexio-header>
@@ -18,60 +18,60 @@ import {Http} from "@angular/http";
              <amexio-column size="6">
                <amexio-chart-column [data]="columnChartData" [height]="'400px'" [width]="'100%'" >
                  <amexio-chart-title [title]="'Motivation and Energy Level Throughout the Day'"></amexio-chart-title>
-                 <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+                 <amexio-chart-legend [position]="'bottom'"></amexio-chart-legend>
                </amexio-chart-column>
              </amexio-column>
              <amexio-column size="6">
-               <amexio-chart-column [data]="columnStackChartData" [height]="'400px'"[width]="'100%'"  [isStacked]="true">
+               <amexio-chart-column [data]="columnStackChartData" [height]="'400px'"[width]="'100%'"  [stacked]="true">
                  <amexio-chart-title [title]="'Motivation Level Throughout the Day'"></amexio-chart-title>
-                 <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+                 <amexio-chart-legend [position]="'bottom'"></amexio-chart-legend>
                </amexio-chart-column>
              </amexio-column>
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/charts/columnchart.json'"
-                             [dataReader]="'chart'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Chart Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/charts/columnchart.json'"
+                             [datareader]="'chart'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Title Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/charts/columnchart.json'"
-                             [dataReader]="'chartTitle'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Chart Title Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/charts/columnchart.json'"
+                             [datareader]="'chartTitle'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Legend Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/charts/columnchart.json'"
-                             [dataReader]="'chartLegend'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Chart Legend Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/charts/columnchart.json'"
+                             [datareader]="'chartLegend'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
            
@@ -114,9 +114,9 @@ export class ColumnChartDemoComponent implements OnInit {
   copyMsgArray: any[];
   constructor(private http: Http) {
     this.columnStackChartData=[
-      [{"dataType":'timeofday',"label":'Time of Day'},
-        {"dataType":"number", "label":'Motivation Level'},
-        {"dataType":"number","label":"Energy Level"}
+      [{"datatype":'timeofday',"label":'Time of Day'},
+        {"datatype":"number", "label":'Motivation Level'},
+        {"datatype":"number","label":"Energy Level"}
       ],
       [{v: [8, 0, 0], f: '8 am'}, 1, .25],
       [{v: [9, 0, 0], f: '9 am'}, 2, .5],
@@ -130,8 +130,8 @@ export class ColumnChartDemoComponent implements OnInit {
       [{v: [17, 0, 0], f: '5 pm'}, 10, 10],
     ];
     this.columnChartData = [
-      [{"dataType":'timeofday',"label":'Time of Day'},
-        {"dataType":"number", "label":'Motivation Level'}
+      [{"datatype":'timeofday',"label":'Time of Day'},
+        {"datatype":"number", "label":'Motivation Level'}
       ],
       [{v: [8, 0, 0], f: '8 am'}, 1],
       [{v: [9, 0, 0], f: '9 am'}, 2],

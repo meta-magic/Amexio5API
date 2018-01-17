@@ -6,7 +6,7 @@ import {Http} from "@angular/http";
 @Component({
   selector: 'scatter-chart-demo',
   template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Timeline Chart Component</h2>
       </amexio-header>
@@ -21,18 +21,18 @@ import {Http} from "@angular/http";
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/charts/timelinechart.json'"
-                             [dataReader]="'chart'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Chart Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/charts/timelinechart.json'"
+                             [datareader]="'chart'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             
@@ -74,9 +74,9 @@ export class TimelineChartDemoComponent implements OnInit {
   copyMsgArray: any[];
   constructor(private http: Http) {
     this.timelineChartData=[
-      [{"dataType":'string',"label":'Prime Minister'},
-        {"dataType":"date", "label":'Start'},
-        {"dataType":"date","label":"End"}
+      [{"datatype":'string',"label":'Prime Minister'},
+        {"datatype":"date", "label":'Start'},
+        {"datatype":"date","label":"End"}
       ],
       [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
       [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],

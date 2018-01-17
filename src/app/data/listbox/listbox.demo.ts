@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'listbox-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>List Box</h2>
       </amexio-header>
@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="12">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>Simple List Box</h2>
                   </amexio-header>
@@ -26,8 +26,8 @@ import {Http} from "@angular/http";
                     <amexio-listbox [enableCheckBox]="true" [height]="400" 
                                     [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
                                     [data]="localData" [filter]="true"
-                                    [dataReader]="'response.data'"
-                                    [displayField]="'name_official'" (selectedRows)="getSelectedData($event)">
+                                    [datareader]="'response.data'"
+                                    [displayfield]="'name_official'" (selectedRows)="getSelectedData($event)">
                     </amexio-listbox>
                     <p>
                       <b>selected data</b> : {{selectedData | json}}
@@ -38,15 +38,15 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column size="12">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>List Box with Template</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-listbox [height]="400" [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
                                     [data]="localData" [filter]="false"
-                                    [enableCheckBox]="false" [dataReader]="'response.data'"
-                                    [displayField]="'name'" (rowClick)="rowClick($event)">
+                                    [enableCheckBox]="false" [datareader]="'response.data'"
+                                    [displayfield]="'name'" (rowClick)="rowClick($event)">
                       <ng-template #amexioBodyTmpl let-row="row">
                         <amexio-row>
                           <amexio-column [size]="12">
@@ -69,27 +69,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/listbox.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/data/listbox.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/listbox.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="20" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/data/listbox.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="20" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="70" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="70" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

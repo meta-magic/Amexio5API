@@ -5,7 +5,7 @@ import {Component, OnInit} from '@angular/core';
 import {Http} from "@angular/http";
 @Component({
   selector: 'datapoint', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Data Point Component</h2>
       </amexio-header>
@@ -16,41 +16,41 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="6">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"
-                                   [backgroundColor]="'#efa64c'" [fontColor]="'#ffffff'">
+                                   [backgroundcolor]="'#efa64c'" [fontcolor]="'#ffffff'">
                   <amexio-west [contentalign]="'center'" [width]="'100px'">
-                    <amexio-image [imageClass]="'fa fa-line-chart fa-3x'"></amexio-image>
+                    <amexio-image [iconclass]="'fa fa-line-chart fa-3x'"></amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [cClass]="'datapoint-north'">
+                      <amexio-north [cclass]="'datapoint-north'">
                         200 Million
                       </amexio-north>
-                      <amexio-center [cClass]="'datapoint-center'">
+                      <amexio-center [cclass]="'datapoint-center'">
                         Sales Volume
                       </amexio-center>
                     </amexio-datapoints>
                   </amexio-center>
-                  <amexio-south [contentalign]="'center'" [backgroundColor]="'#d97c3e'">10% More than last year
+                  <amexio-south [contentalign]="'center'" [backgroundcolor]="'#d97c3e'">10% More than last year
                   </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
               <amexio-column size="6">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"
-                                   [backgroundColor]="'#68bafc'" [fontColor]="'#ffffff'">
+                                   [backgroundcolor]="'#68bafc'" [fontcolor]="'#ffffff'">
                   <amexio-west [contentalign]="'center'" [width]="'100px'">
-                    <amexio-image [imageClass]="'fa fa-line-chart fa-3x'"></amexio-image>
+                    <amexio-image [iconclass]="'fa fa-line-chart fa-3x'"></amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [cClass]="'datapoint-north'">
+                      <amexio-north [cclass]="'datapoint-north'">
                         $10 Million
                       </amexio-north>
-                      <amexio-center [cClass]="'datapoint-center'">
+                      <amexio-center [cclass]="'datapoint-center'">
                         Sales Revenue
                       </amexio-center>
                     </amexio-datapoints>
                   </amexio-center>
-                  <amexio-south [contentalign]="'center'" [backgroundColor]="'#3192e1'">5% more than last year
+                  <amexio-south [contentalign]="'center'" [backgroundcolor]="'#3192e1'">5% more than last year
                   </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
@@ -58,16 +58,16 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="3">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"
-                                   [backgroundColor]="'#4CAF50'" [fontColor]="'#ffffff'">
+                                   [backgroundcolor]="'#4CAF50'" [fontcolor]="'#ffffff'">
                   <amexio-west [contentalign]="'center'">
-                    <amexio-image [imageClass]="'fa fa-check fa-3x'"></amexio-image>
+                    <amexio-image [iconclass]="'fa fa-check fa-3x'"></amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [cClass]="'datapoint-north'">
+                      <amexio-north [cclass]="'datapoint-north'">
                         212
                       </amexio-north>
-                      <amexio-center [cClass]="'datapoint-center'">
+                      <amexio-center [cclass]="'datapoint-center'">
                         Closed
                       </amexio-center>
                     </amexio-datapoints>
@@ -76,16 +76,16 @@ import {Http} from "@angular/http";
               </amexio-column>
               <amexio-column size="3">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"
-                                   [backgroundColor]="'#FF9800'" [fontColor]="'#ffffff'">
+                                   [backgroundcolor]="'#FF9800'" [fontcolor]="'#ffffff'">
                   <amexio-west [contentalign]="'center'">
-                    <amexio-image [imageClass]="'fa fa-envelope-open-o fa-3x'"></amexio-image>
+                    <amexio-image [iconclass]="'fa fa-envelope-open-o fa-3x'"></amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [cClass]="'datapoint-north'">
+                      <amexio-north [cclass]="'datapoint-north'">
                         20
                       </amexio-north>
-                      <amexio-center [cClass]="'datapoint-center'">
+                      <amexio-center [cclass]="'datapoint-center'">
                         Open
                       </amexio-center>
                     </amexio-datapoints>
@@ -94,16 +94,16 @@ import {Http} from "@angular/http";
               </amexio-column>
               <amexio-column size="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"
-                                   [backgroundColor]="'#68bafc'" [fontColor]="'#ffffff'">
+                                   [backgroundcolor]="'#68bafc'" [fontcolor]="'#ffffff'">
                   <amexio-west [contentalign]="'center'">
-                    <amexio-image [imageClass]="'fa fa-bolt fa-3x'"></amexio-image>
+                    <amexio-image [iconclass]="'fa fa-bolt fa-3x'"></amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [cClass]="'datapoint-north'">
+                      <amexio-north [cclass]="'datapoint-north'">
                         3
                       </amexio-north>
-                      <amexio-center [cClass]="'datapoint-center'">
+                      <amexio-center [cclass]="'datapoint-center'">
                         High
                       </amexio-center>
                     </amexio-datapoints>
@@ -112,16 +112,16 @@ import {Http} from "@angular/http";
               </amexio-column>
               <amexio-column size="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"
-                                   [backgroundColor]="'#607D8B'" [fontColor]="'#ffffff'">
+                                   [backgroundcolor]="'#607D8B'" [fontcolor]="'#ffffff'">
                   <amexio-west [contentalign]="'center'">
-                    <amexio-image [imageClass]="'fa fa-medium fa-3x'"></amexio-image>
+                    <amexio-image [iconclass]="'fa fa-medium fa-3x'"></amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [cClass]="'datapoint-north'">
+                      <amexio-north [cclass]="'datapoint-north'">
                         7
                       </amexio-north>
-                      <amexio-center [cClass]="'datapoint-center'">
+                      <amexio-center [cclass]="'datapoint-center'">
                         Medium
                       </amexio-center>
                     </amexio-datapoints>
@@ -130,16 +130,16 @@ import {Http} from "@angular/http";
               </amexio-column>
               <amexio-column size="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"
-                                   [backgroundColor]="'#00BCD4'" [fontColor]="'#ffffff'">
+                                   [backgroundcolor]="'#00BCD4'" [fontcolor]="'#ffffff'">
                   <amexio-west [contentalign]="'center'">
-                    <amexio-image [imageClass]="'fa fa-low-vision fa-3x'"></amexio-image>
+                    <amexio-image [iconclass]="'fa fa-low-vision fa-3x'"></amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [cClass]="'datapoint-north'">
+                      <amexio-north [cclass]="'datapoint-north'">
                         10
                       </amexio-north>
-                      <amexio-center [cClass]="'datapoint-center'">
+                      <amexio-center [cclass]="'datapoint-center'">
                         Low
                       </amexio-center>
                     </amexio-datapoints>
@@ -150,33 +150,33 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/dashboard/datapoint.json'"
-                             [dataReader]="'datapoint'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Chart Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/dashboard/datapoint.json'"
+                             [datareader]="'datapoint'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/dashboard/datapoint.json'"
-                             [dataReader]="'location'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Chart Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/dashboard/datapoint.json'"
+                             [datareader]="'location'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>

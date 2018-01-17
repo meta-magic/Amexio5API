@@ -21,7 +21,7 @@
       "description": "Width of dockbar item."
     },
     {
-      "name": "imagePath",
+      "name": "path",
       "type": "string",
       "default": "",
       "description": "Specifies the URL of an image.Use this attribute only for images."
@@ -33,10 +33,10 @@
       "description": "Icon name Material Example: icon='home', Fontawesome Example: icon='fa fa-address-book."
     },
     {
-      "name": "mdbClass",
+      "name": "mdb",
       "type": "string",
       "default": "",
-      "description": "This attribute use for only material icons.Material Example:mdbClass='material-icons."
+      "description": "This attribute use for only material icons.Material Example:mdb='material-icons."
     }
   ]
 }

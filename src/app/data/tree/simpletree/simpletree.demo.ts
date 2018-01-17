@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'simpletree-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Simple Tree</h2>
       </amexio-header>
@@ -17,18 +17,18 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>Simple Tree</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-treeview [dataReader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
+                    <amexio-treeview [datareader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
                     </amexio-treeview>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column size="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>Selected Data</h2>
                   </amexio-header>
@@ -40,27 +40,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/tree.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [width]="20" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/data/tree.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [width]="10" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'type'" [width]="10" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [width]="10" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'default'" [width]="10" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [width]="65" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/tree.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [width]="20" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/data/tree.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [width]="65" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
@@ -154,8 +154,8 @@ export class SimpleTreeDemo {
                 "expand" : true,
                 "children":[],
                 "lazy":{
-                  "httpUrl":"data/treeview.json",
-                  "httpMethod": "get"
+                  "httpurl":"data/treeview.json",
+                  "httpmethod": "get"
                 }
               }
             ]

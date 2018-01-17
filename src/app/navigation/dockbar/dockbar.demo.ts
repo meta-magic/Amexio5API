@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
  
 @Component({
   selector: 'dockbar-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Dockbar Component</h2>
       </amexio-header>
@@ -21,9 +21,9 @@ import {Http} from "@angular/http";
                                    [title]="'Features'"
                                    [width]="'350px'">
                 <amexio-side-nav
-                  [httpUrl]="'assets/data/componentdata/sidenav.json'"
-                  [httpMethod]="'get'"
-                  [dataReader]="'data'"
+                  [httpurl]="'assets/data/componentdata/sidenav.json'"
+                  [httpmethod]="'get'"
+                  [datareader]="'data'"
                   [width]="'275px'"
                   [position]="'relative'">
                 </amexio-side-nav>
@@ -31,11 +31,11 @@ import {Http} from "@angular/http";
               <amexio-dockbar-item [icon]="'fa fa-address-book fa-fw'" [title]="'Contacts'"
                                    [width]="'350px'">
                 <amexio-listbox [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
-                                [httpUrl]="'assets/data/componentdata/profiledata.json'"
-                                [httpMethod]="'get'"
+                                [httpurl]="'assets/data/componentdata/profiledata.json'"
+                                [httpmethod]="'get'"
                                 [filter]="false"
-                                [enableCheckBox]="false" [dataReader]="'response.data'"
-                                [displayField]="'name'">
+                                [enableCheckBox]="false" [datareader]="'response.data'"
+                                [displayfield]="'name'">
                   <ng-template #amexioBodyTmpl let-row="row">
                     <amexio-row>
                       <amexio-column [size]="12">
@@ -53,33 +53,33 @@ import {Http} from "@angular/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Propeties : amexio-dockbar" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/navigation/dockbar.json'"
-                             [dataReader]="'dockbarproperties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Propeties : amexio-dockbar" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/navigation/dockbar.json'"
+                             [datareader]="'dockbarproperties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Propeties : amexio-dockbar-item" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/navigation/dockbar.json'"
-                             [dataReader]="'dockbaritemproperties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Propeties : amexio-dockbar-item" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/navigation/dockbar.json'"
+                             [datareader]="'dockbaritemproperties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

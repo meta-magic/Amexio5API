@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "fieldLabel",
+      "name": "fieldlabel",
       "type": "string",
       "default": "",
       "description": "The label of this field"
@@ -14,25 +14,25 @@
     },
 
     {
-      "name": "httpUrl",
+      "name": "httpurl",
       "type": "string",
       "default": "",
       "description": "REST url for fetching datasource."
     },
     {
-      "name": "httpMethod",
+      "name": "httpmethod",
       "type": "string",
       "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
     {
-      "name": "displayField",
+      "name": "displayfield",
       "type": "string",
       "default": "",
       "description": "Name of key inside response data to display on ui."
     },
     {
-      "name": "valueField",
+      "name": "valuefield",
       "type": "string",
       "default": "",
       "description": "Name of key inside response data.use to send to backend"
@@ -43,18 +43,18 @@
       "description": "Local data for dropdown."
     },
     {
-      "name": "dataReader",
+      "name": "datareader",
       "type": "string",
       "default": "",
       "description": "Key in JSON datasource for records"
     },
     {
-      "name": "searchBox",
+      "name": "search",
       "type": "boolean",
       "default": "false",
       "description": "true for search box enable"
     },{
-      "name": "multiSelect",
+      "name": "multiselect",
       "type": "boolean",
       "default": "false",
       "description": "true for select multiple options"
@@ -78,7 +78,7 @@
     },
     {
       "name": "onMultiSelect",
-      "description":"Fire when multiple record select in drop down.this event is only applied when multiSelect=true"
+      "description":"Fire when multiple record select in drop down.this event is only applied when multiselect=true"
     }
   ],
   "css": [

@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'simplegridr-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Simple Data Grid</h2>
       </amexio-header>
@@ -17,19 +17,19 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="12">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>Simple Data Grid</h2>
                   </amexio-header>
                   <amexio-body>
                     <amexio-datagrid
-                      [columnToggle]="true" title="Country Grid" [checkboxSelect]="false"  [httpMethod]="'get'" [httpUrl]="'assets/data/componentdata/country.json'" [dataReader]="'data'"  [pageSize] = "10">
-                      <amexio-data-table-column [dataIndex]="'countryName'" 
-                                                [dataType]="'string'" 
+                      [enablecolumnfiter]="true" title="Country Grid" [enablecheckbox]="false"  [httpmethod]="'get'" [httpurl]="'assets/data/componentdata/country.json'" [datareader]="'data'"  [pagesize] = "10">
+                      <amexio-data-table-column [dataindex]="'countryName'" 
+                                                [datatype]="'string'" 
                                                 [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
                       </amexio-data-table-column>
-                      <amexio-data-table-column [dataIndex]="'countryCode1'" [dataType]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
-                      <amexio-data-table-column [dataIndex]="'currencyName'" [dataType]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+                      <amexio-data-table-column [dataindex]="'countryCode1'" [datatype]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
+                      <amexio-data-table-column [dataindex]="'currencyName'" [datatype]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
                     </amexio-datagrid>
                  <!--   <p><b>Selected row data : </b>{{selectedData | json}}</p>-->
                   </amexio-body>
@@ -38,41 +38,41 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/grid.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [width]="20" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/data/grid.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [width]="10" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'type'" [width]="10" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [width]="10" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'default'" [width]="10" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [width]="65" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid><br>
-            <amexio-datagrid title="Column Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/grid.json'"
-                             [dataReader]="'columnProperties'"
-                             [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [width]="15" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Column Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/data/grid.json'"
+                             [datareader]="'columnProperties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [dataindex]="'name'" [width]="15" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'type'" [width]="10" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'type'" [width]="10" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'default'" [width]="10" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'default'" [width]="10" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [width]="65" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/data/grid.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [dataIndex]="'name'" [width]="20" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/data/grid.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'description'" [width]="65" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

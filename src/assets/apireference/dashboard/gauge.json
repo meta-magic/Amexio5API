@@ -16,27 +16,27 @@
       "default": "",
       "description":"Local data for gauge chart"
     },{
-      "name": "redColorFrom",
+      "name": "redcolorfrom",
       "type": "number",
       "default": "",
       "description":"The lowest value for a range marked by a red color."
     },{
-      "name": "redColorTo",
+      "name": "redcolorto",
       "type": "number",
       "default": "",
       "description":"The highest value for a range marked by a red color."
     },{
-      "name": "yellowColorFrom",
+      "name": "yellowcolorfrom",
       "type": "number",
       "default": "",
       "description":"The lowest value for a range marked by a yellow color."
     },{
-      "name": "yellowColorTo",
+      "name": "yellowcolorto",
       "type": "number",
       "default": "",
       "description":"The highest value for a range marked by a yellow color."
     },{
-      "name": "minorTicks",
+      "name": "scalevalue",
       "type": "number",
       "default": "",
       "description":"The number of minor tick section in each major tick section."

@@ -3,9 +3,9 @@
                        [title]="'Features'"
                        [width]="'350px'">
     <amexio-side-nav
-      [httpUrl]="'assets/data/componentdata/sidenav.json'"
-      [httpMethod]="'get'"
-      [dataReader]="'data'"
+      [httpurl]="'assets/data/componentdata/sidenav.json'"
+      [httpmethod]="'get'"
+      [datareader]="'data'"
       [width]="'275px'"
       [position]="'relative'">
     </amexio-side-nav>
@@ -13,11 +13,11 @@
   <amexio-dockbar-item [icon]="'fa fa-address-book fa-fw'" [title]="'Contacts'"
                        [width]="'350px'">
     <amexio-listbox [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
-                    [httpUrl]="'assets/data/componentdata/profiledata.json'"
-                    [httpMethod]="'get'"
+                    [httpurl]="'assets/data/componentdata/profiledata.json'"
+                    [httpmethod]="'get'"
                     [filter]="false"
-                    [enableCheckBox]="false" [dataReader]="'response.data'"
-                    [displayField]="'name'">
+                    [enableCheckBox]="false" [datareader]="'response.data'"
+                    [displayfield]="'name'">
       <ng-template #amexioBodyTmpl let-row="row">
         <amexio-row>
           <amexio-column [size]="12">

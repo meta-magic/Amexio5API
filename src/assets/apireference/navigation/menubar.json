@@ -1,13 +1,13 @@
 {
   "properties": [
     {
-      "name": "httpUrl",
+      "name": "httpurl",
       "type": "string",
       "default": "",
       "description": "REST url for fetching datasource."
     },
     {
-      "name": "httpMethod",
+      "name": "httpmethod",
       "type": "string",
       "default": "",
       "description": "Type of HTTP call, POST,GET."

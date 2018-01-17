@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
  
 @Component({
   selector: 'card-image-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Card Component</h2>
       </amexio-header>
@@ -17,7 +17,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card [enableHeader]="false" [enableFooter]="true" [footeralign]="'right'">
+                <amexio-card [header]="false" [footer]="true" [footeralign]="'right'">
                   <amexio-body>
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" style="height: 250px;width: 400px" alt="">
                     <br/>
@@ -31,7 +31,7 @@ import {Http} from "@angular/http";
                 </amexio-card>
               </amexio-column>
               <amexio-column size="6">
-                <amexio-card [enableHeader]="true" [enableFooter]="false" [headeralign]="'center'">
+                <amexio-card [header]="true" [footer]="false" [headeralign]="'center'">
                   <amexio-header>
                     <h4>Hi, Amexio</h4>
                   </amexio-header>
@@ -46,18 +46,18 @@ import {Http} from "@angular/http";
         
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/layout/card.json'" 
-                             [dataReader]="'properties'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/layout/card.json'" 
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
            

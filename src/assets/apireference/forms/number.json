@@ -1,35 +1,35 @@
 {
   "properties": [
     {
-      "name": "fieldLabel",
+      "name": "fieldlabel",
       "type": "string",
       "default": "",
       "description":"The label of this field"
     }, {
-      "name": "maxValue",
+      "name": "maxvalue",
       "type": "number",
       "default": "",
-      "description":"The largest positive representable number. The largest negative representable number is maxLength."
+      "description":"The largest positive representable number. The largest negative representable number is maxlength."
     },
     {
-      "name": "maxErrorMsg",
+      "name": "maxerrormsg",
       "type": "string",
       "default": "",
-      "description":"Error Message required to displayed after validation of maxLength "
+      "description":"Error Message required to displayed after validation of maxlength "
     },   {
-      "name": "minValue",
+      "name": "minvalue",
       "type": "number",
       "default": "",
-      "description":"The smallest positive representable number -that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
+      "description":"The smallest positive representable number -that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minlength. "
     },
     {
-      "name": "minErrorMsg",
+      "name": "minerrormsg",
       "type": "string",
       "default": "",
-      "description":"Error Message required to displayed after validation of minLength"
+      "description":"Error Message required to displayed after validation of minlength"
     },
     {
-      "name": "allowBlank",
+      "name": "allowblank",
       "type": "boolean",
       "default": "false",
       "description":"true to make this field required."
@@ -46,29 +46,29 @@
       "description":"true to disable the field."
     },
     {
-      "name": "errorMsg",
+      "name": "errormsg",
       "type": "string",
       "default": "",
       "description":"Error Message required to displayed after validation"
     },
     {
-      "name": "fontStyle",
+      "name": "fontstyle",
       "type": "string",
       "default": "",
       "description":"Set fontstyle to field"
     },{
-      "name": "fontFamily",
+      "name": "fontfamily",
       "type": "string",
       "default": "",
       "description":"Set font family to field"
     },
     {
-      "name": "fontSize",
+      "name": "fontsize",
       "type": "string",
       "default": "",
       "description":"Set font size to field"
     },{
-      "name": "enablePopOver",
+      "name": "enablepopover",
       "type": "boolean",
       "default": "false",
       "description":"Set enable / disable popover."

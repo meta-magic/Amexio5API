@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
  selector: 'carousel-demo',
  template: `
-   <amexio-card enableHeader="true">
+   <amexio-card header="true">
      <amexio-header>
        <h2>Carousel Component</h2>
      </amexio-header>
@@ -14,7 +14,7 @@ import { Component, OnInit } from '@angular/core';
        <p>The CarouselView displays a collection of images or other content in a horizontal layout with built-in navigation between the items.</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
-           <amexio-carousel [headerName]="'Mobiles'" [data]="[1,2,3,4,5,6,7,8,9,10,11]" mode="multiple" autoShuffleTime="2000">
+           <amexio-carousel [header]="'Mobiles'" [data]="[1,2,3,4,5,6,7,8,9,10,11]" mode="multiple" shuffleinterval="2000">
              <ng-template let-car amexioTemplate="item">
                <div style="height: 300px;width: 300px;border: 1px solid red;display : inline-block">
                 <div style="text-align: center">CAR {{car}}</div>
@@ -25,34 +25,34 @@ import { Component, OnInit } from '@angular/core';
            
          </amexio-tab>
          <amexio-tab title="API Reference">
-           <amexio-datagrid title="Properties" [columnToggle]="false"
-                            [httpMethod]="'get'"
-                            [httpUrl]="'assets/apireference/layout/accordion/acc.json'"
-                            [dataReader]="'properties'"
-                            [filtering]="false" >
-             <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+           <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                            [httpmethod]="'get'"
+                            [httpurl]="'assets/apireference/layout/accordion/acc.json'"
+                            [datareader]="'properties'"
+                            [enabledatafilter]="false" >
+             <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 
 
-           <amexio-datagrid title="Events" [columnToggle]="false"
-                            [httpMethod]="'get'"
-                            [httpUrl]="'assets/apireference/layout/accordion/acc_event.json'"
-                            [dataReader]="'properties'"
-                            [filtering]="false" >
-             <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+           <amexio-datagrid title="Events" [enablecolumnfiter]="false"
+                            [httpmethod]="'get'"
+                            [httpurl]="'assets/apireference/layout/accordion/acc_event.json'"
+                            [datareader]="'properties'"
+                            [enabledatafilter]="false" >
+             <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 

@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'datepicker-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Date Time Picker Component</h2>
       </amexio-header>
@@ -17,7 +17,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column [size]="6">
-                <amexio-card [enableHeader]="true" [enableFooter]="true" [footeralign]="'center'">
+                <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
                   <amexio-header>
                     <h4>Date Picker</h4>
                   </amexio-header>
@@ -25,7 +25,7 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-date-time-picker
-                          [fieldLabel]="'Date Of Birth'"
+                          [fieldlabel]="'Date Of Birth'"
                           [timepicker]="false"
                           [datepicker]="true"
                           [(ngModel)]="currentDate">
@@ -40,7 +40,7 @@ import {Http} from "@angular/http";
                
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card [enableHeader]="true" [enableFooter]="true" [footeralign]="'center'">
+                <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
                   <amexio-header>
                     <h4>Time Picker</h4>
                   </amexio-header>
@@ -48,7 +48,7 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-date-time-picker
-                          [fieldLabel]="'Time Of Birth'"
+                          [fieldlabel]="'Time Of Birth'"
                           [timepicker]="true"
                           [datepicker]="false"
                           [ngModel]="time"
@@ -66,27 +66,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/datepicker.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/datepicker.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/datepicker.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/datepicker.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

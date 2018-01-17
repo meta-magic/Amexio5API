@@ -1,15 +1,15 @@
 <!--data grid groupby-->
 <amexio-datagrid
   [title]="'Employee Data'"
-  [pageSize] = "10"
-  [dataReader]="'data'"
-  [groupByColumn]="true"
-  [groupByColumnIndex]="'jobTitle'"
-  [httpUrl]="'assets/data/componentdata/datagridgroupby.json'"
-  [httpMethod]="'get'"
+  [pagesize] = "10"
+  [datareader]="'data'"
+  [groupby]="true"
+  [groupbydataindex]="'jobTitle'"
+  [httpurl]="'assets/data/componentdata/datagridgroupby.json'"
+  [httpmethod]="'get'"
   (selectedRowData)="onRowSelect($event)">
-  <amexio-data-table-column [dataIndex]="'preferredFullName'" [dataType]="'string'" [hidden]="false" [text]="'FullName'"></amexio-data-table-column>
-  <amexio-data-table-column [dataIndex]="'jobTitle'" [dataType]="'string'" [hidden]="false" [text]="'Job Title'">
+  <amexio-data-table-column [dataindex]="'preferredFullName'" [datatype]="'string'" [hidden]="false" [text]="'FullName'"></amexio-data-table-column>
+  <amexio-data-table-column [dataindex]="'jobTitle'" [datatype]="'string'" [hidden]="false" [text]="'Job Title'">
   </amexio-data-table-column>
-  <amexio-data-table-column [dataIndex]="'salary'" [dataType]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
+  <amexio-data-table-column [dataindex]="'salary'" [datatype]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
 </amexio-datagrid>

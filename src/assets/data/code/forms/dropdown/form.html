@@ -2,11 +2,11 @@
 <amexio-dropdown [(ngModel)]="sportName"
                  [placeholder]="'Choose'"
                  name="sportName"
-                 [dataReader]="'data'"
-                 [fieldLabel]="'Choose Sport'"
-                 [httpUrl]="'assets/data/componentdata/sports.json'"
-                 [httpMethod]="'get'"
-                 [displayField]="'sportName'"
-                 [valueField]="'code'"
+                 [datareader]="'data'"
+                 [fieldlabel]="'Choose Sport'"
+                 [httpurl]="'assets/data/componentdata/sports.json'"
+                 [httpmethod]="'get'"
+                 [displayfield]="'sportName'"
+                 [valuefield]="'code'"
                  (onSingleSelect)="getSingleVal($event)">
 </amexio-dropdown>

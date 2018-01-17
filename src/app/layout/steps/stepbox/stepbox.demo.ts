@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'step-box', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Step box Component</h2>
       </amexio-header>
@@ -17,9 +17,9 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="12">
-                <!--showBlockBox is true for showing step box  -->
+                <!--block is true for showing step box  -->
                 <p><strong>Step box</strong></p>
-                <amexio-steps [showBlockBox]="true" [showIndex]="true" (onBlockClick)="stepBlockClick($event)">
+                <amexio-steps [block]="true" [index]="true" (onBlockClick)="stepBlockClick($event)">
                   <amexio-step-block [label]="'User'" [active]="true" ></amexio-step-block>
                   <amexio-step-block [label]="'Shop'" [active]="false" ></amexio-step-block>
                   <amexio-step-block [label]="'Payment'" [active]="false"></amexio-step-block>
@@ -29,9 +29,9 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column size="12">
-                <!--showBlockBox is true for showing step box  -->
+                <!--block is true for showing step box  -->
                 <p><strong>Step box with clickabel</strong></p>
-                <amexio-steps [showBlockBox]="true" [showIndex]="true" (onBlockClick)="stepBlockClick($event)">
+                <amexio-steps [block]="true" [index]="true" (onBlockClick)="stepBlockClick($event)">
                   <amexio-step-block [label]="'User'" [active]="'user'" ></amexio-step-block>
                   <amexio-step-block [label]="'Shop'" [active]="'shop'" ></amexio-step-block>
                   <amexio-step-block [label]="'Payment'" [active]="'payment'"></amexio-step-block>
@@ -41,9 +41,9 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column size="12">
-                showIndex is true for number inside circle 
+                index is true for number inside circle 
                 <p><strong>Step-box index</strong></p>
-                <amexio-steps [showIndex]="true" (onBlockClick)="stepBlockClick($event)">
+                <amexio-steps [index]="true" (onBlockClick)="stepBlockClick($event)">
                   <amexio-step-block [label]="'step-1'" [active]="true"></amexio-step-block>
                   <amexio-step-block [label]="'step-2'" [active]="false"></amexio-step-block>
                   <amexio-step-block [label]="'step-3'" [active]="false"></amexio-step-block>
@@ -53,18 +53,18 @@ import {Http} from "@angular/http";
             </amexio-row>
            </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/layout/steps/step.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/layout/steps/step.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

@@ -6,7 +6,7 @@ import {Http} from "@angular/http";
 @Component({
   selector: 'gauge-dashboard-demo',
   template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Gauge Chart Component</h2>
       </amexio-header>
@@ -17,25 +17,25 @@ import {Http} from "@angular/http";
            <amexio-row>
              <amexio-column size="12">
                <amexio-dashboard-gauge [height]="'400px'" [data]="gaugeChartData"
-                                       [redColorFrom]="90" [redColorTo]="100" [yellowColorFrom]="75"
-                                       [yellowColorTo]="90" [minorTicks]="5">
+                                       [redcolorfrom]="90" [redcolorto]="100" [yellowcolorfrom]="75"
+                                       [yellowcolorto]="90" [scalevalue]="5">
                </amexio-dashboard-gauge>
              </amexio-column>
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/dashboard/gauge.json'"
-                             [dataReader]="'dashboard'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Chart Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/dashboard/gauge.json'"
+                             [datareader]="'dashboard'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>

@@ -28,7 +28,7 @@ import {SharedModule} from "../shared.module";
       <hr>
       <amexio-row>
         <amexio-column size="12">
-          <amexio-card enableHeader="true">
+          <amexio-card header="true">
             <amexio-header>
              <h2>Table Of Contents</h2>
             </amexio-header>
@@ -39,7 +39,7 @@ import {SharedModule} from "../shared.module";
       </amexio-row>
       <br>
       <div id="gettingStarted" class="row col-lg-12">
-        <amexio-card enableHeader="true">
+        <amexio-card header="true">
           <amexio-header><h2>Getting Started</h2></amexio-header>
           <amexio-body>
             <amexio-row>
@@ -54,7 +54,7 @@ import {SharedModule} from "../shared.module";
 
       <br>
       <div id="InstallationInstruc" class="row col-lg-12">
-        <amexio-card enableHeader="12">
+        <amexio-card header="12">
           <amexio-header><h2>Installation Details</h2></amexio-header>
           <amexio-body>
             <amexio-row>

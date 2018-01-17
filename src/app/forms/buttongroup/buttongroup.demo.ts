@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'buttongroup-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Button Group Component</h2>
       </amexio-header>
@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column [size]="12">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>Button Group Types</h2>
                   </amexio-header>
@@ -41,7 +41,7 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column [size]="12">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2>Button Group States</h2>
                   </amexio-header>
@@ -49,8 +49,8 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-btn-group>
-                          <amexio-button [label]="'Disabled'"  [type]="'primary'"  [tooltipMessage]="'Disabled'" [disabled]="'true'"></amexio-button>
-                          <amexio-button [label]="'Enabled'" [type]="'primary'" [tooltipMessage]="'Enabled'"></amexio-button>
+                          <amexio-button [label]="'Disabled'"  [type]="'primary'"  [tooltip]="'Disabled'" [disabled]="'true'"></amexio-button>
+                          <amexio-button [label]="'Enabled'" [type]="'primary'" [tooltip]="'Enabled'"></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>
@@ -61,7 +61,7 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column [size]="12">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2> Button Group with Icons</h2>
                   </amexio-header>
@@ -69,9 +69,9 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-btn-group>
-                          <amexio-button [label]="'Next'" [type]="'primary'" [tooltipMessage]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
-                          <amexio-button [label]="'Download'" [type]="'success'" [tooltipMessage]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
-                          <amexio-button [label]="'Delete'" [type]="'danger'" [tooltipMessage]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                          <amexio-button [label]="'Next'" [type]="'primary'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
+                          <amexio-button [label]="'Download'" [type]="'success'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [label]="'Delete'" [type]="'danger'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>
@@ -82,7 +82,7 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column [size]="12">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h2> Button Group Sizes</h2>
                   </amexio-header>
@@ -90,16 +90,16 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="6">
                         <amexio-btn-group  >
-                          <amexio-button [size]="'large'" [label]="'Next'" [type]="'primary'" [tooltipMessage]="'Next'" [icon]="'fa fa-chevron-right'" ></amexio-button>
-                          <amexio-button [size]="'large'" [label]="'Download'" [type]="'success'" [tooltipMessage]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
-                          <amexio-button [size]="'large'" [label]="'Delete'" [type]="'danger'" [tooltipMessage]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Next'" [type]="'primary'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Download'" [type]="'success'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Delete'" [type]="'danger'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                       <amexio-column [size]="6">
                         <amexio-btn-group >
-                          <amexio-button [size]="'small'" [label]="'Next'" [type]="'primary'" [tooltipMessage]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
-                          <amexio-button [size]="'small'" [label]="'Download'" [type]="'success'" [tooltipMessage]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
-                          <amexio-button [size]="'small'" [label]="'Delete'" [type]="'danger'" [tooltipMessage]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Next'" [type]="'primary'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Download'" [type]="'success'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Delete'" [type]="'danger'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>
@@ -110,27 +110,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/button.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/button.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/button.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/button.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

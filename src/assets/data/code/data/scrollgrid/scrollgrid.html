@@ -1,19 +1,19 @@
 <!--data grid with scroll-->
 <amexio-datagrid
-      [columnToggle]="true" [height]="200" title="Country Grid"
-      [checkboxSelect]="false"  [httpMethod]="'get'"
-      [httpUrl]="'assets/data/componentdata/country.json'"
-      [dataReader]="'data'"  [pageSize] = "10">
-      <amexio-data-table-column [dataIndex]="'countryName'"
-                                [dataType]="'string'"
+      [enablecolumnfiter]="true" [height]="200" title="Country Grid"
+      [enablecheckbox]="false"  [httpmethod]="'get'"
+      [httpurl]="'assets/data/componentdata/country.json'"
+      [datareader]="'data'"  [pagesize] = "10">
+      <amexio-data-table-column [dataindex]="'countryName'"
+                                [datatype]="'string'"
                                 [hidden]="false" [text]="'Name'">
       </amexio-data-table-column>
-      <amexio-data-table-column [dataIndex]="'countryCode1'"
-                                [dataType]="'string'" [hidden]="false"
+      <amexio-data-table-column [dataindex]="'countryCode1'"
+                                [datatype]="'string'" [hidden]="false"
                                 [text]="'Code'">
       </amexio-data-table-column>
-      <amexio-data-table-column [dataIndex]="'currencyName'"
-                                [dataType]="'string'" [hidden]="false"
+      <amexio-data-table-column [dataindex]="'currencyName'"
+                                [datatype]="'string'" [hidden]="false"
                                 [text]="'Currency'">
       </amexio-data-table-column>
 </amexio-datagrid>

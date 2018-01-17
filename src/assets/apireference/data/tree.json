@@ -1,13 +1,13 @@
 {
   "properties": [
     {
-      "name": "httpUrl",
+      "name": "httpurl",
       "type": "string",
       "default": "",
       "description":"REST url for fetching data."
     },
     {
-      "name": "httpMethod",
+      "name": "httpmethod",
       "type": "string",
       "default": "",
       "description":"Type of HTTP call, POST,GET etc."
@@ -19,7 +19,7 @@
       "description":"Local Data binding."
     },
     {
-      "name": "dataReader",
+      "name": "datareader",
       "type": "string",
       "default": "",
       "description":"Key in JSON Datasource for records."

@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'email-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Email Input Component</h2>
       </amexio-header>
@@ -18,27 +18,27 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card enableHeader="true">
+                <amexio-card header="true">
                   <amexio-header>
                     <h4>Basic Email Input</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                    <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
                                         [placeholder]="'Enter Email Id'"
-                                        [allowBlank]="false" [errorMsg] ="'Please Enter Email Id'"
-                                        [enablePopOver]="true"
-                                        [iconFeedBack]="true">
+                                        [allowblank]="false" [errormsg] ="'Please Enter Email Id'"
+                                        [enablepopover]="true"
+                                        [iconfeedback]="true">
                     </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h4>Email Input With Disable</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input name ="email" [fieldLabel]="'Email Id'"
+                    <amexio-email-input name ="email" [fieldlabel]="'Email Id'"
                                         [placeholder]="'Enter Email Id'"
                                         [disabled]="true">
                     </amexio-email-input>
@@ -48,29 +48,29 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h4>Email Input Font Style</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                    <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
                                         [placeholder]="'Enter Email Id'"
-                                        [iconFeedBack]="true"
-                                        [fontStyle]="'italic'">
+                                        [iconfeedback]="true"
+                                        [fontstyle]="'italic'">
                     </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h4>Font Family</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input name ="email" [fieldLabel]="'Email Id'"
+                    <amexio-email-input name ="email" [fieldlabel]="'Email Id'"
                                         [placeholder]="'Enter Email Id'"
-                                        [fontFamily]="'Times New Roman'"
-                                        [fontSize]="'large'">
+                                        [fontfamily]="'Times New Roman'"
+                                        [fontsize]="'large'">
                     </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
@@ -79,27 +79,27 @@ import {Http} from "@angular/http";
             
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/email.json'" 
-                             [dataReader]="'properties'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/email.json'" 
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'" 
-                             [httpUrl]="'assets/apireference/forms/email.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'" 
+                             [httpurl]="'assets/apireference/forms/email.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             

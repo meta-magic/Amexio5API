@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'card-form-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Card Component</h2>
       </amexio-header>
@@ -15,38 +15,38 @@ import {Http} from "@angular/http";
         <p>A Simple Card which renders card based on title, body and actions user has configured</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-            <amexio-button [label]="'Hide/UnHide Card'" [type]="'primary'" [tooltipMessage]="'Hide/UnHide Card'" (click)="toggle()"> </amexio-button>
-            <amexio-card [enableHeader]="true" [enableFooter]="true" [showCard]="flag" [footeralign]="'right'">
+            <amexio-button [label]="'Hide/UnHide Card'" [type]="'primary'" [tooltip]="'Hide/UnHide Card'" (click)="toggle()"> </amexio-button>
+            <amexio-card [header]="true" [footer]="true" [show]="flag" [footeralign]="'right'">
               <amexio-header>
                <h5> Employee Registration</h5>
               </amexio-header>
               <amexio-body>
                 <amexio-row>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Name'" name ="name"
+                    <amexio-text-input [fieldlabel]="'Name'" name ="name"
                                        [placeholder]="'Enter name'"
-                                       [iconFeedBack]="true">
+                                       [iconfeedback]="true">
                     </amexio-text-input>
                   </amexio-column>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Address'" name ="address"
+                    <amexio-text-input [fieldlabel]="'Address'" name ="address"
                                        [placeholder]="'Enter address'"
-                                       [iconFeedBack]="true">
+                                       [iconfeedback]="true">
                     </amexio-text-input>
                   </amexio-column>
                 </amexio-row>
                 <amexio-row>
                   <amexio-column [size]="6">
-                    <amexio-number-input [fieldLabel]="'Number Input'"
+                    <amexio-number-input [fieldlabel]="'Number Input'"
                                          [placeholder]="'Enter Age'">
                     </amexio-number-input>
                   </amexio-column>
                   <amexio-column [size]="6">
-                    <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                    <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
                                         [placeholder]="'Enter Email Id'"
-                                        [allowBlank]="false" [errorMsg] ="'Please Enter Email Id'"
-                                        [enablePopOver]="true"
-                                        [iconFeedBack]="true">
+                                        [allowblank]="false" [errormsg] ="'Please Enter Email Id'"
+                                        [enablepopover]="true"
+                                        [iconfeedback]="true">
                     </amexio-email-input>
                   </amexio-column>
                 </amexio-row>
@@ -57,18 +57,18 @@ import {Http} from "@angular/http";
             </amexio-card>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/layout/card.json'" 
-                             [dataReader]="'properties'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/layout/card.json'" 
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             

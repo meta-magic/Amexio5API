@@ -18,19 +18,19 @@
       "description":"For the use of local data "
     },
     {
-      "name": "barWidthGroup",
+      "name": "barwidth",
       "type": "string",
       "default": "",
       "description":"To remove the space between the bars."
     },
     {
-      "name": "fallingColorOfBar",
+      "name": "fallingcolor",
       "type": "string",
       "default": "",
       "description":"The fill color of falling candles, as an HTML color string.Example:'#FF0000' or 'red'"
     },
     {
-      "name": "risingColorOfBar",
+      "name": "risingcolor",
       "type": "string",
       "default": "",
       "description":"The fill color of rising candles, as an HTML color string.Example:'#0f9d58' or 'green'"
@@ -44,27 +44,27 @@
       "description":"Title to display above the chart."
     },
     {
-      "name": "titleColor",
+      "name": "color",
       "type": "string",
       "default": "",
       "description":"Color of chart title."
     },{
-      "name": "titleFontName",
+      "name": "fontname",
       "type": "string",
       "default": "",
       "description":"Font name of chart title."
     },{
-      "name": "titleFontSize",
+      "name": "fontsize",
       "type": "number",
       "default": "",
       "description":"Font size of chart title."
     },{
-      "name": "isTitleBold",
+      "name": "bold",
       "type": "boolean",
       "default": "false",
       "description":"Set true for title in bold font."
     },{
-      "name": "isTitleItalic",
+      "name": "italic",
       "type": "boolean",
       "default": "false",
       "description":"Set true for title text in italic."
@@ -78,7 +78,7 @@
       "description": "Title of the chart for the horizontal axis."
     },
     {
-      "name": "titleTextColor",
+      "name": "titlecolor",
       "type": "string",
       "default": "",
       "description": "The color of the chart for the horizontal axis."
@@ -92,7 +92,7 @@
       "description": "Title of the chart for the Vertical axis."
     },
     {
-      "name": "titleTextColor",
+      "name": "titlecolor",
       "type": "string",
       "default": "",
       "description": "The color of the chart for the Vertical axis."

@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'password-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>Password Input Component</h2>
       </amexio-header>
@@ -18,40 +18,40 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card enableHeader="true">
+                <amexio-card header="true">
                   <amexio-header>
                     <h4>Basic Password Input</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-password-input [enablePopOver]="true"  [fieldLabel]="'Password Input'" name ="password"
+                    <amexio-password-input [enablepopover]="true"  [fieldlabel]="'Password Input'" name ="password"
                                            [placeholder]="'Enter Password'"
-                                           [allowBlank]="false"
-                                           [errorMsg] ="'Please enter password'"
-                                           [minLength]="6"
-                                           [minErrorMsg]="'Minimum 6 char required'"
-                                           [maxLength]="32"
-                                           [maxErrorMsg]="'Maximum 32 char allowed'"
-                                           [iconFeedBack]="true">
+                                           [allowblank]="false"
+                                           [errormsg] ="'Please enter password'"
+                                           [minlength]="6"
+                                           [minerrormsg]="'Minimum 6 char required'"
+                                           [maxlength]="32"
+                                           [maxerrormsg]="'Maximum 32 char allowed'"
+                                           [iconfeedback]="true">
                     </amexio-password-input>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h4>Password Input without Label</h4>
                   </amexio-header>
                   <amexio-body>
                     <amexio-password-input name ="password"
                                            [placeholder]="'Enter Password'"
-                                           [allowBlank]="false"
-                                           [errorMsg] ="'Please enter password'"
-                                           [minLength]="6"
-                                           [minErrorMsg]="'Minimum 6 char required'"
-                                           [maxLength]="32"
-                                           [maxErrorMsg]="'Maximum 32 char allowed'"
-                                           [iconFeedBack]="true"
-                                           [hasLabel]="false">
+                                           [allowblank]="false"
+                                           [errormsg] ="'Please enter password'"
+                                           [minlength]="6"
+                                           [minerrormsg]="'Minimum 6 char required'"
+                                           [maxlength]="32"
+                                           [maxerrormsg]="'Maximum 32 char allowed'"
+                                           [iconfeedback]="true"
+                                           [haslabel]="false">
                     </amexio-password-input>
                   </amexio-body>
                 </amexio-card>
@@ -59,27 +59,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/password.json'" 
-                             [dataReader]="'properties'"
-                             [filtering]="false" >
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/password.json'" 
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false" >
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'" 
-                             [httpUrl]="'assets/apireference/forms/password.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'" 
+                             [httpurl]="'assets/apireference/forms/password.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             

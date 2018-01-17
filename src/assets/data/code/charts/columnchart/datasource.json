@@ -1,6 +1,6 @@
   [
-      [{"dataType":'timeofday',"label":'Time of Day'},
-        {"dataType":"number", "label":'Motivation Level'}
+      [{"datatype":'timeofday',"label":'Time of Day'},
+        {"datatype":"number", "label":'Motivation Level'}
       ],
       [{v: [8, 0, 0], f: '8 am'}, 1],
       [{v: [9, 0, 0], f: '9 am'}, 2],

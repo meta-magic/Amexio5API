@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 @Component({
  selector: 'stepbox-icon-demo',
  template: `
-   <amexio-card enableHeader="true">
+   <amexio-card header="true">
      <amexio-header>
        <h2>Step box Icon Component</h2>
      </amexio-header>
@@ -17,10 +17,10 @@ import {Http} from "@angular/http";
          <amexio-tab title="Demo" active="true">
            <amexio-row>
              <amexio-column size="12">
-               <!--showBlockBox is true for showing step box  -->
+               <!--block is true for showing step box  -->
                <p><strong>Step box</strong></p>
                <!--Step-box with fontawesome icons-->
-               <amexio-steps [showIcon]="true" (onBlockClick)="stepBlockClick($event)">
+               <amexio-steps [icon]="true" (onBlockClick)="stepBlockClick($event)">
                  <amexio-step-block [label]="'User'" [active]="true" [icon]="'fa fa-user'" ></amexio-step-block>
                  <amexio-step-block [label]="'Address'" [active]="false" [icon]="'fa fa-address-card'"></amexio-step-block>
                  <amexio-step-block [label]="'Shop'" [active]="false" [icon]="'fa fa-shopping-cart'"></amexio-step-block>
@@ -30,10 +30,10 @@ import {Http} from "@angular/http";
            </amexio-row>
            <amexio-row>
              <amexio-column size="12">
-               <!--showBlockBox is true for showing step box  -->
+               <!--block is true for showing step box  -->
                <p><strong>Step box with clickabel</strong></p>
                <!--Step box with icon & clickable<-->
-               <amexio-steps [showBlockBox]="true" [showIcon]="true" (onBlockClick)="stepBlockClick($event)">
+               <amexio-steps [block]="true" [icon]="true" (onBlockClick)="stepBlockClick($event)">
                  <amexio-step-block [label]="'User'" [active]="user" [icon]="'fa fa-user'"></amexio-step-block>
                  <amexio-step-block [label]="'Shop'" [active]="shop" [icon]="'fa fa-address-card'"></amexio-step-block>
                  <amexio-step-block [label]="'Payment'" [active]="payment" [icon]="'fa fa-shopping-cart'"></amexio-step-block>
@@ -43,18 +43,18 @@ import {Http} from "@angular/http";
            </amexio-row>
          </amexio-tab>
          <amexio-tab title="API Reference">
-           <amexio-datagrid title="Properties" [columnToggle]="false"
-                            [httpMethod]="'get'"
-                            [httpUrl]="'assets/apireference/layout/steps/step.json'"
-                            [dataReader]="'properties'"
-                            [filtering]="false">
-             <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+           <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                            [httpmethod]="'get'"
+                            [httpurl]="'assets/apireference/layout/steps/step.json'"
+                            [datareader]="'properties'"
+                            [enabledatafilter]="false">
+             <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 

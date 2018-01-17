@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "fieldLabel",
+      "name": "fieldlabel",
       "type": "string",
       "default": "",
       "description":"The label of this field."
@@ -34,13 +34,13 @@
       "description":"Validate field"
     },
     {
-      "name": "fullIcon",
+      "name": "fullicon",
       "type": "string ",
       "default": "",
       "description":"Icon for selected rating .This attribute is  useful only when user have custom rating icons.example ☐"
     },
     {
-      "name": "emptyIcon",
+      "name": "emptyicon",
       "type": "string ",
       "default": "",
       "description":"Icon for non-selected rating .This attribute is  useful only when user have custom rating icons.example ☐"

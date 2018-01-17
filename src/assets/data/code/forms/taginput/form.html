@@ -1,11 +1,11 @@
-<!--Taginput with httpUrl-->
-<amexio-tag-input [dataReader]="'data'"
-                  [httpUrl]="'assets/data/componentdata/country.json'"
-                  [httpMethod]="'get'"
+<!--Taginput with httpurl-->
+<amexio-tag-input [datareader]="'data'"
+                  [httpurl]="'assets/data/componentdata/country.json'"
+                  [httpmethod]="'get'"
                   [key]="'countryName'"
-                  [displayField]="'countryName'"
-                  [valueField]="'countryName'"
+                  [displayfield]="'countryName'"
+                  [valuefield]="'countryName'"
                   [(ngModel)]="name"
-                  [fieldLabel]="'Country Name'"
+                  [fieldlabel]="'Country Name'"
                   (onChange)="onRecordSelect($event)">
 </amexio-tag-input>

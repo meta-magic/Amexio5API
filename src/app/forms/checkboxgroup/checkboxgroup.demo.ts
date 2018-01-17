@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'checkboxgroup-demo', template: `
-    <amexio-card enableHeader="true">
+    <amexio-card header="true">
       <amexio-header>
         <h2>CheckBox Component</h2>
       </amexio-header>
@@ -18,16 +18,16 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card enableHeader="true">
+                <amexio-card header="true">
                   <amexio-header>
                     <h4>Horizontal Checkbox</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox-group [fieldLabel]="'Horizontal Checkbox'" name="language"
-                                           [dataReader]="'response.data'"
-                                           [displayField]="'language'"
+                    <amexio-checkbox-group [fieldlabel]="'Horizontal Checkbox'" name="language"
+                                           [datareader]="'response.data'"
+                                           [displayfield]="'language'"
                                            [horizontal]="true"
-                                           [valueField]="'checked'"
+                                           [valuefield]="'checked'"
                                            (selectedValue)="selectedCheckboxgroup($event)"
                                            [data]="checkboxGroupdata"
                                            [column]="'4'">
@@ -36,17 +36,17 @@ import {Http} from "@angular/http";
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card [enableHeader]="true">
+                <amexio-card [header]="true">
                   <amexio-header>
                     <h4>Vertical Checkbox With Http Url</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox-group [fieldLabel]="'Vertical Checkbox'" name="language"
-                                           [dataReader]="'data'"
-                                           [displayField]="'language'"
-                                           [valueField]="'checked'"
-                                           [httpMethod]="'get'"
-                                           [httpUrl]="'assets/data/componentdata/checkgroup.json'">
+                    <amexio-checkbox-group [fieldlabel]="'Vertical Checkbox'" name="language"
+                                           [datareader]="'data'"
+                                           [displayfield]="'language'"
+                                           [valuefield]="'checked'"
+                                           [httpmethod]="'get'"
+                                           [httpurl]="'assets/data/componentdata/checkgroup.json'">
                     </amexio-checkbox-group>
                   </amexio-body>
                 </amexio-card>
@@ -55,27 +55,27 @@ import {Http} from "@angular/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [columnToggle]="false"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/checkboxgroup.json'"
-                             [dataReader]="'properties'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                             [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/checkboxgroup.json'"
+                             [datareader]="'properties'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpMethod]="'get'"
-                             [httpUrl]="'assets/apireference/forms/checkboxgroup.json'" [dataReader]="'events'"
-                             [filtering]="false">
-              <amexio-data-table-column [width]="20"[dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [httpmethod]="'get'"
+                             [httpurl]="'assets/apireference/forms/checkboxgroup.json'" [datareader]="'events'"
+                             [enabledatafilter]="false">
+              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

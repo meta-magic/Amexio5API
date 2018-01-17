@@ -26,27 +26,27 @@
       "description":"Title to display above the chart."
     },
     {
-      "name": "titleColor",
+      "name": "color",
       "type": "string",
       "default": "",
       "description":"Color of chart title."
     },{
-      "name": "titleFontName",
+      "name": "fontname",
       "type": "string",
       "default": "",
       "description":"Font name of chart title."
     },{
-      "name": "titleFontSize",
+      "name": "fontsize",
       "type": "number",
       "default": "",
       "description":"Font size of chart title."
     },{
-      "name": "isTitleBold",
+      "name": "bold",
       "type": "boolean",
       "default": "false",
       "description":"Set true for title in bold font."
     },{
-      "name": "isTitleItalic",
+      "name": "italic",
       "type": "boolean",
       "default": "false",
       "description":"Set true for title text in italic style."
@@ -58,7 +58,7 @@
     "default": "",
     "description":"Title of the chart for the horizontal axis."
   },{
-    "name": "titleTextColor",
+    "name": "titlecolor",
     "type": "string",
     "default": "",
     "description":"The color of the chart for the horizontal axis."
@@ -69,7 +69,7 @@
     "default": "",
     "description":"Title of the chart for the Vertical axis."
   },{
-    "name": "titleTextColor",
+    "name": "titlecolor",
     "type": "string",
     "default": "",
     "description":"The color of the chart for the Vertical axis."

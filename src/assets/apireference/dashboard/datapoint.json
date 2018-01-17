@@ -27,12 +27,12 @@
       "default": "false",
       "description":"Enable east position"
     }, {
-      "name": "backgroundColor",
+      "name": "backgroundcolor",
       "type": "string",
       "default": "false",
       "description":"Background color for datapoint."
     }, {
-      "name": "fontColor",
+      "name": "fontcolor",
       "type": "string",
       "default": "false",
       "description":"Font color for datapoint."
@@ -40,12 +40,12 @@
   ],
   "location": [
     {
-      "name": "backgroundColor",
+      "name": "backgroundcolor",
       "type": "string",
       "default": "",
       "description":"Set background color"
     }, {
-      "name": "fontColor",
+      "name": "fontcolor",
       "type": "string",
       "default": "",
       "description":"Set font color"
@@ -65,7 +65,7 @@
       "default": "",
       "description":"Set height"
     }, {
-      "name": "cClass",
+      "name": "cclass",
       "type": "string",
       "default": "",
       "description":"To use custom css class"

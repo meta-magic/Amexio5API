@@ -1,19 +1,19 @@
 {
   "properties": [
     {
-      "name": "fieldLabel",
+      "name": "fieldlabel",
       "type": "string",
       "default": "",
       "description": "The label of this field"
     },
     {
-      "name": "httpUrl",
+      "name": "httpurl",
       "type": "string",
       "default": "",
       "description": "REST url for fetching datasource."
     },
     {
-      "name": "httpMethod",
+      "name": "httpmethod",
       "type": "string",
       "default": "",
       "description": "Type of HTTP call, POST,GET."
@@ -25,19 +25,19 @@
       "description": "Allow Drop Zone For Files."
     },
     {
-      "name": "fileType",
+      "name": "filetype",
       "type": "string",
       "default": "",
-      "description": "Allow to show only given file type at the time of file upload.example for 1.image [fileType]=image/* 2.for pdf [fileType]=application/pdf"
+      "description": "Allow to show only given file type at the time of file upload.example for 1.image [filetype]=image/* 2.for pdf [filetype]=application/pdf"
     },
     {
-      "name": "multipleFile",
+      "name": "multiplefile",
       "type": "string",
       "default": "",
       "description": "For multiple file upload."
     },
     {
-      "name": "requestParamName",
+      "name": "paramname",
       "type": "string",
       "default": "",
       "description": "Used to specify URL query param name. same with backend rest controller paramater object name Default :file"

@@ -19,17 +19,17 @@
       "description":"Icon for step box."
     },
     {
-      "name": "showIndex",
+      "name": "index",
       "type": "boolean",
       "default": "false",
       "description":"Show the indexes of steps."
     },{
-      "name": "showIcon",
+      "name": "icon",
       "type": "boolean",
       "default": "false",
       "description":"Show icon based on boolean."
     },{
-      "name": "showBlockBox",
+      "name": "block",
       "type": "boolean",
       "default": "false",
       "description":"Show block based on boolean."

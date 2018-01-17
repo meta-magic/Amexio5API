@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 @Component({
  selector: 'fieldset-demo',
  template: `
-   <amexio-card enableHeader="true">
+   <amexio-card header="true">
      <amexio-header>
        <h2>Fieldset Component</h2>
      </amexio-header>
@@ -20,24 +20,24 @@ import {Http} from "@angular/http";
               <amexio-fieldset [collapsible]="true" title="Employee Registration">
                 <amexio-row>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Name'" name="country"
+                    <amexio-text-input [fieldlabel]="'Name'" name="country"
                                        [placeholder]="'Enter name'"
-                                       [enablePopOver]="true"
-                                       [iconFeedBack]="true"
-                                       [allowBlank]="false" [errorMsg]="'Please enter name'"
-                                       [minLength]="3" [maxLength]="15" [minErrorMsg]="'Name should be minimum 3 characters'"
-                                       [maxErrorMsg]="'Name should be less than 15 characters'"
+                                       [enablepopover]="true"
+                                       [iconfeedback]="true"
+                                       [allowblank]="false" [errormsg]="'Please enter name'"
+                                       [minlength]="3" [maxlength]="15" [minerrormsg]="'Name should be minimum 3 characters'"
+                                       [maxerrormsg]="'Name should be less than 15 characters'"
                     >
                     </amexio-text-input>
                   </amexio-column>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldLabel]="'Surname'" name="name"
+                    <amexio-text-input [fieldlabel]="'Surname'" name="name"
                                        [placeholder]="'Enter surname'"
-                                       [enablePopOver]="true"
-                                       [iconFeedBack]="true"
-                                       [allowBlank]="false" [errorMsg]="'Please enter Surname'"
-                                       [minLength]="3" [maxLength]="15" [minErrorMsg]="'Surname should be minimum 3 characters'"
-                                       [maxErrorMsg]="'Surname should be less than 15 characters'"
+                                       [enablepopover]="true"
+                                       [iconfeedback]="true"
+                                       [allowblank]="false" [errormsg]="'Please enter Surname'"
+                                       [minlength]="3" [maxlength]="15" [minerrormsg]="'Surname should be minimum 3 characters'"
+                                       [maxerrormsg]="'Surname should be less than 15 characters'"
                     >
                     </amexio-text-input>
                   </amexio-column>
@@ -45,12 +45,12 @@ import {Http} from "@angular/http";
                 <amexio-row>
                   <amexio-column [size]="6">
 
-                    <amexio-textarea-input [fieldLabel]="'Address'" name="Address"
+                    <amexio-textarea-input [fieldlabel]="'Address'" name="Address"
                                            [placeholder]="'Enter address'"
-                                           [errorMsg]="'Please enter address'"
-                                           [iconFeedBack]="true"
-                                           [noOfrows]="'1'" [noOfCols]="'2'"
-                                           [allowBlank]="false" [enablePopOver]="true"
+                                           [errormsg]="'Please enter address'"
+                                           [iconfeedback]="true"
+                                           [rows]="'1'" [columns]="'2'"
+                                           [allowblank]="false" [enablepopover]="true"
 
                     >
                     </amexio-textarea-input>
@@ -65,18 +65,18 @@ import {Http} from "@angular/http";
           </amexio-row>
          </amexio-tab>
          <amexio-tab title="API Reference">
-           <amexio-datagrid title="Properties" [columnToggle]="false"
-                            [httpMethod]="'get'"
-                            [httpUrl]="'assets/apireference/layout/fieldset/fieldset.json'"
-                            [dataReader]="'properties'"
-                            [filtering]="false" >
-             <amexio-data-table-column [width]="15" [dataIndex]="'name'" [dataType]="'string'" [hidden]="false"
+           <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
+                            [httpmethod]="'get'"
+                            [httpurl]="'assets/apireference/layout/fieldset/fieldset.json'"
+                            [datareader]="'properties'"
+                            [enabledatafilter]="false" >
+             <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'type'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataIndex]="'default'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataIndex]="'description'" [dataType]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 

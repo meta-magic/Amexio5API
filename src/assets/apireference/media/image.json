@@ -1,28 +1,28 @@
 {
   "properties": [
     {
-      "name": "imagePath",
+      "name": "path",
       "type": "string",
       "default": "",
       "description": "Specifies the URL of an image.This attribute is useful only for images."
     },
     {
-      "name": "tooltipMessage",
+      "name": "tooltip",
       "type": "string",
       "default": "",
       "description": "TooltipMessage on image / icon."
     },
     {
-      "name": "imageClass",
+      "name": "iconclass",
       "type": "string",
       "default": "",
-      "description": "Material icon class name.Material Example:imageClass='material-icons' mdbClass='cloud' Fontawesome Example:imageClass='fa fa-address-book fa-lg'"
+      "description": "Material icon class name.Material Example:iconclass='material-icons' mdb='cloud' Fontawesome Example:iconclass='fa fa-address-book fa-lg'"
     },
     {
-      "name": "mdbClass",
+      "name": "mdb",
       "type": "string",
       "default": "",
-      "description": "This attribute is useful for only material icons.Material Example:mdbClass='cloud'"
+      "description": "This attribute is useful for only material icons.Material Example:mdb='cloud'"
     },
     {
       "name": "title",

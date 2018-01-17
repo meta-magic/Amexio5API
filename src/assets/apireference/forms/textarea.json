@@ -1,48 +1,48 @@
 {
   "properties": [
     {
-      "name": "fieldLabel",
+      "name": "fieldlabel",
       "type": "string",
       "default": "",
       "description":"The label of this field"
     },
     {
-      "name": "noOfrows",
+      "name": "rows",
       "type": "number",
       "default": "",
       "description":"Number of rows for textarea."
     },
     {
-      "name": "noOfCols",
+      "name": "columns",
       "type": "number",
       "default": "",
       "description":"Number of column for textarea."
     },
     {
-      "name": "maxLength",
+      "name": "maxlength",
       "type": "number",
       "default": "",
-      "description":"The largest positive representable number. The largest negative representable number is maxLength."
+      "description":"The largest positive representable number. The largest negative representable number is maxlength."
     },
     {
-      "name": "maxErrorMsg",
+      "name": "maxerrormsg",
       "type": "string",
       "default": "",
-      "description":"Error Message required to displayed after validation of maxLength "
+      "description":"Error Message required to displayed after validation of maxlength "
     },   {
-      "name": "minLength",
+      "name": "minlength",
       "type": "number",
       "default": "",
-      "description":"The smallest positive representable number -- that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minLength. "
+      "description":"The smallest positive representable number -- that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -minlength. "
     },
     {
-      "name": "minErrorMsg",
+      "name": "minerrormsg",
       "type": "string",
       "default": "",
-      "description":"Error Message required to displayed after validation of minLength"
+      "description":"Error Message required to displayed after validation of minlength"
     },
     {
-      "name": "fieldName",
+      "name": "fieldname",
       "type": "string",
       "default": "",
       "description":"Field name for text input."
@@ -52,7 +52,7 @@
       "default": "",
       "description":"Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
     },{
-      "name": "allowBlank",
+      "name": "allowblank",
       "type": "boolean",
       "default": "false",
       "description":"true to make this field required."
@@ -69,39 +69,39 @@
       "description":"true to disable the field."
     },
     {
-      "name": "errorMsg",
+      "name": "errormsg",
       "type": "string",
       "default": "",
       "description":"Error Message required to displayed after validation"
     },
     {
-      "name": "iconFeedBack",
+      "name": "iconfeedback",
       "type": "boolean",
       "default": "false",
       "description":"Enable/Disabled validation icon"
     },{
-      "name": "fontStyle",
+      "name": "fontstyle",
       "type": "string",
       "default": "",
       "description":"Set fontstyle to field"
     },{
-      "name": "fontFamily",
+      "name": "fontfamily",
       "type": "string",
       "default": "",
       "description":"Set font family to field"
     },
     {
-      "name": "fontSize",
+      "name": "fontsize",
       "type": "string",
       "default": "",
       "description":"Set font size to field"
     }, {
-      "name": "hasLabel",
+      "name": "haslabel",
       "type": "boolean",
       "default": "false",
       "description":"hide/unhide field label"
     },{
-      "name": "enablePopOver",
+      "name": "enablepopover",
       "type": "boolean",
       "default": "false",
       "description":"Set enable / disable popover."
