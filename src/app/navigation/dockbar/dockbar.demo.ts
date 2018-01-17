@@ -53,7 +53,7 @@ import {Http} from "@angular/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="API Reference : amexio-dockbar" [columnToggle]="false"
+            <amexio-datagrid title="Propeties : amexio-dockbar" [columnToggle]="false"
                              [httpMethod]="'get'"
                              [httpUrl]="'assets/apireference/navigation/dockbar.json'"
                              [dataReader]="'dockbarproperties'"
@@ -68,7 +68,7 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="API Reference : amexio-dockbar-item" [columnToggle]="false"
+            <amexio-datagrid title="Propeties : amexio-dockbar-item" [columnToggle]="false"
                              [httpMethod]="'get'"
                              [httpUrl]="'assets/apireference/navigation/dockbar.json'"
                              [dataReader]="'dockbaritemproperties'"

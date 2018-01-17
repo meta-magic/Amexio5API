@@ -54,7 +54,7 @@ import {Http} from "@angular/http";
            
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="API Reference : amexio-dockbar" [columnToggle]="false"
+            <amexio-datagrid title="Propeties" [columnToggle]="false"
                              [httpMethod]="'get'"
                              [httpUrl]="'assets/apireference/navigation/notification.json'"
                              [dataReader]="'properties'"
