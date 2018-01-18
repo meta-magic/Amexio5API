@@ -208,6 +208,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'listbox-demo', loadChildren: './data/listbox/listbox.demo.module#ListBoxDemoModule'
   },
+
+  /*grid....*/
+
   {
     path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
   },
@@ -229,6 +232,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'tree-data-grid', loadChildren: './data/treedatagrid/treedatagrid.demo.module#TreeDataGridDemoModule'
   },
+
+  /*Tree*/
+
   {
     path: 'simple-tree', loadChildren: './data/tree/simpletree/simpletree.demo.module#SimpleTreeDemoModule'
   },
@@ -243,6 +249,10 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
+  },
+/*Progress bar*/
+  {
+    path: 'progressbar-demo', loadChildren: './data/progressbar/progressbar.demo.module#ProgressBarDemoModule'
   }
 
 ];
