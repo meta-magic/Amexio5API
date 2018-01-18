@@ -35,6 +35,10 @@
     {
       "name": "nodeClick",
       "description":"It will gives you clicked node data."
+    },
+    {
+      "name": "onTreeNodeChecked",
+      "description":"It will gives whole tree data with checked flag status."
     }
   ]
 }
