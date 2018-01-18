@@ -12,7 +12,7 @@ import {Http} from "@angular/http";
        <h2>Border Layout Component</h2>
      </amexio-header>
      <amexio-body>
-       <p>Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs</p>
+       <p>A border layout lays out a container, arranging and resizing its components to fit in five regions: north, south, east, west, and center.</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
           <amexio-borderlayout>
