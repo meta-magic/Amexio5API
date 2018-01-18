@@ -236,7 +236,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'template-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
   },
   {
-    path: 'filter-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
+    path: 'filter-tree', loadChildren: './data/tree/filtertree/filtertree.demo.module#FilterTreeDemoModule'
   },
   {
     path: 'checkbox-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
