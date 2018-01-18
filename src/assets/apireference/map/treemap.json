@@ -4,19 +4,19 @@
       "name": "height",
       "type": "number",
       "default": "",
-      "description": "Height of chart"
+      "description": "Height of chart."
     },
     {
       "name": "width",
       "type": "number",
       "default": "",
-      "description": "Width of chart"
+      "description": "Width of chart."
     },
     {
       "name": "data",
       "type": "array",
       "default": "",
-      "description": "Local data for TreeMap"
+      "description": "Local data for TreeMap."
     },{
       "name": "maxcolor",
       "type": "string",
@@ -54,7 +54,7 @@
       "name": "color",
       "type": "string",
       "default": "",
-      "description": "TitleColor of chart title."
+      "description": "Color of chart title."
     },  {
       "name": "fontname",
       "type": "string",
@@ -75,7 +75,7 @@
       "name": "italic",
       "type": "string",
       "default": "false",
-      "description": "title text in in italic."
+      "description": "Set true for title text in italic style."
     }
   ]
 }
