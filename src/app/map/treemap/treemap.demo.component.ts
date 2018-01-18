@@ -23,7 +23,7 @@ import {Http} from "@angular/http";
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [enablecolumnfiter]="false"
+            <amexio-datagrid title="Map Properties" [enablecolumnfiter]="false"
                              [httpmethod]="'get'"
                              [httpurl]="'assets/apireference/map/treemap.json'"
                              [datareader]="'chart'"
@@ -38,7 +38,7 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Properties" [enablecolumnfiter]="false"
+            <amexio-datagrid title="Map Title Properties" [enablecolumnfiter]="false"
                              [httpmethod]="'get'"
                              [httpurl]="'assets/apireference/map/treemap.json'"
                              [datareader]="'chartTitle'"
