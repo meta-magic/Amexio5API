@@ -29,7 +29,7 @@ import {Http} from "@angular/http";
                                         [valuefield]="'genderId'"
                                         [horizontal]="true"
                                         [data]="radioGroupData"
-                                        (selectedValue)="setSelectedGender($event)">
+                                        (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
                   </amexio-body>
                 </amexio-card>
@@ -46,7 +46,7 @@ import {Http} from "@angular/http";
                                         [valuefield]="'genderId'"
                                         [httpmethod]="'get'"
                                         [httpurl]="'assets/data/componentdata/radiogroup.json'"
-                                        (selectedValue)="setSelectedGender($event)">
+                                        (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
                   </amexio-body>
                 </amexio-card>

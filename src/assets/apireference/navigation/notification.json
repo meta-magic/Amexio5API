@@ -33,7 +33,7 @@
       "name": "autodismissmsginterval",
       "type": "number",
       "default": "",
-      "description": "Add time interval for shown msg."
+      "description": "Add time interval(in ms) for shown msg."
     }
   ]
 }

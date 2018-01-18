@@ -89,7 +89,7 @@ export class ListBoxDemo {
     };
 
   }
-   rowClick(data: any) {}
+   onRowClick(data: any) {}
 
    getSelectedData(data: any) {}
 

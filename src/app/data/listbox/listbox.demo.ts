@@ -46,7 +46,7 @@ import {Http} from "@angular/http";
                     <amexio-listbox [height]="400" [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
                                     [data]="localData" [filter]="false"
                                     [datareader]="'response.data'"
-                                    [displayfield]="'name'" (rowClick)="rowClick($event)">
+                                    [displayfield]="'name'" (onRowClick)="onRowClick($event)">
                       <ng-template #amexioBodyTmpl let-row="row">
                         <amexio-row>
                           <amexio-column [size]="12">
@@ -60,7 +60,7 @@ import {Http} from "@angular/http";
                       </ng-template>
                     </amexio-listbox>
                    <!-- <p>
-                      <b>clicked record data</b> : {{rowClickData | json}}
+                      <b>clicked record data</b> : {{onRowClickData | json}}
                     </p>-->
                   </amexio-body>
                 </amexio-card>
@@ -122,7 +122,7 @@ export class ListBoxDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   localData: any;
-  rowClickData: any;
+  onRowClickData: any;
   selectedData: any;
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
@@ -246,8 +246,8 @@ export class ListBoxDemo {
     }
   }
 
-  rowClick(data: any) {
-    this.rowClickData = data;
+  onRowClick(data: any) {
+    this.onRowClickData = data;
   }
 
   getSelectedData(data: any) {

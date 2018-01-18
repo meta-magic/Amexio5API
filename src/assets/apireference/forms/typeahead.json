@@ -44,7 +44,7 @@
   ],
   "events": [
     {
-      "name": "selectedValue",
+      "name": "onSelection",
       "description": "Fire when typeahead item click "
     }
   ],

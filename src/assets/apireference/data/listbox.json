@@ -68,7 +68,7 @@
       "description":"It will fire only on selection of checkbox and gives you selected record data."
     },
     {
-      "name": "rowClick",
+      "name": "onRowClick",
       "description":"It will gives you row clicked data."
     }
   ]

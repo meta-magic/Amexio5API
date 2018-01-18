@@ -28,7 +28,7 @@ import {Http} from "@angular/http";
                                            [displayfield]="'language'"
                                            [horizontal]="true"
                                            [valuefield]="'checked'"
-                                           (selectedValue)="selectedCheckboxgroup($event)"
+                                           (onSelection)="selectedCheckboxgroup($event)"
                                            [data]="checkboxGroupdata"
                                            [column]="'4'">
                     </amexio-checkbox-group>

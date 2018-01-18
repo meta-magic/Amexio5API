@@ -149,7 +149,7 @@ export class DropDownMultiDemo {
       this.typeScriptCode = responseTs;
     });
     //TS FILE
-    this.http.get('assets/data/componentdata/sports.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/fruits.json').subscribe(data => {
       responseData = data.text();
     }, error => {
     }, () => {
