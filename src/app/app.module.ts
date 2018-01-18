@@ -7,7 +7,7 @@ import {RouterModule} from "@angular/router";
 import {APP_ROUTE} from "./app.routes";
 import {
   AmexioWidgetModule, DeviceQueryService, CommonDataService, AmexioMapModule, AmexioChartsModule, ChartLoaderService,
-  MapLoaderService, AmexioDashBoardModule, DashboardLoaderService, AmexioPaneModule
+  MapLoaderService, AmexioDashBoardModule, DashboardLoaderService, AmexioPaneModule, IconLoaderService
 } from "amexio-ng-extensions";
 
 @NgModule({
@@ -19,7 +19,7 @@ import {
     AmexioWidgetModule,AmexioChartsModule,AmexioMapModule,AmexioDashBoardModule,AmexioPaneModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
-  providers: [CommonDataService,DeviceQueryService,ChartLoaderService,MapLoaderService,DashboardLoaderService],
+  providers: [CommonDataService,DeviceQueryService,ChartLoaderService,MapLoaderService,DashboardLoaderService,IconLoaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
