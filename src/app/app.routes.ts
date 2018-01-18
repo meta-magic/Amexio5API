@@ -231,6 +231,18 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'simple-tree', loadChildren: './data/tree/simpletree/simpletree.demo.module#SimpleTreeDemoModule'
+  },
+  {
+    path: 'template-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
+  },
+  {
+    path: 'filter-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
+  },
+  {
+    path: 'checkbox-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
+  },
+  {
+    path: 'horizontal-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
   }
 
 ];
