@@ -346,16 +346,20 @@
               "link": "simple-tree"
             },
             {
-              "text": "Tree Data Grid",
-              "link": "tree-data-grid"
+              "text": "Tree with Template",
+              "link": "template-tree"
             },
             {
-              "text": "Tree Data Grid",
-              "link": "tree-data-grid"
+              "text": "Filter",
+              "link": "filter-tree"
             },
             {
-              "text": "Tree Data Grid",
-              "link": "tree-data-grid"
+              "text": "Tree with Checkbox",
+              "link": "checkbox-tree"
+            },
+            {
+              "text": "Horizontal Tree",
+              "link": "horizontal-tree"
             }
           ]
         },

@@ -6,24 +6,26 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'simpletree-demo', template: `
+  selector: 'tree-filter-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Simple Tree</h2>
+        <h2>Filter Tree</h2>
       </amexio-header>
       <amexio-body>
-        <p>A Simple Expandable Tree component which create Tree View based on standard datasource attached.</p>
+        <p>A Expandable Tree Component for Angular, having Filtering functionality.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Simple Tree</h2>
+                    <h2>Filter Tree</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-treeview [datareader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
-                    </amexio-treeview>
+                    <amexio-tree-filter-view [datareader]="'data'"
+                                             [httpmethod]="'get'" (selectedRecord)="getNodeData($event)"
+                                             [httpurl]="'assets/data/componentdata/sidenav.json'">
+                    </amexio-tree-filter-view>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -93,7 +95,7 @@ import {Http} from "@angular/http";
     </amexio-card>
   `
 })
-export class SimpleTreeDemo {
+export class FilterTreeDemo {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
@@ -192,7 +194,7 @@ export class SimpleTreeDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/tree/simpletree.html').subscribe(data => {
+    this.http.get('assets/data/code/data/tree/filtertree/filtertree.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -200,14 +202,14 @@ export class SimpleTreeDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/tree/simpletree.text').subscribe(data => {
+    this.http.get('assets/data/code/data/tree/filtertree/filtertree.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/treeview.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/sidenav.json').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
@@ -226,6 +228,7 @@ export class SimpleTreeDemo {
   }
 
   getNodeData(data: any) {
+    debugger;
     this.selectedData = data;
   }
 }

@@ -5,18 +5,18 @@ import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {SharedModule} from "../../../shared.module";
-import {SimpleTreeDemo} from "./simpletree.demo";
+import {TreeWithTemplateDemo} from "./treewithtemplate.demo";
 
 /**
  * Created by sagar on 11/1/18.
  */
 @NgModule({
-  declarations: [SimpleTreeDemo],
+  declarations: [TreeWithTemplateDemo],
   imports: [CommonModule, FormsModule, HttpModule,SharedModule, AmexioWidgetModule, RouterModule.forChild([{
-    path: '', component: SimpleTreeDemo, pathMatch: 'full'
+    path: '', component: TreeWithTemplateDemo, pathMatch: 'full'
   }])],
   providers: [IconLoaderService]
 })
-export class SimpleTreeDemoModule {
+export class TreeWithTemplateDemoModule {
 
 }

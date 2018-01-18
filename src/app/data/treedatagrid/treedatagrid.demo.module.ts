@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {RouterModule} from "@angular/router";
-import {AmexioWidgetModule} from "amexio-ng-extensions";
+import {AmexioWidgetModule, IconLoaderService} from "amexio-ng-extensions";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
@@ -14,7 +14,7 @@ import {TreeDataGridDemo} from "./treedatagrid.demo";
   imports: [CommonModule, FormsModule, HttpModule,SharedModule, AmexioWidgetModule, RouterModule.forChild([{
     path: '', component: TreeDataGridDemo, pathMatch: 'full'
   }])],
-  providers: []
+  providers: [IconLoaderService]
 })
 export class TreeDataGridDemoModule {
 

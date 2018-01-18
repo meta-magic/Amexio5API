@@ -6,23 +6,28 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'simpletree-demo', template: `
+  selector: 'tree-template-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Simple Tree</h2>
+        <h2>Tree With template</h2>
       </amexio-header>
       <amexio-body>
-        <p>A Simple Expandable Tree component which create Tree View based on standard datasource attached.</p>
+        <p>To define the detail template, nested ng-template tag inside the AmexioTreeComponent component. The template context is set to the current node.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Simple Tree</h2>
+                    <h2>Tree With template</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-treeview [datareader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
+                    <amexio-treeview [datareader]="'data'"
+                                     [httpurl]="'assets/data/componentdata/sidenav.json'"
+                                     [httpmethod]="'get'" (nodeClick)="getNodeData($event)">
+                      <ng-template #amexioTreeTemplate let-tree let-icon="icon" let-node="node">
+                        <i [attr.class]="node.icon"></i> &nbsp; &nbsp;&nbsp;{{tree.text}}
+                      </ng-template>
                     </amexio-treeview>
                   </amexio-body>
                 </amexio-card>
@@ -93,7 +98,7 @@ import {Http} from "@angular/http";
     </amexio-card>
   `
 })
-export class SimpleTreeDemo {
+export class TreeWithTemplateDemo {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
@@ -192,7 +197,7 @@ export class SimpleTreeDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/tree/simpletree.html').subscribe(data => {
+    this.http.get('assets/data/code/data/tree/treetemplate/treetemplate.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -200,14 +205,14 @@ export class SimpleTreeDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/tree/simpletree.text').subscribe(data => {
+    this.http.get('assets/data/code/data/tree/treetemplate/treetemplate.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/treeview.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/sidenav.json').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
