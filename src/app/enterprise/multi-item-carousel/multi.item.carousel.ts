@@ -5,13 +5,18 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { EECarouselDemoComponent } from './multi.item.carousel.demo';
+import {FormsModule} from "@angular/forms";
+import {HttpModule} from "@angular/http";
+import {AmexioEnterpriseEEModule, AmexioWidgetModule} from "amexio-ng-extensions";
+import {SharedModule} from "../../shared.module";
+import {CommonModule} from "@angular/common";
 
 const routes: Routes = [
   { path: '', component: EECarouselDemoComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [CommonModule,RouterModule.forChild(routes),FormsModule,HttpModule,AmexioWidgetModule,AmexioEnterpriseEEModule,SharedModule],
   exports: [RouterModule],
   declarations : [EECarouselDemoComponent]
 })
