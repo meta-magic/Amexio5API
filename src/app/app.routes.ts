@@ -242,7 +242,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'checkbox-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
   },
   {
-    path: 'horizontal-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
+    path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
   }
 
 ];
