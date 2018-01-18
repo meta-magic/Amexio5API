@@ -9,7 +9,7 @@ import {CommonModule} from "@angular/common";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {SharedModule} from "../../shared.module";
-import {AmexioWidgetModule} from "amexio-ng-extensions";
+import {AmexioWidgetModule, IconLoaderService} from "amexio-ng-extensions";
 
 const routes: Routes = [
   { path: '', component: CarouselDemoComponent },
@@ -18,7 +18,8 @@ const routes: Routes = [
 @NgModule({
   imports: [CommonModule,HttpModule,FormsModule,SharedModule,RouterModule.forChild(routes),AmexioWidgetModule],
   exports: [RouterModule],
-  declarations : [CarouselDemoComponent]
+  declarations : [CarouselDemoComponent],
+  providers : [IconLoaderService]
 })
 export class CarouselDemoModule { }
 

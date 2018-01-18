@@ -368,6 +368,10 @@
           "link": "paginator-demo"
         },
         {
+          "text": "Progress Bar",
+          "link": "progressbar-demo"
+        },
+        {
           "text": "ListBox",
           "link": "listbox-demo"
         }

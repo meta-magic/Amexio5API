@@ -1,0 +1,8 @@
+<!--Horizontal Tree-->
+
+<amexio-horizontal-treeview [datareader]="'data'"
+                            [httpmethod]="'get'"
+                            [label]="'Menu'"
+                            (nodeClick)="getNodeData($event)"
+                            [httpurl]="'assets/data/componentdata/sidenav.json'">
+</amexio-horizontal-treeview>

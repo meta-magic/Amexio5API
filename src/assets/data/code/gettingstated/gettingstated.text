@@ -15,7 +15,7 @@ BrowserModule,
 AmexioWidgetModule,
 FormsModule
 ],
-providers: [CommonHttpService],
+providers: [CommonDataService],
 bootstrap: [AppComponent]
 })
 export class AppModule { }

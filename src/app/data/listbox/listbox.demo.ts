@@ -45,7 +45,7 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-listbox [height]="400" [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
                                     [data]="localData" [filter]="false"
-                                    [enablecheckbox]="false" [datareader]="'response.data'"
+                                    [datareader]="'response.data'"
                                     [displayfield]="'name'" (rowClick)="rowClick($event)">
                       <ng-template #amexioBodyTmpl let-row="row">
                         <amexio-row>
