@@ -131,7 +131,7 @@ export class TreeDataGridDemo {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/treedatatable.json').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
