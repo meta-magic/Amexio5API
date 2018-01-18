@@ -253,6 +253,15 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
 /*Progress bar*/
   {
     path: 'progressbar-demo', loadChildren: './data/progressbar/progressbar.demo.module#ProgressBarDemoModule'
+  },
+  {
+    path : 'multi-item-carousel', loadChildren : './enterprise/multi-item-carousel/multi.item.carousel#EECarouselDemoRoutingModule'
+  },
+  {
+    path : 'ee-content', loadChildren : './enterprise/content/content.demo.module#ContentRoutingModule'
+  },
+  {
+    path : 'ee-video', loadChildren : './enterprise/youtube-player/youtube.demo.module#YoutubePlayerModule'
   }
 
 ];
