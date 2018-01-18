@@ -11,7 +11,7 @@
 <amexio-listbox [height]="400" [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
                 [data]="localData" [filter]="false"
                 [enablecheckbox]="false" [datareader]="'response.data'"
-                [displayfield]="'name'" (rowClick)="rowClick($event)">
+                [displayfield]="'name'" (onRowClick)="onRowClick($event)">
                 <ng-template #amexioBodyTmpl let-row="row">
                   <amexio-row>
                     <amexio-column [size]="12">

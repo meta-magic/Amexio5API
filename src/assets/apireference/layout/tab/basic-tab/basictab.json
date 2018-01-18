@@ -29,7 +29,7 @@
   ],
   "events": [
     {
-      "name": "activatedTab",
+      "name": "onClick",
       "description":"Callback to invoke on activated tab event."
     }
   ]

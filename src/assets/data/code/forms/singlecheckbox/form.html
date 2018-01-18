@@ -1,5 +1,5 @@
 <!--Simple Single CheckBox-->
-<amexio-checkbox  [fieldlabel]="'Agree'" [(ngModel)]="check" (selectedValue)="onCheckClick($event)"></amexio-checkbox>
+<amexio-checkbox  [fieldlabel]="'Agree'" [(ngModel)]="check" (onSelection)="onCheckClick($event)"></amexio-checkbox>
 
 <!--Single CheckBox With Disable-->
 <amexio-checkbox [disabled]="true" [fieldlabel]="'Agree'" [(ngModel)]="checkWithDisable"></amexio-checkbox>

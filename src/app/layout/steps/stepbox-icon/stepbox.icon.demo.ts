@@ -3,6 +3,7 @@
  */
 import { Component, OnInit } from '@angular/core';
 import {Http} from "@angular/http";
+import {debug} from "util";
 
 @Component({
  selector: 'stepbox-icon-demo',
@@ -20,7 +21,7 @@ import {Http} from "@angular/http";
                <!--block is true for showing step box  -->
                <p><strong>Step box</strong></p>
                <!--Step-box with fontawesome icons-->
-               <amexio-steps [icon]="true" (onBlockClick)="stepBlockClick($event)">
+               <amexio-steps [icon]="true" (onClick)="stepBlockClick($event)">
                  <amexio-step-block [label]="'User'" [active]="true" [icon]="'fa fa-user'" ></amexio-step-block>
                  <amexio-step-block [label]="'Address'" [active]="false" [icon]="'fa fa-address-card'"></amexio-step-block>
                  <amexio-step-block [label]="'Shop'" [active]="false" [icon]="'fa fa-shopping-cart'"></amexio-step-block>
@@ -33,7 +34,7 @@ import {Http} from "@angular/http";
                <!--block is true for showing step box  -->
                <p><strong>Step box with clickabel</strong></p>
                <!--Step box with icon & clickable<-->
-               <amexio-steps [block]="true" [icon]="true" (onBlockClick)="stepBlockClick($event)">
+               <amexio-steps [block]="true" [icon]="true" (onClick)="stepBlockClick($event)">
                  <amexio-step-block [label]="'User'" [active]="user" [icon]="'fa fa-user'"></amexio-step-block>
                  <amexio-step-block [label]="'Shop'" [active]="shop" [icon]="'fa fa-address-card'"></amexio-step-block>
                  <amexio-step-block [label]="'Payment'" [active]="payment" [icon]="'fa fa-shopping-cart'"></amexio-step-block>
@@ -96,6 +97,7 @@ export class StepBoxIconComponent {
 
 // step box click event
   stepBlockClick(event:any){
+    debugger;
     if(event.label=="User"){
       this.updateFlag(true,false,false,false);
       this.showMsg("Step 1 User");

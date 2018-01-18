@@ -51,7 +51,7 @@
   ],
   "events": [
     {
-      "name": "selectedValue",
+      "name": "onSelection",
       "description": "Fire when radio click "
     }
   ],

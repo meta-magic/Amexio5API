@@ -6,7 +6,7 @@
                     [valuefield]="'genderId'"
                     [horizontal]="true"
                     [data]="radioGroupData"
-                    (selectedValue)="setSelectedGender($event)">
+                    (onSelection)="setSelectedGender($event)">
 </amexio-radio-group>
 
 <!--Vertical Radio Group With Http URL-->
@@ -16,5 +16,5 @@
                     [displayfield]="'gender'"
                     [valuefield]="'genderId'"
                     [httpurl]="'assets/data/componentdata/radiogroup.json'"
-                    (selectedValue)="setSelectedGender($event)">
+                    (onSelection)="setSelectedGender($event)">
 </amexio-radio-group>

@@ -23,7 +23,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox [fieldlabel]="'Agree'" [(ngModel)]="check"
-                                     (selectedValue)="onCheckClick($event)"></amexio-checkbox>
+                                     (onSelection)="onCheckClick($event)"></amexio-checkbox>
                     <p>Selected Value : {{check}}</p>
                   </amexio-body>
                 </amexio-card>

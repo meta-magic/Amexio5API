@@ -21,7 +21,7 @@
   ],
   "events":[
     {
-      "name": "selectedValue",
+      "name": "onSelection",
       "description":"Event fired on checkbox click."
     }
   ]
