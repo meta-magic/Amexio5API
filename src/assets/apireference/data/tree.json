@@ -25,7 +25,7 @@
       "description":"Key in JSON Datasource for records."
     },
     {
-      "name": "enableCheckBox",
+      "name": "enablecheckbox",
       "type": "boolean",
       "default": "false",
       "description":"Enables checkbox for each row, this allows user for multi selection."

@@ -23,8 +23,8 @@ import {Http} from "@angular/http";
                     <h2>Simple List Box</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-listbox [enableCheckBox]="true" [height]="400" 
-                                    [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
+                    <amexio-listbox [enablecheckbox]="true" [height]="400" 
+                                    [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
                                     [data]="localData" [filter]="true"
                                     [datareader]="'response.data'"
                                     [displayfield]="'name_official'" (selectedRows)="getSelectedData($event)">
@@ -43,9 +43,9 @@ import {Http} from "@angular/http";
                     <h2>List Box with Template</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-listbox [height]="400" [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
+                    <amexio-listbox [height]="400" [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
                                     [data]="localData" [filter]="false"
-                                    [enableCheckBox]="false" [datareader]="'response.data'"
+                                    [enablecheckbox]="false" [datareader]="'response.data'"
                                     [displayfield]="'name'" (rowClick)="rowClick($event)">
                       <ng-template #amexioBodyTmpl let-row="row">
                         <amexio-row>

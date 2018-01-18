@@ -13,7 +13,7 @@
       "description": "The key that must be used while searching in data provided"
     },
     {
-      "name": "triggerChar",
+      "name": "triggerchar",
       "type": "number",
       "default": "1",
       "description": "The number of characters to trigger search"

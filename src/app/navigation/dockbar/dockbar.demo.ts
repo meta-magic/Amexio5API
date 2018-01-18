@@ -30,11 +30,11 @@ import {Http} from "@angular/http";
               </amexio-dockbar-item>
               <amexio-dockbar-item [icon]="'fa fa-address-book fa-fw'" [title]="'Contacts'"
                                    [width]="'350px'">
-                <amexio-listbox [header]="'Contacts'" [searchPlaceHolder]="'Search Contacts'"
+                <amexio-listbox [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
                                 [httpurl]="'assets/data/componentdata/profiledata.json'"
                                 [httpmethod]="'get'"
                                 [filter]="false"
-                                [enableCheckBox]="false" [datareader]="'response.data'"
+                                [enablecheckbox]="false" [datareader]="'response.data'"
                                 [displayfield]="'name'">
                   <ng-template #amexioBodyTmpl let-row="row">
                     <amexio-row>
