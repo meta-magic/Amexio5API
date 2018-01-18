@@ -12,7 +12,7 @@ import {Http} from "@angular/http";
        <h2>Window Pane Component</h2>
      </amexio-header>
      <amexio-body>
-       <p>A FieldSet is a great way to visually separate elements of a form. It's normally used when you have a form with fields that can be divided into groups.Fieldset can optionally have a title at the top</p>
+       <p>Window Pane component is a customizable Modal Pane in which user can enter custom content</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
            <amexio-row>
