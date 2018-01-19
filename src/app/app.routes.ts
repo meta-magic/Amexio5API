@@ -262,6 +262,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path : 'ee-video', loadChildren : './enterprise/youtube-player/youtube.demo.module#YoutubePlayerModule'
+  },
+  {
+    path : 'license', loadChildren : './license/license.module#LicenseModule'
   }
 
 ];

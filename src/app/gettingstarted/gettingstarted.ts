@@ -35,17 +35,17 @@ import {SharedModule} from "../shared.module";
             <amexio-body>
               <amexio-row>
                 <amexio-column size="12">
-                  1. Getting Started
+                  <span style="cursor: pointer">1. Getting Started</span>
                 </amexio-column>
               </amexio-row>
               <amexio-row>
                 <amexio-column size="12">
-                  2. Installation Details
+                 <span style="cursor: pointer;">2. Installation Details</span> 
                 </amexio-column>
               </amexio-row>
               <amexio-row>
                 <amexio-column size="12">
-                  3. License
+                  <span style="cursor: pointer;" routerLink="/license">3. License</span>
                 </amexio-column>
               </amexio-row>
               
