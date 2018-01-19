@@ -15,46 +15,56 @@ import {Http} from "@angular/http";
         <p>A Simple Card which renders card based on title, body and actions user has configured</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-            <amexio-button [label]="'Hide/UnHide Card'" [type]="'primary'" [tooltip]="'Hide/UnHide Card'" (click)="toggle()"> </amexio-button>
-            <amexio-card [header]="true" [footer]="true" [show]="flag" [footeralign]="'right'">
-              <amexio-header>
-               <h5> Employee Registration</h5>
-              </amexio-header>
-              <amexio-body>
-                <amexio-row>
-                  <amexio-column [size]="6">
-                    <amexio-text-input [fieldlabel]="'Name'" name ="name"
-                                       [placeholder]="'Enter name'"
-                                       [iconfeedback]="true">
-                    </amexio-text-input>
-                  </amexio-column>
-                  <amexio-column [size]="6">
-                    <amexio-text-input [fieldlabel]="'Address'" name ="address"
-                                       [placeholder]="'Enter address'"
-                                       [iconfeedback]="true">
-                    </amexio-text-input>
-                  </amexio-column>
-                </amexio-row>
-                <amexio-row>
-                  <amexio-column [size]="6">
-                    <amexio-number-input [fieldlabel]="'Number Input'"
-                                         [placeholder]="'Enter Age'">
-                    </amexio-number-input>
-                  </amexio-column>
-                  <amexio-column [size]="6">
-                    <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
-                                        [placeholder]="'Enter Email Id'"
-                                        [allowblank]="false" [errormsg] ="'Please Enter Email Id'"
-                                        [enablepopover]="true"
-                                        [iconfeedback]="true">
-                    </amexio-email-input>
-                  </amexio-column>
-                </amexio-row>
-              </amexio-body>
-              <amexio-action >
-                <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
-              </amexio-action>
-            </amexio-card>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-button [label]="'Hide/UnHide Card'" [type]="'primary'" [tooltip]="'Hide/UnHide Card'" (click)="toggle()"> </amexio-button>
+              </amexio-column>
+            </amexio-row>
+            <br>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true" [footer]="true" [show]="flag" [footeralign]="'right'">
+                  <amexio-header>
+                    <h5> Employee Registration</h5>
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [fieldlabel]="'Name'" name ="name"
+                                           [placeholder]="'Enter name'"
+                                           [iconfeedback]="true">
+                        </amexio-text-input>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [fieldlabel]="'Address'" name ="address"
+                                           [placeholder]="'Enter address'"
+                                           [iconfeedback]="true">
+                        </amexio-text-input>
+                      </amexio-column>
+                    </amexio-row>
+                    <amexio-row>
+                      <amexio-column [size]="6">
+                        <amexio-number-input [fieldlabel]="'Number Input'"
+                                             [placeholder]="'Enter Age'">
+                        </amexio-number-input>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
+                                            [placeholder]="'Enter Email Id'"
+                                            [allowblank]="false" [errormsg] ="'Please Enter Email Id'"
+                                            [enablepopover]="true"
+                                            [iconfeedback]="true">
+                        </amexio-email-input>
+                      </amexio-column>
+                    </amexio-row>
+                  </amexio-body>
+                  <amexio-action >
+                    <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
+                  </amexio-action>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+       
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
