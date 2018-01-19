@@ -1,36 +1,32 @@
 {
   "data": [
     {
-      "text": "Forms",
+      "text": "Layout",
+      "icon": "fa fa-desktop fa-fw",
+      "children": [
+        {
+          "text": "Border Layout",
+          "icon": "fa fa-id-card-o",
+          "link": "border"
+        },
+        {
+          "text": "Column",
+          "link": "column-demo",
+          "icon": "fa fa-columns fa-fw"
+        },
+        {
+          "text": "Row",
+          "link": "row-demo",
+          "icon": "fa fa-bars fa-fw"
+        }
+      ]
+    },
+    {
+      "text": "Form input",
       "icon": "fa fa-clone fa-fw",
       "children": [
         {
-          "text": "Text Input",
-          "link": "textinput",
-          "icon": "fa fa-file-text-o fa-fw"
-        },
-        {
-          "text": "Email Input",
-          "icon": "fa fa-envelope-o fa-fw",
-          "link": "email-demo"
-        },
-        {
-          "text": "Number Input",
-          "icon": "fa fa-phone fa-fw",
-          "link": "number-demo"
-        },
-        {
-          "text": "Password Input",
-          "icon": "fa fa-text-width fa-fw",
-          "link": "password-demo"
-        },
-        {
-          "text": "TextArea Input",
-          "icon": "fa fa-text-width fa-fw",
-          "link": "textarea-demo"
-        },
-        {
-          "text": "Checkbox Input",
+          "text": "Checkbox",
           "icon": "fa fa-check-square-o",
           "link": "singlecheckbox-demo"
         },
@@ -40,78 +36,97 @@
           "link": "checkboxgroup-demo"
         },
         {
+          "text": "Date & Time Picker",
+          "icon": "fa fa-calendar fa-fw",
+          "link": "datepicker-demo"
+        },
+        {
+          "text": "DropDown",
+          "icon": "fa fa-caret-square-o-down fa-fw",
+          "children": [
+            {
+              "text": "Basic",
+              "icon": "fa fa-caret-down fa-fw",
+              "link": "dropdownbasic"
+            },
+            {
+              "text": "Filter Search",
+              "icon": "fa fa-arrow-circle-down fa-fw",
+              "link": "dropdownfilter"
+            },
+            {
+              "text": "Multi Select",
+              "icon": "fa fa-chevron-circle-down fa-fw",
+              "link": "dropdownmulti"
+            }
+          ]
+        },
+        {
+          "text": "Email Field",
+          "icon": "fa fa-envelope-o fa-fw",
+          "link": "email-demo"
+        },
+        {
+          "text": "File Upload",
+          "icon": "fa fa-file fa-fw",
+          "link": "fileupload-demo"
+        },
+        {
+          "text": "Number Field",
+          "icon": "fa fa-phone fa-fw",
+          "link": "number-demo"
+        },
+        {
+          "text": "Password Field",
+          "icon": "fa fa-text-width fa-fw",
+          "link": "password-demo"
+        },
+        {
           "text": "Radio Group",
           "icon": "fa fa-stop-circle-o fa-fw",
           "link": "radiogroup-demo"
         },
         {
-          "text": "Type Ahead Input",
+          "text": "Rating",
+          "icon": "fa fa-star-half-empty fa-fw",
+          "link": "rating-demo"
+        },
+        {
+          "text": "Slider",
+          "icon": "fa fa-sliders",
+          "link": "slider-demo"
+        },
+        {
+          "text": "Type Ahead",
           "icon": "fa fa-search-minus fa-fw",
           "link": "typeahead-demo"
         },
         {
-          "text": "Tags Input",
+          "text": "Tag Field",
           "icon": "fa fa-tags",
           "link": "taginput-demo"
         },
         {
-          "text": "DropDown",
-          "icon" : "fa fa-caret-square-o-down fa-fw",
-          "children": [
-            {
-              "text": "Basic",
-              "icon" : "fa fa-caret-down fa-fw",
-              "link":"dropdownbasic"
-            },
-            {
-              "text": "Filter Search",
-              "icon" : "fa fa-arrow-circle-down fa-fw",
-              "link":"dropdownfilter"
-            },
-            {
-              "text": "Multi Select",
-              "icon" : "fa fa-chevron-circle-down fa-fw",
-              "link":"dropdownmulti"
-            }
-
-          ]
+          "text": "Text Field",
+          "link": "textinput",
+          "icon": "fa fa-file-text-o fa-fw"
         },
         {
-          "text": "Form Utilities",
-          "icon": "fa fa-clone fa-fw",
-          "children": [
-            {
-              "text": "Date & Time Picker",
-              "icon": "fa fa-calendar fa-fw",
-              "link": "datepicker-demo"
-            },
-            {
-              "text": "Rating Input",
-              "icon": "fa fa-star-half-empty fa-fw",
-              "link": "rating-demo"
-            },
-            {
-              "text": "Toggle Input",
-              "icon": "fa fa-toggle-on",
-              "link": "toggle-demo"
-            },
-            {
-              "text": "File Upload",
-              "icon" : "fa fa-file fa-fw",
-              "link":"fileupload-demo"
-            },
-            {
-              "text": "Slider",
-              "icon": "fa fa-sliders",
-              "link": "slider-demo"
-            },
-            {
-              "text": "Item Selector",
-              "icon": "fa fa-exchange fa-fw",
-              "link": "itemselector-demo"
-            }
-          ]
+          "text": "TextArea Field",
+          "icon": "fa fa-text-width fa-fw",
+          "link": "textarea-demo"
         },
+        {
+          "text": "Toggle",
+          "icon": "fa fa-toggle-on",
+          "link": "toggle-demo"
+        }
+      ]
+    },
+    {
+      "text": "Form Action",
+      "icon": "fa fa-keyboard-o fa-fw",
+      "children": [
         {
           "text": "Buttons",
           "icon": "fa fa-keyboard-o fa-fw",
@@ -122,7 +137,7 @@
               "link": "button-demo"
             },
             {
-              "text": "ButtonGroup",
+              "text": "Button Group",
               "icon": "fa fa-newspaper-o fa-fw",
               "link": "buttongroup-demo"
             },
@@ -132,57 +147,38 @@
               "link": "buttondropdown-demo"
             }
           ]
-        }
-      ]
-    },
-    {
-      "text": "Navigation",
-      "icon": "fa fa-bars fa-fw",
-      "children" : [
-       {
-          "text": "Dockbar",
-          "icon" : "fa fa-bars fa-fw",
-          "link":"dockbar-demo"
         },
         {
           "text": "Notification",
-          "icon" : "fa fa-comments fa-fw",
-          "link":"notification-demo"
+          "icon": "fa fa-comments fa-fw",
+          "link": "notification-demo"
         },
         {
-
-          "text" : "Vertical Menu Bar",
-          "icon" : "fa fa-indent fa-fw",
-          "children" : [
-            {
-              "text" : "Side Nav Bar",
-              "icon": "fa fa-leaf fa-fw",
-              "link":"sidenav-demo"
-            }
-
-          ]
+          "text": "Paginator",
+          "icon": "fa fa-arrows-h",
+          "link": "paginator-demo"
         },
         {
-          "text" : "Horizontal Menu Bar",
-          "icon": "fa fa-outdent fa-fw",
-          "children": [
-            {
-              "text" : "Nav Bar",
-              "icon": "fa fa-leaf fa-fw",
-              "link":"navbar-demo"
-            },{
-              "text" : "Top Menu Bar",
-              "icon": "fa fa-leaf fa-fw",
-              "link":"menubar-demo"
-            }
-          ]
+          "text": "Progress Bar",
+          "icon": "fa fa-spinner fa-fw",
+          "link": "progressbar-demo"
         }
       ]
     },
     {
-      "text": "Layout",
-      "icon": "fa fa-desktop fa-fw",
+      "text": "Panel",
+      "icon": "fa fa-bars fa-fw",
       "children": [
+        {
+          "text": "Accordion",
+          "icon": "fa fa-bars fa-fw",
+          "link": "accordion"
+        },
+        {
+          "text": "Carousel",
+          "icon": "fa fa-indent",
+          "link": "carousel"
+        },
         {
           "text": "Card",
           "icon": "fa fa-id-card-o fa-fw",
@@ -200,14 +196,25 @@
           ]
         },
         {
-          "text": "Amexio Column",
-          "link": "column-demo",
-          "icon": "fa fa-columns fa-fw"
+          "text": "Fieldset",
+          "icon": "fa fa-id-card-o",
+          "link": "fieldset"
         },
         {
-          "text": "Amexio Row",
-          "link": "row-demo",
-          "icon": "fa fa-bars fa-fw"
+          "text": "Steps",
+          "icon": "fa fa-step-forward",
+          "children": [
+            {
+              "text": "Step Box",
+              "link": "step-box",
+              "icon": "fa fa-leaf fa-fw"
+            },
+            {
+              "text": "Step Box Icon",
+              "link": "step-box-icon",
+              "icon": "fa fa-leaf fa-fw"
+            }
+          ]
         },
         {
           "text": "Tab",
@@ -258,121 +265,139 @@
           ]
         },
         {
-          "text": "Steps",
-          "icon": "fa fa-step-forward",
-          "children": [
-            {
-              "text": "Step Box",
-              "link": "step-box",
-              "icon" : ""
-            },
-            {
-              "text": "Step Box Icon",
-              "link": "step-box-icon",
-              "icon": ""
-            }
-          ]
+          "text": "Window Pane",
+          "icon": "fa fa-window-maximize",
+          "link": "window"
+        }
+      ]
+    },
+    {
+      "text": "Media",
+      "icon": "fa fa-keyboard-o fa-fw",
+      "children": [
+        {
+          "text": "Image",
+          "icon": "fa fa-picture-o fa-fw",
+          "link": "image-demo"
         },
         {
-          "text" : "Accordion",
-          "icon" : "fa fa-bars fa-fw",
-          "link" : "accordion"
+          "text": "Video Player",
+          "icon": "fa fa-video-camera",
+          "link": "video-demo"
+        }
+      ]
+    },
+    {
+      "text": "App Navigation",
+      "icon": "fa fa-bars fa-lg",
+      "children": [
+        {
+          "text": "Dockbar",
+          "icon": "fa fa-th-large",
+          "link": "dockbar-demo"
         },
         {
-          "text" : "Carousel",
-          "icon" : "fa fa-indent",
-          "link" : "carousel"
+          "text": "Nav Bar",
+          "icon": "fa fa-bars fa-lg",
+          "link": "navbar-demo"
         },
         {
-          "text" : "Window Pane",
-          "icon" : "fa fa-window-maximize",
-          "link" : "window"
+          "text": "Side Nav Bar",
+          "icon": "fa fa-bars fa-lg",
+          "link": "sidenav-demo"
         },
         {
-          "text" : "Fieldset",
-          "icon": "fa fa-id-card-o",
-          "link" : "fieldset"
-        },
-        {
-          "text" : "Border Layout",
-          "icon": "fa fa-id-card-o",
-          "link" : "border"
+          "text": "Menu Bar",
+          "icon": "fa fa-bars fa-lg",
+          "link": "menubar-demo"
         }
       ]
     },
     {
       "text": "Data",
-      "icon": "fa fa-th fa-fw",
+      "icon": "fa fa-database fa-fw",
       "children": [
         {
+          "text": "Item Selector",
+          "icon": "fa fa-exchange fa-fw",
+          "link": "itemselector-demo"
+        },
+        {
           "text": "Grid",
+          "icon": "fa fa-database fa-fw",
           "children": [
             {
               "text": "Simple",
+              "icon": "fa fa-database fa-fw",
               "link": "simple-grid"
             },
             {
               "text": "Grid with Template",
+              "icon": "fa fa-database fa-fw",
               "link": "template-grid"
             },
             {
               "text": "Filter",
+              "icon": "fa fa-database fa-fw",
               "link": "filter-grid"
             },
             {
               "text": "Group By",
+              "icon": "fa fa-database fa-fw",
               "link": "groupby-grid"
             },
             {
               "text": "Custom Column Size",
+              "icon": "fa fa-database fa-fw",
               "link": "custom-col-grid"
             },
             {
               "text": "Grid with scroll",
+              "icon": "fa fa-database fa-fw",
               "link": "scroll-grid"
             },
             {
               "text": "Tree Data Grid",
+              "icon": "fa fa-database fa-fw",
               "link": "tree-data-grid"
             }
           ]
         },
         {
           "text": "Tree",
+          "icon": "fa fa-tree fa-fw",
           "link": "tree",
           "children": [
             {
               "text": "Simple Tree",
+              "icon": "fa fa-tree fa-fw",
               "link": "simple-tree"
             },
             {
               "text": "Tree with Template",
+              "icon": "fa fa-tree fa-fw",
               "link": "template-tree"
             },
             {
               "text": "Filter",
+              "icon": "fa fa-tree fa-fw",
               "link": "filter-tree"
             },
             {
               "text": "Tree with Checkbox",
+              "icon": "fa fa-tree fa-fw",
               "link": "checkbox-tree"
             },
             {
               "text": "Horizontal Tree",
+              "icon": "fa fa-tree fa-fw",
               "link": "horizontal-tree"
             }
           ]
         },
         {
-          "text": "Paginator",
-          "link": "paginator-demo"
-        },
-        {
-          "text": "Progress Bar",
-          "link": "progressbar-demo"
-        },
-        {
           "text": "ListBox",
+          "icon": "fa fa-list",
           "link": "listbox-demo"
         }
       ]
@@ -481,43 +506,25 @@
       ]
     },
     {
-      "text": "Media",
-      "icon": "fa fa-keyboard-o fa-fw",
+      "text": "Enterprise",
+      "icon": "fa fa-medium",
       "children": [
         {
-          "text": "Image",
-          "icon": "fa fa-picture-o fa-fw",
-          "link": "image-demo"
+          "text": "Media Content",
+          "icon": "fa fa-id-card-o",
+          "link": "ee-content"
         },
         {
-          "text": "Video Player",
-          "icon" : "fa fa-video-camera",
-          "link":"video-demo"
-        }
-      ]
-    },
-    {
-      "text" : "Enterprise",
-      "icon" : "fa fa-medium",
-      "children" : [
-        {
-          "text" : "Media Content",
-          "icon" : "fa fa-id-card-o",
-          "link" : "ee-content"
+          "text": "YouTube Video Player",
+          "icon": "fa fa-video-camera",
+          "link": "ee-video"
         },
         {
-          "text" : "YouTube Video Player",
-          "icon" : "fa fa-video-camera",
-          "link" : "ee-video"
-        },
-        {
-          "text" : "Multi-item Carousel",
-          "icon" : "fa fa-television fa-fw",
-          "link" : "multi-item-carousel"
+          "text": "Multi-item Carousel",
+          "icon": "fa fa-television fa-fw",
+          "link": "multi-item-carousel"
         }
       ]
     }
   ]
 }
-
-
