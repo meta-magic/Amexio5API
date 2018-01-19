@@ -1,0 +1,99 @@
+{
+  "properties": [
+    {
+      "name": "Amber",
+      "description":"../node_modules/amexio-ng-extensions/styles/mda-amber.scss"
+    },
+    {
+      "name" : "Army Olive",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda-amber.scss"
+    },
+    {
+      "name" : "Ash Stone",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda-amber.scss"
+    },
+    {
+      "name" : "Black Theme",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda-amber.scss"
+    },
+    {
+      "name" : "Blue Theme",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-amber.scss"
+    },
+    {
+      "name" : "Blue Grey",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-amber.scss"
+    },
+    {
+      "name" : "Cerise Magneta",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-cerise-magenta.scss"
+    },
+    {
+      "name" : "Charcoal Iron",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-charcoal-iron.scss"
+    },
+    {
+      "name" : "Chocolate Russet",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-chocolate-russet.scss"
+    },
+    {
+      "name" : "Fern Lime",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-fern-lime.scss"
+    },
+    {
+      "name" : "French Rose Mulbery",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-frenchrose-mulberry.scss"
+    }
+  ,
+    {
+      "name" : "Grape Violet",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-grape-voliet.scss"
+    }
+  ,
+    {
+      "name" : "Hot Pint Fuchsia",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-hot-pint-fuchsia.scss"
+    }
+  ,
+    {
+      "name" : "Indigo",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-indigo.scss"
+    }
+  ,
+    {
+      "name" : "Jungle Mint",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-jungle-mint.scss"
+    }
+  ,
+    {
+      "name" : "Mahogany Barny Red",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-mahogany-barny-red.scss"
+    },
+    {
+      "name" : "Navy Egyptian",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-navy-egyptian.scss"
+    }
+  ,
+    {
+      "name" : "Rasberry Sangria",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-rasberry-sangria.scss"
+    }
+  ,
+    {
+      "name" : "Red Maroon",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-red-maroon.scss"
+    }
+  ,
+    {
+      "name" : "Sacramento Jade",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mda-sacramento-jade.scss"
+    }
+  ,
+    {
+      "name" : "Yale Azure",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/mdb-yale-azure.scss"
+    }
+
+
+  ]
+}

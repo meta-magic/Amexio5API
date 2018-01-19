@@ -1,0 +1,37 @@
+{
+  "properties": [
+    {
+      "name": "Cyan",
+      "description":"../node_modules/amexio-ng-extensions/styles/amexio/amexio-cyan.scss"
+    },
+    {
+      "name" : "Deep Orange",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-deep-orange.scss"
+    },
+    {
+      "name" : "Lime Green",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-limegreen.scss"
+    },
+    {
+      "name" : "Matrix",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-matrix.scss"
+    },
+    {
+      "name" : "Orange",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-orange.scss"
+    },
+    {
+      "name" : "Polygon",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-polygon.scss"
+    },
+    {
+      "name" : "Pyramid",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-pyramind.scss"
+    },
+    {
+      "name": "Red",
+      "description": "../node_modules/amexio-ng-extensions/styles/amexio/amexio-red.scss"
+    }
+
+  ]
+}
