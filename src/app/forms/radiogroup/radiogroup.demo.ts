@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'radiogroup-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Radio Group Component</h2>
+        <h2>Radio Group</h2>
       </amexio-header>
       <amexio-body>
         <p>Radio Group input component has been created to render N numbers of radio-button based on data-set configured. 

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'sidenav-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Side Nav Bar Component</h2>
+        <h2>Side Nav Bar</h2>
       </amexio-header>
       <amexio-body>
         <p>The Side Nav Bar Component is a familiar side navigation pattern for users.

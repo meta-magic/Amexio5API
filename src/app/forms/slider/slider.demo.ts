@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'slider-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Slider Component</h2>
+        <h2>Slider</h2>
       </amexio-header>
       <amexio-body>
         <p>Slider with draggable input provide a way to input values.</p>

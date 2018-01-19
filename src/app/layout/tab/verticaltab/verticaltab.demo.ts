@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'vertical-tab-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Left Aligned Vertical Tab Component</h2>
+        <h2>Left Aligned Vertical Tab</h2>
       </amexio-header>
       <amexio-body>
         <p>Left Aligned Vertical Tab Component for Angular Apps with multiple configurations such as Tab, Icon support</p>

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
  template: `
    <amexio-card header="true">
      <amexio-header>
-       <h2>Window Pane Component</h2>
+       <h2>Window Pane</h2>
      </amexio-header>
      <amexio-body>
        <p>Window Pane component is a customizable Modal Pane in which user can enter custom content</p>

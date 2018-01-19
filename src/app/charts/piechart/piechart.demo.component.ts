@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
   selector: 'line-chart-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Pie Chart Component</h2>
+        <h2>Pie Chart</h2>
       </amexio-header>
       <amexio-body>
         <p>A pie chart that is rendered within the browser using SVG.</p>

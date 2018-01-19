@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'typeahead-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Type Ahead Component</h2>
+        <h2>Type Ahead</h2>
       </amexio-header>
       <amexio-body>
         <p>Type Ahead Component provides a power type ahead on the text field where

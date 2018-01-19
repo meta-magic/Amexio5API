@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'buttondropdown-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>DropDown Button Component</h2>
+        <h2>DropDown Button</h2>
       </amexio-header>
       <amexio-body>
         <p>A DropDown Button component with various modes and configurations.

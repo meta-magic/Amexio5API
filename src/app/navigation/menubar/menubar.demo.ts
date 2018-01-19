@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'menubar-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Menu bar Component</h2>
+        <h2>Menu Bar</h2>
       </amexio-header>
       <amexio-body>
         <p>Menu bar component show menu list on top.</p>

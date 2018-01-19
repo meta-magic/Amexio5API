@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   selector: 'ee-carousel-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Multi EE Carousel Component</h2>
+        <h2>Multi EE Carousel</h2>
       </amexio-header>
       <amexio-body>
         <p>A Awesome Multi Item Media Carousel, which comes preloaded with video playing and a full blown detailing page

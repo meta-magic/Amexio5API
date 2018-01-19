@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'password-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Password Input Component</h2>
+        <h2>Password Input</h2>
       </amexio-header>
       <amexio-body>
         <p>Password input special component has been created, which masks user enter data to *. User can configure attributes for validation(min/max length, Allow Blank), 

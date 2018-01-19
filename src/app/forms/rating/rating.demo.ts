@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'rating-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Rating Component</h2>
+        <h2>Rating</h2>
       </amexio-header>
       <amexio-body>
         <p>A simple configurable star rating component with visual feedback.</p>

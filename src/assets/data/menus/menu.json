@@ -81,7 +81,7 @@
               "link": "datepicker-demo"
             },
             {
-              "text": "Radio Input",
+              "text": "Radio Group",
               "icon": "fa fa-stop-circle-o fa-fw",
               "link": "radiogroup-demo"
             },
@@ -506,7 +506,7 @@
           "link" : "ee-content"
         },
         {
-          "text" : "Video Player",
+          "text" : "YouTube Video Player",
           "icon" : "fa fa-video-camera",
           "link" : "ee-video"
         },

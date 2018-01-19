@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   selector: 'ee-content-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Media Content Component</h2>
+        <h2>Media Content</h2>
       </amexio-header>
       <amexio-body>
         <p>A simple configurable star rating component with visual feedback.</p>

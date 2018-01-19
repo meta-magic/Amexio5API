@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'taginput-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Tag Input Component</h2>
+        <h2>Tag Input</h2>
       </amexio-header>
       <amexio-body>
         <p>Tags based multi input with typeahead facility.</p>

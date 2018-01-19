@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'itemselector-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Item Selector Component</h2>
+        <h2>Item Selector</h2>
       </amexio-header>
       <amexio-body>
         <p>ItemSelector is a specialized MultiSelect field that renders as a pair of MultiSelect field, one with available options and the other with selected options. 

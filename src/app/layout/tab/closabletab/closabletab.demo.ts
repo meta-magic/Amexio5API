@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'closable-tab-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Closable Tab Component</h2>
+        <h2>Closable Tab</h2>
       </amexio-header>
       <amexio-body>
         <p>Closable Tab component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs</p>

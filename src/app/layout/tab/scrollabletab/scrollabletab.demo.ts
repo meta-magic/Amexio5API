@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'scrollable-tab-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Scrollable Tab Component</h2>
+        <h2>Scrollable Tab</h2>
       </amexio-header>
       <amexio-body>
         <p>Scrollable Tab component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs</p>

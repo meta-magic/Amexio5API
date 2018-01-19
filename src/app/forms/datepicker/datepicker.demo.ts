@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'datepicker-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Date Time Picker Component</h2>
+        <h2>Date Time Picker</h2>
       </amexio-header>
       <amexio-body>
         <p>This component is flexible for both Date and time picker with all required configurations in Style.</p>

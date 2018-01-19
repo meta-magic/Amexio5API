@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
  template: `
    <amexio-card header="true">
      <amexio-header>
-       <h2>YouTube Video Player Component</h2>
+       <h2>YouTube Video Player</h2>
      </amexio-header>
      <amexio-body>
        <p>A simple configurable of video player.</p>

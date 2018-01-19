@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'icon-tab-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Icon With Tab Component</h2>
+        <h2>Icon With Tab</h2>
       </amexio-header>
       <amexio-body>
         <p>Icon With Tab component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs</p>

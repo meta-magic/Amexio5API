@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'video-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Video Player Component</h2>
+        <h2>Video Player</h2>
       </amexio-header>
       <amexio-body>
         <p>Video player component support all types of videos. </p>

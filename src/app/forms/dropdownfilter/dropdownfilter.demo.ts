@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'dropdownfilter', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Dropdown Filter Component</h2>
+        <h2>Dropdown Filter</h2>
       </amexio-header>
       <amexio-body>
         <p>Drop-Down component has been created to render N numbers of drop-down items based on data-set configured.

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'number-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Number Input Component</h2>
+        <h2>Number Input</h2>
       </amexio-header>
       <amexio-body>
         <p>Number input component has been created with different configurable attributes for validation (min/max value, allow blank, custom regex), 

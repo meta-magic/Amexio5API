@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'button-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Button Component</h2>
+        <h2>Button</h2>
       </amexio-header>
       <amexio-body>
         <p>A button component with various modes and configurations.</p>

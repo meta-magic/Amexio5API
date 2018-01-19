@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Gauge Chart Component</h2>
+        <h2>Gauge Chart</h2>
       </amexio-header>
       <amexio-body>
      <p>A gauge with a dial, rendered within the browser using SVG. Guages are available under <code>AmexioDashboardModule</code> from <code>amexio-ng-extensions/dashboard</code></p>

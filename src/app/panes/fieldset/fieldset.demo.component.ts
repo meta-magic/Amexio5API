@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
  template: `
    <amexio-card header="true">
      <amexio-header>
-       <h2>Fieldset Component</h2>
+       <h2>Fieldset</h2>
      </amexio-header>
      <amexio-body>
        <p>A FieldSet is a great way to visually separate elements of a form. It's normally used when you have a form with fields that can be divided into groups.Fieldset can optionally have a title at the top</p>

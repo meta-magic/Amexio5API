@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Area Chart Component</h2>
+        <h2>Area Chart</h2>
       </amexio-header>
       <amexio-body>
         <p>An area chart that is rendered within the browser using SVG .Displays tips when hovering over points.</p>

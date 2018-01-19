@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Combo Chart Component</h2>
+        <h2>Combo Chart</h2>
       </amexio-header>
       <amexio-body>
         <p>A chart that lets you render each series as a different marker type from the following list: line,bars</p>

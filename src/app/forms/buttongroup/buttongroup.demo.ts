@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'buttongroup-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Button Group Component</h2>
+        <h2>Button Group</h2>
       </amexio-header>
       <amexio-body>
         <p>Button groups are containers for related action amexio-button.

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'text-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Text Input Component</h2>
+        <h2>Text Input</h2>
       </amexio-header>
       <amexio-body>
         <p>Text input component has been created with different configurable attributes for validation (min/max length,

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'email-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Email Input Component</h2>
+        <h2>Email Input</h2>
       </amexio-header>
       <amexio-body>
         <p>Email input special component has been created, which restrict user to enter only email format. 

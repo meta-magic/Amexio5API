@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
  template: `
    <amexio-card header="true">
      <amexio-header>
-       <h2>Border Layout Component</h2>
+       <h2>Border Layout</h2>
      </amexio-header>
      <amexio-body>
        <p>A border layout lays out a container, arranging and resizing its components to fit in five regions: north, south, east, west, and center.</p>

@@ -4,12 +4,12 @@
 
 import {Component} from '@angular/core'
 import {Http} from "@angular/http";
- 
+
 @Component({
   selector: 'dockbar-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Dockbar Component</h2>
+        <h2>Dockbar</h2>
       </amexio-header>
       <amexio-body>
         <p>The dockbar is a bar of tools and menus.</p>

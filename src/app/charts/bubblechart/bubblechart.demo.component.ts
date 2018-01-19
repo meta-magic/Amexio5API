@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Bubble Chart Component</h2>
+        <h2>Bubble Chart</h2>
       </amexio-header>
       <amexio-body>
         <p>A bubble chart is used to visualize a data set with two to four dimensions. The first two dimensions are visualized as coordinates, the third as color and the fourth as size.</p>

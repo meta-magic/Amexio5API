@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Donut Chart Component</h2>
+        <h2>Donut Chart</h2>
       </amexio-header>
       <amexio-body>
         <p>An donut chart that is rendered within the browser using SVG. A donut chart is a pie chart with a hole in the center.</p>

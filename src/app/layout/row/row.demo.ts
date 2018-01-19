@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'row-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Row Component</h2>
+        <h2>Row</h2>
       </amexio-header>
       <amexio-body>
         <p>Amexio uses a series of rows and columns to layout and align content and is fully responsive.</p>
