@@ -15,33 +15,24 @@ import {Http} from "@angular/http";
        <p>A border layout lays out a container, arranging and resizing its components to fit in five regions: north, south, east, west, and center.</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
-          <amexio-borderlayout>
-            <amexio-borderlayout-item [position]="'north'">
-              <div style="border: 1px dashed black;height : 150px;width : 150px;">
-                <p>North Position</p>
-              </div>
-            </amexio-borderlayout-item>
-            <amexio-borderlayout-item [position]="'east'">
-              <div style="border: 1px dashed black;height : 150px;width : 150px;">
-                <p>East Position</p>
-              </div>
-            </amexio-borderlayout-item>
-            <amexio-borderlayout-item [position]="'center'">
-              <div style="border: 1px dashed black;height : 150px;width : 150px;">
-                <p>Center Position</p>
-              </div>
-            </amexio-borderlayout-item> 
-            <amexio-borderlayout-item [position]="'west'">
-              <div style="border: 1px dashed black;height : 150px;width : 150px;">
-                <p>West Position</p>
-              </div>
-            </amexio-borderlayout-item>
-            <amexio-borderlayout-item [position]="'south'">
-              <div style="border: 1px dashed black;height : 150px;width : 150px;">
-                <p>South Position</p>
-              </div>
-            </amexio-borderlayout-item>
-          </amexio-borderlayout>
+           <h4>Border Layout</h4>
+           <amexio-borderlayout>
+             <amexio-borderlayout-item position="north">
+               <amexio-card><amexio-body>NORTH</amexio-body></amexio-card>
+             </amexio-borderlayout-item>
+             <amexio-borderlayout-item position="east">
+               <amexio-card><amexio-body>EAST</amexio-body></amexio-card>
+             </amexio-borderlayout-item>
+             <amexio-borderlayout-item position="center">
+               <amexio-card><amexio-body>CENTER</amexio-body></amexio-card>
+             </amexio-borderlayout-item>
+             <amexio-borderlayout-item position="west">
+               <amexio-card><amexio-body>WEST</amexio-body></amexio-card>
+             </amexio-borderlayout-item>
+             <amexio-borderlayout-item position="south">
+               <amexio-card><amexio-body>SOUTH</amexio-body></amexio-card>
+             </amexio-borderlayout-item>
+           </amexio-borderlayout>
          </amexio-tab>
          <amexio-tab title="API Reference">
            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
