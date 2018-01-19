@@ -184,10 +184,23 @@ import {Http} from "@angular/http";
              </amexio-column>
 
          
-             <!--<amexio-column [size]="4">
-               <amexio-button type="primary" (onClick)="toggleDialog()" label="Dialog Window"></amexio-button>
-               {{showClosable}}
-             </amexio-column>-->
+             <amexio-column [size]="4">
+              <amexio-button type="primary" (onClick)="toggleDialog()" label="Dialog Window"></amexio-button>
+               <amexio-window [showWindow]="showDialog" [dialog]="true">
+                 <amexio-header>
+                   Confirm Dialogue
+                 </amexio-header>
+                 
+                 <amexio-body>
+                   <span>Do you want to confirm action</span>
+                 </amexio-body>
+                 <amexio-action>
+                   <amexio-button (onClick)="showDialog = false" label="Yes"></amexio-button>
+                   <amexio-button (onClick)="showDialog = false" label="Cancel"></amexio-button>
+                 </amexio-action>
+               </amexio-window>
+               
+             </amexio-column>
            </amexio-row>
         
            
@@ -287,18 +300,18 @@ export class WindowDemoComponent {
   }
 
   toggleBasicWindow(){
-   this.showBasicWindow = true;
+   this.showBasicWindow = !this.showBasicWindow;
   }
 
   toggleMaxWindow(){
-    this.showMaxWindow = true;
+    this.showMaxWindow = !this.showMaxWindow;
   }
 
   toggleClosable(){
-    this.showClosable = true;
+    this.showClosable = !this.showClosable;
   }
 
   toggleDialog(){
-    this.showDialog = true;
+    this.showDialog = !this.showDialog;
   }
 }
