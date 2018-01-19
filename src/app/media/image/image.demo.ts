@@ -49,7 +49,7 @@ import {Http} from "@angular/http";
                           <amexio-body>
                             <amexio-row>
                               <amexio-column size="12">
-                                <amexio-image [path]="'./../../../assets/images/soap-bubble.jpg'"  [cclass]="'img-style'" [tooltip]="'Image'"></amexio-image>
+                                <amexio-image [path]="'/assets/images/soap-bubble.jpg'"  [cclass]="'img-style'" [tooltip]="'Image'"></amexio-image>
                               </amexio-column>
                             </amexio-row>
                           </amexio-body>
