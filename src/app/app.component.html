@@ -1,4 +1,4 @@
-<amexio-nav [title]="'Amexio'" [logo]="'./assets/images/logos/amexio-logo.png'">
+<amexio-nav [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
   <amexio-nav-item position-right *ngFor="let topMenu of topMenuData">
     <a style="padding-left: 10px;color: white;text-decoration:none" [attr.href]="topMenu.link"
        [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
