@@ -40,6 +40,11 @@
           "link": "checkboxgroup-demo"
         },
         {
+          "text": "Radio Group",
+          "icon": "fa fa-stop-circle-o fa-fw",
+          "link": "radiogroup-demo"
+        },
+        {
           "text": "Type Ahead Input",
           "icon": "fa fa-search-minus fa-fw",
           "link": "typeahead-demo"
@@ -79,11 +84,6 @@
               "text": "Date & Time Picker",
               "icon": "fa fa-calendar fa-fw",
               "link": "datepicker-demo"
-            },
-            {
-              "text": "Radio Group",
-              "icon": "fa fa-stop-circle-o fa-fw",
-              "link": "radiogroup-demo"
             },
             {
               "text": "Rating Input",
