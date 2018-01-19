@@ -8,15 +8,14 @@
     <a href="https://github.com/meta-magic/amexio.github.io">
       <img style="height: 15px;width: 15px;padding-left: 5px;" alt src="assets/images/logos/git.png">
     </a>
-   </amexio-nav-item>
-<!--<amexio-nav-item position-right>  <div id="google_translate_element"></div> </amexio-nav-item>-->
+  </amexio-nav-item>
+  <!--<amexio-nav-item position-right>  <div id="google_translate_element"></div> </amexio-nav-item>-->
   <!--<amexio-nav-item position-right style="padding-left: 50px">-->
-    <!--<div id="google_translate_element"></div>-->
+  <!--<div id="google_translate_element"></div>-->
   <!--</amexio-nav-item>-->
 </amexio-nav>
-<br><br><br>
 <amexio-row>
-  <amexio-column size="25">
+  <amexio-column [size]="'2pt5'" style="padding-top: 68px;">
     <amexio-side-nav
       [httpurl]="'assets/data/menus/menu.json'"
       [httpmethod]="'get'"
@@ -24,8 +23,8 @@
       (nodeClick)="onNodeClick($event)">
     </amexio-side-nav>
   </amexio-column>
-  <amexio-column size="75">
-    <router-outlet></router-outlet>
+  <amexio-column  [size]="'9pt5'" style="padding-top: 68px;">
+    <router-outlet ></router-outlet>
     <br/><br/>
     <div id="footer1" style="bottom: 0;">
       <p style="text-align: center;">  © 2017 MetaMagic Global Inc, NJ, USA.  All Rights Reserved. Source Code :  <a href="http://www.amexio.org/metamagic-showcase/license.html" target="_blank">Apache 2 License</a>  Docs by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC By 3.0</a></p>
