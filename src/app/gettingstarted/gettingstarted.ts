@@ -21,6 +21,7 @@ import {SharedModule} from "../shared.module";
         Amexio Angular EXtensions V4.0
         <br>
         <br>
+        <img src="assets/images/npm.svg"/>
         <img src="https://badge.fury.io/js/amexio-ng-extensions.svg"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
       </h1>
 
@@ -94,10 +95,77 @@ import {SharedModule} from "../shared.module";
             </amexio-body>
           </amexio-card>    
         </amexio-column>
+      </amexio-row>
       
-        
       <br>
-     <!-- <amexio-row>
+      <amexio-row>
+        <amexio-column size="12">
+          <amexio-card header="true">
+            <amexio-header><h2>Modules</h2></amexio-header>
+            <amexio-body>
+              <amexio-datagrid title="" [enablecolumnfiter]="false"
+                               [httpmethod]="'get'"
+                               [httpurl]="'assets/apireference/modules/modules.json'"
+                               [datareader]="'properties'"
+                               [enabledatafilter]="false" >
+                <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+                                          [text]="'Module Name'">
+                </amexio-data-table-column>
+                <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+                                          [text]="'Description'"></amexio-data-table-column>
+              </amexio-datagrid>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
+      </amexio-row>
+      
+      <amexio-row>
+        <amexio-column size="12">
+          <amexio-card header="true">
+            <amexio-header><h2>Themes</h2></amexio-header>
+            <amexio-body>
+              <span>To use the default theme import the <pre><code>../node_module/amexio-ng-extensions/styles/mda/mda-blue.scss</code></pre>in your app styles.scss</span>
+              <p>Or refer the below table for other themes provided.</p>
+              <amexio-row>
+                <amexio-column size="12">
+                  <amexio-datagrid title="Amexio Material Themes" [enablecolumnfiter]="false"
+                                   [height]="300"
+                                   [httpmethod]="'get'"
+                                   [httpurl]="'assets/apireference/modules/themes.json'"
+                                   [datareader]="'properties'"
+                                   [enabledatafilter]="false" >
+                    <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+                                              [text]="'Theme Name'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+                                              [text]="'Path'"></amexio-data-table-column>
+                  </amexio-datagrid>
+                </amexio-column>
+              </amexio-row>
+              
+              <amexio-row>
+                <amexio-column size="12">
+                  <amexio-datagrid title="Amexio Themes" [enablecolumnfiter]="false"
+                                   [height]="300"
+                                   [httpmethod]="'get'"
+                                   [httpurl]="'assets/apireference/modules/amx_themes.json'"
+                                   [datareader]="'properties'"
+                                   [enabledatafilter]="false" >
+                    <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+                                              [text]="'Theme Name'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+                                              [text]="'Path'"></amexio-data-table-column>
+                  </amexio-datagrid>
+                </amexio-column>
+              </amexio-row>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
+      </amexio-row>
+        
+      <!--<br>
+      <amexio-row>
         <amexio-column>
           <p>Include these in your app's .angular-cli.json </p>
           <img src="https://preview.ibb.co/b4F1gG/dependecy.png"/>
