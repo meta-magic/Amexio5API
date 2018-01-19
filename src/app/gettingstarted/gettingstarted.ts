@@ -21,7 +21,6 @@ import {SharedModule} from "../shared.module";
         Amexio Angular EXtensions V4.0
         <br>
         <br>
-        <img src="assets/images/npm.svg"/>
         <img src="https://badge.fury.io/js/amexio-ng-extensions.svg"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
       </h1>
 
