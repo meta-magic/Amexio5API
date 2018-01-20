@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "fieldlabel",
+      "name": "field-label",
       "type": "string",
       "default": "",
       "description":"The label of this field"
@@ -12,7 +12,7 @@
       "default": "",
       "description":"Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
     },{
-      "name": "allowblank",
+      "name": "allow-blank",
       "type": "boolean",
       "default": "false",
       "description":"true to make this field required."
@@ -29,34 +29,34 @@
       "description":"true to disable the field."
     },
     {
-      "name": "errormsg",
+      "name": "error-msg",
       "type": "string",
       "default": "",
       "description":"Error Message required to displayed after validation"
     },
     {
-      "name": "iconfeedback",
+      "name": "icon-feedback",
       "type": "boolean",
       "default": "false",
       "description":"Enable/Disabled validation icon"
     },{
-      "name": "fontstyle",
+      "name": "font-style",
       "type": "string",
       "default": "",
-      "description":"Set fontstyle to field"
+      "description":"Set font-style to field"
     },{
-      "name": "fontfamily",
+      "name": "font-family",
       "type": "string",
       "default": "",
       "description":"Set font family to field"
     },
     {
-      "name": "fontsize",
+      "name": "font-size",
       "type": "string",
       "default": "",
       "description":"Set font size to field"
     },{
-      "name": "enablepopover",
+      "name": "enable-popover",
       "type": "boolean",
       "default": "false",
       "description":"Set enable / disable popover."

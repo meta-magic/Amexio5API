@@ -20,24 +20,24 @@ import {Http} from "@angular/http";
               <amexio-fieldset [collapsible]="true" title="Employee Registration">
                 <amexio-row>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldlabel]="'Name'" name="country"
+                    <amexio-text-input [field-label]="'Name'" name="country"
                                        [placeholder]="'Enter name'"
-                                       [enablepopover]="true"
-                                       [iconfeedback]="true"
-                                       [allowblank]="false" [errormsg]="'Please enter name'"
-                                       [minlength]="3" [maxlength]="15" [minerrormsg]="'Name should be minimum 3 characters'"
-                                       [maxerrormsg]="'Name should be less than 15 characters'"
+                                       [enable-popover]="true"
+                                       [icon-feedback]="true"
+                                       [allow-blank]="false" [error-msg]="'Please enter name'"
+                                       [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                                       [max-error-msg]="'Name should be less than 15 characters'"
                     >
                     </amexio-text-input>
                   </amexio-column>
                   <amexio-column [size]="6">
-                    <amexio-text-input [fieldlabel]="'Surname'" name="name"
+                    <amexio-text-input [field-label]="'Surname'" name="name"
                                        [placeholder]="'Enter surname'"
-                                       [enablepopover]="true"
-                                       [iconfeedback]="true"
-                                       [allowblank]="false" [errormsg]="'Please enter Surname'"
-                                       [minlength]="3" [maxlength]="15" [minerrormsg]="'Surname should be minimum 3 characters'"
-                                       [maxerrormsg]="'Surname should be less than 15 characters'"
+                                       [enable-popover]="true"
+                                       [icon-feedback]="true"
+                                       [allow-blank]="false" [error-msg]="'Please enter Surname'"
+                                       [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                                       [max-error-msg]="'Surname should be less than 15 characters'"
                     >
                     </amexio-text-input>
                   </amexio-column>
@@ -45,12 +45,12 @@ import {Http} from "@angular/http";
                 <amexio-row>
                   <amexio-column [size]="6">
 
-                    <amexio-textarea-input [fieldlabel]="'Address'" name="Address"
+                    <amexio-textarea-input [field-label]="'Address'" name="Address"
                                            [placeholder]="'Enter address'"
-                                           [errormsg]="'Please enter address'"
-                                           [iconfeedback]="true"
+                                           [error-msg]="'Please enter address'"
+                                           [icon-feedback]="true"
                                            [rows]="'1'" [columns]="'2'"
-                                           [allowblank]="false" [enablepopover]="true"
+                                           [allow-blank]="false" [enable-popover]="true"
 
                     >
                     </amexio-textarea-input>
@@ -65,18 +65,18 @@ import {Http} from "@angular/http";
           </amexio-row>
          </amexio-tab>
          <amexio-tab title="API Reference">
-           <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                            [httpmethod]="'get'"
-                            [httpurl]="'assets/apireference/layout/fieldset/fieldset.json'"
-                            [datareader]="'properties'"
-                            [enabledatafilter]="false" >
-             <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+           <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                            [http-method]="'get'"
+                            [http-url]="'assets/apireference/layout/fieldset/fieldset.json'"
+                            [data-reader]="'properties'"
+                            [enable-data-filter]="false" >
+             <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 

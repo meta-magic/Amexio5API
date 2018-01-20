@@ -26,9 +26,9 @@ import {Http} from "@angular/http";
                    <amexio-row>
                      <amexio-column size="12">
                        <amexio-side-nav
-                         [httpurl]="'assets/data/componentdata/sidenav.json'"
-                         [httpmethod]="'get'"
-                         [datareader]="'data'"
+                         [http-url]="'assets/data/componentdata/sidenav.json'"
+                         [http-method]="'get'"
+                         [data-reader]="'data'"
                          [width]="'275px'"
                          [position]="'right'">
                        </amexio-side-nav>
@@ -41,29 +41,29 @@ import {Http} from "@angular/http";
           
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/navigation/sidenav.json'"
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/navigation/sidenav.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/navigation/sidenav.json'"
-                             [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/navigation/sidenav.json'"
+                             [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

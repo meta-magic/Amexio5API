@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "fieldlabel",
+      "name": "field-label",
       "type": "string",
       "default": "",
       "description": "The label of this field"
@@ -13,37 +13,37 @@
       "description": "The key that must be used while searching in data provided"
     },
     {
-      "name": "triggerchar",
+      "name": "trigger-char",
       "type": "number",
       "default": "1",
       "description": "The number of characters to trigger search"
     },
     {
-      "name": "httpurl",
+      "name": "http-url",
       "type": "string",
       "default": "",
       "description": "REST url for fetching datasource."
     },
     {
-      "name": "httpmethod",
+      "name": "http-method",
       "type": "string",
       "default": "",
       "description": "Type of HTTP call, POST,GET."
     },
     {
-      "name": "datareader",
+      "name": "data-reader",
       "type": "string",
       "default": "",
       "description": "Key in JSON datasource for records"
     },
     {
-      "name": "displayfield",
+      "name": "display-field",
       "type": "string",
       "default": "",
       "description": "Name of key inside response data to display on ui."
     },
     {
-      "name": "valuefield",
+      "name": "value-field",
       "type": "string",
       "default": "",
       "description": "Name of key inside response data.use to send to backend"

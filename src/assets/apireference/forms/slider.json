@@ -1,19 +1,19 @@
 {
   "properties": [
     {
-      "name": "minvalue",
+      "name": "min-value",
       "type": "number",
       "default": "",
       "description":"Minimum of slider value"
     },
     {
-      "name": "maxvalue",
+      "name": "max-value",
       "type": "number",
       "default": "",
       "description":"Maximum of slider value"
     },
     {
-      "name": "stepvalue",
+      "name": "step-value",
       "type": "number",
       "default": "",
       "description":"Step value in slider"

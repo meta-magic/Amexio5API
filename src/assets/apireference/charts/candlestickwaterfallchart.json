@@ -18,19 +18,19 @@
       "description":"For the use of local data "
     },
     {
-      "name": "barwidth",
+      "name": "bar-width",
       "type": "string",
       "default": "",
       "description":"To remove the space between the bars."
     },
     {
-      "name": "fallingcolor",
+      "name": "falling-color",
       "type": "string",
       "default": "",
       "description":"The fill color of falling candles, as an HTML color string.Example:'#FF0000' or 'red'"
     },
     {
-      "name": "risingcolor",
+      "name": "rising-color",
       "type": "string",
       "default": "",
       "description":"The fill color of rising candles, as an HTML color string.Example:'#0f9d58' or 'green'"
@@ -49,12 +49,12 @@
       "default": "",
       "description":"Color of chart title."
     },{
-      "name": "fontname",
+      "name": "font-name",
       "type": "string",
       "default": "",
       "description":"Font name of chart title."
     },{
-      "name": "fontsize",
+      "name": "font-size",
       "type": "number",
       "default": "",
       "description":"Font size of chart title."
@@ -78,7 +78,7 @@
       "description": "Title of the chart for the horizontal axis."
     },
     {
-      "name": "titlecolor",
+      "name": "title-color",
       "type": "string",
       "default": "",
       "description": "The color of the chart for the horizontal axis."
@@ -92,7 +92,7 @@
       "description": "Title of the chart for the Vertical axis."
     },
     {
-      "name": "titlecolor",
+      "name": "title-color",
       "type": "string",
       "default": "",
       "description": "The color of the chart for the Vertical axis."

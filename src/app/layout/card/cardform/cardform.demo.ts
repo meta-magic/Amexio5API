@@ -30,30 +30,30 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="6">
-                        <amexio-text-input [fieldlabel]="'Name'" name ="name"
+                        <amexio-text-input [field-label]="'Name'" name ="name"
                                            [placeholder]="'Enter name'"
-                                           [iconfeedback]="true">
+                                           [icon-feedback]="true">
                         </amexio-text-input>
                       </amexio-column>
                       <amexio-column [size]="6">
-                        <amexio-text-input [fieldlabel]="'Address'" name ="address"
+                        <amexio-text-input [field-label]="'Address'" name ="address"
                                            [placeholder]="'Enter address'"
-                                           [iconfeedback]="true">
+                                           [icon-feedback]="true">
                         </amexio-text-input>
                       </amexio-column>
                     </amexio-row>
                     <amexio-row>
                       <amexio-column [size]="6">
-                        <amexio-number-input [fieldlabel]="'Number Input'"
+                        <amexio-number-input [field-label]="'Number Input'"
                                              [placeholder]="'Enter Age'">
                         </amexio-number-input>
                       </amexio-column>
                       <amexio-column [size]="6">
-                        <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
+                        <amexio-email-input [field-label]="'Email Id'" name ="email"
                                             [placeholder]="'Enter Email Id'"
-                                            [allowblank]="false" [errormsg] ="'Please Enter Email Id'"
-                                            [enablepopover]="true"
-                                            [iconfeedback]="true">
+                                            [allow-blank]="false" [error-msg] ="'Please Enter Email Id'"
+                                            [enable-popover]="true"
+                                            [icon-feedback]="true">
                         </amexio-email-input>
                       </amexio-column>
                     </amexio-row>
@@ -67,18 +67,18 @@ import {Http} from "@angular/http";
        
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/layout/card.json'" 
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false" >
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/layout/card.json'" 
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             

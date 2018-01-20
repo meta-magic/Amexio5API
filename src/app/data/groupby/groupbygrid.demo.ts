@@ -24,16 +24,16 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-datagrid
                       [title]="'Employee Data'"
-                      [pagesize] = "10"
-                      [datareader]="'data'"
+                      [page-size] = "10"
+                      [data-reader]="'data'"
                       [groupby]="true"
-                      [groupbydataindex]="'jobTitle'"
-                      [httpurl]="'assets/data/componentdata/datagridgroupby.json'"
-                      [httpmethod]="'get'">
-                      <amexio-data-table-column [dataindex]="'preferredFullName'" [datatype]="'string'" [hidden]="false" [text]="'FullName'"></amexio-data-table-column>
-                      <amexio-data-table-column [dataindex]="'jobTitle'" [datatype]="'string'" [hidden]="false" [text]="'Job Title'">
+                      [groupby-data-index]="'jobTitle'"
+                      [http-url]="'assets/data/componentdata/datagridgroupby.json'"
+                      [http-method]="'get'">
+                      <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false" [text]="'FullName'"></amexio-data-table-column>
+                      <amexio-data-table-column [data-index]="'jobTitle'" [data-type]="'string'" [hidden]="false" [text]="'Job Title'">
                       </amexio-data-table-column>
-                      <amexio-data-table-column [dataindex]="'salary'" [datatype]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
+                      <amexio-data-table-column [data-index]="'salary'" [data-type]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
                     </amexio-datagrid>
                   </amexio-body>
                 </amexio-card>
@@ -41,41 +41,41 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/data/grid.json'"
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/data/grid.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'type'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'default'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid><br>
-            <amexio-datagrid title="Column Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/data/grid.json'"
-                             [datareader]="'columnProperties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [width]="15" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Column Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/data/grid.json'"
+                             [data-reader]="'columnProperties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'type'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'default'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/data/grid.json'" [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [http-method]="'get'"
+                             [http-url]="'assets/apireference/data/grid.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

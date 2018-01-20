@@ -17,39 +17,39 @@ import {Http} from "@angular/http";
            <amexio-row>
              <amexio-column size="12">
                <amexio-map-treemap [title]="'tree'" [height]="'500px'" [width]="'100%'" [data]="treeMapData"
-                                   [maxcolor]="'#0d0'" [midcolor]="'#ddd'" [mincolor]="'#f00'" [maxpostdepth]="2" [showscale]="true">
+                                   [max-color]="'#0d0'" [mid-color]="'#ddd'" [min-color]="'#f00'" [max-post-depth]="2" [show-scale]="true">
                </amexio-map-treemap>
              </amexio-column>
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Map Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/map/treemap.json'"
-                             [datareader]="'chart'"
-                             [enabledatafilter]="false" >
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Map Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/map/treemap.json'"
+                             [data-reader]="'chart'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Map Title Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/map/treemap.json'"
-                             [datareader]="'chartTitle'"
-                             [enabledatafilter]="false" >
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Map Title Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/map/treemap.json'"
+                             [data-reader]="'chartTitle'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>

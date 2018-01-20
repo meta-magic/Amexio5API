@@ -22,7 +22,7 @@ import {Http} from "@angular/http";
                     <h2>Simple Tree</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-treeview [datareader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
+                    <amexio-treeview [data-reader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
                     </amexio-treeview>
                   </amexio-body>
                 </amexio-card>
@@ -40,27 +40,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/data/tree.json'"
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/data/tree.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'type'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'default'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/data/tree.json'" [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [width]="20" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [http-method]="'get'"
+                             [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
@@ -154,8 +154,8 @@ export class SimpleTreeDemo {
                 "expand" : true,
                 "children":[],
                 "lazy":{
-                  "httpurl":"data/treeview.json",
-                  "httpmethod": "get"
+                  "http-url":"data/treeview.json",
+                  "http-method": "get"
                 }
               }
             ]

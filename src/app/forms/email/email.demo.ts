@@ -23,11 +23,11 @@ import {Http} from "@angular/http";
                     <h4>Basic Email Input</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
+                    <amexio-email-input [field-label]="'Email Id'" name ="email"
                                         [placeholder]="'Enter Email Id'"
-                                        [allowblank]="false" [errormsg] ="'Please Enter Email Id'"
-                                        [enablepopover]="true"
-                                        [iconfeedback]="true">
+                                        [allow-blank]="false" [error-msg] ="'Please Enter Email Id'"
+                                        [enable-popover]="true"
+                                        [icon-feedback]="true">
                     </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
@@ -38,7 +38,7 @@ import {Http} from "@angular/http";
                     <h4>Email Input With Disable</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input name ="email" [fieldlabel]="'Email Id'"
+                    <amexio-email-input name ="email" [field-label]="'Email Id'"
                                         [placeholder]="'Enter Email Id'"
                                         [disabled]="true">
                     </amexio-email-input>
@@ -53,10 +53,10 @@ import {Http} from "@angular/http";
                     <h4>Email Input Font Style</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input [fieldlabel]="'Email Id'" name ="email"
+                    <amexio-email-input [field-label]="'Email Id'" name ="email"
                                         [placeholder]="'Enter Email Id'"
-                                        [iconfeedback]="true"
-                                        [fontstyle]="'italic'">
+                                        [icon-feedback]="true"
+                                        [font-style]="'italic'">
                     </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
@@ -67,10 +67,10 @@ import {Http} from "@angular/http";
                     <h4>Font Family</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-email-input name ="email" [fieldlabel]="'Email Id'"
+                    <amexio-email-input name ="email" [field-label]="'Email Id'"
                                         [placeholder]="'Enter Email Id'"
-                                        [fontfamily]="'Times New Roman'"
-                                        [fontsize]="'large'">
+                                        [font-family]="'Times New Roman'"
+                                        [font-size]="'large'">
                     </amexio-email-input>
                   </amexio-body>
                 </amexio-card>
@@ -79,27 +79,27 @@ import {Http} from "@angular/http";
             
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/email.json'" 
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false" >
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/email.json'" 
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpmethod]="'get'" 
-                             [httpurl]="'assets/apireference/forms/email.json'" [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [http-method]="'get'" 
+                             [http-url]="'assets/apireference/forms/email.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             

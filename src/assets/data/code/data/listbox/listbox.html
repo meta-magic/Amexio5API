@@ -1,17 +1,17 @@
 <!--Simple ListBox-->
-<amexio-listbox [enablecheckbox]="true" [height]="400"
-                [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
+<amexio-listbox [enable-checkbox]="true" [height]="400"
+                [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
                 [data]="localData" [filter]="true"
-                [datareader]="'response.data'"
-                [displayfield]="'name_official'" (selectedRows)="getSelectedData($event)">
+                [data-reader]="'response.data'"
+                [display-field]="'name_official'" (selectedRows)="getSelectedData($event)">
 </amexio-listbox>
 
 <!--ListBox with template-->
 
-<amexio-listbox [height]="400" [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
+<amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
                 [data]="localData" [filter]="false"
-                [enablecheckbox]="false" [datareader]="'response.data'"
-                [displayfield]="'name'" (onRowClick)="onRowClick($event)">
+                [enable-checkbox]="false" [data-reader]="'response.data'"
+                [display-field]="'name'" (onRowClick)="onRowClick($event)">
                 <ng-template #amexioBodyTmpl let-row="row">
                   <amexio-row>
                     <amexio-column [size]="12">

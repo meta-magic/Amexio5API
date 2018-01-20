@@ -30,11 +30,11 @@ import {Http} from "@angular/http";
                       <amexio-column size="12">
                         <amexio-dropdown
                           [placeholder]="'Choose'"
-                          [fieldlabel]="'Choose Fruit'"
-                          [httpmethod]="'get'" [httpurl]="'assets/data/componentdata/fruits.json'"
-                          [displayfield]="'fruitName'" [valuefield]="'code'"
-                          [datareader]="'data'"
-                          [multiselect]="true"
+                          [field-label]="'Choose Fruit'"
+                          [http-method]="'get'" [http-url]="'assets/data/componentdata/fruits.json'"
+                          [display-field]="'fruitName'" [value-field]="'code'"
+                          [data-reader]="'data'"
+                          [multi-select]="true"
                           (onMultiSelect)="onMultiSelectValue($event)"
                         >
                         </amexio-dropdown>
@@ -55,27 +55,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/dropdown.json'"
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/dropdown.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/dropdown.json'" [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/dropdown.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

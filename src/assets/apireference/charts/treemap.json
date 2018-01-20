@@ -19,34 +19,34 @@
       "description": "For the use of local data "
     },
     {
-      "name": "maxcolor",
+      "name": "max-color",
       "type": "string",
       "default": "",
-      "description": "The color for a rectangle with a column 3 value of maxcolorValue. Specify an HTML color value."
+      "description": "The color for a rectangle with a column 3 value of max-colorValue. Specify an HTML color value."
     },
     {
-      "name": "midcolor",
+      "name": "mid-color",
       "type": "Array",
       "default": "",
-      "description": "The color for a rectangle with a column 3 value midway between maxcolorValue and mincolorValue. Specify an HTML color value."
+      "description": "The color for a rectangle with a column 3 value midway between max-colorValue and min-colorValue. Specify an HTML color value."
     },
     {
-      "name": "mincolor",
+      "name": "min-color",
       "type": "Array",
       "default": "",
-      "description": "The color for a rectangle with the column 3 value of mincolorValue. Specify an HTML color value.TolorValue. Specify an HTML color value."
+      "description": "The color for a rectangle with the column 3 value of min-colorValue. Specify an HTML color value.TolorValue. Specify an HTML color value."
     },
     {
-      "name": "maxpostdepth",
+      "name": "max-post-depth",
       "type": "number",
       "default": "",
       "description": "How many levels of nodes beyond maxDepth to show in 'hinted' fashion."
     },
     {
-      "name": "showscale",
+      "name": "show-scale",
       "type": "boolean",
       "default": "",
-      "description": "Whether or not to show a color gradient scale from mincolor to maxcolor along the top of the chart. Specify true to show the scale"
+      "description": "Whether or not to show a color gradient scale from min-color to max-color along the top of the chart. Specify true to show the scale"
     }
   ],
   "chartTitle": [
@@ -63,13 +63,13 @@
       "description": "color of chart title."
     },
     {
-      "name": "fontname",
+      "name": "font-name",
       "type": "string",
       "default": "",
       "description": "font name of chart title."
     },
     {
-      "name": "fontsize",
+      "name": "font-size",
       "type": "number",
       "default": "",
       "description": "font size of chart title."

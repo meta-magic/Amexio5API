@@ -22,7 +22,7 @@ import {Http} from "@angular/http";
                     <h2>Sample Rating With Label</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-rating-input [(ngModel)]="rate" [fieldlabel]="'Film Rating'"
+                    <amexio-rating-input [(ngModel)]="rate" [field-label]="'Film Rating'"
                                          [max]="max" name="rate" [float]="true"
                                          [readonly]="isReadonly">
                     </amexio-rating-input>
@@ -57,7 +57,7 @@ import {Http} from "@angular/http";
                     <h2>Custom Rating Icons</h2>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-rating-input [(ngModel)]="customRate" [fullicon]="'☑'" [emptyicon]="'☐'"
+                    <amexio-rating-input [(ngModel)]="customRate" [full-icon]="'☑'" [empty-icon]="'☐'"
                                          [max]="customIconRate" name="customRate" [float]="true"
                                          [readonly]="isReadonly">
                     </amexio-rating-input>
@@ -74,7 +74,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <!--Read only Rating-->
-                    <amexio-rating-input [fieldlabel]="'Profile Rating'"
+                    <amexio-rating-input [field-label]="'Profile Rating'"
                                          [(ngModel)]="disableProfileRate"
                                          [max]="disableProfileMaxRate"
                                          [readonly]="true">
@@ -85,18 +85,18 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/rating.json'" 
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false" >
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/rating.json'" 
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
