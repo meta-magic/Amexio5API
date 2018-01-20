@@ -22,7 +22,7 @@ import {Http} from "@angular/http";
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" style="height: 250px;width: 400px" alt="">
                     <br/>
                     <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
-                    <h4 class="card-title">Let your startup grow! 
+                    Let your startup grow! 
                     <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
                   </amexio-body>
                   <amexio-action >
