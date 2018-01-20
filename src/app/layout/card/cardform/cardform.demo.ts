@@ -25,7 +25,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true" [footer]="true" [show]="flag" [footeralign]="'right'">
                   <amexio-header>
-                    <h5> Employee Registration</h5>
+                    Employee Registration
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
