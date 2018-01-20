@@ -1,36 +1,36 @@
 {
   "properties": [
     {
-      "name": "Cyan",
-      "description":"../node_modules/amexio-ng-extensions/styles/amexio/amexio-cyan.scss"
+      "name": "at-am-byzantine-crystal",
+      "description":"../node_modules/amexio-ng-extensions/styles/amexio/at-am-byzantine-crystal.scss"
     },
     {
-      "name" : "Deep Orange",
-      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-deep-orange.scss"
+      "name" : "at-am-honey-prussian",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-honey-prussian.scss"
     },
     {
-      "name" : "Lime Green",
-      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-limegreen.scss"
+      "name" : "at-am-limegreen",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-limegreen.scss"
     },
     {
-      "name" : "Matrix",
-      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-matrix.scss"
+      "name" : "at-am-matrix",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-matrix.scss"
     },
     {
-      "name" : "Orange",
-      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-orange.scss"
+      "name" : "at-am-ocean-blue",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-ocean-blue.scss"
     },
     {
-      "name" : "Polygon",
-      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-polygon.scss"
+      "name" : "at-am-persian-laguna",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-persian-laguna.scss"
     },
     {
-      "name" : "Pyramid",
-      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/amexio-pyramind.scss"
+      "name" : "at-am-spicy-apricot",
+      "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-spicy-apricot.scss"
     },
     {
-      "name": "Red",
-      "description": "../node_modules/amexio-ng-extensions/styles/amexio/amexio-red.scss"
+      "name": "at-am-tiger",
+      "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-tiger.scss"
     }
 
   ]
