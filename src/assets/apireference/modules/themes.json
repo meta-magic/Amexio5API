@@ -100,6 +100,33 @@
     {
       "name" : "at-md-yale-azure",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-yale-azure.scss"
+    },
+
+
+
+    {
+      "name" : "at-md-tronbone-royal",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-tronbone-royal.scss"
+    },
+    {
+      "name" : "at-md-pineapple-flaxen",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-pineapple-flaxen.scss"
+    },
+    {
+      "name" : "at-md-pumpkin-fire",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-pumpkin-fire.scss"
+    },
+    {
+      "name" : "at-md-mauve-orchid",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-mauve-orchid.scss"
+    },
+    {
+      "name" : "at-md-honey-mustard",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-honey-mustard.scss"
+    },
+    {
+      "name" : "at-md-bruntor-tangerine",
+      "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-bruntor-tangerine.scss"
     }
 
 
