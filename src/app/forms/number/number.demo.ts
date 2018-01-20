@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'number-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Number Input</h2>
+         Number Input 
       </amexio-header>
       <amexio-body>
         <p>Number input component has been created with different configurable attributes for validation (min/max value, allow blank, custom regex), 
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Basic Number Input</h4>
+                     Basic Number Input 
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input [field-label]="'Number Input'"
@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Number Input With Disable</h4>
+                     Number Input With Disable 
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input  
@@ -48,7 +48,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Number Input Font Style</h4>
+                     Number Input Font Style 
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input [field-label]="'Age'" 
@@ -61,7 +61,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Number Input With Min/Max Validation</h4>
+                     Number Input With Min/Max Validation 
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input  [enable-popover]="true" [field-label]="'Age'" 

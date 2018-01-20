@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'email-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Email Input</h2>
+         Email Input 
       </amexio-header>
       <amexio-body>
         <p>Email input special component has been created, which restrict user to enter only email format. 
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Basic Email Input</h4>
+                     Basic Email Input 
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input [field-label]="'Email Id'" name ="email"
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Email Input With Disable</h4>
+                     Email Input With Disable 
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input name ="email" [field-label]="'Email Id'"
@@ -50,7 +50,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Email Input Font Style</h4>
+                     Email Input Font Style 
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input [field-label]="'Email Id'" name ="email"
@@ -64,7 +64,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Font Family</h4>
+                     Font Family 
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input name ="email" [field-label]="'Email Id'"

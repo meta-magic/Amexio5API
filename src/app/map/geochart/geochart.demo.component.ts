@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Geo Chart</h2>
+         Geo Chart 
       </amexio-header>
       <amexio-body>
         <p>Data can be plotted on a Map using Amexio's <code>AmexioMapModule</code>. All Mapping widgets are available under <code>amexio-ng-extensions/maps</code></p>

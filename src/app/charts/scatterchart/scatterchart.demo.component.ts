@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Scatter Chart</h2>
+         Scatter Chart 
       </amexio-header>
       <amexio-body>
         <p>Scatter charts plot points on a graph. When the user hovers over the points, tooltips are displayed with more information.</p>

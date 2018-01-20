@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Timeline Chart Component</h2>
+         Timeline Chart Component 
       </amexio-header>
       <amexio-body>
         <p>A timeline is a chart that depicts how a set of resources are used over time.</p>

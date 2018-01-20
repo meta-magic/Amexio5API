@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'singlecheckbox-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Single Checkbox</h2>
+         Single Checkbox 
       </amexio-header>
       <amexio-body>
         <p>Single checkbox having boolean based values.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Single Checkbox</h2>
+                     Single Checkbox 
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox [field-label]="'Agree'" [(ngModel)]="check"
@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Single Checkbox with disable</h2>
+                     Single Checkbox with disable 
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox [disabled]="true" [field-label]="'Agree'"

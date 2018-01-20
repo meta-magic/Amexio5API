@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'buttondropdown-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>DropDown Button</h2>
+         DropDown Button 
       </amexio-header>
       <amexio-body>
         <p>A DropDown Button component with various modes and configurations.
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>DropDown Button</h2>
+                     DropDown Button 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -37,7 +37,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Dropdown Button with size</h2>
+                      Dropdown Button with size 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -63,7 +63,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Dropdown Button with Disebled link</h2>
+                      Dropdown Button with Disebled link 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>

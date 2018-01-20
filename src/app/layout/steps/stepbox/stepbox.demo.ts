@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'step-box', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Step Box</h2>
+         Step Box 
       </amexio-header>
       <amexio-body>
         <p>Step-box component is an indicator for the steps in a workflow.</p>

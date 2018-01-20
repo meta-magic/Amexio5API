@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'toggle-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Toggle Switch</h2>
+         Toggle Switch 
       </amexio-header>
       <amexio-body>
         <p>Toggle Switches are checkboxes with a toggle switch UI.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Round Toggle</h2>
+                      Round Toggle 
                   </amexio-header>
                   <amexio-body>
                     <amexio-toggle [field-label]="'Round Toogle'"></amexio-toggle>
@@ -29,7 +29,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Square Toggle</h2>
+                      Square Toggle 
                   </amexio-header>
                   <amexio-body>
                     <amexio-toggle shape="square" (onChange)="onSquareToggleClick($event)"></amexio-toggle>

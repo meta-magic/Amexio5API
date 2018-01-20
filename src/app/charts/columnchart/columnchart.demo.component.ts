@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Column Chart</h2>
+         Column Chart 
       </amexio-header>
       <amexio-body>
         <p>A column chart is a vertical bar chart rendered in the browser using SVG.</p>

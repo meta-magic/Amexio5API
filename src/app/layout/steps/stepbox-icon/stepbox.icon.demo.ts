@@ -10,7 +10,7 @@ import {debug} from "util";
  template: `
    <amexio-card header="true">
      <amexio-header>
-       <h2>Step Box Icon</h2>
+        Step Box Icon 
      </amexio-header>
      <amexio-body>
        <p>Step-box component is an indicator for the steps in a workflow.</p>

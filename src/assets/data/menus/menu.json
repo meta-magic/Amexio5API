@@ -226,12 +226,12 @@
           "link": "tree",
           "children": [
             {
-              "text": "Simple Tree",
+              "text": "Simple",
               "icon": "fa fa-tree fa-fw",
               "link": "simple-tree"
             },
             {
-              "text": "Tree with Template",
+              "text": "With Template",
               "icon": "fa fa-tree fa-fw",
               "link": "template-tree"
             },
@@ -241,12 +241,12 @@
               "link": "filter-tree"
             },
             {
-              "text": "Tree with Checkbox",
+              "text": "With Checkbox",
               "icon": "fa fa-tree fa-fw",
               "link": "checkbox-tree"
             },
             {
-              "text": "Horizontal Tree",
+              "text": "Horizontal",
               "icon": "fa fa-tree fa-fw",
               "link": "horizontal-tree"
             }
@@ -387,7 +387,7 @@
       "children": [
         {
           "text": "Dockbar",
-          "icon": "fa fa-th-large",
+          "icon": "fa fa-th-large fa-fw",
           "link": "dockbar-demo"
         },
         {

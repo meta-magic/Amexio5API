@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'card-form-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Card</h2>
+         Card 
       </amexio-header>
       <amexio-body>
         <p>A Simple Card which renders card based on title, body and actions user has configured</p>

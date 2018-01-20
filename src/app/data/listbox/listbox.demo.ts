@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'listbox-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>List Box</h2>
+         List Box 
       </amexio-header>
       <amexio-body>
         <p>Simple list box which allows user to select one of more items from list based on configuration. User can
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Simple List Box</h2>
+                     Simple List Box 
                   </amexio-header>
                   <amexio-body>
                     <amexio-listbox [enable-checkbox]="true" [height]="400" 
@@ -40,7 +40,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>List Box with Template</h2>
+                     List Box with Template 
                   </amexio-header>
                   <amexio-body>
                     <amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"

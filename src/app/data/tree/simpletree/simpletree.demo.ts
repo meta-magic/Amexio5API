@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'simpletree-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Simple Tree</h2>
+         Simple Tree 
       </amexio-header>
       <amexio-body>
         <p>A Simple Expandable Tree component which create Tree View based on standard datasource attached.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Simple Tree</h2>
+                     Simple Tree 
                   </amexio-header>
                   <amexio-body>
                     <amexio-treeview [data-reader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
@@ -30,7 +30,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Selected Data</h2>
+                     Selected Data 
                   </amexio-header>
                   <amexio-body>
                     <pre><code>{{selectedData | json}}</code></pre>

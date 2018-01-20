@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'notification-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>App Notification's</h2>
+         App Notification's 
       </amexio-header>
       <amexio-body>
         <p>Notification provides a way to let user know through pop-up messages.</p>
@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card [header]="true">
-                  <amexio-header><h2>Top Notification</h2></amexio-header>
+                  <amexio-header> Top Notification </amexio-header>
                   <amexio-body>
                     <amexio-notification [messageData]="topMessageArray"
                                          [verticalposition]="'top'"
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               </amexio-column>
               <amexio-column size="6">
                 <amexio-card [header]="true">
-                  <amexio-header><h2>Bottom Notification</h2></amexio-header>
+                  <amexio-header> Bottom Notification </amexio-header>
                   <amexio-body>
                     <amexio-notification [messageData]="bottomMessageArray"
                                          [verticalposition]="'bottom'"

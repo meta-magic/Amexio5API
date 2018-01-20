@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Candlestick Chart</h2>
+         Candlestick Chart 
       </amexio-header>
       <amexio-body>
         <p>A candlestick chart is used to show an opening and closing value overlaid on top of a total variance. Candlestick charts are often used to show stock value behavior.</p>

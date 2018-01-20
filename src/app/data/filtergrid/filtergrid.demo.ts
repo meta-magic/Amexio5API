@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'filtergrid-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Data Grid With Filter</h2>
+         Data Grid With Filter 
       </amexio-header>
       <amexio-body>
         <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Filtering(enable only for string and number type data) user define template for rendering for column header and column data, displaying summation of numeric column.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Data Grid With Filter</h2>
+                     Data Grid With Filter 
                   </amexio-header>
                   <amexio-body>
 

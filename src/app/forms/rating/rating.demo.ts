@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'rating-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Rating</h2>
+         Rating 
       </amexio-header>
       <amexio-body>
         <p>A simple configurable star rating component with visual feedback.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h2>Sample Rating With Label</h2>
+                     Sample Rating With Label 
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="rate" [field-label]="'Film Rating'"
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true" [footer]="true"  [footeralign]="'center'">
                   <amexio-header>
-                    <h2> Rating With Rate Titles</h2>
+                      Rating With Rate Titles 
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="profileRate"
@@ -54,7 +54,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h2>Custom Rating Icons</h2>
+                     Custom Rating Icons 
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="customRate" [full-icon]="'☑'" [empty-icon]="'☐'"
@@ -70,7 +70,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Rating With Read Only</h2>
+                      Rating With Read Only 
                   </amexio-header>
                   <amexio-body>
                     <!--Read only Rating-->

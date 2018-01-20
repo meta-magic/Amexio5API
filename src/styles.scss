@@ -1,9 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "../node_modules/amexio-ng-extensions/styles/mda/at-md-blue";
-.material-icons {
-  font-size: inherit !important;
-}
+@import "../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss";
 
 .flex-col-25 {
   max-width: 20.8333325%;
@@ -21,19 +18,7 @@
   }
 }
 
-.card-header {
-  padding: 0px 10px;
-}
-
-.column-border{
-  border: 1px solid red
-}
-
 //toggle width
 .toggle{
   width: 60px;
-}
-.navbardemo .navbar-container{
-  position: inherit!important;
-  width: inherit!important;
 }

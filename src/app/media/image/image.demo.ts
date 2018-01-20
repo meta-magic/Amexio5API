@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'image-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Image</h2>
+         Image 
       </amexio-header>
       <amexio-body>
         <p>An image is an artifact that depicts visual perception.Amexio support icons (material / font-awesome)/image</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Image</h2>
+                     Image 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -45,7 +45,7 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column size="12">
                         <amexio-card  header="true">
-                          <amexio-header><h2>Simple Image</h2></amexio-header>
+                          <amexio-header> Simple Image </amexio-header>
                           <amexio-body>
                             <amexio-row>
                               <amexio-column size="12">

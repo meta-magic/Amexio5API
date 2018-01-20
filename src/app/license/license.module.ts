@@ -14,7 +14,7 @@ import {FormsModule} from "@angular/forms";
     <amexio-column size="12">
       <amexio-card header="true">
         <amexio-header>
-          <h2>Apache License</h2>
+           Apache License 
         </amexio-header>
         
         <amexio-body>

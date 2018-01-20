@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'fileupload-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>File Upload</h2>
+         File Upload 
       </amexio-header>
       <amexio-body>
         <p>This component use for uploading all types of files.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Basic File Upload</h2>
+                     Basic File Upload 
                   </amexio-header>
                   <amexio-body>
                     <amexio-fileupload [http-url]="'/upload'" [http-method]="'POST'"
@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Drag Drop File Upload</h2>
+                     Drag Drop File Upload 
                   </amexio-header>
                   <amexio-body>
                     <amexio-fileupload [http-url]="'/upload'" [http-method]="'POST'" [file-type]="'image/*'" [field-label]="'Photo Upload'" droppable="true"></amexio-fileupload>

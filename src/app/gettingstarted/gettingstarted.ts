@@ -22,7 +22,7 @@ import {SharedModule} from "../shared.module";
         <br>
         <br>
         <img src="assets/images/npm.svg"/>
-        <img src="https://badge.fury.io/js/amexio-ng-extensions.svg"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
+        <img src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=3.2.2&x2=0"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
       </h1>
 
       <hr>
@@ -30,7 +30,7 @@ import {SharedModule} from "../shared.module";
         <amexio-column size="12">
           <amexio-card header="true">
             <amexio-header>
-             <h2>Table Of Contents</h2>
+              Table Of Contents 
             </amexio-header>
             <amexio-body>
               <amexio-row>
@@ -57,7 +57,7 @@ import {SharedModule} from "../shared.module";
       <amexio-row>
         <div id="gettingStarted">
           <amexio-card header="true">
-            <amexio-header><h2>Getting Started</h2></amexio-header>
+            <amexio-header> Getting Started </amexio-header>
             <amexio-body>
               <amexio-row>
                 <amexio-column size="12">
@@ -75,7 +75,7 @@ import {SharedModule} from "../shared.module";
       <amexio-row>
         <amexio-column size="12">
           <amexio-card header="true">
-            <amexio-header><h2>Installation Details</h2></amexio-header>
+            <amexio-header> Installation Details </amexio-header>
             <amexio-body>
               <amexio-row>
                 <amexio-column size="12">
@@ -101,7 +101,7 @@ import {SharedModule} from "../shared.module";
       <amexio-row>
         <amexio-column size="12">
           <amexio-card header="true">
-            <amexio-header><h2>Modules</h2></amexio-header>
+            <amexio-header> Modules </amexio-header>
             <amexio-body>
               <amexio-datagrid title="" [enable-column-fiter]="false"
                                [http-method]="'get'"
@@ -122,7 +122,7 @@ import {SharedModule} from "../shared.module";
       <amexio-row>
         <amexio-column size="12">
           <amexio-card header="true">
-            <amexio-header><h2>Themes</h2></amexio-header>
+            <amexio-header> Themes </amexio-header>
             <amexio-body>
               <span>To use the default theme import the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app styles.scss</span>
               <p>Or refer the below table for other themes provided.</p>

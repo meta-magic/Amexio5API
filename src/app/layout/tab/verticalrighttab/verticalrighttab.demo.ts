@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'verticalright-tab-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Right Aligned Vertical Tab</h2>
+         Right Aligned Vertical Tab 
       </amexio-header>
       <amexio-body>
         <p>Right Aligned Vertical Tab component for Angular Apps with multiple configurations such as Tab, Icon support</p>
@@ -17,15 +17,15 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-right-vertical-tab-view>
               <amexio-tab title="Personal" [active]="true"  [icon]="'fa fa-user-circle'">
-                <h4>Personal</h4>
+                 Personal 
                 Lorem Ipsum is simply text of printing and typesetting industry. 
               </amexio-tab>
               <amexio-tab title="Work" [icon]="'fa fa-building'">
-                <h4>Work</h4>
+                 Work 
                 Nullam nec dolor lobortis, dictum ac, massa. Donec id suscipit.
               </amexio-tab>
               <amexio-tab title="Team" [icon]="'fa fa-users'">
-                <h4>Team</h4>
+                 Team 
                 Phasellus in condimentum. In et sem. Orci   varius penatibus.
               </amexio-tab>
             </amexio-right-vertical-tab-view>

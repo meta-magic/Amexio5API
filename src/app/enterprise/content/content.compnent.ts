@@ -8,14 +8,14 @@ import {Http} from "@angular/http";
   selector: 'ee-content-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Media Content</h2>
+         Media Content 
       </amexio-header>
       <amexio-body>
         <p>A simple configurable star rating component with visual feedback.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-card enableheader="true">
-              <amexio-header><h2>Media Content Demo</h2></amexio-header>
+              <amexio-header> Media Content Demo </amexio-header>
               <amexio-body>
                 <amexio-ee-content
                   [bgImgUrl]="'assets/images/narcos_main_header_img.jpg'"

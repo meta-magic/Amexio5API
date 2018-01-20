@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'card-image-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Card</h2>
+         Card 
       </amexio-header>
       <amexio-body>
         <p>A Simple Card which renders card based on title, body and actions user has configured</p>
@@ -22,7 +22,7 @@ import {Http} from "@angular/http";
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" style="height: 250px;width: 400px" alt="">
                     <br/>
                     <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
-                    <h4 class="card-title">Let your startup grow!</h4>
+                    <h4 class="card-title">Let your startup grow! 
                     <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
                   </amexio-body>
                   <amexio-action >
@@ -33,7 +33,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true" [footer]="false" [headeralign]="'center'">
                   <amexio-header>
-                    <h4>Hi, Amexio</h4>
+                     Hi, Amexio 
                   </amexio-header>
                   <amexio-body>
                     <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg"  style="height: 250px;width: 400px" alt="">

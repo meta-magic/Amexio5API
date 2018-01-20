@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
   selector: 'line-chart-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Line Chart</h2>
+         Line Chart 
       </amexio-header>
       <amexio-body>
         <p>A line chart that is rendered within the browser using SVG.</p>

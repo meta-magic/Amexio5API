@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'treedata-grid-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Tree Data Grid</h2>
+         Tree Data Grid 
       </amexio-header>
       <amexio-body>
         <p>Collapsible Data Grid Component displays data in expandable/collapsible rows.</p>
@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card [footer]="false" [header]="true">
-                  <amexio-header><h2>Tree Data Grid</h2></amexio-header>
+                  <amexio-header> Tree Data Grid </amexio-header>
                   <amexio-body>
                     <amexio-tree-data-table [http-method]="'get'"
                                             [http-url]="'assets/data/componentdata/treedatatable.json'" 

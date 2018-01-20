@@ -8,7 +8,7 @@ import {Http} from "@angular/http";
   selector: 'ee-carousel-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Multi EE Carousel</h2>
+         Multi EE Carousel 
       </amexio-header>
       <amexio-body>
         <p>A Awesome Multi Item Media Carousel, which comes preloaded with video playing and a full blown detailing page
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Horizontal Carousel</h4>
+                     Horizontal Carousel 
                   </amexio-header>
                   <amexio-body>
                     <br><br>
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Vertical Carousel</h4>
+                     Vertical Carousel 
                   </amexio-header>
                   <amexio-body>
                     <br><br>

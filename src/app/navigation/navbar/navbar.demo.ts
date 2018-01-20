@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'navbar-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Nav Bar</h2>
+         Nav Bar 
       </amexio-header>
       <amexio-body>
         <p>The Nav Bar Component is a familiar top navigation pattern for users.

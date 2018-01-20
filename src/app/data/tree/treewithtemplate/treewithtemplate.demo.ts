@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'tree-template-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Tree With template</h2>
+         Tree With template 
       </amexio-header>
       <amexio-body>
         <p>To define the detail template, nested ng-template tag inside the AmexioTreeComponent component. The template context is set to the current node.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Tree With template</h2>
+                     Tree With template 
                   </amexio-header>
                   <amexio-body>
                     <amexio-treeview [data-reader]="'data'"
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Selected Data</h2>
+                     Selected Data 
                   </amexio-header>
                   <amexio-body>
                     <pre><code>{{selectedData | json}}</code></pre>

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'typeahead-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Type Ahead</h2>
+         Type Ahead 
       </amexio-header>
       <amexio-body>
         <p>Type Ahead Component provides a power type ahead on the text field where
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true" footer="true">
                   <amexio-header>
-                    <h4>Simple TypeAhead Field</h4>
+                     Simple TypeAhead Field 
                   </amexio-header>
                   <amexio-body>
                     <amexio-typeahead [data-reader]="'data'"
@@ -34,7 +34,7 @@ import {Http} from "@angular/http";
 
                   </amexio-body>
                   <amexio-action>
-                    <h4>{{name}}</h4>
+                     {{name}} 
                   </amexio-action>
                 </amexio-card>
               </amexio-column>

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Accordion</h2>
+         Accordion 
       </amexio-header>
       <amexio-body>
         <p>Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs</p>

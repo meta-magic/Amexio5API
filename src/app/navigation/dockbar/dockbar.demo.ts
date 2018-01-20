@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'dockbar-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Dockbar</h2>
+         Dockbar 
       </amexio-header>
       <amexio-body>
         <p>The dockbar is a bar of tools and menus.</p>

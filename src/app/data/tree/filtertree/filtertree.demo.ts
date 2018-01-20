@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'tree-filter-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Filter Tree</h2>
+         Filter Tree 
       </amexio-header>
       <amexio-body>
         <p>A Expandable Tree Component for Angular, having Filtering functionality.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Filter Tree</h2>
+                     Filter Tree 
                   </amexio-header>
                   <amexio-body>
                     <amexio-tree-filter-view [data-reader]="'data'"
@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Selected Data</h2>
+                     Selected Data 
                   </amexio-header>
                   <amexio-body>
                     <pre><code>{{selectedData | json}}</code></pre>

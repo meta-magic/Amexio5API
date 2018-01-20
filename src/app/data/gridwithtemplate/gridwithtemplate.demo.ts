@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'grid-template-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Data Grid Template</h2>
+         Data Grid Template 
       </amexio-header>
       <amexio-body>
         <p>To define the detail template, nest an ng-template tag inside the AmexioColumn component. The template context is set to the current row.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Data Grid Template</h2>
+                     Data Grid Template 
                   </amexio-header>
                   <amexio-body>
                     <amexio-datagrid  title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/componentdata/gridtemplate.json'"

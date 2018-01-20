@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
   selector: 'datapoint', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Data Point</h2>
+         Data Point 
       </amexio-header>
       <amexio-body>
         <p>Represent the summary of the data in bullet point format.</p>

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'sidenavright-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Right Side Nav Bar</h2>
+         Right Side Nav Bar 
       </amexio-header>
       <amexio-body>
         <p>The Side Nav Bar Component is a familiar side navigation pattern for users.
@@ -21,7 +21,7 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card [header]="true">
-                  <amexio-header><h2>Right Side Nav</h2></amexio-header>
+                  <amexio-header> Right Side Nav </amexio-header>
                   <amexio-body>
                    <amexio-row>
                      <amexio-column size="12">

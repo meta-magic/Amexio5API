@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'paginator-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Paginator</h2>
+         Paginator 
       </amexio-header>
       <amexio-body>
         <p>Paginator is a generic widget to display content in paged format.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Paginator with page size 10</h2>
+                     Paginator with page size 10 
                   </amexio-header>
                   <amexio-body>
                     <amexio-paginator [pages]="50" 
@@ -36,7 +36,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Paginator with page size 5</h2>
+                     Paginator with page size 5 
                   </amexio-header>
                   <amexio-body>
                     <amexio-paginator [pages]="30"

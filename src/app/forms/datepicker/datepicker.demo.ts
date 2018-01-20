@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'datepicker-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Date Time Picker</h2>
+         Date Time Picker 
       </amexio-header>
       <amexio-body>
         <p>This component is flexible for both Date and time picker with all required configurations in Style.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h4>Date Picker</h4>
+                     Date Picker 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -34,7 +34,7 @@ import {Http} from "@angular/http";
                     </amexio-row>
                   </amexio-body>
                   <amexio-action>
-                    <h4>{{currentDate}}</h4>
+                     {{currentDate}} 
                   </amexio-action>
                 </amexio-card>
                
@@ -42,7 +42,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
                   <amexio-header>
-                    <h4>Time Picker</h4>
+                     Time Picker 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -58,7 +58,7 @@ import {Http} from "@angular/http";
                     </amexio-row>
                   </amexio-body>
                   <amexio-action>
-                    <h4>{{time}}</h4>
+                     {{time}} 
                   </amexio-action>
                 </amexio-card>
                

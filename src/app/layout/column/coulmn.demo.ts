@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'column-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Column</h2>
+         Column 
       </amexio-header>
       <amexio-body>
         <p>Amexio column system allows up to 12 columns across the page.</p>

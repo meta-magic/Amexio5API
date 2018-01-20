@@ -11,7 +11,7 @@ import {Http} from "@angular/http";
  template: `
    <amexio-card header="true">
      <amexio-header>
-       <h2>Carousel</h2>
+        Carousel 
      </amexio-header>
      <amexio-body>
        <p>The CarouselView displays a collection of images or other content in a horizontal layout with built-in navigation between the items.</p>

@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'horizontal-tree-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Horizontal Tree</h2>
+         Horizontal Tree 
       </amexio-header>
       <amexio-body>
         <p>A Horizontal Tree Component.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Horizontal Tree</h2>
+                     Horizontal Tree 
                   </amexio-header>
                   <amexio-body>
                     <amexio-horizontal-treeview [data-reader]="'data'"
@@ -36,7 +36,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Selected Data</h2>
+                     Selected Data 
                   </amexio-header>
                   <amexio-body>
                     <pre><code>{{selectedData | json}}</code></pre>

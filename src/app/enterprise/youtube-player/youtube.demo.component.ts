@@ -9,14 +9,14 @@ import {Http} from "@angular/http";
  template: `
    <amexio-card header="true">
      <amexio-header>
-       <h2>YouTube Video Player</h2>
+        YouTube Video Player 
      </amexio-header>
      <amexio-body>
        <p>A simple configurable of video player.</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
            <amexio-card enableheader="true">
-             <amexio-header><h2>Video player</h2></amexio-header>
+             <amexio-header> Video player </amexio-header>
              <amexio-body>
                <amexio-row>
                  <amexio-column size="12" style="height: 550px">

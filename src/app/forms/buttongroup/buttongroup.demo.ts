@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'buttongroup-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Button Group</h2>
+         Button Group 
       </amexio-header>
       <amexio-body>
         <p>Button groups are containers for related action amexio-button.
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Button Group Types</h2>
+                     Button Group Types 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -43,7 +43,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Button Group States</h2>
+                     Button Group States 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -63,7 +63,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Button Group with Icons</h2>
+                      Button Group with Icons 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -84,7 +84,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Button Group Sizes</h2>
+                      Button Group Sizes 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>

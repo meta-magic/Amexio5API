@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'progressbar-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Progress Bar</h2>
+         Progress Bar 
       </amexio-header>
       <amexio-body>
         <p>Progress Bar Component Provides up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars and easy to configure.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2>Progress Bar</h2>
+                     Progress Bar 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>

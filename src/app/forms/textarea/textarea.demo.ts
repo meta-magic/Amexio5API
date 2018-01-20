@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'textarea-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Text Area Input</h2>
+         Text Area Input 
       </amexio-header>
       <amexio-body>
         <p>TextArea input component has been created with different configurable attributes for validation (min/max value, allow blank, custom regex),
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Basic TextArea Input</h4>
+                     Basic TextArea Input 
                   </amexio-header>
                   <amexio-body>
                     <amexio-textarea-input [enable-popover]="true"  [field-label]="'Textarea Input'" name ="Address"
@@ -35,7 +35,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>TextArea Input with rows 7 and columns 4</h4>
+                     TextArea Input with rows 7 and columns 4 
                   </amexio-header>
                   <amexio-body>
                     <!--TextArea Input with rows 7 and columns 4-->

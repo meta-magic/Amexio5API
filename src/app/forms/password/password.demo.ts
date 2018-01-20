@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'password-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Password Input</h2>
+         Password Input 
       </amexio-header>
       <amexio-body>
         <p>Password input special component has been created, which masks user enter data to *. User can configure attributes for validation(min/max length, Allow Blank), 
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Basic Password Input</h4>
+                     Basic Password Input 
                   </amexio-header>
                   <amexio-body>
                     <amexio-password-input [enable-popover]="true"  [field-label]="'Password Input'" name ="password"
@@ -39,7 +39,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Password Input without Label</h4>
+                     Password Input without Label 
                   </amexio-header>
                   <amexio-body>
                     <amexio-password-input name ="password"

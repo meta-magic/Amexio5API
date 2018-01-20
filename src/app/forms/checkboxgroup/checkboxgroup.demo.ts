@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'checkboxgroup-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>CheckBox</h2>
+         CheckBox 
       </amexio-header>
       <amexio-body>
         <p>Checkbox input component has been created to render N numbers of check-box based on data-set configured.
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Horizontal Checkbox</h4>
+                     Horizontal Checkbox 
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
@@ -38,7 +38,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Vertical Checkbox With Http Url</h4>
+                     Vertical Checkbox With Http Url 
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox-group [field-label]="'Vertical Checkbox'" name="language"

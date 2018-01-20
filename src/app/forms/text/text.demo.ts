@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'text-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Text Input</h2>
+         Text Input 
       </amexio-header>
       <amexio-body>
         <p>Text input component has been created with different configurable attributes for validation (min/max length,
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Basic Text Field</h4>
+                     Basic Text Field 
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
@@ -33,7 +33,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Input Without Label and Icon feedback</h4>
+                     Input Without Label and Icon feedback 
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input name="name"
@@ -49,7 +49,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Min/Max Validations</h4>
+                     Min/Max Validations 
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input enable-popover="true" [enable-popover]="true" 
@@ -66,7 +66,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Disabled Text Field</h4>
+                     Disabled Text Field 
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input name="name"
@@ -82,7 +82,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Font Styling</h4>
+                     Font Styling 
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
@@ -96,7 +96,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Font Size & Family Styling</h4>
+                     Font Size & Family Styling 
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input [field-label]="'Name'" name="name"
@@ -112,7 +112,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h4>Input with Pattern</h4>
+                     Input with Pattern 
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input name="name" [field-label]="'Name'"

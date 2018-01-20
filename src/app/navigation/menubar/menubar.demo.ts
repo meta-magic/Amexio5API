@@ -9,14 +9,14 @@ import {Http} from "@angular/http";
   selector: 'menubar-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Menu Bar</h2>
+         Menu Bar 
       </amexio-header>
       <amexio-body>
         <p>Menu bar component show menu list on top.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-card [header]="true">
-              <amexio-header><h2>Menu bar</h2></amexio-header>
+              <amexio-header> Menu bar </amexio-header>
               <amexio-body>
                 <amexio-row>
                   <amexio-column [size]="12">

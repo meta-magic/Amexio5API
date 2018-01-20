@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'dropdownbasic', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Basic Dropdown</h2>
+         Basic Dropdown 
       </amexio-header>
       <amexio-body>
         <p>Drop-Down component has been created to render N numbers of drop-down items based on data-set configured.
@@ -22,7 +22,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    <h4>Dropdown Component</h4>
+                     Dropdown Component 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>

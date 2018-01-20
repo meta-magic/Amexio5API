@@ -9,7 +9,7 @@ import {Http} from "@angular/http";
   selector: 'button-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Button</h2>
+         Button 
       </amexio-header>
       <amexio-body>
         <p>A button component with various modes and configurations.</p>
@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
             <amexio-column [size]="12">
               <amexio-card [header]="true">
                 <amexio-header>
-                  <h2>Button Types </h2>
+                   Button Types  
                 </amexio-header>
                 <amexio-body>
                   <amexio-row>
@@ -48,7 +48,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Button States</h2>
+                      Button States 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -70,7 +70,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Button with Icons</h2>
+                      Button with Icons 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -92,7 +92,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                    <h2> Button Sizes</h2>
+                      Button Sizes 
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -114,7 +114,7 @@ import {Http} from "@angular/http";
               <!--<amexio-column [size]="12">-->
                 <!--<amexio-card [header]="true">-->
                   <!--<amexio-header>-->
-                    <!--<h2>  Block Button</h2>-->
+                    <!--   Block Button -->
                   <!--</amexio-header>-->
                   <!--<amexio-body>-->
                     <!--<amexio-row>-->

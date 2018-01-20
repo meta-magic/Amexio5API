@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
   selector: 'histogram-chart-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        <h2>Histogram Chart</h2>
+         Histogram Chart 
       </amexio-header>
       <amexio-body>
         <p>A histogram is a chart that groups numeric data into bins, displaying the bins as segmented columns.</p>
