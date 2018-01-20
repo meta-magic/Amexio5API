@@ -23,7 +23,7 @@ import {Http} from "@angular/http";
                     <h4>Basic Number Input</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-number-input [fieldlabel]="'Number Input'"
+                    <amexio-number-input [field-label]="'Number Input'"
                                          [placeholder]="'Enter Age'">
                     </amexio-number-input>
                   </amexio-body>
@@ -37,8 +37,8 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-number-input  
                                          [placeholder]="'Enter age'"
-                                         [iconfeedback]="false"
-                                         [haslabel]="false" [disabled]="true">
+                                         [icon-feedback]="false"
+                                         [has-label]="false" [disabled]="true">
                     </amexio-number-input>
                   </amexio-body>
                 </amexio-card>
@@ -51,9 +51,9 @@ import {Http} from "@angular/http";
                     <h4>Number Input Font Style</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-number-input [fieldlabel]="'Age'" 
+                    <amexio-number-input [field-label]="'Age'" 
                                         [placeholder]="'Enter Age'"
-                                        [fontstyle]="'italic'">
+                                        [font-style]="'italic'">
                     </amexio-number-input>
                   </amexio-body>
                 </amexio-card>
@@ -64,13 +64,13 @@ import {Http} from "@angular/http";
                     <h4>Number Input With Min/Max Validation</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-number-input  [enablepopover]="true" [fieldlabel]="'Age'" 
+                    <amexio-number-input  [enable-popover]="true" [field-label]="'Age'" 
                                           [placeholder]="'Enter age'"
-                                          [allowblank]="false" [errormsg] ="'Please enter age'"
-                                          [minvalue]="1"
-                                          [minerrormsg]="'age can not be less than 1'"
-                                          [maxvalue]="100"  [maxerrormsg]="'age can not be greater than 100'"
-                                          [iconfeedback]="true"
+                                          [allow-blank]="false" [error-msg] ="'Please enter age'"
+                                          [min-value]="1"
+                                          [min-error-msg]="'age can not be less than 1'"
+                                          [max-value]="100"  [max-error-msg]="'age can not be greater than 100'"
+                                          [icon-feedback]="true"
                     >
                     </amexio-number-input>
                   </amexio-body>
@@ -79,27 +79,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/number.json'" 
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false" >
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/number.json'" 
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpmethod]="'get'" 
-                             [httpurl]="'assets/apireference/forms/number.json'" [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [http-method]="'get'" 
+                             [http-url]="'assets/apireference/forms/number.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             

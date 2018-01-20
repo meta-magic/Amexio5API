@@ -19,7 +19,7 @@
       "description":"Total Number of records."
     },
     {
-      "name": "currentvalue",
+      "name": "current-value",
       "type": "number",
       "default": "",
       "description":"Current Position of progress."

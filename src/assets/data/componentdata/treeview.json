@@ -49,8 +49,8 @@
             "expanded" : false,
             "children":[],
             "lazy":{
-              "httpurl":"data/treeview.json",
-              "httpmethod": "get"
+              "http-url":"data/treeview.json",
+              "http-method": "get"
             }
           }
         ]

@@ -23,9 +23,9 @@ import {Http} from "@angular/http";
                     <h4>Basic Text Field</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input fieldlabel="Name" name="name"
+                    <amexio-text-input field-label="Name" name="name"
                                        placeholder="Enter name"
-                                       iconfeedback="true" 
+                                       icon-feedback="true" 
                     ></amexio-text-input>
                   </amexio-body>
                 </amexio-card>
@@ -38,8 +38,8 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-text-input name="name"
                                        placeholder="Enter name"
-                                       iconfeedback="false"
-                                       haslabel="false"
+                                       icon-feedback="false"
+                                       has-label="false"
                     ></amexio-text-input>
                   </amexio-body>
                 </amexio-card>
@@ -52,13 +52,13 @@ import {Http} from "@angular/http";
                     <h4>Min/Max Validations</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input enablepopover="true" [enablepopover]="true" 
-                                       fieldlabel="Name" name="name"
+                    <amexio-text-input enable-popover="true" [enable-popover]="true" 
+                                       field-label="Name" name="name"
                                        placeholder="Enter name"
-                                       allowblank="false" errormsg="Please enter last name"
-                                       minlength="1" minerrormsg="Minimum 1 char required"
-                                       maxlength="10" maxerrormsg="Maximum 10 char allowed"
-                                       iconfeedback="true"
+                                       allow-blank="false" error-msg="Please enter last name"
+                                       min-length="1" minerror-msg="Minimum 1 char required"
+                                       max-length="10" max-error-msg="Maximum 10 char allowed"
+                                       icon-feedback="true"
                     ></amexio-text-input>
                   </amexio-body>
                 </amexio-card>
@@ -70,7 +70,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input name="name"
-                                       fieldlabel="Name"
+                                       field-label="Name"
                                        placeholder="Enter name"
                                        disabled="true"
                     ></amexio-text-input>
@@ -85,10 +85,10 @@ import {Http} from "@angular/http";
                     <h4>Font Styling</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input fieldlabel="Name" name="name"
+                    <amexio-text-input field-label="Name" name="name"
                                        placeholder="Enter name"
-                                       iconfeedback="true"
-                                       fontstyle="italic"
+                                       icon-feedback="true"
+                                       font-style="italic"
                     ></amexio-text-input>
                   </amexio-body>
                 </amexio-card>
@@ -99,10 +99,10 @@ import {Http} from "@angular/http";
                     <h4>Font Size & Family Styling</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input [fieldlabel]="'Name'" name="name"
+                    <amexio-text-input [field-label]="'Name'" name="name"
                                        [placeholder]="'Enter name'"
-                                       [iconfeedback]="true"
-                                       [fontsize]="'large'"
+                                       [icon-feedback]="true"
+                                       [font-size]="'large'"
                     ></amexio-text-input>
                   </amexio-body>
                 </amexio-card>
@@ -115,10 +115,10 @@ import {Http} from "@angular/http";
                     <h4>Input with Pattern</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-text-input name="name" [fieldlabel]="'Name'"
+                    <amexio-text-input name="name" [field-label]="'Name'"
                                        [placeholder]="'Enter name'"
                                        [pattern]="'[a-z]'"
-                                       [iconfeedback]="true"
+                                       [icon-feedback]="true"
                     ></amexio-text-input>
                   </amexio-body>
                 </amexio-card>
@@ -126,27 +126,27 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference"> 
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/textinput.json'" 
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false" >
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/textinput.json'" 
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpmethod]="'get'" 
-                             [httpurl]="'assets/apireference/forms/textinput.json'" [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [http-method]="'get'" 
+                             [http-url]="'assets/apireference/forms/textinput.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             

@@ -3,11 +3,11 @@
                  [placeholder]="'Choose'"
                  name="countryCode1"
                  [search]="true"
-                 [datareader]="'data'"
-                 [fieldlabel]="'Choose Country'"
-                 [httpurl]="'assets/data/componentdata/country.json'"
-                 [httpmethod]="'get'"
-                 [displayfield]="'countryName'"
-                 [valuefield]="'countryCode1'"
+                 [data-reader]="'data'"
+                 [field-label]="'Choose Country'"
+                 [http-url]="'assets/data/componentdata/country.json'"
+                 [http-method]="'get'"
+                 [display-field]="'countryName'"
+                 [value-field]="'countryCode1'"
                  (onSingleSelect)="getSingleVal($event)">
 </amexio-dropdown>

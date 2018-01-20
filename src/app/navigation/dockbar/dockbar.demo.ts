@@ -21,21 +21,21 @@ import {Http} from "@angular/http";
                                    [title]="'Features'"
                                    [width]="'350px'">
                 <amexio-side-nav
-                  [httpurl]="'assets/data/componentdata/sidenav.json'"
-                  [httpmethod]="'get'"
-                  [datareader]="'data'"
+                  [http-url]="'assets/data/componentdata/sidenav.json'"
+                  [http-method]="'get'"
+                  [data-reader]="'data'"
                   [width]="'275px'"
                   [position]="'relative'">
                 </amexio-side-nav>
               </amexio-dockbar-item>
               <amexio-dockbar-item [icon]="'fa fa-address-book fa-fw'" [title]="'Contacts'"
                                    [width]="'350px'">
-                <amexio-listbox [header]="'Contacts'" [searchplaceholder]="'Search Contacts'"
-                                [httpurl]="'assets/data/componentdata/profiledata.json'"
-                                [httpmethod]="'get'"
+                <amexio-listbox [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
+                                [http-url]="'assets/data/componentdata/profiledata.json'"
+                                [http-method]="'get'"
                                 [filter]="false"
-                                [enablecheckbox]="false" [datareader]="'response.data'"
-                                [displayfield]="'name'">
+                                [enable-checkbox]="false" [data-reader]="'response.data'"
+                                [display-field]="'name'">
                   <ng-template #amexioBodyTmpl let-row="row">
                     <amexio-row>
                       <amexio-column [size]="12">
@@ -53,33 +53,33 @@ import {Http} from "@angular/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Propeties : amexio-dockbar" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/navigation/dockbar.json'"
-                             [datareader]="'dockbarproperties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Propeties : amexio-dockbar" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/navigation/dockbar.json'"
+                             [data-reader]="'dockbarproperties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Propeties : amexio-dockbar-item" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/navigation/dockbar.json'"
-                             [datareader]="'dockbaritemproperties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Propeties : amexio-dockbar-item" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/navigation/dockbar.json'"
+                             [data-reader]="'dockbaritemproperties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

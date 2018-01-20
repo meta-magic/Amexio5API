@@ -33,13 +33,13 @@
       "description": "Color of chart title."
     },
     {
-      "name": "fontname",
+      "name": "font-name",
       "type": "string",
       "default": "",
       "description": "Font name of chart title."
     },
     {
-      "name": "fontsize",
+      "name": "font-size",
       "type": "number",
       "default": "",
       "description": "Font size of chart title."

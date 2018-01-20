@@ -1,28 +1,28 @@
 <!--Basic Number Input-->
-<amexio-number-input [fieldlabel]="'Number Input'"
+<amexio-number-input [field-label]="'Number Input'"
                      [placeholder]="'Enter Age'">
 </amexio-number-input>
 
 <!--Number Input With Disable-->
 <amexio-number-input
   [placeholder]="'Enter age'"
-  [iconfeedback]="false"
-  [haslabel]="false" [disabled]="true">
+  [icon-feedback]="false"
+  [has-label]="false" [disabled]="true">
 </amexio-number-input>
 
 <!--Number Input Font Style-->
-<amexio-number-input [fieldlabel]="'Age'"
+<amexio-number-input [field-label]="'Age'"
                      [placeholder]="'Enter Age'"
-                     [fontstyle]="'italic'">
+                     [font-style]="'italic'">
 </amexio-number-input>
 
 <!--Number Input With Min/Max Validation-->
 
-<amexio-number-input  [enablepopover]="true" [fieldlabel]="'Age'"
+<amexio-number-input  [enable-popover]="true" [field-label]="'Age'"
                       [placeholder]="'Enter age'"
-                      [allowblank]="false" [errormsg] ="'Please enter age'"
-                      [minvalue]="1"
-                      [minerrormsg]="'age can not be less than 1'"
-                      [maxvalue]="100"  [maxerrormsg]="'age can not be greater than 100'"
-                      [iconfeedback]="true">
+                      [allow-blank]="false" [error-msg] ="'Please enter age'"
+                      [min-value]="1"
+                      [min-error-msg]="'age can not be less than 1'"
+                      [max-value]="100"  [max-error-msg]="'age can not be greater than 100'"
+                      [icon-feedback]="true">
 </amexio-number-input>

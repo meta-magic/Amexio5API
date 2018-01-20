@@ -36,12 +36,12 @@
       "default": "",
       "description":"Color of chart title."
     },{
-      "name": "fontname",
+      "name": "font-name",
       "type": "string",
       "default": "",
       "description":"Font name of chart title."
     },{
-      "name": "fontsize",
+      "name": "font-size",
       "type": "number",
       "default": "",
       "description":"Font size of chart title."
@@ -75,12 +75,12 @@
       "default": "",
       "description":"Color of chart legend. for example: 'red' or '#00cc00'."
     }, {
-      "name": "fontname",
+      "name": "font-name",
       "type": "string",
       "default": "",
       "description":"Font name of chart legend."
     },{
-      "name": "fontsize",
+      "name": "font-size",
       "type": "number",
       "default": "",
       "description":"Font size of chart legend."
@@ -90,7 +90,7 @@
       "default": "false",
       "description":"Set true for legend text in bold font."
     },{
-      "name": "maxlines",
+      "name": "max-lines",
       "type": "number",
       "default": "",
       "description":"Maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend."

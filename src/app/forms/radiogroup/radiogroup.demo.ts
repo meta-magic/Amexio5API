@@ -23,10 +23,10 @@ import {Http} from "@angular/http";
                     <h4>Horizontal Radio Group</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-radio-group [fieldlabel]="'Horizontal Radio Group'" name ="gender"
-                                        [datareader]="'response.data'"
-                                        [displayfield]="'gender'"
-                                        [valuefield]="'genderId'"
+                    <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gender"
+                                        [data-reader]="'response.data'"
+                                        [display-field]="'gender'"
+                                        [value-field]="'genderId'"
                                         [horizontal]="true"
                                         [data]="radioGroupData"
                                         (onSelection)="setSelectedGender($event)">
@@ -40,12 +40,12 @@ import {Http} from "@angular/http";
                     <h4>Vertical Radio Group With Http Url</h4>
                   </amexio-header>
                   <amexio-body>
-                    <amexio-radio-group [fieldlabel]="'Vertical RadioGroup'" name ="gender"
-                                        [datareader]="'data'"
-                                        [displayfield]="'gender'"
-                                        [valuefield]="'genderId'"
-                                        [httpmethod]="'get'"
-                                        [httpurl]="'assets/data/componentdata/radiogroup.json'"
+                    <amexio-radio-group [field-label]="'Vertical RadioGroup'" name ="gender"
+                                        [data-reader]="'data'"
+                                        [display-field]="'gender'"
+                                        [value-field]="'genderId'"
+                                        [http-method]="'get'"
+                                        [http-url]="'assets/data/componentdata/radiogroup.json'"
                                         (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
                   </amexio-body>
@@ -55,27 +55,27 @@ import {Http} from "@angular/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/radiogroup.json'"
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/radiogroup.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/forms/radiogroup.json'" [datareader]="'events'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [width]="20"[dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Events" [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/radiogroup.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 

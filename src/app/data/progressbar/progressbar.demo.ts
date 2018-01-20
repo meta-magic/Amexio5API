@@ -25,61 +25,61 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <h3>Primary</h3>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'50'" [infinite]="false" type="primary"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'50'" [infinite]="false" type="primary"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'80'" [infinite]="false" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'80'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'100'" [infinite]="false" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'100'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
                     <amexio-row>
                       <h3>Warning</h3>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'30'" [infinite]="false" type="warning"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'30'" [infinite]="false" type="warning"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'55'" [infinite]="false" type="warning"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'55'" [infinite]="false" type="warning"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'95'" [infinite]="false" type="warning"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'95'" [infinite]="false" type="warning"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
                     <amexio-row>
                       <h3>Success</h3>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'45'" [infinite]="false" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'45'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'63'" [infinite]="false" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'63'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'99'" [infinite]="false" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'99'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
                     <amexio-row>
                       <h3>Danger</h3>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'54'" [infinite]="false" type="danger"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'54'" [infinite]="false" type="danger"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'32'" [infinite]="false" type="danger"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'32'" [infinite]="false" type="danger"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'85'" [infinite]="false" type="danger"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'85'" [infinite]="false" type="danger"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
                     <amexio-row>
                       <h3>Infinite</h3>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'54'" [infinite]="true" type="danger"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'54'" [infinite]="true" type="danger"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'32'" [infinite]="true" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'32'" [infinite]="true" type="success"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [currentvalue]="'85'" [infinite]="true" type="warning"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'85'" [infinite]="true" type="warning"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
@@ -89,18 +89,18 @@ import {Http} from "@angular/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enablecolumnfiter]="false"
-                             [httpmethod]="'get'"
-                             [httpurl]="'assets/apireference/data/progressbar.json'"
-                             [datareader]="'properties'"
-                             [enabledatafilter]="false">
-              <amexio-data-table-column [dataindex]="'name'" [width]="15" [datatype]="'string'" [hidden]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/data/progressbar.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'type'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'default'" [width]="10" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [dataindex]="'description'" [width]="65" [datatype]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>

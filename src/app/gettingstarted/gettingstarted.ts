@@ -103,15 +103,15 @@ import {SharedModule} from "../shared.module";
           <amexio-card header="true">
             <amexio-header><h2>Modules</h2></amexio-header>
             <amexio-body>
-              <amexio-datagrid title="" [enablecolumnfiter]="false"
-                               [httpmethod]="'get'"
-                               [httpurl]="'assets/apireference/modules/modules.json'"
-                               [datareader]="'properties'"
-                               [enabledatafilter]="false" >
-                <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+              <amexio-datagrid title="" [enable-column-fiter]="false"
+                               [http-method]="'get'"
+                               [http-url]="'assets/apireference/modules/modules.json'"
+                               [data-reader]="'properties'"
+                               [enable-data-filter]="false" >
+                <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                           [text]="'Module Name'">
                 </amexio-data-table-column>
-                <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+                <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                           [text]="'Description'"></amexio-data-table-column>
               </amexio-datagrid>
             </amexio-body>
@@ -128,16 +128,16 @@ import {SharedModule} from "../shared.module";
               <p>Or refer the below table for other themes provided.</p>
               <amexio-row>
                 <amexio-column size="12">
-                  <amexio-datagrid title="Amexio Material Themes" [enablecolumnfiter]="false"
+                  <amexio-datagrid title="Amexio Material Themes" [enable-column-fiter]="false"
                                    [height]="300"
-                                   [httpmethod]="'get'"
-                                   [httpurl]="'assets/apireference/modules/themes.json'"
-                                   [datareader]="'properties'"
-                                   [enabledatafilter]="false" >
-                    <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+                                   [http-method]="'get'"
+                                   [http-url]="'assets/apireference/modules/themes.json'"
+                                   [data-reader]="'properties'"
+                                   [enable-data-filter]="false" >
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                               [text]="'Theme Name'">
                     </amexio-data-table-column>
-                    <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                               [text]="'Path'"></amexio-data-table-column>
                   </amexio-datagrid>
                 </amexio-column>
@@ -145,16 +145,16 @@ import {SharedModule} from "../shared.module";
               
               <amexio-row>
                 <amexio-column size="12">
-                  <amexio-datagrid title="Amexio Themes" [enablecolumnfiter]="false"
+                  <amexio-datagrid title="Amexio Themes" [enable-column-fiter]="false"
                                    [height]="300"
-                                   [httpmethod]="'get'"
-                                   [httpurl]="'assets/apireference/modules/amx_themes.json'"
-                                   [datareader]="'properties'"
-                                   [enabledatafilter]="false" >
-                    <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+                                   [http-method]="'get'"
+                                   [http-url]="'assets/apireference/modules/amx_themes.json'"
+                                   [data-reader]="'properties'"
+                                   [enable-data-filter]="false" >
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                               [text]="'Theme Name'">
                     </amexio-data-table-column>
-                    <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                               [text]="'Path'"></amexio-data-table-column>
                   </amexio-datagrid>
                 </amexio-column>

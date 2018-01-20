@@ -31,12 +31,12 @@
       "default": "",
       "description":"Color of chart title."
     },{
-      "name": "fontname",
+      "name": "font-name",
       "type": "string",
       "default": "",
       "description":"Font name of chart title."
     },{
-      "name": "fontsize",
+      "name": "font-size",
       "type": "number",
       "default": "",
       "description":"Font size of chart title."
@@ -58,7 +58,7 @@
     "default": "",
     "description":"Title of the chart for the horizontal axis."
   },{
-    "name": "titlecolor",
+    "name": "title-color",
     "type": "string",
     "default": "",
     "description":"The color of the chart for the horizontal axis."
@@ -69,7 +69,7 @@
     "default": "",
     "description":"Title of the chart for the Vertical axis."
   },{
-    "name": "titlecolor",
+    "name": "title-color",
     "type": "string",
     "default": "",
     "description":"The color of the chart for the Vertical axis."

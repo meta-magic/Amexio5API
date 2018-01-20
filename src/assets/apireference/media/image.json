@@ -13,10 +13,10 @@
       "description": "TooltipMessage on image / icon."
     },
     {
-      "name": "iconclass",
+      "name": "icon-class",
       "type": "string",
       "default": "",
-      "description": "Material icon class name.Material Example:iconclass='material-icons' mdb='cloud' Fontawesome Example:iconclass='fa fa-address-book fa-lg'"
+      "description": "Material icon class name.Material Example:icon-class='material-icons' mdb='cloud' Fontawesome Example:icon-class='fa fa-address-book fa-lg'"
     },
     {
       "name": "mdb",

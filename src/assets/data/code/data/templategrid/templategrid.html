@@ -1,11 +1,11 @@
 <!--data grid with template-->
 
 <amexio-datagrid  title="Country Grid"
-                  [httpmethod]="'get'" [httpurl]="'assets/data/componentdata/gridtemplate.json'"
-                  [datareader]="'data'"  [pagesize] = "10"
-                  [enabledatafilter]="false" (rowSelect)="getRowData($event)">
-  <amexio-data-table-column [width]="50" [dataindex]="'name_official'"
-                            [datatype]="'string'" [hidden]="false"
+                  [http-method]="'get'" [http-url]="'assets/data/componentdata/gridtemplate.json'"
+                  [data-reader]="'data'"  [page-size] = "10"
+                  [enable-data-filter]="false" (rowSelect)="getRowData($event)">
+  <amexio-data-table-column [width]="50" [data-index]="'name_official'"
+                            [data-type]="'string'" [hidden]="false"
                             [text]="'Name'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
       <span>
@@ -13,12 +13,12 @@
       </span>
     </ng-template>
   </amexio-data-table-column>
-  <amexio-data-table-column [width]="20" [dataindex]="'latitude'"
-                            [datatype]="'string'" [hidden]="false"
+  <amexio-data-table-column [width]="20" [data-index]="'latitude'"
+                            [data-type]="'string'" [hidden]="false"
                             [text]="'Latitude'">
   </amexio-data-table-column>
-  <amexio-data-table-column [width]="20" [dataindex]="'longitude'"
-                            [datatype]="'number'" [hidden]="false"
+  <amexio-data-table-column [width]="20" [data-index]="'longitude'"
+                            [data-type]="'number'" [hidden]="false"
                             [text]="'Longitude'">
   </amexio-data-table-column>
 </amexio-datagrid>

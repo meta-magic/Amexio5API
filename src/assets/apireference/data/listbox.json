@@ -1,13 +1,13 @@
 {
   "properties": [
     {
-      "name": "httpurl",
+      "name": "http-url",
       "type": "string",
       "default": "",
       "description":"REST url for fetching data."
     },
     {
-      "name": "httpmethod",
+      "name": "http-method",
       "type": "string",
       "default": "",
       "description":"Type of HTTP call, POST,GET etc."
@@ -19,14 +19,14 @@
       "description":"Local Data binding."
     },
     {
-      "name": "datareader",
+      "name": "data-reader",
       "type": "string",
       "default": "",
       "description":"Key in JSON Datasource for records."
     },
 
     {
-      "name": "displayfield",
+      "name": "display-field",
       "type": "string",
       "default": "",
       "description":"Key in JSON for display particular column from data."
@@ -44,13 +44,13 @@
       "description":"Heading for ListBox."
     },
     {
-      "name": "enablecheckbox",
+      "name": "enable-checkbox",
       "type": "boolean",
       "default": "false",
       "description":"Enables checkbox for each row, this allows user for multi selection."
     },
     {
-      "name": "searchplaceholder",
+      "name": "search-placeholder",
       "type": "string",
       "default": "",
       "description":"placeholder for searchbox."
@@ -59,7 +59,7 @@
       "name": "filter",
       "type": "boolean",
       "default": "false",
-      "description":"Enables user to filter data based on 'displayfield' configured."
+      "description":"Enables user to filter data based on 'display-field' configured."
     }
   ],
   "events":[

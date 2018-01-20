@@ -32,18 +32,18 @@ import {Http} from "@angular/http";
            </amexio-card>
          </amexio-tab>
          <amexio-tab title="API Reference">
-           <amexio-datagrid title="Propeties" [enablecolumnfiter]="false"
-                            [httpmethod]="'get'"
-                            [httpurl]="'assets/apireference/enterprise/videoplayer.json'"
-                            [datareader]="'properties'"
-                            [enabledatafilter]="false">
-             <amexio-data-table-column [width]="15" [dataindex]="'name'" [datatype]="'string'" [hidden]="false"
+           <amexio-datagrid title="Propeties" [enable-column-fiter]="false"
+                            [http-method]="'get'"
+                            [http-url]="'assets/apireference/enterprise/videoplayer.json'"
+                            [data-reader]="'properties'"
+                            [enable-data-filter]="false">
+             <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                        [text]="'Name'"></amexio-data-table-column>
-             <amexio-data-table-column [width]="10" [dataindex]="'type'" [datatype]="'string'" [hidden]="false"
+             <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                        [text]="'Type'"></amexio-data-table-column>
-             <amexio-data-table-column [width]="10" [dataindex]="'default'" [datatype]="'string'" [hidden]="false"
+             <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                        [text]="'Default'"></amexio-data-table-column>
-             <amexio-data-table-column [width]="65" [dataindex]="'description'" [datatype]="'string'" [hidden]="false"
+             <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                        [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 

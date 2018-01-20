@@ -9,9 +9,9 @@ export class ColumnChartDemoComponent implements OnInit {
   columnChartData:any;
   constructor() {
     this.columnStackChartData=[
-      [{"datatype":'timeofday',"label":'Time of Day'},
-        {"datatype":"number", "label":'Motivation Level'},
-        {"datatype":"number","label":"Energy Level"}
+      [{"data-type":'timeofday',"label":'Time of Day'},
+        {"data-type":"number", "label":'Motivation Level'},
+        {"data-type":"number","label":"Energy Level"}
       ],
       [{v: [8, 0, 0], f: '8 am'}, 1, .25],
       [{v: [9, 0, 0], f: '9 am'}, 2, .5],
@@ -25,8 +25,8 @@ export class ColumnChartDemoComponent implements OnInit {
       [{v: [17, 0, 0], f: '5 pm'}, 10, 10],
     ];
     this.columnChartData = [
-      [{"datatype":'timeofday',"label":'Time of Day'},
-        {"datatype":"number", "label":'Motivation Level'}
+      [{"data-type":'timeofday',"label":'Time of Day'},
+        {"data-type":"number", "label":'Motivation Level'}
       ],
       [{v: [8, 0, 0], f: '8 am'}, 1],
       [{v: [9, 0, 0], f: '9 am'}, 2],

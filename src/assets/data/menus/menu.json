@@ -204,7 +204,7 @@
               "link": "groupby-grid"
             },
             {
-              "text": "Custom Column Size",
+              "text": "Column Sizing",
               "icon": "fa fa-database fa-fw",
               "link": "custom-col-grid"
             },
@@ -432,7 +432,7 @@
           "link": "candlestick-chart-demo"
         },
         {
-          "text": "Candlestick Waterfall charts",
+          "text": "Candlestick Waterfall",
           "icon": "fa fa-tint fa-fw",
           "link": "candlestickwaterfall-chart-demo"
         },
