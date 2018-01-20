@@ -124,7 +124,7 @@ import {SharedModule} from "../shared.module";
           <amexio-card header="true">
             <amexio-header><h2>Themes</h2></amexio-header>
             <amexio-body>
-              <span>To use the default theme import the <pre><code>../node_module/amexio-ng-extensions/styles/mda/mda-blue.scss</code></pre>in your app styles.scss</span>
+              <span>To use the default theme import the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app styles.scss</span>
               <p>Or refer the below table for other themes provided.</p>
               <amexio-row>
                 <amexio-column size="12">
