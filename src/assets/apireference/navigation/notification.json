@@ -16,13 +16,13 @@
       "name": "verticalposition",
       "type": "string",
       "default": "",
-      "description": "Vertical position of notification.Example:top,bottom."
+      "description": "Vertical position of notification.Example:top,center,bottom."
     },
     {
       "name": "horizontalposition",
       "type": "string",
       "default": "",
-      "description": "Horizontal position of notification.Example:right,left."
+      "description": "Horizontal position of notification.Example:right,center,left."
     }, {
       "name": "autodismissmsg",
       "type": "boolean",

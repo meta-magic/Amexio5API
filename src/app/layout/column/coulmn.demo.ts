@@ -9,142 +9,104 @@ import {Http} from "@angular/http";
   selector: 'column-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Column 
+        Column
       </amexio-header>
       <amexio-body>
         <p>Amexio column system allows up to 12 columns across the page.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
+            
             <amexio-row>
-              <amexio-column size="1">
+              <amexio-column size="2">
                 <amexio-card>
-                  <amexio-body>
-                    SPAN 1
+                  <amexio-body>COL 2
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column size="2">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 1
+                    COL 2
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="3">
+              <amexio-column size="2">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 1
+                    COL 2
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="4">
+              <amexio-column size="2">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 1
+                    COL 2
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="5">
+              <amexio-column size="2">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 1
+                    COL 2
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="6">
+              <amexio-column size="2">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 1
+                    COL 2
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="7">
-                <amexio-card>
-                  <amexio-body>
-                    SPAN 1
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="8">
-                <amexio-card>
-                  <amexio-body>
-                    SPAN 1
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="9">
-                <amexio-card>
-                  <amexio-body>
-                    SPAN 1
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="10">
-                <amexio-card>
-                  <amexio-body>
-                    SPAN 1
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="11">
-                <amexio-card>
-                  <amexio-body>
-                    SPAN 1
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="12">
-                <amexio-card>
-                  <amexio-body>
-                    SPAN 1
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
+
             </amexio-row>
+            
             <amexio-row>
               <amexio-column size="4">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 4
+                    COL 4
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column size="4">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 4
+                    COL 4
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column size="4">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 4
+                    COL 4
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
+            
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 6
+                    COL 6
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column size="6">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 6
+                    COL 6
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
+            
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card>
                   <amexio-body>
-                    SPAN 12
+                    COL 12
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -162,7 +124,8 @@ import {Http} from "@angular/http";
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                        [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
