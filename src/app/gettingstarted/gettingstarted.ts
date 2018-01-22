@@ -18,7 +18,7 @@ import {SharedModule} from "../shared.module";
         <br>
         <a href="http://www.amexio.tech/"><img src="https://image.ibb.co/kdy6Ev/logo.png" alt="Amexio" width="200"></a>
         <br>
-        Amexio Angular EXtensions v4.0
+        Amexio Angular EXtensions v4.0 beta
         <br>
         <br>
         <img src="assets/images/npm.svg"/>
