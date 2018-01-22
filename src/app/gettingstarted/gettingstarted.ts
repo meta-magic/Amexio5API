@@ -18,11 +18,11 @@ import {SharedModule} from "../shared.module";
         <br>
         <a href="http://www.amexio.tech/"><img src="https://image.ibb.co/kdy6Ev/logo.png" alt="Amexio" width="200"></a>
         <br>
-        Amexio Angular EXtensions V4.0
+        Amexio Angular EXtensions v4.0
         <br>
         <br>
         <img src="assets/images/npm.svg"/>
-        <img src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=3.2.2&x2=0"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
+        <img src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=4.0.0&x2=0"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
       </h1>
 
       <hr>
