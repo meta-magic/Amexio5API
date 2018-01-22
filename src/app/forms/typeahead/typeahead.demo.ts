@@ -18,24 +18,22 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card header="true" footer="true">
+                <amexio-card header="true">
                   <amexio-header>
-                     Simple TypeAhead Field 
+                     Simple Type Ahead Field 
                   </amexio-header>
                   <amexio-body>
                     <amexio-typeahead [data-reader]="'data'"
-                                      [key]="'sportName'"
-                                      [display-field]="'sportName'"
+                                      [key]="'countryCode1'"
+                                      [display-field]="'countryName'"
                                       [placeholder]="'Search'"
-                                      [http-url]="'assets/data/componentdata/typeahead.json'"
+                                      [http-url]="'assets/data/componentdata/country.json'"
                                       [http-method]="'get'"
-                                      [field-label]="'Sport Name'">
+                                      [field-label]="'Country Name'"
+                    >
                     </amexio-typeahead>
 
                   </amexio-body>
-                  <amexio-action>
-                     {{name}} 
-                  </amexio-action>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
@@ -138,7 +136,7 @@ export class TypeAheadDemo {
       this.typeScriptCode = responseTs;
     });
     //JSON FILE
-    this.http.get('assets/data/componentdata/typeahead.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
       responseData = data.text();
     }, error => {
     }, () => {
@@ -148,6 +146,9 @@ export class TypeAheadDemo {
 
   }
 
+  onTypeheadClick(data:any){
+    this.name=data.name;
+  }
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {

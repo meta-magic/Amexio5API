@@ -15,24 +15,41 @@ import {Http} from "@angular/http";
        <p>A border layout lays out a container, arranging and resizing its components to fit in five regions: north, south, east, west, and center.</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
-            Border Layout 
-           <amexio-borderlayout>
-             <amexio-borderlayout-item position="north">
-               <amexio-card><amexio-body>NORTH</amexio-body></amexio-card>
-             </amexio-borderlayout-item>
-             <amexio-borderlayout-item position="east">
-               <amexio-card><amexio-body>EAST</amexio-body></amexio-card>
-             </amexio-borderlayout-item>
-             <amexio-borderlayout-item position="center">
-               <amexio-card><amexio-body>CENTER</amexio-body></amexio-card>
-             </amexio-borderlayout-item>
-             <amexio-borderlayout-item position="west">
-               <amexio-card><amexio-body>WEST</amexio-body></amexio-card>
-             </amexio-borderlayout-item>
-             <amexio-borderlayout-item position="south">
-               <amexio-card><amexio-body>SOUTH</amexio-body></amexio-card>
-             </amexio-borderlayout-item>
-           </amexio-borderlayout>
+           <amexio-card header="true">
+             <amexio-header> Border Layout</amexio-header>
+             <amexio-body>
+               <amexio-borderlayout>
+                 <amexio-borderlayout-item position="north">
+                   <amexio-card><amexio-body>  <div class ="div-padding-layout" >
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div></amexio-body></amexio-card>
+                 </amexio-borderlayout-item>
+                 <amexio-borderlayout-item position="east">
+                   <amexio-card><amexio-body>  <div class ="div-padding-layout">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div></amexio-body></amexio-card>
+                 </amexio-borderlayout-item>
+                 <amexio-borderlayout-item position="center">
+                   <amexio-card><amexio-body>  <div class ="div-padding-layout">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                   </div></amexio-body></amexio-card>
+                 </amexio-borderlayout-item>
+                 <amexio-borderlayout-item position="west">
+                   <amexio-card><amexio-body>  <div class ="div-padding-layout">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div></amexio-body></amexio-card>
+                 </amexio-borderlayout-item>
+                 <amexio-borderlayout-item position="south">
+                   <amexio-card><amexio-body>  <div class ="div-padding-layout">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   </div></amexio-body></amexio-card>
+                 </amexio-borderlayout-item>
+               </amexio-borderlayout>
+             </amexio-body>
+           </amexio-card>
+          
          </amexio-tab>
          <amexio-tab title="API Reference">
            <amexio-datagrid title="Properties" [enable-column-fiter]="false"

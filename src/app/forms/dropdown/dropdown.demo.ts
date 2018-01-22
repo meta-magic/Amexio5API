@@ -44,7 +44,10 @@ import {Http} from "@angular/http";
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card>
+                <amexio-card header="true">
+                  <amexio-header>
+                    Selected Record Data
+                  </amexio-header>
                   <amexio-body>
                   <ng-container *ngIf="sportName">
                     {{sportName}}
