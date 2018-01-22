@@ -9,18 +9,65 @@ import {Http} from "@angular/http";
   selector: 'row-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Row 
+        Row
       </amexio-header>
       <amexio-body>
         <p>Amexio uses a series of rows and columns to layout and align content and is fully responsive.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-            <amexio-row>
-              <amexio-column size="4"><amexio-card><amexio-body>SPAN 3</amexio-body></amexio-card></amexio-column>
-              <amexio-column size="4"><amexio-card><amexio-body>SPAN 3</amexio-body></amexio-card></amexio-column>
-              <amexio-column size="4"><amexio-card><amexio-body>SPAN 3</amexio-body></amexio-card></amexio-column>
-            </amexio-row>
-           </amexio-tab>
+            <amexio-card header="true">
+              <amexio-header>1 Row 3 Column</amexio-header>
+              <amexio-body>
+                <amexio-row>
+                  <amexio-column size="4">
+                    <amexio-card>
+                      <amexio-body>COL 4</amexio-body>
+                    </amexio-card>
+                  </amexio-column>
+                  <amexio-column size="4">
+                    <amexio-card>
+                      <amexio-body>COL 4</amexio-body>
+                    </amexio-card>
+                  </amexio-column>
+                  <amexio-column size="4">
+                    <amexio-card>
+                      <amexio-body>COL 4</amexio-body>
+                    </amexio-card>
+                  </amexio-column>
+                </amexio-row>
+              </amexio-body>
+            </amexio-card>
+            <amexio-card header="true">
+              <amexio-header>2 Row 2 Column</amexio-header>
+              <amexio-body>
+                <amexio-row>
+                  <amexio-column size="6">
+                    <amexio-card>
+                      <amexio-body>COL 6</amexio-body>
+                    </amexio-card>
+                  </amexio-column>
+                  <amexio-column size="6">
+                    <amexio-card>
+                      <amexio-body>COL 6</amexio-body>
+                    </amexio-card>
+                  </amexio-column>
+                </amexio-row>
+                <amexio-row>
+                  <amexio-column size="6">
+                    <amexio-card>
+                      <amexio-body>COL 6</amexio-body>
+                    </amexio-card>
+                  </amexio-column>
+                  <amexio-column size="6">
+                    <amexio-card>
+                      <amexio-body>COL 6</amexio-body>
+                    </amexio-card>
+                  </amexio-column>
+                </amexio-row>
+              </amexio-body>
+            </amexio-card>
+      
+          </amexio-tab>
           <amexio-tab title="Source">
             <amexio-vertical-tab-view>
               <amexio-tab title="HTML" [active]="true">
@@ -37,7 +84,7 @@ import {Http} from "@angular/http";
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
-           Work in Progress
+            Work in Progress
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -50,6 +97,7 @@ export class RowDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
+
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -57,7 +105,7 @@ export class RowDemo {
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
-    let responseTs:any;
+    let responseTs: any;
 
     //HTML FILE
     this.http.get('assets/data/code/layout/row/layout.html').subscribe(data => {
