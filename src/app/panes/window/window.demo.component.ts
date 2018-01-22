@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
            <amexio-row>
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-               <amexio-window [showWindow]="showBasicWindow" type="window" [closable]="false">
+               <amexio-window [showWindow]="showBasicWindow" [footer]="true" type="window">
                  <amexio-header>
                   Employee Form
                  </amexio-header>
@@ -76,7 +76,7 @@ import {Http} from "@angular/http";
           
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleMaxWindow()" label="Maximizable Window"></amexio-button>
-               <amexio-window [showWindow]="showMaxWindow" [closable]="false" type="window" [maximize]="true">
+               <amexio-window [showWindow]="showMaxWindow" [footer]="true" [closable]="false" type="window" [maximize]="true">
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -186,13 +186,13 @@ import {Http} from "@angular/http";
          
              <amexio-column [size]="4">
               <amexio-button type="primary" (onClick)="toggleDialog()" label="Dialog Window"></amexio-button>
-               <amexio-window [showWindow]="showDialog" [dialog]="true">
+               <amexio-window [showWindow]="showDialog" [footer]="true" [dialog]="true">
                  <amexio-header>
                    Confirm Dialogue
                  </amexio-header>
                  
                  <amexio-body>
-                   <span>Do you want to confirm action</span>
+                   <h3>Do you want to confirm action</h3>
                  </amexio-body>
                  <amexio-action>
                    <amexio-button (onClick)="showDialog = false" label="Yes"></amexio-button>
