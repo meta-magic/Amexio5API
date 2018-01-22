@@ -25,18 +25,18 @@ import {Http} from "@angular/http";
              </ng-template>
            </amexio-carousel>-->
            <amexio-carousel [header]="'Gallery'" [data]="[1,2,3,4,5,6,7,8,9,10,11,12]" mode="multiple">
-             <ng-template let-car amexioTemplate="item">
+             <ng-template let-img amexioTemplate="item">
                  <div style="text-align: center">
-                   <img src="assets/images/carousel/set1/{{car}}.jpg"/>
+                   <amexio-image path="assets/images/carousel/set1/{{img}}.jpg"></amexio-image>
                  </div>
              </ng-template>
            </amexio-carousel>
            <br><br>
            
            <amexio-carousel [header]="'Gallery With Auto Shuffle (2 seconds)'" [data]="[1,2,3,4,5,6,7,8,9,10,11]" mode="multiple" shuffle-interval="2000">
-             <ng-template let-car amexioTemplate="item">
+             <ng-template let-gallery amexioTemplate="item">
                <div style="text-align: center">
-                 <img src="assets/images/carousel/set2/{{car}}.jpg"/>
+                 <amexio-image path="assets/images/carousel/set2/{{gallery}}.jpg"></amexio-image>
                </div>
              </ng-template>
            </amexio-carousel>
