@@ -17,10 +17,10 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="12">
-                <amexio-button [label]="'Hide/UnHide Card'" [type]="'primary'" [tooltip]="'Hide/UnHide Card'" (click)="toggle()"> </amexio-button>
+                <amexio-button [label]="'Hide / Un-hide Card'" [type]="'primary'" [tooltip]="'Hide/UnHide Card'" (click)="toggle()"> </amexio-button>
               </amexio-column>
             </amexio-row>
-            <br>
+         
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card [header]="true" [footer]="true" [show]="flag" [footeralign]="'right'">

@@ -18,7 +18,24 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="6">
                 <amexio-card [header]="true">
-                  <amexio-header> Top Notification </amexio-header>
+                  <amexio-header> Top Left Notification </amexio-header>
+                  <amexio-body>
+                    <amexio-notification [messageData]="topLeftMessageArray"
+                                         [verticalposition]="'top'"
+                                         [horizontalposition]="'left'" [autodismissmsg]="true"
+                                         [autodismissmsginterval]="2000">
+                    </amexio-notification>
+                    <amexio-button (onClick)="topLeftNotification()"
+                                   [label]="'Info Left Popup'" [type]="'primary'"
+                                   [tooltip]="'Primary Button'">
+                    </amexio-button>
+                  </amexio-body>
+                </amexio-card>
+
+              </amexio-column>
+              <amexio-column size="6">
+                <amexio-card [header]="true">
+                  <amexio-header> Top Right Notification </amexio-header>
                   <amexio-body>
                     <amexio-notification [messageData]="topMessageArray"
                                          [verticalposition]="'top'"
@@ -26,16 +43,39 @@ import {Http} from "@angular/http";
                                          [autodismissmsginterval]="2000">
                     </amexio-notification>
                     <amexio-button (onClick)="topNotification()"
-                                   [label]="'Info Popup'" [type]="'primary'"
+                                   [label]="'Info Right Popup'" [type]="'primary'"
                                    [tooltip]="'Primary Button'">
                     </amexio-button>
                   </amexio-body>
                 </amexio-card>
               
               </amexio-column>
+           
+            </amexio-row>
+
+            <amexio-row>
+             
               <amexio-column size="6">
                 <amexio-card [header]="true">
-                  <amexio-header> Bottom Notification </amexio-header>
+                  <amexio-header> Bottom Left Notification </amexio-header>
+                  <amexio-body>
+                    <amexio-notification [messageData]="bottomLeftMessageArray"
+                                         [verticalposition]="'bottom'"
+                                         [horizontalposition]="'left'"
+                                         [autodismissmsg]="true"
+                                         [autodismissmsginterval]="2000">
+                    </amexio-notification>
+                    <amexio-button (onClick)="bottomLeftNotification()"
+                                   [label]="'Info Bottom Left '" [type]="'primary'"
+                                   [tooltip]="'Primary Button'">
+                    </amexio-button>
+                  </amexio-body>
+                </amexio-card>
+
+              </amexio-column>
+              <amexio-column size="6">
+                <amexio-card [header]="true">
+                  <amexio-header> Bottom Right Notification </amexio-header>
                   <amexio-body>
                     <amexio-notification [messageData]="bottomMessageArray"
                                          [verticalposition]="'bottom'"
@@ -43,15 +83,14 @@ import {Http} from "@angular/http";
                                          [autodismissmsginterval]="2000">
                     </amexio-notification>
                     <amexio-button (onClick)="bottomNotification()"
-                                   [label]="'Info On Bottom'" [type]="'primary'"
+                                   [label]="'Info Bottom Right'" [type]="'primary'"
                                    [tooltip]="'Primary Button'">
                     </amexio-button>
                   </amexio-body>
                 </amexio-card>
-             
+
               </amexio-column>
             </amexio-row>
-           
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Propeties" [enable-column-fiter]="false"
@@ -101,11 +140,20 @@ export class NotificationDemo {
   copyMsgArray: any[];
   topMessageArray:any=[];
   bottomMessageArray:any=[];
+  topLeftMessageArray:any=[];
+  bottomLeftMessageArray:any=[];
+
+  bottomLeftNotification(){
+    this.bottomLeftMessageArray.push('Bottom Left Notification!!!')
+  }
+  topLeftNotification(){
+    this.topLeftMessageArray.push('Top Left Notification!!!')
+  }
   topNotification(){
-    this.topMessageArray.push('Top Notification!!!')
+    this.topMessageArray.push('Top Right Notification!!!')
   }
   bottomNotification(){
-    this.bottomMessageArray.push('Bootom Notification!!!')
+    this.bottomMessageArray.push('Bottom Right Notification!!!')
   }
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
