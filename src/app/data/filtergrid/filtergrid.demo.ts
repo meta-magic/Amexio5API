@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
                       [http-method]="'get'"
                       [enable-data-filter]="true"
                       (selectedRowData)="onRowSelect($event)">
-                      <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false" [text]="'FullName'"></amexio-data-table-column>
+                      <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false" [text]="'Full Name'"></amexio-data-table-column>
                       <amexio-data-table-column [data-index]="'jobTitle'" [data-type]="'string'" [hidden]="false" [text]="'Job Title'">
                       </amexio-data-table-column>
                       <amexio-data-table-column [data-index]="'salary'" [data-type]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
