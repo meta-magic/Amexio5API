@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="false" [footer]="true" [footeralign]="'right'">
                   <amexio-body>
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg" style="height: 250px;width: 400px" alt="">
+                    <amexio-image path="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg"></amexio-image>
                     <br/>
                     <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
                     Let your startup grow! 
@@ -36,7 +36,7 @@ import {Http} from "@angular/http";
                      Hi, Amexio 
                   </amexio-header>
                   <amexio-body>
-                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg"  style="height: 250px;width: 400px" alt="">
+                    <amexio-image path="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg" ></amexio-image>
                     <br/><br/>
                     <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
                   </amexio-body>

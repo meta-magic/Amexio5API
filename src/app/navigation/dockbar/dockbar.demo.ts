@@ -40,7 +40,7 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <div class="profile-image">
-                          <img src="assets/images/profile/{{row.profile}}">
+                          <amexio-image path="assets/images/profile/{{row.profile}}"></amexio-image>
                           <a>{{row.name}}</a>
                         </div>
                       </amexio-column>

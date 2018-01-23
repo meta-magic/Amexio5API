@@ -30,7 +30,7 @@ import {Http} from "@angular/http";
                       <amexio-data-table-column [width]="70" [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
                         <ng-template #amexioBodyTmpl let-column let-row="row">
                         <span>
-                            <img src="" [attr.src]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32">&nbsp;{{row.name}} ( {{row.name_official}} )
+                          <amexio-image [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>&nbsp;{{row.name}} ( {{row.name_official}} )
                         </span>
                         </ng-template>
                       </amexio-data-table-column>
