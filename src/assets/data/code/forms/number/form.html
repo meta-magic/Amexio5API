@@ -4,10 +4,9 @@
 </amexio-number-input>
 
 <!--Number Input With Disable-->
-<amexio-number-input
-  [placeholder]="'Enter age'"
-  [icon-feedback]="false"
-  [has-label]="false" [disabled]="true">
+<amexio-number-input [placeholder]="'Enter age'"
+                     [icon-feedback]="false"
+                     [has-label]="false" [disabled]="true">
 </amexio-number-input>
 
 <!--Number Input Font Style-->
@@ -18,11 +17,14 @@
 
 <!--Number Input With Min/Max Validation-->
 
-<amexio-number-input  [enable-popover]="true" [field-label]="'Age'"
+<amexio-number-input  [enable-popover]="true"
+                      [field-label]="'Age'"
                       [placeholder]="'Enter age'"
-                      [allow-blank]="false" [error-msg] ="'Please enter age'"
+                      [allow-blank]="false"
+                      [error-msg] ="'Please enter age'"
                       [min-value]="1"
                       [min-error-msg]="'age can not be less than 1'"
-                      [max-value]="100"  [max-error-msg]="'age can not be greater than 100'"
+                      [max-value]="100"
+                      [max-error-msg]="'age can not be greater than 100'"
                       [icon-feedback]="true">
 </amexio-number-input>
