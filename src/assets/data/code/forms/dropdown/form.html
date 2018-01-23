@@ -1,12 +1,12 @@
 <!--Simple dropdown with http url-->
-<amexio-dropdown [(ngModel)]="sportName"
+<amexio-dropdown [(ngModel)]="countryCode1"
                  [placeholder]="'Choose'"
-                 name="sportName"
+                 name="countryCode1"
                  [data-reader]="'data'"
-                 [field-label]="'Choose Sport'"
-                 [http-url]="'assets/data/componentdata/sports.json'"
+                 [field-label]="'Choose Country'"
+                 [http-url]="'assets/data/componentdata/country.json'"
                  [http-method]="'get'"
-                 [display-field]="'sportName'"
-                 [value-field]="'code'"
-                 (onSingleSelect)="getSingleVal($event)">
+                 [display-field]="'countryName'"
+                 [value-field]="'countryCode1'"
+>
 </amexio-dropdown>
