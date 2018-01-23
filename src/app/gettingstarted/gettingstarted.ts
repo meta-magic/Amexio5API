@@ -79,7 +79,7 @@ import {SharedModule} from "../shared.module";
             <amexio-body>
               <amexio-row>
                 <amexio-column size="12">
-                  <p><b>To install this library, follow the steps given below:</b><br> <code>npm install amexio-ng-extensions --save</code></p>
+                  <p><b>To install this library, follow the steps given below:</b><br> <code>npm install amexio-ng-extensions@beta --save</code></p>
                   <p class="text-muted">Please make sure you have the latest version of <code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code> Installed.
                     <br><b>and then from your Angular AppModule:</b></p>
                 </amexio-column>

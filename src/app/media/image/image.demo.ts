@@ -49,7 +49,7 @@ import {Http} from "@angular/http";
                           <amexio-body>
                             <amexio-row>
                               <amexio-column size="12">
-                                <amexio-image [path]="'assets/images/soap-bubble.jpg'"  [c-class]="'img-style'" [tooltip]="'Image'"></amexio-image>
+                                <amexio-image [path]="'assets/images/soap-bubble.jpg'" [tooltip]="'Image'"></amexio-image>
                               </amexio-column>
                             </amexio-row>
                           </amexio-body>
@@ -98,7 +98,7 @@ import {Http} from "@angular/http";
               </amexio-tab>
               <amexio-tab title="Type Script">
                 <ng-container *ngIf="typeScriptCode">
-                  <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+                  <prism-block style="max-width: 100%" [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
             </amexio-vertical-tab-view>
