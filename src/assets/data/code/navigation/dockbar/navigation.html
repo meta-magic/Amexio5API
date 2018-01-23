@@ -10,13 +10,16 @@
       [position]="'relative'">
     </amexio-side-nav>
   </amexio-dockbar-item>
-  <amexio-dockbar-item [icon]="'fa fa-address-book fa-fw'" [title]="'Contacts'"
+  <amexio-dockbar-item [icon]="'fa fa-address-book fa-fw'"
+                       [title]="'Contacts'"
                        [width]="'350px'">
-    <amexio-listbox [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
+    <amexio-listbox [header]="'Contacts'"
+                    [search-placeholder]="'Search Contacts'"
                     [http-url]="'assets/data/componentdata/profiledata.json'"
                     [http-method]="'get'"
                     [filter]="false"
-                    [enable-checkbox]="false" [data-reader]="'response.data'"
+                    [enable-checkbox]="false"
+                    [data-reader]="'response.data'"
                     [display-field]="'name'">
       <ng-template #amexioBodyTmpl let-row="row">
         <amexio-row>
@@ -26,7 +29,6 @@
               <a>{{row.name}}</a>
             </div>
           </amexio-column>
-
         </amexio-row>
       </ng-template>
     </amexio-listbox>

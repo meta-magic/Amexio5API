@@ -46,7 +46,7 @@ export class ListBoxDemo {
           "name": "Mahesh Pardeshi",
           "name_official": "Mahesh Pardeshi",
           "profile": "mahesh.jpg",
-          "email" : "mahesh.pardeshi@metamagic.in"
+          "email" : "XYZ@metamagic.in"
         },
         {
           "name": "Ashutosh Jadhav",

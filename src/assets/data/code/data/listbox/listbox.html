@@ -1,9 +1,13 @@
 <!--Simple ListBox-->
-<amexio-listbox [enable-checkbox]="true" [height]="400"
-                [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
-                [data]="localData" [filter]="true"
+<amexio-listbox [enable-checkbox]="true"
+                [height]="400"
+                [header]="'Contacts'"
+                [search-placeholder]="'Search Contacts'"
+                [data]="localData"
+                [filter]="true"
                 [data-reader]="'response.data'"
-                [display-field]="'name_official'" (selectedRows)="getSelectedData($event)">
+                [display-field]="'name_official'"
+                (selectedRows)="getSelectedData($event)">
 </amexio-listbox>
 
 <!--ListBox with template-->

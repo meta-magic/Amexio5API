@@ -1,16 +1,33 @@
 <!--Button Group Component-->
 <amexio-btn-group>
-  <amexio-button [label]="'Secondary'" (onClick)="getData($event)"></amexio-button>
-  <amexio-button [label]="'primary'"  [type]="'primary'"  ></amexio-button>
-  <amexio-button [label]="'Success'" [type]="'success'" ></amexio-button>
-  <amexio-button [label]="'Danger'" [type]="'danger'" ></amexio-button>
-  <amexio-button [label]="'Warning'" [type]="'warning'" ></amexio-button>
+  <amexio-button [label]="'Secondary'"
+                 (onClick)="getData($event)">
+  </amexio-button>
+  <amexio-button [label]="'primary'"
+                 [type]="'primary'">
+  </amexio-button>
+  <amexio-button [label]="'Success'"
+                 [type]="'success'" >
+  </amexio-button>
+  <amexio-button [label]="'Danger'"
+                 [type]="'danger'" >
+  </amexio-button>
+  <amexio-button [label]="'Warning'"
+                 [type]="'warning'" >
+  </amexio-button>
 </amexio-btn-group>
 
 <!--Button Group States-->
 <amexio-btn-group>
-  <amexio-button [label]="'Disabled'"  [type]="'primary'"  [tooltip]="'Disabled'" [disabled]="'true'"></amexio-button>
-  <amexio-button [label]="'Enabled'" [type]="'primary'" [tooltip]="'Enabled'"></amexio-button>
+  <amexio-button [label]="'Disabled'"
+                 [type]="'primary'"
+                 [tooltip]="'Disabled'"
+                 [disabled]="'true'">
+  </amexio-button>
+  <amexio-button [label]="'Enabled'"
+                 [type]="'primary'"
+                 [tooltip]="'Enabled'">
+  </amexio-button>
 </amexio-btn-group>
 
 <!--Button Group with Icons-->
