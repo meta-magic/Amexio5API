@@ -27,15 +27,15 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column size="12">
-                        <amexio-dropdown [(ngModel)]="sportName"
+                        <amexio-dropdown [(ngModel)]="countryCode1"
                                          [placeholder]="'Choose'"
-                                         name="sportName"
+                                         name="countryCode1"
                                          [data-reader]="'data'"
-                                         [field-label]="'Choose Sport'"
-                                         [http-url]="'assets/data/componentdata/sports.json'"
+                                         [field-label]="'Choose Country'"
+                                         [http-url]="'assets/data/componentdata/country.json'"
                                          [http-method]="'get'"
-                                         [display-field]="'sportName'"
-                                         [value-field]="'code'"
+                                         [display-field]="'countryName'"
+                                         [value-field]="'countryCode1'"
                         >
                         </amexio-dropdown>
                       </amexio-column>
@@ -49,8 +49,8 @@ import {Http} from "@angular/http";
                     Selected Record Data
                   </amexio-header>
                   <amexio-body>
-                  <ng-container *ngIf="sportName">
-                    {{sportName}}
+                  <ng-container *ngIf="countryCode1">
+                    {{countryCode1}}
                   </ng-container>
                   </amexio-body>
                 </amexio-card>
@@ -118,7 +118,7 @@ export class DropDownDemo {
   typeScriptCode: string;
   dataSource:string;
   copyMsgArray: any[];
-  sportName:string;
+  countryCode1:string;
 
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
@@ -145,7 +145,7 @@ export class DropDownDemo {
       this.typeScriptCode = responseTs;
     });
     //TS FILE
-    this.http.get('assets/data/componentdata/sports.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
       responseData = data.text();
     }, error => {
     }, () => {
