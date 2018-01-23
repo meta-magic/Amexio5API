@@ -1,0 +1,50 @@
+
+<!--confirm dialogue-->
+
+<amexio-dialogue [showWindow]="confirmdialogue"
+               [title]="'Comfirm'" [message]="'Do you want to confirm ?'"
+               [messageType]="'confirm'" [type]="'confirm'">
+</amexio-dialogue>
+
+<!--Error dialogue-->
+<amexio-dialogue [showWindow]="errordialogue"
+               [message]="'Error Occurred.'"
+               [primaryActionLabel]="'ok'"
+               [title]="'Error'" [messageType]="'error'"
+               [type]="'alert'">
+</amexio-dialogue>
+
+<!--warning dialogue-->
+
+<amexio-dialogue [showWindow]="warningdialogue"
+               [message]="'Data not found.'"
+               [title]="'Warning'"
+               [messageType]="'warning'"
+               [type]="'alert'">
+</amexio-dialogue>
+
+<!--help dialogue-->
+
+<amexio-dialogue [showWindow]="helpdialogue"
+               [title]="'Help'" [message]="'Check Server.'"
+               [messageType]="'help'" [type]="'alert'">
+</amexio-dialogue>
+
+<!--custom dialogue-->
+
+<amexio-dialogue [showWindow]="customdialogue" [custom]="true"
+               [title]="'Custom dialogueue witch Text Input'"
+               [type]="'confirm'">
+     <amexio-body>
+        <amexio-text-input field-label="Name" name="name"
+                           placeholder="Enter name"
+                           icon-feedback="true">
+        </amexio-text-input>
+     </amexio-body>
+     <amexio-action>
+        <amexio-button type="primary"
+                       (onClick)="toggleCustom()"
+                       [label]="'save'">
+        </amexio-button>
+     </amexio-action>
+</amexio-dialogue>
