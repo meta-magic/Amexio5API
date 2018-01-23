@@ -9,10 +9,10 @@ import {Http} from "@angular/http";
   selector: 'buttondropdown-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         DropDown Button 
+         Dropdown Button
       </amexio-header>
       <amexio-body>
-        <p>A DropDown Button component with various modes and configurations.
+        <p>A Dropdown Button component with various modes and configurations.
         </p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
@@ -20,7 +20,7 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                     DropDown Button 
+                     Dropdown Button
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -37,7 +37,7 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                      Dropdown Button with size 
+                      Dropdown Button with size
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -63,12 +63,12 @@ import {Http} from "@angular/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                      Dropdown Button with Disebled link 
+                      Dropdown Button with disabled link
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
-                      <amexio-btn-dropdown [label]="'Disebled Link'" [type]="'primary'" [size]="'default'">
-                        <amexio-btn-dropdown-item [label]="'Disebled'"  [icon]="'fa fa-fullscreen'" [disabled]="true"></amexio-btn-dropdown-item>
+                      <amexio-btn-dropdown [label]="'Disabled Link'" [type]="'primary'" [size]="'default'">
+                        <amexio-btn-dropdown-item [label]="'Disabled'"  [icon]="'fa fa-fullscreen'" [disabled]="true"></amexio-btn-dropdown-item>
                         <amexio-btn-dropdown-item [label]="'Link 2'" [icon]="'fa fa-trash'"></amexio-btn-dropdown-item>
                       </amexio-btn-dropdown>
                     </amexio-row>
@@ -76,7 +76,7 @@ import {Http} from "@angular/http";
                 </amexio-card>
               </amexio-column>
             </amexio-row>
-            
+
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
@@ -174,5 +174,3 @@ export class ButtonDropDownDemo {
     }
   }
 }
-
-
