@@ -10,6 +10,11 @@
       "icon": "fa fa-desktop fa-fw",
       "children": [
         {
+          "text": "Accordion",
+          "icon": "fa fa-bars fa-fw",
+          "link": "accordion"
+        },
+        {
           "text": "Border Layout",
           "icon": "fa fa-id-card-o fa-fw",
           "link": "border"
@@ -23,6 +28,22 @@
           "text": "Row",
           "link": "row-demo",
           "icon": "fa fa-bars fa-fw"
+        },
+        {
+          "text": "Card",
+          "icon": "fa fa-id-card-o fa-fw",
+          "children": [
+            {
+              "text": "Form",
+              "link": "card-form-demo",
+              "icon": "fa fa-leaf fa-fw"
+            },
+            {
+              "text": "Image",
+              "link": "card-image-demo",
+              "icon": "fa fa-leaf fa-fw"
+            }
+          ]
         }
       ]
     },
@@ -264,31 +285,11 @@
       "icon": "fa fa-bars fa-fw",
       "children": [
         {
-          "text": "Accordion",
-          "icon": "fa fa-bars fa-fw",
-          "link": "accordion"
-        },
-        {
           "text": "Carousel",
           "icon": "fa fa-indent fa-fw",
           "link": "carousel"
         },
-        {
-          "text": "Card",
-          "icon": "fa fa-id-card-o fa-fw",
-          "children": [
-            {
-              "text": "Form",
-              "link": "card-form-demo",
-              "icon": "fa fa-leaf fa-fw"
-            },
-            {
-              "text": "Image",
-              "link": "card-image-demo",
-              "icon": "fa fa-leaf fa-fw"
-            }
-          ]
-        },
+
         {
           "text": "Fieldset",
           "icon": "fa fa-id-card-o fa-fw",
