@@ -5,44 +5,33 @@ import {Component, OnInit} from '@angular/core';
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'accordion-demo',
+  selector: 'panel-demo',
   template: `
     <amexio-card header="true">
       <amexio-header>
-         Accordion 
+         Panel 
       </amexio-header>
       <amexio-body>
-        <p>Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs</p>
+        <p>Panel provides an easy way to organize big forms by grouping the fields in panel</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-            <amexio-accordion>
-              <amexio-accordion-tab header="Page One" expanded="true"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</amexio-accordion-tab>
-              <amexio-accordion-tab header="Page two"> Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum. Vestibulum tempus, urna non ultrices aliquam, ex ex blandit lacus, at porttitor odio ligula sed lacus. Praesent in luctus odio, at sodales orci. Vivamus vitae ullamcorper lectus. </amexio-accordion-tab>
-              <amexio-accordion-tab header="Page three"> Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec sapien pretium euismod. Sed lobortis quis sapien a mollis. Nullam ex nibh, malesuada eget rutrum eu, dapibus quis ante. Proin non convallis augue, at tincidunt nisi. Cras et metus blandit, sollicitudin mi ac, fringilla libero.</amexio-accordion-tab>
-              <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.</amexio-accordion-tab>
-            </amexio-accordion>
+            <amexio-panel [header]="true"  title="Panel" expanded="true" [custom-header]="false">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </amexio-panel>
 
-           <!-- <amexio-panel-1 [header]="true"  title="Panel" expanded="true" [customHeader]="false">
+          <br>
+            <amexio-panel [header]="true"  title="Panel" expanded="true" [custom-header]="true">
               <amexio-header>
                 Custom Header
-                <i style="padding-left: 50px" class="fa fa-check-circle" aria-hidden="true" (click)="alert('test')"></i>
+                <i style="padding-left: 810px" class="fa fa-check-circle" aria-hidden="true" (click)="alert('test')"></i>
               </amexio-header>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </amexio-panel-1>
-
-            <amexio-panel-1 [header]="true"  title="Panel" expanded="true" [customHeader]="true">
-              <amexio-header>
-                Custom Header
-                <i style="padding-left: 50px" class="fa fa-check-circle" aria-hidden="true" (click)="alert('test')"></i>
-              </amexio-header>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </amexio-panel-1>-->
-          
+            </amexio-panel>
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/layout/accordion/acc.json'"
+                             [http-url]="'assets/apireference/layout/panel/panel.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -96,7 +85,7 @@ import {Http} from "@angular/http";
   `
 })
 
-export class AccordionDemoComponent{
+export class PanelDemoComponent{
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -116,7 +105,7 @@ export class AccordionDemoComponent{
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/accordion/accordion.html').subscribe(data => {
+    this.http.get('assets/data/code/layout/panel/panel.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -124,7 +113,7 @@ export class AccordionDemoComponent{
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/accordion/accordion.text').subscribe(data => {
+    this.http.get('assets/data/code/layout/panel/panel.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {

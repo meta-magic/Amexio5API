@@ -4,23 +4,22 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AccordionDemoComponent } from './accordion.demo';
+import {PanelDemoComponent} from './panel.demo';
 import {CommonModule} from "@angular/common";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {SharedModule} from "../../shared.module";
-import {AmexioPanelComponent1} from "../../component/panel/panel.component";
 
 const routes: Routes = [
-  { path: '', component: AccordionDemoComponent },
+  { path: '', component: PanelDemoComponent},
 ];
 
 @NgModule({
   imports: [CommonModule,HttpModule,FormsModule,AmexioWidgetModule,SharedModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations : [AccordionDemoComponent, AmexioPanelComponent1]
+  declarations : [PanelDemoComponent]
 })
-export class AccordionDemoModule { }
+export class PanelDemoModule { }
 
-export const routedComponents = [AccordionDemoComponent];
+export const routedComponents = [PanelDemoComponent];
