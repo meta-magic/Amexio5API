@@ -29,7 +29,7 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column size="12">
                         <amexio-dropdown
-                          [placeholder]="'Choose'"
+                          [place-holder]="'Choose'"
                           [field-label]="'Choose Fruit'"
                           [http-method]="'get'" [http-url]="'assets/data/componentdata/fruits.json'"
                           [display-field]="'fruitName'" [value-field]="'code'"
@@ -109,7 +109,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

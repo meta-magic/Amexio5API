@@ -91,7 +91,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <amexio-notification [messageData]="clickMsgArray" verticalposition="top" horizontalposition="right"></amexio-notification>
+    <amexio-notification [data]="clickMsgArray" vertical-position="top" horizontal-position="right"></amexio-notification>
 
   `
 })

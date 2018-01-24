@@ -79,7 +79,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

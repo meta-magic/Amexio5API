@@ -17,7 +17,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card [header]="false" [footer]="true" [footeralign]="'right'">
+                <amexio-card [header]="false" [footer]="true" [footer-align]="'right'">
                   <amexio-body>
                     <amexio-image path="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg"></amexio-image>
                     <br/>
@@ -31,7 +31,7 @@ import {Http} from "@angular/http";
                 </amexio-card>
               </amexio-column>
               <amexio-column size="6">
-                <amexio-card [header]="true" [footer]="false" [headeralign]="'center'">
+                <amexio-card [header]="true" [footer]="false" [header-align]="'center'">
                   <amexio-header>
                      Hi, Amexio 
                   </amexio-header>
@@ -84,7 +84,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

@@ -18,21 +18,21 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleConfirm()" label="Confirm"></amexio-button>
-                <amexio-dialogue [showWindow]="confirmdialogue" [title]="'Confirm'" [message]="'Are you sure ?'"
+                <amexio-dialogue [show-window]="confirmdialogue" [title]="'Confirm'" [message]="'Are you sure ?'"
                                [messageType]="'confirm'" [type]="'confirm'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button type="danger" (onClick)="toggleError()" label="Error"></amexio-button>
-                <amexio-dialogue [showWindow]="errordialogue" [message]="'Error Occurred.'" [primaryActionLabel]="'ok'"
+                <amexio-dialogue [show-window]="errordialogue" [message]="'Error Occurred.'" [primaryActionLabel]="'ok'"
                                [title]="'Error'" [messageType]="'error'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button [type]="'warning'" (onClick)="toggleWarning()" label="Warning"></amexio-button>
-                <amexio-dialogue [showWindow]="warningdialogue" [message]="'Data not found.'" [title]="'Warning'"
+                <amexio-dialogue [show-window]="warningdialogue" [message]="'Data not found.'" [title]="'Warning'"
                                [messageType]="'warning'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
@@ -40,18 +40,18 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleHelp()" label="Help"></amexio-button>
-                <amexio-dialogue [showWindow]="helpdialogue" [title]="'Help'" [message]="'Check Server.'"
+                <amexio-dialogue [show-window]="helpdialogue" [title]="'Help'" [message]="'Check Server.'"
                                [messageType]="'help'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleCustom()" label="Custom"></amexio-button>
-                <amexio-dialogue [showWindow]="customdialogue" [custom]="true" [title]="'Custom dialogue'"
+                <amexio-dialogue [show-window]="customdialogue" [custom]="true" [title]="'Custom dialogue'"
                                [type]="'confirm'">
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
-                                       placeholder="Enter name"
+                                       place-holder="Enter name"
                                        icon-feedback="true"
                     ></amexio-text-input><br>
                   </amexio-body>

@@ -28,7 +28,7 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column size="12">
                         <amexio-dropdown [(ngModel)]="countryCode1"
-                                         [placeholder]="'Choose'"
+                                         [place-holder]="'Choose'"
                                          name="countryCode1"
                                          [search]="true"
                                          [data-reader]="'data'"
@@ -109,7 +109,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

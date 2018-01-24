@@ -48,7 +48,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'singlecheckbox-demo', loadChildren: './forms/singlecheckbox/singlecheckbox.demo.module#SinglecheckboxDemoModule'
   },
   {
-    path: 'datepicker-demo', loadChildren: './forms/datepicker/datepicker.demo.module#DateTimeDemoModule'
+    path: 'date-picker-demo', loadChildren: './forms/datepicker/datepicker.demo.module#DateTimeDemoModule'
   },
   {
     path: 'taginput-demo', loadChildren: './forms/taginput/taginput.demo.module#TagInputDemoModule'

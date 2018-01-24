@@ -86,8 +86,8 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
-    <amexio-notification [messageData]="toggleMsgArray" [verticalposition]="'top'" [horizontalposition]="'right'"></amexio-notification>
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
+    <amexio-notification [data]="toggleMsgArray" [vertical-position]="'top'" [horizontal-position]="'right'"></amexio-notification>
   `
 })
 export class ToggleDemo {

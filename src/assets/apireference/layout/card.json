@@ -19,12 +19,12 @@
       "description":"User can enable footer of card by setting this flag to true."
     },
     {
-      "name": "headeralign",
+      "name": "header-align",
       "type": "string",
       "default": "",
       "description":"Align of item elements inside card header example : right,center,left."
     },{
-      "name": "footeralign",
+      "name": "footer-align",
       "type": "string",
       "default": "",
       "description":"Align of item elements inside card footer example : right,center,left."

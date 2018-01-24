@@ -17,14 +17,14 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column [size]="6">
-                <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
+                <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
                   <amexio-header>
                      Sample Rating With Label 
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="rate" [field-label]="'Film Rating'"
                                          [max]="max" name="rate" [float]="true"
-                                         [readonly]="isReadonly">
+                                         [read-only]="isReadonly">
                     </amexio-rating-input>
                   </amexio-body>
                   <amexio-action>
@@ -33,7 +33,7 @@ import {Http} from "@angular/http";
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card [header]="true" [footer]="true"  [footeralign]="'center'">
+                <amexio-card [header]="true" [footer]="true"  [footer-align]="'center'">
                   <amexio-header>
                       Rating With Rate Titles 
                   </amexio-header>
@@ -41,7 +41,7 @@ import {Http} from "@angular/http";
                     <amexio-rating-input [(ngModel)]="profileRate"
                                          [max]="profileMaxRate" name="profileRate"
                                          [titles]="titles"
-                                         [readonly]="isReadonly">
+                                         [read-only]="isReadonly">
                     </amexio-rating-input>
                   </amexio-body>
                   <amexio-action>
@@ -52,14 +52,14 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column size="6">
-                <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
+                <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
                   <amexio-header>
                      Custom Rating Icons 
                   </amexio-header>
                   <amexio-body>
                     <amexio-rating-input [(ngModel)]="customRate" [full-icon]="'☑'" [empty-icon]="'☐'"
                                          [max]="customIconRate" name="customRate" [float]="true"
-                                         [readonly]="isReadonly">
+                                         [read-only]="isReadonly">
                     </amexio-rating-input>
                   </amexio-body>
                   <amexio-action>
@@ -77,7 +77,7 @@ import {Http} from "@angular/http";
                     <amexio-rating-input [field-label]="'Profile Rating'"
                                          [(ngModel)]="disableProfileRate"
                                          [max]="disableProfileMaxRate"
-                                         [readonly]="true">
+                                         [read-only]="true">
                     </amexio-rating-input>
                   </amexio-body>
                 </amexio-card>
@@ -121,7 +121,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

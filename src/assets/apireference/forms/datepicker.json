@@ -7,13 +7,13 @@
       "description":"The label of this field"
     },
     {
-      "name": "datepicker",
+      "name": "date-picker",
       "type": "boolean",
       "default": "false",
       "description":"Enable/Disable Date Picker "
     },
     {
-      "name": "timepicker",
+      "name": "time-picker",
       "type": "boolean",
       "default": "false",
       "description":"Enable/Disable Time Picker "

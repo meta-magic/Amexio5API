@@ -53,7 +53,7 @@
       "name": "search-placeholder",
       "type": "string",
       "default": "",
-      "description":"placeholder for searchbox."
+      "description":"place-holder for searchbox."
     },
     {
       "name": "filter",

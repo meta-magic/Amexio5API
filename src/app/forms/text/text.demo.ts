@@ -24,7 +24,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
-                                       placeholder="Enter name"
+                                       place-holder="Enter name"
                                        icon-feedback="true" 
                     ></amexio-text-input>
                   </amexio-body>
@@ -37,7 +37,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input name="name"
-                                       placeholder="Enter name"
+                                       place-holder="Enter name"
                                        icon-feedback="false"
                                        has-label="false"
                     ></amexio-text-input>
@@ -54,7 +54,7 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-text-input enable-popover="true" [enable-popover]="true" 
                                        field-label="Name" name="name"
-                                       placeholder="Enter name"
+                                       place-holder="Enter name"
                                        allow-blank="false" error-msg="Please enter last name"
                                        min-length="1" minerror-msg="Minimum 1 char required"
                                        max-length="10" max-error-msg="Maximum 10 char allowed"
@@ -71,7 +71,7 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-text-input name="name"
                                        field-label="Name"
-                                       placeholder="Enter name"
+                                       place-holder="Enter name"
                                        disabled="true"
                     ></amexio-text-input>
                   </amexio-body>
@@ -86,7 +86,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
-                                       placeholder="Enter name"
+                                       place-holder="Enter name"
                                        icon-feedback="true"
                                        font-style="italic"
                     ></amexio-text-input>
@@ -100,7 +100,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input [field-label]="'Name'" name="name"
-                                       [placeholder]="'Enter name'"
+                                       [place-holder]="'Enter name'"
                                        [icon-feedback]="true"
                                        [font-size]="'large'"
                     ></amexio-text-input>
@@ -116,7 +116,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-text-input name="name" [field-label]="'Name'"
-                                       [placeholder]="'Enter name'"
+                                       [place-holder]="'Enter name'"
                                        [pattern]="'[a-z]'"
                                        [icon-feedback]="true"
                     ></amexio-text-input>
@@ -172,7 +172,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

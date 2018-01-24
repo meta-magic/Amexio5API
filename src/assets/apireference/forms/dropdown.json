@@ -7,10 +7,10 @@
       "description": "The label of this field"
     },
     {
-      "name": "placeholder",
+      "name": "place-holder",
       "type": "string",
       "default": "",
-      "description": "Show placeholder inside dropdown component"
+      "description": "Show place-holder inside dropdown component"
     },
 
     {

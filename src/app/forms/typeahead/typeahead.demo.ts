@@ -26,7 +26,7 @@ import {Http} from "@angular/http";
                     <amexio-typeahead [data-reader]="'data'"
                                       [key]="'countryCode1'"
                                       [display-field]="'countryName'"
-                                      [placeholder]="'Search'"
+                                      [place-holder]="'Search'"
                                       [http-url]="'assets/data/componentdata/country.json'"
                                       [http-method]="'get'"
                                       [field-label]="'Country Name'"
@@ -91,7 +91,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

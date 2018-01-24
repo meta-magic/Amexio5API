@@ -12,13 +12,13 @@
       "description": "Sidenav bar rendering position. example position='relative','right' "
     },
     {
-      "name": "sidenavtitle",
+      "name": "title",
       "type": "string",
       "default": "",
       "description": "Title of sidenav bar "
     },
     {
-      "name": "titleimage",
+      "name": "title-image",
       "type": "string",
       "default": "",
       "description": "Title image of sidenav bar "

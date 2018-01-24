@@ -13,7 +13,7 @@
       "description":"Number of stars for rating component."
     },
     {
-      "name": "readonly",
+      "name": "read-only",
       "type": "boolean",
       "default": "false",
       "description":"If true will not react on any user events."

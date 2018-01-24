@@ -1,8 +1,8 @@
 <!-- Top Notification-->
-<amexio-notification [messageData]="topMessageArray"
-                     [verticalposition]="'top'"
-                     [horizontalposition]="'right'" [autodismissmsg]="true"
-                     [autodismissmsginterval]="2000">
+<amexio-notification [data]="topMessageArray"
+                     [vertical-position]="'top'"
+                     [horizontal-position]="'right'" [auto-dismiss-msg]="true"
+                     [auto-dismiss-msg-interval]="2000">
 </amexio-notification>
 <amexio-button (onClick)="topNotification()"
                [label]="'Info Popup'" [type]="'primary'"
@@ -11,10 +11,10 @@
 
 <!-- Bottom Notification-->
 
-<amexio-notification [messageData]="bottomMessageArray"
-                     [verticalposition]="'bottom'"
-                     [horizontalposition]="'right'" [autodismissmsg]="true"
-                     [autodismissmsginterval]="2000">
+<amexio-notification [data]="bottomMessageArray"
+                     [vertical-position]="'bottom'"
+                     [horizontal-position]="'right'" [auto-dismiss-msg]="true"
+                     [auto-dismiss-msg-interval]="2000">
 </amexio-notification>
 <amexio-button (onClick)="bottomNotification()"
                [label]="'Info On Bottom'" [type]="'primary'"

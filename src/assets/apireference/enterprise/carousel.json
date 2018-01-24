@@ -13,12 +13,12 @@
       "description": "Data Containing Image Path, Information and Video URL Refer the DataSource Tab"
     },
     {
-      "name": "carouselStyle",
+      "name": "carousel-type",
       "type": "string",
       "default": "",
       "description": "Stlyed Carousel for Vertical or Horizontal Media"
     },{
-      "name": "hasDetail",
+      "name": "has-details",
       "type": "boolean",
       "default": "false",
       "description": "Provide a embedded view for more information on the media"

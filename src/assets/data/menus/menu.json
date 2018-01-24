@@ -43,7 +43,7 @@
         {
           "text": "Date & Time Picker",
           "icon": "fa fa-calendar fa-fw",
-          "link": "datepicker-demo"
+          "link": "date-picker-demo"
         },
         {
           "text": "DropDown",

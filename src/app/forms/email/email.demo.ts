@@ -24,7 +24,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input [field-label]="'Email Id'" name ="email"
-                                        [placeholder]="'Enter Email Id'"
+                                        [place-holder]="'Enter Email Id'"
                                         [allow-blank]="false" [error-msg] ="'Please Enter Email Id'"
                                         [enable-popover]="true"
                                         [icon-feedback]="true">
@@ -39,7 +39,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input name ="email" [field-label]="'Email Id'"
-                                        [placeholder]="'Enter Email Id'"
+                                        [place-holder]="'Enter Email Id'"
                                         [disabled]="true">
                     </amexio-email-input>
                   </amexio-body>
@@ -54,7 +54,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input [field-label]="'Email Id'" name ="email"
-                                        [placeholder]="'Enter Email Id'"
+                                        [place-holder]="'Enter Email Id'"
                                         [icon-feedback]="true"
                                         [font-style]="'italic'">
                     </amexio-email-input>
@@ -68,7 +68,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-email-input name ="email" [field-label]="'Email Id'"
-                                        [placeholder]="'Enter Email Id'"
+                                        [place-holder]="'Enter Email Id'"
                                         [font-family]="'Times New Roman'"
                                         [font-size]="'large'">
                     </amexio-email-input>
@@ -125,7 +125,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

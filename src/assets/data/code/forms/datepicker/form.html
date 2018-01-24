@@ -1,8 +1,8 @@
 <!--Date Picker-->
 <amexio-date-time-picker
   [field-label]="'Date Of Birth'"
-  [timepicker]="false"
-  [datepicker]="true"
+  [time-picker]="false"
+  [date-picker]="true"
   [(ngModel)]="currentDate">
 </amexio-date-time-picker>
 
@@ -10,8 +10,8 @@
 
 <amexio-date-time-picker
   [field-label]="'Time Of Birth'"
-  [timepicker]="true"
-  [datepicker]="false"
+  [time-picker]="true"
+  [date-picker]="false"
   [ngModel]="time"
   (change)="onChangeTime($event)">
 </amexio-date-time-picker>

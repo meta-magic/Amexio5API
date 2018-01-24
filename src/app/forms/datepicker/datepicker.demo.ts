@@ -6,7 +6,7 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'datepicker-demo', template: `
+  selector: 'date-picker-demo', template: `
     <amexio-card header="true">
       <amexio-header>
          Date Time Picker 
@@ -17,7 +17,7 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column [size]="6">
-                <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
+                <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
                   <amexio-header>
                      Date Picker 
                   </amexio-header>
@@ -26,8 +26,8 @@ import {Http} from "@angular/http";
                       <amexio-column [size]="12">
                         <amexio-date-time-picker
                           [field-label]="'Date Of Birth'"
-                          [timepicker]="false"
-                          [datepicker]="true"
+                          [time-picker]="false"
+                          [date-picker]="true"
                           [(ngModel)]="currentDate">
                         </amexio-date-time-picker>
                       </amexio-column>
@@ -40,7 +40,7 @@ import {Http} from "@angular/http";
                
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-card [header]="true" [footer]="true" [footeralign]="'center'">
+                <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
                   <amexio-header>
                      Time Picker 
                   </amexio-header>
@@ -49,8 +49,8 @@ import {Http} from "@angular/http";
                       <amexio-column [size]="12">
                         <amexio-date-time-picker
                           [field-label]="'Time Of Birth'"
-                          [timepicker]="true"
-                          [datepicker]="false"
+                          [time-picker]="true"
+                          [date-picker]="false"
                           [ngModel]="time"
                           (change)="onChangeTime($event)">
                         </amexio-date-time-picker>
@@ -112,7 +112,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

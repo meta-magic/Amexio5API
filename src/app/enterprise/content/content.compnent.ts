@@ -18,12 +18,12 @@ import {Http} from "@angular/http";
               <amexio-header> Media Content Demo </amexio-header>
               <amexio-body>
                 <amexio-ee-content
-                  [bgImgUrl]="'assets/images/narcos_main_header_img.jpg'"
+                  [bg-image-url]="'assets/images/narcos_main_header_img.jpg'"
                   [title]="'Narcos'"
                   [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
-                  [videoLink]="'https://www.youtube.com/embed/U7elNhHwgBU'" [matchPercentage]="'90%'"
-                  [ageLimit]="'16'" [releaseYear]="'2016'" [seasonNo]="1"
-                  [rate]="7" [max]="10" [enableWatch]="true" [enableMyList]="true">
+                  [link]="'https://www.youtube.com/embed/U7elNhHwgBU'" [matchPercentage]="'90%'"
+                  [age-limit]="'16'" [release-year]="'2016'" [seasonNo]="1"
+                  [rate]="7" [max]="10" [watch]="true" [mylist]="true">
                 </amexio-ee-content>
               </amexio-body>
             </amexio-card>

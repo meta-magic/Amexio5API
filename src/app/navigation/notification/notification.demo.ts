@@ -20,10 +20,10 @@ import {Http} from "@angular/http";
                 <amexio-card [header]="true">
                   <amexio-header> Top Left Notification </amexio-header>
                   <amexio-body>
-                    <amexio-notification [messageData]="topLeftMessageArray"
-                                         [verticalposition]="'top'"
-                                         [horizontalposition]="'left'" [autodismissmsg]="true"
-                                         [autodismissmsginterval]="2000">
+                    <amexio-notification [data]="topLeftMessageArray"
+                                         [vertical-position]="'top'"
+                                         [horizontal-position]="'left'" [auto-dismiss-msg]="true"
+                                         [auto-dismiss-msg-interval]="2000">
                     </amexio-notification>
                     <amexio-button (onClick)="topLeftNotification()"
                                    [label]="'Info Left Popup'" [type]="'primary'"
@@ -37,10 +37,10 @@ import {Http} from "@angular/http";
                 <amexio-card [header]="true">
                   <amexio-header> Top Right Notification </amexio-header>
                   <amexio-body>
-                    <amexio-notification [messageData]="topMessageArray"
-                                         [verticalposition]="'top'"
-                                         [horizontalposition]="'right'" [autodismissmsg]="true"
-                                         [autodismissmsginterval]="2000">
+                    <amexio-notification [data]="topMessageArray"
+                                         [vertical-position]="'top'"
+                                         [horizontal-position]="'right'" [auto-dismiss-msg]="true"
+                                         [auto-dismiss-msg-interval]="2000">
                     </amexio-notification>
                     <amexio-button (onClick)="topNotification()"
                                    [label]="'Info Right Popup'" [type]="'primary'"
@@ -59,11 +59,11 @@ import {Http} from "@angular/http";
                 <amexio-card [header]="true">
                   <amexio-header> Bottom Left Notification </amexio-header>
                   <amexio-body>
-                    <amexio-notification [messageData]="bottomLeftMessageArray"
-                                         [verticalposition]="'bottom'"
-                                         [horizontalposition]="'left'"
-                                         [autodismissmsg]="true"
-                                         [autodismissmsginterval]="2000">
+                    <amexio-notification [data]="bottomLeftMessageArray"
+                                         [vertical-position]="'bottom'"
+                                         [horizontal-position]="'left'"
+                                         [auto-dismiss-msg]="true"
+                                         [auto-dismiss-msg-interval]="2000">
                     </amexio-notification>
                     <amexio-button (onClick)="bottomLeftNotification()"
                                    [label]="'Info Bottom Left '" [type]="'primary'"
@@ -77,10 +77,10 @@ import {Http} from "@angular/http";
                 <amexio-card [header]="true">
                   <amexio-header> Bottom Right Notification </amexio-header>
                   <amexio-body>
-                    <amexio-notification [messageData]="bottomMessageArray"
-                                         [verticalposition]="'bottom'"
-                                         [horizontalposition]="'right'" [autodismissmsg]="true"
-                                         [autodismissmsginterval]="2000">
+                    <amexio-notification [data]="bottomMessageArray"
+                                         [vertical-position]="'bottom'"
+                                         [horizontal-position]="'right'" [auto-dismiss-msg]="true"
+                                         [auto-dismiss-msg-interval]="2000">
                     </amexio-notification>
                     <amexio-button (onClick)="bottomNotification()"
                                    [label]="'Info Bottom Right'" [type]="'primary'"
@@ -130,7 +130,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

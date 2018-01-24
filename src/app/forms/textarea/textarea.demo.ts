@@ -24,7 +24,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-textarea-input [enable-popover]="true"  [field-label]="'Textarea Input'" name ="Address"
-                                           [placeholder]="'permanent Address'"
+                                           [place-holder]="'permanent Address'"
                                            [allow-blank]="true" [error-msg] ="'Please enter Address'"
                                            [icon-feedback]="true" [rows]="'4'" [columns]="'2'">
                     </amexio-textarea-input>
@@ -41,7 +41,7 @@ import {Http} from "@angular/http";
                     <!--TextArea Input with rows 7 and columns 4-->
 
                     <amexio-textarea-input [field-label]="'Textarea Input'" name ="Address"
-                                           [placeholder]="'permanent Address'"
+                                           [place-holder]="'permanent Address'"
                                            [allow-blank]="true" [error-msg] ="'Please enter Address'"
                                            [icon-feedback]="true" [rows]="'7'" [columns]="'4'">
                     </amexio-textarea-input>
@@ -98,7 +98,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

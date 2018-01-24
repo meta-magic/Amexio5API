@@ -1,13 +1,13 @@
 {
   "properties": [
     {
-      "name": "footeralign",
+      "name": "footer-align",
       "type": "string",
       "default": "right",
       "description":"Alignment of footer contents to right or left."
     },
     {
-      "name": "showWindow",
+      "name": "show-window",
       "type": "boolean",
       "default": "false",
       "description":"Show / Hide Window."

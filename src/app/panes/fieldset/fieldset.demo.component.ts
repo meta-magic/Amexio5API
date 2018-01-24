@@ -21,7 +21,7 @@ import {Http} from "@angular/http";
                 <amexio-row>
                   <amexio-column [size]="6">
                     <amexio-text-input [field-label]="'Name'" name="country"
-                                       [placeholder]="'Enter name'"
+                                       [place-holder]="'Enter name'"
                                        [enable-popover]="true"
                                        [icon-feedback]="true"
                                        [allow-blank]="false" [error-msg]="'Please enter name'"
@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
                   </amexio-column>
                   <amexio-column [size]="6">
                     <amexio-text-input [field-label]="'Surname'" name="name"
-                                       [placeholder]="'Enter surname'"
+                                       [place-holder]="'Enter surname'"
                                        [enable-popover]="true"
                                        [icon-feedback]="true"
                                        [allow-blank]="false" [error-msg]="'Please enter Surname'"
@@ -46,7 +46,7 @@ import {Http} from "@angular/http";
                   <amexio-column [size]="6">
 
                     <amexio-textarea-input [field-label]="'Address'" name="Address"
-                                           [placeholder]="'Enter address'"
+                                           [place-holder]="'Enter address'"
                                            [error-msg]="'Please enter address'"
                                            [icon-feedback]="true"
                                            [rows]="'1'" [columns]="'2'"

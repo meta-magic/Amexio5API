@@ -23,7 +23,7 @@ import {Http} from "@angular/http";
          
             <amexio-row>
               <amexio-column size="12">
-                <amexio-card [header]="true" [footer]="true" [show]="flag" [footeralign]="'right'">
+                <amexio-card [header]="true" [footer]="true" [show]="flag" [footer-align]="'right'">
                   <amexio-header>
                     Employee Registration
                   </amexio-header>
@@ -31,13 +31,13 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="6">
                         <amexio-text-input [field-label]="'Name'" name ="name"
-                                           [placeholder]="'Enter name'"
+                                           [place-holder]="'Enter name'"
                                            [icon-feedback]="true">
                         </amexio-text-input>
                       </amexio-column>
                       <amexio-column [size]="6">
                         <amexio-text-input [field-label]="'Address'" name ="address"
-                                           [placeholder]="'Enter address'"
+                                           [place-holder]="'Enter address'"
                                            [icon-feedback]="true">
                         </amexio-text-input>
                       </amexio-column>
@@ -45,12 +45,12 @@ import {Http} from "@angular/http";
                     <amexio-row>
                       <amexio-column [size]="6">
                         <amexio-number-input [field-label]="'Number Input'"
-                                             [placeholder]="'Enter Age'">
+                                             [place-holder]="'Enter Age'">
                         </amexio-number-input>
                       </amexio-column>
                       <amexio-column [size]="6">
                         <amexio-email-input [field-label]="'Email Id'" name ="email"
-                                            [placeholder]="'Enter Email Id'"
+                                            [place-holder]="'Enter Email Id'"
                                             [allow-blank]="false" [error-msg] ="'Please Enter Email Id'"
                                             [enable-popover]="true"
                                             [icon-feedback]="true">
@@ -104,7 +104,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

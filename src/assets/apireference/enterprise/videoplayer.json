@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "videoId",
+      "name": "video-id",
       "type": "string",
       "default": "",
       "description": "Set video Id."

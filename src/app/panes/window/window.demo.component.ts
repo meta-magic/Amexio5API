@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
            <amexio-row>
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-               <amexio-window [showWindow]="showBasicWindow" [footer]="true">
+               <amexio-window [show-window]="showBasicWindow" [footer]="true">
                  <amexio-header>
                   Employee Form
                  </amexio-header>
@@ -26,7 +26,7 @@ import {Http} from "@angular/http";
                    <amexio-row>
                      <amexio-column [size]="6">
                        <amexio-text-input [field-label]="'Name'" name="country"
-                                          [placeholder]="'Enter name'"
+                                          [place-holder]="'Enter name'"
                                           [enable-popover]="true"
                                           [icon-feedback]="true"
                                           [allow-blank]="false" [error-msg]="'Please enter name'"
@@ -37,7 +37,7 @@ import {Http} from "@angular/http";
                      </amexio-column>
                      <amexio-column [size]="6">
                        <amexio-text-input [field-label]="'Surname'" name="name"
-                                          [placeholder]="'Enter surname'"
+                                          [place-holder]="'Enter surname'"
                                           [enable-popover]="true"
                                           [icon-feedback]="true"
                                           [allow-blank]="false" [error-msg]="'Please enter Surname'"
@@ -51,7 +51,7 @@ import {Http} from "@angular/http";
                      <amexio-column [size]="6">
 
                        <amexio-textarea-input [field-label]="'Address'" name="Address"
-                                              [placeholder]="'Enter address'"
+                                              [place-holder]="'Enter address'"
                                               [error-msg]="'Please enter address'"
                                               [icon-feedback]="true"
                                               [rows]="'1'" [columns]="'2'"
@@ -76,7 +76,7 @@ import {Http} from "@angular/http";
           
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleMaxWindow()" label="Maximizable Window"></amexio-button>
-               <amexio-window [showWindow]="showMaxWindow" [footer]="true"  [maximize]="true">
+               <amexio-window [show-window]="showMaxWindow" [footer]="true"  [maximize]="true">
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -84,7 +84,7 @@ import {Http} from "@angular/http";
                    <amexio-row>
                      <amexio-column [size]="6">
                        <amexio-text-input [field-label]="'Name'" name="country"
-                                          [placeholder]="'Enter name'"
+                                          [place-holder]="'Enter name'"
                                           [enable-popover]="true"
                                           [icon-feedback]="true"
                                           [allow-blank]="false" [error-msg]="'Please enter name'"
@@ -95,7 +95,7 @@ import {Http} from "@angular/http";
                      </amexio-column>
                      <amexio-column [size]="6">
                        <amexio-text-input [field-label]="'Surname'" name="name"
-                                          [placeholder]="'Enter surname'"
+                                          [place-holder]="'Enter surname'"
                                           [enable-popover]="true"
                                           [icon-feedback]="true"
                                           [allow-blank]="false" [error-msg]="'Please enter Surname'"
@@ -109,7 +109,7 @@ import {Http} from "@angular/http";
                      <amexio-column [size]="6">
 
                        <amexio-textarea-input [field-label]="'Address'" name="Address"
-                                              [placeholder]="'Enter address'"
+                                              [place-holder]="'Enter address'"
                                               [error-msg]="'Please enter address'"
                                               [icon-feedback]="true"
                                               [rows]="'1'" [columns]="'2'"
@@ -133,7 +133,7 @@ import {Http} from "@angular/http";
       
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleClosable()" label="Closable Window"></amexio-button>
-               <amexio-window [showWindow]="showClosable" [closable]="true" >
+               <amexio-window [show-window]="showClosable" [closable]="true" >
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -141,7 +141,7 @@ import {Http} from "@angular/http";
                    <amexio-row>
                      <amexio-column [size]="6">
                        <amexio-text-input [field-label]="'Name'" name="country"
-                                          [placeholder]="'Enter name'"
+                                          [place-holder]="'Enter name'"
                                           [enable-popover]="true"
                                           [icon-feedback]="true"
                                           [allow-blank]="false" [error-msg]="'Please enter name'"
@@ -152,7 +152,7 @@ import {Http} from "@angular/http";
                      </amexio-column>
                      <amexio-column [size]="6">
                        <amexio-text-input [field-label]="'Surname'" name="name"
-                                          [placeholder]="'Enter surname'"
+                                          [place-holder]="'Enter surname'"
                                           [enable-popover]="true"
                                           [icon-feedback]="true"
                                           [allow-blank]="false" [error-msg]="'Please enter Surname'"
@@ -166,7 +166,7 @@ import {Http} from "@angular/http";
                      <amexio-column [size]="6">
 
                        <amexio-textarea-input [field-label]="'Address'" name="Address"
-                                              [placeholder]="'Enter address'"
+                                              [place-holder]="'Enter address'"
                                               [error-msg]="'Please enter address'"
                                               [icon-feedback]="true"
                                               [rows]="'1'" [columns]="'2'"

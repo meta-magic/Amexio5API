@@ -41,7 +41,7 @@ import {Http} from "@angular/http";
                     <br><br>
                     <div style="background-color: black">
                       <amexio-media-ee-carousel title="Trending" [data]="topRateContent"
-                                                carouselStyle="vertical"
+                                                carousel-type="vertical"
                       >
                       </amexio-media-ee-carousel>
                     </div>

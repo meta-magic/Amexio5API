@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "showProgress",
+      "name": "show",
       "type": "boolean",
       "default": "true",
       "description":"Shows / Hides the progress bar."

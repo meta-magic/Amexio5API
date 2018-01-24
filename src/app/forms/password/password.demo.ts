@@ -24,7 +24,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-password-input [enable-popover]="true"  [field-label]="'Password Input'" name ="password"
-                                           [placeholder]="'Enter Password'"
+                                           [place-holder]="'Enter Password'"
                                            [allow-blank]="false"
                                            [error-msg] ="'Please enter password'"
                                            [min-length]="6"
@@ -43,7 +43,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-password-input name ="password"
-                                           [placeholder]="'Enter Password'"
+                                           [place-holder]="'Enter Password'"
                                            [allow-blank]="false"
                                            [error-msg] ="'Please enter password'"
                                            [min-length]="6"
@@ -105,7 +105,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

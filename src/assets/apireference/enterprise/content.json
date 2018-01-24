@@ -1,7 +1,7 @@
 {
   "properties": [
     {
-      "name": "bgImgUrl",
+      "name": "bg-image-url",
       "type": "string",
       "default": "",
       "description": "Background image from content."
@@ -25,34 +25,34 @@
       "description": "Array of content must be in key value pair."
     },
     {
-      "name": "videoLink",
+      "name": "link",
       "type": "string",
       "default": "",
       "description": "Set video link."
     }, {
-      "name": "enableWatch",
+      "name": "watch",
       "type": "boolean",
       "default": "false",
       "description": "Enable watch button."
     },
     {
-      "name": "enableMyList",
+      "name": "mylist",
       "type": "boolean",
       "default": "false",
       "description": "Enable MyList button."
     }, {
-      "name": "ageLimit",
+      "name": "age-limit",
       "type": "string",
       "default": "",
       "description": "Set age limit."
     }, {
-      "name": "releaseYear",
+      "name": "release-year",
       "type": "string",
       "default": "",
       "description": "Set release Year."
     }
 ,{
-      "name": "closeEnable",
+      "name": "close",
       "type": "boolean",
       "default": "false",
       "description": "Enable close content."

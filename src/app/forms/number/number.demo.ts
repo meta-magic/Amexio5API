@@ -24,7 +24,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input [field-label]="'Number Input'"
-                                         [placeholder]="'Enter Age'">
+                                         [place-holder]="'Enter Age'">
                     </amexio-number-input>
                   </amexio-body>
                 </amexio-card>
@@ -36,7 +36,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input  
-                                         [placeholder]="'Enter age'"
+                                         [place-holder]="'Enter age'"
                                          [icon-feedback]="false"
                                          [has-label]="false" [disabled]="true">
                     </amexio-number-input>
@@ -52,7 +52,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input [field-label]="'Age'" 
-                                        [placeholder]="'Enter Age'"
+                                        [place-holder]="'Enter Age'"
                                         [font-style]="'italic'">
                     </amexio-number-input>
                   </amexio-body>
@@ -65,7 +65,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-number-input  [enable-popover]="true" [field-label]="'Age'" 
-                                          [placeholder]="'Enter age'"
+                                          [place-holder]="'Enter age'"
                                           [allow-blank]="false" [error-msg] ="'Please enter age'"
                                           [min-value]="1"
                                           [min-error-msg]="'age can not be less than 1'"
@@ -125,7 +125,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [messageData]="copyMsgArray"></amexio-notification>-->
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })

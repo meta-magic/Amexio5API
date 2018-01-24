@@ -3,14 +3,14 @@
                      [field-label]="'Film Rating'"
                      [max]="max"
                       name="rate"
-                     [readonly]="isReadonly">
+                     [read-only]="isReadonly">
 </amexio-rating-input>
 
 <!--Read only Rating-->
 <amexio-rating-input [field-label]="'Profile Rating'"
                      [(ngModel)]="disableProfileRate"
                      [max]="disableProfileMaxRate"
-                     [readonly]="true">
+                     [read-only]="true">
 </amexio-rating-input>
 
 <!--Rating component with custom icons-->
@@ -20,7 +20,7 @@
                      [empty-icon]="'☐'"
                      [max]="customIconRate"
                       name="customRate"
-                     [readonly]="isReadonly">
+                     [read-only]="isReadonly">
 </amexio-rating-input>
 
 <!-- Rating with rate titles-->
@@ -30,5 +30,5 @@
                      [empty-icon]="'☐'"
                      [max]="customIconRate"
                       name="customRate"
-                     [readonly]="isReadonly">
+                     [read-only]="isReadonly">
 </amexio-rating-input>
