@@ -359,9 +359,14 @@
           ]
         },
         {
-          "text": "Window Pane",
+          "text": "Window",
           "icon": "fa fa-window-maximize fa-fw",
           "link": "window"
+        },
+        {
+          "text": "Dialogue",
+          "icon": "fa fa-window-maximize fa-fw",
+          "link": "dialouge"
         }
       ]
     },

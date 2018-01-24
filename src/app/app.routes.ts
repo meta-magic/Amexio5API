@@ -150,6 +150,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path : 'window', loadChildren : './panes/window/window.demo.module#WindowDemoModule'
   },
   {
+    path : 'dialouge', loadChildren : './panes/dialogue/dialogue.demo.module#DialogueDemoModule'
+  },
+  {
     path : 'border', loadChildren : './layout/border/border.demo.module#BorderDemoRoutingModule'
   },
 

@@ -1,7 +1,8 @@
-<amexio-row>
-  <amexio-column [size]="4">
-    <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-    <amexio-window [showWindow]="showBasicWindow" type="window" [closable]="false">
+
+<!--simple window-->
+
+<amexio-window [showWindow]="showBasicWindow"
+               type="window" [closable]="false">
       <amexio-header>
         Employee Form
       </amexio-header>
@@ -14,8 +15,7 @@
                                [icon-feedback]="true"
                                [allow-blank]="false" [error-msg]="'Please enter name'"
                                [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
-                               [max-error-msg]="'Name should be less than 15 characters'"
-            >
+                               [max-error-msg]="'Name should be less than 15 characters'">
             </amexio-text-input>
           </amexio-column>
           <amexio-column [size]="6">
@@ -25,41 +25,32 @@
                                [icon-feedback]="true"
                                [allow-blank]="false" [error-msg]="'Please enter Surname'"
                                [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
-                               [max-error-msg]="'Surname should be less than 15 characters'"
-            >
+                               [max-error-msg]="'Surname should be less than 15 characters'">
             </amexio-text-input>
           </amexio-column>
         </amexio-row>
         <amexio-row>
           <amexio-column [size]="6">
-
             <amexio-textarea-input [field-label]="'Address'" name="Address"
                                    [placeholder]="'Enter address'"
                                    [error-msg]="'Please enter address'"
                                    [icon-feedback]="true"
                                    [rows]="'1'" [columns]="'2'"
-                                   [allow-blank]="false" [enable-popover]="true"
-
-            >
+                                   [allow-blank]="false" [enable-popover]="true">
             </amexio-textarea-input>
-
-
           </amexio-column>
-
         </amexio-row>
       </amexio-body>
       <amexio-action>
         <amexio-button (onClick)="showBasicWindow = false" label="Close"></amexio-button>
       </amexio-action>
+</amexio-window>
 
-    </amexio-window>
-  </amexio-column>
+<!--Max window-->
 
-
-
-  <amexio-column [size]="4">
-    <amexio-button type="primary" (onClick)="toggleMaxWindow()" label="Maximizable Window"></amexio-button>
-    <amexio-window [showWindow]="showMaxWindow" [closable]="false" type="window" [maximize]="true">
+<amexio-window [showWindow]="showMaxWindow"
+               [closable]="false" type="window"
+               [maximize]="true">
       <amexio-header>
         Employee Form
       </amexio-header>
@@ -72,8 +63,7 @@
                                [icon-feedback]="true"
                                [allow-blank]="false" [error-msg]="'Please enter name'"
                                [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
-                               [max-error-msg]="'Name should be less than 15 characters'"
-            >
+                               [max-error-msg]="'Name should be less than 15 characters'">
             </amexio-text-input>
           </amexio-column>
           <amexio-column [size]="6">
@@ -83,25 +73,19 @@
                                [icon-feedback]="true"
                                [allow-blank]="false" [error-msg]="'Please enter Surname'"
                                [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
-                               [max-error-msg]="'Surname should be less than 15 characters'"
-            >
+                               [max-error-msg]="'Surname should be less than 15 characters'">
             </amexio-text-input>
           </amexio-column>
         </amexio-row>
         <amexio-row>
           <amexio-column [size]="6">
-
             <amexio-textarea-input [field-label]="'Address'" name="Address"
                                    [placeholder]="'Enter address'"
                                    [error-msg]="'Please enter address'"
                                    [icon-feedback]="true"
                                    [rows]="'1'" [columns]="'2'"
-                                   [allow-blank]="false" [enable-popover]="true"
-
-            >
+                                   [allow-blank]="false" [enable-popover]="true">
             </amexio-textarea-input>
-
-
           </amexio-column>
 
         </amexio-row>
@@ -109,14 +93,14 @@
       <amexio-action>
         <amexio-button (onClick)="showMaxWindow = false" label="Close"></amexio-button>
       </amexio-action>
-
-    </amexio-window>
-  </amexio-column>
+</amexio-window>
 
 
-  <amexio-column [size]="4">
-    <amexio-button type="primary" (onClick)="toggleClosable()" label="Closable Window"></amexio-button>
-    <amexio-window [showWindow]="showClosable" [closable]="true" type="window">
+<!--Closable window-->
+
+<amexio-window [showWindow]="showClosable"
+               [closable]="true"
+               type="window">
       <amexio-header>
         Employee Form
       </amexio-header>
@@ -129,8 +113,7 @@
                                [icon-feedback]="true"
                                [allow-blank]="false" [error-msg]="'Please enter name'"
                                [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
-                               [max-error-msg]="'Name should be less than 15 characters'"
-            >
+                               [max-error-msg]="'Name should be less than 15 characters'">
             </amexio-text-input>
           </amexio-column>
           <amexio-column [size]="6">
@@ -140,35 +123,21 @@
                                [icon-feedback]="true"
                                [allow-blank]="false" [error-msg]="'Please enter Surname'"
                                [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
-                               [max-error-msg]="'Surname should be less than 15 characters'"
-            >
+                               [max-error-msg]="'Surname should be less than 15 characters'">
             </amexio-text-input>
           </amexio-column>
         </amexio-row>
         <amexio-row>
           <amexio-column [size]="6">
-
             <amexio-textarea-input [field-label]="'Address'" name="Address"
                                    [placeholder]="'Enter address'"
                                    [error-msg]="'Please enter address'"
                                    [icon-feedback]="true"
                                    [rows]="'1'" [columns]="'2'"
-                                   [allow-blank]="false" [enable-popover]="true"
-
-            >
+                                   [allow-blank]="false" [enable-popover]="true">
             </amexio-textarea-input>
-
-
           </amexio-column>
-
         </amexio-row>
       </amexio-body>
-    </amexio-window>
-  </amexio-column>
+</amexio-window>
 
-
-  <!--<amexio-column [size]="4">
-    <amexio-button type="primary" (onClick)="toggleDialog()" label="Dialog Window"></amexio-button>
-    {{showClosable}}
-  </amexio-column>-->
-</amexio-row>

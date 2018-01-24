@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
            <amexio-row>
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-               <amexio-window [showWindow]="showBasicWindow" [footer]="true" type="window">
+               <amexio-window [showWindow]="showBasicWindow" [footer]="true">
                  <amexio-header>
                   Employee Form
                  </amexio-header>
@@ -76,7 +76,7 @@ import {Http} from "@angular/http";
           
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleMaxWindow()" label="Maximizable Window"></amexio-button>
-               <amexio-window [showWindow]="showMaxWindow" [footer]="true" [closable]="false" type="window" [maximize]="true">
+               <amexio-window [showWindow]="showMaxWindow" [footer]="true"  [maximize]="true">
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -133,7 +133,7 @@ import {Http} from "@angular/http";
       
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleClosable()" label="Closable Window"></amexio-button>
-               <amexio-window [showWindow]="showClosable" [closable]="true" type="window">
+               <amexio-window [showWindow]="showClosable" [closable]="true" >
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -182,33 +182,12 @@ import {Http} from "@angular/http";
                  </amexio-body>
                </amexio-window>
              </amexio-column>
-
-         
-             <amexio-column [size]="4">
-              <amexio-button type="primary" (onClick)="toggleDialog()" label="Dialog Window"></amexio-button>
-               <amexio-window [showWindow]="showDialog" [footer]="true" [dialog]="true">
-                 <amexio-header>
-                   Confirm Dialogue
-                 </amexio-header>
-                 
-                 <amexio-body>
-                   <h3>Do you want to confirm action</h3>
-                 </amexio-body>
-                 <amexio-action>
-                   <amexio-button (onClick)="showDialog = false" label="Yes"></amexio-button>
-                   <amexio-button (onClick)="showDialog = false" label="Cancel"></amexio-button>
-                 </amexio-action>
-               </amexio-window>
-               
-             </amexio-column>
            </amexio-row>
-        
-           
          </amexio-tab>
          <amexio-tab title="API Reference">
            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                             [http-method]="'get'"
-                            [http-url]="'assets/apireference/layout/window/window.json'"
+                            [http-url]="'assets/apireference/panes/window/window.json'"
                             [data-reader]="'properties'"
                             [enable-data-filter]="false" >
              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -252,7 +231,6 @@ export class WindowDemoComponent {
   showBasicWindow : boolean;
   showMaxWindow : boolean;
   showClosable : boolean;
-  showDialog : boolean;
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -272,7 +250,7 @@ export class WindowDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/window/window.html').subscribe(data => {
+    this.http.get('assets/data/code/pane/window/window.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -280,7 +258,7 @@ export class WindowDemoComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/window/window.text').subscribe(data => {
+    this.http.get('assets/data/code/pane/window/window.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
@@ -311,7 +289,4 @@ export class WindowDemoComponent {
     this.showClosable = !this.showClosable;
   }
 
-  toggleDialog(){
-    this.showDialog = !this.showDialog;
-  }
 }
