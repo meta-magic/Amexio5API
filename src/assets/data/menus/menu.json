@@ -15,6 +15,11 @@
           "link": "accordion"
         },
         {
+          "text": "Panel",
+          "icon": "fa fa-bars fa-fw",
+          "link": "panel"
+        },
+        {
           "text": "Border Layout",
           "icon": "fa fa-id-card-o fa-fw",
           "link": "border"

@@ -15,19 +15,36 @@ import {Http} from "@angular/http";
         <p>Panel provides an easy way to organize big forms by grouping the fields in panel</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-            <amexio-panel [header]="true"  title="Panel" expanded="true" [custom-header]="false">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </amexio-panel>
-
-          <br>
-            <amexio-panel [header]="true"  title="Panel" expanded="true" [custom-header]="true">
-              <amexio-header>
-                Custom Header
-                <i style="padding-left: 810px" class="fa fa-check-circle" aria-hidden="true" (click)="alert('test')"></i>
-              </amexio-header>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </amexio-panel>
+            <amexio-row>
+              <amexio-column [size]="4">
+                <amexio-panel [header]="true"  title="Panel" expanded="true" [custom-header]="false">
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </amexio-panel>
+              </amexio-column>
+              <amexio-column [size]="4">
+                <amexio-panel [header]="true"  title="Panel" expanded="true" [custom-header]="true">
+                  <amexio-header>
+                    Custom Header
+                      <span style="padding-left: 130px">
+                        <i class="fa fa-refresh fa-fw" aria-hidden="true"></i>
+                        <i class="fa fa-search fa-fw" aria-hidden="true"></i>
+                      </span>
+                  </amexio-header>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </amexio-panel>
+              </amexio-column>
+              <amexio-column [size]="4">
+                <amexio-panel [header]="false" [height]="800" expanded="true" >
+                  <amexio-header>
+                    Custom Header
+                  </amexio-header>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </amexio-panel>
+              </amexio-column>
+            </amexio-row>
+        
           </amexio-tab>
+          
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
