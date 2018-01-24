@@ -1,6 +1,18 @@
 {
   "properties": [
     {
+      "name": "height",
+      "type": "string",
+      "default": "",
+      "description": "Height of image."
+    },
+    {
+      "name": "width",
+      "type": "string",
+      "default": "",
+      "description": "Width of image."
+    },
+    {
       "name": "path",
       "type": "string",
       "default": "",
