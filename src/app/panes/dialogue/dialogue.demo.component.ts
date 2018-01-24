@@ -47,7 +47,7 @@ import {Http} from "@angular/http";
 
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleCustom()" label="Custom"></amexio-button>
-                <amexio-dialogue [showWindow]="customdialogue" [custom]="true" [title]="'Custom dialogue with Text Input'"
+                <amexio-dialogue [showWindow]="customdialogue" [custom]="true" [title]="'Custom dialogue'"
                                [type]="'confirm'">
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
