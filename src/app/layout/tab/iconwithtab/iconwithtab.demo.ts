@@ -43,13 +43,13 @@ import {Http} from "@angular/http";
                              [http-url]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
-              <amexio-data-table-column [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="60" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
@@ -58,13 +58,13 @@ import {Http} from "@angular/http";
                              [http-url]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
                              [data-reader]="'tabproperties'"
                              [enable-data-filter]="false" >
-              <amexio-data-table-column [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="60" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
