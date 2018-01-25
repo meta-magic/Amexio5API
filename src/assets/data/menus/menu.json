@@ -6,7 +6,7 @@
       "icon" : "fa fa-home fa-fw"
     },
     {
-      "text": "Layout",
+      "text": "Layouts",
       "icon": "fa fa-desktop fa-fw",
       "children": [
         {
@@ -41,11 +41,6 @@
           ]
         },
         {
-          "text": "Panel",
-          "icon": "fa fa-bars fa-fw",
-          "link": "panel"
-        },
-        {
           "text": "Row",
           "link": "row-demo",
           "icon": "fa fa-bars fa-fw"
@@ -54,7 +49,103 @@
       ]
     },
     {
-      "text": "Form input",
+      "text": "Panels",
+      "icon": "fa fa-bars fa-fw",
+      "children": [
+        {
+          "text": "Carousel",
+          "icon": "fa fa-indent fa-fw",
+          "link": "carousel"
+        },
+
+        {
+          "text": "Fieldset",
+          "icon": "fa fa-id-card-o fa-fw",
+          "link": "fieldset"
+        },
+        {
+          "text": "Panel",
+          "icon": "fa fa-bars fa-fw",
+          "link": "panel"
+        },
+        {
+          "text": "Steps",
+          "icon": "fa fa-step-forward",
+          "children": [
+            {
+              "text": "Step Box",
+              "link": "step-box",
+              "icon": "fa fa-leaf fa-fw"
+            },
+            {
+              "text": "Step Box Icon",
+              "link": "step-box-icon",
+              "icon": "fa fa-leaf fa-fw"
+            }
+          ]
+        },
+        {
+          "text": "Tab",
+          "icon": "fa fa-folder fa-fw",
+          "children": [
+            {
+              "text": "Horizontal",
+              "icon": "fa fa-indent fa-fw",
+              "children": [
+                {
+                  "text": "Basic",
+                  "link": "basic-tab-demo",
+                  "icon": "fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Closable",
+                  "link": "closable-tab-demo",
+                  "icon": "fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Tab with Icon",
+                  "link": "icon-tab-demo",
+                  "icon": "fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Scrollable",
+                  "link": "scrollable-tab-demo",
+                  "icon": "fa fa-leaf fa-fw"
+                }
+              ]
+            },
+            {
+              "text": "Vertical",
+              "icon": "fa fa-outdent fa-fw",
+              "children": [
+                {
+                  "text": "Left Aligned",
+                  "link": "vertical-tab-demo",
+                  "icon": "fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Right Aligned",
+                  "link": "verticalright-tab-demo",
+                  "icon": "fa fa-leaf fa-fw"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "text": "Window",
+          "icon": "fa fa-window-maximize fa-fw",
+          "link": "window"
+        },
+        {
+          "text": "Dialogue",
+          "icon": "fa fa-window-maximize fa-fw",
+          "link": "dialouge"
+        }
+      ]
+    },
+    {
+      "text": "Form inputs",
       "icon": "fa fa-clone fa-fw",
       "children": [
         {
@@ -156,7 +247,7 @@
       ]
     },
     {
-      "text": "Form Action",
+      "text": "Form Actions",
       "icon": "fa fa-keyboard-o fa-fw",
       "children": [
         {
@@ -283,97 +374,6 @@
           "text": "ListBox",
           "icon": "fa fa-list fa-fw",
           "link": "listbox-demo"
-        }
-      ]
-    },
-    {
-      "text": "Panel",
-      "icon": "fa fa-bars fa-fw",
-      "children": [
-        {
-          "text": "Carousel",
-          "icon": "fa fa-indent fa-fw",
-          "link": "carousel"
-        },
-
-        {
-          "text": "Fieldset",
-          "icon": "fa fa-id-card-o fa-fw",
-          "link": "fieldset"
-        },
-        {
-          "text": "Steps",
-          "icon": "fa fa-step-forward",
-          "children": [
-            {
-              "text": "Step Box",
-              "link": "step-box",
-              "icon": "fa fa-leaf fa-fw"
-            },
-            {
-              "text": "Step Box Icon",
-              "link": "step-box-icon",
-              "icon": "fa fa-leaf fa-fw"
-            }
-          ]
-        },
-        {
-          "text": "Tab",
-          "icon": "fa fa-folder fa-fw",
-          "children": [
-            {
-              "text": "Horizontal",
-              "icon": "fa fa-indent fa-fw",
-              "children": [
-                {
-                  "text": "Basic",
-                  "link": "basic-tab-demo",
-                  "icon": "fa fa-leaf fa-fw"
-                },
-                {
-                  "text": "Closable",
-                  "link": "closable-tab-demo",
-                  "icon": "fa fa-leaf fa-fw"
-                },
-                {
-                  "text": "Tab with Icon",
-                  "link": "icon-tab-demo",
-                  "icon": "fa fa-leaf fa-fw"
-                },
-                {
-                  "text": "Scrollable",
-                  "link": "scrollable-tab-demo",
-                  "icon": "fa fa-leaf fa-fw"
-                }
-              ]
-            },
-            {
-              "text": "Vertical",
-              "icon": "fa fa-outdent fa-fw",
-              "children": [
-                {
-                  "text": "Left Aligned",
-                  "link": "vertical-tab-demo",
-                  "icon": "fa fa-leaf fa-fw"
-                },
-                {
-                  "text": "Right Aligned",
-                  "link": "verticalright-tab-demo",
-                  "icon": "fa fa-leaf fa-fw"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "text": "Window",
-          "icon": "fa fa-window-maximize fa-fw",
-          "link": "window"
-        },
-        {
-          "text": "Dialogue",
-          "icon": "fa fa-window-maximize fa-fw",
-          "link": "dialouge"
         }
       ]
     },
@@ -507,7 +507,7 @@
       ]
     },
     {
-      "text": "Map",
+      "text": "Maps",
       "icon": "fa fa-globe fa-fw",
       "children": [
         {
