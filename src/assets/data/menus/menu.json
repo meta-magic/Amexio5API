@@ -25,11 +25,6 @@
           "icon": "fa fa-columns fa-fw"
         },
         {
-          "text": "Row",
-          "link": "row-demo",
-          "icon": "fa fa-bars fa-fw"
-        },
-        {
           "text": "Card",
           "icon": "fa fa-id-card-o fa-fw",
           "children": [
@@ -44,7 +39,18 @@
               "icon": "fa fa-leaf fa-fw"
             }
           ]
+        },
+        {
+          "text": "Panel",
+          "icon": "fa fa-bars fa-fw",
+          "link": "panel"
+        },
+        {
+          "text": "Row",
+          "link": "row-demo",
+          "icon": "fa fa-bars fa-fw"
         }
+
       ]
     },
     {
@@ -210,7 +216,7 @@
               "link": "simple-grid"
             },
             {
-              "text": "Grid with Template",
+              "text": "Template",
               "icon": "fa fa-database fa-fw",
               "link": "template-grid"
             },

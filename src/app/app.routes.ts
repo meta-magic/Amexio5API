@@ -141,6 +141,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path : 'accordion', loadChildren : './panes/accordion/accordion.demo.module#AccordionDemoModule'
   },
   {
+    path : 'panel', loadChildren : './panes/panel/panel.demo.module#PanelDemoModule'
+  },
+  {
     path : 'carousel', loadChildren : './panes/carousel/carousel.demo.module#CarouselDemoModule'
   },
   {
