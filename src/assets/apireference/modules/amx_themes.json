@@ -1,69 +1,67 @@
 {
   "properties": [
     {
-      "name": "at-am-byzantine-crystal",
+      "name": "Byzantine Crystal",
       "description":"../node_modules/amexio-ng-extensions/styles/amexio/at-am-byzantine-crystal.scss"
     },
     {
-      "name" : "at-am-honey-prussian",
+      "name" : "Honey Prussian",
       "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-honey-prussian.scss"
     },
     {
-      "name" : "at-am-limegreen",
+      "name" : "Lime Green",
       "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-limegreen.scss"
     },
     {
-      "name" : "at-am-matrix",
+      "name" : "Matrix",
       "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-matrix.scss"
     },
     {
-      "name" : "at-am-ocean-blue",
+      "name" : "Ocean Blue",
       "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-ocean-blue.scss"
     },
     {
-      "name" : "at-am-persian-laguna",
+      "name" : "Persian Laguna",
       "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-persian-laguna.scss"
     },
     {
-      "name" : "at-am-spicy-apricot",
+      "name" : "Spicy Apricot",
       "description" : "../node_modules/amexio-ng-extensions/styles/amexio/at-am-spicy-apricot.scss"
     },
     {
-      "name": "at-am-tiger",
+      "name": "Royal Tiger",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-tiger.scss"
     },
     {
-      "name": "at-am-burgandy-magenta",
+      "name": "Burgandy Magenta",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-burgandy-magenta.scss"
     },
     {
-      "name": "at-am-navy-grape",
+      "name": "Navy Grape",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-navy-grape.scss"
     },
-
-
     {
-      "name": "at-am-matrix-amber",
+      "name": "Matrix Amber",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-matrix-amber.scss"
     },
     {
-      "name": "at-am-matrix-cream",
+      "name": "Matrix Cream",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-matrix-cream.scss"
     },
     {
-      "name": "at-am-matrix-maya",
+      "name": "Matrix Maya",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-matrix-maya.scss"
     },
     {
-      "name": "at-am-matrix-ultra",
+      "name": "Matrix Ultra",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-matrix-ultra.scss"
     },
     {
-      "name": "at-am-royal-kelly",
+      "name": "Royal Kelly",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-royal-kelly.scss"
     },
     {
-      "name": "at-am-royal-pineapple",
+      "name": "Royal Pineapple",
       "description": "../node_modules/amexio-ng-extensions/styles/amexio/at-am-royal-pineapple.scss"
     }
 

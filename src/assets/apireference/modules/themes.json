@@ -1,131 +1,131 @@
 {
   "properties": [
     {
-      "name": "AT-MD-Army-olive",
+      "name": "Army Olive",
       "description":"../node_modules/amexio-ng-extensions/styles/mda/at-md-army-olive.scss"
     },
     {
-      "name" : "AT-MD-Ash-stone-black",
+      "name" : "Ash Stone Black",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-ash-stone-black.scss"
     },
     {
-      "name" : "AT-MD-Black",
+      "name" : "Black",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-black.scss"
     },
     {
-      "name" : "AT-MD-Blue",
+      "name" : "Blue",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss"
     },
     {
-      "name" : "AT-MD-blue-grey",
+      "name" : "Blue Grey",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-blue-grey.scss"
     },
     {
-      "name" : "AT-MD-Cerise-magenta",
+      "name" : "Cerise Magenta",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-cerise-magenta.scss"
     },
     {
-      "name" : "AT-MD-charcoal-iron",
+      "name" : "Charcoal Iron",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-charcoal-iron.scss"
     },
     {
-      "name" : "AT-MD-chocolate-russet",
+      "name" : "Chocolate Russet",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-chocolate-russet.scss"
     },
     {
-      "name" : "AT-MD-fern-lime",
+      "name" : "Fern Lime",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-fern-lime.scss"
     },
     {
-      "name" : "At-MD-frenchrose-mulberry",
+      "name" : "French Rose Mulberry",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-frenchrose-mulberry.scss"
     },
     {
-      "name" : "AT-MD-gingerbread",
+      "name" : "Ginger Bread",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-gingerbread.scss"
     }
   ,
     {
-      "name" : "AT-MD-gold-amber",
+      "name" : "Gold Amber",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-gold-amber.scss"
     }
   ,
     {
-      "name" : "AT-MD-grape-violet",
+      "name" : "Grape Violet",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-grape-violet.scss"
     }
   ,
     {
-      "name" : "AT-MD-hot-pink-fuchsia",
+      "name" : "Hot Pink Fuchsia",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-hot-pink-fuchsia.scss"
     }
   ,
     {
-      "name" : "AT-MD-indigo",
+      "name" : "Indigo",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-indigo.scss"
     }
   ,
     {
-      "name" : "AT-MD-jungle-mint",
+      "name" : "Jungle Mint",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-jungle-mint.scss"
     },
     {
-      "name" : "at-md-mahogany-barny-red",
+      "name" : "Mahogany Barny Red",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-mahogany-barny-red.scss"
     }
   ,
     {
-      "name" : "at-md-maya",
+      "name" : "Maya",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-maya.scss"
     }
   ,
     {
-      "name" : "at-md-navy-egyptian",
+      "name" : "Navy Egyptian",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-navy-egyptian.scss"
     }
   ,
     {
-      "name" : "at-md-rasberry-sangria",
+      "name" : "Rasberry Sangria",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-rasberry-sangria.scss"
     }
   ,
     {
-      "name" : "at-md-red-maroon",
+      "name" : "Red Maroon",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-red-maroon.scss"
     },
     {
-      "name" : "at-md-sacramento-jade",
+      "name" : "Sacramento Jade",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-sacramento-jade.scss"
     },
     {
-      "name" : "at-md-yale-azure",
+      "name" : "Yale Azure",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-yale-azure.scss"
     },
 
 
 
     {
-      "name" : "at-md-tronbone-royal",
+      "name" : "Tronbone Royal",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-tronbone-royal.scss"
     },
     {
-      "name" : "at-md-pineapple-flaxen",
+      "name" : "Pineapple Flaxen",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-pineapple-flaxen.scss"
     },
     {
-      "name" : "at-md-pumpkin-fire",
+      "name" : "Pumpkin Fire",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-pumpkin-fire.scss"
     },
     {
-      "name" : "at-md-mauve-orchid",
+      "name" : "Mauve Orchid",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-mauve-orchid.scss"
     },
     {
-      "name" : "at-md-honey-mustard",
+      "name" : "Honey Mustard",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-honey-mustard.scss"
     },
     {
-      "name" : "at-md-bruntor-tangerine",
+      "name" : "Bruntor Tangerine",
       "description" : "../node_modules/amexio-ng-extensions/styles/mda/at-md-bruntor-tangerine.scss"
     }
 
