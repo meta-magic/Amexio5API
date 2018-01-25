@@ -49,16 +49,23 @@
       "description":"User can custom dialogue box."
     },
     {
-      "name": "primaryActionLabel",
+      "name": "primary-action-label",
       "type": "string",
       "default": "",
       "description":"Label to be displayed for primary action."
     },
     {
-      "name": "secondaryActionLabel",
+      "name": "secondary-action-label",
       "type": "string",
       "default": "",
       "description":"Label to be displayed for secondary action."
     }
+  ],
+  "events": [
+    {
+      "name": "actionStatus",
+      "description": "Fire when click on yes or no button "
+    }
   ]
+
 }

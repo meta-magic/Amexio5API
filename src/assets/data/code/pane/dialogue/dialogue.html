@@ -3,14 +3,14 @@
 
 <amexio-dialogue [show-window]="confirmdialogue"
                [title]="'Comfirm'" [message]="'Do you want to confirm ?'"
-               [messageType]="'confirm'" [type]="'confirm'">
+               [message-type]="'confirm'" [type]="'confirm'">
 </amexio-dialogue>
 
 <!--Error dialogue-->
 <amexio-dialogue [show-window]="errordialogue"
                [message]="'Error Occurred.'"
-               [primaryActionLabel]="'ok'"
-               [title]="'Error'" [messageType]="'error'"
+               [primary-action-label]="'ok'"
+               [title]="'Error'" [message-type]="'error'"
                [type]="'alert'">
 </amexio-dialogue>
 
@@ -19,7 +19,7 @@
 <amexio-dialogue [show-window]="warningdialogue"
                [message]="'Data not found.'"
                [title]="'Warning'"
-               [messageType]="'warning'"
+               [message-type]="'warning'"
                [type]="'alert'">
 </amexio-dialogue>
 
@@ -27,7 +27,7 @@
 
 <amexio-dialogue [show-window]="helpdialogue"
                [title]="'Help'" [message]="'Check Server.'"
-               [messageType]="'help'" [type]="'alert'">
+               [message-type]="'help'" [type]="'alert'">
 </amexio-dialogue>
 
 <!--custom dialogue-->
