@@ -18,36 +18,36 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleConfirm()" label="Confirm"></amexio-button>
-                <amexio-dialogue [show-window]="confirmdialogue" [title]="'Confirm'" [message]="'Are you sure ?'"
-                               [messageType]="'confirm'" [type]="'confirm'">
+                <amexio-dialogue [show-dialogue]="confirmdialogue" [title]="'Confirm'" [message]="'Are you sure ?'"
+                               [message-type]="'confirm'" [type]="'confirm'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button type="danger" (onClick)="toggleError()" label="Error"></amexio-button>
-                <amexio-dialogue [show-window]="errordialogue" [message]="'Error Occurred.'" [primaryActionLabel]="'ok'"
-                               [title]="'Error'" [messageType]="'error'" [type]="'alert'">
+                <amexio-dialogue [show-dialogue]="errordialogue" [message]="'Error Occurred.'" [primary-action-label]="'ok'"
+                               [title]="'Error'" [message-type]="'error'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button [type]="'warning'" (onClick)="toggleWarning()" label="Warning"></amexio-button>
-                <amexio-dialogue [show-window]="warningdialogue" [message]="'Data not found.'" [title]="'Warning'"
-                               [messageType]="'warning'" [type]="'alert'">
+                <amexio-dialogue [show-dialogue]="warningdialogue" [message]="'Data not found.'" [title]="'Warning'"
+                               [message-type]="'warning'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
             </amexio-row>
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleHelp()" label="Help"></amexio-button>
-                <amexio-dialogue [show-window]="helpdialogue" [title]="'Help'" [message]="'Check Server.'"
-                               [messageType]="'help'" [type]="'alert'">
+                <amexio-dialogue [show-dialogue]="helpdialogue" [title]="'Help'" [message]="'Check Server.'"
+                               [message-type]="'help'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleCustom()" label="Custom"></amexio-button>
-                <amexio-dialogue [show-window]="customdialogue" [custom]="true" [title]="'Custom dialogue'"
+                <amexio-dialogue [show-dialogue]="customdialogue" [custom]="true" [title]="'Custom dialogue'"
                                [type]="'confirm'">
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
@@ -68,7 +68,7 @@ import {Http} from "@angular/http";
                              [http-url]="'assets/apireference/panes/dialogue/dialogue.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
-              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="20" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
@@ -76,6 +76,15 @@ import {Http} from "@angular/http";
                                         [text]="'Default'"></amexio-data-table-column>
               <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
                                         [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+            <br>
+            <amexio-datagrid title="Events" [http-method]="'get'"
+                             [http-url]="'assets/apireference/panes/dialogue/dialogue.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
