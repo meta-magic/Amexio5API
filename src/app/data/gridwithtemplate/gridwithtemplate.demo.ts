@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
                         </span>
                         </ng-template>
                       </amexio-data-table-column>
-                      <amexio-data-table-column [width]="20" [data-index]="'latitude'" [data-type]="'string'" [hidden]="false" [text]="'Latitude'"></amexio-data-table-column>
+                      <amexio-data-table-column [width]="20" [data-index]="'latitude'" [data-type]="'number'" [hidden]="false" [text]="'Latitude'"></amexio-data-table-column>
                       <amexio-data-table-column [width]="20" [data-index]="'longitude'" [data-type]="'number'" [hidden]="false" [text]="'Longitude'"></amexio-data-table-column>
                     </amexio-datagrid>
                     <p><b>Clicked row data :</b> {{clickedRowData | json}}</p>

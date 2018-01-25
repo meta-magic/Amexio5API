@@ -22,7 +22,6 @@ import {Http} from "@angular/http";
                      Data Grid With Filter 
                   </amexio-header>
                   <amexio-body>
-
                     <amexio-datagrid
                       [title]="'Employee Data'"
                       [page-size] = "10"

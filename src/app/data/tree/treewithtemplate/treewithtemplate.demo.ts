@@ -26,7 +26,7 @@ import {Http} from "@angular/http";
                                      [http-url]="'assets/data/componentdata/sidenav.json'"
                                      [http-method]="'get'" (nodeClick)="getNodeData($event)">
                       <ng-template #amexioTreeTemplate let-tree let-icon="icon" let-node="node">
-                        <i [attr.class]="node.icon"></i> &nbsp; &nbsp;&nbsp;{{tree.text}}
+                        <i [attr.class]="node.icon"></i> &nbsp;{{tree.text}}
                       </ng-template>
                     </amexio-treeview>
                   </amexio-body>
