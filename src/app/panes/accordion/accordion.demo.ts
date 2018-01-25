@@ -39,6 +39,23 @@ import {Http} from "@angular/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.</amexio-accordion-tab>
             </amexio-accordion>
+
+           <!-- <amexio-panel-1 [header]="true"  title="Panel" expanded="true" [customHeader]="false">
+              <amexio-header>
+                Custom Header
+                <i style="padding-left: 50px" class="fa fa-check-circle" aria-hidden="true" (click)="alert('test')"></i>
+              </amexio-header>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </amexio-panel-1>
+
+            <amexio-panel-1 [header]="true"  title="Panel" expanded="true" [customHeader]="true">
+              <amexio-header>
+                Custom Header
+                <i style="padding-left: 50px" class="fa fa-check-circle" aria-hidden="true" (click)="alert('test')"></i>
+              </amexio-header>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </amexio-panel-1>-->
+          
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
