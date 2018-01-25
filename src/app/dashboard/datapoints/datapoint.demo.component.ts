@@ -17,7 +17,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
                   <amexio-west [contentalign]="'center'" [width]="'100px'" [c-class]="'datapoint-west'">
-                    <i class="fa fa-line-chart fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'" [c-class]="'datapoint-center'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
@@ -35,7 +36,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [width]="'100px'"  [c-class]="'datapoint-west'">
-                    <i class="fa fa-line-chart fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'"  [c-class]="'datapoint-center'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
@@ -53,7 +55,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
                   <amexio-west [contentalign]="'center'" [width]="'100px'"  [c-class]="'datapoint-west'">
-                    <i class="fa fa-line-chart fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'"  [c-class]="'datapoint-center'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
@@ -74,7 +77,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="3">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
-                    <i class="fa fa-check fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-check fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
@@ -92,7 +96,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="3">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
-                    <i class="fa fa-envelope-open fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-envelope-open fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
@@ -110,7 +115,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
-                    <i class="fa fa-bolt fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-bolt fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
@@ -128,7 +134,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
-                    <i class="fa fa-medium fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-medium fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
@@ -146,7 +153,8 @@ import {Http} from "@angular/http";
               <amexio-column [size]="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
-                    <i class="fa fa-low-vision fa-3x"></i>
+                    <amexio-image [icon-class]="'fa fa-low-vision fa-3x'">
+                    </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'right'">
                     <amexio-datapoints [north]="true" [center]="true" [south]="true">
