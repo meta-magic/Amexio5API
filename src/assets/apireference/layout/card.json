@@ -19,6 +19,12 @@
       "description":"User can enable footer of card by setting this flag to true."
     },
     {
+      "name": "height",
+      "type": "number",
+      "default": "",
+      "description":"User can set the height to body."
+    },
+    {
       "name": "header-align",
       "type": "string",
       "default": "",
