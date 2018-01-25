@@ -21,10 +21,7 @@
                 [custom-header]="true">
     <amexio-header>
       Custom Header
-      <span style="padding-left: 130px">
-        <i class="fa fa-refresh fa-fw" aria-hidden="true"></i>
-        <i class="fa fa-wrench fa-fw" aria-hidden="true"></i>
-      </span>
+        <i style="padding-left: 130px" class="fa fa-refresh fa-fw" aria-hidden="true"></i>
     </amexio-header>
     <p>
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -35,6 +32,11 @@
     and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </p>
   </amexio-panel>
+  <amexio-dialogue [show-dialogue]="refreshDialogue" [title]="'refresh'"
+                   [message]="'Data refresh successfully.'"
+                   [primary-action-label]="'ok'"
+                   [message-type]="'warning'" [type]="'alert'">
+  </amexio-dialogue>
 
 <!--panel without header-->
 
