@@ -14,7 +14,7 @@ import {Http} from "@angular/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column [size]="12">
+              <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
                   <amexio-west [contentalign]="'center'" [width]="'100px'" [c-class]="'datapoint-west'">
                     <i class="fa fa-line-chart fa-3x"></i>
@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
                   <amexio-south [contentalign]="'center'"  [c-class]="'datapoint-south'" >10% More than last year</amexio-south>
                 </amexio-datapoints>
               </amexio-column>
-              <amexio-column [size]="12">
+              <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [width]="'100px'"  [c-class]="'datapoint-west'">
                     <i class="fa fa-line-chart fa-3x"></i>
@@ -50,7 +50,7 @@ import {Http} from "@angular/http";
                   <amexio-south [contentalign]="'center'"   [c-class]="'datapoint-south'" >5% more than last year</amexio-south>
                 </amexio-datapoints>
               </amexio-column>
-              <amexio-column [size]="12">
+              <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
                   <amexio-west [contentalign]="'center'" [width]="'100px'"  [c-class]="'datapoint-west'">
                     <i class="fa fa-line-chart fa-3x"></i>
@@ -69,8 +69,9 @@ import {Http} from "@angular/http";
                 </amexio-datapoints>
               </amexio-column>
             </amexio-row>
+            <br>
             <amexio-row>
-              <amexio-column [size]="4">
+              <amexio-column [size]="3">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <i class="fa fa-check fa-3x"></i>
@@ -88,7 +89,7 @@ import {Http} from "@angular/http";
                 </amexio-datapoints>
               </amexio-column>
 
-              <amexio-column [size]="4">
+              <amexio-column [size]="3">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <i class="fa fa-envelope-open fa-3x"></i>
@@ -106,7 +107,7 @@ import {Http} from "@angular/http";
                 </amexio-datapoints>
               </amexio-column>
 
-              <amexio-column [size]="4">
+              <amexio-column [size]="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <i class="fa fa-bolt fa-3x"></i>
@@ -124,7 +125,7 @@ import {Http} from "@angular/http";
                 </amexio-datapoints>
               </amexio-column>
 
-              <amexio-column [size]="4">
+              <amexio-column [size]="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <i class="fa fa-medium fa-3x"></i>
@@ -142,7 +143,7 @@ import {Http} from "@angular/http";
                 </amexio-datapoints>
               </amexio-column>
 
-              <amexio-column [size]="4">
+              <amexio-column [size]="2">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <i class="fa fa-low-vision fa-3x"></i>
@@ -159,7 +160,6 @@ import {Http} from "@angular/http";
                   </amexio-center>
                 </amexio-datapoints>
               </amexio-column>
-
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
