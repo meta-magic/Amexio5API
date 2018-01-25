@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
   selector: 'datapoint', template: `
     <amexio-card header="true">
       <amexio-header>
-         Data Point 
+        Data Point
       </amexio-header>
       <amexio-body>
         <p>Represent the summary of the data in bullet point format.</p>
@@ -16,155 +16,102 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
-                  <amexio-west [contentalign]="'center'" [width]="'100px'" [c-class]="'datapoint-west'">
+                  <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'right'" [c-class]="'datapoint-center'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [c-class]="'datapoints-north'">
-                        <span>200 Million</span>
-                      </amexio-north>
-                      <amexio-center  [c-class]="'datapoints-center'">
-                        <span>Sales Volume</span>
-                      </amexio-center>
-                    </amexio-datapoints>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">200 Million</span><br/><span
+                    class="datapoints-center">Sales Volume</span>
                   </amexio-center>
-                  <amexio-south [contentalign]="'center'"  [c-class]="'datapoint-south'" >10% More than last year</amexio-south>
-                </amexio-datapoints>
-              </amexio-column>
-              <amexio-column [size]="4">
-                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
-                  <amexio-west [contentalign]="'center'" [width]="'100px'"  [c-class]="'datapoint-west'">
-                    <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
-                    </amexio-image>
-                  </amexio-west>
-                  <amexio-center [contentalign]="'right'"  [c-class]="'datapoint-center'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north  [c-class]="'datapoints-north'">
-                        <span>$10 Million</span>
-                      </amexio-north>
-                      <amexio-center  [c-class]="'datapoints-center'">
-                        <span>Sales Revenue</span>
-                      </amexio-center>
-                    </amexio-datapoints>
-                  </amexio-center>
-                  <amexio-south [contentalign]="'center'"   [c-class]="'datapoint-south'" >5% more than last year</amexio-south>
+                  <amexio-south [contentalign]="'center'" [c-class]="'datapoint-south'">
+                    <div>10% More than last year</div>
+                  </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
               <amexio-column [size]="4">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
-                  <amexio-west [contentalign]="'center'" [width]="'100px'"  [c-class]="'datapoint-west'">
+                  <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'right'"  [c-class]="'datapoint-center'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north  [c-class]="'datapoints-north'">
-                        <span>$2 Million</span>
-                      </amexio-north>
-                      <amexio-center  [c-class]="'datapoints-center'">
-                        <span >Profit</span>
-                      </amexio-center>
-                    </amexio-datapoints>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">$10 Million</span><br/><span
+                    class="datapoints-center">Sales Revenue</span>
                   </amexio-center>
-                  <amexio-south [contentalign]="'center'"    [c-class]="'datapoint-south'" >10% more than last year</amexio-south>
+                  <amexio-south [contentalign]="'center'" [c-class]="'datapoint-south'">
+                    5% More than last year
+                  </amexio-south>
+                </amexio-datapoints>
+              </amexio-column>
+              <amexio-column [size]="4">
+                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
+                  <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
+                    <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
+                    </amexio-image>
+                  </amexio-west>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">$2 Million</span><br/><span class="datapoints-center">Profit</span>
+                  </amexio-center>
+                  <amexio-south [contentalign]="'center'" [c-class]="'datapoint-south'">10% More than last year
+                  </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
             </amexio-row>
             <br>
             <amexio-row>
-              <amexio-column [size]="3">
-                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
+              <amexio-column size="2">
+                <amexio-datapoints [west]="true" [center]="true" [east]="true">
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <amexio-image [icon-class]="'fa fa-check fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'right'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [c-class]="'datapoints-center-issue'">
-                        <span >8</span>
-                      </amexio-north>
-                      <amexio-center [c-class]="'datapoints-center'">
-                        <span >Closed</span>
-                      </amexio-center>
-                    </amexio-datapoints>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">8</span><br/><span class="datapoints-center">Closed</span>
                   </amexio-center>
                 </amexio-datapoints>
               </amexio-column>
-
-              <amexio-column [size]="3">
-                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true"  >
+              <amexio-column size="2">
+                <amexio-datapoints [west]="true" [center]="true" [east]="true">
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <amexio-image [icon-class]="'fa fa-envelope-open fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'right'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [c-class]="'datapoints-center-issue'">
-                        <span >13</span>
-                      </amexio-north>
-                      <amexio-center [c-class]="'datapoints-center'">
-                        <span >Open</span>
-                      </amexio-center>
-                    </amexio-datapoints>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">13</span><br/><span class="datapoints-center">Open</span>
                   </amexio-center>
                 </amexio-datapoints>
               </amexio-column>
-
-              <amexio-column [size]="2">
-                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+              <amexio-column size="2">
+                <amexio-datapoints [west]="true" [center]="true" [east]="true">
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <amexio-image [icon-class]="'fa fa-bolt fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'right'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [c-class]="'datapoints-center-issue'">
-                        <span >6</span>
-                      </amexio-north>
-                      <amexio-center [c-class]="'datapoints-center'">
-                        <span >High</span>
-                      </amexio-center>
-                    </amexio-datapoints>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">6</span><br/><span class="datapoints-center">High</span>
                   </amexio-center>
                 </amexio-datapoints>
               </amexio-column>
-
-              <amexio-column [size]="2">
-                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+              <amexio-column size="2">
+                <amexio-datapoints [west]="true" [center]="true" [east]="true">
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <amexio-image [icon-class]="'fa fa-medium fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'right'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [c-class]="'datapoints-center-issue'">
-                        <span >9</span>
-                      </amexio-north>
-                      <amexio-center [c-class]="'datapoints-center'">
-                        <span >Medium</span>
-                      </amexio-center>
-                    </amexio-datapoints>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">9</span><br/><span class="datapoints-center">Medium</span>
                   </amexio-center>
                 </amexio-datapoints>
               </amexio-column>
-
-              <amexio-column [size]="2">
-                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" >
+              <amexio-column size="2">
+                <amexio-datapoints [west]="true" [center]="true" [east]="true">
                   <amexio-west [contentalign]="'center'" [c-class]="'datapoint-west'">
                     <amexio-image [icon-class]="'fa fa-low-vision fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'right'">
-                    <amexio-datapoints [north]="true" [center]="true" [south]="true">
-                      <amexio-north [c-class]="'datapoints-center-issue'">
-                        <span >6</span>
-                      </amexio-north>
-                      <amexio-center [c-class]="'datapoints-center'">
-                        <span >Low</span>
-                      </amexio-center>
-                    </amexio-datapoints>
+                  <amexio-center [contentalign]="'center'">
+                    <span class="datapoints-north">6</span><br/><span class="datapoints-center">Low</span>
                   </amexio-center>
                 </amexio-datapoints>
               </amexio-column>
@@ -182,7 +129,8 @@ import {Http} from "@angular/http";
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                        [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
@@ -197,7 +145,8 @@ import {Http} from "@angular/http";
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                        [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
