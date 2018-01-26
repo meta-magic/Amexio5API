@@ -1,0 +1,10 @@
+{
+  "properties": [
+   {
+      "name": "onClick",
+      "type": "event",
+      "default": "",
+      "description":"Event emitted on block click."
+    }
+  ]
+}

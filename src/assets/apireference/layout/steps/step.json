@@ -33,11 +33,6 @@
       "type": "boolean",
       "default": "false",
       "description":"Show block based on boolean."
-    },{
-      "name": "onClick",
-      "type": "event",
-      "default": "",
-      "description":"Event emitted on block click."
     }
   ]
 }
