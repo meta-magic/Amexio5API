@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 <!--block is true for showing step box  -->
                 <p><strong>Step box</strong></p>
-                <amexio-steps [block]="true" [index]="true" (onClick)="stepBlockClick($event)">
+                <amexio-steps [block]="true" [index]="true">
                   <amexio-step-block [label]="'User'" [active]="true" ></amexio-step-block>
                   <amexio-step-block [label]="'Shop'" [active]="false" ></amexio-step-block>
                   <amexio-step-block [label]="'Payment'" [active]="false"></amexio-step-block>
