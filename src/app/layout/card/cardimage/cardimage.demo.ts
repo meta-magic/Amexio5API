@@ -16,13 +16,10 @@ import {Http} from "@angular/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column size="6">
+              <amexio-column size="3">
                 <amexio-card [header]="false" [footer]="true" [footer-align]="'right'">
                   <amexio-body>
-                    <amexio-image path="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2840%29.jpg"></amexio-image>
-                    <br/>
-                    <h5 class="red-text"><i class="fa fa-money"></i> Business</h5>
-                    Let your startup grow! 
+                    <amexio-image path="assets/images/carousel/set1/1.jpg"></amexio-image>
                     <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
                   </amexio-body>
                   <amexio-action >
@@ -30,16 +27,52 @@ import {Http} from "@angular/http";
                   </amexio-action>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="6">
-                <amexio-card [header]="true" [footer]="false" [header-align]="'center'">
+              
+              <amexio-column size="3">
+                <amexio-card [header]="true" [footer]="true" [footer-align]="'left'" [header-align]="'left'">
                   <amexio-header>
-                     Hi, Amexio 
+                     Coffee
                   </amexio-header>
                   <amexio-body>
-                    <amexio-image path="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20%2842%29.jpg" ></amexio-image>
+                    <amexio-image path="assets/images/carousel/set1/2.jpg"></amexio-image>
+                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+                  </amexio-body>
+                  <amexio-action>
+                    <amexio-button [label]="'Button'" [type]="'primary'"></amexio-button>
+                  </amexio-action>
+                </amexio-card>
+              </amexio-column>
+              
+              <amexio-column size="3">
+                <amexio-card [header]="true" [footer]="true"  [footer-align]="'right'" [header-align]="'right'">
+                  <amexio-header>
+                    Animals
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-image path="assets/images/carousel/set1/4.jpg"></amexio-image>
+                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+                  </amexio-body>
+                  <amexio-action >
+                    <amexio-button [label]="'Button'" [type]="'primary'"></amexio-button>
+                  </amexio-action>
+                </amexio-card>
+              </amexio-column>
+              
+              <amexio-column size="3">
+                <amexio-card [header]="true" [footer]="true"  [footer-align]="'center'" [header-align]="'center'">
+                  <amexio-header>
+                    Morning Walk
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-image path="assets/images/carousel/set1/3.jpg"></amexio-image>
                     <br/><br/>
                     <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
                   </amexio-body>
+                  <amexio-action>
+                    <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
+                    <amexio-button [label]="'Cancel'" [type]="'default'"></amexio-button>
+                  </amexio-action>
+                  
                 </amexio-card>
               </amexio-column>
             </amexio-row>
