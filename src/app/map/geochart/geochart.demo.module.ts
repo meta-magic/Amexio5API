@@ -10,8 +10,7 @@ import {SharedModule} from "../../shared.module";
   declarations: [GeoChartDemoComponent],
   imports: [CommonModule, FormsModule, HttpModule, AmexioMapModule,AmexioWidgetModule,SharedModule, RouterModule.forChild([{
     path: '', component: GeoChartDemoComponent, pathMatch: 'full'
-  }])],
-  providers: [MapLoaderService]
+  }])]
 })
 export class GeoChartDemoModule {
 }

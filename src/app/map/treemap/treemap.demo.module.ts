@@ -10,8 +10,7 @@ import {SharedModule} from "../../shared.module";
   declarations: [TreeMapDemoComponent],
   imports: [CommonModule, FormsModule, HttpModule, AmexioWidgetModule, SharedModule,AmexioMapModule,RouterModule.forChild([{
     path: '', component: TreeMapDemoComponent, pathMatch: 'full'
-  }])],
-  providers: [MapLoaderService]
+  }])]
 })
 export class TreeMapDemoModule {
 }

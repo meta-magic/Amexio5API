@@ -19,7 +19,6 @@ import {
     AmexioWidgetModule,AmexioChartsModule,AmexioMapModule,AmexioDashBoardModule,AmexioPaneModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
-  providers: [CommonDataService,DeviceQueryService,ChartLoaderService,MapLoaderService,DashboardLoaderService,IconLoaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

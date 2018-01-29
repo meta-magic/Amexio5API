@@ -18,8 +18,7 @@ const routes: Routes = [
 @NgModule({
   imports: [CommonModule,HttpModule,FormsModule,SharedModule,RouterModule.forChild(routes),AmexioWidgetModule],
   exports: [RouterModule],
-  declarations : [CarouselDemoComponent],
-  providers : [IconLoaderService]
+  declarations : [CarouselDemoComponent]
 })
 export class CarouselDemoModule { }
 

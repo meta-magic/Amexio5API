@@ -101,6 +101,29 @@ import {SharedModule} from "../shared.module";
       <amexio-row>
         <amexio-column size="12">
           <amexio-card header="true">
+            <amexio-header> Amexio Services</amexio-header>
+            <amexio-body>
+              <amexio-accordion>
+                <amexio-accordion-tab header="Icon Loader Service">
+                  <span style="font-weight: bolder">Change all amexio icons from font-awesome to material and vice versa in a single line of code by injecting the <code>IconLoaderService</code></span>
+                  <ng-container *ngIf="iconCode">
+                    <prism-block [code]="iconCode" [language]="'typescript'"></prism-block>
+                  </ng-container>
+                </amexio-accordion-tab>
+                <amexio-accordion-tab header="CommonData Service">
+                  <p>By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</p>
+                  <ng-container *ngIf="dataCode">
+                  <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
+                  </ng-container>
+                </amexio-accordion-tab>
+              </amexio-accordion>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
+      </amexio-row>
+      <amexio-row>
+        <amexio-column size="12">
+          <amexio-card header="true">
             <amexio-header> Modules </amexio-header>
             <amexio-body>
               <amexio-datagrid title="" [enable-column-fiter]="false"
@@ -178,7 +201,8 @@ import {SharedModule} from "../shared.module";
 })
 export class GettingStatedDemo {
   tsCode: any;
-
+  iconCode : any;
+  dataCode : any;
   constructor(private http:Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -192,6 +216,14 @@ export class GettingStatedDemo {
     }, error => {
     }, () => {
       this.tsCode = responseTs;
+    });
+
+    this.http.get('assets/data/code/gettingstated/icon.text').subscribe(data=>{
+      this.iconCode = data.text();
+    });
+
+    this.http.get('assets/data/code/gettingstated/data.text').subscribe(data=>{
+      this.dataCode = data.text();
     });
   }
 }
