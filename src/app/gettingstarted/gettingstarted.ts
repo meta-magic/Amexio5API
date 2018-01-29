@@ -111,7 +111,7 @@ import {SharedModule} from "../shared.module";
                   </ng-container>
                 </amexio-accordion-tab>
                 <amexio-accordion-tab header="CommonData Service">
-                  <p>By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</p>
+                  <span style="font-weight: bolder">By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</span>
                   <ng-container *ngIf="dataCode">
                   <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
                   </ng-container>
@@ -147,8 +147,15 @@ import {SharedModule} from "../shared.module";
           <amexio-card header="true">
             <amexio-header> Themes </amexio-header>
             <amexio-body>
-              <span>To use the default theme import the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app styles.scss</span>
+              <span>To use the default include the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code style="font-weight: bolder">styles</code> key</span>
+              
+
+              <ng-container *ngIf="styleCode">
+                <prism-block [code]="styleCode" [language]="'json'"></prism-block>
+              </ng-container>
+
               <p>Or refer the below table for other themes provided.</p>
+              
               <amexio-row>
                 <amexio-column size="12">
                   <amexio-datagrid title="Amexio Material Themes" [enable-column-fiter]="false"
@@ -203,6 +210,7 @@ export class GettingStatedDemo {
   tsCode: any;
   iconCode : any;
   dataCode : any;
+  styleCode : any;
   constructor(private http:Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -224,6 +232,10 @@ export class GettingStatedDemo {
 
     this.http.get('assets/data/code/gettingstated/data.text').subscribe(data=>{
       this.dataCode = data.text();
+    });
+
+    this.http.get('assets/data/code/gettingstated/style.text').subscribe(data=>{
+      this.styleCode = data.text();
     });
   }
 }
