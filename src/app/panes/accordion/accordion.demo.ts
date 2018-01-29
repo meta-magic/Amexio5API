@@ -40,7 +40,8 @@ import {Http} from "@angular/http";
               <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.</amexio-accordion-tab>
             </amexio-accordion>
             <br><br>
-            <amexio-accordion>
+            <span style="font-weight: bolder">All expanded Panes</span>
+            <amexio-accordion expand-all="true">
               <amexio-accordion-tab header="Section One">
                 <amexio-row>
                   <amexio-column size="12">
@@ -48,7 +49,7 @@ import {Http} from "@angular/http";
                   </amexio-column>
                 </amexio-row>
               </amexio-accordion-tab>
-              <amexio-accordion-tab header="Section Two" active="true">
+              <amexio-accordion-tab header="Section Two">
                 <amexio-row>
                   <amexio-column size="12">
                     Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum. Vestibulum tempus, urna non ultrices aliquam, ex ex blandit lacus, at porttitor odio ligula sed lacus. Praesent in luctus odio, at sodales orci. Vivamus vitae ullamcorper lectus.
