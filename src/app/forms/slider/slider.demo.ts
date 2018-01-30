@@ -32,6 +32,13 @@ import {Http} from "@angular/http";
                        {{stepVal2}}
                      </amexio-column>
                    </amexio-row>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <b>Vertical Slider</b>
+                        <amexio-slider [style]="{'height':'200px'}" orientation="vertical"></amexio-slider>
+                        
+                      </amexio-column>
+                    </amexio-row>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
