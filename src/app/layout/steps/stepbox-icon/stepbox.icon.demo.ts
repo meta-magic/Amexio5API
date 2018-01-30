@@ -21,7 +21,7 @@ import {debug} from "util";
                <!--block is true for showing step box  -->
                <p><strong>Step box</strong></p>
                <!--Step-box with fontawesome icons-->
-               <amexio-steps [icon]="true" (onClick)="stepBlockClick($event)">
+               <amexio-steps [icon]="true">
                  <amexio-step-block [label]="'User'" [active]="true" [icon]="'fa fa-user'" ></amexio-step-block>
                  <amexio-step-block [label]="'Address'" [active]="false" [icon]="'fa fa-address-card'"></amexio-step-block>
                  <amexio-step-block [label]="'Shop'" [active]="false" [icon]="'fa fa-shopping-cart'"></amexio-step-block>
@@ -97,6 +97,8 @@ import {debug} from "util";
        </amexio-tab-view>
      </amexio-body>
    </amexio-card>
+   <amexio-notification [data]="clickMsgArray" vertical-position="top" horizontal-position="right" auto-dismiss-msg="true" auto-dismiss-msg-interval="1000"></amexio-notification>
+
  `
 })
 
@@ -110,21 +112,28 @@ export class StepBoxIconComponent {
   confirmation:boolean;
   clickMsgArray:any=[];
 
+  constructor(private http: Http) {
+    this.getHtmlAndTypeScriptCode();
+    this.user=false;
+    this.shop=true;
+    this.payment=false;
+    this.confirmation=false;
+  }
+
 // step box click event
   stepBlockClick(event:any){
-    debugger;
     if(event.label=="User"){
-      this.updateFlag(true,false,false,false);
       this.showMsg("Step 1 User");
+      this.updateFlag(true,false,false,false);
     }else if(event.label=="Shop"){
-      this.updateFlag(false,true,false,false);
       this.showMsg("Step 2 Shop");
+      this.updateFlag(false,true,false,false);
     }else if(event.label=="Payment"){
-      this.showMsg("Step 3 Payment");
       this.updateFlag(false,false,true,false);
+      this.showMsg("Step 3 Payment");
     }else if(event.label=="Confirmation"){
-      this.updateFlag(false,false,false,true);
       this.showMsg("Step 4 Confirmation");
+      this.updateFlag(false,false,false,true);
     }
   }
   updateFlag(user:boolean,shop:boolean,payment:boolean,confirmation:boolean){
@@ -142,13 +151,7 @@ export class StepBoxIconComponent {
     }
   }
 
-  constructor(private http: Http) {
-    this.getHtmlAndTypeScriptCode();
-    this.user=false;
-    this.shop=true;
-    this.payment=false;
-    this.confirmation=false;
-  }
+
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {

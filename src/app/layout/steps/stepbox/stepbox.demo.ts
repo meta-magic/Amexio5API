@@ -32,10 +32,10 @@ import {Http} from "@angular/http";
                 <!--block is true for showing step box  -->
                 <p><strong>Step box with clickabel</strong></p>
                 <amexio-steps [block]="true" [index]="true" (onClick)="stepBlockClick($event)">
-                  <amexio-step-block [label]="'User'" [active]="'user'" ></amexio-step-block>
-                  <amexio-step-block [label]="'Shop'" [active]="'shop'" ></amexio-step-block>
-                  <amexio-step-block [label]="'Payment'" [active]="'payment'"></amexio-step-block>
-                  <amexio-step-block [label]="'Confirmation'" [active]="'confirmation'"></amexio-step-block>
+                  <amexio-step-block [label]="'User'" [active]="user" ></amexio-step-block>
+                  <amexio-step-block [label]="'Shop'" [active]="shop" ></amexio-step-block>
+                  <amexio-step-block [label]="'Payment'" [active]="payment"></amexio-step-block>
+                  <amexio-step-block [label]="'Confirmation'" [active]="confirmation"></amexio-step-block>
                 </amexio-steps>
               </amexio-column>
             </amexio-row>
@@ -43,11 +43,11 @@ import {Http} from "@angular/http";
               <amexio-column size="12">
                 index is true for number inside circle 
                 <p><strong>Step-box index</strong></p>
-                <amexio-steps [index]="true" (onClick)="stepBlockClick($event)">
-                  <amexio-step-block [label]="'step-1'" [active]="true"></amexio-step-block>
-                  <amexio-step-block [label]="'step-2'" [active]="false"></amexio-step-block>
-                  <amexio-step-block [label]="'step-3'" [active]="false"></amexio-step-block>
-                  <amexio-step-block [label]="'step-4'" [active]="false"></amexio-step-block>
+                <amexio-steps [index]="true">
+                  <amexio-step-block [label]="'Step-1'" [active]="true"></amexio-step-block>
+                  <amexio-step-block [label]="'Step-2'" [active]="false"></amexio-step-block>
+                  <amexio-step-block [label]="'Step-3'" [active]="false"></amexio-step-block>
+                  <amexio-step-block [label]="'Step-4'" [active]="false"></amexio-step-block>
                 </amexio-steps>
               </amexio-column>
             </amexio-row>
@@ -105,7 +105,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <amexio-notification [data]="clickMsgArray" vertical-position="top" horizontal-position="right"></amexio-notification>
+    <amexio-notification [data]="clickMsgArray" vertical-position="top" horizontal-position="right" auto-dismiss-msg="true" auto-dismiss-msg-interval="1000"></amexio-notification>
 
   `
 })
@@ -119,20 +119,28 @@ export class StepBoxDemoComponent {
   confirmation:boolean;
   clickMsgArray:any=[];
 
+  constructor(private http: Http) {
+    this.getHtmlAndTypeScriptCode();
+    this.user=false;
+    this.shop=true;
+    this.payment=false;
+    this.confirmation=false;
+  }
+
 // step box click event
   stepBlockClick(event:any){
     if(event.label=="User"){
-      this.updateFlag(true,false,false,false);
       this.showMsg("Step 1 User");
+      this.updateFlag(true,false,false,false);
     }else if(event.label=="Shop"){
-      this.updateFlag(false,true,false,false);
       this.showMsg("Step 2 Shop");
+      this.updateFlag(false,true,false,false);
     }else if(event.label=="Payment"){
       this.showMsg("Step 3 Payment");
       this.updateFlag(false,false,true,false);
     }else if(event.label=="Confirmation"){
-      this.updateFlag(false,false,false,true);
       this.showMsg("Step 4 Confirmation");
+      this.updateFlag(false,false,false,true);
     }
   }
   updateFlag(user:boolean,shop:boolean,payment:boolean,confirmation:boolean){
@@ -150,13 +158,6 @@ export class StepBoxDemoComponent {
     }
   }
 
-  constructor(private http: Http) {
-    this.getHtmlAndTypeScriptCode();
-    this.user=false;
-    this.shop=true;
-    this.payment=false;
-    this.confirmation=false;
-  }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
