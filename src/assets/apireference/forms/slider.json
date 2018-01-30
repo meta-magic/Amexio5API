@@ -17,6 +17,12 @@
       "type": "number",
       "default": "",
       "description":"Step value in slider"
+    } ,
+    {
+      "name": "orientation",
+      "type": "string",
+      "default": "horizontal",
+      "description":"Vertical or Horizontal Orientation of slider"
     }
   ],
   "events":[
