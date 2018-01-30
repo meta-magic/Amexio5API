@@ -24,11 +24,11 @@ import {Http} from "@angular/http";
                   <amexio-body>
                    <amexio-row>
                      <amexio-column [size]="6">
-                       <amexio-slider min-value="10" max-value="100"  step-value="10" [(ngModel)]="stepVal1"></amexio-slider>
+                       <amexio-slider [(ngModel)]="stepVal1"></amexio-slider>
                       {{stepVal1}}
                      </amexio-column>
                      <amexio-column [size]="6">
-                       <amexio-slider min-value="0" max-value="50" step-value="5" [(ngModel)]="stepVal2"></amexio-slider>
+                       <amexio-slider min-value="0" max-value="50" step-value="2" [(ngModel)]="stepVal2"></amexio-slider>
                        {{stepVal2}}
                      </amexio-column>
                    </amexio-row>
@@ -92,8 +92,8 @@ export class SliderDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  stepVal1:any;
-  stepVal2:any;
+  stepVal1:number = 10;
+  stepVal2:number = 20;
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
