@@ -1,8 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-
+import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 @Component({
   selector: 'candlestick-chart-demo',
   templateUrl: 'candlestickchart.demo.html'
+})
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [ChartLoaderService]
 })
 export class CandlestickChartDemoComponent implements OnInit {
   candlestickChartData:any;

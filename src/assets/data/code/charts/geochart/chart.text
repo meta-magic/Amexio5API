@@ -1,8 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-
+import {AmexioWidgetModule,MapLoaderService} from "amexio-ng-extensions";
 @Component({
   selector: 'geochart-demo',
   templateUrl: 'geochart.demo.html'
+})
+
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [MapLoaderService]
 })
 export class GeoChartDemoComponent implements OnInit {
   geoChartData:any;

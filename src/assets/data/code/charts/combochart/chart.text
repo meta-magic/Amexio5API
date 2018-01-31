@@ -1,8 +1,16 @@
 import {Component, OnInit} from '@angular/core';
+import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 
 @Component({
   selector: 'combo-chart-demo',
   templateUrl: 'combochart.demo.html'
+})
+
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [ChartLoaderService]
 })
 export class ComboChartDemoComponent implements OnInit {
   comboChartData:any;

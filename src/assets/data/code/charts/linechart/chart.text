@@ -1,15 +1,24 @@
 import {Component, OnInit} from '@angular/core';
-
+import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 @Component({
   selector: 'linechart-demo',
   templateUrl: 'linechart.demo.html'
 })
+
+
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [ChartLoaderService]
+})
+
 export class LineChartDemoComponent implements OnInit {
   lineChartData:any;
   constructor() {
     this.lineChartData=[
-      [{"data-type":"number" ,"label":'Day'},{"data-type":"number","label":'Guardians of the Galaxy'},
-        {"data-type":"number","label":'The Avengers'},{"data-type":"number","label":'Transformers: Age of Extinction'}
+      [{"datatype":"number" ,"label":'Day'},{"datatype":"number","label":'Guardians of the Galaxy'},
+        {"datatype":"number","label":'The Avengers'},{"datatype":"number","label":'Transformers: Age of Extinction'}
       ],
       [1,  37.8, 80.8, 41.8],
       [2,  30.9, 69.5, 32.4],
