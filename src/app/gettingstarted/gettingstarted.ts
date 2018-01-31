@@ -17,7 +17,7 @@ import {SharedModule} from "../shared.module";
         <amexio-column size="12">
             <div align="center">
               <a href="http://www.amexio.tech/">
-                <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png" width="200"></amexio-image>
+                <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
               </a>
               <br>
                 <h1>Amexio Angular EXtensions v4.0 beta</h1> 
@@ -25,7 +25,7 @@ import {SharedModule} from "../shared.module";
               <amexio-image path="assets/images/npm.svg"></amexio-image>
               <amexio-image path="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=4.0.0&x2=0"></amexio-image>
               <a href="https://badge.fury.io/js/amexio-ng-extensions">
-                <amexio-image height="18" path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
+                <amexio-image path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
               </a>
             </div>
           <hr>
