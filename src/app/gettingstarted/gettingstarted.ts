@@ -153,6 +153,7 @@ import {SharedModule} from "../shared.module";
                           Please make sure you have the latest version of
                           <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
                           installed. <b>and then from your Angular AppModule:</b>
+                         
                         </amexio-column>
                       </amexio-row>
                       <br>
@@ -163,7 +164,11 @@ import {SharedModule} from "../shared.module";
                           </ng-container>
                         </amexio-column>
                       </amexio-row>
-                      <!-- add dependent libraries -->
+                      
+                      <div align="center">
+                        <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V3</a>
+                      </div>
+                      
                     </amexio-accordion-tab>
                     <amexio-accordion-tab header="Amexio Hampi v2.0" expanded="true">
                       <amexio-row>
@@ -186,6 +191,9 @@ import {SharedModule} from "../shared.module";
                         </amexio-column>
                       </amexio-row>
                       <!-- add dependent libraries -->
+                      <div align="center">
+                        <a href="http://www.amexio.org/showcaseapp/v2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V2</a>
+                      </div>
 
                     </amexio-accordion-tab>
                     <amexio-accordion-tab header="Amexio Varanasi v1.0" expanded="true">
@@ -208,6 +216,9 @@ import {SharedModule} from "../shared.module";
                           </ng-container>
                         </amexio-column>
                       </amexio-row>
+                      <div align="center">
+                        <a href="http://www.amexio.org/showcaseapp/v1/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V3</a>
+                      </div>
                     </amexio-accordion-tab>
                   </amexio-accordion>
                 </amexio-column>
@@ -296,15 +307,6 @@ import {SharedModule} from "../shared.module";
           </amexio-panel>
         </amexio-column>
       </amexio-row>
-
-      <!--<br>
-      <amexio-row>
-        <amexio-column>
-          <p>Include these in your app's .angular-cli.json </p>
-          <img src="https://preview.ibb.co/b4F1gG/dependecy.png"/>
-          <p> If not using cli then simply add css it to the index.html head.</p>
-        </amexio-column>
-      </amexio-row>-->
 
 
   `
