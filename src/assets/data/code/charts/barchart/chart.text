@@ -1,8 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-
+import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 @Component({
   selector: 'barchart-demo',
   templateUrl: 'barchart.demo.html'
+})
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [ChartLoaderService]
 })
 export class BarChartDemoComponent implements OnInit {
   barStackChartData:any;

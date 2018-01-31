@@ -13,34 +13,40 @@ import {SharedModule} from "../shared.module";
   selector: 'getting-started',
   template: `
     <div style="padding-left: 10px;padding-right: 10px;">
-
-      <h1 align="center">
-        <br>
-        <a href="http://www.amexio.tech/"><img src="https://image.ibb.co/kdy6Ev/logo.png" alt="Amexio" width="200"></a>
-        <br>
-        Amexio Angular EXtensions v4.0 beta
-        <br>
-        <br>
-        <img src="assets/images/npm.svg"/>
-        <img src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=4.0.0&x2=0"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
-      </h1>
-
-      <hr>
+      <amexio-row>
+        <amexio-column size="12">
+          <div align="center">
+            <a href="http://www.amexio.tech/">
+              <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
+            </a>
+            <br>
+            <h1>Amexio Angular EXtensions v4.0</h1>
+            <br>
+            <amexio-image path="assets/images/npm.svg"></amexio-image>
+            <amexio-image
+              path="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=4.0.0&x2=0"></amexio-image>
+            <a href="https://badge.fury.io/js/amexio-ng-extensions">
+              <amexio-image path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
+            </a>
+          </div>
+          <hr>
+        </amexio-column>
+      </amexio-row>
       <amexio-row>
         <amexio-column size="12">
           <amexio-card header="true">
             <amexio-header>
-              Table Of Contents 
+              Table Of Contents
             </amexio-header>
             <amexio-body>
               <amexio-row>
                 <amexio-column size="12">
-                  <span style="cursor: pointer">1. Getting Started</span>
+                  <span style="cursor: pointer">1. Installation Details</span>
                 </amexio-column>
               </amexio-row>
               <amexio-row>
                 <amexio-column size="12">
-                 <span style="cursor: pointer;">2. Installation Details</span> 
+                  <span style="cursor: pointer;">2. Themes</span>
                 </amexio-column>
               </amexio-row>
               <amexio-row>
@@ -48,162 +54,258 @@ import {SharedModule} from "../shared.module";
                   <span style="cursor: pointer;" routerLink="/license">3. License</span>
                 </amexio-column>
               </amexio-row>
-              
+
             </amexio-body>
           </amexio-card>
         </amexio-column>
       </amexio-row>
       <br>
       <amexio-row>
-        <div id="gettingStarted">
-          <amexio-card header="true">
-            <amexio-header> Getting Started </amexio-header>
-            <amexio-body>
-              <amexio-row>
-                <amexio-column size="12">
-                  <p>Amexio (Angular MetaMagic EXtensions for Inputs and Outputs) is a pure Typescript Compnent Library of Angular. We provide modular import for using our rich set of components,charts, maps , dashboard, forms, data, media, layout etc and can be easily configured and implemented in a project.
-                    Check out the Demo App built using Amexio. For the Amexio UI Library refer API documentation.</p>
-                </amexio-column>
-              </amexio-row>
-            </amexio-body>
-          </amexio-card>
-        </div>    
-      </amexio-row>
-    
-
-      <br>
-      <amexio-row>
         <amexio-column size="12">
-          <amexio-card header="true">
-            <amexio-header> Installation Details </amexio-header>
-            <amexio-body>
+            <amexio-panel [header]="true"
+                          [title]="'Installation Details'"
+                          [expanded]="true">
               <amexio-row>
                 <amexio-column size="12">
-                  <p><b>To install this library, follow the steps given below:</b><br> <code>npm install amexio-ng-extensions@beta --save</code></p>
-                  <p class="text-muted">Please make sure you have the latest version of <code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code> Installed.
-                    <br><b>and then from your Angular AppModule:</b></p>
+                  <amexio-accordion>
+                    <amexio-accordion-tab header="Amexio Thanjavur v4.0" active="true">
+                      <amexio-tab-view>
+                        <amexio-tab title="Installation" active="true">
+                          <amexio-row>
+                            <amexio-column size="12">
+                              <b>To install this Amexio Thanjavur v4.0, follow the steps given below:</b><br>
+                              <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
+                              Please make sure you have the latest version of
+                              <pre
+                                style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                              installed. <b>and then from your Angular AppModule:</b>
+                            </amexio-column>
+                          </amexio-row>
+                          <br>
+                          <amexio-row>
+                            <amexio-column size="12">
+                              <div style="height: 400px">
+                                <ng-container *ngIf="tsCode">
+                                  <prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
+                                </ng-container>
+                              </div>
+                              
+                            </amexio-column>
+                          </amexio-row>
+                        </amexio-tab>
+                        <amexio-tab title="Modules">
+                          <p>Amexio Library Consist of the following modules</p>
+                          <ng-container *ngIf="modulesData">
+                            <amexio-datagrid title="" [enable-column-fiter]="false"
+                                             [data]="modulesData"
+                                             [height]="300"
+                                             [enable-data-filter]="false">
+                              <amexio-data-table-column [width]="25" [data-index]="'name'" [data-type]="'string'"
+                                                        [hidden]="false"
+                                                        [text]="'Module Name'">
+                              </amexio-data-table-column>
+                              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                                        [hidden]="false"
+                                                        [text]="'Description'"></amexio-data-table-column>
+                            </amexio-datagrid>
+                          </ng-container>
+                          <br>
+
+                        </amexio-tab>
+                        <amexio-tab title="Services">
+                          <div style="height: 500px;overflow-x: auto;">
+                            
+                          
+                          <p>Amexio Provides the below services :</p>
+                          
+                            <h3>IconService</h3>
+                              <span style="font-weight: bolder">Change all amexio icons from font-awesome to material and vice versa in a single line of code by injecting the <code>IconLoaderService</code></span>
+                              <ng-container *ngIf="iconCode">
+                                <prism-block [code]="iconCode" [language]="'typescript'"></prism-block>
+                              </ng-container>
+                            <br>
+                           <h3>CommonDataService</h3>
+                              <span style="font-weight: bolder">By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</span>
+                              <ng-container *ngIf="dataCode">
+                                <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
+                              </ng-container>
+                          </div>
+                        </amexio-tab>
+                      </amexio-tab-view>
+                    </amexio-accordion-tab>
+                    <amexio-accordion-tab header="Amexio Muziris v3.0" expanded="true">
+                      <amexio-row>
+                        <amexio-column size="12">
+                          <b style="color: green">Amexio Muziris Supports Angular 5 from version 3.2.X series, if you
+                            are looking for Angular 4 supported use v3.0.12</b>
+                          <br>
+                          <b style="color: #323188">To install Amexio Muziris v3.2 (Angular 5 Supported)
+                            library,</b><br>
+                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.2.1 --save</code></pre>
+
+
+                          <b style="color: #323188">To install Amexio Muziris v3.0.12 (Angular 4 Supported)
+                            library</b><br>
+                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
+
+                          Please make sure you have the latest version of
+                          <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                          installed. <b>and then from your Angular AppModule:</b>
+                         
+                        </amexio-column>
+                      </amexio-row>
+                      <br>
+                      <amexio-row>
+                        <amexio-column size="12">
+                          <ng-container *ngIf="tsCodeV32">
+                            <prism-block [code]="tsCodeV32" [language]="'typescript'"></prism-block>
+                          </ng-container>
+                        </amexio-column>
+                      </amexio-row>
+                      
+                      <div align="center">
+                        <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V3</a>
+                      </div>
+                      
+                    </amexio-accordion-tab>
+                    <amexio-accordion-tab header="Amexio Hampi v2.0" expanded="true">
+                      <amexio-row>
+                        <amexio-column size="12">
+
+                          <b style="color: #323188">To install Amexio Hampi v2.0 ,</b><br>
+                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@2.1.7 --save</code></pre>
+
+                          Please make sure you have the latest version of
+                          <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                          installed. <b>and then from your Angular AppModule:</b>
+                        </amexio-column>
+                      </amexio-row>
+                      <br>
+                      <amexio-row>
+                        <amexio-column size="12">
+                          <ng-container *ngIf="tsCodeV32">
+                            <prism-block [code]="tsCodeV32" [language]="'typescript'"></prism-block>
+                          </ng-container>
+                        </amexio-column>
+                      </amexio-row>
+                      <!-- add dependent libraries -->
+                      <div align="center">
+                        <a href="http://www.amexio.org/showcaseapp/v2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V2</a>
+                      </div>
+
+                    </amexio-accordion-tab>
+                    <amexio-accordion-tab header="Amexio Varanasi v1.0" expanded="true">
+                      <amexio-row>
+                        <amexio-column size="12">
+
+                          <b style="color: #323188">To install Amexio Varanasi v1.0 ,</b><br>
+                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@1.0.44 --save</code></pre>
+
+                          Please make sure you have the latest version of
+                          <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                          installed. <b>and then from your Angular AppModule:</b>
+                        </amexio-column>
+                      </amexio-row>
+                      <br>
+                      <amexio-row>
+                        <amexio-column size="12">
+                          <ng-container *ngIf="tsCodeV1x">
+                            <prism-block [code]="tsCodeV1x" [language]="'typescript'"></prism-block>
+                          </ng-container>
+                        </amexio-column>
+                      </amexio-row>
+                      <div align="center">
+                        <a href="http://www.amexio.org/showcaseapp/v1/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V3</a>
+                      </div>
+                    </amexio-accordion-tab>
+                  </amexio-accordion>
                 </amexio-column>
               </amexio-row>
-              <br>
-              <amexio-row>
-                <amexio-column size="12">
-                  <ng-container *ngIf="tsCode">
-                    <prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
-                  </ng-container>
-                </amexio-column>
-              </amexio-row>
-            </amexio-body>
-          </amexio-card>    
+
+
+            </amexio-panel>
         </amexio-column>
       </amexio-row>
       
-      <br>
       <amexio-row>
         <amexio-column size="12">
-          <amexio-card header="true">
-            <amexio-header> Amexio Services</amexio-header>
-            <amexio-body>
-              <amexio-accordion>
-                <amexio-accordion-tab header="Icon Loader Service">
-                  <span style="font-weight: bolder">Change all amexio icons from font-awesome to material and vice versa in a single line of code by injecting the <code>IconLoaderService</code></span>
-                  <ng-container *ngIf="iconCode">
-                    <prism-block [code]="iconCode" [language]="'typescript'"></prism-block>
-                  </ng-container>
-                </amexio-accordion-tab>
-                <amexio-accordion-tab header="CommonData Service">
-                  <span style="font-weight: bolder">By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</span>
-                  <ng-container *ngIf="dataCode">
-                  <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
-                  </ng-container>
-                </amexio-accordion-tab>
-              </amexio-accordion>
-            </amexio-body>
-          </amexio-card>
-        </amexio-column>
-      </amexio-row>
-      <amexio-row>
-        <amexio-column size="12">
-          <amexio-card header="true">
-            <amexio-header> Modules </amexio-header>
-            <amexio-body>
-              <amexio-datagrid title="" [enable-column-fiter]="false"
-                               [http-method]="'get'"
-                               [http-url]="'assets/apireference/modules/modules.json'"
-                               [data-reader]="'properties'"
-                               [enable-data-filter]="false" >
-                <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                          [text]="'Module Name'">
-                </amexio-data-table-column>
-                <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                          [text]="'Description'"></amexio-data-table-column>
-              </amexio-datagrid>
-            </amexio-body>
-          </amexio-card>
-        </amexio-column>
-      </amexio-row>
-      
-      <amexio-row>
-        <amexio-column size="12">
-          <amexio-card header="true">
-            <amexio-header> Themes </amexio-header>
-            <amexio-body>
-              <span>To use the default include the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code style="font-weight: bolder">styles</code> key</span>
-              
+          <amexio-panel [header]="true"
+                        [title]="'Themes'"
+                        [expanded]="true">
+            <p style="color: darkred"> Themes are available from Version 4 </p>
+                           <span>To use the default include the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
+                             style="font-weight: bolder">styles</code> key</span>
 
-              <ng-container *ngIf="styleCode">
+
+            <ng-container *ngIf="styleCode">
+              <div style="max-height: 300px;overflow-y: scroll;">
                 <prism-block [code]="styleCode" [language]="'json'"></prism-block>
-              </ng-container>
+              </div>
 
-              <p>Or refer the below table for other themes provided.</p>
-              
-              <amexio-row>
-                <amexio-column size="12">
-                  <amexio-datagrid title="Amexio Material Themes" [enable-column-fiter]="false"
-                                   [height]="300"
-                                   [http-method]="'get'"
-                                   [http-url]="'assets/apireference/modules/themes.json'"
-                                   [data-reader]="'properties'"
-                                   [enable-data-filter]="false" >
-                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                              [text]="'Theme Name'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                              [text]="'Path'"></amexio-data-table-column>
-                  </amexio-datagrid>
-                </amexio-column>
-              </amexio-row>
-              
-              <amexio-row>
-                <amexio-column size="12">
-                  <amexio-datagrid title="Amexio Themes" [enable-column-fiter]="false"
-                                   [height]="300"
-                                   [http-method]="'get'"
-                                   [http-url]="'assets/apireference/modules/amx_themes.json'"
-                                   [data-reader]="'properties'"
-                                   [enable-data-filter]="false" >
-                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                              [text]="'Theme Name'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                              [text]="'Path'"></amexio-data-table-column>
-                  </amexio-datagrid>
-                </amexio-column>
-              </amexio-row>
-            </amexio-body>
-          </amexio-card>
+            </ng-container>
+
+            <p>Or refer the below table for other themes provided.</p>
+
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-datagrid title="Amexio Material Themes" [enable-column-fiter]="false"
+                                 [height]="300"
+                                 [http-method]="'get'"
+                                 [http-url]="'assets/apireference/modules/themes.json'"
+                                 [data-reader]="'properties'"
+                                 [enable-data-filter]="false">
+                  <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'"
+                                            [hidden]="false"
+                                            [text]="'Theme Name'">
+                  </amexio-data-table-column>
+                  <amexio-data-table-column [width]="65" [data-index]="'description'"
+                                            [data-type]="'string'"
+                                            [hidden]="false"
+                                            [text]="'Path'"></amexio-data-table-column>
+                </amexio-datagrid>
+              </amexio-column>
+            </amexio-row>
+
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-datagrid title="Amexio Themes" [enable-column-fiter]="false"
+                                 [height]="300"
+                                 [http-method]="'get'"
+                                 [http-url]="'assets/apireference/modules/amx_themes.json'"
+                                 [data-reader]="'properties'"
+                                 [enable-data-filter]="false">
+                  <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'"
+                                            [hidden]="false"
+                                            [text]="'Theme Name'">
+                  </amexio-data-table-column>
+                  <amexio-data-table-column [width]="65" [data-index]="'description'"
+                                            [data-type]="'string'"
+                                            [hidden]="false"
+                                            [text]="'Path'"></amexio-data-table-column>
+                </amexio-datagrid>
+              </amexio-column>
+            </amexio-row>
+          </amexio-panel>
         </amexio-column>
       </amexio-row>
-        
-      <!--<br>
+
       <amexio-row>
-        <amexio-column>
-          <p>Include these in your app's .angular-cli.json </p>
-          <img src="https://preview.ibb.co/b4F1gG/dependecy.png"/>
-          <p> If not using cli then simply add css it to the index.html head.</p>
+        <amexio-column size="12">
+          <amexio-panel [header]="true"
+                        [title]="'License'"
+                        [expanded]="true">
+            <br>
+            <b>Amexio API License for Standard & Enterprise Edition</b>
+            <p>
+              Amexio API is Free & Open Source & based on Apache 2 License. A Permissive License whose main condition require preservation of copyright and license notices.
+              Contributors provide an express grant of patent rights. Licensed works, modification and larger works may be distributed under different terms and without source code.
+            </p>
+            <p><a href="http://amexio.org/showcaseapp/v4/license.html" style="color: blue">Click here to read the Apache 2 License. </a></p>
+          </amexio-panel>
         </amexio-column>
-      </amexio-row>-->
-      
-      
+      </amexio-row>
+
+
   `
 })
 export class GettingStatedDemo {
@@ -211,6 +313,9 @@ export class GettingStatedDemo {
   iconCode : any;
   dataCode : any;
   styleCode : any;
+  modulesData : any;
+  tsCodeV32 : any;
+  tsCodeV1x : any;
   constructor(private http:Http) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -237,6 +342,28 @@ export class GettingStatedDemo {
     this.http.get('assets/data/code/gettingstated/style.text').subscribe(data=>{
       this.styleCode = data.text();
     });
+
+    this.http.get('assets/apireference/modules/modules.json').subscribe(
+      data=>{
+        let response = data.json();
+        this.modulesData = response.properties.sort((a : any, b : any)=>{
+          if(a.name < b.name) return -1;
+          if(a.name > b.name) return 1;
+          return 0;
+        });
+      }
+    );
+
+    this.http.get('assets/data/code/gettingstated/gettingstatedv32.text').subscribe(
+      data=>{
+        this.tsCodeV32 = data.text();
+      }
+    );
+    this.http.get('assets/data/code/gettingstated/gettingstatedv1x.text').subscribe(
+      data=>{
+        this.tsCodeV1x = data.text();
+      }
+    );
   }
 }
 @NgModule({

@@ -18,12 +18,7 @@
       "default": "",
       "description":"Title for panel."
     },
-    {
-      "name": "custom-header",
-      "type": "boolean",
-      "default": "false",
-      "description":"User can customize header using <amexio-header></amexio-header>"
-    },{
+   {
       "name": "height",
       "type": "number",
       "default": "",

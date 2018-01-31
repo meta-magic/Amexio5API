@@ -8,6 +8,6 @@ topNotification(){
     this.topMessageArray.push('Top Notification!!!')
   }
   bottomNotification(){
-    this.bottomMessageArray.push('Bootom Notification!!!')
+    this.bottomMessageArray.push('Bottom Notification!!!')
   }
 }

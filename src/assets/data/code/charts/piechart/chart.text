@@ -1,9 +1,18 @@
 import {Component, OnInit} from '@angular/core';
-
+import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 @Component({
   selector: 'piechart-demo',
   templateUrl: 'piechart.demo.html'
 })
+
+
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [ChartLoaderService]
+})
+
 export class PieChartDemoComponent implements OnInit {
   pieChartData:any;
   constructor() {
