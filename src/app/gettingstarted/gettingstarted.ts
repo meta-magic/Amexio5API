@@ -68,12 +68,12 @@ import {SharedModule} from "../shared.module";
               <amexio-row>
                 <amexio-column size="12">
                   <amexio-accordion>
-                    <amexio-accordion-tab header="Amexio Thanjavur v4.0" active="true">
+                    <amexio-accordion-tab header="Amexio 4.x - Angular 5" active="true">
                       <amexio-tab-view>
                         <amexio-tab title="Installation" active="true">
                           <amexio-row>
                             <amexio-column size="12">
-                              <b>To install this Amexio Thanjavur v4.0, follow the steps given below:</b><br>
+                              <b>To install this Amexio 4.x follow the steps given below:</b><br>
                               <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
                               Please make sure you have the latest version of
                               <pre
@@ -133,20 +133,15 @@ import {SharedModule} from "../shared.module";
                         </amexio-tab>
                       </amexio-tab-view>
                     </amexio-accordion-tab>
-                    <amexio-accordion-tab header="Amexio Muziris v3.0" expanded="true">
+                    <amexio-accordion-tab header="Amexio 3.2.x - Angular 5 and Bootstrap 4" expanded="true">
                       <amexio-row>
                         <amexio-column size="12">
-                          <b style="color: green">Amexio Muziris Supports Angular 5 from version 3.2.X series, if you
-                            are looking for Angular 4 supported use v3.0.12</b>
+                          <b style="color: green">Amexio Muziris Supports Angular 5 from version 3.2.X series</b>
                           <br>
                           <b style="color: #323188">To install Amexio Muziris v3.2 (Angular 5 Supported)
                             library,</b><br>
                           <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.2.1 --save</code></pre>
-
-
-                          <b style="color: #323188">To install Amexio Muziris v3.0.12 (Angular 4 Supported)
-                            library</b><br>
-                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
+                          
 
                           Please make sure you have the latest version of
                           <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
@@ -168,18 +163,21 @@ import {SharedModule} from "../shared.module";
                       </div>
                       
                     </amexio-accordion-tab>
-                    <amexio-accordion-tab header="Amexio Hampi v2.0" expanded="true">
+                    <amexio-accordion-tab header="Amexio 3.0.x - Angular 4 and Bootstrap 4" expanded="true">
                       <amexio-row>
                         <amexio-column size="12">
 
-                          <b style="color: #323188">To install Amexio Hampi v2.0 ,</b><br>
-                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@2.1.7 --save</code></pre>
+
+                          <b style="color: #323188">To install Amexio 3.0.x (Angular 4 Supported)
+                            library</b><br>
+                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
 
                           Please make sure you have the latest version of
                           <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
                           installed. <b>and then from your Angular AppModule:</b>
                         </amexio-column>
                       </amexio-row>
+                      
                       <br>
                       <amexio-row>
                         <amexio-column size="12">
@@ -190,33 +188,9 @@ import {SharedModule} from "../shared.module";
                       </amexio-row>
                       <!-- add dependent libraries -->
                       <div align="center">
-                        <a href="http://www.amexio.org/showcaseapp/v2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V2</a>
+                        <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V2</a>
                       </div>
 
-                    </amexio-accordion-tab>
-                    <amexio-accordion-tab header="Amexio Varanasi v1.0" expanded="true">
-                      <amexio-row>
-                        <amexio-column size="12">
-
-                          <b style="color: #323188">To install Amexio Varanasi v1.0 ,</b><br>
-                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@1.0.44 --save</code></pre>
-
-                          Please make sure you have the latest version of
-                          <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
-                          installed. <b>and then from your Angular AppModule:</b>
-                        </amexio-column>
-                      </amexio-row>
-                      <br>
-                      <amexio-row>
-                        <amexio-column size="12">
-                          <ng-container *ngIf="tsCodeV1x">
-                            <prism-block [code]="tsCodeV1x" [language]="'typescript'"></prism-block>
-                          </ng-container>
-                        </amexio-column>
-                      </amexio-row>
-                      <div align="center">
-                        <a href="http://www.amexio.org/showcaseapp/v1/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V3</a>
-                      </div>
                     </amexio-accordion-tab>
                   </amexio-accordion>
                 </amexio-column>
