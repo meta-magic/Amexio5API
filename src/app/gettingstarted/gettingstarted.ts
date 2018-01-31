@@ -62,8 +62,6 @@ import {SharedModule} from "../shared.module";
       <br>
       <amexio-row>
         <amexio-column size="12">
-          <div id="gettingStarted">
-
             <amexio-panel [header]="true"
                           [title]="'Installation Details'"
                           [expanded]="true">
@@ -226,7 +224,6 @@ import {SharedModule} from "../shared.module";
 
 
             </amexio-panel>
-          </div>
         </amexio-column>
       </amexio-row>
       
@@ -303,7 +300,7 @@ import {SharedModule} from "../shared.module";
               Amexio API is Free & Open Source & based on Apache 2 License. A Permissive License whose main condition require preservation of copyright and license notices.
               Contributors provide an express grant of patent rights. Licensed works, modification and larger works may be distributed under different terms and without source code.
             </p>
-            <p><a href="" style="color: blue">Click here to read the Apache 2 License. </a></p>
+            <p><a href="http://amexio.org/showcaseapp/v4/license.html" style="color: blue">Click here to read the Apache 2 License. </a></p>
           </amexio-panel>
         </amexio-column>
       </amexio-row>
