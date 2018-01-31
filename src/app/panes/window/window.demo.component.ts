@@ -18,7 +18,7 @@ import {Http} from "@angular/http";
            <amexio-row>
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-               <amexio-window [show-window]="showBasicWindow" [footer]="true">
+               <amexio-window [show-window]="showBasicWindow" [footer]="true" (close)="toggleBasicWindow()">
                  <amexio-header>
                   Employee Form
                  </amexio-header>
@@ -76,7 +76,7 @@ import {Http} from "@angular/http";
           
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleMaxWindow()" label="Maximizable Window"></amexio-button>
-               <amexio-window [show-window]="showMaxWindow" [footer]="true"  [maximize]="true">
+               <amexio-window [show-window]="showMaxWindow" [footer]="true" (close)="toggleMaxWindow()"  [maximize]="true">
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -133,7 +133,7 @@ import {Http} from "@angular/http";
       
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleClosable()" label="Closable Window"></amexio-button>
-               <amexio-window [show-window]="showClosable" [closable]="true" >
+               <amexio-window [show-window]="showClosable" [closable]="true" (close)="toggleClosable()" >
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -228,7 +228,7 @@ import {Http} from "@angular/http";
 
 export class WindowDemoComponent {
 
-  showBasicWindow : boolean;
+  showBasicWindow  = false;
   showMaxWindow : boolean;
   showClosable : boolean;
   htmlCode: string;
@@ -278,6 +278,7 @@ export class WindowDemoComponent {
   }
 
   toggleBasicWindow(){
+    debugger;
    this.showBasicWindow = !this.showBasicWindow;
   }
 
