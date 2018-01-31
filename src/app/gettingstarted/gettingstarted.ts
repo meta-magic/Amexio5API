@@ -13,19 +13,24 @@ import {SharedModule} from "../shared.module";
   selector: 'getting-started',
   template: `
     <div style="padding-left: 10px;padding-right: 10px;">
-
-      <h1 align="center">
-        <br>
-        <a href="http://www.amexio.tech/"><img src="https://image.ibb.co/kdy6Ev/logo.png" alt="Amexio" width="200"></a>
-        <br>
-        Amexio Angular EXtensions v4.0 beta
-        <br>
-        <br>
-        <img src="assets/images/npm.svg"/>
-        <img src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=4.0.0&x2=0"/> <a href="https://badge.fury.io/js/amexio-ng-extensions"><img src="https://img.shields.io/npm/dt/amexio-ng-extensions.svg" alt="npm download" height="18"></a>
-      </h1>
-
-      <hr>
+      <amexio-row>
+        <amexio-column size="12">
+            <div align="center">
+              <a href="http://www.amexio.tech/">
+                <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png" width="200"></amexio-image>
+              </a>
+              <br>
+                <h1>Amexio Angular EXtensions v4.0 beta</h1> 
+              <br>
+              <amexio-image path="assets/images/npm.svg"></amexio-image>
+              <amexio-image path="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=4.0.0&x2=0"></amexio-image>
+              <a href="https://badge.fury.io/js/amexio-ng-extensions">
+                <amexio-image height="18" path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
+              </a>
+            </div>
+          <hr>
+        </amexio-column>
+      </amexio-row>
       <amexio-row>
         <amexio-column size="12">
           <amexio-card header="true">
@@ -55,6 +60,7 @@ import {SharedModule} from "../shared.module";
       </amexio-row>
       <br>
       <amexio-row>
+        <amexio-column size="12">
         <div id="gettingStarted">
           <amexio-card header="true">
             <amexio-header> Getting Started </amexio-header>
@@ -67,7 +73,8 @@ import {SharedModule} from "../shared.module";
               </amexio-row>
             </amexio-body>
           </amexio-card>
-        </div>    
+        </div>  
+        </amexio-column>
       </amexio-row>
     
 
