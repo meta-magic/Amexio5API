@@ -20,7 +20,7 @@ import {SharedModule} from "../shared.module";
               <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
             </a>
             <br>
-            <h1>Amexio Angular EXtensions v4.0 beta</h1>
+            <h1>Amexio Angular EXtensions v4.0</h1>
             <br>
             <amexio-image path="assets/images/npm.svg"></amexio-image>
             <amexio-image
@@ -76,7 +76,7 @@ import {SharedModule} from "../shared.module";
                           <amexio-row>
                             <amexio-column size="12">
                               <b>To install this Amexio Thanjavur v4.0, follow the steps given below:</b><br>
-                              <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@beta --save</code></pre>
+                              <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
                               Please make sure you have the latest version of
                               <pre
                                 style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
