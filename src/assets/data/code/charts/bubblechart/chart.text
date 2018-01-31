@@ -1,8 +1,14 @@
 import {Component, OnInit} from '@angular/core';
-
+import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 @Component({
   selector: 'bubble-chart-demo',
   templateUrl: 'bubblechart.demo.html'
+})
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [ChartLoaderService]
 })
 export class BubbleChartDemoComponent implements OnInit {
   bubbleChartData:any;
