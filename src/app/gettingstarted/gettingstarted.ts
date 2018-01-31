@@ -134,50 +134,54 @@ import {SharedModule} from "../shared.module";
                              style="font-weight: bolder">styles</code> key</span>
 
 
-                          <ng-container *ngIf="styleCode">
-                            <div style="max-height: 300px;overflow-y: scroll;">
-                              <prism-block [code]="styleCode" [language]="'json'"></prism-block>   
-                            </div>
-                           
-                          </ng-container>
+                            <ng-container *ngIf="styleCode">
+                              <div style="max-height: 300px;overflow-y: scroll;">
+                                <prism-block [code]="styleCode" [language]="'json'"></prism-block>
+                              </div>
 
-                          <p>Or refer the below table for other themes provided.</p>
+                            </ng-container>
 
-                          <amexio-row>
-                            <amexio-column size="12">
-                              <amexio-datagrid title="Amexio Material Themes" [enable-column-fiter]="false"
-                                               [height]="300"
-                                               [http-method]="'get'"
-                                               [http-url]="'assets/apireference/modules/themes.json'"
-                                               [data-reader]="'properties'"
-                                               [enable-data-filter]="false">
-                                <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                                          [text]="'Theme Name'">
-                                </amexio-data-table-column>
-                                <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
-                                                          [hidden]="false"
-                                                          [text]="'Path'"></amexio-data-table-column>
-                              </amexio-datagrid>
-                            </amexio-column>
-                          </amexio-row>
+                            <p>Or refer the below table for other themes provided.</p>
 
-                          <amexio-row>
-                            <amexio-column size="12">
-                              <amexio-datagrid title="Amexio Themes" [enable-column-fiter]="false"
-                                               [height]="300"
-                                               [http-method]="'get'"
-                                               [http-url]="'assets/apireference/modules/amx_themes.json'"
-                                               [data-reader]="'properties'"
-                                               [enable-data-filter]="false">
-                                <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                                          [text]="'Theme Name'">
-                                </amexio-data-table-column>
-                                <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
-                                                          [hidden]="false"
-                                                          [text]="'Path'"></amexio-data-table-column>
-                              </amexio-datagrid>
-                            </amexio-column>
-                          </amexio-row>
+                            <amexio-row>
+                              <amexio-column size="12">
+                                <amexio-datagrid title="Amexio Material Themes" [enable-column-fiter]="false"
+                                                 [height]="300"
+                                                 [http-method]="'get'"
+                                                 [http-url]="'assets/apireference/modules/themes.json'"
+                                                 [data-reader]="'properties'"
+                                                 [enable-data-filter]="false">
+                                  <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'"
+                                                            [hidden]="false"
+                                                            [text]="'Theme Name'">
+                                  </amexio-data-table-column>
+                                  <amexio-data-table-column [width]="65" [data-index]="'description'"
+                                                            [data-type]="'string'"
+                                                            [hidden]="false"
+                                                            [text]="'Path'"></amexio-data-table-column>
+                                </amexio-datagrid>
+                              </amexio-column>
+                            </amexio-row>
+
+                            <amexio-row>
+                              <amexio-column size="12">
+                                <amexio-datagrid title="Amexio Themes" [enable-column-fiter]="false"
+                                                 [height]="300"
+                                                 [http-method]="'get'"
+                                                 [http-url]="'assets/apireference/modules/amx_themes.json'"
+                                                 [data-reader]="'properties'"
+                                                 [enable-data-filter]="false">
+                                  <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'"
+                                                            [hidden]="false"
+                                                            [text]="'Theme Name'">
+                                  </amexio-data-table-column>
+                                  <amexio-data-table-column [width]="65" [data-index]="'description'"
+                                                            [data-type]="'string'"
+                                                            [hidden]="false"
+                                                            [text]="'Path'"></amexio-data-table-column>
+                                </amexio-datagrid>
+                              </amexio-column>
+                            </amexio-row>
                           </div>
                         </amexio-tab>
                       </amexio-tab-view>
@@ -188,11 +192,13 @@ import {SharedModule} from "../shared.module";
                           <b style="color: green">Amexio Muziris Supports Angular 5 from version 3.2.X series, if you
                             are looking for Angular 4 supported use v3.0.12</b>
                           <br>
-                          <b style="color: #323188">To install Amexio Muziris v3.2 (Angular 5 Supported) library,</b><br>
+                          <b style="color: #323188">To install Amexio Muziris v3.2 (Angular 5 Supported)
+                            library,</b><br>
                           <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.2.1 --save</code></pre>
 
 
-                          <b style="color: #323188">To install Amexio Muziris v3.0.12 (Angular 4 Supported) library</b><br>
+                          <b style="color: #323188">To install Amexio Muziris v3.0.12 (Angular 4 Supported)
+                            library</b><br>
                           <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
 
                           Please make sure you have the latest version of
@@ -213,7 +219,7 @@ import {SharedModule} from "../shared.module";
                     <amexio-accordion-tab header="Amexio Hampi v2.0" expanded="true">
                       <amexio-row>
                         <amexio-column size="12">
-                          
+
                           <b style="color: #323188">To install Amexio Hampi v2.0 ,</b><br>
                           <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@2.0.0 --save</code></pre>
 
@@ -263,7 +269,7 @@ import {SharedModule} from "../shared.module";
           </div>
         </amexio-column>
       </amexio-row>
-      
+
 
       <br>
 
@@ -272,7 +278,48 @@ import {SharedModule} from "../shared.module";
           <amexio-card header="true">
             <amexio-header> License</amexio-header>
             <amexio-body>
-             
+              <amexio-card header="true">
+                <amexio-header>
+                  Apache License
+                </amexio-header>
+
+                <amexio-body>
+                  <p> Apache License
+                    Version 2.0, January 2004
+                    http://www.apache.org/licenses/</p>
+
+
+                  <p><b>TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</b></p>
+
+                  <p>1. Definitions.</p>
+
+                  <p> "License" shall mean the terms and conditions for use, reproduction,
+                    and distribution as defined by Sections 1 through 9 of this document.</p>
+                  <p>
+                    "Licensor" shall mean the copyright owner or entity authorized by
+                    the copyright owner that is granting the License.
+                  </p>
+                  <p>
+                    "Legal Entity" shall mean the union of the acting entity and all
+                    other entities that control, are controlled by, or are under common
+                    control with that entity. For the purposes of this definition,
+                    "control" means (i) the power, direct or indirect, to cause the
+                    direction or management of such entity, whether by contract or
+                    otherwise, or (ii) ownership of fifty percent (50%) or more of the
+                    outstanding shares, or (iii) beneficial ownership of such entity.
+                  </p>
+                  <p>
+                    "You" (or "Your") shall mean an individual or Legal Entity
+                    exercising permissions granted by this License.
+                  </p>
+                  <p>
+                    "Source" form shall mean the preferred form for making modifications,
+                    including but not limited to software source code, documentation
+                    source, and configuration files.<a href="" style="font-weight: bold;color: #323188;">Continue Reading..</a>
+                  </p>
+                </amexio-body>
+
+              </amexio-card>
             </amexio-body>
           </amexio-card>
         </amexio-column>
