@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-
+import {C}
 @Component({
   selector: 'columnchart-demo',
   templateUrl: 'columnchart.demo.html'
@@ -9,9 +9,9 @@ export class ColumnChartDemoComponent implements OnInit {
   columnChartData:any;
   constructor() {
     this.columnStackChartData=[
-      [{"data-type":'timeofday',"label":'Time of Day'},
-        {"data-type":"number", "label":'Motivation Level'},
-        {"data-type":"number","label":"Energy Level"}
+      [{"datatype":'timeofday',"label":'Time of Day'},
+        {"datatype":"number", "label":'Motivation Level'},
+        {"datatype":"number","label":"Energy Level"}
       ],
       [{v: [8, 0, 0], f: '8 am'}, 1, .25],
       [{v: [9, 0, 0], f: '9 am'}, 2, .5],
