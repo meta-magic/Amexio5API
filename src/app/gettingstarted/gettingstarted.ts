@@ -62,153 +62,155 @@ import {SharedModule} from "../shared.module";
       <br>
       <amexio-row>
         <amexio-column size="12">
-            <amexio-panel [header]="true"
-                          [title]="'Installation Details'"
-                          [expanded]="true">
-              <amexio-row>
-                <amexio-column size="12">
-                  <amexio-accordion>
-                    <amexio-accordion-tab header="Amexio 4.x - Angular 5" active="true">
-                      <amexio-tab-view>
-                        <amexio-tab title="Installation" active="true">
-                          <amexio-row>
-                            <amexio-column size="12">
-                              <b>To install this Amexio 4.x follow the steps given below:</b><br>
-                              <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
-                              Please make sure you have the latest version of
-                              <pre
-                                style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
-                              installed. <b>and then from your Angular AppModule:</b>
-                            </amexio-column>
-                          </amexio-row>
-                          <br>
-                          <amexio-row>
-                            <amexio-column size="12">
-                              <div style="height: 400px">
-                                <ng-container *ngIf="tsCode">
-                                  <prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
-                                </ng-container>
-                              </div>
-                              
-                            </amexio-column>
-                          </amexio-row>
-                        </amexio-tab>
-                        <amexio-tab title="Modules">
-                          <p>Amexio Library Consist of the following modules</p>
-                          <ng-container *ngIf="modulesData">
-                            <amexio-datagrid title="" [enable-column-fiter]="false"
-                                             [data]="modulesData"
-                                             [height]="300"
-                                             [enable-data-filter]="false">
-                              <amexio-data-table-column [width]="25" [data-index]="'name'" [data-type]="'string'"
-                                                        [hidden]="false"
-                                                        [text]="'Module Name'">
-                              </amexio-data-table-column>
-                              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
-                                                        [hidden]="false"
-                                                        [text]="'Description'"></amexio-data-table-column>
-                            </amexio-datagrid>
-                          </ng-container>
-                          <br>
+          <amexio-panel [header]="true"
+                        [title]="'Installation Details'"
+                        [expanded]="true">
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-accordion>
+                  <amexio-accordion-tab header="Amexio 4.x - Angular 5" active="true">
+                    <amexio-tab-view>
+                      <amexio-tab title="Installation" active="true">
+                        <amexio-row>
+                          <amexio-column size="12">
+                            <b>To install this Amexio 4.x follow the steps given below:</b><br>
+                            <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
+                            Please make sure you have the latest version of
+                            <pre
+                              style="font-weight: bold;color: #21c00f"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                            installed. <b>and then from your Angular AppModule:</b>
+                          </amexio-column>
+                        </amexio-row>
+                        <br>
+                        <amexio-row>
+                          <amexio-column size="12">
+                            <div style="height: 400px">
+                              <ng-container *ngIf="tsCode">
+                                <prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
+                              </ng-container>
+                            </div>
 
-                        </amexio-tab>
-                        <amexio-tab title="Services">
-                          <div style="height: 500px;overflow-x: auto;">
-                            
-                          
+                          </amexio-column>
+                        </amexio-row>
+                      </amexio-tab>
+                      <amexio-tab title="Modules">
+                        <p>Amexio Library Consist of the following modules</p>
+                        <ng-container *ngIf="modulesData">
+                          <amexio-datagrid title="" [enable-column-fiter]="false"
+                                           [data]="modulesData"
+                                           [height]="300"
+                                           [enable-data-filter]="false">
+                            <amexio-data-table-column [width]="25" [data-index]="'name'" [data-type]="'string'"
+                                                      [hidden]="false"
+                                                      [text]="'Module Name'">
+                            </amexio-data-table-column>
+                            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                                      [hidden]="false"
+                                                      [text]="'Description'"></amexio-data-table-column>
+                          </amexio-datagrid>
+                        </ng-container>
+                        <br>
+
+                      </amexio-tab>
+                      <amexio-tab title="Services">
+                        <div style="height: 500px;overflow-x: auto;">
+
+
                           <p>Amexio Provides the below services :</p>
-                          
-                            <h3>IconService</h3>
-                              <span style="font-weight: bolder">Change all amexio icons from font-awesome to material and vice versa in a single line of code by injecting the <code>IconLoaderService</code></span>
-                              <ng-container *ngIf="iconCode">
-                                <prism-block [code]="iconCode" [language]="'typescript'"></prism-block>
-                              </ng-container>
-                            <br>
-                           <h3>CommonDataService</h3>
-                              <span style="font-weight: bolder">By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</span>
-                              <ng-container *ngIf="dataCode">
-                                <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
-                              </ng-container>
-                          </div>
-                        </amexio-tab>
-                      </amexio-tab-view>
-                    </amexio-accordion-tab>
-                    <amexio-accordion-tab header="Amexio 3.2.x - Angular 5 and Bootstrap 4" expanded="true">
-                      <amexio-row>
-                        <amexio-column size="12">
-                          <b style="color: green">Amexio Muziris Supports Angular 5 from version 3.2.X series</b>
+
+                          <h3>IconService</h3>
+                          <span style="font-weight: bolder">Change all amexio icons from font-awesome to material and vice versa in a single line of code by injecting the <code>IconLoaderService</code></span>
+                          <ng-container *ngIf="iconCode">
+                            <prism-block [code]="iconCode" [language]="'typescript'"></prism-block>
+                          </ng-container>
                           <br>
-                          <b style="color: #323188">To install Amexio Muziris v3.2 (Angular 5 Supported)
-                            library,</b><br>
-                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.2.1 --save</code></pre>
-                          
-
-                          Please make sure you have the latest version of
-                          <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
-                          installed. <b>and then from your Angular AppModule:</b>
-                         
-                        </amexio-column>
-                      </amexio-row>
-                      <br>
-                      <amexio-row>
-                        <amexio-column size="12">
-                          <ng-container *ngIf="tsCodeV32">
-                            <prism-block [code]="tsCodeV32" [language]="'typescript'"></prism-block>
+                          <h3>CommonDataService</h3>
+                          <span style="font-weight: bolder">By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</span>
+                          <ng-container *ngIf="dataCode">
+                            <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
                           </ng-container>
-                        </amexio-column>
-                      </amexio-row>
-                      
-                      <div align="center">
-                        <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V3</a>
-                      </div>
-                      
-                    </amexio-accordion-tab>
-                    <amexio-accordion-tab header="Amexio 3.0.x - Angular 4 and Bootstrap 4" expanded="true">
-                      <amexio-row>
-                        <amexio-column size="12">
+                        </div>
+                      </amexio-tab>
+                    </amexio-tab-view>
+                  </amexio-accordion-tab>
+                  <amexio-accordion-tab header="Amexio 3.2.x - Angular 5 and Bootstrap 4" expanded="true">
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <b style="color: green">Amexio Muziris Supports Angular 5 from version 3.2.X series</b>
+                        <br>
+                        <b style="color: #323188">To install Amexio Muziris v3.2 (Angular 5 Supported)
+                          library,</b><br>
+                        <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.2.1 --save</code></pre>
 
 
-                          <b style="color: #323188">To install Amexio 3.0.x (Angular 4 Supported)
-                            library</b><br>
-                          <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
+                        Please make sure you have the latest version of
+                        <pre style="font-weight: bold;color: #3ac012"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                        installed. <b>and then from your Angular AppModule:</b>
 
-                          Please make sure you have the latest version of
-                          <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
-                          installed. <b>and then from your Angular AppModule:</b>
-                        </amexio-column>
-                      </amexio-row>
-                      
-                      <br>
-                      <amexio-row>
-                        <amexio-column size="12">
-                          <ng-container *ngIf="tsCodeV32">
-                            <prism-block [code]="tsCodeV32" [language]="'typescript'"></prism-block>
-                          </ng-container>
-                        </amexio-column>
-                      </amexio-row>
-                      <!-- add dependent libraries -->
-                      <div align="center">
-                        <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank" style="color: blueviolet">Link for API for V2</a>
-                      </div>
+                      </amexio-column>
+                    </amexio-row>
+                    <br>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <ng-container *ngIf="tsCodeV32">
+                          <prism-block [code]="tsCodeV32" [language]="'typescript'"></prism-block>
+                        </ng-container>
+                      </amexio-column>
+                    </amexio-row>
 
-                    </amexio-accordion-tab>
-                  </amexio-accordion>
-                </amexio-column>
-              </amexio-row>
+                    <div align="center">
+                      <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank"
+                         style="color: blueviolet">Link for API for V3</a>
+                    </div>
+
+                  </amexio-accordion-tab>
+                  <amexio-accordion-tab header="Amexio 3.0.x - Angular 4 and Bootstrap 4" expanded="true">
+                    <amexio-row>
+                      <amexio-column size="12">
 
 
-            </amexio-panel>
+                        <b style="color: #323188">To install Amexio 3.0.x (Angular 4 Supported)
+                          library</b><br>
+                        <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
+
+                        Please make sure you have the latest version of
+                        <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                        installed. <b>and then from your Angular AppModule:</b>
+                      </amexio-column>
+                    </amexio-row>
+
+                    <br>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <ng-container *ngIf="tsCodeV32">
+                          <prism-block [code]="tsCodeV32" [language]="'typescript'"></prism-block>
+                        </ng-container>
+                      </amexio-column>
+                    </amexio-row>
+                    <!-- add dependent libraries -->
+                    <div align="center">
+                      <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank"
+                         style="color: blueviolet">Link for API for V2</a>
+                    </div>
+
+                  </amexio-accordion-tab>
+                </amexio-accordion>
+              </amexio-column>
+            </amexio-row>
+
+
+          </amexio-panel>
         </amexio-column>
       </amexio-row>
-      
+
       <amexio-row>
         <amexio-column size="12">
           <amexio-panel [header]="true"
                         [title]="'Themes'"
                         [expanded]="true">
             <p style="color: darkred"> Themes are available from Version 4 </p>
-                           <span>To use the default include the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
-                             style="font-weight: bolder">styles</code> key</span>
+            <span>To use the default include the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
+              style="font-weight: bolder">styles</code> key</span>
 
 
             <ng-container *ngIf="styleCode">
@@ -271,10 +273,13 @@ import {SharedModule} from "../shared.module";
             <br>
             <b>Amexio API License for Standard & Enterprise Edition</b>
             <p>
-              Amexio API is Free & Open Source & based on Apache 2 License. A Permissive License whose main condition require preservation of copyright and license notices.
-              Contributors provide an express grant of patent rights. Licensed works, modification and larger works may be distributed under different terms and without source code.
+              Amexio API is Free & Open Source & based on Apache 2 License. A Permissive License whose main condition
+              require preservation of copyright and license notices.
+              Contributors provide an express grant of patent rights. Licensed works, modification and larger works may
+              be distributed under different terms and without source code.
             </p>
-            <p><a href="http://amexio.org/showcaseapp/v4/license.html" style="color: blue">Click here to read the Apache 2 License. </a></p>
+            <p><a href="http://amexio.org/showcaseapp/v4/license.html" style="color: blue">Click here to read the Apache
+              2 License. </a></p>
           </amexio-panel>
         </amexio-column>
       </amexio-row>
