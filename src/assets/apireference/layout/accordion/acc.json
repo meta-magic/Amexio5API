@@ -13,6 +13,18 @@
       "description":"Pane will expand or collapse based on the boolean."
     },
     {
+      "name": "transparent",
+      "type": "boolean",
+      "default": "false",
+      "description":"Apply Transparent styles to accordion"
+    },
+    {
+      "name": "angle-icon",
+      "type": "boolean",
+      "default": "false",
+      "description":"Can use Angle Icons instead of default plus/minus icons"
+    },
+    {
       "name": "footer",
       "type": "boolean",
       "default": "false",

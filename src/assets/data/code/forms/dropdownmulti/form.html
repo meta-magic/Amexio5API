@@ -1,13 +1,11 @@
 <!--Simple dropdown multi select with http url-->
-<amexio-dropdown [(ngModel)]="sportName"
-                 [place-holder]="'Choose'"
-                 name="sportName"
-                 [data-reader]="'data'"
-                 [field-label]="'Choose Sport'"
-                 [http-url]="'assets/data/componentdata/sports.json'"
-                 [http-method]="'get'"
-                 [display-field]="'sportName'"
-                 [value-field]="'code'"
-                 [multi-select]="true"
-                 (onSingleSelect)="getSingleVal($event)">
+<amexio-dropdown
+  [place-holder]="'Choose'"
+  [field-label]="'Choose Fruit'"
+  [http-method]="'get'" [http-url]="'assets/data/componentdata/fruits.json'"
+  [display-field]="'fruitName'" [value-field]="'code'"
+  [data-reader]="'data'"
+  [multi-select]="true"
+  (onMultiSelect)="onMultiSelectValue($event)"
+>
 </amexio-dropdown>

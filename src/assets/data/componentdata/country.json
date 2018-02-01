@@ -2211,6 +2211,19 @@
       "isoNumeric": 336
     },
     {
+      "countryName": "",
+      "countryCode1": "",
+      "countryCode2": "",
+      "countryFlag": "",
+      "capital": "",
+      "currencyCode": "",
+      "currencyName": "",
+      "currencySymbol": "",
+      "capitalLatitude": null,
+      "capitalLongitude": null,
+      "isoNumeric": 0
+    },
+    {
       "countryName": "Indonesia",
       "countryCode1": "ID",
       "countryCode2": "IDN",

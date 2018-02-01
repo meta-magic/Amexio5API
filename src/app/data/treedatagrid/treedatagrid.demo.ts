@@ -23,9 +23,10 @@ import {Http} from "@angular/http";
                     <amexio-tree-data-table [http-method]="'get'"
                                             [http-url]="'assets/data/componentdata/treedatatable.json'" 
                                             [data-reader]="'data'" (selectedRecord)="getSelectedData($event)">
+                      <amexio-data-table-column [data-index]="'task'" [data-type]="'string'" [hidden]="false" [text]="'Task'"></amexio-data-table-column>
                       <amexio-data-table-column [data-index]="'user'" [data-type]="'string'" [hidden]="false" [text]="'User'"></amexio-data-table-column>
                       <amexio-data-table-column [data-index]="'duration'" [data-type]="'number'" [hidden]="false" [text]="'Duration'"></amexio-data-table-column>
-                    </amexio-tree-data-table>
+                    </amexio-tree-data-table> 
                     <p><b>Clicked Row Data : </b>{{selectedData | json}}</p>
                   </amexio-body>
                 </amexio-card>
@@ -151,7 +152,6 @@ export class TreeDataGridDemo {
   }
 
   getSelectedData(data: any) {
-    debugger;
     this.selectedData = data;
   }
 }

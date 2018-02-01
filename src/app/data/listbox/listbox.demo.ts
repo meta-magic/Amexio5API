@@ -49,13 +49,12 @@ import {Http} from "@angular/http";
                                     [display-field]="'name'" (onRowClick)="onRowClick($event)">
                       <ng-template #amexioBodyTmpl let-row="row">
                         <amexio-row>
-                          <amexio-column [size]="12">
-                            <div class="profile-image">
-                              <amexio-image path="assets/images/profile/{{row.profile}}"></amexio-image>
-                              <a>{{row.name}}</a>
-                            </div>
+                          <amexio-column [size]="1">
+                              <amexio-image [c-class]="'around-image'" height="50px" width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
                           </amexio-column>
-
+                          <amexio-column [size]="11">
+                            {{row.name}}
+                          </amexio-column>
                         </amexio-row>
                       </ng-template>
                     </amexio-listbox>

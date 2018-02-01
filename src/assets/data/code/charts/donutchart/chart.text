@@ -1,8 +1,15 @@
 import {Component, OnInit} from '@angular/core';
-
+import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 @Component({
   selector: 'donutchart-demo',
   templateUrl: 'donutchart.demo.html'
+})
+
+@NgModule({
+  imports: [AmexioWidgetModule ],
+  exports: [],
+  declarations : [],
+  providers : [ChartLoaderService]
 })
 export class DonutChartDemoComponent implements OnInit {
   donutChartData:any;
