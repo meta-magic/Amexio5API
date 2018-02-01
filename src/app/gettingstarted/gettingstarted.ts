@@ -76,8 +76,8 @@ import {SharedModule} from "../shared.module";
                             <b>To install this Amexio 4.x follow the steps given below:</b><br>
                             <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
                             Please make sure you have the latest version of
-                            <pre
-                              style="font-weight: bold;color: #21c00f"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                            <span
+                              style="font-weight: bold;color: #21c00f">NodeJS & npm Angular CLI</span>
                             installed. <b>and then from your Angular AppModule:</b>
                           </amexio-column>
                         </amexio-row>
@@ -136,17 +136,12 @@ import {SharedModule} from "../shared.module";
                   <amexio-accordion-tab header="Amexio 3.2.x - Angular 5 and Bootstrap 4" expanded="true">
                     <amexio-row>
                       <amexio-column size="12">
-                        <b style="color: green">Amexio Muziris Supports Angular 5 from version 3.2.X series</b>
-                        <br>
-                        <b style="color: #323188">To install Amexio Muziris v3.2 (Angular 5 Supported)
-                          library,</b><br>
+                        <b>To install this Amexio 3.2.x - Angular 5 and Bootstrap 4 follow the steps given below:</b><br>
                         <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.2.1 --save</code></pre>
-
-
                         Please make sure you have the latest version of
-                        <pre style="font-weight: bold;color: #3ac012"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                        <span
+                          style="font-weight: bold;color: #21c00f">NodeJS & npm Angular CLI</span>
                         installed. <b>and then from your Angular AppModule:</b>
-
                       </amexio-column>
                     </amexio-row>
                     <br>
@@ -167,14 +162,11 @@ import {SharedModule} from "../shared.module";
                   <amexio-accordion-tab header="Amexio 3.0.x - Angular 4 and Bootstrap 4" expanded="true">
                     <amexio-row>
                       <amexio-column size="12">
-
-
-                        <b style="color: #323188">To install Amexio 3.0.x (Angular 4 Supported)
-                          library</b><br>
+                        <b>To install this Amexio 3.0.x - Angular 4 and Bootstrap 4 follow the steps given below:</b><br>
                         <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
-
                         Please make sure you have the latest version of
-                        <pre style="font-weight: bold;color: #3ac012"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                        <span
+                          style="font-weight: bold;color: #21c00f">NodeJS & npm Angular CLI</span>
                         installed. <b>and then from your Angular AppModule:</b>
                       </amexio-column>
                     </amexio-row>
