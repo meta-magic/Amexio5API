@@ -174,7 +174,7 @@ import {SharedModule} from "../shared.module";
                         <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@3.0.12 --save</code></pre>
 
                         Please make sure you have the latest version of
-                        <pre style="font-weight: bold;color: #c0af1a"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
+                        <pre style="font-weight: bold;color: #3ac012"><code>NodeJS</code> & <code>npm</code> & <code>Angular CLI</code></pre>
                         installed. <b>and then from your Angular AppModule:</b>
                       </amexio-column>
                     </amexio-row>
