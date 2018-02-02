@@ -39,7 +39,7 @@ import {Http} from "@angular/http";
                   <ng-template #amexioBodyTmpl let-row="row">
                     <amexio-row>
                       <amexio-column [size]="12">
-                          <amexio-image c-class="profile-image" path="assets/images/profile/{{row.profile}}"></amexio-image>
+                          <amexio-image [c-class]="'around-image'" height="50px" width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
                           <a>{{row.name}}</a>
                       </amexio-column>
 
