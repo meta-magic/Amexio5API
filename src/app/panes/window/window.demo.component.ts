@@ -278,7 +278,6 @@ export class WindowDemoComponent {
   }
 
   toggleBasicWindow(){
-    debugger;
    this.showBasicWindow = !this.showBasicWindow;
   }
 
