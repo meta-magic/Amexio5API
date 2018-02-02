@@ -94,6 +94,7 @@ import {Http} from "@angular/http";
 
           </amexio-tab>
           <amexio-tab title="Source">
+            <div style="overflow-y: scroll">
             <amexio-vertical-tab-view>
               <amexio-tab title="HTML" [active]="true">
                 <ng-container *ngIf="htmlCode">
@@ -107,6 +108,7 @@ import {Http} from "@angular/http";
                 </ng-container>
               </amexio-tab>
             </amexio-vertical-tab-view>
+            </div>
           </amexio-tab>
           <amexio-tab title="Live">
             Work in Progress
