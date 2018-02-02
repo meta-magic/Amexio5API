@@ -26,7 +26,6 @@ import {Http} from "@angular/http";
                       [title]="'Employee Data'"
                       [page-size] = "10"
                       [data-reader]="'data'"
-                      [enable-checkbox]="true"
                       [http-url]="'assets/data/componentdata/datagridgroupby.json'"
                       [http-method]="'get'"
                       [enable-data-filter]="true"
