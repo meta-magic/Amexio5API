@@ -3,50 +3,50 @@
     {
       "text": "Home",
       "icon" : "fa fa-home fa-fw",
-      "mdbIcon" : "home",
+      "mdaIcon" : "home",
       "link" : "/home/dashboard",
       "selected":true
     },
     {
       "text": "Email",
       "icon" : "fa fa-envelope fa-fw",
-      "mdbIcon" : "email",
+      "mdaIcon" : "email",
       "link" : "/home/email"
     },
     {
       "text": "Profile",
       "icon" : "fa fa-user fa-fw",
-      "mdbIcon" : "account_box",
+      "mdaIcon" : "account_box",
       "link" : "/home/profile"
     },
     {
       "text": "Pages",
       "icon" : "fa fa-id-card-o fa-fw",
-      "mdbIcon" : "pages",
+      "mdaIcon" : "pages",
       "expand":false,
       "children": [
         {
           "text": "Sample Form",
           "icon" : "fa fa-laptop fa-fw",
-          "mdbIcon" : "create",
+          "mdaIcon" : "create",
           "link":"/home/sample"
         },
         {
           "text": "Login",
-          "mdbIcon":"open_in_browser",
+          "mdaIcon":"open_in_browser",
           "icon" : "fa fa-sign-in fa-fw",
           "link":"/home/login"
         },
         {
           "text": "Register Employee",
           "icon" : "fa fa-address-book-o fa-fw",
-          "mdbIcon":"perm_contact_calendar",
+          "mdaIcon":"perm_contact_calendar",
           "link":"/home/employee-registration"
         },
         {
           "text": "Issue Status",
           "icon" : "fa fa-exclamation fa-fw",
-          "mdbIcon":"playlist_add_check",
+          "mdaIcon":"playlist_add_check",
           "link":"/home/issue-status"
         }
       ]
@@ -54,19 +54,19 @@
     {
       "text": "Reports",
       "icon" : "fa fa-picture-o fa-fw",
-      "mdbIcon":"assignment",
+      "mdaIcon":"assignment",
       "expand":false,
       "children": [
         {
           "text": "Issue",
           "icon" : "fa fa-ticket fa-fw",
-          "mdbIcon":"bug_report",
+          "mdaIcon":"bug_report",
           "link":"/home/issue"
         },
         {
           "text": "Group By Issue",
           "icon" : "fa fa-ticket fa-fw",
-          "mdbIcon":"link",
+          "mdaIcon":"link",
           "link":"/home/group-by-issue"
         }
       ]
@@ -74,18 +74,18 @@
     {
       "text": "Charts",
       "icon" : "fa fa-bar-chart fa-fw",
-      "mdbIcon":"insert_chart",
+      "mdaIcon":"insert_chart",
       "link" : "/home/charts"
     },
     {
       "text": "Maps",
       "icon" : "fa fa-map-marker fa-fw",
-      "mdbIcon":"location_on",
+      "mdaIcon":"location_on",
       "link" : "/home/maps"
     },{
       "text": "Dashboard",
       "icon" : "fa fa-television fa-fw",
-      "mdbIcon":"dashboard",
+      "mdaIcon":"dashboard",
       "link" : "/home/dashboard-template"
     }
   ]}

@@ -33,10 +33,10 @@
       "description": "Icon name Material Example: icon='home', Fontawesome Example: icon='fa fa-address-book."
     },
     {
-      "name": "mdb",
+      "name": "mda",
       "type": "string",
       "default": "",
-      "description": "This attribute use for only material icons.Material Example:mdb='material-icons."
+      "description": "This attribute use for only material icons.Example:mda='material-icons'"
     }
   ]
 }
