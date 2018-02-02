@@ -22,7 +22,11 @@
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "amexio-ng-extensions": "http://s3code.s3-website.us-east-2.amazonaws.com/amexio-ng-extensions-4.0.2.tgz",
+=======
+    "amexio-ng-extensions": "http://s3code.s3-website.us-east-2.amazonaws.com/amexio-ng-extensions-4.0.1.tgz",
+>>>>>>> 29b93412f7f2bf426a4464cdc2ad29d3c539c260
 =======
     "amexio-ng-extensions": "http://s3code.s3-website.us-east-2.amazonaws.com/amexio-ng-extensions-4.0.1.tgz",
 >>>>>>> 29b93412f7f2bf426a4464cdc2ad29d3c539c260

@@ -15,16 +15,34 @@ import {Http} from "@angular/http";
        <p>A simple configurable of video player.</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
-           <amexio-card enableheader="true">
+           <amexio-card header="true">
              <amexio-header> Video player </amexio-header>
              <amexio-body>
                <amexio-row>
-                 <amexio-column size="12" style="height: 550px">
+                 <amexio-column size="12">
+                   <amexio-card header="true">
+                     <amexio-header> Video player without Width </amexio-header>
+                     <amexio-body>
+                       <amexio-ee-youtube-player url="https://www.youtube.com/embed/U7elNhHwgBU"
+                                                 [height]="450">
+
+                       </amexio-ee-youtube-player>
+                     </amexio-body>
+                   </amexio-card>
+
+                 </amexio-column>
+               </amexio-row>
+               <amexio-row>
+                 <amexio-column size="12">
+                   <amexio-card header="true">
+                     <amexio-header> Video player with Width </amexio-header>
+                     <amexio-body>
                    <amexio-ee-youtube-player url="https://www.youtube.com/embed/U7elNhHwgBU"
-                                             [height]="'450px'"
-                   >
-                     
+                                             [height]="450" [width]="50">
+
                    </amexio-ee-youtube-player>
+                     </amexio-body>
+                   </amexio-card>
 
                  </amexio-column>
                </amexio-row>

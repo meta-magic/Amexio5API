@@ -8,9 +8,15 @@
     },
     {
       "name": "height",
-      "type": "string",
+      "type": "number",
       "default": "",
-      "description": "Height should be in Px Ex.500px"
+      "description": "Height should be in Px Ex.500"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "description": "Width should be in percentage Ex.50"
     }
 
   ]
