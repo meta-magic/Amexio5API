@@ -27,6 +27,10 @@
   .flex-col-2pt5, .flex-col-9pt5 {
     max-width: 100%;
   }
+
+  .datagrid-template span{
+    display: block;
+  }
 }
 
 //toggle width
@@ -54,4 +58,12 @@
 }
 .panel{
   border: 1px solid #2196F3;
+}
+
+
+.datagrid-template{
+  display: inline;
+  span{
+    padding-left: 3px;
+  }
 }
