@@ -19,17 +19,17 @@ import {Http} from "@angular/http";
             <amexio-dockbar [height]="'600px'">
               <amexio-dockbar-item [icon]="'fa fa-home fa-fw'"
                                    [title]="'Features'"
-                                   [width]="'350px'" [height]="'600px'">
+                                   [width]="'210px'" [height]="'600px'">
                 <amexio-side-nav
                   [http-url]="'assets/data/componentdata/sidenav.json'"
                   [http-method]="'get'"
                   [data-reader]="'data'"
-                  [width]="'275px'"
+                  [width]="'200px'"
                   [position]="'relative'">
                 </amexio-side-nav>
               </amexio-dockbar-item>
               <amexio-dockbar-item [icon]="'fa fa-address-book fa-fw'" [title]="'Contacts'"
-                                   [width]="'350px'" [height]="'600px'">
+                                   [width]="'210px'" [height]="'600px'">
                 <amexio-listbox [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
                                 [http-url]="'assets/data/componentdata/profiledata.json'"
                                 [http-method]="'get'"
