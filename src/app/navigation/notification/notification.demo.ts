@@ -23,7 +23,7 @@ import {Http} from "@angular/http";
                     <amexio-notification [data]="topLeftMessageArray"
                                          [vertical-position]="'top'"
                                          [horizontal-position]="'left'" [auto-dismiss-msg]="true"
-                                         [auto-dismiss-msg-interval]="2000">
+                                         [auto-dismiss-msg-interval]="4000">
                     </amexio-notification>
                     <amexio-button (onClick)="topLeftNotification()"
                                    [label]="'Info Left Popup'" [type]="'primary'"
@@ -40,7 +40,7 @@ import {Http} from "@angular/http";
                     <amexio-notification [data]="topMessageArray"
                                          [vertical-position]="'top'"
                                          [horizontal-position]="'right'" [auto-dismiss-msg]="true"
-                                         [auto-dismiss-msg-interval]="2000">
+                                         [auto-dismiss-msg-interval]="4000">
                     </amexio-notification>
                     <amexio-button (onClick)="topNotification()"
                                    [label]="'Info Right Popup'" [type]="'primary'"
@@ -63,7 +63,7 @@ import {Http} from "@angular/http";
                                          [vertical-position]="'bottom'"
                                          [horizontal-position]="'left'"
                                          [auto-dismiss-msg]="true"
-                                         [auto-dismiss-msg-interval]="2000">
+                                         [auto-dismiss-msg-interval]="4000">
                     </amexio-notification>
                     <amexio-button (onClick)="bottomLeftNotification()"
                                    [label]="'Info Bottom Left '" [type]="'primary'"
@@ -80,7 +80,7 @@ import {Http} from "@angular/http";
                     <amexio-notification [data]="bottomMessageArray"
                                          [vertical-position]="'bottom'"
                                          [horizontal-position]="'right'" [auto-dismiss-msg]="true"
-                                         [auto-dismiss-msg-interval]="2000">
+                                         [auto-dismiss-msg-interval]="4000">
                     </amexio-notification>
                     <amexio-button (onClick)="bottomNotification()"
                                    [label]="'Info Bottom Right'" [type]="'primary'"
