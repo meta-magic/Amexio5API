@@ -7,7 +7,7 @@
 
 # dependencies
 /node_modules
-package.json
+
 
 # IDEs and editors
 /.idea
@@ -33,6 +33,7 @@ package.json
 npm-debug.log
 testem.log
 package-lock.json
+package.json
 /typings
 
 # e2e
