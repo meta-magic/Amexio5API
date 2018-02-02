@@ -2,7 +2,7 @@
   <amexio-nav [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
     <amexio-nav-item position-right *ngFor="let topMenu of topMenuData">
       <a class="navbar-item-color" style="padding-left: 10px;text-decoration:none" [attr.href]="topMenu.link"
-         [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
+         [target]="topMenu.label == 'Home' ? '' : '_blank'" (click)="onMenuClick()">{{topMenu.label}}</a>
     </amexio-nav-item>
     <amexio-nav-item position-right>
       <a href="https://github.com/meta-magic/amexio.github.io">

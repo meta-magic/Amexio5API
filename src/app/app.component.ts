@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {Router} from "@angular/router";
-
+import {AmexioNavBarComponent} from "amexio-ng-extensions";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html'
 })
 export class AppComponent {
   topMenuData:any[];
+  @ViewChild(AmexioNavBarComponent) amexioNav;
   constructor(public router : Router){
     this.topMenuData = JSON.parse(`[
     {
@@ -39,7 +40,10 @@ export class AppComponent {
   ]
 `);
   }
-
+  //TO CLOSE NABVAR IN MOBILE
+  onMenuClick(){
+    this.amexioNav.close();
+  }
   onNodeClick(node : any){
     if(node.hasOwnProperty('link'))
       this.router.navigate([node.link])
