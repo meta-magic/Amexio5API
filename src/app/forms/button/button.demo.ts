@@ -19,7 +19,7 @@ import {Http} from "@angular/http";
             <amexio-column [size]="12">
               <amexio-card [header]="true">
                 <amexio-header>
-                   Button Types  
+                   Buttshutdown kar pc var basu nakoon Types  
                 </amexio-header>
                 <amexio-body>
                   <amexio-row>
@@ -157,11 +157,14 @@ import {Http} from "@angular/http";
 
           </amexio-tab>
           <amexio-tab title="Source">
-            <amexio-vertical-tab-view>
+            <div style="overflow-y: scroll">
+             <amexio-vertical-tab-view>
               <amexio-tab title="HTML" [active]="true">
                 <ng-container *ngIf="htmlCode">
                   <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                  <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+                  <div>
+                   <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+                  </div>
                 </ng-container>
               </amexio-tab>
               <amexio-tab title="Type Script">
@@ -170,6 +173,7 @@ import {Http} from "@angular/http";
                 </ng-container>
               </amexio-tab>
             </amexio-vertical-tab-view>
+            </div>
           </amexio-tab>
           <amexio-tab title="Live">
             Work in Progress

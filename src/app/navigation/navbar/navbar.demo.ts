@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
+import {Component, ViewEncapsulation} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
@@ -87,7 +87,9 @@ import {Http} from "@angular/http";
     </amexio-card>
     <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
-  `
+  `,
+  encapsulation : ViewEncapsulation.Native,
+  styleUrls : ['../../../styles2.scss']
 })
 export class NavbarDemo {
   htmlCode: string;

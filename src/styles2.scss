@@ -44,6 +44,7 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
 .navbardemo .navbar-container {
   position: relative !important;
   width: 90%;
+  z-index: 0;
 }
 
 .navbar-item-color{
@@ -54,3 +55,5 @@ $fa-font-path: "../node_modules/font-awesome/fonts";
   border-radius: 50%;
   vertical-align: middle;
 }
+
+

@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/font-awesome/scss/font-awesome.scss",
+
         "../node_modules/prismjs/themes/prism.css",
         "../node_modules/prismjs/themes/prism-coy.css",
         "styles.scss"

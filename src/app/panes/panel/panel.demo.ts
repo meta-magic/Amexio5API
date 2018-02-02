@@ -76,6 +76,7 @@ import {Http} from "@angular/http";
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
+              <div style="overflow-y: scroll">
               <amexio-vertical-tab-view>
                 <amexio-tab title="HTML" [active]="true">
                   <ng-container *ngIf="htmlCode">
@@ -88,7 +89,8 @@ import {Http} from "@angular/http";
                     <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                   </ng-container>
                 </amexio-tab>
-              </amexio-vertical-tab-view>   
+              </amexio-vertical-tab-view> 
+              </div>
             </div>
            
           </amexio-tab>
