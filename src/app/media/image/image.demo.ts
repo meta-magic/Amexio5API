@@ -23,15 +23,6 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
-                      <!--<amexio-column size="6">-->
-                        <!--<amexio-row>-->
-                          <!--<amexio-column size="12">-->
-                            <!--Material Icon-->
-                            <!--<amexio-image [icon-class]="'material-icons'" [mdb]="'cloud'" [tooltip]="'Material cloud icon'"></amexio-image>-->
-                          <!--</amexio-column>-->
-                        <!--</amexio-row>-->
-                       <!--</amexio-column>-->
-
                       <amexio-column size="12">
                         <amexio-row>
                           <amexio-column size="12">
