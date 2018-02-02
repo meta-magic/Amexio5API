@@ -24,7 +24,7 @@ import {Http} from "@angular/http";
                   [http-url]="'assets/data/componentdata/sidenav.json'"
                   [http-method]="'get'"
                   [data-reader]="'data'"
-                  [width]="'200px'"
+                  [width]="'210px'"
                   [position]="'relative'">
                 </amexio-side-nav>
               </amexio-dockbar-item>
