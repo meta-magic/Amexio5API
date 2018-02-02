@@ -24,7 +24,7 @@ import {SharedModule} from "../shared.module";
             <br>
             <amexio-image path="assets/images/npm.svg"></amexio-image>
             <amexio-image
-              path="https://d25lcipzij17d.cloudfront.net/badge.svg?id=js&type=6&v=4.0.0&x2=0"></amexio-image>
+              path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
             <a href="https://badge.fury.io/js/amexio-ng-extensions">
               <amexio-image path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
             </a>
