@@ -77,7 +77,8 @@ import {Http} from "@angular/http";
             </div>
           </amexio-tab>
           <amexio-tab title="Live">
-            Work in Progress
+          <p align="center">Amexio Sandbox</p>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-left-aligned-vertical-tab" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
