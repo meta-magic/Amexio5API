@@ -1,5 +1,5 @@
 import {Component, ViewChild} from '@angular/core';
-import {Router} from "@angular/router";
+import {RouteConfigLoadEnd, RouteConfigLoadStart, Router} from "@angular/router";
 import {AmexioNavBarComponent} from "amexio-ng-extensions";
 @Component({
   selector: 'app-root',
@@ -7,6 +7,7 @@ import {AmexioNavBarComponent} from "amexio-ng-extensions";
 })
 export class AppComponent {
   topMenuData:any[];
+  isRouteLoading : boolean;
   @ViewChild(AmexioNavBarComponent) amexioNav;
   constructor(public router : Router){
     this.topMenuData = JSON.parse(`[
@@ -39,7 +40,20 @@ export class AppComponent {
     }
   ]
 `);
+
+
   }
+
+  ngOnInit () {
+    this.router.events.subscribe(event => {
+      if (event instanceof RouteConfigLoadStart) {
+        this.isRouteLoading = true;
+      } else if (event instanceof RouteConfigLoadEnd) {
+        this.isRouteLoading = false;
+      }
+    });
+  }
+
   //TO CLOSE NABVAR IN MOBILE
   onMenuClick(){
     this.amexioNav.close();
