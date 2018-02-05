@@ -188,3 +188,41 @@
   }
 }
 
+
+
+@media (max-width: 770px) {
+  .sidenav {
+    height: 100% !important;
+  }
+}
+@media (min-width: 1100px)
+{
+  .sidenav {
+  height: 580px!important;
+}
+}
+
+@media (min-width: 1400px)
+{
+  .sidenav {
+    height: 820px!important;
+  }
+}
+
+/*
+
+@media (min-width: 1280px)
+{
+  .sidenav {
+    height: 750px!important;
+  }
+}
+
+
+@media (min-width: 950px)
+{
+  .sidenav {
+    height: 875px!important;
+  }
+}
+*/
