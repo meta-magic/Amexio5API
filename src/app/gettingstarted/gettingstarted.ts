@@ -51,7 +51,7 @@ import {SharedModule} from "../shared.module";
               </amexio-row>
               <amexio-row>
                 <amexio-column size="12">
-                  <span style="cursor: pointer;" routerLink="/license">3. License</span>
+                  <span style="cursor: pointer;" >3. License</span>
                 </amexio-column>
               </amexio-row>
 
