@@ -147,7 +147,7 @@ import {Http} from "@angular/http";
       </amexio-body>
     </amexio-card>
   `,
-  encapsulation : ViewEncapsulation.Native,
+  encapsulation : ViewEncapsulation.Emulated,
   styleUrls : ['../../../styles2.scss']
 })
 
