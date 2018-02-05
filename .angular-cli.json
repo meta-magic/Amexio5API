@@ -20,9 +20,9 @@
       "prefix": "app",
       "styles": [
         "../node_modules/font-awesome/scss/font-awesome.scss",
-
         "../node_modules/prismjs/themes/prism.css",
         "../node_modules/prismjs/themes/prism-coy.css",
+        "../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss",
         "styles.scss"
       ],
       "scripts": [],
