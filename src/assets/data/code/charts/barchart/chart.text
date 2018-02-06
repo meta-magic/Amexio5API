@@ -1,16 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
-@Component({
-  selector: 'barchart-demo',
-  templateUrl: 'barchart.demo.html'
-})
-@NgModule({
-  imports: [AmexioWidgetModule ],
-  exports: [],
-  declarations : [],
-  providers : [ChartLoaderService]
-})
-export class BarChartDemoComponent implements OnInit {
+
+export class BarChartDemoComponent {
   barStackChartData:any;
   barChartData:any;
   constructor() {
@@ -30,8 +19,4 @@ export class BarChartDemoComponent implements OnInit {
       ['Philadelphia, PA', 1526000]
     ];
   }
-
-  ngOnInit() {
-  }
-
 }

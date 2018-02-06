@@ -1,19 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
-@Component({
-  selector: 'linechart-demo',
-  templateUrl: 'linechart.demo.html'
-})
 
-
-@NgModule({
-  imports: [AmexioWidgetModule ],
-  exports: [],
-  declarations : [],
-  providers : [ChartLoaderService]
-})
-
-export class LineChartDemoComponent implements OnInit {
+export class LineChartDemoComponent  {
   lineChartData:any;
   constructor() {
     this.lineChartData=[
@@ -36,8 +22,4 @@ export class LineChartDemoComponent implements OnInit {
       [14,  4.2,  6.2,  3.4]
     ];
   }
-
-  ngOnInit() {
-  }
-
 }

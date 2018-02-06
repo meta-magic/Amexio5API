@@ -1,17 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
 
-@Component({
-  selector: 'areachart-demo',
-  templateUrl: 'areachart.demo.html'
-})
-@NgModule({
-  imports: [AmexioWidgetModule ],
-  exports: [],
-  declarations : [],
-  providers : [ChartLoaderService]
-})
-export class AreaChartDemoComponent implements OnInit {
+export class AreaChartDemoComponent {
   areaChartData:any;
   constructor() {
     this.areaChartData=[
@@ -22,8 +10,4 @@ export class AreaChartDemoComponent implements OnInit {
       ['2016',  1030,      540]
     ];
   }
-
-  ngOnInit() {
-  }
-
 }

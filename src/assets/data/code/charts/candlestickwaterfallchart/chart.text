@@ -1,16 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
-@Component({
-  selector: 'candlestickwaterfall-chart-demo',
-  templateUrl: 'candlestickwaterfall.demo.html'
-})
-@NgModule({
-  imports: [AmexioWidgetModule ],
-  exports: [],
-  declarations : [],
-  providers : [ChartLoaderService]
-})
-export class CandlestickWaterfallChartDemoComponent implements OnInit {
+
+export class CandlestickWaterfallChartDemoComponent {
   candlestickWaterfallChart:any;
   constructor() {
     this.candlestickWaterfallChart=[
@@ -20,9 +9,6 @@ export class CandlestickWaterfallChartDemoComponent implements OnInit {
       ['Thu', 77, 77, 66, 66],
       ['Fri', 66, 66, 22, 22]
     ];
-  }
-
-  ngOnInit() {
   }
 
 }
