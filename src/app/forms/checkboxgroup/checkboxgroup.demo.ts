@@ -128,7 +128,7 @@ export class CheckBoxGroupDemo {
         data: [{
           language: 'Angular 2', checked: false
         }, {
-          language: 'JAVA', checked: false
+          language: 'JAVA', checked: true
         }, {
           language: 'C++', checked: false
         }]
