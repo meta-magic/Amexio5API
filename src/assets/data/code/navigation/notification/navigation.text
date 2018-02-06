@@ -1,10 +1,18 @@
 export class NotificationDemo {
-  topMessageArray:any=[];
-  bottomMessageArray:any=[];
-  topNotification(){
-      this.topMessageArray.push('Top Notification!!!')
-    }
-  bottomNotification(){
-    this.bottomMessageArray.push('Bottom Notification!!!')
-  }
+    topMessageArray:any=[];
+    bottomMessageArray:any=[];
+    topLeftMessageArray:any=[];
+    bottomLeftMessageArray:any=[];
+     bottomLeftNotification(){
+        this.bottomLeftMessageArray.push('Bottom Left Notification!!!')
+     }
+     topLeftNotification(){
+       this.topLeftMessageArray.push('Top Left Notification!!!')
+     }
+     topNotification(){
+       this.topMessageArray.push('Top Right Notification!!!')
+     }
+     bottomNotification(){
+       this.bottomMessageArray.push('Bottom Right Notification!!!')
+     }
 }
