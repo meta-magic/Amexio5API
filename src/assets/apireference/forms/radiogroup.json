@@ -9,8 +9,13 @@
      {
       "name": "horizontal",
       "type": "string",
-      "default": "false",
+      "default": "",
       "description": "Set true for horizontal checkbox "
+    },{
+      "name": "default-value",
+      "type": "string",
+      "default": "",
+      "description": "Default Value to be checked"
     },
     {
       "name": "http-url",

@@ -29,6 +29,7 @@ import {Http} from "@angular/http";
                                         [value-field]="'genderId'"
                                         [horizontal]="true"
                                         [data]="radioGroupData"
+                                        [default-value]="'male'"
                                         (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
                   </amexio-body>
@@ -40,11 +41,12 @@ import {Http} from "@angular/http";
                      Vertical Radio Group With Http Url 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-radio-group [field-label]="'Vertical RadioGroup'" name ="gender"
+                    <amexio-radio-group [field-label]="'Vertical RadioGroup'" name ="gender1"
                                         [data-reader]="'data'"
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
                                         [http-method]="'get'"
+                                        [default-value]="'female'"
                                         [http-url]="'assets/data/componentdata/radiogroup.json'"
                                         (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
