@@ -49,7 +49,7 @@ import {Http} from "@angular/http";
                                            [place-holder]="'Enter address'"
                                            [error-msg]="'Please enter address'"
                                            [icon-feedback]="true"
-                                           [rows]="'1'" [columns]="'2'"
+                                           [rows]="'4'" [columns]="'2'"
                                            [allow-blank]="false" [enable-popover]="true"
 
                     >
