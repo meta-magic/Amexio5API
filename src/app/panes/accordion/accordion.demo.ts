@@ -146,9 +146,7 @@ import {Http} from "@angular/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-  `,
-  encapsulation : ViewEncapsulation.Emulated,
-  styleUrls : ['../../../styles2.scss']
+  `
 })
 
 export class AccordionDemoComponent{

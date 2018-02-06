@@ -87,9 +87,7 @@ import {Http} from "@angular/http";
     </amexio-card>
     <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
-  `,
-  encapsulation : ViewEncapsulation.Native,
-  styleUrls : ['../../../styles2.scss']
+  `
 })
 export class NavbarDemo {
   htmlCode: string;
