@@ -1,19 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
-@Component({
-  selector: 'histogramchart-demo',
-  templateUrl: 'histogramchart.demo.html'
-})
 
-
-@NgModule({
-  imports: [AmexioWidgetModule ],
-  exports: [],
-  declarations : [],
-  providers : [ChartLoaderService]
-})
-
-export class HistogramChartDemoComponent implements OnInit {
+export class HistogramChartDemoComponent {
   histogramChartData:any;
   constructor() {
     this.histogramChartData=[
@@ -46,9 +32,6 @@ export class HistogramChartDemoComponent implements OnInit {
       ['Tyrannosaurus (tyrant lizard)', 15.2],
       ['Ultrasaurus (ultra lizard)', 30.5],
       ['Velociraptor (swift robber)', 1.8]];
-  }
-
-  ngOnInit() {
   }
 
 }

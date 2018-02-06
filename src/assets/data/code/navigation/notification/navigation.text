@@ -1,12 +1,9 @@
 export class NotificationDemo {
   topMessageArray:any=[];
   bottomMessageArray:any=[];
-constructor() {
-
-}
-topNotification(){
-    this.topMessageArray.push('Top Notification!!!')
-  }
+  topNotification(){
+      this.topMessageArray.push('Top Notification!!!')
+    }
   bottomNotification(){
     this.bottomMessageArray.push('Bottom Notification!!!')
   }

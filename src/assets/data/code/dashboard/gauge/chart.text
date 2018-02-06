@@ -1,17 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AmexioWidgetModule,DashboardLoaderService} from "amexio-ng-extensions";
-@Component({
-  selector: 'gaugechart-demo',
-  templateUrl: 'gaugechart.demo.html'
-})
 
-@NgModule({
-  imports: [AmexioWidgetModule ],
-  exports: [],
-  declarations : [],
-  providers : [DashboardLoaderService]
-})
-export class GaugeChartDemoComponent implements OnInit {
+export class GaugeChartDemoComponent{
   gaugeChartData:any;
   constructor() {
     this.gaugeChartData=[
@@ -21,8 +9,4 @@ export class GaugeChartDemoComponent implements OnInit {
       ['Network', 68]
     ];
   }
-
-  ngOnInit() {
-  }
-
 }

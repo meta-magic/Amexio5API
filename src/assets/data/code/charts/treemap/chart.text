@@ -1,18 +1,5 @@
-import {Component, OnInit} from '@angular/core';
-import {AmexioWidgetModule,ChartLoaderService} from "amexio-ng-extensions";
-@Component({
-  selector: 'treemap-map-demo',
-  templateUrl: 'treemap.demo.html'
-})
 
-@NgModule({
-  imports: [AmexioWidgetModule ],
-  exports: [],
-  declarations : [],
-  providers : [ChartLoaderService]
-})
-
-export class TreeMapDemoComponent implements OnInit {
+export class TreeMapDemoComponent {
   treeMapData:any;
   constructor() {
     this.treeMapData=[
@@ -48,8 +35,4 @@ export class TreeMapDemoComponent implements OnInit {
     ];
 
   }
-
-  ngOnInit() {
-  }
-
 }
