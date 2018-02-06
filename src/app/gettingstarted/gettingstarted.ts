@@ -155,7 +155,7 @@ import {SharedModule} from "../shared.module";
 
                     <div align="center">
                       <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank"
-                         style="color: blueviolet">Link for API for V3</a>
+                         style="color: blueviolet">Link for API for V3.2</a>
                     </div>
 
                   </amexio-accordion-tab>
@@ -181,8 +181,8 @@ import {SharedModule} from "../shared.module";
                     </amexio-row>
                     <!-- add dependent libraries -->
                     <div align="center">
-                      <a href="http://www.amexio.org/showcaseapp/v3.2/index.html#/home" target="_blank"
-                         style="color: blueviolet">Link for API for V2</a>
+                      <a href="http://amexio.org/showcaseapp/v3/index.html#/home" target="_blank"
+                         style="color: blueviolet">Link for API for V3.0.x</a>
                     </div>
 
                   </amexio-accordion-tab>
