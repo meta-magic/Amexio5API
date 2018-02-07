@@ -1,16 +1,16 @@
 {
   "properties": [
     {
-      "name": "label",
+      "name": "size",
       "type": "string",
-      "default": "",
-      "description": "Label on button"
+      "default": "small",
+      "description": "Responsive Font size, large,medium,small & large-bold,medium-bold,small-bold"
     },
     {
-      "name": "type",
+      "name": "font-color",
       "type": "string",
       "default": "",
-      "description": "Type of button : default, primary, success , danger & warning"
+      "description": "Color of label"
     }
   ],
   "events": [
