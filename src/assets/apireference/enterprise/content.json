@@ -58,8 +58,8 @@
       "description": "Enable close content."
     }
 ,{
-      "name": "rating parameter rate, max",
-      "type": "string",
+      "name": "rate",
+      "type": "number",
       "default": "",
       "description": "Set rating max value(max=5) and current rating(rate=3)."
     }

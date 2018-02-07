@@ -23,7 +23,7 @@ import {Http} from "@angular/http";
                   [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
                   [link]="'https://www.youtube.com/embed/U7elNhHwgBU'" [matchPercentage]="'90%'"
                   [age-limit]="'16'" [release-year]="'2016'" [seasonNo]="1"
-                  [rate]="7" [max]="10" [watch]="true" [mylist]="true">
+                  [rate]="7" [max]="10" [watch]="true" [my-list]="true">
                 </amexio-ee-content>
               </amexio-body>
             </amexio-card>
