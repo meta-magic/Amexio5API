@@ -29,7 +29,7 @@ import {Http} from "@angular/http";
             </amexio-card>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Propeties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/enterprise/content.json'"
                              [data-reader]="'properties'"

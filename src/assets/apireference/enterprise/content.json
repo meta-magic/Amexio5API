@@ -36,7 +36,7 @@
       "description": "Enable watch button."
     },
     {
-      "name": "mylist",
+      "name": "my-list",
       "type": "boolean",
       "default": "false",
       "description": "Enable MyList button."
