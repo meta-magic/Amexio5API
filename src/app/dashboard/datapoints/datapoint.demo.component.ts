@@ -50,7 +50,7 @@ import {Http} from "@angular/http";
            
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Data Point Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/dashboard/datapoint.json'"
                              [data-reader]="'datapoint'"
@@ -66,7 +66,7 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Region Properties ( Center, East, South, North, West )" [enable-column-fiter]="false"
+            <amexio-datagrid title=" Data Point Region Properties ( Center, East, South, North, West )" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/dashboard/datapoint.json'"
                              [data-reader]="'location'"
