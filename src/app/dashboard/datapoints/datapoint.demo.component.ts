@@ -21,11 +21,11 @@ import {Http} from "@angular/http";
                     </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'center'">
-                    <span class="datapoints-north">200 Million</span><br/><span
+                    <amexio-label style="large-bold">$200 Million</amexio-label><br/><span
                     class="datapoints-center">Sales Volume</span>
                   </amexio-center>
                   <amexio-south [contentalign]="'center'">
-                    <div>10% More than last year</div>
+                    <amexio-label style="medium">10% More than last year</amexio-label>
                   </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
@@ -36,8 +36,9 @@ import {Http} from "@angular/http";
                     </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'center'">
-                    <span class="datapoints-north">$10 Million</span><br/><span
-                    class="datapoints-center">Sales Revenue</span>
+                    <amexio-label style="large-bold">$10 Million</amexio-label>
+                    <br/>
+                    <amexio-label style="medium">Sales Revenue</amexio-label>
                   </amexio-center>
                   <amexio-south [contentalign]="'center'">
                     5% More than last year
