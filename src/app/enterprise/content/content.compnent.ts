@@ -23,13 +23,13 @@ import {Http} from "@angular/http";
                   [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
                   [link]="'https://www.youtube.com/embed/U7elNhHwgBU'" [matchPercentage]="'90%'"
                   [age-limit]="'16'" [release-year]="'2016'" [seasonNo]="1"
-                  [rate]="7" [max]="10" [watch]="true" [mylist]="true">
+                  [rate]="7" [max]="10" [watch]="true" [my-list]="true">
                 </amexio-ee-content>
               </amexio-body>
             </amexio-card>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Propeties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/enterprise/content.json'"
                              [data-reader]="'properties'"
@@ -74,7 +74,8 @@ import {Http} from "@angular/http";
             </div>
           </amexio-tab>
           <amexio-tab title="Live">
-            Work in Progress
+            <p align="center">Amexio Sandbox</p>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-mediacontent?embed=1&file=app/enterprise/content/content.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
