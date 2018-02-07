@@ -6,7 +6,7 @@
   [data-reader]="'data'"
   [http-url]="'assets/data/componentdata/datagridgroupby.json'"
   [http-method]="'get'"
-  [enable-data-filter]="true" (selectedRowData)="onRowSelect($event)">
+  [enable-data-filter]="true" (rowSelect)="onRowSelect($event)">
   <amexio-data-table-column [data-index]="'preferredFullName'"
                             [data-type]="'string'"
                             [hidden]="false"

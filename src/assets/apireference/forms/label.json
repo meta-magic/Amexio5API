@@ -1,0 +1,21 @@
+{
+  "properties": [
+    {
+      "name": "size",
+      "type": "string",
+      "default": "small",
+      "description": "Responsive Font size, large,medium,small & large-bold,medium-bold,small-bold"
+    },
+    {
+      "name": "font-color",
+      "type": "string",
+      "default": "",
+      "description": "Color of label"
+    }
+  ],
+  "events": [
+
+  ],
+  "css": [
+  ]
+}
