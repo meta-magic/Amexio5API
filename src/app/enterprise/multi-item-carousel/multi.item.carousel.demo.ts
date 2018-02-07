@@ -83,6 +83,12 @@ import {Http} from "@angular/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+
+              <amexio-tab title="Data Source">
+                <ng-container *ngIf="dataSource">
+                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+                </ng-container>
+              </amexio-tab>
             </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
@@ -101,6 +107,7 @@ export class EECarouselDemoComponent implements OnInit {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
+  dataSource : any;
 
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
@@ -130,6 +137,13 @@ export class EECarouselDemoComponent implements OnInit {
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
+    });
+  //data source FILE
+    this.http.get('assets/data/code/enterprise/multicarusel/ee.json').subscribe(data => {
+      responseTs = data.text();
+    }, error => {
+    }, () => {
+      this.dataSource = responseTs;
     });
 
   }
