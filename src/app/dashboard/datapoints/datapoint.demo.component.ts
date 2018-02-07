@@ -21,11 +21,11 @@ import {Http} from "@angular/http";
                     </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'center'">
-                    <amexio-label size="large-bold">$200 Million</amexio-label><br/>
-                    <amexio-label size="medium">Sales Volume</amexio-label>
+                    <span class="datapoints-north">200 Million</span><br/><span
+                    class="datapoints-center">Sales Volume</span>
                   </amexio-center>
                   <amexio-south [contentalign]="'center'">
-                    <amexio-label>10% More than last year</amexio-label>
+                    <div>10% More than last year</div>
                   </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
@@ -36,12 +36,11 @@ import {Http} from "@angular/http";
                     </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'center'">
-                    <amexio-label size="large-bold">$10 Million</amexio-label>
-                    <br/>
-                    <amexio-label size="medium">Sales Revenue</amexio-label>
+                    <span class="datapoints-north">$10 Million</span><br/><span
+                    class="datapoints-center">Sales Revenue</span>
                   </amexio-center>
                   <amexio-south [contentalign]="'center'">
-                    <amexio-label>5% More than last year</amexio-label>
+                    5% More than last year
                   </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
@@ -67,7 +66,7 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Region Properties ( Center, East, South, North, West )" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/dashboard/datapoint.json'"
                              [data-reader]="'location'"
@@ -100,7 +99,7 @@ import {Http} from "@angular/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-datapoint?embed=1&file=app/dashboard/datapoints/datapoint.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-datapoint" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
