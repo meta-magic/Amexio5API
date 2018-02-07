@@ -3,11 +3,14 @@ import {RouteConfigLoadEnd, RouteConfigLoadStart, Router} from "@angular/router"
 import {AmexioNavBarComponent} from "amexio-ng-extensions";
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html'
+  templateUrl: './app.component.html',
+  styles: [`
+  
+  `]
 })
 export class AppComponent {
   topMenuData:any[];
-  isRouteLoading : boolean;
+  isRouteLoading : boolean = false;
   @ViewChild(AmexioNavBarComponent) amexioNav;
   constructor(public router : Router){
     this.topMenuData = JSON.parse(`[
