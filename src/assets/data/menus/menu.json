@@ -244,6 +244,12 @@
           "icon": "fa fa-toggle-on fa-fw",
           "link": "toggle-demo"
         }
+        ,
+        {
+          "text": "Label",
+          "icon": "fa fa-terminal",
+          "link": "label-demo"
+        }
       ]
     },
     {

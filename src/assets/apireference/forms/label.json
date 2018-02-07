@@ -1,0 +1,21 @@
+{
+  "properties": [
+    {
+      "name": "label",
+      "type": "string",
+      "default": "",
+      "description": "Label on button"
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": "",
+      "description": "Type of button : default, primary, success , danger & warning"
+    }
+  ],
+  "events": [
+
+  ],
+  "css": [
+  ]
+}
