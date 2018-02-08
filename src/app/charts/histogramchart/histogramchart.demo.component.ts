@@ -52,7 +52,8 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
-          <amexio-tab title="Source">
+           <amexio-tab title="Source">
+          <div style="overflow-y: scroll">
             <amexio-vertical-tab-view>
               <amexio-tab title="HTML" [active]="true">
                 <ng-container *ngIf="htmlCode">
@@ -71,7 +72,7 @@ import {Http} from "@angular/http";
                 </ng-container>
               </amexio-tab>
             </amexio-vertical-tab-view>
-          </amexio-tab>
+            </div>
           <amexio-tab title="Live">
          <p align="center">Amexio Sandbox</p>
 <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-histogramchart?embed=1&file=app/charts/histogramchart/histogramchart.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
