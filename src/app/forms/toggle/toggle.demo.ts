@@ -22,7 +22,7 @@ import {Http} from "@angular/http";
                       Round Toggle 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-toggle [field-label]="'Round Toogle'"></amexio-toggle>
+                    <amexio-toggle [field-label]="'Round'"></amexio-toggle>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -32,7 +32,7 @@ import {Http} from "@angular/http";
                       Square Toggle 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-toggle shape="square" (onChange)="onSquareToggleClick($event)"></amexio-toggle>
+                    <amexio-toggle [field-label]="'Square'" shape="square" (onChange)="onSquareToggleClick($event)"></amexio-toggle>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
