@@ -1,11 +1,13 @@
 <!-- Top Left Notification -->
 <amexio-notification [data]="topLeftMessageArray"
                      [vertical-position]="'top'"
-                     [horizontal-position]="'left'" [auto-dismiss-msg]="true"
+                     [horizontal-position]="'left'"
+                     [auto-dismiss-msg]="true"
                      [auto-dismiss-msg-interval]="4000">
 </amexio-notification>
 <amexio-button (onClick)="topLeftNotification()"
-               [label]="'Info Left Popup'" [type]="'primary'"
+               [label]="'Info Left Popup'"
+               [type]="'primary'"
                [tooltip]="'Primary Button'">
 </amexio-button>
 
@@ -13,11 +15,13 @@
 <!--Top Right Notification-->
 <amexio-notification [data]="topMessageArray"
                      [vertical-position]="'top'"
-                     [horizontal-position]="'right'" [auto-dismiss-msg]="true"
+                     [horizontal-position]="'right'"
+                     [auto-dismiss-msg]="true"
                      [auto-dismiss-msg-interval]="4000">
 </amexio-notification>
 <amexio-button (onClick)="topNotification()"
-               [label]="'Info Right Popup'" [type]="'primary'"
+               [label]="'Info Right Popup'"
+               [type]="'primary'"
                [tooltip]="'Primary Button'">
 </amexio-button>
 
@@ -29,7 +33,8 @@
                      [auto-dismiss-msg-interval]="4000">
 </amexio-notification>
 <amexio-button (onClick)="bottomLeftNotification()"
-               [label]="'Info Bottom Left '" [type]="'primary'"
+               [label]="'Info Bottom Left '"
+               [type]="'primary'"
                [tooltip]="'Primary Button'">
 </amexio-button>
 
@@ -37,10 +42,12 @@
 
 <amexio-notification [data]="bottomMessageArray"
                      [vertical-position]="'bottom'"
-                     [horizontal-position]="'right'" [auto-dismiss-msg]="true"
+                     [horizontal-position]="'right'"
+                     [auto-dismiss-msg]="true"
                      [auto-dismiss-msg-interval]="4000">
 </amexio-notification>
 <amexio-button (onClick)="bottomNotification()"
-               [label]="'Info Bottom Right'" [type]="'primary'"
+               [label]="'Info Bottom Right'"
+               [type]="'primary'"
                [tooltip]="'Primary Button'">
 </amexio-button>
