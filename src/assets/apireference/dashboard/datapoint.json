@@ -50,7 +50,7 @@
       "default": "",
       "description":"Set font color"
     }, {
-      "name": "contentalign",
+      "name": "content-align",
       "type": "string",
       "default": "",
       "description":"Set content align like : center,left,right"

@@ -195,6 +195,11 @@
           "link": "fileupload-demo"
         },
         {
+          "text": "Label",
+          "icon": "fa fa-terminal",
+          "link": "label-demo"
+        },
+        {
           "text": "Number Field",
           "icon": "fa fa-phone fa-fw",
           "link": "number-demo"

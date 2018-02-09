@@ -50,7 +50,7 @@
   ],
   "events":[
     {
-      "name": "nodeclick",
+      "name": "nodeClick",
        "description": "Fire when sidenav bar menu click"
 
     }

@@ -16,31 +16,33 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column [size]="6">
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
-                  <amexio-west [contentalign]="'center'">
+                  <amexio-west [content-align]="'center'">
                     <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'center'">
-                    <span class="datapoints-north">200 Million</span><br/><span
-                    class="datapoints-center">Sales Volume</span>
+                  <amexio-center [content-align]="'center'">
+                    <amexio-label size="large-bold">$200 Million</amexio-label><br/>
+                    <amexio-label size="medium">Sales Volume</amexio-label>
                   </amexio-center>
-                  <amexio-south [contentalign]="'center'">
-                    <div>10% More than last year</div>
+                  <amexio-south [content-align]="'center'">
+                    <amexio-label>10% More than last year</amexio-label>
                   </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
               <amexio-column [size]="6">
+
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
                   <amexio-west [contentalign]="'center'">
                     <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
                     </amexio-image>
                   </amexio-west>
                   <amexio-center [contentalign]="'center'">
-                    <span class="datapoints-north">$10 Million</span><br/><span
-                    class="datapoints-center">Sales Revenue</span>
+                    <amexio-label size="large-bold">$10 Million</amexio-label>
+                    <br/>
+                    <amexio-label size="medium">Sales Revenue</amexio-label>
                   </amexio-center>
                   <amexio-south [contentalign]="'center'">
-                    5% More than last year
+                    <amexio-label>5% More than last year</amexio-label>
                   </amexio-south>
                 </amexio-datapoints>
               </amexio-column>
@@ -50,7 +52,7 @@ import {Http} from "@angular/http";
            
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Data Point Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/dashboard/datapoint.json'"
                              [data-reader]="'datapoint'"
@@ -66,7 +68,7 @@ import {Http} from "@angular/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Region Properties ( Center, East, South, North, West )" [enable-column-fiter]="false"
+            <amexio-datagrid title=" Data Point Region Properties ( Center, East, South, North, West )" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/dashboard/datapoint.json'"
                              [data-reader]="'location'"

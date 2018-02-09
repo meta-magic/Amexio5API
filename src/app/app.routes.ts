@@ -18,6 +18,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'number-demo', loadChildren: './forms/number/number.demo.module#NumberDemoModule'
   },
   {
+    path: 'label-demo', loadChildren: './forms/label/label.demo.module#LabelDemoModule'
+  },
+  {
     path: 'password-demo', loadChildren: './forms/password/password.demo.module#PasswordDemoModule'
   },
   {

@@ -22,8 +22,8 @@ import {Http} from "@angular/http";
                      Progress Bar 
                   </amexio-header>
                   <amexio-body>
+                     <h3>Primary</h3>
                     <amexio-row>
-                      <h3>Primary</h3>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'50'" [infinite]="false" type="primary"></amexio-progress-bar>
                       </amexio-column>
@@ -34,8 +34,8 @@ import {Http} from "@angular/http";
                         <amexio-progress-bar [current-value]="'100'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
+                    <h3>Warning</h3>
                     <amexio-row>
-                      <h3>Warning</h3>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'30'" [infinite]="false" type="warning"></amexio-progress-bar>
                       </amexio-column>
@@ -46,8 +46,8 @@ import {Http} from "@angular/http";
                         <amexio-progress-bar [current-value]="'95'" [infinite]="false" type="warning"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
+                    <h3>Success</h3>
                     <amexio-row>
-                      <h3>Success</h3>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'45'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
@@ -58,8 +58,8 @@ import {Http} from "@angular/http";
                         <amexio-progress-bar [current-value]="'99'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
+                    <h3>Danger</h3>                    
                     <amexio-row>
-                      <h3>Danger</h3>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'54'" [infinite]="false" type="danger"></amexio-progress-bar>
                       </amexio-column>
@@ -70,8 +70,8 @@ import {Http} from "@angular/http";
                         <amexio-progress-bar [current-value]="'85'" [infinite]="false" type="danger"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
+                    <h3>Infinite</h3>
                     <amexio-row>
-                      <h3>Infinite</h3>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'54'" [infinite]="true" type="danger"></amexio-progress-bar>
                       </amexio-column>
@@ -123,7 +123,7 @@ import {Http} from "@angular/http";
           </amexio-tab>
           <amexio-tab title="Live">
                       <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-progressbar" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-progressbar?embed=1&file=app/data/progressbar/progressbar.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>

@@ -105,9 +105,9 @@ import {Http} from "@angular/http";
             </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
-          <p align="center">Amexio Sandbox</p>
           <amexio-tab title="Live">
-            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dialogue?embed=1&file=main.ts" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <p align="center">Amexio Sandbox</p>
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dialogue?embed=1&file=app/panels/dialogue/dialogue.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
