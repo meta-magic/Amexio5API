@@ -29,6 +29,11 @@
       "type": "string",
       "default": "",
       "description": "Material icon class name.Material Example:icon-class='material-icons' mda='cloud' Fontawesome Example:icon-class='fa fa-address-book fa-lg'"
+    },{
+      "name": "c-class",
+      "type": "string",
+      "default": "",
+      "description": "Used for custom styled classes"
     },
     {
       "name": "mda",
