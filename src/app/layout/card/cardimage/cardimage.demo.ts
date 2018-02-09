@@ -20,7 +20,9 @@ import {Http} from "@angular/http";
                 <amexio-card [header]="false" [footer]="true" [footer-align]="'right'">
                   <amexio-body>
                     <amexio-image path="assets/images/carousel/set1/1.jpg"></amexio-image>
-                    <p class="card-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</p>
+                    <amexio-label size="small-bold">Let your startup grow!</amexio-label>
+                    <br>
+                    <amexio-label size="small">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.</amexio-label>
                   </amexio-body>
                   <amexio-action >
                     <amexio-button [label]="'Button'" [type]="'primary'"></amexio-button>
@@ -35,7 +37,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-image path="assets/images/carousel/set1/2.jpg"></amexio-image>
-                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+                    <amexio-label size="small">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</amexio-label>
                   </amexio-body>
                   <amexio-action>
                     <amexio-button [label]="'Button'" [type]="'primary'"></amexio-button>
@@ -50,7 +52,7 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-image path="assets/images/carousel/set1/4.jpg"></amexio-image>
-                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+                    <amexio-label size="small">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</amexio-label>
                   </amexio-body>
                   <amexio-action >
                     <amexio-button [label]="'Button'" [type]="'primary'"></amexio-button>
@@ -66,7 +68,7 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-image path="assets/images/carousel/set1/3.jpg"></amexio-image>
                     <br/><br/>
-                    <p class="card-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</p>
+                    <amexio-label size="small">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</amexio-label>
                   </amexio-body>
                   <amexio-action>
                     <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>

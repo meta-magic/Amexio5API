@@ -21,8 +21,8 @@ import {Http} from "@angular/http";
                   [bg-image-url]="'assets/images/narcos_main_header_img.jpg'"
                   [title]="'Narcos'"
                   [description]="'The true story of Colombia infamously violent and powerful drug cartels fuels this gritty gangster drama series.'"
-                  [link]="'https://www.youtube.com/embed/U7elNhHwgBU'" [matchPercentage]="'90%'"
-                  [age-limit]="'16'" [release-year]="'2016'" [seasonNo]="1"
+                  [link]="'https://www.youtube.com/embed/U7elNhHwgBU'" [match-percentage]="'90%'"
+                  [age-limit]="'16'" [release-year]="'2016'" [season-no]="1"
                   [rate]="7" [max]="10" [watch]="true" [my-list]="true">
                 </amexio-ee-content>
               </amexio-body>

@@ -32,16 +32,16 @@ import {Http} from "@angular/http";
               <amexio-column [size]="6">
 
                 <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
-                  <amexio-west [contentalign]="'center'">
+                  <amexio-west [content-align]="'center'">
                     <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
                     </amexio-image>
                   </amexio-west>
-                  <amexio-center [contentalign]="'center'">
+                  <amexio-center [content-align]="'center'">
                     <amexio-label size="large-bold">$10 Million</amexio-label>
                     <br/>
                     <amexio-label size="medium">Sales Revenue</amexio-label>
                   </amexio-center>
-                  <amexio-south [contentalign]="'center'">
+                  <amexio-south [content-align]="'center'">
                     <amexio-label>5% More than last year</amexio-label>
                   </amexio-south>
                 </amexio-datapoints>
