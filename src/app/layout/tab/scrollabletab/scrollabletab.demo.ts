@@ -17,56 +17,58 @@ import {Http} from "@angular/http";
           <amexio-tab title="Demo" active="true">
             <amexio-tab-view  [closable]="true">
             <amexio-tab [title]="'Tab 1'" [active]="true">
-             <h1>Tab 1</h1> 
+              <amexio-label [size]="'medium'">Tab 1</amexio-label>
             </amexio-tab>
               <amexio-tab [title]="'Tab 2'">
-                <h1> Tab 2</h1>
+                <amexio-label [size]="'medium'">Tab 2</amexio-label>
               </amexio-tab>
               <amexio-tab [title]="'Tab 3'">
-                <h1> Tab 3</h1>
+                <amexio-label [size]="'medium'">Tab 3</amexio-label>
               </amexio-tab>
               <amexio-tab [title]="'Tab 4'">
-                <h1> Tab 4</h1>
+                <amexio-label [size]="'medium'">Tab 4</amexio-label>
               </amexio-tab>
               <amexio-tab [title]="'Tab 5'">
-                <h1> Tab 5</h1>
+                <amexio-label [size]="'medium'">Tab 5</amexio-label>
               </amexio-tab> 
               <amexio-tab [title]="'Tab 6'">
-              <h1> Tab 6</h1>
+                <amexio-label [size]="'medium'">Tab 6</amexio-label>
             </amexio-tab> <amexio-tab [title]="'Tab 7'">
-              <h1> Tab 7</h1>
+              <amexio-label [size]="'medium'">Tab 7</amexio-label>
             </amexio-tab> <amexio-tab [title]="'Tab 8'">
-              <h1> Tab 8</h1>
+
+              <amexio-label [size]="'medium'">Tab 8</amexio-label>
             </amexio-tab>
               <amexio-tab [title]="'Tab 9'">
-                <h1> Tab 9</h1>
+               <amexio-label [size]="'medium'">Tab 9</amexio-label>
               </amexio-tab>
               <amexio-tab [title]="'Tab 10'">
-                <h1> Tab 10</h1>
+                <amexio-label [size]="'medium'">Tab 10</amexio-label>
+          
               </amexio-tab>
               <amexio-tab [title]="'Tab 11'">
-                <h1> Tab 11</h1>
+                <amexio-label [size]="'medium'">Tab 11</amexio-label>
               </amexio-tab>
               <amexio-tab [title]="'Tab 12'">
-                <h1> Tab 12</h1>
+                <amexio-label [size]="'medium'">Tab 12</amexio-label>
               </amexio-tab>
               <amexio-tab [title]="'Tab 13'">
-                <h1> Tab 13</h1>
+                <amexio-label [size]="'medium'">Tab 13</amexio-label>
               </amexio-tab>  
               <amexio-tab [title]="'Tab 14'">
-              <h1> Tab 14</h1>
+                <amexio-label [size]="'medium'">Tab 14</amexio-label>
             </amexio-tab>  
               <amexio-tab [title]="'Tab 15'">
-              <h1> Tab 15</h1>
+                <amexio-label [size]="'medium'">Tab 15</amexio-label>
             </amexio-tab>  
               <amexio-tab [title]="'Tab 16'">
-              <h1> Tab 16</h1>
+                <amexio-label [size]="'medium'">Tab 16</amexio-label>
             </amexio-tab>  
               <amexio-tab [title]="'Tab 17'">
-              <h1> Tab 17</h1>
+                <amexio-label [size]="'medium'">Tab 17</amexio-label>
             </amexio-tab> 
               <amexio-tab [title]="'Tab 18'">
-              <h1> Tab 18</h1>
+                <amexio-label [size]="'medium'">Tab 18</amexio-label>
             </amexio-tab>  
             </amexio-tab-view>
           </amexio-tab>
