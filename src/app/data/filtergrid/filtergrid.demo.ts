@@ -29,7 +29,7 @@ import {Http} from "@angular/http";
                       [http-url]="'assets/data/componentdata/datagridgroupby.json'"
                       [http-method]="'get'"
                       [enable-data-filter]="true"
-                      (selectedRowData)="onRowSelect($event)">
+                      (rowSelect)="onRowSelect($event)">
                       <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false" [text]="'Full Name'"></amexio-data-table-column>
                       <amexio-data-table-column [data-index]="'jobTitle'" [data-type]="'string'" [hidden]="false" [text]="'Job Title'">
                       </amexio-data-table-column>
