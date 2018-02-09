@@ -1,7 +1,7 @@
 <amexio-row>
   <amexio-column size="12">
     <!--block is true for showing step box  -->
-    <p><strong>Step box</strong></p>
+    <amexio-label [size]="'medium'">Step box</amexio-label>
     <!--Step-box with fontawesome icons-->
     <amexio-steps [icon]="true">
       <amexio-step-block [label]="'User'" [active]="true" [icon]="'fa fa-user'" ></amexio-step-block>
@@ -14,7 +14,7 @@
 <amexio-row>
   <amexio-column size="12">
     <!--block is true for showing step box  -->
-    <p><strong>Step box with clickabel</strong></p>
+    <amexio-label [size]="'medium'">Step box with clickabel</amexio-label>
     <!--Step box with icon & clickable<-->
     <amexio-steps [block]="true" [icon]="true" (onClick)="stepBlockClick($event)">
       <amexio-step-block [label]="'User'" [active]="user" [icon]="'fa fa-user'"></amexio-step-block>
