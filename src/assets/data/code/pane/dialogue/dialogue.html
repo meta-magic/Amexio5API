@@ -2,15 +2,18 @@
 <!--confirm dialogue-->
 
 <amexio-dialogue [show-window]="confirmdialogue"
-               [title]="'Comfirm'" [message]="'Do you want to confirm ?'"
-               [message-type]="'confirm'" [type]="'confirm'">
+               [title]="'Comfirm'"
+               [message]="'Do you want to confirm ?'"
+               [message-type]="'confirm'"
+               [type]="'confirm'">
 </amexio-dialogue>
 
 <!--Error dialogue-->
 <amexio-dialogue [show-window]="errordialogue"
                [message]="'Error Occurred.'"
                [primary-action-label]="'ok'"
-               [title]="'Error'" [message-type]="'error'"
+               [title]="'Error'"
+               [message-type]="'error'"
                [type]="'alert'">
 </amexio-dialogue>
 
@@ -26,15 +29,18 @@
 <!--help dialogue-->
 
 <amexio-dialogue [show-window]="helpdialogue"
-               [title]="'Help'" [message]="'Check Server.'"
-               [message-type]="'help'" [type]="'alert'">
+               [title]="'Help'"
+               [message]="'Check Server.'"
+               [message-type]="'help'"
+               [type]="'alert'">
 </amexio-dialogue>
 
 <!--custom dialogue-->
 
-<amexio-dialogue [show-window]="customdialogue" [custom]="true"
-               [title]="'Custom dialogueue witch Text Input'"
-               [type]="'confirm'">
+<amexio-dialogue [show-window]="customdialogue"
+                [custom]="true"
+                [title]="'Custom dialogueue witch Text Input'"
+                [type]="'confirm'">
      <amexio-body>
         <amexio-text-input field-label="Name" name="name"
                            place-holder="Enter name"

@@ -201,7 +201,7 @@ import {SharedModule} from "../shared.module";
                         [title]="'Themes'"
                         [expanded]="true">
             <p style="color: darkred"> Themes are available from Version 4 </p>
-            <span>To use the default include the <pre><code>../node_module/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
+            <span>To use the default include the <pre><code>../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
               style="font-weight: bolder">styles</code> key</span>
 
 

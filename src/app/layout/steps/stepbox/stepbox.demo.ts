@@ -18,7 +18,8 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="12">
                 <!--block is true for showing step box  -->
-                <p><strong>Step box</strong></p>
+                <amexio-label [size]="'medium'">Step box
+                </amexio-label>
                 <amexio-steps [block]="true" [index]="true">
                   <amexio-step-block [label]="'User'" [active]="true" ></amexio-step-block>
                   <amexio-step-block [label]="'Shop'" [active]="false" ></amexio-step-block>
@@ -30,7 +31,7 @@ import {Http} from "@angular/http";
             <amexio-row>
               <amexio-column size="12">
                 <!--block is true for showing step box  -->
-                <p><strong>Step box with clickabel</strong></p>
+                <amexio-label [size]="'medium'">Step box with clickabel</amexio-label>
                 <amexio-steps [block]="true" [index]="true" (onClick)="stepBlockClick($event)">
                   <amexio-step-block [label]="'User'" [active]="user" ></amexio-step-block>
                   <amexio-step-block [label]="'Shop'" [active]="shop" ></amexio-step-block>
@@ -41,8 +42,10 @@ import {Http} from "@angular/http";
             </amexio-row>
             <amexio-row>
               <amexio-column size="12">
-                index is true for number inside circle 
-                <p><strong>Step-box index</strong></p>
+                index is true for number inside circle
+                <br>
+                <amexio-label [size]="'medium'">Step-box index
+                </amexio-label>
                 <amexio-steps [index]="true">
                   <amexio-step-block [label]="'Step-1'" [active]="true"></amexio-step-block>
                   <amexio-step-block [label]="'Step-2'" [active]="false"></amexio-step-block>
