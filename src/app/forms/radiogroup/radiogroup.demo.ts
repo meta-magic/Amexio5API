@@ -55,6 +55,29 @@ import {Http} from "@angular/http";
               </amexio-column>
             </amexio-row>
 
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card header="true">
+                  <amexio-header>
+                    Horizontal Radio Group Disabled
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="genderxy"
+                                        [data-reader]="'data'"
+                                        [display-field]="'gender'"
+                                        [value-field]="'genderId'"
+                                        [http-method]="'get'"
+                                        [default-value]="'female'"
+                                        horizontal="true"
+                                        [http-url]="'assets/data/componentdata/radiogroup.json'"
+                                        disabled="true">
+                    </amexio-radio-group>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            
+
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
@@ -130,12 +153,10 @@ export class RadioGroupDemo {
       response:{
         data:[{
           gender:'Male',
-          genderId:'male',
-          disabled : true
+          genderId:'male'
         },{
           gender:'Female',
-          genderId:'female',
-          disabled : false
+          genderId:'female'
         },
         ]
       }

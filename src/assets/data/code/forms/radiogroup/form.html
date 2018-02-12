@@ -23,3 +23,15 @@
                     [http-url]="'assets/data/componentdata/radiogroup.json'"
                     (onSelection)="setSelectedGender($event)">
 </amexio-radio-group>
+
+<!--Disabled Horizontal Radio Group -->
+<amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="genderxy"
+                    [data-reader]="'data'"
+                    [display-field]="'gender'"
+                    [value-field]="'genderId'"
+                    [http-method]="'get'"
+                    [default-value]="'female'"
+                    horizontal="true"
+                    [http-url]="'assets/data/componentdata/radiogroup.json'"
+                    disabled="true">
+</amexio-radio-group>

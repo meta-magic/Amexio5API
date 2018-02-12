@@ -19,3 +19,13 @@
                        [http-method]="'get'"
                        [http-url]="'assets/data/componentdata/checkgroup.json'">
 </amexio-checkbox-group>
+
+<!--checkbox group with disabled fields-->
+<amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
+                       [data-reader]="'response.data'"
+                       [display-field]="'language'"
+                       [horizontal]="true"
+                       [value-field]="'checked'"
+                       [data]="checkboxGroupdatadisabled"
+                       [column]="'4'">
+</amexio-checkbox-group>

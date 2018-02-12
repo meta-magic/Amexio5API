@@ -1,5 +1,6 @@
 export class CheckBoxGroupDemo {
   checkboxGroupdata: any;
+  checkboxGroupdatadisabled : any;
   constructor(){
     this.checkboxGroupdata = {
       response: {
@@ -12,6 +13,18 @@ export class CheckBoxGroupDemo {
         }]
       }
     };
+
+    this.checkboxGroupdatadisabled = {
+          response: {
+            data: [{
+              language: 'Angular 2', checked: false,disabled : false
+            }, {
+              language: 'JAVA', checked: true,disabled : true
+            }, {
+              language: 'C++', checked: false,disabled : false
+            }]
+          }
+        };
   }
   //selected Checkbox event
   selectedCheckboxgroup(data:any){
