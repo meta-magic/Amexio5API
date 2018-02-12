@@ -1,7 +1,7 @@
 {
-  "name": "MetaMagic",
-  "version": "0.0.0",
-  "license": "MIT",
+  "name": "MetaMagic Demo App",
+  "version": "1.0.0",
+  "license": "Apache 2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve --host=0.0.0.0 --disable-host-check",
