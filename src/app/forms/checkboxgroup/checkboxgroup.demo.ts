@@ -127,11 +127,11 @@ export class CheckBoxGroupDemo {
     this.checkboxGroupdata = {
       response: {
         data: [{
-          language: 'Angular 2', checked: false
+          language: 'Angular 2', checked: false,disabled : true
         }, {
-          language: 'JAVA', checked: true
+          language: 'JAVA', checked: true,disabled : false
         }, {
-          language: 'C++', checked: false
+          language: 'C++', checked: false,disabled : false
         }]
       }
     };

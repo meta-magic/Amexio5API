@@ -130,10 +130,12 @@ export class RadioGroupDemo {
       response:{
         data:[{
           gender:'Male',
-          genderId:'male'
+          genderId:'male',
+          disabled : true
         },{
           gender:'Female',
-          genderId:'female'
+          genderId:'female',
+          disabled : false
         },
         ]
       }
