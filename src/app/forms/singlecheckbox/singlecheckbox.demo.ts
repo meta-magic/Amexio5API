@@ -36,27 +36,13 @@ import {Http} from "@angular/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox [field-label]="'Agree'"
+                                     disabled="true"
                                      [(ngModel)]="checkWithDisable"></amexio-checkbox>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
-
-            <amexio-row>
-              <amexio-column size="12">
-                <amexio-card [header]="true">
-                  <amexio-header>
-                    Single Checkbox Disabled
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-checkbox [field-label]="'Agree'" [(ngModel)]="check1" disabled="true"
-                                     (onSelection)="onCheckClick($event)"></amexio-checkbox>
-                    <p>Selected Value : {{check1}}</p>
-                  </amexio-body>
-                </amexio-card>
-
-              </amexio-column>
-            </amexio-row>
+            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
