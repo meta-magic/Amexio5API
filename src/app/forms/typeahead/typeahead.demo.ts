@@ -25,8 +25,10 @@ import {Http} from "@angular/http";
                   <amexio-body>
                     <amexio-typeahead [data-reader]="'data'"
                                       [key]="'countryCode1'"
+                                      [value-field]="'countryCode1'"
                                       [display-field]="'countryName'"
                                       [place-holder]="'Search'"
+                                      [(ngModel)]="sample"
                                       [http-url]="'assets/data/componentdata/country.json'"
                                       [http-method]="'get'"
                                       [field-label]="'Country Name'"
@@ -100,6 +102,7 @@ import {Http} from "@angular/http";
 })
 export class TypeAheadDemo {
   htmlCode: string;
+  sample: any;
   typeScriptCode: string;
   copyMsgArray: any[];
   typeAHeadData: any;
