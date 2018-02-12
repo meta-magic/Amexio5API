@@ -35,10 +35,26 @@ import {Http} from "@angular/http";
                      Single Checkbox with disable 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox [disabled]="true" [field-label]="'Agree'"
+                    <amexio-checkbox [field-label]="'Agree'"
                                      [(ngModel)]="checkWithDisable"></amexio-checkbox>
                   </amexio-body>
                 </amexio-card>
+              </amexio-column>
+            </amexio-row>
+
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                    Single Checkbox Disabled
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-checkbox [field-label]="'Agree'" [(ngModel)]="check1" disabled="true"
+                                     (onSelection)="onCheckClick($event)"></amexio-checkbox>
+                    <p>Selected Value : {{check1}}</p>
+                  </amexio-body>
+                </amexio-card>
+
               </amexio-column>
             </amexio-row>
           </amexio-tab>
@@ -101,6 +117,7 @@ export class SinglecheckboxDemo {
   copyMsgArray: any[];
   check: boolean = false;
   checkWithDisable: boolean = true;
+  check1 : boolean = true;
 
   //Checkbox click event
   onCheckClick(data: any) {
