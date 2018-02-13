@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
-import {NgModule, FormsModule} from '@angular/core';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
 import {AppComponent} from './app.component';
 import {AmexioWidgetModule} from 'amexio-ng-extensions'; // Import Amexio library
 
