@@ -2,8 +2,7 @@
   "data": [
     {
       "language": "Angular 2",
-      "checked": false,
-      "disabled" : true
+      "checked": false
     },
     {
       "language": "JAVA",

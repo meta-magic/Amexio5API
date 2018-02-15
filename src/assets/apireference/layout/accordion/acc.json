@@ -40,6 +40,11 @@
       "type": "string",
       "default": "",
       "description":"Align of item elements inside card footer example : right,center,left."
+    },{
+      "name": "disabled",
+      "type": "boolean",
+      "default": "",
+      "description":"Disabled specific panes"
     }
   ]
 }

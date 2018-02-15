@@ -35,12 +35,14 @@ import {Http} from "@angular/http";
                      Single Checkbox with disable 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox [disabled]="true" [field-label]="'Agree'"
+                    <amexio-checkbox [field-label]="'Agree'"
+                                     disabled="true"
                                      [(ngModel)]="checkWithDisable"></amexio-checkbox>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
+            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
@@ -101,6 +103,7 @@ export class SinglecheckboxDemo {
   copyMsgArray: any[];
   check: boolean = false;
   checkWithDisable: boolean = true;
+  check1 : boolean = true;
 
   //Checkbox click event
   onCheckClick(data: any) {

@@ -52,6 +52,12 @@
       "type": "any",
       "default": "",
       "description": "Local data for radio group."
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "default": "",
+      "description": "Disable the radio button"
     }
   ],
   "events": [

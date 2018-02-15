@@ -17,6 +17,23 @@ import {Http} from "@angular/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
+
+              <amexio-column [size]="6">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                    Vertical Checkbox With Http Url
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-checkbox-group [field-label]="'Vertical Checkbox'" name="language"
+                                           [data-reader]="'data'"
+                                           [display-field]="'language'"
+                                           [value-field]="'checked'"
+                                           [http-method]="'get'"
+                                           [http-url]="'assets/data/componentdata/checkgroup.json'">
+                    </amexio-checkbox-group>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
@@ -35,18 +52,22 @@ import {Http} from "@angular/http";
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column [size]="6">
-                <amexio-card [header]="true">
+            </amexio-row>
+
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card header="true">
                   <amexio-header>
-                     Vertical Checkbox With Http Url 
+                    Horizontal Checkbox with disabled.
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox-group [field-label]="'Vertical Checkbox'" name="language"
-                                           [data-reader]="'data'"
+                    <amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
+                                           [data-reader]="'response.data'"
                                            [display-field]="'language'"
+                                           [horizontal]="true"
                                            [value-field]="'checked'"
-                                           [http-method]="'get'"
-                                           [http-url]="'assets/data/componentdata/checkgroup.json'">
+                                           [data]="checkboxGroupdatadisabled"
+                                           [column]="'4'">
                     </amexio-checkbox-group>
                   </amexio-body>
                 </amexio-card>
@@ -119,6 +140,7 @@ export class CheckBoxGroupDemo {
   dataSource:string;
   copyMsgArray: any[];
   checkboxGroupdata: any;
+  checkboxGroupdatadisabled : any;
   //selected Checkbox event
   selectedCheckboxgroup(data:any){
   //make some operation here
@@ -127,9 +149,20 @@ export class CheckBoxGroupDemo {
     this.checkboxGroupdata = {
       response: {
         data: [{
-          language: 'Angular 2', checked: false,disabled : true
+          language: 'Angular 2', checked: false,disabled : false
         }, {
           language: 'JAVA', checked: true,disabled : false
+        }, {
+          language: 'C++', checked: false,disabled : false
+        }]
+      }
+    };
+    this.checkboxGroupdatadisabled = {
+      response: {
+        data: [{
+          language: 'Angular 2', checked: false,disabled : false
+        }, {
+          language: 'JAVA', checked: true,disabled : true
         }, {
           language: 'C++', checked: false,disabled : false
         }]
