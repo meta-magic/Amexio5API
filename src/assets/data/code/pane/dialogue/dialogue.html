@@ -1,7 +1,7 @@
 
 <!--confirm dialogue-->
 
-<amexio-dialogue [show-window]="confirmdialogue"
+<amexio-dialogue [show-dialogue]="confirmdialogue"
                [title]="'Comfirm'"
                [message]="'Do you want to confirm ?'"
                [message-type]="'confirm'"
@@ -9,7 +9,7 @@
 </amexio-dialogue>
 
 <!--Error dialogue-->
-<amexio-dialogue [show-window]="errordialogue"
+<amexio-dialogue [show-dialogue]="errordialogue"
                [message]="'Error Occurred.'"
                [primary-action-label]="'ok'"
                [title]="'Error'"
@@ -19,7 +19,7 @@
 
 <!--warning dialogue-->
 
-<amexio-dialogue [show-window]="warningdialogue"
+<amexio-dialogue [show-dialogue]="warningdialogue"
                [message]="'Data not found.'"
                [title]="'Warning'"
                [message-type]="'warning'"
@@ -28,7 +28,7 @@
 
 <!--help dialogue-->
 
-<amexio-dialogue [show-window]="helpdialogue"
+<amexio-dialogue [show-dialogue]="helpdialogue"
                [title]="'Help'"
                [message]="'Check Server.'"
                [message-type]="'help'"
@@ -37,7 +37,7 @@
 
 <!--custom dialogue-->
 
-<amexio-dialogue [show-window]="customdialogue"
+<amexio-dialogue [show-dialogue]="customdialogue"
                 [custom]="true"
                 [title]="'Custom dialogueue witch Text Input'"
                 [type]="'confirm'">
