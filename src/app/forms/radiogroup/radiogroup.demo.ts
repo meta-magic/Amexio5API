@@ -156,7 +156,8 @@ export class RadioGroupDemo {
           genderId:'male'
         },{
           gender:'Female',
-          genderId:'female'
+          genderId:'female',
+          disabled : true
         },
         ]
       }
