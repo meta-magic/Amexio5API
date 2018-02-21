@@ -7,10 +7,10 @@
       "description":"Alignment of footer contents to right or left."
     },
     {
-      "name": "show-window",
+      "name": "show-dialogue",
       "type": "boolean",
       "default": "false",
-      "description":"Show / Hide Window."
+      "description":"Show / Hide Dialogue."
     },
     {
       "name": "closable",
