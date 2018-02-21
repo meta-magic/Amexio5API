@@ -16,7 +16,7 @@
       "name": "closable",
       "type": "boolean",
       "default": "",
-      "description":"User can close the window."
+      "description":"User can close the Dialogue."
     },
     {
       "name": "title",
