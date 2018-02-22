@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'image-demo', template: `
@@ -111,7 +111,7 @@ export class ImageDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -121,16 +121,16 @@ export class ImageDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/media/image/media.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/media/image/media.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/media/image/media.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/media/image/media.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

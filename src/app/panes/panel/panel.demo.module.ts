@@ -10,13 +10,14 @@ import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {SharedModule} from "../../shared.module";
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path: '', component: PanelDemoComponent},
 ];
 
 @NgModule({
-  imports: [CommonModule,HttpModule,FormsModule,AmexioWidgetModule,SharedModule,RouterModule.forChild(routes)],
+  imports: [CommonModule,HttpClientModule,FormsModule,AmexioWidgetModule,SharedModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
   declarations : [PanelDemoComponent]
 })

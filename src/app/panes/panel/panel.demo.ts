@@ -2,7 +2,7 @@
  * Created by pratik on 16/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'panel-demo',
@@ -111,7 +111,7 @@ export class PanelDemoComponent{
   copyMsgArray: any[];
   asyncFlag : boolean;
   refreshDialogue: boolean;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
   getDta() {
@@ -126,16 +126,16 @@ export class PanelDemoComponent{
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/panel/panel.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/layout/panel/panel.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/panel/panel.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/layout/panel/panel.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

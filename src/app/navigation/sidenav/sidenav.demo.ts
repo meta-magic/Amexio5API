@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'sidenav-demo', template: `
@@ -100,7 +100,7 @@ export class SideNavDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   dataSource:any;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -110,23 +110,23 @@ export class SideNavDemo {
     let responseTs: any;
   let datasourceData:any;
     //HTML FILE
-    this.http.get('assets/data/code/navigation/sidenav/navigation.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/navigation/sidenav/navigation.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/navigation/sidenav/navigation.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/navigation/sidenav/navigation.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //TS FILE
-    this.http.get('assets/data/componentdata/sidenav.json').subscribe(data => {
-      datasourceData = data.text();
+    this.http.get('assets/data/componentdata/sidenav.json',{responseType: 'text'}).subscribe(data => {
+      datasourceData = data;
     }, error => {
     }, () => {
       this.dataSource = datasourceData;

@@ -5,8 +5,8 @@ import { Component, OnInit, NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {CommonModule} from "@angular/common";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
-import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
+import {HttpClientModule} from "@angular/common/http";
 @Component({
  selector: 'license-demo',
  template: `
@@ -266,7 +266,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule,AmexioWidgetModule,HttpModule,FormsModule,RouterModule.forChild(routes)],
+  imports: [CommonModule,AmexioWidgetModule,HttpClientModule,FormsModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
   declarations : [LicenseDemoComponent]
 })

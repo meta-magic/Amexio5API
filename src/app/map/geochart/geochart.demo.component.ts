@@ -3,6 +3,7 @@
  */
 import {Component, OnInit} from '@angular/core';
 import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'geo-chart-demo',
   template: `
@@ -75,7 +76,7 @@ export class GeoChartDemoComponent implements OnInit {
   typeScriptCode: string;
   dataSourceCode:string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.geoChartData=[
       ['Country', 'Popularity'],
       ['Germany', 200],
@@ -94,23 +95,23 @@ export class GeoChartDemoComponent implements OnInit {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/map/geochart/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/map/geochart/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/map/geochart/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/map/geochart/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/map/geochart/datasource.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/map/geochart/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;

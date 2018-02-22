@@ -2,7 +2,7 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'bar-chart-demo',
   template: `
@@ -114,7 +114,7 @@ export class BarChartDemoComponent implements OnInit {
   typeScriptCode: string;
   dataSourceCode:string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.barStackChartData=[
       ['Year', 'Sales', 'Expenses', 'Profit'],
       ['2014', 1000, 400, 200],
@@ -138,23 +138,23 @@ export class BarChartDemoComponent implements OnInit {
     let responseTs:any;
     let responseDataSource:any;
     //HTML FILE
-    this.http.get('assets/data/code/charts/barchart/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/charts/barchart/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/barchart/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/barchart/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/charts/barchart/datasource.json').subscribe(data => {
-      responseDataSource = data.text();
+    this.http.get('assets/data/code/charts/barchart/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseDataSource = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseDataSource;

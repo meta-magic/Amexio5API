@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'itemselector-demo', template: `
@@ -110,7 +110,7 @@ export class ItemSelectorDemo {
   copyMsgArray: any[];
   selectedData: any;
   dataSource:string;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
   getSelectedData(data: any) {
@@ -122,23 +122,23 @@ export class ItemSelectorDemo {
     let responseTs: any;
     let responseData:any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/itemselector/form.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/forms/itemselector/form.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/itemselector/form.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/forms/itemselector/form.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //JSON FILE
-    this.http.get('assets/data/componentdata/selectordata.json').subscribe(data => {
-      responseData = data.text();
+    this.http.get('assets/data/componentdata/selectordata.json',{responseType: 'text'}).subscribe(data => {
+      responseData = data;
     }, error => {
     }, () => {
       this.dataSource = responseData;

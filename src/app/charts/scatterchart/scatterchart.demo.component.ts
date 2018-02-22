@@ -2,7 +2,8 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
+
 @Component({
   selector: 'scatter-chart-demo',
   template: `
@@ -138,7 +139,7 @@ export class ScatterChartDemoComponent implements OnInit {
   typeScriptCode: string;
   dataSourceCode:string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.scatterChartData=[
       ['Age', 'Weight'],
       [ 8,      12],
@@ -156,23 +157,23 @@ export class ScatterChartDemoComponent implements OnInit {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/charts/scatterchart/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/charts/scatterchart/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/scatterchart/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/scatterchart/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/charts/scatterchart/datasource.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/scatterchart/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;

@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'treedata-grid-demo', template: `
@@ -110,7 +110,7 @@ export class TreeDataGridDemo {
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -120,23 +120,23 @@ export class TreeDataGridDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/treedatagrid/treedatagrid.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/data/treedatagrid/treedatagrid.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/treedatagrid/treedatagrid.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/data/treedatagrid/treedatagrid.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/treedatatable.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/componentdata/treedatatable.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSource = responseTs;

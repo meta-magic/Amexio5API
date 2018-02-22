@@ -2,7 +2,7 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'area-chart-demo',
@@ -108,7 +108,7 @@ export class AreaChartDemoComponent implements OnInit {
   typeScriptCode: string;
   dataSourceCode:string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.areaChartData=[
       ['Year', 'Sales', 'Expenses'],
       ['2013',  1000,      400],
@@ -124,23 +124,23 @@ export class AreaChartDemoComponent implements OnInit {
     let responseTs:any;
     let dataSource:any;
     //HTML FILE
-    this.http.get('assets/data/code/charts/areachart/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/charts/areachart/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/areachart/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/areachart/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/charts/areachart/datasource.json').subscribe(data => {
-      dataSource = data.text();
+    this.http.get('assets/data/code/charts/areachart/datasource.json',{responseType: 'text'}).subscribe(data => {
+      dataSource = data;
     }, error => {
     }, () => {
       this.dataSourceCode = dataSource;

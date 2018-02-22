@@ -2,7 +2,7 @@
  * Created by pratik on 18/1/18.
  */
 import { Component, OnInit } from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
  selector: 'youtube-player',
@@ -98,7 +98,7 @@ export class YoutubePlayerDemoComponent implements OnInit {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -108,16 +108,16 @@ export class YoutubePlayerDemoComponent implements OnInit {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/enterprise/videoplayer/ee.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/enterprise/videoplayer/ee.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/enterprise/videoplayer/ee.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/enterprise/videoplayer/ee.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'grid-template-demo', template: `
@@ -124,7 +124,7 @@ export class GridWithTemplateDemo {
   dataSource: string;
   copyMsgArray: any[];
   clickedRowData: any;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -134,23 +134,23 @@ export class GridWithTemplateDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/data/templategrid/templategrid.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/data/templategrid/templategrid.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/gridtemplate.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/componentdata/gridtemplate.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSource = responseTs;

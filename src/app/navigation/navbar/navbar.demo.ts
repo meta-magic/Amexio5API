@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component, ViewEncapsulation} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component, ViewEncapsulation} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'navbar-demo', template: `
@@ -96,7 +96,7 @@ export class NavbarDemo {
   copyMsgArray: any[];
   dataSource:any;
   topMenuData:any;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.topMenuData = JSON.parse(`[
     {
       "label" : "Home"
@@ -130,23 +130,23 @@ export class NavbarDemo {
     let responseTs: any;
   let datasourceData:any;
     //HTML FILE
-    this.http.get('assets/data/code/navigation/navbar/navigation.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/navigation/navbar/navigation.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/navigation/navbar/navigation.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/navigation/navbar/navigation.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //TS FILE
-    this.http.get('assets/data/componentdata/navbar.json').subscribe(data => {
-      datasourceData = data.text();
+    this.http.get('assets/data/componentdata/navbar.json',{responseType: 'text'}).subscribe(data => {
+      datasourceData = data;
     }, error => {
     }, () => {
       this.dataSource = datasourceData;

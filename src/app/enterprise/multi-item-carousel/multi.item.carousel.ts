@@ -10,13 +10,14 @@ import {HttpModule} from "@angular/http";
 import {AmexioEnterpriseModule, AmexioWidgetModule} from "amexio-ng-extensions";
 import {SharedModule} from "../../shared.module";
 import {CommonModule} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path: '', component: EECarouselDemoComponent },
 ];
 
 @NgModule({
-  imports: [CommonModule,RouterModule.forChild(routes),FormsModule,HttpModule,AmexioWidgetModule,AmexioEnterpriseModule,SharedModule],
+  imports: [CommonModule,RouterModule.forChild(routes),FormsModule,HttpClientModule,AmexioWidgetModule,AmexioEnterpriseModule,SharedModule],
   exports: [RouterModule],
   declarations : [EECarouselDemoComponent]
 })

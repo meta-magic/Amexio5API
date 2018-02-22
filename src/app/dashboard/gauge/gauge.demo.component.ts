@@ -2,7 +2,7 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'gauge-dashboard-demo',
   template: `
@@ -75,7 +75,7 @@ export class GaugeDemoComponent implements OnInit {
   typeScriptCode: string;
   dataSourceCode:string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.gaugeChartData=[
       ['Label', 'Value'],
       ['Memory', 80],
@@ -90,23 +90,23 @@ export class GaugeDemoComponent implements OnInit {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/dashboard/gauge/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/dashboard/gauge/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/dashboard/gauge/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/dashboard/gauge/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/dashboard/gauge/datasource.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/dashboard/gauge/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;

@@ -2,7 +2,8 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
+
 @Component({
   selector: 'line-chart-demo', template: `
     <amexio-card header="true">
@@ -113,7 +114,7 @@ export class PieChartDemoComponent implements OnInit {
   dataSourceCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.pieChartData=[
       ['Task', 'Hours per Day'],
       ['Work',     11],
@@ -131,23 +132,23 @@ export class PieChartDemoComponent implements OnInit {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/charts/piechart/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/charts/piechart/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/piechart/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/piechart/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/charts/piechart/datasource.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/piechart/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;

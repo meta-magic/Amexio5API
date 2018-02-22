@@ -2,7 +2,7 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'tree-map-demo',
   template: `
@@ -91,7 +91,7 @@ export class TreeMapDemoComponent implements OnInit {
   typeScriptCode: string;
   dataSourceCode:string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.treeMapData=[
       ['Location', 'Parent', 'Market trade volume (size)', 'Market increase/decrease (color)'],
       ['Global',    null,                 0,                               0],
@@ -131,23 +131,23 @@ export class TreeMapDemoComponent implements OnInit {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/map/treemap/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/map/treemap/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/map/treemap/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/map/treemap/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/map/treemap/datasource.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/map/treemap/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;

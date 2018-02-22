@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'paginator-demo', template: `
@@ -105,7 +105,7 @@ export class PaginatorDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   currentPage: number;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -115,16 +115,16 @@ export class PaginatorDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/paginator/paginator.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/data/paginator/paginator.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/paginator/paginator.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/data/paginator/paginator.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

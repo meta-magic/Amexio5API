@@ -2,7 +2,7 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'datapoint', template: `
     <amexio-card header="true">
@@ -116,7 +116,7 @@ export class DataPointComponent implements OnInit {
   dataSourceCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.gaugeChartData = [['Label', 'Value'], ['Memory', 80], ['CPU', 55], ['Network', 68]];
     this.getHtmlAndTypeScriptCode();
   }
@@ -127,16 +127,16 @@ export class DataPointComponent implements OnInit {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/dashboard/datapoint/datapoint.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/dashboard/datapoint/datapoint.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/dashboard/datapoint/datapoint.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/dashboard/datapoint/datapoint.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

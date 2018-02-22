@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'listbox-demo', template: `
@@ -126,7 +126,7 @@ export class ListBoxDemo {
   localData: any;
   onRowClickData: any;
   selectedData: any;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
     this.localData = {"response": {
       "success": true,
@@ -221,16 +221,16 @@ export class ListBoxDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/listbox/listbox.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/data/listbox/listbox.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/listbox/listbox.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/data/listbox/listbox.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

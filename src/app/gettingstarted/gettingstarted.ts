@@ -4,10 +4,10 @@
 import {NgModule, Component} from '@angular/core'
 import {RouterModule} from '@angular/router'
 import {FormsModule} from "@angular/forms";
-import {Http, HttpModule} from "@angular/http";
 import {CommonModule} from "@angular/common";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {SharedModule} from "../shared.module";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @Component({
   selector: 'getting-started',
@@ -287,7 +287,7 @@ export class GettingStatedDemo {
   modulesData : any;
   tsCodeV32 : any;
   tsCodeV1x : any;
-  constructor(private http:Http) {
+  constructor(private http:HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -295,28 +295,28 @@ export class GettingStatedDemo {
   getHtmlAndTypeScriptCode() {
     let responseTs: any;
     //TS FILE
-    this.http.get('assets/data/code/gettingstated/gettingstated.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/gettingstated/gettingstated.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.tsCode = responseTs;
     });
 
-    this.http.get('assets/data/code/gettingstated/icon.text').subscribe(data=>{
-      this.iconCode = data.text();
+    this.http.get('assets/data/code/gettingstated/icon.text',{responseType: 'text'}).subscribe(data=>{
+      this.iconCode = data;
     });
 
-    this.http.get('assets/data/code/gettingstated/data.text').subscribe(data=>{
-      this.dataCode = data.text();
+    this.http.get('assets/data/code/gettingstated/data.text',{responseType: 'text'}).subscribe(data=>{
+      this.dataCode = data;
     });
 
-    this.http.get('assets/data/code/gettingstated/style.text').subscribe(data=>{
-      this.styleCode = data.text();
+    this.http.get('assets/data/code/gettingstated/style.text',{responseType: 'text'}).subscribe(data=>{
+      this.styleCode = data;
     });
 
     this.http.get('assets/apireference/modules/modules.json').subscribe(
       data=>{
-        let response = data.json();
+        let response : any = data;
         this.modulesData = response.properties.sort((a : any, b : any)=>{
           if(a.name < b.name) return -1;
           if(a.name > b.name) return 1;
@@ -325,14 +325,14 @@ export class GettingStatedDemo {
       }
     );
 
-    this.http.get('assets/data/code/gettingstated/gettingstatedv32.text').subscribe(
+    this.http.get('assets/data/code/gettingstated/gettingstatedv32.text',{responseType: 'text'}).subscribe(
       data=>{
-        this.tsCodeV32 = data.text();
+        this.tsCodeV32 = data;
       }
     );
-    this.http.get('assets/data/code/gettingstated/gettingstatedv1x.text').subscribe(
+    this.http.get('assets/data/code/gettingstated/gettingstatedv1x.text',{responseType: 'text'}).subscribe(
       data=>{
-        this.tsCodeV1x = data.text();
+        this.tsCodeV1x = data;
       }
     );
   }
@@ -342,7 +342,7 @@ export class GettingStatedDemo {
   imports: [
     CommonModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AmexioWidgetModule,
     SharedModule,
     RouterModule.forChild([

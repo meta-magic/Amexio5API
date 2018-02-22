@@ -2,7 +2,7 @@
  * Created by pratik on 16/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'dialogue-demo', template: `
@@ -131,7 +131,7 @@ export class DialogueDemoComponent {
   copyMsgArray: any[];
   asyncFlag: boolean;
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -148,16 +148,16 @@ export class DialogueDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/pane/dialogue/dialogue.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/pane/dialogue/dialogue.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/pane/dialogue/dialogue.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/pane/dialogue/dialogue.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

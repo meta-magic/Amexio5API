@@ -2,7 +2,7 @@
  * Created by pratik on 16/1/18.
  */
 import { Component, OnInit } from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
  selector: 'border-demo',
@@ -102,7 +102,7 @@ export class BorderDemoComponent {
   typeScriptCode: string;
   copyMsgArray: any[];
   asyncFlag : boolean;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
   getDta() {
@@ -117,16 +117,16 @@ export class BorderDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/border/border.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/border/border.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/border/border.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/border/border.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

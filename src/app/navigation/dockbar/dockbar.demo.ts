@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'dockbar-demo', template: `
@@ -115,7 +115,7 @@ export class DockbarDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -125,16 +125,16 @@ export class DockbarDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/navigation/dockbar/navigation.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/navigation/dockbar/navigation.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/navigation/dockbar/navigation.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/navigation/dockbar/navigation.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

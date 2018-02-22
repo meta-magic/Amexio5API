@@ -2,7 +2,8 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
+
 @Component({
   selector: 'line-chart-demo', template: `
     <amexio-card header="true">
@@ -91,7 +92,7 @@ export class LineChartDemoComponent implements OnInit {
   dataSourceCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.lineChartData=[
       [{"datatype":"number" ,"label":'Day'},{"datatype":"number","label":'Guardians of the Galaxy'},
         {"datatype":"number","label":'The Avengers'},{"datatype":"number","label":'Transformers: Age of Extinction'}
@@ -120,23 +121,23 @@ export class LineChartDemoComponent implements OnInit {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/charts/linechart/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/charts/linechart/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/linechart/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/linechart/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/charts/linechart/datasource.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/linechart/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;

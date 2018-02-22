@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'simplegridr-demo', template: `
@@ -114,7 +114,7 @@ export class SimpleGridDemo {
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -124,23 +124,23 @@ export class SimpleGridDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/simplegrid/simplegrid.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/data/simplegrid/simplegrid.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/simplegrid/simplegrid.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/data/simplegrid/simplegrid.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSource = responseTs;

@@ -4,7 +4,7 @@
 import { Component, OnInit } from '@angular/core';
 import {IconLoaderService} from "amexio-ng-extensions";
 import {Icon} from "amexio-ng-extensions";
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
  selector: 'carousel-demo',
@@ -103,7 +103,7 @@ export class CarouselDemoComponent{
   typeScriptCode: string;
   copyMsgArray: any[];
   asyncFlag : boolean;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
   getDta() {
@@ -118,16 +118,16 @@ export class CarouselDemoComponent{
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/carousel/carousel.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/layout/carousel/carousel.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/carousel/carousel.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/layout/carousel/carousel.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

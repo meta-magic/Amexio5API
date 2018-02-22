@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'menubar-demo', template: `
@@ -101,7 +101,7 @@ export class MenuBarDemo {
   dataSource:string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -111,23 +111,23 @@ export class MenuBarDemo {
     let responseTs: any;
   let responseData:any;
     //HTML FILE
-    this.http.get('assets/data/code/navigation/menubar/navigation.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/navigation/menubar/navigation.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/navigation/menubar/navigation.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/navigation/menubar/navigation.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //JSON FILE
-    this.http.get('assets/data/componentdata/menubar.json').subscribe(data => {
-      responseData = data.text();
+    this.http.get('assets/data/componentdata/menubar.json',{responseType: 'text'}).subscribe(data => {
+      responseData = data;
     }, error => {
     }, () => {
       this.dataSource = responseData;

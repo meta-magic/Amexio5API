@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'typeahead-demo', template: `
@@ -108,7 +108,7 @@ export class TypeAheadDemo {
   typeAHeadData: any;
   name: string;
   dataSource:string;
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.typeAHeadData = {
       "data": [{"sportName": "Cricket", "code": "Ck"}, {"sportName": "Swimming", "code": "Sw"}, {
         "sportName": "Golf",
@@ -127,23 +127,23 @@ export class TypeAheadDemo {
     let responseTs: any;
     let responseData:any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/typehead/form.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/forms/typehead/form.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/typehead/form.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/forms/typehead/form.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //JSON FILE
-    this.http.get('assets/data/componentdata/country.json').subscribe(data => {
-      responseData = data.text();
+    this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
+      responseData = data;
     }, error => {
     }, () => {
       this.dataSource = responseData;

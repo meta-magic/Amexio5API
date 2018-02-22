@@ -2,7 +2,7 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'candlestick-chart-demo',
   template: `
@@ -121,7 +121,7 @@ export class CandlestickChart implements OnInit {
   typeScriptCode: string;
   dataSourceCode:string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.candlestickChartData=[
       ['Mon', 20, 28, 38, 45],
       ['Tue', 31, 38, 55, 66],
@@ -137,23 +137,23 @@ export class CandlestickChart implements OnInit {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/charts/candlestickchart/chart.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/charts/candlestickchart/chart.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/charts/candlestickchart/chart.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/candlestickchart/chart.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //DataSource FILE
-    this.http.get('assets/data/code/charts/candlestickchart/datasource.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/charts/candlestickchart/datasource.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;

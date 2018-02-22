@@ -2,7 +2,7 @@
  * Created by pratik on 18/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {Http} from "@angular/http";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'ee-carousel-demo', template: `
@@ -110,13 +110,13 @@ export class EECarouselDemoComponent implements OnInit {
   copyMsgArray: any[];
   dataSource : any;
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
     http.get('assets/data/enterprise/eee.json')
-      .subscribe(response => {
-        this.newreleases = response.json();
+      .subscribe((response : any) => {
+        this.newreleases = response;
       });
-    this.http.get('assets/data/enterprise/topratedcontent.json').subscribe(res => this.topRateContent = res.json());
+    this.http.get('assets/data/enterprise/topratedcontent.json').subscribe((res : any) => this.topRateContent = res);
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
@@ -125,23 +125,23 @@ export class EECarouselDemoComponent implements OnInit {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/enterprise/multicarusel/ee.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/enterprise/multicarusel/ee.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/enterprise/multicarusel/ee.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/enterprise/multicarusel/ee.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
   //data source FILE
-    this.http.get('assets/data/code/enterprise/multicarusel/ee.json').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/enterprise/multicarusel/ee.json',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.dataSource = responseTs;

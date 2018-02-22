@@ -6,17 +6,17 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AccordionDemoComponent } from './accordion.demo';
 import {CommonModule} from "@angular/common";
-import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {SharedModule} from "../../shared.module";
+import {HttpClientModule} from "@angular/common/http";
 
 const routes: Routes = [
   { path: '', component: AccordionDemoComponent },
 ];
 
 @NgModule({
-  imports: [CommonModule,HttpModule,FormsModule,AmexioWidgetModule,SharedModule,RouterModule.forChild(routes)],
+  imports: [CommonModule,HttpClientModule,FormsModule,AmexioWidgetModule,SharedModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
   declarations : [AccordionDemoComponent]
 })

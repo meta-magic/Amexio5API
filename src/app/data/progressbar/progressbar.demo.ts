@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'progressbar-demo', template: `
@@ -134,7 +134,7 @@ export class ProgressBarDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -144,16 +144,16 @@ export class ProgressBarDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/progressbar/progressbar.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/data/progressbar/progressbar.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/progressbar/progressbar.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/data/progressbar/progressbar.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'text-demo', template: `
@@ -184,7 +184,7 @@ export class TextDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -194,16 +194,16 @@ export class TextDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/textinput/form.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/forms/textinput/form.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/textinput/form.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/forms/textinput/form.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

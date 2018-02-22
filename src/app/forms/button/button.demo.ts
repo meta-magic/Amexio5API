@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import {Component} from '@angular/core';
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'button-demo', template: `
@@ -191,7 +191,7 @@ export class ButtonDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   asyncFlag : boolean;
-    constructor(private http: Http) {
+    constructor(private http: HttpClient) {
       this.getHtmlAndTypeScriptCode();
   }
   getDta() {
@@ -206,16 +206,16 @@ export class ButtonDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/button/form.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/forms/button/form.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/button/form.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/forms/button/form.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
