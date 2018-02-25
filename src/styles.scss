@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import "nav.scss";
 
 
 .route-container{
@@ -40,7 +41,7 @@
   font-size: 30px;
 }*/
 .navbardemo .navbar-container {
-    position: relative !important;
+  position: relative !important;
   width: 90%;
 }
 

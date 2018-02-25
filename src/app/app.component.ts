@@ -10,6 +10,7 @@ import {AmexioNavBarComponent} from "amexio-ng-extensions";
 })
 export class AppComponent {
   topMenuData:any[];
+  amexiotechmenus : any[];
   isRouteLoading : boolean = false;
   @ViewChild(AmexioNavBarComponent) amexioNav;
   constructor(public router : Router){
@@ -44,6 +45,7 @@ export class AppComponent {
   ]
 `);
 
+this.amexiotechmenus = [{"text":"Products","submenus":[{"text":"Amexio API","link":""},{"text":"Amexio Canvas","link":""},{"text":"Amexio Themes","link":""}]},{"text":"Start Using","submenus":[{"text":"Pricing","link":""},{"text":"Downloads","link":""},{"text":"Subscribe (Beta)","link":""},{"text":"Canvas Login (Beta)","link":""},{"text":"License and Other Docs","link":""}]},{"text":"Training","submenus":[{"text":"Amexio Training","link":""}]},{"text":"Engage","submenus":[{"text":"Events","link":""},{"text":"Forums","link":""},{"text":"Blogs","link":""},{"text":"Node Package Manager","link":""},{"text":"GitHub - Source Code","link":""}]},{"text":"About Us","submenus":[{"text":"Contact","link":""},{"text":"Company","link":""},{"text":"MetaMagic","link":""}]}];
 
   }
 
@@ -55,6 +57,9 @@ export class AppComponent {
         this.isRouteLoading = false;
       }
     });
+  }
+
+  externalLink(link:any){
   }
 
   //TO CLOSE NABVAR IN MOBILE

@@ -1,4 +1,5 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
+  
   <amexio-nav [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
     <amexio-nav-item position-right *ngFor="let topMenu of topMenuData">
       <a class="navbar-item-color" style="padding-left: 10px;text-decoration:none" [attr.href]="topMenu.link"
@@ -10,6 +11,18 @@
       </a>
     </amexio-nav-item>
   </amexio-nav>
+
+<!-- 
+  <amexio-test-nav [side-nav-space]="true" [title]="'Amexio'"
+    [logo]="'assets/images/logos/amexio-logo.png'">
+    <amexio-test-nav-item position-right *ngFor="let topMenu of topMenuData" [type]="'link'" [title]="topMenu.label" 
+      (onNavItemClick)="externalLink(topMenu.link)">
+    </amexio-test-nav-item>
+    <amexio-test-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text" [data]="menus.submenus"
+      (onNavItemClick)="externalLink(menus)">
+    </amexio-test-nav-item>
+  </amexio-test-nav> -->
+
   <amexio-row>
     <amexio-column [size]="'2pt5'" style="padding-top: 68px;">
       <amexio-side-nav
