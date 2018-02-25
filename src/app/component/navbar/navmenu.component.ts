@@ -13,7 +13,7 @@ import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
       <i [ngClass]="icon"></i> {{title}} <i class="dropdownicon fa fa-angle-down"></i>
     </a>
     <div class="nav-dropdown-content">
-      <a *ngFor="let node of data" (click)="onClick(node)"><i [ngClass]="node.icon"></i> &nbsp;{{node.text}}</a>
+      <a *ngFor="let node of data" (click)="onClick(node, $event)"><i [ngClass]="node.icon"></i> &nbsp;{{node.text}}</a>
     </div>
   </div>
 
@@ -38,23 +38,27 @@ export class AmexioTestNavMenuComponent implements OnInit {
   }
 
   ngOnInit() {
-    debugger;
-    console.log(this.data);
   }
 
   setMobileMode(flag : boolean){
-    debugger;
     this.mobilemode = flag;
   }
-  onClick(event:any){
-    debugger;
-    this.navLinkClick.emit(event);
+  onClick(node:any, event:any){
+    let n = {
+      'title':this.title,
+      'data':this.data,
+      'icon':this.icon,
+      'node': node,
+      'mobilemode':this.mobilemode
+    };
+    this.navLinkClick.emit({'data':n,'event':event});
   }
   onHeaderClick(event:any){
-    this.onClick({
+    let node = {
       'header': true,
       'title' : this.title,
       'icon'  : this.icon
-    });
+    } ;
+    this.onClick(node, event);
   }
 }

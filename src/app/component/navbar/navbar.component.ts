@@ -17,7 +17,7 @@ export class AmexioTestNavBarComponent implements OnInit, AfterViewInit, AfterCo
 
   @Input() logo: string;
 
-  @Input('side-nav-space') sidenavspace : boolean = false;
+  @Input('enable-side-nav-position') sidenavspace : boolean = false;
 
   @ContentChildren(AmexioTestNavItemComponent) navitems : QueryList<AmexioTestNavItemComponent>;
   
@@ -42,16 +42,11 @@ export class AmexioTestNavBarComponent implements OnInit, AfterViewInit, AfterCo
   }
 
   ngOnInit() {
-    debugger;
-    
   }
 
 
   ngAfterViewInit(){
-  
-    console.log(this.navbaritems.nativeElement.offsetWidth);
     this.handleNavItems();
-    debugger;
     this.navitemwidth = 5+this.navbaritems2.nativeElement.offsetWidth + this.navbaritems2.nativeElement.offsetWidth + this.navbaritems3.nativeElement.offsetWidth;
     this.handleDeviceSetting();
     
@@ -73,8 +68,7 @@ export class AmexioTestNavBarComponent implements OnInit, AfterViewInit, AfterCo
   }
 
   handleNavItemEvent(event:any){
-    
-    if(!event.header && this.mobilemode)
+    if(event && event.data && event.data.node && !event.data.node.header && this.mobilemode)
       this.toggle=false;
   }
 
@@ -88,9 +82,9 @@ export class AmexioTestNavBarComponent implements OnInit, AfterViewInit, AfterCo
   handleDeviceSetting(){
     let navbarwidth = this.navbar.nativeElement.offsetWidth;
     let navbarheight = this.navbar.nativeElement.offsetHeight;
-    debugger;
+    
     let navbaravailablewidth = (navbarwidth-((navbarwidth/100)*20));
-    if((navbaravailablewidth<this.navitemwidth)){
+    if((navbaravailablewidth<this.navitemwidth) || navbarheight>100){
       this.mobilemode = true;
       
       this.toggle = false;

@@ -31,12 +31,12 @@ export class AmexioTestNavActionComponent implements OnInit {
   }
 
   onClick(event:any){
-      this.navLinkClick.emit({
+      let node = {
         'title': this.title,
         'type' : this.type,
-        'icon' : this.icon,
-        'event': event
-      });
+        'icon' : this.icon
+      };
+      this.navLinkClick.emit({'data':node,'event':event});
 
   }
 

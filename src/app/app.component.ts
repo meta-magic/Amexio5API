@@ -1,6 +1,8 @@
-import {Component, ViewChild} from '@angular/core';
+import {Component, ViewChild, Inject} from '@angular/core';
 import {RouteConfigLoadEnd, RouteConfigLoadStart, Router} from "@angular/router";
 import {AmexioNavBarComponent} from "amexio-ng-extensions";
+import { DOCUMENT } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,8 +14,10 @@ export class AppComponent {
   topMenuData:any[];
   amexiotechmenus : any[];
   isRouteLoading : boolean = false;
+
   @ViewChild(AmexioNavBarComponent) amexioNav;
-  constructor(public router : Router){
+
+  constructor(public router : Router, @Inject(DOCUMENT) private document: any){
     this.topMenuData = JSON.parse(`[
     {
       "label" : "Home",
@@ -45,7 +49,7 @@ export class AppComponent {
   ]
 `);
 
-this.amexiotechmenus = [{"text":"Products","submenus":[{"text":"Amexio API","link":""},{"text":"Amexio Canvas","link":""},{"text":"Amexio Themes","link":""}]},{"text":"Start Using","submenus":[{"text":"Pricing","link":""},{"text":"Downloads","link":""},{"text":"Subscribe (Beta)","link":""},{"text":"Canvas Login (Beta)","link":""},{"text":"License and Other Docs","link":""}]},{"text":"Training","submenus":[{"text":"Amexio Training","link":""}]},{"text":"Engage","submenus":[{"text":"Events","link":""},{"text":"Forums","link":""},{"text":"Blogs","link":""},{"text":"Node Package Manager","link":""},{"text":"GitHub - Source Code","link":""}]},{"text":"About Us","submenus":[{"text":"Contact","link":""},{"text":"Company","link":""},{"text":"MetaMagic","link":""}]}];
+this.amexiotechmenus = [{"text":"Products","submenus":[{"text":"Amexio Canvas","link":"https://amexio.tech/amexio-canvas"},{"text":"Amexio Themes","link":"https://amexio.tech/amexio-themes"}]},{"text":"Start Using","submenus":[{"text":"Pricing","link":"https://amexio.tech/pricing"},{"text":"Downloads","link":"https://amexio.tech/download"},{"text":"Subscribe (Beta)","link":"https://canvas.amexio.org/signup/"},{"text":"Canvas Login (Beta)","link":"https://canvas.amexio.org/"},{"text":"License and Other Docs","link":"https://amexio.tech/license-and-other-docs-1"}]},{"text":"Training","submenus":[{"text":"Amexio Training","link":"http://metaarivu.com/amexio-training"}]},{"text":"Engage","submenus":[{"text":"Events","link":"https://metamagicglobal.com/events"},{"text":"Forums","link":"http://forum.metamagicglobal.com/"},{"text":"Blogs","link":"http://blog.metamagicglobal.com/"},{"text":"Node Package Manager","link":"https://www.npmjs.com/package/amexio-ng-extensions"},{"text":"GitHub - Source Code","link":"https://github.com/meta-magic/amexio.github.io"}]},{"text":"About Us","submenus":[{"text":"Contact","link":"https://metamagicglobal.com/contact"},{"text":"Company","link":"http://www.metamagicglobal.com/company"},{"text":"MetaMagic","link":"https://www.metamagicglobal.com/"}]}];
 
   }
 
@@ -59,9 +63,14 @@ this.amexiotechmenus = [{"text":"Products","submenus":[{"text":"Amexio API","lin
     });
   }
 
-  externalLink(link:any){
+  externalLink(event:any){
+    if(event.data.node.link)
+      this.document.location.href=event.data.node.link;
   }
 
+  homeLink(link:any){
+    this.document.location.href=link; 
+  }
   //TO CLOSE NABVAR IN MOBILE
   onMenuClick(){
     this.amexioNav.close();

@@ -57,7 +57,6 @@ export class AmexioTestNavItemComponent implements OnInit , ControlValueAccessor
   }
 
   ngAfterViewInit(){
-   debugger;
    this.right = this.elementref.nativeElement.getBoundingClientRect().right;
   }
   ngAfterContentInit(){
@@ -65,7 +64,6 @@ export class AmexioTestNavItemComponent implements OnInit , ControlValueAccessor
   }
 
   navItemClick(event:any){
-    debugger;
     this.onNavItemClick.emit(event);
   }
 
@@ -75,7 +73,6 @@ export class AmexioTestNavItemComponent implements OnInit , ControlValueAccessor
 
   setNavbarWidth(navbarwidth:number){
     this.navbarwidth = navbarwidth;
-    debugger;
     if((this.navbarwidth -this.elementref.nativeElement.getBoundingClientRect().right)<165){
       this.enablerightclass = true;
     }
