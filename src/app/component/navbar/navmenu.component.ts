@@ -14,6 +14,8 @@ import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
     </a>
     <div class="nav-dropdown-content">
       <a *ngFor="let node of data" (click)="onClick(node, $event)"><i [ngClass]="node.icon"></i> &nbsp;{{node.text}}</a>
+      
+      <ng-content *ngIf="type==='menucontainer'"></ng-content>
     </div>
   </div>
 
@@ -22,6 +24,8 @@ import {Component, Input, OnInit, Output, EventEmitter} from '@angular/core';
   `
 })
 export class AmexioTestNavMenuComponent implements OnInit {
+
+  @Input() type : string;
 
   @Input() title : string;
 

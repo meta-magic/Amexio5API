@@ -38,6 +38,7 @@ export class AmexioTestNavItemComponent implements OnInit , ControlValueAccessor
   isAction : boolean = false;
   isTextField : boolean = false;
   isMenu : boolean = false;
+  isMenuContainer : boolean = false;
   right : number;
   navbarwidth : number;
   enablerightclass: boolean;
@@ -53,6 +54,8 @@ export class AmexioTestNavItemComponent implements OnInit , ControlValueAccessor
       this.isTextField = true;
     }else if(this.type === "menu"){
       this.isMenu = true;
+    }else if(this.type === "menucontainer"){
+      this.isMenuContainer = true;
     }
   }
 

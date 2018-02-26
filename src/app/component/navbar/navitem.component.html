@@ -2,5 +2,10 @@
 <div class="topnavmainbarinneritems"  [ngClass]="{'topnavmainbarinneritems-mobile':mobilemode, 'nav-dropdown-content-right':enablerightclass}" >
     <amexio-test-nav-action *ngIf="isAction" [type]="type" [title]="title" [icon]="icon" (navLinkClick)="navItemClick($event)"></amexio-test-nav-action>
     <amexio-test-nav-textfield *ngIf="isTextField" [(ngModel)]="value"  [title]="title"></amexio-test-nav-textfield>
-    <amexio-test-nav-menu *ngIf="isMenu" [title]="title" [icon]="icon" [data]="data"  (navLinkClick)="navItemClick($event)"></amexio-test-nav-menu>
+    <amexio-test-nav-menu *ngIf="isMenu" [title]="title" [icon]="icon" [data]="data"  (navLinkClick)="navItemClick($event)">
+    </amexio-test-nav-menu>
+    <amexio-test-nav-menu *ngIf="isMenuContainer" [title]="title" [icon]="icon" [type]="type" (navLinkClick)="navItemClick($event)">
+        <ng-content></ng-content>
+    </amexio-test-nav-menu>
+    
 </div>

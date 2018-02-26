@@ -18,7 +18,7 @@ import {HttpClient} from "@angular/common/http";
            <amexio-row>
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-               <amexio-window [show-window]="showBasicWindow" [footer]="true" (close)="toggleBasicWindow()">
+               <amexio-window [body-height]="40" [show-window]="showBasicWindow" [footer]="true" (close)="toggleBasicWindow()">
                  <amexio-header>
                   Employee Form
                  </amexio-header>
@@ -47,6 +47,32 @@ import {HttpClient} from "@angular/common/http";
                        </amexio-text-input>
                      </amexio-column>
                    </amexio-row>
+
+                   <amexio-row>
+                   <amexio-column [size]="6">
+                     <amexio-text-input [field-label]="'Description'" name="country"
+                                        [place-holder]="'Description'"
+                                        [enable-popover]="true"
+                                        [icon-feedback]="true"
+                                        [allow-blank]="false" [error-msg]="'Please enter name'"
+                                        [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                                        [max-error-msg]="'Name should be less than 15 characters'"
+                     >
+                     </amexio-text-input>
+                   </amexio-column>
+                   <amexio-column [size]="6">
+                     <amexio-text-input [field-label]="'Hobbies'" name="name"
+                                        [place-holder]="'Hobbies'"
+                                        [enable-popover]="true"
+                                        [icon-feedback]="true"
+                                        [allow-blank]="false" [error-msg]="'Please enter Surname'"
+                                        [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                                        [max-error-msg]="'Surname should be less than 15 characters'"
+                     >
+                     </amexio-text-input>
+                   </amexio-column>
+                 </amexio-row>
+
                    <amexio-row>
                      <amexio-column [size]="6">
 
@@ -64,6 +90,33 @@ import {HttpClient} from "@angular/common/http";
                      </amexio-column>
 
                    </amexio-row>
+
+
+                   <amexio-row>
+                   <amexio-column [size]="6">
+                     <amexio-text-input [field-label]="'Phone'" name="country"
+                                        [place-holder]="'Phone'"
+                                        [enable-popover]="true"
+                                        [icon-feedback]="true"
+                                        [allow-blank]="false" [error-msg]="'Please enter name'"
+                                        [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                                        [max-error-msg]="'Name should be less than 15 characters'"
+                     >
+                     </amexio-text-input>
+                   </amexio-column>
+                   <amexio-column [size]="6">
+                     <amexio-text-input [field-label]="'Email'" name="name"
+                                        [place-holder]="'Email'"
+                                        [enable-popover]="true"
+                                        [icon-feedback]="true"
+                                        [allow-blank]="false" [error-msg]="'Please enter Surname'"
+                                        [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                                        [max-error-msg]="'Surname should be less than 15 characters'"
+                     >
+                     </amexio-text-input>
+                   </amexio-column>
+                 </amexio-row>
+                                    
                  </amexio-body>
                  <amexio-action>
                    <amexio-button (onClick)="showBasicWindow = false" label="Close"></amexio-button>
