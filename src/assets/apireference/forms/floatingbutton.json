@@ -13,6 +13,12 @@
       "description": "Type of button : default, primary, success , danger & warning"
     },
     {
+      "name": "relative",
+      "type": "boolean",
+      "default": "false",
+      "description": "Place floating buttong at relative position"
+    },
+    {
       "name": "icon",
       "type": "string",
       "default": "",

@@ -22,11 +22,29 @@ import {HttpClient} from "@angular/common/http";
                    Floating Button Types 
                 </amexio-header>
                 <amexio-body>
-                
-                <amexio-button [label]="'Vertical/Horizontal Poistioning'" (onClick)="onFloatingButtonClick1($event)" [type]="'primary'" [tooltip]="'Using Vertical/Horizontal Poistioning'"></amexio-button>
-                <br/>
-                <br/>
-                <amexio-button [label]="'Right/Left/Top/Right Poistioning'" (onClick)="onFloatingButtonClick2($event)" [type]="'primary'" [tooltip]="'Using Vertical/Horizontal Poistioning'"></amexio-button>
+                  <amexio-row>
+                    <amexio-column size=3>
+                      <amexio-floating-button [relative]="true" [icon]="'fa fa-snowflake-o'" [type]="'primary'"></amexio-floating-button>
+                    </amexio-column>
+                    <amexio-column size=3>
+                      <amexio-floating-button [relative]="true"  [icon]="'fa fa-user-circle-o'" [type]="'warning'"></amexio-floating-button>
+                    </amexio-column>
+                    <amexio-column size=3>
+                      <amexio-floating-button [relative]="true" [icon]="'fa fa-envelope-open'" [type]="'danger'"></amexio-floating-button>
+                    </amexio-column>
+                    <amexio-column size=3>
+                      <amexio-floating-button [relative]="true" [icon]="'fa fa fa-telegram'" [type]="'primary'"></amexio-floating-button>
+                    </amexio-column>
+                  </amexio-row>
+                  <amexio-row>
+                    <amexio-column size=12>
+                    <amexio-button [label]="'Vertical/Horizontal Poistioning'" (onClick)="onFloatingButtonClick1($event)" [type]="'primary'" [tooltip]="'Using Vertical/Horizontal Poistioning'"></amexio-button>
+                    <br/>
+                    <br/>
+                    <amexio-button [label]="'Right/Left/Top/Right Poistioning'" (onClick)="onFloatingButtonClick2($event)" [type]="'primary'" [tooltip]="'Using Vertical/Horizontal Poistioning'"></amexio-button>
+                    </amexio-column>
+                  </amexio-row>
+
                 <div *ngIf="toggle1">
                   <amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'left'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'primary'"></amexio-floating-button>
                   <amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'right'" [label]="'top-right'" [icon]="'fa fa-telegram'" [type]="'success'"></amexio-floating-button>
