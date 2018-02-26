@@ -1,0 +1,78 @@
+{
+  "properties": [
+    {
+      "name": "label",
+      "type": "string",
+      "default": "",
+      "description": "Label on floating button, this is activated in case of block=square "
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": "",
+      "description": "Type of button : default, primary, success , danger & warning"
+    },
+    {
+      "name": "icon",
+      "type": "string",
+      "default": "",
+      "description": "Fa icon class name."
+    },
+    {
+      "name": "block",
+      "type": "string",
+      "default": "cricle",
+      "description": "Display button as round or square"
+    },
+    {
+      "name": "disabled",
+      "type": "boolean",
+      "default": "false",
+      "description": "Enable/Disables the button"
+    },
+    {
+      "name": "vertical-position",
+      "type": "string",
+      "default": "top",
+      "description": "Poistion floating button vertically: top or bottom or center. This attribute is ignored if user specify position explicitly (using position-top/position-bottom/position-left/position-right) "
+    },
+    {
+      "name": "horizontal-position",
+      "type": "string",
+      "default": "right",
+      "description": "Poistion floating button horizontally: left or right or center. This attribute is ignored if user specify position explicitly (using position-top/position-bottom/position-left/position-right) "
+    },
+    {
+      "name": "position-top",
+      "type": "string",
+      "default": "",
+      "description": "Takes top position in percentage or pixel"
+    },
+    {
+      "name": "position-bottom",
+      "type": "string",
+      "default": "",
+      "description": "Takes bottom position in percentage or pixel"
+    },
+    {
+      "name": "position-right",
+      "type": "string",
+      "default": "",
+      "description": "Takes right position in percentage or pixel"
+    },
+    {
+      "name": "position-left",
+      "type": "string",
+      "default": "",
+      "description": "Takes left position in percentage or pixel"
+    }
+  ],
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Fire when button click, not fired in case button is disabled."
+    }
+  ],
+  "css": [
+  ]
+}

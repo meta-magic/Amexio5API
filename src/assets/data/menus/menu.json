@@ -273,6 +273,10 @@
               "text": "Button Dropdown",
               "icon": "fa fa-building fa-fw",
               "link": "buttondropdown-demo"
+            },{
+              "text": "Floating Button",
+              "icon": "fa fa-circle-o",
+              "link": "floatingbutton-demo"
             }
           ]
         },
