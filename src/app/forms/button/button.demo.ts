@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
   selector: 'button-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Button 
+         Button
       </amexio-header>
       <amexio-body>
         <p>A button component with various modes and configurations.</p>
@@ -19,7 +19,7 @@ import {HttpClient} from "@angular/common/http";
             <amexio-column [size]="12">
               <amexio-card [header]="true">
                 <amexio-header>
-                   Button Types  
+                   Button Types
                 </amexio-header>
                 <amexio-body>
                   <amexio-row>
@@ -48,7 +48,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                      Button States 
+                      Button States
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -70,7 +70,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                      Button with Icons 
+                      Button with Icons
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -92,7 +92,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                      Button Sizes 
+                      Button Sizes
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
@@ -110,25 +110,27 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-card>
               </amexio-column>
             </amexio-row>
-            <!--<amexio-row>-->
-              <!--<amexio-column [size]="12">-->
-                <!--<amexio-card [header]="true">-->
-                  <!--<amexio-header>-->
-                    <!--   Block Button -->
-                  <!--</amexio-header>-->
-                  <!--<amexio-body>-->
-                    <!--<amexio-row>-->
-                      <!--<amexio-column [size]="6">-->
-                        <!--<amexio-button [label]="'Block Button(primary)'" [type]="'primary'" [tooltip]="'large'" [size]="'large'" [block]="'true'"></amexio-button>-->
-                      <!--</amexio-column>-->
-                      <!--<amexio-column [size]="6">-->
-                        <!--<amexio-button [label]="'Block Button(success)'" [type]="'success'" [tooltip]="'success'" [size]="'large'" [block]="'true'"></amexio-button>-->
-                      <!--</amexio-column>-->
-                    <!--</amexio-row>-->
-                  <!--</amexio-body>-->
-                <!--</amexio-card>-->
-              <!--</amexio-column>-->
-            <!--</amexio-row>-->
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                    Block Button
+                </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <amexio-button [label]="'Block Button(primary)'" [type]="'primary'" [tooltip]="'large'"  [block]="true"></amexio-button>
+                      </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                      <amexio-column size="12">
+                      <amexio-button [label]="'Block Button(success)'" [type]="'success'" [tooltip]="'success'" [block]="true"></amexio-button>
+                      </amexio-column>
+                    </amexio-row>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
