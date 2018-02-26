@@ -28,6 +28,11 @@
       "type": "string",
       "default": "window",
       "description":"Mode to open, window or dialogue mode."
+    },{
+      "name": "body-height",
+      "type": "number",
+      "default": "",
+      "description":"Assign body height in percentage, in case of maximize=true it will be set to 100% by default"
     }
   ]
 }
