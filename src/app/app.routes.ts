@@ -82,6 +82,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'floatingbutton-demo', loadChildren: './forms/floatingbutton/floatingbutton.demo.module#FloatingButtonDemoModule'
   },
+  {
+    path: 'floatinggroupbutton-demo', loadChildren: './forms/floatinggroup/floatinggroupbutton.demo.module#FloatingGroupButtonDemoModule'
+  },
   /** Navigation*/
   {
     path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'

@@ -277,6 +277,10 @@
               "text": "Floating Button",
               "icon": "fa fa-circle-o",
               "link": "floatingbutton-demo"
+            },{
+              "text": "Floating Group",
+              "icon": "fa fa-circle-o",
+              "link": "floatinggroupbutton-demo"
             }
           ]
         },
