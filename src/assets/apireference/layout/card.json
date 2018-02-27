@@ -25,6 +25,12 @@
       "description":"User can set the height to body."
     },
     {
+      "name": "body-height",
+      "type": "number",
+      "default": "",
+      "description":"Adjust card height based on percentage. Height is adjusted in proposition to HTML body height"
+    },
+    {
       "name": "header-align",
       "type": "string",
       "default": "",
