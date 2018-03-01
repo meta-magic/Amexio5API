@@ -10,18 +10,7 @@
       "type": "string",
       "default": "",
       "description": "Logo of navbar."
-    },  {
-      "name": "http-url",
-      "type": "string",
-      "default": "",
-      "description": "REST url for fetching datasource."
-    },
-    {
-      "name": "http-method",
-      "type": "string",
-      "default": "",
-      "description": "Type of HTTP call, POST,GET."
-    },
+    }, 
    {
       "name": "data",
       "type": "any",
