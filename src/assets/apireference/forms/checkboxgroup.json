@@ -7,11 +7,6 @@
       "description": "The label of this field"
     },
     {
-      "name": "column",
-      "type": "string",
-      "default": "",
-      "description": "Divide checkbox option into equal column."
-    }, {
       "name": "horizontal",
       "type": "boolean",
       "default": "false",

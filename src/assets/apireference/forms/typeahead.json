@@ -25,6 +25,12 @@
       "description": "Type of HTTP call, POST,GET."
     },
     {
+      "name": "key",
+      "type": "string",
+      "default": "",
+      "description": "The key that must be used while searching in data provided"
+    },
+    {
       "name": "display-field",
       "type": "string",
       "default": "",
