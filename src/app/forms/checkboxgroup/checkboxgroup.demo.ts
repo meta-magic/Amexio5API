@@ -46,8 +46,7 @@ import {HttpClient} from "@angular/common/http";
                                            [horizontal]="true"
                                            [value-field]="'checked'"
                                            (onSelection)="selectedCheckboxgroup($event)"
-                                           [data]="checkboxGroupdata"
-                                           [column]="'4'">
+                                           [data]="checkboxGroupdata">
                     </amexio-checkbox-group>
                   </amexio-body>
                 </amexio-card>
@@ -66,8 +65,7 @@ import {HttpClient} from "@angular/common/http";
                                            [display-field]="'language'"
                                            [horizontal]="true"
                                            [value-field]="'checked'"
-                                           [data]="checkboxGroupdatadisabled"
-                                           [column]="'4'">
+                                           [data]="checkboxGroupdatadisabled">
                     </amexio-checkbox-group>
                   </amexio-body>
                 </amexio-card>
