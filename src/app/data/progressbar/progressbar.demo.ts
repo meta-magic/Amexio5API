@@ -25,7 +25,7 @@ import {HttpClient} from "@angular/common/http";
                      <h3>Primary</h3>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [current-value]="'50'" [infinite]="false" type="primary"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'50'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'80'" [infinite]="false" type="success"></amexio-progress-bar>
