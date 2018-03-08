@@ -10,29 +10,12 @@
       "type": "string",
       "default": "",
       "description": "Logo of navbar."
-    },  {
-      "name": "http-url",
-      "type": "string",
-      "default": "",
-      "description": "REST url for fetching datasource."
-    },
+    }, 
     {
-      "name": "http-method",
-      "type": "string",
+      "name": "enable-side-nav-position",
+      "type": "boolean",
       "default": "",
-      "description": "Type of HTTP call, POST,GET."
-    },
-   {
-      "name": "data",
-      "type": "any",
-      "default": "",
-      "description": "Local data for navbar."
-    },
-    {
-      "name": "data-reader",
-      "type": "string",
-      "default": "",
-      "description": "Key in JSON datasource for records."
+      "description": "Indicate if side-nav-bar is present"
     }
   ],
   "propertiesitem": [
@@ -53,6 +36,33 @@
       "type": "string",
       "default": "",
       "description": "Show the content right side. <amexio-nav-item position-right></amexio-nav-item>."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": "",
+      "description": "Indicate the type of menu-items (link / button / textfield /menu )"
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "default": "",
+      "description": "Title for link, button and menu header"
+    },{
+      "name": "icon",
+      "type": "string",
+      "default": "",
+      "description": "Icon for link, button and menu header"
+    },
+    {
+      "name": "data",
+      "type": "array",
+      "default": "",
+      "description": "Standard JSON format array data which is used for rendering menus. This is used when type=menu is defined."
     }
-  ]
+  ],
+    "events": [{
+        "name": "onNavItemClick",
+        "description": "Fire when nav item is clicked "
+    }]
 }

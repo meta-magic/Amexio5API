@@ -31,12 +31,12 @@ import {HttpClient} from "@angular/common/http";
                        <amexio-button [label]="'Success'" [type]="'success'" ></amexio-button>
                        <amexio-button [label]="'Danger'" [type]="'danger'" ></amexio-button>
                        <amexio-button [label]="'Warning'" [type]="'warning'" ></amexio-button>
+                       <amexio-button [label]="'Transparent'" [type]="'transparent'" ></amexio-button>
                      </amexio-btn-group>
                    </amexio-column>
                     </amexio-row>
                   </amexio-body>
                 </amexio-card>
-
               </amexio-column>
             </amexio-row>
             <amexio-row>
@@ -133,7 +133,6 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">

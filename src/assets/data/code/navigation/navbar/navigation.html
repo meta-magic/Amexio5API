@@ -1,12 +1,36 @@
 <!--Nav bar-->
 <amexio-row>
   <amexio-column [size]="6">
-    <amexio-nav [title]="'Amexio'"
-                [logo]="'assets/images/logos/amexio-logo.png'">
-      <amexio-nav-item position-center *ngFor="let topMenu of topMenuData">
-        <a style="padding-left: 30px;color: white;text-decoration:none;cursor: pointer"
-           [target]="topMenu.label == 'Home' ? '' : '_blank'">{{topMenu.label}}</a>
+    <amexio-nav [enable-side-nav-position]="false" 
+    [title]="'Amexio'"	
+    [logo]="'assets/images/logos/amexio-logo.png'">
+    <!--Navbar Item of type link -->
+      <amexio-nav-item position-left 
+        [type]="'link'" 
+        [title]="'Click Link ! '" 
+        (onNavItemClick)="homeLink('http://amexio.tech')">
       </amexio-nav-item>
+      <!--Navbar Item of type textfield -->
+      <amexio-nav-item position-center
+        [type]="'textfield'" 
+        [title]="'Enter your name'" 
+        [(ngModel)] = "uname">			
+      </amexio-nav-item>			        
+      <!--Navbar Item of type button -->              
+      <amexio-nav-item position-center                                         
+        (onNavItemClick)="onClick()" 
+        [icon]="'fa fa-bell fa-fw fa-lg'"
+        [type]="'button'" 
+        [title]="'Click Me ! '" 
+        style="cursor: pointer;">			
+      </amexio-nav-item>
+      <!--Navbar Item of type menu -->
+      <amexio-nav-item position-right *ngFor="let menus of topMenuData" 
+        [type]="'menu'" 
+        [title]="menus.text"
+        [data]="menus.submenus"
+        (onNavItemClick)="externalLink($event)">			
+      </amexio-nav-item>                     	
     </amexio-nav>
   </amexio-column>
 </amexio-row>

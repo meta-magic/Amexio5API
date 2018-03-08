@@ -13,6 +13,12 @@
       "description": "Type of button : default, primary, success , danger & warning"
     },
     {
+      "name": "type (from Amexio v4.1)",
+      "type": "string",
+      "default": "",
+      "description": "Type of button : transparent"
+    },
+    {
       "name": "icon",
       "type": "string",
       "default": "",
@@ -43,6 +49,12 @@
       "description": "Fire when button click "
     }
   ],
+  "av41x": [{
+        "name": "type",
+        "type": "string",
+        "default": "",
+        "description": "Type of button : transparent"
+  }],
   "css": [
   ]
 }

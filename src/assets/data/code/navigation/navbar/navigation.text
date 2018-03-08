@@ -3,26 +3,15 @@ export class NavBarDemo {
   constructor() {
   this.topMenuData = JSON.parse(`[
       {
-        "label" : "Home"
-      },
-      {
-        "label" : "Features"
-      },{
-
-        "label" : "Roadmap"
-      },
-      {
-        "label" : "Downloads"
-      },
-      {
-        "label" : "Forum"
-      },
-      {
-        "label" : "Blogs"
-      },
-      {
-        "label" : "MetaMagic"
-      }
+      "text": "Products",
+      "submenus": [{
+        "text": "Amexio Canvas",
+        "link": "https://amexio.tech/amexio-canvas"
+      }, {
+        "text": "Amexio Themes",
+        "link": "https://amexio.tech/amexio-themes"
+      }]
+    }
     ]
   `);
   }

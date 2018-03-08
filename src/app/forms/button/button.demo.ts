@@ -23,20 +23,23 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-header>
                 <amexio-body>
                   <amexio-row>
-                    <amexio-column size="3">
+                    <amexio-column size="2">
                       <amexio-button [label]="'Secondary'" [type]="'secondary'" [tooltip]="'Secondary Button'"></amexio-button>
                     </amexio-column>
-                    <amexio-column size="3">
+                    <amexio-column size="2">
                       <amexio-button [label]="'Primary'" [type]="'primary'" [tooltip]="'Primary Button'"></amexio-button>
                     </amexio-column>
-                    <amexio-column size="3">
+                    <amexio-column size="2">
                       <amexio-button [label]="'Success'" [type]="'success'" [tooltip]="'Success Button'"></amexio-button>
                     </amexio-column>
-                    <amexio-column size="3">
+                    <amexio-column size="2">
                       <amexio-button [label]="'Danger'" [type]="'danger'" [tooltip]="'danger Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
                       <amexio-button [label]="'Warning'" [type]="'warning'" [tooltip]="'Warning Button'"></amexio-button>
+                    </amexio-column>
+                    <amexio-column size="2">
+                      <amexio-button [label]="'Transparent'" [type]="'transparent'" [tooltip]="'Transparent Button'"></amexio-button>
                     </amexio-column>
                   </amexio-row>
                 </amexio-body>
@@ -156,7 +159,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-
+            
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
