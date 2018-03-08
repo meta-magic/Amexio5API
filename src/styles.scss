@@ -7,6 +7,12 @@
   padding: 88px 10px 20px 0px;
 }
 
+.navbardemo{
+  .topnav{
+    position: unset;
+    //position: static !important;
+  }
+}
 
 @media only screen and (max-width: 1024px) {
   .route-container{

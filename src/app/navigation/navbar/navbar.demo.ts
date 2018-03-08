@@ -18,44 +18,41 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column [size]="12">
-                <div class="navbardemo">
-                  <amexio-nav [enable-side-nav-position]="false" 
-                              [title]="'Amexio'"	
-                              [logo]="'assets/images/logos/amexio-logo.png'">
-                      <amexio-nav-item position-left 
-                          [type]="'link'" 
-                          [title]="'Click Link !'" 
-                          (onNavItemClick)="homeLink('http://amexio.tech')">
-                      </amexio-nav-item>
-                      <amexio-nav-item position-center
-                        [type]="'textfield'" 
-                        [title]="'Enter your name'" [(ngModel)] = "uname">			
-                      </amexio-nav-item>			                      
-                      <amexio-nav-item position-center                                            
-                        (onNavItemClick)="onClick('http://amexio.tech')" 
-                        [icon]="'fa fa-bell fa-fw fa-lg'"
-                        [type]="'button'" 
-                        [title]="'Click Me! '" 
-                        style="cursor: pointer;">			
-                      </amexio-nav-item>		
-                      <amexio-nav-item position-right *ngFor="let menus of topMenuData" 
-                        [type]="'menu'" 
-                        [title]="menus.text"
-                        [data]="menus.submenus"
-                	      (onNavItemClick)="externalLink($event)">			
-                      </amexio-nav-item>                     	
-                	 </amexio-nav>
-                </div> 
+               
                   <amexio-card header="true">
                     <amexio-header>
-                        Welcome User 
+                        Nav Bar Demo 
                     </amexio-header>
                     <amexio-body>
-                      <ng-container *ngIf="uname">
-                        <br />
-                        <amexio-label size="large-bold" 
-                        font-color="#75FF33"> Welcome User,{{uname}}!</amexio-label>
-                      </ng-container>
+                    <div class="navbardemo">
+                    Nav bar has Logo/Title left align, than link, text field, button and menus on right side.<br/>
+                    <amexio-nav [enable-side-nav-position]="false" 
+                                [title]="'Amexio'"	
+                                [logo]="'assets/images/logos/amexio-logo.png'">
+                        <amexio-nav-item position-right
+                            [type]="'link'" 
+                            [title]="'Amexio'" 
+                            (onNavItemClick)="homeLink('http://amexio.tech')">
+                        </amexio-nav-item>
+                        <amexio-nav-item position-right
+                          [type]="'textfield'" 
+                          [title]="'Enter your name'" [(ngModel)] = "uname">			
+                        </amexio-nav-item>			                      
+                        <amexio-nav-item position-right                                            
+                          (onNavItemClick)="onClick('http://amexio.tech')" 
+                          [icon]="'fa fa-bell fa-fw fa-lg'"
+                          [type]="'button'" 
+                          
+                          style="cursor: pointer;">			
+                        </amexio-nav-item>		
+                        <amexio-nav-item position-right *ngFor="let menus of topMenuData" 
+                          [type]="'menu'" 
+                          [title]="menus.text"
+                          [data]="menus.submenus"
+                          (onNavItemClick)="externalLink($event)">			
+                        </amexio-nav-item>                     	
+                     </amexio-nav>
+                  </div>                       
                     </amexio-body>
                   </amexio-card>
                   </amexio-column>
@@ -114,11 +111,7 @@ import {HttpClient} from "@angular/common/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
-              <amexio-tab title="Data Source">
-                <ng-container *ngIf="dataSource">
-                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
-                </ng-container>
-              </amexio-tab>
+               
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="Live">
@@ -148,67 +141,19 @@ export class NavbarDemo {
         "text": "Amexio Themes",
         "link": "https://amexio.tech/amexio-themes"
       }]
-    },
-     {
-      "text": "Start Using",
-      "submenus": [{
-        "text": "Pricing",
-        "link": "https://amexio.tech/pricing"
-      }, {
-        "text": "Downloads",
-        "link": "https://amexio.tech/download"
-      }, {
-        "text": "Subscribe (Beta)",
-        "link": "https://canvas.amexio.org/signup/"
-      }, {
-        "text": "Canvas Login (Beta)",
-        "link": "https://canvas.amexio.org/"
-      }, {
-        "text": "License and Other Docs",
-        "link": "https://amexio.tech/license-and-other-docs-1"
-      }]
-    }, {
-      "text": "Training",
-      "submenus": [{
-        "text": "Amexio Training",
-        "link": "http://metaarivu.com/amexio-training"
-      }]
-    }, {
-      "text": "Engage",
-      "submenus": [{
-        "text": "Events",
-        "link": "https://metamagicglobal.com/events"
-      }, {
-        "text": "Forums",
-        "link": "http://forum.metamagicglobal.com/"
-      }, {
-        "text": "Blogs",
-        "link": "http://blog.metamagicglobal.com/"
-      }, {
-        "text": "Node Package Manager",
-        "link": "https://www.npmjs.com/package/amexio-ng-extensions"
-      }, {
-        "text": "GitHub - Source Code",
-        "link": "https://github.com/meta-magic/amexio.github.io"
-      }]
-    }, {
-      "text": "About Us",
-      "submenus": [{
-        "text": "Contact",
-        "link": "https://metamagicglobal.com/contact"
-      }, {
-        "text": "Company",
-        "link": "http://www.metamagicglobal.com/company"
-      }, {
-        "text": "MetaMagic",
-        "link": "https://www.metamagicglobal.com/"
-      }]
     }]
 `);
 
     this.getHtmlAndTypeScriptCode();
   }
 
+  onClick(event:any){
+    console.log(event);
+  }
+
+  externalLink(event:any){
+    console.log(event);
+  }
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
@@ -236,6 +181,8 @@ export class NavbarDemo {
     }, () => {
       this.dataSource = datasourceData;
     });
+
+    this.dataSource = "";
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
