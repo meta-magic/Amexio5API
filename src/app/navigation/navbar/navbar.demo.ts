@@ -12,7 +12,10 @@ import {HttpClient} from "@angular/common/http";
          Nav Bar 
       </amexio-header>
       <amexio-body>
-        <p>The Nav Bar Component is a familiar top navigation pattern for users.
+        <p>
+          The Nav Bar Component is a familiar top navigation pattern for users. <br/>
+          Nav bar has Logo/Title left align, than link, text field, button and menus on right side.<br/>
+          v4.1 Nav bar is not backward compatible of v4.0, for v4.0 refer <a href="http://amexio.org/api/v4/index.html#/getting-started">link</a>
         </p>
           <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
@@ -25,7 +28,7 @@ import {HttpClient} from "@angular/common/http";
                     </amexio-header>
                     <amexio-body>
                     <div class="navbardemo">
-                    Nav bar has Logo/Title left align, than link, text field, button and menus on right side.<br/>
+                    
                     <amexio-nav [enable-side-nav-position]="false" 
                                 [title]="'Amexio'"	
                                 [logo]="'assets/images/logos/amexio-logo.png'">
@@ -90,7 +93,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/button.json'" [data-reader]="'events'"
+            [http-url]="'assets/apireference/navigation/navbar.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -116,7 +119,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-nav-bar?embed=1&file=app/navigations/navbar/navbar.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            Will be activated once AMEXIo 4.1 is released.
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>

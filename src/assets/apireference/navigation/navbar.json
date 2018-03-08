@@ -63,6 +63,6 @@
   ],
     "events": [{
         "name": "onNavItemClick",
-        "description": "Fire when nav item is clicked "
+        "description": "Fire when nav item is clicked, This event is fired when nav item type is defined as 'link/button/menu' "
     }]
 }
