@@ -24,19 +24,19 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-body>
                   <amexio-row>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Secondary'" [type]="'secondary'" [tooltip]="'Secondary Button'"></amexio-button>
+                      <amexio-button [label]="'Background Color'" [type]="'themeBG'" [tooltip]="'Secondary Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Primary'" [type]="'primary'" [tooltip]="'Primary Button'"></amexio-button>
+                      <amexio-button [label]="'Theme Color'" [type]="'themeColor'" [tooltip]="'Primary Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Success'" [type]="'success'" [tooltip]="'Success Button'"></amexio-button>
+                      <amexio-button [label]="'Green'" [type]="'green'" [tooltip]="'Success Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Danger'" [type]="'danger'" [tooltip]="'danger Button'"></amexio-button>
+                      <amexio-button [label]="'Red'" [type]="'red'" [tooltip]="'danger Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Warning'" [type]="'warning'" [tooltip]="'Warning Button'"></amexio-button>
+                      <amexio-button [label]="'Yellow'" [type]="'yellow'" [tooltip]="'Warning Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
                       <amexio-button [label]="'Transparent'" [type]="'transparent'" [tooltip]="'Transparent Button'"></amexio-button>
@@ -56,13 +56,13 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Disabled'" [type]="'success'" [tooltip]="'Disabled'" [disabled]="'true'" ></amexio-button>
+                        <amexio-button [label]="'Disabled'" [type]="'green'" [tooltip]="'Disabled'" [disabled]="'true'" ></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Enabled'" [type]="'success'" [tooltip]="'Enable'" ></amexio-button>
+                        <amexio-button [label]="'Enabled'" [type]="'green'" [tooltip]="'Enable'" ></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <!--<amexio-button [label]="'Async Task'" [type]="'primary'" [tooltip]="'Async Task'" (onClick)="switchasyncFlag()" [isLoading]="asyncFlag"></amexio-button>-->
+                        <!--<amexio-button [label]="'Async Task'" [type]="'themeColor'" [tooltip]="'Async Task'" (onClick)="switchasyncFlag()" [isLoading]="asyncFlag"></amexio-button>-->
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
@@ -78,13 +78,13 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Next'" [type]="'primary'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"></amexio-button>
+                        <amexio-button [label]="'Next'" [type]="'themeColor'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Download'" [type]="'success'" [tooltip]="'Save'" [icon]="'fa fa-save'"></amexio-button>
+                        <amexio-button [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'"></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Delete'" [type]="'danger'" [tooltip]="'delete'" [icon]="'fa fa-trash'"></amexio-button>
+                        <amexio-button [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'"></amexio-button>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
@@ -100,13 +100,13 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Large Button'" [type]="'primary'" [tooltip]="'large'" [size]="'large'"></amexio-button>
+                        <amexio-button [label]="'Large Button'" [type]="'themeColor'" [tooltip]="'large'" [size]="'large'"></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Default Button'" [type]="'primary'" [tooltip]="'default'"></amexio-button>
+                        <amexio-button [label]="'Default Button'" [type]="'themeColor'" [tooltip]="'default'"></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Small Button'" [type]="'primary'" [tooltip]="'small'" [size]="'small'"></amexio-button>
+                        <amexio-button [label]="'Small Button'" [type]="'themeColor'" [tooltip]="'small'" [size]="'small'"></amexio-button>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
@@ -122,12 +122,12 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column size="12">
-                        <amexio-button [label]="'Block Button(primary)'" [type]="'primary'" [tooltip]="'large'"  [block]="true"></amexio-button>
+                        <amexio-button [label]="'Block Button(theme color)'" [type]="'themeColor'" [tooltip]="'large'"  [block]="true"></amexio-button>
                       </amexio-column>
                       </amexio-row>
                       <amexio-row>
                       <amexio-column size="12">
-                      <amexio-button [label]="'Block Button(success)'" [type]="'success'" [tooltip]="'success'" [block]="true"></amexio-button>
+                      <amexio-button [label]="'Block Button(success)'" [type]="'green'" [tooltip]="'green'" [block]="true"></amexio-button>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>

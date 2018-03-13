@@ -1,0 +1,33 @@
+{
+  "properties": [
+    {
+      "name": "border",
+      "type": "string",
+      "default": "none",
+      "description": " Can set border position : top / right / left / bottom / all / top-bottom / left-right"
+    },
+    {
+      "name": "border-color",
+      "type": "string",
+      "default": " theme's border color",
+      "description": "Can use amexio colours : red / blue / green / yellow / brown / purple "
+    },
+    {
+      "name": "background-color",
+      "type": "string",
+      "default": " theme's background color",
+      "description": "Can use amexio colours : red / blue / green / yellow / brown / purple "
+    },
+    {
+      "name": "padding",
+      "type": "boolean",
+      "default": " false",
+      "description": "padding to all sides"
+    }
+  ],
+  "events": [
+
+  ],
+  "css": [
+  ]
+}

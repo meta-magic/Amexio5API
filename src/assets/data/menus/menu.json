@@ -20,6 +20,11 @@
           "link": "border"
         },
         {
+          "text": "Box",
+          "link": "box-demo",
+          "icon": "fa fa-square"
+        },
+        {
           "text": "Column",
           "link": "column-demo",
           "icon": "fa fa-columns fa-fw"
@@ -145,7 +150,7 @@
       ]
     },
     {
-      "text": "Form inputs",
+      "text": "Form Inputs",
       "icon": "fa fa-clone fa-fw",
       "children": [
         {

@@ -36,19 +36,19 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-column size=6>
                       <amexio-floating-group-button [relative]="true" 
                       (onClick)="onFloatingClick($event)" [data]="floatingbuttongroup" [floating-group-position]="'top'"
-                      [icon]="'fa fa-ellipsis-v'" [type]="'primary'">
+                      [icon]="'fa fa-ellipsis-v'" [type]="'themeColor'">
                       </amexio-floating-group-button>
                     </amexio-column>
                     <amexio-column size=6>
                       <amexio-floating-group-button [relative]="true" 
                       (onClick)="onFloatingClick($event)" [data]="floatingbuttongroup" [floating-group-position]="'bottom'"
-                      [icon]="'fa fa-ellipsis-v'" [type]="'success'">
+                      [icon]="'fa fa-ellipsis-v'" [type]="'green'">
                       </amexio-floating-group-button>
                     </amexio-column>
 
                     <amexio-floating-group-button (onClick)="onFloatingClick($event)" [data]="floatingbuttongroup" [floating-group-position]="'top'"
                     [position-bottom]="'5%'" [position-right]="'5%'"
-                    [icon]="'fa fa-ellipsis-v'" [type]="'danger'">
+                    [icon]="'fa fa-ellipsis-v'" [type]="'red'">
                     </amexio-floating-group-button>
 
                   </amexio-row>
@@ -127,9 +127,9 @@ export class FloatingGroupButtonDemo {
   constructor(private http: HttpClient) {
       this.getHtmlAndTypeScriptCode();
       this.floatingbuttongroup = [
-        {'label':'Facebook', 'icon':'fa fa-facebook','type':'warning'},
-        {'label':'Twitter', 'icon':'fa fa-facebook','type':'success'},
-        {'label':'Google', 'icon':'fa fa-google-plus','type':'primary'}
+        {'label':'Facebook', 'icon':'fa fa-facebook','type':'yellow'},
+        {'label':'Twitter', 'icon':'fa fa-facebook','type':'green'},
+        {'label':'Google', 'icon':'fa fa-google-plus','type':'themeColor'}
       ];
   }
   getDta() {

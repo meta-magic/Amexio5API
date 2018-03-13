@@ -26,11 +26,11 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                    <amexio-column [size]="12">
                      <amexio-btn-group>
-                       <amexio-button [label]="'Secondary'" (onClick)="getData($event)"></amexio-button>
-                       <amexio-button [label]="'primary'"  [type]="'primary'"  ></amexio-button>
-                       <amexio-button [label]="'Success'" [type]="'success'" ></amexio-button>
-                       <amexio-button [label]="'Danger'" [type]="'danger'" ></amexio-button>
-                       <amexio-button [label]="'Warning'" [type]="'warning'" ></amexio-button>
+                       <amexio-button [label]="'Background Color'" (onClick)="getData($event)"></amexio-button>
+                       <amexio-button [label]="'Theme Color'"  [type]="'themeColor'"  ></amexio-button>
+                       <amexio-button [label]="'Green'" [type]="'green'" ></amexio-button>
+                       <amexio-button [label]="'Red'" [type]="'red'" ></amexio-button>
+                       <amexio-button [label]="'Yellow'" [type]="'yellow'" ></amexio-button>
                        <amexio-button [label]="'Transparent'" [type]="'transparent'" ></amexio-button>
                      </amexio-btn-group>
                    </amexio-column>
@@ -49,8 +49,8 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-btn-group>
-                          <amexio-button [label]="'Disabled'"  [type]="'primary'"  [tooltip]="'Disabled'" [disabled]="'true'"></amexio-button>
-                          <amexio-button [label]="'Enabled'" [type]="'primary'" [tooltip]="'Enabled'"></amexio-button>
+                          <amexio-button [label]="'Disabled'"  [type]="'themeColor'"  [tooltip]="'Disabled'" [disabled]="'true'"></amexio-button>
+                          <amexio-button [label]="'Enabled'" [type]="'themeColor'" [tooltip]="'Enabled'"></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>
@@ -69,9 +69,9 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-btn-group>
-                          <amexio-button [label]="'Next'" [type]="'primary'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
-                          <amexio-button [label]="'Download'" [type]="'success'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
-                          <amexio-button [label]="'Delete'" [type]="'danger'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                          <amexio-button [label]="'Next'" [type]="'themeColor'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
+                          <amexio-button [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>
@@ -90,16 +90,16 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                       <amexio-column [size]="6">
                         <amexio-btn-group  >
-                          <amexio-button [size]="'large'" [label]="'Next'" [type]="'primary'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'" ></amexio-button>
-                          <amexio-button [size]="'large'" [label]="'Download'" [type]="'success'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
-                          <amexio-button [size]="'large'" [label]="'Delete'" [type]="'danger'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Next'" [type]="'themeColor'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                       <amexio-column [size]="6">
                         <amexio-btn-group >
-                          <amexio-button [size]="'small'" [label]="'Next'" [type]="'primary'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
-                          <amexio-button [size]="'small'" [label]="'Download'" [type]="'success'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
-                          <amexio-button [size]="'small'" [label]="'Delete'" [type]="'danger'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Next'" [type]="'themeColor'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>

@@ -129,6 +129,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'icon-tab-demo', loadChildren: './layout/tab/iconwithtab/iconwithtab.demo.module#IconWithTabDemoModule'
+  },  
+  {
+    path: 'box-demo', loadChildren: './layout/box/box.demo.module#BoxDemoModule'
   },
   {
     path: 'scrollable-tab-demo', loadChildren: './layout/tab/scrollabletab/scrollabletab.demo.module#ScrollableTabDemoModule'

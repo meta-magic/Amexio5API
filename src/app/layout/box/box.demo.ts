@@ -1,47 +1,21 @@
 /**
- * Created by sagar on 9/1/18.
+ * Created by anagha on 13/3/18.
  */
-
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'label-demo', template: `
+  selector: 'box-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-        Amexio Label
+        Amexio Box
       </amexio-header>
       <amexio-body>
-        <p>Amexio Label can be easily wrapped around any text and configure using the different responsive styling</p>
+        <p>Amexio Box can be easily wrapped around any other component and configure using the different responsive styling</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-          <h2>Label Component</h2>
+          <h2>Box Component</h2>
           <amexio-row>
-          <amexio-column [size]="4">
-            <amexio-label size="large">This is large amexio label</amexio-label>
-          </amexio-column>
-          <amexio-column [size]="4">
-            <amexio-label size="large-bold">This is large-bold amexio label</amexio-label>
-          </amexio-column>
-          <amexio-column [size]="4">    
-            <amexio-label size="medium-bold">This is medium-bold amexio label</amexio-label>
-          </amexio-column>
-          </amexio-row>
-          <br/>
-          <amexio-row>        
-          <amexio-column [size]="4">
-            <amexio-label>This is small amexio label</amexio-label>
-          </amexio-column>
-            <amexio-column [size]="4">
-            <amexio-label size="small-bold">This is small-bold amexio label</amexio-label>
-          </amexio-column>
-            <amexio-column [size]="4">
-            <amexio-label size="medium-bold" font-color="#FF5733">This is  amexio label</amexio-label>
-          </amexio-column>
-          </amexio-row> 
-          <br/>
-          <h2>Label and Box Component</h2>
-            <amexio-row>
             <amexio-column [size]="4">
               <amexio-box border-color ="red" border="top" padding="true">
                  <amexio-label  border="top">This is small-bold amexio label with red border</amexio-label>
@@ -55,7 +29,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column [size]="4">
             <amexio-box border-color ="yellow" border="right" padding="true">
               <amexio-label  border="right">This is small-bold amexio label with yellow border</amexio-label>
-            </amexio-box>    
+            </amexio-box>   
             </amexio-column>
             </amexio-row>
             <br />
@@ -118,7 +92,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/label.json'"
+                             [http-url]="'assets/apireference/layout/box.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -130,8 +104,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-            <br>
-
+            
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
@@ -161,7 +134,7 @@ import {HttpClient} from "@angular/common/http";
 
   `
 })
-export class LabelDemo {
+export class BoxDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -176,7 +149,7 @@ export class LabelDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/label/label.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/layout/box/box.html',{responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -184,7 +157,7 @@ export class LabelDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/label/label.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/layout/box/box.text',{responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

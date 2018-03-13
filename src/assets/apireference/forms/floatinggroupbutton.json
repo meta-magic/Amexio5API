@@ -4,7 +4,7 @@
       "name": "type",
       "type": "string",
       "default": "",
-      "description": "Type of button : default, primary, success , danger & warning"
+      "description": "Type of button : default, themeColor, themeBG, green, red, yellow"
     },
     {
       "name": "relative",
