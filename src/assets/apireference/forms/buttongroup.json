@@ -10,7 +10,7 @@
       "name": "type",
       "type": "string",
       "default": "",
-      "description": "Type of button : default,themeColor,themeBG, green, red, yellow( primary, secondary ,success , danger & warning Depricated v4.1 onwards)"
+      "description": "Type of button : default, theme-color, theme-backgroundcolor, green, red, yellow ( primary, secondary ,success , danger & warning Depricated v4.1 onwards)"
     },
     {
       "name": "type (from Amexio v4.1)",

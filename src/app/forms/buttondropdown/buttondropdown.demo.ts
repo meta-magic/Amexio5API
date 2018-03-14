@@ -42,13 +42,13 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column size="6">
-                        <amexio-btn-dropdown [label]="'Button'" [type]="'themeColor'" [size]="'large'">
+                        <amexio-btn-dropdown [label]="'Button'" [type]="'theme-color'" [size]="'large'">
                           <amexio-btn-dropdown-item [label]="'Link 1'" ></amexio-btn-dropdown-item>
                           <amexio-btn-dropdown-item [label]="'Link 2'" ></amexio-btn-dropdown-item>
                         </amexio-btn-dropdown>
                       </amexio-column>
                       <amexio-column size="6">
-                        <amexio-btn-dropdown [label]="'Button'" [type]="'themeColor'" [size]="'small'">
+                        <amexio-btn-dropdown [label]="'Button'" [type]="'theme-color'" [size]="'small'">
                           <amexio-btn-dropdown-item [label]="'Link 1'" ></amexio-btn-dropdown-item>
                           <amexio-btn-dropdown-item [label]="'Link 2'" ></amexio-btn-dropdown-item>
                         </amexio-btn-dropdown>
@@ -67,7 +67,7 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
-                      <amexio-btn-dropdown [label]="'Disabled Link'" [type]="'themeColor'" [size]="'default'">
+                      <amexio-btn-dropdown [label]="'Disabled Link'" [type]="'theme-color'" [size]="'default'">
                         <amexio-btn-dropdown-item [label]="'Disabled'"  [icon]="'fa fa-fullscreen'" [disabled]="true"></amexio-btn-dropdown-item>
                         <amexio-btn-dropdown-item [label]="'Link 2'" [icon]="'fa fa-trash'"></amexio-btn-dropdown-item>
                       </amexio-btn-dropdown>

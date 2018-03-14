@@ -36,7 +36,7 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-column size=6>
                       <amexio-floating-group-button [relative]="true" 
                       (onClick)="onFloatingClick($event)" [data]="floatingbuttongroup" [floating-group-position]="'top'"
-                      [icon]="'fa fa-ellipsis-v'" [type]="'themeColor'">
+                      [icon]="'fa fa-ellipsis-v'" [type]="'theme-color'">
                       </amexio-floating-group-button>
                     </amexio-column>
                     <amexio-column size=6>
@@ -129,7 +129,7 @@ export class FloatingGroupButtonDemo {
       this.floatingbuttongroup = [
         {'label':'Facebook', 'icon':'fa fa-facebook','type':'yellow'},
         {'label':'Twitter', 'icon':'fa fa-facebook','type':'green'},
-        {'label':'Google', 'icon':'fa fa-google-plus','type':'themeColor'}
+        {'label':'Google', 'icon':'fa fa-google-plus','type':'theme-color'}
       ];
   }
   getDta() {

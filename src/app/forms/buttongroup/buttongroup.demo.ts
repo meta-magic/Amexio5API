@@ -26,8 +26,8 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                    <amexio-column [size]="12">
                      <amexio-btn-group>
-                       <amexio-button [label]="'Background Color'" (onClick)="getData($event)"></amexio-button>
-                       <amexio-button [label]="'Theme Color'"  [type]="'themeColor'"  ></amexio-button>
+                       <amexio-button [label]="'Background Color'" [type]="'theme-backgroundcolor'" (onClick)="getData($event)"></amexio-button>
+                       <amexio-button [label]="'Theme Color'"  [type]="'theme-color'"  ></amexio-button>
                        <amexio-button [label]="'Green'" [type]="'green'" ></amexio-button>
                        <amexio-button [label]="'Red'" [type]="'red'" ></amexio-button>
                        <amexio-button [label]="'Yellow'" [type]="'yellow'" ></amexio-button>
@@ -49,8 +49,8 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-btn-group>
-                          <amexio-button [label]="'Disabled'"  [type]="'themeColor'"  [tooltip]="'Disabled'" [disabled]="'true'"></amexio-button>
-                          <amexio-button [label]="'Enabled'" [type]="'themeColor'" [tooltip]="'Enabled'"></amexio-button>
+                          <amexio-button [label]="'Disabled'"  [type]="'theme-color'"  [tooltip]="'Disabled'" [disabled]="'true'"></amexio-button>
+                          <amexio-button [label]="'Enabled'" [type]="'theme-color'" [tooltip]="'Enabled'"></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                     </amexio-row>
@@ -69,7 +69,7 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                       <amexio-column [size]="12">
                         <amexio-btn-group>
-                          <amexio-button [label]="'Next'" [type]="'themeColor'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
+                          <amexio-button [label]="'Next'" [type]="'theme-color'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
                           <amexio-button [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
                           <amexio-button [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
@@ -90,14 +90,14 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-row>
                       <amexio-column [size]="6">
                         <amexio-btn-group  >
-                          <amexio-button [size]="'large'" [label]="'Next'" [type]="'themeColor'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'" ></amexio-button>
+                          <amexio-button [size]="'large'" [label]="'Next'" [type]="'theme-color'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'" ></amexio-button>
                           <amexio-button [size]="'large'" [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
                           <amexio-button [size]="'large'" [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>
                       </amexio-column>
                       <amexio-column [size]="6">
                         <amexio-btn-group >
-                          <amexio-button [size]="'small'" [label]="'Next'" [type]="'themeColor'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
+                          <amexio-button [size]="'small'" [label]="'Next'" [type]="'theme-color'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"  ></amexio-button>
                           <amexio-button [size]="'small'" [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'" ></amexio-button>
                           <amexio-button [size]="'small'" [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'" ></amexio-button>
                         </amexio-btn-group>

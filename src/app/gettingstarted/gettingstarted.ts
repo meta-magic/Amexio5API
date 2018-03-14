@@ -20,7 +20,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
               <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
             </a>
             <br>
-            <h1>Amexio Angular EXtensions v4.0</h1>
+            <h1>Amexio Angular EXtensions v4.1</h1>
             <br>
             <amexio-image path="assets/images/npm.svg"></amexio-image>
             <amexio-image
@@ -225,11 +225,17 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
                   <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'"
                                             [hidden]="false"
                                             [text]="'Theme Name'">
-                  </amexio-data-table-column>
-                  <amexio-data-table-column [width]="65" [data-index]="'description'"
+                                            </amexio-data-table-column>
+                  <amexio-data-table-column [width]="15" [data-index]="'version'"
                                             [data-type]="'string'"
                                             [hidden]="false"
-                                            [text]="'Path'"></amexio-data-table-column>
+                                            [text]="'Version'">
+                                            </amexio-data-table-column>
+                  <amexio-data-table-column [width]="60" [data-index]="'description'"
+                                            [data-type]="'string'"
+                                            [hidden]="false"
+                                            [text]="'Path'">
+                                            </amexio-data-table-column>
                 </amexio-datagrid>
               </amexio-column>
             </amexio-row>
