@@ -23,23 +23,6 @@
       "type": "boolean",
       "default": "false",
       "description":"Can use Angle Icons instead of default plus/minus icons"
-    },
-    {
-      "name": "footer",
-      "type": "boolean",
-      "default": "false",
-      "description":"User can enable footer of card by setting this flag to true."
-    },
-    {
-      "name": "header-align",
-      "type": "string",
-      "default": "",
-      "description":"Align of item elements inside card header example : right,center,left."
-    },{
-      "name": "footer-align",
-      "type": "string",
-      "default": "",
-      "description":"Align of item elements inside card footer example : right,center,left."
     },{
       "name": "disabled",
       "type": "boolean",
