@@ -10,7 +10,7 @@
       "name": "type",
       "type": "string",
       "default": "",
-      "description": "Type of button : default, themeColor, themeBG, green, red, yellow"
+      "description": "Type of button : default, theme-color, theme-backgroundcolor, green, red, yellow"
     },
     {
       "name": "relative",
