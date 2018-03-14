@@ -17,6 +17,8 @@ phases:
             - npm install @angular-devkit/core --save
             - npm i node-sass --save-dev
             - ng set defaults.styleExt scss
+            - aws s3 sync s3://amexio.io.v4.1/themes/ src/assets/themes/ --region us-east-2
+
 
 
     build:
