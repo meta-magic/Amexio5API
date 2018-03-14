@@ -6,6 +6,11 @@
       "icon" : "fa fa-home fa-fw"
     },
     {
+      "text" : "Amexio Colors",
+      "link" : "theme",
+      "icon" : "fa fa-snowflake-o fa-fw"
+    },
+    {
       "text": "Layouts",
       "icon": "fa fa-desktop fa-fw",
       "children": [

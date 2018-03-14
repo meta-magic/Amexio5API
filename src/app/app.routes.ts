@@ -10,6 +10,8 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
   }, {
     path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
+  },{
+    path: 'theme', loadChildren: './theme/theme.module#ThemeModule'
   },
   {
     path: 'email-demo', loadChildren: './forms/email/email.demo.module#EmailDemoModule'

@@ -24,6 +24,7 @@
     "amexio-ng-extensions": "https://s3.us-east-2.amazonaws.com/amexio.io.v4.1/amexio-ng-extensions-4.1.0.tgz",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.4.1",
+    "ngx-cookie-service": "^1.0.10",
     "rxjs": "^5.5.2",
     "zone.js": "^0.8.14"
   },
