@@ -11,8 +11,8 @@ import { CookieService } from 'ngx-cookie-service';
     <amexio-image [path]="'assets/images/logos/amexio_colors.png'"[tooltip]="'Image'"></amexio-image>
 
     <amexio-tab-view  [closable]="false">
-        <amexio-tab title="Themes" [active]="true">
-            <amexio-row *ngFor="let row of themeData">
+        <amexio-tab title="MDA" [active]="true">
+            <amexio-row *ngFor="let row of mdThemeData">
                 <amexio-column [size]="(12/row.length)" *ngFor="let col of row">
                     <div class="card-container">
                         <header class="card-header flex-start" [ngStyle]="{'background-color':col.navBarBGColor, 'color':col.navBarFontColor}" >
@@ -30,6 +30,22 @@ import { CookieService } from 'ngx-cookie-service';
                 </amexio-column>
             </amexio-row>
         </amexio-tab>
+        <amexio-tab title="Amexio">
+            <amexio-row *ngFor="let row of amexioThemeData">
+                <amexio-column [size]="(12/row.length)" *ngFor="let col of row">
+                    <div class="card-container">
+                        <header class="card-header flex-start" [ngStyle]="{'background-color':col.navBarBGColor, 'color':col.navBarFontColor}" >
+                            <amexio-label>{{col.themeName}}</amexio-label>
+                        </header>
+                        <div class="card-body cardbody">
+                            <amexio-image [path]="'assets/images/theme-icons/'+col.link"></amexio-image> <br/>
+                            <amexio-label [size]="'small'">Version: {{col.version}}</amexio-label> <br/>
+                            <amexio-label>Style: {{col.style}}</amexio-label> <br/>
+                        </div> 
+                    </div>
+                </amexio-column>
+            </amexio-row>
+        </amexio-tab>
         <amexio-tab title="Colors">
             Amexio Colors will come over here.
         </amexio-tab>
@@ -39,7 +55,8 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class ThemeComponent implements OnInit {
   
-  themeData : any;
+  mdThemeData : any;
+  amexioThemeData : any;
   hasThemeInit : boolean = false;
   newThemePath : string;
 
@@ -55,9 +72,17 @@ export class ThemeComponent implements OnInit {
         response = data;
       }, error => {
       }, () => {
-        this.themeData = response;
-        console.log(this.themeData);
+        this.mdThemeData = response;
+        
       });
+
+      this.http.get('assets/data/theme/theme-api-showcase-amexio.json',{responseType: 'json'}).subscribe(data => {
+        response = data;
+      }, error => {
+      }, () => {
+        this.amexioThemeData = response;
+        
+      });      
   }
 
   
