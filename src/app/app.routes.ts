@@ -11,7 +11,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   }, {
     path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
   },{
-    path: 'theme', loadChildren: './theme/theme.module#ThemeModule'
+    path: 'amexio-colors', loadChildren: './theme/theme.module#ThemeModule'
   },
   {
     path: 'email-demo', loadChildren: './forms/email/email.demo.module#EmailDemoModule'
