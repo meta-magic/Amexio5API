@@ -8,7 +8,7 @@ import { CookieService } from 'ngx-cookie-service';
   selector: 'theme-page',
   template: `
 
-    <amexio-image [path]="'assets/images/logos/amexio_colors.jpeg'"[tooltip]="'Image'"></amexio-image>
+    <amexio-image [path]="'assets/images/logos/amexio_colors.png'"[tooltip]="'Image'"></amexio-image>
 
     <amexio-tab-view  [closable]="false">
         <amexio-tab title="Themes" [active]="true">
