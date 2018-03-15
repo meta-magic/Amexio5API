@@ -11,7 +11,7 @@ import { CookieService } from 'ngx-cookie-service';
     <amexio-image [path]="'assets/images/logos/amexio_colors.png'"[tooltip]="'Image'"></amexio-image>
 
     <amexio-tab-view  [closable]="false">
-        <amexio-tab title="MDA" [active]="true">
+        <amexio-tab title="Material Design" [active]="true">
             <amexio-row *ngFor="let row of mdThemeData">
                 <amexio-column [size]="(12/row.length)" *ngFor="let col of row">
                     <div class="card-container">
@@ -47,7 +47,25 @@ import { CookieService } from 'ngx-cookie-service';
             </amexio-row>
         </amexio-tab>
         <amexio-tab title="Colors">
-            Amexio Colors will come over here.
+        <amexio-datagrid title="Amexio Colours" [enable-column-fiter]="false"
+        [http-method]="'get'"
+        [http-url]="'assets/data/theme/amexio-colours.json'"
+        [data-reader]="'colours'"
+        [enable-data-filter]="false">
+<amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                   [text]="'Name'"></amexio-data-table-column>
+<amexio-data-table-column [width]="15" [data-index]="'valueL'" [data-type]="'string'" [hidden]="false"
+                   [text]="'Colour'">
+                   <ng-template #amexioBodyTmpl let-column let-row="row">
+                   <span>
+                    <div [ngStyle]="{'background-color':row.valueL}"> Light : {{row.valueL}}                        
+                    </div>  
+                    <div [ngStyle]="{'background-color':row.valueD}"> Dark : {{row.valueD}}                        
+                    </div>                   
+                   </span>
+                    </ng-template>
+                   </amexio-data-table-column>
+</amexio-datagrid>
         </amexio-tab>
     </amexio-tab-view>
 
