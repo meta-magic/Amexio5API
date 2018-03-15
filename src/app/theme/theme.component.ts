@@ -69,11 +69,11 @@ import { CookieService } from 'ngx-cookie-service';
         </amexio-tab>
         <amexio-tab title="Getting Started">
         <amexio-label size="large">To install the Amexio Colors:</amexio-label>
-        <amexio-box background-color="blue" border="left" padding="true">
+        <amexio-box background-color="blue" border="left" border-color="blue" padding="true">
             <amexio-label size="medium-bold">$ sudo npm install -g amexio-colors</amexio-label>
         </amexio-box>
         <amexio-label size="large">Check the Amexio Colors version:</amexio-label>
-        <amexio-box background-color="blue" border="left" padding="true" >
+        <amexio-box background-color="blue" border="left" border-color="blue" padding="true" >
             <amexio-label size="medium-bold"> $ ac </amexio-label><br/>
             <amexio-label> Amexio Colors v1.0 </amexio-label><br/>
             <amexio-label> Copyright (c) 2018, MetaMagic Global Inc, NJ, USA </amexio-label><br/>
@@ -81,7 +81,7 @@ import { CookieService } from 'ngx-cookie-service';
         </amexio-box>
         <amexio-label size="large">To Generate Amexio Material Design Themes</amexio-label>
         
-        <amexio-box background-color="blue" border="left" padding="true" >       
+        <amexio-box background-color="blue" border="left" border-color="blue" padding="true" >       
         <amexio-label size="medium-bold">$ pwd</amexio-label><br/>
         <amexio-label size="medium">/home/user/</amexio-label><br/><br/>
         <amexio-label size="medium-bold">$ mkdir mythemes</amexio-label><br/>
