@@ -1,0 +1,35 @@
+{
+    "colours": [
+      {
+        "name": "Red",
+        "valueL": "#ff7f50",
+        "valueD" : "#dc143c"
+      },
+      {
+        "name": "Green",
+        "valueL": "#00ff00",
+        "valueD" :  "#2e8b57"
+      },
+      {
+        "name": "Purple",
+        "valueL": "#ff00ff",
+        "valueD" : "#8b008b"
+      },
+      {
+        "name": "Blue",
+        "valueL": "#00bfff",
+        "valueD":"#00008b"
+      },
+      {
+        "name": "Brown",
+        "valueL": "#f4a460",
+        "valueD":"#800000"
+      },
+      {
+        "name": "Yellow",
+        "valueL": "#ffd700",
+        "valueD":"#ff9900"
+      }
+    ]
+  }
+  
