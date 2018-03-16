@@ -25,7 +25,7 @@ import {HttpClient} from "@angular/common/http";
                      <h3>Primary</h3>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [current-value]="'50'" [infinite]="false" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar  [stripped]="true"  [current-value]="'50'" [infinite]="false" [amexio-color]="'amexio-black'"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'80'" [infinite]="false" type="success"></amexio-progress-bar>
@@ -73,7 +73,7 @@ import {HttpClient} from "@angular/common/http";
                     <h3>Infinite</h3>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [current-value]="'54'" [infinite]="true" type="danger"></amexio-progress-bar>
+                        <amexio-progress-bar [stripped]="true" [current-value]="'54'" [infinite]="true"  [amexio-color]="'amexio-black'"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'32'" [infinite]="true" type="success"></amexio-progress-bar>

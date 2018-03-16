@@ -41,6 +41,12 @@
       "type": "boolean",
       "default": "false",
       "description":"Bar styled stripped."
+    },
+    {
+      "name": "amexio-color(from v4.1.X)",
+      "type": "string",
+      "default": "",
+      "description":"use different inbuilt amexio colors available (e.g amexio-black, amexio-red etc)"
     }
   ]
 }

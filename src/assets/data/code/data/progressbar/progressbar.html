@@ -3,9 +3,9 @@
 <amexio-row>
   <h3>Primary</h3>
   <amexio-column [size]="4">
-    <amexio-progress-bar [current-value]="'50'"
+    <amexio-progress-bar [stripped]="true"  [current-value]="'50'"
                          [infinite]="false"
-                         type="success">
+                         [amexio-color]="'amexio-black'">
     </amexio-progress-bar>
   </amexio-column>
   <amexio-column [size]="4">
@@ -87,9 +87,10 @@
 <amexio-row>
   <h3>Infinite</h3>
   <amexio-column [size]="4">
-    <amexio-progress-bar [current-value]="'54'"
+    <amexio-progress-bar [stripped]="true"  
+                         [current-value]="'54'"
                          [infinite]="true"
-                         type="danger">
+                         [amexio-color]="'amexio-blue'">
     </amexio-progress-bar>
   </amexio-column>
   <amexio-column [size]="4">
