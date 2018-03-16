@@ -15,8 +15,8 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column [size]="6">
-                <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
-                  <amexio-west [content-align]="'center'">
+                <amexio-datapoints [amexio-color]="'amexio-yellow'" [west]="true" [center]="true" [east]="true" [south]="true">
+                  <amexio-west  [content-align]="'center'">
                     <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
                     </amexio-image>
                   </amexio-west>
@@ -24,7 +24,7 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-label size="large-bold">$200 Million</amexio-label><br/>
                     <amexio-label size="medium">Sales Volume</amexio-label>
                   </amexio-center>
-                  <amexio-south [content-align]="'center'">
+                  <amexio-south [c-class]= "'amexio-yellow-light'" [content-align]="'center'">
                     <amexio-label>10% More than last year</amexio-label>
                   </amexio-south>
                 </amexio-datapoints>

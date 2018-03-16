@@ -36,6 +36,11 @@
       "type": "string",
       "default": "false",
       "description":"Font color for datapoint."
+    }, {
+      "name": "amexio-color(from v4.1.X)",
+      "type": "string",
+      "default": "",
+      "description":"use different inbuilt amexio colors available (e.g amexio-black, amexio-red etc)"
     }
   ],
   "location": [
