@@ -22,10 +22,11 @@ import {HttpClient} from "@angular/common/http";
                      Progress Bar 
                   </amexio-header>
                   <amexio-body>
+                  
                      <h3>Primary</h3>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar  [stripped]="true"  [current-value]="'50'" [infinite]="false" [amexio-color]="'amexio-purple'"></amexio-progress-bar>
+                        <amexio-progress-bar [current-value]="'50'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'80'" [infinite]="false" type="success"></amexio-progress-bar>
@@ -73,15 +74,42 @@ import {HttpClient} from "@angular/common/http";
                     <h3>Infinite</h3>
                     <amexio-row>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [stripped]="true" [current-value]="'54'" [infinite]="true"  [amexio-color]="'amexio-black'"></amexio-progress-bar>
+                        <amexio-progress-bar [stripped]="true" [current-value]="'54'" [infinite]="true"  type="danger"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [current-value]="'32'" [infinite]="true" type="success"></amexio-progress-bar>
+                        <amexio-progress-bar [stripped]="true" [current-value]="'32'" [infinite]="true" type="success"></amexio-progress-bar>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-progress-bar [current-value]="'85'" [infinite]="true" type="warning"></amexio-progress-bar>
+                        <amexio-progress-bar [stripped]="true" [current-value]="'85'" [infinite]="true" type="warning"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
+                    <h3>Amexio - Colours </h3>
+                  <amexio-row>
+                    <amexio-column [size]="4">
+                      <amexio-progress-bar [current-value]="'50'" [infinite]="false" [amexio-color]="'amexio-purple'"></amexio-progress-bar>
+                    </amexio-column>
+                    <amexio-column [size]="4">
+                      <amexio-progress-bar  [current-value]="'80'" [infinite]="false" [amexio-color]="'amexio-green'"></amexio-progress-bar>
+                    </amexio-column>
+                    <amexio-column [size]="4">
+                      <amexio-progress-bar  [current-value]="'100'" [infinite]="false" [amexio-color]="'amexio-yellow'"></amexio-progress-bar>
+                    </amexio-column>
+                  </amexio-row>
+                  
+                  <amexio-row>
+                    <amexio-column [size]="3">
+                      <amexio-progress-bar [stripped]="true"  [current-value]="'50'" [infinite]="false" [amexio-color]="'amexio-red'"></amexio-progress-bar>
+                    </amexio-column>
+                    <amexio-column [size]="3">
+                      <amexio-progress-bar [stripped]="true" [current-value]="'80'" [infinite]="false" [amexio-color]="'amexio-blue'"></amexio-progress-bar>
+                    </amexio-column>
+                    <amexio-column [size]="3">
+                      <amexio-progress-bar [stripped]="true" [current-value]="'60'" [infinite]="false" [amexio-color]="'amexio-brown'"></amexio-progress-bar>
+                    </amexio-column>
+                    <amexio-column [size]="3">
+                    <amexio-progress-bar [stripped]="true" [current-value]="'54'" [infinite]="true"  [amexio-color]="'amexio-black'"></amexio-progress-bar>
+                    </amexio-column>
+                  </amexio-row>
                   </amexio-body>
                 </amexio-card>
 

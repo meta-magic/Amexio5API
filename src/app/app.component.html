@@ -1,10 +1,14 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
   <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'"
     [logo]="'assets/images/logos/amexio-logo.png'">
-    <amexio-nav-item position-right [type]="'link'" [title]="'Home'" 
+    <amexio-nav-item position-right [type]="'link'" [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'"
       (onNavItemClick)="homeLink('http://amexio.tech')">
     </amexio-nav-item>
-    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text" [data]="menus.submenus"
+    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" 
+    [type]="'menu'" 
+    [title]="menus.text"
+    [icon]="menus.icon"
+    [data]="menus.submenus"
       (onNavItemClick)="externalLink($event)">
     </amexio-nav-item>
   </amexio-nav>

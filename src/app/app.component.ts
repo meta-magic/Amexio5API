@@ -49,7 +49,80 @@ export class AppComponent {
   ]
 `);
 
-this.amexiotechmenus = [{"text":"Products","submenus":[{"text":"Amexio API","link":"https://amexio.tech/amexio-api"},{"text":"Amexio Canvas","link":"https://amexio.tech/amexio-canvas"},{"text":"Amexio Colors","link":"https://amexio.tech/amexio-colors"}]},{"text":"Start Using","submenus":[{"text":"Pricing","link":"https://amexio.tech/pricing"},{"text":"Downloads","link":"https://amexio.tech/download"},{"text":"Subscribe (Beta)","link":"https://canvas.amexio.org/signup/"},{"text":"Canvas Login (Beta)","link":"https://canvas.amexio.org/"},{"text":"License and Other Docs","link":"https://amexio.tech/license-and-other-docs-1"}]},{"text":"Training","submenus":[{"text":"Amexio Training","link":"http://metaarivu.com/amexio-training"}]},{"text":"Engage","submenus":[{"text":"Events","link":"https://metamagicglobal.com/events"},{"text":"Forums","link":"http://forum.metamagicglobal.com/"},{"text":"Blogs","link":"http://blog.metamagicglobal.com/"},{"text":"Node Package Manager","link":"https://www.npmjs.com/package/amexio-ng-extensions"},{"text":"GitHub - Source Code","link":"https://github.com/meta-magic/amexio.github.io"}]},{"text":"About Us","submenus":[{"text":"Contact","link":"https://metamagicglobal.com/contact"},{"text":"Company","link":"http://www.metamagicglobal.com/company"},{"text":"MetaMagic","link":"https://www.metamagicglobal.com/"}]}];
+this.amexiotechmenus =  [
+  
+  {
+  "text": "Products",
+  "icon": "fa fa-snowflake-o fa-fw",
+  "submenus": [{
+    "text": "Amexio API",
+    "link": "https://amexio.tech/amexio-api"
+  }, {
+    "text": "Amexio Canvas",
+    "link": "https://amexio.tech/amexio-canvas"
+  }, {
+    "text": "Amexio Colors",
+    "link": "https://amexio.tech/amexio-colors"
+  }]
+}, {
+  "text": "Start Using",
+  "icon": "fa fa-television fa-fw",
+  "submenus": [{
+    "text": "Pricing",
+    "link": "https://amexio.tech/pricing"
+  }, {
+    "text": "Downloads",
+    "link": "https://amexio.tech/download"
+  }, {
+    "text": "Subscribe (Beta)",
+    "link": "https://canvas.amexio.org/signup/"
+  }, {
+    "text": "Canvas Login (Beta)",
+    "link": "https://canvas.amexio.org/"
+  }, {
+    "text": "License and Other Docs",
+    "link": "https://amexio.tech/license-and-other-docs-1"
+  }]
+}, {
+  "text": "Training",
+  "icon": "fa fa-user fa-fw",
+  "submenus": [{
+    "text": "Amexio Training",
+    "link": "http://metaarivu.com/amexio-training"
+  }]
+}, {
+  "text": "Engage",
+  "icon": "fa fa-envelope fa-fw",
+  "submenus": [{
+    "text": "Events",
+    "link": "https://metamagicglobal.com/events"
+  }, {
+    "text": "Forums",
+    "link": "http://forum.metamagicglobal.com/"
+  }, {
+    "text": "Blogs",
+    "link": "http://blog.metamagicglobal.com/"
+  }, {
+    "text": "Node Package Manager",
+    "link": "https://www.npmjs.com/package/amexio-ng-extensions"
+  }, {
+    "text": "GitHub - Source Code",
+    "link": "https://github.com/meta-magic/amexio.github.io"
+  }]
+}, {
+  "text": "About Us",
+  "icon": "fa fa-address-book-o fa-fw",
+  "submenus": [{
+    "text": "Contact",
+    "link": "https://metamagicglobal.com/contact"
+  }, {
+    "text": "Company",
+    "link": "http://www.metamagicglobal.com/company"
+  }, {
+    "text": "MetaMagic",
+    "link": "https://www.metamagicglobal.com/"
+  }]
+}];
 
   }
 
