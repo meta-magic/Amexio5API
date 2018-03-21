@@ -68,6 +68,10 @@ this.amexiotechmenus =  [
   "text": "Start Using",
   "icon": "fa fa-television fa-fw",
   "submenus": [{
+    "text": "Component Example",
+    "link": "http://amexio.org/demo/se/v4.1/index.html#/home"
+  },
+    {
     "text": "Pricing",
     "link": "https://amexio.tech/pricing"
   }, {
