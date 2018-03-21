@@ -47,21 +47,28 @@ import { CookieService } from 'ngx-cookie-service';
             </amexio-row>
         </amexio-tab>
         <amexio-tab title="Colors">
-        <amexio-datagrid title="Amexio Colours" [enable-column-fiter]="false"
+        Eventually we can apply this attribute [amexio-color] to all components, currently we can apply to progress bar and datapoints. 
+        To know more refer the API reference section
+        <amexio-datagrid title="Amexio Colors" [enable-column-fiter]="false"
         [http-method]="'get'"
         [http-url]="'assets/data/theme/amexio-colours.json'"
-        [data-reader]="'colours'"
+        [data-reader]="'colors'"
         [enable-data-filter]="false">
 <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                    [text]="'Name'"></amexio-data-table-column>
-<amexio-data-table-column [width]="15" [data-index]="'valueL'" [data-type]="'string'" [hidden]="false"
-                   [text]="'Colour'">
+<amexio-data-table-column [width]="15" [data-index]="'css'" [data-type]="'string'" [hidden]="false"
+[text]="'CSS Class Name'"><ng-template #amexioBodyTmpl let-column let-row="row">
+<span>
+[amexio-color] = '{{row.css}}' </span>
+</ng-template>
+</amexio-data-table-column>
+<amexio-data-table-column [width]="15" [data-index]="'BG'" [data-type]="'string'" [hidden]="false"
+                   [text]="'Color'">
                    <ng-template #amexioBodyTmpl let-column let-row="row">
                    <span>
-                    <div [ngStyle]="{'background-color':row.valueL}"> Light : {{row.valueL}}                        
-                    </div>  
-                    <div [ngStyle]="{'background-color':row.valueD}"> Dark : {{row.valueD}}                        
-                    </div>                   
+                    <div [ngStyle]="{'background-color':row.BG, 'color' : row.font}">
+                    This is amexio color {{ row.name }} background <b> {{ row.BG }} </b> with opposite font color <b> {{ row.font }} </b>             
+                    </div>                  
                    </span>
                     </ng-template>
                    </amexio-data-table-column>
