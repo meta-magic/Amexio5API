@@ -39,7 +39,7 @@
       },
       {
         "name": "Blue Light",
-        "css" : "amexio-blue",
+        "css" : "amexio-blue-light",
         "BG": "#00bfff",
         "font":"#000507"
       },
