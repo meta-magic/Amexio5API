@@ -108,7 +108,8 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-            After Live
+          <iframe style="width: 100%; height: 600px" 
+          src="https://stackblitz.com/edit/amexio-v41-floatingbuttongroup" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
