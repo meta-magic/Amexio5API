@@ -142,7 +142,8 @@ this.amexiotechmenus =  [
 
   externalLink(event:any){
     if(event.data.node.link)
-      this.document.location.href=event.data.node.link;
+      //this.document.location.href=event.data.node.link;
+      window.open(event.data.node.link,'_blank');
   }
 
   homeLink(link:any){
