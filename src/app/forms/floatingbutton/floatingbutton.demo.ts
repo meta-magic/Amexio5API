@@ -51,9 +51,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'left'" [label]="'bottom-left'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
                   <amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'right'" [label]="'bottom-right'" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
                   <amexio-floating-button [vertical-position]="'center'" [horizontal-position]="'center'" [icon]="'fa fa-snowflake-o'" [type]="'red'" (onClick)="onFloatingButtonClick($event)"></amexio-floating-button>                
-                </div>
-
-                
+                </div>              
 
                 <div *ngIf="toggle2">
                   <amexio-floating-button [position-top]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
