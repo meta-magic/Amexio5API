@@ -43,7 +43,7 @@ import {HttpClient} from "@angular/common/http";
          <amexio-tab title="API Reference">
            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                             [http-method]="'get'"
-                            [http-url]="'assets/apireference/layout/accordion/acc.json'"
+                            [http-url]="'assets/apireference/layout/carousel.json'"
                             [data-reader]="'properties'"
                             [enable-data-filter]="false" >
              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -59,7 +59,7 @@ import {HttpClient} from "@angular/common/http";
 
            <amexio-datagrid title="Events" [enable-column-fiter]="false"
                             [http-method]="'get'"
-                            [http-url]="'assets/apireference/layout/accordion/acc_event.json'"
+                            [http-url]="'assets/apireference/layout/carousel.json'"
                             [data-reader]="'properties'"
                             [enable-data-filter]="false" >
              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
