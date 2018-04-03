@@ -70,7 +70,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="API Reference">
           <amexio-label size="small-bold">from Amexio v4.1</amexio-label>
-            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties <amexio-floating-button>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/floatingbutton.json'"
                              [data-reader]="'properties'"
@@ -86,7 +86,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/button.json'" [data-reader]="'events'"
+                             [http-url]="'assets/apireference/forms/floatingbutton.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>

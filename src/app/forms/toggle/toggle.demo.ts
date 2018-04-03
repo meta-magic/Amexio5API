@@ -40,7 +40,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties <amexio-toggle>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/toggle.json'" 
                              [data-reader]="'properties'"

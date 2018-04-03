@@ -238,7 +238,7 @@ import {HttpClient} from "@angular/common/http";
            </amexio-row>
          </amexio-tab>
          <amexio-tab title="API Reference">
-           <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+           <amexio-datagrid title="Properties <amexio-window>" [enable-column-fiter]="false"
                             [http-method]="'get'"
                             [http-url]="'assets/apireference/panes/window/window.json'"
                             [data-reader]="'properties'"
@@ -252,7 +252,17 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
+           <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+                            [http-method]="'get'"
+                            [http-url]="'assets/apireference/panes/window/window.json'"
+                            [data-reader]="'events'"
+                            [enable-data-filter]="false" >
+             <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
 
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+           </amexio-datagrid>
 
          </amexio-tab>
          <amexio-tab title="Source">
