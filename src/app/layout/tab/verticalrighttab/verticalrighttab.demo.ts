@@ -28,6 +28,11 @@ import {Http} from "@angular/http";
                  Team 
                 Phasellus in condimentum. In et sem. Orci   varius penatibus.
               </amexio-tab>
+              <amexio-tab title="Disabled" [disabled]= true [icon]="'fa fa-snowflake'">
+              Team 
+             Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis 
+             dis parturient montes,nascetur ridiculus mus. 
+           </amexio-tab>
             </amexio-right-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="API Reference">
@@ -48,7 +53,7 @@ import {Http} from "@angular/http";
 <br>
             <amexio-datagrid title="Vertical Tab Properties <amexio-vertical-tab-view >" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/layout/tab/vertical-tab/basictab.json'"
+                             [http-url]="'assets/apireference/layout/tab/vertical-tab/right-vertical.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"

@@ -29,6 +29,11 @@ import {Http} from "@angular/http";
                 Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis 
                 dis parturient montes,nascetur ridiculus mus. 
               </amexio-tab>
+              <amexio-tab title="Disabled" [disabled]= true [icon]="'fa fa-snowflake'">
+              Team 
+             Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis 
+             dis parturient montes,nascetur ridiculus mus. 
+           </amexio-tab>
             </amexio-vertical-tab-view>
           </amexio-tab>
           <amexio-tab title="API Reference">
