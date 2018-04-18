@@ -126,9 +126,9 @@ import {HttpClient} from "@angular/common/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference"> 
-            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties <amexio-textinput>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/textinput.json'" 
+                             [http-url]="'assets/apireference/forms/textinput.component.json'" 
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -141,8 +141,8 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [http-method]="'get'" 
-                             [http-url]="'assets/apireference/forms/textinput.json'" [data-reader]="'events'"
+            <amexio-datagrid title="Events <amexio-textinput>" [http-method]="'get'" 
+                             [http-url]="'assets/apireference/forms/textinput.component.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>

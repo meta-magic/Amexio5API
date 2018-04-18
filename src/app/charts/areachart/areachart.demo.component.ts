@@ -28,7 +28,7 @@ import {HttpClient} from "@angular/common/http";
             <amexio-datagrid title="Chart Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/areachart.json'"
-                             [data-reader]="'chart'"
+                             [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -42,8 +42,8 @@ import {HttpClient} from "@angular/common/http";
             <br>
             <amexio-datagrid title="Chart Title Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/charts/areachart.json'"
-                             [data-reader]="'chartTitle'"
+                             [http-url]="'assets/apireference/charts/charttitle.json'"
+                             [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -57,8 +57,8 @@ import {HttpClient} from "@angular/common/http";
             <br>
             <amexio-datagrid title="Chart Legend Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/charts/areachart.json'"
-                             [data-reader]="'chartLegend'"
+                             [http-url]="'assets/apireference/charts/chartlegend.json'"
+                             [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
