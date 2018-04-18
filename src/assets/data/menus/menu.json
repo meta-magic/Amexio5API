@@ -67,7 +67,11 @@
           "icon": "fa fa-indent fa-fw",
           "link": "carousel"
         },
-
+        {
+          "text": "Form",
+          "icon": "fa fa-window-maximize fa-fw",
+          "link": "form-demo"
+        },
         {
           "text": "Fieldset",
           "icon": "fa fa-id-card-o fa-fw",
