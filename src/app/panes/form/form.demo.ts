@@ -1,5 +1,5 @@
 /**
- * Created by pratik on 16/1/18.
+ * Created by anaghak07 on 16/4/18.
  */
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
@@ -70,6 +70,10 @@ import {HttpClient} from "@angular/common/http";
               <amexio-form-action>
                 <amexio-button [disabled]="true" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
                 </amexio-button>
+                <amexio-button [label]="'Cancel'"
+                                  [type]="'theme-backgroundcolor'"
+                                  [tooltip]="'Cancel'">
+                  </amexio-button>
                 <!-- <amexio-btn-group>
                   <amexio-button [label]="'Disabled'"
                                   [type]="'theme-color'"
@@ -149,7 +153,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-panel?embed=1&file=app/panels/panel/panel.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v42-form?embed=1&file=app/forms/form/form.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
