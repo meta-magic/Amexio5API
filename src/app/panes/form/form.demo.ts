@@ -72,7 +72,7 @@ import {HttpClient} from "@angular/common/http";
 
               <amexio-checkbox [field-label]="'Agree'" [required]="true">
               </amexio-checkbox>
-            <amexio-form-body>
+            </amexio-form-body>
               <amexio-form-action>
                 <amexio-button [disabled]="true" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
                 </amexio-button>
@@ -111,7 +111,39 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Default'"></amexio-data-table-column>
               <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid> <br/>
+            </amexio-datagrid>
+             <br/>
+              
+            <amexio-datagrid title="Properties <amexio-form-header>" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/panes/form.action.component.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Type'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Default'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid><br/>
+
+            <amexio-datagrid title="Properties <amexio-form-body>" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/panes/form.action.component.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Type'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Default'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+ <br/>
             <amexio-datagrid title="Properties <amexio-form-action>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/panes/form.action.component.json'"
@@ -127,7 +159,9 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid><br/>
 
-            <amexio-datagrid title="Events" [enable-column-fiter]="false"
+
+
+            <amexio-datagrid title="Events <amexio-form>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/panes/form.component.json'"
                              [data-reader]="'events'"
@@ -138,6 +172,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
+          
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
               <div style="overflow-y: scroll">
