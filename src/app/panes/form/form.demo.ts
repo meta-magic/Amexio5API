@@ -16,7 +16,12 @@ import {HttpClient} from "@angular/common/http";
         </p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-            <amexio-form form-name="validateForm" form-header="Validation Form" show-error="true">
+
+            <amexio-form form-name="validateForm" header="true" show-error="true">
+               <amexio-form-header>
+                  Validation Form
+               </amexio-form-header>
+            <amexio-form-body>
               <amexio-row>
                 <amexio-column [size]="6">
                     <amexio-text-input [min-length]="3" [max-length]="5" [allow-blank]="false" field-label="Firstname" name="name1" place-holder="Enter firstname" icon-feedback="true">
@@ -35,7 +40,7 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-tag-input>
                   </amexio-column>
                   <amexio-column [size]="4">
-                      <amexio-dropdown [(ngModel)]="city" [place-holder]="'Choose City'" name="city" [allow-blank]="false" [data-reader]="'response.data'" [field-label]="'City'" [http-url]="'assets/data/componentdata/cities.json'" [http-method]="'get'" [search]="'true'" [display-field]="'cityName'" [value-field]="'cityName'">
+                      <amexio-dropdown [place-holder]="'Choose City'" name="city" [allow-blank]="false" [data-reader]="'response.data'" [field-label]="'City'" [http-url]="'assets/data/componentdata/cities.json'" [http-method]="'get'" [search]="'true'" [display-field]="'cityName'" [value-field]="'cityName'">
                       </amexio-dropdown>
                   </amexio-column>
                 <amexio-column [size]="4">
@@ -49,7 +54,7 @@ import {HttpClient} from "@angular/common/http";
                     </amexio-number-input>
                 </amexio-column>
                 <amexio-column [size]="6">
-                    <amexio-date-time-picker [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [required]="true" [(ngModel)]="currentDate">
+                    <amexio-date-time-picker [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [required]="true">
                     </amexio-date-time-picker>
                 </amexio-column>
               </amexio-row>
@@ -65,8 +70,9 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-column>
               </amexio-row>
 
-              <amexio-checkbox [field-label]="'Agree'" [(ngModel)]="check" (onSelection)="onCheckClick($event)" [required]="true">
+              <amexio-checkbox [field-label]="'Agree'" [required]="true">
               </amexio-checkbox>
+            <amexio-form-body>
               <amexio-form-action>
                 <amexio-button [disabled]="true" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
                 </amexio-button>
@@ -86,6 +92,7 @@ import {HttpClient} from "@angular/common/http";
                                   [tooltip]="'Enabled'">
                   </amexio-button>
                 </amexio-btn-group> -->
+
               </amexio-form-action>
             </amexio-form>
           </amexio-tab>
