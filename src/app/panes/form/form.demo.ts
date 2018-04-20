@@ -34,19 +34,35 @@ import {HttpClient} from "@angular/common/http";
               </amexio-row>
 
               <amexio-textarea-input [disabled]="false" [field-label]="'Address'" name="Address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
+              <amexio-row>    
+    <amexio-column [size]="6">
+        <amexio-radio-group name="name" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
+        </amexio-radio-group>
+    </amexio-column>
+    <amexio-column [size]="6">
+        <amexio-checkbox-group
+          [field-label]="'Hobbies'" name="language"
+          [horizontal]="true"
+          [required] = "true"
+          [disabled]= "false"
+          [data-reader]="'response.data'"
+          [display-field]="'language'"
+          [value-field]="'checked'"
+          [data]="checkboxGroupdata">
+        </amexio-checkbox-group>
+  
+      </amexio-column>
+</amexio-row>
               <amexio-row>
-                  <amexio-column [size]="4">
+                  <amexio-column [size]="6">
                       <amexio-tag-input [data-reader]="'response.data'" [http-url]="'assets/data/componentdata/countryy.json'" [has-label]="true" [http-method]="'get'" [key]="'countryName'" [allow-blank]="false" [display-field]="'countryName'" [field-label]="'Having visa'">
                       </amexio-tag-input>
                   </amexio-column>
-                  <amexio-column [size]="4">
+                  <amexio-column [size]="6">
                       <amexio-dropdown [place-holder]="'Choose City'" name="city" [allow-blank]="false" [data-reader]="'response.data'" [field-label]="'City'" [http-url]="'assets/data/componentdata/cities.json'" [http-method]="'get'" [search]="'true'" [display-field]="'cityName'" [value-field]="'cityName'">
                       </amexio-dropdown>
                   </amexio-column>
-                <amexio-column [size]="4">
-                    <amexio-radio-group name="name" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
-                    </amexio-radio-group>
-                </amexio-column>
+                
               </amexio-row>
               <amexio-row>
                 <amexio-column size="6">
@@ -54,7 +70,7 @@ import {HttpClient} from "@angular/common/http";
                     </amexio-number-input>
                 </amexio-column>
                 <amexio-column [size]="6">
-                    <amexio-date-time-picker [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [required]="true">
+                    <amexio-date-time-picker [(ngModel)]="currentDate" [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [required]="true" >
                     </amexio-date-time-picker>
                 </amexio-column>
               </amexio-row>
@@ -210,7 +226,27 @@ export class FormDemoComponent{
   asyncFlag : boolean;
   refreshDialogue: boolean;
   radioGroupData : any;
+  checkboxGroupdata : any;
+  currentDate : Date = new Date();
   constructor(private http: HttpClient) {
+   
+   this.checkboxGroupdata = {
+      response:{
+        data:[{
+          language:'Learning',
+          checked: false,
+          disabled : false
+        },{
+          language:'Shopping',
+          checked: false,
+          disabled : false
+        },{
+          language:'Fishing',
+          checked: false,
+          disabled : false
+        }
+        ]}};
+
     this.radioGroupData = {
       response:{
         data:[{
