@@ -35,11 +35,11 @@ import {HttpClient} from "@angular/common/http";
                         <amexio-nav-item position-right
                             [type]="'link'" 
                             [title]="'Amexio'" 
-                            (onNavItemClick)="homeLink('http://amexio.tech')">
+                            (onNavItemClick)="onClick('http://amexio.tech')">
                         </amexio-nav-item>
                         <amexio-nav-item position-right
                           [type]="'textfield'" 
-                          [title]="'Enter your name'" [(ngModel)] = "uname">			
+                          [title]="'Enter your name'">			
                         </amexio-nav-item>			                      
                         <amexio-nav-item position-right                                            
                           (onNavItemClick)="onClick('http://amexio.tech')" 
