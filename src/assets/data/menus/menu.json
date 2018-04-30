@@ -111,6 +111,11 @@
                   "text": "Scrollable",
                   "link": "scrollable-tab-demo",
                   "icon": "fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "Enhanced",
+                  "link": "enhanced-tab-demo",
+                  "icon": "fa fa-leaf fa-fw"
                 }
               ]
             },

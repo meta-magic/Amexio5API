@@ -129,6 +129,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'scrollable-tab-demo', loadChildren: './layout/tab/scrollabletab/scrollabletab.demo.module#ScrollableTabDemoModule'
   },
   {
+    path: 'enhanced-tab-demo', loadChildren: './layout/tab/enhancedtab/enhancedtab.demo.module#EnhancedTabDemoModule'
+  },
+  {
     path: 'vertical-tab-demo', loadChildren: './layout/tab/verticaltab/verticaltab.demo.module#VerticalTabDemoModule'
   },
   {
