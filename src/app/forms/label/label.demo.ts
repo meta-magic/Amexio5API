@@ -40,10 +40,10 @@ import {HttpClient} from "@angular/common/http";
           </amexio-column>
           </amexio-row> 
           <br/>
-          <h2>Label and Box Component</h2>
-            <amexio-row>
+          <h2>Box Component</h2>
+          <amexio-row>
             <amexio-column [size]="4">
-              <amexio-box border-color ="red" border="top" padding="true">
+              <amexio-box border-color ="red" border="top" padding="true" closable="'true'">
                  <amexio-label  border="top">This is small-bold amexio label with red border</amexio-label>
               </amexio-box>
             </amexio-column>
@@ -55,7 +55,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column [size]="4">
             <amexio-box border-color ="yellow" border="right" padding="true">
               <amexio-label  border="right">This is small-bold amexio label with yellow border</amexio-label>
-            </amexio-box>    
+            </amexio-box>   
             </amexio-column>
             </amexio-row>
             <br />
@@ -94,19 +94,20 @@ import {HttpClient} from "@angular/common/http";
               </amexio-row>
               <br />
               <amexio-row>
-              <amexio-column [size]="4">
-              <amexio-box border-color ="purple" border="all" padding="true" background-color="purple">
-              <amexio-text-input field-label="Aadhar No" name="name"
-                         place-holder="Enter aadhar card no"
-                         icon-feedback="true">
-              </amexio-text-input>
-              </amexio-box>
-              </amexio-column>
+ 
               <amexio-column [size]="4">
               <amexio-box border-color ="brown" border="right-left" padding="true" background-color="brown">
               <amexio-label >This is small-bold amexio label with background-color</amexio-label>
               </amexio-box>
               </amexio-column>
+                <amexio-column [size]="4">
+                  <amexio-box border-color ="purple" border="all" padding="true" background-color="purple" box-height="100px" box-width="300px">
+                    <amexio-text-input field-label="Aadhar No" name="name"
+                              place-holder="Enter aadhar card no"
+                              icon-feedback="true">
+                    </amexio-text-input>
+                  </amexio-box>
+                </amexio-column>
               <amexio-column [size]="4">
               <amexio-box border="top-bottom" padding="true">
               <amexio-label >This is small-bold amexio label with background-color</amexio-label>        
@@ -123,6 +124,8 @@ import {HttpClient} from "@angular/common/http";
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"

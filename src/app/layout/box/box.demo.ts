@@ -1,5 +1,5 @@
 /**
- * Created by anagha on 13/3/18.
+ * Created by anaghak07 on 13/3/18.
  */
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
@@ -17,7 +17,7 @@ import {HttpClient} from "@angular/common/http";
           <h2>Box Component</h2>
           <amexio-row>
             <amexio-column [size]="4">
-              <amexio-box border-color ="red" border="top" padding="true">
+              <amexio-box border-color ="red" border="top" padding="true" closable="'true'">
                  <amexio-label  border="top">This is small-bold amexio label with red border</amexio-label>
               </amexio-box>
             </amexio-column>
@@ -68,19 +68,20 @@ import {HttpClient} from "@angular/common/http";
               </amexio-row>
               <br />
               <amexio-row>
-              <amexio-column [size]="4">
-              <amexio-box border-color ="purple" border="all" padding="true" background-color="purple">
-              <amexio-text-input field-label="Aadhar No" name="name"
-                         place-holder="Enter aadhar card no"
-                         icon-feedback="true">
-              </amexio-text-input>
-              </amexio-box>
-              </amexio-column>
+ 
               <amexio-column [size]="4">
               <amexio-box border-color ="brown" border="right-left" padding="true" background-color="brown">
               <amexio-label >This is small-bold amexio label with background-color</amexio-label>
               </amexio-box>
               </amexio-column>
+                <amexio-column [size]="4">
+                  <amexio-box border-color ="purple" border="all" padding="true" background-color="purple" box-height="100px" box-width="300px">
+                    <amexio-text-input field-label="Aadhar No" name="name"
+                              place-holder="Enter aadhar card no"
+                              icon-feedback="true">
+                    </amexio-text-input>
+                  </amexio-box>
+                </amexio-column>
               <amexio-column [size]="4">
               <amexio-box border="top-bottom" padding="true">
               <amexio-label >This is small-bold amexio label with background-color</amexio-label>        
@@ -105,8 +106,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Default'"></amexio-data-table-column>
               <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid>
-            
+            </amexio-datagrid>            
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
@@ -132,7 +132,6 @@ import {HttpClient} from "@angular/common/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
 
   `
 })
