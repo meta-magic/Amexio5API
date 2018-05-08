@@ -17,16 +17,16 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
         <amexio-column size="12">
           <div align="center">
             <a href="http://www.amexio.tech/">
-              <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
+              <amexio-image [height] = "200" [width] ="150" path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
             </a>
             <br>
             <h1>Amexio Angular EXtensions v4.1</h1>
             <br>
-            <amexio-image path="assets/images/npm.svg"></amexio-image>
-            <amexio-image
+            <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
+            <amexio-image [height] = "50" [width] ="50"
               path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
             <a href="https://badge.fury.io/js/amexio-ng-extensions">
-              <amexio-image path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
+              <amexio-image [height] = "50" [width] ="50" path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
             </a>
           </div>
           <hr>
