@@ -18,7 +18,7 @@ import {HttpClient} from "@angular/common/http";
           <h2>Label Component</h2>
           <amexio-row>
           <amexio-column [size]="4">
-            <amexio-label size="large">This is large amexio label</amexio-label>
+            <amexio-label [badge]="12" size="large">This is large amexio label</amexio-label>
           </amexio-column>
           <amexio-column [size]="4">
             <amexio-label size="large-bold">This is large-bold amexio label</amexio-label>
