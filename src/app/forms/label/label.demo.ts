@@ -22,8 +22,9 @@ import {Http} from "@angular/http";
                     Label size Large
                   </amexio-header>
                   <amexio-body>
-                    <amexio-label size="large">This is large amexio label</amexio-label>
-                  </amexio-body>
+                    <amexio-label [badge]="12" size="large">This is large amexio label</amexio-label>
+                   
+                    </amexio-body>
                 </amexio-card>
               </amexio-column>
               <amexio-column [size]="6">
@@ -155,6 +156,7 @@ export class LabelDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   age:number=10;
+  
   constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
