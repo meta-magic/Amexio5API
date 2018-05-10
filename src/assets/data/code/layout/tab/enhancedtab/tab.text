@@ -1,2 +1,17 @@
 export class EnhancedTabDemo {
+
+  radioGroupData: any;
+
+    constructor{
+    this.getHtmlAndTypeScriptCode();
+    this.radioGroupData = {
+      response: {
+        data: [{
+          gender: 'Male', genderId: 'male'
+        }, {
+          gender: 'Female', genderId: 'female'
+        },]
+      }
+    }
+  }
 }
