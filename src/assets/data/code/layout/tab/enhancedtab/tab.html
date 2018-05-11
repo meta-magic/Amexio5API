@@ -1,5 +1,10 @@
-<amexio-tab-view  [closable]="false" header="Work Profile" [header-align]="'right'"
+<amexio-tab-view  [closable]="false" [type]="'radiogroup'" [action-type-align]="'left'" header="Work Profile" [header-align]="'right'"
 [divide-header-equally]=false>
+<amexio-tab-action>
+  <amexio-radio-group [field-label]="'Horizontal Radio Group'" name="gender" [data-reader]="'response.data'" [display-field]="'gender'"
+      [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData" [default-value]="'male'">
+  </amexio-radio-group>
+</amexio-tab-action>
   <amexio-tab title="Personal" [active]="true" [amexio-color]="'red'">
      Personal 
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
