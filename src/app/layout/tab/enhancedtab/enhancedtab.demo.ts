@@ -15,10 +15,9 @@ import { Http } from "@angular/http";
         <p>Enhanced Tab component for Angular Apps with multiple configurations such as Tab, Header, Tab Alignments, Tabs divided equally, Tab Colors</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-
-          <amexio-card [header]="true" [footer]="true" [footer-align]="'right'">
+          <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
           <amexio-header>
-              Tab With Header, Tab Alignment and Tab Colors
+              Tab with Header , Tab Alignment and Tab Colors
           </amexio-header>
           <amexio-body>
               <amexio-tab-view [closable]="false" header="Work Profile" [header-align]="'right'" [divide-header-equally]=false>
@@ -40,7 +39,7 @@ import { Http } from "@angular/http";
               </amexio-tab-view>
           </amexio-body>
       </amexio-card>
-      
+      <br>
       <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
           <amexio-header>
               Tab with Action Component
@@ -49,7 +48,7 @@ import { Http } from "@angular/http";
               <amexio-tab-view [closable]="false" [type]="'radiogroup'" header="Work Profile" [header-align]="'right'" [divide-header-equally]=false>
                   <amexio-tab-action>
                       <amexio-radio-group [field-label]="'Horizontal Radio Group'" name="gender" [data-reader]="'response.data'" [display-field]="'gender'"
-                          [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData" [default-value]="'male'">
+                          [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData" [default-value]="'male'" (onSelection)="setSelectedGender($event)">
                       </amexio-radio-group>
                   </amexio-tab-action>
                   <amexio-tab title="Personal" [active]="true" [amexio-color]="'red'">
@@ -70,10 +69,10 @@ import { Http } from "@angular/http";
               </amexio-tab-view>
           </amexio-body>
       </amexio-card>
-      
-      <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+      <br>
+         <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
           <amexio-header>
-              Tabs Equally Divided
+          Tab Layout with Tabs Divided Equally
           </amexio-header>
           <amexio-body>
               <amexio-tab-view [divide-header-equally]="true" header="Person Profile" [header-align]="'right'" [tab-position]="'top'">
@@ -95,7 +94,7 @@ import { Http } from "@angular/http";
               </amexio-tab-view>
           </amexio-body>
       </amexio-card>
-          </amexio-tab>
+                   </amexio-tab>
 
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Tab View Properties" [enable-column-fiter]="false"
