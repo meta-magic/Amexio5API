@@ -1,1 +1,62 @@
-{"name":"Amexio Tab","description":"Tab component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs","selector":"<amexio-tab-view>","properties":[{"name":"closable","description":"This flag will make tab closable.","version":"4.0 onwards","type":"boolean","default":"false"},{"name":"position","description":"specify position of tab.","version":"4.0 onwards","type":"string","default":"none"}],"events":[{"name":"onClick","description":"Callback to invoke on activated tab event."}]}
+{
+  "name": "Amexio Tab",
+  "description": "Tab component for Angular Apps with multiple configurations such as Tab, Icon support,  Closable tabs, Amexio-color, Tab Position at top/bottom/ Tab",
+  "selector": "<amexio-tab-view>",
+  "properties": [
+    {
+      "name": "closable",
+      "description": "This flag will make tab closable.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "header-align",
+      "description": "Specify position of tabs(left/right/center).",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "action-type-align",
+      "description": "Specify position of action type(left/right).",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "divide-header-equally",
+      "description": "If \"true\" divides all tab equally.",
+      "version": "4.1.9 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "type",
+      "description": "Type can be amexio input such as (text field/ number field/ checkbox/ label/ dropdown/ toggle/ button/ image/ checkbox group/ radio group/ rating/ datefield)",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "tab-position",
+      "description": "Position of tab can be (top/bottom) When Tab used in card and tab-position is bottom , make sure footer property of card is false.",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": "top"
+    },
+    {
+      "name": "header",
+      "description": "Header for Tab.",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Callback to invoke on activated tab event."
+    }
+  ]
+}
