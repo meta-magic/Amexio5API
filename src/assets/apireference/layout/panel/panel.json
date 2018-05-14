@@ -1,28 +1,41 @@
 {
+  "name": "Amexio panel",
+  "description": "Panel provides an easy way to organize big forms by grouping the fields in panel",
+  "selector": "<amexio-panel>",
   "properties": [
     {
+      "name": "title",
+      "description": "Title for panel.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
       "name": "header",
+      "description": "Enable/Disabled header.",
+      "version": "4.0 onwards",
       "type": "boolean",
-      "default": "true",
-      "description":"Enable/Disabled header."
+      "default": "true"
     },
     {
       "name": "expanded",
+      "description": "Pane will expand or collapse based on the boolean.",
+      "version": "4.0 onwards",
       "type": "boolean",
-      "default": "false",
-      "description":"Pane will expand or collapse based on the boolean."
+      "default": "false"
     },
     {
-      "name": "title",
-      "type": "string",
-      "default": "",
-      "description":"Title for panel."
-    },
-   {
       "name": "height",
+      "description": "Height of panel must be in px ex.100, 250..",
+      "version": "4.0 onwards",
       "type": "number",
-      "default": "",
-      "description":"Height of panel must be in px ex.100, 250."
+      "default": "none"
+    }
+  ],
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Fires the on accordion pane click event."
     }
   ]
 }

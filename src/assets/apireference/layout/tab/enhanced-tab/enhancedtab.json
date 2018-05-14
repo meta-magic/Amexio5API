@@ -36,7 +36,7 @@
       "description": "Type can be amexio input such as (text field/ number field/ checkbox/ label/ dropdown/ toggle/ button/ image/ checkbox group/ radio group/ rating/ datefield)",
       "version": "4.1.9 onwards",
       "type": "string",
-      "default": "none"
+      "default": ""
     },
     {
       "name": "tab-position",
@@ -50,7 +50,7 @@
       "description": "Header for Tab.",
       "version": "4.1.9 onwards",
       "type": "string",
-      "default": "none"
+      "default": ""
     }
   ],
   "events": [
@@ -65,7 +65,7 @@
         "description": "Title on Tab Pill.",
         "version": "4.0 onwards",
         "type": "string",
-        "default": "none"
+        "default": ""
       },
       {
         "name": "disabled",
@@ -86,7 +86,7 @@
         "description": "Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home.",
         "version": "4.0 onwards",
         "type": "string",
-        "default": "none"
+        "default": ""
       },
       {
         "name": "amexio-color",
