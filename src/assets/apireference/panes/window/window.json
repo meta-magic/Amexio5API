@@ -1,1 +1,62 @@
-{"name":" Amexio Window","description":"  Window Pane component is a customizable Modal Pane in which user can enter custom content","selector":" <amexio-window>","properties":[{"name":" expand-all","description":" Alignment of footer contents to right or left.","version":" 4.0 onwards","type":" boolean","default":" right"},{"name":" show-window","description":" Show / Hide Window.","version":" 4.0 onwards","type":" boolean","default":" false"},{"name":" body-height","description":" \tAssign body height in percentage, in case of maximize=true it will be set to 100% by default","version":" 4.0 onwards","type":" string","default":" none"},{"name":" maximize","description":" User can maximize the window to full screen.","version":" 4.0 onwards","type":" boolean","default":" none"},{"name":" closable","description":" User can close the window.","version":" 4.0 onwards","type":" boolean","default":" none"},{"name":" header","description":" it is flag that decides header visibility","version":" 4.0 onwards","type":" boolean","default":" none"},{"name":" footer","description":" it is flag that decides footer visibility","version":" 4.0 onwards","type":" boolean","default":" none"}],"events":[{"name":" close","description":" Fires when user closes the dialogue"}]}
+{
+    "name": "Amexio Window",
+    "description": "Window Pane component is a customizable Modal Pane in which user can enter custom content",
+    "selector": "<amexio-window>",
+    "properties": [
+      {
+        "name": "footer-align",
+        "description": "Alignment of footer contents to right or left.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "right"
+      },
+      {
+        "name": "show-window",
+        "description": "Show / Hide Window.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "body-height",
+        "description": "Assign body height in percentage, in case of maximize=true it will be set to 100% by default",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "maximize",
+        "description": "User can maximize the window to full screen.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "closable",
+        "description": "User can close the window.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "header",
+        "description": "it is flag that decides header visibility",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "footer",
+        "description": "it is flag that decides footer visibility",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "events": [
+      {
+        "name": "close",
+        "description": "close the window"
+      }
+    ]
+  }
