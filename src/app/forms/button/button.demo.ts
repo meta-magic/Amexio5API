@@ -134,6 +134,38 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-card>
               </amexio-column>
             </amexio-row>
+
+            <amexio-row>
+            <amexio-column [size]="12">
+              <amexio-card [header]="true">
+                <amexio-header>
+                   Button With Badges - Small / Default / Large 
+                </amexio-header>
+                <amexio-body>
+                    
+                    <amexio-row>
+                      <amexio-column [size]="3">
+                         <amexio-button [label]="'Background Color'" [badge] = "10" [type]="'theme-backgroundcolor'" [tooltip]="'Secondary Button'"></amexio-button>
+                      </amexio-column>
+                      <amexio-column [size]="3">
+                         <amexio-button  [label]="'Theme Color'" [badge] = "11" [type]="'theme-color'" [tooltip]="'Primary Button'"></amexio-button>
+                      </amexio-column>
+                      <amexio-column [size]="3">
+                         <amexio-button   [label]="'Green'" [badge] = "12" [type]="'green'" [tooltip]="'Success Button'"></amexio-button>
+                      </amexio-column>
+                      <amexio-column [size]="3">
+                        <amexio-button  [label]="'Red'" [badge] = "13" [type]="'red'" [tooltip]="'Danger Button'"></amexio-button>
+                      </amexio-column>
+                    </amexio-row>
+
+
+
+                </amexio-body>
+              </amexio-card>
+
+            </amexio-column>
+            </amexio-row>
+
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-button>" [enable-column-fiter]="false"

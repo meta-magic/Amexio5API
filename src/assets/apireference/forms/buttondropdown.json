@@ -1,1 +1,52 @@
-{"name":"Amexio Button Dropdown","description":"Amexio Dropdown Button component with various modes and configurations .","selector":"<amexio-btn-dropdown-item>","properties":[{"name":"disabled","description":"Enable/Disables the button","version":"4.0 onwards","type":"boolean","default":"false"},{"name":"icon","description":"Fa icon class","version":"4.0 onwards","type":"string","default":"none"},{"name":"onClickRoute","description":"routes on click of button","version":"4.0 onwards","type":"string","default":"none"}],"events":[{"name":"onItemClick","description":"Fire when button-dropdown item button/link click"}]}
+{
+    "name": "Amexio Button Dropdown",
+    "description": "Amexio Dropdown Button component with various modes and configurations .",
+    "selector": "<amexio-btn-dropdown>",
+    "properties": [
+      {
+        "name": "label",
+        "description": "Label on button",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "type",
+        "description": "default,theme-color,theme-backgroundcolor, green, red, yellow ( primary, secondary ,success , danger & warning Depricated v4.1 onwards)",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "disabled",
+        "description": "Enable/Disables the button",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "size",
+        "description": "large, default, small & xsmall",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "badge",
+        "description": "Badge  describes the badge value that has to be displayed on button",
+        "version": "4.1.9 onwards",
+        "type": "number",
+        "default": "none"
+      }
+    ],
+    "events": [
+      {
+        "name": "click",
+        "description": "Fire when button-dropdown item button/link click"
+      },
+      {
+        "name": "getLinkData",
+        "description": "Fire when button-dropdown item button/link click"
+      }
+    ]
+  }
