@@ -35,8 +35,8 @@
         "name": "error-msg",
         "description": "Sets the error message",
         "version": "4.0 onwards",
-        "type": "none",
-        "default": "none"
+        "type": "string",
+        "default": ""
       },
       {
         "name": "min-error-msg",
