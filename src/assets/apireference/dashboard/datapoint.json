@@ -55,6 +55,7 @@
       "default": "",
       "description":"Set font color"
     }, {
+      
       "name": "content-align",
       "type": "string",
       "default": "",
