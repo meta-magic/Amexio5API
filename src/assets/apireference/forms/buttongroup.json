@@ -8,14 +8,14 @@
         "description": "large, default, small & xsmall",
         "version": "4.0 onwards",
         "type": "string",
-        "default": "none"
+        "default": ""
       },
       {
         "name": "badge",
         "description": "Badge  describes the badge value that has to be displayed on button",
         "version": "4.1.9 onwards",
         "type": "number",
-        "default": "none"
+        "default": ""
       }
     ],
     "events": [
