@@ -83,7 +83,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-header>
             <amexio-body>
               <amexio-row>
-              <amexio-btn-dropdown [label]="'Button'"   [type]="'theme-color'" [size]="'default'">
+              <amexio-btn-dropdown [label]="'Button with badge'"   [type]="'theme-color'" [size]="'default'">
               <amexio-btn-dropdown-item [label]="'Expand'" [badge] = "32" [icon]="'fa fa-arrows-alt'" ></amexio-btn-dropdown-item>
               <amexio-btn-dropdown-item [label]="'Delete'" [badge] = "31" [icon]="'fa fa-trash'" ></amexio-btn-dropdown-item>
             </amexio-btn-dropdown>
