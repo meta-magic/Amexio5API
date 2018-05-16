@@ -22,10 +22,10 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
             <br>
             <h1>Amexio Angular EXtensions v4.1</h1>
             <amexio-row>
-              <amexio-column size="3"></amexio-column>
-              <amexio-column size="6">
+              <amexio-column size="4"></amexio-column>
+              <amexio-column size="5">
                 <amexio-row>
-                  <amexio-column size="4">
+                  <amexio-column size="3">
                     <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
                   </amexio-column>
                   <amexio-column size="4">
