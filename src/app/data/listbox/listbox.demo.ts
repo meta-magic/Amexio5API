@@ -61,12 +61,72 @@ import {HttpClient} from "@angular/common/http";
                    <!-- <p>
                       <b>clicked record data</b> : {{onRowClickData | json}}
                     </p>-->
+
+                    <amexio-row>
+                    <amexio-column [size]="5">
+                      <amexio-listbox [height]="360" [data]="projectData" [filter]="false" [header]="'Project'" [enable-checkbox]="false" [data-reader]="'response.data'"
+                        [display-field]="'name'">
+                        <ng-template #amexioBodyTmpl let-row="row">
+                          <amexio-row>
+                            <amexio-column [size]="5">
+                              <amexio-label size="small">
+                                {{row.name}}
+                              </amexio-label>
+                            </amexio-column>
+                            <amexio-column [size]="3">
+          
+                            </amexio-column>
+                            <amexio-column [size]="4">
+          
+                              <a [ngClass]="{'listbox-StatusYellow': row.status == 'Pending', 'listbox-StatusGreen' : row.status == 'Finished','listbox-StatusRed'  : row.status == 'Rejected'}">
+                                {{row.status}}
+                              </a>
+                            </amexio-column>
+                          </amexio-row>
+                        </ng-template>
+                      </amexio-listbox>
+                    </amexio-column>
+                    <amexio-column [size]="7">
+                      <amexio-listbox [height]="400" [data]="browserData" [filter]="false" [header]="'Browser Stats'" [enable-checkbox]="false"
+                        [data-reader]="'response.data'" [display-field]="'name'">
+                        <ng-template #amexioBodyTmpl let-row="row">
+                          <amexio-row>
+                            <amexio-column [size]="4">
+                              <span>
+          
+                                <amexio-image [path]="'assets/images/'+row.icon" [c-class]="'image-round'">
+                                </amexio-image>
+          
+                              </span>
+          
+                            </amexio-column>
+                            <amexio-column [size]="6">
+                              <amexio-label size="small">
+                                {{row.name}}
+                              </amexio-label>
+                            </amexio-column>
+                            <amexio-column [size]="2">
+                              <amexio-label size="small" font-color="grey">
+                                {{row.usage}}
+                              </amexio-label>
+          
+                            </amexio-column>
+                          </amexio-row>
+                        </ng-template>
+                      </amexio-listbox>
+                    </amexio-column>
+                  </amexio-row>
+
+
                   </amexio-body>
                 </amexio-card>
 
               </amexio-column>
             </amexio-row>
-          </amexio-tab>
+
+             
+
+               </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
@@ -117,7 +177,36 @@ import {HttpClient} from "@angular/common/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-  `
+  `,
+  styles:[
+    `
+    .listbox-StatusYellow {
+      background-color: yellow;
+    }
+    .listbox-StatusGreen  {
+      background-color: green;
+     }
+    .listbox-StatusRed {
+      background-color: red;
+  }
+  
+.red {
+    color: red!important;
+   
+}
+.green {
+    color: green!important;
+   
+}
+.yellow {
+    color: yellow!important;
+    
+}
+.template-progressBar .progress{
+  height:5px !important;
+}  
+`
+  ]
 })
 export class ListBoxDemo {
   htmlCode: string;
@@ -126,6 +215,10 @@ export class ListBoxDemo {
   localData: any;
   onRowClickData: any;
   selectedData: any;
+  progressType: string;
+  actionWindowFlag: boolean;
+  projectData: any;
+  browserData: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
     this.localData = {"response": {
@@ -212,6 +305,78 @@ export class ListBoxDemo {
         }
       ]
     }};
+
+    this.projectData = {
+      "response": {
+        "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+          {
+            "name": "Admin Template	",
+            "status": " 65%"
+          },
+          {
+            "name": "Landing Page",
+            "status": "Finished"
+          },
+          {
+            "name": "Backend UI	",
+            "status": "Rejected"
+          },
+          {
+            "name": "Personal Blog",
+            "status": "40%"
+          },
+          {
+            "name": "E-mail Templates	",
+            "status": "13%"
+          },
+          {
+            "name": "Corporate Website",
+            "status": "Pending"
+          }
+        ]
+      }
+    }
+    this.browserData = {
+      "response": {
+        "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+          {
+            "name": "Google Chrome",
+            "usage": "23%",
+            "icon": "GoogleChrome.jpg "
+          },
+          {
+            "name": "Mozila Firefox",
+            "usage": "15%",
+            "icon": "MozilaFirefox.png "
+          },
+          {
+            "name": "Apple Safari",
+            "usage": "7%",
+            "icon": "AppleSafari.png "
+          },
+          {
+            "name": "Internet Explorer",
+            "usage": "9%",
+            "icon": "InternetExplorer.jpeg"
+          },
+          {
+            "name": "Opera mini",
+            "usage": "20%",
+            "icon": "Operamini.jpg"
+          },
+          {
+            "name": "Microsoft edge",
+            "usage": "9%",
+            "icon": "Microsoftedge.jpg"
+          }
+        ]
+      }
+    }
+
 
   }
 

@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'grid-template-demo', template: `
@@ -45,6 +45,146 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-card>
               </amexio-column>
             </amexio-row>
+
+            <amexio-row>
+  <amexio-column [size]="12">
+    <amexio-card [footer]="false" [header]="true">
+      <amexio-header>Data Grid with Template</amexio-header>
+      <amexio-body>
+        <amexio-datagrid [enable-checkbox]="false" title="User Activity Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/datagridtemplate.json'"
+          [data-reader]="'response.data'" [page-size]="10" [enable-data-filter]="false">
+          <amexio-data-table-column [width]="40" [data-index]="'User'" [data-type]="'string'" [hidden]="false" [text]="'USER'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <amexio-row>
+                <amexio-column [size]="3">
+                  <!-- <div class=profile-image-round> -->
+                  <!-- <img src="assets/images/profile/{{row.profile}}"/> -->
+                  <amexio-image [path]="'assets/images/profile/'+row.profile" [c-class]="'image-round'">
+                  </amexio-image>
+                  <!-- </div> -->
+                </amexio-column>
+                <amexio-column [size]="9">
+                  <amexio-label size="small">
+                    {{row.User}}
+                  </amexio-label>
+                  <br>
+                  <amexio-label size="small" font-color="grey">
+                    Registered:{{row.Date}}
+                  </amexio-label>
+                </amexio-column>
+              </amexio-row>
+            </ng-template>
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="40" [data-index]="'Usage'" [data-type]="'string'" [hidden]="false" [text]="'USAGE'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <span>{{row.Usage}}%</span>
+
+              <amexio-progress-bar [height]="'10'" [current-value]="row.Usage" [infinite]="false" [type]="getGridTemplateData(row)"></amexio-progress-bar>
+
+              <amexio-label size="small" font-color="grey">
+                {{row.usageFromDate}}-{{row.usageToDate}}
+              </amexio-label>
+
+            </ng-template>
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="20" [data-index]="'Payment'" [data-type]="'string'" [hidden]="false" [text]="'PAYMENT'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <span>
+                <!-- <div class=profile-image-round> -->
+                <!-- <img src="assets/images/{{row.Payment}}"/> -->
+                <amexio-image [path]="'assets/images/'+row.Payment" [c-class]="'image-round'">
+                </amexio-image>
+                <!-- </div> -->
+              </span>
+            </ng-template>
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="20" [data-index]="'Activity'" [data-type]="'string'" [hidden]="false" [text]="'ACTIVITY'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+
+              <amexio-label size="small" font-color="grey">
+                Last login
+              </amexio-label>
+              <br>
+              <amexio-label size="small">
+                {{row.Activity}}
+              </amexio-label>
+
+
+            </ng-template>
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="10" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="''">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+
+              <span>
+                <amexio-image style="color:grey;" [icon-class]="'fa fa-pencil fa-2x'"></amexio-image>
+              </span>
+
+            </ng-template>
+          </amexio-data-table-column>
+        </amexio-datagrid>
+        <br>
+        <amexio-datagrid [enable-checkbox]="false" title="Invoice Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/templategrid.json'"
+          [data-reader]="'response.data'" [page-size]="10" [enable-data-filter]="false">
+          <amexio-data-table-column [width]="5" [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <amexio-label size="small" font-color="grey">
+                {{row.No}}
+              </amexio-label>
+            </ng-template>
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="10" [data-index]="'Invoice Subject'" [data-type]="'string'" [hidden]="false" [text]="'Invoice Subject'">
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="8" [data-index]="'client'" [data-type]="'string'" [hidden]="false" [text]="'Client'">
+
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="6" [data-index]="'Vat No.'" [data-type]="'string'" [hidden]="false" [text]="'Vat No.'">
+
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="8" [data-index]="'Created'" [data-type]="'string'" [hidden]="false" [text]="'Created'">
+
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <a class="fa fa-circle fa-lg" [ngClass]="{'green': row.Status== 'Paid' , 'yellow': row.Status =='Pending' , 'red' : row.Status=='Paid Today'}"></a>
+              &nbsp;{{row.Status}}
+            </ng-template>
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="5" [data-index]="'Price'" [data-type]="'string'" [hidden]="false" [text]="'Price'">
+
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="15" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="''">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <amexio-row>
+                <amexio-column [size]="4">
+                  <amexio-button [label]="'Manage'" [size]="'small'" [type]="'theme-backgroundcolor'" [tooltip]="'Manage'">
+                  </amexio-button>
+                </amexio-column>
+                <amexio-column [size]="5">
+                  <amexio-btn-dropdown [label]="'Action'" [type]="'theme-backgroundcolor'" [size]="'small'">
+                    <amexio-btn-dropdown-item [label]="'Accept'">
+                    </amexio-btn-dropdown-item>
+                    <amexio-btn-dropdown-item [label]="'Reject'">
+                    </amexio-btn-dropdown-item>
+                  </amexio-btn-dropdown>
+                </amexio-column>
+                <amexio-column [size]="3">
+                  <amexio-image style="color:grey;" [icon-class]="'fa fa-pencil fa-2x'"></amexio-image>
+                </amexio-column>
+              </amexio-row>
+            </ng-template>
+          </amexio-data-table-column>
+
+        </amexio-datagrid>
+
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+</amexio-row>
+
+
+
+
+
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties" [enable-column-fiter]="false"
@@ -116,7 +256,36 @@ import {HttpClient} from "@angular/common/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-  `
+  `,
+  styles:[
+    `
+    .listbox-StatusYellow {
+      background-color: yellow;
+    }
+    .listbox-StatusGreen  {
+      background-color: green;
+     }
+    .listbox-StatusRed {
+      background-color: red;
+  }
+  
+.red {
+    color: red!important;
+   
+}
+.green {
+    color: green!important;
+   
+}
+.yellow {
+    color: yellow!important;
+    
+}
+.template-progressBar .progress{
+  height:5px !important;
+}  
+`
+  ]
 })
 export class GridWithTemplateDemo {
   htmlCode: string;
@@ -124,8 +293,84 @@ export class GridWithTemplateDemo {
   dataSource: string;
   copyMsgArray: any[];
   clickedRowData: any;
+  progressType: string;
+  actionWindowFlag: boolean;
+  projectData: any;
+  browserData: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
+    this.projectData = {
+      "response": {
+        "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+          {
+            "name": "Admin Template	",
+            "status": " 65%"
+          },
+          {
+            "name": "Landing Page",
+            "status": "Finished"
+          },
+          {
+            "name": "Backend UI	",
+            "status": "Rejected"
+          },
+          {
+            "name": "Personal Blog",
+            "status": "40%"
+          },
+          {
+            "name": "E-mail Templates	",
+            "status": "13%"
+          },
+          {
+            "name": "Corporate Website",
+            "status": "Pending"
+          }
+        ]
+      }
+    }
+    this.browserData = {
+      "response": {
+        "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+          {
+            "name": "Google Chrome",
+            "usage": "23%",
+            "icon": "GoogleChrome.jpg "
+          },
+          {
+            "name": "Mozila Firefox",
+            "usage": "15%",
+            "icon": "MozilaFirefox.png "
+          },
+          {
+            "name": "Apple Safari",
+            "usage": "7%",
+            "icon": "AppleSafari.png "
+          },
+          {
+            "name": "Internet Explorer",
+            "usage": "9%",
+            "icon": "InternetExplorer.jpeg"
+          },
+          {
+            "name": "Opera mini",
+            "usage": "20%",
+            "icon": "Operamini.jpg"
+          },
+          {
+            "name": "Microsoft edge",
+            "usage": "9%",
+            "icon": "Microsoftedge.jpg"
+          }
+        ]
+      }
+    }
+
+
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
@@ -134,7 +379,7 @@ export class GridWithTemplateDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/templategrid/templategrid.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -142,14 +387,14 @@ export class GridWithTemplateDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/templategrid/templategrid.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/gridtemplate.json',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/componentdata/gridtemplate.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -162,15 +407,29 @@ export class GridWithTemplateDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 
   getRowData(data: any) {
     this.clickedRowData = data;
   }
+
+  getGridTemplateData(row: any): string {
+    if (row.Usage >= 50) {
+      return "success";
+    }
+    if (row.Usage < 50 && row.Usage >= 30) {
+      return "warning";
+    }
+    if (row.Usage < 30) {
+      return "danger";
+    }
+  }
+
+
 }
 
 
