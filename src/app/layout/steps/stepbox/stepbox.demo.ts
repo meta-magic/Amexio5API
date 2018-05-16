@@ -86,7 +86,7 @@ import {Http} from "@angular/http";
                        [text]="'Description'"></amexio-data-table-column>
 </amexio-datagrid>
 
-            <amexio-datagrid title="Events <amexio-step>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Events" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/layout/steps/step.json'"
                              [data-reader]="'events'"
