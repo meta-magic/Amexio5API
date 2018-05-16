@@ -51,7 +51,7 @@ import {HttpClient} from "@angular/common/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Propeties : amexio-dockbar" [enable-column-fiter]="false"
+            <amexio-datagrid title="Propeties <amexio-dockbar>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/navigation/dockbar.json'"
                              [data-reader]="'dockbarproperties'"

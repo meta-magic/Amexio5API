@@ -372,6 +372,34 @@ image using the content attribute.
 .button-secondary:hover:enabled {
   background-color: #e6e6e6; }
 
+.btn-badge {
+  background-color: #ff6b89;
+  color: #dc143c; }
+
+.btn-primary-badge {
+  background-color: #ffffff;
+  color: #dc143c; }
+
+.btn-secondary-badge {
+  background-color: #121212;
+  color: #ffffff; }
+
+.btn-success-badge {
+  background-color: #ffffff;
+  color: #5cb85c; }
+
+.btn-danger-badge {
+  background-color: #ffffff;
+  color: #d9534f; }
+
+.btn-warning-badge {
+  background-color: #ffffff;
+  color: #f0ad4e; }
+
+.btn-transparent-badge {
+  background-color: #121212;
+  color: #ffffff; }
+
 .button-primary {
   background-color: #dc143c;
   border-color: #dc143c;
@@ -430,6 +458,83 @@ button {
   border-radius: 2px;
   transition: all .2s ease-in-out; }
 
+.btn-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-primary-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-secondary-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-success-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-danger-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-warning-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-transparent-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
 .button-text {
   display: inline-block; }
 
@@ -464,15 +569,83 @@ button {
     Version : Amexio v4.0 onwards
 *****************************************************************************/
 /** buttongroup - Visual CSS **/
+.button-secondary {
+  background-color: #ffffff;
+  border-color: #ced4da;
+  color: #121212; }
+
+.button-secondary:hover:enabled {
+  background-color: #e6e6e6; }
+
+.btn-group-primary-badge {
+  background-color: #ffffff;
+  color: #dc143c; }
+
+.btn-group-secondary-badge {
+  background-color: #121212;
+  color: #ffffff; }
+
+.btn-group-success-badge {
+  background-color: #ffffff;
+  color: #5cb85c; }
+
+.btn-group-danger-badge {
+  background-color: #ffffff;
+  color: #d9534f; }
+
+.btn-group-warning-badge {
+  background-color: #ffffff;
+  color: #f0ad4e; }
+
+.btn-group-transparent-badge {
+  background-color: #121212;
+  color: #ffffff; }
+
+.button-primary {
+  background-color: #dc143c;
+  border-color: #dc143c;
+  color: #ffffff; }
+
+.disabled {
+  background-color: #dbc2c7;
+  color: #a3626f; }
+
+.button-primary:hover:enabled {
+  background-color: #ad102f; }
+
+.button-success {
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  color: #ffffff; }
+
+.button-success:hover:enabled {
+  background-color: #449d44; }
+
+.button-danger {
+  background-color: #d9534f;
+  border-color: #d9534f;
+  color: #ffffff; }
+
+.button-danger:hover:enabled {
+  background-color: #c9302c; }
+
+.button-warning {
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+  color: #ffffff; }
+
+.button-warning:hover:enabled {
+  background-color: #ec971f; }
+
+.button-transparent {
+  background: #ffffff;
+  color: #121212; }
+
 /** buttongroup - Structure CSS **/
 .btn-group span {
-  border: 1px solid black;
-  padding: 10px 24px;
-  /* Some padding */
-  cursor: pointer;
-  /* Pointer/hand icon */
-  float: left;
-  /* Float the buttons side by side */ }
+  /* border: $btnGrpBorderSize solid $btnGrpBorderColor; 
+  
+   cursor: pointer; /* Pointer/hand icon */ }
 
 .btn-group button {
   cursor: pointer; }
@@ -490,18 +663,143 @@ button {
 .button-group {
   position: relative; }
 
+.btn-group-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-group-primary-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-group-secondary-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-group-success-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-group-danger-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-group-warning-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.btn-group-transparent-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
+.button-text {
+  display: inline-block; }
+
+.disabled {
+  pointer-events: none; }
+
+.button-small {
+  padding: .25rem .5rem; }
+
+.button-default {
+  padding: .5rem 1rem;
+  font-size: 1rem; }
+
+.button-large {
+  padding: .75rem 1.5rem;
+  font-size: 1.25rem; }
+
+.button-block {
+  display: block;
+  width: 100%; }
+
+.button-transparent {
+  border: none !important;
+  box-shadow: none !important; }
+
+.button-round {
+  border-radius: 50%;
+  vertical-align: middle; }
+
 /****************************************************************************
     Component Name : Buttondropdown
     Version : Amexio v4.0 onwards
 *****************************************************************************/
 /** buttondropdown - Visual CSS **/
+.btn-dropdown-badge {
+  background-color: black;
+  color: white; }
+
 .button-dropdown {
   background-color: #ffffff; }
 
 .button-dropdown > div:hover {
   background-color: #ffb8c6; }
 
+.disabled {
+  background-color: #dbc2c7;
+  color: #a3626f; }
+
 /** buttondropdown - Structure CSS **/
+.btn-dropdown-badge {
+  padding: .25em .4em;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+  margin-left: 3px; }
+
 .button-dropdown {
   position: absolute;
   padding: .5rem 1rem;
@@ -809,7 +1107,14 @@ textarea:required {
 
 .file-upload-size {
   padding-left: 70px;
+  float: right;
   margin: 5px; }
+
+.file-close {
+  padding: 5px; }
+
+.file-upload-box li {
+  display: inherit; }
 
 /****************************************************************************
     Component Name : Collapsible Search
@@ -1433,7 +1738,23 @@ input:checked + .toggle-slider:before {
     Version : Amexio v4.0 onwards
 *****************************************************************************/
 /** label - Visual CSS **/
+.label-badge {
+  color: #fffafb;
+  background-color: #dc143c; }
+
 /** label - Structure CSS **/
+.label-badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px; }
+
 .large {
   font-size: 36px; }
 
@@ -1653,23 +1974,20 @@ input:checked + .toggle-slider:before {
   filter: drop-shadow(8px 8px 10px #dc143c); }
 
 .img-fluid {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: block; }
+  max-width: 100%;
+  height: auto; }
 
 .img-container:hover .overlay-fade {
   opacity: 1; }
 
 .img-container {
   position: relative;
-  max-width: 100%;
-  height: auto;
-  text-align: center;
-  color: white; }
+  width: fit-content;
+  height: auto; }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center; }
 
 .overlay-text {
   color: #f1f1f1;
@@ -3858,69 +4176,111 @@ fieldset {
   background-color: #ff6b89;
   color: #1f0006; }
 
-/** Theme Additional Std Colors : Light and Dark shades --- */
+/** Theme Colors for Tab*/
 /** CSS Class definitions for the Amexio Colors --- */
-/** Amexio Colors --- 
-   Coral: #ff7f50 rgb(255,127,80,0.0);
-   240a00: #240a00 rgb(36,10,0,0.0);
-*/
-.amexio-tab-red-light {
-  border-bottom: 1px solid #ff7f50 !important;
-  color: #ff7f50; }
-
 /** Amexio Colors --- 
    Crimson: #dc143c rgb(220,20,60,0.0);
    fffafb: #fffafb rgb(255,250,251,0.0);
 */
-.amexio-tab-red {
+.amexio-bottom-tab-red {
   color: #dc143c;
-  border-bottom: 1px solid #dc143c !important; }
-
-/** Amexio Colors --- 
-   Lime: #00ff00 rgb(0,255,0,0.0);
-   002400: #002400 rgb(0,36,0,0.0);
-*/
-.amexio-tab-green-light {
-  border-bottom: 1px solid #00ff00 !important;
-  color: #00ff00; }
+  border-top: 1px solid #dc143c !important; }
 
 /** Amexio Colors --- 
    SeaGreen: #2e8b57 rgb(46,139,87,0.0);
    f0faf4: #f0faf4 rgb(240,250,244,0.0);
 */
-.amexio-tab-green {
-  border-bottom: 1px solid #2e8b57 !important;
-  color: #2e8b57; }
-
-/** Amexio Colors --- 
-   Magenta: #ff00ff rgb(255,0,255,0.0);
-   fffaff: #fffaff rgb(255,250,255,0.0);
-*/
-.amexio-tab-purple-light {
-  border-bottom: 1px solid #ff00ff !important;
-  color: #ff00ff; }
+.amexio-bottom-tab-green {
+  border-top: 1px solid #208d4f !important;
+  color: #208d4f; }
 
 /** Amexio Colors --- 
    DarkMagenta: #8b008b rgb(139,0,139,0.0);
    fffaff: #fffaff rgb(255,250,255,0.0);
 */
-.amexio-tab-purple {
-  border-bottom: 1px solid #8b008b !important;
+.amexio-bottom-tab-purple {
+  border-top: 1px solid #8b008b !important;
   color: #8b008b; }
-
-/** Amexio Colors --- 
-   DeepSkyBlue: #00bfff rgb(0,191,255,0.0);
-   f0fbff: #f0fbff rgb(240,251,255,0.0);
-*/
-.amexio-tab-blue-light {
-  border-bottom: 1px solid #00bfff !important;
-  color: #00bfff; }
 
 /** Amexio Colors --- 
    DarkBlue: #00008b rgb(0,0,139,0.0);
    f5f5ff: #f5f5ff rgb(245,245,255,0.0);
 */
-.amexio-tab-blue {
+.amexio-bottom-tab-blue {
+  border-top: 1px solid #00008b !important;
+  color: #00008b; }
+
+/** Amexio Colors --- 
+   SandyBrown: #f4a460 rgb(244,164,96,0.0);
+   211102: #211102 rgb(33,17,2,0.0);
+*/
+.amexio-bottom-tab-brown {
+  border-top: 1px solid #800000 !important;
+  color: #800000; }
+
+/** Amexio Colors --- 
+   Gold: #ffd700 rgb(255,215,0,0.0);
+   241e00: #241e00 rgb(36,30,0,0.0);
+*/
+.amexio-bottom-tab-yellow {
+  border-top: 1px solid #FFFF00 !important;
+  color: #FFFF00; }
+
+/** Amexio Colors --- 
+   Black: #000000 rgb(0,0,0,0.0);
+   White: #ffffff rgb(255,255,255,0.0);
+*/
+.amexio-bottom-tab-black {
+  border-top: 1px solid;
+  border-top-color: #000000;
+  color: #000000; }
+
+/** Amexio Colors --- 
+   Pink: #FF69B4 rgb(255,215,0,0.0);
+   241e00: #241e00 rgb(36,30,0,0.0);
+*/
+.amexio-top-tab-pink {
+  border-top: 1px solid #FF69B4 !important;
+  color: #FF69B4; }
+
+/** Amexio Colors --- 
+   Orange: #FFA500 rgb(255,215,0,0.0);
+   241e00: #241e00 rgb(36,30,0,0.0);
+*/
+.amexio-bottom-tab-orange {
+  border-top: 1px solid #FFA500 !important;
+  color: #FFA500; }
+
+/** CSS Class definitions for the Amexio Colors --- */
+/** Amexio Colors --- 
+   Crimson: #dc143c rgb(220,20,60,0.0);
+   fffafb: #fffafb rgb(255,250,251,0.0);
+*/
+.amexio-top-tab-red {
+  color: #dc143c;
+  border-bottom: 1px solid #dc143c !important; }
+
+/** Amexio Colors --- 
+   SeaGreen: #2e8b57 rgb(46,139,87,0.0);
+   f0faf4: #f0faf4 rgb(240,250,244,0.0);
+*/
+.amexio-top-tab-green {
+  border-bottom: 1px solid #208d4f !important;
+  color: #208d4f; }
+
+/** Amexio Colors --- 
+   DarkMagenta: #8b008b rgb(139,0,139,0.0);
+   fffaff: #fffaff rgb(255,250,255,0.0);
+*/
+.amexio-top-tab-purple {
+  border-bottom: 1px solid #8b008b !important;
+  color: #8b008b; }
+
+/** Amexio Colors --- 
+   DarkBlue: #00008b rgb(0,0,139,0.0);
+   f5f5ff: #f5f5ff rgb(245,245,255,0.0);
+*/
+.amexio-top-tab-blue {
   border-bottom: 1px solid #00008b !important;
   color: #00008b; }
 
@@ -3928,15 +4288,7 @@ fieldset {
    SandyBrown: #f4a460 rgb(244,164,96,0.0);
    211102: #211102 rgb(33,17,2,0.0);
 */
-.amexio-tab-brown-light {
-  border-bottom: 1px solid #f4a460 !important;
-  color: #f4a460; }
-
-/** Amexio Colors --- 
-   Maroon: #800000 rgb(128,0,0,0.0);
-   ffebeb: #ffebeb rgb(255,235,235,0.0);
-*/
-.amexio-tab-brown {
+.amexio-top-tab-brown {
   border-bottom: 1px solid #800000 !important;
   color: #800000; }
 
@@ -3944,26 +4296,34 @@ fieldset {
    Gold: #ffd700 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
-.amexio-tab-yellow-light {
-  border-bottom: 1px solid #ffd700 !important;
-  color: #ffd700; }
-
-/** Amexio Colors --- 
-   ff9900: #ff9900 rgb(255,153,0,0.0);
-   241500: #241500 rgb(36,21,0,0.0);
-*/
-.amexio-tab-yellow {
-  border-bottom: 1px solid #ff9900 !important;
-  color: #ff9900; }
+.amexio-top-tab-yellow {
+  border-bottom: 1px solid #FFFF00 !important;
+  color: #FFFF00; }
 
 /** Amexio Colors --- 
    Black: #000000 rgb(0,0,0,0.0);
    White: #ffffff rgb(255,255,255,0.0);
 */
-.amexio-tab-black {
+.amexio-top-tab-black {
   border-bottom: 1px solid;
   border-bottom-color: #000000;
   color: #000000; }
+
+/** Amexio Colors --- 
+   Pink: #FF69B4 rgb(255,215,0,0.0);
+   241e00: #241e00 rgb(36,30,0,0.0);
+*/
+.amexio-top-tab-pink {
+  border-bottom: 1px solid #FF69B4 !important;
+  color: #FF69B4; }
+
+/** Amexio Colors --- 
+   Orange: #FFA500 rgb(255,215,0,0.0);
+   241e00: #241e00 rgb(36,30,0,0.0);
+*/
+.amexio-top-tab-orange {
+  border-bottom: 1px solid #FFA500 !important;
+  color: #FFA500; }
 
 /** tab - Structure CSS **/
 .tab {
@@ -4064,6 +4424,45 @@ fieldset {
 
 .activecolortab {
   border-bottom: 3px solid !important; }
+
+.bottomTab {
+  width: 100%;
+  position: absolute !important;
+  bottom: 0%;
+  border-top: 1px solid #ced4da;
+  min-width: 760px;
+  max-width: 980px; }
+
+.dynamicContent .tablink {
+  padding-bottom: 0px !important; }
+
+.dynamicContent .input-control {
+  height: 15px !important; }
+
+.dynamicContent .input-box-container {
+  height: 5px !important; }
+
+.dynamicContent .drodown-caret-down {
+  top: -2px !important; }
+
+.dynamicContent .toggle {
+  width: 62px !important;
+  height: 32px !important; }
+
+.dynamicContent .toggle-slider:before {
+  top: 2px; }
+
+.bottomActivetab {
+  border-bottom: 3px solid #ffffff; }
+
+.activebottomcolortab {
+  border-top: 3px solid !important; }
+
+.dynamicContent .rating {
+  padding: .0rem .0rem !important; }
+
+.tablink-header {
+  padding: 1.4%; }
 
 /****************************************************************************
     Component Name : Window

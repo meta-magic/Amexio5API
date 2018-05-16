@@ -1,1 +1,94 @@
-{"name":" Amexio Dialogue","description":" .","selector":" <amexio-dialogue>","properties":[{"name":" footer-align","description":" Alignment of footer contents to right or left.","version":" 4.0 onwards","type":" string","default":" right"},{"name":" show-dialogue","description":" \tShow / Hide Dialogue..","version":" 4.0 onwards","type":"  boolean","default":" false"},{"name":" show-dialogue","description":" User can close the Dialogue.","version":" 4.0 onwards","type":"  boolean","default":" none"},{"name":" title","description":" Title for dialog.","version":" 4.0 onwards","type":"  string","default":" none"},{"name":"  message","description":" Alert or confirm message ","version":" 4.0 onwards","type":"  string","default":" none"},{"name":"  custom","description":" User can custom dialogue box.","version":" 4.0 onwards","type":"  boolean","default":" false"},{"name":"  confirm","description":" Mode to open, alert or dialogue mode.","version":" 4.0 onwards","type":"  'confirm'| 'alert'","default":" none"},{"name":" primary-action-label","description":" Label to be displayed for primary action.","version":" 4.0 onwards","type":"  'string","default":" none"},{"name":" secondary-action-label","description":" Label to be displayed for secondary action.","version":" 4.0 onwards","type":"  string","default":" none"},{"name":" message-type","description":" Type of message like error,warning,help.","version":" 4.0 onwards","type":"  string","default":" none"}],"events":[{"name":" message-type","description":" Fires when click on yes or no button"},{"name":"close","description":" Fires when user closes dialogue"}]}
+{
+    "name": "Amexio Dialogue",
+    "description": "A Simple dialogue which renders various prompts like Confirmation/Alert based on type, title, body user has configured.",
+    "selector": "<amexio-dialogue>",
+    "properties": [
+      {
+        "name": "footer-align",
+        "description": "Alignment of footer contents to right or left.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "right"
+      },
+      {
+        "name": "content-align",
+        "description": "Alignment of  contents to right or left or center.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "center"
+      },
+      {
+        "name": "show-dialogue",
+        "description": "Show / Hide Dialogue..",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "closable",
+        "description": "User can close the Dialogue.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "title",
+        "description": "Title for dialog.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "message",
+        "description": "Alert or confirm message",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "custom",
+        "description": "User can custom dialogue box.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "type",
+        "description": "Mode to open, alert or dialogue mode.",
+        "version": "4.0 onwards",
+        "type": "'confirm'| 'alert'",
+        "default": "confirm"
+      },
+      {
+        "name": "primary-action-label",
+        "description": "Label to be displayed for primary action.",
+        "version": "4.0 onwards",
+        "type": "'string",
+        "default": ""
+      },
+      {
+        "name": "secondary-action-label",
+        "description": "Label to be displayed for secondary action.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "message-type",
+        "description": "Type of message like error,warning,help.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      }
+    ],
+    "events": [
+      {
+        "name": "actionStatus",
+        "description": "Fire when click on yes or no button"
+      },
+      {
+        "name": "close",
+        "description": "Fire when user close dialogue"
+      }
+    ]
+  }

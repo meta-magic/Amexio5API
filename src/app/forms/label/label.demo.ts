@@ -18,7 +18,7 @@ import {HttpClient} from "@angular/common/http";
           <h2>Label Component</h2>
           <amexio-row>
           <amexio-column [size]="4">
-            <amexio-label size="large">This is large amexio label</amexio-label>
+            <amexio-label  size="large">This is large amexio label</amexio-label>
           </amexio-column>
           <amexio-column [size]="4">
             <amexio-label size="large-bold">This is large-bold amexio label</amexio-label>
@@ -40,6 +40,29 @@ import {HttpClient} from "@angular/common/http";
           </amexio-column>
           </amexio-row> 
           <br/>
+          <h2>Label Component With Badges </h2>
+          <amexio-row>
+          <amexio-column [size]="4">
+            <amexio-label size="large" [badge]="1">This is large amexio label</amexio-label>
+          </amexio-column>
+          <amexio-column [size]="4">
+            <amexio-label size="large-bold"[badge]="2">This is large-bold amexio label</amexio-label>
+          </amexio-column>
+          <amexio-column [size]="4">    
+            <amexio-label size="medium-bold"[badge]="3">This is medium-bold amexio label</amexio-label>
+          </amexio-column>
+          </amexio-row>
+          <amexio-row>
+          <amexio-column [size]="4">
+            <amexio-label size="small" [badge]="3">This is small amexio label</amexio-label>
+          </amexio-column>
+          <amexio-column [size]="4">
+            <amexio-label size="small-bold"[badge]="2">This is small-bold amexio label</amexio-label>
+          </amexio-column>
+          <amexio-column [size]="4">    
+            <amexio-label size="medium-bold" font-color="#FF5733"[badge]="5">This is medium-bold amexio label</amexio-label>
+          </amexio-column>
+          </amexio-row>
           <h2>Box Component</h2>
           <amexio-row>
             <amexio-column [size]="4">

@@ -1,6 +1,6 @@
 import {NgModule} from "@angular/core";
 import {RouterModule} from "@angular/router";
-import { AmexioWidgetModule} from "amexio-ng-extensions";
+import { AmexioWidgetModule, AmexioPaneModule} from "amexio-ng-extensions";
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
@@ -11,7 +11,7 @@ import {SharedModule} from "../../../shared.module";
  */
 @NgModule({
   declarations: [EnhancedTabDemo],
-  imports: [CommonModule, FormsModule, HttpModule,SharedModule, AmexioWidgetModule, RouterModule.forChild([{
+  imports: [CommonModule, FormsModule, AmexioPaneModule, HttpModule,SharedModule, AmexioWidgetModule, RouterModule.forChild([{
     path: '', component: EnhancedTabDemo, pathMatch: 'full'
   }])],
   providers: []

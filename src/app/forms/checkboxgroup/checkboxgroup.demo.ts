@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
   selector: 'checkboxgroup-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         CheckBox 
+         CheckBox Group
       </amexio-header>
       <amexio-body>
         <p>Checkbox input component has been created to render N numbers of check-box based on data-set configured.
@@ -74,7 +74,7 @@ import {HttpClient} from "@angular/common/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties <amexio-checkbox>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties<amexio-checkbox>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/checkboxgroup.json'"
                              [data-reader]="'properties'"

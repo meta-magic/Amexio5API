@@ -25,7 +25,7 @@ import {HttpClient} from "@angular/common/http";
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Chart Properties<amexio-chart-donut>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/donutchart.json'"
                              [data-reader]="'chart'"
@@ -40,7 +40,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Title Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Chart Title Properties<amexio-chart-title>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/donutchart.json'"
                              [data-reader]="'chartTitle'"
@@ -55,7 +55,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Legend Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Chart Legend Properties<amexio-chart-legend> " [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/donutchart.json'"
                              [data-reader]="'chartLegend'"

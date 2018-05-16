@@ -50,7 +50,7 @@ import {HttpClient} from "@angular/common/http";
            </amexio-card>
          </amexio-tab>
          <amexio-tab title="API Reference">
-           <amexio-datagrid title="Propeties" [enable-column-fiter]="false"
+           <amexio-datagrid title="Propeties<amexio-ee-youtube-player> " [enable-column-fiter]="false"
                             [http-method]="'get'"
                             [http-url]="'assets/apireference/enterprise/videoplayer.json'"
                             [data-reader]="'properties'"
