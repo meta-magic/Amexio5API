@@ -69,7 +69,7 @@ import {HttpClient} from "@angular/common/http";
             
           </amexio-tab>
           <amexio-tab title="API Reference">
-          <amexio-label size="small-bold">from Amexio v4.1</amexio-label>
+         
             <amexio-datagrid title="Properties <amexio-floating-button>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/floatingbutton.json'"
