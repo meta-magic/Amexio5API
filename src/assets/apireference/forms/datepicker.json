@@ -51,35 +51,23 @@
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
-    },
-    {
+    }
+   
+  ],
+  "events": [ {
       "name": "blur",
-      "description": "On blur event",
-      "version": "none",
-      "type": "none",
-      "default": "none"
+      "description": "On blur event"
     },
     {
       "name": "change",
-      "description": "On field value change event",
-      "version": "none",
-      "type": "none",
-      "default": "none"
+      "description": "On field value change event"
     },
     {
       "name": "input",
-      "description": "On input event field.",
-      "version": "none",
-      "type": "none",
-      "default": "none"
+      "description": "On input event field."
     },
     {
       "name": "focus",
-      "description": "On field focus event",
-      "version": "none",
-      "type": "none",
-      "default": "none"
-    }
-  ],
-  "events": []
+      "description": "On field focus event"
+    }]
 }
