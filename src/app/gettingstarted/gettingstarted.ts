@@ -21,13 +21,27 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
             </a>
             <br>
             <h1>Amexio Angular EXtensions v4.1</h1>
-            <br>
-            <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
-            <amexio-image [height] = "50" [width] ="50"
-              path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
-            <a href="https://badge.fury.io/js/amexio-ng-extensions">
-              <amexio-image [height] = "50" [width] ="50" path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
-            </a>
+            <amexio-row>
+              <amexio-column size="3"></amexio-column>
+              <amexio-column size="6">
+                <amexio-row>
+                  <amexio-column size="4">
+                    <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
+                  </amexio-column>
+                  <amexio-column size="4">
+                    <amexio-image [height] = "50" [width] ="50" path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
+                  </amexio-column>
+                  <amexio-column size="4">
+                    <a href="https://badge.fury.io/js/amexio-ng-extensions">
+                      <amexio-image [height] = "50" [width] ="50" path="https://img.shields.io/npm/dt/amexio-ng-extensions.svg"></amexio-image>
+                    </a>
+                  </amexio-column>
+                </amexio-row>
+                
+              </amexio-column>
+            </amexio-row>
+
+             
           </div>
           <hr>
         </amexio-column>
