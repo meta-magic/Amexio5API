@@ -48,7 +48,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-slider>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/slider.component.json'"
+                             [http-url]="'assets/apireference/forms/slider.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -62,7 +62,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events <amexio-slider> " [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/slider.component.json'" [data-reader]="'events'"
+                             [http-url]="'assets/apireference/forms/slider.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>

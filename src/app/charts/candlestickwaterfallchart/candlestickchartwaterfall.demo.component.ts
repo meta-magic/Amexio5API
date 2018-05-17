@@ -23,7 +23,7 @@ import {HttpClient} from "@angular/common/http";
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Chart Properties<amexio-chart-candlestick-waterfall>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/candlestickwaterfallchart.json'"
                              [data-reader]="'chart'"
@@ -38,7 +38,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Title Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Chart Title Properties<amexio-chart-title> " [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/candlestickwaterfallchart.json'"
                              [data-reader]="'chartTitle'"
@@ -53,7 +53,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Horizontal Axis" [enable-column-fiter]="false"
+            <amexio-datagrid title="Chart Horizontal Axis<amexio-chart-horizontal-axis>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/candlestickwaterfallchart.json'"
                              [data-reader]="'horizontalAxis'"
@@ -68,7 +68,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Chart Vertical Axis" [enable-column-fiter]="false"
+            <amexio-datagrid title="Chart Vertical Axis<amexio-chart-vertical-axis>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/charts/candlestickwaterfallchart.json'"
                              [data-reader]="'verticalAxis'"

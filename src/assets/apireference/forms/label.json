@@ -8,7 +8,7 @@
         "description": "Badge Value for Label.",
         "version": "4.1.9 onwards",
         "type": "number",
-        "default": "none"
+        "default": ""
       },
       {
         "name": "size",

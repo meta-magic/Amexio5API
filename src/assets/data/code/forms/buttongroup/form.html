@@ -34,7 +34,6 @@
 </amexio-btn-group>
 
 <!--Button Group with Icons-->
-
 <amexio-btn-group>
   <amexio-button [label]="'Next'"
                  [type]="'theme-color'"
@@ -54,7 +53,6 @@
 </amexio-btn-group>
 
 <!--Button Group Sizes-->
-
 <amexio-row>
   <amexio-column [size]="6">
     <amexio-btn-group  >
@@ -101,3 +99,44 @@
     </amexio-btn-group>
   </amexio-column>
 </amexio-row>
+
+<!--Button Group With Badges -->
+<amexio-btn-group [size]="'small'" >
+  <amexio-button [label]="'Save'"
+                 [badge]="'15'"
+                 [type]="'theme-backgroundcolor'"
+                 [tooltip]="'Secondary Button'">
+ </amexio-button>
+ <amexio-button [label]="'Cancel'"
+                 [badge]="'16'"
+                 [type]="'theme-backgroundcolor'"
+                 [tooltip]="'Secondary Button'">
+ </amexio-button>
+</amexio-btn-group>
+
+<amexio-btn-group [size]="'default'" >
+  <amexio-button [label]="'Save'"
+                 [badge]="'17'"
+                 [type]="'green'"
+                 [tooltip]="'Secondary Button'">
+ </amexio-button>
+ <amexio-button [label]="'Cancel'"
+                 [badge]="'18'"
+                 [type]="'green'"
+                 [tooltip]="'Secondary Button'">
+ </amexio-button>
+</amexio-btn-group>
+
+<amexio-btn-group [size]="'large'" >
+
+  <amexio-button [label]="'Save'"
+                 [badge]="'19'"
+                 [type]="'red'"
+                 [tooltip]="'Secondary Button'">
+  </amexio-button>
+  <amexio-button [label]="'Cancel'"
+                 [badge]="'20'"
+                 [type]="'red'"
+                 [tooltip]="'Secondary Button'">
+  </amexio-button> 
+</amexio-btn-group>
