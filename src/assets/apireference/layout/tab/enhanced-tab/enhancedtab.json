@@ -12,14 +12,7 @@
     },
     {
       "name": "header-align",
-      "description": "Specify position of tabs(left/right/center).",
-      "version": "4.1.9 onwards",
-      "type": "string",
-      "default": "left"
-    },
-    {
-      "name": "action-type-align",
-      "description": "Specify position of action type(left/right).",
+      "description": "Specify position of tabs(left/right).",
       "version": "4.1.9 onwards",
       "type": "string",
       "default": "left"
@@ -32,13 +25,6 @@
       "default": "false"
     },
     {
-      "name": "type",
-      "description": "Type can be amexio input such as (text field/ number field/ checkbox/ label/ dropdown/ toggle/ button/ image/ checkbox group/ radio group/ rating/ datefield)",
-      "version": "4.1.9 onwards",
-      "type": "string",
-      "default": ""
-    },
-    {
       "name": "tab-position",
       "description": "Position of tab can be (top/bottom).  When Tab is used in card and tab-position is bottom , make sure footer property of card is false",
       "version": "4.1.9 onwards",
@@ -47,7 +33,7 @@
     },
     {
       "name": "header",
-      "description": "Header for Tab.",
+      "description": "Header for the Tab Layout.",
       "version": "4.1.9 onwards",
       "type": "string",
       "default": ""

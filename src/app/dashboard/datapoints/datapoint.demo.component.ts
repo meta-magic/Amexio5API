@@ -52,7 +52,7 @@ import {HttpClient} from "@angular/common/http";
            
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Data Point Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Data Point Properties<amexio-datapoints>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/dashboard/datapoint.json'"
                              [data-reader]="'datapoint'"

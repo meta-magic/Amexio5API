@@ -1056,7 +1056,8 @@ textarea:required {
 .file-upload-box {
   list-style-type: none;
   float: left;
-  z-index: 1; }
+  z-index: 1;
+  width: 100%; }
 
 .file-upload-name {
   padding: 20;
@@ -1072,6 +1073,20 @@ textarea:required {
 
 .file-upload-box li {
   display: inherit; }
+
+.file-upload-info {
+  border: 1px solid lightgray;
+  margin-top: 3px; }
+
+.uploaded-file-name {
+  padding-left: 2%;
+  font-size: small; }
+
+.close-icon {
+  float: right;
+  padding-right: 2%;
+  font-size: 12px !important;
+  cursor: pointer; }
 
 /****************************************************************************
     Component Name : Collapsible Search
@@ -1826,7 +1841,8 @@ input:checked + .toggle-slider:before {
 
 .box-close {
   float: right;
-  padding-right: 5px; }
+  padding-right: 4px;
+  height: 5px; }
 
 .border-dotted {
   border-width: 1px;
@@ -1999,7 +2015,6 @@ input:checked + .toggle-slider:before {
   width: 100%;
   transition: .5s ease;
   opacity: 0;
-  padding: 20px;
   text-align: center; }
 
 .overlay-text p {
@@ -4325,14 +4340,14 @@ fieldset {
 */
 .amexio-bottom-tab-red {
   color: #dc143c;
-  border-top: 1px solid #dc143c !important; }
+  border-top: 2px solid #dc143c !important; }
 
 /** Amexio Colors --- 
    SeaGreen: #2e8b57 rgb(46,139,87,0.0);
    f0faf4: #f0faf4 rgb(240,250,244,0.0);
 */
 .amexio-bottom-tab-green {
-  border-top: 1px solid #208d4f !important;
+  border-top: 2px solid #208d4f !important;
   color: #208d4f; }
 
 /** Amexio Colors --- 
@@ -4340,7 +4355,7 @@ fieldset {
    fffaff: #fffaff rgb(255,250,255,0.0);
 */
 .amexio-bottom-tab-purple {
-  border-top: 1px solid #8b008b !important;
+  border-top: 2px solid #8b008b !important;
   color: #8b008b; }
 
 /** Amexio Colors --- 
@@ -4348,7 +4363,7 @@ fieldset {
    f5f5ff: #f5f5ff rgb(245,245,255,0.0);
 */
 .amexio-bottom-tab-blue {
-  border-top: 1px solid #00008b !important;
+  border-top: 2px solid #00008b !important;
   color: #00008b; }
 
 /** Amexio Colors --- 
@@ -4356,7 +4371,7 @@ fieldset {
    211102: #211102 rgb(33,17,2,0.0);
 */
 .amexio-bottom-tab-brown {
-  border-top: 1px solid #800000 !important;
+  border-top: 2px solid #800000 !important;
   color: #800000; }
 
 /** Amexio Colors --- 
@@ -4364,24 +4379,15 @@ fieldset {
    241e00: #241e00 rgb(36,30,0,0.0);
 */
 .amexio-bottom-tab-yellow {
-  border-top: 1px solid #FFFF00 !important;
+  border-top: 2px solid #FFFF00 !important;
   color: #FFFF00; }
-
-/** Amexio Colors --- 
-   Black: #000000 rgb(0,0,0,0.0);
-   White: #ffffff rgb(255,255,255,0.0);
-*/
-.amexio-bottom-tab-black {
-  border-top: 1px solid;
-  border-top-color: #000000;
-  color: #000000; }
 
 /** Amexio Colors --- 
    Pink: #FF69B4 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
-.amexio-top-tab-pink {
-  border-top: 1px solid #FF69B4 !important;
+.amexio-bottom-tab-pink {
+  border-top: 2px solid #FF69B4 !important;
   color: #FF69B4; }
 
 /** Amexio Colors --- 
@@ -4389,7 +4395,7 @@ fieldset {
    241e00: #241e00 rgb(36,30,0,0.0);
 */
 .amexio-bottom-tab-orange {
-  border-top: 1px solid #FFA500 !important;
+  border-top: 2px solid #FFA500 !important;
   color: #FFA500; }
 
 /** CSS Class definitions for the Amexio Colors --- */
@@ -4399,14 +4405,14 @@ fieldset {
 */
 .amexio-top-tab-red {
   color: #dc143c;
-  border-bottom: 1px solid #dc143c !important; }
+  border-bottom: 2px solid #dc143c !important; }
 
 /** Amexio Colors --- 
    SeaGreen: #2e8b57 rgb(46,139,87,0.0);
    f0faf4: #f0faf4 rgb(240,250,244,0.0);
 */
 .amexio-top-tab-green {
-  border-bottom: 1px solid #208d4f !important;
+  border-bottom: 2px solid #208d4f !important;
   color: #208d4f; }
 
 /** Amexio Colors --- 
@@ -4414,7 +4420,7 @@ fieldset {
    fffaff: #fffaff rgb(255,250,255,0.0);
 */
 .amexio-top-tab-purple {
-  border-bottom: 1px solid #8b008b !important;
+  border-bottom: 2px solid #8b008b !important;
   color: #8b008b; }
 
 /** Amexio Colors --- 
@@ -4422,7 +4428,7 @@ fieldset {
    f5f5ff: #f5f5ff rgb(245,245,255,0.0);
 */
 .amexio-top-tab-blue {
-  border-bottom: 1px solid #00008b !important;
+  border-bottom: 2px solid #00008b !important;
   color: #00008b; }
 
 /** Amexio Colors --- 
@@ -4430,7 +4436,7 @@ fieldset {
    211102: #211102 rgb(33,17,2,0.0);
 */
 .amexio-top-tab-brown {
-  border-bottom: 1px solid #800000 !important;
+  border-bottom: 2px solid #800000 !important;
   color: #800000; }
 
 /** Amexio Colors --- 
@@ -4438,24 +4444,15 @@ fieldset {
    241e00: #241e00 rgb(36,30,0,0.0);
 */
 .amexio-top-tab-yellow {
-  border-bottom: 1px solid #FFFF00 !important;
+  border-bottom: 2px solid #FFFF00 !important;
   color: #FFFF00; }
-
-/** Amexio Colors --- 
-   Black: #000000 rgb(0,0,0,0.0);
-   White: #ffffff rgb(255,255,255,0.0);
-*/
-.amexio-top-tab-black {
-  border-bottom: 1px solid;
-  border-bottom-color: #000000;
-  color: #000000; }
 
 /** Amexio Colors --- 
    Pink: #FF69B4 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
 .amexio-top-tab-pink {
-  border-bottom: 1px solid #FF69B4 !important;
+  border-bottom: 2px solid #FF69B4 !important;
   color: #FF69B4; }
 
 /** Amexio Colors --- 
@@ -4463,7 +4460,7 @@ fieldset {
    241e00: #241e00 rgb(36,30,0,0.0);
 */
 .amexio-top-tab-orange {
-  border-bottom: 1px solid #FFA500 !important;
+  border-bottom: 2px solid #FFA500 !important;
   color: #FFA500; }
 
 /** tab - Structure CSS **/
@@ -4537,7 +4534,7 @@ fieldset {
 .verticalnavtab-right {
   font-weight: bold; }
 
-.verticalalign-tableft {
+verticalalign-tableft {
   vertical-align: top !important;
   border-right: 3px solid #FFBF00 !important; }
 
@@ -4574,36 +4571,43 @@ fieldset {
   min-width: 760px;
   max-width: 980px; }
 
-.dynamicContent .tablink {
-  padding-bottom: 0px !important; }
-
-.dynamicContent .input-control {
-  height: 15px !important; }
-
-.dynamicContent .input-box-container {
-  height: 5px !important; }
-
-.dynamicContent .drodown-caret-down {
-  top: -2px !important; }
-
-.dynamicContent .toggle {
-  width: 62px !important;
-  height: 32px !important; }
-
-.dynamicContent .toggle-slider:before {
-  top: 2px; }
-
 .bottomActivetab {
   border-bottom: 5px solid #FFBF00; }
 
 .activebottomcolortab {
   border-top: 3px solid !important; }
 
-.dynamicContent .rating {
-  padding: .0rem .0rem !important; }
+.tabposition-right {
+  display: inline-flex !important;
+  width: 100%;
+  justify-content: space-between; }
 
-.tablink-header {
-  padding: 1.4%; }
+.tabposition-left {
+  display: inline-flex !important;
+  width: 100%;
+  justify-content: flex-start; }
+
+.tablink .inputgroup * {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important; }
+
+.tablink amexio-tab-action1 {
+  padding-left: 5%;
+  display: inline-block; }
+
+.tabnavigation-bottom-right {
+  bottom: 3%;
+  z-index: 3;
+  position: absolute;
+  right: 16px; }
+
+.tabnavigation-bottom-left {
+  bottom: 3%;
+  z-index: 3;
+  position: absolute; }
+
+.drodown-caret-down {
+  top: 2px !important; }
 
 /****************************************************************************
     Component Name : Window
@@ -4690,7 +4694,8 @@ fieldset {
   padding-right: 16px;
   height: 80%;
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background-color: white; }
 
 .modal-window-middle::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }

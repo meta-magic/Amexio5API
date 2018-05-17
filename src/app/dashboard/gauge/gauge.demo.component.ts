@@ -24,7 +24,7 @@ import {HttpClient} from "@angular/common/http";
            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties<amexio-dashboard-gauge>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/dashboard/gauge.json'"
                              [data-reader]="'dashboard'"
