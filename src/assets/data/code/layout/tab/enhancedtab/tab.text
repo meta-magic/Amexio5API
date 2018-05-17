@@ -1,5 +1,8 @@
 export class EnhancedTabDemo {
 
+  public rate: number = 7;
+  public max: number = 10;
+  public isReadonly: boolean = false;
   radioGroupData: any;
 
     constructor{
