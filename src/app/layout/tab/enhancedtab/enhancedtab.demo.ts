@@ -45,7 +45,7 @@ import { Http } from "@angular/http";
               <amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'left'" [divide-header-equally]=false>
                   <amexio-tab-action>
                       <amexio-radio-group name="gender" [data-reader]="'response.data'" [display-field]="'gender'"
-                          [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData" [default-value]="'male'" (onSelection)="setSelectedGender($event)">
+                          [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData" [default-value]="'male'">
                       </amexio-radio-group>
                   </amexio-tab-action>
       
