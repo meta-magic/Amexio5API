@@ -1,6 +1,6 @@
 <!-- Tab Layout with Header, Tab alignment(right) and tab colors -->
 
-<amexio-tab-view [closable]="false" header="Work Profile" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+<amexio-tab-view header="Work Profile" [header-align]="'right'">
     <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
         Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
         dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
@@ -15,7 +15,7 @@
 
 <!-- Tab Layout with Action Component(Radio Group). -->
 
-<amexio-tab-view [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'left'" [divide-header-equally]=false>
+<amexio-tab-view [action]="true" [header-align]="'left'">
     <amexio-tab-action>
         <amexio-radio-group name="gender" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [horizontal]="true"
             [data]="radioGroupData" [default-value]="'male'" (onSelection)="setSelectedGender($event)">
@@ -45,9 +45,9 @@
 
 <!-- Tab Layoout with Action Component(Button)-->
 
-<amexio-tab-view #tab [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+<amexio-tab-view #tab [action]="true" [tab-position]="'top'">
     <amexio-tab-action>
-        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'toolTip'" >
+        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'" >
         </amexio-button>
     </amexio-tab-action>
     <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
@@ -74,7 +74,7 @@
 
 <!-- Tab Layout with Action Component (Rating)-->
 
-<amexio-tab-view [closable]="false" [action][="true" tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+<amexio-tab-view [action][="true" [header-align]="'right'">
     <amexio-tab-action>
         <amexio-rating-input [(ngModel)]="rate" [max]="max" name="rate" [read-only]="isReadonly">
         </amexio-rating-input>
@@ -103,7 +103,7 @@
 
 <!-- Tab Layout with Tabs Divided Equally  -->
 
-<amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=true>
+<amexio-tab-view [divide-header-equally]=true>
     <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
         Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
         dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen

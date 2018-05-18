@@ -22,7 +22,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
               Tab layout with header and tabs right aligned
           </amexio-header>
           <amexio-body>
-              <amexio-tab-view [closable]="false" header="Work Profile" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+              <amexio-tab-view header="Work Profile" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
                   <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
                       Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                       dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
@@ -84,7 +84,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
           <amexio-body>
               <amexio-tab-view #tab [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'left'">
                   <amexio-tab-action>
-                      <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'toolTip'">
+                      <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
                       </amexio-button>
                   </amexio-tab-action>
                   <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
