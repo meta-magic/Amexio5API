@@ -20,7 +20,7 @@ import {SharedModule} from "../shared.module";
               <amexio-image path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
             </a>
             <br>
-            <h1>Amexio Angular EXtensions v4.0</h1>
+            <h1>Amexio Angular EXtensions v4.2</h1>
             <br>
             <amexio-image path="assets/images/npm.svg"></amexio-image>
             <amexio-image
