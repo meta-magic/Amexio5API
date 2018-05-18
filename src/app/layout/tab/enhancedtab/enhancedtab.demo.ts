@@ -4,6 +4,8 @@
 
 import { Component } from '@angular/core'
 import { Http } from "@angular/http";
+import { DyanmicTabComponent } from './dynamictabdemo.component';
+
 
 @Component({
   selector: 'enhanced-tab-demo', template: `
@@ -12,7 +14,7 @@ import { Http } from "@angular/http";
          Enhanced Tab 
       </amexio-header>
       <amexio-body>
-        <p>Enhanced Tab component for Angular Apps with multiple configurations such as Tab, Header, Tab Alignments, Tabs divided equally, Tab Colors</p>
+        <p>Enhanced Tab component for Angular Apps with multiple configurations such as Tab, Header, Tab Alignments, Tabs divided equally, Tab Colors and Action Components</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
           <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
@@ -77,12 +79,12 @@ import { Http } from "@angular/http";
       
       <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
           <amexio-header>
-              Tab layout with action component(button) and tabs right aligned
+              Tab layout with action component(button) and tabs left aligned
           </amexio-header>
           <amexio-body>
-              <amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+              <amexio-tab-view #tab [closable]="false" [tab-position]="'top'" [header-align]="'left'">
                   <amexio-tab-action>
-                      <amexio-button [label]="'Click Here'" [type]="'theme-color'" [tooltip]="'toolTip'">
+                      <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'toolTip'">
                       </amexio-button>
                   </amexio-tab-action>
                   <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
@@ -90,12 +92,12 @@ import { Http } from "@angular/http";
                       dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                       type specimen book.
                   </amexio-tab>
-                  <amexio-tab title="Work" [amexio-color]="'blue'">
+                  <amexio-tab title="Work" [amexio-color]="'red'">
                       Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
-                  <amexio-tab title="Profile" [amexio-color]="'green'">
+                  <amexio-tab title="Profile" [amexio-color]="'red'">
                       Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
@@ -282,6 +284,8 @@ import { Http } from "@angular/http";
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
+             <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
@@ -297,6 +301,8 @@ import { Http } from "@angular/http";
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
@@ -397,6 +403,14 @@ export class EnhancedTabDemo {
     } else {
       this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
+  }
+
+  tabcount :number = 4;
+  addtab(tab:any){
+    this.tabcount++;
+    let title = 'Tab '+this.tabcount;
+    let cmp = tab.addDynamicTab(title,"red",DyanmicTabComponent);
+    cmp.content = "Content of "+title;
   }
 }
 

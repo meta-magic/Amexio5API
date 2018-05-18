@@ -6,15 +6,18 @@ import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {EnhancedTabDemo} from "./enhancedtab.demo";
 import {SharedModule} from "../../../shared.module";
+import { DyanmicTabComponent } from './dynamictabdemo.component';
+
 /**
  * Created by sagar on 11/1/18.
  */
 @NgModule({
-  declarations: [EnhancedTabDemo],
+  declarations: [EnhancedTabDemo,DyanmicTabComponent],
   imports: [CommonModule, FormsModule, AmexioPaneModule, HttpModule,SharedModule, AmexioWidgetModule, RouterModule.forChild([{
     path: '', component: EnhancedTabDemo, pathMatch: 'full'
   }])],
-  providers: []
+  providers: [],
+  entryComponents:[DyanmicTabComponent]
 })
 export class EnhancedTabDemoModule {
 
