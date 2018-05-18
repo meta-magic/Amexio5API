@@ -90,7 +90,7 @@ import {HttpClient} from "@angular/common/http";
               </amexio-checkbox>
             </amexio-form-body>
               <amexio-form-action>
-                <amexio-button [disabled]="true" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
+                <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
                 </amexio-button>
                 <amexio-button [label]="'Cancel'"
                                   [type]="'theme-backgroundcolor'"
@@ -184,7 +184,7 @@ export class FormDemoComponent{
   checkboxGroupdata : any;
   currentDate : Date = new Date();
   constructor(private http: HttpClient) {
-   
+
    this.checkboxGroupdata = {
       response:{
         data:[{
