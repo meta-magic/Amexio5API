@@ -15,7 +15,7 @@
 
 <!-- Tab Layout with Action Component(Radio Group). -->
 
-<amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'left'" [divide-header-equally]=false>
+<amexio-tab-view [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'left'" [divide-header-equally]=false>
     <amexio-tab-action>
         <amexio-radio-group name="gender" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [horizontal]="true"
             [data]="radioGroupData" [default-value]="'male'" (onSelection)="setSelectedGender($event)">
@@ -45,9 +45,9 @@
 
 <!-- Tab Layoout with Action Component(Button)-->
 
-<amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+<amexio-tab-view #tab [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
     <amexio-tab-action>
-        <amexio-button [label]="'Click Here'" [type]="'theme-color'" [tooltip]="'toolTip'">
+        <amexio-button [label]="'Click Here'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'toolTip'" >
         </amexio-button>
     </amexio-tab-action>
     <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
@@ -55,12 +55,12 @@
         dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
         book.
     </amexio-tab>
-    <amexio-tab title="Work" [amexio-color]="'blue'">
+    <amexio-tab title="Work" [amexio-color]="'red'">
         Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
         placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
         posuere. Praesent ornare rutrum mi et condimentum.
     </amexio-tab>
-    <amexio-tab title="Profile" [amexio-color]="'green'">
+    <amexio-tab title="Profile" [amexio-color]="'red'">
         Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
         placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
         posuere. Praesent ornare rutrum mi et condimentum.
@@ -74,7 +74,7 @@
 
 <!-- Tab Layout with Action Component (Rating)-->
 
-<amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+<amexio-tab-view [closable]="false" [action][="true" tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
     <amexio-tab-action>
         <amexio-rating-input [(ngModel)]="rate" [max]="max" name="rate" [read-only]="isReadonly">
         </amexio-rating-input>

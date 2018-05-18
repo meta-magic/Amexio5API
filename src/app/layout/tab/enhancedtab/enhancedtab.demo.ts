@@ -14,7 +14,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
          Enhanced Tab 
       </amexio-header>
       <amexio-body>
-        <p>Enhanced Tab component for Angular Apps with multiple configurations such as Tab, Header, Tab Alignments, Tabs divided equally, Tab Colors and Action Components</p>
+        <p>Enhanced Tab component for Angular Apps with multiple configurations such as Tab, Header, Tab Alignments, Tabs divided equally, Tab Colors and Action Component</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
           <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
@@ -44,7 +44,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
               Tab layout with action component(Radio Group) and tabs left aligned
           </amexio-header>
           <amexio-body>
-              <amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'left'" [divide-header-equally]=false>
+              <amexio-tab-view [action]="true" [closable]="false" [tab-position]="'top'" [header-align]="'left'" [divide-header-equally]=false>
                   <amexio-tab-action>
                       <amexio-radio-group name="gender" [data-reader]="'response.data'" [display-field]="'gender'"
                           [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData" [default-value]="'male'">
@@ -82,7 +82,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
               Tab layout with action component(button) and tabs left aligned
           </amexio-header>
           <amexio-body>
-              <amexio-tab-view #tab [closable]="false" [tab-position]="'top'" [header-align]="'left'">
+              <amexio-tab-view #tab [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'left'">
                   <amexio-tab-action>
                       <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'toolTip'">
                       </amexio-button>
@@ -117,7 +117,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
               Tab layout with action component(Rating) and tabs right aligned
           </amexio-header>
           <amexio-body>
-              <amexio-tab-view [closable]="false" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
+              <amexio-tab-view [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'right'" [divide-header-equally]=false>
                   <amexio-tab-action>
                       <amexio-rating-input [(ngModel)]="rate" [max]="max" name="rate" [read-only]="isReadonly">
                       </amexio-rating-input>
