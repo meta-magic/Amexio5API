@@ -18,6 +18,13 @@
       "default": "left"
     },
     {
+      "name": "action",
+      "description": "This flag ensures the action Component",
+      "version": "4.1.9 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
       "name": "divide-header-equally",
       "description": "If \"true\" divides all tab equally.",
       "version": "4.1.9 onwards",
