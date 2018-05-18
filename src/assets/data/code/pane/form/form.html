@@ -13,8 +13,8 @@
             </amexio-text-input>
         </amexio-column>
       </amexio-row>
-  
-      <amexio-row>    
+
+      <amexio-row>
         <amexio-column [size]="6">
             <amexio-radio-group name="name" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
             </amexio-radio-group>
@@ -30,7 +30,7 @@
                 [value-field]="'checked'"
                 [data]="checkboxGroupdata">
             </amexio-checkbox-group>
-        
+
             </amexio-column>
         </amexio-row>
         <amexio-textarea-input [disabled]="false" [field-label]="'Address'" name="Address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
@@ -42,7 +42,7 @@
             <amexio-column [size]="6">
                 <amexio-dropdown [(ngModel)]="country" [place-holder]="'Choose City'" name="country" [allow-blank]="false" [data-reader]="'response.data'" [field-label]="'City'" [http-url]="'assets/data/cities.json'" [http-method]="'get'" [search]="'true'" [display-field]="'cityName'" [value-field]="'cityName'">
                 </amexio-dropdown>
-            </amexio-column>      
+            </amexio-column>
         </amexio-row>
         <amexio-row>
             <amexio-column size="6">
@@ -54,7 +54,7 @@
                 </amexio-date-time-picker>
             </amexio-column>
         </amexio-row>
-    
+
         <amexio-row>
             <amexio-column [size]="6">
                 <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
@@ -65,12 +65,12 @@
                 </amexio-password-input>
             </amexio-column>
         </amexio-row>
-    
+
         <amexio-checkbox [field-label]="'Agree'" [required]="true">
         </amexio-checkbox>
     </amexio-form-body>
     <amexio-form-action>
-        <amexio-button [disabled]="true" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
+        <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
         </amexio-button>
     </amexio-form-action>
   </amexio-form>
