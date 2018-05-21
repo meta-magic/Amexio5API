@@ -18,7 +18,7 @@
   </amexio-data-table-column>
   <amexio-data-table-column [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
-      <a class="fa fa-circle fa-lg" [ngClass]="{'green': row.Status== 'Paid' , 'yellow': row.Status =='Pending' , 'red' : row.Status=='Paid Today'}"></a>
+      <amexio-label class="fa fa-circle fa-lg" [ngClass]="{'green': row.Status== 'Paid' , 'yellow': row.Status =='Pending' , 'red' : row.Status=='Paid Today'}"></amexio-label>
       &nbsp;{{row.Status}}
     </ng-template>
   </amexio-data-table-column>
@@ -71,7 +71,7 @@
   </amexio-data-table-column>
   <amexio-data-table-column [width]="40" [data-index]="'Usage'" [data-type]="'string'" [hidden]="false" [text]="'USAGE'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
-      <span>{{row.Usage}}%</span>
+      <amexio-label>{{row.Usage}}%</amexio-label>
       <amexio-progress-bar [height]="'10'" [current-value]="row.Usage" [infinite]="false" [type]="getGridTemplateData(row)"></amexio-progress-bar>
       <amexio-label size="small" font-color="grey">
         {{row.usageFromDate}}-{{row.usageToDate}}
@@ -80,10 +80,10 @@
   </amexio-data-table-column>
   <amexio-data-table-column [width]="20" [data-index]="'Payment'" [data-type]="'string'" [hidden]="false" [text]="'PAYMENT'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
-      <span>
-        <amexio-image [path]="'assets/images/'+row.Payment" [c-class]="'image-round'">
+      <amexio-label>
+        <amexio-image [height]="'59.75px'" [width]="'59.75px'" [path]="'assets/images/'+row.Payment" [c-class]="'image-round'">
         </amexio-image>
-      </span>
+      </amexio-label>
     </ng-template>
   </amexio-data-table-column>
   <amexio-data-table-column [width]="20" [data-index]="'Activity'" [data-type]="'string'" [hidden]="false" [text]="'ACTIVITY'">
@@ -99,9 +99,7 @@
   </amexio-data-table-column>
   <amexio-data-table-column [width]="10" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="''">
     <ng-template #amexioBodyTmpl let-column let-row="row">
-      <span>
-        <amexio-image style="color:grey;" [icon-class]="'fa fa-pencil fa-2x'"></amexio-image>
-      </span>
+      <amexio-image style="color:grey;" [icon-class]="'fa fa-pencil  fa-2x'"></amexio-image>
     </ng-template>
   </amexio-data-table-column>
 </amexio-datagrid>
@@ -109,15 +107,15 @@
 <!--data grid with template (Country Grid)-->
 <amexio-datagrid title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/componentdata/gridtemplate.json'" [data-reader]="'data'"
   [page-size]="10" [enable-data-filter]="false" (rowSelect)="getRowData($event)">
-  <amexio-data-table-column [width]="50" [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+  <amexio-data-table-column [width]="70" [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
-      <div class="datagrid-template">
-        <span>
-          <amexio-image [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
-        </span>
-        <span>{{row.name}}</span>
-        <span>( {{row.name_official}} )</span>
-      </div>
+      <amexio-label class="datagrid-template">
+        <amexio-label>
+          <amexio-image [width]="100" [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
+        </amexio-label>
+        <amexio-label>{{row.name}}</amexio-label>
+        <amexio-label>( {{row.name_official}} )</amexio-label>
+      </amexio-label>
     </ng-template>
   </amexio-data-table-column>
   <amexio-data-table-column [width]="20" [data-index]="'latitude'" [data-type]="'number'" [hidden]="false" [text]="'Latitude'"></amexio-data-table-column>
@@ -125,6 +123,3 @@
 </amexio-datagrid>
 <p>
   <b>Clicked row data :</b> {{clickedRowData | json}}</p>
-
-
-

@@ -77,12 +77,9 @@ import { HttpClient } from "@angular/common/http";
                   <ng-template #amexioBodyTmpl let-column let-row="row">
                       <amexio-row>
                           <amexio-column [size]="3">
-                              <!-- <div class=profile-image-round> -->
-                              <!-- <img src="assets/images/profile/{{row.profile}}"/> -->
                               <amexio-image [path]="'assets/images/profile/'+row.profile" [c-class]="'image-round'">
                               </amexio-image>
-                              <!-- </div> -->
-                          </amexio-column>
+                           </amexio-column>
                           <amexio-column [size]="9">
                               <amexio-label size="small">
                                   {{row.User}}
@@ -97,7 +94,7 @@ import { HttpClient } from "@angular/common/http";
               </amexio-data-table-column>
               <amexio-data-table-column [width]="40" [data-index]="'Usage'" [data-type]="'string'" [hidden]="false" [text]="'USAGE'">
                   <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <span>{{row.Usage}}%</span>
+                      <amexio-label>{{row.Usage}}%</amexio-label>
           
                       <amexio-progress-bar [height]="'10'" [current-value]="row.Usage" [infinite]="false" [type]="getGridTemplateData(row)"></amexio-progress-bar>
           
@@ -109,18 +106,14 @@ import { HttpClient } from "@angular/common/http";
               </amexio-data-table-column>
               <amexio-data-table-column [width]="20" [data-index]="'Payment'" [data-type]="'string'" [hidden]="false" [text]="'PAYMENT'">
                   <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <span>
-                          <!-- <div class=profile-image-round> -->
-                          <!-- <img src="assets/images/{{row.Payment}}"/> -->
+                      <amexio-label>
                           <amexio-image [height]="'59.75px'" [width]="'59.75px'" [path]="'assets/images/'+row.Payment" [c-class]="'image-round'">
                           </amexio-image>
-                          <!-- </div> -->
-                      </span>
+                       </amexio-label>
                   </ng-template>
               </amexio-data-table-column>
               <amexio-data-table-column [width]="20" [data-index]="'Activity'" [data-type]="'string'" [hidden]="false" [text]="'ACTIVITY'">
                   <ng-template #amexioBodyTmpl let-column let-row="row">
-          
                       <amexio-label size="small" font-color="grey">
                           Last login
                       </amexio-label>
@@ -135,9 +128,9 @@ import { HttpClient } from "@angular/common/http";
               <amexio-data-table-column [width]="10" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="''">
                   <ng-template #amexioBodyTmpl let-column let-row="row">
           
-                      <span>
-                          <amexio-image style="color:grey;" [icon-class]="'fa fa-pencil fa-2x'"></amexio-image>
-                      </span>
+ 
+                          <amexio-image  style="color:grey;" [icon-class]="'fa fa-pencil  fa-2x'"></amexio-image>
+ 
           
                   </ng-template>
               </amexio-data-table-column>
@@ -147,16 +140,16 @@ import { HttpClient } from "@angular/common/http";
           <br>
           <amexio-datagrid title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/componentdata/gridtemplate.json'" [data-reader]="'data'"
               [page-size]="10" [enable-data-filter]="false" (rowSelect)="getRowData($event)">
-              <amexio-data-table-column [width]="50" [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+              <amexio-data-table-column [width]="70" [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
                   <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <div class="datagrid-template">
-                          <span>
+                      <amexio-label class="datagrid-template">
+                          <amexio-label>
                               <amexio-image [width]="100" [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
-                          </span>
-                          <span>{{row.name}}</span>
+                          </amexio-label>
+                          <amexio-label>{{row.name}}</amexio-label>
           
-                          <span>( {{row.name_official}} )</span>
-                      </div>
+                          <amexio-label >( {{row.name_official}} )</amexio-label>
+                      </amexio-label>
                   </ng-template>
               </amexio-data-table-column>
               <amexio-data-table-column [width]="20" [data-index]="'latitude'" [data-type]="'number'" [hidden]="false" [text]="'Latitude'"></amexio-data-table-column>
@@ -164,6 +157,7 @@ import { HttpClient } from "@angular/common/http";
           </amexio-datagrid>
           <p>
               <b>Clicked row data :</b> {{clickedRowData | json}}</p>
+
 
 
 
