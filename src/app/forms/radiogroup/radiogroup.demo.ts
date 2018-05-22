@@ -9,10 +9,10 @@ import {HttpClient} from "@angular/common/http";
   selector: 'radiogroup-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Radio Group 
+         Radio Group
       </amexio-header>
       <amexio-body>
-        <p>Radio Group input component has been created to render N numbers of radio-button based on data-set configured. 
+        <p>Radio Group input component has been created to render N numbers of radio-button based on data-set configured.
           Data-set can be configured using HTTP call OR Define fix number of radio-button.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
@@ -20,7 +20,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                     Horizontal Radio Group 
+                     Horizontal Radio Group
                   </amexio-header>
                   <amexio-body>
                     <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gender"
@@ -38,10 +38,10 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                     Vertical Radio Group With Http Url 
+                     Vertical Radio Group With Http Url
                   </amexio-header>
                   <amexio-body>
-                    <amexio-radio-group [field-label]="'Vertical RadioGroup'" name ="gender1"
+                    <amexio-radio-group [field-label]="'Vertical Radio Group'" name ="gender1"
                                         [data-reader]="'data'"
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
@@ -56,7 +56,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-row>
 
             <amexio-row>
-              <amexio-column size="12">
+              <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
                     Horizontal Radio Group Disabled
@@ -75,8 +75,28 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
+              <amexio-column size="6">
+              <amexio-card header="true">
+                <amexio-header>
+                  Horizontal Radio Group single item disabled
+                </amexio-header>
+                <amexio-body>
+                  <amexio-radio-group [field-label]="'Horizontal Radio Group '" name ="genderxy"
+                                      [data-reader]="'data'"
+                                      [display-field]="'gender'"
+                                      [value-field]="'genderId'"
+                                      [http-method]="'get'"
+                                      [default-value]="'male'"
+                                      horizontal="true"
+                                      name="disableradio"
+                                      [http-url]="'assets/data/componentdata/radiogroup_disable.json'"
+                                      >
+                  </amexio-radio-group>
+                </amexio-body>
+              </amexio-card>
+            </amexio-column>
             </amexio-row>
-            
+
 
           </amexio-tab>
           <amexio-tab title="API Reference">
@@ -156,8 +176,7 @@ export class RadioGroupDemo {
           genderId:'male'
         },{
           gender:'Female',
-          genderId:'female',
-          disabled : true
+          genderId:'female'
         },
         ]
       }

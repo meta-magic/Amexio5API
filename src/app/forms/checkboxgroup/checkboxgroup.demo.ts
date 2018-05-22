@@ -37,7 +37,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                     Horizontal Checkbox 
+                     Horizontal Checkbox
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
@@ -54,10 +54,10 @@ import {HttpClient} from "@angular/common/http";
             </amexio-row>
 
             <amexio-row>
-              <amexio-column size="12">
+              <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
-                    Horizontal Checkbox with disabled.
+                    Horizontal Checkbox with disabled single item.
                   </amexio-header>
                   <amexio-body>
                     <amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
@@ -70,6 +70,23 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
+              <amexio-column size="6">
+              <amexio-card header="true">
+                <amexio-header>
+                  Horizontal Checkbox with disabled all item.
+                </amexio-header>
+                <amexio-body>
+                  <amexio-checkbox-group [field-label]="'Horizontal Checkbox with disable'" name="language"
+                                         [data-reader]="'response.data'"
+                                         [display-field]="'language'"
+                                         [horizontal]="true"
+                                         [disabled]="true"
+                                         [value-field]="'checked'"
+                                         [data]="checkboxGroupdatadisabled">
+                  </amexio-checkbox-group>
+                </amexio-body>
+              </amexio-card>
+            </amexio-column>
             </amexio-row>
 
           </amexio-tab>
@@ -139,6 +156,7 @@ export class CheckBoxGroupDemo {
   copyMsgArray: any[];
   checkboxGroupdata: any;
   checkboxGroupdatadisabled : any;
+  checkboxGroupdatadisabledallitem:any;
   //selected Checkbox event
   selectedCheckboxgroup(data:any){
   //make some operation here
@@ -163,6 +181,17 @@ export class CheckBoxGroupDemo {
           language: 'JAVA', checked: true,disabled : true
         }, {
           language: 'C++', checked: false,disabled : false
+        }]
+      }
+    };
+    this.checkboxGroupdatadisabledallitem = {
+      response: {
+        data: [{
+          language: 'Angular 2', checked: false
+        }, {
+          language: 'JAVA', checked: true
+        }, {
+          language: 'C++', checked: false
         }]
       }
     };

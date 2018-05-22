@@ -14,7 +14,7 @@
     },
     {
       "name": "data",
-      "type": "any[]",
+      "type": "any",
       "default": "",
       "description":"Local Data binding."
     },

@@ -36,7 +36,14 @@ import {HttpClient} from "@angular/common/http";
               <amexio-textarea-input [disabled]="false" [field-label]="'Address'" name="Address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
               <amexio-row>    
     <amexio-column [size]="6">
-        <amexio-radio-group name="name" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
+        <amexio-radio-group name="name" 
+        [field-label]="'Gender'" 
+        [horizontal]="true" 
+        [allow-blank]="false" 
+        [data-reader]="'response.data'" 
+        [display-field]="'gender'" 
+        [value-field]="'genderId'" 
+        [data]="radioGroupData">
         </amexio-radio-group>
     </amexio-column>
     <amexio-column [size]="6">
@@ -90,7 +97,7 @@ import {HttpClient} from "@angular/common/http";
               </amexio-checkbox>
             </amexio-form-body>
               <amexio-form-action>
-                <amexio-button [disabled]="true" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
+                <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
                 </amexio-button>
                 <amexio-button [label]="'Cancel'"
                                   [type]="'theme-backgroundcolor'"
@@ -184,7 +191,7 @@ export class FormDemoComponent{
   checkboxGroupdata : any;
   currentDate : Date = new Date();
   constructor(private http: HttpClient) {
-   
+
    this.checkboxGroupdata = {
       response:{
         data:[{
@@ -210,7 +217,6 @@ export class FormDemoComponent{
         },{
           gender:'Female',
           genderId:'female',
-          disabled : true
         },
         ]
       }
