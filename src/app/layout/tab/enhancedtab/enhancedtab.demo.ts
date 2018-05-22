@@ -337,6 +337,11 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="Dynamic Tab">
+              <ng-container *ngIf="typeScriptCode2">
+                <prism-block [code]="typeScriptCode2" [language]="'typescript'"></prism-block>
+              </ng-container>
+            </amexio-tab>
             </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
@@ -355,7 +360,7 @@ export class EnhancedTabDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   radioGroupData: any;
-
+  typeScriptCode2:string;
   public rate: number = 7;
   public max: number = 10;
   public isReadonly: boolean = false;
@@ -376,7 +381,7 @@ export class EnhancedTabDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-
+    let code:any;
     //HTML FILE
     this.http.get('assets/data/code/layout/tab/enhancedtab/tab.html').subscribe(data => {
       responseHtml = data.text();
@@ -392,6 +397,14 @@ export class EnhancedTabDemo {
     }, () => {
       this.typeScriptCode = responseTs;
     });
+
+     //TS FILE
+     this.http.get('assets/data/code/layout/tab/enhancedtab/dynamictab.text').subscribe(data => {
+        code = data.text();
+      }, error => {
+      }, () => {
+        this.typeScriptCode2 = code;
+      });
 
   }
 
@@ -409,7 +422,7 @@ export class EnhancedTabDemo {
   addtab(tab:any){
     this.tabcount++;
     let title = 'Tab '+this.tabcount;
-    let cmp = tab.addDynamicTab(title,"red",DyanmicTabComponent);
+    let cmp = tab.addDynamicTab(title,"red",true,DyanmicTabComponent);
     cmp.content = "Content of "+title;
   }
 }
