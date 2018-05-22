@@ -80,9 +80,10 @@ import {HttpClient} from "@angular/common/http";
                                          [data-reader]="'response.data'"
                                          [display-field]="'language'"
                                          [horizontal]="true"
+                                         name="disabledcheckbox"
                                          [disabled]="true"
                                          [value-field]="'checked'"
-                                         [data]="checkboxGroupdatadisabled">
+                                         [data]="checkboxGroupdatadisabledallitem">
                   </amexio-checkbox-group>
                 </amexio-body>
               </amexio-card>
