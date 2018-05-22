@@ -122,7 +122,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       <amexio-rating-input [(ngModel)]="rate" [max]="max" name="rate" [read-only]="isReadonly">
                       </amexio-rating-input>
                   </amexio-tab-action>
-                  <amexio-tab title="Person" [active]="true" [amexio-color]="'black'">
+                  <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
                       Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                       dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                       type specimen book.
@@ -132,7 +132,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
-                  <amexio-tab title="Profile">
+                  <amexio-tab title="Profile" [amexio-color]="'green'">
                       Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
@@ -337,6 +337,11 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
+              <amexio-tab title="Dynamic Tab">
+              <ng-container *ngIf="typeScriptCode2">
+                <prism-block [code]="typeScriptCode2" [language]="'typescript'"></prism-block>
+              </ng-container>
+            </amexio-tab>
             </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
@@ -355,7 +360,7 @@ export class EnhancedTabDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   radioGroupData: any;
-
+  typeScriptCode2:string;
   public rate: number = 7;
   public max: number = 10;
   public isReadonly: boolean = false;
@@ -376,7 +381,7 @@ export class EnhancedTabDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-
+    let code:any;
     //HTML FILE
     this.http.get('assets/data/code/layout/tab/enhancedtab/tab.html').subscribe(data => {
       responseHtml = data.text();
@@ -392,6 +397,14 @@ export class EnhancedTabDemo {
     }, () => {
       this.typeScriptCode = responseTs;
     });
+
+     //TS FILE
+     this.http.get('assets/data/code/layout/tab/enhancedtab/dynamictab.text').subscribe(data => {
+        code = data.text();
+      }, error => {
+      }, () => {
+        this.typeScriptCode2 = code;
+      });
 
   }
 
@@ -409,7 +422,7 @@ export class EnhancedTabDemo {
   addtab(tab:any){
     this.tabcount++;
     let title = 'Tab '+this.tabcount;
-    let cmp = tab.addDynamicTab(title,"red",DyanmicTabComponent);
+    let cmp = tab.addDynamicTab(title,"red",true,DyanmicTabComponent);
     cmp.content = "Content of "+title;
   }
 }
