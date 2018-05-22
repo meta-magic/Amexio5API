@@ -41,7 +41,7 @@ import {HttpClient} from "@angular/common/http";
                      Vertical Radio Group With Http Url
                   </amexio-header>
                   <amexio-body>
-                    <amexio-radio-group [field-label]="'Vertical RadioGroup'" name ="gender1"
+                    <amexio-radio-group [field-label]="'Vertical Radio Group'" name ="gender1"
                                         [data-reader]="'data'"
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
@@ -56,7 +56,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-row>
 
             <amexio-row>
-              <amexio-column size="12">
+              <amexio-column size="6">
                 <amexio-card header="true">
                   <amexio-header>
                     Horizontal Radio Group Disabled
@@ -75,6 +75,26 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
+              <amexio-column size="6">
+              <amexio-card header="true">
+                <amexio-header>
+                  Horizontal Radio Group single item disabled
+                </amexio-header>
+                <amexio-body>
+                  <amexio-radio-group [field-label]="'Horizontal Radio Group '" name ="genderxy"
+                                      [data-reader]="'data'"
+                                      [display-field]="'gender'"
+                                      [value-field]="'genderId'"
+                                      [http-method]="'get'"
+                                      [default-value]="'male'"
+                                      horizontal="true"
+                                      name="disableradio"
+                                      [http-url]="'assets/data/componentdata/radiogroup_disable.json'"
+                                      >
+                  </amexio-radio-group>
+                </amexio-body>
+              </amexio-card>
+            </amexio-column>
             </amexio-row>
 
 
