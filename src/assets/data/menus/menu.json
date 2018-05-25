@@ -214,6 +214,11 @@
           "link": "fileupload-demo"
         },
         {
+          "text": "Form",
+          "icon": "fa fa-window-maximize fa-fw",
+          "link": "form-demo"
+        },
+        {
           "text": "Label",
           "icon": "fa fa-terminal",
           "link": "label-demo"
