@@ -198,7 +198,7 @@ image using the content attribute.
 /** Theme Additional Std Colors : Light and Dark shades --- */
 /** Theme Additional Std Font Colors : Light and Dark shades --- */
 /** CSS Class definitions for the Amexio Colors --- */
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Coral: #ff7f50 rgb(255,127,80,0.0);
    240a00: #240a00 rgb(36,10,0,0.0);
 */
@@ -206,7 +206,7 @@ image using the content attribute.
   background-color: #ff7f50;
   color: #240a00; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Crimson: #dc143c rgb(220,20,60,0.0);
    fffafb: #fffafb rgb(255,250,251,0.0);
 */
@@ -214,7 +214,7 @@ image using the content attribute.
   background-color: #dc143c;
   color: #fffafb; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Lime: #00ff00 rgb(0,255,0,0.0);
    002400: #002400 rgb(0,36,0,0.0);
 */
@@ -222,7 +222,7 @@ image using the content attribute.
   background-color: #00ff00;
   color: #002400; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    SeaGreen: #2e8b57 rgb(46,139,87,0.0);
    f0faf4: #f0faf4 rgb(240,250,244,0.0);
 */
@@ -230,7 +230,7 @@ image using the content attribute.
   background-color: #2e8b57;
   color: #f0faf4; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Magenta: #ff00ff rgb(255,0,255,0.0);
    fffaff: #fffaff rgb(255,250,255,0.0);
 */
@@ -238,7 +238,7 @@ image using the content attribute.
   background-color: #ff00ff;
   color: #050005; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    DarkMagenta: #8b008b rgb(139,0,139,0.0);
    fffaff: #fffaff rgb(255,250,255,0.0);
 */
@@ -246,7 +246,7 @@ image using the content attribute.
   background-color: #8b008b;
   color: #050005; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    DeepSkyBlue: #00bfff rgb(0,191,255,0.0);
    f0fbff: #f0fbff rgb(240,251,255,0.0);
 */
@@ -254,7 +254,7 @@ image using the content attribute.
   background-color: #00bfff;
   color: #000507; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    DarkBlue: #00008b rgb(0,0,139,0.0);
    f5f5ff: #f5f5ff rgb(245,245,255,0.0);
 */
@@ -262,7 +262,7 @@ image using the content attribute.
   background-color: #00008b;
   color: #f5f5ff; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    SandyBrown: #f4a460 rgb(244,164,96,0.0);
    211102: #211102 rgb(33,17,2,0.0);
 */
@@ -270,7 +270,7 @@ image using the content attribute.
   background-color: #f4a460;
   color: #211102; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Maroon: #800000 rgb(128,0,0,0.0);
    ffebeb: #ffebeb rgb(255,235,235,0.0);
 */
@@ -278,7 +278,7 @@ image using the content attribute.
   background-color: #800000;
   color: #ffebeb; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Gold: #ffd700 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -286,7 +286,7 @@ image using the content attribute.
   background-color: #ffd700;
   color: #241e00; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    ff9900: #ff9900 rgb(255,153,0,0.0);
    241500: #241500 rgb(36,21,0,0.0);
 */
@@ -294,7 +294,7 @@ image using the content attribute.
   background-color: #ff9900;
   color: #241500; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Black: #000000 rgb(0,0,0,0.0);
    White: #ffffff rgb(255,255,255,0.0);
 */
@@ -302,7 +302,7 @@ image using the content attribute.
   background-color: #000000;
   color: #ffffff; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    White: #ffffff rgb(255,255,255,0.0);
    Black: #000000 rgb(0,0,0,0.0);
 */
@@ -595,8 +595,8 @@ button {
 
 /** buttongroup - Structure CSS **/
 .btn-group span {
-  /* border: $btnGrpBorderSize solid $btnGrpBorderColor; 
-  
+  /* border: $btnGrpBorderSize solid $btnGrpBorderColor;
+
    cursor: pointer; /* Pointer/hand icon */ }
 
 .btn-group button {
@@ -4435,7 +4435,7 @@ fieldset {
 
 /** Theme Colors for Tab*/
 /** CSS Class definitions for the Amexio Colors --- */
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Crimson: #dc143c rgb(220,20,60,0.0);
    fffafb: #fffafb rgb(255,250,251,0.0);
 */
@@ -4443,7 +4443,7 @@ fieldset {
   color: #dc143c;
   border-top: 1px solid #dc143c !important; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    SeaGreen: #2e8b57 rgb(46,139,87,0.0);
    f0faf4: #f0faf4 rgb(240,250,244,0.0);
 */
@@ -4451,7 +4451,7 @@ fieldset {
   border-top: 1px solid #208d4f !important;
   color: #208d4f; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    DarkMagenta: #8b008b rgb(139,0,139,0.0);
    fffaff: #fffaff rgb(255,250,255,0.0);
 */
@@ -4459,7 +4459,7 @@ fieldset {
   border-top: 1px solid #8b008b !important;
   color: #8b008b; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    DarkBlue: #00008b rgb(0,0,139,0.0);
    f5f5ff: #f5f5ff rgb(245,245,255,0.0);
 */
@@ -4467,7 +4467,7 @@ fieldset {
   border-top: 1px solid #00008b !important;
   color: #00008b; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    SandyBrown: #f4a460 rgb(244,164,96,0.0);
    211102: #211102 rgb(33,17,2,0.0);
 */
@@ -4475,7 +4475,7 @@ fieldset {
   border-top: 1px solid #800000 !important;
   color: #800000; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Gold: #ffd700 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4483,7 +4483,7 @@ fieldset {
   border-top: 1px solid #FFFF00 !important;
   color: #FFFF00; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Pink: #FF69B4 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4491,7 +4491,7 @@ fieldset {
   border-top: 1px solid #FF69B4 !important;
   color: #FF69B4; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Orange: #FFA500 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4499,7 +4499,7 @@ fieldset {
   border-top: 1px solid #FFA500 !important;
   color: #FFA500; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Black: #FFA500 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4508,7 +4508,7 @@ fieldset {
   color: #000000; }
 
 /** CSS Class definitions for the Amexio Colors --- */
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Crimson: #dc143c rgb(220,20,60,0.0);
    fffafb: #fffafb rgb(255,250,251,0.0);
 */
@@ -4516,7 +4516,7 @@ fieldset {
   color: #dc143c;
   border-bottom: 1px solid #dc143c !important; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    SeaGreen: #2e8b57 rgb(46,139,87,0.0);
    f0faf4: #f0faf4 rgb(240,250,244,0.0);
 */
@@ -4524,7 +4524,7 @@ fieldset {
   border-bottom: 1px solid #208d4f !important;
   color: #208d4f; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    DarkMagenta: #8b008b rgb(139,0,139,0.0);
    fffaff: #fffaff rgb(255,250,255,0.0);
 */
@@ -4532,7 +4532,7 @@ fieldset {
   border-bottom: 1px solid #8b008b !important;
   color: #8b008b; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    DarkBlue: #00008b rgb(0,0,139,0.0);
    f5f5ff: #f5f5ff rgb(245,245,255,0.0);
 */
@@ -4540,7 +4540,7 @@ fieldset {
   border-bottom: 1px solid #00008b !important;
   color: #00008b; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    SandyBrown: #f4a460 rgb(244,164,96,0.0);
    211102: #211102 rgb(33,17,2,0.0);
 */
@@ -4548,7 +4548,7 @@ fieldset {
   border-bottom: 1px solid #800000 !important;
   color: #800000; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Gold: #ffd700 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4556,7 +4556,7 @@ fieldset {
   border-bottom: 1px solid #FFFF00 !important;
   color: #FFFF00; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Pink: #FF69B4 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4564,7 +4564,7 @@ fieldset {
   border-bottom: 1px solid #FF69B4 !important;
   color: #FF69B4; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Orange: #FFA500 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4572,7 +4572,7 @@ fieldset {
   border-bottom: 1px solid #FFA500 !important;
   color: #FFA500; }
 
-/** Amexio Colors --- 
+/** Amexio Colors ---
    Black: #FFA500 rgb(255,215,0,0.0);
    241e00: #241e00 rgb(36,30,0,0.0);
 */
@@ -4617,7 +4617,7 @@ fieldset {
   width: inherit;
   position: relative;
   vertical-align: top !important;
-  padding: 10px 0px; }
+  padding: 20px 20px 10px 0px; }
 
 /**VERTICAL TABS**/
 .verticalnavtab {

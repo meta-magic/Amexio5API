@@ -1,0 +1,14 @@
+export class AppComponent implements OnInit {
+  data : any;
+ 
+  ngOnInit(){
+    this.data=[
+      {"flagName":"folder","icon":"fa fa-telegram"},
+      {"flagName":"file upload","icon":"fa fa-vk","separator":true},
+      {"flagName":"apple","icon":"fa fa-apple"},
+      {"flagName":"Github","icon":"fa fa-github-alt"},
+      {"flagName":"yelp","icon":"fa fa-yelp","separator":true},
+      {"flagName":"whatsapp","icon":"fa fa-whatsapp"}
+    ];
+  }
+}

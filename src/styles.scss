@@ -1,7 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
 //@import "nav.scss";
-
+.card-header .toolbar{
+  background-color: unset;
+  box-shadow : unset;
+  padding: 0px;
+}
 
 .route-container{
   padding: 88px 10px 20px 0px;
