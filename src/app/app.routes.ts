@@ -131,7 +131,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'icon-tab-demo', loadChildren: './layout/tab/iconwithtab/iconwithtab.demo.module#IconWithTabDemoModule'
-  },  
+  },
   {
     path: 'box-demo', loadChildren: './layout/box/box.demo.module#BoxDemoModule'
   },
@@ -290,6 +290,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path : 'license', loadChildren : './license/license.module#LicenseModule'
-  }
+  },
+  {
+    path: 'dropdownmenu', loadChildren: './forms/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
+  },
 
 ];

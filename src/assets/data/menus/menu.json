@@ -304,6 +304,11 @@
           ]
         },
         {
+          "text": "Dropdown Menu",
+          "icon": "fa fa-chevron-circle-down",
+          "link": "dropdownmenu"
+        },
+        {
           "text": "Notification",
           "icon": "fa fa-comments fa-fw",
           "link": "notification-demo"

@@ -1,0 +1,28 @@
+export class DropDownMenuDemo {
+                  payment :any[];
+                  transport: any[];
+
+  constructor(){
+  // Demo 2 : with SEPARATOR
+     this.payment=[
+                    {"flagName":"Visa","icon":"fa fa-cc-visa"},
+                    {"flagName":"paypal","icon":"fa fa-paypal","separator":true},
+                    {"flagName":"google wallet","icon":"fa fa-google-wallet"},
+                    {"flagName":"stripe","icon":"fa fa-cc-stripe","separator":true},
+                    {"flagName":"mastercard","icon":"fa fa-cc-mastercard"},
+                    {"flagName":"jcb","icon":"fa fa-cc-jcb"}
+                  ];
+
+  // Demo 3 :  without SEPARATOR
+
+  this.transport=[
+                   {"flagName":"motorcycle","icon":"	fa fa-motorcycle"},
+                   {"flagName":"plane","icon":"fa fa-plane"},
+                   {"flagName":"ship","icon":"fa fa-ship"},
+                   {"flagName":"space shuttle","icon":"fa fa-space-shuttle"},
+                   {"flagName":"bicycle","icon":"	fa fa-bicycle"},
+                   {"flagName":"rocket","icon":"fa fa-rocket"}
+                 ];
+         }
+}
+

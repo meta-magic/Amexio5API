@@ -4,20 +4,18 @@ import { AmexioWidgetModule} from "amexio-ng-extensions";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {SharedModule} from "../../shared.module";
-import {DropDownDemo} from "./dropdown.demo";
 import {HttpClientModule} from "@angular/common/http";
-
-
+import {DropDownMenuDemo} from "./dropdownmenu.demo";
 /**
- * Created by sagar on 11/1/18.
+ * Created by kedar on 24/5/18.
  */
 @NgModule({
-  declarations: [DropDownDemo],
+  declarations: [DropDownMenuDemo],
   imports: [CommonModule, FormsModule, HttpClientModule,SharedModule,AmexioWidgetModule, RouterModule.forChild([{
-    path: '', component: DropDownDemo, pathMatch: 'full'
+    path: '', component: DropDownMenuDemo, pathMatch: 'full'
   }])],
   providers: []
 })
-export class DropDownDemoModule {
+export class DropDownMenuDemoModule {
 
 }
