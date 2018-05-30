@@ -322,6 +322,11 @@
           "text": "Progress Bar",
           "icon": "fa fa-spinner fa-fw",
           "link": "progressbar-demo"
+        },
+        {
+          "text":"Tool Bar",
+          "icon":"fa fa-bars fa-fw",
+          "link":"toolbar-demo"
         }
       ]
     },
