@@ -4,79 +4,113 @@
       "name": "http-url",
       "type": "string",
       "default": "",
-      "description":"REST url for fetching data."
+      "description":"REST url for fetching data.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "http-method",
       "type": "string",
       "default": "",
-      "description":"Type of HTTP call, POST,GET etc."
+      "description":"Type of HTTP call, POST,GET etc.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "data",
       "type": "any",
       "default": "",
-      "description":"Local Data binding."
+      "description":"Local Data binding.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "data-reader",
       "type": "string",
       "default": "",
-      "description":"Key in JSON Datasource for records."
+      "description":"Key in JSON Datasource for records.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "height",
       "type": "number",
       "default": "",
-      "description":"Height for grid."
+      "description":"Height for grid.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "page-size",
       "type": "number",
       "default": "",
-      "description":"Number of records show on one page."
+      "description":"Number of records show on one page.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "enable-checkbox",
       "type": "boolean",
       "default": "false",
-      "description":"Enables checkbox for each row, this allows user for multi selection."
+      "description":"Enables checkbox for each row, this allows user for multi selection.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "title",
       "type": "string",
       "default": "",
-      "description":"Title for grid."
+      "description":"Title for grid.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "enable-data-filter",
       "type": "boolean",
       "default": "false",
-      "description":"Enables user to filter data."
+      "description":"Enables user to filter data.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "groupby",
       "type": "boolean",
       "default": "false",
-      "description":"Set True for Enable group by functionality."
+      "description":"Set True for Enable group by functionality.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "groupby-data-index",
       "type": "string",
       "default": "",
-      "description":"Primary data-index name of the column for Grouping."
+      "description":"Primary data-index name of the column for Grouping.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "column-defintion",
       "type": "any[]",
       "default": "",
-      "description":"If you don't want to use '<amexio-data-table-column>' tag then pass JSON data."
+      "description":"If you don't want to use '<amexio-data-table-column>' tag then pass JSON data.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "enable-column-fiter",
       "type": "boolean",
       "default": "true",
-      "description":"Set false to hide Column toggle functionality."
+      "description":"Set false to hide Column toggle functionality.",
+      "version": "4.0.0 onwards"
+
+    },
+    {
+      "name": "global-filter",
+      "type": "boolean",
+      "default": "false",
+      "description":"Set true to filter globally",
+      "version": "4.2.0 onwards"
+
     }
   ],
   "events":[

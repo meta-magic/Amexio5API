@@ -364,6 +364,11 @@
               "link": "scroll-grid"
             },
             {
+              "text": "Grid with global filter",
+              "icon": "fa fa-database fa-fw",
+              "link": "global-filter-grid"
+            },
+            {
               "text": "Tree Data Grid",
               "icon": "fa fa-database fa-fw",
               "link": "tree-data-grid"
