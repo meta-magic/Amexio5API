@@ -132,30 +132,39 @@
       "name": "text",
       "type": "string",
       "default": "",
-      "description":"Set column label."
+      "description":"Set column label.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "data-index",
       "type": "string",
       "default": "",
-      "description":"JSON key from datasource."
+      "description":"JSON key from datasource.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "hidden",
       "type": "boolean",
       "default": "false",
-      "description":"Hide column."
+      "description":"Hide column.",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "data-type",
       "type": "string",
       "default": "",
-      "description":"Data type of column (string/number)."
+      "description":"Data type of column (string/number).",
+      "version": "4.0.0 onwards"
+
     },
     {
       "name": "width",
       "type": "number",
       "default": "",
+      "version": "4.0.0 onwards",
       "description":"Custom width for each column.Width must be in % but no need to mention %."
     }
   ]
