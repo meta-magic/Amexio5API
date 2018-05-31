@@ -877,7 +877,7 @@ button {
   background-color: #000000; }
 
 .drodown-caret-down {
-  color: #FFFDD0; }
+  color: black; }
 
 .list-items-selected {
   background-color: rgba(255, 253, 208, 0.4);
@@ -2271,54 +2271,53 @@ input:checked + .toggle-slider:before {
     Version : Amexio v4.2 onwards
 *****************************************************************************/
 /** dropdownmenu - Visual CSS **/
-.dropdown-menu-content a:hover {
+.dropdown-menu {
   background-color: rgba(255, 253, 208, 0.4);
   color: #FFFDD0; }
 
-.dropdown-menu:hover .dropdown-menu-content {
-  display: flex;
-  background-color: #000000; }
-
-/** dropdownmenu - Structure CSS **/
-li {
-  list-style-type: none; }
-
-.dropdown-menu {
-  position: relative;
-  display: inline-block;
-  font-size: 16px !important;
-  background-color: rgba(255, 253, 208, 0.4);
-  color: #FFFDD0;
-  padding: 16px;
-  cursor: pointer; }
-
 .dropdown-menu-content {
-  display: none;
-  position: fixed;
-  flex-direction: column;
   background-color: #000000;
-  min-width: 180px;
-  cursor: pointer;
-  box-shadow: 0px 8px 16px 0px #FFFDD0;
-  z-index: 1;
-  padding: 10px; }
+  box-shadow: 0px 8px 16px 0px #FFFDD0; }
 
 .dropdown-menu-content .divider {
   border-bottom: solid 1px #FFFDD0; }
 
+.dropdown-menu-content a:hover {
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #FFFDD0; }
+
+/** dropdownmenu - Structure CSS **/
+.dropdown-menu {
+  position: relative;
+  display: inline-block;
+  font-size: 16px !important;
+  padding: 16px;
+  cursor: pointer; }
+
+.dropdown-menu-content {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  min-width: 180px;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 0px;
+  overflow-y: auto; }
+
 .dropdown-menu-content a {
-  color: #FFFDD0;
-  padding: 5px 6px;
   text-decoration: none;
   display: inline-block;
-  min-width: inherit;
+  font-size: 16px !important;
   padding: 10px;
   display: block; }
+
+.menu-right {
+  right: 10px; }
 
 /*****************************************************************************
  Component Name : Toolbar
     Version : Amexio v4.2 onwards
-*****************************************************************************/
+****************************************************************************/
 /** Toolbar - Visual CSS **/
 .toolbar {
   background-color: #000000; }
@@ -4152,8 +4151,7 @@ header .billboard .content-button {
   border-bottom: 2px solid #FFFDD0;
   font-size: 20px;
   font-weight: 300;
-  text-transform: capitalize;
-  overflow: auto; }
+  text-transform: capitalize; }
 
 .card-body {
   font-size: 14px;
@@ -4616,7 +4614,7 @@ fieldset {
   width: inherit;
   position: relative;
   vertical-align: top !important;
-  padding: 20px 20px 10px 0px; }
+  padding: 10px 0px; }
 
 /**VERTICAL TABS**/
 .verticalnavtab {
