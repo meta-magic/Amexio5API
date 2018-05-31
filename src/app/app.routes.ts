@@ -87,6 +87,10 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'floatinggroupbutton-demo', loadChildren: './forms/floatinggroup/floatinggroupbutton.demo.module#FloatingGroupButtonDemoModule'
   },
+  /** ToolBar */
+  {
+    path: 'toolbar-demo', loadChildren: './forms/toolbar/toolbar.demo.module#ToolbarDemoModule'
+  },
   /** Navigation*/
   {
     path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
@@ -131,7 +135,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'icon-tab-demo', loadChildren: './layout/tab/iconwithtab/iconwithtab.demo.module#IconWithTabDemoModule'
-  },  
+  },
   {
     path: 'box-demo', loadChildren: './layout/box/box.demo.module#BoxDemoModule'
   },
@@ -293,6 +297,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path : 'license', loadChildren : './license/license.module#LicenseModule'
-  }
+  },
+  {
+    path: 'dropdownmenu', loadChildren: './forms/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
+  },
 
 ];

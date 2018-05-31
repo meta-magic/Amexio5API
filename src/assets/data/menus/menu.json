@@ -214,6 +214,11 @@
           "link": "fileupload-demo"
         },
         {
+          "text": "Form",
+          "icon": "fa fa-window-maximize fa-fw",
+          "link": "form-demo"
+        },
+        {
           "text": "Label",
           "icon": "fa fa-terminal",
           "link": "label-demo"
@@ -304,6 +309,11 @@
           ]
         },
         {
+          "text": "Dropdown Menu",
+          "icon": "fa fa-chevron-circle-down",
+          "link": "dropdownmenu"
+        },
+        {
           "text": "Notification",
           "icon": "fa fa-comments fa-fw",
           "link": "notification-demo"
@@ -317,6 +327,11 @@
           "text": "Progress Bar",
           "icon": "fa fa-spinner fa-fw",
           "link": "progressbar-demo"
+        },
+        {
+          "text":"Tool Bar",
+          "icon":"fa fa-bars fa-fw",
+          "link":"toolbar-demo"
         }
       ]
     },
