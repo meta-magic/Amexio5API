@@ -20,11 +20,31 @@ export class EnhancedTabDemo {
     }
   }
 
+ //Method to add Tab Dynamically
+
   tabcount :number = 4;
   addtab(tab:any){
     this.tabcount++;
     let title = 'Tab '+this.tabcount;
     let cmp = tab.addDynamicTab(title,"red",true,DyanmicTabComponent);
     cmp.content = "Content of "+title;
+  }
+
+  //Method to close all tabs alltogether
+
+  closeAllTabs(tab: any) {
+    tab.closeAllTabs();
+  }
+
+  //Method to set tab active on the basis of tab sequence.(2 is the tab position from left to right)
+
+  setActiveTabNumber(tab: any){
+    tab.setActiveTab(2);
+  }
+
+  //Method to set tab active on the basis of tab title.("profile" is the tab title)
+
+  setActiveTabTitle(tab: any) {
+    tab.setActiveTab("profile")
   }
 }

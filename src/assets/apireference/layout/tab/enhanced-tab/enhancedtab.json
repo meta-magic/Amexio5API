@@ -96,10 +96,26 @@
         "default": "false"
       }
     ],
-    "events": [
+    "methods": [
       {
-        "name": "onClick",
-        "description": "Callback to invoke on activated tab event."
+        "name": "addDynamicTab(title: string, amexio-color: string, closable: boolean, DyanmicTabComponent)",
+        "version": "4.2 onwards",
+        "description": "Method to add tabs dynamically."
+      },
+      {
+        "name": "closeAllTabs()",
+        "version": "4.2 onwards",
+        "description": "Method to close all tabs altogether (only if the closable property is true)."
+      },
+      {
+        "name": "setActivetab(number: number)",
+        "version": "4.2 onwards",
+        "description": "Method to set tab active on the basis of tab sequence."
+      },
+      {
+        "name": "setActiveTab(title: string)",
+        "version": "4.2 onwards",
+        "description": "Method to set tab active on the basis of tab title."
       }
     ]
   }

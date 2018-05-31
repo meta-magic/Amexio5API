@@ -47,7 +47,7 @@
 
 <amexio-tab-view #tab [action]="true" [tab-position]="'top'">
     <amexio-tab-action>
-        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'" >
+        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
         </amexio-button>
     </amexio-tab-action>
     <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
@@ -71,6 +71,12 @@
         posuere. Praesent ornare rutrum mi et condimentum.
     </amexio-tab>
 </amexio-tab-view>
+<amexio-button [label]="'Close Tab'" [type]="'theme-color'" (onClick)="closeAllTabs(tab)" [tooltip]="'Add Tab'">
+</amexio-button>
+<amexio-button [label]="'Active Number Tab'" [type]="'theme-color'" (onClick)="setActiveTabNumber(tab)" [tooltip]="'Activate Tab'">
+</amexio-button>
+<amexio-button [label]="'Active Title Tab'" [type]="'theme-color'" (onClick)="setActiveTabTitle(tab)" [tooltip]="'Activate Tab'">
+</amexio-button>
 
 <!-- Tab Layout with Action Component (Rating)-->
 
