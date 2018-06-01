@@ -2,12 +2,16 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
 
 export class EnhancedTabDemo {
 
+  tabArray: any;
   public rate: number = 7;
   public max: number = 10;
   public isReadonly: boolean = false;
   radioGroupData: any;
 
     constructor{
+    this.tabarray = [
+       "work"
+    ]
     this.getHtmlAndTypeScriptCode();
     this.radioGroupData = {
       response: {
@@ -46,5 +50,11 @@ export class EnhancedTabDemo {
 
   setActiveTabTitle(tab: any) {
     tab.setActiveTab("profile")
+  }
+
+  //Method to close tabs and keep open some of the required tabs.
+  closeOtherTabs(tab: any){
+    debugger;
+   tab.closeTabs(this.tabarray);
   }
 }

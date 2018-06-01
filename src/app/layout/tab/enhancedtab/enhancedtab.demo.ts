@@ -88,7 +88,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
                       </amexio-button>
                   </amexio-tab-action>
-                  <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
+                  <amexio-tab title="Person" [active]="true" [amexio-color]="'red'" [closable]="true">
                       Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                       dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                       type specimen book.
@@ -103,7 +103,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
-                  <amexio-tab title="Education" [amexio-color]="'red'">
+                  <amexio-tab title="Education" [amexio-color]="'red'" [closable]="true">
                       Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
@@ -116,6 +116,8 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
           <amexio-button [label]="'Active Number Tab'" [type]="'theme-color'" (onClick)="setActiveTabNumber(tab)" [tooltip]="'Activate Tab'" >
           </amexio-button>
           <amexio-button [label]="'Active Title Tab'" [type]="'theme-color'" (onClick)="setActiveTabTitle(tab)" [tooltip]="'Activate Tab'" >
+          </amexio-button>
+          <amexio-button [label]="'Close Other Tabs'" [type]="'theme-color'" (onClick)="closeOtherTabs(tab)" [tooltip]="'Close Tab'" >
           </amexio-button>
       </amexio-action>
       </amexio-card>
@@ -378,6 +380,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
 })
 export class EnhancedTabDemo {
     htmlCode: string;
+    tabArray: any;
     typeScriptCode: string;
     copyMsgArray: any[];
     radioGroupData: any;
@@ -386,6 +389,9 @@ export class EnhancedTabDemo {
     public max: number = 10;
     public isReadonly: boolean = false;
     constructor(private http: Http) {
+        this.tabArray = [
+            "work"
+         ]
         this.getHtmlAndTypeScriptCode();
         this.radioGroupData = {
             response: {
@@ -463,6 +469,11 @@ export class EnhancedTabDemo {
 
   setActiveTabTitle(tab: any) {
     tab.setActiveTab("profile")
+  }
+
+   //Method to close tabs and keep open some of the required tabs.
+   closeOtherTabs(tab: any){
+   tab.closeTabs(this.tabArray);
   }
 }
 

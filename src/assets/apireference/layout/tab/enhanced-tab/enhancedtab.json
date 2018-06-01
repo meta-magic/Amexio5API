@@ -110,12 +110,17 @@
       {
         "name": "setActivetab(number: number)",
         "version": "4.2 onwards",
-        "description": "Method to set tab active on the basis of tab sequence."
+        "description": "Method to set tab active on the basis of tab sequence.(If tab index matches with input, method sets that tab active and returns true, else returns false)"
       },
       {
         "name": "setActiveTab(title: string)",
         "version": "4.2 onwards",
-        "description": "Method to set tab active on the basis of tab title."
+        "description": "Method to set tab active on the basis of tab title. (If tab title matches with input, method sets that tab active and returns true, else returns false"
+      },
+      {
+        "name": "closeTabs(tabArray: array)",
+        "version": "4.2 onwards",
+        "description": "Method to close all other tabs(only if closable flag is true) , except few required tabs (those tabs title have to be added in array)"
       }
     ]
   }
