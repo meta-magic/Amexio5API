@@ -20,15 +20,48 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="4">
                 <amexio-card [header]="true"
                              [footer]="false">
-                  <amexio-header>Demo 1 </amexio-header>
+                  <amexio-header>Demo 1</amexio-header>
                   <amexio-body>
-                    <amexio-drop-down-menu [icon-position]="'left'"
+                    <amexio-drop-down-menu [icon-align]="'right'"
+                                           [title]="'Payment item'"
+                                           [padding]="'5px'"
+                                           [data]="payment"
+                                           [down-arrow-icon] ="true"
+                                           [icon]="'fa fa-credit-card'"
+                                           [transparent]="false"
+                                           (onClick)="onDropDownMenuClick($event)">
+                    </amexio-drop-down-menu>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+
+              <amexio-column size="4">
+                <amexio-card [header]="true"
+                             [footer]="false">
+                  <amexio-header>Demo 2</amexio-header>
+                  <amexio-body>
+                    <amexio-drop-down-menu [icon-align]="'left'"
+                                           [title]="'Transport'"
+                                           [data]="transport"
+                                           [padding]="'5px'"
+                                           [icon]="'fa fa-truck'"
+                                           (onClick)="onDropDownMenuClick($event)">
+                    </amexio-drop-down-menu>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+              <amexio-column size="4">
+                <amexio-card [header]="true"
+                             [footer]="false">
+                  <amexio-header>Demo 3 </amexio-header>
+                  <amexio-body>
+                    <amexio-drop-down-menu [icon-align]="'left'"
                                            [title]="'Brands'"
                                            [padding]="'5px'"
                                            [icon]="'fa fa-slack'"
                                            (onClick)="onDropDownMenuClick($event)">
 
-                    <amexio-drop-down-menu-item
+                      <amexio-drop-down-menu-item
                         [icon-align]="'right'"
                         [label-align]="'left'"
                         [label]="'VK'"
@@ -77,70 +110,98 @@ import {HttpClient} from "@angular/common/http";
                       >
                       </amexio-drop-down-menu-item>
 
-                        <amexio-drop-down-menu-item
-                          [icon-align]="'right'"
-                          [label-align]="'left'"
-                          [label]="'WhatsApp'"
-                          [icon]="'fa fa-whatsapp'"
-                          [separator]="false"
-  
-                        >
-                        </amexio-drop-down-menu-item>
+                      <amexio-drop-down-menu-item
+                        [icon-align]="'right'"
+                        [label-align]="'left'"
+                        [label]="'WhatsApp'"
+                        [icon]="'fa fa-whatsapp'"
+                        [separator]="false"
+
+                      >
+                      </amexio-drop-down-menu-item>
 
                     </amexio-drop-down-menu>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="4">
-                <amexio-card [header]="true"
-                             [footer]="false">
-                  <amexio-header>Demo 2</amexio-header>
-                  <amexio-body>
-                    <amexio-drop-down-menu [icon-position]="'right'"
-                                           [title]="'Payment item'"
-                                           [padding]="'5px'"
-                                           [data]="payment"
-                                           [down-arrow-icon] ="true"
-                                           [icon]="'fa fa-credit-card'"
-                                           [transparent]="false"
-                                           (onClick)="onDropDownMenuClick($event)">
-
-                    </amexio-drop-down-menu>
-
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="4">
-                <amexio-card [header]="true"
-                             [footer]="false">
-                  <amexio-header>Demo 3</amexio-header>
-                  <amexio-body>
-
-                    <amexio-drop-down-menu [icon-position]="'left'"
-                                           [title]="'Transport'"
-                                           [data]="transport"
-                                           [padding]="'5px'"
-                                           [icon]="'fa fa-truck'"
-                                           (onClick)="onDropDownMenuClick($event)">
-                    </amexio-drop-down-menu>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              
             </amexio-row>
+            
             <amexio-row>
-              <amexio-column size="12">
+              <amexio-column size="4">
+                <amexio-card [header]="true"
+                             [footer]="false">
+                  <amexio-header>Demo 4</amexio-header>
+                  <amexio-body>
+                    <amexio-drop-down-menu [icon-align]="'left'"
+                                           [title]="'Advance'"
+                                           [padding]="'5px'"
+                                           [icon]="'fa fa-flash'"
+                                           (onClick)="onDropDownMenuClick($event)">
+
+                      <amexio-drop-down-menu-item [separator]="true">
+
+                        <amexio-box background-color="purple" padding="true">
+                          <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+                        </amexio-box>
+                        <amexio-row>
+                          <amexio-column size="5">
+                            <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'"
+                                          path="assets/images/profile/ketan.jpg">
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column size="7">
+
+                            <amexio-label > Ketan Gote</amexio-label>
+                            <amexio-label > xyz@metamagic.in</amexio-label><br>
+                            <amexio-button [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+                            </amexio-button>
+                          </amexio-column>
+
+                        </amexio-row>
+
+                      </amexio-drop-down-menu-item>
+
+                      <amexio-drop-down-menu-item
+                        [label]="'settings'"
+                        [icon]="'fa fa-home'"
+                      >
+                      </amexio-drop-down-menu-item>
+                      <amexio-drop-down-menu-item
+                        [label]="'help center'"
+                        [icon]="'fa fa-car'"
+                        [separator] ="true"
+                      >
+                      </amexio-drop-down-menu-item>
+                      <amexio-drop-down-menu-item
+                        [label]="'Language'"
+                        [icon]="'fa fa-map-marker'"
+                      >
+                      </amexio-drop-down-menu-item>
+                      <amexio-drop-down-menu-item
+                        [label]="'sign out'"
+                        [icon]="'fa fa-sign-out'"
+                      >
+                      </amexio-drop-down-menu-item>
+
+                    </amexio-drop-down-menu>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+
+              <amexio-column size="6">
                 <amexio-card [header]="true"
                              [footer]="false">
                   <amexio-header> Source data</amexio-header>
                   <amexio-body>
-                    <pre><code>{{sourceData | json}}</code></pre>
+                    <pre><code>{{sourceData |json }}</code></pre>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-
             </amexio-row>
           </amexio-tab>
+          
+          
+          
           
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties : <Amexio-DropDownMenu>" [enable-column-fiter]="false"
@@ -225,43 +286,35 @@ export class DropDownMenuDemo {
   sourceData: string;
   htmlCode: string;
   typeScriptCode: string;
-  dataSource:string;
+  dataSource: string;
   copyMsgArray: any[];
-  countryCode1:string;
-  Brand:any[];
+  countryCode1: string;
+  Brand: any[];
   currency: any[];
-  payment :any[];
+  payment: any[];
   transport: any[];
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
-    // this.Brand=[
-    //   {"label":"telegram","icon":"fa fa-telegram"},
-    //   {"label":"vk","icon":"fa fa-vk","separator":true},
-    //   {"label":"apple","icon":"fa fa-apple"},
-    //   {"label":"Github","icon":"fa fa-github-alt"},
-    //   {"label":"yelp","icon":"fa fa-yelp","separator":true},
-    //   {"label":"whatsapp","icon":"fa fa-whatsapp"}
-    // ];
 
-    this.payment=[
-      {"label":"Visa","icon":"fa fa-cc-visa"},
-      {"label":"paypal","icon":"fa fa-paypal","separator":true},
-      {"label":"google wallet","icon":"fa fa-google-wallet"},
-      {"label":"stripe","icon":"fa fa-cc-stripe","separator":true},
-      {"label":"mastercard","icon":"fa fa-cc-mastercard"},
-      {"label":"jcb","icon":"fa fa-cc-jcb"}
+    this.payment = [
+      {"label": "Visa", "icon": "fa fa-cc-visa"},
+      {"label": "paypal", "icon": "fa fa-paypal", "separator": true},
+      {"label": "google wallet", "icon": "fa fa-google-wallet"},
+      {"label": "stripe", "icon": "fa fa-cc-stripe", "separator": true},
+      {"label": "mastercard", "icon": "fa fa-cc-mastercard"},
+      {"label": "jcb", "icon": "fa fa-cc-jcb"}
 
     ];
 
 
-    this.transport=[
-      {"label":"motorcycle","icon":"  fa fa-motorcycle"},
-      {"label":"plane","icon":"fa fa-plane"},
-      {"label":"ship","icon":"fa fa-ship"},
-      {"label":"space shuttle","icon":"fa fa-space-shuttle"},
-      {"label":"bicycle","icon":"fa fa-bicycle"},
-      {"label":"rocket","icon":"fa fa-rocket"}
+    this.transport = [
+      {"label": "motorcycle", "icon": "  fa fa-motorcycle"},
+      {"label": "plane", "icon": "fa fa-plane"},
+      {"label": "ship", "icon": "fa fa-ship"},
+      {"label": "space shuttle", "icon": "fa fa-space-shuttle"},
+      {"label": "bicycle", "icon": "fa fa-bicycle"},
+      {"label": "rocket", "icon": "fa fa-rocket"}
     ];
   }
 
@@ -269,9 +322,9 @@ export class DropDownMenuDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-    let responseData:any;
+    let responseData: any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/dropdownmenu/form.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/dropdownmenu/form.html', {responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -279,7 +332,7 @@ export class DropDownMenuDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/dropdownmenu/form.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/dropdownmenu/form.text', {responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -304,11 +357,15 @@ export class DropDownMenuDemo {
     }
   }
 
-  onDropDownMenuClick(data:any)
-  {
-    this.sourceData = data;
+  onDropDownMenuClick(event: any) {
+// let item []=[];
+    //
+    // event.forEach((obj) => {
+    //   item.push(obj);
+    // });
+    // debugger;
+     this.sourceData = event.this.label;
   }
 }
-
 
 
