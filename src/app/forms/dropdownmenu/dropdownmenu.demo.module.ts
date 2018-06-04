@@ -1,3 +1,8 @@
+
+/**
+ * Created by kedar on 24/5/18.
+ */
+
 import {NgModule} from "@angular/core";
 import {RouterModule} from "@angular/router";
 import { AmexioWidgetModule} from "amexio-ng-extensions";
@@ -6,9 +11,7 @@ import {CommonModule} from "@angular/common";
 import {SharedModule} from "../../shared.module";
 import {HttpClientModule} from "@angular/common/http";
 import {DropDownMenuDemo} from "./dropdownmenu.demo";
-/**
- * Created by kedar on 24/5/18.
- */
+
 @NgModule({
   declarations: [DropDownMenuDemo],
   imports: [CommonModule, FormsModule, HttpClientModule,SharedModule,AmexioWidgetModule, RouterModule.forChild([{

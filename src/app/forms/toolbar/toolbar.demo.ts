@@ -7,6 +7,10 @@ import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'toolbar-demo', template: `
+
+      
+
+  
     <amexio-card header="true">
       <amexio-header>
          Tool Bar
@@ -19,7 +23,7 @@ import { HttpClient } from "@angular/common/http";
           <amexio-tab title="Demo" active="true">
           <h2>Demo: Tool Bar </h2>
                   <amexio-toolbar>
-                  <amexio-toolbar-item position-left [seperator-position]="'right'">
+          <amexio-toolbar-item position-left [seperator-position]="'right'">
                   <amexio-label size="medium" font-color="Black">
                   Compose
                  </amexio-label>
@@ -47,30 +51,79 @@ import { HttpClient } from "@angular/common/http";
                 </amexio-button>
               </amexio-btn-group>
                   </amexio-toolbar-item>
+                  <amexio-toolbar-item position-right >
+                 <amexio-drop-down-menu [icon-align]="'left'"
+                             [title]="'Advance'"
+                             [padding]="'5px'"
+                             [icon]="'fa fa-flash'"
+                             (onClick)="onDropDownMenuClick($event)">
+               <amexio-drop-down-menu-item [separator]="true">
+                      <amexio-box background-color="purple" padding="true">
+                       <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+                         </amexio-box>
+                         <amexio-row>
+                         <amexio-column size="5">
+               <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'"
+                            path="assets/images/profile/ketan.jpg">
+              </amexio-image>
+            </amexio-column>
+            <amexio-column size="7">
+
+              <amexio-label > Ketan Gote</amexio-label>
+              <amexio-label > xyz@metamagic.in</amexio-label><br>
+              <amexio-button     (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+              </amexio-button>
+            </amexio-column>
+
+          </amexio-row>
+
+        </amexio-drop-down-menu-item>
+
+        <amexio-drop-down-menu-item
+          [label]="'Settings'"
+          [icon]="'fa fa-folder'"
+          (onClick)="onDropDownMenuClick($event)">
+        </amexio-drop-down-menu-item>
+        <amexio-drop-down-menu-item
+          [label]="'Help Center'"
+          [icon]="'fa fa-question-circle'"
+          [separator] ="true"
+          (onClick)="onDropDownMenuClick($event)">
+        </amexio-drop-down-menu-item>
+        <amexio-drop-down-menu-item
+          [label]="'Location'"
+          [icon]="'fa fa-map-marker'">
+        </amexio-drop-down-menu-item>
+        <amexio-drop-down-menu-item
+          [label]="'Sign Out'"
+          [icon]="'fa fa-sign-out'">
+        </amexio-drop-down-menu-item>
+
+      </amexio-drop-down-menu>
+
+      </amexio-toolbar-item>
                   
-                  <amexio-toolbar-item position-left [seperator-position]="'right'">
-                 
-                <amexio-btn-group >
-                <amexio-button [size]="'small'"
+                  <amexio-toolbar-item position-left [seperator-position]="'left'">
+                
+                <amexio-button [size]="'medium'"
                                [tooltip]="'Move to'"
                                [icon]="'fa fa-folder'">
                 </amexio-button>
-                <amexio-button [size]="'small'"
+
+                
+
+                <amexio-button [size]="'medium'"
                                [tooltip]="'Help'"
                                [icon]="'fa fa-question'" >
                 </amexio-button>
 
-                </amexio-btn-group>
+                
                 </amexio-toolbar-item>
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                        <amexio-drop-down-menu
-                        [icon-align]="'left'" [data]="data" [transparent]="false" [icon]="'fa fa-cog'" [padding]="'5px'">
-                        </amexio-drop-down-menu>
-
-                   </amexio-toolbar-item>
+                
+                  
+               
             
-        </amexio-toolbar>
-       
+        </amexio-toolbar>       
             <h2>Demo: Tool Bar In Card Header</h2>
            
             <amexio-card [header]="true">
@@ -83,9 +136,16 @@ import { HttpClient } from "@angular/common/http";
                        </amexio-label>
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-left [seperator-position]="'right'">
-                        <amexio-drop-down-menu [icon-align]="'left'" [transparent]="true"
-                         [title]="'New'" [data]="data" [icon]="'fa fa-address-book'" [padding]="'5px'">
-                        </amexio-drop-down-menu>
+                 
+                  <amexio-drop-down-menu [icon-align]="'right'"
+                  [title]="'Payment item'"
+                  [padding]="'5px'"
+                  [data]="payment"
+                  [down-arrow-icon] ="true"
+                  [icon]="'fa fa-credit-card'"
+                  [transparent]="false">
+                  </amexio-drop-down-menu>
+                        
                    </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
                   <i class="fa fa-th" aria-hidden="true"></i>
@@ -113,10 +173,10 @@ import { HttpClient } from "@angular/common/http";
       [http-url]="'assets/data/componentdata/toolbar.json'"
       [data-reader]="'data'"
       [page-size] = "10">
-      <amexio-data-table-column [width]="5" [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
+      <amexio-data-table-column  [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
       <amexio-label size="small" font-color="grey" class={{row.icon}}>
-       </amexio-label>
+       </amexio-label> 
     </ng-template>
   </amexio-data-table-column>
  
@@ -214,21 +274,22 @@ export class ToolbarDemo implements OnInit {
   typeScriptCode: string;
   copyMsgArray: any[];
   toggleMsgArray: any[];
-  data: any;
+  payment: any[];
   ngOnInit() {
-    this.data = [
-      { "label": "folder", "icon": "fa fa-folder-open" },
-      { "label": "file upload", "icon": "fa fa-upload", "separator": true },
-      { "label": "folder upload", "icon": "fa fa-folder" },
-      { "label": "Amexio docs", "icon": "fa fa-file" },
-      { "label": "Amexio sheet", "icon": "fa fa-th", "separator": true },
-      { "label": "Amexio slide", "icon": "fa fa-slideshare" }
-    ];
+  
   }
   constructor(private http: HttpClient) {
     this.toggleMsgArray = [];
     this.getHtmlAndTypeScriptCode();
-
+    this.payment=[
+      {"label": "motorcycle", "icon": "  fa fa-motorcycle"},
+      {"label": "plane", "icon": "fa fa-plane","separator":"true"},
+      {"label": "ship", "icon": "fa fa-ship"},
+      {"label": "space shuttle", "icon": "fa fa-space-shuttle"},
+      {"label": "bicycle", "icon": "fa fa-bicycle"},
+      {"label": "rocket", "icon": "fa fa-rocket"}
+    ];
+  
   }
 
   //Square Toggle click event
