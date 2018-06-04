@@ -8,7 +8,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
 
 
 @Component({
-  selector: 'enhanced-tab-demo', template: `
+    selector: 'enhanced-tab-demo', template: `
     <amexio-card header="true">
       <amexio-header>
          Enhanced Tab 
@@ -77,17 +77,18 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
       
       <br>
       
-      <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+      <amexio-card [header]="true" [footer]="true" [footer-align]="'left'">
           <amexio-header>
               Tab layout with action component(button) and tabs left aligned
           </amexio-header>
           <amexio-body>
+          
               <amexio-tab-view #tab [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'left'">
                   <amexio-tab-action>
                       <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
                       </amexio-button>
                   </amexio-tab-action>
-                  <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
+                  <amexio-tab title="Person" [active]="true" [amexio-color]="'red'" [closable]="true">
                       Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
                       dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
                       type specimen book.
@@ -102,14 +103,23 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
-                  <amexio-tab title="Education" [amexio-color]="'red'">
+                  <amexio-tab title="Education" [amexio-color]="'red'" [closable]="true">
                       Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
               </amexio-tab-view>
           </amexio-body>
-      
+      <amexio-action>
+      <amexio-button [label]="'Close Tab'" [type]="'theme-color'" (onClick)="closeAllTabs(tab)" [tooltip]="'Add Tab'" >
+          </amexio-button>
+          <amexio-button [label]="'Active Number Tab'" [type]="'theme-color'" (onClick)="setActiveTabNumber(tab)" [tooltip]="'Activate Tab'" >
+          </amexio-button>
+          <amexio-button [label]="'Active Title Tab'" [type]="'theme-color'" (onClick)="setActiveTabTitle(tab)" [tooltip]="'Activate Tab'" >
+          </amexio-button>
+          <amexio-button [label]="'Close Other Tabs'" [type]="'theme-color'" (onClick)="closeOtherTabs(tab)" [tooltip]="'Close Tab'" >
+          </amexio-button>
+      </amexio-action>
       </amexio-card>
       <br>
       <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
@@ -284,13 +294,13 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-             <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+             <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
@@ -301,13 +311,13 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
@@ -316,10 +326,23 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                              [http-url]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
                              [data-reader]="'events'"
                              [enable-data-filter]="false" >
-              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="40"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="60" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+            <br>
+            <amexio-datagrid title="Tab Methods" [enable-column-fiter]="false"
+            [http-method]="'get'"
+            [http-url]="'assets/apireference/layout/tab/enhanced-tab/enhancedtab.json'"
+            [data-reader]="'methods'"
+            [enable-data-filter]="false" >
+            <amexio-data-table-column [width]="40"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                       [text]="'Name'"></amexio-data-table-column>
+             <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                         [text]="'Version'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="40" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                       [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
           </amexio-tab>
@@ -356,74 +379,101 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
   `
 })
 export class EnhancedTabDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  copyMsgArray: any[];
-  radioGroupData: any;
-  typeScriptCode2:string;
-  public rate: number = 7;
-  public max: number = 10;
-  public isReadonly: boolean = false;
-  constructor(private http: Http) {
-    this.getHtmlAndTypeScriptCode();
-    this.radioGroupData = {
-      response: {
-        data: [{
-          gender: 'Male', genderId: 'male'
-        }, {
-          gender: 'Female', genderId: 'female'
-        },]
-      }
+    htmlCode: string;
+    tabArray: any;
+    typeScriptCode: string;
+    copyMsgArray: any[];
+    radioGroupData: any;
+    typeScriptCode2: string;
+    public rate: number = 7;
+    public max: number = 10;
+    public isReadonly: boolean = false;
+    constructor(private http: Http) {
+        this.tabArray = [
+            "work"
+         ]
+        this.getHtmlAndTypeScriptCode();
+        this.radioGroupData = {
+            response: {
+                data: [{
+                    gender: 'Male', genderId: 'male'
+                }, {
+                    gender: 'Female', genderId: 'female'
+                },]
+            }
+        }
     }
-  }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-    let code:any;
-    //HTML FILE
-    this.http.get('assets/data/code/layout/tab/enhancedtab/tab.html').subscribe(data => {
-      responseHtml = data.text();
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
+    //TO LOAD HTML AND TYPESCRIPT CODE
+    getHtmlAndTypeScriptCode() {
+        let responseHtml: any;
+        let responseTs: any;
+        let code: any;
+        //HTML FILE
+        this.http.get('assets/data/code/layout/tab/enhancedtab/tab.html').subscribe(data => {
+            responseHtml = data.text();
+        }, error => {
+        }, () => {
+            this.htmlCode = responseHtml;
+        });
 
-    //TS FILE
-    this.http.get('assets/data/code/layout/tab/enhancedtab/tab.text').subscribe(data => {
-      responseTs = data.text();
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
+        //TS FILE
+        this.http.get('assets/data/code/layout/tab/enhancedtab/tab.text').subscribe(data => {
+            responseTs = data.text();
+        }, error => {
+        }, () => {
+            this.typeScriptCode = responseTs;
+        });
 
-     //TS FILE
-     this.http.get('assets/data/code/layout/tab/enhancedtab/dynamictab.text').subscribe(data => {
-        code = data.text();
-      }, error => {
-      }, () => {
-        this.typeScriptCode2 = code;
-      });
+        //TS FILE
+        this.http.get('assets/data/code/layout/tab/enhancedtab/dynamictab.text').subscribe(data => {
+            code = data.text();
+        }, error => {
+        }, () => {
+            this.typeScriptCode2 = code;
+        });
 
-  }
-
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    } else {
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
+
+    //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
+    onCopyClick() {
+        if (this.copyMsgArray.length >= 1) {
+            this.copyMsgArray = [];
+            this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
+        } else {
+            this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
+        }
+    }
+
+    tabcount: number = 4;
+    addtab(tab: any) {
+        this.tabcount++;
+        let title = 'Tab ' + this.tabcount;
+        let cmp = tab.addDynamicTab(title, "red", true, DyanmicTabComponent);
+        cmp.content = "Content of " + title;
+    }
+
+    //Method to close all tabs alltogether
+
+  closeAllTabs(tab: any) {
+    tab.closeAllTabs();
   }
 
-  tabcount :number = 4;
-  addtab(tab:any){
-    this.tabcount++;
-    let title = 'Tab '+this.tabcount;
-    let cmp = tab.addDynamicTab(title,"red",true,DyanmicTabComponent);
-    cmp.content = "Content of "+title;
+  //Method to set tab active on the basis of tab sequence.(2 is the tab position from left to right)
+
+  setActiveTabNumber(tab: any){
+    tab.setActiveTab(2);
+  }
+
+  //Method to set tab active on the basis of tab title.("profile" is the tab title)
+
+  setActiveTabTitle(tab: any) {
+    tab.setActiveTab("profile")
+  }
+
+   //Method to close tabs and keep open some of the required tabs.
+   closeOtherTabs(tab: any){
+   tab.closeTabs(this.tabArray);
   }
 }
 

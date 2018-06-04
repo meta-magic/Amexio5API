@@ -309,6 +309,11 @@
           ]
         },
         {
+          "text": "Dropdown Menu",
+          "icon": "fa fa-chevron-circle-down",
+          "link": "dropdownmenu"
+        },
+        {
           "text": "Notification",
           "icon": "fa fa-comments fa-fw",
           "link": "notification-demo"
@@ -372,6 +377,11 @@
               "text": "Grid with scroll",
               "icon": "fa fa-database fa-fw",
               "link": "scroll-grid"
+            },
+            {
+              "text": "Grid with global filter",
+              "icon": "fa fa-database fa-fw",
+              "link": "global-filter-grid"
             },
             {
               "text": "Tree Data Grid",

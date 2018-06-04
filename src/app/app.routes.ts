@@ -135,7 +135,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'icon-tab-demo', loadChildren: './layout/tab/iconwithtab/iconwithtab.demo.module#IconWithTabDemoModule'
-  },  
+  },
   {
     path: 'box-demo', loadChildren: './layout/box/box.demo.module#BoxDemoModule'
   },
@@ -259,6 +259,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'scroll-grid', loadChildren: './data/gridwithscroll/gridwithscroll.demo.module#GridWithScrollDemoModule'
   },
   {
+    path: 'global-filter-grid', loadChildren: './data/globalfiltergrid/globalfilter.demo.module#GlobalFilterDemoModule'
+  },
+  {
     path: 'tree-data-grid', loadChildren: './data/treedatagrid/treedatagrid.demo.module#TreeDataGridDemoModule'
   },
 
@@ -294,6 +297,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path : 'license', loadChildren : './license/license.module#LicenseModule'
-  }
+  },
+  {
+    path: 'dropdownmenu', loadChildren: './forms/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
+  },
 
 ];

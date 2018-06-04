@@ -127,9 +127,20 @@ import { HttpClient } from "@angular/common/http";
 
                 
                 </amexio-toolbar-item>
+<<<<<<< HEAD
                 
                   
  </amexio-toolbar>
+=======
+                <amexio-toolbar-item position-right [seperator-position]="'left'">
+                        <amexio-drop-down-menu
+                        [icon-align]="'left'" [data]="data" [transparent]="false" [icon]="'fa fa-cog'" [padding]="'5px'">
+                        </amexio-drop-down-menu>
+
+                   </amexio-toolbar-item>
+            
+        </amexio-toolbar>
+>>>>>>> 7360fa4f6571f5ddbf58367a02854c6ffcc24b56
        
             <h2>Demo: Tool Bar In Card Header</h2>
            
@@ -143,6 +154,7 @@ import { HttpClient } from "@angular/common/http";
                        </amexio-label>
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-left [seperator-position]="'right'">
+<<<<<<< HEAD
                  
                   <amexio-drop-down-menu [icon-align]="'right'"
                   [title]="'Payment item'"
@@ -152,6 +164,11 @@ import { HttpClient } from "@angular/common/http";
                   [icon]="'fa fa-credit-card'"
                   [transparent]="false">
                   </amexio-drop-down-menu>
+=======
+                        <amexio-drop-down-menu [icon-align]="'left'" [transparent]="true"
+                         [title]="'New'" [data]="data" [icon]="'fa fa-address-book'" [padding]="'5px'">
+                        </amexio-drop-down-menu>
+>>>>>>> 7360fa4f6571f5ddbf58367a02854c6ffcc24b56
                    </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
                   <i class="fa fa-th" aria-hidden="true"></i>
@@ -182,7 +199,7 @@ import { HttpClient } from "@angular/common/http";
       <amexio-data-table-column  [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
       <amexio-label size="small" font-color="grey" class={{row.icon}}>
-       </amexio-label>
+       </amexio-label> 
     </ng-template>
   </amexio-data-table-column>
  
