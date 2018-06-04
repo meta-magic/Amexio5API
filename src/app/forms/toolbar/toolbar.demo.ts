@@ -116,7 +116,7 @@ import { HttpClient } from "@angular/common/http";
       <amexio-data-table-column [width]="5" [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
     <ng-template #amexioBodyTmpl let-column let-row="row">
       <amexio-label size="small" font-color="grey" class={{row.icon}}>
-       </amexio-label>
+       </amexio-label> 
     </ng-template>
   </amexio-data-table-column>
  

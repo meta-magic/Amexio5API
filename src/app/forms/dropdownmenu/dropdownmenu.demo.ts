@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
   selector: 'dropdownmenu', template: `
     <amexio-card header="true">
       <amexio-header>
-         Dropdown Menu
+        Dropdown Menu
       </amexio-header>
       <amexio-body>
         <p>Drop-Down Menu component has been created to render N numbers of drop-down items based on data-set configured.
@@ -23,7 +23,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-header>Demo 1</amexio-header>
                   <amexio-body>
                     <amexio-drop-down-menu [icon-align]="'right'"
-                                           [title]="'Payment item'"
+                                           [title]="'Payment '"
                                            [padding]="'5px'"
                                            [data]="payment"
                                            [down-arrow-icon] ="true"
@@ -34,103 +34,10 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-
-              <amexio-column size="4">
+              <amexio-column size="4  ">
                 <amexio-card [header]="true"
                              [footer]="false">
                   <amexio-header>Demo 2</amexio-header>
-                  <amexio-body>
-                    <amexio-drop-down-menu [icon-align]="'left'"
-                                           [title]="'Transport'"
-                                           [data]="transport"
-                                           [padding]="'5px'"
-                                           [icon]="'fa fa-truck'"
-                                           (onClick)="onDropDownMenuClick($event)">
-                    </amexio-drop-down-menu>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="4">
-                <amexio-card [header]="true"
-                             [footer]="false">
-                  <amexio-header>Demo 3 </amexio-header>
-                  <amexio-body>
-                    <amexio-drop-down-menu [icon-align]="'left'"
-                                           [title]="'Brands'"
-                                           [padding]="'5px'"
-                                           [icon]="'fa fa-slack'"
-                                           (onClick)="onDropDownMenuClick($event)">
-
-                      <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
-                        [label]="'VK'"
-                        [icon]="'fa fa-vk'"
-                        [separator]="false"
-
-                      >
-                      </amexio-drop-down-menu-item>
-
-                      <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
-                        [label]="'Twitter'"
-                        [icon]="'fa fa-twitter'"
-                        [separator]="false"
-
-                      >
-                      </amexio-drop-down-menu-item>
-
-                      <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
-                        [label]="'Telegram'"
-                        [icon]="'fa fa-telegram'"
-                        [separator]="true"
-
-                      >
-                      </amexio-drop-down-menu-item>
-
-                      <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
-                        [label]="'Github'"
-                        [icon]="'fa fa-github-alt'"
-                        [separator]="false"
-
-                      >
-                      </amexio-drop-down-menu-item>
-                      <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
-                        [label]="'Apple'"
-                        [icon]="'fa fa-apple'"
-                        [separator]="false"
-
-                      >
-                      </amexio-drop-down-menu-item>
-
-                      <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
-                        [label]="'WhatsApp'"
-                        [icon]="'fa fa-whatsapp'"
-                        [separator]="false"
-
-                      >
-                      </amexio-drop-down-menu-item>
-
-                    </amexio-drop-down-menu>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
-            
-            <amexio-row>
-              <amexio-column size="4">
-                <amexio-card [header]="true"
-                             [footer]="false">
-                  <amexio-header>Demo 4</amexio-header>
                   <amexio-body>
                     <amexio-drop-down-menu [icon-align]="'left'"
                                            [title]="'Advance'"
@@ -153,7 +60,7 @@ import {HttpClient} from "@angular/common/http";
 
                             <amexio-label > Ketan Gote</amexio-label>
                             <amexio-label > xyz@metamagic.in</amexio-label><br>
-                            <amexio-button [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+                            <amexio-button     (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
                             </amexio-button>
                           </amexio-column>
 
@@ -162,24 +69,29 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-drop-down-menu-item>
 
                       <amexio-drop-down-menu-item
-                        [label]="'settings'"
-                        [icon]="'fa fa-home'"
+                        [label]="'Settings'"
+                        [icon]="'fa fa-cog'"
+                        (onClick)="onDropDownMenuClick($event)"
                       >
                       </amexio-drop-down-menu-item>
                       <amexio-drop-down-menu-item
-                        [label]="'help center'"
-                        [icon]="'fa fa-car'"
+                        [label]="'Help Center'"
+                        [icon]="'fa fa-question-circle'"
                         [separator] ="true"
+                        (onClick)="onDropDownMenuClick($event)"
                       >
                       </amexio-drop-down-menu-item>
                       <amexio-drop-down-menu-item
-                        [label]="'Language'"
+                        [label]="'Location'"
                         [icon]="'fa fa-map-marker'"
+                        (onClick)="onDropDownMenuClick($event)"
+
                       >
                       </amexio-drop-down-menu-item>
                       <amexio-drop-down-menu-item
-                        [label]="'sign out'"
+                        [label]="'Sign Out'"
                         [icon]="'fa fa-sign-out'"
+                        (onClick)="onDropDownMenuClick($event)"
                       >
                       </amexio-drop-down-menu-item>
 
@@ -187,8 +99,100 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
+              <amexio-column size="4">
+                <amexio-card [header]="true"
+                             [footer]="false">
+                  <amexio-header>Demo 3  </amexio-header>
+                  <amexio-body>
+                    <amexio-drop-down-menu [icon-align]="'left'"
+                                           [title]="'Brands'"
+                                           [padding]="'5px'"
+                                           [icon]="'fa fa-slack'"
+                                           (onClick)="onDropDownMenuClick($event)">
 
-              <amexio-column size="6">
+                      <amexio-drop-down-menu-item
+                        [icon-align]="'right'"
+                        [label-align]="'left'"
+                        [label]="'VK'"
+                        [icon]="'fa fa-vk'"
+                        [separator]="false"
+                        (onClick)="onDropDownMenuClick($event)"
+                      >
+                      </amexio-drop-down-menu-item>
+
+                      <amexio-drop-down-menu-item
+                        [icon-align]="'right'"
+                        [label-align]="'left'"
+                        [label]="'Twitter'"
+                        [icon]="'fa fa-twitter'"
+                        [separator]="false"
+                        (onClick)="onDropDownMenuClick($event)"
+                      >
+                      </amexio-drop-down-menu-item>
+
+                      <amexio-drop-down-menu-item
+                        [icon-align]="'right'"
+                        [label-align]="'left'"
+                        [label]="'Telegram'"
+                        [icon]="'fa fa-telegram'"
+                        [separator]="true"
+                        (onClick)="onDropDownMenuClick($event)"
+                      >
+                      </amexio-drop-down-menu-item>
+
+                      <amexio-drop-down-menu-item
+                        [icon-align]="'right'"
+                        [label-align]="'left'"
+                        [label]="'Github'"
+                        [icon]="'fa fa-github-alt'"
+                        [separator]="false"
+                        (onClick)="onDropDownMenuClick($event)"
+                      >
+                      </amexio-drop-down-menu-item>
+                      <amexio-drop-down-menu-item
+                        [icon-align]="'right'"
+                        [label-align]="'left'"
+                        [label]="'Apple'"
+                        [icon]="'fa fa-apple'"
+                        [separator]="false"
+                        (onClick)="onDropDownMenuClick($event)"
+                      >
+                      </amexio-drop-down-menu-item>
+
+                      <amexio-drop-down-menu-item
+                        [icon-align]="'right'"
+                        [label-align]="'left'"
+                        [label]="'WhatsApp'"
+                        [icon]="'fa fa-whatsapp'"
+                        [separator]="false"
+                        (onClick)="onDropDownMenuClick($event)"
+                      >
+                      </amexio-drop-down-menu-item>
+
+                    </amexio-drop-down-menu>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+
+            <amexio-row>
+              <amexio-column size="4" >
+                <amexio-card [header]="true"
+                             [footer]="false">
+                  <amexio-header>Demo 4</amexio-header>
+                  <amexio-body>
+                    <amexio-drop-down-menu [icon-align]="'left'"
+                                           [title]="'Transport'"
+                                           [data]="transport"
+                                           [padding]="'5px'"
+                                           [icon]="'fa fa-truck'"
+                                           (onClick)="onDropDownMenuClick($event)">
+                    </amexio-drop-down-menu>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+
+              <amexio-column size="8">
                 <amexio-card [header]="true"
                              [footer]="false">
                   <amexio-header> Source data</amexio-header>
@@ -199,10 +203,10 @@ import {HttpClient} from "@angular/common/http";
               </amexio-column>
             </amexio-row>
           </amexio-tab>
-          
-          
-          
-          
+
+
+
+
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties : <Amexio-DropDownMenu>" [enable-column-fiter]="false"
                              [http-method]="'get'"
@@ -263,9 +267,9 @@ import {HttpClient} from "@angular/common/http";
                   </ng-container>
                 </amexio-tab>
                 <!--<amexio-tab title="Data Source">-->
-                  <!--<ng-container *ngIf="dataSource">-->
-                    <!--<prism-block [code]="dataSource" [language]="'json'"></prism-block>-->
-                  <!--</ng-container>-->
+                <!--<ng-container *ngIf="dataSource">-->
+                <!--<prism-block [code]="dataSource" [language]="'json'"></prism-block>-->
+                <!--</ng-container>-->
                 <!--</amexio-tab>-->
               </amexio-vertical-tab-view>
             </div>
@@ -283,7 +287,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class DropDownMenuDemo {
 
-  sourceData: string;
+  sourceData: any ;
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
@@ -358,13 +362,33 @@ export class DropDownMenuDemo {
   }
 
   onDropDownMenuClick(event: any) {
-// let item []=[];
-    //
-    // event.forEach((obj) => {
-    //   item.push(obj);
-    // });
-    // debugger;
-     this.sourceData = event.this.label;
+    debugger;
+    let jsonData={
+      'icon':'',
+      'label':'',
+      'labelalign':'',
+      'iconalign':'',
+      'separator':''
+    };
+
+
+    if(event.this.icon ){
+      jsonData.icon=event.this.icon;
+    }
+    if(event.this.label){
+      jsonData.label=event.this.label;
+    }
+    if(event.this.labelalign){
+      jsonData.labelalign=event.this.labelalign;
+    }
+    if(event.this.iconalign){
+      jsonData.iconalign=event.this.iconalign;
+    }
+    if(event.this.separator  ){
+      jsonData.separator=event.this.separator;
+    }
+
+    this.sourceData = jsonData;
   }
 }
 

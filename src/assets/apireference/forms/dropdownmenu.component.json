@@ -33,7 +33,7 @@
       "default": ""
     },
     {
-      "name": "icon-position",
+      "name": "icon-align",
       "description": " Icon position should be right/left",
       "version": "4.2 onwards",
       "type": "string",
