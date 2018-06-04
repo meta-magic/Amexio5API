@@ -2360,6 +2360,143 @@ input:checked + .toggle-slider:before {
   width: unset !important;
   padding: 0px !important; }
 
+/*****************************************************************************
+ Component Name : Search Box
+    Version : Amexio v4.2 onwards
+****************************************************************************/
+/** Searchbox - Visual CSS **/
+.hrclass {
+  border-color: #FEE12B; }
+
+.advancesearchform {
+  background-color: #292b2c;
+  border-color: #FEE12B; }
+
+.input-group-text-search {
+  background-color: #FCF4A3;
+  border-color: #FEE12B; }
+
+.form-control {
+  color: #FEE12B;
+  background-color: #292b2c;
+  border-color: #FEE12B; }
+
+.search-form-label {
+  color: #FEE12B; }
+
+.iconColor {
+  color: #292b2c; }
+
+.advancesearchbtn {
+  background-color: #FCF4A3;
+  color: black; }
+
+.search-dropdown-list .search-list-items {
+  background-color: #292b2c; }
+
+.search-dropdown-list li:hover {
+  background: rgba(255, 253, 208, 0.4); }
+
+.search-list-items-selected {
+  background-color: rgba(255, 253, 208, 0.4) !important; }
+
+.search-dropdown-list {
+  border-color: #FEE12B;
+  background-color: #292b2c; }
+
+/** Searchbox - Structure CSS **/
+.hrclass {
+  margin-top: 2%;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 10%;
+  font-weight: bold;
+  display: block; }
+
+.advancesearchform {
+  font-weight: normal;
+  border-width: 1px;
+  border-style: solid; }
+
+.search-form-label {
+  font-weight: bold; }
+
+.close-icon {
+  float: right;
+  opacity: .54;
+  cursor: pointer;
+  padding-top: 0%;
+  padding-right: 0%; }
+
+.searchbutton {
+  width: 100%; }
+
+.input-group-text-search {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  white-space: nowrap;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: .25rem;
+  width: 15px;
+  padding-right: 2%;
+  padding-left: 2%; }
+
+.input-group {
+  display: flex; }
+
+.input-group-prepend {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.form-control {
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-clip: padding-box;
+  transition: border-color 0.15s;
+  border-width: 1px;
+  border-style: solid; }
+
+.search-dropdown-list .search-list-items {
+  list-style: none;
+  cursor: pointer;
+  margin: 1px 0;
+  padding: .186em .313em;
+  text-align: left;
+  overflow-y: auto; }
+
+.search-dropdown-list {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  border-width: 1px;
+  border-style: solid;
+  z-index: 5;
+  overflow-x: auto; }
+
+.scroll {
+  height: 200px;
+  overflow-y: scroll; }
+
+.advancesearchbuttondiv {
+  z-index: 5; }
+
+.advancesearchbtn {
+  height: 37px;
+  font-weight: bold; }
+
 /****************************************************************************
     Component Name : Enterprise Content
     Version : Amexio v4.0 onwards
