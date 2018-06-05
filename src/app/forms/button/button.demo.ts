@@ -12,6 +12,7 @@ import {Http} from "@angular/http";
          Button 
       </amexio-header>
       <amexio-body>
+      
         <p>A button component with various modes and configurations.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
