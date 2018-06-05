@@ -90,10 +90,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'floatinggroupbutton-demo', loadChildren: './forms/floatinggroup/floatinggroupbutton.demo.module#FloatingGroupButtonDemoModule'
   },
-  /** ToolBar */
-  {
-    path: 'toolbar-demo', loadChildren: './forms/toolbar/toolbar.demo.module#ToolbarDemoModule'
-  },
+
   /** Navigation*/
   {
     path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
@@ -109,6 +106,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'menubar-demo', loadChildren: './navigation/menubar/menubar.demo.module#MenuBarDemoModule'
+  },
+  {
+    path: 'toolbar-demo', loadChildren: './navigation/toolbar/toolbar.demo.module#ToolbarDemoModule'
   },
   /** Media*/
   {
