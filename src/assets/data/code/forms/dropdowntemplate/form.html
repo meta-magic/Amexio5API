@@ -1,0 +1,20 @@
+<amexio-dropdown [(ngModel)]="country"
+[place-holder]="'Choose'"
+name="country"
+[data-reader]="'data'"
+[field-label]="'Choose Country'"
+[http-url]="'assets/data/componentdata/gridtemplate.json'"
+[http-method]="'get'"
+[search]="true"
+[display-field]="'name'"
+[value-field]="'id'">
+
+<ng-template #amexioBodyTmpl let-column let-row="row">
+<amexio-label>
+  <amexio-image [width]="100" [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
+</amexio-label>
+<amexio-label>{{row.name}}</amexio-label>
+<amexio-label>( {{row.name_official}} )</amexio-label>
+</ng-template>
+
+</amexio-dropdown>

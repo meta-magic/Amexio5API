@@ -200,6 +200,11 @@
               "text": "Multi Select",
               "icon": "fa fa-chevron-circle-down fa-fw",
               "link": "dropdownmulti"
+            },
+            {
+              "text": "Template",
+              "icon": "fa fa-chevron-circle-down fa-fw",
+              "link": "dropdowntemplate"
             }
           ]
         },

@@ -71,6 +71,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'dropdownmulti', loadChildren: './forms/dropdownmulti/dropdownmulti.demo.module#DropDownMultiDemoModule'
   },
+  {
+    path: 'dropdowntemplate', loadChildren: './forms/dropdowntemplate/dropdowntemplate.demo.module#DropDownTemplateDemoModule'
+  },
   /**Button */
   {
     path: 'button-demo', loadChildren: './forms/button/button.demo.module#ButtonDemoModule'
