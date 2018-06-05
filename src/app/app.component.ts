@@ -81,7 +81,7 @@ this.amexiotechmenus =  [
     "text": "Subscribe ",
     "link": "https://canvas.amexio.org/#/user/signup"
   }, {
-    "text": "Canvas Login ",
+    "text": "Canvas Login (Beta)",
     "link": "https://canvas.amexio.org/"
   }, {
     "text": "License and Other Docs",
