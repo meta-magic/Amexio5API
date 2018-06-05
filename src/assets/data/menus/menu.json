@@ -308,11 +308,7 @@
             }
           ]
         },
-        {
-          "text": "Dropdown Menu",
-          "icon": "fa fa-chevron-circle-down",
-          "link": "dropdownmenu"
-        },
+
         {
           "text": "Notification",
           "icon": "fa fa-comments fa-fw",
@@ -458,6 +454,11 @@
           "text": "Dockbar",
           "icon": "fa fa-th-large fa-fw",
           "link": "dockbar-demo"
+        },
+        {
+          "text": "Dropdown Menu",
+          "icon": "fa fa-chevron-circle-down",
+          "link": "dropdownmenu"
         },
         {
           "text": "Nav Bar",

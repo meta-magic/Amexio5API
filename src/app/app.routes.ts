@@ -302,7 +302,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path : 'license', loadChildren : './license/license.module#LicenseModule'
   },
   {
-    path: 'dropdownmenu', loadChildren: './forms/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
+    path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
   },
 
 ];
