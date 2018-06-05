@@ -267,6 +267,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'tree-data-grid', loadChildren: './data/treedatagrid/treedatagrid.demo.module#TreeDataGridDemoModule'
   },
+  {
+    path: 'tree-data-template', loadChildren: './data/treedatatemplate/treedatatemplate.demo.module#TreeDataTemplateDemoModule'
+  },
 
   /*Tree*/
 

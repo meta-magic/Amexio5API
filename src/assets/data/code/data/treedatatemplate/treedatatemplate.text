@@ -1,0 +1,7 @@
+export class TreeDataTemplateDemo {
+  constructor() {}
+
+  getSelectedData(data: any) {
+      /*Do Operation on data*/
+  }
+}
