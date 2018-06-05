@@ -1,5 +1,5 @@
 /**
- * Created by sagar on 9/1/18.
+ * Created by ankita on 5/6/18.
  */
 
 import { Component, OnInit } from '@angular/core';
@@ -56,7 +56,7 @@ import { HttpClient } from "@angular/common/http";
                              [title]="'Advance'"
                              [padding]="'5px'"
                              [icon]="'fa fa-flash'"
-                             (onClick)="onDropDownMenuClick($event)">
+                             >
                <amexio-drop-down-menu-item [separator]="true">
                       <amexio-box background-color="purple" padding="true">
                        <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
@@ -71,7 +71,7 @@ import { HttpClient } from "@angular/common/http";
 
               <amexio-label > Ketan Gote</amexio-label>
               <amexio-label > xyz@metamagic.in</amexio-label><br>
-              <amexio-button     (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+              <amexio-button  [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
               </amexio-button>
             </amexio-column>
 
@@ -82,13 +82,13 @@ import { HttpClient } from "@angular/common/http";
         <amexio-drop-down-menu-item
           [label]="'Settings'"
           [icon]="'fa fa-folder'"
-          (onClick)="onDropDownMenuClick($event)">
+          >
         </amexio-drop-down-menu-item>
         <amexio-drop-down-menu-item
           [label]="'Help Center'"
           [icon]="'fa fa-question-circle'"
           [separator] ="true"
-          (onClick)="onDropDownMenuClick($event)">
+         >
         </amexio-drop-down-menu-item>
         <amexio-drop-down-menu-item
           [label]="'Location'"
