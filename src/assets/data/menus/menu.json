@@ -387,6 +387,11 @@
               "text": "Tree Data Grid",
               "icon": "fa fa-database fa-fw",
               "link": "tree-data-grid"
+            },
+            {
+              "text": "Tree Data Template",
+              "icon": "fa fa-database fa-fw",
+              "link": "tree-data-template"
             }
           ]
         },
