@@ -28,9 +28,9 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column size="12">
-                      <amexio-dropdown [(ngModel)]="country"
+                      <amexio-dropdown [(ngModel)]="id"
                       [place-holder]="'Choose'"
-                      name="country"
+                      name="id"
                       [data-reader]="'data'"
                       [field-label]="'Choose Country'"
                       [http-url]="'assets/data/componentdata/gridtemplate.json'"
@@ -131,18 +131,11 @@ export class DropDownTemplateDemo {
   clickedRowData: any;
   typeScriptCode: string;
   dataSource: string;
+  id: string;
   copyMsgArray: any[];
-  listOfFriut: any = [];
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
-  }
-
-  onMultiSelectValue(data: any) {
-    this.listOfFriut=[];
-    data.forEach((obj) => {
-      this.listOfFriut.push(obj);
-    });
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
