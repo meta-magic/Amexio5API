@@ -18,21 +18,23 @@ import {HttpClient} from "@angular/common/http";
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleConfirm()" label="Confirm"></amexio-button>
-                <amexio-dialogue [show-dialogue]="confirmdialogue" [title]="'Confirm'" [message]="'Are you sure ?'"
-                               [message-type]="'confirm'" [type]="'confirm'">
+                <amexio-dialogue [show-dialogue]="confirmdialogue"  [button-size]="'medium'" [title]="'Confirm'" [message]="'Are you sure ?'"
+                               [message-type]="'confirm'" [button-type]="'confirm'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button type="danger" (onClick)="toggleError()" label="Error"></amexio-button>
-                <amexio-dialogue [show-dialogue]="errordialogue" [message]="'Error Occurred.'" [primary-action-label]="'ok'"
+                <amexio-label size="small">(Dialogue Box closes on click of Escape Key)</amexio-label>
+                <amexio-dialogue [show-dialogue]="errordialogue" [close-on-escape]="true" [message]="'Error Occurred.'" [primary-action-label]="'ok'"
                                [title]="'Error'" [message-type]="'error'" [type]="'alert'">
+                              
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button [type]="'warning'" (onClick)="toggleWarning()" label="Warning"></amexio-button>
-                <amexio-dialogue [show-dialogue]="warningdialogue" [message]="'Data not found.'" [title]="'Warning'"
+                <amexio-dialogue [show-dialogue]="warningdialogue" [close-on-escape]="false" [message]="'Data not found.'" [title]="'Warning'"
                                [message-type]="'warning'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
@@ -40,14 +42,14 @@ import {HttpClient} from "@angular/common/http";
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleHelp()" label="Help"></amexio-button>
-                <amexio-dialogue [show-dialogue]="helpdialogue" [title]="'Help'" [message]="'Check Server.'"
+                <amexio-dialogue [show-dialogue]="helpdialogue" [close-on-escape]="false" [title]="'Help'" [message]="'Check Server.'"
                                [message-type]="'help'" [type]="'alert'">
                 </amexio-dialogue>
               </amexio-column>
 
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleCustom()" label="Custom"></amexio-button>
-                <amexio-dialogue [show-dialogue]="customdialogue" [custom]="true" [title]="'Custom dialogue'"
+                <amexio-dialogue [show-dialogue]="customdialogue" [close-on-escape]="false" [custom]="true" [title]="'Custom dialogue'"
                                [type]="'confirm'">
                   <amexio-body>
                     <amexio-text-input field-label="Name" name="name"
