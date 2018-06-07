@@ -266,16 +266,33 @@ import {HttpClient} from "@angular/common/http";
                     <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                   </ng-container>
                 </amexio-tab>
+<<<<<<< HEAD
+=======
+                <!--<amexio-tab title="Data Source">-->
+                <!--<ng-container *ngIf="dataSource">-->
+                <!--<prism-block [code]="dataSource" [language]="'json'"></prism-block>-->
+                <!--</ng-container>-->
+                <!--</amexio-tab>-->
+>>>>>>> origin/v4.1
               </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
           <amexio-tab title="Live">
+<<<<<<< HEAD
             <p align="center">Amexio DropdownMenu</p>
             <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-dropdownmenu-toolbar?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
+=======
+            <p align="center">Amexio Sandbox</p>
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dropdown?embed=1&file=app/forms/dropdown/dropdown.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+>>>>>>> origin/v4.1
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
+<<<<<<< HEAD
+=======
+    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
+>>>>>>> origin/v4.1
 
   `
 })
@@ -304,6 +321,10 @@ export class DropDownMenuDemo {
 
     ];
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/v4.1
     this.transport = [
       {"label": "motorcycle", "icon": "  fa fa-motorcycle"},
       {"label": "plane", "icon": "fa fa-plane"},
@@ -334,6 +355,16 @@ export class DropDownMenuDemo {
     }, () => {
       this.typeScriptCode = responseTs;
     });
+<<<<<<< HEAD
+=======
+    //TS FILE
+    // this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
+    //   responseData = data;
+    // }, error => {
+    // }, () => {
+    //   this.dataSource = responseData;
+    // });
+>>>>>>> origin/v4.1
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

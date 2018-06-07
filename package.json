@@ -21,7 +21,7 @@
         "@angular/platform-browser": "^5.0.0",
         "@angular/platform-browser-dynamic": "^5.0.0",
         "@angular/router": "^5.0.0",
-        "amexio-ng-extensions": "file:../../canvas2/amexio.github.io/dist/amexio-ng-extensions-4.2.0.tgz",
+        "amexio-ng-extensions": "^4.2.2",
         "classlist.js": "^1.1.20150312",
         "core-js": "^2.4.1",
         "ngx-cookie-service": "^1.0.10",
