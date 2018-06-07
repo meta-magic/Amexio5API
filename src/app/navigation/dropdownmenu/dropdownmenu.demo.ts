@@ -321,10 +321,7 @@ export class DropDownMenuDemo {
 
     ];
 
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/v4.1
     this.transport = [
       {"label": "motorcycle", "icon": "  fa fa-motorcycle"},
       {"label": "plane", "icon": "fa fa-plane"},
@@ -337,15 +334,15 @@ export class DropDownMenuDemo {
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
+    let responseHtmlData: any;
     let responseTs: any;
     let responseData: any;
     //HTML FILE
     this.http.get('assets/data/code/navigation/dropdownmenu/form.html', {responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
+      responseHtmlData = data;
     }, error => {
     }, () => {
-      this.htmlCode = responseHtml;
+      this.htmlCode = responseHtmlData;
     });
 
     //TS FILE
@@ -355,8 +352,7 @@ export class DropDownMenuDemo {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-<<<<<<< HEAD
-=======
+
     //TS FILE
     // this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
     //   responseData = data;
@@ -364,7 +360,7 @@ export class DropDownMenuDemo {
     // }, () => {
     //   this.dataSource = responseData;
     // });
->>>>>>> origin/v4.1
+
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
