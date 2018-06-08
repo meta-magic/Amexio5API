@@ -10,7 +10,7 @@
       "type": "string",
       "default": "",
       "description": "Logo of navbar."
-    }, 
+    },
     {
       "name": "enable-side-nav-position",
       "type": "boolean",
@@ -41,7 +41,7 @@
       "name": "type",
       "type": "string",
       "default": "",
-      "description": "Indicate the type of menu-items (link / button / textfield /menu )"
+      "description": "Indicate the type of menu-items (link / button / textfield /menu/menucontainer ) For Advance development use (menucontainer) for custom dropdown menu you can used in navbar."
     },
     {
       "name": "title",
