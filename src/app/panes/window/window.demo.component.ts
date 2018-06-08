@@ -18,7 +18,8 @@ import {HttpClient} from "@angular/common/http";
            <amexio-row>
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-               <amexio-window [body-height]="40" [show-window]="showBasicWindow" [footer]="true" (close)="toggleBasicWindow()">
+               <amexio-label size="small">(Window Box closes on click of Escape Key)</amexio-label>
+               <amexio-window [body-height]="40" [show-window]="showBasicWindow" [close-on-escape]="true" [footer]="true" (close)="toggleBasicWindow()">
                  <amexio-header>
                   Employee Form
                  </amexio-header>
@@ -186,7 +187,7 @@ import {HttpClient} from "@angular/common/http";
       
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleClosable()" label="Closable Window"></amexio-button>
-               <amexio-window [show-window]="showClosable" [closable]="true" (close)="toggleClosable()" >
+               <amexio-window [show-window]="showClosable"  [closable]="true" (close)="toggleClosable()" >
                  <amexio-header>
                    Employee Form
                  </amexio-header>
