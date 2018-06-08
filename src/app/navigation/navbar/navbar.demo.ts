@@ -42,7 +42,7 @@ import {HttpClient} from "@angular/common/http";
                         </amexio-nav-item>
                       <amexio-nav-item position-right
                                        [type]="'textfield'"
-                                       [title]="'Enter your name'" [(ngModel)] = "uname">
+                                       [title]="'Enter your name'">
                       </amexio-nav-item>
                      
                       <amexio-nav-item position-right
@@ -69,14 +69,12 @@ import {HttpClient} from "@angular/common/http";
                           [label]="'Settings'"
                           [icon]="'fa fa-cog'"
                           [separator]="true"
-                          (onClick)="onDropDownMenuClick($event)"
                         >
                         </amexio-drop-down-menu-item>
                         <amexio-drop-down-menu-item
                           [label]="'Help Center'"
                           [icon]="'fa fa-question-circle'"
                           [separator] ="true"
-                          (onClick)="onDropDownMenuClick($event)"
                         >
                         </amexio-drop-down-menu-item>
                         <amexio-drop-down-menu-item
