@@ -5,6 +5,8 @@
                [title]="'Comfirm'"
                [message]="'Do you want to confirm ?'"
                [message-type]="'confirm'"
+               [button-size]="'medium'"
+               [button-type]="'confirm'" 
                [type]="'confirm'">
 </amexio-dialogue>
 
@@ -14,7 +16,8 @@
                [primary-action-label]="'ok'"
                [title]="'Error'"
                [message-type]="'error'"
-               [type]="'alert'">
+               [type]="'alert'"
+               [close-on-escape]="true">
 </amexio-dialogue>
 
 <!--warning dialogue-->

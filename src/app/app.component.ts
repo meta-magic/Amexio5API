@@ -50,7 +50,7 @@ export class AppComponent {
 `);
 
 this.amexiotechmenus =  [
-  
+
   {
   "text": "Products",
   "icon": "fa fa-snowflake-o fa-fw",
@@ -78,8 +78,8 @@ this.amexiotechmenus =  [
     "text": "Downloads",
     "link": "https://amexio.tech/download"
   }, {
-    "text": "Subscribe (Beta)",
-    "link": "https://canvas.amexio.org/signup/"
+    "text": "Subscribe ",
+    "link": "https://canvas.amexio.org/#/user/signup"
   }, {
     "text": "Canvas Login (Beta)",
     "link": "https://canvas.amexio.org/"
@@ -147,7 +147,7 @@ this.amexiotechmenus =  [
   }
 
   homeLink(link:any){
-    this.document.location.href=link; 
+    this.document.location.href=link;
   }
   //TO CLOSE NABVAR IN MOBILE
   onMenuClick(){

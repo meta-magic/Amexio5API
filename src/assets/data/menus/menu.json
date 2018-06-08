@@ -200,6 +200,11 @@
               "text": "Multi Select",
               "icon": "fa fa-chevron-circle-down fa-fw",
               "link": "dropdownmulti"
+            },
+            {
+              "text": "Template",
+              "icon": "fa fa-chevron-circle-down fa-fw",
+              "link": "dropdowntemplate"
             }
           ]
         },
@@ -313,11 +318,7 @@
             }
           ]
         },
-        {
-          "text": "Dropdown Menu",
-          "icon": "fa fa-chevron-circle-down",
-          "link": "dropdownmenu"
-        },
+
         {
           "text": "Notification",
           "icon": "fa fa-comments fa-fw",
@@ -332,12 +333,8 @@
           "text": "Progress Bar",
           "icon": "fa fa-spinner fa-fw",
           "link": "progressbar-demo"
-        },
-        {
-          "text":"Tool Bar",
-          "icon":"fa fa-bars fa-fw",
-          "link":"toolbar-demo"
         }
+
       ]
     },
     {
@@ -465,6 +462,11 @@
           "link": "dockbar-demo"
         },
         {
+          "text": "Dropdown Menu",
+          "icon": "fa fa-chevron-circle-down",
+          "link": "dropdownmenu"
+        },
+        {
           "text": "Nav Bar",
           "icon": "fa fa-bars fa-fw",
           "link": "navbar-demo"
@@ -478,6 +480,11 @@
           "text": "Menu Bar",
           "icon": "fa fa-bars fa-fw",
           "link": "menubar-demo"
+        },
+        {
+          "text":"Tool Bar",
+          "icon":"fa fa-bars fa-fw",
+          "link":"toolbar-demo"
         }
       ]
     },

@@ -31,19 +31,19 @@ import { HttpClient } from "@angular/common/http";
                 <amexio-toolbar-item position-left [seperator-position]="'right'">
                  
                 <amexio-btn-group >
-                <amexio-button [size]="'small'"
+                <amexio-button [size]="'medium'"
                                [label]="''"
                                [type]="''"
                                [tooltip]="'Archive'"
                                [icon]="'fa fa-archive'">
                 </amexio-button>
-                <amexio-button [size]="'small'"
+                <amexio-button [size]="'medium'"
                                [label]="''"
                                [type]="''"
                                [tooltip]="'Save'"
                                [icon]="'fa fa-exclamation-circle'" >
                 </amexio-button>
-                <amexio-button [size]="'small'"
+                <amexio-button [size]="'medium'"
                                [label]="''"
                                [type]="''"
                                [tooltip]="'delete'"
@@ -52,11 +52,10 @@ import { HttpClient } from "@angular/common/http";
               </amexio-btn-group>
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right >
-                 <amexio-drop-down-menu [icon-align]="'left'"
-                             [title]="'Advance'"
+              <amexio-drop-down-menu [icon-align]="'left'"
+                             [title]="''"
                              [padding]="'5px'"
-                             [icon]="'fa fa-flash'"
-                             >
+                             [icon]="'fa fa-cog'">
                <amexio-drop-down-menu-item [separator]="true">
                       <amexio-box background-color="purple" padding="true">
                        <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
@@ -98,31 +97,20 @@ import { HttpClient } from "@angular/common/http";
           [label]="'Sign Out'"
           [icon]="'fa fa-sign-out'">
         </amexio-drop-down-menu-item>
-
       </amexio-drop-down-menu>
-
       </amexio-toolbar-item>
-                  
-                  <amexio-toolbar-item position-left [seperator-position]="'left'">
-                
+                   <amexio-toolbar-item position-left [seperator-position]="'left'">
+                  <amexio-btn-group>
                 <amexio-button [size]="'medium'"
                                [tooltip]="'Move to'"
                                [icon]="'fa fa-folder'">
                 </amexio-button>
-
-                
-
                 <amexio-button [size]="'medium'"
                                [tooltip]="'Help'"
                                [icon]="'fa fa-question'" >
                 </amexio-button>
-
-                
+                </amexio-btn-group>
                 </amexio-toolbar-item>
-                
-                  
-               
-            
         </amexio-toolbar>       
             <h2>Demo: Tool Bar In Card Header</h2>
            
@@ -137,8 +125,8 @@ import { HttpClient } from "@angular/common/http";
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-left [seperator-position]="'right'">
                  
-                  <amexio-drop-down-menu [icon-align]="'right'"
-                  [title]="'Payment item'"
+                  <amexio-drop-down-menu [icon-align]="'left'"
+                  [title]="'Quick Access'"
                   [padding]="'5px'"
                   [data]="payment"
                   [down-arrow-icon] ="true"
@@ -159,6 +147,7 @@ import { HttpClient } from "@angular/common/http";
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
                   <i class="fa fa-cog" aria-hidden="true"></i>
                   </amexio-toolbar-item>
+                   
 
             </amexio-toolbar>
 			         </amexio-header>
@@ -203,7 +192,7 @@ import { HttpClient } from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-toolbar>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/toolbar.json'" 
+                             [http-url]="'assets/apireference/navigation/toolbar.json'" 
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -233,7 +222,7 @@ import { HttpClient } from "@angular/common/http";
             <br>
             
             <amexio-datagrid title="Events" [http-method]="'get'" 
-                             [http-url]="'assets/apireference/forms/toolbar.json'" [data-reader]="'events'"
+                             [http-url]="'assets/apireference/navigation/toolbar.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -282,12 +271,12 @@ export class ToolbarDemo implements OnInit {
     this.toggleMsgArray = [];
     this.getHtmlAndTypeScriptCode();
     this.payment=[
-      {"label": "motorcycle", "icon": "  fa fa-motorcycle"},
-      {"label": "plane", "icon": "fa fa-plane","separator":"true"},
-      {"label": "ship", "icon": "fa fa-ship"},
-      {"label": "space shuttle", "icon": "fa fa-space-shuttle"},
-      {"label": "bicycle", "icon": "fa fa-bicycle"},
-      {"label": "rocket", "icon": "fa fa-rocket"}
+      {"label": "Open With", "icon": "fa fa-arrows-alt "},
+      {"label": "Make a Copy", "icon": "fa fa-files-o","separator":"true"},
+      {"label": "Refresh", "icon": "fa fa-refresh"},
+      {"label": "Add Star", "icon": "fa fa-star"},
+      {"label": "download", "icon": "fa fa-download"},
+      {"label": "bookmark", "icon": "fa fa-bookmark"}
     ];
   
   }
@@ -302,7 +291,7 @@ export class ToolbarDemo implements OnInit {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/toolbar/form.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/navigation/toolbar/form.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -310,7 +299,7 @@ export class ToolbarDemo implements OnInit {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/toolbar/form.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/navigation/toolbar/form.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

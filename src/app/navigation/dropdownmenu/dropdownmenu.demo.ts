@@ -210,7 +210,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties : <Amexio-DropDownMenu>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/dropdownmenu.component.json'"
+                             [http-url]="'assets/apireference/navigation/dropdownmenu.component.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -227,7 +227,7 @@ import {HttpClient} from "@angular/common/http";
             <br>
             <amexio-datagrid title="Properties : <Amexio-DropDownMenu-item>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/dropdownmenu.component.json'"
+                             [http-url]="'assets/apireference/navigation/dropdownmenu.component.json'"
                              [data-reader]="'propertiesitem'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="15"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -243,7 +243,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/dropdownmenu.component.json'" [data-reader]="'events'"
+                             [http-url]="'assets/apireference/navigation/dropdownmenu.component.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
@@ -266,22 +266,32 @@ import {HttpClient} from "@angular/common/http";
                     <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                   </ng-container>
                 </amexio-tab>
+
                 <!--<amexio-tab title="Data Source">-->
                 <!--<ng-container *ngIf="dataSource">-->
                 <!--<prism-block [code]="dataSource" [language]="'json'"></prism-block>-->
                 <!--</ng-container>-->
                 <!--</amexio-tab>-->
+
               </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
           <amexio-tab title="Live">
+
+            <p align="center">Amexio DropdownMenu</p>
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-dropdownmenu-toolbar?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
+
             <p align="center">Amexio Sandbox</p>
             <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dropdown?embed=1&file=app/forms/dropdown/dropdown.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
+
+
     <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
+
 
   `
 })
@@ -293,8 +303,7 @@ export class DropDownMenuDemo {
   dataSource: string;
   copyMsgArray: any[];
   countryCode1: string;
-  Brand: any[];
-  currency: any[];
+
   payment: any[];
   transport: any[];
 
@@ -324,24 +333,25 @@ export class DropDownMenuDemo {
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
+    let responseHtmlData: any;
     let responseTs: any;
     let responseData: any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/dropdownmenu/form.html', {responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
+    this.http.get('assets/data/code/navigation/dropdownmenu/form.html', {responseType: 'text'}).subscribe(data => {
+      responseHtmlData = data;
     }, error => {
     }, () => {
-      this.htmlCode = responseHtml;
+      this.htmlCode = responseHtmlData;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/dropdownmenu/form.text', {responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/navigation/dropdownmenu/form.text', {responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
+
     //TS FILE
     // this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
     //   responseData = data;
@@ -349,6 +359,7 @@ export class DropDownMenuDemo {
     // }, () => {
     //   this.dataSource = responseData;
     // });
+
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "countryName": "MotorCycle details",
+      "countryName": "Finance details",
       "countryCode1": "Ketan Gote",
       "countryCode2": "MMR",
       "countryFlag": "MM.png",
@@ -16,7 +16,7 @@
       "lastModified":"4 June,2018"
     },
     {
-      "countryName": "Plane details",
+      "countryName": "Amexio details",
       "countryCode1": "Ketan Gote",
       "countryCode2": "VIR",
       "countryFlag": "VI.png",
@@ -31,7 +31,7 @@
       "lastModified":"4 June,2018"
     },
     {
-      "countryName": "Car details",
+      "countryName": "Amexio Canvas details",
       "countryCode1": "Ketan Gote",
       "countryCode2": "LVA",
       "countryFlag": "LV.png",
@@ -46,7 +46,7 @@
       "lastModified":"4 June,2018"
     },
     {
-      "countryName": "Rocket details",
+      "countryName": "Form-12BB",
       "countryCode1": "Ketan Gote",
       "countryCode2": "IOT",
       "countryFlag": "IO.png",
@@ -61,7 +61,7 @@
       "lastModified":"4 June,2018"
     },
     {
-      "countryName": "Space shuttle details ",
+      "countryName": "Getting Started ",
       "countryCode1": "Ketan Gote",
       "countryCode2": "REU",
       "countryFlag": "RE.png",
@@ -72,11 +72,11 @@
       "capitalLatitude": null,
       "capitalLongitude": null,
       "isoNumeric": 638,
-      "icon":"fa-file-pdf-o",
+      "icon":"fa fa-file-pdf-o",
       "lastModified":"28 May,2018"
     },
     {
-      "countryName": "Bicycle details",
+      "countryName": "Project details",
       "countryCode1": "Ketan Gote",
       "countryCode2": "GAB",
       "countryFlag": "GA.png",
@@ -87,11 +87,11 @@
       "capitalLatitude": null,
       "capitalLongitude": null,
       "isoNumeric": 266,
-      "icon":"fa-file-archive-o",
+      "icon":"fa fa-file-archive-o",
       "lastModified":"28 May,2018"
     },
     {
-      "countryName": "Rocket details",
+      "countryName": "Inbox details",
       "countryCode1": "Ketan Gote",
       "countryCode2": "GUY",
       "countryFlag": "GY.png",
@@ -102,7 +102,7 @@
       "capitalLatitude": null,
       "capitalLongitude": null,
       "isoNumeric": 328,
-      "icon":"fa fa-inbox",
+      "icon":"fa fa fa-inbox",
       "lastModified":"28 May,2018"
     }
 ]

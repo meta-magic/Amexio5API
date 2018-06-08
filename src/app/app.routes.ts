@@ -74,6 +74,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'dropdownmulti', loadChildren: './forms/dropdownmulti/dropdownmulti.demo.module#DropDownMultiDemoModule'
   },
+  {
+    path: 'dropdowntemplate', loadChildren: './forms/dropdowntemplate/dropdowntemplate.demo.module#DropDownTemplateDemoModule'
+  },
   /**Button */
   {
     path: 'button-demo', loadChildren: './forms/button/button.demo.module#ButtonDemoModule'
@@ -90,10 +93,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'floatinggroupbutton-demo', loadChildren: './forms/floatinggroup/floatinggroupbutton.demo.module#FloatingGroupButtonDemoModule'
   },
-  /** ToolBar */
-  {
-    path: 'toolbar-demo', loadChildren: './forms/toolbar/toolbar.demo.module#ToolbarDemoModule'
-  },
+
   /** Navigation*/
   {
     path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
@@ -109,6 +109,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'menubar-demo', loadChildren: './navigation/menubar/menubar.demo.module#MenuBarDemoModule'
+  },
+  {
+    path: 'toolbar-demo', loadChildren: './navigation/toolbar/toolbar.demo.module#ToolbarDemoModule'
   },
   /** Media*/
   {
@@ -305,7 +308,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path : 'license', loadChildren : './license/license.module#LicenseModule'
   },
   {
-    path: 'dropdownmenu', loadChildren: './forms/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
+    path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
   },
 
 ];

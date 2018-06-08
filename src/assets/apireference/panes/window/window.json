@@ -18,6 +18,13 @@
         "default": "false"
       },
       {
+      "name": "close-on-escape",
+      "description": "Window box closes on click of Escape Key.",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+      {
         "name": "body-height",
         "description": "Assign body height in percentage, in case of maximize=true it will be set to 100% by default",
         "version": "4.0 onwards",

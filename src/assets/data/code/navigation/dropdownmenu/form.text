@@ -13,7 +13,7 @@ export class DropDownMenuDemo {
                     {"label":"jcb","icon":"fa fa-cc-jcb"}
                   ];
 
-  // Demo 2 :  without SEPARATOR
+  // Demo 4 :  without SEPARATOR
 
   this.transport=[
                    {"label":"motorcycle","icon":"	fa fa-motorcycle"},
@@ -24,5 +24,25 @@ export class DropDownMenuDemo {
                    {"label":"rocket","icon":"fa fa-rocket"}
                  ];
          }
+
+  onDropDownMenuClick(item: any) {
+     debugger;
+    let jsonData = {
+      'icon': '',
+      'label': '',
+      'labelalign': ''
+    };
+    if (item.this.icon) {
+      jsonData.icon = item.this.icon;
+    }
+    if (item.this.label) {
+      jsonData.label = item.this.label;
+    }
+    if (item.this.labelalign) {
+      jsonData.labelalign = item.this.labelalign;
+    }
+    this.source = jsonData;
+    console.log("ok");
+  }
 }
 

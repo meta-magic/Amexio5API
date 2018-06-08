@@ -12,11 +12,11 @@ import {HttpClient} from "@angular/common/http";
          Nav Bar 
       </amexio-header>
       <amexio-body>
-        <p>
-          The Nav Bar Component is a familiar top navigation pattern for users. <br/>
-          Nav bar has Logo/Title left align, than link, text field, button and menus on right side.<br/>
-          v4.1 Nav bar is not backward compatible of v4.0, for v4.0 refer <a href="http://amexio.org/api/v4/index.html#/getting-started">link</a>
-        </p>
+       <p>
+         The Nav Bar Component is a familiar top navigation pattern for users.
+         Nav bar has Logo/Title left align, than link, text field, button and menus on right side.
+         v4.1 Nav bar is not backward compatible of v4.0, for v4.0 refer link
+       </p>
           <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
@@ -32,29 +32,71 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-nav [enable-side-nav-position]="false" 
                                 [title]="'Amexio'"	
                                 [logo]="'assets/images/logos/amexio-logo.png'">
-                        <amexio-nav-item position-right
-                            [type]="'link'" 
-                            [title]="'Amexio'" 
-                            (onNavItemClick)="onClick('http://amexio.tech')">
-                        </amexio-nav-item>
-                        <amexio-nav-item position-right
-                          [type]="'textfield'" 
-                          [title]="'Enter your name'">			
-                        </amexio-nav-item>			                      
+                      	                      
                         <amexio-nav-item position-right                                            
                           (onNavItemClick)="onClick('http://amexio.tech')" 
                           [icon]="'fa fa-bell fa-fw fa-lg'"
                           [type]="'button'" 
                           
                           style="cursor: pointer;">			
-                        </amexio-nav-item>		
+                        </amexio-nav-item>
+                      <amexio-nav-item position-right
+                                       [type]="'textfield'"
+                                       [title]="'Enter your name'" [(ngModel)] = "uname">
+                      </amexio-nav-item>
+                     
+                      <amexio-nav-item position-right
+                                       [title]="'Settings'"
+                                       [type]="'menucontainer'">
+
+                        <amexio-box background-color="purple" padding="true">
+                          <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+                        </amexio-box>
+                        <amexio-row>
+                          <amexio-column size="5">
+                            <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'"
+                                         >
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column size="7">
+                            <amexio-label >John deo</amexio-label>  <br/>
+                            <amexio-label > At paris. </amexio-label>
+
+                          </amexio-column>
+
+                        </amexio-row>
+                        <amexio-drop-down-menu-item
+                          [label]="'Settings'"
+                          [icon]="'fa fa-cog'"
+                          [separator]="true"
+                          (onClick)="onDropDownMenuClick($event)"
+                        >
+                        </amexio-drop-down-menu-item>
+                        <amexio-drop-down-menu-item
+                          [label]="'Help Center'"
+                          [icon]="'fa fa-question-circle'"
+                          [separator] ="true"
+                          (onClick)="onDropDownMenuClick($event)"
+                        >
+                        </amexio-drop-down-menu-item>
+                        <amexio-drop-down-menu-item
+                        >
+                          <amexio-button      [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+                          </amexio-button>
+                        </amexio-drop-down-menu-item>
+
+                      </amexio-nav-item>
                         <amexio-nav-item position-right *ngFor="let menus of topMenuData" 
                           [type]="'menu'" 
                           [title]="menus.text"
                           [data]="menus.submenus"
                           (onNavItemClick)="externalLink($event)">			
-                        </amexio-nav-item>                     	
+                        </amexio-nav-item>
+
+                    
                      </amexio-nav>
+
+                      
                   </div>                       
                     </amexio-body>
                   </amexio-card>
@@ -138,7 +180,7 @@ export class NavbarDemo {
   topMenuData:any;
   constructor(private http: HttpClient) {
     this.topMenuData = JSON.parse(`[{
-      "text": "Products",
+      "text": "About Us",
       "submenus": [{
         "text": "Amexio Canvas",
         "link": "https://amexio.tech/amexio-canvas"
