@@ -55,12 +55,12 @@ import {HttpClient} from "@angular/common/http";
                         <amexio-row>
                           <amexio-column size="5">
                             <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'"
-                                          path="https://image.ibb.co/nNH2xo/jack.jpg">
+                                         >
                             </amexio-image>
                           </amexio-column>
                           <amexio-column size="7">
-                            <amexio-label > Captain Jack Sparrow </amexio-label>  
-                            <amexio-label > At Disneyland. </amexio-label>
+                            <amexio-label >John deo</amexio-label>  <br/>
+                            <amexio-label > At paris. </amexio-label>
 
                           </amexio-column>
 
