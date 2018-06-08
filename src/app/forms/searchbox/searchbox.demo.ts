@@ -295,10 +295,9 @@ export class SearchBox implements OnInit {
     let sub1 = this.subject;
     let to1 = this.to;
     let frm1 = this.from;
-    debugger;
+ 
     if (sub1 == "" && frm1 == "" && to1 == "") {
-      debugger;
-      this.bindData = this.searchdata;
+       this.bindData = this.searchdata;
 
     }
     else {
