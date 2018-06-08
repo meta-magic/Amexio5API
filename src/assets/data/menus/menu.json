@@ -254,6 +254,11 @@
           "link": "typeahead-demo"
         },
         {
+          "text": "Search Box",
+          "icon": "fa fa-search fa-fw",
+          "link": "searchbox-demo"
+        },
+        {
           "text": "Tag Field",
           "icon": "fa fa-tags",
           "link": "taginput-demo"

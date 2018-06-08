@@ -38,6 +38,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'typeahead-demo', loadChildren: './forms/typeahead/typeahead.demo.module#TypeAheadDemoModule'
   },
   {
+    path: 'searchbox-demo', loadChildren: './forms/searchbox/searchbox.demo.module#SearchBoxDemoModule'
+  },
+  {
     path: 'rating-demo', loadChildren: './forms/rating/rating.demo.module#RatingDemoModule'
   },
   {
