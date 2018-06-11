@@ -160,7 +160,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
         
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v41-navbar" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v41-navbar?embed=1&file=app/forms/navbar/navbar.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
         
           </amexio-tab>
         </amexio-tab-view>
