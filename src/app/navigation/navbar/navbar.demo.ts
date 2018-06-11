@@ -193,11 +193,9 @@ export class NavbarDemo {
   }
 
   onClick(event:any){
-    console.log(event);
   }
 
   externalLink(event:any){
-    console.log(event);
   }
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {

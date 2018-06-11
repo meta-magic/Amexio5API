@@ -281,9 +281,6 @@ import {HttpClient} from "@angular/common/http";
             <p align="center">Amexio DropdownMenu</p>
             <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-dropdownmenu-toolbar?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
 
-            <p align="center">Amexio Sandbox</p>
-            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dropdown?embed=1&file=app/forms/dropdown/dropdown.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
-
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>

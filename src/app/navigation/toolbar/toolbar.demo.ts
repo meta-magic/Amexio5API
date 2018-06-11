@@ -248,8 +248,9 @@ import { HttpClient } from "@angular/common/http";
             </div>
           </amexio-tab>
           <amexio-tab title="Live">
-          <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-toggle?embed=1&file=app/forms/toggle/toggle.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            <p align="center">Amexio ToolBar</p>
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-dropdownmenu-toolbar?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
+
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -265,7 +266,7 @@ export class ToolbarDemo implements OnInit {
   toggleMsgArray: any[];
   payment: any[];
   ngOnInit() {
-  
+
   }
   constructor(private http: HttpClient) {
     this.toggleMsgArray = [];
@@ -278,7 +279,7 @@ export class ToolbarDemo implements OnInit {
       {"label": "download", "icon": "fa fa-download"},
       {"label": "bookmark", "icon": "fa fa-bookmark"}
     ];
-  
+
   }
 
   //Square Toggle click event
