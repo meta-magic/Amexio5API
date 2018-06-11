@@ -7,7 +7,7 @@ import {RouterModule} from "@angular/router";
 import {APP_ROUTE} from "./app.routes";
 import {
   AmexioWidgetModule, DeviceQueryService, CommonDataService, AmexioMapModule, AmexioChartsModule, ChartLoaderService,
-  MapLoaderService, AmexioDashBoardModule, DashboardLoaderService, AmexioPaneModule, IconLoaderService
+  MapLoaderService, AmexioDashBoardModule, AmexioPaneModule, IconLoaderService
 } from "amexio-ng-extensions";
 
 @NgModule({

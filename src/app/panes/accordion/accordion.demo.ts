@@ -1,7 +1,7 @@
 /**
  * Created by pratik on 16/1/18.
  */
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component} from '@angular/core';
 import {Http} from "@angular/http";
 
 @Component({
