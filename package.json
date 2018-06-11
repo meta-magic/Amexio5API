@@ -24,6 +24,7 @@
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
+    "ngx-cookie-service": "^1.0.10",
     "prismjs": "^1.14.0",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
