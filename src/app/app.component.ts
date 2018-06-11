@@ -63,7 +63,11 @@ this.amexiotechmenus =  [
   }, {
     "text": "Amexio Colors",
     "link": "https://amexio.tech/amexio-colors"
-  }]
+  }, {
+    "text": "Amexio Plugins",
+    "link": "https://amexio.tech/amexio-plugins-1"
+  }
+]
 }, {
   "text": "Start Using",
   "icon": "fa fa-television fa-fw",
