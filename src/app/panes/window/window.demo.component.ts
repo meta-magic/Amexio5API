@@ -15,7 +15,7 @@ import {HttpClient} from "@angular/common/http";
        <p>Window Pane component is a customizable Modal Pane in which user can enter custom content</p>
        <amexio-tab-view>
          <amexio-tab title="Demo" active="true">
-           <amexio-row>
+           <amexio-row> 
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
                <amexio-label size="small">(Window pane demo with positioned bottom right and with escape key functionality)</amexio-label>
