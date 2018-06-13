@@ -19,7 +19,7 @@ import {HttpClient} from "@angular/common/http";
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
                <amexio-label size="small">(Window Box closes on click of Escape Key)</amexio-label>
-               <amexio-window [body-height]="40" [show-window]="showBasicWindow" [close-on-escape]="true" [footer]="true" (close)="toggleBasicWindow()">
+               <amexio-window [body-height]="40" [show-window]="showBasicWindow" [close-on-escape]="true" [footer]="true" [vertical-position]="'bottom'" [horizontal-position]="'right'" (close)="toggleBasicWindow()">
                  <amexio-header>
                   Employee Form
                  </amexio-header>

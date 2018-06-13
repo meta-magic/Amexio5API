@@ -11,6 +11,22 @@
         "default": "right"
       },
       {
+        "name": "vertical-position",
+        "description": "Alignment of window dialog to top or bottom or center.",
+        "version": "4.2 onwards",
+        "type": "string",
+        "default": "center"
+
+      },
+      {
+        "name": "horizontal-position",
+        "description": "Alignment of window dialog to left or right or center.",
+        "version": "4.2 onwards",
+        "type": "string",
+        "default": "center"
+
+      },
+      {
         "name": "show-window",
         "description": "Show / Hide Window.",
         "version": "4.0 onwards",
