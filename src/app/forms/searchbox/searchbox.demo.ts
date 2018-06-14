@@ -125,8 +125,7 @@ import { HttpClient } from "@angular/common/http";
           </amexio-tab-view>
         </amexio-body>
       </amexio-card> `
-}) 
-
+})            
 export class SearchBox implements OnInit {
   htmlCode: string;
   typeScriptCode: string;
