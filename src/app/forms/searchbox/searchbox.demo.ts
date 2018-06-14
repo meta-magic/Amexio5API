@@ -120,15 +120,14 @@ import { HttpClient } from "@angular/common/http";
             </amexio-tab>
             <amexio-tab title="Live">
              <p align="center">Amexio Sandbox</p>
-  <iframe style="width: 100%; height: 600px" src=""></iframe>
+  <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v42-searchbox?ctl=1&embed=1&file=app/forms/searchbox/searchbox.demo.html&view=editor"></iframe>
             </amexio-tab>
           </amexio-tab-view>
         </amexio-body>
       </amexio-card>
    
     `
-})
-
+}) 
 export class SearchBox implements OnInit {
   htmlCode: string;
   typeScriptCode: string;
@@ -142,6 +141,7 @@ export class SearchBox implements OnInit {
   bindData: any[] = [];
   constructor(private http: HttpClient, private element: ElementRef) {
     this.localData = [
+      
       {
         "from": "araf.karsh@metamagic.in",
         "subject": "amexio release plans",
