@@ -24,10 +24,16 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="12">
+                      <amexio-label size="small">
+                          Date Picker demo with min-date, max-date and diabled-date functionality 
+                       </amexio-label>
                         <amexio-date-time-picker
                           [field-label]="'Date Of Birth'"
                           [time-picker]="false"
                           [date-picker]="true"
+                          [min-date]="'22-Mar-2016'" 
+                          [max-date]="'22-Feb-2020'"
+                          [diabled-date]="disabledDate"
                           [(ngModel)]="currentDate">
                         </amexio-date-time-picker>
                       </amexio-column>
@@ -51,6 +57,7 @@ import {HttpClient} from "@angular/common/http";
                           [field-label]="'Time Of Birth'"
                           [time-picker]="true"
                           [date-picker]="false"
+                          [min-date]="'Thu Jul 25 2017 00:00:00 GMT+0530 (IST)'"
                           [ngModel]="time"
                           (change)="onChangeTime($event)">
                         </amexio-date-time-picker>
@@ -125,7 +132,9 @@ export class DateTimePickerDemo {
   copyMsgArray: any[];
   currentDate: any;
   time: any;
-
+  disabledDate:any[];
+   date = new Date("March 21, 2018 01:15:00");
+  
   onChangeTime(data: any) {
     debugger;
     this.time=data;
@@ -133,6 +142,16 @@ export class DateTimePickerDemo {
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
+    this.disabledDate = [
+      {
+        "from": "13-Jul-2018",
+        "to": "15-Jul-2018"
+      },
+      {
+        "from": "23-Aug-2018",
+        "to": "28-Aug-2018"
+      }
+    ];
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
