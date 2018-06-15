@@ -27,7 +27,7 @@ import {HttpClient} from "@angular/common/http";
                       [vertical-position]="'top'"
                       [horizontal-position]="'left'"
                       [close-on-escape] ="true"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
                       
                     </amexio-notification>
@@ -51,7 +51,7 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'center'"
                       [close-on-escape] ="true"
                       [background-color]="'yellow'"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >
 
@@ -84,7 +84,7 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'right'"
                       [close-on-escape] ="true"
                       [background-color]="'red'"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >
                                  <amexio-row>
@@ -124,7 +124,7 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'left'"
                       [close-on-escape] ="true"
                       [background-color]="'green'"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >
 
@@ -164,7 +164,7 @@ import {HttpClient} from "@angular/common/http";
                       [close-on-escape] ="true"
                       [background-color]="'black'"
                       [foreground-color]="'white'"
-                      [auto-dismiss-msg]="false "
+                      [auto-dismiss-msg]="true "
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >
 
@@ -202,7 +202,7 @@ import {HttpClient} from "@angular/common/http";
                       [close-on-escape] ="true"
                       [background-color]="'orange '"
                       [foreground-color]="'black'"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
 
                       <ng-template #amexioNotificationTemp >
