@@ -202,7 +202,7 @@ import {HttpClient} from "@angular/common/http";
                       [background-color]="'orange '"
                       [foreground-color]="'black'"
                       [auto-dismiss-msg]="true"
-                      [auto-dismiss-msg-interval]="4000">
+                      [auto-dismiss-msg-interval]="6000">
 
                       <ng-template #amexioNotificationTemp >
                         <amexio-row>
