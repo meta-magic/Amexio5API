@@ -51,7 +51,7 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'center'"
                       [close-on-escape] ="true"
                       [background-color]="'yellow'"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >
                         <amexio-box >
