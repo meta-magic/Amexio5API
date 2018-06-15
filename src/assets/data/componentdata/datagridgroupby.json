@@ -48,13 +48,13 @@
     {
       "userId":"3",
       "jobTitle":"Developer",
-      "firstName":"Pratik",
-      "lastName":"Kelwalkar",
-      "preferredFullName":"Pratik Kelwalkar",
+      "firstName":"Rashmi",
+      "lastName":"Thakkar",
+      "preferredFullName":"Rashmi Thakkar",
       "employeeCode":"E3",
       "salary":1500000,
       "phoneNumber":"8851855577",
-      "emailAddress":"pratik.kelwalkar.com"
+      "emailAddress":"Rashmi.Thakkar.com"
     },
     {
       "userId":"4",
@@ -70,24 +70,24 @@
     {
       "userId":"5",
       "jobTitle":"Developer",
-      "firstName":"Ashutosh",
-      "lastName":"Jadhav",
+      "firstName":"Deepali",
+      "lastName":"Arvind",
       "salary":2000000,
-      "preferredFullName":"Ashutosh Jadhav",
+      "preferredFullName":"Deepali Arvind",
       "employeeCode":"E5",
       "phoneNumber":"8888648444",
-      "emailAddress":"Ashutosh.jadhav.com"
+      "emailAddress":"Deepali.Arvind.com"
     },
     {
       "userId":"6",
       "jobTitle":"Developer",
-      "firstName":"Mahesh",
-      "lastName":"Pardeshi",
+      "firstName":"Ashwini",
+      "lastName":"Agre",
       "salary":2000000,
-      "preferredFullName":"Mahesh Pardeshi",
+      "preferredFullName":"Ashwini Agre",
       "employeeCode":"E6",
       "phoneNumber":"8888648444",
-      "emailAddress":"Mahesh.Pardeshi.com"
+      "emailAddress":"Ashwini.Agre.com"
     },
     {
       "userId":"7",

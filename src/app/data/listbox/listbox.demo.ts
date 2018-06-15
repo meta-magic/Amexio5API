@@ -243,12 +243,7 @@ export class ListBoxDemo {
           "profile": "ketan.jpg",
           "email" : "XYZ@metamagic.in"
         },
-        {
-          "name": "Pratik Kelwalkar",
-          "name_official": "Pratik Kelwalkar",
-          "profile": "pratik.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
+
         {
           "name": "Dattaram Gawas",
           "name_official": "Dattaram Gawas",
@@ -259,24 +254,6 @@ export class ListBoxDemo {
           "name": "Sagar Jadhav",
           "name_official": "Sagar Jadhav",
           "profile": "sagar.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
-        {
-          "name": "Mahesh Pardeshi",
-          "name_official": "Mahesh Pardeshi",
-          "profile": "mahesh.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
-        {
-          "name": "Ashutosh Jadhav",
-          "name_official": "Ashutosh Jadhav",
-          "profile": "ahutosh.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
-        {
-          "name": "Anagha Kulkarni",
-          "name_official": "Anagha Kulkarni",
-          "profile": "anagha.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {

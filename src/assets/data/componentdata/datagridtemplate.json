@@ -22,7 +22,7 @@
         "Payment":"masterCard.jpg",
         "Activity":"5 mins ago"
       },{
-          
+
          "User": "Ketan Gote",
          "profile": "ketan.jpg",
           "Date":"7-04-2018",
@@ -31,15 +31,6 @@
        "usageToDate":"Jul 10,2015",
         "Payment":"paypal.jpg",
         "Activity":" a mins ago"
-      },{
-         "User": "Pratik Kelwalkar",
-         "profile": "pratik.jpg",
-          "Date":"19-03-2018",
-        "Usage":6,
-        "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
-        "Payment":"ebay.png",
-        "Activity":"2 mins ago"
       },{
         "User": "Dattaram Gawas",
         "profile": "dats.jpg",
@@ -58,26 +49,38 @@
        "usageToDate":"Jul 10,2015",
         "Payment":"paypal.jpg",
         "Activity":"a mins ago"
-      },{
-        "User": "Mahesh Pardeshi",
-        "profile": "mahesh.jpg",
-         "Date":"22-02-2018",
+      },
+
+      {
+        "User": "Rashmi Thakkar",
+        "profile": "rashmi.jpg",
+        "Date":"22-02-2018",
         "Usage":80,
         "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
+        "usageToDate":"Jul 10,2015",
         "Payment":"visa.jpg",
         "Activity":"8 mins ago"
       },{
-        "User": "Anagha Kulkarni",
-         "profile": "anagha.jpg",
-         "Date":"1-03-2018",
+        "User": "Deepali Arvind",
+        "profile": "dipali.jpg",
+        "Date":"1-03-2018",
         "Usage":83,
         "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
+        "usageToDate":"Jul 10,2015",
+        "Payment":"masterCard.jpg",
+        "Activity":"6 mins ago"
+      },
+      {
+        "User": "Ashwini Agre",
+        "profile": "ashwini.jpg",
+        "Date":"1-03-2018",
+        "Usage":83,
+        "usageFromDate":"June 11,2015",
+        "usageToDate":"Jul 10,2015",
         "Payment":"masterCard.jpg",
         "Activity":"9 mins ago"
       }
-     
+
     ]
   }
 }
