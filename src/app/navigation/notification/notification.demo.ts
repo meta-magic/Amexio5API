@@ -51,15 +51,13 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'center'"
                       [close-on-escape] ="true"
                       [background-color]="'yellow'"
-                      [auto-dismiss-msg]="true"
+                      [auto-dismiss-msg]="false"
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >
-                        <amexio-box   >
+                        <amexio-box >
                           <amexio-image [icon-class]="'	fa fa-info-circle'" style="font-size: 25px;">
-                          </amexio-image> &nbsp;&nbsp;
-                          <amexio-label size="small-bold" [badge]=7 font-color="black">We have to update security policy</amexio-label>&nbsp;&nbsp;
-
-                          
+                          </amexio-image>
+                          <amexio-label size="small-bold" [badge]=7 font-color="black">Update security policy</amexio-label>
                         </amexio-box>
 
                       </ng-template>
