@@ -27,8 +27,8 @@
 
       },
       {
-        "name": "show-window",
-        "description": "Show / Hide Window.",
+        "name": "show",
+        "description": "uses two way binding to Show / Hide Window.",
         "version": "4.0 onwards",
         "type": "boolean",
         "default": "false"
