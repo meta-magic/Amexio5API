@@ -99,12 +99,12 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="Profile" [amexio-color]="'red'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Profile Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="Education" [amexio-color]="'red'" [closable]="true">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Education Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
@@ -143,12 +143,12 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="Profile" [amexio-color]="'green'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Profile Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="Education" [amexio-color]="'red'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Education Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
@@ -173,16 +173,16 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                   </amexio-tab>
                   <amexio-tab title="Work" [amexio-color]="'blue'">
                       Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
-                      placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
-                      tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+                      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                      type specimen book.
                   </amexio-tab>
                   <amexio-tab title="Address" [amexio-color]="'green'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Address Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="Profile" [amexio-color]="'red'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Profile Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
@@ -370,7 +370,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-horizontal-closable-tab?embed=1&file=app/tabs/closabletab/closabletab.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>          </amexio-tab>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-horizontal-enhanced-tab?embed=1&file=app/tabs/enhancedtab/enhancedtab.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>          </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>

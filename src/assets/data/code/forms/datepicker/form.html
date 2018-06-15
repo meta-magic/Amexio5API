@@ -1,17 +1,8 @@
 <!--Date Picker-->
-<amexio-date-time-picker
-  [field-label]="'Date Of Birth'"
-  [time-picker]="false"
-  [date-picker]="true"
-  [(ngModel)]="currentDate">
+<amexio-date-time-picker [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [min-date]="'22-Mar-2016'"
+  [max-date]="'22-Feb-2020'" [diabled-date]="disabledDate" [(ngModel)]="currentDate">
 </amexio-date-time-picker>
 
 <!--Time Picker-->
-
-<amexio-date-time-picker
-  [field-label]="'Time Of Birth'"
-  [time-picker]="true"
-  [date-picker]="false"
-  [ngModel]="time"
-  (change)="onChangeTime($event)">
+<amexio-date-time-picker [field-label]="'Time Of Birth'" [time-picker]="true" [date-picker]="false" [ngModel]="time" (change)="onChangeTime($event)">
 </amexio-date-time-picker>

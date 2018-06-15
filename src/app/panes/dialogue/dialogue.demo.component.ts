@@ -17,13 +17,12 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Demo" active="true">
             <amexio-row>
               <amexio-column [size]="4">
-                <amexio-button type="primary" (onClick)="toggleConfirm()" label="Confirm"></amexio-button>
-                <amexio-dialogue [show-dialogue]="confirmdialogue"  [button-size]="'medium'" [title]="'Confirm'" [message]="'Are you sure ?'"
+                <amexio-button type="primary" (onClick)="toggleConfirm()" label="Confirm"></amexio-button> 
+                <amexio-dialogue [(show)]="confirmdialogue"  [button-size]="'medium'" [title]="'Confirm'" [message]="'Are you sure ?'"
                                [message-type]="'confirm'" [button-type]="'confirm'">
                 </amexio-dialogue>
               </amexio-column>
-
-              <amexio-column [size]="4">
+             <amexio-column [size]="4">
                 <amexio-button type="danger" (onClick)="toggleError()" label="Error"></amexio-button>
                 <amexio-label size="small">(Dialogue Box closes on click of Escape Key)</amexio-label>
                 <amexio-dialogue [show-dialogue]="errordialogue" [close-on-escape]="true" [message]="'Error Occurred.'" [primary-action-label]="'ok'"
@@ -132,10 +131,10 @@ export class DialogueDemoComponent {
   typeScriptCode: string;
   copyMsgArray: any[];
   asyncFlag: boolean;
-
+  showValue:boolean=true;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
-  }
+   }
 
   getDta() {
     this.asyncFlag = true;

@@ -1,5 +1,19 @@
 export class DateTimePickerDemo {
  time: any;
+ disabledDate:any[];
+  constructor( ) {
+     this.disabledDate = [
+      {
+        "from": "13-Jul-2018",
+        "to": "15-Jul-2018"
+      },
+      {
+        "from": "23-Aug-2018",
+        "to": "28-Aug-2018"
+      }
+    ];
+  }
+
   onChangeTime(data: any) {
   //some operation
   }

@@ -42,11 +42,11 @@
   "events": [
     {
       "name": "click",
-      "description": "Fire when button-dropdown item button/link click"
+      "description": "Fire when button-dropdown  click"
     },
     {
       "name": "getLinkData",
-      "description": "Fire when button-dropdown item button/link click"
+      "description": "Fire when button-dropdown item link click"
     }
   ]
 }
