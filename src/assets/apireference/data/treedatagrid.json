@@ -1,0 +1,46 @@
+{
+  "properties": [
+    {
+      "name": "data",
+      "type": "any[]",
+      "default": "",
+      "description": "Local Data binding."
+    },
+    {
+      "name": "data-reader",
+      "type": "string",
+      "default": "",
+      "description": "Key in JSON Datasource for records."
+    },
+    {
+      "name": "http-method",
+      "type": "string",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET etc."
+    },
+    {
+      "name": "http-url",
+      "type": "string",
+      "default": "",
+      "description": "REST url for fetching data."
+    },
+    {
+      "name": "display-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data to display on ui."
+    },
+    {
+      "name": "value-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data.use to send to backend."
+    }
+  ],
+  "events": [
+    {
+      "name": "rowSelect",
+      "description": "It will gives you row clicked data."
+    }
+  ]
+}
