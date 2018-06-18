@@ -20,7 +20,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
               <amexio-image [height] = "200" [width] ="150" path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
             </a>
             <br>
-            <h1>Amexio Angular EXtensions v4.2</h1>
+            <h1>Amexio Angular EXtensions v5.0</h1>
                     <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
 
                     <amexio-image [height] = "50" [width] ="50" path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
