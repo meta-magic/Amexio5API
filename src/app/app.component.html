@@ -4,8 +4,8 @@
     <amexio-nav-item position-right [type]="'link'" [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'"
       (onNavItemClick)="homeLink('http://amexio.org')">
     </amexio-nav-item>
-    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" 
-    [type]="'menu'" 
+    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus"
+    [type]="'menu'"
     [title]="menus.text"
     [icon]="menus.icon"
     [data]="menus.submenus"
