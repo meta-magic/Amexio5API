@@ -45,7 +45,7 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-card [header]="true">
                   <amexio-header> Vertical Center Notification </amexio-header>
                   <amexio-body>
-                    <amexio-notification
+                    <amexio-notification 
                       [data]="verticalCenterMessageArray"
                       [vertical-position]="'top'"
                       [horizontal-position]="'center'"
@@ -53,16 +53,12 @@ import {HttpClient} from "@angular/common/http";
                       [background-color]="'yellow'"
                       [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
-                      <ng-template #amexioNotificationTemp >
-
-                        <amexio-box   >
-                          <amexio-image [icon-class]="'	fa fa-info-circle'" style="font-size: 25px;">
-                          </amexio-image> &nbsp;&nbsp;
-                          <amexio-label size="small-bold" [badge]=7 font-color="black">We have to update security policy</amexio-label>&nbsp;&nbsp;
-
-                          
-                        </amexio-box>
-
+                      <ng-template #amexioNotificationTemp >  
+                            <amexio-box [box-width]="'350px'" >
+                              <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
+                              </amexio-image> &nbsp;&nbsp;
+                              <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>
+                            </amexio-box>
                       </ng-template>
                     </amexio-notification> 
                     <amexio-button
@@ -203,16 +199,20 @@ import {HttpClient} from "@angular/common/http";
                       [background-color]="'orange '"
                       [foreground-color]="'black'"
                       [auto-dismiss-msg]="true"
-                      [auto-dismiss-msg-interval]="4000">
+                      [auto-dismiss-msg-interval]="6000">
 
                       <ng-template #amexioNotificationTemp >
+
+
+                        
+
                         <amexio-row>
                           <amexio-column size="2">
                             <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
                             </amexio-image> &nbsp;&nbsp;
                           </amexio-column>
                           <amexio-column size="8">
-                            <amexio-label size="small-bold" font-color="white" >Worning Message </amexio-label><br/>
+                            <amexio-label size="small-bold" font-color="white" > Warning Message </amexio-label><br/>
                             <amexio-label size="small" font-color="white" >There are unsaved changes</amexio-label><br/>
                           </amexio-column>
 
