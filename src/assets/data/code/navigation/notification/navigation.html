@@ -36,10 +36,10 @@
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="4000">
         <ng-template #amexioNotificationTemp >
-          <amexio-box>
-            <amexio-image [icon-class]="'	fa fa-info-circle'" style="font-size: 25px;">
+          <amexio-box [box-width]="'350px'" >
+            <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
             </amexio-image> &nbsp;&nbsp;
-            <amexio-label size="small-bold" [badge]=7 font-color="black">We have to update security policy</amexio-label>&nbsp;&nbsp;
+            <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>
           </amexio-box>
         </ng-template>
       </amexio-notification>
