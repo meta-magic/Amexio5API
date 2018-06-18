@@ -22,7 +22,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-tree-data-table [http-method]="'get'"
                                             [http-url]="'assets/data/componentdata/treedatatable.json'" 
-                                            [data-reader]="'data'" (selectedRecord)="getSelectedData($event)">
+                                            [data-reader]="'data'" (rowSelect)="getSelectedData($event)">
                       <amexio-data-table-column [data-index]="'task'" [data-type]="'string'" [hidden]="false" [text]="'Task'"></amexio-data-table-column>
                       <amexio-data-table-column [data-index]="'user'" [data-type]="'string'" [hidden]="false" [text]="'User'"></amexio-data-table-column>
                       <amexio-data-table-column [data-index]="'duration'" [data-type]="'number'" [hidden]="false" [text]="'Duration'"></amexio-data-table-column>
@@ -48,6 +48,21 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid><br>
+            <amexio-datagrid title="Column Properties<amexio-data-table-column> " [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/data/treedatagrid.json'"
+                             [data-reader]="'columnProperties'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Type'"></amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Default'"></amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+            <br>
           
             <amexio-datagrid title="Events" [http-method]="'get'"
                              [http-url]="'assets/apireference/data/treedatagrid.json'" [data-reader]="'events'"
