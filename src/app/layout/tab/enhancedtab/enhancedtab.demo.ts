@@ -62,14 +62,14 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="Profile" [amexio-color]="'green'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
-                      placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
-                      tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+                  Profile Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                  type specimen book.
                   </amexio-tab>
                   <amexio-tab title="Education" [amexio-color]="'red'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
-                      placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
-                      tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+                  Education Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                  dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                  type specimen book.
                   </amexio-tab>
               </amexio-tab-view>
           </amexio-body>
@@ -113,10 +113,13 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
       <amexio-action>
       <amexio-button [label]="'Close Tab'" [type]="'theme-color'" (onClick)="closeAllTabs(tab)" [tooltip]="'Add Tab'" >
           </amexio-button>
+          &nbsp;
           <amexio-button [label]="'Active Number Tab'" [type]="'theme-color'" (onClick)="setActiveTabNumber(tab)" [tooltip]="'Activate Tab'" >
           </amexio-button>
+          &nbsp;
           <amexio-button [label]="'Active Title Tab'" [type]="'theme-color'" (onClick)="setActiveTabTitle(tab)" [tooltip]="'Activate Tab'" >
           </amexio-button>
+          &nbsp;
           <amexio-button [label]="'Close Other Tabs'" [type]="'theme-color'" (onClick)="closeOtherTabs(tab)" [tooltip]="'Close Tab'" >
           </amexio-button>
       </amexio-action>
@@ -211,72 +214,72 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab3" [amexio-color]="'green'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab3 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab4" [amexio-color]="'pink'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab4 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab5" [amexio-color]="'brown'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab5 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab6" [amexio-color]="'green'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab6 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab7" [amexio-color]="'red'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab7 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab8" [amexio-color]="'blue'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab8 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab9" [amexio-color]="'orange'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab9 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab10" [amexio-color]="'blue'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab10 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab11" [amexio-color]="'green'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab11 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab12" [amexio-color]="'red'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab12 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab13" [amexio-color]="'pink'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab13 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab14" [amexio-color]="'blue'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab14 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab15" [amexio-color]="'red'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab15 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
                   <amexio-tab title="tab16" [amexio-color]="'green'">
-                      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+                      Tab16 Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
                       placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus
                       tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
                   </amexio-tab>
