@@ -64,14 +64,14 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <amexio-panel [header]="true"
-                        [title]="'Installation Details'"
+                        [title]="'1. Installation Details'"
                         [expanded]="true">
             <amexio-row>
               <amexio-column size="12">
                 <amexio-accordion>
                   <amexio-accordion-tab header="Amexio 4.x - Angular 5" active="true">
                     <amexio-tab-view>
-                      <amexio-tab title="Installation" active="true">
+                      <amexio-tab title=" Installation" active="true">
                         <amexio-row>
                           <amexio-column size="12">
                             <b>To install this Amexio 4.x follow the steps given below:</b><br>
@@ -199,7 +199,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <amexio-panel [header]="true"
-                        [title]="'Themes'"
+                        [title]="'2. Themes'"
                         [expanded]="true">
             <p style="color: darkred"> Themes are available from Version 4 </p>
             <span>To use the default include the <pre><code>../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
@@ -267,7 +267,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <amexio-panel [header]="true"
-                        [title]="'License'"
+                        [title]="'3. License'"
                         [expanded]="true">
             <br>
             <b>Amexio API License for Standard & Enterprise Edition</b>
