@@ -51,13 +51,13 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'center'"
                       [close-on-escape] ="true"
                       [background-color]="'yellow'"
-                      [auto-dismiss-msg]="true"
+                      [auto-dismiss-msg]="false"
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >  
                             <amexio-box [box-width]="'350px'" >
                               <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
                               </amexio-image> &nbsp;&nbsp;
-                              <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>
+                              <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>&nbsp;&nbsp;&nbsp;
                             </amexio-box>
                       </ng-template>
                     </amexio-notification> 
@@ -273,7 +273,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
            <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-notification?embed=1&file=app/navigation/notification/notification.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-notification?embed=1&file=app/navigation/notification/notification.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
