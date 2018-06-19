@@ -34,7 +34,7 @@
       "description": "Dialogue box closes on click of Escape Key.",
       "version": "4.2 onwards",
       "type": "boolean",
-      "default": "false"
+      "default": "true"
     },
     {
       "name": "show",
