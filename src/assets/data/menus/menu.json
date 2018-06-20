@@ -361,6 +361,11 @@
               "link": "template-grid"
             },
             {
+              "text": "Header Template",
+              "icon": "fa fa-database fa-fw",
+              "link": "header-template"
+            },
+            {
               "text": "Filter",
               "icon": "fa fa-database fa-fw",
               "link": "filter-grid" 

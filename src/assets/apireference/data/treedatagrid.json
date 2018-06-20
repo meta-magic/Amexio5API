@@ -78,6 +78,14 @@
     {
       "name": "rowSelect",
       "description": "It will gives you row clicked data."
+    },
+    {
+      "name": "onHeaderClick",
+      "description":"It will gives you click event and column info."
+    },
+    {
+      "name": "selectedRowData",
+      "description":"It will fire only on selection of checkbox and gives you selected record data."
     }
   ]
 }
