@@ -1,94 +1,73 @@
 {
-  "name": "Amexio Dialogue",
-  "description": "A Simple dialogue which renders various prompts like Confirmation/Alert based on type, title, body user has configured.",
-  "selector": "<amexio-dialogue>",
+  "name": "Amexio Rating",
+  "description": "A simple configurable star rating component with visual feedback.",
+  "selector": "<amexio-rating-input>",
   "properties": [
     {
-      "name": "footer-align",
+      "name": "field-label",
       "version": "4.0 onwards",
-      "description": "Alignment of footer contents to right or left.",
+      "description": "The label of this field.",
       "type": "string",
-      "default": "right"
+      "default": ""
     },
     {
-      "name": "content-align",
-      "description": "Alignment of  contents to right or left or center.",
+      "name": "max",
+      "description": "Number of stars for rating component.",
       "version": "4.0 onwards",
-      "type": "string",
-      "default": "center"
+      "type": "number",
+      "default": ""
     },
     {
-      "name": "show-dialogue",
-      "description": "Show / Hide Dialogue..",
+      "name": "read-only",
+      "description": "If true will not react on any user events.",
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
     },
     {
-      "name": "closable",
-      "description": "User can close the Dialogue.",
+      "name": "titles",
+      "description": "Array of titles, default:1,2,3.",
+      "version": "4.0 onwards",
+      "type": "string[]",
+      "default": ""
+    },
+    {
+      "name": "disabled",
+      "description": "If true will not react on any user events and show disable icon over",
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
     },
     {
-      "name": "title",
-      "description": "Title for dialog.",
-      "version": "4.0 onwards",
-      "type": "string",
-      "default": ""
-    },
-    {
-      "name": "message",
-      "description": "Alert or confirm message",
-      "version": "4.0 onwards",
-      "type": "string",
-      "default": ""
-    },
-    {
-      "name": "custom",
-      "description": "User can custom dialogue box.",
+      "name": "required",
+      "description": "Validate field",
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
     },
     {
-      "name": "type",
-      "description": "Mode to open, alert or dialogue mode.",
-      "version": "4.0 onwards",
-      "type": "'confirm'| 'alert'",
-      "default": "none"
-    },
-    {
-      "name": "primary-action-label",
-      "description": "Label to be displayed for primary action.",
-      "version": "4.0 onwards",
-      "type": "'string",
-      "default": ""
-    },
-    {
-      "name": "secondary-action-label",
-      "description": "Label to be displayed for secondary action.",
+      "name": "full-icon",
+      "description": "Icon for selected rating and this attribute is useful only when user have custom rating icons.",
       "version": "4.0 onwards",
       "type": "string",
       "default": ""
     },
     {
-      "name": "message-type",
-      "description": "Type of message like error,warning,help.",
+      "name": "empty-icon",
+      "description": "Icon for non-selected rating and this attribute is useful only when user have custom rating icons",
       "version": "4.0 onwards",
       "type": "string",
       "default": ""
-    }
+    } 
   ],
   "events": [
     {
-      "name": "actionStatus",
-      "description": "Fire when click on yes or no button"
+      "name": "onHover",
+      "description": "Fires on hovering component"
     },
     {
-      "name": "close",
-      "description": "Fire when user close dialogue"
+      "name": "onLeave",
+      "description": "fires on leaving component and returns its value"
     }
   ]
 }

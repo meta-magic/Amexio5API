@@ -32,7 +32,7 @@ import {HttpClient} from "@angular/common/http";
                           [time-picker]="false"
                           [date-picker]="true"
                           [min-date]="'22-Mar-2016'" 
-                          [max-date]="'22-Feb-2020'"
+                          [max-date]="'22-Feb-2019'"
                           [diabled-date]="disabledDate"
                           [(ngModel)]="currentDate">
                         </amexio-date-time-picker>
@@ -148,9 +148,33 @@ export class DateTimePickerDemo {
         "to": "15-Jul-2018"
       },
       {
+        "from": "20-Jul-2018",
+        "to": "23-Jul-2018"
+      },
+      {
+        "from": "15-Jun-2018",
+        "to": "19-Jun-2018"
+      },
+      {
+        "from": "27-Jun-2018",
+        "to": "29-Jun-2018"
+      },
+      {
         "from": "23-Aug-2018",
         "to": "28-Aug-2018"
-      }
+      },
+      {
+        "from": "17-Aug-2018",
+        "to": "19-Aug-2018"
+      },
+      {
+        "from": "19-Sep-2018",
+        "to": "21-Sep-2018"
+      },
+      {
+        "from": "25-Sep-2018",
+        "to": "28-Sep-2018"
+      },
     ];
   }
 

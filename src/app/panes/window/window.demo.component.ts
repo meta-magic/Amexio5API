@@ -17,9 +17,17 @@ import {HttpClient} from "@angular/common/http";
          <amexio-tab title="Demo" active="true">
            <amexio-row> 
              <amexio-column [size]="4">
-               <amexio-button type="primary" (onClick)="toggleBasicWindow()" label="Basic Window"></amexio-button>
-               <amexio-label size="small">(Window pane demo with positioned bottom right and with escape key functionality)</amexio-label>
-               <amexio-window [body-height]="40" [(show)]="showBasicWindow" [close-on-escape]="true" [footer]="true" [vertical-position]="'bottom'" [horizontal-position]="'right'">
+
+               <amexio-button type="primary" 
+               (onClick)="toggleBasicWindow()" 
+               label="Basic Window"></amexio-button>
+                <amexio-window 
+               [body-height]="40" 
+               [(show)]="showBasicWindow" 
+               [close-on-escape]="true" 
+               [footer]="true"
+               [vertical-position]="'bottom'"
+                [horizontal-position]="'right'">
                  <amexio-header>
                   Employee Form
                  </amexio-header>
@@ -124,13 +132,20 @@ import {HttpClient} from "@angular/common/http";
                  </amexio-action>
                 
                </amexio-window>
+               <amexio-row>
+               <amexio-column [size]="'12'">
+                  <amexio-label>
+                    (Horizontal and Vertical positioning enabled)
+                  </amexio-label>
+                  </amexio-column>
+               </amexio-row>
              </amexio-column>
            
            
           
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleMaxWindow()" label="Maximizable Window"></amexio-button>
-               <amexio-window [show-window]="showMaxWindow" [footer]="true" (close)="toggleMaxWindow()"  [maximize]="true">
+               <amexio-window  [(show)]="showMaxWindow" [footer]="true" (close)="toggleMaxWindow()"  [maximize]="true">
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -187,7 +202,9 @@ import {HttpClient} from "@angular/common/http";
       
              <amexio-column [size]="4">
                <amexio-button type="primary" (onClick)="toggleClosable()" label="Closable Window"></amexio-button>
-               <amexio-window [show-window]="showClosable"  [closable]="true" (close)="toggleClosable()" >
+               <amexio-window   [(show)]="showClosable" 
+               [close-on-escape]="false"
+               [closable]="true" (close)="toggleClosable()" >
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -235,6 +252,13 @@ import {HttpClient} from "@angular/common/http";
                    </amexio-row>
                  </amexio-body>
                </amexio-window>
+               <amexio-row>
+               <amexio-column [size]="'12'">
+<amexio-label size="small">
+(Escape functionality disabled)
+</amexio-label>
+               </amexio-column>
+               </amexio-row>
              </amexio-column>
            </amexio-row>
          </amexio-tab>

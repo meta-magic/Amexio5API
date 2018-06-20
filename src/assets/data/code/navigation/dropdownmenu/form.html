@@ -5,7 +5,6 @@
                           [icon-align]="'left'"
                           [title]="'Payment option'"
                           [data]="payment"
-                          [padding]="'5px'"
                           [icon]="'fa fa-truck'"
                           [transparent]="false"
                           (onClick)="onDropDownMenuClick($event)">
@@ -19,8 +18,7 @@
   <amexio-drop-down-menu
                           [icon-align]="'left'"
                           [title]="'Advance'"
-                          [padding]="'5px'"
-                          [icon]="'fa fa-flash'"
+                            [icon]="'fa fa-flash'"
                           (onClick)="onDropDownMenuClick($event)">
                   <amexio-drop-down-menu-item
                                   [separator]="true">
@@ -37,7 +35,7 @@
                               <amexio-column size="7">
                                           <amexio-label > Ketan Gote</amexio-label>
                                           <amexio-label > xyz@metamagic.in</amexio-label><br>
-                                          <amexio-button [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'"></amexio-button>
+                                          <amexio-button  [size]="'small'" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'"></amexio-button>
                               </amexio-column>
                       </amexio-row>
 
@@ -69,7 +67,6 @@
   <amexio-drop-down-menu
                           [icon-align]="'left'"
                           [title]="'Brands'"
-                          [padding]="'20px'"
                           [icon]="'fa fa-slack'"
                           (onClick)="onDropDownMenuClick($event)">
 
@@ -125,7 +122,6 @@
                            [icon-align]="'right'"
                            [title]="'Transport'"
                            [data]="transport"
-                           [padding]="'5px'"
                            [down-arrow-icon] ="true"
                            [icon]="'fa fa-credit-card'"
                            [transparent]="false"

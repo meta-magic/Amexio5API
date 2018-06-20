@@ -24,7 +24,6 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-drop-down-menu [icon-align]="'right'"
                                            [title]="'Payment '"
-                                           [padding]="'5px'"
                                            [data]="payment"
                                            [down-arrow-icon] ="true"
                                            [icon]="'fa fa-credit-card'"
@@ -39,13 +38,12 @@ import {HttpClient} from "@angular/common/http";
                              [footer]="false">
                   <amexio-header>Demo 2</amexio-header>
                   <amexio-body>
-                    <amexio-drop-down-menu [icon-align]="'left'"
+                    <amexio-drop-down-menu [icon-align]="'left'"  
                                            [title]="'Advance'"
-                                           [padding]="'5px'"
                                            [icon]="'fa fa-flash'"
                                            (onClick)="onDropDownMenuClick($event)">
 
-                      <amexio-drop-down-menu-item [separator]="true">
+                      <amexio-drop-down-menu-item >
 
                         <amexio-box background-color="purple" padding="true">
                           <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
@@ -59,9 +57,10 @@ import {HttpClient} from "@angular/common/http";
                           <amexio-column size="7">
 
                             <amexio-label > Ketan Gote</amexio-label>
-                            <amexio-label > xyz@metamagic.in</amexio-label><br>
-                            <amexio-button     (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+                            <amexio-label > xyz@metamagic.in</amexio-label><br/>
+                            <amexio-button  (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'"><br/>
                             </amexio-button>
+
                           </amexio-column>
 
                         </amexio-row>
@@ -106,7 +105,6 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-drop-down-menu [icon-align]="'left'"
                                            [title]="'Brands'"
-                                           [padding]="'5px'"
                                            [icon]="'fa fa-slack'"
                                            (onClick)="onDropDownMenuClick($event)">
 
@@ -184,7 +182,6 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-drop-down-menu [icon-align]="'left'"
                                            [title]="'Transport'"
                                            [data]="transport"
-                                           [padding]="'5px'"
                                            [icon]="'fa fa-truck'"
                                            (onClick)="onDropDownMenuClick($event)">
                     </amexio-drop-down-menu>
@@ -203,9 +200,6 @@ import {HttpClient} from "@angular/common/http";
               </amexio-column>
             </amexio-row>
           </amexio-tab>
-
-
-
 
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties : <Amexio-DropDownMenu>" [enable-column-fiter]="false"

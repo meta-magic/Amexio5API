@@ -11,7 +11,7 @@
 </amexio-dialogue>
 
 <!--Error dialogue-->
-<amexio-dialogue [show-dialogue]="errordialogue"
+<amexio-dialogue [(show)]="errordialogue"
                [message]="'Error Occurred.'"
                [primary-action-label]="'ok'"
                [title]="'Error'"
@@ -22,7 +22,7 @@
 
 <!--warning dialogue-->
 
-<amexio-dialogue [show-dialogue]="warningdialogue"
+<amexio-dialogue [(show)]="warningdialogue"
                [message]="'Data not found.'"
                [title]="'Warning'"
                [message-type]="'warning'"
@@ -31,7 +31,7 @@
 
 <!--help dialogue-->
 
-<amexio-dialogue [show-dialogue]="helpdialogue"
+<amexio-dialogue [(show)]="helpdialogue"
                [title]="'Help'"
                [message]="'Check Server.'"
                [message-type]="'help'"
@@ -40,10 +40,11 @@
 
 <!--custom dialogue-->
 
-<amexio-dialogue [show-dialogue]="customdialogue"
+<amexio-dialogue [(show)]="customdialogue"
                 [custom]="true"
                 [title]="'Custom dialogueue witch Text Input'"
-                [type]="'confirm'">
+                [type]="'confirm'"
+                [close-on-escape]="false">
      <amexio-body>
         <amexio-text-input field-label="Name" name="name"
                            place-holder="Enter name"

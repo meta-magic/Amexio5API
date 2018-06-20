@@ -1,0 +1,91 @@
+{
+  "properties": [
+    {
+      "name": "data",
+      "type": "any[]",
+      "default": "",
+      "description": "Local Data binding."
+    },
+    {
+      "name": "data-reader",
+      "type": "string",
+      "default": "",
+      "description": "Key in JSON Datasource for records."
+    },
+    {
+      "name": "http-method",
+      "type": "string",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET etc."
+    },
+    {
+      "name": "http-url",
+      "type": "string",
+      "default": "",
+      "description": "REST url for fetching data."
+    },
+    {
+      "name": "display-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data to display on ui."
+    },
+    {
+      "name": "value-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data.use to send to backend."
+    }
+  ],
+  "columnProperties": [
+    {
+      "name": "text",
+      "type": "string",
+      "default": "",
+      "description": "Set column label.",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "data-index",
+      "type": "string",
+      "default": "",
+      "description": "JSON key from datasource.",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "default": "false",
+      "description": "Hide column.",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "data-type",
+      "type": "string",
+      "default": "",
+      "description": "Data type of column (string/number).",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "version": "4.0.0 onwards",
+      "description": "Custom width for each column.Width must be in % but no need to mention %."
+    }
+  ],
+  "events": [
+    {
+      "name": "rowSelect",
+      "description": "It will gives you row clicked data."
+    },
+    {
+      "name": "onHeaderClick",
+      "description":"It will gives you click event and column info."
+    },
+    {
+      "name": "selectedRowData",
+      "description":"It will fire only on selection of checkbox and gives you selected record data."
+    }
+  ]
+}

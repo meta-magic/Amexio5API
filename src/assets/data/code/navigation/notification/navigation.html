@@ -1,8 +1,5 @@
 <!-- Top Left Notification -->
-<amexio-column size="4">
-  <amexio-card [header]="true">
-    <amexio-header> Vertical Left Notification </amexio-header>
-    <amexio-body>
+
       <amexio-notification
         [data]="verticalLeftMessageArray"
         [vertical-position]="'top'"
@@ -11,22 +8,10 @@
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="4000">
       </amexio-notification>
-      <amexio-button
-        (onClick)="verticalLeftNotification()"
-        [label]="'Info Left Popup'"
-        [type]="'primary'"
-        [tooltip]="'Primary Button'">
-      </amexio-button>
-    </amexio-body>
-  </amexio-card>
 
-</amexio-column>
 
 <!--Top Center Notification-->
-<amexio-column size="4">
-  <amexio-card [header]="true">
-    <amexio-header> Vertical Center Notification </amexio-header>
-    <amexio-body>
+
       <amexio-notification
         [data]="verticalCenterMessageArray"
         [vertical-position]="'top'"
@@ -36,28 +21,17 @@
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="4000">
         <ng-template #amexioNotificationTemp >
-          <amexio-box>
-            <amexio-image [icon-class]="'	fa fa-info-circle'" style="font-size: 25px;">
+          <amexio-box [box-width]="'350px'" >
+            <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
             </amexio-image> &nbsp;&nbsp;
-            <amexio-label size="small-bold" [badge]=7 font-color="black">We have to update security policy</amexio-label>&nbsp;&nbsp;
+            <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>
           </amexio-box>
         </ng-template>
       </amexio-notification>
-      <amexio-button
-        (onClick)="verticalCenterNotification()"
-        [label]="'Info center Popup'"
-        [type]="'primary'"
-        [tooltip]="'Primary Button'">
-      </amexio-button>
-    </amexio-body>
-  </amexio-card>
-</amexio-column>
+
 
 <!--Top Right Notification-->
-<amexio-column size="4">
-  <amexio-card [header]="true">
-    <amexio-header> Vertical Right Notification </amexio-header>
-    <amexio-body>
+
       <amexio-notification
         [data]="verticalRightMessageArray"
         [vertical-position]="'top'"
@@ -80,23 +54,12 @@
           </amexio-row>
         </ng-template>
       </amexio-notification>
-      <amexio-button
-        (onClick)="verticalRightNotification()"
-        [label]="'Info Right Popup'"
-        [type]="'primary'"
-        [tooltip]="'Primary Button'">
-      </amexio-button>
-    </amexio-body>
-  </amexio-card>
-</amexio-column>
+
 
 
 
 <!--Bottom Left Notification-->
-<amexio-column size="4">
-  <amexio-card [header]="true">
-    <amexio-header> Horizontal Left Notification </amexio-header>
-    <amexio-body>
+
       <amexio-notification
         [data]="horizontalLeftMessageArray"
         [vertical-position]="'bottom'"
@@ -118,21 +81,10 @@
           </amexio-row>
         </ng-template>
       </amexio-notification>
-      <amexio-button
-        (onClick)="horizontalLeftNotification()"
-        [label]="'Info Bottom Left '"
-        [type]="'primary'"
-        [tooltip]="'Primary Button'">
-      </amexio-button>
-    </amexio-body>
-  </amexio-card>
-</amexio-column>
+
 
 <!-- Bottom Center Notification -->
-<amexio-column size="4">
-  <amexio-card [header]="true">
-    <amexio-header> Horizontal Center Notification </amexio-header>
-    <amexio-body>
+
       <amexio-notification
         [data]="horizontalCenterMessageArray"
         [vertical-position]="'bottom'"
@@ -150,21 +102,9 @@
           </amexio-box>
         </ng-template>
       </amexio-notification>
-      <amexio-button
-        (onClick)="horizontalCenterNotification()"
-        [label]="'Info Bottom center'"
-        [type]="'primary'"
-        [tooltip]="'Primary Button'">
-      </amexio-button>
-    </amexio-body>
-  </amexio-card>
-</amexio-column>
+
 
 <!-- Bottom Right Notification -->
-<amexio-column size="4">
-  <amexio-card [header]="true">
-    <amexio-header> Horizontal Right Notification </amexio-header>
-    <amexio-body>
 
       <amexio-notification
         [data]="horizontalRightMessageArray"
@@ -188,12 +128,4 @@
           </amexio-row>
         </ng-template>
       </amexio-notification>
-      <amexio-button
-        (onClick)="horizontalRightNotification()"
-        [label]="'Info Bottom Right'"
-        [type]="'primary'"
-        [tooltip]="'Primary Button'">
-      </amexio-button>
-    </amexio-body>
-  </amexio-card>
-</amexio-column>
+

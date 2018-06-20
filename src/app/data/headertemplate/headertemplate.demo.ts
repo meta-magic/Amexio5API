@@ -9,157 +9,71 @@ import { HttpClient } from "@angular/common/http";
   selector: 'grid-template-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Data Grid Template 
+         Header Template 
       </amexio-header>
       <amexio-body>
         <p>To define the detail template, nest an ng-template tag inside the AmexioColumn component. The template context is set to the current row.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
+           
           <!--1-->
-          <amexio-datagrid [enable-checkbox]="false" title="Invoice Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/templategrid.json'"
-              [data-reader]="'response.data'" [page-size]="10" [enable-data-filter]="false">
+          <amexio-datagrid [enable-checkbox]="false" title="Registeration Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/headertemplateemail.json'"
+              [data-reader]="'data'" [page-size]="10" [enable-data-filter]="false">
               <amexio-data-table-column [width]="5" [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label size="small" font-color="grey">
-                          {{row.No}}
+                  <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+                      <amexio-label size="small" font-color="white">
+                          {{column.text}}
                       </amexio-label>
                   </ng-template>
               </amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'Invoice Subject'" [data-type]="'string'" [hidden]="false" [text]="'Invoice Subject'">
+              <amexio-data-table-column [width]="10" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+              <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+                      <amexio-label size="small-bold" font-color="white">
+                          {{column.text}}
+                      </amexio-label>
+                  </ng-template>
               </amexio-data-table-column>
-              <amexio-data-table-column [width]="8" [data-index]="'client'" [data-type]="'string'" [hidden]="false" [text]="'Client'">
-          
+              <amexio-data-table-column [width]="8" [data-index]="'loginid'" [data-type]="'string'" [hidden]="false" [text]="'Login-Id'">
+              <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+              <amexio-label size="small" font-color="red">
+                  {{column.text}}
+              </amexio-label>
+          </ng-template>
               </amexio-data-table-column>
-              <amexio-data-table-column [width]="6" [data-index]="'Vat No.'" [data-type]="'string'" [hidden]="false" [text]="'Vat No.'">
-          
+              <amexio-data-table-column [width]="14" [data-index]="'emailid'" [data-type]="'string'" [hidden]="false" [text]="'Email-Id'">
+              <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+              <amexio-label size="small" font-color="white">
+              <i class="fa fa-envelope"  style="color:white"></i>
+                  {{column.text}}
+              </amexio-label>
+          </ng-template>
               </amexio-data-table-column>
-              <amexio-data-table-column [width]="8" [data-index]="'Created'" [data-type]="'string'" [hidden]="false" [text]="'Created'">
-          
+              <amexio-data-table-column [width]="8" [data-index]="'phone'" [data-type]="'string'" [hidden]="false" [text]="'Phone'">
+              <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+              <amexio-label size="small" font-color="white">
+              <i class="fa fa-phone"  style="color:white"></i>
+                  {{column.text}}
+              </amexio-label>
+          </ng-template>
               </amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label class="fa fa-circle fa-lg" [ngClass]="{'green': row.Status== 'Paid' , 'yellow': row.Status =='Pending' , 'red' : row.Status=='Paid Today'}"></amexio-label>
+              <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+              <amexio-btn-dropdown [label]="'Status'" [type]="'red'" [size]="'small'">
+              
+              <amexio-btn-dropdown-item  [label]="'Accept All'">
+              </amexio-btn-dropdown-item>
+              <amexio-btn-dropdown-item [label]="'Reject All'">
+              </amexio-btn-dropdown-item>
+              
+          </amexio-btn-dropdown>
+          </ng-template>
+              <ng-template #amexioBodyTmpl let-column let-row="row">
+                      <amexio-label class="fa fa-circle fa-lg" [ngClass]="{'green': row.Status== 'Paid' , 'yellow': row.Status =='Pending' , 'red' : row.Status=='Approved'}"></amexio-label>
                       &nbsp;{{row.Status}}
                   </ng-template>
               </amexio-data-table-column>
-              <amexio-data-table-column [width]="5" [data-index]="'Price'" [data-type]="'string'" [hidden]="false" [text]="'Price'">
-          
-              </amexio-data-table-column>
-              <amexio-data-table-column [width]="15" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="''">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-row>
-                          <amexio-column [size]="4">
-                              <amexio-button [label]="'Manage'" [size]="'small'" [type]="'theme-backgroundcolor'" [tooltip]="'Manage'">
-                              </amexio-button>
-                          </amexio-column>
-                          <amexio-column [size]="5">
-                              <amexio-btn-dropdown [label]="'Action'" [type]="'theme-backgroundcolor'" [size]="'small'">
-                                  <amexio-btn-dropdown-item [label]="'Accept'">
-                                  </amexio-btn-dropdown-item>
-                                  <amexio-btn-dropdown-item [label]="'Reject'">
-                                  </amexio-btn-dropdown-item>
-                              </amexio-btn-dropdown>
-                              
-                          </amexio-column>
-                          <amexio-column [size]="3">
-                              <amexio-image style="color:grey;" [icon-class]="'fa fa-pencil fa-2x'"></amexio-image>
-                          </amexio-column>
-                      </amexio-row>
-                  </ng-template>
-              </amexio-data-table-column>
-          
+               
           </amexio-datagrid>
-          
-          <!--2-->
-          <br>
-          <amexio-datagrid [enable-checkbox]="false" title="User Activity Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/datagridtemplate.json'"
-              [data-reader]="'response.data'" [page-size]="10" [enable-data-filter]="false">
-              <amexio-data-table-column [width]="40" [data-index]="'User'" [data-type]="'string'" [hidden]="false" [text]="'USER'">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-row>
-                          <amexio-column [size]="3">
-                              <amexio-image [path]="'assets/images/profile/'+row.profile" [c-class]="'image-round'">
-                              </amexio-image>
-                           </amexio-column>
-                          <amexio-column [size]="9">
-                              <amexio-label size="small">
-                                  {{row.User}}
-                              </amexio-label>
-                              <br>
-                              <amexio-label size="small" font-color="grey">
-                                  Registered:{{row.Date}}
-                              </amexio-label>
-                          </amexio-column>
-                      </amexio-row>
-                  </ng-template>
-              </amexio-data-table-column>
-              <amexio-data-table-column [width]="40" [data-index]="'Usage'" [data-type]="'string'" [hidden]="false" [text]="'USAGE'">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label>{{row.Usage}}%</amexio-label>
-          
-                      <amexio-progress-bar [height]="'10'" [current-value]="row.Usage" [infinite]="false" [type]="getGridTemplateData(row)"></amexio-progress-bar>
-          
-                      <amexio-label size="small" font-color="grey">
-                          {{row.usageFromDate}}-{{row.usageToDate}}
-                      </amexio-label>
-          
-                  </ng-template>
-              </amexio-data-table-column>
-              <amexio-data-table-column [width]="20" [data-index]="'Payment'" [data-type]="'string'" [hidden]="false" [text]="'PAYMENT'">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label>
-                          <amexio-image [height]="'59.75px'" [width]="'59.75px'" [path]="'assets/images/'+row.Payment" [c-class]="'image-round'">
-                          </amexio-image>
-                       </amexio-label>
-                  </ng-template>
-              </amexio-data-table-column>
-              <amexio-data-table-column [width]="20" [data-index]="'Activity'" [data-type]="'string'" [hidden]="false" [text]="'ACTIVITY'">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label size="small" font-color="grey">
-                          Last login
-                      </amexio-label>
-                      <br>
-                      <amexio-label size="small">
-                          {{row.Activity}}
-                      </amexio-label>
-          
-          
-                  </ng-template>
-              </amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="''">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-          
- 
-                          <amexio-image  style="color:grey;" [icon-class]="'fa fa-pencil  fa-2x'"></amexio-image>
- 
-          
-                  </ng-template>
-              </amexio-data-table-column>
-          </amexio-datagrid>
-          
-          <!--3-->
-          <br>
-          <amexio-datagrid title="Country Grid" [http-method]="'get'" [http-url]="'assets/data/componentdata/gridtemplate.json'" [data-reader]="'data'"
-              [page-size]="10" [enable-data-filter]="false" (rowSelect)="getRowData($event)">
-              <amexio-data-table-column [width]="70" [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
-                  <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label class="datagrid-template">
-                          <amexio-label>
-                              <amexio-image [width]="100" [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
-                          </amexio-label>
-                          <amexio-label>{{row.name}}</amexio-label>
-          
-                          <amexio-label >( {{row.name_official}} )</amexio-label>
-                      </amexio-label>
-                  </ng-template>
-              </amexio-data-table-column>
-              <amexio-data-table-column [width]="20" [data-index]="'latitude'" [data-type]="'number'" [hidden]="false" [text]="'Latitude'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="20" [data-index]="'longitude'" [data-type]="'number'" [hidden]="false" [text]="'Longitude'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <p>
-              <b>Clicked row data :</b> {{clickedRowData | json}}</p>
-
-
 
 
           </amexio-tab>
@@ -229,7 +143,7 @@ import { HttpClient } from "@angular/common/http";
 
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-template-grid?embed=1&file=app/grid/templategrid/templategrid.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/header-template?ctl=1&embed=1&file=app/data/headertemplate/headertemplate.demo.html&view=editor"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -237,6 +151,10 @@ import { HttpClient } from "@angular/common/http";
   `,
   styles: [
     `
+    .button-dropdown{
+        color:black;
+        padding: 50px;
+    }
     .listbox-StatusYellow {
       background-color: yellow;
     }
@@ -265,7 +183,7 @@ import { HttpClient } from "@angular/common/http";
 `
   ]
 })
-export class GridWithTemplateDemo {
+export class HeaderTemplateDemo {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
@@ -357,7 +275,7 @@ export class GridWithTemplateDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/data/headertemplate/headertemplate.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -365,14 +283,14 @@ export class GridWithTemplateDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/data/headertemplate/headertemplate.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/templategrid.json ', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/componentdata/headertemplateemail.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

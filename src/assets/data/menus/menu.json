@@ -361,9 +361,19 @@
               "link": "template-grid"
             },
             {
+              "text": "Header Template",
+              "icon": "fa fa-database fa-fw",
+              "link": "header-template"
+            },
+            {
               "text": "Filter",
               "icon": "fa fa-database fa-fw",
-              "link": "filter-grid"
+              "link": "filter-grid" 
+            },
+            {
+              "text": "Filter-Global",
+              "icon": "fa fa-database fa-fw",
+              "link": "global-filter-grid"
             },
             {
               "text": "Group By",
@@ -379,11 +389,6 @@
               "text": "Grid with scroll",
               "icon": "fa fa-database fa-fw",
               "link": "scroll-grid"
-            },
-            {
-              "text": "Grid with global filter",
-              "icon": "fa fa-database fa-fw",
-              "link": "global-filter-grid"
             },
             {
               "text": "Tree Data Grid",

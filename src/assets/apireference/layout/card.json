@@ -11,7 +11,7 @@
       "default": "left"
     },
     {
-      "name": "header-align",
+      "name": "header",
       "description": "User can enable header of card by setting this flag to true..",
       "version": "4.0 onwards",
       "type": "string",
