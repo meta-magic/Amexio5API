@@ -27,7 +27,6 @@ import {HttpClient} from "@angular/common/http";
                                            [data]="payment"
                                            [down-arrow-icon] ="true"
                                            [icon]="'fa fa-credit-card'"
-                                           
                                            [transparent]="false"
                                            (onClick)="onDropDownMenuClick($event)">
                     </amexio-drop-down-menu>
@@ -41,7 +40,6 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-drop-down-menu [icon-align]="'left'"  
                                            [title]="'Advance'"
-                                           [padding]="'5px'"
                                            [icon]="'fa fa-flash'"
                                            (onClick)="onDropDownMenuClick($event)">
 
@@ -60,7 +58,7 @@ import {HttpClient} from "@angular/common/http";
 
                             <amexio-label > Ketan Gote</amexio-label>
                             <amexio-label > xyz@metamagic.in</amexio-label><br/>
-                            <amexio-button  [size]="'small'" (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'"><br/>
+                            <amexio-button  (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'"><br/>
                             </amexio-button>
 
                           </amexio-column>
