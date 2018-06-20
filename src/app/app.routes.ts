@@ -289,6 +289,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'checkbox-tree', loadChildren: './data/tree/checkboxtree/checkboxtree.demo.module#CheckboxTreeDemoModule'
   },
   {
+    path: 'dragdrop-tree', loadChildren: './data/tree/treedragdrop/treedragdrop.demo.module#DragDropTreeDemoModule'
+  },
+  {
     path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
   },
 /*Progress bar*/
