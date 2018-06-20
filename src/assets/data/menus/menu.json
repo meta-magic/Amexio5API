@@ -423,6 +423,11 @@
               "link": "checkbox-tree"
             },
             {
+              "text": "With Drag Drop",
+              "icon": "fa fa-tree fa-fw",
+              "link": "dragdrop-tree"
+            },
+            {
               "text": "Horizontal",
               "icon": "fa fa-tree fa-fw",
               "link": "horizontal-tree"
