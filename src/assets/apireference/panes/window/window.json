@@ -29,10 +29,18 @@
       {
         "name": "show",
         "description": "uses two way binding to Show / Hide Window.",
+        "version": "4.1 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "show-window",
+        "description": "Show / Hide Window.",
         "version": "4.0 onwards",
         "type": "boolean",
         "default": "false"
       },
+
       {
       "name": "close-on-escape",
       "description": "Window box closes on click of Escape Key.",

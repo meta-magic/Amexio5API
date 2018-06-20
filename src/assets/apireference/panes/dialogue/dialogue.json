@@ -39,10 +39,18 @@
     {
       "name": "show",
       "description": "uses two way binding to Show / Hide Dialogue.",
+      "version": "4.1 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "show-dialogue",
+      "description": "Show / Hide Dialogue.",
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
     },
+
     {
       "name": "closable",
       "description": "User can close the Dialogue.",
