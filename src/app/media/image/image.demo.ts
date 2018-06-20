@@ -15,204 +15,307 @@ import {HttpClient} from "@angular/common/http";
         <p>An image is an artifact that depicts visual perception.Amexio support icons (font-awesome) / image</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
+            <!-- icon only-->
             <amexio-row>
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                     Image 
+                    Font Awesome Icon
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
                       <amexio-column size="12">
                         <amexio-row>
-                          <amexio-column size="12">
-                            Font Awesome Icon
-                            <amexio-image [icon-class]="'fa fa-address-book fa-lg'" [tooltip]="'Fontawesome address book'"></amexio-image>
+                          
+                          <amexio-column size="2">
+                            Apple &nbsp;
+                            <amexio-image [icon-class]="'fa fa-apple fa-2x'" [tooltip]="'Fontawesome apple'"></amexio-image>
                           </amexio-column>
+                          <amexio-column size="2">
+                            BitCoin &nbsp;
+                            <amexio-image [icon-class]="'	fa fa-btc fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column size="2">
+                          Facebook &nbsp;
+                            <amexio-image [icon-class]="'fa fa-facebook-square fa-2x'" [tooltip]="'Fontawesome facebook'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column size="2">
+                           Github &nbsp;
+                            <amexio-image [icon-class]="'fa fa-github fa-2x'" [tooltip]="'Fontawesome github'"></amexio-image>
+                          </amexio-column>
+
+                          <amexio-column size="2">
+                            Telegram &nbsp;
+                            <amexio-image [icon-class]="'fa fa-telegram fa-2x'" [tooltip]="'Fontawesome telegram'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column size="2">
+                            VK &nbsp;
+                            <amexio-image [icon-class]="'fa fa-vk fa-2x'" [tooltip]="'Fontawesome VK'"></amexio-image>
+                          </amexio-column>
+                          
                         </amexio-row>
                       </amexio-column>                    
                     </amexio-row>
                     <br>
-                    <amexio-row>
-                      <amexio-column size="12">
-                        <amexio-card  header="true">
-                          <amexio-header> Simple Image </amexio-header>
-                          <amexio-body>
-                            <amexio-row>
-                              <amexio-column size="3"></amexio-column>
-                              <amexio-column size="6">
-                                <amexio-image [path]="'assets/images/soap-bubble.jpg'" [tooltip]="'Image'"></amexio-image>
-                              </amexio-column>
-                              <amexio-column size="3"></amexio-column>
-                            </amexio-row>
-                          </amexio-body>
-                        </amexio-card>
-                      </amexio-column>
-                    </amexio-row>
-                    <amexio-label size="large">Image Effects</amexio-label>
+                 
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            <!-- Image with Labels -->
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                     Image with Labels
+                  </amexio-header>
+                  <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="3">
                         <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                        [image-title]="'Normal'" 
-                        [title-position]="'top-left'">
+                                      [filter]="'normal'"
+                                      [image-title]="'normal'"
+                                      [title-position]="'top-left'"
+                                      >
                         </amexio-image>
-                      </amexio-column> 
-                      <amexio-column [size]="3">    
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [filter]="'grayscale'" 
-                          [image-title]="'grayscale'" 
-                          [title-position]="'centered'">
-                          </amexio-image>  
-                        </amexio-column>  
-                          <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                              [filter]="'invert'" 
-                              [image-title]="'invert'" 
-                              [title-position]="'bottom-right'">
-                            </amexio-image>
-                          </amexio-column>
-                          <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [filter]="'sepia'"
-                            [image-title]="'sepia'" 
-                            [title-position]="'bottom-left'"></amexio-image>
-                        </amexio-column> 
-                    </amexio-row>
-                    <amexio-row>
+                      </amexio-column>
                       <amexio-column [size]="3">
                         <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                              [filter]="'small'" 
-                              [image-title]="'small'" 
-                              [title-position]="'top-right'">
+                                      [filter]="'grayscale'"
+                                      [image-title]="'grayscale'"
+                                      [title-position]="'centered'">
                         </amexio-image>
-                        </amexio-column>  
-                          <amexio-column [size]="3">
-                              <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                              [filter]="'saturate'"
-                              [image-title]="'saturate'" 
-                          [title-position]="'top-right'"></amexio-image>
-                          </amexio-column>
-                          <amexio-column [size]="3">
-                            <amexio-image 
-                            [path]="'assets/images/carousel/set1/3.jpg'"
-                            [filter]="'brightness'"
-                            [image-title]="'brightness'" 
-                          [title-position]="'top-right'"></amexio-image>
-                        </amexio-column> 
-                              <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [filter]="'blur'"
-                            [image-title]="'blur'" 
-                          [title-position]="'top-right'"></amexio-image>
-                        </amexio-column> 
-                    </amexio-row>
-                    <amexio-row>
-                      <amexio-column [size]="3">    
+                      </amexio-column>
+                      <amexio-column [size]="3">
                         <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                              [filter]="'hue'"
-                              [image-title]="'hue'" 
-                          [title-position]="'top-right'">
+                                      [filter]="'invert'"
+                                      [image-title]="'invert'"
+                                      [title-position]="'bottom-right'">
                         </amexio-image>
-                      </amexio-column>  
-                      <amexio-column [size]="3">
-                        <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [filter]="'opacity'"
-                            [image-title]="'opacity'" 
-                          [title-position]="'top-right'"></amexio-image>
-                      </amexio-column> 
-                      <amexio-column [size]="3">
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [filter]="'round'"
-                          [image-title]="'round'" 
-                          [title-position]="'top-right'"></amexio-image>
-                      </amexio-column>
-                      <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [filter]="'shadow'"
-                            [image-title]="'shadow'" 
-                          [title-position]="'top-right'"></amexio-image>
-                      </amexio-column> 
-                    </amexio-row>                    
-                    <amexio-row>
-                        <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                                  [overlay-effect]="'fade'">
-                            </amexio-image>
-                          </amexio-column> 
-                      <amexio-column [size]="3">
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [overlay-effect]="'box'"
-                          [overlay-text]="'Overlay Fade Box!'"></amexio-image>
-                      </amexio-column>
-                      <amexio-column [size]="3">
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [overlay-effect]="'title'"
-                          [overlay-text]="'Overlay Fade Title!'"></amexio-image>
                       </amexio-column>
                       <amexio-column [size]="3">
                         <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [overlay-effect]="'fade'" 
-                          [overlay-text]="'Overlay Fade!'">
-                          </amexio-image>
-                      </amexio-column> 
-                    </amexio-row> 
-                    <amexio-row>
-                        <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [overlay-effect]="'slide-right'"
-                            [overlay-text]="'Overlay Fade Right!'"></amexio-image>
-                        </amexio-column>
-                        <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [overlay-effect]="'slide-left'"
-                            [overlay-text]="'Overlay Fade Left!'"></amexio-image>
-                        </amexio-column>
-                          <amexio-column [size]="3">
-                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [overlay-effect]="'slide-top'"
-                            [overlay-text]="'Overlay Fade top!'"></amexio-image>
-                        </amexio-column>                      
-                        <amexio-column [size]="3">
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                            [overlay-effect]="'slide-bottom'" 
-                            [overlay-text]="'Overlay Fade Bottom!'">
-                          </amexio-image>
-                        </amexio-column> 
-                      </amexio-row>
-                    <amexio-row>
-                      <amexio-column [size]="3">
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [overlay-effect]="'slide-right'"
-                          [overlay-text]="'Overlay Fade Right!'" 
-                          [para]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s'">
-                      </amexio-image>
+                                      [filter]="'sepia'"
+                                      [image-title]="'sepia'"
+                                      [title-position]="'bottom-left'"></amexio-image>
                       </amexio-column>
-                      <amexio-column [size]="3">
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [overlay-effect]="'slide-left'"
-                          [overlay-text]="'Overlay Fade Left!'"
-                          [para]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s'">
-                      </amexio-image>
-                      </amexio-column>
-                        <amexio-column [size]="3">
-                          <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [overlay-effect]="'slide-top'"
-                          [overlay-text]="'Overlay Fade top!'"
-                          [para]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s'">
-                      </amexio-image>
-                      </amexio-column>                    
-                      <amexio-column [size]="3">
-                        <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
-                          [overlay-effect]="'slide-bottom'" 
-                          [overlay-text]="'Overlay Fade Bottom!'"
-                          [para]="'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s'">
-                        </amexio-image>
-                      </amexio-column> 
+                     
                     </amexio-row>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
+            <!-- Overlay Labels - Left, Right, Top, Bottom-->
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                   Image Overlay Labels 
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <amexio-row>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [overlay-effect]="'slide-right'"
+                                          [overlay-text]="'Overlay Fade Right!'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [overlay-effect]="'slide-left'"
+                                          [overlay-text]="'Overlay Fade Left!'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [overlay-effect]="'slide-top'"
+                                          [overlay-text]="'Overlay Fade top!'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [overlay-effect]="'slide-bottom'"
+                                          [overlay-text]="'Overlay Fade Bottom!'">
+                            </amexio-image>
+                          </amexio-column>
+                        </amexio-row>
+                      </amexio-column>                    
+                    </amexio-row>
+                    <br>
+                 
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            <!--  Base Effect - Normal, Small, Opacity, Shadow,Blur, Round-->
+
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                    Base Effect
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <amexio-row>
+                          <amexio-column [size]="1"></amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'shadow'"
+                                          [title]="'shadow'"
+                                          [title-position]="'top-left'">
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'normal'"
+                                          [title]="'normal'"
+                                          [title-position]="'centered'">
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'opacity'"
+                                          [title]="'opacity'"
+                                          [title-position]="'bottom-right'"></amexio-image>
+                          </amexio-column>
+                        
+                        </amexio-row>
+                      </amexio-column>
+                    </amexio-row>
+                    <br>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <amexio-row>
+                          <amexio-column [size]="1"></amexio-column>
+
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'blur'"
+                                          [title]="'blur'"
+                                          [title-position]="'bottom-left'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'round'"
+                                          [title]="'round'"
+                                          [title-position]="'centered'"></amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'small'"
+                                          [title]="'small'"
+                                          [title-position]="'top-right'"></amexio-image>
+                          </amexio-column>
+                        </amexio-row>
+                      </amexio-column>
+                    </amexio-row>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            
+            <!-- Color Effect - Gray Scale, Invert, Sepia, Saturate, Brigtness, hue-->
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                    Color Effect
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <amexio-row>
+                          <amexio-column [size]="1"></amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [title]="'sepia'"
+                                          [filter]="'sepia'"
+                                          [title-position]="'top-left'">
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'grayscale'"
+                                          [title]="'grayscale'"
+                                          [title-position]="'centered'">
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'invert'"
+                                          [title]="'invert'"
+                                          [title-position]="'bottom-right'">
+                            </amexio-image>
+                          </amexio-column>
+                        </amexio-row>
+                      </amexio-column>
+                    </amexio-row>
+                    <br>
+                    <amexio-row>
+                      <amexio-column size="12">
+                        <amexio-row>
+                          <amexio-column [size]="1"></amexio-column>
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'Saturate'"
+                                          [title]="'Saturate'"
+                                          [title-position]="'bottom-left'">
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'brightness'"
+                                          [title]="'brightness'"
+                                          [title-position]="'centered'">
+                            </amexio-image>
+                          </amexio-column>
+                          <amexio-column [size]="1"></amexio-column>
+
+                          <amexio-column [size]="3">
+                            <amexio-image [path]="'assets/images/carousel/set1/3.jpg'"
+                                          [filter]="'hua'"
+                                          [title]="'hua'"
+                                          [title-position]="'top-right'"></amexio-image>
+                          </amexio-column>
+                        </amexio-row>
+                      </amexio-column>
+                    </amexio-row>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            
+            <!-- simple image-->
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card  header="true">
+                  <amexio-header> Simple Image </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column size="3"></amexio-column>
+                      <amexio-column size="6">
+                        <amexio-image [path]="'assets/images/soap-bubble.jpg'" [tooltip]="'Image'"></amexio-image>
+                      </amexio-column>
+                      <amexio-column size="3"></amexio-column>
+                    </amexio-row>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-image>" [enable-column-fiter]="false"

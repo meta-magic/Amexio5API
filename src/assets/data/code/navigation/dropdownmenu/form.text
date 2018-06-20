@@ -1,48 +1,48 @@
-export class DropDownMenuDemo {
-                  payment :any[];
-                  transport: any[];
+  export class DropDownMenuDemo {
+                    payment :any[];
+                    transport: any[];
 
-  constructor(){
-  // Demo 1 : with SEPARATOR
-     this.payment=[
-                    {"label":"Visa","icon":"fa fa-cc-visa"},
-                    {"label":"paypal","icon":"fa fa-paypal","separator":true},
-                    {"label":"google wallet","icon":"fa fa-google-wallet"},
-                    {"label":"stripe","icon":"fa fa-cc-stripe","separator":true},
-                    {"label":"mastercard","icon":"fa fa-cc-mastercard"},
-                    {"label":"jcb","icon":"fa fa-cc-jcb"}
-                  ];
+    constructor(){
+    // Demo 1 : with SEPARATOR
+       this.payment=[
+                      {"label":"Visa","icon":"fa fa-cc-visa"},
+                      {"label":"paypal","icon":"fa fa-paypal","separator":true},
+                      {"label":"google wallet","icon":"fa fa-google-wallet"},
+                      {"label":"stripe","icon":"fa fa-cc-stripe","separator":true},
+                      {"label":"mastercard","icon":"fa fa-cc-mastercard"},
+                      {"label":"jcb","icon":"fa fa-cc-jcb"}
+                    ];
 
-  // Demo 4 :  without SEPARATOR
+    // Demo 4 :  without SEPARATOR
 
-  this.transport=[
-                   {"label":"motorcycle","icon":"	fa fa-motorcycle"},
-                   {"label":"plane","icon":"fa fa-plane"},
-                   {"label":"ship","icon":"fa fa-ship"},
-                   {"label":"space shuttle","icon":"fa fa-space-shuttle"},
-                   {"label":"bicycle","icon":"	fa fa-bicycle"},
-                   {"label":"rocket","icon":"fa fa-rocket"}
-                 ];
-         }
+    this.transport=[
+                     {"label":"motorcycle","icon":"	fa fa-motorcycle"},
+                     {"label":"plane","icon":"fa fa-plane"},
+                     {"label":"ship","icon":"fa fa-ship"},
+                     {"label":"space shuttle","icon":"fa fa-space-shuttle"},
+                     {"label":"bicycle","icon":"	fa fa-bicycle"},
+                     {"label":"rocket","icon":"fa fa-rocket"}
+                   ];
+           }
 
-  onDropDownMenuClick(item: any) {
-     debugger;
-    let jsonData = {
-      'icon': '',
-      'label': '',
-      'labelalign': ''
-    };
-    if (item.this.icon) {
-      jsonData.icon = item.this.icon;
+    onDropDownMenuClick(item: any) {
+       debugger;
+      let jsonData = {
+        'icon': '',
+        'label': '',
+        'labelalign': ''
+      };
+      if (item.this.icon) {
+        jsonData.icon = item.this.icon;
+      }
+      if (item.this.label) {
+        jsonData.label = item.this.label;
+      }
+      if (item.this.labelalign) {
+        jsonData.labelalign = item.this.labelalign;
+      }
+      this.source = jsonData;
+      console.log("ok");
     }
-    if (item.this.label) {
-      jsonData.label = item.this.label;
-    }
-    if (item.this.labelalign) {
-      jsonData.labelalign = item.this.labelalign;
-    }
-    this.source = jsonData;
-    console.log("ok");
   }
-}
 
