@@ -861,13 +861,21 @@ button {
 .datetimepicker:disabled {
   cursor: not-allowed; }
 
-.invaliddays {
-  opacity: .40;
+.date1 {
   pointer-events: none; }
+<<<<<<< HEAD
 
 .disabled {
   opacity: .40;
   pointer-events: none; }
+=======
+  .date1 .invaliddays {
+    opacity: .40;
+    cursor: not-allowed; }
+  .date1 .disabled {
+    opacity: .40;
+    cursor: not-allowed; }
+>>>>>>> deeee67f006318b45bca210cd25ed87e291bb6a7
 
 /****************************************************************************
     Component Name : Dropdown

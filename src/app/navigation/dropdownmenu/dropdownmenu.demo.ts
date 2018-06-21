@@ -273,7 +273,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Live">
 
             <p align="center">Amexio DropdownMenu</p>
-            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-dropdownmenu-toolbar?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/angular-dropdownmenu?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
 
           </amexio-tab>
         </amexio-tab-view>
@@ -364,7 +364,7 @@ export class DropDownMenuDemo {
   }
 
   onDropDownMenuClick(event: any) {
-    debugger;
+
     let jsonData={
       'icon':'',
       'label':'',
