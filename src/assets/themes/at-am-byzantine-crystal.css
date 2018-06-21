@@ -868,8 +868,7 @@ button {
 
 .disabled {
   opacity: .40;
-  pointer-events: none;
-  cursor: not-allowed; }
+  pointer-events: none; }
 
 /****************************************************************************
     Component Name : Dropdown
@@ -1740,7 +1739,8 @@ input:checked + .toggle-slider:before {
   border-radius: 10px; }
 
 .large {
-  font-size: 36px; }
+  font-size: 36px;
+  line-height: 34px; }
 
 .medium {
   font-size: 20px; }
@@ -1750,7 +1750,8 @@ input:checked + .toggle-slider:before {
 
 .large-bold {
   font-size: 36px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 40px; }
 
 .medium-bold {
   font-size: 20px;
@@ -3370,6 +3371,10 @@ header .billboard .content-button {
   background-color: #e99fe9;
   color: #70196F; }
 
+.tree-badge {
+  background-color: #70196F;
+  color: white; }
+
 /** Treenode - Structure CSS **/
 .treeview {
   height: 100%;
@@ -3415,6 +3420,19 @@ header .billboard .content-button {
   white-space: nowrap;
   display: inline;
   cursor: pointer; }
+
+.tree-badge {
+  margin-left: 10px;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px; }
 
 /****************************************************************************
     Component Name : Border Layout
@@ -4011,6 +4029,10 @@ header .billboard .content-button {
 .sidenav .border {
   border-bottom: 3px solid #70196F; }
 
+.nav-badge {
+  background-color: #70196F;
+  color: white; }
+
 /** sidenav - Structure CSS **/
 .sidenav-mobile-bar {
   top: 10px;
@@ -4105,6 +4127,19 @@ header .billboard .content-button {
 .sidenav-submenu-expanded {
   max-height: 1000px;
   overflow: auto; }
+
+.nav-badge {
+  margin-left: 10px;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px; }
 
 /****************************************************************************
     Component Name : Dockbar

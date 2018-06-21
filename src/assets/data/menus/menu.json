@@ -433,6 +433,11 @@
               "link": "dragdrop-tree"
             },
             {
+              "text": "With Badge",
+              "icon": "fa fa-tree fa-fw",
+              "link": "badge-tree"
+            },
+            {
               "text": "Horizontal",
               "icon": "fa fa-tree fa-fw",
               "link": "horizontal-tree"
