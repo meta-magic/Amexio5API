@@ -20,26 +20,43 @@ import {HttpClient} from "@angular/common/http";
             <amexio-row>
               <amexio-column size="4">
                 <amexio-card [header]="true">
-                  <amexio-header> Vertical Left Notification </amexio-header>
+                  <amexio-header> Vertical Top Notification </amexio-header>
                   <amexio-body>
+
                     <amexio-notification
                       [data]="verticalLeftMessageArray"
                       [vertical-position]="'top'"
                       [horizontal-position]="'left'"
                       [close-on-escape] ="true"
+                      [background-color]="'orange '"
+                      [foreground-color]="'black'"
                       [auto-dismiss-msg]="true"
-                      [auto-dismiss-msg-interval]="4000">
-                      
+                      [auto-dismiss-msg-interval]="6000">
+
+                      <ng-template #amexioNotificationTemp >
+                        <amexio-row>
+                          <amexio-column size="2">
+                            <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
+                            </amexio-image> &nbsp;&nbsp;
+                          </amexio-column>
+                          <amexio-column size="8">
+                            <amexio-label size="small-bold" font-color="white" > Warning Message </amexio-label><br/>
+                            <amexio-label size="small" font-color="white" >There are unsaved changes</amexio-label><br/>
+                          </amexio-column>
+
+                        </amexio-row>
+                      </ng-template>
+
+
                     </amexio-notification>
                     <amexio-button
                       (onClick)="verticalLeftNotification()"
-                      [label]="'Info Left Popup'"
+                      [label]="'Info Top Left'"
                       [type]="'primary'"
                       [tooltip]="'Primary Button'">
                     </amexio-button>
                   </amexio-body>
                 </amexio-card>
-
               </amexio-column>
               <amexio-column size="4">
                 <amexio-card [header]="true">
@@ -51,13 +68,13 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'center'"
                       [close-on-escape] ="true"
                       [background-color]="'yellow'"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
                       <ng-template #amexioNotificationTemp >  
                             <amexio-box [box-width]="'350px'" >
                               <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
                               </amexio-image> &nbsp;&nbsp;
-                              <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>&nbsp;&nbsp;&nbsp;
+                              <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>
                             </amexio-box>
                       </ng-template>
                     </amexio-notification> 
@@ -192,34 +209,29 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
 
                     <amexio-notification
+                      [background-color]="'orange'"
+                      [foreground-color]="'black'"
                       [data]="horizontalRightMessageArray"
                       [vertical-position]="'bottom'"
                       [horizontal-position]="'right'"
                       [close-on-escape] ="true"
-                      [background-color]="'orange '"
-                      [foreground-color]="'black'"
-                      [auto-dismiss-msg]="true"
+                      [auto-dismiss-msg]="false"
                       [auto-dismiss-msg-interval]="6000">
 
                       <ng-template #amexioNotificationTemp >
-
-
-                        
-
-                        <amexio-row>
-                          <amexio-column size="2">
-                            <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
-                            </amexio-image> &nbsp;&nbsp;
-                          </amexio-column>
-                          <amexio-column size="8">
-                            <amexio-label size="small-bold" font-color="white" > Warning Message </amexio-label><br/>
-                            <amexio-label size="small" font-color="white" >There are unsaved changes</amexio-label><br/>
-                          </amexio-column>
-
-                        </amexio-row>
+                        <amexio-box padding="true" [box-width]="'225px'">
+                          <amexio-label size="medium-bold">Cookies Policy</amexio-label><br/>
+                          <amexio-label>We use cookies to help our site work, to understand how it is used and analytics cookies to learn more and track the website's performance. By continuing to use this site,you accept our use of cookies.</amexio-label><br/>
+                          <br/>
+                          <amexio-button [label]="'Accept & Close'"
+                                         [type]="'theme-color'"
+                                         [size]="'small'"
+                                         [tooltip]="'cookies accepted button'">
+                          </amexio-button>
+                        </amexio-box>
                       </ng-template>
-                      
-                      
+
+
                     </amexio-notification>
                     <amexio-button
                       (onClick)="horizontalRightNotification()"
@@ -273,7 +285,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
            <p align="center">Amexio Sandbox</p>
-            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-notification?embed=1&file=app/navigation/notification/notification.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
+        <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-notification?embed=1&file=app/navigation/notification/notification.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>

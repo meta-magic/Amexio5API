@@ -53,8 +53,8 @@ import { HttpClient } from "@angular/common/http";
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right >
               <amexio-drop-down-menu [icon-align]="'left'"
-                             [title]="''"
-                             [padding]="'5px'"
+                             [title]="'Settings'"
+                             [padding]="'5px 10px'"
                              [icon]="'fa fa-cog'">
                <amexio-drop-down-menu-item [separator]="true">
                       <amexio-box background-color="purple" padding="true">
@@ -127,7 +127,6 @@ import { HttpClient } from "@angular/common/http";
                  
                   <amexio-drop-down-menu [icon-align]="'left'"
                   [title]="'Quick Access'"
-                  [padding]="'5px'"
                   [data]="payment"
                   [down-arrow-icon] ="true"
                   [icon]="'fa fa-credit-card'"
