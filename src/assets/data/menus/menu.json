@@ -452,6 +452,28 @@
       ]
     },
     {
+      "text": "Drag and Drop",
+      "icon": "fa fa-arrows-alt",
+      "badge": "New",
+      "children": [
+        {
+          "text": "Within Tree",
+          "icon": "fa fa-tree fa-fw",
+          "link": "within-tree"
+        },
+        {
+          "text": "Across Tree",
+          "icon": "fa fa-tree fa-fw",
+          "link": "across-tree"
+        },
+        {
+          "text": "Tree to Panel",
+          "icon": "fa fa-tree fa-fw",
+          "link": "tree-to-panel"
+        }
+      ]
+    },
+    {
       "text": "Media",
       "icon": "fa fa-keyboard-o fa-fw",
       "children": [
@@ -624,28 +646,6 @@
           "text": "Multi-item Carousel",
           "icon": "fa fa-television fa-fw",
           "link": "multi-item-carousel"
-        }
-      ]
-    },
-    {
-      "text": "Drag and Drop",
-      "icon": "fa fa-arrows-alt",
-      "badge": "New",
-      "children": [
-        {
-          "text": "Within Tree",
-          "icon": "fa fa-tree fa-fw",
-          "link": "within-tree"
-        },
-        {
-          "text": "Across Tree",
-          "icon": "fa fa-tree fa-fw",
-          "link": "across-tree"
-        },
-        {
-          "text": "Tree to Panel",
-          "icon": "fa fa-tree fa-fw",
-          "link": "tree-to-panel"
         }
       ]
     }
