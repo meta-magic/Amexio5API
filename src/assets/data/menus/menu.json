@@ -61,6 +61,7 @@
     {
       "text": "Panels",
       "icon": "fa fa-bars fa-fw",
+      "badge": "2",
       "children": [
         {
           "text": "Carousel",
@@ -154,18 +155,21 @@
         {
           "text": "Window",
           "icon": "fa fa-window-maximize fa-fw",
-          "link": "window"
+          "link": "window",
+          "badge": "U"
         },
         {
           "text": "Dialogue",
           "icon": "fa fa-window-maximize fa-fw",
-          "link": "dialouge"
+          "link": "dialouge",
+          "badge": "U"
         }
       ]
     },
     {
       "text": "Form Inputs",
       "icon": "fa fa-clone fa-fw",
+      "badge": "2",
       "children": [
         {
           "text": "Checkbox",
@@ -180,10 +184,12 @@
         {
           "text": "Date & Time Picker",
           "icon": "fa fa-calendar fa-fw",
-          "link": "date-picker-demo"
+          "link": "date-picker-demo",
+          "badge": "U"
         },
         {
           "text": "DropDown",
+          "badge": "U",
           "icon": "fa fa-caret-square-o-down fa-fw",
           "children": [
             {
@@ -204,7 +210,8 @@
             {
               "text": "Template",
               "icon": "fa fa-chevron-circle-down fa-fw",
-              "link": "dropdowntemplate"
+              "link": "dropdowntemplate",
+              "badge": "U"
             }
           ]
         },
@@ -287,6 +294,7 @@
     },
     {
       "text": "Form Actions",
+      "badge": "1",
       "icon": "fa fa-keyboard-o fa-fw",
       "children": [
         {
@@ -322,7 +330,8 @@
         {
           "text": "Notification",
           "icon": "fa fa-comments fa-fw",
-          "link": "notification-demo"
+          "link": "notification-demo",
+          "badge": "U"
         },
         {
           "text": "Paginator",
@@ -339,6 +348,7 @@
     },
     {
       "text": "Data",
+      "badge": "5",
       "icon": "fa fa-database fa-fw",
       "children": [
         {
@@ -363,7 +373,8 @@
             {
               "text": "Header Template",
               "icon": "fa fa-database fa-fw",
-              "link": "header-template"
+              "link": "header-template",
+              "badge": "U"
             },
             {
               "text": "Filter",
@@ -373,7 +384,8 @@
             {
               "text": "Filter-Global",
               "icon": "fa fa-database fa-fw",
-              "link": "global-filter-grid"
+              "link": "global-filter-grid",
+              "badge": "U"
             },
             {
               "text": "Group By",
@@ -398,7 +410,8 @@
             {
               "text": "Tree Data Template",
               "icon": "fa fa-database fa-fw",
-              "link": "tree-data-template"
+              "link": "tree-data-template",
+              "badge": "U"
             }
           ]
         },
@@ -430,12 +443,14 @@
             {
               "text": "With Drag Drop",
               "icon": "fa fa-tree fa-fw",
-              "link": "dragdrop-tree"
+              "link": "dragdrop-tree",
+              "badge": "N"
             },
             {
               "text": "With Badge",
               "icon": "fa fa-tree fa-fw",
-              "link": "badge-tree"
+              "link": "badge-tree",
+              "badge": "N"
             },
             {
               "text": "Horizontal",
@@ -492,6 +507,7 @@
     {
       "text": "App Navigation",
       "icon": "fa fa-bars fa-fw",
+      "badge": "2",
       "children": [
         {
           "text": "Dockbar",
@@ -501,7 +517,8 @@
         {
           "text": "Dropdown Menu",
           "icon": "fa fa-chevron-circle-down",
-          "link": "dropdownmenu"
+          "link": "dropdownmenu",
+          "badge": "N"
         },
         {
           "text": "Nav Bar",
@@ -521,7 +538,8 @@
         {
           "text":"Tool Bar",
           "icon":"fa fa-bars fa-fw",
-          "link":"toolbar-demo"
+          "link":"toolbar-demo",
+          "badge": "N"
         }
       ]
     },
