@@ -313,5 +313,15 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
   },
+/*Drag and Drop*/
+{
+  path : 'within-tree', loadChildren : './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
+},
+{
+  path : 'across-tree', loadChildren : './draganddrop/acrosstree/acrosstree.demo.module#AcrossTreeDemoModule'
+},
+{
+  path : 'tree-to-panel', loadChildren : './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
+},
 
 ];
