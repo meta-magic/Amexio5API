@@ -2,8 +2,8 @@
  * Created by rashmi on 20/6/18.
  */
 
-import {Component, ViewChild} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component, ViewChild } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'dragdroptree-demo', template: `
@@ -27,18 +27,6 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
-             <!--  <amexio-column size="6">
-                <amexio-card [header]="true">
-                  <amexio-header>
-                     Selected Data 
-                  </amexio-header>
-                  <amexio-body>
-                    <pre><code>{{selectedData | json}}</code></pre>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column> -->
-
-
 
  <amexio-column size="12">
 <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
@@ -70,9 +58,36 @@ import {HttpClient} from "@angular/common/http";
                     </amexio-body>
                 </amexio-card>
             </amexio-column>
-
-
         </amexio-row>
+    </amexio-body>
+</amexio-card>
+</amexio-column>
+
+<amexio-column size="12">
+<amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+    <amexio-header>
+        Drag and Drop: Tree to Panel
+    </amexio-header>
+    <amexio-body>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+                    <amexio-header>
+                        Tree 1
+                    </amexio-header>
+                    <amexio-body>
+                    <amexio-treeview [data-reader]="'data'" (onDrag)="drag($event)" [enable-drag]="true" [enable-drop]="false" [data]="treeLocalData">
+                    </amexio-treeview>
+                    </amexio-body>
+                </amexio-card>
+            </amexio-column>
+
+            <amexio-column [size]="6">
+            <amexio-panel (dragover)="dragOver($event)" (drop)="drop($event)" [header]="true" [title]="'Panel'" [expanded]="true">
+            <pre><code>{{selectedData | json}}</code></pre>
+           </amexio-panel>
+            </amexio-column>
+            </amexio-row>
     </amexio-body>
 </amexio-card>
 </amexio-column>
@@ -134,8 +149,8 @@ import {HttpClient} from "@angular/common/http";
   `
 })
 export class DragDropTreeDemo {
-  @ViewChild ('tree') treeRef:any;
-  @ViewChild ('tree1') treeRef1:any;
+  @ViewChild('tree') treeRef: any;
+  @ViewChild('tree1') treeRef1: any;
 
   htmlCode: string;
   typeScriptCode: string;
@@ -195,10 +210,10 @@ export class DragDropTreeDemo {
               {
                 "leaf": true,
                 "text": "Viewport.js",
-                "expand" : true,
-                "children":[],
-                "lazy":{
-                  "http-url":"data/treeview.json",
+                "expand": true,
+                "children": [],
+                "lazy": {
+                  "http-url": "data/treeview.json",
                   "http-method": "get"
                 }
               }
@@ -230,81 +245,81 @@ export class DragDropTreeDemo {
     };
 
     this.treeLocalData1 = {
-        "data": [{
-          "text": "Web App",
-          "expand": true,
-          "children": [
-            {
-              "text": "Grid",
-              "expand": true,
-              "children": [
-                {
-                  "leaf": true,
-                  "text": "Column.js"
-                },
-                {
-                  "leaf": true,
-                  "text": "Boolean.js"
-                },
-                {
-                  "leaf": true,
-                  "text": "Check.js"
-                }
-              ]
-            },
-            {
-              "text": "Layout",
-              "expand": true,
-              "children": [
-                {
-                  "text": "Component",
-                  "expand": true,
-                  "children": [
-                    {
-                      "leaf": true,
-                      "text": "Auto.js"
-                    },
-                    {
-                      "leaf": true,
-                      "text": "FieldSet.js"
-                    },
-                    {
-                      "leaf": true,
-                      "text": "Dock.js"
-                    }
-                  ]
-                }
-              ]
-            },
-             {
-              "text": "Tree",
-              "expand": true,
-              "children": [
-                {
-                  "text": "Plugin",
-                  "expand": true,
-                  "children": [
-                    {
-                      "leaf": true,
-                      "text": "TreeViewDragDrop.js"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "text": "Panel",
-              "expand": true,
-              "children": [
-                {
-                  "leaf": true,
-                  "text": "Header.js"
-                }         
-              ]
-            }
-          ]
-        }]
-      };
+      "data": [{
+        "text": "Web App",
+        "expand": true,
+        "children": [
+          {
+            "text": "Grid",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Column.js"
+              },
+              {
+                "leaf": true,
+                "text": "Boolean.js"
+              },
+              {
+                "leaf": true,
+                "text": "Check.js"
+              }
+            ]
+          },
+          {
+            "text": "Layout",
+            "expand": true,
+            "children": [
+              {
+                "text": "Component",
+                "expand": true,
+                "children": [
+                  {
+                    "leaf": true,
+                    "text": "Auto.js"
+                  },
+                  {
+                    "leaf": true,
+                    "text": "FieldSet.js"
+                  },
+                  {
+                    "leaf": true,
+                    "text": "Dock.js"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Tree",
+            "expand": true,
+            "children": [
+              {
+                "text": "Plugin",
+                "expand": true,
+                "children": [
+                  {
+                    "leaf": true,
+                    "text": "TreeViewDragDrop.js"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "Panel",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Header.js"
+              }
+            ]
+          }
+        ]
+      }]
+    };
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
@@ -313,7 +328,7 @@ export class DragDropTreeDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/tree/dragdroptree/dragdroptree.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/tree/dragdroptree/dragdroptree.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -321,7 +336,7 @@ export class DragDropTreeDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/tree/dragdroptree/dragdroptree.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/tree/dragdroptree/dragdroptree.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -333,9 +348,9 @@ export class DragDropTreeDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 
@@ -345,11 +360,24 @@ export class DragDropTreeDemo {
 
   getDropData(event: any) {
     this.treeRef.removeNode(event);
-    }
+  }
 
-    getDropData1(event: any) {
-      this.treeRef1.removeNode(event);
-      }
+  getDropData1(event: any) {
+    this.treeRef1.removeNode(event);
+  }
+
+
+  drag(data: any) {
+    data.event.dataTransfer.setData('dragData');
+  }
+
+  dragOver(event: any) {
+    event.preventDefault();
+  }
+
+  drop(event: any) {
+    event.preventDefault();
+    let data = JSON.parse(event.dataTransfer.getData("dragData"));
+    this.selectedData = data;
+  }
 }
-
-

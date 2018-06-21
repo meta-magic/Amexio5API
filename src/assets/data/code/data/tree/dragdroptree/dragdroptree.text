@@ -174,4 +174,18 @@ export class DragDropTreeDemo {
    getDropData1(event: any) {
     this.treeRef.removeNode(event);
   }
+
+  drag(data: any) {
+    data.event.dataTransfer.setData('dragData');
+  }
+
+  dragOver(event: any) {
+    event.preventDefault();
+  }
+
+  drop(event: any) {
+    event.preventDefault();
+    let data = JSON.parse(event.dataTransfer.getData("dragData"));
+    this.selectedData = data;
+  }
 }
