@@ -57,6 +57,10 @@
     {
       "name": "onRemove",
       "description": "On remove click event"
+    },
+    {
+      "name": "onFileUpload",
+      "description": "fires on choosing file"
     }
   ]
 }
