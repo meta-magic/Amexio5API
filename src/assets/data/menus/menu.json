@@ -625,6 +625,7 @@
     {
       "text": "Drag and Drop",
       "icon": "fa fa-arrows-alt",
+      "badge": "New",
       "children": [
         {
           "text": "Within Tree",
