@@ -22,7 +22,7 @@ import { HttpClient } from "@angular/common/http";
                      Drag Drop Functionality within Tree
                   </amexio-header>
                   <amexio-body>
-                  <amexio-treeview (nodeClick)="getNodeData($event)" [data-reader]="'data'" [enable-drag]="true" [enable-drop]="true" [data]="treeLocalData">
+                  <amexio-treeview [data-reader]="'data'" [enable-drag]="true" [enable-drop]="true" [data]="treeLocalData">
                   </amexio-treeview>
                   </amexio-body>
                 </amexio-card>
