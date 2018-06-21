@@ -120,12 +120,12 @@ import { HttpClient } from "@angular/common/http";
             </amexio-tab>
             <amexio-tab title="Live">
              <p align="center">Amexio Sandbox</p>
-  <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v42-searchbox?ctl=1&embed=1&file=app/forms/searchbox/searchbox.demo.html&view=editor"></iframe>
+  <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v42-searchbox-uixgd5?embed=1&file=app/forms/searchbox/searchbox.demo.html&view=editor  "></iframe>
             </amexio-tab>
           </amexio-tab-view>
         </amexio-body>
       </amexio-card> `
-})            
+})
 export class SearchBox implements OnInit {
   htmlCode: string;
   typeScriptCode: string;
@@ -139,7 +139,7 @@ export class SearchBox implements OnInit {
   bindData: any[] = [];
   constructor(private http: HttpClient, private element: ElementRef) {
     this.localData = [
-      
+
       {
         "from": "araf.karsh@metamagic.in",
         "subject": "amexio release plans",
@@ -286,14 +286,14 @@ export class SearchBox implements OnInit {
     this.searchdata = this.localData;
    }
 
-  //this function is called on hit of filter and it filters entered data 
+  //this function is called on hit of filter and it filters entered data
   filter(search: any) {
 
     this.bindData = [];
     let sub1 = this.subject;
     let to1 = this.to;
     let frm1 = this.from;
- 
+
     if (sub1 == "" && frm1 == "" && to1 == "") {
        this.bindData = this.searchdata;
 
