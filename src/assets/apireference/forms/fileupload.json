@@ -61,6 +61,6 @@
     {
       "name": "onFileUpload",
       "description": "fires on choosing file"
-    }
+    } 
   ]
 }
