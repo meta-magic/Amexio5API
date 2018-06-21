@@ -151,7 +151,7 @@ import {HttpClient} from "@angular/common/http";
            <p align="center">Amexio Sandbox</p>
 <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-radiogroup?embed=1&file=app/forms/radiogroup/radiogroup.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
-        </amexio-tab-vie  w>
+        </amexio-tab-view>
       </amexio-body>
     </amexio-card>
     <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
