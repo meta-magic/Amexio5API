@@ -55,6 +55,13 @@
       "type": "boolean",
       "default": "false",
       "description":"Dragging and dropping is possible across tree."
+    },
+    {
+      "name": "badge",
+      "version": "5.0 onwords",
+      "type": "boolean",
+      "default": "false",
+      "description":"Describes the badge value that has to be displayed tree node."
     }
   ],
   "events":[

@@ -1,0 +1,84 @@
+      "data": [{
+        "text": "Web App",
+        "expand": true,
+        "children": [
+          {
+            "text": "app",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Application.js",
+                "badge": 4
+              }
+            ]
+          },
+          {
+            "text": "button",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Button.js"
+              },
+              {
+                "leaf": true,
+                "text": "Cycle.js"
+              },
+              {
+                "leaf": true,
+                "text": "Split.js"
+              }
+            ]
+          },
+          {
+            "text": "container",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "ButtonGroup.js",
+                "badge": 5
+              },
+              {
+                "leaf": true,
+                "text": "Container.js",
+                "badge": 9
+              },
+              {
+                "leaf": true,
+                "text": "Viewport.js",
+                "expand" : true,
+                "children":[],
+                "lazy":{
+                  "http-url":"data/treeview.json",
+                  "http-method": "get"
+                }
+              }
+            ]
+          },
+          {
+            "text": "core",
+            "expand": true,
+            "badge": 2,
+            "children": [
+              {
+                "text": "dom",
+                "expand": true,
+                "badge": 7,
+                "children": [
+                  {
+                    "leaf": true,
+                    "text": "Element.form.js"
+                  },
+                  {
+                    "leaf": true,
+                    "text": "Element.static-more.js"
+                  }
+
+                ]
+              }
+            ]
+          }
+        ]
+      }]
