@@ -244,7 +244,6 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
@@ -294,7 +293,6 @@ export class DropDownMenuDemo {
   dataSource: string;
   copyMsgArray: any[];
   countryCode1: string;
-
   payment: any[];
   transport: any[];
 
@@ -310,8 +308,6 @@ export class DropDownMenuDemo {
       {"label": "jcb", "icon": "fa fa-cc-jcb"}
 
     ];
-
-
     this.transport = [
       {"label": "motorcycle", "icon": "  fa fa-motorcycle"},
       {"label": "plane", "icon": "fa fa-plane"},
