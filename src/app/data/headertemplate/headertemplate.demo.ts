@@ -1,5 +1,5 @@
 /**
- * Created by sagar on 9/1/18.
+ * Created by Manisha on 21/6/18.
  */
 
 import { Component } from '@angular/core';
@@ -12,7 +12,7 @@ import { HttpClient } from "@angular/common/http";
          Header Template 
       </amexio-header>
       <amexio-body>
-        <p>To define the detail template, nest an ng-template tag inside the AmexioColumn component. The template context is set to the current row.</p>
+        <p>Defines header template for user customization AmexioColumn component. The template context is set to the current header</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
            
@@ -26,7 +26,7 @@ import { HttpClient } from "@angular/common/http";
                       </amexio-label>
                   </ng-template>
               </amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+              <amexio-data-table-column   [width]="10" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
               <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
                       <amexio-label size="small-bold" font-color="white">
                           {{column.text}}
@@ -56,7 +56,7 @@ import { HttpClient } from "@angular/common/http";
               </amexio-label>
           </ng-template>
               </amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
+              <amexio-data-table-column [sort]="false" [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
               <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
               <amexio-btn-dropdown [label]="'Status'" [type]="'red'" [size]="'small'">
               
@@ -80,7 +80,7 @@ import { HttpClient } from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-datagrid>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/data/grid.json'"
+                             [http-url]="'assets/apireference/data/headertemplate.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
@@ -94,7 +94,7 @@ import { HttpClient } from "@angular/common/http";
             </amexio-datagrid><br>
             <amexio-datagrid title="Column Properties<amexio-datagrid>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/data/grid.json'"
+                             [http-url]="'assets/apireference/data/headertemplate.json'"
                              [data-reader]="'columnProperties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false"
@@ -108,7 +108,7 @@ import { HttpClient } from "@angular/common/http";
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [http-method]="'get'"
-                             [http-url]="'assets/apireference/data/grid.json'" [data-reader]="'events'"
+                             [http-url]="'assets/apireference/data/headertemplate.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>

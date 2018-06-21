@@ -37,7 +37,7 @@
             </amexio-label>
         </ng-template>
     </amexio-data-table-column>
-    <amexio-data-table-column [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
+    <amexio-data-table-column [sort]="false" [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
         <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
             <amexio-btn-dropdown [label]="'Status'" [type]="'red'" [size]="'small'">
                 <amexio-btn-dropdown-item [label]="'Accept All'">
