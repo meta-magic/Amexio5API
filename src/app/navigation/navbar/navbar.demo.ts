@@ -117,6 +117,15 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
+            <amexio-datagrid title="Events: amexio-nav" [http-method]="'get'"
+            [http-url]="'assets/apireference/navigation/navbar.json'" [data-reader]="'navevents'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+            <br>
             <amexio-datagrid title="Properties:amexio-nav-item" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/navigation/navbar.json'"
@@ -132,7 +141,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [http-method]="'get'"
+            <amexio-datagrid title="Events: amexio-nav-item " [http-method]="'get'"
             [http-url]="'assets/apireference/navigation/navbar.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"

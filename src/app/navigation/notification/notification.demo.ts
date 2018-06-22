@@ -69,7 +69,7 @@ import {HttpClient} from "@angular/common/http";
                       [close-on-escape] ="true"
                       [background-color]="'yellow'"
                       [auto-dismiss-msg]="true"
-                      [auto-dismiss-msg-interval]="4000">
+                      [auto-dismiss-msg-interval]="6000">
                       <ng-template #amexioNotificationTemp >  
                             <amexio-box [box-width]="'350px'" >
                               <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
@@ -215,7 +215,7 @@ import {HttpClient} from "@angular/common/http";
                       [vertical-position]="'bottom'"
                       [horizontal-position]="'right'"
                       [close-on-escape] ="true"
-                      [auto-dismiss-msg]="true"
+                      [auto-dismiss-msg]="false"
                       [auto-dismiss-msg-interval]="6000">
 
                       <ng-template #amexioNotificationTemp >
@@ -225,7 +225,7 @@ import {HttpClient} from "@angular/common/http";
                           <br/>
                           <amexio-button [label]="'Accept & Close'"
                                          [type]="'theme-color'"
-                                         
+                                         (onClick)="closeCookie()"
                                          [size]="'small'"
                                          [tooltip]="'cookies accepted button'">
                           </amexio-button>
@@ -256,13 +256,13 @@ import {HttpClient} from "@angular/common/http";
                              [http-url]="'assets/apireference/navigation/notification.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
-              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="25" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="55" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
@@ -362,6 +362,11 @@ export class NotificationDemo {
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
+  }
+
+  closeCookie()
+  {
+    this.horizontalRightMessageArray =[];
   }
 }
 

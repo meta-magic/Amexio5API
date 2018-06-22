@@ -1,7 +1,19 @@
 export class TreeDataTemplateDemo {
   constructor() {}
-
   getSelectedData(data: any) {
       /*Do Operation on data*/
   }
+  onCheckClick(data:any){
+if(data.hasOwnProperty('children') && data.children.length>0){
+  this.checkchild(data);
+}
+}
+checkchild(data:any){  
+data.children.forEach((element:any) => {
+   element.done = !element.done;
+  if(element.hasOwnProperty('children') && element.children.length>0){
+    this.checkchild(element);
+  }
+});
+}
 }
