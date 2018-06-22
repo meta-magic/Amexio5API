@@ -215,7 +215,7 @@ import {HttpClient} from "@angular/common/http";
                       [vertical-position]="'bottom'"
                       [horizontal-position]="'right'"
                       [close-on-escape] ="true"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="6000">
 
                       <ng-template #amexioNotificationTemp >

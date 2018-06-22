@@ -169,7 +169,7 @@
     {
       "text": "Form Inputs",
       "icon": "fa fa-clone fa-fw",
-      "badge": "2",
+      "badge": "3",
       "children": [
         {
           "text": "Checkbox",
@@ -268,7 +268,8 @@
         {
           "text": "Search Box",
           "icon": "fa fa-search fa-fw",
-          "link": "searchbox-demo"
+          "link": "searchbox-demo",
+          "badge": "N"
         },
         {
           "text": "Tag Field",
