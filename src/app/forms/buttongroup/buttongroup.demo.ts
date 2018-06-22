@@ -209,7 +209,6 @@ export class ButtonGroupDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   getData(ss:any){
-    debugger;
   }
 
   constructor(private http: HttpClient) {
