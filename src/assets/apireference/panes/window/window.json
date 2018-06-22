@@ -67,7 +67,7 @@
         "description": "User can close the window.",
         "version": "4.0 onwards",
         "type": "boolean",
-        "default": "false"
+        "default": "true"
       },
       {
         "name": "header",

@@ -24,7 +24,7 @@ import {HttpClient} from "@angular/common/http";
               </amexio-column>
              <amexio-column [size]="4">
                 <amexio-button type="danger" (onClick)="toggleError()" label="Error"></amexio-button>
-                 <amexio-dialogue [(show)]="errordialogue"  [close-on-escape]="true"  [message]="'Error Occurred.'" [primary-action-label]="'ok'"
+                 <amexio-dialogue [(show)]="errordialogue"  [close-on-escape]="true"  [message]="'Error Occurred.'" [primary-action-label]="'Ok'"
                                [title]="'Error'" [message-type]="'error'" [type]="'alert'">
                               
                 </amexio-dialogue>

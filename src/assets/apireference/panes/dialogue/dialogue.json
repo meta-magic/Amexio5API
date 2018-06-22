@@ -56,7 +56,7 @@
       "description": "User can close the Dialogue.",
       "version": "4.0 onwards",
       "type": "boolean",
-      "default": "false"
+      "default": "true"
     },
     {
       "name": "title",
