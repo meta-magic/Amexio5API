@@ -1,9 +1,7 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
   <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'"
     [logo]="'assets/images/logos/amexio-logo.png'">
-    <amexio-nav-item position-right [type]="'link'" [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'"
-      (onNavItemClick)="homeLink('http://amexio.org')">
-    </amexio-nav-item>
+   
     <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus"
     [type]="'menu'"
     [title]="menus.text"
@@ -30,7 +28,7 @@
       </div>
       <br/><br/>
       <div id="footer1" style="bottom: 0;">
-        <p style="text-align: center;">  © 2017 MetaMagic Global Inc, NJ, USA.  All Rights Reserved. Source Code :  <a href="http://amexio.org/showcaseapp/v4/license.html" target="_blank">Apache 2 License</a>  Docs by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC By 3.0</a></p>
+        <p style="text-align: center;">  © 2017 MetaMagic Global Inc, NJ, USA.  All Rights Reserved. Source Code :  <a href="https://amexio.org/license/license.html" target="_blank">Apache 2 License</a>  Docs by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC By 3.0</a></p>
       </div>
     </amexio-column>
   </amexio-row>
