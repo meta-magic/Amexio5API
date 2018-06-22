@@ -160,7 +160,6 @@ export class GridWithScrollDemo {
   }
 
   getSelectedData(data: any) {
-    debugger;
     this.selectedData = data;
   }
 }
