@@ -1,11 +1,11 @@
 {
   "data": [{
     "text": "Web App",
-    "expanded": true,
+    "expand": true,
     "children": [
       {
         "text": "app",
-        "expanded": true,
+        "expand": true,
         "children": [
           {
             "leaf": true,
@@ -15,7 +15,7 @@
       },
       {
         "text": "button",
-        "expanded": true,
+        "expand": true,
         "children": [
           {
             "leaf": true,
@@ -33,7 +33,7 @@
       },
       {
         "text": "container",
-        "expanded": true,
+        "expand": true,
         "children": [
           {
             "leaf": true,
@@ -46,7 +46,7 @@
           {
             "leaf": true,
             "text": "Viewport.js",
-            "expanded" : false,
+            "expand" : false,
             "children":[],
             "lazy":{
               "http-url":"data/treeview.json",
@@ -57,11 +57,11 @@
       },
       {
         "text": "core",
-        "expanded": true,
+        "expand": true,
         "children": [
           {
             "text": "dom",
-            "expanded": false,
+            "expand": false,
             "children": [
               {
                 "leaf": true,

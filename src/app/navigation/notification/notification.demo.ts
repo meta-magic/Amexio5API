@@ -215,7 +215,7 @@ import {HttpClient} from "@angular/common/http";
                       [vertical-position]="'bottom'"
                       [horizontal-position]="'right'"
                       [close-on-escape] ="true"
-                      [auto-dismiss-msg]="true"
+                      [auto-dismiss-msg]="false"
                       [auto-dismiss-msg-interval]="6000">
 
                       <ng-template #amexioNotificationTemp >
@@ -225,7 +225,7 @@ import {HttpClient} from "@angular/common/http";
                           <br/>
                           <amexio-button [label]="'Accept & Close'"
                                          [type]="'theme-color'"
-                                         
+                                         (onClick)="closeCookie()"
                                          [size]="'small'"
                                          [tooltip]="'cookies accepted button'">
                           </amexio-button>
@@ -362,6 +362,11 @@ export class NotificationDemo {
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
+  }
+
+  closeCookie()
+  {
+    this.horizontalRightMessageArray =[];
   }
 }
 
