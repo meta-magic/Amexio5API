@@ -22,7 +22,7 @@ import { HttpClient } from "@angular/common/http";
                      Drag Drop Functionality within Tree
                   </amexio-header>
                   <amexio-body>
-                  <amexio-treeview (nodeClick)="getNodeData($event)" [data-reader]="'data'" [enable-drag]="true" [enable-drop]="true" [data]="treeLocalData">
+                  <amexio-treeview [data-reader]="'data'" [enable-drag]="true" [enable-drop]="true" [data]="treeData">
                   </amexio-treeview>
                   </amexio-body>
                 </amexio-card>
@@ -149,6 +149,7 @@ import { HttpClient } from "@angular/common/http";
   `
 })
 export class DragDropTreeDemo {
+
   @ViewChild('tree') treeRef: any;
   @ViewChild('tree1') treeRef1: any;
 
@@ -159,8 +160,91 @@ export class DragDropTreeDemo {
   selectedData: any;
   treeLocalData: any;
   treeLocalData1: any;
+  treeData:any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
+
+    this.treeData = {
+      "data": [{
+        "text": "Web App",
+        "expand": true,
+        "children": [
+          {
+            "text": "app",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Application.js"
+              }
+            ]
+          },
+          {
+            "text": "button",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Button.js"
+              },
+              {
+                "leaf": true,
+                "text": "Cycle.js"
+              },
+              {
+                "leaf": true,
+                "text": "Split.js"
+              }
+            ]
+          },
+          {
+            "text": "container",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "ButtonGroup.js"
+              },
+              {
+                "leaf": true,
+                "text": "Container.js"
+              },
+              {
+                "leaf": true,
+                "text": "Viewport.js",
+                "expand": true,
+                "children": [],
+                "lazy": {
+                  "http-url": "data/treeview.json",
+                  "http-method": "get"
+                }
+              }
+            ]
+          },
+          {
+            "text": "core",
+            "expand": true,
+            "children": [
+              {
+                "text": "dom",
+                "expand": true,
+                "children": [
+                  {
+                    "leaf": true,
+                    "text": "Element.form.js"
+                  },
+                  {
+                    "leaf": true,
+                    "text": "Element.static-more.js"
+                  }
+
+                ]
+              }
+            ]
+          }
+        ]
+      }]
+    };
 
     this.treeLocalData = {
       "data": [{
@@ -367,17 +451,18 @@ export class DragDropTreeDemo {
   }
 
 
-  drag(data: any) {
-    data.event.dataTransfer.setData('dragData');
+  drag(data: any){
+    data.event.dataTransfer.setData("dragdata", JSON.stringify(data.data));
+
   }
 
-  dragOver(event: any) {
+  dragOver(event: any){
     event.preventDefault();
   }
 
   drop(event: any) {
     event.preventDefault();
-    let data = JSON.parse(event.dataTransfer.getData("dragData"));
-    this.selectedData = data;
+    this.selectedData = JSON.parse(event.dataTransfer.getData('dragdata'))
+
   }
 }

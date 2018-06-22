@@ -233,17 +233,17 @@ export class TreeToPanelDemo {
     this.selectedData = data;
   }
 
-  drag(data: any) {
-    data.event.dataTransfer.setData('dragData');
+  drag(data: any){
+    data.event.dataTransfer.setData("dragdata", JSON.stringify(data.data));
+
   }
 
-  dragOver(event: any) {
+  dragOver(event: any){
     event.preventDefault();
   }
 
   drop(event: any) {
     event.preventDefault();
-    let data = JSON.parse(event.dataTransfer.getData("dragData"));
-    this.selectedData = data;
+    this.selectedData = JSON.parse(event.dataTransfer.getData('dragdata'))
   }
 }
