@@ -134,9 +134,8 @@ export class DateTimePickerDemo {
   time: any;
   disabledDate:any[];
    date = new Date("March 21, 2018 01:15:00");
-  
+
   onChangeTime(data: any) {
-    debugger;
     this.time=data;
   }
 

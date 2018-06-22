@@ -26,7 +26,6 @@
            }
 
     onDropDownMenuClick(item: any) {
-       debugger;
       let jsonData = {
         'icon': '',
         'label': '',

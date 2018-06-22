@@ -173,7 +173,6 @@ export class FloatingGroupButtonDemo {
   }
 
   onFloatingClick(event:any){
-    debugger;
   }
 
 }

@@ -151,13 +151,12 @@
     this.searchdata = this.localData;
    }
 
-  //this function is called on hit of filter and it filters entered data 
+  //this function is called on hit of filter and it filters entered data
   filter(search: any) {
     this.bindData = [];
     let sub1 = this.subject;
     let to1 = this.to;
     let frm1 = this.from;
-    debugger;
     if (sub1 == "" && frm1 == "" && to1 == "") {
       debugger;
       this.bindData = this.searchdata;
