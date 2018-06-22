@@ -379,7 +379,7 @@
             {
               "text": "Filter",
               "icon": "fa fa-database fa-fw",
-              "link": "filter-grid" 
+              "link": "filter-grid"
             },
             {
               "text": "Filter-Global",
@@ -507,7 +507,7 @@
     {
       "text": "App Navigation",
       "icon": "fa fa-bars fa-fw",
-      "badge": "2",
+      "badge": "3",
       "children": [
         {
           "text": "Dockbar",
@@ -528,7 +528,8 @@
         {
           "text": "Side Nav Bar",
           "icon": "fa fa-bars fa-fw",
-          "link": "sidenav-demo"
+          "link": "sidenav-demo",
+          "badge": "U"
         },
         {
           "text": "Menu Bar",
