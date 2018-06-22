@@ -159,7 +159,6 @@ export class SimpleGridDemo {
   }
 
   getSelectedData(data: any) {
-    debugger;
     this.selectedData = data;
   }
 }

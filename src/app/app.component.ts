@@ -19,10 +19,7 @@ export class AppComponent {
 
   constructor(public router : Router, @Inject(DOCUMENT) private document: any){
     this.topMenuData = JSON.parse(`[
-    {
-      "label" : "Home",
-      "link" : "https://amexio.tech"
-    },
+   
     {
       "label" : "Features",
       "link" : "https://amexio.tech/features"
@@ -50,7 +47,32 @@ export class AppComponent {
 `);
 
 this.amexiotechmenus =  [
-
+  {
+    "text" : "Home",
+    "icon": "fa fa-home fa-fw fa-lg ",
+    "link" : 'http://amexio.org',
+    "submenus": [
+      {
+        "text": "Version 5.0",
+        "link": "https://amexio.org/api/v5.0/#/getting-started"
+      },{
+      "text": "Version 4.2",
+      "link": "https://amexio.org/api/v4.2/#/getting-started"
+    },{
+      "text": "Version 4.0",
+      "link": "https://amexio.org/api/v4.1/#/getting-started"
+    },{
+      "text": "Version 3.0",
+      "link": "https://amexio.org/api/v3.2/#/getting-started"
+    },{
+      "text": "Version 2.0",
+      "link": "https://amexio.org/showcaseapp/v2/index.html"
+    },{
+      "text": "Version 1.0",
+      "link": "https://amexio.org/showcaseapp/v1/index.html"
+    }
+    ]
+  },
   {
   "text": "Products",
   "icon": "fa fa-snowflake-o fa-fw",
@@ -68,7 +90,8 @@ this.amexiotechmenus =  [
     "link": "https://amexio.tech/amexio-plugins-1"
   }
 ]
-}, {
+},
+  {
   "text": "Start Using",
   "icon": "fa fa-television fa-fw",
   "submenus": [{
@@ -91,14 +114,16 @@ this.amexiotechmenus =  [
     "text": "License and Other Docs",
     "link": "https://amexio.tech/license-and-other-docs-1"
   }]
-}, {
+},
+  {
   "text": "Training",
   "icon": "fa fa-user fa-fw",
   "submenus": [{
     "text": "Amexio Training",
     "link": "http://metaarivu.com/amexio-training"
   }]
-}, {
+},
+  {
   "text": "Engage",
   "icon": "fa fa-envelope fa-fw",
   "submenus": [{
@@ -117,7 +142,8 @@ this.amexiotechmenus =  [
     "text": "GitHub - Source Code",
     "link": "https://github.com/meta-magic/amexio.github.io"
   }]
-}, {
+},
+  {
   "text": "About Us",
   "icon": "fa fa-address-book-o fa-fw",
   "submenus": [{

@@ -231,7 +231,6 @@ export class FilterTreeDemo {
   }
 
   getNodeData(data: any) {
-    debugger;
     this.selectedData = data;
   }
 }

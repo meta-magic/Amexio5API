@@ -5,6 +5,7 @@
       "duration": 592,
       "user": "Tommy Maintz",
       "iconCls": "task-folder",
+      "done":false,
       "expanded": false,
       "children": [
         {
@@ -12,13 +13,15 @@
           "duration": 35,
           "user": "Tommy Maintz",
           "iconCls": "task-folder",
+          "done":false,
           "children": [
             {
               "task": "Kitchen supplies",
               "duration": 25,
               "user": "Tommy Maintz",
               "leaf": true,
-              "iconCls": "task"
+              "iconCls": "task",
+              "done":false
             },
             {
               "task": "Groceries",
@@ -26,13 +29,14 @@
               "user": "Tommy Maintz",
               "leaf": true,
               "iconCls": "task",
-              "done": true
+              "done": false
             },
             {
               "task": "Cleaning supplies",
               "duration": 4,
               "user": "Tommy Maintz",
               "leaf": true,
+              "done":false,
               "iconCls": "task"
             },
             {
@@ -40,6 +44,7 @@
               "duration": 2,
               "user": "Tommy Maintz",
               "leaf": true,
+              "done":false,
               "iconCls": "task"
             }
           ]
@@ -50,33 +55,38 @@
           "user": "Tommy Maintz",
           "iconCls": "task-folder",
           "expanded": true,
+          "done":false,
           "children": [
             {
               "task": "Retile kitchen",
               "duration": 65,
               "user": "Tommy Maintz",
               "leaf": true,
-              "iconCls": "task"
+              "iconCls": "task",
+              "done":false
             },
             {
               "task": "Paint bedroom",
               "duration": 140,
               "user": "Tommy Maintz",
               "iconCls": "task-folder",
+              "done":false,
               "children": [
                 {
                   "task": "Ceiling",
                   "duration": 125,
                   "user": "Tommy Maintz",
                   "iconCls": "task",
-                  "leaf": true
+                  "leaf": true,
+                  "done":false
                 },
                 {
                   "task": "Walls",
                   "duration": 15,
                   "user": "Tommy Maintz",
                   "iconCls": "task",
-                  "leaf": true
+                  "leaf": true,
+                  "done":false
                 }
               ]
             },
@@ -86,7 +96,7 @@
               "user": "Tommy Maintz",
               "leaf": true,
               "iconCls": "task",
-              "done": true
+              "done": false
             },
             {
               "task": "Fix lights",
@@ -94,14 +104,15 @@
               "user": "Tommy Maintz",
               "leaf": true,
               "iconCls": "task",
-              "done": true
+              "done": false
             },
             {
               "task": "Reattach screen door",
               "duration": 2,
               "user": "Tommy Maintz",
               "leaf": true,
-              "iconCls": "task"
+              "iconCls": "task",
+              "done":false
             }
           ]
         }
@@ -112,33 +123,38 @@
       "duration": 203,
       "user": "Core Team",
       "iconCls": "task-folder",
+      "done":false,
       "children": [
         {
           "task": "Mac OSX",
           "duration": 75,
           "user": "Tommy Maintz",
           "iconCls": "task-folder",
+          "done":false,
           "children": [
             {
               "task": "FireFox",
               "duration": 25,
               "user": "Tommy Maintz",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             },
             {
               "task": "Safari",
               "duration": 25,
               "user": "Tommy Maintz",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             },
             {
               "task": "Chrome",
               "duration": 25,
               "user": "Tommy Maintz",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             }
           ]
         },
@@ -147,34 +163,39 @@
           "duration": 78,
           "user": "Darrell Meyer",
           "iconCls": "task-folder",
+          "done":false,
           "children": [
             {
               "task": "FireFox",
               "duration": 25,
               "user": "Darrell Meyer",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             },
             {
               "task": "Safari",
               "duration": 25,
               "user": "Darrell Meyer",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             },
             {
               "task": "Chrome",
               "duration": 25,
               "user": "Darrell Meyer",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             },
             {
               "task": "Internet Explorer",
               "duration": 3,
               "user": "Darrell Meyer",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             }
           ]
         },
@@ -183,20 +204,23 @@
           "duration": 50,
           "user": "Aaron Conran",
           "iconCls": "task-folder",
+          "done":false,
           "children": [
             {
               "task": "FireFox",
               "duration": 25,
               "user": "Aaron Conran",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             },
             {
               "task": "Chrome",
               "duration": 25,
               "user": "Aaron Conran",
               "iconCls": "task",
-              "leaf": true
+              "leaf": true,
+              "done":false
             }
           ]
         }
@@ -207,6 +231,7 @@
       "duration": 25,
       "user": "Aaron Conran",
       "leaf": true,
+      "done":false,
       "children1":[]
     }
   ]

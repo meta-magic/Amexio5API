@@ -235,7 +235,6 @@ export class HorizontalTreeDemo {
   }
 
   getNodeData(data: any) {
-    debugger;
     this.selectedData = data;
   }
 }

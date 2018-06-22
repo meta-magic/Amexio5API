@@ -25,9 +25,9 @@ export class ListBoxDemo {
           "email" : "XYZ@metamagic.in"
         },
         {
-          "name": "Pratik Kelwalkar",
-          "name_official": "Pratik Kelwalkar",
-          "profile": "pratik.jpg",
+          "name": "vrushabh Kelwalkar",
+          "name_official": "vrushabh Kelwalkar",
+          "profile": "vrushabh.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {
@@ -43,27 +43,27 @@ export class ListBoxDemo {
           "email" : "XYZ@metamagic.in"
         },
         {
-          "name": "Mahesh Pardeshi",
-          "name_official": "Mahesh Pardeshi",
-          "profile": "mahesh.jpg",
+          "name": "Samadhan Pardeshi",
+          "name_official": "Samadhan Pardeshi",
+          "profile": "Samadhan.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {
-          "name": "Ashutosh Jadhav",
-          "name_official": "Ashutosh Jadhav",
+          "name": "Sharad Jadhav",
+          "name_official": "Sharad Jadhav",
           "profile": "ahutosh.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {
-          "name": "Anagha Kulkarni",
-          "name_official": "Anagha Kulkarni",
-          "profile": "anagha.jpg",
+          "name": "payal Kulkarni",
+          "name_official": "payal Kulkarni",
+          "profile": "payal.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {
-          "name": "Amruta Abhyankar",
-          "name_official": "Amruta Abhyankar",
-          "profile": "amruta.jpg",
+          "name": "jayashree Abhyankar",
+          "name_official": "jayashree Abhyankar",
+          "profile": "jayashree.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {
