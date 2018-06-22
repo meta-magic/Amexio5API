@@ -69,7 +69,77 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
             <amexio-row>
               <amexio-column size="12">
                 <amexio-accordion>
-                  <amexio-accordion-tab header="Amexio 4.x - Angular 5" active="true">
+                  <amexio-accordion-tab header="Amexio 5.x - Angular 6" active="true">
+                    <amexio-tab-view>
+                      <amexio-tab title="Installation" active="true">
+                        <amexio-row>
+                          <amexio-column size="12">
+                            <b>To install this Amexio 5.x follow the steps given below:</b><br>
+                            <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
+                            Please make sure you have the latest version of
+                            <span
+                              style="font-weight: bold;color: #21c00f">NodeJS & npm Angular CLI</span>
+                            installed.<br>
+                            <b>NodeJS</b> version should be above <span style="font-weight: bold;color: #21c00f">8.9.0</span><br>
+                            <b>Angular CLI</b> version should be above <span style="font-weight: bold;color: #21c00f">6.0.0</span><br>
+                            
+                            
+                            <b>and then from your Angular AppModule:</b>
+                          </amexio-column>
+                        </amexio-row>
+                        <br>
+                        <amexio-row>
+                          <amexio-column size="12">
+                            <div style="height: 400px">
+                              <ng-container *ngIf="tsCode">
+                                <prism-block [code]="tsCode" [language]="'typescript'"></prism-block>
+                              </ng-container>
+                            </div>
+
+                          </amexio-column>
+                        </amexio-row>
+                      </amexio-tab>
+                      <amexio-tab title="Modules">
+                        <p>Amexio Library Consist of the following modules</p>
+                        <ng-container *ngIf="modulesData">
+                          <amexio-datagrid title="" [enable-column-fiter]="false"
+                                           [data]="modulesData"
+                                           [height]="300"
+                                           [enable-data-filter]="false">
+                            <amexio-data-table-column [width]="25" [data-index]="'name'" [data-type]="'string'"
+                                                      [hidden]="false"
+                                                      [text]="'Module Name'">
+                            </amexio-data-table-column>
+                            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                                      [hidden]="false"
+                                                      [text]="'Description'"></amexio-data-table-column>
+                          </amexio-datagrid>
+                        </ng-container>
+                        <br>
+
+                      </amexio-tab>
+                      <amexio-tab title="Services">
+                        <div style="height: 500px;overflow-x: auto;">
+
+
+                          <p>Amexio Provides the below services :</p>
+
+                          <h3>IconService</h3>
+                          <span style="font-weight: bolder">Change all amexio icons from font-awesome to material and vice versa in a single line of code by injecting the <code>IconLoaderService</code></span>
+                          <ng-container *ngIf="iconCode">
+                            <prism-block [code]="iconCode" [language]="'typescript'"></prism-block>
+                          </ng-container>
+                          <br>
+                          <h3>CommonDataService</h3>
+                          <span style="font-weight: bolder">By injecting <code>CommonDataService</code> into to module, you could easly fetch data from Rest</span>
+                          <ng-container *ngIf="dataCode">
+                            <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
+                          </ng-container>
+                        </div>
+                      </amexio-tab>
+                    </amexio-tab-view>
+                  </amexio-accordion-tab>
+                  <amexio-accordion-tab header="Amexio 4.x - Angular 5" >
                     <amexio-tab-view>
                       <amexio-tab title="Installation" active="true">
                         <amexio-row>
@@ -202,8 +272,14 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
                         [title]="'2. Themes'"
                         [expanded]="true">
             <p style="color: darkred"> Themes are available from Version 4 </p>
-            <span>To use the default include the <pre><code>../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
-              style="font-weight: bolder">styles</code> key</span>
+            
+            <p>To use the default include the 
+              <code style="font-weight: bold;color: #21c00f">../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss</code>
+               in your app, for</p>
+            
+            <b>Angular 6 :</b>  angular.json <code style="font-weight: bolder">styles</code> key.<br>
+            <b>Below angular 6 version :</b>  .angular-cli.json <code
+              style="font-weight: bolder">styles</code> key.
 
 
             <ng-container *ngIf="styleCode">
