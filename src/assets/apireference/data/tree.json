@@ -72,6 +72,18 @@
     {
       "name": "onTreeNodeChecked",
       "description":"It will gives whole tree data with checked flag status."
+    },
+    {
+      "name": "onDrag",
+      "description":"It is fired when an element or text selection is being dragged by the user."
+    },
+    {
+      "name": "dragover",
+      "description":"It is fired when an element or text selection is being dragged over a valid drop target"
+    },
+    {
+      "name": "onDrop",
+      "description":"It is fired when an element or text selection is dropped on a valid drop target."
     }
   ]
 }

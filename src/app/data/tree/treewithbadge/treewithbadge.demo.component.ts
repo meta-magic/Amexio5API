@@ -116,17 +116,18 @@ export class TreeWithBadgeDemo {
           {
             "text": "app",
             "expand": true,
+            "badge": 1,
             "children": [
               {
                 "leaf": true,
                 "text": "Application.js",
-                "badge": 4
               }
             ]
           },
           {
             "text": "button",
             "expand": true,
+            "badge": 3,
             "children": [
               {
                 "leaf": true,
@@ -145,16 +146,15 @@ export class TreeWithBadgeDemo {
           {
             "text": "container",
             "expand": true,
+            "badge": 3,
             "children": [
               {
                 "leaf": true,
                 "text": "ButtonGroup.js",
-                "badge": 5
               },
               {
                 "leaf": true,
                 "text": "Container.js",
-                "badge": 9
               },
               {
                 "leaf": true,
@@ -171,12 +171,12 @@ export class TreeWithBadgeDemo {
           {
             "text": "core",
             "expand": true,
-            "badge": 2,
+            "badge": 1,
             "children": [
               {
                 "text": "dom",
                 "expand": true,
-                "badge": 7,
+                "badge": 2,
                 "children": [
                   {
                     "leaf": true,
