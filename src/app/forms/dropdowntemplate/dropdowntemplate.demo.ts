@@ -40,7 +40,7 @@ import {HttpClient} from "@angular/common/http";
                       [value-field]="'id'"
                       (onSingleSelect)="getRowData($event)">
                       <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label>
+                      <amexio-label> 
                         <amexio-image [width]="100" [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
                       </amexio-label>&nbsp; &nbsp;
                       <amexio-label>{{row.name}}</amexio-label>
