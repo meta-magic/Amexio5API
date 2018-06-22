@@ -359,6 +359,7 @@
         {
           "text": "Grid",
           "icon": "fa fa-database fa-fw",
+          "badge": "3",
           "children": [
             {
               "text": "Simple",
@@ -419,6 +420,7 @@
           "text": "Tree",
           "icon": "fa fa-tree fa-fw",
           "link": "tree",
+          "badge": "2",
           "children": [
             {
               "text": "Simple",
