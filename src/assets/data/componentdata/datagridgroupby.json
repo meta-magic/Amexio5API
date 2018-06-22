@@ -48,13 +48,13 @@
     {
       "userId":"3",
       "jobTitle":"Developer",
-      "firstName":"Pratik",
+      "firstName":"vrushabh",
       "lastName":"Kelwalkar",
-      "preferredFullName":"Pratik Kelwalkar",
+      "preferredFullName":"vrushabh Kelwalkar",
       "employeeCode":"E3",
       "salary":1500000,
       "phoneNumber":"8851855577",
-      "emailAddress":"pratik.kelwalkar.com"
+      "emailAddress":"vrushabh.kelwalkar.com"
     },
     {
       "userId":"4",
@@ -70,24 +70,24 @@
     {
       "userId":"5",
       "jobTitle":"Developer",
-      "firstName":"Ashutosh",
+      "firstName":"Sharad",
       "lastName":"Jadhav",
       "salary":2000000,
-      "preferredFullName":"Ashutosh Jadhav",
+      "preferredFullName":"Sharad Jadhav",
       "employeeCode":"E5",
       "phoneNumber":"8888648444",
-      "emailAddress":"Ashutosh.jadhav.com"
+      "emailAddress":"Sharad.jadhav.com"
     },
     {
       "userId":"6",
       "jobTitle":"Developer",
-      "firstName":"Mahesh",
+      "firstName":"Samadhan",
       "lastName":"Pardeshi",
       "salary":2000000,
-      "preferredFullName":"Mahesh Pardeshi",
+      "preferredFullName":"Samadhan Pardeshi",
       "employeeCode":"E6",
       "phoneNumber":"8888648444",
-      "emailAddress":"Mahesh.Pardeshi.com"
+      "emailAddress":"Samadhan.Pardeshi.com"
     },
     {
       "userId":"7",
