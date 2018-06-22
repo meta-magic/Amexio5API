@@ -42,8 +42,10 @@ import {HttpClient} from "@angular/common/http";
           <span  style="display: flex;
               justify-content: center;">
               <amexio-checkbox   
-                  (onSelection)="onCheckClick($event)">
+                  (onSelection)="onCheckClick(row)" [(ngModel)]="row.done">
+                  
               </amexio-checkbox>
+              
             </span>
               </ng-template>
               </amexio-data-table-column>
@@ -146,6 +148,7 @@ export class TreeDataTemplateDemo {
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
+  checkFlag:boolean;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -193,6 +196,24 @@ export class TreeDataTemplateDemo {
   getSelectedData(data: any) {
     this.selectedData = data;
   }
+
+  onCheckClick(data:any){
+if(data.hasOwnProperty('children') && data.children.length>0){
+  this.checkchild(data);
+}
 }
 
+
+checkchild(data:any){  
+data.children.forEach((element:any) => {
+   element.done = !element.done;
+  if(element.hasOwnProperty('children') && element.children.length>0){
+    this.checkchild(element);
+  }
+});
+}
+
+
+
+}
 

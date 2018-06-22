@@ -5,9 +5,15 @@
     <amexio-data-table-column [data-index]="'user'" [data-type]="'string'" [hidden]="false" [text]="'User'"></amexio-data-table-column>
     <amexio-data-table-column [data-index]="'duration'" [data-type]="'number'" [hidden]="false" [text]="'Duration'"></amexio-data-table-column>
     <amexio-data-table-column [data-index]="'done'" [data-type]="'string'" [hidden]="false" [text]="'Done'">
+        <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+            <span style="padding-left:65px">{{column.text}} </span>
+        </ng-template>
         <ng-template #amexioBodyTmpl let-column let-row="row">
-            <amexio-checkbox  >
-            </amexio-checkbox>
+            <span style="display: flex;
+              justify-content: center;">
+                <amexio-checkbox (onSelection)="onCheckClick(row)" [(ngModel)]="row.done">
+                </amexio-checkbox>
+            </span>
         </ng-template>
     </amexio-data-table-column>
     <amexio-data-table-column [data-index]="'edit'" [data-type]="'string'" [hidden]="false" [text]="'Edit'">
