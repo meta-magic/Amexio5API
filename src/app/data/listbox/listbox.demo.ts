@@ -256,12 +256,7 @@ export class ListBoxDemo {
           "profile": "sagar.jpg",
           "email" : "XYZ@metamagic.in"
         },
-        {
-          "name": "Amruta Abhyankar",
-          "name_official": "Amruta Abhyankar",
-          "profile": "amruta.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
+      
         {
           "name": "Rashmi Thakkar",
           "name_official": "Rashmi Thakkar",

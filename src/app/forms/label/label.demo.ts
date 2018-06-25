@@ -21,7 +21,7 @@ import {HttpClient} from "@angular/common/http";
             <amexio-label  size="large">This is large amexio label</amexio-label>
           </amexio-column>
           <amexio-column [size]="4">
-            <amexio-label size="large-bold">This is large-bold amexio label</amexio-label>
+            <amexio-label size="large-bold">This is large-bold amexio label </amexio-label>
           </amexio-column>
           <amexio-column [size]="4">    
             <amexio-label size="medium-bold">This is medium-bold amexio label</amexio-label>
@@ -157,7 +157,15 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-
+            
+            <amexio-datagrid title="Events" [http-method]="'get'"
+                             [http-url]="'assets/apireference/forms/label.json'" [data-reader]="'events'"
+                             [enable-data-filter]="false">
+              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
