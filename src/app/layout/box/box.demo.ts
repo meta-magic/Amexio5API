@@ -62,8 +62,8 @@ import {HttpClient} from "@angular/common/http";
             </amexio-box>        
             </amexio-column>
               <amexio-column [size]="4">
-              <amexio-box border-color ="green" border="bottom" padding="true" background-color="yellow">
-              <amexio-label >This is small-bold amexio label with background-color green</amexio-label>
+              <amexio-box border="bottom" padding="true"  >
+              <amexio-label style="color:green">This is small-bold amexio label with background-color green</amexio-label>
               </amexio-box></amexio-column>
               </amexio-row>
               <br />
