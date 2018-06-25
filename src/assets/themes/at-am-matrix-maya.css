@@ -861,21 +861,13 @@ button {
 .datetimepicker:disabled {
   cursor: not-allowed; }
 
-.date1 {
+.invaliddays {
+  opacity: .40;
   pointer-events: none; }
-<<<<<<< HEAD
 
 .disabled {
   opacity: .40;
   pointer-events: none; }
-=======
-  .date1 .invaliddays {
-    opacity: .40;
-    cursor: not-allowed; }
-  .date1 .disabled {
-    opacity: .40;
-    cursor: not-allowed; }
->>>>>>> deeee67f006318b45bca210cd25ed87e291bb6a7
 
 /****************************************************************************
     Component Name : Dropdown
@@ -3425,8 +3417,12 @@ header .billboard .content-button {
 
 .tree-node-label {
   white-space: nowrap;
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
   cursor: pointer; }
+
+.tree-node-label-hover {
+  width: 100%; }
 
 .tree-badge {
   margin-left: 10px;
