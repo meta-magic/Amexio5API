@@ -24,7 +24,8 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-window 
                [body-height]="40" 
                [(show)]="showBasicWindow" 
-               [close-on-escape]="true" 
+               [close-on-escape]="true"
+               [material-design]="false"
                [footer]="true"
                [vertical-position]="'bottom'"
                 [horizontal-position]="'right'">
@@ -37,6 +38,7 @@ import {HttpClient} from "@angular/common/http";
                        <amexio-text-input [field-label]="'Name'" name="country"
                                           [place-holder]="'Enter name'"
                                           [enable-popover]="true"
+                                         
                                           [icon-feedback]="true"
                                           [allow-blank]="false" [error-msg]="'Please enter name'"
                                           [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"

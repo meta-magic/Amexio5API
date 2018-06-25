@@ -18,8 +18,8 @@ import {HttpClient} from "@angular/common/http";
             <amexio-row>
               <amexio-column [size]="4">
                 <amexio-button type="primary" (onClick)="toggleConfirm()" label="Confirm"></amexio-button> 
-                <amexio-dialogue [(show)]="confirmdialogue"  [button-size]="'medium'" [title]="'Confirm'" [message]="'Are you sure ?'"
-                               [message-type]="'confirm'" [button-type]="'confirm'">
+                <amexio-dialogue [(show)]="confirmdialogue"  [button-size]="'medium'"   [material-design]="false" [title]="'Confirm'" [message]="'Are you sure ?'"
+                               [message-type]="'confirm'" >
                 </amexio-dialogue>
               </amexio-column>
              <amexio-column [size]="4">
