@@ -130,7 +130,8 @@ import {HttpClient} from "@angular/common/http";
                                     
                  </amexio-body>
                  <amexio-action>
-                   <amexio-button (onClick)="showBasicWindow = false" label="Close"></amexio-button>
+                   <amexio-button [type]= "'default'"(onClick)="showBasicWindow = false" label="Cancel"></amexio-button>
+                   <amexio-button [type]="'theme-color'" (onClick)="showBasicWindow = false" label="Save"></amexio-button>
                  </amexio-action>
                 
                </amexio-window>
