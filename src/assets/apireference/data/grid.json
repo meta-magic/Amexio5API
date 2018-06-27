@@ -25,6 +25,14 @@
 
     },
     {
+      "name": "sort",
+      "type": "boolean",
+      "default": "true",
+      "description":"Set column Sortable.",
+      "version": "4.2 onwards"
+
+    },
+    {
       "name": "data-reader",
       "type": "string",
       "default": "",
