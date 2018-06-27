@@ -202,7 +202,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
                         [title]="'2. Themes'"
                         [expanded]="true">
             <p style="color: darkred"> Themes are available from Version 4 </p>
-            <span>To use the default include the <pre><code>../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
+            <span>To use the default include the <pre><code>../node_modules/amexio-ng-extensions/styles/css/at-md-blue.css</code></pre>in your app .angular-cli.json <code
               style="font-weight: bolder">styles</code> key</span>
 
 

@@ -19,7 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss"
+        "../node_modules/amexio-ng-extensions/styles/css/at-md-blue.css"
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
