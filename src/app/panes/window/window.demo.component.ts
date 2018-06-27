@@ -27,8 +27,8 @@ import {HttpClient} from "@angular/common/http";
                [close-on-escape]="true"
                [material-design]="false"
                [footer]="true"
-               [vertical-position]="'bottom'"
-                [horizontal-position]="'right'">
+               [vertical-position]="'top'"
+                [horizontal-position]="'center'">
                  <amexio-header>
                   Employee Form
                  </amexio-header>

@@ -16,15 +16,15 @@ import {HttpClient} from "@angular/common/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column [size]="4">
+              <amexio-column [size]="4" >
                 <amexio-button type="primary" (onClick)="toggleConfirm()" label="Confirm"></amexio-button> 
-                <amexio-dialogue [(show)]="confirmdialogue"  [button-size]="'medium'"   [material-design]="false" [title]="'Confirm'" [message]="'Are you sure ?'"
+                <amexio-dialogue  [(show)]="confirmdialogue"  [button-size]="'medium'"  [material-design]="true" [title]="'Confirm'" [message]="'Are you sure ?'"
                                [message-type]="'confirm'" >
                 </amexio-dialogue>
               </amexio-column>
              <amexio-column [size]="4">
                 <amexio-button type="danger" (onClick)="toggleError()" label="Error"></amexio-button>
-                 <amexio-dialogue [(show)]="errordialogue"  [close-on-escape]="true"  [message]="'Error Occurred.'" [primary-action-label]="'Ok'"
+                 <amexio-dialogue [(show)]="errordialogue"  [close-on-escape]="true"  [material-design]="true" [message]="'Error Occurred.'" [primary-action-label]="'Ok'"
                                [title]="'Error'" [message-type]="'error'" [type]="'alert'">
                               
                 </amexio-dialogue>

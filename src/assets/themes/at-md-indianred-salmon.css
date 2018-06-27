@@ -828,6 +828,24 @@ button {
     .datetimepicker .days .currentMonth {
       font-weight: bold; }
 
+.datetimepicker1 {
+  background: #ffffff; }
+  .datetimepicker1 .datetimepickertopbar {
+    background: #ff7a6b; }
+    .datetimepicker1 .datetimepickertopbar ul li {
+      color: #220501; }
+  .datetimepicker1 .days {
+    background: #ffffff; }
+    .datetimepicker1 .days li {
+      color: #a36962; }
+    .datetimepicker1 .days li:hover {
+      color: #ff7a6b; }
+    .datetimepicker1 .days .active {
+      background: #ff7a6b;
+      color: #cd5c5c; }
+    .datetimepicker1 .days .currentMonth {
+      font-weight: bold; }
+
 .datetimepicker-up {
   bottom: 100%; }
 
@@ -898,6 +916,64 @@ button {
       padding-top: 1%;
       padding-left: 42%; }
 
+.datetimepicker1 {
+  display: block;
+  border: 1px solid #ced4da;
+  position: relative;
+  box-shadow: 0 1px 3px 0 #ced4da;
+  z-index: 3;
+  width: 290px; }
+  .datetimepicker1 .datetimepickertopbar {
+    padding: 10px 25px;
+    text-align: center; }
+    .datetimepicker1 .datetimepickertopbar .title {
+      font-size: 18px;
+      cursor: pointer; }
+    .datetimepicker1 .datetimepickertopbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .datetimepicker1 .datetimepickertopbar ul li {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    .datetimepicker1 .datetimepickertopbar .prev {
+      float: left;
+      padding-top: 10px;
+      cursor: pointer; }
+    .datetimepicker1 .datetimepickertopbar .next {
+      float: right;
+      padding-top: 10px;
+      cursor: pointer; }
+  .datetimepicker1 .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none; }
+    .datetimepicker1 .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      text-align: center; }
+  .datetimepicker1 .days {
+    padding: 10px 0;
+    margin: 0;
+    cursor: pointer;
+    list-style: none; }
+    .datetimepicker1 .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      height: 20px;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 12px;
+      cursor: pointer; }
+    .datetimepicker1 .days .active {
+      border-radius: 135px;
+      padding: 5px; }
+    .datetimepicker1 .days .date-today {
+      padding-top: 1%;
+      padding-left: 42%; }
+
 .datetimepicker-up {
   bottom: 100%; }
 
@@ -906,11 +982,11 @@ button {
 
 .invaliddays {
   opacity: .40;
-  pointer-events: none; }
+  cursor: not-allowed; }
 
 .disabled {
   opacity: .40;
-  pointer-events: none; }
+  cursor: not-allowed; }
 
 /****************************************************************************
     Component Name : Dropdown
@@ -4842,6 +4918,7 @@ verticalalign-tableft {
   position: absolute;
   margin: auto;
   padding: 0px;
+  border-radius: .3rem;
   border: 1px solid #888;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -4856,10 +4933,12 @@ verticalalign-tableft {
   top: 0% !important;
   left: 0% !important; }
 
-.modal-window-material {
+.window-material-design-header {
   display: flex;
   border-bottom: 1px solid #ced4da;
   font-weight: 300;
+  border-radius: .3rem;
+  font-size: 20px;
   text-transform: capitalize; }
 
 .modal-window-header {
@@ -4884,6 +4963,13 @@ verticalalign-tableft {
 .modal-window-middle::-webkit-scrollbar {
   width: 6px; }
 
+.window-material-design-footer {
+  display: flex;
+  border-top: 1px solid #eceeef;
+  padding-right: 16px;
+  background-color: white;
+  border-radius: 0 0 .3rem .3rem; }
+
 .modal-window-footer {
   display: flex;
   border-top: 1px solid #ced4da; }
@@ -4894,6 +4980,11 @@ verticalalign-tableft {
 
 .modal-window-table .tablerow {
   display: table-row; }
+
+.window-material-design-header .modal-window-table .tablerow .tablecol {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 15px; }
 
 .modal-window-table .tablerow .tablecol {
   display: table-cell;
@@ -4983,6 +5074,7 @@ verticalalign-tableft {
   padding: 0px;
   width: 80%;
   height: 80%;
+  border-radius: .3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .dialogue-min {
@@ -4993,10 +5085,13 @@ verticalalign-tableft {
 
 .dialogue-material-design {
   display: flex;
-  border-bottom: 1px solid #ced4da;
+  border-radius: .3rem;
   font-size: 20px;
   font-weight: 300;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  color: black;
+  padding: 10px;
+  border-bottom: 1px solid #eceeef; }
 
 .dialogue-header {
   display: flex;
@@ -5006,6 +5101,8 @@ verticalalign-tableft {
   text-transform: capitalize; }
 
 .dialogue-middle {
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -5015,9 +5112,24 @@ verticalalign-tableft {
   overflow-y: hidden;
   overflow-x: hidden; }
 
+.dialogue-material-design-footer {
+  display: flex;
+  border-top: 1px solid #eceeef;
+  padding: 5px; }
+  .dialogue-material-design-footer .button-transparent {
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 1rem; }
+  .dialogue-material-design-footer .custom-btn .button-text {
+    font-size: 1rem;
+    color: blue; }
+
 .dialogue-footer {
   display: flex;
   border-top: 1px solid #ced4da; }
+  .dialogue-footer .button-transparent {
+    border: none !important;
+    box-shadow: none !important; }
 
 .dialogue-message {
   display: flex;
@@ -5036,6 +5148,11 @@ verticalalign-tableft {
 
 .dialogue-table .tablerow {
   display: table-row; }
+
+.dialogue-material-design .dialogue-table .tablerow .tablecol {
+  display: table-cell;
+  vertical-align: middle;
+  color: black; }
 
 .dialogue-table .tablerow .tablecol {
   display: table-cell;
