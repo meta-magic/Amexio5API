@@ -272,16 +272,13 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
                         [title]="'2. Themes'"
                         [expanded]="true">
             <p style="color: darkred"> Themes are available from Version 4 </p>
-            
-            <p>To use the default include the 
-              <code style="font-weight: bold;color: #21c00f">../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss</code>
-               in your app, for</p>
-            
-            <b>Angular 6 :</b>  angular.json <code style="font-weight: bolder">styles</code> key.<br>
-            <b>Below angular 6 version :</b>  .angular-cli.json <code
-              style="font-weight: bolder">styles</code> key.
 
+            <b>Angular 6 :</b> add <code style="font-weight: bold;color: #21c00f">node_modules/amexio-ng-extensions/styles/css/at-md-blue.css</code>
+           in angular.json <code style="font-weight: bolder">styles</code> key.<br>
 
+            <b>Below angular 6 version :</b> add <code style="font-weight: bold;color: #21c00f">../node_modules/amexio-ng-extensions/styles/css/at-md-blue.css</code>
+            in angular.json <code style="font-weight: bolder">styles</code> key.<br>
+           
             <ng-container *ngIf="styleCode">
               <div style="max-height: 300px;overflow-y: scroll;">
                 <prism-block [code]="styleCode" [language]="'json'"></prism-block>
