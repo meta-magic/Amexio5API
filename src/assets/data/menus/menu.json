@@ -456,6 +456,12 @@
               "badge": "N"
             },
             {
+              "text": "With Context Menu",
+              "icon": "fa fa-tree fa-fw",
+              "link": "context-menu-tree",
+              "badge": "N"
+            },
+            {
               "text": "Horizontal",
               "icon": "fa fa-tree fa-fw",
               "link": "horizontal-tree"

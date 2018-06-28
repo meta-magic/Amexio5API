@@ -298,6 +298,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'badge-tree', loadChildren: './data/tree/treewithbadge/treewithbadge.demo.module#TreeWithBadgeDemoModule'
   },
   {
+    path: 'context-menu-tree', loadChildren: './data/tree/contextmenutree/contextmenutree.demo.module#ContextMenuTreeDemoModule'
+  },
+  {
     path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
   },
 /*Progress bar*/

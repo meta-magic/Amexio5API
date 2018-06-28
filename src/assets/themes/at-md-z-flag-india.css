@@ -828,6 +828,24 @@ button {
     .datetimepicker .days .currentMonth {
       font-weight: bold; }
 
+.datetimepicker1 {
+  background: #ffffff; }
+  .datetimepicker1 .datetimepickertopbar {
+    background: #6bff6b; }
+    .datetimepicker1 .datetimepickertopbar ul li {
+      color: #ebffeb; }
+  .datetimepicker1 .days {
+    background: #ffffff; }
+    .datetimepicker1 .days li {
+      color: #62a362; }
+    .datetimepicker1 .days li:hover {
+      color: #6bff6b; }
+    .datetimepicker1 .days .active {
+      background: #6bff6b;
+      color: #ff8000; }
+    .datetimepicker1 .days .currentMonth {
+      font-weight: bold; }
+
 .datetimepicker-up {
   bottom: 100%; }
 
@@ -898,6 +916,64 @@ button {
       padding-top: 1%;
       padding-left: 42%; }
 
+.datetimepicker1 {
+  display: block;
+  border: 1px solid #ced4da;
+  position: relative;
+  box-shadow: 0 1px 3px 0 #ced4da;
+  z-index: 3;
+  width: 290px; }
+  .datetimepicker1 .datetimepickertopbar {
+    padding: 10px 25px;
+    text-align: center; }
+    .datetimepicker1 .datetimepickertopbar .title {
+      font-size: 18px;
+      cursor: pointer; }
+    .datetimepicker1 .datetimepickertopbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .datetimepicker1 .datetimepickertopbar ul li {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    .datetimepicker1 .datetimepickertopbar .prev {
+      float: left;
+      padding-top: 10px;
+      cursor: pointer; }
+    .datetimepicker1 .datetimepickertopbar .next {
+      float: right;
+      padding-top: 10px;
+      cursor: pointer; }
+  .datetimepicker1 .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none; }
+    .datetimepicker1 .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      text-align: center; }
+  .datetimepicker1 .days {
+    padding: 10px 0;
+    margin: 0;
+    cursor: pointer;
+    list-style: none; }
+    .datetimepicker1 .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      height: 20px;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 12px;
+      cursor: pointer; }
+    .datetimepicker1 .days .active {
+      border-radius: 135px;
+      padding: 5px; }
+    .datetimepicker1 .days .date-today {
+      padding-top: 1%;
+      padding-left: 42%; }
+
 .datetimepicker-up {
   bottom: 100%; }
 
@@ -906,11 +982,11 @@ button {
 
 .invaliddays {
   opacity: .40;
-  pointer-events: none; }
+  cursor: not-allowed; }
 
 .disabled {
   opacity: .40;
-  pointer-events: none; }
+  cursor: not-allowed; }
 
 /****************************************************************************
     Component Name : Dropdown
@@ -2564,7 +2640,8 @@ input:checked + .toggle-slider:before {
 
 .advancesearchbtn {
   height: 37px;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 /****************************************************************************
     Component Name : Enterprise Content
@@ -3416,6 +3493,21 @@ header .billboard .content-button {
   background-color: #008000;
   color: #ebffeb; }
 
+.context-menu-list li:hover {
+  background-color: #b8ffb8;
+  color: #005200; }
+
+.context-menu-list-items-selected {
+  background-color: #6bff6b !important;
+  color: #001f00; }
+
+.tree-node-label-selected {
+  background-color: #6bff6b;
+  color: #001f00; }
+
+.context-menu-separator {
+  border-bottom: 1px solid gray; }
+
 /** Treenode - Structure CSS **/
 .treeview {
   height: 100%;
@@ -3478,6 +3570,26 @@ header .billboard .content-button {
   white-space: nowrap;
   vertical-align: middle;
   border-radius: 10px; }
+
+.context-menu-list {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  min-width: 180px;
+  cursor: pointer;
+  height: 105px;
+  z-index: 1;
+  padding: 10px 0px;
+  overflow-y: auto;
+  background-color: white !important;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); }
+
+.context-menu-list .context-menu-list-items {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px !important;
+  padding: 5px;
+  display: block; }
 
 /****************************************************************************
     Component Name : Menubar
@@ -4797,6 +4909,11 @@ verticalalign-tableft {
 .modal-window-content {
   background-color: #ffffff; }
 
+.modal-window-material {
+  background-color: white;
+  font-size: 20px;
+  color: black; }
+
 .modal-window-header {
   background: #008000;
   font-size: 20px;
@@ -4815,7 +4932,7 @@ verticalalign-tableft {
   background-color: #008000; }
 
 .modal-window-footer {
-  background-color: #66ff66;
+  background-color: white;
   color: #000500; }
 
 /** window - Structure CSS **/
@@ -4849,6 +4966,12 @@ verticalalign-tableft {
   height: 100%;
   top: 0% !important;
   left: 0% !important; }
+
+.modal-window-material {
+  display: flex;
+  border-bottom: 1px solid #ced4da;
+  font-weight: 300;
+  text-transform: capitalize; }
 
 .modal-window-header {
   display: flex;
@@ -4922,6 +5045,10 @@ verticalalign-tableft {
 .dialogue-content {
   background-color: #ffffff; }
 
+.dialogue-material-design {
+  background-color: white;
+  color: black; }
+
 .dialogue-header {
   background: #008000;
   color: #121212; }
@@ -4974,6 +5101,13 @@ verticalalign-tableft {
 
 .dialogue-content > * {
   padding: 5px; }
+
+.dialogue-material-design {
+  display: flex;
+  border-bottom: 1px solid #ced4da;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize; }
 
 .dialogue-header {
   display: flex;
