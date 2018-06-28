@@ -16,127 +16,206 @@ import {HttpClient} from "@angular/common/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column size="12">
-                <amexio-row>
-                  <amexio-column [size]="4" >
+              <amexio-column size="6">
+                <amexio-card [header]="true">
+                  <amexio-header> Material Design Pattern</amexio-header>
+                  <amexio-body>
 
-                    <amexio-button type="primary" (onClick)="toggleConfirm('material')" label="Confirm"></amexio-button>
-                    <amexio-dialogue  [(show)]="confirmdialoguematerial"  [button-size]="'medium'"  [material-design]="true" [title]="'Confirm'" [message]="'Are you sure ?'"
-                                      [message-type]="'confirm'" >
-                    </amexio-dialogue>
-
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button type="danger" (onClick)="toggleError('material')" label="Error"></amexio-button>
-                    <amexio-dialogue [(show)]="errordialoguematerial"  [close-on-escape]="true"  [material-design]="true" [message]="'Error Occurred.'" [primary-action-label]="'Ok'"
-                                     [title]="'Error'" [message-type]="'error'" [type]="'alert'">
-
-                    </amexio-dialogue>
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button [type]="'warning'" (onClick)="toggleWarning('material')" label="Warning"></amexio-button>
-                    <amexio-dialogue [(show)]="warningdialoguematerial"  [material-design]="true"  [message]="'Data not found.'" [title]="'Warning'"
-                                     [message-type]="'warning'" [type]="'alert'">
-                    </amexio-dialogue>
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button type="primary" (onClick)="toggleHelp('material')" label="Help"></amexio-button>
-                    <amexio-dialogue [(show)]="helpdialoguematerial"  [material-design]="true" [title]="'Help'" [message]="'Check Server.'"
-                                     [message-type]="'help'" [type]="'alert'">
-                    </amexio-dialogue>
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button type="primary" (onClick)="toggleCustom('material')" label="Custom"></amexio-button>
-                    <amexio-dialogue [(show)]="customdialoguematerial"  [material-design]="true" [close-on-escape]="false" [custom]="true" [title]="'Custom dialogue'"
-                                     [type]="'confirm'">
-
-                      <amexio-body>
-                        <amexio-text-input field-label="Name" name="name"
-                                           place-holder="Enter name"
-                                           icon-feedback="true"
-                        ></amexio-text-input><br>
-                      </amexio-body>
-                      <amexio-action>
-                        <amexio-button type="primary" (onClick)="toggleCustom('material')" label="save"></amexio-button>
-                      </amexio-action>
-                    </amexio-dialogue>
                     <amexio-row>
-                      <amexio-column [size]="'12'">
-                        <amexio-label
-                          size="small">
-                          (Escape functionality is disabled)
-                        </amexio-label>
+
+                      <amexio-column [size]="6" >
+
+                        <amexio-button type="success" (onClick)="toggleConfirm('material')" label="Confirm"></amexio-button>
+
+                        <amexio-dialogue  [(show)]="confirmdialoguematerial"
+                                          [button-size]="'medium'"
+                                          [material-design]="true"
+                                          [title]="'Confirm'"
+                                          [message]="'Are you sure ?'"
+                                          [message-type]="'confirm'" >
+                        </amexio-dialogue>
+
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-button type="danger" (onClick)="toggleError('material')" label="Error"></amexio-button>
+
+                        <amexio-dialogue [(show)]="errordialoguematerial"
+                                         [close-on-escape]="true"
+                                         [material-design]="true"
+                                         [message]="'Error Occurred.'"
+                                         [primary-action-label]="'Ok'"
+                                         [title]="'Error'"
+                                         [message-type]="'error'"
+                                         [type]="'alert'">
+                        </amexio-dialogue>
+                      </amexio-column>
+
+                    </amexio-row>
+                    <amexio-row>
+
+                      <amexio-column [size]="6">
+                        <amexio-button [type]="'warning'" (onClick)="toggleWarning('material')" label="Warning"></amexio-button>
+
+                        <amexio-dialogue [(show)]="warningdialoguematerial"
+                                         [material-design]="true"
+                                         [message]="'Data not found.'"
+                                         [title]="'Warning'"
+                                         [message-type]="'warning'"
+                                         [type]="'alert'">
+                        </amexio-dialogue>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-button type="primary" (onClick)="toggleHelp('material')" label="Help"></amexio-button>
+
+                        <amexio-dialogue [(show)]="helpdialoguematerial"
+                                         [material-design]="true"
+                                         [title]="'Help'"
+                                         [message]="'Check Server.'"
+                                         [message-type]="'help'"
+                                         [type]="'alert'">
+                        </amexio-dialogue>
+                      </amexio-column>
+
+                    </amexio-row>
+                    <amexio-row>
+
+                      <amexio-column [size]="12">
+                        <amexio-button  type="primary" (onClick)="toggleCustom('material')" label="Custom"></amexio-button>
+                        <amexio-dialogue [(show)]="customdialoguematerial"
+                                         [material-design]="true"
+                                         [close-on-escape]="false"
+                                         [custom]="true"
+                                         [title]="'Custom dialogue'"
+                                         [type]="'confirm'">
+                          <amexio-body>
+                            <amexio-text-input field-label="Name" name="name"
+                                               place-holder="Enter name"
+                                               icon-feedback="true">
+                            </amexio-text-input>
+                          </amexio-body>
+                          <amexio-action>
+                            <amexio-button type="primary"
+                                           (onClick)="toggleCustom('material')"
+                                           label="save">
+                            </amexio-button>
+                          </amexio-action>
+                        </amexio-dialogue>
+                        <amexio-row>
+                          <amexio-column [size]="'12'">
+                            <amexio-label
+                              size="small">
+                              (Escape functionality is disabled)
+                            </amexio-label>
+                          </amexio-column>
+                        </amexio-row>
+
+                      </amexio-column>
+
+                    </amexio-row>
+
+                  </amexio-body>
+                </amexio-card>
+
+              </amexio-column>
+
+
+              <amexio-column size="6">
+                <amexio-card [header]="true">
+                  <amexio-header> Non Material Design Pattern</amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column [size]="6" >
+
+                        <amexio-button type="success" (onClick)="toggleConfirm('nonmaterial')" label="Confirm"></amexio-button>
+                        <amexio-dialogue  [(show)]="confirmdialoguenonmaterial"  [button-size]="'medium'"  [material-design]="false" [title]="'Confirm'" [message]="'Are you sure ?'"
+                                          [message-type]="'confirm'" >
+                        </amexio-dialogue>
+
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-button type="danger" (onClick)="toggleError('nonmaterial')" label="Error"></amexio-button>
+                        <amexio-dialogue [(show)]="errordialoguenonmaterial"
+                                         [close-on-escape]="true"
+                                         [material-design]="false"
+                                         [message]="'Error Occurred.'"
+                                         [primary-action-label]="'Ok'"
+                                         [title]="'Error'"
+                                         [message-type]="'error'"
+                                         [type]="'alert'">
+                        </amexio-dialogue>
                       </amexio-column>
                     </amexio-row>
 
-                  </amexio-column>
-
-
-                  
-
-                </amexio-row>
-                <amexio-row>
-                  <amexio-column [size]="4" >
-
-                    <amexio-button type="primary" (onClick)="toggleConfirm('nonmaterial')" label="Confirm"></amexio-button>
-                    <amexio-dialogue  [(show)]="confirmdialoguenonmaterial"  [button-size]="'medium'"  [material-design]="false" [title]="'Confirm'" [message]="'Are you sure ?'"
-                                      [message-type]="'confirm'" >
-                    </amexio-dialogue>
-
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button type="danger" (onClick)="toggleError('nonmaterial')" label="Error"></amexio-button>
-                    <amexio-dialogue [(show)]="errordialoguenonmaterial"  [close-on-escape]="true"  [material-design]="false" [message]="'Error Occurred.'" [primary-action-label]="'Ok'"
-                                     [title]="'Error'" [message-type]="'error'" [type]="'alert'">
-
-                    </amexio-dialogue>
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button [type]="'warning'" (onClick)="toggleWarning('nonmaterial')" label="Warning"></amexio-button>
-                    <amexio-dialogue [(show)]="warningdialoguenonmaterial"  [material-design]="false"  [message]="'Data not found.'" [title]="'Warning'"
-                                     [message-type]="'warning'" [type]="'alert'">
-                    </amexio-dialogue>
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button type="primary" (onClick)="toggleHelp('nonmaterial')" label="Help"></amexio-button>
-                    <amexio-dialogue [(show)]="helpdialoguenonmaterial"  [material-design]="false" [title]="'Help'" [message]="'Check Server.'"
-                                     [message-type]="'help'" [type]="'alert'">
-                    </amexio-dialogue>
-                  </amexio-column>
-                  <amexio-column [size]="4">
-                    <amexio-button type="primary" (onClick)="toggleCustom('nonmaterial')" label="Custom"></amexio-button>
-                    <amexio-dialogue [(show)]="customdialoguenonmaterial"  [material-design]="false" [close-on-escape]="false" [custom]="true" [title]="'Custom dialogue'"
-                                     [type]="'confirm'">
-
-                      <amexio-body>
-                        <amexio-text-input field-label="Name" name="name"
-                                           place-holder="Enter name"
-                                           icon-feedback="true"
-                        ></amexio-text-input><br>
-                      </amexio-body>
-                      <amexio-action>
-                        <amexio-button type="primary" (onClick)="toggleCustom('nonmaterial')" label="save"></amexio-button>
-                      </amexio-action>
-                    </amexio-dialogue>
                     <amexio-row>
-                      <amexio-column [size]="'12'">
-                        <amexio-label
-                          size="small">
-                          (Escape functionality is disabled)
-                        </amexio-label>
+                      <amexio-column [size]="6">
+                        <amexio-button [type]="'warning'" (onClick)="toggleWarning('nonmaterial')" label="Warning"></amexio-button>
+                        <amexio-dialogue [(show)]="warningdialoguenonmaterial"
+                                         [material-design]="false"
+                                         [message]="'Data not found.'"
+                                         [title]="'Warning'"
+                                         [message-type]="'warning'"
+                                         [type]="'alert'">
+                        </amexio-dialogue>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-button type="primary" (onClick)="toggleHelp('nonmaterial')" label="Help"></amexio-button>
+                        <amexio-dialogue [(show)]="helpdialoguenonmaterial"
+                                         [material-design]="false"
+                                         [title]="'Help'"
+                                         [message]="'Check Server.'"
+                                         [message-type]="'help'"
+                                         [type]="'alert'">
+                        </amexio-dialogue>
                       </amexio-column>
                     </amexio-row>
 
-                  </amexio-column>
+                    <amexio-row>
+                      <amexio-column [size]="12">
+                        <amexio-button type="primary" (onClick)="toggleCustom('nonmaterial')" label="Custom"></amexio-button>
 
-                </amexio-row>
+                        <amexio-dialogue [(show)]="customdialoguenonmaterial"
+                                         [material-design]="false"
+                                         [close-on-escape]="false"
+                                         [custom]="true"
+                                         [title]="'Custom dialogue'"
+                                         [type]="'confirm'">
+                          <amexio-body>
+                            <amexio-text-input field-label="Name" name="name"
+                                               place-holder="Enter name"
+                                               icon-feedback="true"
+                            ></amexio-text-input>
+                          </amexio-body>
+                          <amexio-action>
+                            <amexio-button type="primary"
+                                           (onClick)="toggleCustom('nonmaterial')"
+                                           label="save">
+                            </amexio-button>
+                          </amexio-action>
+                        </amexio-dialogue>
+
+                        <amexio-row>
+                          <amexio-column [size]="'12'">
+                            <amexio-label
+                              size="small">
+                              (Escape functionality is disabled)
+                            </amexio-label>
+                          </amexio-column>
+                        </amexio-row>
+
+                      </amexio-column>
+                    </amexio-row>
+
+                  </amexio-body>
+                </amexio-card>
+
+
               </amexio-column>
             </amexio-row>
-          
-            
-              
-            
-            
+
+
+
+
+
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-dialogue>" [enable-column-fiter]="false"
@@ -166,23 +245,23 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
-            <amexio-vertical-tab-view>
-              <amexio-tab title="HTML" [active]="true">
-                <ng-container *ngIf="htmlCode">
-                  <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                  <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-              <amexio-tab title="Type Script">
-                <ng-container *ngIf="typeScriptCode">
-                  <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-            </amexio-vertical-tab-view>
+              <amexio-vertical-tab-view>
+                <amexio-tab title="HTML" [active]="true">
+                  <ng-container *ngIf="htmlCode">
+                    <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
+                    <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+                  </ng-container>
+                </amexio-tab>
+                <amexio-tab title="Type Script">
+                  <ng-container *ngIf="typeScriptCode">
+                    <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+                  </ng-container>
+                </amexio-tab>
+              </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
           <amexio-tab title="Live">
-          <p align="center">Amexio Sandbox</p>
+            <p align="center">Amexio Sandbox</p>
             <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dialogue?embed=1&file=app/panels/dialogue/dialogue.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
@@ -223,7 +302,7 @@ export class DialogueDemoComponent {
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
-   }
+  }
 
   getDta() {
     this.asyncFlag = true;
@@ -270,7 +349,7 @@ export class DialogueDemoComponent {
     if(data=='material'){
       this.confirmdialoguematerial = !this.confirmdialoguematerial;
     }
-    else if(data=='nonmaterial'){
+    else {
       this.confirmdialoguenonmaterial = !this.confirmdialoguenonmaterial;
 
     }
@@ -280,7 +359,7 @@ export class DialogueDemoComponent {
     if(data=='material'){
       this.errordialoguematerial = !this.errordialoguematerial;
     }
-    else if(data=='nonmaterial'){
+    else {
       this.errordialoguenonmaterial = !this.errordialoguenonmaterial;
 
     }
@@ -291,7 +370,7 @@ export class DialogueDemoComponent {
     if(data=='material'){
       this.warningdialoguematerial = !this.warningdialoguematerial;
     }
-    else if(data=='nonmaterial'){
+    else {
       this.warningdialoguenonmaterial = !this.warningdialoguenonmaterial;
 
     }
@@ -301,7 +380,7 @@ export class DialogueDemoComponent {
     if(data=='material'){
       this.helpdialoguematerial = !this.helpdialoguematerial;
     }
-    else if(data=='nonmaterial'){
+    else {
       this.helpdialoguenonmaterial = !this.helpdialoguenonmaterial;
 
     }
@@ -312,7 +391,7 @@ export class DialogueDemoComponent {
     if(data=='material'){
       this.customdialoguematerial = !this.customdialoguematerial;
     }
-    else if(data=='nonmaterial'){
+    else {
       this.customdialoguenonmaterial = !this.customdialoguenonmaterial;
 
     }

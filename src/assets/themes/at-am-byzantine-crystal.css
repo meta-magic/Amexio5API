@@ -5096,6 +5096,7 @@ verticalalign-tableft {
   padding-right: 16px;
   height: 80%;
   overflow-y: auto;
+  border-radius: .3rem;
   overflow-x: hidden;
   background-color: white; }
 
@@ -5130,7 +5131,8 @@ verticalalign-tableft {
 
 .modal-window-table .tablerow .tablecol {
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  padding-bottom: 15px; }
 
 .modal-window-footer-max {
   bottom: 0px;
@@ -5237,6 +5239,7 @@ verticalalign-tableft {
 
 .dialogue-header {
   display: flex;
+  padding: 10px;
   /* padding: 10px 24px;*/
   font-size: 20px;
   font-weight: 300;
@@ -5268,6 +5271,7 @@ verticalalign-tableft {
 
 .dialogue-footer {
   display: flex;
+  padding: 5px;
   border-top: 3px solid #70196F; }
   .dialogue-footer .button-transparent {
     border: none !important;
