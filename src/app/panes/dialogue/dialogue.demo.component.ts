@@ -297,7 +297,6 @@ export class DialogueDemoComponent {
     }
   }
 
-  helpdialoguenonmaterial
   toggleHelp(data:any) {
     if(data=='material'){
       this.helpdialoguematerial = !this.helpdialoguematerial;
