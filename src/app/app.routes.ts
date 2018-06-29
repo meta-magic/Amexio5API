@@ -268,6 +268,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'scroll-grid', loadChildren: './data/gridwithscroll/gridwithscroll.demo.module#GridWithScrollDemoModule'
   },
   {
+    path: 'context-menu-grid', loadChildren: './data/gridwithcontextmenu/gridwithcontextmenu.demo.module#GridWithScrollDemoModule'
+  },
+  {
     path: 'global-filter-grid', loadChildren: './data/globalfiltergrid/globalfilter.demo.module#GlobalFilterDemoModule'
   },
   {

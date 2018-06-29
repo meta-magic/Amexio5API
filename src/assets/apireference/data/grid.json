@@ -119,6 +119,13 @@
       "description":"Set true to filter globally",
       "version": "4.2.0 onwards"
 
+    },
+    {
+      "name": "context-menu",
+      "version": "5.0.1 onwards",
+      "type": "any[]",
+      "default": "",
+      "description":"Context Menu provides the list of menus on right click (for Array structure: refer typescript code in source tab)"
     }
   ],
   "events":[
@@ -133,6 +140,10 @@
     {
       "name": "onHeaderClick",
       "description":"It will gives you click event and column info."
+    },
+    {
+      "name": "rightClick",
+      "description":"It is fired when right-hand button of a mouse is pressed"
     }
   ],
   "columnProperties":[
@@ -174,6 +185,13 @@
       "default": "",
       "version": "4.0.0 onwards",
       "description":"Custom width for each column.Width must be in % but no need to mention %."
+    },
+    {
+      "name": "context-menu",
+      "version": "5.0.1 onwards",
+      "type": "any[]",
+      "default": "",
+      "description":"Context Menu provides the list of menus on right click (for Array structure: refer typescript code in source tab)"
     }
   ]
 }

@@ -405,6 +405,12 @@
               "link": "scroll-grid"
             },
             {
+              "text": "Grid with Context menu",
+              "icon": "fa fa-database fa-fw",
+              "link": "context-menu-grid",
+              "badge": "N"
+            },
+            {
               "text": "Tree Data Grid",
               "icon": "fa fa-database fa-fw",
               "link": "tree-data-grid"

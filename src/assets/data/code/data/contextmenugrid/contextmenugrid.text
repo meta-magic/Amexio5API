@@ -1,0 +1,28 @@
+export class ContextMenuGridDemo {
+
+  contextMenuColData: any[];
+  contextMenuRowData: any[];
+
+ constructor(private http: HttpClient) {
+    this.contextMenuColData =
+    [{"text":"Add State",
+      "icon":"fa fa-plus",
+      "disabled":true},
+      {"text":"Edit",
+      "icon":"",
+      "seperator":true}
+     ,{"text":"Delete",
+     "icon":"fa fa-close"
+     }];
+
+   this.contextMenuRowData = 
+    [{"text":"Reload",
+    "icon":"fa fa-refresh",
+    "disabled":false},
+    {"text":"Save",
+    "icon":"",
+    "seperator":true},
+    {"text":"Delete",
+    "icon":"fa fa-close"}];
+  }
+}
