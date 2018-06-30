@@ -349,7 +349,7 @@
     },
     {
       "text": "Data",
-      "badge": "5",
+      "badge": "7",
       "icon": "fa fa-database fa-fw",
       "children": [
         {
@@ -360,7 +360,7 @@
         {
           "text": "Grid",
           "icon": "fa fa-database fa-fw",
-          "badge": "3",
+          "badge": "4",
           "children": [
             {
               "text": "Simple",
@@ -427,7 +427,7 @@
           "text": "Tree",
           "icon": "fa fa-tree fa-fw",
           "link": "tree",
-          "badge": "2",
+          "badge": "3",
           "children": [
             {
               "text": "Simple",
