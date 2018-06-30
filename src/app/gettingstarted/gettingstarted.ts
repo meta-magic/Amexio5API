@@ -16,10 +16,16 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <div align="center">
-            <a href="http://www.amexio.tech/">
-              <amexio-image [height] = "200" [width] ="150" path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
-            </a>
-            <br>
+          <div >
+          <a  href="http://www.amexio.tech/">
+            <amexio-image  [height] = "200" [width] ="150" path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
+          </a>
+          <iframe align="right" width="560" height="270" src="https://www.youtube.com/embed/videoseries?list=PLi505KVOMPrGRUgJF4C3QoXbrhFGEOI4j&hl=en_US" frameborder="0" allowfullscreen></iframe>
+          <br>
+          <br>
+          <br>
+          
+          </div>
             <h1>Amexio Angular EXtensions v5.0</h1>
                     <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
 
