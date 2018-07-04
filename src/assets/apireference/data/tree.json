@@ -94,7 +94,7 @@
     },
     {
       "name": "rightClick",
-      "description":"It is fired when right-hand button of a mouse is pressed"
+      "description":"It is fired when clicked on context menu, providing tree node data and selected context menu data."
     }
   ]
 }
