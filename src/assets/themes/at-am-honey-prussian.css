@@ -767,6 +767,20 @@ button {
     Version : Amexio v4.0 onwards
 *****************************************************************************/
 /** datetime - Visual CSS **/
+.datedropdown {
+  background: rgba(0, 43, 87, 0.7); }
+  .datedropdown .dropdownlist {
+    color: #02468D; }
+  .datedropdown li:hover {
+    color: #1FBCD2;
+    background: none;
+    width: 30px; }
+  .datedropdown .active {
+    background: #2c92fc;
+    color: #F3C22A; }
+  .datedropdown li {
+    color: #02468D; }
+
 .datetimepicker {
   background: rgba(0, 43, 87, 0.7); }
   .datetimepicker .datetimepickertopbar {
@@ -814,6 +828,16 @@ button {
   .datetimepicker .days .date-today {
     padding-top: 1%;
     padding-left: 36%; } }
+.dropspan2 {
+  border-color: #02468D; }
+
+.datedropbtn {
+  background-color: #02468D;
+  color: #F3C22A; }
+
+.change4 {
+  background-color: #2c92fc; }
+
 /** datetime - Structure CSS **/
 .datetimepicker {
   display: block;
@@ -876,7 +900,6 @@ button {
 .datetimepicker1 {
   display: block;
   border: 1px solid #F3C22A;
-  position: relative;
   box-shadow: 0 1px 3px 0 #F3C22A;
   z-index: 3;
   width: 290px; }
@@ -944,6 +967,79 @@ button {
 .disabled {
   opacity: .40;
   cursor: not-allowed; }
+
+.datedropdown {
+  display: block;
+  border: 1px solid #F3C22A;
+  box-shadow: 0 1px 3px 0 #F3C22A;
+  z-index: 3; }
+  .datedropdown li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer; }
+
+.dropdiv1 {
+  width: 100%; }
+
+.dropspan1 {
+  float: left;
+  width: 25%; }
+
+.dropul1 {
+  list-style-type: none;
+  -webkit-padding-start: 5px; }
+
+.dropspan2 {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #02468D; }
+
+.dropspan4 {
+  width: 25%;
+  display: table-row-group; }
+
+.dropul2 {
+  list-style-type: none;
+  -webkit-padding-start: 15px; }
+
+.dropiconpadding {
+  cursor: pointer;
+  -webkit-padding-start: 20px; }
+
+.btndiv1 {
+  position: relative;
+  bottom: 0; }
+
+.datedropbtn {
+  border: none;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+.dropbtnspan {
+  display: inline-flex;
+  padding-left: 105px; }
+
+.change4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30px; }
+
+.disablearrow {
+  opacity: .40;
+  cursor: not-allowed;
+  pointer-events: none; }
 
 /****************************************************************************
     Component Name : Dropdown
@@ -3574,7 +3670,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'north north north north north north' 'east center center center center west' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-N-E-C-W-S aside {
   border: 0px solid none; }
@@ -3584,7 +3681,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'north north north north north north' 'east center center center center center' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-N-E-C-S aside {
   border: 0px solid none; }
@@ -3594,7 +3692,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'north north north north north north' 'center center center center center west' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-N-C-W-S aside {
   border: 0px solid none; }
@@ -3604,7 +3703,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'east center center center center west' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-E-C-W-S aside {
   border: 0px solid none; }
@@ -3614,7 +3714,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'north north north north north north' 'center center center center center center' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-N-C-S aside {
   border: 0px solid none; }
@@ -3624,7 +3725,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'east center center center center center' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-E-C-S aside {
   border: 0px solid none; }
@@ -3634,7 +3736,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'center center center center center west' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-C-W-S aside {
   border: 0px solid none; }
@@ -3644,7 +3747,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'north north north north north north' 'center center center center center center';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-N-C aside {
   border: 0px solid none; }
@@ -3654,7 +3758,8 @@ header .billboard .content-button {
   display: grid;
   grid-template-areas: 'center center center center center center' 'south south south south south south';
   grid-gap: 2px;
-  padding: 2px; }
+  padding: 2px;
+  grid-template-columns: 1fr 1fr; }
 
 .borderlayout-container-C-S aside {
   border: 0px solid none; }
@@ -5094,6 +5199,7 @@ verticalalign-tableft {
   position: absolute;
   margin: auto;
   padding: 0px;
+  border-radius: .3rem;
   border: 1px solid #888;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -5108,10 +5214,12 @@ verticalalign-tableft {
   top: 0% !important;
   left: 0% !important; }
 
-.modal-window-material {
+.window-material-design-header {
   display: flex;
   border-bottom: 1px solid #F3C22A;
   font-weight: 300;
+  border-radius: .3rem;
+  font-size: 20px;
   text-transform: capitalize; }
 
 .modal-window-header {
@@ -5136,6 +5244,13 @@ verticalalign-tableft {
 .modal-window-middle::-webkit-scrollbar {
   width: 6px; }
 
+.window-material-design-footer {
+  display: flex;
+  border-top: 1px solid #eceeef;
+  padding-right: 16px;
+  background-color: white;
+  border-radius: 0 0 .3rem .3rem; }
+
 .modal-window-footer {
   display: flex;
   border-top: 1px solid #F3C22A; }
@@ -5146,6 +5261,11 @@ verticalalign-tableft {
 
 .modal-window-table .tablerow {
   display: table-row; }
+
+.window-material-design-header .modal-window-table .tablerow .tablecol {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 15px; }
 
 .modal-window-table .tablerow .tablecol {
   display: table-cell;
@@ -5235,6 +5355,7 @@ verticalalign-tableft {
   padding: 0px;
   width: 80%;
   height: 80%;
+  border-radius: .3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .dialogue-min {
@@ -5245,10 +5366,13 @@ verticalalign-tableft {
 
 .dialogue-material-design {
   display: flex;
-  border-bottom: 1px solid #F3C22A;
+  border-radius: .3rem;
   font-size: 20px;
   font-weight: 300;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  color: black;
+  padding: 10px;
+  border-bottom: 1px solid #eceeef; }
 
 .dialogue-header {
   display: flex;
@@ -5258,6 +5382,8 @@ verticalalign-tableft {
   text-transform: capitalize; }
 
 .dialogue-middle {
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -5267,9 +5393,24 @@ verticalalign-tableft {
   overflow-y: hidden;
   overflow-x: hidden; }
 
+.dialogue-material-design-footer {
+  display: flex;
+  border-top: 1px solid #eceeef;
+  padding: 5px; }
+  .dialogue-material-design-footer .button-transparent {
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 1rem; }
+  .dialogue-material-design-footer .custom-btn .button-text {
+    font-size: 1rem;
+    color: blue; }
+
 .dialogue-footer {
   display: flex;
   border-top: 1px solid #F3C22A; }
+  .dialogue-footer .button-transparent {
+    border: none !important;
+    box-shadow: none !important; }
 
 .dialogue-message {
   display: flex;
@@ -5288,6 +5429,11 @@ verticalalign-tableft {
 
 .dialogue-table .tablerow {
   display: table-row; }
+
+.dialogue-material-design .dialogue-table .tablerow .tablecol {
+  display: table-cell;
+  vertical-align: middle;
+  color: black; }
 
 .dialogue-table .tablerow .tablecol {
   display: table-cell;
@@ -5734,6 +5880,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT                                */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -5930,6 +6091,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6126,6 +6302,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6308,6 +6499,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 

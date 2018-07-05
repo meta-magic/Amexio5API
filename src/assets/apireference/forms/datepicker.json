@@ -67,11 +67,25 @@
       "default": "none"
     },
     {
-      "name": "diabled-date",
+      "name": "disabled-date",
       "description": "sets disabled dates range",
       "version": "4.2 onwards",
       "type": "any",
       "default": "none"
+    },
+    {
+      "name": "inline-datepicker",
+      "description": "sets inline calender",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "dropdown-datepicker",
+      "description": "sets dropdown datepicker",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
     }
 
    
