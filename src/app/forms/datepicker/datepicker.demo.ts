@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'date-picker-demo', template: `
@@ -19,33 +19,39 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column [size]="6">
                 <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
                   <amexio-header>
-                     Date Picker 
+                    Inline Date Picker with min,max and disabled date
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="12">
-                      <amexio-label size="small">
-                          Date Picker demo with min-date, max-date and diabled-date functionality 
-                       </amexio-label>
-                        <amexio-date-time-picker
-                          [field-label]="'Date Of Birth'"
-                          [time-picker]="false"
-                          [date-picker]="true"
-                          [min-date]="'22-Mar-2016'" 
-                          [max-date]="'22-Feb-2019'"
-                          [diabled-date]="disabledDate"
-                          [(ngModel)]="currentDate">
-                        </amexio-date-time-picker>
+                       <!-- ---1--- -->
+                       <amexio-date-time-picker
+                       [inline-datepicker]="true"
+                         [field-label]="'Date Of Birth'"
+                         [time-picker]="false"
+                         [date-picker]="true"
+                         [min-date]="'22-Mar-2016'" 
+                         [max-date]="'22-Feb-2019'"
+                         [disabled-date]="disabledDate"
+                         [(ngModel)]="currentDate1">
+                       </amexio-date-time-picker>
+     
+
+
+
+
                       </amexio-column>
                     </amexio-row>
+                    
                   </amexio-body>
                   <amexio-action>
-                     {{currentDate}} 
+                     {{currentDate1}} 
                   </amexio-action>
                 </amexio-card>
                
               </amexio-column>
               <amexio-column [size]="6">
+              <!-- -2- -->
                 <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
                   <amexio-header>
                      Time Picker 
@@ -70,8 +76,71 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-card>
                
               </amexio-column>
+
             </amexio-row>
-          </amexio-tab>
+            <amexio-row>
+            <amexio-column [size]="'6'">
+         <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
+            <amexio-header>
+            Date Picker with min,max date
+            </amexio-header>
+            <amexio-body>
+              <amexio-row>
+                <amexio-column [size]="12">
+                 <!-- --3-- -->
+                  
+                 <amexio-date-time-picker
+                    [field-label]="'Date Of Birth'"
+                   [time-picker]="false"
+                   [date-picker]="true"
+                   [min-date]="'22-Mar-2016'" 
+                   [max-date]="'22-Feb-2019'"
+                   [(ngModel)]="currentDate">
+                 </amexio-date-time-picker>
+
+
+
+
+                </amexio-column>
+              </amexio-row>
+              
+            </amexio-body>
+            <amexio-action>
+               {{currentDate}} 
+            </amexio-action>
+          </amexio-card>
+            </amexio-column>
+            <!-- ------4---------- -->
+            <amexio-column [size]="'6'">
+            <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
+            <amexio-header>
+               Date Picker with month dropdown and disabled date
+            </amexio-header>
+            <amexio-body>
+              <amexio-row>
+                <amexio-column [size]="12">
+              
+                <amexio-date-time-picker
+                [dropdown-datepicker]="true"
+                  [field-label]="'Date Of Birth'"
+                  [time-picker]="false"
+                  [date-picker]="true" 
+                  [disabled-date]="disabledDate"
+                  [(ngModel)]="currentDate2">
+                </amexio-date-time-picker>
+                </amexio-column>
+              </amexio-row>
+              
+            </amexio-body>
+            <amexio-action>
+               {{currentDate2}} 
+            </amexio-action>
+          </amexio-card>
+            </amexio-column>
+            </amexio-row>
+
+
+            </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-date-time-picker>" [enable-column-fiter]="false"
                              [http-method]="'get'"
@@ -131,12 +200,15 @@ export class DateTimePickerDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   currentDate: any;
+  currentDate1: any;
+  currentDate2: any;
+
   time: any;
-  disabledDate:any[];
-   date = new Date("March 21, 2018 01:15:00");
+  disabledDate: any[];
+  date = new Date("March 21, 2018 01:15:00");
 
   onChangeTime(data: any) {
-    this.time=data;
+    this.time = data;
   }
 
   constructor(private http: HttpClient) {
@@ -173,7 +245,7 @@ export class DateTimePickerDemo {
       {
         "from": "25-Sep-2018",
         "to": "28-Sep-2018"
-      },
+      } 
     ];
   }
 
@@ -183,7 +255,7 @@ export class DateTimePickerDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/datepicker/form.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/datepicker/form.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -191,7 +263,7 @@ export class DateTimePickerDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/datepicker/form.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/datepicker/form.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -204,9 +276,9 @@ export class DateTimePickerDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 }

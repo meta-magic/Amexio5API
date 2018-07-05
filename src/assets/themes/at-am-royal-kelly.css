@@ -1126,6 +1126,20 @@ button {
     Version : Amexio v4.0 onwards
 *****************************************************************************/
 /** datetime - Visual CSS **/
+.datedropdown {
+  background: #292b2c; }
+  .datedropdown .dropdownlist {
+    color: #4CBB17; }
+  .datedropdown li:hover {
+    color: none;
+    background: rgba(255, 253, 208, 0.4);
+    width: 30px; }
+  .datedropdown .active {
+    background: #1b1d22;
+    color: #98FB98; }
+  .datedropdown li {
+    color: #4CBB17; }
+
 .datetimepicker {
   background: #292b2c; }
   .datetimepicker .datetimepickertopbar {
@@ -1173,6 +1187,16 @@ button {
   .datetimepicker .days .date-today {
     padding-top: 1%;
     padding-left: 36%; } }
+.dropspan2 {
+  border-color: #4CBB17; }
+
+.datedropbtn {
+  background-color: #98FB98;
+  color: black; }
+
+.change4 {
+  background-color: #1b1d22; }
+
 /** datetime - Structure CSS **/
 .datetimepicker {
   display: block;
@@ -1235,7 +1259,6 @@ button {
 .datetimepicker1 {
   display: block;
   border: 2px solid #4CBB17;
-  position: relative;
   box-shadow: 0 1px 3px 0 #4CBB17;
   z-index: 3;
   width: 290px; }
@@ -1303,6 +1326,79 @@ button {
 .disabled {
   opacity: .40;
   cursor: not-allowed; }
+
+.datedropdown {
+  display: block;
+  border: 2px solid #4CBB17;
+  box-shadow: 0 1px 3px 0 #4CBB17;
+  z-index: 3; }
+  .datedropdown li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer; }
+
+.dropdiv1 {
+  width: 100%; }
+
+.dropspan1 {
+  float: left;
+  width: 25%; }
+
+.dropul1 {
+  list-style-type: none;
+  -webkit-padding-start: 5px; }
+
+.dropspan2 {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #4CBB17; }
+
+.dropspan4 {
+  width: 25%;
+  display: table-row-group; }
+
+.dropul2 {
+  list-style-type: none;
+  -webkit-padding-start: 15px; }
+
+.dropiconpadding {
+  cursor: pointer;
+  -webkit-padding-start: 20px; }
+
+.btndiv1 {
+  position: relative;
+  bottom: 0; }
+
+.datedropbtn {
+  border: none;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+.dropbtnspan {
+  display: inline-flex;
+  padding-left: 105px; }
+
+.change4 {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30px; }
+
+.disablearrow {
+  opacity: .40;
+  cursor: not-allowed;
+  pointer-events: none; }
 
 /****************************************************************************
     Component Name : Dropdown
@@ -5454,7 +5550,6 @@ verticalalign-tableft {
   padding-right: 16px;
   height: 80%;
   overflow-y: auto;
-  border-radius: .3rem;
   overflow-x: hidden;
   background-color: white; }
 
@@ -5489,8 +5584,7 @@ verticalalign-tableft {
 
 .modal-window-table .tablerow .tablecol {
   display: table-cell;
-  vertical-align: middle;
-  padding-bottom: 15px; }
+  vertical-align: middle; }
 
 .modal-window-footer-max {
   bottom: 0px;
@@ -5597,7 +5691,6 @@ verticalalign-tableft {
 
 .dialogue-header {
   display: flex;
-  padding: 10px;
   /* padding: 10px 24px;*/
   font-size: 20px;
   font-weight: 300;
@@ -5629,7 +5722,6 @@ verticalalign-tableft {
 
 .dialogue-footer {
   display: flex;
-  padding: 5px;
   border-top: 2px solid #4CBB17; }
   .dialogue-footer .button-transparent {
     border: none !important;
@@ -6103,6 +6195,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT                                */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6187,7 +6294,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6276,11 +6384,23 @@ verticalalign-tableft {
   .flex-row {
     flex-direction: column; }
 
-  .flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4, .flex-col-5, .flex-col-6, .flex-col-7, .flex-col-8, .flex-col-9, .flex-col-10, .flex-col-11, .flex-col-12 {
+  .flex-col-1,
+  .flex-col-2,
+  .flex-col-3,
+  .flex-col-4,
+  .flex-col-5,
+  .flex-col-6,
+  .flex-col-7,
+  .flex-col-8,
+  .flex-col-9,
+  .flex-col-10,
+  .flex-col-11,
+  .flex-col-12 {
     max-width: 100%;
     flex: 0 0 100%; } }
 @media only screen and (max-width: 1024px) {
-  .flex-col-2pt5, .flex-col-9pt5 {
+  .flex-col-2pt5,
+  .flex-col-9pt5 {
     flex: 0 0 100%;
     max-width: 100%; } }
 /************************************************************************/
@@ -6299,6 +6419,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6383,7 +6518,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6472,11 +6608,23 @@ verticalalign-tableft {
   .flex-row {
     flex-direction: column; }
 
-  .flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4, .flex-col-5, .flex-col-6, .flex-col-7, .flex-col-8, .flex-col-9, .flex-col-10, .flex-col-11, .flex-col-12 {
+  .flex-col-1,
+  .flex-col-2,
+  .flex-col-3,
+  .flex-col-4,
+  .flex-col-5,
+  .flex-col-6,
+  .flex-col-7,
+  .flex-col-8,
+  .flex-col-9,
+  .flex-col-10,
+  .flex-col-11,
+  .flex-col-12 {
     max-width: 100%;
     flex: 0 0 100%; } }
 @media only screen and (max-width: 1024px) {
-  .flex-col-2pt5, .flex-col-9pt5 {
+  .flex-col-2pt5,
+  .flex-col-9pt5 {
     flex: 0 0 100%;
     max-width: 100%; } }
 /************************************************************************/
@@ -6495,6 +6643,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6579,7 +6742,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6677,6 +6841,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6761,7 +6940,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6850,11 +7030,23 @@ verticalalign-tableft {
   .flex-row {
     flex-direction: column; }
 
-  .flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4, .flex-col-5, .flex-col-6, .flex-col-7, .flex-col-8, .flex-col-9, .flex-col-10, .flex-col-11, .flex-col-12 {
+  .flex-col-1,
+  .flex-col-2,
+  .flex-col-3,
+  .flex-col-4,
+  .flex-col-5,
+  .flex-col-6,
+  .flex-col-7,
+  .flex-col-8,
+  .flex-col-9,
+  .flex-col-10,
+  .flex-col-11,
+  .flex-col-12 {
     max-width: 100%;
     flex: 0 0 100%; } }
 @media only screen and (max-width: 1024px) {
-  .flex-col-2pt5, .flex-col-9pt5 {
+  .flex-col-2pt5,
+  .flex-col-9pt5 {
     flex: 0 0 100%;
     max-width: 100%; } }
 /************************************************************************/
