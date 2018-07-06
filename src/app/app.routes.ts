@@ -335,5 +335,16 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
 {
   path : 'tree-to-panel', loadChildren : './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
 },
+/*Contextual Menus*/
+{
+  path : 'contextual-menu-tree', loadChildren : './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'
+},
+{
+  path : 'contextual-menu-grid', loadChildren : './contextualmenu/grid/contextmenugrid.demo.module#ContextualMenuGridDemoModule'
+},
+{
+  path : 'contextual-menu-listbox', loadChildren : './contextualmenu/listbox/contextmenulistbox.demo.module#ContextualMenuListBoxDemoModule'
+},
+
 
 ];

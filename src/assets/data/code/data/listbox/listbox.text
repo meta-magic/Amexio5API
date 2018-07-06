@@ -1,6 +1,13 @@
 export class ListBoxDemo {
   localData: any;
+  contextMenuData: any;
   constructor() {
+
+    this.contextMenuData =
+            [{ "text": "Add New", "icon": "fa fa-arrows", "disabled": true },
+            { "text": "Edit", "icon": "", "seperator": true }
+                , { "text": "Send data in email", "icon": "" }];
+
     this.localData = {
     "response": {
       "success": true,
@@ -92,5 +99,7 @@ export class ListBoxDemo {
    onRowClick(data: any) {}
 
    getSelectedData(data: any) {}
+
+   rightclick() {}
 
 }

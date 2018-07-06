@@ -27,3 +27,16 @@
                   </amexio-row>
                 </ng-template>
 </amexio-listbox>
+
+<!-- ListBox With Context Menu-->
+
+<amexio-listbox [enable-checkbox]="true" 
+                [height]="400"
+                [header]="'Contacts'" 
+                [search-placeholder]="'Search Contacts'"
+                [data]="localData" 
+                [filter]="true"
+                [data-reader]="'response.data'"
+                [context-menu]="contextMenuData"
+                [display-field]="'name_official'">
+</amexio-listbox>

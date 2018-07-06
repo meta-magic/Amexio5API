@@ -504,18 +504,24 @@
       ]
     },
     {
-      "text": "Media",
-      "icon": "fa fa-keyboard-o fa-fw",
+      "text": "Contextual Menus",
+      "icon": "fa fa-bars",
+      "badge": "New",
       "children": [
         {
-          "text": "Image",
-          "icon": "fa fa-picture-o fa-fw",
-          "link": "image-demo"
+          "text": "Tree",
+          "icon": "fa fa-tree fa-fw",
+          "link": "contextual-menu-tree"
         },
         {
-          "text": "Video Player",
-          "icon": "fa fa-video-camera fa-fw",
-          "link": "video-demo"
+          "text": "Grid",
+          "icon": "fa fa-database fa-fw",
+          "link": "contextual-menu-grid"
+        },
+        {
+          "text": "List Box",
+          "icon": "fa fa-list fa-fw",
+          "link": "contextual-menu-listbox"
         }
       ]
     },
@@ -556,6 +562,22 @@
           "icon":"fa fa-bars fa-fw",
           "link":"toolbar-demo",
           "badge": "N"
+        }
+      ]
+    },
+    {
+      "text": "Media",
+      "icon": "fa fa-keyboard-o fa-fw",
+      "children": [
+        {
+          "text": "Image",
+          "icon": "fa fa-picture-o fa-fw",
+          "link": "image-demo"
+        },
+        {
+          "text": "Video Player",
+          "icon": "fa fa-video-camera fa-fw",
+          "link": "video-demo"
         }
       ]
     },

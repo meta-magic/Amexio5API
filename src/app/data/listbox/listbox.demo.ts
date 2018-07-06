@@ -13,7 +13,7 @@ import {HttpClient} from "@angular/common/http";
       </amexio-header>
       <amexio-body>
         <p>Simple list box which allows user to select one of more items from list based on configuration. User can
-          provide custom template to change look and feel.</p>
+          provide custom template to change look and feel and with context menu(right click operation).</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
@@ -124,6 +124,24 @@ import {HttpClient} from "@angular/common/http";
               </amexio-column>
             </amexio-row>
 
+            <amexio-row>
+            <amexio-column size="12">
+              <amexio-card [header]="true">
+                <amexio-header>
+                   List Box With Context Menu
+                </amexio-header>
+                <amexio-body>
+                  <amexio-listbox [enable-checkbox]="true" [height]="400"
+                                  [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
+                                  [data]="localData" [filter]="true"
+                                  [data-reader]="'response.data'" [context-menu]="contextMenuData"
+                                  [display-field]="'name_official'" (selectedRows)="getSelectedData($event)">
+                  </amexio-listbox>
+                </amexio-body>
+              </amexio-card>
+            </amexio-column>
+          </amexio-row>
+
              
 
                </amexio-tab>
@@ -135,11 +153,13 @@ import {HttpClient} from "@angular/common/http";
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
@@ -219,7 +239,13 @@ export class ListBoxDemo {
   actionWindowFlag: boolean;
   projectData: any;
   browserData: any;
+  contextMenuData: any;
   constructor(private http: HttpClient) {
+    this.contextMenuData =
+    [{ "text": "Add New", "icon": "fa fa-arrows", "disabled": true },
+    { "text": "Edit", "icon": "", "seperator": true }
+        , { "text": "Send data in email", "icon": "" }];
+
     this.getHtmlAndTypeScriptCode();
     this.localData = {"response": {
       "success": true,

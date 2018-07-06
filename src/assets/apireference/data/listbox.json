@@ -66,6 +66,13 @@
       "type": "boolean",
       "default": "false",
       "description":"Enables user to filter data based on 'display-field' configured."
+    },
+    {
+      "name": "context-menu",
+      "version": "5.0.1 onwards",
+      "type": "any[]",
+      "default": "",
+      "description":"Context Menu provides the list of menus on right click (for Array structure: refer typescript code in source tab)"
     }
   ],
   "events":[
@@ -76,6 +83,10 @@
     {
       "name": "onRowClick",
       "description":"It will gives you row clicked data."
+    },
+    {
+      "name": "rightClick",
+      "description":"It is fired when clicked on context menu, providing tree node data and selected context menu data."
     }
   ]
 }
