@@ -152,6 +152,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'enhanced-tab-demo', loadChildren: './layout/tab/enhancedtab/enhancedtab.demo.module#EnhancedTabDemoModule'
   },
   {
+    path: 'contextual-menu-tab', loadChildren : './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
+  },
+  {
     path: 'vertical-tab-demo', loadChildren: './layout/tab/verticaltab/verticaltab.demo.module#VerticalTabDemoModule'
   },
   {
@@ -344,6 +347,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
 },
 {
   path : 'contextual-menu-listbox', loadChildren : './contextualmenu/listbox/contextmenulistbox.demo.module#ContextualMenuListBoxDemoModule'
+},
+{
+  path : 'contextual-menu-tab', loadChildren : './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
 },
 
 

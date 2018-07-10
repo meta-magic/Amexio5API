@@ -61,7 +61,7 @@
     {
       "text": "Panels",
       "icon": "fa fa-bars fa-fw",
-      "badge": "2",
+      "badge": "3",
       "children": [
         {
           "text": "Carousel",
@@ -102,6 +102,7 @@
         {
           "text": "Tab",
           "icon": "fa fa-folder fa-fw",
+          "badge": "1",
           "children": [
             {
               "text": "Horizontal",
@@ -131,6 +132,12 @@
                   "text": "Enhanced",
                   "link": "enhanced-tab-demo",
                   "icon": "fa fa-leaf fa-fw"
+                },
+                {
+                  "text": "With Context Menu",
+                  "icon": "fa fa-leaf fa-fw",
+                  "link": "contextual-menu-tab",
+                  "badge":"N"
                 }
               ]
             },
@@ -522,6 +529,11 @@
           "text": "List Box",
           "icon": "fa fa-list fa-fw",
           "link": "contextual-menu-listbox"
+        },
+        {
+          "text": "Tab",
+          "icon": "fa fa-folder fa-fw",
+          "link": "contextual-menu-tab"
         }
       ]
     },
