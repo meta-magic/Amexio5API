@@ -263,6 +263,12 @@
           "link": "rating-demo"
         },
         {
+          "text": "Search Box",
+          "icon": "fa fa-search fa-fw",
+          "link": "searchbox-demo",
+          "badge": "N"
+        },
+        {
           "text": "Slider",
           "icon": "fa fa-sliders fa-fw",
           "link": "slider-demo"
@@ -271,12 +277,6 @@
           "text": "Type Ahead",
           "icon": "fa fa-search-minus fa-fw",
           "link": "typeahead-demo"
-        },
-        {
-          "text": "Search Box",
-          "icon": "fa fa-search fa-fw",
-          "link": "searchbox-demo",
-          "badge": "N"
         },
         {
           "text": "Tag Field",
