@@ -56,10 +56,6 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
            </amexio-datagrid>
 
-
-          
-
-
          </amexio-tab>
          <amexio-tab title="Source">
            <div style="overflow-y: scroll">
