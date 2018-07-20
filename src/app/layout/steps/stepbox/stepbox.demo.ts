@@ -56,7 +56,7 @@ import {Http} from "@angular/http";
             </amexio-row>
            </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties <amexio-step>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties <amexio-steps>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/layout/steps/step.json'"
                              [data-reader]="'properties'"
@@ -174,6 +174,7 @@ export class StepBoxDemoComponent {
       this.clickMsgArray.push(msg);
     }
   }
+  
 
 
   //TO LOAD HTML AND TYPESCRIPT CODE

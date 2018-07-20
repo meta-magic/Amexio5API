@@ -19,11 +19,11 @@
     }
   ],
   "navevents": [{
-        "name": "onLogoClick",
+        "name": "onNavLogoClick",
         "description": "Fire when nav bar logo is clicked "
     },
     {
-        "name": "onTitleClick",
+        "name": "onNavTitleClick",
         "description": "Fire when title is clicked"
     }
   ],

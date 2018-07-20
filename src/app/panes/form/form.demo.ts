@@ -28,7 +28,7 @@ import {HttpClient} from "@angular/common/http";
                     </amexio-text-input>
                 </amexio-column>
                 <amexio-column [size]="6">
-                    <amexio-text-input enable-popover="true" field-label="Lastname" name="name" place-holder="Enter lastname" allow-blank="false" error-msg="Please enter last name" min-length="3" min-error-msg="Minimum 3 char required" max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                    <amexio-text-input field-label="Lastname" name="name" place-holder="Enter lastname(not mandatory)" allow-blank="false" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required" max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
                     </amexio-text-input>
                 </amexio-column>
               </amexio-row>
