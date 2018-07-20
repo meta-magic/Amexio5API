@@ -4,14 +4,19 @@
     "message": "Fetching  Data  Request Succeeded: Profile",
     "data": [
       {
+        "name": "Buck Kulkarni",
+        "name_official": "Buck Kulkarni",
+        "profile": "buck.jpg"
+      },
+      {
         "name": "Ketan Gote",
         "name_official": "Ketan Gote",
         "profile": "ketan.jpg"
       },
       {
-        "name": "vrushabh Kelwalkar",
-        "name_official": "vrushabh Kelwalkar",
-        "profile": "vrushabh.jpg"
+        "name": "Araf Karsh Hamid",
+        "name_official": "Araf Karsh Hamid",
+        "profile": "karsh.jpg"
       },
       {
         "name": "Dattaram Gawas",
@@ -24,14 +29,14 @@
         "profile": "sagar.jpg"
       },
       {
-        "name": "Samadhan Pardeshi",
-        "name_official": "Samadhan Pardeshi",
-        "profile": "Samadhan.jpg"
+        "name": "Rashmi Thakkar",
+        "name_official": "Rashmi Thakkar",
+        "profile": "rashmi.jpg"
       },
       {
-        "name": "Sharad Jadhav",
-        "name_official": "Sharad Jadhav",
-        "profile": "ahutosh.jpg"
+        "name": "Ashwini Agre",
+        "name_official": "Ashwini Agre",
+        "profile": "ashwini.jpg"
       }
     ]
   }
