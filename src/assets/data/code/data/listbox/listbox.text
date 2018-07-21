@@ -34,7 +34,7 @@ export class ListBoxDemo {
         {
           "name": "vrushabh Kelwalkar",
           "name_official": "vrushabh Kelwalkar",
-          "profile": "vrushabh.jpg",
+          "profile": "sagar.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {
@@ -52,7 +52,7 @@ export class ListBoxDemo {
         {
           "name": "Samadhan Pardeshi",
           "name_official": "Samadhan Pardeshi",
-          "profile": "Samadhan.jpg",
+          "profile": "dats.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {
