@@ -54,9 +54,15 @@ import {HttpClient} from "@angular/common/http";
                         </amexio-box>
                         <amexio-row>
                           <amexio-column size="5">
-                            <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'"
-                                         >
+                          <amexio-image [height]="'95.75px'" [width]="'95.75px'"  [c-class]="'image-round'"
+                          path="assets/images/profile/mark.jpg">
                             </amexio-image>
+                          </amexio-column>
+                          <amexio-column size="7">
+                            <amexio-label>John deo 
+                            </amexio-label>  <br/>
+                            <amexio-label>john@metamagic.in</amexio-label>
+
                           </amexio-column>
                           <amexio-column size="7">
                             <amexio-label >John deo</amexio-label>  <br/>
