@@ -53,6 +53,10 @@ this.amexiotechmenus =  [
     "link" : 'http://amexio.org',
     "submenus": [
       {
+        "text": "Version 5.1",
+        "link": "https://amexio.org/api/v5.1/index.html#/getting-started"
+      },
+      {
         "text": "Version 5.0",
         "link": "https://amexio.org/api/v5.0/#/getting-started"
       },{
