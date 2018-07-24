@@ -1,0 +1,31 @@
+{
+    "chart": [{
+            "name": "width",
+            "type": "number",
+            "default": "",
+            "description": "Width of chart"
+        },
+        {
+            "name": "data",
+            "type": "Array",
+            "default": "",
+            "description": "For the use of local data "
+        }, {
+            "name": "critical-path-enabled",
+            "type": "boolean",
+            "default": "false",
+            "description": "The critical path in a Gantt chart is the path, or paths,that directly affect the finish date "
+        }, {
+            "name": "inner-grid-dark-track-color",
+            "type": "string",
+            "default": "",
+            "description": "The fill color of the alternate, dark inner grid track."
+        },
+        {
+            "name": "inner-grid-track-color",
+            "type": "string",
+            "default": "",
+            "description": "The fill color of the inner grid track."
+        }
+    ]
+}
