@@ -577,6 +577,7 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
+            "badge": "1",
             "children": [{
                     "text": "Area Chart",
                     "icon": "fa fa-area-chart fa-fw",
