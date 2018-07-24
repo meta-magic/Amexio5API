@@ -208,6 +208,8 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'combo-chart-demo', loadChildren: './charts/combochart/combochart.demo.module#ComboChartDemoModule'
   }, {
     path: 'donut-chart-demo', loadChildren: './charts/donutchart/donutchart.demo.module#DonutChartDemoModule'
+  },{
+    path: 'gantt-chart-demo', loadChildren: './charts/ganttchart/ganttchart.demo.module#GanttChartDemoModule'
   }, {
     path: 'histogram-chart-demo',
     loadChildren: './charts/histogramchart/histogramchart.demo.module#HistogramChartDemoModule'
