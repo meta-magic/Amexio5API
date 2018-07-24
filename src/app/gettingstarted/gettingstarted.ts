@@ -24,9 +24,9 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
             <br>
             <br>
             <br>
-            
+
             </div>
-            <h1>Amexio Angular EXtensions v4.2</h1>
+            <h1>Amexio Angular EXtensions v4.3</h1>
                     <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
 
                     <amexio-image [height] = "50" [width] ="50" path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
