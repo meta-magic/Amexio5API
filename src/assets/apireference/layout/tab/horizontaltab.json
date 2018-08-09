@@ -44,12 +44,39 @@
       "version": "4.1.9 onwards",
       "type": "string",
       "default": ""
+    },
+    {
+      "name": "body-height",
+      "version": "5.0.1 onwards",
+      "type": "any",
+      "default": "",
+      "description":"Provides form body height"
+    },
+    {
+      "name": "context-menu",
+      "version": "5.0.3 onwards",
+      "type": "any[]",
+      "default": "",
+      "description":"Context Menu provides the list of menus on right click (for Array structure: refer typescript code in source tab)"
+    },
+    {
+      "name": "default-context-menu",
+      "version": "5.0.3 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description":"If true add two context menus i.e close All and close Others tabs"
     }
   ],
   "events": [
     {
       "name": "onClick",
+      "version": "",
       "description": "Callback to invoke on activated tab event."
+    },
+    {
+      "name": "rightClick",
+      "version": "5.0.3 onwards",
+      "description":"It is fired when clicked on context menu, providing tree node data and selected context menu data."
     }
   ],
   "tabproperties": [
