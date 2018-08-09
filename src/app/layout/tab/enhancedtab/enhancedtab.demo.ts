@@ -290,9 +290,9 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                    </amexio-tab>
 
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Tab View Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Tab View Properties  <amexio-tab-view>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/layout/tab/enhanced-tab/enhancedtab.json'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -307,9 +307,9 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Tab Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Tab Properties  <amexio-tab>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/layout/tab/enhanced-tab/enhancedtab.json'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
                              [data-reader]="'tabproperties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -326,7 +326,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
             <br>
             <amexio-datagrid title="Tab Events" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
                              [data-reader]="'events'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="40"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -337,7 +337,7 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
             <br>
             <amexio-datagrid title="Tab Methods" [enable-column-fiter]="false"
             [http-method]="'get'"
-            [http-url]="'assets/apireference/layout/tab/enhanced-tab/enhancedtab.json'"
+            [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
             [data-reader]="'methods'"
             [enable-data-filter]="false" >
             <amexio-data-table-column [width]="40"[data-index]="'name'" [data-type]="'string'" [hidden]="false"

@@ -65,7 +65,7 @@
       "type": "boolean",
       "default": "false",
       "description":"If true add two context menus i.e close All and close Others tabs"
-    } 
+    }
   ],
   "events": [
     {

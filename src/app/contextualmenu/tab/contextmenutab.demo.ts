@@ -117,6 +117,19 @@ import {Http} from "@angular/http";
               <amexio-data-table-column [width]="70" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
+            <br>
+            <amexio-datagrid title="Tab Methods" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
+                             [data-reader]="'methods'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="40"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="40" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
 
           </amexio-tab>
           <amexio-tab title="Source">
