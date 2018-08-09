@@ -1,6 +1,7 @@
 {
   "properties": [
     {
+      "deprecated":false,
       "name": "http-url",
       "type": "string",
       "default": "",
@@ -9,6 +10,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "http-method",
       "type": "string",
       "default": "",
@@ -17,6 +19,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "data",
       "type": "any",
       "default": "",
@@ -25,6 +28,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "sort",
       "type": "boolean",
       "default": "true",
@@ -33,6 +37,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "data-reader",
       "type": "string",
       "default": "",
@@ -41,6 +46,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "height",
       "type": "number",
       "default": "",
@@ -49,6 +55,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "page-size",
       "type": "number",
       "default": "",
@@ -57,6 +64,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "enable-checkbox",
       "type": "boolean",
       "default": "false",
@@ -65,6 +73,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "title",
       "type": "string",
       "default": "",
@@ -73,6 +82,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "enable-data-filter",
       "type": "boolean",
       "default": "false",
@@ -81,6 +91,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "groupby",
       "type": "boolean",
       "default": "false",
@@ -89,6 +100,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "groupby-data-index",
       "type": "string",
       "default": "",
@@ -97,6 +109,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "column-defintion",
       "type": "any[]",
       "default": "",
@@ -105,6 +118,7 @@
 
     },
     {
+      "deprecated":true,
       "name": "enable-column-fiter",
       "type": "boolean",
       "default": "true",
@@ -113,6 +127,16 @@
 
     },
     {
+      "deprecated":false,
+      "name": "enable-column-filter",
+      "type": "boolean",
+      "default": "true",
+      "description":"Set false to hide Column toggle functionality.",
+      "version": "4.0.0 onwards"
+
+    },
+    {
+      "deprecated":false,
       "name": "global-filter",
       "type": "boolean",
       "default": "false",
@@ -121,6 +145,7 @@
 
     },
     {
+      "deprecated":false,
       "name": "context-menu",
       "version": "5.0.1 onwards",
       "type": "any[]",
