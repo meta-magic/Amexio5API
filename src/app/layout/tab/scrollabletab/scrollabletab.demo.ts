@@ -73,32 +73,30 @@ import {Http} from "@angular/http";
             </amexio-tab-view>
           </amexio-tab>
           <amexio-tab title="API Reference">
-          <amexio-datagrid title="Tab Properties <amexio-tab>" [enable-column-fiter]="false"
-          [http-method]="'get'"
-          [http-url]="'assets/apireference/layout/tab/tab.json'"
-          [data-reader]="'properties'"
-          [enable-data-filter]="false" >
-<amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Name'"></amexio-data-table-column>
-                     <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Version'"></amexio-data-table-column>
-<amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Type'"></amexio-data-table-column>
-<amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Default'"></amexio-data-table-column>
-<amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Description'"></amexio-data-table-column>
-</amexio-datagrid>
-<br>
-            <amexio-datagrid title="Tab View Properties  <amexio-tab-view>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Tab Properties <amexio-tab>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
-                                        <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Version'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Type'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Default'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+            <br>
+            <amexio-datagrid title="Tab View Properties <amexio-tab-view>" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
+                             [data-reader]="'properties'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
@@ -109,12 +107,25 @@ import {Http} from "@angular/http";
             <br>
             <amexio-datagrid title="Tab Events" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/layout/tab/basic-tab/basictab.json'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
                              [data-reader]="'events'"
                              [enable-data-filter]="false" >
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
               <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+            <br>
+            <amexio-datagrid title="Tab Methods" [enable-column-fiter]="false"
+                             [http-method]="'get'"
+                             [http-url]="'assets/apireference/layout/tab/horizontaltab.json'"
+                             [data-reader]="'methods'"
+                             [enable-data-filter]="false" >
+              <amexio-data-table-column [width]="40"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="40" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
