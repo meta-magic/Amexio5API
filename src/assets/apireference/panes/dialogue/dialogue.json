@@ -16,7 +16,7 @@
       "default" : "theme-color",
       "description" : "show the type of button"
     },
-      {"name" : "button-size",
+    {"name" : "button-size",
       "type" :  "string",
       "version" : "4.2 onwards",
       "default" : "",
@@ -34,21 +34,36 @@
       "description": "Dialogue box closes on click of Escape Key.",
       "version": "4.2 onwards",
       "type": "boolean",
+      "default": "true"
+    },
+    {
+      "name": "show",
+      "description": "uses two way binding to Show / Hide Dialogue.",
+      "version": "4.1 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "material-design",
+      "description": "user doesn't want header background color then user can use  material-design is equal to true ",
+      "version": "4.1 onwards",
+      "type": "boolean",
       "default": "false"
     },
     {
       "name": "show-dialogue",
-      "description": "Show / Hide Dialogue..",
+      "description": "Show / Hide Dialogue.",
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
     },
+
     {
       "name": "closable",
       "description": "User can close the Dialogue.",
       "version": "4.0 onwards",
       "type": "boolean",
-      "default": "false"
+      "default": "true"
     },
     {
       "name": "title",

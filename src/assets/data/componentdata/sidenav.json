@@ -5,37 +5,43 @@
       "icon" : "fa fa-home fa-fw",
       "mdaIcon" : "home",
       "link" : "/home/dashboard",
-      "selected":true
+      "selected":true,
+      "badge": "12"
     },
     {
       "text": "Email",
       "icon" : "fa fa-envelope fa-fw",
       "mdaIcon" : "email",
-      "link" : "/home/email"
+      "link" : "/home/email",
+      "badge": "21"
     },
     {
       "text": "Profile",
       "icon" : "fa fa-user fa-fw",
       "mdaIcon" : "account_box",
-      "link" : "/home/profile"
+      "link" : "/home/profile",
+      "badge": "32"
     },
     {
       "text": "Pages",
       "icon" : "fa fa-id-card-o fa-fw",
       "mdaIcon" : "pages",
       "expand":false,
+      "badge": "45",
       "children": [
         {
           "text": "Sample Form",
           "icon" : "fa fa-laptop fa-fw",
           "mdaIcon" : "create",
-          "link":"/home/sample"
+          "link":"/home/sample",
+          "badge": "46"
         },
         {
           "text": "Login",
           "mdaIcon":"open_in_browser",
           "icon" : "fa fa-sign-in fa-fw",
-          "link":"/home/login"
+          "link":"/home/login",
+          "badge": "47"
         },
         {
           "text": "Register Employee",

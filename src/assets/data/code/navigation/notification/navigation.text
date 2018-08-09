@@ -1,18 +1,36 @@
 export class NotificationDemo {
-    topMessageArray:any=[];
-    bottomMessageArray:any=[];
-    topLeftMessageArray:any=[];
-    bottomLeftMessageArray:any=[];
-     bottomLeftNotification(){
-        this.bottomLeftMessageArray.push('Bottom Left Notification!!!')
+
+     verticalLeftMessageArray:any=[];
+     verticalCenterMessageArray:any=[];
+     verticalRightMessageArray:any=[];
+
+     horizontalLeftMessageArray:any=[];
+     horizontalCenterMessageArray:any=[];
+     horizontalRightMessageArray:any=[];
+
+
+     verticalLeftNotification(){
+       this.verticalLeftMessageArray.push('Welcome To Amexio!!!!')
      }
-     topLeftNotification(){
-       this.topLeftMessageArray.push('Top Left Notification!!!')
+     verticalCenterNotification(){
+       this.verticalCenterMessageArray.push('top Center Notification!!!')
      }
-     topNotification(){
-       this.topMessageArray.push('Top Right Notification!!!')
+     verticalRightNotification(){
+       this.verticalRightMessageArray.push('top Right Notification!!!')
      }
-     bottomNotification(){
-       this.bottomMessageArray.push('Bottom Right Notification!!!')
+
+
+     horizontalLeftNotification(){
+       this.horizontalLeftMessageArray.push('bottom Left Notification!!!')
+     }
+     horizontalCenterNotification(){
+       this.horizontalCenterMessageArray.push('bottom Center Notification!!!')
+     }
+     horizontalRightNotification(){
+       this.horizontalRightMessageArray.push('bottom Right Notification!!!')
      }
 }
+
+
+
+

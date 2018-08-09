@@ -1,0 +1,20 @@
+
+<!-- Drag and Drop : Across Tree -->
+<amexio-treeview #tree   
+                [data-reader]="'data'" 
+                [enable-drag]="true" 
+                [enable-drop]="true" 
+                [data]="treeLocalData" 
+                [across-tree]="true"
+                (onDrop)="getDropData1($event)">
+</amexio-treeview>
+
+<amexio-treeview #tree1 
+                [data-reader]="'data'" 
+                [enable-drag]="true" 
+                [enable-drop]="true" 
+                [data]="treeLocalData1" 
+                [across-tree]="true"
+                (onDrop)="getDropData($event)">
+</amexio-treeview>
+

@@ -44,6 +44,12 @@
       "description":"Heading for ListBox."
     },
     {
+      "name": "enable-header",
+      "type": "boolean",
+      "default": "true",
+      "description":"enable header default true and user can make header disable ."
+    },
+    {
       "name": "enable-checkbox",
       "type": "boolean",
       "default": "false",

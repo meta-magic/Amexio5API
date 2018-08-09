@@ -24,7 +24,6 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-drop-down-menu [icon-align]="'right'"
                                            [title]="'Payment '"
-                                           [padding]="'5px'"
                                            [data]="payment"
                                            [down-arrow-icon] ="true"
                                            [icon]="'fa fa-credit-card'"
@@ -39,13 +38,12 @@ import {HttpClient} from "@angular/common/http";
                              [footer]="false">
                   <amexio-header>Demo 2</amexio-header>
                   <amexio-body>
-                    <amexio-drop-down-menu [icon-align]="'left'"
+                    <amexio-drop-down-menu [icon-align]="'left'"  
                                            [title]="'Advance'"
-                                           [padding]="'5px'"
                                            [icon]="'fa fa-flash'"
                                            (onClick)="onDropDownMenuClick($event)">
 
-                      <amexio-drop-down-menu-item [separator]="true">
+                      <amexio-drop-down-menu-item >
 
                         <amexio-box background-color="purple" padding="true">
                           <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
@@ -59,9 +57,10 @@ import {HttpClient} from "@angular/common/http";
                           <amexio-column size="7">
 
                             <amexio-label > Ketan Gote</amexio-label>
-                            <amexio-label > xyz@metamagic.in</amexio-label><br>
-                            <amexio-button     (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+                            <amexio-label > xyz@metamagic.in</amexio-label><br/>
+                            <amexio-button  (onClick)="onDropDownMenuClick($event)" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'"><br/>
                             </amexio-button>
+
                           </amexio-column>
 
                         </amexio-row>
@@ -106,7 +105,6 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-drop-down-menu [icon-align]="'left'"
                                            [title]="'Brands'"
-                                           [padding]="'5px'"
                                            [icon]="'fa fa-slack'"
                                            (onClick)="onDropDownMenuClick($event)">
 
@@ -184,7 +182,6 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-drop-down-menu [icon-align]="'left'"
                                            [title]="'Transport'"
                                            [data]="transport"
-                                           [padding]="'5px'"
                                            [icon]="'fa fa-truck'"
                                            (onClick)="onDropDownMenuClick($event)">
                     </amexio-drop-down-menu>
@@ -203,9 +200,6 @@ import {HttpClient} from "@angular/common/http";
               </amexio-column>
             </amexio-row>
           </amexio-tab>
-
-
-
 
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties : <Amexio-DropDownMenu>" [enable-column-fiter]="false"
@@ -279,7 +273,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Live">
 
             <p align="center">Amexio DropdownMenu</p>
-            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-dropdownmenu-toolbar?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/angular-dropdownmenu?embed=1&file=src/app/navigation/dropdownmenu/dropdownmenu.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
 
           </amexio-tab>
         </amexio-tab-view>
@@ -309,22 +303,22 @@ export class DropDownMenuDemo {
 
     this.payment = [
       {"label": "Visa", "icon": "fa fa-cc-visa"},
-      {"label": "paypal", "icon": "fa fa-paypal", "separator": true},
-      {"label": "google wallet", "icon": "fa fa-google-wallet"},
-      {"label": "stripe", "icon": "fa fa-cc-stripe", "separator": true},
-      {"label": "mastercard", "icon": "fa fa-cc-mastercard"},
-      {"label": "jcb", "icon": "fa fa-cc-jcb"}
+      {"label": "Paypal", "icon": "fa fa-paypal", "separator": true},
+      {"label": "Google wallet", "icon": "fa fa-google-wallet"},
+      {"label": "Stripe", "icon": "fa fa-cc-stripe", "separator": true},
+      {"label": "Mastercard", "icon": "fa fa-cc-mastercard"},
+      {"label": "JCB", "icon": "fa fa-cc-jcb"}
 
     ];
 
 
     this.transport = [
-      {"label": "motorcycle", "icon": "  fa fa-motorcycle"},
-      {"label": "plane", "icon": "fa fa-plane"},
-      {"label": "ship", "icon": "fa fa-ship"},
-      {"label": "space shuttle", "icon": "fa fa-space-shuttle"},
-      {"label": "bicycle", "icon": "fa fa-bicycle"},
-      {"label": "rocket", "icon": "fa fa-rocket"}
+      {"label": "Motorcycle", "icon": "fa fa-motorcycle"},
+      {"label": "Plane", "icon": "fa fa-plane"},
+      {"label": "Ship", "icon": "fa fa-ship"},
+      {"label": "Space shuttle", "icon": "fa fa-space-shuttle"},
+      {"label": "Bicycle", "icon": "fa fa-bicycle"},
+      {"label": "Rocket", "icon": "fa fa-rocket"}
     ];
   }
 
@@ -370,7 +364,7 @@ export class DropDownMenuDemo {
   }
 
   onDropDownMenuClick(event: any) {
-    debugger;
+
     let jsonData={
       'icon':'',
       'label':'',

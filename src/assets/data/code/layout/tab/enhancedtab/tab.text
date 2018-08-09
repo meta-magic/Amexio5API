@@ -54,7 +54,6 @@ export class EnhancedTabDemo {
 
   //Method to close tabs and keep open some of the required tabs.
   closeOtherTabs(tab: any){
-    debugger;
    tab.closeTabs(this.tabarray);
   }
 }

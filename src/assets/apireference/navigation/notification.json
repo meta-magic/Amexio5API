@@ -2,7 +2,7 @@
   "properties": [
     {
       "name": "data",
-      "type": "Array",
+      "type": "Any",
       "default": "",
       "description": "List of notification with key msg."
     },
@@ -34,6 +34,27 @@
       "type": "number",
       "default": "",
       "description": "Add time interval(in ms) for shown msg."
+    },
+    {
+      "name": "close-on-escape",
+      "description": "Notification Window  closes on click of Escape Key.",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "background-color",
+      "description": "background color to the notification window.",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "foreground-color",
+      "description": "foreground color to the notification window text.",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none"
     }
   ]
 }

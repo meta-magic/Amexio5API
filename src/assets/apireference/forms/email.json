@@ -8,7 +8,14 @@
         "description": "The label of this field",
         "version": "4.0 onwards",
         "type": "string",
-        "default": ""
+        "default": "none"
+      },
+      {
+        "name": "place-holder",
+        "description": "Show place-holder inside dropdown component",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
       },
       {
         "name": "has-label",
@@ -22,7 +29,7 @@
         "description": "Sets if field is required",
         "version": "4.0 onwards",
         "type": "string",
-        "default": ""
+        "default": "none"
       },
       {
         "name": "error-msg",

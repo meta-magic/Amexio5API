@@ -16,7 +16,7 @@ import { HttpClient } from "@angular/common/http";
             <amexio-tab title="Demo" active="true">
             <amexio-row>
             <amexio-column [size]=12>
-                <amexio-card [header]="true" [footer]="false" [body-height]="'500px'">
+                <amexio-card [header]="true" [footer]="false" >
                     <amexio-header>
                         Search Box 
                     </amexio-header>
@@ -120,15 +120,12 @@ import { HttpClient } from "@angular/common/http";
             </amexio-tab>
             <amexio-tab title="Live">
              <p align="center">Amexio Sandbox</p>
-  <iframe style="width: 100%; height: 600px" src=""></iframe>
+  <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-searchbox?embed=1&file=src/app/forms/searchbox/searchbox.demo.html "></iframe>
             </amexio-tab>
           </amexio-tab-view>
         </amexio-body>
-      </amexio-card>
-   
-    `
+      </amexio-card> `
 })
-
 export class SearchBox implements OnInit {
   htmlCode: string;
   typeScriptCode: string;
@@ -142,6 +139,7 @@ export class SearchBox implements OnInit {
   bindData: any[] = [];
   constructor(private http: HttpClient, private element: ElementRef) {
     this.localData = [
+
       {
         "from": "araf.karsh@metamagic.in",
         "subject": "amexio release plans",
@@ -288,14 +286,14 @@ export class SearchBox implements OnInit {
     this.searchdata = this.localData;
    }
 
-  //this function is called on hit of filter and it filters entered data 
+  //this function is called on hit of filter and it filters entered data
   filter(search: any) {
 
     this.bindData = [];
     let sub1 = this.subject;
     let to1 = this.to;
     let frm1 = this.from;
- 
+
     if (sub1 == "" && frm1 == "" && to1 == "") {
        this.bindData = this.searchdata;
 

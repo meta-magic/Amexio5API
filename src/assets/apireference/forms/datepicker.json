@@ -51,7 +51,43 @@
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
+    },
+    {
+      "name": "min-date",
+      "description": "sets minimum date range",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "max-date",
+      "description": "sets maximum date range",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "disabled-date",
+      "description": "sets disabled dates range",
+      "version": "4.2 onwards",
+      "type": "any",
+      "default": "none"
+    },
+    {
+      "name": "inline-datepicker",
+      "description": "sets inline calender",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "dropdown-datepicker",
+      "description": "sets dropdown datepicker",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
     }
+
    
   ],
   "events": [ {

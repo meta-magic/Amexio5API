@@ -8,156 +8,155 @@
   constructor() {
     this.localData = [
       {
-        "from": "araf.karsh@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "amexio release plans",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "araf.karsh@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "visual studio extension",
-        "to": "engineering@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "ketan.gote@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "amexio on angular.io",
-        "to": "engineering@metamagic.in "
+        "to": "xyz@metamagic.in "
       },
       {
-        "from": "deepali.arvind@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "amexio npm download spike",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "dattaram.gawas@metamagic.in ",
+        "from": "xyz@metamagic.in ",
         "subject": "building web components",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "sagar.jadhav@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "showcase app url",
-        "to": "deepali.arvind@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "ketan.gote@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "spring cloud stream demo",
-        "to": "deepali.arvind@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "ketan.gote@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "spring microservice demo",
-        "to": "deepali.arvind@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "ketan.gote@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "spring kafka integration",
-        "to": "sagar.jadhav@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "ankita.Jain@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "jsr Implementation",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "mahesh.pardeshi@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "axon cqrs demo",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "pratik.kelwalkar@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "angular routing",
-        "to": "sagar.jadhav@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "dattaram.gawas@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "angular pipes",
-        "to": "ashwini.agre@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "ketan.gote@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "ribbon, hysterix",
-        "to": "dattaram.gawas@metamagic.in "
+        "to": "xyz@metamagic.in "
       },
       {
-        "from": "deepali.arvind@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "eureka server using spring cloud",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       },
       {
-        "from": "kedar.kokil@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "rx java",
-        "to": "ashwini.agre@metamgic.in"
+        "to": "xyz@metamgic.in"
       },
       {
-        "from": "manisha.boddu@metamgic.in",
+        "from": "PQR@metamgic.in",
         "subject": "spring + mongo db",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "araf.karsh@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "flux / redux architecture",
-        "to": "ketan.gote@metamgic.in"
+        "to": "xyz@metamgic.in"
       },{
-        "from": "ketan.gote@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "desire platform git repos",
-        "to": "rashmi.thakkar@metamagic.in"
+        "to": "PQR@metamagic.in"
       },{
-        "from": "ashwini.agre@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "pwa from react to angular/ionic",
-        "to": "sagar.jadhav@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "rashmi.thakkar@metamagic.in",
+        "from": "PQR@metamagic.in",
         "subject": "messages in platform",
-        "to": "ankita.jain@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "araf.karsh@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "typeScript secret weapon...",
-        "to": "sagar.jadhav@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "araf.karsh@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "visual studio code plugin",
-        "to": "sagar.jadhav@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "kedar.kokil@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "hashing algo",
-        "to": "dattaram.gawas@metamagic.in "
+        "to": "xyz@metamagic.in "
       },{
-        "from": "sagar.jadhav@metamagic.in ",
+        "from": "xyz@metamagic.in ",
         "subject": "vs code for windows, linux and mac os",
-        "to": "dattaram.gawas@metamagic.in "
+        "to": "xyz@metamagic.in "
       },{
-        "from": "dattaram.gawas@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "chart library - open source",
-        "to": "rashmi.thakkar@metamagic.in"
+        "to": "PQR@metamagic.in"
       },{
-        "from": "ankita.jain@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "tdom uptos in angular",
-        "to": "manisha.boddu@metamagic.in"
+        "to": "PQR@metamagic.in"
       },{
-        "from": "dattaram.gawas@metamagic.in ",
+        "from": "xyz@metamagic.in ",
         "subject": "hampi release",
-        "to": "sagar.jadhav@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "manisha.boddu@metamagic.in",
+        "from": "PQR@metamagic.in",
         "subject": "building web components",
-        "to": "ankita.jain@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "ketan.gote@metamagic.in",
+        "from": "xyz@metamagic.in",
         "subject": "spring + redis ",
-        "to": "deepali.arvind@metamagic.in"
+        "to": "xyz@metamagic.in"
       },{
-        "from": "rashmi.thakkar@metamgic.in",
+        "from": "PQR@metamgic.in",
         "subject": "amexio plans",
-        "to": "ketan.gote@metamagic.in"
+        "to": "xyz@metamagic.in"
       }
     ];
     this.searchdata = this.localData;
    }
 
-  //this function is called on hit of filter and it filters entered data 
+  //this function is called on hit of filter and it filters entered data
   filter(search: any) {
     this.bindData = [];
     let sub1 = this.subject;
     let to1 = this.to;
     let frm1 = this.from;
-    debugger;
     if (sub1 == "" && frm1 == "" && to1 == "") {
       debugger;
       this.bindData = this.searchdata;

@@ -11,6 +11,13 @@
         "default": ""
       },
       {
+        "name": "enable-click",
+        "description": "Enable label click",
+        "version": "4.2.7 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
         "name": "size",
         "description": "Responsive Font size, large,medium,small & large-bold,medium-bold,small-bold",
         "version": "4.0 onwards",
@@ -25,5 +32,10 @@
         "default": "small"
       }
     ],
-    "events": []
+    "events": [
+      {
+        "name": "onClick",
+        "description": "Fires on click of label"
+      }
+    ]
   }

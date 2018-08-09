@@ -28,9 +28,9 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-data-table-column>
                   <amexio-data-table-column [data-index]="'code3l'" [data-type]="'string'" [hidden]="false" [text]="'Country Code'">
                   </amexio-data-table-column>
-                  <amexio-data-table-column [data-index]="'latitude'" [data-type]="'string'" [hidden]="false" [text]="'Code'">
+                  <amexio-data-table-column [data-index]="'latitude'" [data-type]="'string'" [hidden]="false" [text]="'Latitude'">
                   </amexio-data-table-column>
-                  <amexio-data-table-column [data-index]="'longitude'" [data-type]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+                  <amexio-data-table-column [data-index]="'longitude'" [data-type]="'string'" [hidden]="false" [text]="'Longitude'"></amexio-data-table-column>
                 </amexio-datagrid>
                     <p><b>Selected row data : </b>{{clickedRowData | json}}</p>
                   </amexio-body>
@@ -55,7 +55,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [data-index]="'description'" [width]="40" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid><br>
-            <amexio-datagrid title="Column Properties<amexio-datagrid>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Column Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/data/grid.json'"
                              [data-reader]="'columnProperties'"
@@ -107,7 +107,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-grid-with-scroll?embed=1&file=app/grid/gridwithscroll/gridwithscroll.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-global-filter-grid?embed=1&file=app/grid/filtergrid/filtergrid.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>

@@ -208,6 +208,8 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'combo-chart-demo', loadChildren: './charts/combochart/combochart.demo.module#ComboChartDemoModule'
   }, {
     path: 'donut-chart-demo', loadChildren: './charts/donutchart/donutchart.demo.module#DonutChartDemoModule'
+  },{
+    path: 'gantt-chart-demo', loadChildren: './charts/ganttchart/ganttchart.demo.module#GanttChartDemoModule'
   }, {
     path: 'histogram-chart-demo',
     loadChildren: './charts/histogramchart/histogramchart.demo.module#HistogramChartDemoModule'
@@ -253,6 +255,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'template-grid', loadChildren: './data/gridwithtemplate/gridwithtemplate.demo.module#GridWithTemplateDemoModule'
   },
   {
+    path: 'header-template', loadChildren: './data/headertemplate/headertemplate.demo.module#HeaderTemplateDemoModule'
+  },
+  {
     path: 'filter-grid', loadChildren: './data/filtergrid/filtergrid.demo.module#FilterGridDemoModule'
   },
   {
@@ -289,6 +294,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'checkbox-tree', loadChildren: './data/tree/checkboxtree/checkboxtree.demo.module#CheckboxTreeDemoModule'
   },
   {
+    path: 'dragdrop-tree', loadChildren: './data/tree/treedragdrop/treedragdrop.demo.module#DragDropTreeDemoModule'
+  },
+  {
+    path: 'badge-tree', loadChildren: './data/tree/treewithbadge/treewithbadge.demo.module#TreeWithBadgeDemoModule'
+  },
+  {
     path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
   },
 /*Progress bar*/
@@ -310,5 +321,15 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
   },
+  /*Drag and Drop*/
+{
+  path : 'within-tree', loadChildren : './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
+},
+{
+  path : 'across-tree', loadChildren : './draganddrop/acrosstree/acrosstree.demo.module#AcrossTreeDemoModule'
+},
+{
+  path : 'tree-to-panel', loadChildren : './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
+},
 
 ];

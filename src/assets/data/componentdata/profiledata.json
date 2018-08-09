@@ -9,9 +9,11 @@
         "profile": "ketan.jpg"
       },
       {
-        "name": "Pratik Kelwalkar",
-        "name_official": "Pratik Kelwalkar",
-        "profile": "pratik.jpg"
+        "name": "Rashmi Thakkar",
+        "name_official": "Rashmi Thakkar",
+        "profile": "rashmi.jpg"
+
+
       },
       {
         "name": "Dattaram Gawas",
@@ -24,14 +26,14 @@
         "profile": "sagar.jpg"
       },
       {
-        "name": "Mahesh Pardeshi",
-        "name_official": "Mahesh Pardeshi",
-        "profile": "mahesh.jpg"
+        "name": "Deepali Arvind",
+        "name_official": "Deepali Arvind",
+        "profile": "dipali.jpg"
       },
       {
-        "name": "Ashutosh Jadhav",
-        "name_official": "Ashutosh Jadhav",
-        "profile": "ahutosh.jpg"
+        "name": "Ashwini Agre",
+        "name_official": "Ashwini agre",
+        "profile": "ashwini.jpg"
       }
     ]
   }

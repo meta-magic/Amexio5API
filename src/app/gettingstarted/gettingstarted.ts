@@ -16,11 +16,17 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <div align="center">
-            <a href="http://www.amexio.tech/">
-              <amexio-image [height] = "200" [width] ="150" path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
+            <div>
+            <a  href="http://www.amexio.tech/">
+              <amexio-image  [height] = "200" [width] ="150" path="https://image.ibb.co/kdy6Ev/logo.png"></amexio-image>
             </a>
+            <iframe align="right" width="560" height="270" src="https://www.youtube.com/embed/videoseries?list=PLi505KVOMPrGRUgJF4C3QoXbrhFGEOI4j&hl=en_US" frameborder="0" allowfullscreen></iframe>
             <br>
-            <h1>Amexio Angular EXtensions v4.2</h1>
+            <br>
+            <br>
+
+            </div>
+            <h1>Amexio Angular EXtensions v4.3</h1>
                     <amexio-image [height] = "50" [width] ="50" path="assets/images/npm.svg"></amexio-image>
 
                     <amexio-image [height] = "50" [width] ="50" path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
@@ -64,14 +70,14 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <amexio-panel [header]="true"
-                        [title]="'Installation Details'"
+                        [title]="'1. Installation Details'"
                         [expanded]="true">
             <amexio-row>
               <amexio-column size="12">
                 <amexio-accordion>
                   <amexio-accordion-tab header="Amexio 4.x - Angular 5" active="true">
                     <amexio-tab-view>
-                      <amexio-tab title="Installation" active="true">
+                      <amexio-tab title=" Installation" active="true">
                         <amexio-row>
                           <amexio-column size="12">
                             <b>To install this Amexio 4.x follow the steps given below:</b><br>
@@ -199,10 +205,10 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <amexio-panel [header]="true"
-                        [title]="'Themes'"
+                        [title]="'2. Themes'"
                         [expanded]="true">
             <p style="color: darkred"> Themes are available from Version 4 </p>
-            <span>To use the default include the <pre><code>../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss</code></pre>in your app .angular-cli.json <code
+            <span>To use the default include the <pre><code>../node_modules/amexio-ng-extensions/styles/css/at-md-blue.css</code></pre>in your app .angular-cli.json <code
               style="font-weight: bolder">styles</code> key</span>
 
 
@@ -267,7 +273,7 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
       <amexio-row>
         <amexio-column size="12">
           <amexio-panel [header]="true"
-                        [title]="'License'"
+                        [title]="'3. License'"
                         [expanded]="true">
             <br>
             <b>Amexio API License for Standard & Enterprise Edition</b>

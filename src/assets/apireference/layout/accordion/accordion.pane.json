@@ -30,12 +30,19 @@
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
+    },
+    {
+      "name": "header",
+      "description": "User can bind title for accordion tab",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": "none"
     }
   ],
   "events": [
     {
       "name": "emittedEvent",
-      "description": "Fires the on accordion pane click event."
+      "description": "Fires on the accordion pane click event."
     }
   ]
 }

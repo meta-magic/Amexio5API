@@ -40,9 +40,9 @@ import {HttpClient} from "@angular/common/http";
                       [value-field]="'id'"
                       (onSingleSelect)="getRowData($event)">
                       <ng-template #amexioBodyTmpl let-column let-row="row">
-                      <amexio-label>
+                      <amexio-label> 
                         <amexio-image [width]="100" [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
-                      </amexio-label>
+                      </amexio-label>&nbsp; &nbsp; 
                       <amexio-label>{{row.name}}</amexio-label>
                       <amexio-label>( {{row.name_official}} )</amexio-label>
                       </ng-template>
@@ -117,7 +117,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dropdown-multiselect?embed=1&file=app/forms/dropdownmulti/dropdownmulti.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-dropdown-template?embed=1&file=app/forms/dropdown/dropdown.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>

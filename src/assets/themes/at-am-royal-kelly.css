@@ -1126,6 +1126,20 @@ button {
     Version : Amexio v4.0 onwards
 *****************************************************************************/
 /** datetime - Visual CSS **/
+.datedropdown {
+  background: #292b2c; }
+  .datedropdown .dropdownlist {
+    color: #4CBB17; }
+  .datedropdown li:hover {
+    color: none;
+    background: rgba(255, 253, 208, 0.4);
+    width: 30px; }
+  .datedropdown .active {
+    background: #1b1d22;
+    color: #98FB98; }
+  .datedropdown li {
+    color: #4CBB17; }
+
 .datetimepicker {
   background: #292b2c; }
   .datetimepicker .datetimepickertopbar {
@@ -1144,6 +1158,24 @@ button {
     .datetimepicker .days .currentMonth {
       font-weight: bold; }
 
+.datetimepicker1 {
+  background: #292b2c; }
+  .datetimepicker1 .datetimepickertopbar {
+    background: #1b1d22; }
+    .datetimepicker1 .datetimepickertopbar ul li {
+      color: #4CBB17; }
+  .datetimepicker1 .days {
+    background: #292b2c; }
+    .datetimepicker1 .days li {
+      color: #4CBB17; }
+    .datetimepicker1 .days li:hover {
+      color: #1b1d22; }
+    .datetimepicker1 .days .active {
+      background: #1b1d22;
+      color: #98FB98; }
+    .datetimepicker1 .days .currentMonth {
+      font-weight: bold; }
+
 .datetimepicker-up {
   bottom: 100%; }
 
@@ -1155,13 +1187,24 @@ button {
   .datetimepicker .days .date-today {
     padding-top: 1%;
     padding-left: 36%; } }
+.dropspan2 {
+  border-color: #4CBB17; }
+
+.datedropbtn {
+  background-color: #98FB98;
+  color: black; }
+
+.change4 {
+  background-color: #1b1d22; }
+
 /** datetime - Structure CSS **/
 .datetimepicker {
   display: block;
   border: 2px solid #4CBB17;
   position: absolute;
   box-shadow: 0 1px 3px 0 #4CBB17;
-  z-index: 3; }
+  z-index: 3;
+  width: 290px; }
   .datetimepicker .datetimepickertopbar {
     padding: 10px 25px;
     text-align: center; }
@@ -1213,11 +1256,149 @@ button {
       padding-top: 1%;
       padding-left: 42%; }
 
+.datetimepicker1 {
+  display: block;
+  border: 2px solid #4CBB17;
+  box-shadow: 0 1px 3px 0 #4CBB17;
+  z-index: 3;
+  width: 290px; }
+  .datetimepicker1 .datetimepickertopbar {
+    padding: 10px 25px;
+    text-align: center; }
+    .datetimepicker1 .datetimepickertopbar .title {
+      font-size: 18px;
+      cursor: pointer; }
+    .datetimepicker1 .datetimepickertopbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .datetimepicker1 .datetimepickertopbar ul li {
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 3px; }
+    .datetimepicker1 .datetimepickertopbar .prev {
+      float: left;
+      padding-top: 10px;
+      cursor: pointer; }
+    .datetimepicker1 .datetimepickertopbar .next {
+      float: right;
+      padding-top: 10px;
+      cursor: pointer; }
+  .datetimepicker1 .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none; }
+    .datetimepicker1 .weekdays li {
+      display: inline-block;
+      width: 13.6%;
+      text-align: center; }
+  .datetimepicker1 .days {
+    padding: 10px 0;
+    margin: 0;
+    cursor: pointer;
+    list-style: none; }
+    .datetimepicker1 .days li {
+      list-style-type: none;
+      display: inline-block;
+      width: 13.6%;
+      height: 20px;
+      text-align: center;
+      margin-bottom: 5px;
+      font-size: 12px;
+      cursor: pointer; }
+    .datetimepicker1 .days .active {
+      border-radius: 135px;
+      padding: 5px; }
+    .datetimepicker1 .days .date-today {
+      padding-top: 1%;
+      padding-left: 42%; }
+
 .datetimepicker-up {
   bottom: 100%; }
 
 .datetimepicker:disabled {
   cursor: not-allowed; }
+
+.invaliddays {
+  opacity: .40;
+  cursor: not-allowed; }
+
+.disabled {
+  opacity: .40;
+  cursor: not-allowed; }
+
+.datedropdown {
+  display: block;
+  border: 2px solid #4CBB17;
+  box-shadow: 0 1px 3px 0 #4CBB17;
+  z-index: 3; }
+  .datedropdown li {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer; }
+
+.dropdiv1 {
+  width: 100%; }
+
+.dropspan1 {
+  float: left;
+  width: 25%; }
+
+.dropul1 {
+  list-style-type: none;
+  -webkit-padding-start: 5px; }
+
+.dropspan2 {
+  width: 25%;
+  float: left;
+  border-right: 1px solid #4CBB17; }
+
+.dropspan4 {
+  width: 25%;
+  display: table-row-group; }
+
+.dropul2 {
+  list-style-type: none;
+  -webkit-padding-start: 15px; }
+
+.dropiconpadding {
+  cursor: pointer;
+  -webkit-padding-start: 20px; }
+
+.btndiv1 {
+  position: relative;
+  bottom: 0; }
+
+.datedropbtn {
+  border: none;
+  padding: 6px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; }
+
+.dropbtnspan {
+  display: inline-flex;
+  padding-left: 105px; }
+
+.change4 {
+  padding-left: 3px;
+  padding-right: 4px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30px; }
+
+.disablearrow {
+  opacity: .40;
+  cursor: not-allowed;
+  pointer-events: none; }
 
 /****************************************************************************
     Component Name : Dropdown
@@ -1273,7 +1454,8 @@ button {
   font-weight: 400;
   margin: 1px 0;
   padding: .186em .313em;
-  text-align: left; }
+  text-align: left;
+  margin-left: 8px; }
 
 .drodown-caret-down {
   position: absolute;
@@ -1648,29 +1830,32 @@ textarea:required {
   position: fixed;
   z-index: 3; }
 
-.notification-left {
+.notification-vertical-top {
+  top: 10%; }
+
+.notification-vertical-center {
+  left: 40%;
+  top: 50%; }
+
+.notification-vertical-bottom {
+  bottom: 10px; }
+
+.notification-horizontal-left {
   left: 10px; }
 
-.notification-right {
+.notification-horizontal-center {
+  left: 40%; }
+
+.notification-horizontal-right {
   right: 0px; }
-
-.notification-top {
-  top: 10px; }
-
-.notification-center {
-  top: 50%;
-  left: 50%; }
-
-.notification-bottom {
-  bottom: 10px; }
 
 .notification {
   margin: 10px;
-  padding: 10px;
+  padding: 12px;
+  bottom: 10px;
   min-width: 250px;
-  text-align: center;
+  text-align: start;
   border-radius: 2px;
-  padding: 16px;
   z-index: 1;
   display: block; }
   .notification i {
@@ -2071,6 +2256,7 @@ input:checked + .toggle-slider:before {
 
 /** label - Structure CSS **/
 .label-badge {
+  margin-left: 10px;
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
@@ -2083,7 +2269,8 @@ input:checked + .toggle-slider:before {
   border-radius: 10px; }
 
 .large {
-  font-size: 36px; }
+  font-size: 36px;
+  line-height: 34px; }
 
 .medium {
   font-size: 20px; }
@@ -2093,7 +2280,8 @@ input:checked + .toggle-slider:before {
 
 .large-bold {
   font-size: 36px;
-  font-weight: bold; }
+  font-weight: bold;
+  line-height: 40px; }
 
 .medium-bold {
   font-size: 20px;
@@ -2632,7 +2820,7 @@ input:checked + .toggle-slider:before {
   color: #4CBB17; }
 
 .dropdown-menu-content {
-  background-color: #292b2c;
+  background-color: #292b2c !important;
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); }
 
 .dropdown-menu-content .dropdowndivider {
@@ -2864,7 +3052,8 @@ input:checked + .toggle-slider:before {
 
 .advancesearchbtn {
   height: 37px;
-  font-weight: bold; }
+  font-weight: bold;
+  cursor: pointer; }
 
 /****************************************************************************
     Component Name : Enterprise Content
@@ -3712,6 +3901,10 @@ header .billboard .content-button {
   background-color: #1b1d22;
   color: #4CBB17; }
 
+.tree-badge {
+  background-color: linear-gradient(#40434D, #000000);
+  color: #4CBB17; }
+
 /** Treenode - Structure CSS **/
 .treeview {
   height: 100%;
@@ -3755,8 +3948,25 @@ header .billboard .content-button {
 
 .tree-node-label {
   white-space: nowrap;
-  display: inline;
+  display: inline-block;
+  vertical-align: middle;
   cursor: pointer; }
+
+.tree-node-label-hover {
+  width: 100%; }
+
+.tree-badge {
+  margin-left: 10px;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px; }
 
 /****************************************************************************
     Component Name : Border Layout
@@ -4215,7 +4425,7 @@ header .billboard .content-button {
 
 .topnavmainbarinneritems .nav-dropdown-content {
   display: none;
-  position: fixed;
+  position: absolute;
   min-width: 160px;
   z-index: 3;
   padding: 10px 0px;
@@ -4353,6 +4563,10 @@ header .billboard .content-button {
 .sidenav .border {
   border-bottom: 2px solid #4CBB17; }
 
+.nav-badge {
+  background-color: linear-gradient(#40434D, #000000);
+  color: #4CBB17; }
+
 /** sidenav - Structure CSS **/
 .sidenav-mobile-bar {
   top: 10px;
@@ -4447,6 +4661,19 @@ header .billboard .content-button {
 .sidenav-submenu-expanded {
   max-height: 1000px;
   overflow: auto; }
+
+.nav-badge {
+  margin-left: 10px;
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: 10px; }
 
 /****************************************************************************
     Component Name : Dockbar
@@ -5243,6 +5470,11 @@ verticalalign-tableft {
 .modal-window-content {
   background-color: #292b2c; }
 
+.modal-window-material {
+  background-color: white;
+  font-size: 20px;
+  color: black; }
+
 .modal-window-header {
   background: linear-gradient(#40434D, #000000);
   font-size: 20px;
@@ -5261,7 +5493,7 @@ verticalalign-tableft {
   background-color: #292b2c; }
 
 .modal-window-footer {
-  background-color: linear-gradient(#40434D, #000000);
+  background-color: white;
   color: #4CBB17; }
 
 /** window - Structure CSS **/
@@ -5272,28 +5504,20 @@ verticalalign-tableft {
   z-index: 3;
   /* Sit on top */
   width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0; }
+  height: 100%; }
 
 .modal-window-lg {
   flex-direction: column;
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top */
-  width: 100%;
   height: 100%; }
 
 .modal-window-content {
+  position: absolute;
   margin: auto;
   padding: 0px;
+  border-radius: .3rem;
   border: 1px solid #888;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
-
-.modal-window-min {
-  padding-top: 70px; }
 
 .modal-window-content > * {
   padding: 10px;
@@ -5301,7 +5525,17 @@ verticalalign-tableft {
 
 .modal-window-content-max {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  top: 0% !important;
+  left: 0% !important; }
+
+.window-material-design-header {
+  display: flex;
+  border-bottom: 2px solid #4CBB17;
+  font-weight: 300;
+  border-radius: .3rem;
+  font-size: 20px;
+  text-transform: capitalize; }
 
 .modal-window-header {
   display: flex;
@@ -5325,6 +5559,13 @@ verticalalign-tableft {
 .modal-window-middle::-webkit-scrollbar {
   width: 6px; }
 
+.window-material-design-footer {
+  display: flex;
+  border-top: 1px solid #eceeef;
+  padding-right: 16px;
+  background-color: white;
+  border-radius: 0 0 .3rem .3rem; }
+
 .modal-window-footer {
   display: flex;
   border-top: 2px solid #4CBB17; }
@@ -5335,6 +5576,11 @@ verticalalign-tableft {
 
 .modal-window-table .tablerow {
   display: table-row; }
+
+.window-material-design-header .modal-window-table .tablerow .tablecol {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 15px; }
 
 .modal-window-table .tablerow .tablecol {
   display: table-cell;
@@ -5348,6 +5594,22 @@ verticalalign-tableft {
 .footer-right-align {
   padding-right: 7px; }
 
+.window-left {
+  left: 20px; }
+
+.window-right {
+  right: 7px; }
+
+.window-top {
+  top: 10px; }
+
+.window-center {
+  top: 20%;
+  left: 10%; }
+
+.window-bottom {
+  bottom: 10%; }
+
 /****************************************************************************
     Component Name : Dialogue
     Version : Amexio v4.0 onwards
@@ -5358,6 +5620,10 @@ verticalalign-tableft {
 
 .dialogue-content {
   background-color: #292b2c; }
+
+.dialogue-material-design {
+  background-color: white;
+  color: black; }
 
 .dialogue-header {
   background: linear-gradient(#40434D, #000000);
@@ -5404,6 +5670,7 @@ verticalalign-tableft {
   padding: 0px;
   width: 80%;
   height: 80%;
+  border-radius: .3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .dialogue-min {
@@ -5411,6 +5678,16 @@ verticalalign-tableft {
 
 .dialogue-content > * {
   padding: 5px; }
+
+.dialogue-material-design {
+  display: flex;
+  border-radius: .3rem;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize;
+  color: black;
+  padding: 10px;
+  border-bottom: 1px solid #eceeef; }
 
 .dialogue-header {
   display: flex;
@@ -5420,6 +5697,8 @@ verticalalign-tableft {
   text-transform: capitalize; }
 
 .dialogue-middle {
+  padding-top: 20px;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -5429,9 +5708,24 @@ verticalalign-tableft {
   overflow-y: hidden;
   overflow-x: hidden; }
 
+.dialogue-material-design-footer {
+  display: flex;
+  border-top: 1px solid #eceeef;
+  padding: 5px; }
+  .dialogue-material-design-footer .button-transparent {
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 1rem; }
+  .dialogue-material-design-footer .custom-btn .button-text {
+    font-size: 1rem;
+    color: blue; }
+
 .dialogue-footer {
   display: flex;
   border-top: 2px solid #4CBB17; }
+  .dialogue-footer .button-transparent {
+    border: none !important;
+    box-shadow: none !important; }
 
 .dialogue-message {
   display: flex;
@@ -5450,6 +5744,11 @@ verticalalign-tableft {
 
 .dialogue-table .tablerow {
   display: table-row; }
+
+.dialogue-material-design .dialogue-table .tablerow .tablecol {
+  display: table-cell;
+  vertical-align: middle;
+  color: black; }
 
 .dialogue-table .tablerow .tablecol {
   display: table-cell;
@@ -5896,6 +6195,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT                                */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -5980,7 +6294,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6069,11 +6384,23 @@ verticalalign-tableft {
   .flex-row {
     flex-direction: column; }
 
-  .flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4, .flex-col-5, .flex-col-6, .flex-col-7, .flex-col-8, .flex-col-9, .flex-col-10, .flex-col-11, .flex-col-12 {
+  .flex-col-1,
+  .flex-col-2,
+  .flex-col-3,
+  .flex-col-4,
+  .flex-col-5,
+  .flex-col-6,
+  .flex-col-7,
+  .flex-col-8,
+  .flex-col-9,
+  .flex-col-10,
+  .flex-col-11,
+  .flex-col-12 {
     max-width: 100%;
     flex: 0 0 100%; } }
 @media only screen and (max-width: 1024px) {
-  .flex-col-2pt5, .flex-col-9pt5 {
+  .flex-col-2pt5,
+  .flex-col-9pt5 {
     flex: 0 0 100%;
     max-width: 100%; } }
 /************************************************************************/
@@ -6092,6 +6419,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6176,7 +6518,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6265,11 +6608,23 @@ verticalalign-tableft {
   .flex-row {
     flex-direction: column; }
 
-  .flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4, .flex-col-5, .flex-col-6, .flex-col-7, .flex-col-8, .flex-col-9, .flex-col-10, .flex-col-11, .flex-col-12 {
+  .flex-col-1,
+  .flex-col-2,
+  .flex-col-3,
+  .flex-col-4,
+  .flex-col-5,
+  .flex-col-6,
+  .flex-col-7,
+  .flex-col-8,
+  .flex-col-9,
+  .flex-col-10,
+  .flex-col-11,
+  .flex-col-12 {
     max-width: 100%;
     flex: 0 0 100%; } }
 @media only screen and (max-width: 1024px) {
-  .flex-col-2pt5, .flex-col-9pt5 {
+  .flex-col-2pt5,
+  .flex-col-9pt5 {
     flex: 0 0 100%;
     max-width: 100%; } }
 /************************************************************************/
@@ -6288,6 +6643,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6372,7 +6742,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6470,6 +6841,21 @@ verticalalign-tableft {
 /*        BORDER LAYOUT Media Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
+  .borderlayout-N {
+    grid-area: north; }
+
+  .borderlayout-S {
+    grid-area: south; }
+
+  .borderlayout-E {
+    grid-area: east; }
+
+  .borderlayout-W {
+    grid-area: west; }
+
+  .borderlayout-C {
+    grid-area: center; }
+
   .borderlayout-container-N-E-C-W-S {
     grid-template-areas: 'north north north north north north' 'east east east east east east ' 'center center center center center center' 'west west west west west west' 'south south south south south south'; }
 
@@ -6554,7 +6940,8 @@ verticalalign-tableft {
 /*        ITEM SELECTOR Media-Q COMPONENT         */
 /************************************************************************/
 @media only screen and (max-width: 767px) {
-  .flex-col-45pt, .flex-col-10pt {
+  .flex-col-45pt,
+  .flex-col-10pt {
     max-width: 100%; }
 
   .item-selector-action-panel .card-header {
@@ -6643,11 +7030,23 @@ verticalalign-tableft {
   .flex-row {
     flex-direction: column; }
 
-  .flex-col-1, .flex-col-2, .flex-col-3, .flex-col-4, .flex-col-5, .flex-col-6, .flex-col-7, .flex-col-8, .flex-col-9, .flex-col-10, .flex-col-11, .flex-col-12 {
+  .flex-col-1,
+  .flex-col-2,
+  .flex-col-3,
+  .flex-col-4,
+  .flex-col-5,
+  .flex-col-6,
+  .flex-col-7,
+  .flex-col-8,
+  .flex-col-9,
+  .flex-col-10,
+  .flex-col-11,
+  .flex-col-12 {
     max-width: 100%;
     flex: 0 0 100%; } }
 @media only screen and (max-width: 1024px) {
-  .flex-col-2pt5, .flex-col-9pt5 {
+  .flex-col-2pt5,
+  .flex-col-9pt5 {
     flex: 0 0 100%;
     max-width: 100%; } }
 /************************************************************************/

@@ -2,33 +2,66 @@
   "properties": [
     {
       "name": "http-url",
+      "version": "4.0 onwords",
       "type": "string",
       "default": "",
       "description":"REST url for fetching data."
     },
     {
       "name": "http-method",
+      "version": "4.0 onwords",
       "type": "string",
       "default": "",
       "description":"Type of HTTP call, POST,GET etc."
     },
     {
       "name": "data",
+      "version": "4.0 onwords",
       "type": "any[]",
       "default": "",
       "description":"Local Data binding."
     },
     {
       "name": "data-reader",
+      "version": "4.0 onwords",
       "type": "string",
       "default": "",
       "description":"Key in JSON Datasource for records."
     },
     {
       "name": "enable-checkbox",
+      "version": "4.0 onwords",
       "type": "boolean",
       "default": "false",
       "description":"Enables checkbox for each row, this allows user for multi selection."
+    },
+    {
+      "name": "enable-drag",
+      "version": "5.0 onwords",
+      "type": "boolean",
+      "default": "false",
+      "description":"Nodes can be dragged."
+    },
+    {
+      "name": "enable-drop",
+      "version": "5.0 onwords",
+      "type": "boolean",
+      "default": "false",
+      "description":"Any node can be dropped in the tree structure."
+    },
+    {
+      "name": "across-tree",
+      "version": "5.0 onwords",
+      "type": "boolean",
+      "default": "false",
+      "description":"Dragging and dropping is possible across tree."
+    },
+    {
+      "name": "badge",
+      "version": "5.0 onwords",
+      "type": "boolean",
+      "default": "false",
+      "description":"Describes the badge value that has to be displayed tree node."
     }
   ],
   "events":[
@@ -39,6 +72,18 @@
     {
       "name": "onTreeNodeChecked",
       "description":"It will gives whole tree data with checked flag status."
+    },
+    {
+      "name": "onDrag",
+      "description":"It is fired when an element or text selection is being dragged by the user."
+    },
+    {
+      "name": "dragover",
+      "description":"It is fired when an element or text selection is being dragged over a valid drop target"
+    },
+    {
+      "name": "onDrop",
+      "description":"It is fired when an element or text selection is dropped on a valid drop target."
     }
   ]
 }

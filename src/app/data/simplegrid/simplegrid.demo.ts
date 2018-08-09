@@ -28,8 +28,10 @@ import {HttpClient} from "@angular/common/http";
                                                 [data-type]="'string'" 
                                                 [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
                       </amexio-data-table-column>
-                      <amexio-data-table-column [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
+                      <amexio-data-table-column [sort]="false"   [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false"  [text]="'Code'"></amexio-data-table-column>
+
                       <amexio-data-table-column [data-index]="'currencyName'" [data-type]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+
                     </amexio-datagrid>
                  <!--   <p><b>Selected row data : </b>{{selectedData | json}}</p>-->
                   </amexio-body>
@@ -101,7 +103,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-simple-grid?embed=1&file=app/grid/simplegrid/simplegrid.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-simple-grid?ctl=1&embed=1&file=app/grid/simplegrid/simplegrid.demo.html&view=editor"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -159,7 +161,6 @@ export class SimpleGridDemo {
   }
 
   getSelectedData(data: any) {
-    debugger;
     this.selectedData = data;
   }
 }

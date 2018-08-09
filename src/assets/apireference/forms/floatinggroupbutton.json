@@ -18,6 +18,13 @@
         "default": ""
       },
       {
+        "name": "icon",
+        "description": "Fa-icon class",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
         "name": "position-top",
         "description": "Takes top position in percentage or pixel",
         "version": "4.1 onwards",

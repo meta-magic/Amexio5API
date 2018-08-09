@@ -172,7 +172,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-listbox?embed=1&file=app/data/listbox/listbox.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-listbox?embed=1&file=app/data/listbox/listbox.demo.component.ts&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -243,12 +243,7 @@ export class ListBoxDemo {
           "profile": "ketan.jpg",
           "email" : "XYZ@metamagic.in"
         },
-        {
-          "name": "Pratik Kelwalkar",
-          "name_official": "Pratik Kelwalkar",
-          "profile": "pratik.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
+
         {
           "name": "Dattaram Gawas",
           "name_official": "Dattaram Gawas",
@@ -259,30 +254,6 @@ export class ListBoxDemo {
           "name": "Sagar Jadhav",
           "name_official": "Sagar Jadhav",
           "profile": "sagar.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
-        {
-          "name": "Mahesh Pardeshi",
-          "name_official": "Mahesh Pardeshi",
-          "profile": "mahesh.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
-        {
-          "name": "Ashutosh Jadhav",
-          "name_official": "Ashutosh Jadhav",
-          "profile": "ahutosh.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
-        {
-          "name": "Anagha Kulkarni",
-          "name_official": "Anagha Kulkarni",
-          "profile": "anagha.jpg",
-          "email" : "XYZ@metamagic.in"
-        },
-        {
-          "name": "Amruta Abhyankar",
-          "name_official": "Amruta Abhyankar",
-          "profile": "amruta.jpg",
           "email" : "XYZ@metamagic.in"
         },
         {

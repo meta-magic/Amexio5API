@@ -59,6 +59,7 @@ import { HttpClient } from "@angular/common/http";
                                   <amexio-btn-dropdown-item [label]="'Reject'">
                                   </amexio-btn-dropdown-item>
                               </amexio-btn-dropdown>
+                              
                           </amexio-column>
                           <amexio-column [size]="3">
                               <amexio-image style="color:grey;" [icon-class]="'fa fa-pencil fa-2x'"></amexio-image>
@@ -177,7 +178,7 @@ import { HttpClient } from "@angular/common/http";
               <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid><br>
-            <amexio-datagrid title="Column Properties<amexio-datagrid>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Column Properties" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/data/grid.json'"
                              [data-reader]="'columnProperties'"
@@ -371,7 +372,7 @@ export class GridWithTemplateDemo {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/gridtemplate.json', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/componentdata/templategrid.json ', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

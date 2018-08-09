@@ -27,7 +27,7 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-row>
                <amexio-column [size]="12">
                  <amexio-btn-dropdown [label]="'Button'" [type]="'success'" [size]="'default'" >
-                   <amexio-btn-dropdown-item [label]="'Link 1'" [icon]="'fa fa-arrows-alt'"></amexio-btn-dropdown-item>
+                   <amexio-btn-dropdown-item [label]="'Link 1'" [icon]="'fa fa-arrows-alt'" ></amexio-btn-dropdown-item>
                    <amexio-btn-dropdown-item [label]="'Link 2'"  [icon]="'fa fa-trash'"></amexio-btn-dropdown-item>
                  </amexio-btn-dropdown>
                </amexio-column>
@@ -84,7 +84,7 @@ import {HttpClient} from "@angular/common/http";
             <amexio-body>
               <amexio-row>
               <amexio-btn-dropdown [label]="'Button with badge'"   [type]="'theme-color'" [size]="'default'">
-              <amexio-btn-dropdown-item [label]="'Expand'" [badge] = "32" [icon]="'fa fa-arrows-alt'" ></amexio-btn-dropdown-item>
+              <amexio-btn-dropdown-item  [label]="'Expand'" [badge] = "32" [icon]="'fa fa-arrows-alt'" ></amexio-btn-dropdown-item>
               <amexio-btn-dropdown-item [label]="'Delete'" [badge] = "31" [icon]="'fa fa-trash'" ></amexio-btn-dropdown-item>
             </amexio-btn-dropdown>
               </amexio-row>
@@ -122,7 +122,7 @@ import {HttpClient} from "@angular/common/http";
 
       </amexio-tab>
       <amexio-tab title="Source">
-        <div style="overflow-y: scroll">
+        <div style="  overflow-y: scroll">
         <amexio-vertical-tab-view>
           <amexio-tab title="HTML" [active]="true">
             <ng-container *ngIf="htmlCode">
@@ -155,12 +155,10 @@ export class ButtonDropDownDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  onClick(data:any){
-    debugger;
-  }
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
+
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {

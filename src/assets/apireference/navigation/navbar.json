@@ -18,6 +18,15 @@
       "description": "Indicate if side-nav-bar is present"
     }
   ],
+  "navevents": [{
+        "name": "onNavLogoClick",
+        "description": "Fire when nav bar logo is clicked "
+    },
+    {
+        "name": "onNavTitleClick",
+        "description": "Fire when title is clicked"
+    }
+  ],
   "propertiesitem": [
     {
       "name": "position-center",
