@@ -28,7 +28,7 @@ import {HttpClient} from "@angular/common/http";
                                                 [data-type]="'string'" 
                                                 [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
                       </amexio-data-table-column>
-                      <amexio-data-table-column [sort]="false"   [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false"  [text]="'Code'"></amexio-data-table-column>
+                      <amexio-data-table-column  [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false"  [text]="'Code'"></amexio-data-table-column>
 
                       <amexio-data-table-column [data-index]="'currencyName'" [data-type]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
 
@@ -46,7 +46,16 @@ import {HttpClient} from "@angular/common/http";
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Name'"></amexio-data-table-column>
+                                        [text]="'Name'">
+                <ng-template #amexioBodyTmpl let-column let-row="row">
+                  <ng-container *ngIf="row.deprecated">
+                    <div style="text-decoration: line-through red;">{{row.name}}</div>
+                  </ng-container>
+                  <ng-container *ngIf="!row.deprecated">
+                    {{row.name}}
+                  </ng-container>
+                </ng-template>
+              </amexio-data-table-column>
               <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
