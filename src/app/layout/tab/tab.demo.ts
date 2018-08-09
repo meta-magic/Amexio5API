@@ -7,6 +7,7 @@ import {Http} from "@angular/http";
 
 @Component({
   selector: 'basic-tab-demo', template: `
+    
     <amexio-card header="true">
       <amexio-header>
          Basic Tab 
