@@ -1,4 +1,4 @@
- 
+
 
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
@@ -73,7 +73,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-tree-data-table>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/data/grid.json'"
+                             [http-url]="'assets/apireference/data/treedatagrid.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
@@ -204,7 +204,7 @@ if(data.hasOwnProperty('children') && data.children.length>0){
 }
 
 
-checkchild(data:any){  
+checkchild(data:any){
 data.children.forEach((element:any) => {
    element.done = !element.done;
   if(element.hasOwnProperty('children') && element.children.length>0){
