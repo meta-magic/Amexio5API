@@ -127,6 +127,17 @@ this.amexiotechmenus =  [
     "link": "http://metaarivu.com/amexio-training"
   }]
 },
+{
+  "text": "Case Studies",
+  "icon": "fa fa-clone fa-fw",
+  "submenus": [
+    {"text":"Shopping Portal","link":"http://amexio.org/demo/se/v4/shoppingapp/"},
+    {"text":"US Election Results","link":"http://amexio.org/demo/se/v4/pollingapp/"},
+    {"text":"Insurance Portal","link":"http://amexio.org/demo/se/v4/digitalBuzaar/"},
+    {"text":"Movie Portal","link":"http://www.amexio.org/tecmflix2"},
+    {"text":"NpmStats","link":"https://www.npmstats.com/"}
+  ]
+},
   {
   "text": "Engage",
   "icon": "fa fa-envelope fa-fw",
