@@ -125,6 +125,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'
   },
   {
+    path: 'contextmenu-card-form', loadChildren: './contextualmenu/card/contextmenucardform.demo.module#ContextMenuCardFormDemoModule'
+  },
+  {
     path: 'card-image-demo', loadChildren: './layout/card/cardimage/cardimage.demo.module#CardImageDemoModule'
   },
   {
@@ -173,6 +176,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path : 'panel', loadChildren : './panes/panel/panel.demo.module#PanelDemoModule'
   },
   {
+    path : 'contextmenu-panel', loadChildren : './contextualmenu/panel/contextmenupanel.demo.module#ContextMenuPanelDemoModule'
+  },
+  {
     path : 'carousel', loadChildren : './panes/carousel/carousel.demo.module#CarouselDemoModule'
   },
   {
@@ -180,6 +186,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path : 'window', loadChildren : './panes/window/window.demo.module#WindowDemoModule'
+  },
+  {
+    path : 'contextmenu-window', loadChildren : './contextualmenu/window/contextmenuwindow.demo.module#ContextMenuWindowDemoModule'
   },
   {
     path : 'form-demo', loadChildren : './panes/form/form.demo.module#FormDemoModule'

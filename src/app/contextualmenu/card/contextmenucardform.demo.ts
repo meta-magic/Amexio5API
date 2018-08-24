@@ -6,7 +6,7 @@ import { Component } from '@angular/core'
 import { Http } from "@angular/http";
 
 @Component({
-  selector: 'card-form-demo', template: `
+  selector: 'contextmenu-card-form', template: `
 
   <amexio-card header="true">
 
@@ -24,7 +24,7 @@ import { Http } from "@angular/http";
         </amexio-row>
         <amexio-row>
           <amexio-column size="12">
-            <amexio-card [header]="true" [footer]="true" [show]="flag" [footer-align]="'right'" height="250">
+            <amexio-card  [context-menu]="rightclickdata" [header]="true" [footer]="true" [show]="flag" [footer-align]="'right'" height="250">
               <amexio-header>
                 Employee Registration
               </amexio-header>
@@ -80,9 +80,7 @@ import { Http } from "@angular/http";
         
         </amexio-row>
 
-        <amexio-row>
-          
-        </amexio-row>
+        
 
       </amexio-tab>
       <amexio-tab title="API Reference">
@@ -125,7 +123,7 @@ import { Http } from "@angular/http";
 
   `
 })
-export class CardFormDemo {
+export class ContextMenuCardFormDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];

@@ -175,5 +175,3 @@ export class FilterGridDemo {
     this.selectedData = data;
   }
 }
-
-

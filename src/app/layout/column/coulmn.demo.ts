@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import { Component } from '@angular/core'
+import { Http } from "@angular/http";
 
 @Component({
   selector: 'column-demo', template: `
@@ -14,12 +14,13 @@ import {Http} from "@angular/http";
       <amexio-body>
         <p>Amexio column system allows up to 12 columns across the page.</p>
         <amexio-tab-view>
-          <amexio-tab title="Demo" active="true">
+          <amexio-tab title="Demo" active="true" >
             
             <amexio-row>
-              <amexio-column size="2">
+              <amexio-column size="2" >
                 <amexio-card>
-                  <amexio-body>COL 2
+                  <amexio-body>COL 2 
+                  
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -111,6 +112,15 @@ import {Http} from "@angular/http";
                 </amexio-card>
               </amexio-column>
             </amexio-row>
+            <amexio-row>
+              <amexio-column size="12"  >
+                <amexio-card>
+                  <amexio-body>
+                    COL 12
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-column>" [enable-column-fiter]="false"
@@ -195,9 +205,9 @@ export class ColumnDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 }

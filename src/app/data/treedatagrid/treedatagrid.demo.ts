@@ -36,6 +36,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-datagrid>" [enable-column-fiter]="false"
                              [http-method]="'get'"
+                             
                              [http-url]="'assets/apireference/data/treedatagrid.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">

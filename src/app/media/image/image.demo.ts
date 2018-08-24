@@ -7,6 +7,8 @@ import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'image-demo', template: `
+    
+    
     <amexio-card header="true">
       <amexio-header>
          Image 

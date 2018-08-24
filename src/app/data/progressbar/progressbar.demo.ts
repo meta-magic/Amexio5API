@@ -3,13 +3,13 @@
  */
 
 import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'progressbar-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Progress Bar 
+         Progress Bar
       </amexio-header>
       <amexio-body>
         <p>Progress Bar Component Provides up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars and easy to configure.</p>
@@ -19,10 +19,10 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header>
-                     Progress Bar 
+                     Progress Bar
                   </amexio-header>
                   <amexio-body>
-                  
+
                      <h3>Primary</h3>
                     <amexio-row>
                       <amexio-column [size]="4">
@@ -59,7 +59,7 @@ import {HttpClient} from "@angular/common/http";
                         <amexio-progress-bar [current-value]="'99'" [infinite]="false" type="success"></amexio-progress-bar>
                       </amexio-column>
                     </amexio-row>
-                    <h3>Danger</h3>                    
+                    <h3>Danger</h3>
                     <amexio-row>
                       <amexio-column [size]="4">
                         <amexio-progress-bar [current-value]="'54'" [infinite]="false" type="danger"></amexio-progress-bar>
@@ -95,7 +95,7 @@ import {HttpClient} from "@angular/common/http";
                       <amexio-progress-bar  [current-value]="'100'" [infinite]="false" [amexio-color]="'amexio-yellow'"></amexio-progress-bar>
                     </amexio-column>
                   </amexio-row>
-                  
+
                   <amexio-row>
                     <amexio-column [size]="3">
                       <amexio-progress-bar [stripped]="true"  [current-value]="'50'" [infinite]="false" [amexio-color]="'amexio-red'"></amexio-progress-bar>
@@ -172,7 +172,7 @@ export class ProgressBarDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/progressbar/progressbar.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/progressbar/progressbar.html', {responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -180,7 +180,7 @@ export class ProgressBarDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/progressbar/progressbar.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/progressbar/progressbar.text', {responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

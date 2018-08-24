@@ -517,6 +517,21 @@
                     "text": "Tab",
                     "icon": "fa fa-folder fa-fw",
                     "link": "contextual-menu-tab"
+                },
+                {
+                    "text": "panel",
+                    "icon": "fa fa-bars fa-fw",
+                    "link": "contextmenu-panel"
+                },
+                {
+                    "text": "window",
+                    "icon": "fa fa-window-maximize fa-fw",
+                    "link": "contextmenu-window"
+                },
+                {
+                    "text": "card",
+                    "icon": "fa fa-id-card-o fa-fw",
+                    "link": "contextmenu-card-form"
                 }
             ]
         },
