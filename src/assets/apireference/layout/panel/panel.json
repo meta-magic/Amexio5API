@@ -43,6 +43,10 @@
     {
       "name": "onClick",
       "description": "Fires the on accordion pane click event."
+    },
+    {
+      "name": "rightClick",
+      "description": "It is fired when clicked on context menu providing row data and selected context menu data."
     }
   ]
 }

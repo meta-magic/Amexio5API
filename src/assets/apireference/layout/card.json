@@ -58,7 +58,19 @@
       "version": "4.0 onwards",
       "type": "any",
       "default": ""
+    },
+    {
+      "name": "context-menu",
+      "description": "Context Menu provides the panel on right click(for Array structure: refer typescript code in source tab)",
+      "version": "5.2 onwards",
+      "type": "any[]",
+      "default": ""
     }
   ],
-  "events": []
+  "events": [
+    {
+      "name": "rightClick",
+      "description": "It is fired when clicked on context menu providing row data and selected context menu data."
+    }
+  ]
 }

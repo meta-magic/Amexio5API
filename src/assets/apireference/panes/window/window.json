@@ -102,6 +102,10 @@
     {
       "name": "close",
       "description": "close the window"
+    },
+    {
+      "name": "rightClick",
+      "description": "It is fired when clicked on context menu providing row data and selected context menu data."
     }
   ]
 }
