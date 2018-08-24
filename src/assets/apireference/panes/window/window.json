@@ -93,7 +93,7 @@
     {
       "name": "context-menu",
       "description": "Context Menu provides the Window on right click(for Array structure: refer typescript code in source tab)",
-      "version": "5.2 onwards",
+      "version": "5.1.6 onwards",
       "type": "any[]",
       "default": ""
     }
