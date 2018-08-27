@@ -76,12 +76,12 @@
 
   <amexio-row>
 
-    <amexio-column [size]=3 [fit] = true>
+    <amexio-column [size]=3 [fit] = 'true' >
       <amexio-card header="true">
         <amexio-header>
           Table Of Contents
         </amexio-header>
-        <amexio-body>
+        <amexio-body style="display: flex; justify-content: center; flex-direction: column;">
           <div style="height: 100%;">
             <amexio-row>
               <amexio-column size="12">
@@ -104,7 +104,7 @@
       </amexio-card>
     </amexio-column>
 
-    <amexio-column [size]="3">
+    <amexio-column [size]="3" [fit] = 'true'>
       <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
         <amexio-header>Source Code</amexio-header>
         <amexio-body style="display: flex; justify-content: center; flex-direction: column;">
@@ -121,14 +121,14 @@
         </amexio-action>
       </amexio-card>
     </amexio-column>
-    <amexio-column [size]="3">
+     <amexio-column [size]="3" [fit] = 'true'>
       <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
         <amexio-header>Amexio Plugin</amexio-header>
         <amexio-body style="display: flex; justify-content: center; flex-direction: column;">
           <amexio-image style="display: flex; justify-content: center; " [path]="'assets/images/logos/amexio_plugin.jpeg'" [height]="'100px'">
           </amexio-image>
           <amexio-label style="display: flex; justify-content: center; ">
-            <br/> Visual Studio Plugin
+             Visual Studio Plugin
             <br/>Increase Producitivty By 50%
           </amexio-label>
         </amexio-body>
@@ -139,15 +139,15 @@
         </amexio-action>
       </amexio-card>
     </amexio-column>
-    <amexio-column [size]="3">
+    <amexio-column [size]="3" [fit] = 'true'>
       <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
         <amexio-header>Amexio Canvas</amexio-header>
         <amexio-body style="display: flex; justify-content: center; flex-direction: column;">
           <amexio-image style="display: flex; justify-content: center; " [height]="'102px'" [path]="'assets/images/logos/amexio_canvas.jpeg'">
           </amexio-image>
           <amexio-label style="display: flex; justify-content: center; ">
-            <br/>Angular UI Automation Platform
-            <br/>Increase Producitivty By more 3x
+            Angular UI Automation Platform
+            Increase Producitivty By more 3x
             <br/>
           </amexio-label>
         </amexio-body>
@@ -156,7 +156,7 @@
           </amexio-button>
         </amexio-action>
       </amexio-card>
-    </amexio-column>
+    </amexio-column> 
 
   </amexio-row>
 
