@@ -519,17 +519,17 @@
                     "link": "contextual-menu-tab"
                 },
                 {
-                    "text": "panel",
+                    "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
                     "link": "contextmenu-panel"
                 },
                 {
-                    "text": "window",
+                    "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
                     "link": "contextmenu-window"
                 },
                 {
-                    "text": "card",
+                    "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
                     "link": "contextmenu-card-form"
                 }
