@@ -3,7 +3,7 @@ import {RouterModule} from "@angular/router";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {NgModule} from "@angular/core";
-import {SharedModule} from "../../shared.module";
+import {SharedModule} from "../../../shared.module";
 import {AmexioChartsModule, AmexioWidgetModule} from "amexio-ng-extensions";
 import {HttpClientModule} from "@angular/common/http";
 @NgModule({

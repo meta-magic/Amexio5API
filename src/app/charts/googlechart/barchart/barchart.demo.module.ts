@@ -3,15 +3,15 @@ import {AmexioChartsModule, AmexioWidgetModule} from "amexio-ng-extensions";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {NgModule} from "@angular/core";
-import {ScatterChartDemoComponent} from "./scatterchart.demo.component";
-import {SharedModule} from "../../shared.module";
+import {BarChartDemoComponent} from "./barchart.demo.component";
+import {SharedModule} from "../../../shared.module";
 import {HttpClientModule} from "@angular/common/http";
 @NgModule({
-  declarations: [ScatterChartDemoComponent],
+  declarations: [BarChartDemoComponent],
   imports: [CommonModule, FormsModule, HttpClientModule, AmexioWidgetModule,SharedModule,AmexioChartsModule, RouterModule.forChild([{
-    path: '', component: ScatterChartDemoComponent, pathMatch: 'full'
+    path: '', component: BarChartDemoComponent, pathMatch: 'full'
   }])],
   providers: []
 })
-export class ScatterChartDemoModule {
+export class BarChartDemoModule {
 }

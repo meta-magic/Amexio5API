@@ -3,15 +3,15 @@ import {AmexioChartsModule, AmexioWidgetModule} from "amexio-ng-extensions";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
 import {NgModule} from "@angular/core";
-import {CandlestickWaterfallChartDemoComponent} from "./candlestickchartwaterfall.demo.component";
-import {SharedModule} from "../../shared.module";
+import {SharedModule} from "../../../shared.module";
 import {HttpClientModule} from "@angular/common/http";
+import { GanttChartDemoComponent } from "./ganttchart.demo.component";
 @NgModule({
-  declarations: [CandlestickWaterfallChartDemoComponent],
+  declarations: [GanttChartDemoComponent],
   imports: [CommonModule, FormsModule, HttpClientModule, AmexioWidgetModule, SharedModule,AmexioChartsModule,RouterModule.forChild([{
-    path: '', component: CandlestickWaterfallChartDemoComponent, pathMatch: 'full'
+    path: '', component: GanttChartDemoComponent, pathMatch: 'full'
   }])],
   providers: []
 })
-export class CandlestickWaterfallChartDemoModule {
+export class GanttChartDemoModule {
 }
