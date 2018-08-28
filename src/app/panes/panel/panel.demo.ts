@@ -17,7 +17,7 @@ import { HttpClient } from "@angular/common/http";
     <p>Panel provides an easy way to organize big forms by grouping the fields in panel</p>
     <amexio-tab-view>
         <amexio-tab title="Demo" active="true">
-
+<h2>Demo:Panel</h2>
             <amexio-row>
                 <amexio-column [size]="4">
                     <amexio-panel [header]="true" title="Panel" [expanded]="false">
@@ -31,10 +31,10 @@ import { HttpClient } from "@angular/common/http";
                 </amexio-column>
                 <amexio-column [size]="4">
                     <amexio-panel [header]="true" title="Custom Header" expanded="true">
-                        <amexio-header>
+                        <amexio-panel-header>
                             <amexio-image [icon-class]="'fa fa-refresh fa-fw'" (onClick)="refreshData()">
                             </amexio-image>
-                        </amexio-header>
+                        </amexio-panel-header>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                         text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
                         make a type specimen book. It has survived not only five centuries, but also the leap into electronic
@@ -60,11 +60,41 @@ import { HttpClient } from "@angular/common/http";
                     </amexio-panel>
                 </amexio-column>
             </amexio-row>
+            <h2>Demo:Panel with ToolBar</h2>
+    <amexio-row>
+        <amexio-column [size]="12">
+            <amexio-panel [header]="true" title="Custom Header" expanded="true">
+                <amexio-panel-header>
+                <amexio-text-input name="name"
+                place-holder="Enter name"
+                icon-feedback="true">
+                </amexio-text-input>
+                <amexio-text-input name="name"
+                place-holder="Enter name"
+                icon-feedback="true">
+                </amexio-text-input>
+                   
+                </amexio-panel-header>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+</amexio-panel>
+            <amexio-dialogue [show-dialogue]="refreshDialogue" [title]="'refresh'" [message]="'Data refresh successfully.'" [primary-action-label]="'ok'"
+                [message-type]="'warning'" [type]="'alert'">
+            </amexio-dialogue>
+        </amexio-column>
+
+    </amexio-row>
 
             
         </amexio-tab>
         <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties <amexio-panel>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/panel/panel.json'"
+            <amexio-datagrid title="Properties <amexio-panel>" [enable-column-fiter]="false" 
+            [http-method]="'get'" 
+            [http-url]="'assets/apireference/layout/panel/panel.json'"
                 [data-reader]="'properties'" [enable-data-filter]="false">
                 <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                 <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'version'"></amexio-data-table-column>
@@ -73,6 +103,15 @@ import { HttpClient } from "@angular/common/http";
                 <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br />
+            <amexio-datagrid title="Properties <amexio-panel-header>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/panel/panel.json'"
+            [data-reader]="'properties'" [enable-data-filter]="false">
+            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'version'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+        </amexio-datagrid>
+            <br/>
             <amexio-datagrid title="Events" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/panel/panel.json'"
                 [data-reader]="'events'" [enable-data-filter]="false">
                 <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
