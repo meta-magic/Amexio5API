@@ -516,9 +516,10 @@
             "badge": "New",
             "children": [
                 {
-                    "text": "Tree",
-                    "icon": "fa fa-tree fa-fw",
-                    "link": "contextual-menu-tree"
+                    "text": "Card",
+                    "icon": "fa fa-id-card-o fa-fw",
+                    "badge": "New",
+                    "link": "contextmenu-card-form"
                 },
                 {
                     "text": "Grid",
@@ -531,27 +532,26 @@
                     "link": "contextual-menu-listbox"
                 },
                 {
-                    "text": "Tab",
-                    "icon": "fa fa-folder fa-fw",
-                    "link": "contextual-menu-tab"
-                },
-                {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
                     "badge": "New",
                     "link": "contextmenu-panel"
                 },
                 {
+                    "text": "Tab",
+                    "icon": "fa fa-folder fa-fw",
+                    "link": "contextual-menu-tab"
+                },
+                {
+                    "text": "Tree",
+                    "icon": "fa fa-tree fa-fw",
+                    "link": "contextual-menu-tree"
+                },
+                {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
                     "badge": "New",
                     "link": "contextmenu-window"
-                },
-                {
-                    "text": "Card",
-                    "icon": "fa fa-id-card-o fa-fw",
-                    "badge": "New",
-                    "link": "contextmenu-card-form"
                 }
             ]
         },
