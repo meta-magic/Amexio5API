@@ -17,6 +17,12 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Demo" active="true">
             <amexio-accordion>
               <amexio-accordion-tab header="Page One" active="true"> 
+              <amexio-accordion-header>
+                    <amexio-label size="small" font-color="white">
+                     Completed : 100%
+                     </amexio-label>
+                     <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -24,25 +30,53 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-row>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page two">
+              <amexio-accordion-header>
+                    <amexio-label size="small" font-color="white">
+                     Completed : 90%
+                     </amexio-label>
+                     <i class="fa fa-info-circle" aria-hidden="true"></i>
+              </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum. Vestibulum tempus, urna non ultrices aliquam, ex ex blandit lacus, at porttitor odio ligula sed lacus. Praesent in luctus odio, at sodales orci. Vivamus vitae ullamcorper lectus.
                   </amexio-column>
                 </amexio-row>
               </amexio-accordion-tab>
-              <amexio-accordion-tab header="Page three">
+             <amexio-accordion-tab header="Page three">
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 80%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec sapien pretium euismod. Sed lobortis quis sapien a mollis. Nullam ex nibh, malesuada eget rutrum eu, dapibus quis ante. Proin non convallis augue, at tincidunt nisi. Cras et metus blandit, sollicitudin mi ac, fringilla libero.
                   </amexio-column>
                 </amexio-row>
               </amexio-accordion-tab>
-              <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.</amexio-accordion-tab>
-            </amexio-accordion>
+              <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 70%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
+              
+              
+              </amexio-accordion-tab>
+            
+              </amexio-accordion>
             <br><br>
             <span style="font-weight: bolder">All expanded Panes</span>
             <amexio-accordion expand-all="true">
               <amexio-accordion-tab header="Section One">
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -50,6 +84,12 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-row>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Section Two">
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 90%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum. Vestibulum tempus, urna non ultrices aliquam, ex ex blandit lacus, at porttitor odio ligula sed lacus. Praesent in luctus odio, at sodales orci. Vivamus vitae ullamcorper lectus.
@@ -57,18 +97,37 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-row>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Section Three">
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 80%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec sapien pretium euismod. Sed lobortis quis sapien a mollis. Nullam ex nibh, malesuada eget rutrum eu, dapibus quis ante. Proin non convallis augue, at tincidunt nisi. Cras et metus blandit, sollicitudin mi ac, fringilla libero.
                   </amexio-column>
                 </amexio-row>
               </amexio-accordion-tab>
-              <amexio-accordion-tab header="Section Four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.</amexio-accordion-tab>
+              <amexio-accordion-tab header="Section Four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 70%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
+              </amexio-accordion-tab>
             </amexio-accordion>
             <br><br>
             <span style="font-weight: bolder"> Transparent Accordion</span>
             <amexio-accordion transparent="true" angle-icon="true">
               <amexio-accordion-tab header="Page One" active="true">
+              <amexio-accordion-header>
+              <amexio-label size="small" >
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -76,6 +135,12 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-row>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page two">
+              <amexio-accordion-header>
+              <amexio-label size="small">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum. Vestibulum tempus, urna non ultrices aliquam, ex ex blandit lacus, at porttitor odio ligula sed lacus. Praesent in luctus odio, at sodales orci. Vivamus vitae ullamcorper lectus.
@@ -83,18 +148,37 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-row>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page three">
+              <amexio-accordion-header>
+              <amexio-label size="small">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec sapien pretium euismod. Sed lobortis quis sapien a mollis. Nullam ex nibh, malesuada eget rutrum eu, dapibus quis ante. Proin non convallis augue, at tincidunt nisi. Cras et metus blandit, sollicitudin mi ac, fringilla libero.
                   </amexio-column>
                 </amexio-row>
               </amexio-accordion-tab>
-              <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.</amexio-accordion-tab>
+              <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
+              <amexio-accordion-header>
+              <amexio-label size="small">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
+              </amexio-accordion-tab>
             </amexio-accordion>
             <br><br>
             <span style="font-weight: bolder">Disabled Accordion Panes</span>
             <amexio-accordion>
               <amexio-accordion-tab header="Page One" active="true">
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -102,6 +186,12 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-row>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page two">
+              <amexio-accordion-header>
+              <amexio-label size="small">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
                     Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum. Vestibulum tempus, urna non ultrices aliquam, ex ex blandit lacus, at porttitor odio ligula sed lacus. Praesent in luctus odio, at sodales orci. Vivamus vitae ullamcorper lectus.
@@ -109,13 +199,26 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-row>
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page three" disabled="true">
-                <amexio-row>
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
+              <amexio-row>
                   <amexio-column size="12">
                     Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec sapien pretium euismod. Sed lobortis quis sapien a mollis. Nullam ex nibh, malesuada eget rutrum eu, dapibus quis ante. Proin non convallis augue, at tincidunt nisi. Cras et metus blandit, sollicitudin mi ac, fringilla libero.
                   </amexio-column>
                 </amexio-row>
               </amexio-accordion-tab>
-              <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.</amexio-accordion-tab>
+              <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
+              <amexio-accordion-header>
+              <amexio-label size="small" font-color="white">
+               Completed : 100%
+               </amexio-label>
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-accordion-header>
+              </amexio-accordion-tab>
             </amexio-accordion>
           </amexio-tab>
           <amexio-tab title="API Reference">

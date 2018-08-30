@@ -65,15 +65,15 @@ import { HttpClient } from "@angular/common/http";
         <amexio-column [size]="12">
             <amexio-panel [header]="true" title="Custom Header" expanded="true">
                 <amexio-panel-header>
-                <amexio-text-input name="name"
-                place-holder="Enter name"
-                icon-feedback="true">
-                </amexio-text-input>
-                <amexio-text-input name="name"
-                place-holder="Enter name"
-                icon-feedback="true">
-                </amexio-text-input>
-                   
+                    <amexio-label size="small" font-color="white">
+                        My Drive
+                     </amexio-label>
+                    <amexio-text-input name="name"
+                    place-holder="Enter name"
+                    icon-feedback="true">
+                    </amexio-text-input>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  
                 </amexio-panel-header>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to

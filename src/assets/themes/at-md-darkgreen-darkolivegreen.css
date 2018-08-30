@@ -4348,6 +4348,9 @@ header .billboard .content-button {
   font-size: 15px;
   transition: 0.4s; }
 
+.accordion .amexio-accordion-header {
+  padding: 8px; }
+
 .accordion:after {
   font-weight: bold;
   float: right;
@@ -4387,6 +4390,11 @@ header .billboard .content-button {
 .card-container {
   background-color: #ffffff;
   color: #121212; }
+
+.card-header .toolbar {
+  background-color: unset;
+  box-shadow: unset;
+  padding: 0px; }
 
 .card-header {
   background: #556b2f;
@@ -4456,6 +4464,12 @@ header .billboard .content-button {
 .form-error {
   color: #556b2f;
   font-weight: bold; }
+
+.form-header .toolbar {
+  background-color: unset;
+  box-shadow: unset;
+  padding: 0px;
+  overflow: none; }
 
 .form-header {
   background: #556b2f;
@@ -4559,7 +4573,6 @@ fieldset {
   border-radius: 2px; }
 
 .collapsible-legend {
-  padding: 5px 10px;
   font-size: 13px;
   margin-left: 20px;
   box-shadow: none;
@@ -5012,6 +5025,11 @@ verticalalign-tableft {
   font-size: 20px;
   color: black; }
 
+.modal-window-header .toolbar {
+  background: #290500;
+  font-size: 20px;
+  color: #ffedeb; }
+
 .modal-window-header {
   background: #556b2f;
   font-size: 20px;
@@ -5309,9 +5327,20 @@ verticalalign-tableft {
   color: red;
   font-weight: bold; }
 
+.panel-accordion .toolbar {
+  background-color: unset;
+  box-shadow: unset;
+  padding: 0px; }
+
 .panel-panel {
   background-color: #ffffff;
   color: #121212; }
+
+.amexio-panel-header {
+  display: flex; }
+
+.amexio-panel-header > * {
+  padding-right: 8px; }
 
 .panel-panel::-webkit-scrollbar-track {
   background-color: #d2dbc2; }
