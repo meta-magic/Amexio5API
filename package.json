@@ -23,6 +23,7 @@
     "amexio-ng-extensions": "^4.1.4",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
+    "d3": "^5.7.0",
     "font-awesome": "^4.7.0",
     "ngx-cookie-service": "^1.0.10",
     "prismjs": "^1.14.0",
