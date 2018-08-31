@@ -1,7 +1,7 @@
 /**
  * Created by pratik on 11/12/17.
  */
-import {Routes} from '@angular/router';
+import { Routes } from '@angular/router';
 
 export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
@@ -10,7 +10,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
   }, {
     path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
-  },{
+  }, {
     path: 'amexio-colors', loadChildren: './theme/theme.module#ThemeModule'
   },
   {
@@ -93,7 +93,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'floatinggroupbutton-demo', loadChildren: './forms/floatinggroup/floatinggroupbutton.demo.module#FloatingGroupButtonDemoModule'
   },
-
   /** Navigation*/
   {
     path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
@@ -124,9 +123,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'
   },
-  {
-    path: 'contextmenu-card-form', loadChildren: './contextualmenu/card/contextmenucardform.demo.module#ContextMenuCardFormDemoModule'
-  },
+
   {
     path: 'card-image-demo', loadChildren: './layout/card/cardimage/cardimage.demo.module#CardImageDemoModule'
   },
@@ -155,9 +152,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'enhanced-tab-demo', loadChildren: './layout/tab/enhancedtab/enhancedtab.demo.module#EnhancedTabDemoModule'
   },
   {
-    path: 'contextual-menu-tab', loadChildren : './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
-  },
-  {
     path: 'vertical-tab-demo', loadChildren: './layout/tab/verticaltab/verticaltab.demo.module#VerticalTabDemoModule'
   },
   {
@@ -167,39 +161,34 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'step-box', loadChildren: './layout/steps/stepbox/stepbox.demo.module#StepBoxDemoModule'
   },
   {
-    path : 'step-box-icon', loadChildren : './layout/steps/stepbox-icon/stepbox.icon.demo.module#StepBoxIconDemoModule'
+    path: 'step-box-icon', loadChildren: './layout/steps/stepbox-icon/stepbox.icon.demo.module#StepBoxIconDemoModule'
   },
   {
-    path : 'accordion', loadChildren : './panes/accordion/accordion.demo.module#AccordionDemoModule'
+    path: 'accordion', loadChildren: './panes/accordion/accordion.demo.module#AccordionDemoModule'
   },
   {
-    path : 'panel', loadChildren : './panes/panel/panel.demo.module#PanelDemoModule'
-  },
-  {
-    path : 'contextmenu-panel', loadChildren : './contextualmenu/panel/contextmenupanel.demo.module#ContextMenuPanelDemoModule'
-  },
-  {
-    path : 'carousel', loadChildren : './panes/carousel/carousel.demo.module#CarouselDemoModule'
-  },
-  {
-    path : 'fieldset', loadChildren : './panes/fieldset/fieldset.demo.module#FieldSetDemoModule'
-  },
-  {
-    path : 'window', loadChildren : './panes/window/window.demo.module#WindowDemoModule'
-  },
-  {
-    path : 'contextmenu-window', loadChildren : './contextualmenu/window/contextmenuwindow.demo.module#ContextMenuWindowDemoModule'
-  },
-  {
-    path : 'form-demo', loadChildren : './panes/form/form.demo.module#FormDemoModule'
-  },
-  {
-    path : 'dialouge', loadChildren : './panes/dialogue/dialogue.demo.module#DialogueDemoModule'
-  },
-  {
-    path : 'border', loadChildren : './layout/border/border.demo.module#BorderDemoRoutingModule'
+    path: 'panel', loadChildren: './panes/panel/panel.demo.module#PanelDemoModule'
   },
 
+  {
+    path: 'carousel', loadChildren: './panes/carousel/carousel.demo.module#CarouselDemoModule'
+  },
+  {
+    path: 'fieldset', loadChildren: './panes/fieldset/fieldset.demo.module#FieldSetDemoModule'
+  },
+  {
+    path: 'window', loadChildren: './panes/window/window.demo.module#WindowDemoModule'
+  },
+
+  {
+    path: 'form-demo', loadChildren: './panes/form/form.demo.module#FormDemoModule'
+  },
+  {
+    path: 'dialouge', loadChildren: './panes/dialogue/dialogue.demo.module#DialogueDemoModule'
+  },
+  {
+    path: 'border', loadChildren: './layout/border/border.demo.module#BorderDemoRoutingModule'
+  },
 
   /**Chart Routes*/
   {
@@ -220,7 +209,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'combo-chart-demo', loadChildren: './charts/googlechart/combochart/combochart.demo.module#ComboChartDemoModule'
   }, {
     path: 'donut-chart-demo', loadChildren: './charts/googlechart/donutchart/donutchart.demo.module#DonutChartDemoModule'
-  },{
+  }, {
     path: 'gantt-chart-demo', loadChildren: './charts/googlechart/ganttchart/ganttchart.demo.module#GanttChartDemoModule'
   }, {
     path: 'histogram-chart-demo',
@@ -257,9 +246,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'listbox-demo', loadChildren: './data/listbox/listbox.demo.module#ListBoxDemoModule'
   },
-
   /*grid....*/
-
   {
     path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
   },
@@ -281,9 +268,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'scroll-grid', loadChildren: './data/gridwithscroll/gridwithscroll.demo.module#GridWithScrollDemoModule'
   },
-  {
-    path: 'context-menu-grid', loadChildren: './data/gridwithcontextmenu/gridwithcontextmenu.demo.module#GridWithScrollDemoModule'
-  },
+
   {
     path: 'global-filter-grid', loadChildren: './data/globalfiltergrid/globalfilter.demo.module#GlobalFilterDemoModule'
   },
@@ -295,7 +280,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
 
   /*Tree*/
-
   {
     path: 'simple-tree', loadChildren: './data/tree/simpletree/simpletree.demo.module#SimpleTreeDemoModule'
   },
@@ -315,53 +299,80 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'badge-tree', loadChildren: './data/tree/treewithbadge/treewithbadge.demo.module#TreeWithBadgeDemoModule'
   },
   {
-    path: 'context-menu-tree', loadChildren: './data/tree/contextmenutree/contextmenutree.demo.module#ContextMenuTreeDemoModule'
-  },
-  {
     path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
   },
-/*Progress bar*/
+  /*Progress bar*/
   {
     path: 'progressbar-demo', loadChildren: './data/progressbar/progressbar.demo.module#ProgressBarDemoModule'
   },
   {
-    path : 'multi-item-carousel', loadChildren : './enterprise/multi-item-carousel/multi.item.carousel#EECarouselDemoRoutingModule'
+    path: 'multi-item-carousel', loadChildren: './enterprise/multi-item-carousel/multi.item.carousel#EECarouselDemoRoutingModule'
   },
   {
-    path : 'ee-content', loadChildren : './enterprise/content/content.demo.module#ContentRoutingModule'
+    path: 'ee-content', loadChildren: './enterprise/content/content.demo.module#ContentRoutingModule'
   },
   {
-    path : 'ee-video', loadChildren : './enterprise/youtube-player/youtube.demo.module#YoutubePlayerModule'
+    path: 'ee-video', loadChildren: './enterprise/youtube-player/youtube.demo.module#YoutubePlayerModule'
   },
   {
-    path : 'license', loadChildren : './license/license.module#LicenseModule'
+    path: 'license', loadChildren: './license/license.module#LicenseModule'
   },
   {
     path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
   },
-/*Drag and Drop*/
-{
-  path : 'within-tree', loadChildren : './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
-},
-{
-  path : 'across-tree', loadChildren : './draganddrop/acrosstree/acrosstree.demo.module#AcrossTreeDemoModule'
-},
-{
-  path : 'tree-to-panel', loadChildren : './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
-},
-/*Contextual Menus*/
-{
-  path : 'contextual-menu-tree', loadChildren : './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'
-},
-{
-  path : 'contextual-menu-grid', loadChildren : './contextualmenu/grid/contextmenugrid.demo.module#ContextualMenuGridDemoModule'
-},
-{
-  path : 'contextual-menu-listbox', loadChildren : './contextualmenu/listbox/contextmenulistbox.demo.module#ContextualMenuListBoxDemoModule'
-},
-{
-  path : 'contextual-menu-tab', loadChildren : './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
-},
+  /*Drag and Drop*/
+  {
+    path: 'within-tree', loadChildren: './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
+  },
+  {
+    path: 'across-tree', loadChildren: './draganddrop/acrosstree/acrosstree.demo.module#AcrossTreeDemoModule'
+  },
+  {
+    path: 'tree-to-panel', loadChildren: './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
+  },
+  /*Contextual Menus*/
+  {
+    path: 'contextual-menu-tree', loadChildren: './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'
+  },
+  {
+    path: 'contextual-menu-grid', loadChildren: './contextualmenu/grid/contextmenugrid.demo.module#ContextualMenuGridDemoModule'
+  },
+  {
+    path: 'contextual-menu-listbox', loadChildren: './contextualmenu/listbox/contextmenulistbox.demo.module#ContextualMenuListBoxDemoModule'
+  },
+  {
+    path: 'contextual-menu-tab', loadChildren: './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
+  },
+  {
+    path: 'context-menu-grid', loadChildren: './data/gridwithcontextmenu/gridwithcontextmenu.demo.module#GridWithScrollDemoModule'
+  },
+  {
+    path: 'context-menu-tree', loadChildren: './data/tree/contextmenutree/contextmenutree.demo.module#ContextMenuTreeDemoModule'
+  },
+  {
+    path: 'contextmenu-card-form', loadChildren: './contextualmenu/card/contextmenucardform.demo.module#ContextMenuCardFormDemoModule'
+  },
+  {
+    path: 'contextual-menu-tab', loadChildren: './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
+  },
+  {
+    path: 'contextmenu-panel', loadChildren: './contextualmenu/panel/contextmenupanel.demo.module#ContextMenuPanelDemoModule'
+  },
+  {
+    path: 'contextmenu-window', loadChildren: './contextualmenu/window/contextmenuwindow.demo.module#ContextMenuWindowDemoModule'
+  },
 
+  /* D3-Charts */
 
+  {
+    path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
+  }, 
+  {
+    path: 'amexio-d3-chart-donut', loadChildren: './charts/D3charts/d3donutchart/d3donutchart.demo.module#D3DonutChartDemoModule'
+  }, 
+  {
+    path: 'amexio-d3-chart-pie', loadChildren: './charts/D3charts/d3piechart/d3piechart.demo.module#D3PieChartDemoModule'
+  }, 
+  
+  
 ];

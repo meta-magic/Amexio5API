@@ -622,7 +622,7 @@
                     "badge": "New",
                     "children": [
                         {
-                            "text": " Bar Chart",
+                            "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-bar"

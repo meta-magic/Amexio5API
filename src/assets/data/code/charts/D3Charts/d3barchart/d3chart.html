@@ -1,0 +1,19 @@
+
+<!-- D3-bar with Legend Color-->
+
+
+<amexio-d3-chart-bar
+                [title]="'Company Performance'"
+                [data]="barChartData"
+                [color]="barChartColor">
+                        <amexio-d3chartlegend 
+                                [data]="barChartData">
+                        </amexio-d3chartlegend>
+</amexio-d3-chart-bar>
+
+<!--  D3-bar without Legend Color-->
+<amexio-d3-chart-bar 
+        [title]="'Bar Chart'" 
+        [data]="barData" 
+        [colors]="barChartColor">
+</amexio-d3-chart-bar>

@@ -1,0 +1,43 @@
+[
+    {
+        "label": "A",
+        "value": 180,
+        "textcolor": "blue"
+    },
+    {
+        "label": "B",
+        "value": 100
+    },
+    {
+        "label": "C",
+        "value": 56
+    },
+    {
+        "label": "D",
+        "value": 120
+    },
+    {
+        "label": "E",
+        "value": 90
+    },
+    {
+        "label": "F",
+        "value": 140
+    },
+    {
+        "label": "G",
+        "value": 130
+    },
+    {
+        "label": "H",
+        "value": 110
+    },
+    {
+        "label": "I",
+        "value": 70
+    },
+    {
+        "label": "J",
+        "value": 170
+    }
+]
