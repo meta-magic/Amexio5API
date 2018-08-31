@@ -623,21 +623,21 @@
                     "children": [
                         {
                             "text": " Bar Chart",
-                            "icon": "fa fa-area-chart fa-fw",
+                            "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-bar"
                         },
                         {
                             "text": "Donut Chart",
-                            "icon": "fa fa-bar-chart fa-fw",
+                            "icon": "fa fa-pie-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-donut"
                         },
                         {
                             "text": "Pie Chart",
-                            "icon": "fa fa-circle fa-fw",
+                            "icon": "fa fa-pie-chart fa-fw",
                             "badge": "New",
-                            "link": "bubble-chart-demo"
+                            "link": "amexio-d3-chart-pie"
                         }
                     ]
                 },
