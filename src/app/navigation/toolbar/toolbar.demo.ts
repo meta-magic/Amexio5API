@@ -114,7 +114,7 @@ import { HttpClient } from "@angular/common/http";
         </amexio-toolbar>       
             <h2>Demo: Tool Bar In Card Header</h2>
            
-            <amexio-card [header]="true">
+        <amexio-card [header]="true">
           <amexio-header style="width:100%">
           
                <amexio-toolbar>
@@ -180,10 +180,39 @@ import { HttpClient } from "@angular/common/http";
                                 [data-type]="'string'" [hidden]="false"
                                 [text]="'Last Modified'">
       </amexio-data-table-column>
-</amexio-datagrid>
+    </amexio-datagrid>
 				                  
-			              </amexio-body>
-	              	</amexio-card>
+  </amexio-body>
+</amexio-card>
+<h2>Demo: Tool Bar In Panel Header</h2>
+<amexio-row>
+        <amexio-column [size]="12">
+            <amexio-panel [header]="true" title="Custom Header" expanded="true">
+                <amexio-panel-header>
+                    <amexio-label size="small" font-color="white">
+                        My Drive
+                     </amexio-label>
+                    <amexio-text-input name="name"
+                    place-holder="Enter name"
+                    icon-feedback="true">
+                    </amexio-text-input>
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  
+                </amexio-panel-header>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                software like Aldus PageMaker including versions of Lorem Ipsum.
+</amexio-panel>
+            <amexio-dialogue [show-dialogue]="refreshDialogue" [title]="'refresh'" [message]="'Data refresh successfully.'" [primary-action-label]="'ok'"
+                [message-type]="'warning'" [type]="'alert'">
+            </amexio-dialogue>
+        </amexio-column>
+
+    </amexio-row>
+
           
            
             
