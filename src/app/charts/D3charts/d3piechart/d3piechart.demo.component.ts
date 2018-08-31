@@ -28,11 +28,11 @@ export class AmexioD3PieChartDemoComponent implements OnInit
     this.pieChartData = [
       {
           "label": "Work",
-          "value": 9
+          "value": 4
       },
       {
           "label": "Eat",
-          "value": 4
+          "value": 5
       },
       {
           "label": "Commute",
