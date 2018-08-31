@@ -31,11 +31,11 @@ this.donutChartColor = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "
 this.donutData = [
   {
     "label": "IE",
-    "value": 39.1
+    "value": 39.3
   },
   {
     "label": "Chrome",
-    "value": 32.51
+    "value": 32.52
   },
   {
     "label": "Safari",
