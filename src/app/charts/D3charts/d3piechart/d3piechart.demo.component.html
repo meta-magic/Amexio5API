@@ -14,7 +14,10 @@
                                 D3-pie with Legend
                             </amexio-header>
                             <amexio-body>
-                                <amexio-d3-chart-pie [title]="'D3 pie Chart'" [data]="pieChartData" [colors]="pieChartColor"></amexio-d3-chart-pie>
+                                <amexio-d3-chart-pie [title]="'My Daily Activities'" [data]="pieChartData">
+                                    <amexio-d3chartlegend [data]="pieChartData">
+                                    </amexio-d3chartlegend>
+                                </amexio-d3-chart-pie>
                             </amexio-body>
                         </amexio-card>
                     </amexio-column>
@@ -22,8 +25,8 @@
             </amexio-tab>
 
             <amexio-tab title="API Reference">
-                <amexio-datagrid title="D3-Pie-Chart Properties<amexio-d3-chart-pie>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3piechart.json'"
-                    [data-reader]="'properties'" [enable-data-filter]="false">
+                <amexio-datagrid title="D3-Pie-Chart Properties<amexio-d3-chart-pie>" [enable-column-fiter]="false" [http-method]="'get'"
+                    [http-url]="'assets/apireference/charts/d3charts/d3piechart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>

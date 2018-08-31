@@ -27,46 +27,25 @@ export class AmexioD3PieChartDemoComponent implements OnInit
 
     this.pieChartData = [
       {
-          "label": "A",
-          "value": 180,
-          "textcolor": "blue"
+          "label": "Work",
+          "value": 9
       },
       {
-          "label": "B",
-          "value": 100
+          "label": "Eat",
+          "value": 4
       },
       {
-          "label": "C",
-          "value": 56
+          "label": "Commute",
+          "value": 2
       },
       {
-          "label": "D",
-          "value": 120
+          "label": "Watch TV",
+          "value": 7
       },
       {
-          "label": "E",
-          "value": 90
+          "label": "Sleep",
+          "value": 3
       },
-      {
-          "label": "F",
-          "value": 140
-      },
-      {
-          "label": "G",
-          "value": 130
-      },
-      {
-          "label": "H",
-          "value": 110
-      },
-      {
-          "label": "I",
-          "value": 70
-      },
-      {
-          "label": "J",
-          "value": 170
-      }
     ];
 
   }
