@@ -206,9 +206,7 @@ import { HttpClient } from "@angular/common/http";
                 of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                 software like Aldus PageMaker including versions of Lorem Ipsum.
 </amexio-panel>
-            <amexio-dialogue [show-dialogue]="refreshDialogue" [title]="'refresh'" [message]="'Data refresh successfully.'" [primary-action-label]="'ok'"
-                [message-type]="'warning'" [type]="'alert'">
-            </amexio-dialogue>
+           
         </amexio-column>
 
     </amexio-row>
