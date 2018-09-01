@@ -17,6 +17,7 @@
                 {
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
+                    "badge": "U",
                     "link": "accordion"
                 },
                 {
@@ -81,6 +82,7 @@
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
+                    "badge": "U",
                     "link": "panel"
                 },
                 {
