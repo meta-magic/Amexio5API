@@ -4,6 +4,8 @@ export class AmexioD3PieChartDemoComponent
 {
   piechartcolor: any;
   piechartdata: any;
+  sourceData: any;
+  
   
   constructor() { }
 
@@ -31,5 +33,10 @@ export class AmexioD3PieChartDemoComponent
           "value": 3
       }
     ];
+
+
+  onLegendItemClick(event: any) {
+    this.sourceData = event;
+  }
 }
 

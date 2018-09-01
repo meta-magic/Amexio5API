@@ -14,10 +14,11 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
   copyMsgArray: any[];
   barChartColor: any;
   barChartData: any;
+  barD: any;
+  sourceData: any;
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
-
   }
 
 
@@ -26,12 +27,12 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
 
     this.barChartData = [
       {
-        "label": "2011	",
+        "label": "2011",
         "value": 1020,
         "textcolor": "blue"
       },
       {
-        "label": "2012	",
+        "label": "2012",
         "value": 590
       },
       {
@@ -55,8 +56,14 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
         "value": 1006
       }
     ];
+
   }
 
+  onLegendItemClick(event: any) {
+    
+    this.sourceData = event;
+
+  }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {

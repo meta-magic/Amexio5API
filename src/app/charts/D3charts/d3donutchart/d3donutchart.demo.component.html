@@ -10,19 +10,43 @@
                     <amexio-column [size]="12">
                         <amexio-card [header]="true" [header-align]="'left'" [show]="'true'">
                             <amexio-header>
-                                D3-donut with Legend
+                                D3-donut Chart
                             </amexio-header>
                             <amexio-body>
-                                <amexio-d3-chart-donut [title]="'Browser Information'" [data]="donutData">
-                                    <amexio-d3chartlegend [data]="donutData">
-                                    </amexio-d3chartlegend>
-                                </amexio-d3-chart-donut>
+
+                                <amexio-row>
+                                    <amexio-column [size]="12">
+                                        <amexio-card [header]="true" [show]="'true'">
+                                            <amexio-header>
+                                                D3-donut with Legend
+                                            </amexio-header>
+                                            <amexio-body>
+                                                <amexio-d3-chart-donut [title]="'Browser Information'" [color]="donutChartColor" [data]="donutData" (onLegendClick)="onLegendItemClick($event)">
+                                                </amexio-d3-chart-donut>
+                                            </amexio-body>
+                                        </amexio-card>
+                                    </amexio-column>
+
+                                </amexio-row>
+                                <amexio-row>
+                                    <amexio-column [size]="12">
+                                        <amexio-card header="true" >
+                                            <amexio-header>
+                                                Click On Legend
+                                            </amexio-header>
+                                            <amexio-body>
+                                                <pre><code>{{sourceData |json }}</code></pre>
+
+                                            </amexio-body>
+                                        </amexio-card>
+
+                                    </amexio-column>
+                                </amexio-row>
+
                             </amexio-body>
                         </amexio-card>
                     </amexio-column>
                 </amexio-row>
-
-
             </amexio-tab>
 
             <amexio-tab title="API Reference">

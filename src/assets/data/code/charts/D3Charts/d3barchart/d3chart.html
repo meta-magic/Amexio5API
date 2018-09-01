@@ -5,8 +5,8 @@
 <amexio-d3-chart-bar
                 [title]="'Company Performance'"
                 [data]="barChartData"
-                [color]="barChartColor">
-                        <amexio-d3chartlegend 
-                                [data]="barChartData">
-                        </amexio-d3chartlegend>
+                [color]="barChartColor"
+                [legend]="true"
+                (onLegendClick)="onLegendItemClick($event)">
+                
 </amexio-d3-chart-bar>

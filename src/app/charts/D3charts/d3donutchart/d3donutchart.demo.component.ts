@@ -19,6 +19,8 @@ export class AmexioD3DonutChartDemoComponent implements OnInit {
   donutChartColor: any;
   donutData: any;
   copyMsgArray: any[];
+  sourceData: any;
+
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -50,6 +52,11 @@ this.donutData = [
     "value": 6.01
   }
 ];
+
+  }
+
+  onLegendItemClick(event: any) {
+    this.sourceData = event;
   }
 
 

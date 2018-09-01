@@ -3,9 +3,8 @@
 <amexio-d3-chart-pie 
         [title]="'pie Chart'" 
         [data]="pieData" 
-        [color]="pieChartColor">
-                        <amexio-d3chartlegend 
-                                  [data]="pieData">
-                        </amexio-d3chartlegend>
+        [color]="pieChartColor"
+        [legend]="true"
+        (onLegendClick)="onLegendItemClick($event)">
 </amexio-d3-chart-pie>
 

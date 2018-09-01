@@ -15,6 +15,7 @@ export class AmexioD3PieChartDemoComponent implements OnInit
     copyMsgArray: any[];
     pieChartData: any;
     pieChartColor: any;
+    sourceData: any;
   
   constructor(private http: HttpClient) { 
     this.getHtmlAndTypeScriptCode();
@@ -23,13 +24,13 @@ export class AmexioD3PieChartDemoComponent implements OnInit
 
  
   ngOnInit() {
-    this.pieChartColor = ["#98abc5", "#8a8906", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
+    this.pieChartColor = ["lightgrey ", "#8a8906", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
 
     this.pieChartData = [
       {
           "label": "Work",
-          "value": 4
-      },
+          "value": 4,
+      },  
       {
           "label": "Eat",
           "value": 5
@@ -48,8 +49,12 @@ export class AmexioD3PieChartDemoComponent implements OnInit
       }
     ];
 
+
   }
 
+  onLegendItemClick(event: any) {
+    this.sourceData = event;
+  }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {

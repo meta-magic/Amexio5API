@@ -4,6 +4,7 @@ export class AmexioD3BarChartDemoComponent
 {
   barchartcolor: any;
   barchartdata: any;
+  sourceData: any;
   
   constructor() { }
 
@@ -40,5 +41,10 @@ export class AmexioD3BarChartDemoComponent
         "value": 1006
       }
     ];
+
+
+  onLegendItemClick(event: any) {
+    this.sourceData = event;
+  }
 }
 
