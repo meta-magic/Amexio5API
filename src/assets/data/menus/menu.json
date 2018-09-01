@@ -13,6 +13,7 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
+            "badge": "1",
             "children": [
                 {
                     "text": "Accordion",
@@ -61,7 +62,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "4",
+            "badge": "5",
             "children": [
                 {
                     "text": "Carousel",
