@@ -45,7 +45,7 @@ export class AmexioD3PieChartDemoComponent implements OnInit
       {
           "label": "Sleep",
           "value": 3
-      },
+      }
     ];
 
   }
