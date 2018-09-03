@@ -235,6 +235,145 @@ import { HttpClient } from "@angular/common/http";
            </amexio-form-header>
             </amexio-column>
         </amexio-row>
+        <h2>Demo: Tool Bar In Window Header</h2>
+        <amexio-row>
+          <amexio-column >
+          <amexio-button type="success"
+          (onClick)="toggleBasicWindow('nonmaterialtoolbar')"
+          label="Basic Window"></amexio-button>
+          <amexio-window
+                 [body-height]="40"
+                 [(show)]="showBasicWindowNonMateialToolbar"
+                 [close-on-escape]="true"
+                 [material-design]="false"
+                 [footer]="true"
+                 [vertical-position]="'top'"
+                 [horizontal-position]="'center'">
+                 <amexio-header>
+                <amexio-window-header>
+                <amexio-toolbar>
+                <amexio-toolbar-item position-left>
+                <amexio-label size="small" >
+                 Registration
+                </amexio-label>
+                   </amexio-toolbar-item>
+               
+                <amexio-toolbar-item position-right [seperator-position]="'left'">
+                <i class="fa fa-th" aria-hidden="true"></i>
+                </amexio-toolbar-item>
+                <amexio-toolbar-item position-right [seperator-position]="'left'">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+                </amexio-toolbar-item>
+                <amexio-toolbar-item position-right [seperator-position]="'left'">
+                <i class="fa fa-question-circle" aria-hidden="true"></i>
+                </amexio-toolbar-item>
+                <amexio-toolbar-item position-right [seperator-position]="'left'">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                </amexio-toolbar-item>
+             </amexio-toolbar>
+                </amexio-window-header>
+                 </amexio-header>
+                 <amexio-body>
+                   <amexio-row>
+                     <amexio-column [size]="6">
+                       <amexio-text-input [field-label]="'Name'" name="country"
+                                          [place-holder]="'Enter name'"
+                                          [enable-popover]="true"
+
+                                          [icon-feedback]="true"
+                                          [allow-blank]="false" [error-msg]="'Please enter name'"
+                                          [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                                          [max-error-msg]="'Name should be less than 15 characters'"
+                       >
+                       </amexio-text-input>
+                     </amexio-column>
+                     <amexio-column [size]="6">
+                       <amexio-text-input [field-label]="'Surname'" name="name"
+                                          [place-holder]="'Enter surname'"
+                                          [enable-popover]="true"
+                                          [icon-feedback]="true"
+                                          [allow-blank]="false" [error-msg]="'Please enter Surname'"
+                                          [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                                          [max-error-msg]="'Surname should be less than 15 characters'"
+                       >
+                       </amexio-text-input>
+                     </amexio-column>
+                   </amexio-row>
+
+                   <amexio-row>
+                     <amexio-column [size]="6">
+                       <amexio-text-input [field-label]="'Description'" name="country"
+                                          [place-holder]="'Description'"
+                                          [enable-popover]="true"
+                                          [icon-feedback]="true"
+                                          [allow-blank]="false" [error-msg]="'Please enter name'"
+                                          [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                                          [max-error-msg]="'Name should be less than 15 characters'"
+                       >
+                       </amexio-text-input>
+                     </amexio-column>
+                     <amexio-column [size]="6">
+                       <amexio-text-input [field-label]="'Hobbies'" name="name"
+                                          [place-holder]="'Hobbies'"
+                                          [enable-popover]="true"
+                                          [icon-feedback]="true"
+                                          [allow-blank]="false" [error-msg]="'Please enter Surname'"
+                                          [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                                          [max-error-msg]="'Surname should be less than 15 characters'"
+                       >
+                       </amexio-text-input>
+                     </amexio-column>
+                   </amexio-row>
+
+                   <amexio-row>
+                     <amexio-column [size]="6">
+
+                       <amexio-textarea-input [field-label]="'Address'" name="Address"
+                                              [place-holder]="'Enter address'"
+                                              [error-msg]="'Please enter address'"
+                                              [icon-feedback]="true"
+                                              [rows]="'1'" [columns]="'2'"
+                                              [allow-blank]="false" [enable-popover]="true"
+
+                       >
+                       </amexio-textarea-input>
+
+
+                     </amexio-column>
+
+                   </amexio-row>
+
+
+                   <amexio-row>
+                     <amexio-column [size]="6">
+                       <amexio-text-input [field-label]="'Phone'" name="country"
+                                          [place-holder]="'Phone'"
+                                          [enable-popover]="true"
+                                          [icon-feedback]="true"
+                                          [allow-blank]="false" [error-msg]="'Please enter name'"
+                                          [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                                          [max-error-msg]="'Name should be less than 15 characters'"
+                       >
+                       </amexio-text-input>
+                     </amexio-column>
+                     <amexio-column [size]="6">
+                       <amexio-text-input [field-label]="'Email'" name="name"
+                                          [place-holder]="'Email'"
+                                          [enable-popover]="true"
+                                          [icon-feedback]="true"
+                                          [allow-blank]="false" [error-msg]="'Please enter Surname'"
+                                          [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                                          [max-error-msg]="'Surname should be less than 15 characters'"
+                       >
+                       </amexio-text-input>
+                     </amexio-column>
+                   </amexio-row>
+
+                 </amexio-body>
+            
+               </amexio-window>
+          </amexio-column>
+        </amexio-row>
 
           </amexio-tab>
           <amexio-tab title="API Reference">
@@ -313,6 +452,7 @@ export class ToolbarDemo implements OnInit {
   copyMsgArray: any[];
   toggleMsgArray: any[];
   payment: any[];
+  showBasicWindowNonMateialToolbar:boolean;
   ngOnInit() {
 
   }
@@ -365,6 +505,9 @@ export class ToolbarDemo implements OnInit {
     } else {
       this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
+  }
+  toggleBasicWindow(data: any){
+    this.showBasicWindowNonMateialToolbar= !this.showBasicWindowNonMateialToolbar;
   }
 }
 
