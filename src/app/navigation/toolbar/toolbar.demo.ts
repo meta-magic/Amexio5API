@@ -205,15 +205,37 @@ import { HttpClient } from "@angular/common/http";
                 typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
                 of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
                 software like Aldus PageMaker including versions of Lorem Ipsum.
-</amexio-panel>
-           
-        </amexio-column>
+        </amexio-panel>
+      </amexio-column>
+      <h2>Demo: Tool Bar In Form Header</h2>
+   </amexio-row>
+        <amexio-row>
+            <amexio-column [size]="12">
+            <amexio-form-header style="width:100%">
+            <amexio-toolbar>
+               <amexio-toolbar-item position-left >
+               <amexio-label size="small" >
+                Registration
+               </amexio-label>
+             </amexio-toolbar-item>
+               
+               <amexio-toolbar-item position-right [seperator-position]="'left'">
+               <i class="fa fa-th" aria-hidden="true"></i>
+               </amexio-toolbar-item>
+               <amexio-toolbar-item position-right [seperator-position]="'left'">
+               <i class="fa fa-info-circle" aria-hidden="true"></i>
+               </amexio-toolbar-item>
+               <amexio-toolbar-item position-right [seperator-position]="'left'">
+               <i class="fa fa-question-circle" aria-hidden="true"></i>
+               </amexio-toolbar-item>
+               <amexio-toolbar-item position-right [seperator-position]="'left'">
+               <i class="fa fa-cog" aria-hidden="true"></i>
+               </amexio-toolbar-item>
+            </amexio-toolbar>
+           </amexio-form-header>
+            </amexio-column>
+        </amexio-row>
 
-    </amexio-row>
-
-          
-           
-            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-toolbar>" [enable-column-fiter]="false"
