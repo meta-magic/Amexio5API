@@ -2,22 +2,36 @@
 
 export class AmexioD3BarChartDemoComponent
 {
-  barchartcolor: any;
-  barchartdata: any;
+
+  userDefineColors: any;
+  defultColorData: any;
+  userDefineColorData: any;
   sourceData: any;
+  userDataSource: any;
+  barChartWithColorData: any;
   
-  constructor() { }
+  constructor() { 
 
-   this.barChartColor = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
+  }
 
-    this.barData = [
+  this.userDefineColors = 
+    [
+      "#4040a1",
+      "#e06377",
+      " #7e4a35",
+      "#6b5b95",
+      "#feb236",
+      "#d64161",
+      "#ff7b25"
+    ]
+    this.defultColorData = [
       {
-        "label": "2011	",
+        "label": "2011",
         "value": 1020,
         "textcolor": "blue"
       },
       {
-        "label": "2012	",
+        "label": "2012",
         "value": 590
       },
       {
@@ -42,9 +56,48 @@ export class AmexioD3BarChartDemoComponent
       }
     ];
 
+    this.userDefineColorData = [
+        {
+          "label": "Mumbai",
+          "value": 94423,
+        },
 
-  onLegendItemClick(event: any) {
+        {
+          "label": "Hyderabad",
+          "value": 69932
+        },
+        {
+          "label": "Delhi",
+          "value": 91345
+        },
+        {
+          "label": "Chennai",
+          "value": 46467
+        },
+        {
+          "label": "Pune",
+          "value": 31244
+        },
+        {
+          "label": "Jaipur",
+          "value": 30461
+        },
+        {
+          "label": "Bangalore",
+          "value": 84436
+        },
+      ];
+
+
+  onDefaultLegendClick(event: any) {
+
     this.sourceData = event;
+
   }
+  onUserDefineLegendClick(event: any) {
+
+    this.userDataSource = event;
+  }
+
 }
 

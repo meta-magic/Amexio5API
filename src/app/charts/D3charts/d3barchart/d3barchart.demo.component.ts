@@ -10,12 +10,15 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
 
   htmlCode: string;
   typeScriptCode: string;
+  userDataSourceCode: string;
   dataSourceCode: string;
   copyMsgArray: any[];
-  barChartColor: any;
-  barChartData: any;
-  barD: any;
+  userDefineColors: any;
+  defultColorData: any;
+  userDefineColorData: any;
   sourceData: any;
+  userDataSource: any;
+  barChartWithColorData: any;
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
@@ -23,9 +26,17 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
 
 
   ngOnInit() {
-    this.barChartColor = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
-
-    this.barChartData = [
+    this.userDefineColors =
+      [
+        "#4040a1",
+        "#e06377",
+        " #7e4a35",
+        "#6b5b95",
+        "#feb236",
+        "#d64161",
+        "#ff7b25"
+      ]
+    this.defultColorData = [
       {
         "label": "2011",
         "value": 1020,
@@ -57,12 +68,49 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
       }
     ];
 
+
+    this.userDefineColorData =
+      [
+        {
+          "label": "Mumbai",
+          "value": 94423
+        },
+        {
+          "label": "Hyderabad",
+          "value": 69932
+        },
+        {
+          "label": "Delhi",
+          "value": 91345
+        },
+        {
+          "label": "Chennai",
+          "value": 46467
+        },
+        {
+          "label": "Pune",
+          "value": 31244
+        },
+        {
+          "label": "Jaipur",
+          "value": 30461
+        },
+        {
+          "label": "Bangalore",
+          "value": 84436
+        }
+      ]
+
   }
 
-  onLegendItemClick(event: any) {
-    
+  onDefaultLegendClick(event: any) {
+
     this.sourceData = event;
 
+  }
+  onUserDefineLegendClick(event: any) {
+
+    this.userDataSource = event;
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
@@ -78,19 +126,27 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
       this.htmlCode = responseHtml;
     });
 
-    //TS FILE
+    // TS FILE
     this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-    //DataSource FILE
+    // DataSource FILE
     this.http.get('assets/data/code/charts/D3Charts/d3barchart/datasource.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.dataSourceCode = responseTs;
+    });
+
+    // User DataSource FILE
+    this.http.get('assets/data/code/charts/D3Charts/d3barchart/usersource.json', { responseType: 'text' }).subscribe(data => {
+      responseTs = data;
+    }, error => {
+    }, () => {
+      this.userDataSourceCode = responseTs;
     });
 
   }

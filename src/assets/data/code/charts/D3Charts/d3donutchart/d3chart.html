@@ -1,11 +1,15 @@
 
-<!--  donut chart with legend Color -->
+<!--  donut chart By default legend Color -->
 <amexio-d3-chart-donut
-            [title]="'Donut Chart'"
-            [data] = "donutData"
-            [color]="donutChartColor"
-            [legend]="true"
-            (onLegendClick)="onLegendItemClick($event)">
-                    
+            [title]="'My Daily Activity'"
+            [data] = "defultColorData"
+            (onLegendClick)="onDefaultLegendClick($event)">
 </amexio-d3-chart-donut>
 
+<!-- donut chart User Define legend Color -->
+<amexio-d3-chart-donut
+            [data]="userDefineColorData" 
+            [color]="userDefineColors"
+            [title]="'Population of Cities in India'" 
+            (onLegendClick)="onUserDefineLegendClick($event)">
+</amexio-d3-chart-donut>

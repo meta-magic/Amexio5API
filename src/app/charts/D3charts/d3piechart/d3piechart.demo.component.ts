@@ -12,10 +12,17 @@ export class AmexioD3PieChartDemoComponent implements OnInit
     htmlCode: string;
     typeScriptCode: string;
     dataSourceCode: string;
+    sourceData: any;
+    userDataSourceCode: string;
     copyMsgArray: any[];
+
+    userDataSource: any;
+  userDefineColors: any;
+  defultColorData: any;
+  userDefineColorData: any;
+
     pieChartData: any;
     pieChartColor: any;
-    sourceData: any;
   
   constructor(private http: HttpClient) { 
     this.getHtmlAndTypeScriptCode();
@@ -24,44 +31,87 @@ export class AmexioD3PieChartDemoComponent implements OnInit
 
  
   ngOnInit() {
-    this.pieChartColor = ["lightgrey ", "#8a8906", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
+    this.userDefineColors = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
 
-    this.pieChartData = [
+
+    this.defultColorData = [
       {
-          "label": "Work",
-          "value": 4,
-      },  
-      {
-          "label": "Eat",
-          "value": 5
+        "label": "IE",
+        "value": 39.3
       },
       {
-          "label": "Commute",
-          "value": 2
+        "label": "Chrome",
+        "value": 32.52
       },
       {
-          "label": "Watch TV",
-          "value": 7
+        "label": "Safari",
+        "value": 13.68
       },
       {
-          "label": "Sleep",
-          "value": 3
+        "label": "Firefox",
+        "value": 8.71
+      },
+      {
+        "label": "Others",
+        "value": 6.01
       }
     ];
 
+    this.userDefineColorData = [
+      {
+        "label": "India",
+        "value": 30.3,
+        "color": "pink"
+      },
+      {
+        "label": "Spain",
+        "value": 9.52
+      },
+      {
+        "label": "France",
+        "value": 13.68
+      },
+      {
+        "label": "Chaina",
+        "value": 18.71
+      },
+      {
+        "label": "Germany",
+        "value": 8.01
+      },
+      {
+        "label": "U.K",
+        "value": 8.01
+      },
+      {
+        "label": "U.S",
+        "value": 14.01
+      },
+      {
+        "label": "Korea",
+        "value": 4.01
+      }
+    ];
 
   }
 
-  onLegendItemClick(event: any) {
+ 
+  onDefaultLegendClick(event: any) {
+
     this.sourceData = event;
+
+  }
+  onUserDefineLegendClick(event: any) {
+
+    this.userDataSource = event;
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
+  // TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
     let dataSource:any;
-    //HTML FILE
+    // HTML FILE
     this.http.get('assets/data/code/charts/D3Charts/d3piechart/d3chart.html',{responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
@@ -69,20 +119,29 @@ export class AmexioD3PieChartDemoComponent implements OnInit
       this.htmlCode = responseHtml;
     });
 
-    //TS FILE
+    //  TS FILE
     this.http.get('assets/data/code/charts/D3Charts/d3piechart/d3chart.text',{responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-     //DataSource FILE
+     // DataSource FILE
      this.http.get('assets/data/code/charts/D3Charts/d3piechart/datasource.json',{responseType: 'text'}).subscribe(data => {
         responseTs = data;
       }, error => {
       }, () => {
         this.dataSourceCode = responseTs;
       });
+
+       // User DataSource FILE
+    this.http.get('assets/data/code/charts/D3Charts/d3barchart/usersource.json', { responseType: 'text' }).subscribe(data => {
+      responseTs = data;
+    }, error => {
+    }, () => {
+      this.userDataSourceCode = responseTs;
+    });
+
 
   }
 

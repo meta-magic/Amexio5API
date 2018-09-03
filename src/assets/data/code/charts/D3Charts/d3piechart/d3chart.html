@@ -1,10 +1,17 @@
 
-<!--  pie chart with legend Color -->
+<!--  pie chart By Deafult legend Color -->
 <amexio-d3-chart-pie 
-        [title]="'pie Chart'" 
-        [data]="pieData" 
-        [color]="pieChartColor"
-        [legend]="true"
-        (onLegendClick)="onLegendItemClick($event)">
+        [title]="'My Daily Activity'" 
+        [data]="defultColorData" 
+        (onLegendClick)="onDefaultLegendClick($event)">
 </amexio-d3-chart-pie>
 
+
+
+<!-- D3-chart User Define legend Color -->
+<amexio-d3-chart-pie 
+        [data]="userDefineColorData" 
+        [title]="'Population of Cities in India'" 
+        (onLegendClick)="onUserDefineLegendClick($event)"
+        [color]="userDefineColors" >
+ </amexio-d3-chart-pie>
