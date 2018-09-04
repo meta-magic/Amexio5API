@@ -2,8 +2,9 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component, ElementRef } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
 
 @Component({
   selector: 'simpletree-demo', template: `
@@ -16,24 +17,56 @@ import {HttpClient} from "@angular/common/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-              <amexio-column size="6">
+              <amexio-column size="6" >
                 <amexio-card [header]="true">
                   <amexio-header>
-                     Simple Tree 
+                  Simple Tree
                   </amexio-header>
                   <amexio-body>
-                    <amexio-treeview [data-reader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
+                    <amexio-treeview  [data-reader]="'data'" [data]="treeLocalData"  (nodeClick)="getNodeData($event)">
                     </amexio-treeview>
-                  </amexio-body>
+                    </amexio-body>
                 </amexio-card>
               </amexio-column>
-              <amexio-column size="6">
+              <amexio-column size="6" [fit]='true'>
                 <amexio-card [header]="true">
                   <amexio-header>
                      Selected Data 
                   </amexio-header>
                   <amexio-body>
                     <pre><code>{{selectedData | json}}</code></pre>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+            <amexio-row>
+              <amexio-column size="6">
+                <amexio-card [header]="true" 
+                [footer]="true"
+                [footer-align]="'right'">
+                  <amexio-header>
+
+                    Tree With Expand and Collapse function  
+                      
+                     
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-treeview #id [data-reader]="'item'" [data]="treeLocalExpandData"  (nodeClick)="getNodeDataClick($event)">
+                    </amexio-treeview>
+                      </amexio-body>
+                      <amexio-action >
+                      <amexio-button [label]="'ExpandAll'" [type]="'yellow'" (onClick)="expandAlldata(id)"></amexio-button>
+                      <amexio-button [label]="'CollapseAll'" [type]="'green'" (onClick)="collapseAlldata(id)"></amexio-button>
+                      </amexio-action>
+                </amexio-card>
+              </amexio-column>
+              <amexio-column size="6" [fit]='true'>
+                <amexio-card [header]="true">
+                  <amexio-header>
+                     Selected Data 
+                  </amexio-header>
+                  <amexio-body>
+                    <pre><code>{{expandSelectedData | json}}</code></pre>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -105,6 +138,18 @@ export class SimpleTreeDemo {
   copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;
+  treeLocalExpandData: any;
+  expandSelectedData: any;
+
+
+  expandAlldata(id) {
+    id.expandAll();
+  }
+
+  collapseAlldata(id) {
+    id.collapseAll();
+  }
+
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
 
@@ -156,10 +201,91 @@ export class SimpleTreeDemo {
               {
                 "leaf": true,
                 "text": "Viewport.js",
-                "expand" : true,
-                "children":[],
-                "lazy":{
-                  "http-url":"data/treeview.json",
+                "expand": true,
+                "children": [],
+                "lazy": {
+                  "http-url": "data/treeview.json",
+                  "http-method": "get"
+                }
+              }
+            ]
+          },
+          {
+            "text": "core",
+            "expand": true,
+            "children": [
+              {
+                "text": "dom",
+                "expand": true,
+                "children": [
+                  {
+                    "leaf": true,
+                    "text": "Element.form.js"
+                  },
+                  {
+                    "leaf": true,
+                    "text": "Element.static-more.js"
+                  }
+
+                ]
+              }
+            ]
+          }
+        ]
+      }]
+    };
+    this.treeLocalExpandData = {
+      "item": [{
+        "text": "Web App",
+        "expand": true,
+        "children": [
+          {
+            "text": "app",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Application.js"
+              }
+            ]
+          },
+          {
+            "text": "button",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Button.js"
+              },
+              {
+                "leaf": true,
+                "text": "Cycle.js"
+              },
+              {
+                "leaf": true,
+                "text": "Split.js"
+              }
+            ]
+          },
+          {
+            "text": "container",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "ButtonGroup.js"
+              },
+              {
+                "leaf": true,
+                "text": "Container.js"
+              },
+              {
+                "leaf": true,
+                "text": "Viewport.js",
+                "expand": true,
+                "children": [],
+                "lazy": {
+                  "http-url": "data/treeview.json",
                   "http-method": "get"
                 }
               }
@@ -197,7 +323,7 @@ export class SimpleTreeDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/tree/simpletree.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/tree/simpletree.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -205,14 +331,14 @@ export class SimpleTreeDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/tree/simpletree.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/tree/simpletree.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/treeview.json',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/componentdata/treeview.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -224,14 +350,17 @@ export class SimpleTreeDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 
   getNodeData(data: any) {
     this.selectedData = data;
+  }
+  getNodeDataClick(data: any) {
+    this.expandSelectedData = data;
   }
 }
 
