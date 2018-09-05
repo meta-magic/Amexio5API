@@ -15,7 +15,6 @@ import {HttpClient, HttpClientModule} from "@angular/common/http";
 })
 export class GettingStatedDemo {
   tsCode: any;
-  tsCodeD3: any;
   iconCode : any;
   dataCode : any;
   styleCode : any;
@@ -39,13 +38,6 @@ export class GettingStatedDemo {
     }, error => {
     }, () => {
       this.tsCode = responseTs;
-    });
-
-    this.http.get('assets/data/code/gettingstated/d3gettingstated.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.tsCodeD3 = responseTs;
     });
 
     this.http.get('assets/data/code/gettingstated/icon.text',{responseType: 'text'}).subscribe(data=>{

@@ -10,7 +10,6 @@ import {
 
 
 import { FormsModule } from '@angular/forms';
-import { AmexioChartD3Module } from 'amexio-chart-d3';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,6 @@ import { AmexioChartD3Module } from 'amexio-chart-d3';
   imports: [
     BrowserModule,
     FormsModule,
-    AmexioChartD3Module, AmexioChartD3Module,
     AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
