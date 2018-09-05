@@ -14,11 +14,12 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
   dataSourceCode: string;
   copyMsgArray: any[];
   userDefineColors: any;
-  defultColorData: any;
+  doubleLineData: any;
   userDefineColorData: any;
   sourceData: any;
   userDataSource: any;
   barChartWithColorData: any;
+  singlelinedata: any;
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
@@ -26,81 +27,10 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
 
 
   ngOnInit() {
-    this.userDefineColors =
-      [
-        "#4040a1",
-        "#e06377",
-        " #7e4a35",
-        "#6b5b95",
-        "#feb236",
-        "#d64161",
-        "#ff7b25"
-      ]
-    this.defultColorData = [
-      {
-        "label": "2011",
-        "value": 1020,
-        "textcolor": "blue"
-      },
-      {
-        "label": "2012",
-        "value": 590
-      },
-      {
-        "label": "2013",
-        "value": 1260
-      },
-      {
-        "label": "2014",
-        "value": 830
-      },
-      {
-        "label": "2015",
-        "value": 1030
-      },
-      {
-        "label": "2016",
-        "value": 209
-      },
-      {
-        "label": "2017",
-        "value": 1006
-      }
-    ];
-
-
-    this.userDefineColorData =
-      [
-        {
-          "label": "Mumbai",
-          "value": 94423
-        },
-        {
-          "label": "Hyderabad",
-          "value": 69932
-        },
-        {
-          "label": "Delhi",
-          "value": 91345
-        },
-        {
-          "label": "Chennai",
-          "value": 46467
-        },
-        {
-          "label": "Pune",
-          "value": 31244
-        },
-        {
-          "label": "Jaipur",
-          "value": 30461
-        },
-        {
-          "label": "Bangalore",
-          "value": 84436
-        }
-      ]
-
+   this.singlelinedata = [[{"datatype":"number","label":"Day"},{"datatype":"number","label":"CNX Resources Corp"}],[0,0],[1,10],[2,23],[3,17],[4,18],[5,9],[6,11],[7,27],[8,33],[9,40],[10,32],[11,35],[12,30],[13,40],[14,42],[15,47],[16,44],[17,48],[18,52],[19,54],[20,42],[21,55],[22,56],[23,57],[24,60],[25,50],[26,52],[27,51],[28,49]]
+  
+    this.doubleLineData =[[{"datatype":"number","label":"Day"},{"datatype":"number","label":"XYZ"},{"datatype":"number","label":"PQR"}],[0,0,0],[1,10,5],[2,23,15],[3,17,9],[4,18,10],[5,9,5],[6,11,3],[7,27,19],[8,33,25],[9,40,32],[10,32,24],[11,35,27],[12,30,22],[13,40,32],[14,42,34],[15,47,39]]
+  
   }
 
   onDefaultLegendClick(event: any) {
@@ -119,7 +49,7 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     let responseTs: any;
     let dataSource: any;
     //HTML FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3linechart/d3chart.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -127,14 +57,14 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     });
 
     // TS FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3linechart/d3chart.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     // DataSource FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/datasource.json', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3linechart/datasource.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -142,7 +72,7 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     });
 
     // User DataSource FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/usersource.json', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3linechart/usersource.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
