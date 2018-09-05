@@ -361,18 +361,5 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'contextmenu-window', loadChildren: './contextualmenu/window/contextmenuwindow.demo.module#ContextMenuWindowDemoModule'
   },
-
-  /* D3-Charts */
-
-  {
-    path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
-  }, 
-  {
-    path: 'amexio-d3-chart-donut', loadChildren: './charts/D3charts/d3donutchart/d3donutchart.demo.module#D3DonutChartDemoModule'
-  }, 
-  {
-    path: 'amexio-d3-chart-pie', loadChildren: './charts/D3charts/d3piechart/d3piechart.demo.module#D3PieChartDemoModule'
-  }, 
-  
   
 ];

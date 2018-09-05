@@ -620,31 +620,6 @@
             "badge": "New",
             "children": [
                 {
-                    "text": "D3 Charts",
-                    "icon": "fa fa-openid fa-fw",
-                    "badge": "New",
-                    "children": [
-                        {
-                            "text": "Bar Chart",
-                            "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "New",
-                            "link": "amexio-d3-chart-bar"
-                        },
-                        {
-                            "text": "Donut Chart",
-                            "icon": "fa fa-pie-chart fa-fw",
-                            "badge": "New",
-                            "link": "amexio-d3-chart-donut"
-                        },
-                        {
-                            "text": "Pie Chart",
-                            "icon": "fa fa-pie-chart fa-fw",
-                            "badge": "New",
-                            "link": "amexio-d3-chart-pie"
-                        }
-                    ]
-                },
-                {
                     "text": "Google Charts",
                     "icon": "fa fa-google fa-fw",
                     "badge": "U",
