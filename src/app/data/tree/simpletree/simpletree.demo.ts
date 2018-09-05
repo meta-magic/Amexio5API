@@ -39,38 +39,6 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                 </amexio-card>
               </amexio-column>
             </amexio-row>
-            <amexio-row>
-              <amexio-column size="6">
-                <amexio-card [header]="true" 
-                [footer]="true"
-                [footer-align]="'right'">
-                  <amexio-header>
-
-                    Tree With Expand and Collapse function  
-                      
-                     
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-treeview #id [data-reader]="'item'" [data]="treeLocalExpandData"  (nodeClick)="getNodeDataClick($event)">
-                    </amexio-treeview>
-                      </amexio-body>
-                      <amexio-action >
-                      <amexio-button [label]="'ExpandAll'" [type]="'yellow'" (onClick)="expandAlldata(id)"></amexio-button>
-                      <amexio-button [label]="'CollapseAll'" [type]="'green'" (onClick)="collapseAlldata(id)"></amexio-button>
-                      </amexio-action>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="6" [fit]='true'>
-                <amexio-card [header]="true">
-                  <amexio-header>
-                     Selected Data 
-                  </amexio-header>
-                  <amexio-body>
-                    <pre><code>{{expandSelectedData | json}}</code></pre>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-treeview>" [enable-column-fiter]="false"
