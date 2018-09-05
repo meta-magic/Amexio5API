@@ -1,0 +1,105 @@
+
+export class CollaspeTreeDemo {
+ 
+
+    public text: string = "+";
+  expand: boolean = true;
+
+  expandAlldata(id) {
+    if (!this.expand) {
+      id.expandAll();
+      this.text = "-"
+    } else {
+      id.collapseAll();
+      this.text = "+"
+    }
+    this.expand = !this.expand;
+  }
+
+ getNodeDataClick(data: any) {
+    this.expandSelectedData = data;
+  }
+   constructor() {
+     this.treeLocalExpandData = {
+      "item": [{
+        "text": "Web App",
+        "expand": true,
+        "children": [
+          {
+            "text": "app",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Application.js"
+              }
+            ]
+          },
+          {
+            "text": "button",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "Button.js"
+              },
+              {
+                "leaf": true,
+                "text": "Cycle.js"
+              },
+              {
+                "leaf": true,
+                "text": "Split.js"
+              }
+            ]
+          },
+          {
+            "text": "container",
+            "expand": true,
+            "children": [
+              {
+                "leaf": true,
+                "text": "ButtonGroup.js"
+              },
+              {
+                "leaf": true,
+                "text": "Container.js"
+              },
+              {
+                "leaf": true,
+                "text": "Viewport.js",
+                "expand": true,
+                "children": [],
+                "lazy": {
+                  "http-url": "data/treeview.json",
+                  "http-method": "get"
+                }
+              }
+            ]
+          },
+          {
+            "text": "core",
+            "expand": true,
+            "children": [
+              {
+                "text": "dom",
+                "expand": true,
+                "children": [
+                  {
+                    "leaf": true,
+                    "text": "Element.form.js"
+                  },
+                  {
+                    "leaf": true,
+                    "text": "Element.static-more.js"
+                  }
+
+                ]
+              }
+            ]
+          }
+        ]
+      }]
+    };
+  }
+}

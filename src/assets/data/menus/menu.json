@@ -445,6 +445,11 @@
                             "link": "simple-tree"
                         },
                         {
+                            "text": "Collapse",
+                            "icon": "fa fa-tree fa-fw",
+                            "link": "collapsetree-demo"
+                        },
+                        {
                             "text": "With Template",
                             "icon": "fa fa-tree fa-fw",
                             "link": "template-tree"
@@ -629,6 +634,12 @@
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-bar"
+                        },
+                        {
+                            "text": "Line Chart",
+                            "icon": "fa fa-line-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-line"
                         },
                         {
                             "text": "Donut Chart",

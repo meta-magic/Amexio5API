@@ -284,6 +284,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'simple-tree', loadChildren: './data/tree/simpletree/simpletree.demo.module#SimpleTreeDemoModule'
   },
   {
+    path: 'collapsetree-demo', loadChildren: './data/tree/collapsetree/collapsetree.demo.module#CollapseTreeDemoModule'
+  },              
+  {
     path: 'template-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
   },
   {
@@ -366,6 +369,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
 
   {
     path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
+  }, 
+  {
+    path: 'amexio-d3-chart-line', loadChildren: './charts/D3charts/d3linechart/d3linechart.demo.module#D3LineChartDemoModule'
   }, 
   {
     path: 'amexio-d3-chart-donut', loadChildren: './charts/D3charts/d3donutchart/d3donutchart.demo.module#D3DonutChartDemoModule'

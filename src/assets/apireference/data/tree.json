@@ -74,27 +74,45 @@
   "events":[
     {
       "name": "nodeClick",
+      "version": "5.0.1 onwards",
       "description":"It will gives you clicked node data."
     },
     {
       "name": "onTreeNodeChecked",
+      "version": "5.0.1 onwards",
       "description":"It will gives whole tree data with checked flag status."
     },
     {
       "name": "onDrag",
+      "version": "5.0.1 onwards",
       "description":"It is fired when an element or text selection is being dragged by the user."
     },
     {
       "name": "dragover",
+      "version": "5.0.1 onwards",
       "description":"It is fired when an element or text selection is being dragged over a valid drop target"
     },
     {
       "name": "onDrop",
+      "version": "5.0.1 onwards",
       "description":"It is fired when an element or text selection is dropped on a valid drop target."
     },
     {
       "name": "rightClick",
+      "version": "5.0.1 onwards",
       "description":"It is fired when clicked on context menu, providing tree node data and selected context menu data."
     }
-  ]
+  ],
+  "methods": [
+      {
+        "name": "expandAll ()",
+        "version": "5.2 onwards",
+        "description": "Method to expandAll (open all Tree node) view of Tree."
+      },
+      {
+        "name": "collapseAll ()",
+        "version": "5.2 onwards",
+        "description": "Method to collapseAll (close all Tree node) view of Tree"
+      }
+    ]
 }
