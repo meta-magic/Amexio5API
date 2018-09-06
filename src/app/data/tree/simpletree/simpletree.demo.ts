@@ -44,7 +44,9 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
             <amexio-tab title="API Reference">
                 <amexio-datagrid title="Properties<amexio-treeview>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/tree.json'"
                     [data-reader]="'properties'" [enable-data-filter]="false">
-                    <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'name'" [width]="24" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                   <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+                   
                     <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
@@ -53,8 +55,17 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                 <amexio-datagrid title="Events" [http-method]="'get'" [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'events'"
                     [enable-data-filter]="false">
                     <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+                   
                     <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
+
+                <amexio-datagrid title="Methods" [http-method]="'get'" [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'methods'"
+            [enable-data-filter]="false">
+            <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+            <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+        </amexio-datagrid>
             </amexio-tab>
             <amexio-tab title="Source">
                 <div style="overflow-y: scroll">
