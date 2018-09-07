@@ -1,14 +1,24 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {AppComponent} from './app.component';
-import {Amexiod3ChartsModule} from 'amexio-d3-charts'; // Import Amexio D3-charts library
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import {FormsModule} from "@angular/forms";
+import { AppComponent } from './app.component';
 
+// Import your service library
+import { CommonDataService } from 'amexio-ng-extensions';
+
+// To import D3-Chart
+import { AmexioChartD3Module } from 'amexio-d3-chart';
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, FormsModule, Amexiod3ChartsModule ],
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    AmexioChartD3Module,
+  ],
+  providers: [CommonDataService],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule { }
