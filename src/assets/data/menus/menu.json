@@ -78,6 +78,7 @@
                 {
                     "text": "Fieldset",
                     "icon": "fa fa-id-card-o fa-fw",
+                    "badge": "U",
                     "link": "fieldset"
                 },
                 {
@@ -359,7 +360,7 @@
         },
         {
             "text": "Data",
-            "badge": "7",
+            "badge": "10",
             "icon": "fa fa-database fa-fw",
             "children": [
                 {
@@ -370,11 +371,12 @@
                 {
                     "text": "Grid",
                     "icon": "fa fa-database fa-fw",
-                    "badge": "4",
+                    "badge": "5",
                     "children": [
                         {
                             "text": "Simple",
                             "icon": "fa fa-database fa-fw",
+                            "badge": "U",
                             "link": "simple-grid"
                         },
                         {
@@ -437,16 +439,18 @@
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
                     "link": "tree",
-                    "badge": "3",
+                    "badge": "5",
                     "children": [
                         {
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
+                            "badge": "U",
                             "link": "simple-tree"
                         },
                         {
                             "text": "Collapse",
                             "icon": "fa fa-tree fa-fw",
+                            "badge": "N",
                             "link": "collapsetree-demo"
                         },
                         {
@@ -526,7 +530,7 @@
                 {
                     "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "badge": "New",
+                    "badge": "N",
                     "link": "contextmenu-card-form"
                 },
                 {
@@ -542,7 +546,7 @@
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
-                    "badge": "New",
+                    "badge": "N",
                     "link": "contextmenu-panel"
                 },
                 {
@@ -558,7 +562,7 @@
                 {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "badge": "New",
+                    "badge": "N",
                     "link": "contextmenu-window"
                 }
             ]
@@ -704,7 +708,7 @@
                             "text": "Gantt Chart",
                             "icon": "fa fa-calendar fa-fw",
                             "link": "gantt-chart-demo",
-                            "badge": "NEW"
+                            "badge": "N"
                         },
                         {
                             "text": "Histogram Chart",
