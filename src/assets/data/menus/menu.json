@@ -62,7 +62,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "5",
+            "badge": "6",
             "children": [
                 {
                     "text": "Carousel",
