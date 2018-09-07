@@ -156,7 +156,7 @@ export class SimpleTreeDemo {
             "text": "app",
             "expand": true,
             "children": [
-                {
+              {
                 "leaf": true,
                 "text": "Application.js"
               }
@@ -238,7 +238,7 @@ export class SimpleTreeDemo {
             "demo": "app",
             "expand": true,
             "object": [
-                {
+              {
                 "leaf": true,
                 "demo": "Application.js"
               }

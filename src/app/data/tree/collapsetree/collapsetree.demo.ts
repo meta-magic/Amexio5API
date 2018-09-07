@@ -121,7 +121,7 @@ export class CollapseTreeDemo {
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
 
-  
+
     this.treeLocalExpandData = {
       "item": [{
         "text": "Web App",
@@ -244,8 +244,4 @@ export class CollapseTreeDemo {
       this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
-
-
 }
-
-
