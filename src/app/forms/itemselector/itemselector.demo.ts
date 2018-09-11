@@ -26,26 +26,26 @@ import {HttpClient} from "@angular/common/http";
                                               [value-field]="'countryId'"  (selectedRecords)="getSelectedData($event)"
                                               [http-url]="'assets/data/componentdata/selectordata.json'"
                                               [http-method]="'get'" [data-reader]="'data'" 
-                                              [enable-drag]="true" [enable-drop]="true" 
+                                             
                                               >
                         </amexio-item-selector>
                       </amexio-column>
-                      
                     </amexio-row>
+                    
                     <amexio-row>
                       <amexio-column [size]="12">
-                        <amexio-panel (dragover)="dragOver($event)" (drop)="drop($event)" [header]="true" [title]="'Panel'" [expanded]="true">
-                          <pre><code>{{selectedData | json}}</code></pre>
-                        </amexio-panel>
+                        <amexio-card [header]="true">
+                          <amexio-header>Selected data</amexio-header>
+                          <amexio-body>
+                            {{selectedData|json}}
+                          </amexio-body>
+                        </amexio-card>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
-                  
                 </amexio-card>
-               
               </amexio-column>
             </amexio-row>
-            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-item-selector>" [enable-column-fiter]="false"
