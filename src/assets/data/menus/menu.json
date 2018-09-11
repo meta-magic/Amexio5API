@@ -640,16 +640,16 @@
                             "link": "amexio-d3-chart-bar"
                         },
                         {
-                            "text": "Line Chart",
-                            "icon": "fa fa-line-chart fa-fw",
-                            "badge": "New",
-                            "link": "amexio-d3-chart-line"
-                        },
-                        {
                             "text": "Donut Chart",
                             "icon": "fa fa-pie-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-donut"
+                        },
+                        {
+                          "text": "Line Chart",
+                          "icon": "fa fa-line-chart fa-fw",
+                          "badge": "New",
+                          "link": "amexio-d3-chart-line"
                         },
                         {
                             "text": "Pie Chart",

@@ -8,8 +8,8 @@
             <amexio-tab title="Demo" active="true">
                 <amexio-row>
                     <amexio-column [size]="12">
-                        
-                            
+
+
                         <amexio-row>
                             <amexio-column [size]="8">
                                 <amexio-card [header]="true" [show]="'true'">
@@ -17,16 +17,16 @@
                                         D3-line with multiline Chart
                                     </amexio-header>
                                     <amexio-body>
-                                        <amexio-d3-chart-line (onLegendClick)="onUserDefineLegendClick($event)" 
+                                        <amexio-d3-chart-line (onLegendClick)="onUserDefineLegendClick($event)"
                                                 (onChartClick)="onUserDefineLegendClick($event)"
-                                                [title]="'Popularity Of XYZ & PQR'" 
+                                                [title]="'Popularity Of XYZ & PQR'"
                                                 [data] = "doubleLineData">
-                                             </amexio-d3-chart-line> 
+                                             </amexio-d3-chart-line>
                                     </amexio-body>
                                 </amexio-card>
                             </amexio-column>
-                            <amexio-column [size]="4" [fit]="true">
-                                <amexio-card header="true">
+                            <amexio-column [size]="4" >
+                                <amexio-card header="true" [body-height]="64">
                                     <amexio-header>
                                         Click On Legend
                                     </amexio-header>
@@ -44,19 +44,19 @@
                                     <amexio-column [size]="8">
                                         <amexio-card [header]="true" [show]="'true'">
                                             <amexio-header>
-                                                D3-line With Simple Chart 
+                                                D3-line With Simple Chart
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-d3-chart-line (onLegendClick)="onDefaultLegendClick($event)" 
-                                                (onChartClick)="onDefaultLegendClick($event)"  
-                                                [title]="'CNX Resources Corp'" 
+                                                <amexio-d3-chart-line (onLegendClick)="onDefaultLegendClick($event)"
+                                                (onChartClick)="onDefaultLegendClick($event)"
+                                                [title]="'CNX Resources Corp'"
                                                 [data] = "singlelinedata">
-                                             </amexio-d3-chart-line>       
+                                             </amexio-d3-chart-line>
                                             </amexio-body>
                                         </amexio-card>
                                     </amexio-column>
-                                    <amexio-column [size]="4" [fit]="true">
-                                        <amexio-card header="true" >
+                                    <amexio-column [size]="4" >
+                                        <amexio-card header="true" [body-height]="64">
                                             <amexio-header>
                                                 Click On Legend
                                             </amexio-header>
@@ -69,7 +69,7 @@
                                     </amexio-column>
                                 </amexio-row>
 
-                           
+
                     </amexio-column>
                 </amexio-row>
 
@@ -77,15 +77,14 @@
             </amexio-tab>
             <amexio-tab title="API Reference">
                 <amexio-datagrid title="D3-line-Chart Properties<amexio-d3-chart-line>" [enable-column-fiter]="false" [http-method]="'get'"
-                    [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
+                    [http-url]="'assets/apireference/charts/d3charts/d3linechart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
-                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
                 <br>
-                <amexio-datagrid title="Legend<amexio-d3-chart-line>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
+                <amexio-datagrid title="Legend<amexio-d3-chart-line>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3linechart.json'"
                     [data-reader]="'legend'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>

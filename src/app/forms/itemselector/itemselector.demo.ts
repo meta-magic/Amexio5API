@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -22,28 +22,30 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-row>
                       <amexio-column [size]="12">
-                        <amexio-item-selector [height]="250" [display-field]="'countryName'"
+                        <amexio-item-selector #item [height]="250" [display-field]="'countryName'"
                                               [value-field]="'countryId'"  (selectedRecords)="getSelectedData($event)"
                                               [http-url]="'assets/data/componentdata/selectordata.json'"
-                                              [http-method]="'get'" [data-reader]="'data'" >
+                                              [http-method]="'get'" [data-reader]="'data'" 
+                                              [enable-drag]="true" [enable-drop]="true" 
+                                              >
                         </amexio-item-selector>
+                      </amexio-column>
+                      
+                    </amexio-row>
+                    <amexio-row>
+                      <amexio-column [size]="12">
+                        <amexio-panel (dragover)="dragOver($event)" (drop)="drop($event)" [header]="true" [title]="'Panel'" [expanded]="true">
+                          <pre><code>{{selectedData | json}}</code></pre>
+                        </amexio-panel>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
+                  
                 </amexio-card>
                
               </amexio-column>
             </amexio-row>
-            <amexio-row>
-              <amexio-column [size]="12">
-                <amexio-card [header]="true">
-                  <amexio-header>Selected data</amexio-header>
-                  <amexio-body>
-                    {{selectedData|json}}
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
+            
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-item-selector>" [enable-column-fiter]="false"
@@ -105,11 +107,14 @@ import {HttpClient} from "@angular/common/http";
   `
 })
 export class ItemSelectorDemo {
+  @ViewChild('item') itemRef: any;
+
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
   selectedData: any;
   dataSource:string;
+  selectedData1: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -154,6 +159,22 @@ export class ItemSelectorDemo {
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
+  }
+  getDropData(event: any) {
+    this.itemRef.removeNode(event);
+  }
+  drag(data: any) {
+    data.event.dataTransfer.setData("dragdata", JSON.stringify(data.data));
+  }
+
+  dragOver(event: any) {
+    event.preventDefault();
+  }
+
+  drop(event: any) {
+    event.preventDefault();
+    console.log('event' +event);
+    this.selectedData = JSON.parse(event.dataTransfer.getData('dragdata'))
   }
 }
 

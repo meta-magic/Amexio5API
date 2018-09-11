@@ -6,50 +6,50 @@
         {
             "name": "title",
             "description": "Sets title to chart",
-            "version": "5.2 onwards",
-            "type": "any",
+
+            "type": "string",
             "default": ""
         },
 
         {
             "name": "width",
             "description": "Width of chart",
-            "version": "5.2 onwards",
+
             "type": "string",
             "default": ""
         },
         {
             "name": "height",
             "description": "Height of chart",
-            "version": "5.2 onwards",
+
             "type": "string",
             "default": ""
         },
         {
             "name": "data",
             "description": "Local data for Chart",
-            "version": "5.2 onwards",
-            "type": "any",
+
+            "type": "any[]",
             "default": ""
         },
         {
             "name": "colors",
             "description": "Sets color to D3 Pie chart",
-            "version": "5.2 onwards",
-            "type": "any",
+
+            "type": "any[]",
             "default": ""
         },
         {
             "name": "legend",
             "description": "Sets legend to D3 Pie chart",
-            "version": "5.2 onwards",
-            "type": "any",
-            "default": ""
+
+            "type": "boolean",
+            "default": "false"
         }
     ],
     "legend": [
         {
-            "name": "onLegendClick",
+            "name": "onLegendClick()",
             "description": "It will fire only on click on Legend Click in D3 pie chart ."
         }
     ]

@@ -169,7 +169,7 @@ export class DragDropTreeDemo {
   selectedData: any;
   treeLocalData: any;
   treeLocalData1: any;
-  treeData:any;
+  treeData: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
 
@@ -454,20 +454,16 @@ export class DragDropTreeDemo {
   getDropData1(event: any) {
     this.treeRef1.removeNode(event);
   }
-
-
-  drag(data: any){
+  drag(data: any) {
     data.event.dataTransfer.setData("dragdata", JSON.stringify(data.data));
-
   }
 
-  dragOver(event: any){
+  dragOver(event: any) {
     event.preventDefault();
   }
 
   drop(event: any) {
     event.preventDefault();
     this.selectedData = JSON.parse(event.dataTransfer.getData('dragdata'))
-
   }
 }

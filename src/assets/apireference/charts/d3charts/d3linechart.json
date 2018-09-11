@@ -1,7 +1,7 @@
 {
-    "name": "Amexio D3-chart Bar",
-    "description": "An  D3-chart bar  chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
-    "selector": "<amexio-d3-chart-bar>",
+    "name": "Amexio D3-chart  line",
+    "description": "An  D3-chart  line  chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+    "selector": "<amexio-d3-chart- line>",
     "properties": [
         {
             "name": "title",
@@ -34,14 +34,14 @@
         },
         {
             "name": "color",
-            "description": "Sets color to D3 Bar chart",
+            "description": "Sets color to D3  line chart",
 
             "type": "any[]",
             "default": ""
         },
         {
             "name": "legend",
-            "description": "Sets legend to D3 Bar chart",
+            "description": "Sets legend to D3  line chart",
 
             "type": "boolean",
             "default": "false"
@@ -50,7 +50,7 @@
     "legend": [
         {
             "name": "onLegendClick()",
-            "description": "It will fire only on click on Legend Click in D3 bar chart ."
+            "description": "It will fire only on click on Legend Click in D3  line chart ."
         }
     ]
 }
