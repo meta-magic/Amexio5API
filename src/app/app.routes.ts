@@ -23,6 +23,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'label-demo', loadChildren: './forms/label/label.demo.module#LabelDemoModule'
   },
   {
+    path: 'recaptcha-demo', loadChildren: './forms/recaptcha/recaptcha.demo.module#RecaptchaDemoModule'
+  },
+  {
     path: 'password-demo', loadChildren: './forms/password/password.demo.module#PasswordDemoModule'
   },
   {
@@ -377,6 +380,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
 
   {
     path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
+  }, 
+  {
+    path: 'amexio-d3-chart-bar-stack', loadChildren: './charts/D3charts/d3barstackchart/d3barstackchart.demo.module#D3BarStackChartDemoModule'
   }, 
   {
     path: 'amexio-d3-chart-line', loadChildren: './charts/D3charts/d3linechart/d3linechart.demo.module#D3LineChartDemoModule'

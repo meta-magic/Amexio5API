@@ -247,6 +247,11 @@
                     "link": "label-demo"
                 },
                 {
+                    "text": "Recaptcha",
+                    "icon": "fa fa-recycle",
+                    "link": "recaptcha-demo"
+                },
+                {
                     "text": "Number Field",
                     "icon": "fa fa-phone fa-fw",
                     "link": "number-demo"
@@ -650,6 +655,12 @@
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-bar"
+                        },
+                        {
+                            "text": "Stack Chart",
+                            "icon": "fa fa-bar-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-bar-stack"
                         },
                         {
                             "text": "Donut Chart",

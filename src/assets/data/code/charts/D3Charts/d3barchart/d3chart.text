@@ -5,7 +5,7 @@ export class AmexioD3BarChartDemoComponent
 
   userDefineColors: any;
   defultColorData: any;
-  userDefineColorData: any;
+  userDefineColorData: any; 
   sourceData: any;
   userDataSource: any;
   barChartWithColorData: any;
@@ -56,14 +56,13 @@ export class AmexioD3BarChartDemoComponent
       }
     ];
 
-    this.userDefineColorData = [
+    this.userDefineColorData =  [
         {
           "label": "Mumbai",
-          "value": 94423,
+          "value": 94423
         },
-
         {
-          "label": "Hyderabad",
+          "label": "Kochi",
           "value": 69932
         },
         {
@@ -83,11 +82,10 @@ export class AmexioD3BarChartDemoComponent
           "value": 30461
         },
         {
-          "label": "Bangalore",
+          "label": "Ranchi",
           "value": 84436
-        },
+        }
       ];
-
 
   onDefaultLegendClick(event: any) {
 
