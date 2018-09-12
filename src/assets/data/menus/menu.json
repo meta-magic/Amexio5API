@@ -519,6 +519,16 @@
                     "text": "Tree to Panel",
                     "icon": "fa fa-tree fa-fw",
                     "link": "tree-to-panel"
+                },
+                {
+                    "text": "Within Item Selector",
+                    "icon": "fa fa-exchange fa-fw",
+                    "link": "itemselectordragdrop-demo"
+                },
+                {
+                    "text": "Item Selector to Panel",
+                    "icon": "fa fa-exchange fa-fw",
+                    "link": "selectordragdrop-panel"
                 }
             ]
         },
@@ -646,10 +656,10 @@
                             "link": "amexio-d3-chart-donut"
                         },
                         {
-                          "text": "Line Chart",
-                          "icon": "fa fa-line-chart fa-fw",
-                          "badge": "New",
-                          "link": "amexio-d3-chart-line"
+                            "text": "Line Chart",
+                            "icon": "fa fa-line-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-line"
                         },
                         {
                             "text": "Pie Chart",

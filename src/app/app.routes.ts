@@ -77,6 +77,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'dropdowntemplate', loadChildren: './forms/dropdowntemplate/dropdowntemplate.demo.module#DropDownTemplateDemoModule'
   },
+
   /**Button */
   {
     path: 'button-demo', loadChildren: './forms/button/button.demo.module#ButtonDemoModule'
@@ -333,6 +334,13 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'tree-to-panel', loadChildren: './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
   },
+  {
+    path: 'itemselectordragdrop-demo', loadChildren: './draganddrop/itemselectordragdrop/itemselectordragdrop.demo.module#ItemSelectorDragdropDemoModule'
+  },
+  {
+    path: 'selectordragdrop-panel', loadChildren: './draganddrop/selectordragdroppanel/selectordragdroppanel.demo.module#ItemSelectorDragdropPanelModule'
+  },
+  
   /*Contextual Menus*/
   {
     path: 'contextual-menu-tree', loadChildren: './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'

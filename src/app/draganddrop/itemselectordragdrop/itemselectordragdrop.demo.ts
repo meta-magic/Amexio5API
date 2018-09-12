@@ -1,19 +1,18 @@
 /**
- * Created by sagar on 9/1/18.
+ * Created by kedar on 11/9/18.
  */
 
 import {Component, ViewChild} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'itemselector-demo', template: `
+  selector: 'itemselectordragdrop-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Item Selector 
+         Item Selector with drag & drop Functionality
       </amexio-header>
       <amexio-body>
-        <p>ItemSelector is a specialized MultiSelect field that renders as a pair of MultiSelect field, one with available options and the other with selected options. 
-          A set of buttons in between allows items to be moved between the fields and reordered within the selection.</p>
+        <p>ItemSelector is a specialized with drag and drop functionality, just drag and drop in between allows items to be moved between the fields and reordered within the selection.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
@@ -24,21 +23,10 @@ import {HttpClient} from "@angular/common/http";
                       <amexio-column [size]="12">
                         <amexio-item-selector  [height]="250" [display-field]="'countryName'"
                                               [value-field]="'countryId'"  (selectedRecords)="getSelectedData($event)"
-                                              [http-url]="'assets/data/componentdata/selectordata.json'"
+                                              [http-url]="'assets/data/componentdata/selectordragdrop.json'"
                                               [http-method]="'get'" [data-reader]="'data'" 
-                                                >
+                                              [enable-drag]="true" [enable-drop]="true"                                               >
                         </amexio-item-selector>
-                      </amexio-column>
-                    </amexio-row>
-                    
-                    <amexio-row>
-                      <amexio-column [size]="12">
-                        <amexio-card [header]="true">
-                          <amexio-header>Selected data</amexio-header>
-                          <amexio-body>
-                            {{selectedData|json}}
-                          </amexio-body>
-                        </amexio-card>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
@@ -49,7 +37,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-item-selector>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/itemselector.json'"
+                             [http-url]="'assets/apireference/forms/itemselectordragdrop.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -105,7 +93,7 @@ import {HttpClient} from "@angular/common/http";
 
   `
 })
-export class ItemSelectorDemo {
+export class ItemSelectorDragdropDemo {
   @ViewChild('item') itemRef: any;
 
   htmlCode: string;
@@ -125,8 +113,8 @@ export class ItemSelectorDemo {
     let responseHtml: any;
     let responseTs: any;
     let responseData:any;
-    //HTML FILE
-    this.http.get('assets/data/code/forms/itemselector/form.html',{responseType: 'text'}).subscribe(data => {
+    //HTML FILE /home/betamagic/5_Branch/New-API-5.2-Branch/Amexio5API/src/assets/data/code/draganddrop/itemselectordragdrop/form.html
+    this.http.get('assets/data/code/draganddrop/itemselectordragdrop/form.html',{responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -134,7 +122,7 @@ export class ItemSelectorDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/itemselector/form.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/draganddrop/itemselectordragdrop/form.text',{responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

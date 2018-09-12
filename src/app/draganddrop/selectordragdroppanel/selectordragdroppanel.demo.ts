@@ -1,19 +1,19 @@
 /**
- * Created by sagar on 9/1/18.
+ * Created by kedar on 11/9/18.
  */
 
-import {Component, ViewChild} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component, ViewChild } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
-  selector: 'itemselector-demo', template: `
+  selector: 'selectordragdrop-panel', template: `
     <amexio-card header="true">
       <amexio-header>
-         Item Selector 
+         Item Selector drag and drop to panel
       </amexio-header>
       <amexio-body>
-        <p>ItemSelector is a specialized MultiSelect field that renders as a pair of MultiSelect field, one with available options and the other with selected options. 
-          A set of buttons in between allows items to be moved between the fields and reordered within the selection.</p>
+        <p>ItemSelector  and  functionlity
+        drag the fields and reordered from one panel allows items to be drop to another new panel  within the selection.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
@@ -24,22 +24,25 @@ import {HttpClient} from "@angular/common/http";
                       <amexio-column [size]="12">
                         <amexio-item-selector  [height]="250" [display-field]="'countryName'"
                                               [value-field]="'countryId'"  (selectedRecords)="getSelectedData($event)"
-                                              [http-url]="'assets/data/componentdata/selectordata.json'"
+                                              [http-url]="'assets/data/componentdata/selectordragdrop.json'"
                                               [http-method]="'get'" [data-reader]="'data'" 
-                                                >
+                                              [enable-drag]="true" [enable-drop]="true" 
+                                              (onDrag) ="getDropData($event)"
+                                              [across-itemselector] = "true"
+                                                                                           >
                         </amexio-item-selector>
                       </amexio-column>
                     </amexio-row>
                     
                     <amexio-row>
                       <amexio-column [size]="12">
-                        <amexio-card [header]="true">
-                          <amexio-header>Selected data</amexio-header>
-                          <amexio-body>
-                            {{selectedData|json}}
-                          </amexio-body>
-                        </amexio-card>
-                      </amexio-column>
+                        <amexio-panel (dragover)="dragOver($event)" 
+                            (drop)="drop($event)" 
+                            [header]="true"
+                            [title]="'Panel'" [expanded]="true">
+                           <pre><code>{{selectedPanelData | json}}</code></pre>
+                        </amexio-panel>
+                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
                 </amexio-card>
@@ -49,7 +52,7 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties<amexio-item-selector>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/itemselector.json'"
+                             [http-url]="'assets/apireference/forms/selectordragdroppanel.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -105,15 +108,15 @@ import {HttpClient} from "@angular/common/http";
 
   `
 })
-export class ItemSelectorDemo {
+export class ItemSelectorDragdropPanel {
   @ViewChild('item') itemRef: any;
 
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
   selectedData: any;
-  dataSource:string;
-  selectedData1: any;
+  dataSource: string;
+  selectedPanelData: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -124,24 +127,24 @@ export class ItemSelectorDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-    let responseData:any;
+    let responseData: any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/itemselector/form.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/draganddrop/selectordragdroppanel/form.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
-    //TS FILE
-    this.http.get('assets/data/code/forms/itemselector/form.text',{responseType: 'text'}).subscribe(data => {
+    //TS FILE 
+    this.http.get('assets/data/code/draganddrop/selectordragdroppanel/form.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //JSON FILE
-    this.http.get('assets/data/componentdata/selectordata.json',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/componentdata/selectordata.json', { responseType: 'text' }).subscribe(data => {
       responseData = data;
     }, error => {
     }, () => {
@@ -154,26 +157,20 @@ export class ItemSelectorDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
-  getDropData(event: any) {
-    this.itemRef.removeNode(event);
-  }
-  drag(data: any) {
+  getDropData(data: any) {   
     data.event.dataTransfer.setData("dragdata", JSON.stringify(data.data));
   }
-
-  dragOver(event: any) {
+  dragOver(event: any){
     event.preventDefault();
   }
-
   drop(event: any) {
     event.preventDefault();
-    console.log('event' +event);
-    this.selectedData = JSON.parse(event.dataTransfer.getData('dragdata'))
+    this.selectedPanelData = JSON.parse(event.dataTransfer.getData('dragdata'))
   }
 }
 

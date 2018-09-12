@@ -1,0 +1,21 @@
+<!--ITEM SELECTOR DRAG AND DROP  TO PANEL-->
+<amexio-item-selector [height]="250"
+                      [display-field]="'countryName'"
+                      [value-field]="'countryId'"
+                      (selectedRecords)="getSelectedData($event)"
+                      [http-url]="'assets/data/componentdata/selectordata.json'"
+                      [http-method]="'get'"
+                      [data-reader]="'data'"
+                      [enable-drag]="true"
+                      [enable-drop]="true"
+                      [across-itemselector] = "true"
+                      (onDrag) ="getDropData($event)">
+</amexio-item-selector>
+
+<amexio-panel      
+                      (dragover)="dragOver($event)" 
+                      (drop)="drop($event)" 
+                      [header]="true"
+                      [title]="'Panel'" 
+                      [expanded]="true">
+</amexio-panel>

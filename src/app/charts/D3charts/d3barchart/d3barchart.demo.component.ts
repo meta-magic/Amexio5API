@@ -76,7 +76,7 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
           "value": 94423
         },
         {
-          "label": "Hyderabad",
+          "label": "Kochi",
           "value": 69932
         },
         {
@@ -96,7 +96,7 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
           "value": 30461
         },
         {
-          "label": "Bangalore",
+          "label": "Ranchi",
           "value": 84436
         }
       ]
