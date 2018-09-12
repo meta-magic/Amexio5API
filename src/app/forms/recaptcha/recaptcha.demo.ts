@@ -17,11 +17,27 @@ import {HttpClient} from "@angular/common/http";
           <amexio-tab title="Demo" active="true">
          
 
+         
           <amexio-row>
           <amexio-column [size]="12">
-            <amexio-label  size="large">This is large amexio label</amexio-label>
+            <amexio-card [header]="true">
+
+            
+              <amexio-header>Captcha Response data</amexio-header>
+              <amexio-body>
+
+      <amexio-google-recaptcha (onSuccess)="onSuccess($event)" 
+      (onFailure)="onFailure($event)"
+      [site-key]="'6LfwgG4UAAAAAESW9vPuZtjsxgF4C3EiIbqq01li'">
+                             
+      </amexio-google-recaptcha>
+              
+              </amexio-body>
+            </amexio-card>
           </amexio-column>
-          </amexio-row>
+        </amexio-row>
+        
+      
 
           </amexio-tab>
 
@@ -85,6 +101,7 @@ export class RecaptchaDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
+  response: any;
   age:number=10;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
@@ -121,6 +138,16 @@ export class RecaptchaDemo {
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
+  }
+
+  onSuccess(event: any) {
+    this.response = event;
+    console.log('res', this.response);
+  }
+  onFailure(event: any) {
+    this.response = event;
+    console.log('res', this.response);
+    
   }
 }
 
