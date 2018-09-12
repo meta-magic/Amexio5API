@@ -26,7 +26,7 @@ import { HttpClient } from "@angular/common/http";
                                               [value-field]="'countryId'"  (selectedRecords)="getSelectedData($event)"
                                               [http-url]="'assets/data/componentdata/selectordragdrop.json'"
                                               [http-method]="'get'" [data-reader]="'data'" 
-                                              [enable-drag]="true" [enable-drop]="true" 
+                                              [enable-drag]="true" [enable-drop]="false" 
                                               (onDrag) ="getDropData($event)"
                                               [across-itemselector] = "true"
                                                                                            >
