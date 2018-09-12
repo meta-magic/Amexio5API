@@ -28,7 +28,7 @@ import {HttpClient} from "@angular/common/http";
 
       <amexio-google-recaptcha (onSuccess)="onSuccess($event)" 
       (onFailure)="onFailure($event)"
-      [site-key]="'6LfwgG4UAAAAAESW9vPuZtjsxgF4C3EiIbqq01li'">
+      [site-key]="'6LeZ5W8UAAAAAIHXZf35oYoUhpsICnJzqSxx3fpf'">
                              
       </amexio-google-recaptcha>
               
