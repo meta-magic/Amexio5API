@@ -394,5 +394,8 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'amexio-d3-chart-pie', loadChildren: './charts/D3charts/d3piechart/d3piechart.demo.module#D3PieChartDemoModule'
   }, 
   
+  {
+    path: 'amexio-d3-chart-multiseries', loadChildren: './charts/D3charts/d3multiserieschart/d3multiserieschart.demo.module#D3MultiSeriesChartDemoModule'
+  }, 
   
 ];

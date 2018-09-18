@@ -1,0 +1,49 @@
+{
+    "name": "Amexio D3-chart multiseries",
+    "description": "An  D3-chart multiseries  chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+    "selector": "<amexio-d3-chart-multiseries>",
+    "properties": [
+        {
+            "name": "title",
+            "description": "Sets title to chart",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "width",
+            "description": "Width of chart",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "height",
+            "description": "Height of chart",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data",
+            "description": "Local data for Chart",
+            "type": "any[]",
+            "default": ""
+        },
+        {
+            "name": "legend",
+            "description": "Sets legend to D3 multiseries bar chart",
+            "type": "boolean",
+            "default": "true"
+        }
+    ],
+    "legend": [
+        {
+            "name": "onLegendClick()",
+            "description": "It will fire only on click on Legend Click in D3 multiseries chart ."
+        }
+    ],
+    "chartevent": [
+        {
+            "name": "onChartClick()",
+            "description": "It will fire only on click on Bar in D3 multiseries chart ."
+        }
+    ]
+}
