@@ -682,7 +682,7 @@
                         },
                         {
                             "text": "MultiSeriesBar Chart",
-                            "icon": "fa fa-pie-chart fa-fw",
+                            "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-multiseries"
                         }
