@@ -43,6 +43,10 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     this.userDataSource = event;
   }
 
+  onDefaultChartClick(event: any) {
+    this.userDataSource = event;
+  }
+
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;

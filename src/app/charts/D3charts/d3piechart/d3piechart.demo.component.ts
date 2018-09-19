@@ -101,6 +101,11 @@ export class AmexioD3PieChartDemoComponent implements OnInit
     this.sourceData = event;
 
   }
+
+  onDefaultChartClick(event: any) {
+    this.userDataSource = event;
+  }
+  
   onUserDefineLegendClick(event: any) {
 
     this.userDataSource = event;

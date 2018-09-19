@@ -74,5 +74,9 @@ export class AmexioD3PieChartDemoComponent
   onLegendItemClick(event: any) {
     this.sourceData = event;
   }
+
+  onDefaultChartClick(event: any) {
+    this.userDataSource = event;
+  }
 }
 

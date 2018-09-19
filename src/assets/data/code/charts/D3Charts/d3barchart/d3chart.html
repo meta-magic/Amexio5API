@@ -5,6 +5,7 @@
 <amexio-d3-chart-bar 
         [data]="defultColorData"
         [title]="'Company Performance Details'" 
+        (onChartClick)="onDefaultChartClick($event)" 
         (onLegendClick)="onDefaultLegendClick($event)" >
 </amexio-d3-chart-bar>
 
@@ -14,7 +15,8 @@
         [width]="400"
         [data]="userDefineColorData" 
         [height]="400" 
-        [title]="'Population of Cities in India'" 
+        [title]="'Population of Cities in India'"
+        (onChartClick)="onDefaultChartClick($event)" 
         (onLegendClick)="onUserDefineLegendClick($event)"
         [color]="userDefineColors" >
  </amexio-d3-chart-bar>

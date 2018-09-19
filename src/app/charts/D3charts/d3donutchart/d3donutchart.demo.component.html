@@ -17,7 +17,7 @@
                                                         D3-donut with  Legend UserDefine Color
                                                     </amexio-header>
                                                     <amexio-body>
-                                                        <amexio-d3-chart-donut [title]="'Visiter Visit Country Ratio'" [color]="userDefineColors" [data]="userDefineColorData" (onLegendClick)="onUserDefineLegendClick($event)">
+                                                        <amexio-d3-chart-donut [title]="'Visiter Visit Country Ratio'" [color]="userDefineColors" [data]="userDefineColorData" (onChartClick)="onDefaultChartClick($event)"  (onLegendClick)="onUserDefineLegendClick($event)">
                                                         </amexio-d3-chart-donut>
                                                     </amexio-body>
                                                 </amexio-card>
@@ -51,7 +51,7 @@
                                                         D3-donut with By Default Colors
                                                     </amexio-header>
                                                     <amexio-body>
-                                                        <amexio-d3-chart-donut [title]="'Browser Information'" [data]="defultColorData" (onLegendClick)="onDefaultLegendClick($event)">
+                                                        <amexio-d3-chart-donut [title]="'Browser Information'" [data]="defultColorData" (onChartClick)="onDefaultChartClick($event)"  (onLegendClick)="onDefaultLegendClick($event)">
                                                         </amexio-d3-chart-donut>
                                                     </amexio-body>
                                                 </amexio-card>
@@ -90,6 +90,11 @@
                 <br>
                 <amexio-datagrid title="Legend <amexio-d3-chart-donut>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3donutchart.json'"
                     [data-reader]="'legend'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <amexio-datagrid title="Chart Event <amexio-d3-chart-multiseries>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3multiserieschart.json'"
+                    [data-reader]="'chartevent'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>

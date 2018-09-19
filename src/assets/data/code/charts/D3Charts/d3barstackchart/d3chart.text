@@ -22,7 +22,10 @@ this.userDefineColorData = [
 
   
   onUserDefineLegendClick(event: any) {
+    this.userDataSource = event;
+  }
 
+  onDefaultChartClick(event: any) {
     this.userDataSource = event;
   }
 

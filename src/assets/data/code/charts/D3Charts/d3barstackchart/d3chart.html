@@ -2,6 +2,7 @@
 <amexio-d3-chart-barstack 
                         [title]="'STACKBARCHART'" 
                         [data]="userDefineColorData" 
+                        (onChartClick)="onDefaultChartClick($event)" 
                         (onLegendClick)="onUserDefineLegendClick($event)"
 >
 </amexio-d3-chart-barstack> 

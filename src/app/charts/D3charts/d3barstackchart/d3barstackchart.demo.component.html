@@ -21,6 +21,7 @@
                                         [data]="userDefineColorData" 
                                         [title]="'STACKBARCHART'"
                                         (onLegendClick)="onUserDefineLegendClick($event)"
+                                        (onChartClick)="onDefaultChartClick($event)" 
                                         >
                                         </amexio-d3-chart-barstack> 
                                     </amexio-body>
@@ -29,7 +30,7 @@
                             <amexio-column [size]="4" >
                                 <amexio-card header="true" [body-height]="64">
                                     <amexio-header>
-                                        Click On Legend
+                                        Click On Legend/Click on Chart
                                     </amexio-header>
                                     <amexio-body>
                                         <pre><code>{{userDataSource |json }}</code></pre>
@@ -57,6 +58,11 @@
                 <br>
                 <amexio-datagrid title="Legend <amexio-d3-chart-bar-stack>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barstackchart.json'"
                     [data-reader]="'legend'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <amexio-datagrid title="Chart Event <amexio-d3-chart-multiseries>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3multiserieschart.json'"
+                    [data-reader]="'chartevent'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>

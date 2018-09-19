@@ -51,5 +51,11 @@
             "name": "onLegendClick()",
             "description": "It will fire only on click on Legend Click in D3 donut chart ."
         }
+    ],
+    "chartevent": [
+        {
+            "name": "onChartClick()",
+            "description": "It will fire only on click on Bar in D3 multiseries chart ."
+        }
     ]
 }

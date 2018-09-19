@@ -37,13 +37,11 @@ export class AmexioD3MultiSeriesChartDemoComponent implements OnInit {
 
   }
 
-  onDefaultLegendClick(event: any) {
-
+  onDefaultChartClick(event: any) {
     this.userDataSource = event;
-
   }
-  onUserDefineLegendClick(event: any) {
 
+  onUserDefineLegendClick(event: any) {
     this.userDataSource = event;
   }
 
