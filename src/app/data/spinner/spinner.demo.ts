@@ -22,6 +22,7 @@ import {HttpClient} from '@angular/common/http';
         Data Loading Indicator
     </amexio-header>
     <amexio-body>
+    <amexio-label size="medium-bold">Select Color For Spinner:  -</amexio-label> 
     <input type="color" id="head" name="color"
                     (input)= "setColorForIndictor($event)"
                     value="colorModel.color" />
