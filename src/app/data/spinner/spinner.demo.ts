@@ -101,7 +101,7 @@ import {HttpClient} from '@angular/common/http';
         <amexio-column [size]="4"  [fit]=true>
            <amexio-card [header]="true" [body-height]="45">
                <amexio-header>
-               spinner round loader
+               three bounce loader
                </amexio-header>
                <amexio-body>
                    <amexio-spinner [show]=true [type]="'threeBounce'" [color]="colorModel.color" >
@@ -112,7 +112,7 @@ import {HttpClient} from '@angular/common/http';
         <amexio-column [size]="4"  [fit]=true>
            <amexio-card [header]="true">
                <amexio-header>
-               half circle loader
+               rectangle Bounce loader
                </amexio-header>
                <amexio-body>
                    <amexio-spinner [show]=true [type]="'rectangleBounce'" [color]="colorModel.color">

@@ -358,7 +358,7 @@
                 },
                 {
                     "text": "Progress Bar",
-                    "icon": "fa fa-spinner fa-fw",
+                    "icon": "fa fa-circle-o-notch fa-fw",
                     "link": "progressbar-demo"
                 },
                 {
