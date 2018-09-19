@@ -33,12 +33,6 @@
             "description": "Sets legend to D3 bar-stack chart",
             "type": "boolean",
             "default": "true"
-        },
-        {
-            "name": "color",
-            "description": "Sets color to D3 Bar chart",
-            "type": "any[]",
-            "default": ""
         }
     ],
     "legend": [

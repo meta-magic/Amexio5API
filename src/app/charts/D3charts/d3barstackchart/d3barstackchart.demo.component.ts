@@ -18,7 +18,7 @@ export class AmexioD3BarStackChartDemoComponent implements OnInit {
   userDefineColors: any;
   defultColorData: any;
   userDefineColorData: any;
-  colorArray: any = ["blue", "yellow", "green"];
+  // colorArray: any = ["blue", "yellow", "green"];
 
 
   constructor(private http: HttpClient) {
