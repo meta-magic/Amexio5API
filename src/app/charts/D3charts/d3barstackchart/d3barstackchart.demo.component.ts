@@ -3,34 +3,32 @@ import * as d3 from 'd3';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-    selector : 'amexio-d3-chart-bar-stack-demo',
-    templateUrl:'./d3barstackchart.demo.component.html'
+  selector: 'amexio-d3-chart-bar-stack-demo',
+  templateUrl: './d3barstackchart.demo.component.html'
 })
-export class AmexioD3BarStackChartDemoComponent implements OnInit
-{
+export class AmexioD3BarStackChartDemoComponent implements OnInit {
 
-    htmlCode: string;
-    typeScriptCode: string;
-    dataSourceCode: string;
-    sourceData: any;
-    userDataSourceCode: string;
-    copyMsgArray: any[];
-
-    userDataSource: any;
+  htmlCode: string;
+  typeScriptCode: string;
+  dataSourceCode: string;
+  sourceData: any;
+  userDataSourceCode: string;
+  copyMsgArray: any[];
+  userDataSource: any;
   userDefineColors: any;
   defultColorData: any;
   userDefineColorData: any;
+  colorArray: any = ["blue", "yellow", "green"];
 
-  
-  
-  constructor(private http: HttpClient) { 
+
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
-      
+
   }
 
- 
+
   ngOnInit() {
-  
+
     this.userDefineColorData = [
       ['Year', 'Sales', 'Expenses', 'Profit'],
       ['2014', 1000, 400, 200],
@@ -54,9 +52,9 @@ export class AmexioD3BarStackChartDemoComponent implements OnInit
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-    let dataSource:any;
+    let dataSource: any;
     // HTML FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barstackchart/d3chart.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3barstackchart/d3chart.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -64,21 +62,21 @@ export class AmexioD3BarStackChartDemoComponent implements OnInit
     });
 
     //  TS FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barstackchart/d3chart.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3barstackchart/d3chart.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
-     // DataSource FILE
-     this.http.get('assets/data/code/charts/D3Charts/d3barstackchart/datasource.json',{responseType: 'text'}).subscribe(data => {
-        responseTs = data;
-      }, error => {
-      }, () => {
-        this.dataSourceCode = responseTs;
-      });
+    // DataSource FILE
+    this.http.get('assets/data/code/charts/D3Charts/d3barstackchart/datasource.json', { responseType: 'text' }).subscribe(data => {
+      responseTs = data;
+    }, error => {
+    }, () => {
+      this.dataSourceCode = responseTs;
+    });
 
-       // User DataSource FILE
+    // User DataSource FILE
     this.http.get('assets/data/code/charts/D3Charts/d3barstackchart/usersource.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
@@ -93,9 +91,9 @@ export class AmexioD3BarStackChartDemoComponent implements OnInit
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 

@@ -7,6 +7,8 @@ export class AmexioD3StackChartDemoComponent
   userDataSource: any;
   userDefineColorData: any;
   sourceData: any;
+  colorArray: any = ["blue", "yellow", "green"];
+
   constructor() { 
 
 this.userDefineColorData = [

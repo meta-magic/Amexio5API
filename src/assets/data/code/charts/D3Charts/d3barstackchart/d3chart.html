@@ -1,4 +1,6 @@
 
+<!-- D3-bar By Default legend Color -->
+
 <amexio-d3-chart-barstack 
                         [title]="'STACKBARCHART'" 
                         [data]="userDefineColorData" 
@@ -6,3 +8,11 @@
                         (onLegendClick)="onUserDefineLegendClick($event)"
 >
 </amexio-d3-chart-barstack> 
+
+<!-- D3-chart User Define  legendColor -->
+<amexio-d3-chart-barstack [data]="userDefineColorData"
+ [title]="'STACKBARCHART'"
+ [color]="colorArray" 
+ (onLegendClick)="onUserDefineLegendClick($event)"
+ (onChartClick)="onDefaultChartClick($event)">
+</amexio-d3-chart-barstack>

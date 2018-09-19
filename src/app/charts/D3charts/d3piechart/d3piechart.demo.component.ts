@@ -103,7 +103,7 @@ export class AmexioD3PieChartDemoComponent implements OnInit
   }
 
   onDefaultChartClick1(event: any) {
-    this.userDataSource = event;
+    this.sourceData = event;
   }
 
   onDefaultChartClick(event: any) {
