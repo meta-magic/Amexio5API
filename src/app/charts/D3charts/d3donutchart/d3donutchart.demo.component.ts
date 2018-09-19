@@ -102,6 +102,10 @@ export class AmexioD3DonutChartDemoComponent implements OnInit {
     this.sourceData = event;
 
   }
+
+  onDefaultChartClick1(event: any) {
+    this.sourceData = event;
+  }
   onUserDefineLegendClick(event: any) {
 
     this.userDataSource = event;
@@ -110,7 +114,7 @@ export class AmexioD3DonutChartDemoComponent implements OnInit {
   onDefaultChartClick(event: any) {
     this.userDataSource = event;
   }
-  
+
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;

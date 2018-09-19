@@ -109,10 +109,14 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
 
   }
 
+  onDefaultChartClick1(event: any) {
+    this.sourceData = event;
+  }
+
   onDefaultChartClick(event: any) {
     this.userDataSource = event;
   }
-  
+
   onUserDefineLegendClick(event: any) {
 
     this.userDataSource = event;
