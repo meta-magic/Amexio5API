@@ -174,13 +174,8 @@
                     "icon": "fa fa-window-maximize fa-fw",
                     "link": "dialouge",
                     "badge": "U"
-                },
-                {
-                    "text": "Timeline",
-                    "icon": "fa fa-history",
-                    "link": "timeline",
-                    "badge": "N"
                 }
+               
             ]
         },
         {
@@ -366,11 +361,6 @@
                     "text": "Progress Bar",
                     "icon": "fa fa-circle-o-notch fa-fw",
                     "link": "progressbar-demo"
-                },
-                {
-                    "text": "Data Loading Indicator",
-                    "icon": "fa fa-spinner fa-fw",
-                    "link": "amexio-spinner-demo"
                 }
             ]
         },
