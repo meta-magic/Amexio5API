@@ -26,104 +26,108 @@ import {HttpClient} from '@angular/common/http';
     <input type="color" id="head" name="color"
                     (input)= "setColorForIndictor($event)"
                     value="colorModel.color" />
-        <amexio-row>
-            <amexio-column [size]="4"  [fit]=true>
-                <amexio-card [header]="true" [body-height]="45">
-                    <amexio-header>
-                    spinner round loader
-                    </amexio-header>
-                    <amexio-body>
-                        <amexio-spinner [show]=true [type]="'spinnerRound'" [color]="colorModel.color" >
-                        </amexio-spinner>
-                    </amexio-body>
-                </amexio-card>
-            </amexio-column>
-            <amexio-column [size]="4"  [fit]=true>
-                <amexio-card [header]="true">
-                    <amexio-header>
-                    half circle loader
-                    </amexio-header>
-                    <amexio-body>
-                        <amexio-spinner [show]=true [type]="'halfCircle'" [color]="colorModel.color">
-                        </amexio-spinner>
-                    </amexio-body>
-                </amexio-card>
-            </amexio-column>
-            <amexio-column [size]="4"  [fit]=true>
-                <amexio-card [header]="true">
-                    <amexio-header>
-                    ring loader
-                    </amexio-header>
-                    <amexio-body>
-                        <amexio-spinner [show]=true [type]="'ring'" [color]="colorModel.color" >
-                        </amexio-spinner>
-                    </amexio-body>
-                </amexio-card>
-            </amexio-column>
-        </amexio-row>
 
-        <amexio-row>
-         <amexio-column [size]="4"  [fit]=true>
-            <amexio-card [header]="true" [body-height]="45">
-                <amexio-header>
+<amexio-row>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true" [body-height]="45">
+            <amexio-header>
                 fading circle round loader
-                </amexio-header>
-                <amexio-body>
-                    <amexio-spinner [show]=true [type]="'fadingCircle'" [color]="colorModel.color" >
-                    </amexio-spinner>
-                </amexio-body>
-            </amexio-card>
-         </amexio-column>
-         <amexio-column [size]="4"  [fit]=true>
-            <amexio-card [header]="true">
-                <amexio-header>
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=true [type]="'fadingCircle'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true">
+            <amexio-header>
                 ball spin loader
-                </amexio-header>
-                <amexio-body>
-                    <amexio-spinner [show]=true [type]="'ballSpin'" [color]="colorModel.color">
-                    </amexio-spinner>
-                </amexio-body>
-            </amexio-card>
-         </amexio-column>
-         <amexio-column [size]="4"  [fit]=true>
-            <amexio-card [header]="true">
-                <amexio-header>
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=true [type]="'ballSpin'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true">
+            <amexio-header>
                 fire spin loader
-                </amexio-header>
-                <amexio-body>
-                    <amexio-spinner [show]=true [type]="'fireSpin'" [color]="colorModel.color" >
-                    </amexio-spinner>
-                </amexio-body>
-            </amexio-card>
-         </amexio-column>
-        </amexio-row>
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=true [type]="'fireSpin'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+</amexio-row>
 
-        <amexio-row>
-        <amexio-column [size]="4"  [fit]=true>
-           <amexio-card [header]="true" [body-height]="45">
-               <amexio-header>
-               three bounce loader
-               </amexio-header>
-               <amexio-body>
-                   <amexio-spinner [show]=true [type]="'threeBounce'" [color]="colorModel.color" >
-                   </amexio-spinner>
-               </amexio-body>
-           </amexio-card>
-        </amexio-column>
-        <amexio-column [size]="4"  [fit]=true>
-           <amexio-card [header]="true">
-               <amexio-header>
-               rectangle Bounce loader
-               </amexio-header>
-               <amexio-body>
-                   <amexio-spinner [show]=true [type]="'rectangleBounce'" [color]="colorModel.color">
-                   </amexio-spinner>
-               </amexio-body>
-           </amexio-card>
-        </amexio-column>
-        
-       </amexio-row>
+<amexio-row>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true" [body-height]="45">
+            <amexio-header>
+                three bounce loader
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=true [type]="'threeBounce'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true" [body-height]="45">
+            <amexio-header>
+                spinner round loader
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]='true' [type]="'spinnerRound'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true">
+            <amexio-header>
+                ring loader
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=true [type]="'ring'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+</amexio-row>
 
+<amexio-row>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true" [body-height]="45">
+            <amexio-header>
+                half circle loader
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=true [type]="'halfCircle'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true" [body-height]="45">
+            <amexio-header>
+                rectangle Bounce loader
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=true [type]="'rectangleBounce'" [color]="colorModel.color">
+                </amexio-spinner>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+</amexio-row>
+
+
+
+       
     </amexio-body>
 </amexio-card>
 
@@ -218,7 +222,10 @@ export class AmexioSpinnerDemo {
 
 //THIS METHOD IS USED FOR SETTING COLOR FOR INDICATOR
   setColorForIndictor(colorName: any) {
+    debugger;
     this.colorModel.color= colorName.target.value;
+    console.log(this.colorModel.color);
+
   }
 }
 
@@ -228,5 +235,3 @@ export class ColorModel{
 
   }
 }
-
-

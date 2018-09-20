@@ -167,9 +167,9 @@
     {
       path: 'step-box-icon', loadChildren: './layout/steps/stepbox-icon/stepbox.icon.demo.module#StepBoxIconDemoModule'
     },
-    // {
-    //   path: 'timeline', loadChildren: './panes/timeline/timeline.demo.module#TimelineDemoModule'
-    // },
+    {
+      path: 'timeline', loadChildren: './panes/timeline/timeline.demo.module#TimelineDemoModule'
+    },
     {
       path: 'accordion', loadChildren: './panes/accordion/accordion.demo.module#AccordionDemoModule'
     },
@@ -315,9 +315,9 @@
     {
       path: 'progressbar-demo', loadChildren: './data/progressbar/progressbar.demo.module#ProgressBarDemoModule'
     },
-    // {
-    //   path: 'amexio-spinner-demo', loadChildren: './data/spinner/spinner.demo.module#AmexioSpinnerDemoModule'
-    // },
+    {
+      path: 'amexio-spinner-demo', loadChildren: './data/spinner/spinner.demo.module#AmexioSpinnerDemoModule'
+    },
     {
       path: 'multi-item-carousel', loadChildren: './enterprise/multi-item-carousel/multi.item.carousel#EECarouselDemoRoutingModule'
     },
