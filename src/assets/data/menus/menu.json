@@ -316,7 +316,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "1",
+            "badge": "2",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [
                 {
@@ -365,11 +365,6 @@
                     "text": "Progress Bar",
                     "icon": "fa fa-circle-o-notch fa-fw",
                     "link": "progressbar-demo"
-                },
-                {
-                    "text": "Data Loading Indicator",
-                    "icon": "fa fa-spinner fa-fw",
-                    "link": "amexio-spinner-demo"
                 }
             ]
         },
