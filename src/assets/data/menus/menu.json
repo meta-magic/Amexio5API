@@ -11,6 +11,11 @@
             "icon": "fa fa-snowflake-o fa-fw"
         },
         {
+            "text": "Amexio Chart D3",
+            "link": "chart-d3-page",
+            "icon": "fa fa-openid fa-fw"
+        },
+        {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
             "badge": "1",
@@ -174,12 +179,6 @@
                     "icon": "fa fa-window-maximize fa-fw",
                     "link": "dialouge",
                     "badge": "U"
-                },
-                {
-                    "text": "Timeline",
-                    "icon": "fa fa-history",
-                    "link": "timeline",
-                    "badge": "N"
                 }
             ]
         },

@@ -6,12 +6,18 @@
   export const APP_ROUTE: Routes = [/**Forms Routes*/
     {
       path: '', redirectTo: 'getting-started', pathMatch: 'full'
-    }, {
+    }, 
+    {
       path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
-    }, {
+    }, 
+    {
       path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
-    }, {
+    }, 
+    {
       path: 'amexio-colors', loadChildren: './theme/theme.module#ThemeModule'
+    },
+    {
+      path: 'chart-d3-page', loadChildren: './chartd3/chartd3.demo.module#ChartD3DemoModule'
     },
     {
       path: 'email-demo', loadChildren: './forms/email/email.demo.module#EmailDemoModule'
