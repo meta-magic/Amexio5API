@@ -3,9 +3,9 @@ import { NgModule } from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import { AppComponent } from './app.component';
 
-// To import D3-Chart :-
+// To import D3-Chart :- 
 
-import { AmexioChartD3Module } from 'amexio-d3-chart';
+import { AmexioChartD3Module } from 'amexio-chart-d3';
 
 @NgModule({
   declarations: [
