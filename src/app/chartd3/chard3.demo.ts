@@ -26,7 +26,7 @@ import { HttpClient } from "@angular/common/http";
           <amexio-column size="6">
                   <amexio-card [header]="true" [show]="'true'">
                           <amexio-header>
-                                  amexio D3-stack bar chart
+                                  amexio D3-line chart
                           </amexio-header>
                           <amexio-body>
                           <amexio-d3-chart-line [title]="'Popularity Of XYZ & PQR'" [data]="doubleLineData">
