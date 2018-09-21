@@ -6,21 +6,28 @@
     {
       "name": "show",
       "description": "Shows / Hides the spinner .",
-      "version": "4.0 onwards",
+      "version": "5.2.2 onwards",
       "type": "boolean",
       "default": "true"
     },
     {
       "name": "type",
-      "description": "Type of spinner  can be as per name ",
-      "version": "4.0 onwards",
+      "description": "Some default types which is important  (fadingCircle , ballSpin, fireSpin, threeBounce, spinnerRound, ring, halfCircle, rectangleBounce) ",
+      "version": "5.2.2 onwards",
       "type": "any",
       "default": ""
     },
     {
       "name": "color",
-      "description": "Use different  colors for spinner ",
-      "version": "4.1 onwards",
+      "description": "Use different colors for spinner ",
+      "version": "5.2.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "size",
+      "description": "size for spinner(size in  px or % ) ",
+      "version": "5.2.2 onwards",
       "type": "string",
       "default": ""
     }

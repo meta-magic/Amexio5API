@@ -34,7 +34,7 @@ import {HttpClient} from '@angular/common/http';
                 fading circle round loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'fadingCircle'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'fadingCircle'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -45,7 +45,7 @@ import {HttpClient} from '@angular/common/http';
                 ball spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'ballSpin'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'ballSpin'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -56,7 +56,7 @@ import {HttpClient} from '@angular/common/http';
                 fire spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'fireSpin'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'200%'" [type]="'fireSpin'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -70,7 +70,7 @@ import {HttpClient} from '@angular/common/http';
                 three bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'threeBounce'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'threeBounce'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -81,7 +81,7 @@ import {HttpClient} from '@angular/common/http';
                 spinner round loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]='true' [type]="'spinnerRound'" [color]="colorModel.color">
+                <amexio-spinner [show]='true' [size]="'6px'" [type]="'spinnerRound'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -92,7 +92,7 @@ import {HttpClient} from '@angular/common/http';
                 ring loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'ring'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'ring'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -106,7 +106,7 @@ import {HttpClient} from '@angular/common/http';
                 half circle loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'halfCircle'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'halfCircle'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -118,7 +118,7 @@ import {HttpClient} from '@angular/common/http';
                 rectangle Bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'rectangleBounce'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'rectangleBounce'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -142,6 +142,8 @@ import {HttpClient} from '@angular/common/http';
                              [enable-data-filter]="false">
               <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="10" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
@@ -222,16 +224,13 @@ export class AmexioSpinnerDemo {
 
 //THIS METHOD IS USED FOR SETTING COLOR FOR INDICATOR
   setColorForIndictor(colorName: any) {
-    debugger;
     this.colorModel.color= colorName.target.value;
-    console.log(this.colorModel.color);
-
   }
 }
 
 export class ColorModel{
   color:string;
   constructor(){
-
+ 
   }
 }
