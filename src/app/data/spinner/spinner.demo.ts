@@ -106,7 +106,7 @@ import {HttpClient} from '@angular/common/http';
                 half circle loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'halfCircle'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'halfCircle'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -118,7 +118,7 @@ import {HttpClient} from '@angular/common/http';
                 rectangle Bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'rectangleBounce'" [color]="colorModel.color">
+                <amexio-spinner [show]=true [size]="'6px'" [type]="'rectangleBounce'" >
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>

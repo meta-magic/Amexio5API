@@ -56,7 +56,7 @@
     "chartevent": [
         {
             "name": "onChartClick()",
-            "description": "It will fire only on click on Bar in D3 multiseries chart ."
+            "description": "It will fire only on click on chart in D3 bar chart ."
         }
     ]
 }

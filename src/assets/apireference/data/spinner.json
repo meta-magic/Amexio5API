@@ -12,7 +12,7 @@
     },
     {
       "name": "type",
-      "description": "Some default types which is important  (fadingCircle , ballSpin, fireSpin, threeBounce, spinnerRound, ring, halfCircle, rectangleBounce) ",
+      "description": "Types of spinner:- fadingCircle/ ballSpin/ fireSpin/ threeBounce/ spinnerRound/ ring/ halfCircle/ rectangleBounce ",
       "version": "5.2.2 onwards",
       "type": "any",
       "default": ""
