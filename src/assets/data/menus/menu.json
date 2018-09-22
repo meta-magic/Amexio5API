@@ -185,7 +185,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "3",
+            "badge": "4",
             "children": [
                 {
                     "text": "Checkbox",
@@ -252,11 +252,6 @@
                     "link": "label-demo"
                 },
                 {
-                    "text": "Recaptcha",
-                    "icon": "fa fa-recycle",
-                    "link": "recaptcha-demo"
-                },
-                {
                     "text": "Number Field",
                     "icon": "fa fa-phone fa-fw",
                     "link": "number-demo"
@@ -275,6 +270,13 @@
                     "text": "Rating",
                     "icon": "fa fa-star-half-empty fa-fw",
                     "link": "rating-demo"
+                },
+                {
+                    "text": "Recaptcha",
+                    "icon": "fa fa-recycle",
+                    "link": "recaptcha-demo",
+                    "badge":"New"
+
                 },
                 {
                     "text": "Search Box",

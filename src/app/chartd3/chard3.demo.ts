@@ -6,8 +6,35 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 @Component({
-  selector: 'chart-d3-page', template: `
+  selector: 'chart-d3-page', 
+  template: `
    
+  <amexio-image [path]="'assets/images/logos/D3_chart_page1.jpg'"[tooltip]="'Image'"></amexio-image>
+  <amexio-row>
+  <amexio-column size="12">
+  <amexio-card [header]="false" [show]="'true'">
+ 
+  <amexio-body>
+<amexio-label size="medium">
+<p>  D3 allows you to bind arbitrary data to a Document Object Model (DOM), 
+and then apply data-driven transformations to the document. For example, 
+you can use D3 to generate an HTML table from an array of numbers. 
+Or, use the same data to create an interactive SVG bar chart with smooth transitions 
+and interaction.</p>
+
+<p>D3 is not a monolithic framework that seeks to provide every conceivable feature. 
+Instead, D3 solves the crux of the problem: efficient manipulation of documents
+based on data. This avoids proprietary representation and affords extraordinary
+flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS.
+With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic 
+behaviors for interaction and animation. D3’s functional style allows code reuse 
+through a diverse collection of official and community-developed modules.</p>
+</amexio-label>
+  </amexio-body>
+  </amexio-card>
+  </amexio-column>
+  </amexio-row>
+
 
           <amexio-row>
           <amexio-column size="6">
@@ -70,7 +97,7 @@ import { HttpClient } from "@angular/common/http";
 
   `
 })
-export class ChartD3Demo implements OnInit{
+export class ChartD3Demo implements OnInit {
   htmlCode: string;
   typeScriptCode: string;
   userDefineColorData: any;
@@ -86,17 +113,17 @@ export class ChartD3Demo implements OnInit{
 
   constructor(private http: HttpClient) {
 
-    
+
     this.userDefineColors =
-    [
-      "#4040a1",
-      "#e06377",
-      " #7e4a35",
-      "#6b5b95",
-      "#feb236",
-      "#d64161",
-      "#ff7b25"
-    ]
+      [
+        "#4040a1",
+        "#e06377",
+        " #7e4a35",
+        "#6b5b95",
+        "#feb236",
+        "#d64161",
+        "#ff7b25"
+      ]
     this.userDefineColorData =
       [
         {
@@ -128,7 +155,7 @@ export class ChartD3Demo implements OnInit{
           "value": 84436
         }
       ]
-    
+
   }
   ngOnInit() {
 
@@ -156,44 +183,44 @@ export class ChartD3Demo implements OnInit{
         "value": 6.01
       }
     ];
-    
+
 
     this.pieData = [
-        {
-          "label": "India",
-          "value": 30.3,
-          "color": "pink"
-        },
-        {
-          "label": "Spain",
-          "value": 9.52
-        },
-        {
-          "label": "France",
-          "value": 13.68
-        },
-        {
-          "label": "Chaina",
-          "value": 18.71
-        },
-        {
-          "label": "Germany",
-          "value": 8.01
-        },
-        {
-          "label": "U.K",
-          "value": 8.01
-        },
-        {
-          "label": "U.S",
-          "value": 14.01
-        },
-        {
-          "label": "Korea",
-          "value": 4.01
-        }
-      ];
-  
+      {
+        "label": "India",
+        "value": 30.3,
+        "color": "pink"
+      },
+      {
+        "label": "Spain",
+        "value": 9.52
+      },
+      {
+        "label": "France",
+        "value": 13.68
+      },
+      {
+        "label": "Chaina",
+        "value": 18.71
+      },
+      {
+        "label": "Germany",
+        "value": 8.01
+      },
+      {
+        "label": "U.K",
+        "value": 8.01
+      },
+      {
+        "label": "U.S",
+        "value": 14.01
+      },
+      {
+        "label": "Korea",
+        "value": 4.01
+      }
+    ];
+
     this.multiData = [
       ['date', 'Sales', 'Expenses', 'Profit'],
       ['2014', 1000, 400, 200],
@@ -204,9 +231,9 @@ export class ChartD3Demo implements OnInit{
       ['2019', 1050, 640, 350]
     ];
 
-    this.doubleLineData =[[{"datatype":"number","label":"Day"},{"datatype":"number","label":"XYZ"},{"datatype":"number","label":"PQR"}],[0,0,0],[1,10,5],[2,23,15],[3,17,9],[4,18,10],[5,9,5],[6,11,3],[7,27,19],[8,33,25],[9,40,32],[10,32,24],[11,35,27],[12,30,22],[13,40,32],[14,42,34],[15,47,39]]
-  
-    this.stackData =[
+    this.doubleLineData = [[{ "datatype": "number", "label": "Day" }, { "datatype": "number", "label": "XYZ" }, { "datatype": "number", "label": "PQR" }], [0, 0, 0], [1, 10, 5], [2, 23, 15], [3, 17, 9], [4, 18, 10], [5, 9, 5], [6, 11, 3], [7, 27, 19], [8, 33, 25], [9, 40, 32], [10, 32, 24], [11, 35, 27], [12, 30, 22], [13, 40, 32], [14, 42, 34], [15, 47, 39]]
+
+    this.stackData = [
       ['Year', 'Sales', 'Expenses', 'Profit'],
       ['2014', 1000, 400, 200],
       ['2015', 1170, 460, 250],
@@ -216,7 +243,7 @@ export class ChartD3Demo implements OnInit{
       ['2019', 1050, 640, 350]
     ];
   }
-  
+
 
 }
 
