@@ -8,15 +8,14 @@ import { HttpClient } from "@angular/common/http";
 @Component({
   selector: 'chart-d3-page', 
   template: `
-   
-  <amexio-image [path]="'assets/images/logos/D3_chart_page1.jpg'"[tooltip]="'Image'"></amexio-image>
   <amexio-row>
   <amexio-column size="12">
   <amexio-card [header]="false" [show]="'true'">
  
-  <amexio-body>
-<amexio-label size="medium">
-<p>  D3 allows you to bind arbitrary data to a Document Object Model (DOM), 
+  <amexio-body> 
+  <amexio-image [path]="'assets/images/logos/D3_chart_page1.jpg'"[tooltip]="'Image'"></amexio-image>
+ 
+<p><b>D3</b> allows you to bind arbitrary data to a Document Object Model (DOM), 
 and then apply data-driven transformations to the document. For example, 
 you can use D3 to generate an HTML table from an array of numbers. 
 Or, use the same data to create an interactive SVG bar chart with smooth transitions 
@@ -28,8 +27,8 @@ based on data. This avoids proprietary representation and affords extraordinary
 flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS.
 With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic 
 behaviors for interaction and animation. D3’s functional style allows code reuse 
-through a diverse collection of official and community-developed modules.</p>
-</amexio-label>
+through a diverse collection of <span style="color: #0000FF"><ins>official</ins></span> and <span style="color: #0000FF"><ins>community-developed</ins></span>modules.</p>
+
   </amexio-body>
   </amexio-card>
   </amexio-column>
