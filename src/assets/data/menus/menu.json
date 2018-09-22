@@ -185,7 +185,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "4",
+            "badge": "3",
             "children": [
                 {
                     "text": "Checkbox",
@@ -252,6 +252,11 @@
                     "link": "label-demo"
                 },
                 {
+                    "text": "Recaptcha",
+                    "icon": "fa fa-recycle",
+                    "link": "recaptcha-demo"
+                },
+                {
                     "text": "Number Field",
                     "icon": "fa fa-phone fa-fw",
                     "link": "number-demo"
@@ -270,13 +275,6 @@
                     "text": "Rating",
                     "icon": "fa fa-star-half-empty fa-fw",
                     "link": "rating-demo"
-                },
-                {
-                    "text": "Recaptcha",
-                    "icon": "fa fa-recycle",
-                    "link": "recaptcha-demo",
-                    "badge":"New"
-
                 },
                 {
                     "text": "Search Box",
@@ -318,7 +316,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "2",
+            "badge": "1",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [
                 {
@@ -367,6 +365,11 @@
                     "text": "Progress Bar",
                     "icon": "fa fa-circle-o-notch fa-fw",
                     "link": "progressbar-demo"
+                },
+                {
+                    "text": "Data Loading Indicator",
+                    "icon": "fa fa-spinner fa-fw",
+                    "link": "amexio-spinner-demo"
                 }
             ]
         },
