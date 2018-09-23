@@ -11,7 +11,7 @@
             "icon": "fa fa-snowflake-o fa-fw"
         },
         {
-            "text": "Amexio Chart D3",
+            "text": "Amexio D3 Chart",
             "link": "chart-d3-page",
             "icon": "fa fa-openid fa-fw"
         },
@@ -653,7 +653,7 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
-            "badge": "New",
+            "badge": "7",
             "children": [
                 {
                     "text": "D3 Charts",
@@ -747,7 +747,7 @@
                             "text": "Gantt Chart",
                             "icon": "fa fa-calendar fa-fw",
                             "link": "gantt-chart-demo",
-                            "badge": "N"
+                            "badge": "New"
                         },
                         {
                             "text": "Histogram Chart",

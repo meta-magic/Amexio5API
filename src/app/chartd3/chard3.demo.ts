@@ -27,7 +27,7 @@ based on data. This avoids proprietary representation and affords extraordinary
 flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS.
 With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic 
 behaviors for interaction and animation. D3’s functional style allows code reuse 
-through a diverse collection of <span style="color: #0000FF"><ins>official</ins></span> and <span style="color: #0000FF"><ins>community-developed</ins></span>modules.</p>
+through a diverse collection of <span style="color: #0000FF"><ins>official</ins></span> and <span style="color: #0000FF"><ins>community-developed</ins></span> modules.</p>
 
   </amexio-body>
   </amexio-card>
