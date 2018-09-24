@@ -18,35 +18,44 @@ import {HttpClient} from "@angular/common/http";
            <amexio-card header="true">
              <amexio-header> Timeline Component</amexio-header>
              <amexio-body>
-             <amexio-row>
-                  <amexio-column size="12">
-                  <amexio-timeline>
-                  <amexio-timeline-event [label]="'10 June'" [icon]="'fa fa-map-signs'" [content-border]="true">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
-                    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </amexio-timeline-event>
-                  <amexio-timeline-event [label]="'12 June'" [icon]="'fa fa-star'" [content-border]="true">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </amexio-timeline-event>
-                  <amexio-timeline-event [label]="'12 June'" [icon]="'fa fa-comment'" [content-border]="true">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </amexio-timeline-event>
-                  <amexio-timeline-event [label]="'12 June'" [icon]="'fa fa-map'" [content-border]="true">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </amexio-timeline-event>
-                  <amexio-timeline-event [label]="'12 June'" [icon]="'fa fa-heart'" [content-border]="true">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing
-                    and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                  </amexio-timeline-event>
-                </amexio-timeline>
-                
-                  </amexio-column>
-                </amexio-row>
+             
+
+<amexio-row>
+<amexio-column [size]="3">
+</amexio-column>
+<amexio-column [size] ="6">
+<amexio-timeline>
+  <amexio-timeline-event [label]="'10 June'" [icon]="'fa fa-map-signs'" [content-border]="true">
+<amexio-label> Lorem ipsun dolor amet </amexio-label>
+  <br>
+<amexio-image [path]="'assets/images/soap-bubble.jpg'" [tooltip]="'Image'"></amexio-image>
+  </amexio-timeline-event>
+
+  <amexio-timeline-event [label]="'12 June'" [icon]="'fa fa-star'" [content-border]="true">
+    <amexio-label size="medium-bold" font-color="#FF5733">Brandon Santos </amexio-label>
+   <amexio-label> Ab nobis, magnam sunt eum. Laudantium, repudiandae, similique!.</amexio-label>
+  </amexio-timeline-event>
+
+  <amexio-timeline-event [label]="'14 June'" [icon]="'fa fa-comment'" [content-border]="true">
+    <amexio-label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing
+    and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </amexio-label>
+  </amexio-timeline-event>
+
+  <amexio-timeline-event [label]="'16 June'" [icon]="'fa fa-map'" [content-border]="true">
+    <amexio-label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing
+    and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</amexio-label>
+  <amexio-button [label]="'Read More..'" [type]="'yellow'" ></amexio-button>
+  </amexio-timeline-event>
+
+  <amexio-timeline-event [label]="'18 June'" [icon]="'fa fa-heart'" [content-border]="true">
+  <amexio-label>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing
+    and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+  </amexio-label></amexio-timeline-event>
+</amexio-timeline>
+</amexio-column>
+
+</amexio-row>
              </amexio-body>
            </amexio-card>
           
