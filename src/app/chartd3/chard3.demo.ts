@@ -100,8 +100,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
                                         Amexio D3-multiseries Chart
                                     </amexio-header>
                                     <amexio-body>
-                                        <amexio-d3-chart-multiseries   [data]="stackData" (onChartClick)="onDefaultChartClick($event)" 
-                                          (onLegendClick)="onUserDefineLegendClick($event)"  >
+                                        <amexio-d3-chart-multiseries   [data]="stackData" >
                                        </amexio-d3-chart-multiseries>
                                   </amexio-body>
                                 </amexio-card>
@@ -114,9 +113,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
         </amexio-header>
         <amexio-body>
         <amexio-d3-chart-barstack 
-        [data]="stackData" 
-        (onChartClick)="onDefaultChartClick($event)" 
-        (onLegendClick)="onUserDefineLegendClick($event)"
+        [data]="stackData"
 >
 </amexio-d3-chart-barstack> 
 
