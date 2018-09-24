@@ -180,6 +180,12 @@
                     "icon": "fa fa-window-maximize fa-fw",
                     "link": "dialouge",
                     "badge": "U"
+                },
+                {
+                    "text": "Timeline",
+                    "icon": "fa fa-history",
+                    "link": "timeline",
+                    "badge": "New"
                 }
             ]
         },
