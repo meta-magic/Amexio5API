@@ -13,6 +13,7 @@
         {
             "text": "Amexio D3 Chart",
             "link": "chart-d3-page",
+            "badge": "New",
             "icon": "fa fa-openid fa-fw"
         },
         {
@@ -185,7 +186,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "3",
+            "badge": "4",
             "children": [
                 {
                     "text": "Checkbox",
@@ -254,6 +255,7 @@
                 {
                     "text": "Recaptcha",
                     "icon": "fa fa-recycle",
+                    "badge": "New",
                     "link": "recaptcha-demo"
                 },
                 {
@@ -316,7 +318,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "1",
+            "badge": "2",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [
                 {
@@ -369,6 +371,7 @@
                 {
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
+                    "badge": "New",
                     "link": "amexio-spinner-demo"
                 }
             ]
