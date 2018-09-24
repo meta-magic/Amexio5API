@@ -17,7 +17,7 @@
       path: 'amexio-colors', loadChildren: './theme/theme.module#ThemeModule'
     },
     {
-      path: 'chart-d3-page', loadChildren: './chartd3/chartd3.demo.module#ChartD3DemoModule'
+      path: 'd3-charts', loadChildren: './chartd3/chartd3.demo.module#ChartD3DemoModule'
     },
     {
       path: 'email-demo', loadChildren: './forms/email/email.demo.module#EmailDemoModule'
