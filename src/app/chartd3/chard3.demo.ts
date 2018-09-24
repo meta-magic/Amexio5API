@@ -92,6 +92,38 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
           </amexio-card>
   </amexio-column>
   </amexio-row>
+
+  <amexio-row>
+  <amexio-column size="6">
+  <amexio-card [header]="true" [show]="'true'">
+                                    <amexio-header>
+                                        Amexio D3-multiseries Chart
+                                    </amexio-header>
+                                    <amexio-body>
+                                        <amexio-d3-chart-multiseries   [data]="stackData" (onChartClick)="onDefaultChartClick($event)" 
+                                          (onLegendClick)="onUserDefineLegendClick($event)"  >
+                                       </amexio-d3-chart-multiseries>
+                                  </amexio-body>
+                                </amexio-card>
+</amexio-column>
+
+<amexio-column size="6">
+<amexio-card [header]="true" [show]="'true'">
+        <amexio-header>
+                amexio D3-Stack Bar chart
+        </amexio-header>
+        <amexio-body>
+        <amexio-d3-chart-barstack 
+        [data]="stackData" 
+        (onChartClick)="onDefaultChartClick($event)" 
+        (onLegendClick)="onUserDefineLegendClick($event)"
+>
+</amexio-d3-chart-barstack> 
+
+        </amexio-body>
+</amexio-card>
+</amexio-column>
+  </amexio-row>
   
 
   `
@@ -238,7 +270,7 @@ export class ChartD3Demo implements OnInit {
       ['2015', 1170, 460, 250],
       ['2016', 660, 1120, 300],
       ['2017', 1030, 540, 350],
-      ['2019', 1090, 740, 450],
+      ['2018', 1090, 740, 450],
       ['2019', 1050, 640, 350]
     ];
   }

@@ -15,10 +15,13 @@ export class AmexioD3BarStackChartDemoComponent implements OnInit {
   userDataSourceCode: string;
   copyMsgArray: any[];
   userDataSource: any;
+  userDataSource1: any;
   userDefineColors: any;
   defultColorData: any;
   userDefineColorData: any;
-  // colorArray: any = ["blue", "yellow", "green"];
+  colorArray = [ "blue",
+  "yellow",
+  "green"];
 
 
   constructor(private http: HttpClient) {
@@ -46,6 +49,14 @@ export class AmexioD3BarStackChartDemoComponent implements OnInit {
 
   onDefaultChartClick(event: any) {
     this.userDataSource = event;
+  }
+
+  onUserDefineLegendClick1(event: any) {
+    this.userDataSource1 = event;
+  }
+
+  onDefaultChartClick1(event: any) {
+    this.userDataSource1 = event;
   }
 
   // TO LOAD HTML AND TYPESCRIPT CODE
