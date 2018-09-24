@@ -1,4 +1,17 @@
 <!--  Spinner have some default types: fadingCircle , ballSpin, fireSpin, threeBounce, spinnerRound, ring, halfCircle, rectangleBounce -->
+
+<!-- Button Click for showing and hiding the Spinner  -->
+<amexio-button 
+[label]="text" 
+[type]="'yellow'" 
+[tooltip]="'show'" 
+(onClick)="onButtonClick(click)">
+</amexio-button>
+
+
+
+<!-- check the #click for the binding purpose -->
+
 <amexio-row>
     <amexio-column [size]="4">
         <amexio-card [header]="true">
@@ -6,7 +19,7 @@
                 fading circle round loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'fadingCircle'" [color]="'red'"  [size]="'6px'">
+                <amexio-spinner  #click [show]=clickShow [type]="'fadingCircle'" [color]="'red'"  [size]="'6px'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -17,7 +30,7 @@
                 ball spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'ballSpin'" [color]="'red'"  [size]="'6px'">
+                <amexio-spinner [show]=clickShow [type]="'ballSpin'" [color]="'red'"  [size]="'6px'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -28,7 +41,7 @@
                 fire spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'fireSpin'" [color]="'red'"  [size]="'200%'">
+                <amexio-spinner [show]=clickShow [type]="'fireSpin'" [color]="'red'"  [size]="'200%'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -42,7 +55,7 @@
                 three bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'threeBounce'" [color]="'red'"  [size]="'6px'">
+                <amexio-spinner [show]=clickShow [type]="'threeBounce'" [color]="'red'"  [size]="'6px'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -64,7 +77,7 @@
                 ring loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'ring'" [color]="'red'"  [size]="'6px'">
+                <amexio-spinner [show]=clickShow [type]="'ring'" [color]="'red'"  [size]="'6px'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -79,7 +92,7 @@
                 half circle loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'halfCircle'"   [size]="'6px'">
+                <amexio-spinner [show]=clickShow [type]="'halfCircle'"   [size]="'6px'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -91,7 +104,7 @@
                 rectangle Bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [type]="'rectangleBounce'"  [size]="'6px'">
+                <amexio-spinner [show]=clickShow [type]="'rectangleBounce'"  [size]="'6px'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>

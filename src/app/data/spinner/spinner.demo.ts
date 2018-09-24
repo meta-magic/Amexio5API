@@ -2,11 +2,11 @@
  * Created by kedar on 19/9/18.
  */
 
-import {Component} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'amexio-spinner-demo', template: `
+    selector: 'amexio-spinner-demo', template: `
     <amexio-card header="true">
       <amexio-header>
       Data Loading Indicator
@@ -22,10 +22,19 @@ import {HttpClient} from '@angular/common/http';
         Data Loading Indicator
     </amexio-header>
     <amexio-body>
-    <amexio-label size="medium-bold">Select Color For Spinner:  -</amexio-label> 
+
+    <amexio-button 
+               [label]="text" 
+               [type]="'yellow'" 
+               [tooltip]="'show'" 
+               (onClick)="onButtonClick(click)">
+    </amexio-button>  
+ <br/>
+    <amexio-label size="small-bold">Select Color For Spinner :  -</amexio-label>
     <input type="color" id="head" name="color"
                     (input)= "setColorForIndictor($event)"
-                    value="colorModel.color" />
+                    value="colorModel.color" />  
+    
 
 <amexio-row>
     <amexio-column [size]="4" [fit]=true>
@@ -34,7 +43,7 @@ import {HttpClient} from '@angular/common/http';
                 fading circle round loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'fadingCircle'" [color]="colorModel.color">
+                <amexio-spinner #click [show]='clickShow' [size]="'18px'" [type]="'fadingCircle'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -45,7 +54,7 @@ import {HttpClient} from '@angular/common/http';
                 ball spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'ballSpin'" [color]="colorModel.color">
+                <amexio-spinner [show]=clickShow [size]="'16px'" [type]="'ballSpin'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -56,7 +65,7 @@ import {HttpClient} from '@angular/common/http';
                 fire spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'200%'" [type]="'fireSpin'" [color]="colorModel.color">
+                <amexio-spinner [show]=clickShow [size]="'40px'" [type]="'fireSpin'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -70,7 +79,7 @@ import {HttpClient} from '@angular/common/http';
                 three bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'threeBounce'" [color]="colorModel.color">
+                <amexio-spinner [show]=clickShow [size]="'15px'" [type]="'threeBounce'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -81,7 +90,7 @@ import {HttpClient} from '@angular/common/http';
                 spinner round loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]='true' [size]="'6px'" [type]="'spinnerRound'" [color]="colorModel.color">
+                <amexio-spinner [show]='clickShow' [size]="'8px'" [type]="'spinnerRound'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -92,7 +101,7 @@ import {HttpClient} from '@angular/common/http';
                 ring loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'ring'" [color]="colorModel.color">
+                <amexio-spinner [show]=clickShow [size]="'6px'" [type]="'ring'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -106,7 +115,7 @@ import {HttpClient} from '@angular/common/http';
                 half circle loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'halfCircle'">
+                <amexio-spinner [show]=clickShow [size]="'9px'" [type]="'halfCircle'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -118,7 +127,7 @@ import {HttpClient} from '@angular/common/http';
                 rectangle Bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=true [size]="'6px'" [type]="'rectangleBounce'" >
+                <amexio-spinner [show]=clickShow [size]="'16px'" [type]="'rectangleBounce'" >
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -179,58 +188,73 @@ import {HttpClient} from '@angular/common/http';
   `
 })
 export class AmexioSpinnerDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  copyMsgArray: any[];
-  color: any;
-  colorModel:ColorModel;
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-    this.colorModel=new ColorModel();
-  }
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/spinner/spinner.html', {responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/spinner/spinner.text', {responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
-
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-    } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+    htmlCode: string;
+    typeScriptCode: string;
+    copyMsgArray: any[];
+    color: any;
+    colorModel: ColorModel;
+    clickShow: boolean = true;
+    text: string = 'Hide';
+    constructor(private http: HttpClient) {
+        this.getHtmlAndTypeScriptCode();
+        this.colorModel = new ColorModel();
     }
-  }
 
-//THIS METHOD IS USED FOR SETTING COLOR FOR INDICATOR
-  setColorForIndictor(colorName: any) {
-    this.colorModel.color= colorName.target.value;
-  }
+    //TO LOAD HTML AND TYPESCRIPT CODE
+    getHtmlAndTypeScriptCode() {
+        let responseHtml: any;
+        let responseTs: any;
+
+        //HTML FILE
+        this.http.get('assets/data/code/data/spinner/spinner.html', { responseType: 'text' }).subscribe(data => {
+            responseHtml = data;
+        }, error => {
+        }, () => {
+            this.htmlCode = responseHtml;
+        });
+
+        //TS FILE
+        this.http.get('assets/data/code/data/spinner/spinner.text', { responseType: 'text' }).subscribe(data => {
+            responseTs = data;
+        }, error => {
+        }, () => {
+            this.typeScriptCode = responseTs;
+        });
+
+    }
+
+    //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
+    onCopyClick() {
+        if (this.copyMsgArray.length >= 1) {
+            this.copyMsgArray = [];
+            this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
+        } else {
+            this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
+        }
+    }
+
+    //THIS METHOD IS USED FOR SETTING COLOR FOR INDICATOR
+    setColorForIndictor(colorName: any) {
+        this.colorModel.color = colorName.target.value;
+    }
+
+    onButtonClick(click: any) {
+
+        if (this.clickShow) {
+            this.text = 'Show';
+        } else {
+            this.text = 'Hide'
+        }
+        this.clickShow = !this.clickShow;
+    }
 }
 
-export class ColorModel{
-  color:string;
-  constructor(){
- 
-  }
+
+
+export class ColorModel {
+    color: string;
+    show: boolean;
+    constructor() {
+
+    }
 }
