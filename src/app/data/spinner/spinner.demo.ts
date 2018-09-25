@@ -43,7 +43,7 @@ import { HttpClient } from '@angular/common/http';
                 fading circle round loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner #click [show]='clickShow' [size]="'18px'" [type]="'fadingCircle'" [color]="colorModel.color">
+                <amexio-spinner #click [show]='clickShow' [size]="'18px'" [type]="'fadingcircle'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -54,7 +54,7 @@ import { HttpClient } from '@angular/common/http';
                 ball spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=clickShow [size]="'16px'" [type]="'ballSpin'" [color]="colorModel.color">
+                <amexio-spinner [show]=clickShow [size]="'16px'" [type]="'ballspin'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -65,7 +65,7 @@ import { HttpClient } from '@angular/common/http';
                 fire spin loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=clickShow [size]="'40px'" [type]="'fireSpin'" [color]="colorModel.color">
+                <amexio-spinner [show]=clickShow [size]="'40px'" [type]="'firespin'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -79,7 +79,7 @@ import { HttpClient } from '@angular/common/http';
                 three bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=clickShow [size]="'15px'" [type]="'threeBounce'" [color]="colorModel.color">
+                <amexio-spinner [show]=clickShow [size]="'15px'" [type]="'threebounce'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -90,7 +90,7 @@ import { HttpClient } from '@angular/common/http';
                 spinner round loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]='clickShow' [size]="'8px'" [type]="'spinnerRound'" [color]="colorModel.color">
+                <amexio-spinner [show]='clickShow' [size]="'8px'" [type]="'spinnerround'" [color]="colorModel.color">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -115,7 +115,7 @@ import { HttpClient } from '@angular/common/http';
                 half circle loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=clickShow [size]="'9px'" [type]="'halfCircle'">
+                <amexio-spinner [show]=clickShow [size]="'9px'" [type]="'halfcircle'">
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
@@ -127,7 +127,7 @@ import { HttpClient } from '@angular/common/http';
                 rectangle Bounce loader
             </amexio-header>
             <amexio-body>
-                <amexio-spinner [show]=clickShow [size]="'16px'" [type]="'rectangleBounce'" >
+                <amexio-spinner [show]=clickShow [size]="'16px'" [type]="'rectanglebounce'" >
                 </amexio-spinner>
             </amexio-body>
         </amexio-card>
