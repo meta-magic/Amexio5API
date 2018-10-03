@@ -19,3 +19,12 @@
         (onLegendClick)="onUserDefineLegendClick($event)"
         [color]="userDefineColors" >
  </amexio-d3-chart-bar>
+
+ <!-- Horizontal D3-chart Chart -->
+ <amexio-d3-chart-bar 
+        [horizontal]="true" 
+        [title]="'Coffee Production Analysis'"  
+        (onChartClick)="onDefaultChartClick1($event)"  
+        (onLegendClick)="onDefaultLegendClick($event)" 
+        [data]="barData">
+ </amexio-d3-chart-bar>

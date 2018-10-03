@@ -19,6 +19,7 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
   sourceData: any;
   userDataSource: any;
   barChartWithColorData: any;
+  barData: any;
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
@@ -39,9 +40,8 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
     this.defultColorData = [
       {
         "label": "2011",
-        "value": 1020,
-        "textcolor": "blue"
-      },
+        "value": 1020
+       },
       {
         "label": "2012",
         "value": 590
@@ -67,6 +67,7 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
         "value": 1006
       }
     ];
+
 
 
     this.userDefineColorData =
@@ -101,6 +102,36 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
         }
       ]
 
+      this.barData = [
+        {
+          "label": "2011",
+          "value": 300
+         },
+        {
+          "label": "2012",
+          "value": 500
+        },
+        {
+          "label": "2013",
+          "value": 700
+        },
+        {
+          "label": "2014",
+          "value": 400
+        },
+        {
+          "label": "2015",
+          "value": 600
+        },
+        {
+          "label": "2016",
+          "value": 500
+        },
+        {
+          "label": "2017",
+          "value": 200
+        }
+      ];
   }
 
   onDefaultLegendClick(event: any) {

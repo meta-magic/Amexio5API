@@ -40,6 +40,13 @@
             "default": ""
         },
         {
+            "name": "horizontal",
+            "description": "Sets Horizontal D3 Bar chart",
+
+            "type": "boolean",
+            "default": "false"
+        },
+        {
             "name": "legend",
             "description": "Sets legend to D3 Bar chart",
 

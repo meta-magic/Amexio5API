@@ -9,10 +9,9 @@ export class AmexioD3BarChartDemoComponent
   sourceData: any;
   userDataSource: any;
   barChartWithColorData: any;
-  
-  constructor() { 
+  barData: any;
 
-  }
+  constructor() { 
 
   this.userDefineColors = 
     [
@@ -87,6 +86,38 @@ export class AmexioD3BarChartDemoComponent
         }
       ];
 
+this.barData = [
+        {
+          "label": "2011",
+          "value": 300
+         },
+        {
+          "label": "2012",
+          "value": 500
+        },
+        {
+          "label": "2013",
+          "value": 700
+        },
+        {
+          "label": "2014",
+          "value": 400
+        },
+        {
+          "label": "2015",
+          "value": 600
+        },
+        {
+          "label": "2016",
+          "value": 500
+        },
+        {
+          "label": "2017",
+          "value": 200
+        }
+      ];
+  }
+  
   onDefaultLegendClick(event: any) {
     this.sourceData = event;
   }

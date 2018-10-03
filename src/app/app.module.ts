@@ -11,6 +11,7 @@ import {
 
 import { FormsModule } from '@angular/forms';
 import { AmexioChartD3Module } from 'amexio-chart-d3';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { AmexioChartD3Module } from 'amexio-chart-d3';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule, HttpClientModule,
     AmexioChartD3Module, AmexioChartD3Module,
     AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
