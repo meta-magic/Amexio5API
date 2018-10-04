@@ -606,7 +606,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars fa-fw",
-            "badge": "3",
+            "badge": "4",
             "children": [
                 {
                     "text": "Dockbar",
@@ -639,6 +639,12 @@
                     "text": "Tool Bar",
                     "icon": "fa fa-bars fa-fw",
                     "link": "toolbar-demo",
+                    "badge": "N"
+                },
+                {
+                    "text": "Breadcrumb",
+                    "icon": "fa fa-arrow-right fa-fw",
+                    "link": "breadcrumb-demo",
                     "badge": "N"
                 }
             ]

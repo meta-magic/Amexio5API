@@ -4723,6 +4723,104 @@ header .billboard .content-button {
 .dockbar-height::-webkit-scrollbar {
   width: 6px; }
 
+/****************************************************************************
+    Component Name : Breadcrumb
+    Version : Amexio v5.2 onwards
+*****************************************************************************/
+/** dockbar - Visual CSS **/
+.breadcrum-rightshift-css {
+  background-color: #ffffff; }
+
+.context-menu-list1 {
+  background-color: #ffffff !important;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); }
+
+.context-menu-list1 :hover {
+  background-color: #ffeeb8; }
+
+.btn-group:hover {
+  border: 1px solid #ffeeb8;
+  display: table !important; }
+
+.btn-group {
+  border-color: transparent; }
+
+.btn-group:hover {
+  border: 1px solid #523f00;
+  background-color: #ffeeb8; }
+
+.arrow-group-css:hover {
+  border-left: 1px solid #523f00; }
+
+.arrow-group-css {
+  border-left: 1px solid #f7f3f3; }
+
+/** dockbar - Structure CSS **/
+.breadcrum-rightshift-css {
+  display: inline-flex;
+  width: 100%;
+  cursor: pointer;
+  flex-direction: row;
+  position: relative; }
+
+.context-menu-list1 {
+  display: block;
+  position: absolute;
+  flex-direction: column;
+  min-width: 180px;
+  cursor: pointer;
+  max-height: auto;
+  z-index: 1;
+  margin-top: 8px;
+  padding: 10px 0px;
+  overflow-y: auto; }
+
+.context-menu-list1 .context-menu-list-items1 {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  display: block; }
+
+.arrow-icon-css {
+  cursor: pointer; }
+
+.data-click-css {
+  cursor: pointer;
+  font-size: 16px; }
+
+.btn-group {
+  padding: 7px; }
+
+.btn-group:hover {
+  padding: 6px; }
+
+.label {
+  display: none !important;
+  margin: 0px !important; }
+
+.arrow-group-css:hover {
+  content: '';
+  display: initial !important;
+  margin-top: 0px !important;
+  height: 120%;
+  padding-left: 8px;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  border-left: 1px solid #797575; }
+
+.arrow-group-css {
+  content: '';
+  display: initial;
+  margin-top: 0px;
+  padding-left: 8px;
+  height: 120%;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  border-left: 1px solid #f7f3f3; }
+
+.label-icon-css {
+  cursor: pointer; }
+
 /** Initialze Panels and Layouts variables ------------ */
 /****************************************************************************
     Component Name : Accordion
