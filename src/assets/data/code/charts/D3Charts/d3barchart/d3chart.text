@@ -26,8 +26,7 @@ export class AmexioD3BarChartDemoComponent
     this.defultColorData = [
       {
         "label": "2011",
-        "value": 1020,
-        "textcolor": "blue"
+        "value": 1020
       },
       {
         "label": "2012",
