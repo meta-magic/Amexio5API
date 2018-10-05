@@ -2,7 +2,10 @@ export class BreadcrumbDemo {
   jsonData:any;
   constructor() {
 
-this.jsonData = {
+this.jsonData = 
+{
+  "data": [
+{
     "text": "Amexio Module",
     "icon": "fa fa-snowflake-o",
     "expand": false,
@@ -10,12 +13,12 @@ this.jsonData = {
     "children": [
       {
         "text": "App Navigation",
-        "icon": "fa fa-bars fa-fw",
+        
         "badge": "3",
         "children": [
           {
             "text": "Dockbar",
-            "icon": "fa fa-th-large fa-fw",
+            
             "link": "dockbar-demo"
           },
           {
@@ -61,7 +64,7 @@ this.jsonData = {
         "children": [
           {
             "text": "D3 Charts",
-            "icon": "fa fa-openid fa-fw",
+            
             "badge": "New",
             "children": [
               {
@@ -298,6 +301,8 @@ this.jsonData = {
       }
     ]
   }
+}
+  ]
 }
 getSelectedData(data: any) {
     this.selectedData = data;
