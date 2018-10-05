@@ -73,6 +73,9 @@
     {
       path: 'itemselector-demo', loadChildren: './forms/itemselector/itemselector.demo.module#ItemSelectorDemoModule'
     },
+    {
+      path: 'credit-card-demo', loadChildren: './forms/creditcard/creditcard.demo.module#CreditCardDemoModule'
+    },
     /** Drop Down*/
     {
       path: 'dropdownbasic', loadChildren: './forms/dropdown/dropdown.demo.module#DropDownDemoModule'

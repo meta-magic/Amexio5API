@@ -1,0 +1,21 @@
+{
+    "name": "Amexio Credit Card",
+    "description": "Credit Card for Payment",
+    "selector": "<amexio-email-input>",
+    "properties": [
+      {
+        "name": "year-count",
+        "description": "The year count determine about the no. of year to to be displayed",
+        "version": "5.2 onwards",
+        "type": "number",
+        "default": "none"
+      }
+      
+    ],
+    "events": [
+      {
+        "name": "onBlur",
+        "description": "On blur event"
+      }
+    ]
+  }

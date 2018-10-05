@@ -319,6 +319,11 @@
                     "text": "Toggle",
                     "icon": "fa fa-toggle-on fa-fw",
                     "link": "toggle-demo"
+                },
+                {
+                    "text": "Credit-Card",
+                    "icon": "fa fa-credit-card",
+                    "link": "credit-card-demo"
                 }
             ]
         },
