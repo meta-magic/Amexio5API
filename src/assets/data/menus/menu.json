@@ -192,7 +192,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "4",
+            "badge": "5",
             "children": [
                 {
                     "text": "Checkbox",
@@ -323,7 +323,8 @@
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card",
-                    "link": "credit-card-demo"
+                    "link": "credit-card-demo",
+                    "badge": "New"
                 }
             ]
         },
@@ -650,7 +651,7 @@
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right fa-fw",
                     "link": "breadcrumb-demo",
-                    "badge": "N"
+                    "badge": "New"
                 }
             ]
         },
