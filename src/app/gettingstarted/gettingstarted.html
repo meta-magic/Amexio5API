@@ -14,7 +14,7 @@
   <amexio-row>
     <amexio-column size="12">
       <div align="center">
-        <h1>Amexio Angular EXtensions v5.1</h1>
+        <h1>Amexio Angular EXtensions v5.2</h1>
 
         <amexio-image [height]="50" [width]="50" path="https://travis-ci.org/meta-magic/amexio.github.io.svg?branch=v5.1"></amexio-image>
         <amexio-image [height]="50" [width]="50" path="https://badge.fury.io/js/amexio-ng-extensions.svg"></amexio-image>
@@ -93,13 +93,16 @@
                 <span style="cursor: pointer;">2. Apply Material Design Themes</span>
               </amexio-column>
             </amexio-row>
-           
             <amexio-row>
-                <amexio-column size="12">
-                  <span style="cursor: pointer;">3. Amexio License</span>
-                </amexio-column>
-              </amexio-row>
-
+              <amexio-column size="12">
+                <span style="cursor: pointer;">3. Install Amexio D3 Chart</span>
+              </amexio-column>
+            </amexio-row>
+            <amexio-row>
+              <amexio-column size="12">
+                <span style="cursor: pointer;">4. Amexio License</span>
+              </amexio-column>
+            </amexio-row>
           </div>
         </amexio-body>
       </amexio-card>
@@ -173,7 +176,11 @@
                       <amexio-column size="12">
                         <b>To install this Amexio 5.x follow the steps given below:</b>
                         <br>
-                        <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre> Please make sure you have the latest version of
+                        <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre>
+                        <b>Peer Dependencies are required to be installed:</b>
+                        <pre style="font-weight: bold;color: #c0392b"><code>npm install font-awesome@latest --save</code></pre>
+                        
+                        Please make sure you have the latest version of
                         <span style="font-weight: bold;color: #21c00f">NodeJS & npm Angular CLI</span>
                         installed.
                         <br>
@@ -183,9 +190,8 @@
                         <b>Angular CLI</b> version should be above
                         <span style="font-weight: bold;color: #21c00f">6.0.0</span>
                         <br>
-
-
                         <b>and then from your Angular AppModule:</b>
+                       
                       </amexio-column>
                     </amexio-row>
                     <br>
@@ -413,10 +419,50 @@
   </amexio-row>
 
 
+  <amexio-row>
+    <amexio-column size="12">
+      <amexio-panel [header]="true" [title]="'3. Install Amexio Chart D3'" [expanded]="true">
+        <amexio-row>
+          <amexio-column size="12">
+            <amexio-tab title="Installation" active="true">
+              <amexio-row>
+                <amexio-column size="12">
+                  <b>To install this Amexio Chart D3 follow the steps given below:</b>
+                  <br>
+                  <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-chart-d3 --save</code></pre> Please make sure you have the latest version of
+                  <span style="font-weight: bold;color: #21c00f">NodeJS & npm Angular CLI</span>
+                  installed.
+                  <br>
+                  <b>NodeJS</b> version should be above
+                  <span style="font-weight: bold;color: #21c00f">8.9.0</span>
+                  <br>
+                  <b>Angular CLI</b> version should be above
+                  <span style="font-weight: bold;color: #21c00f">6.0.0</span>
+                  <br>
+                  <b>and then from your Angular AppModule:</b>
+                </amexio-column>
+              </amexio-row>
+              <br>
+              <amexio-row>
+                <amexio-column size="12">
+                  <div style="height: 400px">
+                    <ng-container *ngIf="tsCodeD3">
+                      <prism-block [code]="tsCodeD3" [language]="'typescript'"></prism-block>
+                    </ng-container>
+                  </div>
+                </amexio-column>
+              </amexio-row>
+            </amexio-tab>
+          </amexio-column>
+        </amexio-row>
+      </amexio-panel>
+    </amexio-column>
+  </amexio-row>
+
 
   <amexio-row>
     <amexio-column size="12">
-      <amexio-panel [header]="true" [title]="'3. Amexio License'" [expanded]="true">
+      <amexio-panel [header]="true" [title]="'4. Amexio License'" [expanded]="true">
         <br>
         <b>Amexio API License for Standard & Enterprise Edition</b>
         <p>
