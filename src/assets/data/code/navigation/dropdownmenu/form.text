@@ -30,7 +30,6 @@ export class DropDownMenuDemo {
          }
 
   onDropDownMenuClick(item: any) {
-     debugger;
     let jsonData = {
       'icon': '',
       'label': '',
