@@ -18,10 +18,10 @@ import {HttpClient} from "@angular/common/http";
             <amexio-accordion>
               <amexio-accordion-tab header="Page One" active="true"> 
               <amexio-accordion-header>
-                    <amexio-label size="small" font-color="white">
-                     Completed : 100%
-                     </amexio-label>
-                     <i class="fa fa-info-circle" aria-hidden="true"></i>
+              <label style="margin-top:0px;font-size:18px;" size="small" font-color="white">
+              Completed : 100%
+              </label>&nbsp;
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
               </amexio-accordion-header>
                 <amexio-row>
                   <amexio-column size="12">
@@ -31,9 +31,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page two">
               <amexio-accordion-header>
-                    <amexio-label size="small" font-color="white">
+                    <label  style="margin-top:0px;font-size:18px;" size="small" font-color="white">
                      Completed : 90%
-                     </amexio-label>
+                     </label>&nbsp;
                      <i class="fa fa-info-circle" aria-hidden="true"></i>
               </amexio-accordion-header>
                 <amexio-row>
@@ -44,9 +44,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
              <amexio-accordion-tab header="Page three">
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 80%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -57,9 +57,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 70%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
               
@@ -72,9 +72,9 @@ import {HttpClient} from "@angular/common/http";
             <amexio-accordion expand-all="true">
               <amexio-accordion-tab header="Section One">
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -85,9 +85,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Section Two">
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 90%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -98,9 +98,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Section Three">
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 80%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -111,9 +111,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Section Four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 70%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
               </amexio-accordion-tab>
@@ -123,9 +123,9 @@ import {HttpClient} from "@angular/common/http";
             <amexio-accordion transparent="true" angle-icon="true">
               <amexio-accordion-tab header="Page One" active="true">
               <amexio-accordion-header>
-              <amexio-label size="small" >
+              <label  style="margin-top:0px;font-size:18px;"size="small" >
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -136,9 +136,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page two">
               <amexio-accordion-header>
-              <amexio-label size="small">
+              <label  style="margin-top:0px;font-size:18px;"size="small">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -149,9 +149,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page three">
               <amexio-accordion-header>
-              <amexio-label size="small">
+              <label  style="margin-top:0px;font-size:18px;"size="small">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -162,9 +162,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
               <amexio-accordion-header>
-              <amexio-label size="small">
+              <label  style="margin-top:0px;font-size:18px;"size="small">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
               </amexio-accordion-tab>
@@ -174,9 +174,9 @@ import {HttpClient} from "@angular/common/http";
             <amexio-accordion>
               <amexio-accordion-tab header="Page One" active="true">
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -187,9 +187,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page two">
               <amexio-accordion-header>
-              <amexio-label size="small">
+              <label  style="margin-top:0px;font-size:18px;"size="small">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
                 <amexio-row>
@@ -200,9 +200,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page three" disabled="true">
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
               <amexio-row>
@@ -213,9 +213,9 @@ import {HttpClient} from "@angular/common/http";
               </amexio-accordion-tab>
               <amexio-accordion-tab header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
               <amexio-accordion-header>
-              <amexio-label size="small" font-color="white">
+              <label  style="margin-top:0px;font-size:18px;"size="small" font-color="white">
                Completed : 100%
-               </amexio-label>
+               </label>&nbsp;
                <i class="fa fa-info-circle" aria-hidden="true"></i>
                </amexio-accordion-header>
               </amexio-accordion-tab>

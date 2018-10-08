@@ -3149,6 +3149,66 @@ input:checked + .toggle-slider:before {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+/*****************************************************************************
+ Component Name : CreditCard
+    Version : Amexio v4.2 onwards
+****************************************************************************/
+/** CreditCard - Visual CSS **/
+/** CreditCard - Structure CSS **/
+.heading {
+  text-align: left;
+  display: flex;
+  justify-content: space-between; }
+
+.ownerdetails {
+  margin-top: 7px; }
+
+.owner {
+  width: 55%;
+  float: left; }
+
+.cvv {
+  width: 35%;
+  float: right; }
+
+.cardNumber {
+  width: 100%;
+  float: left;
+  margin-top: 5px; }
+
+.expiration-date {
+  float: left;
+  margin-top: 5px; }
+
+.month {
+  float: left;
+  margin-top: 5px;
+  padding: 2px; }
+
+.date {
+  float: right;
+  margin-top: 5px;
+  padding: 3.5px; }
+
+.image {
+  width: 30%;
+  float: right;
+  margin-top: 4%; }
+
+.input-control-success {
+  border-bottom-color: green; }
+
+.input-control-failure {
+  border-bottom-color: red; }
+
+.creditCardForm {
+  max-width: 100%;
+  border-style: dotted;
+  overflow: hidden;
+  padding: 30px;
+  color: #4c4e56;
+  border-radius: 10px; }
+
 /****************************************************************************
     Component Name : Enterprise Content
     Version : Amexio v4.0 onwards
@@ -4838,9 +4898,6 @@ header .billboard .content-button {
 .accordion:after {
   color: red; }
 
-.accordion amexio-accordion-header > * {
-  padding: 5px; }
-
 .panel {
   background-color: #ffffff;
   color: #121212; }
@@ -4849,11 +4906,8 @@ header .billboard .content-button {
 .accordion-transparent {
   background: #ffffff; }
 
-.accordion amexio-accordion-header {
+.accordion .amexio-accordion-header {
   color: #131111; }
-
-.accordion-transparent amexio-accordion-header > * {
-  padding: 5px; }
 
 .accordion-transparent:after {
   color: red; }
@@ -4899,6 +4953,9 @@ header .billboard .content-button {
 .accordion-disable {
   opacity: 0.55;
   cursor: not-allowed; }
+
+.accordion .amexio-accordion-header > * {
+  padding: 5px; }
 
 /****************************************************************************
     Component Name : Cards
