@@ -180,7 +180,7 @@ import { HttpClient } from '@angular/common/http';
           </amexio-tab>
           <amexio-tab title="Live">
                       <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-progressbar?embed=1&file=app/data/progressbar/progressbar.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-spinner?embed=1&file=src/app/spinner/spinner.demo.component.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -234,9 +234,9 @@ export class AmexioSpinnerDemo {
     }
 
     //THIS METHOD IS USED FOR SETTING COLOR FOR INDICATOR
-    setColorForIndictor(colorName: any) {
-        this.colorModel.color = colorName.target.value;
-    }
+        setColorForIndictor(colorName: any) {
+            this.colorModel.color = colorName.target.value;
+        }
 
     onButtonClick(click: any) {
 
