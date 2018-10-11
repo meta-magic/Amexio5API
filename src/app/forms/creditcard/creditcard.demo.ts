@@ -1,5 +1,5 @@
 /**
- * Created by anaghak07 on 16/4/18.
+ * Created by ankita on 11/10/18.
  */
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
@@ -27,7 +27,7 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
               <amexio-column size="9">
               <pre><code>{{creditcard|json}}</code></pre>
               <h2>CreditCard with Model Binding</h2>
-              <amexio-creditcard [year-count]="4" [(ngModel)]="creditcard"></amexio-creditcard>
+              <amexio-creditcard [year-count]="4" [show-label]="true" [(ngModel)]="creditcard"></amexio-creditcard>
               <h2>CreditCard without Model Binding</h2>
               <amexio-creditcard [year-count]="4"></amexio-creditcard>
               </amexio-column>
@@ -76,7 +76,7 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v42-form?embed=1&file=app/forms/form/form.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <iframe style="width: 100%; height: 600px" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -142,8 +142,8 @@ export class CreditCardDemo{
     
     owner = 'ABC';
     cvv = '123';
-    cardnumber='4565488999999';
-    expMonth='January';
+    cardnumber='4444444444444444';
+    expMonth='01';
     expYear='2020'
 
   }
