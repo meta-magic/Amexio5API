@@ -112,15 +112,6 @@ import { Http } from "@angular/http";
                 </amexio-card>
               </amexio-column>
             </amexio-row>
-            <amexio-row>
-              <amexio-column size="12"  >
-                <amexio-card>
-                  <amexio-body>
-                    COL 12
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-column>" [enable-column-fiter]="false"

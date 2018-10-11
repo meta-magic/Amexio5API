@@ -67,12 +67,12 @@ import { HttpClient } from "@angular/common/http";
                 <amexio-panel-header>
                     <amexio-label size="small" font-color="white">
                         My Drive
-                     </amexio-label>
+                     </amexio-label>&nbsp;
                     <amexio-text-input name="name"
                     place-holder="Enter name"
                     icon-feedback="true">
-                    </amexio-text-input>
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    </amexio-text-input>&nbsp;
+                    <i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;
                   
                 </amexio-panel-header>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
@@ -133,7 +133,7 @@ import { HttpClient } from "@angular/common/http";
         </amexio-tab>
         <amexio-tab title="Live">
             <p align="center">Amexio Sandbox</p>
-            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-panel?embed=1&file=app/panels/panel/panel.demo.html"
+            <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-panel?embed=1&file=app/panels/panel/panel.demo.html&view=editor"
                 frameborder="0" allowfullscren="allowfullscren"></iframe>
         </amexio-tab>
     </amexio-tab-view>

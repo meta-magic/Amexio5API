@@ -29,7 +29,7 @@ import {HttpClient} from "@angular/common/http";
                                         [value-field]="'genderId'"
                                         [horizontal]="true"
                                         [data]="radioGroupData"
-                                        [default-value]="'male'"
+                                      
                                         (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
                   </amexio-body>
@@ -46,7 +46,7 @@ import {HttpClient} from "@angular/common/http";
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
                                         [http-method]="'get'"
-                                        [default-value]="'female'"
+                                      
                                         [http-url]="'assets/data/componentdata/radiogroup.json'"
                                         (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
@@ -67,11 +67,20 @@ import {HttpClient} from "@angular/common/http";
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
                                         [http-method]="'get'"
-                                        [default-value]="'female'"
                                         horizontal="true"
                                         [http-url]="'assets/data/componentdata/radiogroup.json'"
                                         disabled="true">
                     </amexio-radio-group>
+                    <amexio-dropdown [(ngModel)]="countryCode1"
+                    [place-holder]="'Choose'"
+                    name="countryCode1"
+                    [data-reader]="'data'"
+                    [field-label]="'Choose Country'"
+                    [http-url]="'assets/data/componentdata/country.json'"
+                    [http-method]="'get'"
+                    [display-field]="'countryName'"
+                    [value-field]="'countryCode1'">
+   </amexio-dropdown>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -86,12 +95,21 @@ import {HttpClient} from "@angular/common/http";
                                       [display-field]="'gender'"
                                       [value-field]="'genderId'"
                                       [http-method]="'get'"
-                                      [default-value]="'male'"
                                       horizontal="true"
                                       name="disableradio"
                                       [http-url]="'assets/data/componentdata/radiogroup_disable.json'"
                                       >
                   </amexio-radio-group>
+                  <amexio-dropdown [(ngModel)]="countryCode1"
+                 [place-holder]="'Choose'"
+                 name="countryCode1"
+                 [data-reader]="'data'"
+                 [field-label]="'Choose Country'"
+                 [http-url]="'assets/data/componentdata/country.json'"
+                 [http-method]="'get'"
+                 [display-field]="'countryName'"
+                 [value-field]="'countryCode1'">
+</amexio-dropdown>
                 </amexio-body>
               </amexio-card>
             </amexio-column>

@@ -133,18 +133,18 @@ export class CreditCardDemo{
     }
   }
 
-  refreshData() {
-    this.refreshDialogue = !this.refreshDialogue;
-  }
- 
-}
-export class creditcardtemp {
+    refreshData() {
+      this.refreshDialogue = !this.refreshDialogue;
+    }
   
-  owner = 'ABC';
-  cvv = '123';
-  cardnumber='4565488999999';
-  expMonth='January';
-  expYear='2020'
+  }
+  export class creditcardtemp {
+    
+    owner = 'ABC';
+    cvv = '123';
+    cardnumber='4565488999999';
+    expMonth='January';
+    expYear='2020'
 
-}
+  }
 

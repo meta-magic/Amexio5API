@@ -151,8 +151,8 @@ export class ContextMenuCardFormDemo {
     let responseHtml: any;
     let responseTs: any;
 
-    //HTML FILE
-    this.http.get('assets/data/code/layout/card/layout.html').subscribe(data => {
+    //HTML FILE 
+    this.http.get('assets/data/code/layout/card/cardcontextmenu/layout.html').subscribe(data => {
       responseHtml = data.text();
     }, error => {
     }, () => {
@@ -160,7 +160,7 @@ export class ContextMenuCardFormDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/card/layout.text').subscribe(data => {
+    this.http.get('assets/data/code/layout/card/cardcontextmenu/layout.text').subscribe(data => {
       responseTs = data.text();
     }, error => {
     }, () => {
