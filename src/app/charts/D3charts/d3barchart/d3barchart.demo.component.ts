@@ -38,100 +38,40 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
         "#ff7b25"
       ]
     this.defultColorData = [
-      {
-        "label": "2011",
-        "value": 1020
-       },
-      {
-        "label": "2012",
-        "value": 590
-      },
-      {
-        "label": "2013",
-        "value": 1260
-      },
-      {
-        "label": "2014",
-        "value": 830
-      },
-      {
-        "label": "2015",
-        "value": 1030
-      },
-      {
-        "label": "2016",
-        "value": 209
-      },
-      {
-        "label": "2017",
-        "value": 1006
-      }
+      ['year', 'performance'],
+      ['2011', 1020],
+      ['2012', 590],
+      ['2013', 1260],
+      ['2014', 830],
+      ['2015', 1030],
+      ['2016', 209],
+      ['2017', 1006]
     ];
 
-
-
     this.userDefineColorData =
-      [
-        {
-          "label": "Mumbai",
-          "value": 94423
-        },
-        {
-          "label": "Kochi",
-          "value": 69932
-        },
-        {
-          "label": "Delhi",
-          "value": 91345
-        },
-        {
-          "label": "Chennai",
-          "value": 46467
-        },
-        {
-          "label": "Pune",
-          "value": 31244
-        },
-        {
-          "label": "Jaipur",
-          "value": 30461
-        },
-        {
-          "label": "Ranchi",
-          "value": 84436
-        }
-      ]
+    [
+      ['city', 'population'],
+      ['Mumbai', 94423],
+      ['Kochi', 69932],
+      ['Delhi', 91345],
+      ['Chennai', 46467],
+      ['Pune', 31244],
+      ['Jaipur', 30461],
+      ['Ranchi', 84436]
+    ];
 
-      this.barData = [
-        {
-          "label": "2011",
-          "value": 300
-         },
-        {
-          "label": "2012",
-          "value": 500
-        },
-        {
-          "label": "2013",
-          "value": 700
-        },
-        {
-          "label": "2014",
-          "value": 400
-        },
-        {
-          "label": "2015",
-          "value": 600
-        },
-        {
-          "label": "2016",
-          "value": 500
-        },
-        {
-          "label": "2017",
-          "value": 200
-        }
+      this.barData = 
+      [
+        ['year', 'production'],
+        ['2011', 300],
+        ['2012', 500],
+        ['2013', 700],
+        ['2014', 400],
+        ['2015', 600],
+        ['2016', 500],
+        ['2017', 200]
       ];
+       
   }
 
   onDefaultLegendClick(event: any) {
@@ -143,6 +83,7 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
   onDefaultChartClick1(event: any) {
     this.sourceData = event;
   }
+  
 
   onDefaultChartClick(event: any) {
     this.userDataSource = event;
