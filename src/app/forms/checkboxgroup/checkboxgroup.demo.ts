@@ -62,7 +62,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
                                            [data-reader]="'response.data'"
-                                           [display-field]="'language'"
+                                            [display-field]="'language'"
                                            [horizontal]="true"
                                            [value-field]="'checked'"
                                            [data]="checkboxGroupdatadisabled">
@@ -141,7 +141,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
            <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-checkboxgroup?embed=1&file=app/forms/checkboxgroup/checkboxgroup.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-checkboxgroup?embed=1&file=app/forms/checkboxgroup/checkboxgroup.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
