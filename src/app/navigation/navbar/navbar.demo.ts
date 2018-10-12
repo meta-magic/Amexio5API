@@ -15,7 +15,7 @@ import {HttpClient} from "@angular/common/http";
        <p>
          The Nav Bar Component is a familiar top navigation pattern for users.
          Nav bar has Logo/Title left align, than link, text field, button and menus on right side.
-         v4.1 Nav bar is not backward compatible of v4.0, for v4.0 refer link
+         v4.1 Nav bar is not backward compatible of v4.0, for v4.0 refer <a href="https://amexio.org/api/v4.1/#/navbar-demo">link</a>
        </p>
           <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
@@ -118,7 +118,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events: amexio-nav" [http-method]="'get'"
+            <amexio-datagrid title="Events<amexio-nav>" [http-method]="'get'"
             [http-url]="'assets/apireference/navigation/navbar.json'" [data-reader]="'navevents'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -127,7 +127,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Properties:amexio-nav-item" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties<amexio-nav-item>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/navigation/navbar.json'"
                              [data-reader]="'propertiesitem'"
@@ -142,7 +142,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events: amexio-nav-item " [http-method]="'get'"
+            <amexio-datagrid title="Events<amexio-nav-item>" [http-method]="'get'"
             [http-url]="'assets/apireference/navigation/navbar.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
