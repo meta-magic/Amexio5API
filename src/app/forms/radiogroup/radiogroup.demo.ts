@@ -166,10 +166,10 @@ export class RadioGroupDemo {
   copyMsgArray: any[];
   dataSource:string;
   radioGroupData: any;
-  model1:  string = 'female';
-  model2:  string = 'male';
-  model3:  string = 'female';
-  model4: string = 'male';
+  model1:  string = 'male';
+  model2:  string = 'female';
+  model3:  string = 'male';
+  model4: string = 'female';
 
   //selected Checkbox event
   setSelectedGender(data:any){
