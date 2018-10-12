@@ -1,0 +1,21 @@
+export class PanelDemoComponent{
+  rightclickdata: any;
+  constructor() {
+     this.rightclickdata = [
+  {
+    "text": "Add New",
+    "icon": "fa fa-plus",
+    "disabled": true
+  },
+  {
+    "text": "Edit",
+    "icon": "",
+    "seperator": true
+  },
+  {
+    "text": "Send data in email",
+    "icon": ""
+  }
+];
+  }
+}

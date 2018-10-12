@@ -13,7 +13,7 @@ import { HttpClient } from "@angular/common/http";
          Panel 
       </amexio-header>
       <amexio-body>
-        <p>Panel provides an easy way to organize big forms by grouping the fields in panel</p>
+        <p>Panel provides an easy way to organize big forms by grouping the fields in panel and with context menu functionality (right click option).</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
           
@@ -123,7 +123,7 @@ export class ContextMenuPanelDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/panel/panel.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/layout/panel/panelcontextmenu/panel.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -131,7 +131,7 @@ export class ContextMenuPanelDemoComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/panel/panel.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/layout/panel/panelcontextmenu/panel.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

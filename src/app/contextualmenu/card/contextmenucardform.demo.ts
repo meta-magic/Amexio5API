@@ -14,7 +14,7 @@ import { Http } from "@angular/http";
     Card
   </amexio-header>
   <amexio-body>
-    <p>A Simple Card which renders card based on title, body and actions user has configured</p>
+    <p>A Simple Card which renders card based on title, body and actions that user configures with context menu option. (Right Click functionality)</p>
     <amexio-tab-view>
       <amexio-tab title="Demo" active="true">
         <amexio-row>
