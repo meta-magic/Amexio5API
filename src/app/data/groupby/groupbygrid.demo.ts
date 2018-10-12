@@ -12,7 +12,7 @@ import {HttpClient} from "@angular/common/http";
          Data Grid Group By 
       </amexio-header>
       <amexio-body>
-        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Filtering(enable only for string and number type data) user define template for rendering for column header and column data, displaying summation of numeric column.</p>
+        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Filtering(enable only for string and number type data), user define template for rendering for column header and column data, displaying summation of numeric column and grouping column.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>

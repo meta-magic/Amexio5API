@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
   selector: 'checkbox-tree-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Checkbox Tree 
+      Tree with Checkbox
       </amexio-header>
       <amexio-body>
         <p>A Expandable Tree Component for Angular, having Checkbox functionality.</p>
@@ -19,7 +19,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                     Checkbox Tree 
+                     Tree with Checkbox
                   </amexio-header>
                   <amexio-body>
                     <amexio-treeview [enable-checkbox]="true" [data-reader]="'data'"

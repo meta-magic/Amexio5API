@@ -13,7 +13,7 @@ import { HttpClient } from "@angular/common/http";
       </amexio-header>
       <amexio-body>
         <p>ItemSelector  and  functionlity
-        drag the fields and reordered from one panel allows items to be drop to another new panel  within the selection.</p>
+        <p>ItemSelector is a specialized with drag and drop functionality. Drag and drop is possible from left to right and vice versa and item selector to other new panel</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>

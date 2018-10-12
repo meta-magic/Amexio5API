@@ -153,100 +153,41 @@ export class ChartD3Demo implements OnInit {
         "#ff7b25"
       ]
     this.userDefineColorData =
-      [
-        {
-          "label": "Mumbai",
-          "value": 94423
-        },
-        {
-          "label": "Kochi",
-          "value": 69932
-        },
-        {
-          "label": "Delhi",
-          "value": 91345
-        },
-        {
-          "label": "Chennai",
-          "value": 46467
-        },
-        {
-          "label": "Pune",
-          "value": 31244
-        },
-        {
-          "label": "Jaipur",
-          "value": 30461
-        },
-        {
-          "label": "Ranchi",
-          "value": 84436
-        }
-      ]
-
+    [
+      ['city', 'population'],
+      ['Mumbai', 94423],
+      ['Kochi', 69932],
+      ['Delhi', 91345],
+      ['Chennai', 46467],
+      ['Pune', 31244],
+      ['Jaipur', 30461],
+      ['Ranchi', 84436]
+    ]
   }
   ngOnInit() {
 
     this.donutDataColor = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
 
-    this.donutData = [
-      {
-        "label": "IE",
-        "value": 39.3
-      },
-      {
-        "label": "Chrome",
-        "value": 32.52
-      },
-      {
-        "label": "Safari",
-        "value": 13.68
-      },
-      {
-        "label": "Firefox",
-        "value": 8.71
-      },
-      {
-        "label": "Others",
-        "value": 6.01
-      }
+    this.donutData =   [
+      ['browser', 'activity'],
+      ['IE', 39.3],
+      ['Chrome', 32.52],
+      ['Safari', 13.68],
+      ['Firefox', 8.71],
+      ['Others', 6.01]
     ];
 
 
-    this.pieData = [
-      {
-        "label": "India",
-        "value": 30.3,
-        "color": "pink"
-      },
-      {
-        "label": "Spain",
-        "value": 9.52
-      },
-      {
-        "label": "France",
-        "value": 13.68
-      },
-      {
-        "label": "Chaina",
-        "value": 18.71
-      },
-      {
-        "label": "Germany",
-        "value": 8.01
-      },
-      {
-        "label": "U.K",
-        "value": 8.01
-      },
-      {
-        "label": "U.S",
-        "value": 14.01
-      },
-      {
-        "label": "Korea",
-        "value": 4.01
-      }
+    this.pieData =  [
+      ['country', 'ratio'],
+      ['India', 30.3],
+      ['Spain', 9.52],
+      ['France', 13.68],
+      ['China', 18.71],
+      ['Germany', 8.01],
+      ['U.K', 8.01],
+      ['U.S', 14.01],
+      ['Korea', 4.01]
     ];
 
     this.multiData = [
