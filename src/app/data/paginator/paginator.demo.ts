@@ -104,7 +104,7 @@ export class PaginatorDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  currentPage: number;
+  currentPage: number = 1;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
