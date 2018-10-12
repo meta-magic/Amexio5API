@@ -22,7 +22,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-header>
                      Horizontal Radio Group
                   </amexio-header>
-                  <amexio-body>
+                  <amexio-body> 
                     <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gender"
                                         [data-reader]="'response.data'"
                                         [display-field]="'gender'"
@@ -40,7 +40,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-header>
                      Vertical Radio Group With Http Url
                   </amexio-header>
-                  <amexio-body>
+                  <amexio-body> 
                     <amexio-radio-group [field-label]="'Vertical Radio Group'" name ="gender1"
                                         [data-reader]="'data'"
                                         [display-field]="'gender'"
@@ -61,7 +61,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-header>
                     Horizontal Radio Group Disabled
                   </amexio-header>
-                  <amexio-body>
+                  <amexio-body> 
                     <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gendery"
                                         [data-reader]="'data'"
                                         [display-field]="'gender'"
@@ -73,6 +73,7 @@ import {HttpClient} from "@angular/common/http";
                                         disabled="true">
                     </amexio-radio-group>
                    
+
                   </amexio-body>
                 </amexio-card>
               </amexio-column>

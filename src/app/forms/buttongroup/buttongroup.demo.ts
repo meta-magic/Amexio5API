@@ -150,7 +150,7 @@ import {HttpClient} from "@angular/common/http";
 
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties <amexio-btn-group>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/buttongroup.json'"
                              [data-reader]="'properties'"
