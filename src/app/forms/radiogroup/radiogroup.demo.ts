@@ -29,7 +29,7 @@ import {HttpClient} from "@angular/common/http";
                                         [value-field]="'genderId'"
                                         [horizontal]="true"
                                         [data]="radioGroupData"
-                                      
+                                        [(ngModel)]="model1"
                                         (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
                   </amexio-body>
@@ -46,7 +46,7 @@ import {HttpClient} from "@angular/common/http";
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
                                         [http-method]="'get'"
-                                      
+                                        [(ngModel)]="model2"
                                         [http-url]="'assets/data/componentdata/radiogroup.json'"
                                         (onSelection)="setSelectedGender($event)">
                     </amexio-radio-group>
@@ -62,25 +62,17 @@ import {HttpClient} from "@angular/common/http";
                     Horizontal Radio Group Disabled
                   </amexio-header>
                   <amexio-body>
-                    <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="genderxy"
+                    <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gendery"
                                         [data-reader]="'data'"
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
                                         [http-method]="'get'"
                                         horizontal="true"
+                                        [(ngModel)]="model3"
                                         [http-url]="'assets/data/componentdata/radiogroup.json'"
                                         disabled="true">
                     </amexio-radio-group>
-                    <amexio-dropdown [(ngModel)]="countryCode1"
-                    [place-holder]="'Choose'"
-                    name="countryCode1"
-                    [data-reader]="'data'"
-                    [field-label]="'Choose Country'"
-                    [http-url]="'assets/data/componentdata/country.json'"
-                    [http-method]="'get'"
-                    [display-field]="'countryName'"
-                    [value-field]="'countryCode1'">
-   </amexio-dropdown>
+                   
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -90,8 +82,9 @@ import {HttpClient} from "@angular/common/http";
                   Horizontal Radio Group single item disabled
                 </amexio-header>
                 <amexio-body>
-                  <amexio-radio-group [field-label]="'Horizontal Radio Group '" name ="genderxy"
+                  <amexio-radio-group [field-label]="'Horizontal Radio Group '" name ="genderx"
                                       [data-reader]="'data'"
+                                      [(ngModel)]="model4"
                                       [display-field]="'gender'"
                                       [value-field]="'genderId'"
                                       [http-method]="'get'"
@@ -100,16 +93,7 @@ import {HttpClient} from "@angular/common/http";
                                       [http-url]="'assets/data/componentdata/radiogroup_disable.json'"
                                       >
                   </amexio-radio-group>
-                  <amexio-dropdown [(ngModel)]="countryCode1"
-                 [place-holder]="'Choose'"
-                 name="countryCode1"
-                 [data-reader]="'data'"
-                 [field-label]="'Choose Country'"
-                 [http-url]="'assets/data/componentdata/country.json'"
-                 [http-method]="'get'"
-                 [display-field]="'countryName'"
-                 [value-field]="'countryCode1'">
-</amexio-dropdown>
+                  
                 </amexio-body>
               </amexio-card>
             </amexio-column>
@@ -182,6 +166,11 @@ export class RadioGroupDemo {
   copyMsgArray: any[];
   dataSource:string;
   radioGroupData: any;
+  model1:  string = 'female';
+  model2:  string = 'male';
+  model3:  string = 'female';
+  model4: string = 'male';
+
   //selected Checkbox event
   setSelectedGender(data:any){
   //make some operation here
