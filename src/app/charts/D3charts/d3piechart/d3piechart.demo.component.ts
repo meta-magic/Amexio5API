@@ -55,8 +55,6 @@ export class AmexioD3PieChartDemoComponent implements OnInit
       ['U.S', 14.01],
       ['Korea', 4.01]
     ];
-       
-
   }
 
  
