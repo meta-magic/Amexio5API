@@ -38,7 +38,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-text-input name="name"
                                        place-holder="Enter name"
-                                       icon-feedback="false"
+                                      
                                        has-label="false"
                     ></amexio-text-input>
                   </amexio-body>
@@ -101,7 +101,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-text-input [field-label]="'Name'" name="name"
                                        [place-holder]="'Enter name'"
-                                       [icon-feedback]="true"
+                                       [icon-feedback]="false"
                                        [font-size]="'large'"
                     ></amexio-text-input>
                   </amexio-body>
