@@ -83,6 +83,7 @@ import {HttpClient} from "@angular/common/http";
                   Horizontal Radio Group single item disabled
                 </amexio-header>
                 <amexio-body>
+              
                   <amexio-radio-group [field-label]="'Horizontal Radio Group '" name ="genderx"
                                       [data-reader]="'data'"
                                       [(ngModel)]="model4"
@@ -94,7 +95,8 @@ import {HttpClient} from "@angular/common/http";
                                       [http-url]="'assets/data/componentdata/radiogroup_disable.json'"
                                       >
                   </amexio-radio-group>
-                  
+                  <h2>Radio Group model Binding value </h2>
+                  {{model4 | json}}
                 </amexio-body>
               </amexio-card>
             </amexio-column>
@@ -152,7 +154,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
            <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-radiogroup?embed=1&file=app/forms/radiogroup/radiogroup.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-radiogroup?embed=1&file=app/forms/radiogroup/radiogroup.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>

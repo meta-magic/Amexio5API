@@ -7,9 +7,10 @@ export class RatingDemo {
   public profileRate: number = 2;
   public disableProfileRate:number=3;
   public disableProfileMaxRate:number=5;
-  public isReadonly: boolean = false;
+
   titles: any = ['Poor', 'Fair', 'Average', 'Good', 'Excellent'];
 
   constructor() {
   }
 }
+ 
