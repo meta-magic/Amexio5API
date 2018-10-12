@@ -1,7 +1,7 @@
 
 
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'treedata-grid-demo', template: `
@@ -114,7 +114,7 @@ import {HttpClient} from "@angular/common/http";
                                         <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-
+<br>
             <amexio-datagrid title="Methods" [http-method]="'get'" [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'methods'"
             [enable-data-filter]="false">
             <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
@@ -161,7 +161,7 @@ export class TreeDataTemplateDemo {
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
-  checkFlag:boolean;
+  checkFlag: boolean;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -172,7 +172,7 @@ export class TreeDataTemplateDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/treedatatemplate/treedatatemplate.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/treedatatemplate/treedatatemplate.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -180,14 +180,14 @@ export class TreeDataTemplateDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/treedatatemplate/treedatatemplate.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/treedatatemplate/treedatatemplate.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/treedatatable.json',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/componentdata/treedatatable.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -200,9 +200,9 @@ export class TreeDataTemplateDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 
@@ -210,21 +210,21 @@ export class TreeDataTemplateDemo {
     this.selectedData = data;
   }
 
-  onCheckClick(data:any){
-if(data.hasOwnProperty('children') && data.children.length>0){
-  this.checkchild(data);
-}
-}
-
-
-checkchild(data:any){
-data.children.forEach((element:any) => {
-   element.done = !element.done;
-  if(element.hasOwnProperty('children') && element.children.length>0){
-    this.checkchild(element);
+  onCheckClick(data: any) {
+    if (data.hasOwnProperty('children') && data.children.length > 0) {
+      this.checkchild(data);
+    }
   }
-});
-}
+
+
+  checkchild(data: any) {
+    data.children.forEach((element: any) => {
+      element.done = !element.done;
+      if (element.hasOwnProperty('children') && element.children.length > 0) {
+        this.checkchild(element);
+      }
+    });
+  }
 
 
 
