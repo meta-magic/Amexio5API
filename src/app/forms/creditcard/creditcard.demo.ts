@@ -17,19 +17,25 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
         </p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-          <h2>Demo: Form </h2>
     <amexio-form form-name="validateForm" header="true" show-error="true">
               <amexio-form-header style="width:100%">
-             CreditCard
+             Credit Card
               </amexio-form-header>
               <amexio-form-body>
               <amexio-row>
               <amexio-column size="9">
               <pre><code>{{creditcard|json}}</code></pre>
-              <h2>CreditCard with Model Binding</h2>
+
+              <h2>Credit Card with Model Binding, label and double column template</h2>
               <amexio-creditcard [year-count]="4" [show-label]="true" [(ngModel)]="creditcard"></amexio-creditcard>
-              <h2>CreditCard without Model Binding</h2>
-              <amexio-creditcard [year-count]="4"></amexio-creditcard>
+              <br>
+              <h2>Credit Card with double column template and without Model Binding and label</h2>
+              <amexio-creditcard [show-label]="false" [year-count]="4"></amexio-creditcard>
+              <br>
+              <h2>Credit Card with single column template</h2>
+              <br>
+              <amexio-creditcard [template]="'single-column'" [year-count]="4"></amexio-creditcard>
+
               </amexio-column>
             </amexio-row>
              </amexio-form-body>
@@ -41,13 +47,15 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
                              [http-url]="'assets/apireference/forms/creditcard.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false" >
-              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="20" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                                        [text]="'Version'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
              <br/>
