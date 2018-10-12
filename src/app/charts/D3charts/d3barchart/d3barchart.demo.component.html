@@ -68,7 +68,7 @@
                                                 Horizontal D3-bar
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-d3-chart-bar [horizontal]="true" [title]="'Coffee Production Analysis'"  (onChartClick)="onDefaultChartClick1($event)"  (onLegendClick)="onDefaultLegendClick($event)" [data]="barData">
+                                                <amexio-d3-chart-bar [horizontal]="true" [title]="'Coffee Production Analysis'"  (onChartClick)="onDefaultChartClick2($event)"  (onLegendClick)="onDefaultLegendClick1($event)" [data]="barData">
                                                 </amexio-d3-chart-bar>
                                             </amexio-body>
                                         </amexio-card>
@@ -79,7 +79,7 @@
                                                 Click On Legend/ Click On Chart
                                             </amexio-header>
                                             <amexio-body>
-                                                <pre><code>{{sourceData |json }}</code></pre>
+                                                <pre><code>{{sourceData1 |json }}</code></pre>
 
                                             </amexio-body>
                                         </amexio-card>

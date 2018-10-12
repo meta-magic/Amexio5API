@@ -10,6 +10,7 @@ export class AmexioD3BarChartDemoComponent
   userDataSource: any;
   barChartWithColorData: any;
   barData: any;
+  sourceData1: any;
 
   constructor() { 
 
@@ -71,6 +72,14 @@ export class AmexioD3BarChartDemoComponent
   onDefaultChartClick(event: any) {
     this.userDataSource = event;
   }
+
+   onDefaultChartClick2(event: any) {
+    this.sourceData1 = event;
+   }
+ 
+     onDefaultLegendClick1(event: any) {
+    this.sourceData1 = event;
+   }
 
 }
 

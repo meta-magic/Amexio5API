@@ -20,7 +20,7 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
   userDataSource: any;
   barChartWithColorData: any;
   barData: any;
-
+  sourceData1: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -80,9 +80,19 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
 
   }
 
+  onDefaultLegendClick1(event: any) {
+this.sourceData1 = event;
+  }
+
+
+
   onDefaultChartClick1(event: any) {
     this.sourceData = event;
   }
+
+  onDefaultChartClick2(event: any) {
+    this.sourceData1 = event;
+   }
   
 
   onDefaultChartClick(event: any) {
