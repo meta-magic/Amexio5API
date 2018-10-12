@@ -3,7 +3,26 @@
                      [field-label]="'Film Rating'"
                      [max]="max"
                       name="rate"
-                     [read-only]="isReadonly">
+                     [read-only]="false">
+</amexio-rating-input>
+
+<!-- Rating with rate titles-->
+<amexio-rating-input [(ngModel)]="customRate"
+                     [full-icon]="'☑'"
+                     [empty-icon]="'☐'"
+                     [titles]="titles"
+                     [max]="customIconRate"
+                      name="customRate"
+                     [read-only]="false">
+</amexio-rating-input>
+
+<!--Rating component with custom icons-->
+<amexio-rating-input [(ngModel)]="customRate"
+                     [full-icon]="'☑'"
+                     [empty-icon]="'☐'"
+                     [max]="customIconRate"
+                      name="customRate"
+                     [read-only]="false">
 </amexio-rating-input>
 
 <!--Read only Rating-->
@@ -11,25 +30,4 @@
                      [(ngModel)]="disableProfileRate"
                      [max]="disableProfileMaxRate"
                      [read-only]="true">
-</amexio-rating-input>
-
-<!--Rating component with custom icons-->
-
-<amexio-rating-input [(ngModel)]="customRate"
-                     [full-icon]="'☑'"
-                     [empty-icon]="'☐'"
-                     [max]="customIconRate"
-                      name="customRate"
-                     [read-only]="isReadonly">
-</amexio-rating-input>
-
-<!-- Rating with rate titles-->
-
-<amexio-rating-input [(ngModel)]="customRate"
-                     [full-icon]="'☑'"
-                     [empty-icon]="'☐'"
-                     [titles]="titles"
-                     [max]="customIconRate"
-                      name="customRate"
-                     [read-only]="isReadonly">
 </amexio-rating-input>

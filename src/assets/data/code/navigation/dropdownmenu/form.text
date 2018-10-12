@@ -45,7 +45,6 @@ export class DropDownMenuDemo {
       jsonData.labelalign = item.this.labelalign;
     }
     this.source = jsonData;
-    console.log("ok");
   }
 }
 
