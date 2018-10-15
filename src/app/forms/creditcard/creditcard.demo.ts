@@ -21,9 +21,9 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
               <amexio-form-header style="width:100%">
              Credit Card
               </amexio-form-header>
-              <amexio-form-body>
-              <amexio-row>
-              <amexio-column size="9">
+         <amexio-form-body>
+          <amexio-row>
+            <amexio-column size="9">
               <pre><code>{{creditcard|json}}</code></pre>
 
               <h2>Credit Card with Model Binding, label and double column template</h2>
@@ -38,7 +38,7 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
 
               </amexio-column>
             </amexio-row>
-             </amexio-form-body>
+        </amexio-form-body>
   </amexio-form>
           </amexio-tab>
           <amexio-tab title="API Reference">
@@ -84,7 +84,7 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-credit-card?embed=1&file=app/creditcard/creditcard/creditcard.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
