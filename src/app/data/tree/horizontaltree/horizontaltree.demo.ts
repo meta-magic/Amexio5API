@@ -51,7 +51,7 @@ import {HttpClient} from "@angular/common/http";
                              [http-url]="'assets/apireference/data/tree.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
-              <amexio-data-table-column [data-index]="'name'" [width]="24" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
             <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
               
@@ -66,7 +66,7 @@ import {HttpClient} from "@angular/common/http";
             <amexio-datagrid title="Events" [http-method]="'get'"
                              [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
-              <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
             <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
               
@@ -76,7 +76,7 @@ import {HttpClient} from "@angular/common/http";
 
             <amexio-datagrid title="Methods" [http-method]="'get'" [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'methods'"
             [enable-data-filter]="false">
-            <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+            <amexio-data-table-column [data-index]="'name'" [width]="15" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
             <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
             <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
         </amexio-datagrid>
@@ -227,7 +227,7 @@ export class HorizontalTreeDemo {
       this.typeScriptCode = responseTs;
     });
 
-    this.http.get('assets/data/componentdata/sidenav.json').subscribe(data => {
+    this.http.get('assets/data/componentdata/sidenav.json',{responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

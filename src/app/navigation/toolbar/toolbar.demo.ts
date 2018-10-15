@@ -22,15 +22,14 @@ import { HttpClient } from "@angular/common/http";
 
           <amexio-tab title="Demo" active="true">
           <h2>Demo: Tool Bar </h2>
-                  <amexio-toolbar>
+        <amexio-toolbar>
           <amexio-toolbar-item position-left [seperator-position]="'right'">
                   <amexio-label size="medium" font-color="Black">
-                  Compose
+                      Compose
                  </amexio-label>
-                </amexio-toolbar-item>
-                <amexio-toolbar-item position-left [seperator-position]="'right'">
-                 
-                <amexio-btn-group >
+          </amexio-toolbar-item>
+          <amexio-toolbar-item position-left [seperator-position]="'right'">
+             <amexio-btn-group>
                 <amexio-button [size]="'medium'"
                                [label]="''"
                                [type]="''"
@@ -49,45 +48,40 @@ import { HttpClient } from "@angular/common/http";
                                [tooltip]="'delete'"
                                [icon]="'fa fa-trash-o'">
                 </amexio-button>
-              </amexio-btn-group>
-                  </amexio-toolbar-item>
-                  <amexio-toolbar-item position-right >
+            </amexio-btn-group>
+          </amexio-toolbar-item>
+          <amexio-toolbar-item position-right >
               <amexio-drop-down-menu [icon-align]="'left'"
                              [title]="'Settings'"
                              [padding]="'5px 10px'"
                              [icon]="'fa fa-cog'">
                <amexio-drop-down-menu-item [separator]="true">
-                      <amexio-box background-color="purple" padding="true">
+                <amexio-box background-color="purple" padding="true">
                        <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
                          </amexio-box>
-                         <amexio-row>
-                         <amexio-column size="5">
+          <amexio-row>
+             <amexio-column size="5">
                <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'"
                             path="assets/images/profile/ketan.jpg">
-              </amexio-image>
-            </amexio-column>
+                </amexio-image>
+             </amexio-column>
             <amexio-column size="7">
-
               <amexio-label > Ketan Gote</amexio-label>
               <amexio-label > xyz@metamagic.in</amexio-label><br>
               <amexio-button  [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
               </amexio-button>
             </amexio-column>
-
           </amexio-row>
-
         </amexio-drop-down-menu-item>
 
         <amexio-drop-down-menu-item
           [label]="'Settings'"
-          [icon]="'fa fa-folder'"
-          >
+          [icon]="'fa fa-folder'">
         </amexio-drop-down-menu-item>
         <amexio-drop-down-menu-item
           [label]="'Help Center'"
           [icon]="'fa fa-question-circle'"
-          [separator] ="true"
-         >
+          [separator] ="true" >
         </amexio-drop-down-menu-item>
         <amexio-drop-down-menu-item
           [label]="'Location'"
@@ -196,7 +190,7 @@ import { HttpClient } from "@angular/common/http";
                     place-holder="Enter name"
                     icon-feedback="true">
                     </amexio-text-input>
-                    <i class="fa fa-info-circle" aria-hidden="true"></i>
+                    <i class="fa fa-info-circle" aria-hidden="true" style="margin:5px"></i>
                   
                 </amexio-panel-header>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
@@ -207,8 +201,8 @@ import { HttpClient } from "@angular/common/http";
                 software like Aldus PageMaker including versions of Lorem Ipsum.
         </amexio-panel>
       </amexio-column>
+    </amexio-row>
       <h2>Demo: Tool Bar In Form Header</h2>
-   </amexio-row>
         <amexio-row>
             <amexio-column [size]="12">
             <amexio-form-header style="width:100%">
@@ -237,10 +231,11 @@ import { HttpClient } from "@angular/common/http";
         </amexio-row>
         <h2>Demo: Tool Bar In Window Header</h2>
         <amexio-row>
-          <amexio-column >
-          <amexio-button type="success"
-          (onClick)="toggleBasicWindow('nonmaterialtoolbar')"
-          label="Basic Window"></amexio-button>
+          <amexio-column>
+            <amexio-button type="success"
+                          (onClick)="toggleBasicWindow('nonmaterialtoolbar')"
+                          label="Basic Window">
+            </amexio-button>
           <amexio-window
                  [body-height]="40"
                  [(show)]="showBasicWindowNonMateialToolbar"
@@ -249,30 +244,29 @@ import { HttpClient } from "@angular/common/http";
                  [footer]="true"
                  [vertical-position]="'top'"
                  [horizontal-position]="'center'">
-                 <amexio-header>
-                <amexio-window-header>
+            <amexio-header>
+              <amexio-window-header>
                 <amexio-toolbar>
-                <amexio-toolbar-item position-left>
-                <amexio-label size="small" >
-                 Registration
-                </amexio-label>
-                   </amexio-toolbar-item>
-               
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-th" aria-hidden="true"></i>
-                </amexio-toolbar-item>
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                </amexio-toolbar-item>
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </amexio-toolbar-item>
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                </amexio-toolbar-item>
-             </amexio-toolbar>
-                </amexio-window-header>
-                 </amexio-header>
+                  <amexio-toolbar-item position-left>
+                      <amexio-label size="small" >
+                         Registration
+                      </amexio-label>
+                  </amexio-toolbar-item>
+                  <amexio-toolbar-item position-right [seperator-position]="'left'">
+                      <i class="fa fa-th" aria-hidden="true"></i>
+                  </amexio-toolbar-item>
+                  <amexio-toolbar-item position-right [seperator-position]="'left'">
+                      <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  </amexio-toolbar-item>
+                  <amexio-toolbar-item position-right [seperator-position]="'left'">
+                      <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  </amexio-toolbar-item>
+                  <amexio-toolbar-item position-right [seperator-position]="'left'">
+                      <i class="fa fa-cog" aria-hidden="true"></i>
+                  </amexio-toolbar-item>
+                </amexio-toolbar>
+              </amexio-window-header>
+            </amexio-header>
                  <amexio-body>
                    <amexio-row>
                      <amexio-column [size]="6">
