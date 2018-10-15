@@ -695,12 +695,6 @@
                             "link": "amexio-d3-chart-bar"
                         },
                         {
-                            "text": "Stack Chart",
-                            "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "New",
-                            "link": "amexio-d3-chart-bar-stack"
-                        },
-                        {
                             "text": "Donut Chart",
                             "icon": "fa fa-pie-chart fa-fw",
                             "badge": "New",
@@ -713,17 +707,24 @@
                             "link": "amexio-d3-chart-line"
                         },
                         {
+                            "text": "MultiSeriesBar Chart",
+                            "icon": "fa fa-bar-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-multiseries"
+                        },
+                        {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-pie"
                         },
                         {
-                            "text": "MultiSeriesBar Chart",
+                            "text": "Stack Chart",
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
-                            "link": "amexio-d3-chart-multiseries"
+                            "link": "amexio-d3-chart-bar-stack"
                         }
+         
                     ]
                 },
                 {
