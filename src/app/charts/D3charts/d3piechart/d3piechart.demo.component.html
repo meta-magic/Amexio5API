@@ -14,7 +14,7 @@
                             <amexio-column [size]="8">
                                 <amexio-card [header]="true" [show]="'true'">
                                     <amexio-header>
-                                        D3-pie with Legend UserDefine Color
+                                        D3-pie with Legend and Default Color
                                     </amexio-header>
                                     <amexio-body>
                                         <amexio-d3-chart-pie [title]="'Visitor Visit Country Ratio'" [color]="userDefineColors" (onLegendClick)="onUserDefineLegendClick($event)"
@@ -48,7 +48,7 @@
                             <amexio-column [size]="8">
                                 <amexio-card [header]="true" [show]="'true'">
                                     <amexio-header>
-                                        D3-pie with By Default Color
+                                        D3-pie chart with legend and user defined Color
                                     </amexio-header>
                                     <amexio-body>
                                         <amexio-d3-chart-pie [title]="'Browser Activity'" (onChartClick)="onDefaultChartClick1($event)"  (onLegendClick)="onDefaultLegendClick($event)" [data]="defultColorData">

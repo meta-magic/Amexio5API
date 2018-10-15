@@ -98,20 +98,23 @@
                 <amexio-datagrid title="D3-Bar-Chart Properties<amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'"
                     [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
-                    <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="40" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
                 <br>
                 <amexio-datagrid title="Legend<amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
                     [data-reader]="'legend'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>                    
                     <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
                 <br>
                 <amexio-datagrid title="Chart Event <amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
                     [data-reader]="'chartevent'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>                   
                     <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
             </amexio-tab>

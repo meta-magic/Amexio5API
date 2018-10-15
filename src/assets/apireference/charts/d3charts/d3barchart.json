@@ -5,6 +5,7 @@
     "properties": [
         {
             "name": "title",
+            "version": "",
             "description": "Sets title to chart",
 
             "type": "string",
@@ -14,42 +15,42 @@
         {
             "name": "width",
             "description": "Width of chart",
-
+            "version": "",
             "type": "string",
             "default": ""
         },
         {
             "name": "height",
             "description": "Height of chart",
-
+            "version": "",
             "type": "string",
             "default": ""
         },
         {
             "name": "data",
             "description": "Local data for Chart",
-
+            "version": "",
             "type": "any[]",
             "default": ""
         },
         {
             "name": "color",
             "description": "Sets color to D3 Bar chart",
-
+            "version": "",
             "type": "any[]",
             "default": ""
         },
         {
             "name": "horizontal",
             "description": "Sets Horizontal D3 Bar chart",
-
+            "version": "",
             "type": "boolean",
             "default": "false"
         },
         {
             "name": "legend",
             "description": "Sets legend to D3 Bar chart",
-
+            "version": "",
             "type": "boolean",
             "default": "false"
         }
@@ -57,12 +58,14 @@
     "legend": [
         {
             "name": "onLegendClick()",
+            "version": "",
             "description": "It will fire only on click on Legend Click in D3 bar chart ."
         }
     ],
     "chartevent": [
         {
             "name": "onChartClick()",
+            "version": "",
             "description": "It will fire only on click on chart in D3 bar chart ."
         }
     ]
