@@ -1,0 +1,108 @@
+<amexio-card header="true">
+    <amexio-header>
+        D3 bar Chart
+    </amexio-header>
+    <amexio-body>
+        <p>An D3 bar chart that is rendered within the browser using SVG .Displays tips when hovering over points.</p>
+        <amexio-tab-view>
+            <amexio-tab title="Demo" active="true">
+                <amexio-row>
+                    <amexio-column [size]="12">
+
+                            <amexio-row>
+                                    <amexio-column [size]="8">
+                                        <amexio-card [header]="true" [show]="'true'">
+                                            <amexio-header>
+                                                D3-Chart With Drillable Property
+                                            </amexio-header>
+                                            <amexio-body>
+                                                <amexio-drillable> 
+
+
+       
+                                                    <amexio-d3-chart-bar [title]="'Bar Chart'" 
+                                                       [level]=1
+                                                       [target]=2
+                                                       [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/countrychart/findall'" 
+                                                       [http-method]="'get'" 
+                                                       [drillabledatakey]= "drillabledata"
+                                                       [color] = "userDefineColors">
+                                                  </amexio-d3-chart-bar> 
+                                                 
+                                                 
+                                                 <amexio-d3-chart-pie [title]="'Pie Chart'"
+                                                        [level]=2
+                                                        [target]=3
+                                                        [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/state/findbycountry'" 
+                                                        [http-method]="'post'" 
+                                                        [drillabledatakey]= "drillabledata"
+                                                        [color] = "userDefineColors">
+                                                 </amexio-d3-chart-pie>  
+                                                 
+                                                 
+                                                 <amexio-d3-chart-donut [title]="'Donut Chart'" 
+                                                      [level]=3
+                                                      [target]=4
+                                                      [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/city/findbystate/ '" 
+                                                      [http-method]="'post'" 
+                                                      [drillabledatakey]= "drillabledata"
+                                                      [color] = "userDefineColors">
+                                                 </amexio-d3-chart-donut>  
+                                                 </amexio-drillable>
+                                            </amexio-body>
+                                        </amexio-card>
+                                    </amexio-column>
+                                    
+                                </amexio-row>
+                    </amexio-column>
+                </amexio-row>
+
+
+            </amexio-tab>
+            <amexio-tab title="API Reference">
+                <amexio-datagrid title="D3-Bar-Chart Properties<amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'"
+                    [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <br>
+                <amexio-datagrid title="Legend<amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
+                    [data-reader]="'legend'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <br>
+                <amexio-datagrid title="Chart Event <amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
+                    [data-reader]="'chartevent'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+            </amexio-tab>
+            <amexio-tab title="Source">
+                <div style="overflow-y: scroll">
+                    <amexio-vertical-tab-view>
+                        <amexio-tab title="HTML" [active]="true">
+                            <ng-container *ngIf="htmlCode">
+                                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
+                                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+                            </ng-container>
+                        </amexio-tab>
+                        <amexio-tab title="Type Script">
+                            <ng-container *ngIf="typeScriptCode">
+                                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+                            </ng-container>
+                        </amexio-tab>
+                       
+                    </amexio-vertical-tab-view>
+                </div>
+            </amexio-tab>
+            <amexio-tab title="Live">
+                <p align="center">Amexio Sandbox</p>
+                <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-window?embed=1&file=app/panels/window/window.demo.html&view=editor"
+                    frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </amexio-tab>
+        </amexio-tab-view>
+    </amexio-body>
+</amexio-card>
