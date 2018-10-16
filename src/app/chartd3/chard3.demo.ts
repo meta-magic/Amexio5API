@@ -36,7 +36,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
 
 
           <amexio-row>
-          <amexio-column size="6">
+          <amexio-column size="6" [fit]="true">
                   <amexio-card [header]="true" [show]="'true'">
                           <amexio-header>
                                   amexio D3-bar chart
@@ -49,7 +49,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
                   </amexio-card>
           </amexio-column>
   
-          <amexio-column size="6">
+          <amexio-column size="6" [fit]="true">
                   <amexio-card [header]="true" [show]="'true'">
                           <amexio-header>
                                   amexio D3-line chart
@@ -66,7 +66,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
   
   <amexio-row>
   
-          <amexio-column size="6">
+          <amexio-column size="6" [fit]="true">
                   <amexio-card [header]="true" [show]="'true'">
                           <amexio-header>
                                   amexio D3-donut chart
@@ -79,7 +79,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
                   </amexio-card>
           </amexio-column>
 
-          <amexio-column size="6">
+          <amexio-column size="6" [fit]="true">
           <amexio-card [header]="true" [show]="'true'">
                   <amexio-header>
                           amexio D3-pie chart
@@ -94,7 +94,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
   </amexio-row>
 
   <amexio-row>
-  <amexio-column size="6">
+  <amexio-column size="6" [fit]="true">
   <amexio-card [header]="true" [show]="'true'">
                                     <amexio-header>
                                         Amexio D3-multiseries Chart
@@ -106,7 +106,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
                                 </amexio-card>
 </amexio-column>
 
-<amexio-column size="6">
+<amexio-column size="6" [fit]="true">
 <amexio-card [header]="true" [show]="'true'">
         <amexio-header>
                 amexio D3-Stack Bar chart
