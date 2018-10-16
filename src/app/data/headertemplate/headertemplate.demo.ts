@@ -17,7 +17,7 @@ import { HttpClient } from "@angular/common/http";
           <amexio-tab title="Demo" active="true">
            
           <!--1-->
-          <amexio-datagrid [enable-checkbox]="false" title="Registeration Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/headertemplateemail.json'"
+          <amexio-datagrid [enable-checkbox]="false" title="Registration Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/headertemplateemail.json'"
               [data-reader]="'data'" [page-size]="10" [enable-data-filter]="false">
               <amexio-data-table-column [width]="5" [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
                   <ng-template #amexioHeaderTmpl let-column="column" let-index="index">

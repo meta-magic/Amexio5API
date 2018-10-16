@@ -11,7 +11,7 @@ import {HttpClient} from "@angular/common/http";
    
     <amexio-card header="true">
       <amexio-header>
-         App Notification's 
+         Notifications 
       </amexio-header>
       <amexio-body>
         <p>Notification provides a way to let user know through pop-up messages.</p>
@@ -251,7 +251,7 @@ import {HttpClient} from "@angular/common/http";
             
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Propeties<amexio-notification>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties<amexio-notification>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/navigation/notification.json'"
                              [data-reader]="'properties'"

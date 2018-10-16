@@ -34,7 +34,7 @@ import {HttpClient} from "@angular/common/http";
             </amexio-row>
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties<amexio-datagrid>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties<amexio-tree-data-table>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              
                              [http-url]="'assets/apireference/data/treedatagrid.json'"
@@ -49,7 +49,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid><br>
-            <amexio-datagrid title="Column Properties<amexio-datagrid>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Column Properties<amexio-data-table-column>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/data/grid.json'"
                              [data-reader]="'columnProperties'"
