@@ -26,11 +26,11 @@ import {HttpClient} from "@angular/common/http";
               <amexio-header>Captcha Response data</amexio-header>
               <amexio-body>
 
-      <amexio-google-recaptcha (onSuccess)="onSuccess($event)" 
-      (onFailure)="onFailure($event)"
-      [site-key]="'6LeZ5W8UAAAAAIHXZf35oYoUhpsICnJzqSxx3fpf'">
-                             
-      </amexio-google-recaptcha>
+        <amexio-google-recaptcha (onSuccess)="onSuccess($event)" 
+        (onFailure)="onFailure($event)"
+        [site-key]="'6LeZ5W8UAAAAAIHXZf35oYoUhpsICnJzqSxx3fpf'">
+                              
+        </amexio-google-recaptcha>
               
               </amexio-body>
             </amexio-card>
@@ -88,7 +88,8 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
       <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-label?embed=1&file=app/forms/label/label.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+      <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-recaptcha1?embed=1&file=app/recaptcha-demo/recaptcha/recaptcha.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
+
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
