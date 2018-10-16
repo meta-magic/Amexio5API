@@ -415,5 +415,8 @@
     {
       path: 'amexio-d3-chart-multiseries', loadChildren: './charts/D3charts/d3multiserieschart/d3multiserieschart.demo.module#D3MultiSeriesChartDemoModule'
     }, 
+    {
+      path: 'amexio-d3-drillable-charts-demo', loadChildren: './charts/D3charts/d3drillablecharts/d3drillablecharts.demo.module#D3DrillableChartDemoModule'
+    }, 
     
   ];

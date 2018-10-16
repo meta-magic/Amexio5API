@@ -1,0 +1,32 @@
+
+<amexio-drillable> 
+   <amexio-d3-chart-bar 
+       [title]="'Bar Chart'" 
+       [level]=1
+       [target]=2
+       [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/countrychart/findall'" 
+       [http-method]="'get'" 
+       [drillabledatakey]= "drillabledata"
+       [color] = "userDefineColors">
+  </amexio-d3-chart-bar> 
+ 
+  <amexio-d3-chart-pie 
+        [title]="'Pie Chart'"
+        [level]=2
+        [target]=3
+        [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/state/findbycountry'" 
+        [http-method]="'post'" 
+        [drillabledatakey]= "drillabledata"
+        [color] = "userDefineColors">
+ </amexio-d3-chart-pie>  
+ 
+ <amexio-d3-chart-donut
+      [title]="'Donut Chart'" 
+      [level]=3
+      [target]=4
+      [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/city/findbystate/ '" 
+      [http-method]="'post'" 
+      [drillabledatakey]= "drillabledata"
+      [color] = "userDefineColors">
+ </amexio-d3-chart-donut>  
+ </amexio-drillable>

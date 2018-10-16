@@ -17,7 +17,7 @@
                                                         D3-donut with  Legend UserDefine Color
                                                     </amexio-header>
                                                     <amexio-body>
-                                                        <amexio-d3-chart-donut [title]="'Visiter Visit Country Ratio'" [color]="userDefineColors" [data]="userDefineColorData" (onChartClick)="onDefaultChartClick($event)"  (onLegendClick)="onUserDefineLegendClick($event)">
+                                                        <amexio-d3-chart-donut [title]="'Visitor Visit Country Ratio'" [color]="userDefineColors" [data]="userDefineColorData" (onChartClick)="onDefaultChartClick($event)"  (onLegendClick)="onUserDefineLegendClick($event)">
                                                         </amexio-d3-chart-donut>
                                                     </amexio-body>
                                                 </amexio-card>
@@ -120,7 +120,11 @@
                                 <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                             </ng-container>
                         </amexio-tab>
-                       
+                        <amexio-tab title="Data Source">
+                            <ng-container *ngIf="dataSourceCode">
+                              <prism-block [code]="dataSourceCode" [language]="'json'"></prism-block>
+                            </ng-container>
+                          </amexio-tab>
                     </amexio-vertical-tab-view>
                 </div>
             </amexio-tab>

@@ -700,6 +700,13 @@
                             "badge": "New",
                             "link": "amexio-d3-chart-donut"
                         },
+
+                         {
+                            "text": "Drillable Charts",
+                            "icon": "fa fa-pie-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-drillable-charts-demo"
+                        },
                         {
                             "text": "Line Chart",
                             "icon": "fa fa-line-chart fa-fw",
