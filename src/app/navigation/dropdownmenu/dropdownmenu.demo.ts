@@ -22,7 +22,7 @@ import {HttpClient} from "@angular/common/http";
                              [footer]="false">
                   <amexio-header>Demo 1</amexio-header>
                   <amexio-body>
-                    <amexio-drop-down-menu [icon-align]="'right'"
+                    <amexio-drop-down-menu  [icon-align]="'left'"
                                            [title]="'Payment '"
                                            [data]="payment"
                                            [down-arrow-icon] ="true"
@@ -69,6 +69,7 @@ import {HttpClient} from "@angular/common/http";
 
                       <amexio-drop-down-menu-item
                         [label]="'Settings'"
+                       
                         [icon]="'fa fa-cog'"
                         (onClick)="onDropDownMenuClick($event)"
                       >
@@ -76,12 +77,14 @@ import {HttpClient} from "@angular/common/http";
                       <amexio-drop-down-menu-item
                         [label]="'Help Center'"
                         [icon]="'fa fa-question-circle'"
+                       
                         [separator] ="true"
                         (onClick)="onDropDownMenuClick($event)"
                       >
                       </amexio-drop-down-menu-item>
                       <amexio-drop-down-menu-item
                         [label]="'Location'"
+                        
                         [icon]="'fa fa-map-marker'"
                         (onClick)="onDropDownMenuClick($event)"
 
@@ -89,6 +92,7 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-drop-down-menu-item>
                       <amexio-drop-down-menu-item
                         [label]="'Sign Out'"
+                       
                         [icon]="'fa fa-sign-out'"
                         (onClick)="onDropDownMenuClick($event)"
                       >
@@ -103,14 +107,14 @@ import {HttpClient} from "@angular/common/http";
                              [footer]="false">
                   <amexio-header>Demo 3  </amexio-header>
                   <amexio-body>
-                    <amexio-drop-down-menu [icon-align]="'left'"
+                    <amexio-drop-down-menu 
                                            [title]="'Brands'"
                                            [icon]="'fa fa-slack'"
                                            (onClick)="onDropDownMenuClick($event)">
 
                       <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
+                      [icon-align]="'right'"
+                      [label-align]="'left'"
                         [label]="'VK'"
                         [icon]="'fa fa-vk'"
                         [separator]="false"
@@ -119,8 +123,8 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-drop-down-menu-item>
 
                       <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
+                      [icon-align]="'right'"
+                      [label-align]="'left'"
                         [label]="'Twitter'"
                         [icon]="'fa fa-twitter'"
                         [separator]="false"
@@ -129,8 +133,8 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-drop-down-menu-item>
 
                       <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
+                      [icon-align]="'right'"
+                      [label-align]="'left'"
                         [label]="'Telegram'"
                         [icon]="'fa fa-telegram'"
                         [separator]="true"
@@ -139,8 +143,8 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-drop-down-menu-item>
 
                       <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
+                      [icon-align]="'right'"
+                      [label-align]="'left'"
                         [label]="'Github'"
                         [icon]="'fa fa-github-alt'"
                         [separator]="false"
@@ -148,8 +152,8 @@ import {HttpClient} from "@angular/common/http";
                       >
                       </amexio-drop-down-menu-item>
                       <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
+                      [icon-align]="'right'"
+                      [label-align]="'left'"
                         [label]="'Apple'"
                         [icon]="'fa fa-apple'"
                         [separator]="false"
@@ -158,8 +162,8 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-drop-down-menu-item>
 
                       <amexio-drop-down-menu-item
-                        [icon-align]="'right'"
-                        [label-align]="'left'"
+                      [icon-align]="'right'"
+                      [label-align]="'left'"
                         [label]="'WhatsApp'"
                         [icon]="'fa fa-whatsapp'"
                         [separator]="false"
@@ -179,7 +183,7 @@ import {HttpClient} from "@angular/common/http";
                              [footer]="false">
                   <amexio-header>Demo 4</amexio-header>
                   <amexio-body>
-                    <amexio-drop-down-menu [icon-align]="'left'"
+                    <amexio-drop-down-menu [icon-align]="'right'"
                                            [title]="'Transport'"
                                            [data]="transport"
                                            [icon]="'fa fa-truck'"
