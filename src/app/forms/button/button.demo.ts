@@ -25,11 +25,9 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-body>
                   <amexio-row>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Background Color'" [type]="'theme-backgroundcolor'" [tooltip]="'Secondary Button'"></amexio-button>
-                    </amexio-column>
-                    <amexio-column size="2">
                       <amexio-button [label]="'Theme Color'" [type]="'theme-color'" [tooltip]="'Primary Button'"></amexio-button>
                     </amexio-column>
+                    <amexio-column size="1"></amexio-column>
                     <amexio-column size="2">
                       <amexio-button [label]="'Green'" [type]="'green'" [tooltip]="'Success Button'"></amexio-button>
                     </amexio-column>
@@ -42,6 +40,9 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-column size="2">
                       <amexio-button [label]="'Transparent'" [type]="'transparent'" [tooltip]="'Transparent Button'"></amexio-button>
                     </amexio-column>
+                    <amexio-column size="2">
+                    <amexio-button [label]="'Background Color'" [type]="'theme-backgroundcolor'" [tooltip]="'Secondary Button'"></amexio-button>
+                  </amexio-column>
                   </amexio-row>
                 </amexio-body>
               </amexio-card>
