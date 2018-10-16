@@ -1,0 +1,13 @@
+export class  AmexioD3DrillableChartDemoComponent
+{
+
+ drillabledata:any;
+
+  constructor() { 
+       
+         this.drillabledata=["label","value","name"];
+      
+   }
+  
+ 
+}

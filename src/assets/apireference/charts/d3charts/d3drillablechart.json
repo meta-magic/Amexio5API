@@ -1,0 +1,13 @@
+{
+    "name": "Amexio D3-Drillable Chart",
+    "description": "",
+    "selector": "<amexio-drillable>",
+    "properties": [
+        {
+            "name": "drillabledatakey",
+            "version": "0.0.6 Onwards",
+            "description": "Sets  drillable key to chart",
+            "type": "any",
+            "default": ""
+        }           
+    ]}
