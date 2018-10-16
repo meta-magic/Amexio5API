@@ -59,7 +59,26 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
              <br/>
-              
+             <amexio-card
+             [header]="true"
+             [footer]="false">
+                 <amexio-header>
+                     Model for Credit Card
+                 </amexio-header>
+                 <amexio-body>
+                     <b>Model</b>:
+                     <br>
+                     owner: string;
+                     <br>
+                     cvv: number;
+                     <br>
+                     cardnumber: string;
+                     <br>
+                     expMonth: string;
+                     <br>
+                     expYear: string;
+                 </amexio-body>
+         </amexio-card>
           </amexio-tab>
           
           <amexio-tab title="Source">
