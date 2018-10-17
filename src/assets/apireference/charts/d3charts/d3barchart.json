@@ -73,6 +73,20 @@
             "version": "0.0.4 Onwards",
             "type": "string",
             "default": ""
+        },
+        {
+            "name": "level",
+            "description": "sets level for chart when drillable property used",
+            "version": "0.0.6 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "target",
+            "description": "sets  target for chart when drillable property used",
+            "version": "0.0.6 Onwards",
+            "type": "number",
+            "default": ""
         }
     ],
     "legend": [
