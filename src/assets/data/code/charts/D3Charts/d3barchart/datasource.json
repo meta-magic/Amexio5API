@@ -1,4 +1,7 @@
-Population of Cities in India
+
+Sample Data for Vertical Bar chart:
+  Note: First record i.e city is plotted on x-axis and population will get plotted on y-axis.
+
 [
       ['city', 'population'],
       ['Mumbai', 94423],
@@ -8,4 +11,17 @@ Population of Cities in India
       ['Pune', 31244],
       ['Jaipur', 30461],
       ['Ranchi', 84436]
-    ]
+]
+
+Sample Data for Horizontal Bar chart:
+  Note: First record i.e year is plotted on y-axis and production will get plotted on y-axis.
+[
+        ['year', 'production'],
+        ['2011', 300],
+        ['2012', 500],
+        ['2013', 700],
+        ['2014', 400],
+        ['2015', 600],
+        ['2016', 500],
+        ['2017', 200]
+];

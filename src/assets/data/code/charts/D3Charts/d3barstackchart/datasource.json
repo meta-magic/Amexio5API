@@ -1,5 +1,6 @@
-Comapany Performance Information
-[
+Sample Data for Stack Bar Bar Chart:
+  Note: First record i.e Year is plotted on x-axis and other records will get 
+  plotted on y-axis.[
       ['Year', 'Sales', 'Expenses', 'Profit'],
       ['2014', 1000, 400, 200],
       ['2015', 1170, 460, 250],
