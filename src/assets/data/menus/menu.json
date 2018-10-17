@@ -19,12 +19,10 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
-            "badge": "1",
             "children": [
                 {
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
-                    "badge": "U",
                     "link": "accordion"
                 },
                 {
@@ -68,7 +66,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "6",
+            "badge": "1",
             "children": [
                 {
                     "text": "Carousel",
@@ -78,25 +76,21 @@
                 {
                     "text": "Dialogue",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "dialouge",
-                    "badge": "U"
+                    "link": "dialouge"
                 },
                 {
                     "text": "Form",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "badge": "U",
                     "link": "form-demo"
                 },
                 {
                     "text": "Fieldset",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "badge": "U",
                     "link": "fieldset"
                 },
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
-                    "badge": "U",
                     "link": "panel"
                 },
                 {
@@ -118,7 +112,6 @@
                 {
                     "text": "Tab",
                     "icon": "fa fa-folder fa-fw",
-                    "badge": "1",
                     "children": [
                         {
                             "text": "Horizontal",
@@ -152,8 +145,7 @@
                                 {
                                     "text": "With Context Menu",
                                     "icon": "fa fa-leaf fa-fw",
-                                    "link": "contextual-menu-tab",
-                                    "badge": "New"
+                                    "link": "contextual-menu-tab"
                                 }
                             ]
                         },
@@ -184,8 +176,7 @@
                 {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "window",
-                    "badge": "U"
+                    "link": "window"
                 }
                 
                
@@ -194,7 +185,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "5",
+            "badge": "2",
             "children": [
                 {
                     "text": "Checkbox",
@@ -215,12 +206,10 @@
                 {
                     "text": "Date & Time Picker",
                     "icon": "fa fa-calendar fa-fw",
-                    "link": "date-picker-demo",
-                    "badge": "U"
+                    "link": "date-picker-demo"
                 },
                 {
                     "text": "DropDown",
-                    "badge": "U",
                     "icon": "fa fa-caret-square-o-down fa-fw",
                     "children": [
                         {
@@ -241,8 +230,7 @@
                         {
                             "text": "Template",
                             "icon": "fa fa-chevron-circle-down fa-fw",
-                            "link": "dropdowntemplate",
-                            "badge": "U"
+                            "link": "dropdowntemplate"
                         }
                     ]
                 },
@@ -296,8 +284,7 @@
                 {
                     "text": "Search Box",
                     "icon": "fa fa-search fa-fw",
-                    "link": "searchbox-demo",
-                    "badge": "New"
+                    "link": "searchbox-demo"
                 },
                 {
                     "text": "Slider",
@@ -334,7 +321,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "2",
+            "badge": "1",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [
                 {
@@ -377,8 +364,7 @@
                 {
                     "text": "Notification",
                     "icon": "fa fa-comments fa-fw",
-                    "link": "notification-demo",
-                    "badge": "U"
+                    "link": "notification-demo"
                 },
                 {
                     "text": "Paginator",
@@ -405,12 +391,10 @@
                 {
                     "text": "Grid",
                     "icon": "fa fa-database fa-fw",
-                    "badge": "5",
                     "children": [
                         {
                             "text": "Simple",
                             "icon": "fa fa-database fa-fw",
-                            "badge": "U",
                             "link": "simple-grid"
                         },
                         {
@@ -432,8 +416,7 @@
                         {
                             "text": "Filter-Global",
                             "icon": "fa fa-database fa-fw",
-                            "link": "global-filter-grid",
-                            "badge": "U"
+                            "link": "global-filter-grid"
                         },
                         {
                             "text": "Group By",
@@ -443,9 +426,8 @@
                         {
                             "text": "Header Template",
                             "icon": "fa fa-database fa-fw",
-                            "link": "header-template",
-                            "badge": "U"
-                        },
+                            "link": "header-template"
+                       },
                        
                         {
                             "text": "Grid with scroll",
@@ -455,9 +437,7 @@
                         {
                             "text": "Grid with Context menu",
                             "icon": "fa fa-database fa-fw",
-                            "link": "context-menu-grid",
-                            "badge": "New"
-                        },
+                            "link": "context-menu-grid"                        },
                         {
                             "text": "Tree Data Grid",
                             "icon": "fa fa-database fa-fw",
@@ -466,21 +446,19 @@
                         {
                             "text": "Tree Data Template",
                             "icon": "fa fa-database fa-fw",
-                            "link": "tree-data-template",
-                            "badge": "U"
-                        }
+                            "link": "tree-data-template"                        }
                     ]
                 },
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
                     "link": "tree",
-                    "badge": "5",
+                    "badge": "2",
                     "children": [
                         {
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "U",
+                            "badge":"U",
                             "link": "simple-tree"
                         },
                         {
@@ -507,20 +485,17 @@
                         {
                             "text": "With Drag Drop",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "dragdrop-tree",
-                            "badge": "New"
+                            "link": "dragdrop-tree"
                         },
                         {
                             "text": "With Badge",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "badge-tree",
-                            "badge": "New"
+                            "link": "badge-tree"
                         },
                         {
                             "text": "With Context Menu",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "context-menu-tree",
-                            "badge": "New"
+                            "link": "context-menu-tree"
                         },
                         {
                             "text": "Horizontal",
@@ -539,7 +514,7 @@
         {
             "text": "Drag and Drop",
             "icon": "fa fa-arrows-alt",
-            "badge": "New",
+            "badge": "2",
             "children": [
                 {
                     "text": "Within Tree",
@@ -573,12 +548,10 @@
         {
             "text": "Contextual Menus",
             "icon": "fa fa-bars",
-            "badge": "New",
             "children": [
                 {
                     "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "badge": "New",
                     "link": "contextmenu-card-form"
                 },
                 {
@@ -594,7 +567,6 @@
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
-                    "badge": "New",
                     "link": "contextmenu-panel"
                 },
                 {
@@ -610,7 +582,6 @@
                 {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "badge": "New",
                     "link": "contextmenu-window"
                 }
             ]
@@ -618,7 +589,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars fa-fw",
-            "badge": "4",
+            "badge": "1",
             "children": [
                 {
                     "text": "Breadcrumb",
@@ -634,8 +605,7 @@
                 {
                     "text": "Dropdown Menu",
                     "icon": "fa fa-chevron-circle-down",
-                    "link": "dropdownmenu",
-                    "badge": "New"
+                    "link": "dropdownmenu"
                 },
                 {
                     "text": "Menu Bar",
@@ -650,14 +620,12 @@
                 {
                     "text": "Side Nav Bar",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "sidenav-demo",
-                    "badge": "U"
+                    "link": "sidenav-demo"
                 },
                 {
                     "text": "Tool Bar",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "toolbar-demo",
-                    "badge": "New"
+                    "link": "toolbar-demo"
                 }
                 
             ]
@@ -681,7 +649,7 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
-            "badge": "8",
+            "badge": "7",
             "children": [
                 {
                     "text": "D3 Charts",
@@ -737,7 +705,6 @@
                 {
                     "text": "Google Charts",
                     "icon": "fa fa-google fa-fw",
-                    "badge": "U",
                     "children": [
                         {
                             "text": "Area Chart",
@@ -782,8 +749,7 @@
                         {
                             "text": "Gantt Chart",
                             "icon": "fa fa-calendar fa-fw",
-                            "link": "gantt-chart-demo",
-                            "badge": "New"
+                            "link": "gantt-chart-demo"
                         },
                         {
                             "text": "Histogram Chart",
