@@ -270,6 +270,9 @@
       path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
     },
     {
+      path: 'gridwithtoolbar-demo', loadChildren: './data/gridwithtoolbar/gridwithtoolbar.demo.module#GridWithToolBarDemoModule'
+    },
+    {
       path: 'template-grid', loadChildren: './data/gridwithtemplate/gridwithtemplate.demo.module#GridWithTemplateDemoModule'
     },
     {

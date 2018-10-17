@@ -380,7 +380,7 @@
         },
         {
             "text": "Data",
-            "badge": "10",
+            "badge": "2",
             "icon": "fa fa-database fa-fw",
             "children": [
                 {
@@ -433,6 +433,11 @@
                             "text": "Grid with scroll",
                             "icon": "fa fa-database fa-fw",
                             "link": "scroll-grid"
+                        },
+                        {
+                            "text": "Grid with Toolbar",
+                            "icon": "fa fa-database fa-fw",
+                            "link": "gridwithtoolbar-demo"
                         },
                         {
                             "text": "Grid with Context menu",

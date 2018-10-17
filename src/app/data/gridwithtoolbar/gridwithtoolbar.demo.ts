@@ -1,18 +1,18 @@
 /**
- * Created by sagar on 9/1/18.
+ * Created by kedar on 17/10/18.
  */
 
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'simplegridr-demo', template: `
+  selector: 'gridwithtoolbar-demo', template: `
   <amexio-card header="true">
     <amexio-header>
-        Simple Data Grid
+    Grid with Toolbar
     </amexio-header>
     <amexio-body>
-        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending
+        <p>Grid with Toolbar contains toolbar at header of Data grid component and it renders large amount of data-set with various options like sorting in ascending or descending
             order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering
             for column header and column data, displaying summation of numeric column.</p>
         <amexio-tab-view>
@@ -21,12 +21,27 @@ import {HttpClient} from "@angular/common/http";
                     <amexio-column size="12">
                         <amexio-card [header]="true">
                             <amexio-header>
-                                Simple Data Grid
+                                Grid with Toolbar
                             </amexio-header>
                             <amexio-body>
-                                <amexio-datagrid [enable-column-fiter]="true" title="Simple Data Grid " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'"
+                                <amexio-datagrid [enable-column-fiter]="true" title=" Grid with Toolbar " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'"
                                     [data-reader]="'data'" [page-size]="10">
-
+                                    <amexio-datagrid-header>
+                                        <amexio-drop-down-menu [icon-align]="'left'" [title]="'Country Currency '" [padding]="'5px 10px'" [icon]="'fa fa-empire'">
+                                            <amexio-drop-down-menu-item [label]="'India'" [icon]="'fa fa-inr'">
+                                            </amexio-drop-down-menu-item>
+                                            <amexio-drop-down-menu-item [label]="'Russia'" [icon]="'fa fa-rouble'" [separator]="true">
+                                            </amexio-drop-down-menu-item>
+                                            <amexio-drop-down-menu-item [label]="'Japan'" [icon]="'fa fa-cny'">
+                                            </amexio-drop-down-menu-item>
+                                            <amexio-drop-down-menu-item [label]="'United States'" [icon]="'fa fa-dollar'">
+                                            </amexio-drop-down-menu-item>
+                                        </amexio-drop-down-menu>
+                                        <amexio-label size="small">
+                                            My Drive
+                                        </amexio-label>
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                    </amexio-datagrid-header>
                                     <amexio-data-table-column [data-index]="'countryName'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
                                     </amexio-data-table-column>
                                     <amexio-data-table-column [sort]="false" [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
@@ -96,14 +111,14 @@ import {HttpClient} from "@angular/common/http";
             </amexio-tab>
             <amexio-tab title="Live">
                 <p align="center">Amexio Sandbox</p>
-                <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-simple-grid?embed=1&file=app/grid/simplegrid/simplegrid.demo.html&view=editor"></iframe>
+                <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-grid-with-toolbar?embed=1&file=app/grid/gridwithtoolbar/gridwithtoolbar.demo.html&view=editor"></iframe>
             </amexio-tab>
         </amexio-tab-view>
     </amexio-body>
 </amexio-card>
   `
 })
-export class SimpleGridDemo {
+export class GridWithToolBarDemo {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
@@ -119,7 +134,7 @@ export class SimpleGridDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/simplegrid/simplegrid.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/gridwithtoolbar/gridwithtoolbar.html',{responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -127,7 +142,7 @@ export class SimpleGridDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/simplegrid/simplegrid.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/gridwithtoolbar/gridwithtoolbar.text',{responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
