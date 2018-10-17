@@ -681,7 +681,7 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
-            "badge": "7",
+            "badge": "8",
             "children": [
                 {
                     "text": "D3 Charts",
