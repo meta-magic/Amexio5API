@@ -1,8 +1,8 @@
 /**
  * Created by ankita on 11/10/18.
  */
-import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditcard/creditcardmodel.component';
 
 @Component({
@@ -59,26 +59,16 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
              <br/>
-             <amexio-card
-             [header]="true"
-             [footer]="false">
-                 <amexio-header>
-                     Model for Credit Card
-                 </amexio-header>
-                 <amexio-body>
-                     <b>Model</b>:
-                     <br>
-                     owner: string;
-                     <br>
-                     cvv: number;
-                     <br>
-                     cardnumber: string;
-                     <br>
-                     expMonth: string;
-                     <br>
-                     expYear: string;
-                 </amexio-body>
-         </amexio-card>
+             <amexio-datagrid title="Model for Credit card" [enable-column-fiter]="false"
+             [http-method]="'get'"
+             [http-url]="'assets/apireference/forms/creditcard.json'"
+             [data-reader]="'model'"
+             [enable-data-filter]="false" >
+<amexio-data-table-column [width]="50" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Name'"></amexio-data-table-column>
+<amexio-data-table-column [width]="50" [data-index]="'datatype'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Datatype'"></amexio-data-table-column>
+</amexio-datagrid>
           </amexio-tab>
           
           <amexio-tab title="Source">
@@ -110,11 +100,11 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
     </amexio-card>
   `
 })
-export class CreditCardDemo{
+export class CreditCardDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  asyncFlag : boolean;
+  asyncFlag: boolean;
   refreshDialogue: boolean;
   creditcard: creditcardtemp;
   constructor(private http: HttpClient) {
@@ -133,7 +123,7 @@ export class CreditCardDemo{
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/creditcard/form.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/creditcard/form.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -141,7 +131,7 @@ export class CreditCardDemo{
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/creditcard/form.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/creditcard/form.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -154,24 +144,24 @@ export class CreditCardDemo{
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 
-    refreshData() {
-      this.refreshDialogue = !this.refreshDialogue;
-    }
-  
+  refreshData() {
+    this.refreshDialogue = !this.refreshDialogue;
   }
-  export class creditcardtemp {
-    
-    owner = 'ABC';
-    cvv = '123';
-    cardnumber='4444444444444444';
-    expMonth='01';
-    expYear='2020'
 
-  }
+}
+export class creditcardtemp {
+
+  owner = 'ABC';
+  cvv = '123';
+  cardnumber = '4444444444444444';
+  expMonth = '01';
+  expYear = '2020'
+
+}
 
