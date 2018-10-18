@@ -15,7 +15,7 @@
         [auto-dismiss-msg]="true"
         [auto-dismiss-msg-interval]="6000">
 
-        <ng-template #amexioNotificationTemp >
+        <ng-template #amexioNotificationTemp let-data="data">
           <amexio-row>
             <amexio-column size="2">
               <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
@@ -23,7 +23,7 @@
             </amexio-column>
             <amexio-column size="8">
               <amexio-label size="small-bold" font-color="white" > Warning Message </amexio-label><br/>
-              <amexio-label size="small" font-color="white" >There are unsaved changes</amexio-label><br/>
+              <amexio-label size="small" font-color="white" >{{data}}</amexio-label><br/>
             </amexio-column>
 
           </amexio-row>
@@ -52,11 +52,11 @@
         [background-color]="'yellow'"
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="4000">
-        <ng-template #amexioNotificationTemp >
+        <ng-template   #amexioNotificationTemp let-data="data" >
           <amexio-box [box-width]="'350px'" >
             <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
             </amexio-image> &nbsp;&nbsp;
-            <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>
+            <amexio-label size="small-bold" [badge]=7 font-color="black"> {{data}}</amexio-label>
           </amexio-box>
         </ng-template>
       </amexio-notification>
@@ -72,7 +72,7 @@
         [background-color]="'red'"
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="4000">
-        <ng-template #amexioNotificationTemp >
+        <ng-template   #amexioNotificationTemp let-data="data" >
           <amexio-row>
             <amexio-column size="2">
               <amexio-image [icon-class]="'	fa fa-times-circle-o'" style="font-size: 25px;">
@@ -100,7 +100,7 @@
         [background-color]="'green'"
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="4000">
-        <ng-template #amexioNotificationTemp >
+        <ng-template   #amexioNotificationTemp let-data="data" >
           <amexio-row>
             <amexio-column size="2">
               <amexio-image [icon-class]="'	fa fa-check'" style="font-size: 25px;">
@@ -108,7 +108,7 @@
             </amexio-column>
             <amexio-column size="8">
               <amexio-label size="small-bold" font-color="white" >Success Message </amexio-label>
-              <amexio-label font-color="white" > Order Submitted </amexio-label>
+              <amexio-label font-color="white" > {{data}} </amexio-label>
             </amexio-column>
           </amexio-row>
         </ng-template>
@@ -126,11 +126,11 @@
         [foreground-color]="'white'"
         [auto-dismiss-msg]="false "
         [auto-dismiss-msg-interval]="4000">
-        <ng-template #amexioNotificationTemp >
+        <ng-template   #amexioNotificationTemp let-data="data" >
           <amexio-box>
             <amexio-image [icon-class]="'	fa fa-check-square-o'" style="font-size: 25px;">
             </amexio-image> &nbsp;&nbsp;
-            <amexio-label font-color="white">Event Registered</amexio-label>
+            <amexio-label font-color="white">{{data}}</amexio-label>
           </amexio-box>
         </ng-template>
       </amexio-notification>
@@ -147,7 +147,7 @@
         [foreground-color]="'black'"
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="4000">
-        <ng-template #amexioNotificationTemp >
+        <ng-template   #amexioNotificationTemp let-data="data" >
           <amexio-row>
             <amexio-column size="2">
               <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
@@ -155,7 +155,7 @@
             </amexio-column>
             <amexio-column size="8">
               <amexio-label size="small-bold" font-color="white" >Worning Message </amexio-label><br/>
-              <amexio-label size="small" font-color="white" >There are unsaved changes</amexio-label><br/>
+              <amexio-label size="small" font-color="white" >{{data}}</amexio-label><br/>
             </amexio-column>
           </amexio-row>
         </ng-template>
@@ -175,10 +175,10 @@
         [auto-dismiss-msg]="false"
         [auto-dismiss-msg-interval]="6000">
 
-        <ng-template #amexioNotificationTemp >
+        <ng-template   #amexioNotificationTemp let-data="data" >
           <amexio-box padding="true" [box-width]="'225px'">
             <amexio-label size="medium-bold">Cookies Policy</amexio-label><br/>
-            <amexio-label>We use cookies to help our site work, to understand how it is used and analytics cookies to learn more and track the website's performance. By continuing to use this site,you accept our use of cookies.</amexio-label><br/>
+            <amexio-label>{{data}}</amexio-label><br/>
             <br/>
             <amexio-button [label]="'Accept & Close'"
                            [type]="'theme-color'"

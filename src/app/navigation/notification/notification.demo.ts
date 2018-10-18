@@ -33,7 +33,7 @@ import {HttpClient} from "@angular/common/http";
                       [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="6000">
 
-                      <ng-template #amexioNotificationTemp >
+                      <ng-template #amexioNotificationTemp let-data="data">
                         <amexio-row>
                           <amexio-column size="2">
                             <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
@@ -41,7 +41,7 @@ import {HttpClient} from "@angular/common/http";
                           </amexio-column>
                           <amexio-column size="8">
                             <amexio-label size="small-bold" font-color="white" > Warning Message </amexio-label><br/>
-                            <amexio-label size="small" font-color="white" >There are unsaved changes</amexio-label><br/>
+                            <amexio-label size="small" font-color="white" >{{data}}</amexio-label><br/>
                           </amexio-column>
 
                         </amexio-row>
@@ -70,11 +70,11 @@ import {HttpClient} from "@angular/common/http";
                       [background-color]="'yellow'"
                       [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="6000">
-                      <ng-template #amexioNotificationTemp >  
+                      <ng-template #amexioNotificationTemp let-data="data">  
                             <amexio-box [box-width]="'350px'" >
                               <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
                               </amexio-image> &nbsp;&nbsp;
-                              <amexio-label size="small-bold" [badge]=7 font-color="black"> We have to update security policy</amexio-label>
+                              <amexio-label size="small-bold" [badge]=7 font-color="black"> {{data}}</amexio-label>
                             </amexio-box>
                       </ng-template>
                     </amexio-notification> 
@@ -139,7 +139,7 @@ import {HttpClient} from "@angular/common/http";
                       [background-color]="'green'"
                       [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
-                      <ng-template #amexioNotificationTemp >
+                      <ng-template #amexioNotificationTemp let-data="data">
 
                         <amexio-row>
                           <amexio-column size="2">
@@ -148,7 +148,7 @@ import {HttpClient} from "@angular/common/http";
                           </amexio-column>
                           <amexio-column size="8">
                             <amexio-label size="small-bold" font-color="white" >Success Message </amexio-label>
-                            <amexio-label font-color="white" > Order Submitted </amexio-label>
+                            <amexio-label font-color="white" > {{data}}</amexio-label>
                           </amexio-column>
                         </amexio-row>
                         
@@ -179,13 +179,13 @@ import {HttpClient} from "@angular/common/http";
                       [foreground-color]="'white'"
                       [auto-dismiss-msg]="true "
                       [auto-dismiss-msg-interval]="4000">
-                      <ng-template #amexioNotificationTemp >
+                      <ng-template #amexioNotificationTemp let-data="data">
 
 
                         <amexio-box   >
                           <amexio-image [icon-class]="'	fa fa-check-square-o'" style="font-size: 25px;">
                           </amexio-image> &nbsp;&nbsp;
-                          <amexio-label font-color="white">Event Registered</amexio-label>
+                          <amexio-label font-color="white">{{data}}</amexio-label>
                           
                         </amexio-box>
                         
@@ -218,10 +218,10 @@ import {HttpClient} from "@angular/common/http";
                       [auto-dismiss-msg]="false"
                       [auto-dismiss-msg-interval]="6000">
 
-                      <ng-template #amexioNotificationTemp >
+                      <ng-template #amexioNotificationTemp let-data="data">
                         <amexio-box padding="true" [box-width]="'225px'">
                           <amexio-label size="medium-bold">Cookies Policy</amexio-label><br/>
-                          <amexio-label>We use cookies to help our site work, to understand how it is used and analytics cookies to learn more and track the website's performance. By continuing to use this site,you accept our use of cookies.</amexio-label><br/>
+                          <amexio-label>{{data}}</amexio-label><br/>
                           <br/>
                           <amexio-button [label]="'Accept & Close'"
                                          [type]="'theme-color'"
@@ -309,23 +309,23 @@ export class NotificationDemo {
 
 
   verticalLeftNotification(){
-    this.verticalLeftMessageArray.push('Welcome To Amexio!!!')
+    this.verticalLeftMessageArray.push('There are unsaved changes')
   }
   verticalCenterNotification(){
-    this.verticalCenterMessageArray.push('top Center Notification!!!')
+    this.verticalCenterMessageArray.push('We have to update security policy')
   }
   verticalRightNotification(){
-    this.verticalRightMessageArray.push('top Right Notification!!!')
+    this.verticalRightMessageArray.push('top Right Notification!!!');
   }
 
   horizontalLeftNotification(){
-    this.horizontalLeftMessageArray.push('bottom Left Notification!!!')
+    this.horizontalLeftMessageArray.push('Order Submitted ')
   }
   horizontalCenterNotification(){
-    this.horizontalCenterMessageArray.push('bottom Center Notification!!!')
+    this.horizontalCenterMessageArray.push('Event Registered')
   }
   horizontalRightNotification(){
-    this.horizontalRightMessageArray.push('bottom Right Notification!!!')
+    this.horizontalRightMessageArray.push('We use cookies to help our site work, to understand how it is used and analytics cookies to learn more and track the websites performance. By continuing to use this site,you accept our use of cookies.')
   }
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
