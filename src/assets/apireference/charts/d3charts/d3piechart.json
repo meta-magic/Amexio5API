@@ -10,7 +10,6 @@
             "type": "string",
             "default": ""
         },
-
         {
             "name": "width",
             "description": "Width of chart",
@@ -45,7 +44,8 @@
             "version": "0.0.1  Onwards",
             "type": "boolean",
             "default": "false"
-        },     {
+        },
+        {
             "name": "http-url",
             "description": "REST url for fetching data.",
             "version": "0.0.4 Onwards",
@@ -78,6 +78,13 @@
             "description": "sets  target for chart when drillable property used",
             "version": "0.0.6 Onwards",
             "type": "number",
+            "default": ""
+        },
+        {
+            "name": "drillable-data",
+            "description": "Arrays of keys provided for chart, when drillable property used.",
+            "version": "0.0.6 Onwards",
+            "type": "any",
             "default": ""
         }
     ],

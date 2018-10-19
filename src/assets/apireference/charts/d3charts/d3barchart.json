@@ -10,7 +10,6 @@
             "type": "string",
             "default": ""
         },
-
         {
             "name": "width",
             "description": "Width of chart",
@@ -76,16 +75,23 @@
         },
         {
             "name": "level",
-            "description": "sets level for chart when drillable property used",
+            "description": "Sets level for chart when drillable property used",
             "version": "0.0.6 Onwards",
             "type": "number",
             "default": ""
         },
         {
             "name": "target",
-            "description": "sets  target for chart when drillable property used",
+            "description": "Sets  target for chart when drillable property used",
             "version": "0.0.6 Onwards",
             "type": "number",
+            "default": ""
+        },
+        {
+            "name": "drillable-data",
+            "description": "Arrays of keys provided for chart, when drillable property used.",
+            "version": "0.0.6 Onwards",
+            "type": "any",
             "default": ""
         }
     ],
