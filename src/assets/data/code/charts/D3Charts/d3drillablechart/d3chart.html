@@ -1,32 +1,78 @@
 
-<amexio-drillable> 
-   <amexio-d3-chart-bar 
-       [title]="'Bar Chart'" 
-       [level]=1
-       [target]=2
-       [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/countrychart/findall'" 
-       [http-method]="'get'" 
-       [drillabledatakey]= "drillabledata"
-       [color] = "userDefineColors">
-  </amexio-d3-chart-bar> 
- 
-  <amexio-d3-chart-pie 
-        [title]="'Pie Chart'"
-        [level]=2
-        [target]=3
-        [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/state/findbycountry'" 
-        [http-method]="'post'" 
-        [drillabledatakey]= "drillabledata"
-        [color] = "userDefineColors">
- </amexio-d3-chart-pie>  
- 
- <amexio-d3-chart-donut
-      [title]="'Donut Chart'" 
-      [level]=3
-      [target]=4
-      [http-url]="'https://uat.amexio.org:8991/rest-sample-app/api/city/findbystate/ '" 
-      [http-method]="'post'" 
-      [drillabledatakey]= "drillabledata"
-      [color] = "userDefineColors">
- </amexio-d3-chart-donut>  
- </amexio-drillable>
+<!-- Drillable Property with Different Levels -->
+
+<amexio-drillable>
+
+<amexio-d3-chart-pie [title] = "'Country Chart'" 
+[http-url] = "'https://restapi.amexio.org:8991/rest-sample-app/api/countrychart/findall'" 
+[http-method] = "'get'" 
+[level] = 1
+[target] = 2
+[drillable-data] = "drillabledata"
+[color] = "barchartcolor">
+</amexio-d3-chart-pie> 
+
+<amexio-d3-chart-bar
+[title] = "'State Population Chart'" 
+[http-url] = "'https://restapi.amexio.org:8991/rest-sample-app/api/state/findbycountry'" 
+[http-method] = "'post'" 
+[color] = "barchartcolor"
+[drillable-data] = "drillabledata"
+[level] = 2
+[target] = 3>
+</amexio-d3-chart-bar>   
+
+<amexio-d3-chart-donut [title] = "'City Chart '"     
+[http-url] ="'https://restapi.amexio.org:8991/rest-sample-app/api/city/findbystate'" 
+[http-method] = "'post'" 
+[color] = "barchartcolor"
+[level] = 3
+[target] = 4
+[drillable-data] = "drillabledata">
+</amexio-d3-chart-donut>
+
+<amexio-d3-chart-donut
+[title] = "'Village Chart'" 
+[http-url] = "'https://restapi.amexio.org:8991/rest-sample-app/api/village/findbycity'" 
+[http-method] = "'post'" 
+[color] = "barchartcolor"
+[drillable-data] = "drillabledata"
+[level] = 4
+[target] = 5>
+</amexio-d3-chart-donut>
+
+</amexio-drillable>
+
+<!-- Drillable Property With Same Levels -->
+
+<amexio-drillable>
+
+<amexio-d3-chart-bar [title]="'Country Chart'" 
+[http-url] ="'https://restapi.amexio.org:8991/rest-sample-app/api/countrychart/findall'" 
+[http-method]="'get'" 
+[level] = 1
+[target] = 2
+[drillable-data] = "drillabledata"
+[color] = "barchartcolor">
+</amexio-d3-chart-bar> 
+            
+<amexio-d3-chart-bar
+[title] ="'state Chart'" 
+[http-url] ="'https://restapi.amexio.org:8991/rest-sample-app/api/state/findbycountry'" 
+[http-method] ="'post'" 
+[color] = "barchartcolor"
+[drillable-data]= "drillabledata"
+[level] = 2
+[target] = 3>
+</amexio-d3-chart-bar>   
+     
+<amexio-d3-chart-bar [title]="'Litercy Chart '"     
+[http-url] = "'https://restapi.amexio.org:8991/rest-sample-app/api/state/findbycountryliteracy'" 
+[http-method] = "'post'" 
+[color] = "barchartcolor"
+[level] = 2
+[target] = 3
+[drillable-data] = "drillabledata">
+</amexio-d3-chart-bar> 
+
+</amexio-drillable>  
