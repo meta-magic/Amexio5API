@@ -658,14 +658,14 @@
             "badge": "2",
             "children": [
                 {
-                    "text": "Drillable with Single Target",
+                    "text": "Single Target",
                     "icon": "fa fa-bar-chart fa-fw",
                     "link": "drillable-with-single-target-demo",
                     "badge": "New"
 
                 },
                 {
-                    "text": "Drillable with Multiple Target",
+                    "text": "Multiple Targets",
                     "icon": "fa fa-bar-chart fa-fw",
                     "link": "drillable-with-multiple-target-demo",
                     "badge": "New"
