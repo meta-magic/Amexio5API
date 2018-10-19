@@ -41,6 +41,9 @@
       path: 'checkboxgroup-demo', loadChildren: './forms/checkboxgroup/checkboxgroup.demo.module#CheckBoxGroupDemoModule'
     },
     {
+      path: 'chips-demo', loadChildren: './forms/chips/chips.demo.module#ChipsDemoModule'
+    },
+    {
       path: 'radiogroup-demo', loadChildren: './forms/radiogroup/radiogroup.demo.module#RadioGroupDemoModule'
     },
     {
