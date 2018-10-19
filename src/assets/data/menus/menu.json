@@ -673,6 +673,11 @@
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-bar"
+                        },  {
+                            "text": "Combo Chart",
+                            "icon": "fa fa-area-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",

@@ -4,10 +4,7 @@
     "selector": "<amexio-drillable>",
     "properties": [
         {
-            "name": "drillabledatakey",
-            "version": "0.0.6 Onwards",
-            "description": "Sets  drillable key to chart",
-            "type": "any",
-            "default": ""
+            "name": "Charts supporting Drill down Property",
+            "description": "<amexio-d3-chart-bar>, <amexio-d3-chart-pie>, <amexio-d3-chart-donut>"
         }           
     ]}
