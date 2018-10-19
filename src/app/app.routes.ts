@@ -406,7 +406,7 @@
       path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
     }, 
     {
-      path: 'amexio-d3-chart-combo', loadChildren: './charts/D3charts/d3barchart/d3combochart.demo.module#D3ComboChartDemoModule'
+      path: 'amexio-d3-chart-combo', loadChildren: './charts/D3charts/d3combochart/d3combochart.demo.module#D3ComboChartDemoModule'
     },
     {
       path: 'amexio-d3-chart-bar-stack', loadChildren: './charts/D3charts/d3barstackchart/d3barstackchart.demo.module#D3BarStackChartDemoModule'
