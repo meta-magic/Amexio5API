@@ -123,8 +123,8 @@ export class ChipsDemo {
         label: "Parking-Area",
         closable: false
       }, {
-        icon: 'fa fa-swimming-pool',
-        label: "Gym",
+        icon: 'fa fa-ambulance',
+        label: "Emergency",
         closable: true
       }
       ]
