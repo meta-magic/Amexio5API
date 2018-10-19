@@ -1,0 +1,30 @@
+export class AmexioD3ComboChartDemoComponent implements OnInit {
+
+  barData: any;
+  userDataSource: any;
+
+  ngOnInit() {
+   this.barData =  [
+    ['State', 'Rice Production', 'Rice Export'],
+    ['Andhra Pradesh', 600, 50],
+    ['Kerala', 500, 100],
+    ['Tamil Nadu', 400, 350],
+    ['Assam', 250, 200],
+    ['Maharshtra', 300, 250]
+  ];
+        
+  }
+   
+  onDefaultChartClick(event: any) {
+    this.userDataSource = event;
+  }
+
+  onDefaultLineClick(event: any) {
+    this.userDataSource = event;
+  }
+
+  onUserDefineLegendClick(event: any) {
+    this.userDataSource = event;
+  }
+
+} 

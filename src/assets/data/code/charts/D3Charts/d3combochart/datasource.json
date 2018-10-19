@@ -1,0 +1,9 @@
+Rice Production in India
+[
+    ['State', 'Rice Production', 'Rice Export'],
+    ['Andhra Pradesh', 600, 50],
+    ['Kerala', 500, 100],
+    ['Tamil Nadu', 400, 350],
+    ['Assam', 250, 200],
+    ['Maharshtra', 300, 250]
+  ]
