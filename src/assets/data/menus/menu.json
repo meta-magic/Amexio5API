@@ -655,17 +655,21 @@
         {
             "text": "Drillable Charts",
             "icon": "fa fa-bar-chart fa-fw",
-            "badge": "New",
+            "badge": "2",
             "children": [
                 {
                     "text": "Drillable with Single Target",
                     "icon": "fa fa-bar-chart fa-fw",
-                    "link": "drillable-with-single-target-demo"
+                    "link": "drillable-with-single-target-demo",
+                    "badge": "New"
+
                 },
                 {
                     "text": "Drillable with Multiple Target",
                     "icon": "fa fa-bar-chart fa-fw",
-                    "link": "drillable-with-multiple-target-demo"
+                    "link": "drillable-with-multiple-target-demo",
+                    "badge": "New"
+
                 }
             ]        },
         {
