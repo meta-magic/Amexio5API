@@ -20,7 +20,7 @@ import {HttpClientModule} from "@angular/common/http";
         <amexio-body>
           <p>  Apache License
             Version 2.0, January 2004
-            http://www.apache.org/licenses/</p>
+            https://api.amexio.org/api/license.html</p>
 
 
           <p><b>TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION</b></p>

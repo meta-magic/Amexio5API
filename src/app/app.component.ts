@@ -136,10 +136,10 @@ this.amexiotechmenus =  [
   "text": "Case Studies",
   "icon": "fa fa-clone fa-fw",
   "submenus": [
-    {"text":"Shopping Portal","link":"http://amexio.org/demo/se/v4/shoppingapp/"},
-    {"text":"US Election Results","link":"http://amexio.org/demo/se/v4/pollingapp/"},
-    {"text":"Insurance Portal","link":"http://amexio.org/demo/se/v4/digitalBuzaar/"},
-    {"text":"Movie Portal","link":"http://www.amexio.org/tecmflix2"},
+    {"text":"Shopping Portal","link":"https://demo.amexio.org/se/shoppingportal/#/home"},
+    {"text":"US Election Results","link":"https://demo.amexio.org/se/us-election/ "},
+    {"text":"Insurance Portal","link":"https://demo.amexio.org/se/insuranceportal/#/home"},
+    {"text":"Movie Portal","link":"https://demo.amexio.org/ee/"},
     {"text":"NpmStats","link":"https://www.npmstats.com/"}
   ]
 },
