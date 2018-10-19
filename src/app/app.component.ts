@@ -50,31 +50,36 @@ this.amexiotechmenus =  [
   {
     "text" : "Home",
     "icon": "fa fa-home fa-fw fa-lg ",
-    "link" : 'http://amexio.org',
+    "link" : 'http://api.amexio.org',
     "submenus": [
       {
+        "text": "Version 5.2",
+        "link": "../v5.2/index.html"
+      },
+      {
         "text": "Version 5.1",
-        "link": "https://amexio.org/api/v5.1/index.html#/getting-started"
+        "link": "../v5.1/index.html"
       },
       {
         "text": "Version 5.0",
-        "link": "https://amexio.org/api/v5.0/#/getting-started"
-      },{
-      "text": "Version 4.2",
-      "link": "https://amexio.org/api/v4.2/#/getting-started"
-    },{
+        "link": "../v5.0/index.html"
+      },
+      {
       "text": "Version 4.0",
-      "link": "https://amexio.org/api/v4.1/#/getting-started"
-    },{
+      "link": "../v4/index.html"
+      },
+      {
       "text": "Version 3.0",
-      "link": "https://amexio.org/api/v3.2/#/getting-started"
-    },{
+      "link": "../v3/index.html"
+      },
+      {
       "text": "Version 2.0",
-      "link": "https://amexio.org/showcaseapp/v2/index.html"
-    },{
+      "link": "../v2/index.html"
+      },
+      {
       "text": "Version 1.0",
-      "link": "https://amexio.org/showcaseapp/v1/index.html"
-    }
+      "link": "../v1/index.html"
+      }
     ]
   },
   {
