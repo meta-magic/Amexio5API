@@ -12,7 +12,7 @@ export class AmexioD3DrillableChartDemoComponent implements OnInit {
   typeScriptCode: string;
   copyMsgArray: any[];
   drillabledata:any;
-  userDefineColors: any;
+  barchartcolor: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -21,11 +21,11 @@ export class AmexioD3DrillableChartDemoComponent implements OnInit {
   ngOnInit() {
      this.drillabledata=["label","value","name"];
     
-     this.userDefineColors =
+     this.barchartcolor =
       [
         "#4040a1",
         "#e06377",
-        " #7e4a35",
+        "#7e4a35",
         "#6b5b95",
         "#feb236",
         "#d64161",
