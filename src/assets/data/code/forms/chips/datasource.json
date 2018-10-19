@@ -1,0 +1,24 @@
+{
+    "sampledata": [
+        {
+            "icon": "fa fa-wifi",
+            "label": "Wifi",
+            "closable": true
+        },
+        {
+            "icon": "fa fa-download",
+            "label": "Download",
+            "closable": true
+        },
+        {
+            "icon": "fa fa-refresh",
+            "label": "Refresh",
+            "closable": true
+        },
+        {
+            "icon": "fa fa-bookmark",
+            "label": "Bookmark",
+            "closable": true
+        }
+    ]
+}

@@ -16,74 +16,15 @@ import { HttpClient } from "@angular/common/http";
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
-
-              <amexio-column [size]="6">
-                <amexio-card [header]="true">
-                  <amexio-header>
-                    Vertical Checkbox With Http Url
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-checkbox-group [field-label]="'Vertical Checkbox'" name="language"
-                                           [data-reader]="'data'"
-                                           [display-field]="'language'"
-                                           [value-field]="'checked'"
-                                           [http-method]="'get'"
-                                           [http-url]="'assets/data/componentdata/checkgroup.json'">
-                    </amexio-checkbox-group>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="6">
-                <amexio-card header="true">
-                  <amexio-header>
-                     Horizontal Checkbox
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
-                                           [data-reader]="'response.data'"
-                                           [display-field]="'language'"
-                                           [horizontal]="true"
-                                           [value-field]="'checked'"
-                                           (onSelection)="selectedCheckboxgroup($event)"
-                                           [data]="checkboxGroupdata">
-                    </amexio-checkbox-group>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
-
-            <amexio-row>
-              <amexio-column size="6">
-                <amexio-card header="true">
-                  <amexio-header>
-                    Horizontal Checkbox with disabled single item.
-                  </amexio-header>
-                  <amexio-body>
-                    <amexio-checkbox-group [field-label]="'Horizontal Checkbox'" name="language"
-                                           [data-reader]="'response.data'"
-                                            [display-field]="'language'"
-                                           [horizontal]="true"
-                                           [value-field]="'checked'"
-                                           [data]="checkboxGroupdatadisabled">
-                    </amexio-checkbox-group>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-              <amexio-column size="6">
+             
+              <amexio-column size="12">
               <amexio-card header="true">
                 <amexio-header>
-                  Horizontal Checkbox with disabled all item.
+                  Chips
                 </amexio-header>
                 <amexio-body>
-                  <amexio-checkbox-group [field-label]="'Horizontal Checkbox with disable'" name="language"
-                                         [data-reader]="'response.data'"
-                                         [display-field]="'language'"
-                                         [horizontal]="true"
-                                         name="disabledcheckbox"
-                                         [disabled]="true"
-                                         [value-field]="'checked'"
-                                         [data]="checkboxGroupdatadisabledallitem">
-                  </amexio-checkbox-group>
+                <amexio-chips [data] = "sampledata" (selectedchipData)="onLabelClick($event)"></amexio-chips>
+                <pre><code>{{emitdata | json}}</code></pre>
                 </amexio-body>
               </amexio-card>
             </amexio-column>
@@ -149,7 +90,7 @@ import { HttpClient } from "@angular/common/http";
         </amexio-tab-view>
       </amexio-body>
     </amexio-card>
-    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
+   
 
   `
 })
@@ -161,45 +102,36 @@ export class ChipsDemo {
     checkboxGroupdata: any;
     checkboxGroupdatadisabled: any;
     checkboxGroupdatadisabledallitem: any;
-    //selected Checkbox event
-    selectedCheckboxgroup(data: any) {
-        //make some operation here
-    }
+    sampledata: any;
+    emitdata: any;
     constructor(private http: HttpClient) {
-        this.checkboxGroupdata = {
-            response: {
-                data: [{
-                    language: 'Angular 2', checked: false, disabled: false
-                }, {
-                    language: 'JAVA', checked: true, disabled: false
-                }, {
-                    language: 'C++', checked: false, disabled: false
-                }]
-            }
-        };
-        this.checkboxGroupdatadisabled = {
-            response: {
-                data: [{
-                    language: 'Angular 2', checked: false, disabled: false
-                }, {
-                    language: 'JAVA', checked: true, disabled: true
-                }, {
-                    language: 'C++', checked: false, disabled: false
-                }]
-            }
-        };
-        this.checkboxGroupdatadisabledallitem = {
-            response: {
-                data: [{
-                    language: 'Angular 2', checked: false
-                }, {
-                    language: 'JAVA', checked: true
-                }, {
-                    language: 'C++', checked: false
-                }]
-            }
-        };
+      this.sampledata = [{
+        icon: 'fa fa-camera',
+        label: 'Camera',
+        closable: true
+      },
+      {
+        icon: 'fa fa-fire-extinguisher',
+        label: "Fire-Safety",
+        closable: false
+      }, {
+        icon: 'fa fa-wifi',
+        label: "Wifi",
+        closable: true
+      }, {
+        icon: 'fa fa-taxi',
+        label: "Parking-Area",
+        closable: false
+      }, {
+        icon: 'fa fa-swimming-pool',
+        label: "Gym",
+        closable: true
+      }
+      ]
         this.getHtmlAndTypeScriptCode();
+    }
+    onLabelClick(event: any){
+      this.emitdata = event;
     }
 
     //TO LOAD HTML AND TYPESCRIPT CODE
@@ -223,7 +155,7 @@ export class ChipsDemo {
             this.typeScriptCode = responseTs;
         });
         //TS FILE
-        this.http.get('assets/data/componentdata/chips.json', { responseType: 'text' }).subscribe(data => {
+        this.http.get('assets/data/code/forms/chips/datasource.json', { responseType: 'text' }).subscribe(data => {
             responseData = data;
         }, error => {
         }, () => {
@@ -240,6 +172,7 @@ export class ChipsDemo {
             this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
         }
     }
+
 }
 
 
