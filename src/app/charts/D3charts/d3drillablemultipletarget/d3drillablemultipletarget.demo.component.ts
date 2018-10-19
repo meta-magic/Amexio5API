@@ -3,10 +3,10 @@ import * as d3 from 'd3';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'amexio-d3-drillable-charts-demo',
-  templateUrl: './d3drillablecharts.demo.component.html'
+  selector: 'drillable-with-multiple-target-demo',
+  templateUrl: './d3drillablemultipletarget.demo.component.html'
 })
-export class AmexioD3DrillableChartDemoComponent implements OnInit {
+export class AmexioD3DrillableMultipleTargetDemoComponent implements OnInit {
 
   htmlCode: string;
   typeScriptCode: string;

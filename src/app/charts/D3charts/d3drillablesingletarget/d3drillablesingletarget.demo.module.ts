@@ -5,18 +5,18 @@ import {NgModule} from "@angular/core";
 import {SharedModule} from "../../../shared.module";
 import {AmexioChartsModule, AmexioWidgetModule} from "amexio-ng-extensions";
 import {HttpClientModule} from "@angular/common/http";
-import { AmexioD3DrillableChartDemoComponent } from "./d3drillablecharts.demo.component";
+import { AmexioD3DrillableSingleTargetDemoComponent } from "./d3drillablesinglecharts.demo.component";
 import { AmexioChartD3Module } from "amexio-chart-d3";
 import * as d3 from 'd3';
 @NgModule({
-  declarations: [AmexioD3DrillableChartDemoComponent],
+  declarations: [AmexioD3DrillableSingleTargetDemoComponent],
   imports: [CommonModule, FormsModule,
      HttpClientModule,SharedModule,AmexioWidgetModule,
       RouterModule.forChild([{
-    path: '', component: AmexioD3DrillableChartDemoComponent, pathMatch: 'full'
+    path: '', component: AmexioD3DrillableSingleTargetDemoComponent, pathMatch: 'full'
   }]), AmexioChartD3Module],
   providers: []
 })
-export class D3DrillableChartDemoModule {
+export class D3DrillableSingleTargetDemoModule {
 }
 

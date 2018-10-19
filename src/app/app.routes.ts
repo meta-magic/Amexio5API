@@ -425,7 +425,10 @@
       path: 'amexio-d3-chart-multiseries', loadChildren: './charts/D3charts/d3multiserieschart/d3multiserieschart.demo.module#D3MultiSeriesChartDemoModule'
     }, 
     {
-      path: 'amexio-d3-drillable-charts-demo', loadChildren: './charts/D3charts/d3drillablecharts/d3drillablecharts.demo.module#D3DrillableChartDemoModule'
+      path: 'drillable-with-single-target-demo', loadChildren: './charts/D3charts/d3drillablesingletarget/d3drillablesingletarget.demo.module#D3DrillableSingleTargetDemoModule'
+    },
+    {
+      path: 'drillable-with-multiple-target-demo', loadChildren: './charts/D3charts/d3drillablemultipletarget/d3drillablemultipletarget.demo.module#D3DrillableMultipleTargetDemoModule'
     }, 
     
   ];

@@ -656,8 +656,18 @@
             "text": "Drillable Charts",
             "icon": "fa fa-bar-chart fa-fw",
             "badge": "New",
-            "link": "amexio-d3-drillable-charts-demo"
-        },
+            "children": [
+                {
+                    "text": "Drillable with Single Target",
+                    "icon": "fa fa-bar-chart fa-fw",
+                    "link": "drillable-with-single-target-demo"
+                },
+                {
+                    "text": "Drillable with Multiple Target",
+                    "icon": "fa fa-bar-chart fa-fw",
+                    "link": "drillable-with-multiple-target-demo"
+                }
+            ]        },
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
