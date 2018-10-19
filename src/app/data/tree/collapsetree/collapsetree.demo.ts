@@ -19,10 +19,18 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                 <amexio-row>
                     <amexio-column size="6">
                         <amexio-card [header]="true" [footer]="true" [footer-align]="'right'">
-                            <amexio-header>
-                            expand all and collapse all function
-                                <amexio-button [label]="text"  [size]="'small'"[type]="'yellow'" (onClick)="expandAlldata(id)"> </amexio-button>
-                           
+                            <amexio-header style="width:100%">
+                            <amexio-toolbar>
+                            <amexio-toolbar-item position-left >
+                              <amexio-button [label]="text"  [size]="'small'"[type]="'yellow'" (onClick)="expandAlldata(id)"> </amexio-button>
+                            </amexio-toolbar-item>
+                            <amexio-toolbar-item position-left >
+                             <amexio-label>
+                             &nbsp;  &nbsp; Expand all and collapse all function
+                             </amexio-label>
+                            </amexio-toolbar-item>
+                            </amexio-toolbar>
+                                
                             </amexio-header>
                             <amexio-body>
                                 <amexio-treeview #id [data-reader]="'item'" [data]="treeLocalExpandData" (nodeClick)="getNodeDataClick($event)">
