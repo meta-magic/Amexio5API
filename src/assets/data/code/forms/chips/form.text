@@ -1,19 +1,29 @@
 export class ChipsDemo {
     constructor(){
     this.sampledata = [{
-        icon: 'fa fa-wifi',
-        label: 'Wifi',
-        closable: true
+        "icon": "fa fa-camera",
+        "label": "Camera",
+        "closable": true
       },
       {
-        icon: 'fa fa-download',
-        label: "Download",
-        closable: true
-      },
-       {
-        icon: 'fa fa-refresh',
-        label: "Refresh",
-        closable: true
+        "icon": "fa fa-fire-extinguisher",
+        "label": "Fire-Safety",
+        "closable": false
+      }, 
+      {
+        "icon": "fa fa-wifi",
+        "label": "Wifi",
+        "closable": true
+      }, 
+      {
+        "icon": "fa fa-taxi",
+        "label": "Parking-Area",
+        "closable": false
+      }, 
+      {
+        "icon": "fa fa-ambulance",
+        "label": "Emergency",
+        "closable": true
       }
       ]
 
