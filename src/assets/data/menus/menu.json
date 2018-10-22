@@ -357,12 +357,7 @@
                         }
                     ]
                 },
-                {
-                    "text": "Data Loading Indicator",
-                    "icon": "fa fa-spinner fa-fw",
-                    "badge": "New",
-                    "link": "amexio-spinner-demo"
-                },
+                
                 {
                     "text": "Notification",
                     "icon": "fa fa-comments fa-fw",
@@ -385,6 +380,12 @@
             "badge": "2",
             "icon": "fa fa-database fa-fw",
             "children": [
+                {
+                    "text": "Data Loading Indicator",
+                    "icon": "fa fa-spinner fa-fw",
+                    "badge": "New",
+                    "link": "amexio-spinner-demo"
+                },
                 {
                     "text": "Item Selector",
                     "icon": "fa fa-exchange fa-fw",
