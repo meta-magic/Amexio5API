@@ -22,12 +22,13 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                             <amexio-header style="width:100%">
                             <amexio-toolbar>
                             <amexio-toolbar-item position-left >
-                              <amexio-button [label]="text"  [size]="'small'"[type]="'yellow'" (onClick)="expandAlldata(id)"> </amexio-button>
+                            <i [attr.class]="text" 
+                            (click)="expandAlldata(id)"></i>
                             </amexio-toolbar-item>
                             <amexio-toolbar-item position-left >
-                             <amexio-label>
+                             <label style="margin-top: 0px; font-size: 18px">
                              &nbsp;  &nbsp; Expand all and collapse all function
-                             </amexio-label>
+                             </label>
                             </amexio-toolbar-item>
                             </amexio-toolbar>
                                 
@@ -113,16 +114,16 @@ export class CollapseTreeDemo {
   treeLocalExpandData: any;
   expandSelectedData: any;
 
-  public text: string = "+";
+  public text: string = "fa fa-minus";
   expand: boolean = true;
 
   expandAlldata(id) {
     if (!this.expand) {
       id.expandAll();
-      this.text = "-"
+      this.text = "fa fa-minus"
     } else {
       id.collapseAll();
-      this.text = "+"
+      this.text = "fa fa-plus"
     }
     this.expand = !this.expand;
   }
