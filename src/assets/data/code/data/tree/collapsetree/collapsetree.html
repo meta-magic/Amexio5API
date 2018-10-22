@@ -2,12 +2,10 @@
 
 <!-- Tree with Expand and Collapse function on button Click -->
 
-<amexio-button 
-                [label]="text"  
-                [size]="'small'"
-                [type]="'yellow'" 
-                (onClick)="expandAlldata(treeID)"> 
-</amexio-button>
+<i    
+       [attr.class]="text" 
+       (click)="expandAlldata(id)">
+</i>
                            
 <amexio-treeview 
                     #treeID

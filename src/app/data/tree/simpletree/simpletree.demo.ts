@@ -14,11 +14,12 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
     </amexio-header>
     <amexio-body>
         <p>A Simple Expandable Tree component which create Tree View based on standard datasource attached.</p>
+    
         <amexio-tab-view>
             <amexio-tab title="Demo" active="true">
                 <amexio-row>
-                    <amexio-column size="6">
-                        <amexio-card [header]="true" [body-height]="67">
+                    <amexio-column size="6" [fit]="true">
+                        <amexio-card [header]="true" >
                             <amexio-header>
                                 Simple Tree
                             </amexio-header>
@@ -28,8 +29,8 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                             </amexio-body>
                         </amexio-card>
                     </amexio-column>
-                    <amexio-column size="6" >
-                        <amexio-card [header]="true" [body-height]="67">
+                    <amexio-column size="6" [fit]="true">
+                        <amexio-card [header]="true" >
                             <amexio-header>
                                 Selected Data
                             </amexio-header>
@@ -39,21 +40,32 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                         </amexio-card>
                     </amexio-column>
                 </amexio-row>
-
+               
+                
+                <amexio-card header="true">
+                <amexio-header>
+               Dynamically Changes Tree Data
+                </amexio-header>
+                <amexio-body>
+              
+                <p> Tree JSON data having <b>ParentKey (text)</b> and <b>ChildrenKey (children)</b> , We can change the JSON format Dynamically with giving 
+                input as <b>[display-key]</b> for ParentKey and <b>[child-array-key]</b> for ChildrenKey.
+                </p>
                 <amexio-row>
-                    <amexio-column size="6">
-                        <amexio-card [header]="true" [body-height]="67">
+                    <amexio-column size="6" [fit]="true">
+                        <amexio-card [header]="true" >
                             <amexio-header>
-                               Tree with user define keys
+                               Tree with user define keys 
                             </amexio-header>
                             <amexio-body>
+                           
                                 <amexio-treeview [data-reader]="'customArray'" [display-key]="'demo'" [child-array-key]="'object'"  [data]="customArrayLocalData" (nodeClick)="getCustomNodeData($event)">
                                 </amexio-treeview>
                             </amexio-body>
                         </amexio-card>
                     </amexio-column>
-                    <amexio-column size="6" >
-                        <amexio-card [header]="true" [body-height]="67">
+                    <amexio-column size="6" [fit]="true">
+                        <amexio-card [header]="true" >
                             <amexio-header>
                                 Selected Data
                             </amexio-header>
@@ -63,7 +75,8 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                         </amexio-card>
                     </amexio-column>
                 </amexio-row>
-
+                </amexio-body>
+                </amexio-card>
 
 
             </amexio-tab>
