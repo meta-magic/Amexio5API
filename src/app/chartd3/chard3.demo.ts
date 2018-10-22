@@ -104,7 +104,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
                                        </amexio-d3-chart-multiseries>
                                   </amexio-body>
                                 </amexio-card>
-</amexio-column>
+ </amexio-column>
 
 <amexio-column size="6" [fit]="true">
 <amexio-card [header]="true" [show]="'true'">
@@ -113,15 +113,45 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
         </amexio-header>
         <amexio-body>
         <amexio-d3-chart-barstack 
-        [data]="stackData"
->
-</amexio-d3-chart-barstack> 
+        [data]="stackData">
+        </amexio-d3-chart-barstack> 
 
         </amexio-body>
 </amexio-card>
 </amexio-column>
   </amexio-row>
+----------------------------------
+<amexio-row>
   
+          <amexio-column size="6" [fit]="true">
+                  <amexio-card [header]="true" [show]="'true'">
+                          <amexio-header>
+                                  amexio D3-Horizontal bar chart
+                          </amexio-header>
+                          <amexio-body>
+                          <amexio-d3-chart-bar 
+                          [horizontal]="true" 
+                          [data]="horizontalBarData">
+                   </amexio-d3-chart-bar>
+                          </amexio-body>
+                  </amexio-card>
+          </amexio-column>
+
+          <amexio-column size="6" [fit]="true">
+          <amexio-card [header]="true" [show]="'true'">
+                  <amexio-header>
+                          amexio D3-Combo Chart
+                  </amexio-header>
+                  <amexio-body>
+                          <amexio-d3-combochart
+                                [data]="comboChartData"
+                                [line-data-index]="'Rice Export'">
+                         </amexio-d3-combochart>
+                  </amexio-body>
+          </amexio-card>
+  </amexio-column>
+  </amexio-row>
+
 
   `
 })
@@ -138,9 +168,33 @@ export class ChartD3Demo implements OnInit {
   donutDataColor: any;
   doubleLineData: any;
   multiData: any;
+  comboChartData: any;
+  horizontalBarData: any;
+  
 
   constructor(private http: HttpClient) {
 
+   this.comboChartData = [
+        ['State', 'Rice Production', 'Rice Export'],
+        ['W.B', 600, 50],
+        ['Kerala', 500, 100],
+        ['Goa', 400, 350],
+        ['Assam', 250, 200],
+        ['Punjab', 300, 250],
+        ['Bihar', 400, 380],
+        ['Orissa', 500,200]
+      ];
+
+      this.horizontalBarData =   [
+        ['year', 'production'],
+        ['2011', 300],
+        ['2012', 500],
+        ['2013', 700],
+        ['2014', 400],
+        ['2015', 600],
+        ['2016', 500],
+        ['2017', 200]
+      ];
 
     this.userDefineColors =
       [
