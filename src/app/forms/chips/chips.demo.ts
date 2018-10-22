@@ -23,7 +23,7 @@ import { HttpClient } from "@angular/common/http";
                   Chips
                 </amexio-header>
                 <amexio-body>
-                <amexio-chips [data] = "sampledata" (selectedchipData)="onLabelClick($event)"></amexio-chips>
+                <amexio-chips [data] = "sampledata" (onLabelClick)="onLabelClick($event)" (onCloseClick)="onCloseClick($event)"></amexio-chips>
                 <pre><code>{{emitdata | json}}</code></pre>
                 </amexio-body>
               </amexio-card>
@@ -131,6 +131,10 @@ export class ChipsDemo {
         this.getHtmlAndTypeScriptCode();
     }
     onLabelClick(event: any){
+      this.emitdata = event;
+    }
+
+    onCloseClick(event: any){
       this.emitdata = event;
     }
 

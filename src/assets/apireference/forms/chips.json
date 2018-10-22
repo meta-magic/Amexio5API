@@ -16,7 +16,11 @@
     {
       "name": " onLabelClick",
       "version": "5.3 onwards",
-      "description": "emits particular chip data"
+      "description": "emits particular chip data on click of chip label"
+    },   {
+      "name": " onCloseClick",
+      "version": "5.3 onwards",
+      "description": "emits particular chip data on close click"
     }
   ]
 }
