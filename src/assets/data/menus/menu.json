@@ -323,7 +323,6 @@
         },
         {
             "text": "Form Actions",
-            "badge": "1",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [
                 {
@@ -377,7 +376,7 @@
         },
         {
             "text": "Data",
-            "badge": "2",
+            "badge": "3",
             "icon": "fa fa-database fa-fw",
             "children": [
                 {
