@@ -120,7 +120,6 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
 </amexio-card>
 </amexio-column>
   </amexio-row>
-----------------------------------
 <amexio-row>
   
           <amexio-column size="6" [fit]="true">
