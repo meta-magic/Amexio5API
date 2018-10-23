@@ -36,11 +36,11 @@
     },
     {
       "name": "cardnumber",
-      "datatype": "string"
+      "datatype": "number"
     },
     {
       "name": "expMonth",
-      "datatype": "string"
+      "datatype": "number"
     },
     {
       "name": "expYear",
