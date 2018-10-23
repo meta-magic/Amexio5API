@@ -48,8 +48,10 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                 </amexio-header>
                 <amexio-body>
               
-                <p> Tree JSON data having <b>ParentKey (text)</b> and <b>ChildrenKey (children)</b> , We can change the JSON format Dynamically with giving 
-                input as <b>[display-key]</b> for ParentKey and <b>[child-array-key]</b> for ChildrenKey.
+                <p> By Default Tree consumes standard JSON structure i.e to display node/leaf “Text” Key 
+                should be present in JSON && array with “Children” Key present in JSON. 
+                Now with 5.2.x release Amexio-tree component can consume user defined data structure and 
+                pass what is key for node/leaf and what is key for children array.
                 </p>
                 <amexio-row>
                     <amexio-column size="6" [fit]="true">
