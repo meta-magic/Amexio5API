@@ -105,7 +105,7 @@ this.amexiotechmenus =  [
   "icon": "fa fa-television fa-fw",
   "submenus": [{
     "text": "Component Example",
-    "link": "http://amexio.org/demo/se/v4.1/index.html#/home"
+    "link": "http://demo.amexio.tech/"
   },
     {
     "text": "Pricing",
