@@ -159,8 +159,8 @@ export class creditcardtemp {
 
   owner = 'ABC';
   cvv = 123;
-  cardnumber = '4444444444444444';
-  expMonth = '01';
+  cardnumber = 4444444444444444;
+  expMonth = 2;
   expYear = 2020;
 
 }
