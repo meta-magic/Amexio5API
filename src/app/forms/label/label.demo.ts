@@ -124,7 +124,7 @@ import {HttpClient} from "@angular/common/http";
               </amexio-box>
               </amexio-column>
                 <amexio-column [size]="4">
-                  <amexio-box border-color ="purple" border="all" padding="true" background-color="purple" box-height="100px" box-width="300px">
+                  <amexio-box border-color ="purple" border="all" padding="true" background-color="purple" box-height="100px" box-width="282px">
                     <amexio-text-input field-label="Aadhar No" name="name"
                               place-holder="Enter aadhar card no"
                               icon-feedback="true">
