@@ -23,7 +23,7 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-header>
                   <amexio-body>
                     <amexio-row>
-                      <amexio-video-player path="http://www.amexio.org/showcaseapp/v3/assets/videos/sample_bunny.mp4"></amexio-video-player>
+                      <amexio-video-player path="assets/videos/sample_bunny.mp4"></amexio-video-player>
                     </amexio-row>
                   </amexio-body>
                 </amexio-card>

@@ -30,7 +30,7 @@ import {HttpClient} from "@angular/common/http";
                       <amexio-data-table-column [width]="70" [data-index]="'name_official'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
                         <ng-template #amexioBodyTmpl let-column let-row="row">
                         <span>
-                          <amexio-image [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>&nbsp;{{row.name}} ( {{row.name_official}} )
+                          <amexio-image [path]="'assets/images/flags/flags/'+row.flag_32"></amexio-image>&nbsp;{{row.name}} ( {{row.name_official}} )
                         </span>
                         </ng-template>
                       </amexio-data-table-column>

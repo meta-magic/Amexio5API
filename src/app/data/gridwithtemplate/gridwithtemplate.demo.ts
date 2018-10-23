@@ -144,7 +144,7 @@ import { HttpClient } from "@angular/common/http";
                   <ng-template #amexioBodyTmpl let-column let-row="row">
                       <amexio-label class="datagrid-template">
                           <amexio-label>
-                              <amexio-image [width]="100" [path]="'http://amexio.org/showcaseapp/v3/assets/images/flags/flags/'+row.flag_32"></amexio-image>
+                              <amexio-image [width]="100" [path]="'assets/images/flags/flags/'+row.flag_32"></amexio-image>
                           </amexio-label>
                           <amexio-label>{{row.name}}</amexio-label>
           
