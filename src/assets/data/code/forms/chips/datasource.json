@@ -1,28 +1,76 @@
 {
-   "sampledata" : [{
-        "icon": "fa fa-camera",
-        "label": "Camera",
-        "closable": true
-      },
-      {
-        "icon": "fa fa-fire-extinguisher",
-        "label": "Fire-Safety",
-        "closable": false
-      }, 
-      {
-        "icon": "fa fa-wifi",
-        "label": "Wifi",
-        "closable": true
-      }, 
-      {
-        "icon": "fa fa-taxi",
-        "label": "Parking-Area",
-        "closable": false
-      }, 
-      {
-        "icon": "fa fa-ambulance",
-        "label": "Emergency",
-        "closable": true
-      }
-      ]
+  "sampledatachips": [
+    {
+      "icon": "fa fa-home",
+      "label": "Home",
+      "color": "red",
+      "badge": 4,
+      " closable": true
+    },
+    {
+      "icon": "fa fa-download",
+      "label": "Download",
+      "color": "blue",
+      " badge": 5,
+      " closable": false
+    },
+    {
+      "icon": "fa fa-camera",
+      "label": "Camera",
+      "color": "green",
+      " badge": 6,
+      " closable": true
+    },
+    {
+      "icon": "fa fa-fire-extinguisher",
+      "label": "Fire Extinguisher",
+      "color": "yellow",
+      " badge": 7,
+      " closable": true
+    },
+    {
+      "icon": "fa fa-ambulance",
+      "label": "Emergency",
+      "color": "pink",
+      " badge": 8,
+      " closable": true
     }
+  ],
+  "sampledatachip": [
+    {
+      "icon": "fa fa-linkedin-square",
+      "label": "Linkedin",
+      "color": "red",
+      " badge": 4,
+      " closable": true
+    },
+    {
+      "icon": "fa fa-internet-explorer",
+      "label": "Internet-Explorer",
+      "color": "blue",
+      " badge": 5,
+      " closable": false
+    },
+    {
+      "icon": "fa fa-github",
+      "label": "Github",
+      "color": "green",
+      " badge": 6,
+      " closable": true
+    },
+    {
+      "icon": "fa fa-twitter",
+      "label": "Twitter",
+      "color": "yellow",
+      " badge": 7,
+      " closable": true
+    },
+    {
+      "icon": "fa fa-reddit",
+      "label": "Reddit",
+      "color": "",
+      " badge": 8,
+      " closable": true
+    }
+  ]
+}
