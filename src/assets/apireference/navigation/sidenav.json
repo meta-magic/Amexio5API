@@ -46,8 +46,23 @@
       "type": "any",
       "default": "",
       "description": "Local data for sidenav."
+    } ,
+    {
+      "name": "display-key",
+      "version": "5.2.3 onwards",
+      "type": "any[]",
+      "default": "text",
+      "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+    },
+    {
+      "name": "child-array-key",
+      "version": "5.2.3 onwards",
+      "type": "any[]",
+      "default": "children",
+      "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
     }
   ],
+ 
   "events":[
     {
       "name": "nodeClick",
