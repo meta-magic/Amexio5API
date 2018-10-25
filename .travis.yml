@@ -47,6 +47,7 @@ script:
 - cp -rf amexio.github.io/src/styles/css/* src/assets/themes/
 - npm i amexio.github.io/dist/amexio-ng-extensions.tgz
 - ls -la
+- chmod -R 777 d3.amexio.github.io/amexio-chart-d3.tgz
 - npm i  d3.amexio.github.io/amexio-chart-d3.tgz
 - ng set defaults.styleExt scss
 - ng build --prod
