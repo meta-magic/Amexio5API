@@ -6,9 +6,6 @@ addons:
     - google-chrome
     packages:
     - google-chrome-stable
-env:
-  global:
-    GITHUB_REPO: meta-magic/Amexio5API
 language: node_js
 node_js:
 - '8'
