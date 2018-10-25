@@ -15,7 +15,7 @@ addons:
 
 env:
   global:
-  - GITHUB_REPO: "meta-magic/AMEXIO5API"
+  - GITHUB_REPO: "meta-magic/Amexio5API"
 language: node_js
 node_js:
   - "8"
