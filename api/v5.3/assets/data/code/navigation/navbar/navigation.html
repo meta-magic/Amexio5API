@@ -1,0 +1,62 @@
+<amexio-nav
+  [enable-side-nav-position]="false"
+  [title]="'Amexio'"
+  [logo]="'assets/images/logos/amexio-logo.png'">
+            <amexio-nav-item position-right
+                                      [type]="'link'"
+                                      [title]="'Amexio'"
+                                      (onNavItemClick)="homeLink('http://amexio.tech')">
+            </amexio-nav-item>
+            <amexio-nav-item position-right
+                                      [type]="'textfield'"
+                                      [title]="'Enter your name'" [(ngModel)] = "uname">
+            </amexio-nav-item>
+            <amexio-nav-item position-right
+                                      (onNavItemClick)="onClick('http://amexio.tech')"
+                                      [icon]="'fa fa-bell fa-fw fa-lg'"
+                                      [type]="'button'"
+                                      style="cursor: pointer;">
+            </amexio-nav-item>
+            <amexio-nav-item position-right
+                           [title]="'Settings'"
+                           [type]="'menucontainer'">
+                    <amexio-box background-color="purple" padding="true">
+                      <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+                    </amexio-box>
+                      <amexio-row>
+                        <amexio-column size="5">
+                          <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'">
+                          </amexio-image>
+                        </amexio-column>
+                        <amexio-column size="7">
+                          <amexio-label > John Deo </amexio-label>
+                          <amexio-label > At Paris. </amexio-label>
+                        </amexio-column>
+                      </amexio-row>
+                    <amexio-drop-down-menu-item
+                                      [label]="'Settings'"
+                                      [icon]="'fa fa-cog'"
+                                      [separator]="true"
+                                      (onClick)="onDropDownMenuClick($event)">
+                    </amexio-drop-down-menu-item>
+                    <amexio-drop-down-menu-item
+                                      [label]="'Help Center'"
+                                      [icon]="'fa fa-question-circle'"
+                                      [separator] ="true"
+                                      (onClick)="onDropDownMenuClick($event)">
+                    </amexio-drop-down-menu-item>
+                    <amexio-drop-down-menu-item>
+                      <amexio-button
+                                      [label]="'My Account'"
+                                      [type]="'theme-color'"
+                                      [tooltip]="'My Account'">
+                      </amexio-button>
+                    </amexio-drop-down-menu-item>
+            </amexio-nav-item>
+            <amexio-nav-item position-right *ngFor="let menus of topMenuData"
+                              [type]="'menu'"
+                              [title]="menus.text"
+                              [data]="menus.submenus"
+                              (onNavItemClick)="externalLink($event)">
+            </amexio-nav-item>
+</amexio-nav>

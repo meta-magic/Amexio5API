@@ -1,0 +1,57 @@
+{
+    "name": "Amexio chart legend",
+    "description": "describes chart legend properties",
+    "selector": "<amexio-chart-legend>",
+    "properties": [
+      {
+        "name": "position",
+        "description": "Position of the legend.'bottom' - Below the chart.'top' - Above the chart.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "alignment",
+        "description": "Alignment of the legend.'start' - Aligned to the start of the area allocated for the legend.'center' - Centered in the area allocated for the legend 'end' - Aligned to the end of the area allocated for the legend.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "color",
+        "description": "'red' or '#00cc00'.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "font-name",
+        "description": "Font style of chart legend",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "font-size",
+        "description": "Font size of chart legend",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "bold",
+        "description": "Set true for Legend text in bold",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "max-lines",
+        "description": "Maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend.",
+        "version": "4.0 onwards",
+        "type": "number",
+        "default": ""
+      }
+    ],
+    "events": []
+  }

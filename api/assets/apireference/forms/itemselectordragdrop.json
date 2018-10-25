@@ -1,0 +1,77 @@
+{
+  "properties": [
+    {
+      "name": "height",
+      "type": "string",
+      "default": "",
+      "description": "Height of item selector"
+    },
+    {
+      "name": "http-url",
+      "type": "string",
+      "default": "",
+      "description": "REST url for fetching datasource."
+    },
+    {
+      "name": "http-method",
+      "type": "string",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET."
+    },
+    {
+      "name": "display-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data to display on ui."
+    },
+    {
+      "name": "value-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data.use to send to backend"
+    },
+    {
+      "name": "data-reader",
+      "type": "string",
+      "default": "",
+      "description": "Key in JSON datasource for records"
+    },
+    {
+      "name": "enable-drag",
+      "version": "5.2 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": "Nodes can be dragged."
+    },
+    {
+      "name": "enable-drop",
+      "version": "5.2 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": "Any node can be dropped in the item selector structure."
+    },
+    {
+      "name": "across-itemselector",
+      "version": "5.2 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": " If across-itemselector is true then only the data transfer from itemselector to external panel"
+    },
+    {
+      "name": "data",
+      "type": "any",
+      "default": "",
+      "description": "Local data for item selectors."
+    }
+  ],
+  "events": [
+    {
+      "name": "selectedRecords",
+      "description": "Get selected value Object."
+    },
+    {
+      "name": "availableRecords",
+      "description": "Get available values objects.."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "name": "Amexio Checkbox Group",
+  "description": "Checkbox input component has been created to render N numbers of check-box based on data-set configured. Data-set can be configured using HTTP call OR Define fix number of check-box.",
+  "selector": "<amexio-checkbox-group>",
+  "properties": [
+    {
+      "name": "horizontal",
+      "description": "Set true for horizontal checkbox",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "field-label",
+      "description": "The label of this field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data-reader",
+      "description": "Key in JSON datasource for records",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "default"
+    },
+    {
+      "name": "http-method",
+      "description": "Type of HTTP call, POST,GET.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "http-url",
+      "description": "REST url for fetching datasource.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "display-field",
+      "description": "Name of key inside response data to display on ui.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value-field",
+      "description": "Name of key inside response data.use to send to backend",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "disabled",
+      "description": "If true will not react on any user events and show disable icon over",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "data",
+      "description": "Local data for checkboxGroup.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "required",
+      "description": "property to set if manditory",
+      "version": "4.1.7 onwards",
+      "type": "boolean",
+      "default": "false"
+    }
+  ],
+  "events": [
+    {
+      "name": "onSelection",
+      "description": "fire when check box click"
+    }
+  ]
+}

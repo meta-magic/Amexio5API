@@ -1,0 +1,63 @@
+
+export class AmexioD3DonutChartDemoComponent {
+{
+
+  userDefineColors: any;
+  defultColorData: any;
+  userDefineColorData: any;
+  sourceData: any;
+  userDataSource: any;
+  barChartWithColorData: any;
+  
+  constructor() { 
+
+  }
+
+  this.userDefineColors =  
+    [
+      "#4040a1",
+      "#e06377",
+      " #7e4a35",
+      "#6b5b95",
+      "#feb236",
+      "#d64161",
+      "#ff7b25"
+    ];
+    
+   this.defultColorData = 
+    [
+      ['browser', 'popularity'],
+      ['IE', 300],
+      ['Chrome', 500],
+      ['Safari', 700],
+      ['Firefox', 400],
+      ['Others', 600]
+    ];
+
+    this.userDefineColorData = 
+    [
+      ['country', 'ratio'],
+      ['India', 30.3],
+      ['Spain', 9.52],
+      ['France', 13.68],
+      ['China', 18.71],
+      ['Germany', 8.01],
+      ['U.K', 8.01],
+      ['U.S', 14.01],
+      ['Korea', 4.01]
+    ];
+}
+  onDefaultLegendClick(event: any) {
+    this.sourceData = event;
+  }
+
+  onUserDefineLegendClick(event: any) {
+    this.userDataSource = event;
+  }
+
+  onDefaultChartClick(event: any) {
+    this.userDataSource = event;
+  }
+}
+
+}

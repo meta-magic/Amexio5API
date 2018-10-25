@@ -1,0 +1,76 @@
+{
+  "properties": [
+    {
+      "name": "data",
+      "version": "4.2 onwards",
+      "type": "any",
+      "default": "none",
+      "description":"Local data for dropdown."
+    },
+    {
+      "name": "data-reader",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none",
+      "description":"Key in JSON datasource for records"
+    },{
+      "name": "http-url",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none",
+      "description":"REST url for fetching datasource"
+    },
+    {
+      "name": "place-holder",
+      "type": "string",
+      "version": "4.2 onwards",
+      "default": "none",
+      "description":"Show place-holder inside dropdown component"
+    },
+    {
+      "name": "display-field",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none",
+      "description":"Sets key inside response data to display."
+    },
+    {
+      "name": "value-field",
+      "type": "string",
+      "version": "4.2 onwards",
+      "default": "none",
+      "description":"Name of key inside response data.use to send to backend."
+    },
+    {
+      "name": " http-method",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none",
+      "description":"Type of HTTP call, POST,GET."
+    },
+    {
+      "name": "title",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none",
+      "description":"Sets title to advance search form"
+    } 
+
+  ],
+  "events":[
+    {
+      "name": "keyup",
+      "description":"Fires when keyup event occurs"
+    },
+    {
+      "name": "onSearchItemClick",
+      "description":"Fires on click of search dropdown list item"
+    },{
+      "name": "onSearchClick",
+      "description":"Fires when search button is clicked"
+    } 
+  ],
+  "css": [
+
+  ]
+}

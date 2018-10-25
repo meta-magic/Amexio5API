@@ -1,0 +1,214 @@
+<!-- Toolbar -->
+<amexio-toolbar>
+  <amexio-toolbar-item position-left [seperator-position]="'right'">
+    <amexio-label size="medium" font-color="Black">
+      Compose
+    </amexio-label>
+  </amexio-toolbar-item>
+  <amexio-toolbar-item position-left [seperator-position]="'right'">
+    <amexio-btn-group>
+      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'Archive'" [icon]="'fa fa-archive'">
+      </amexio-button>
+      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'Save'" [icon]="'fa fa-exclamation-circle'">
+      </amexio-button>
+      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'delete'" [icon]="'fa fa-trash-o'">
+      </amexio-button>
+    </amexio-btn-group>
+  </amexio-toolbar-item>
+  <amexio-toolbar-item position-right>
+    <amexio-drop-down-menu [icon-align]="'left'" [title]="'Settings'" [padding]="'5px 10px'" [icon]="'fa fa-cog'">
+      <amexio-drop-down-menu-item [separator]="true">
+        <amexio-box background-color="purple" padding="true">
+          <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+        </amexio-box>
+        <amexio-row>
+          <amexio-column size="5">
+            <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'" path="assets/images/profile/ketan.jpg">
+            </amexio-image>
+          </amexio-column>
+          <amexio-column size="7">
+            <amexio-label> Ketan Gote</amexio-label>
+            <amexio-label> xyz@metamagic.in</amexio-label>
+            <br>
+            <amexio-button [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+            </amexio-button>
+          </amexio-column>
+        </amexio-row>
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Settings'" [icon]="'fa fa-folder'">
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Help Center'" [icon]="'fa fa-question-circle'" [separator]="true">
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Location'" [icon]="'fa fa-map-marker'">
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Sign Out'" [icon]="'fa fa-sign-out'">
+      </amexio-drop-down-menu-item>
+    </amexio-drop-down-menu>
+  </amexio-toolbar-item>
+  <amexio-toolbar-item position-left [seperator-position]="'left'">
+    <amexio-btn-group>
+      <amexio-button [size]="'medium'" [tooltip]="'Move to'" [icon]="'fa fa-folder'">
+      </amexio-button>
+      <amexio-button [size]="'medium'" [tooltip]="'Help'" [icon]="'fa fa-question'">
+      </amexio-button>
+    </amexio-btn-group>
+  </amexio-toolbar-item>
+</amexio-toolbar>
+
+<!-- Toolbar in Card Header-->
+<amexio-card [header]="true">
+  <amexio-header style="width:100%">
+    <amexio-toolbar>
+      <amexio-toolbar-item position-left [seperator-position]="'right'">
+        <amexio-label size="small" font-color="white">
+          My Drive
+        </amexio-label>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-left [seperator-position]="'right'">
+        <amexio-drop-down-menu [icon-align]="'left'" [title]="'Quick Access'" [data]="payment" [down-arrow-icon]="true" [icon]="'fa fa-credit-card'"
+          [transparent]="false">
+        </amexio-drop-down-menu>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <i class="fa fa-th" aria-hidden="true"></i>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <i class="fa fa-question-circle" aria-hidden="true"></i>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <i class="fa fa-cog" aria-hidden="true"></i>
+      </amexio-toolbar-item>
+    </amexio-toolbar>
+  </amexio-header>
+  <amexio-body>
+    <amexio-datagrid [enable-column-fiter]="false" [height]="200" title="" [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/toolbar.json'"
+      [data-reader]="'data'" [page-size]="10">
+      <amexio-data-table-column [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
+        <ng-template #amexioBodyTmpl let-column let-row="row">
+          <amexio-label size="small" font-color="grey" class={{row.icon}}>
+          </amexio-label>
+        </ng-template>
+      </amexio-data-table-column>
+      <amexio-data-table-column [data-index]="'countryName'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+      </amexio-data-table-column>
+      <amexio-data-table-column [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false" [text]="'Owner'">
+      </amexio-data-table-column>
+      <amexio-data-table-column [data-index]="'lastModified'" [data-type]="'string'" [hidden]="false" [text]="'Last Modified'">
+      </amexio-data-table-column>
+    </amexio-datagrid>
+  </amexio-body>
+</amexio-card>
+
+<!-- Toolbar in Form Header -->
+<amexio-form-header style="width:100%">
+  <amexio-toolbar>
+    <amexio-toolbar-item position-left>
+      <amexio-label size="small">
+        Registration
+      </amexio-label>
+    </amexio-toolbar-item>
+    <amexio-toolbar-item position-right [seperator-position]="'left'">
+      <i class="fa fa-th" aria-hidden="true"></i>
+    </amexio-toolbar-item>
+    <amexio-toolbar-item position-right [seperator-position]="'left'">
+      <i class="fa fa-info-circle" aria-hidden="true"></i>
+    </amexio-toolbar-item>
+    <amexio-toolbar-item position-right [seperator-position]="'left'">
+      <i class="fa fa-question-circle" aria-hidden="true"></i>
+    </amexio-toolbar-item>
+    <amexio-toolbar-item position-right [seperator-position]="'left'">
+      <i class="fa fa-cog" aria-hidden="true"></i>
+    </amexio-toolbar-item>
+  </amexio-toolbar>
+</amexio-form-header>
+
+<!-- Toolbar In Window Header -->
+<amexio-button type="success" (onClick)="toggleBasicWindow('nonmaterialtoolbar')" label="Basic Window">
+</amexio-button>
+<amexio-window [body-height]="40" [(show)]="showBasicWindowNonMateialToolbar" [close-on-escape]="true" [material-design]="false"
+  [footer]="true" [vertical-position]="'top'" [horizontal-position]="'center'">
+  <amexio-header>
+    <amexio-window-header>
+      <amexio-toolbar>
+        <amexio-toolbar-item position-left>
+          <amexio-label size="small">
+            Registration
+          </amexio-label>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+          <i class="fa fa-th" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+          <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+          <i class="fa fa-question-circle" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+          <i class="fa fa-cog" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+      </amexio-toolbar>
+    </amexio-window-header>
+  </amexio-header>
+  <amexio-body>
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'" [enable-popover]="true" [icon-feedback]="true"
+          [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+          [max-error-msg]="'Name should be less than 15 characters'">
+        </amexio-text-input>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'" [enable-popover]="true" [icon-feedback]="true"
+          [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+          [max-error-msg]="'Surname should be less than 15 characters'">
+        </amexio-text-input>
+      </amexio-column>
+    </amexio-row>
+
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'" [enable-popover]="true" [icon-feedback]="true"
+          [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+          [max-error-msg]="'Name should be less than 15 characters'">
+        </amexio-text-input>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'" [enable-popover]="true" [icon-feedback]="true"
+          [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+          [max-error-msg]="'Surname should be less than 15 characters'">
+        </amexio-text-input>
+      </amexio-column>
+    </amexio-row>
+
+    <amexio-row>
+      <amexio-column [size]="6">
+
+        <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'"
+          [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true">
+        </amexio-textarea-input>
+
+
+      </amexio-column>
+
+    </amexio-row>
+
+
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'" [enable-popover]="true" [icon-feedback]="true"
+          [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+          [max-error-msg]="'Name should be less than 15 characters'">
+        </amexio-text-input>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'" [enable-popover]="true" [icon-feedback]="true"
+          [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+          [max-error-msg]="'Surname should be less than 15 characters'">
+        </amexio-text-input>
+      </amexio-column>
+    </amexio-row>
+  </amexio-body>

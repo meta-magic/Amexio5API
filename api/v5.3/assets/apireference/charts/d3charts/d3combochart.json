@@ -1,0 +1,105 @@
+{
+    "name": "Amexio D3-combo chart",
+    "description": "An  D3-combo chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+    "selector": "<amexio-d3-combochart>",
+    "properties": [
+        {
+            "name": "title",
+            "version": "0.0.6 Onwards",
+            "description": "Sets title to chart",
+            "type": "string",
+            "default": ""
+        },
+
+        {
+            "name": "width",
+            "description": "Width of chart",
+            "version": "0.0.6 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "height",
+            "description": "Height of chart",
+            "version": "0.0.6 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data",
+            "description": "Local data for Chart",
+            "version": "0.0.6 Onwards",
+            "type": "any",
+            "default": ""
+        },
+        {
+            "name": "color",
+            "description": "Sets color to D3 Combo chart",
+            "version": "0.0.6 Onwards",
+            "type": "any",
+            "default": ""
+        },
+        {
+            "name": "legend",
+            "description": "Sets legend to D3 Combo chart",
+            "version": "0.0.6 Onwards",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "name": "http-url",
+            "description": "REST url for fetching data.",
+            "version": "0.0.6 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "http-method",
+            "description": "Type of HTTP call, POST,GET etc.",
+            "version": "0.0.6 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data-reader",
+            "description": "Key in JSON Datasource for records.",
+            "version": "0.0.6 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "line-color",
+            "description": "Sets line color in D3 chart",
+            "version": "0.0.6 Onwards",
+            "type": "string",
+            "default": "black"
+        },
+        {
+            "name": "line-data-index",
+            "description": "Sets data to plot line chart",
+            "version": "0.0.6 Onwards",
+            "type": "string",
+            "default": ""
+        }
+    ],
+    "legend": [
+        {
+            "name": "onLegendClick()",
+            "version": "0.0.6 Onwards",
+            "description": "It will fire only on click on Legend Click in D3 Combo chart ."
+        }
+    ],
+    "chartevent": [
+        {
+            "name": "onChartClick()",
+            "version": "0.0.6 Onwards",
+            "description": "It will fire only on click of bar in D3 Combo chart ."
+        },
+        {
+            "name": "onLineClick()",
+            "version": "0.0.6 Onwards",
+            "description": "It will fire only on click of line in D3 Combo chart ."
+        }
+
+    ]
+}

@@ -1,0 +1,11 @@
+Sample Data for Stack Bar Bar Chart:
+  Note: First record i.e Year is plotted on x-axis and other records will get 
+  plotted on y-axis.[
+      ['Year', 'Sales', 'Expenses', 'Profit'],
+      ['2014', 1000, 400, 200],
+      ['2015', 1170, 460, 250],
+      ['2016', 660, 1120, 300],
+      ['2017', 1030, 540, 350],
+      ['2019', 1090, 740, 450],
+      ['2019', 1050, 640, 350]
+]

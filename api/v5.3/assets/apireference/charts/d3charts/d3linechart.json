@@ -1,0 +1,84 @@
+{
+    "name": "Amexio D3-chart  line",
+    "description": "An  D3-chart  line  chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+    "selector": "<amexio-d3-chart- line>",
+    "properties": [
+        {
+            "name": "title",
+            "description": "Sets title to chart",
+            "version": "0.0.2  Onwards",
+            "type": "string",
+            "default": ""
+        },
+
+        {
+            "name": "width",
+            "description": "Width of chart",
+            "version": "0.0.2  Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "height",
+            "description": "Height of chart",
+            "version": "0.0.2  Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data",
+            "description": "Local data for Chart",
+            "version": "0.0.2  Onwards",
+            "type": "any[]",
+            "default": ""
+        },
+        {
+            "name": "color",
+            "description": "Sets color to D3  line chart",
+            "version": "0.0.2  Onwards",
+            "type": "any[]",
+            "default": ""
+        },
+        {
+            "name": "legend",
+            "description": "Sets legend to D3  line chart",
+            "version": "0.0.2  Onwards",
+            "type": "boolean",
+            "default": "false"
+        },   {
+            "name": "http-url",
+            "description": "REST url for fetching data.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "http-method",
+            "description": "Type of HTTP call, POST,GET etc.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data-reader",
+            "description": "Key in JSON Datasource for records.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        }
+    ],
+    "legend": [
+        {
+            "name": "onLegendClick()",
+            "version": "0.0.2  Onwards",
+            "description": "It will fire only on click on Legend Click in D3  line chart ."
+        }
+    ],
+    "chartevent": [
+        {
+            "name": "onChartClick()",
+            "version": "0.0.2  Onwards",
+            "description": "It will fire only on click on chart in D3 line chart ."
+        }
+    ]
+}

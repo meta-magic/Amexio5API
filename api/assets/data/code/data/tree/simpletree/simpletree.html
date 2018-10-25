@@ -1,0 +1,16 @@
+<!--simple tree-->
+<amexio-treeview 
+                    [data-reader]="'data'"
+                    [data]="treeLocalData"
+                    (nodeClick)="getNodeData($event)">
+</amexio-treeview>
+
+<!--    Tree with user define keys -->
+<amexio-treeview 
+                    [data-reader]="'customArray'" 
+                    [display-key]="'demo'" 
+                    [child-array-key]="'object'"  
+                    [data]="customArrayLocalData" 
+                    (nodeClick)="getCustomNodeData($event)">
+</amexio-treeview>
+

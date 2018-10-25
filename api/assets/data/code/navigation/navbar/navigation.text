@@ -1,0 +1,17 @@
+export class NavBarDemo {
+  topMenuData:any;
+  constructor() {
+  this.topMenuData = JSON.parse(`[{
+        "text": "Products",
+        "submenus": [{
+          "text": "Amexio Canvas",
+          "link": "https://amexio.tech/amexio-canvas"
+        }, {
+          "text": "Amexio Themes",
+          "link": "https://amexio.tech/amexio-themes"
+        }]
+      }]
+    `);
+  }
+
+}

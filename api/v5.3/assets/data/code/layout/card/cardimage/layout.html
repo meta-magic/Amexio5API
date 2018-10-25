@@ -1,0 +1,75 @@
+<!--CARD WITHOUT HEADER-->
+<amexio-card [header]="false"
+             [footer]="true"
+             [footer-align]="'right'">
+  <amexio-body>
+    <amexio-image path="assets/images/carousel/set1/1.jpg"></amexio-image>
+    <br/>
+    <amexio-label size="small-bold">Let your startup grow!</amexio-label>
+    <amexio-label size="small">
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+    </amexio-label>
+  </amexio-body>
+  <amexio-action >
+    <amexio-button [label]="'Button'"
+                   [type]="'primary'">
+    </amexio-button>
+  </amexio-action>
+</amexio-card>
+
+
+<!--CARD WITH HEADER/FOOTER Left Aligned-->
+<amexio-card [header]="true"
+             [footer]="true"
+             [footer-align]="'left'"
+             [header-align]="'left'">
+  <amexio-header>
+    Coffee
+  </amexio-header>
+  <amexio-body>
+    <amexio-image path="assets/images/carousel/set1/2.jpg"></amexio-image>
+    <amexio-label size="small">
+      Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+    </amexio-label>
+  </amexio-body>
+  <amexio-action>
+    <amexio-button [label]="'Button'" [type]="'primary'"></amexio-button>
+  </amexio-action>
+</amexio-card>
+
+<!--CARD WITH HEADER/FOOTER RIGHT Aligned-->
+<amexio-card [header]="true"
+             [footer]="true"
+             [footer-align]="'right'"
+             [header-align]="'right'">
+  <amexio-header>
+    Animals
+  </amexio-header>
+  <amexio-body>
+    <amexio-image path="assets/images/carousel/set1/4.jpg"></amexio-image>
+    <amexio-label size="small">
+      Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+    </amexio-label>
+  </amexio-body>
+  <amexio-action >
+    <amexio-button [label]="'Button'" [type]="'primary'"></amexio-button>
+  </amexio-action>
+</amexio-card>
+
+
+<!--CARD WITH HEADER/FOOTER CENTER Aligned-->
+<amexio-card [header]="true" [footer]="true"  [footer-align]="'center'" [header-align]="'center'">
+  <amexio-header>
+    Morning Walk
+  </amexio-header>
+  <amexio-body>
+    <amexio-image path="assets/images/carousel/set1/3.jpg"></amexio-image>
+    <amexio-label size="small">
+      Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
+    </amexio-label>
+  </amexio-body>
+  <amexio-action>
+    <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
+    <amexio-button [label]="'Cancel'" [type]="'default'"></amexio-button>
+  </amexio-action>
+</amexio-card>

@@ -1,0 +1,54 @@
+<amexio-datagrid [enable-checkbox]="false" title="Registration Details" [http-method]="'get'" [http-url]="'assets/data/componentdata/headertemplateemail.json'"
+    [data-reader]="'data'" [page-size]="10" [enable-data-filter]="false">
+    <amexio-data-table-column [width]="5" [data-index]="'No'" [data-type]="'string'" [hidden]="false" [text]="'No.'">
+        <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+            <amexio-label size="small" font-color="white">
+                {{column.text}}
+            </amexio-label>
+        </ng-template>
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="10" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+        <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+            <amexio-label size="small-bold" font-color="white">
+                {{column.text}}
+            </amexio-label>
+        </ng-template>
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="8" [data-index]="'loginid'" [data-type]="'string'" [hidden]="false" [text]="'Login-Id'">
+        <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+            <amexio-label size="small" font-color="red">
+                {{column.text}}
+            </amexio-label>
+        </ng-template>
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="14" [data-index]="'emailid'" [data-type]="'string'" [hidden]="false" [text]="'Email-Id'">
+        <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+            <amexio-label size="small" font-color="white">
+                <i class="fa fa-envelope" style="color:white"></i>
+                {{column.text}}
+            </amexio-label>
+        </ng-template>
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="8" [data-index]="'phone'" [data-type]="'string'" [hidden]="false" [text]="'Phone'">
+        <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+            <amexio-label size="small" font-color="white">
+                <i class="fa fa-phone" style="color:white"></i>
+                {{column.text}}
+            </amexio-label>
+        </ng-template>
+    </amexio-data-table-column>
+    <amexio-data-table-column [sort]="false" [width]="10" [data-index]="'Status'" [data-type]="'string'" [hidden]="false" [text]="'Status'">
+        <ng-template #amexioHeaderTmpl let-column="column" let-index="index">
+            <amexio-btn-dropdown [label]="'Status'" [type]="'red'" [size]="'small'">
+                <amexio-btn-dropdown-item [label]="'Accept All'">
+                </amexio-btn-dropdown-item>
+                <amexio-btn-dropdown-item [label]="'Reject All'">
+                </amexio-btn-dropdown-item>
+            </amexio-btn-dropdown>
+        </ng-template>
+        <ng-template #amexioBodyTmpl let-column let-row="row">
+            <amexio-label class="fa fa-circle fa-lg" [ngClass]="{'green': row.Status== 'Paid' , 'yellow': row.Status =='Pending' , 'red' : row.Status=='Approved'}"></amexio-label>
+            &nbsp;{{row.Status}}
+        </ng-template>
+    </amexio-data-table-column>
+</amexio-datagrid>

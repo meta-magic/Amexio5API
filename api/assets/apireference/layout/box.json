@@ -1,0 +1,71 @@
+{
+  "name": "Amexio Box",
+  "description": "Amexio Box can be easily wrapped around any other component and configure using the different responsive styling.",
+  "selector": "amexio-box",
+  "properties": [
+    {
+      "name": "border",
+      "description": "top / right / left / bottom / all / top-bottom / left-right",
+      "version": "4.1 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "border-color",
+      "description": "red / blue / green / yellow / brown / purple",
+      "version": "4.1 onwards",
+      "type": "string",
+      "default": "theme's border color"
+    },
+    {
+      "name": "background-color",
+      "description": "red / blue / green / yellow / brown / purple",
+      "version": "4.1 onwards",
+      "type": "string",
+      "default": "theme's background color"
+    },
+    {
+      "name": "padding",
+      "description": "Padding to all sides",
+      "version": "4.1 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "box-height",
+      "description": "Height to box",
+      "version": "4.1.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "box-width",
+      "description": "Width to box",
+      "version": "4.1.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "border-dotted",
+      "description": "Dotted border",
+      "version": "4.1.8 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "align",
+      "description": "Align to box \"left\" \"right\" \"center\"",
+      "version": "4.1.8 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "closable",
+      "description": "Cosable box",
+      "version": "4.1.8 onwards",
+      "type": "boolean",
+      "default": "false"
+    }
+  ],
+  "events": []
+}

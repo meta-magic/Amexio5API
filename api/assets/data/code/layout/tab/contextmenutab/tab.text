@@ -1,0 +1,14 @@
+
+export class ContextMenuTabDemo {
+
+  rightclickData: any;
+
+    constructor{
+
+     this.rightclickdata =  
+     [{"text":"Back","icon":"fa fa-arrows","disabled":true},
+     {"text":"Reload","icon":"","seperator":false},
+     {"text":"Save","icon":""}];
+
+  }
+}

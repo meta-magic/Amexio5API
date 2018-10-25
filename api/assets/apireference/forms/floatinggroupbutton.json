@@ -1,0 +1,97 @@
+{
+    "name": "Amexio Floating-Button group",
+    "description": "A Floating group button component with various position options (vertical/horizontal/top/bottom/left/right)",
+    "selector": "<amexio-floating-group-button>",
+    "properties": [
+      {
+        "name": "vertical-position",
+        "description": "top or bottom or center. This attribute is ignored if user specify position explicitly (using position-top/position-bottom/position-left/position-right)",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "horizontal-position",
+        "description": "left or right or center. This attribute is ignored if user specify position explicitly (using position-top/position-bottom/position-left/position-right)",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "icon",
+        "description": "Fa-icon class",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "position-top",
+        "description": "Takes top position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "top"
+      },
+      {
+        "name": "position-bottom",
+        "description": "Takes bottom position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "bottom"
+      },
+      {
+        "name": "position-left",
+        "description": "Takes left position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "left"
+      },
+      {
+        "name": "position-right",
+        "description": "Takes right position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "right"
+      },
+      {
+        "name": "type",
+        "description": "Type of button - default  / theme-color / theme-backgroundcolor / green / red / yellow",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "disabled",
+        "description": "Enable/Disables the button",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "relative",
+        "description": "Place floating buttong at relative position",
+        "version": "4.1 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "floating-group-position",
+        "description": "Positions floating button group at specified position",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "data",
+        "description": "Local data for buttons",
+        "version": "4.1 onwards",
+        "type": "array",
+        "default": ""
+      }
+    ],
+    "events": [
+      {
+        "name": "onClick",
+        "description": "Event is fired when button is click"
+      }
+    ]
+  }

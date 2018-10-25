@@ -1,0 +1,45 @@
+{
+  "name": "Amexio StepBox",
+  "description": "Step-box component is an indicator for the steps in a workflow",
+  "selector": "<amexio-steps>",
+  "properties": [
+    {
+      "name": "index",
+      "description": "Show the indexes of steps.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "icon",
+      "description": "icon for stepbox.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "block",
+      "description": "Show block based on boolean.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "data",
+      "description": "Provides data for stepblock.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Event emitted on block click."
+    },
+    {
+      "name": "getStepBlockData",
+      "description": "Gives stepblock information ."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+export class FloatingGroupButtonDemo 
+{
+    floatingbuttongroup : any[];
+    constructor() {
+        this.floatingbuttongroup = [
+            {'label':'Facebook', 'icon':'fa fa-facebook','type':'warning'},
+            {'label':'Twitter', 'icon':'fa fa-facebook','type':'success'},
+            {'label':'Google', 'icon':'fa fa-google-plus','type':'primary'}
+        ];
+    }
+
+  onFloatingClick(event:any){
+    
+  }
+    
+}

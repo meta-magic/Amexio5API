@@ -1,0 +1,141 @@
+{
+  "name": "Amexio Typeahead Input",
+  "description": "Type Ahead Component provides a power type ahead on the text field where users entry is provided with a filtered result.",
+  "selector": "<amexio-typeahead>",
+  "properties": [
+    {
+      "name": "field-label",
+      "description": "The label of this field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "allow-blank",
+      "description": "Sets if field is required",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "description": "Local data for dropdown.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "data-reader",
+      "description": "Key in JSON datasource for records",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "http-method",
+      "description": "Type of HTTP call, POST,GET.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "http-url",
+      "description": "REST url for fetching datasource.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "display-field",
+      "description": "Sets key inside response data to display.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "error-msg",
+      "description": "Sets the error message",
+      "version": "4.0 onwards",
+      "type": "none",
+      "default": "none"
+    },
+    {
+      "name": "place-holder",
+      "description": "Show place-holder inside dropdown component",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "icon-feedback",
+      "description": "",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "font-style",
+      "description": "Set font-style to field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "font-family",
+      "description": "Set font-family to field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "font-size",
+      "description": "Set font-size to field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "has-label",
+      "description": "Flag to set label",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "enable-popover",
+      "description": "Set enable / disable popover.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "trigger-char",
+      "description": "Sets the trigger char length",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "onBlur",
+      "description": "On blur event"
+    },
+    {
+      "name": "input",
+      "description": "On input event field."
+    },
+    {
+      "name": "focus",
+      "description": "On focus event field."
+    },
+    {
+      "name": "change",
+      "description": "On field value change event"
+    },
+    {
+      "name": "onClick",
+      "description": "On click event"
+    }
+  ]
+}

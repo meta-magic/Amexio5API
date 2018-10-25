@@ -1,0 +1,29 @@
+{
+  "name": " Amexio Accordion",
+  "description": " Amexio Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs.",
+  "selector": " <amexio-accordion>",
+  "properties": [
+    {
+      "name": " expand-all",
+      "description": " Pane will expand or collapse based on the boolean",
+      "version": " 4.0 onwards",
+      "type": " boolean",
+      "default": " false"
+    },
+    {
+      "name": " transparent",
+      "description": " Apply Transparent styles to accordion",
+      "version": " 4.0 onwards",
+      "type": " boolean",
+      "default": " false"
+    },
+    {
+      "name": " angle-icon ",
+      "description": " Can use Angle Icons instead of default plus/minus icons",
+      "version": " 4.0 onwards",
+      "type": " boolean",
+      "default": " false"
+    }
+  ],
+  "events": []
+}

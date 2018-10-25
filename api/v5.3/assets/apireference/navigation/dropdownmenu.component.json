@@ -1,0 +1,108 @@
+{
+  "name": "Amexio Dropdown Menu",
+  "description": "Drop-Down-Menu component has been created to render N numbers of drop-down options based on data-set configured. Data-set can be configured using HTTP call OR Define fix number of dropdown-options.",
+  "selector": "<amexio-dropdown>",
+  "properties": [
+
+    {
+      "name": "data",
+      "description": "Local data for dropdown Menu.",
+      "version": "4.2 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "title",
+      "description": "Title on Dropdown Menu.",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "icon",
+      "description": "Icon on DropDown Menu",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "padding",
+      "description": "Padding for hover button",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "icon-align",
+      "description": " Icon position should be right/left",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "down-arrow-icon",
+      "description": " down-arrow-icon position should be up/down",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
+      "name": "transparent",
+      "description": "transparent for transparent button",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "height",
+      "description": "height for menu window",
+      "version": "4.2 onwards",
+      "type": "any",
+      "default": ""
+    }
+  ],
+  "propertiesitem": [
+    {
+      "name": "label",
+      "description": "label on Dropdown Menu option.",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "icon",
+      "description": "Icon on DropDown Menu option",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "icon-align",
+      "description": "Icon-align on DropDown Menu option",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "label-align",
+      "description": "label-align on DropDown Menu option",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "separator",
+      "description": "separator on DropDown Menu item divide",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Fire when menu item is clicked. "
+    }
+  ]
+}

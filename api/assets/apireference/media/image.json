@@ -1,0 +1,111 @@
+{
+    "name": "Amexio image",
+    "description": "Amexio image is an artifact that depicts visual perception.",
+    "selector": "<amexio-image>",
+    "properties": [
+      {
+        "name": "tooltip",
+        "description": "TooltipMessage on image /icon.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "title",
+        "description": "Title of image",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "path",
+        "description": "Specifies the URL of an image, This attribute is useful only for images",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "c-class",
+        "description": "Used for custom style classes",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "mda",
+        "description": "This attribute is useful for only material icons . Material Example mda='cloud'",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "width",
+        "description": "Width of image.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "icon-class",
+        "description": "Material icon class name Material i.e icon-class=material-icons / font-awesome i.e icon-class= fa fa-address-book fa-lg",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "height",
+        "description": "Height of image.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "filter",
+        "description": "Filter type can be saturate / hue / invert / grayscale / brightness / blur / sepia / shadow / opacity",
+        "version": "4.1.9 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "overlay-effect",
+        "description": "Overlay-effect can be set fade / box / left / top / bottom / right / title",
+        "version": "4.1.9 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "overlay-text",
+        "description": "Overlay-text can be set",
+        "version": "4.1.9 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "image-title",
+        "description": "Image-title can be set",
+        "version": "4.1.9 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "title-position",
+        "description": "Overlay-text can be set top-right / bottom-right / bottom-left / top-left / centered",
+        "version": "4.1.9 onwards",
+        "type": "string",
+        "default": "right"
+      },
+      {
+        "name": "para",
+        "description": "Description to display on hover",
+        "version": "4.1.9 onwards",
+        "type": "string",
+        "default": ""
+      }
+    ],
+    "events": [
+      {
+        "name": "onClick",
+        "description": "Get image / icon click event."
+      }
+    ]
+  }

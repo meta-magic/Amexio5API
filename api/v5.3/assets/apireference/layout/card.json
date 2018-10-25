@@ -1,0 +1,76 @@
+{
+  "name": "Amexio card",
+  "description": "Amexio Card which renders card based on title, body and actions user has configured",
+  "selector": "<amexio-card>",
+  "properties": [
+    {
+      "name": "header-align",
+      "description": "right,center,left.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "header",
+      "description": "User can enable header of card by setting this flag to true..",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "footer",
+      "description": "User can enable footer of card by setting this flag to true.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "footer-align",
+      "description": "right,center,left..",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "show",
+      "description": "User can bind variable to this and hide/unhide card based on requirement..",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
+      "name": "height",
+      "description": "User can set the height to body..",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "min-height",
+      "description": "Provides minimum card height.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "body-height",
+      "description": "Provides card height.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "context-menu",
+      "description": "Context Menu provides the panel on right click(for Array structure: refer typescript code in source tab)",
+      "version": "5.1.6 onwards",
+      "type": "any[]",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "rightClick",
+      "description": "It is fired when clicked on context menu providing Card node data and selected context menu data."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<amexio-searchbox [place-holder]="'Search'" [display-field]="'subject'" [data]="bindData" [width]="250">
+    <amexio-searchbox-options #search [title]="'Advance search'">
+        <amexio-text-input field-label="Subject:" name="subject" place-holder="Enter subject" icon-feedback="true" [(ngModel)]="subject">
+        </amexio-text-input>
+        <amexio-text-input field-label="From:" name="from" place-holder="Emailid" icon-feedback="true" [(ngModel)]="from">
+        </amexio-text-input>
+        <amexio-text-input field-label="To:" name="To" place-holder="Emailid" icon-feedback="true" [(ngModel)]="to">
+        </amexio-text-input>
+        <amexio-row>
+            <amexio-column [size]="'12'"></amexio-column>
+        </amexio-row>
+        <amexio-button [label]="'Filter'" [type]="'theme-color'" [tooltip]="'toolTip'" [size]="'medium'" (onClick)="filter(search)">
+        </amexio-button>
+    </amexio-searchbox-options>
+</amexio-searchbox>

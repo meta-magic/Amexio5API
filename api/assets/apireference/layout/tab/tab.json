@@ -1,0 +1,43 @@
+{
+  "name": "Amexio Tab",
+  "description": "Tab component for Angular Apps with multiple configurations such as Tab, Icon support",
+  "selector": "<amexio-tab>",
+  "properties": [
+    {
+      "name": "title",
+      "description": "Title on Tab Button/Pill.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "disabled",
+      "description": "Disable property for tab",
+      "version": "4.1.4 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "active",
+      "description": "Set true for specific tab open as default tab..",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "icon",
+      "description": "Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "amexio-color",
+      "description": "Font color of label",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": "black"
+    }
+  ],
+  "events": []
+}

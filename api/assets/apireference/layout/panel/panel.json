@@ -1,0 +1,59 @@
+{
+  "name": "Amexio panel",
+  "description": "Panel provides an easy way to organize big forms by grouping the fields in panel",
+  "selector": "<amexio-panel>",
+  "properties": [
+    {
+      "name": "title",
+      "description": "Title for panel.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "header",
+      "description": "Enable/Disabled header.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
+      "name": "expanded",
+      "description": "Pane will expand or collapse based on the boolean.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "height",
+      "description": "Height of panel must be in px ex.100, 250..",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": "none"
+    },
+    {
+      "name": "context-menu",
+      "description": "Context Menu provides the panel on right click(for Array structure: refer typescript code in source tab)",
+      "version": "5.1.6 onwards",
+      "type": "any[]",
+      "default": ""
+    },
+    {
+      "name": "amexio-panel-header",
+      "description": "Panel Header renders any component within it by using toolbar as its outer shell",
+      "version": "5.1.6 onwards",
+      "type": "",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Fires the on accordion pane click event."
+    },
+    {
+      "name": "rightClick",
+      "description": "It is fired when clicked on context menu providing Panel node data and selected context menu data."
+    }
+  ]
+}

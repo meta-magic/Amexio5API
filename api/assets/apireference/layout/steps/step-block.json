@@ -1,0 +1,29 @@
+{
+  "name": "Amexio Step block",
+  "description": "Amexio Step-box component is an indicator for the steps in a workflow.",
+  "selector": "<amexio-step-block>",
+  "properties": [
+    {
+      "name": "active",
+      "description": "The current active step.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "label",
+      "description": "Label for step.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "icon",
+      "description": "Icon for step box.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+  "events": []
+}

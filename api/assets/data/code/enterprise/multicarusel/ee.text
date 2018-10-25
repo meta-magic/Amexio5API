@@ -1,0 +1,14 @@
+import {Component, OnInit} from '@angular/core';
+    import {Http} from "@angular/http";
+
+    @Component({
+       selector: 'multi-carousel', templateUrl: 'multicarousel.demo.html'
+    })
+export class EECarouselDemoComponent{
+ newreleases : any;
+ topRateContent : any;
+      constructor(private http :Http) {
+        this.http.get('assets/data/newreleases.json').subscribe(res=>this.newreleases = res.json());
+        this.http.get('assets/data/topratedcontent.json').subscribe(res=>this.topRateContent = res.json());
+      }
+}

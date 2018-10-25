@@ -1,0 +1,11 @@
+export class GridWithGlobalFilterDemo {
+
+    clickedRowData: any;
+
+  constructor() {}
+
+    getRowData(data: any) {
+    this.clickedRowData = data;
+  }
+
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Amexio Accordion",
+  "description": "Amexio Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs.",
+  "selector": "<amexio-accordion-tab>",
+  "properties": [
+    {
+      "name": "active",
+      "description": "user can Set true for specific accordian open as default",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "left-icon",
+      "description": "places the icon on left",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "angle-icon",
+      "description": "Can use Angle Icons instead of default plus/minus icons",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "disabled",
+      "description": "Disabled specific panes",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "header",
+      "description": "User can bind title for accordion tab",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": "none"
+    }
+  ],
+  "events": [
+    {
+      "name": "emittedEvent",
+      "description": "Fires on the accordion pane click event."
+    }
+  ]
+}

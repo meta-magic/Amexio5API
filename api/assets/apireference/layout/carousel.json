@@ -1,0 +1,29 @@
+{
+  "name": "Amexio carousel",
+  "description": "The CarouselView displays a collection of images or other content in a horizontal layout with built-in navigation between the items..",
+  "selector": "<amexio-carousel>",
+  "properties": [
+    {
+      "name": "header",
+      "description": "User can bind title for accordion tab.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "description": "Data Containing Image Path, Information and Video URL Refer the DataSource Tab",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "shuffle-interval",
+      "description": "Time interval for shuffling images",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    }
+  ],
+  "events": []
+}

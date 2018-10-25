@@ -1,0 +1,9 @@
+Sample Datd for Donut Chart
+[
+      ['browser', 'popularity'],
+      ['IE', 300],
+      ['Chrome', 500],
+      ['Safari', 700],
+      ['Firefox', 400],
+      ['Others', 600]
+    ]

@@ -1,0 +1,83 @@
+{
+  "name": "Amexio Button",
+  "description": "A button component with various modes and configurations.",
+  "selector": "<amexio-button>",
+  "properties": [
+    {
+      "name": "label",
+      "description": "Label on button",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "badge",
+      "description": "Badge  describes the badge value that has to be displayed on button",
+      "version": "4.1.9 onwards",
+      "type": "number",
+      "default": ""
+    },
+    {
+      "name": "icon",
+      "description": "Fa icon class",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "type",
+      "description": "Type of button  default/ transparent / theme-color / theme-backgroundcolor / green / red / yellow ( primary / secondary /success / danger & warning Depricated v4.1 onwards)",
+      "version": "4.1 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "tooltip",
+      "description": "tooltip on button hover",
+      "version": "4.1 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "disabled",
+      "description": "Enable/Disables the button",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "form-bind",
+      "description": "to bind button to form",
+      "version": "4.1.6 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "size",
+      "description": "large, default, small & xsmall",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "loading",
+      "description": "loading attribute can be used for async task",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": ""
+    },
+    {
+      "name": "block",
+      "description": "set true to show buttom block",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Fire when button click"
+    }
+  ]
+}

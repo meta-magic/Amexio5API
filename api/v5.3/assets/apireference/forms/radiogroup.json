@@ -1,0 +1,97 @@
+{
+  "name": "Amexio RadioGroup",
+  "description": "Radio Group input component has been created to render N numbers of radio-button based on data-set configured. Data-set can be configured using HTTP call OR Define fix number of radio-button.",
+  "selector": "<amexio-radio-group>",
+  "properties": [
+    {
+      "name": "field-label",
+      "description": "The label of this field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "horizontal",
+      "description": "Set true for horizontal checkbox",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "max-length",
+      "description": "The smallest positive representable number -that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -max-length.",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    },
+    {
+      "name": "allow-blank",
+      "description": "Sets if field is required",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "default-value",
+      "description": "Default Value to be checked",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "http-url",
+      "description": "REST url for fetching datasource.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "http-method",
+      "description": "Type of HTTP call, POST,GET.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "display-field",
+      "description": "Name of key inside response data to display on UI.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value-field",
+      "description": "Name of key inside response data.use to send to backend",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data-reader",
+      "description": "Key in JSON datasource for records",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "description": "Local data for radio group.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "disabled",
+      "description": "Disable the radio button",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": ""
+    } 
+  ],
+  "events": [
+    {
+      "name": "onSelection",
+      "description": "Fire when radio click"
+    } 
+  ]
+}

@@ -1,0 +1,199 @@
+ export class SearchBox implements OnInit {
+ subject: string = "";
+  from: string = "";
+  to: string = "";
+  localData: any;
+  searchdata: any[];
+  bindData: any[] = [];
+  constructor() {
+    this.localData = [
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "amexio release plans",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "visual studio extension",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "amexio on angular.io",
+        "to": "xyz@metamagic.in "
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "amexio npm download spike",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in ",
+        "subject": "building web components",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "showcase app url",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "spring cloud stream demo",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "spring microservice demo",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "spring kafka integration",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "jsr Implementation",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "axon cqrs demo",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "angular routing",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "angular pipes",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "ribbon, hysterix",
+        "to": "xyz@metamagic.in "
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "eureka server using spring cloud",
+        "to": "xyz@metamagic.in"
+      },
+      {
+        "from": "xyz@metamagic.in",
+        "subject": "rx java",
+        "to": "xyz@metamgic.in"
+      },
+      {
+        "from": "PQR@metamgic.in",
+        "subject": "spring + mongo db",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "flux / redux architecture",
+        "to": "xyz@metamgic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "desire platform git repos",
+        "to": "PQR@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "pwa from react to angular/ionic",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "PQR@metamagic.in",
+        "subject": "messages in platform",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "typeScript secret weapon...",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "visual studio code plugin",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "hashing algo",
+        "to": "xyz@metamagic.in "
+      },{
+        "from": "xyz@metamagic.in ",
+        "subject": "vs code for windows, linux and mac os",
+        "to": "xyz@metamagic.in "
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "chart library - open source",
+        "to": "PQR@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "tdom uptos in angular",
+        "to": "PQR@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in ",
+        "subject": "hampi release",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "PQR@metamagic.in",
+        "subject": "building web components",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "xyz@metamagic.in",
+        "subject": "spring + redis ",
+        "to": "xyz@metamagic.in"
+      },{
+        "from": "PQR@metamgic.in",
+        "subject": "amexio plans",
+        "to": "xyz@metamagic.in"
+      }
+    ];
+    this.searchdata = this.localData;
+   }
+
+  //this function is called on hit of filter and it filters entered data
+  filter(search: any) {
+    this.bindData = [];
+    let sub1 = this.subject;
+    let to1 = this.to;
+    let frm1 = this.from;
+    if (sub1 == "" && frm1 == "" && to1 == "") {
+      debugger;
+      this.bindData = this.searchdata;
+    }
+    else {
+      this.searchdata.forEach(element => {
+         if ((sub1.length > 0 && to1.length > 0)) {
+          if (this.contains(element.subject, sub1) && this.contains(element.to, to1)) {
+            this.bindData.push(element);
+          }
+        }
+        else if ((sub1.length > 0) && (this.contains(element.subject, sub1))) {
+          this.bindData.push(element);
+        }
+        else if ((to1.length > 0) && (this.contains(element.to, to1))) {
+          this.bindData.push(element);
+        }
+        else if ((frm1.length > 0 && to1.length > 0)) {
+          if (this.contains(element.from, frm1) && this.contains(element.to, to1)) {
+            this.bindData.push(element);
+          }
+        }
+        else if ((sub1.length > 0 && frm1.length > 0 && to1.length > 0)) {
+          if (this.contains(element.from, frm1) && this.contains(element.to, to1) && this.contains(element.subject, sub1)) {
+            this.bindData.push(element);
+          }
+        }
+      });
+    }
+    search.closeSearchForm();
+  }
+
+//compares data with entered data
+  contains(value1: any, value2: string) {
+    return ((value1 + "").startsWith(value2))
+  }
+ ngOnInit() {
+    this.bindData = JSON.parse(JSON.stringify(this.localData))
+  }
+ }

@@ -1,0 +1,73 @@
+{
+  "name": "Amexio Slider",
+  "description": "Slider with draggable input provide a way to input values",
+  "selector": "<amexio-slider>",
+  "properties": [
+    {
+      "name": "animate",
+      "description": "Sets if animate flag is set",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "disabled",
+      "description": "Sets if slider is disabled",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "min-value",
+      "description": "Min slider value",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    },
+    {
+      "name": "max-value",
+      "description": "Max slider value",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    },
+    {
+      "name": "orientation",
+      "description": "Vertical or Horizontal Orientation of slider",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "horizontal"
+    },
+    {
+      "name": "step-value",
+      "description": "Step value in slider",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": "default"
+    },
+    {
+      "name": "range",
+      "description": "Range set to the slider",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "style-class",
+      "description": "Styling class applied slider",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "onChange",
+      "description": "Triggers when slider is moved"
+    },
+    {
+      "name": "onSlideEnd",
+      "description": "Triggers when slider reaches the end"
+    }
+  ]
+}

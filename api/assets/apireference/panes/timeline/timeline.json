@@ -1,0 +1,29 @@
+{
+    "name": "Amexio Timeline Event",
+    "description": "Amexio Timeline is the presentation of a chronological sequence of events. ",
+    "selector": "<amexio-timeline-event>",
+    "properties": [
+      {
+        "name": "content-border",
+        "description": "Content border is border for the content section .",
+        "version": "5.2 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "label",
+        "description": "Label for timeline.",
+        "version": "5.2 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "icon",
+        "description": "Icon for timeline.",
+        "version": "5.2 onwards",
+        "type": "string",
+        "default": ""
+      }
+    ],
+    "events": []
+  }

@@ -1,0 +1,22 @@
+{
+  "name": "Amexio Accordion",
+  "description": "Amexio Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs.",
+  "selector": "<amexio-accordion>",
+  "properties": [
+    {
+      "name": "collapsible",
+      "description": "Set value true for collapsible fieldset.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
+      "name": "title",
+      "description": "Title for fieldset.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+  "events": []
+}

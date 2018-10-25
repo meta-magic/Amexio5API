@@ -1,0 +1,57 @@
+{
+    "name": "Amexio chart title",
+    "description": "describes chart title properties",
+    "selector": "<amexio-chart-title>",
+    "properties": [
+      {
+        "name": "title",
+        "description": "Title to display above the chart.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "position",
+        "description": "position of chart title",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "color",
+        "description": "Color of chart title.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "font-name",
+        "description": "Font style of chart title.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "font-size",
+        "description": "Font size of chart title.",
+        "version": "4.0 onwards",
+        "type": "number",
+        "default": ""
+      },
+      {
+        "name": "bold",
+        "description": "Set true for title in bold font.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "italic",
+        "description": "Set true for title text in italic style.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "events": []
+  }

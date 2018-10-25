@@ -1,0 +1,206 @@
+<!-- Top Left Notification -->
+
+<amexio-column size="4">
+  <amexio-card [header]="true">
+    <amexio-header> Vertical Top Notification </amexio-header>
+    <amexio-body>
+
+      <amexio-notification
+        [data]="verticalLeftMessageArray"
+        [vertical-position]="'top'"
+        [horizontal-position]="'left'"
+        [close-on-escape] ="true"
+        [background-color]="'orange '"
+        [foreground-color]="'black'"
+        [auto-dismiss-msg]="true"
+        [auto-dismiss-msg-interval]="6000">
+
+        <ng-template #amexioNotificationTemp let-data="data">
+          <amexio-row>
+            <amexio-column size="2">
+              <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
+              </amexio-image> &nbsp;&nbsp;
+            </amexio-column>
+            <amexio-column size="8">
+              <amexio-label size="small-bold" font-color="white" > Warning Message </amexio-label><br/>
+              <amexio-label size="small" font-color="white" >{{data}}</amexio-label><br/>
+            </amexio-column>
+
+          </amexio-row>
+        </ng-template>
+
+
+      </amexio-notification>
+      <amexio-button
+        (onClick)="verticalLeftNotification()"
+        [label]="'Info Top Left'"
+        [type]="'primary'"
+        [tooltip]="'Primary Button'">
+      </amexio-button>
+    </amexio-body>
+  </amexio-card>
+</amexio-column>
+
+
+<!--Top Center Notification-->
+
+      <amexio-notification
+        [data]="verticalCenterMessageArray"
+        [vertical-position]="'top'"
+        [horizontal-position]="'center'"
+        [close-on-escape] ="true"
+        [background-color]="'yellow'"
+        [auto-dismiss-msg]="false"
+        [auto-dismiss-msg-interval]="4000">
+        <ng-template   #amexioNotificationTemp let-data="data" >
+          <amexio-box [box-width]="'350px'" >
+            <amexio-image [icon-class]="'	fa fa-info-circle fa-2x'" >
+            </amexio-image> &nbsp;&nbsp;
+            <amexio-label size="small-bold" [badge]=7 font-color="black"> {{data}}</amexio-label>
+          </amexio-box>
+        </ng-template>
+      </amexio-notification>
+
+
+<!--Top Right Notification-->
+
+      <amexio-notification
+        [data]="verticalRightMessageArray"
+        [vertical-position]="'top'"
+        [horizontal-position]="'right'"
+        [close-on-escape] ="true"
+        [background-color]="'red'"
+        [auto-dismiss-msg]="false"
+        [auto-dismiss-msg-interval]="4000">
+        <ng-template   #amexioNotificationTemp let-data="data" >
+          <amexio-row>
+            <amexio-column size="2">
+              <amexio-image [icon-class]="'	fa fa-times-circle-o'" style="font-size: 25px;">
+              </amexio-image> &nbsp;&nbsp;
+            </amexio-column>
+            <amexio-column size="10">
+              <amexio-label size="small-bold" font-color="white" >Error Message</amexio-label><br/>
+              <amexio-label font-color="white" >Please Enter Name</amexio-label><br/>
+              <amexio-label font-color="white" >Please Enter Phone No.</amexio-label>
+            </amexio-column>
+          </amexio-row>
+        </ng-template>
+      </amexio-notification>
+
+
+
+
+<!--Bottom Left Notification-->
+
+      <amexio-notification
+        [data]="horizontalLeftMessageArray"
+        [vertical-position]="'bottom'"
+        [horizontal-position]="'left'"
+        [close-on-escape] ="true"
+        [background-color]="'green'"
+        [auto-dismiss-msg]="false"
+        [auto-dismiss-msg-interval]="4000">
+        <ng-template   #amexioNotificationTemp let-data="data" >
+          <amexio-row>
+            <amexio-column size="2">
+              <amexio-image [icon-class]="'	fa fa-check'" style="font-size: 25px;">
+              </amexio-image> &nbsp;&nbsp;
+            </amexio-column>
+            <amexio-column size="8">
+              <amexio-label size="small-bold" font-color="white" >Success Message </amexio-label>
+              <amexio-label font-color="white" > {{data}} </amexio-label>
+            </amexio-column>
+          </amexio-row>
+        </ng-template>
+      </amexio-notification>
+
+
+<!-- Bottom Center Notification -->
+
+      <amexio-notification
+        [data]="horizontalCenterMessageArray"
+        [vertical-position]="'bottom'"
+        [horizontal-position]="'center'"
+        [close-on-escape] ="true"
+        [background-color]="'black'"
+        [foreground-color]="'white'"
+        [auto-dismiss-msg]="false "
+        [auto-dismiss-msg-interval]="4000">
+        <ng-template   #amexioNotificationTemp let-data="data" >
+          <amexio-box>
+            <amexio-image [icon-class]="'	fa fa-check-square-o'" style="font-size: 25px;">
+            </amexio-image> &nbsp;&nbsp;
+            <amexio-label font-color="white">{{data}}</amexio-label>
+          </amexio-box>
+        </ng-template>
+      </amexio-notification>
+
+
+<!-- Bottom Right Notification -->
+
+      <amexio-notification
+        [data]="horizontalRightMessageArray"
+        [vertical-position]="'bottom'"
+        [horizontal-position]="'right'"
+        [close-on-escape] ="true"
+        [background-color]="'orange '"
+        [foreground-color]="'black'"
+        [auto-dismiss-msg]="false"
+        [auto-dismiss-msg-interval]="4000">
+        <ng-template   #amexioNotificationTemp let-data="data" >
+          <amexio-row>
+            <amexio-column size="2">
+              <amexio-image [icon-class]="'	fa fa-exclamation-triangle'" style="font-size: 25px;">
+              </amexio-image> &nbsp;&nbsp;
+            </amexio-column>
+            <amexio-column size="8">
+              <amexio-label size="small-bold" font-color="white" >Worning Message </amexio-label><br/>
+              <amexio-label size="small" font-color="white" >{{data}}</amexio-label><br/>
+            </amexio-column>
+          </amexio-row>
+        </ng-template>
+      </amexio-notification>
+<amexio-column size="4">
+  <amexio-card [header]="true">
+    <amexio-header> Horizontal Right Notification </amexio-header>
+    <amexio-body>
+
+      <amexio-notification
+        [background-color]="'orange'"
+        [foreground-color]="'black'"
+        [data]="horizontalRightMessageArray"
+        [vertical-position]="'bottom'"
+        [horizontal-position]="'right'"
+        [close-on-escape] ="true"
+        [auto-dismiss-msg]="false"
+        [auto-dismiss-msg-interval]="6000">
+
+        <ng-template   #amexioNotificationTemp let-data="data" >
+          <amexio-box padding="true" [box-width]="'225px'">
+            <amexio-label size="medium-bold">Cookies Policy</amexio-label><br/>
+            <amexio-label>{{data}}</amexio-label><br/>
+            <br/>
+            <amexio-button [label]="'Accept & Close'"
+                           [type]="'theme-color'"
+                           (onClick)="closeCookie()"
+                           [size]="'small'"
+                           [tooltip]="'cookies accepted button'">
+            </amexio-button>
+          </amexio-box>
+        </ng-template>
+
+
+      </amexio-notification>
+      <amexio-button
+        (onClick)="horizontalRightNotification()"
+        [label]="'Info Bottom Right'"
+        [type]="'primary'"
+        [tooltip]="'Primary Button'">
+      </amexio-button>
+
+    </amexio-body>
+  </amexio-card>
+
+</amexio-column>
+
+

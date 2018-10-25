@@ -1,0 +1,109 @@
+{
+  "name": "Amexio Date time picker",
+  "description": "This component is flexible for both Date and time picker with all required configurations in Style.",
+  "selector": "<amexio-date-time-picker>",
+  "properties": [
+    {
+      "name": "date-format",
+      "description": "The label of this field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "date-picker",
+      "description": "Enable/Disable Date Picker",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "time-picker",
+      "description": "Enable/Disable Time Picker",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "field-label",
+      "description": "The label of this field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "disabled",
+      "description": "Disable Date/Time Picker field",
+      "version": "4.1.5 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "read-only",
+      "description": "Disable Date/Time Picker field",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "required",
+      "description": "Flag to allow blank field or not",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "min-date",
+      "description": "sets minimum date range",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "max-date",
+      "description": "sets maximum date range",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "disabled-date",
+      "description": "sets disabled dates range",
+      "version": "4.2 onwards",
+      "type": "any",
+      "default": "none"
+    },
+    {
+      "name": "inline-datepicker",
+      "description": "sets inline calender",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "dropdown-datepicker",
+      "description": "sets dropdown datepicker",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    }
+
+   
+  ],
+  "events": [ {
+      "name": "blur",
+      "description": "On blur event"
+    },
+    {
+      "name": "change",
+      "description": "On field value change event"
+    },
+    {
+      "name": "input",
+      "description": "On input event field."
+    },
+    {
+      "name": "focus",
+      "description": "On field focus event"
+    }]
+}

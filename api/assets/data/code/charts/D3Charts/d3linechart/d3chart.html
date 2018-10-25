@@ -1,0 +1,13 @@
+<!--  D3 Chart line chart:  Double line-->
+<amexio-d3-chart-line   (onLegendClick)="onUserDefineLegendClick($event)" 
+                        (onChartClick)="onUserDefineLegendClick($event)"
+                        [title]="'Popularity Of XYZ & PQR'" 
+                        [data]="doubleLineData">
+</amexio-d3-chart-line>
+
+<!-- D3-chart line chart: single line-->
+<amexio-d3-chart-line   (onLegendClick)="onDefaultLegendClick($event)" 
+                        (onChartClick)="onDefaultLegendClick($event)" 
+                        [title]="'CNX Resources Corp'"
+                        [data]="singlelinedata">
+</amexio-d3-chart-line>

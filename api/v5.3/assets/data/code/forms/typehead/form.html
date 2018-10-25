@@ -1,0 +1,10 @@
+<!--Simple type head-->
+<amexio-typeahead [data-reader]="'data'"
+                  [key]="'countryName'"
+                  [display-field]="'countryName'"
+                  [place-holder]="'Search'"
+                  [http-url]="'assets/data/componentdata/typeahead.json'"
+                  [http-method]="'get'"
+                  (change)="onSelection($event)"
+                  [field-label]="'Country'">
+</amexio-typeahead>

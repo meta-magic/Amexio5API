@@ -1,0 +1,39 @@
+<amexio-dockbar [height]="'600px'">
+  <amexio-dockbar-item  [icon]="'fa fa-home fa-fw'"
+                        [title]="'Features'"
+                        [width]="'210px'" [height]="'600px'">
+    <amexio-side-nav
+      [http-url]="'assets/data/componentdata/sidenav.json'"
+      [http-method]="'get'"
+      [data-reader]="'data'"
+      [width]="'210px'"
+      [position]="'relative'">
+    </amexio-side-nav>
+  </amexio-dockbar-item>
+  <amexio-dockbar-item  [icon]="'fa fa-address-book fa-fw'"
+                        [title]="'Contacts'"
+                        [width]="'210px'"
+                        [height]="'600px'">
+  <amexio-listbox [header]="'Contacts'"
+                  [search-placeholder]="'Search Contacts'"
+                  [http-url]="'assets/data/componentdata/profiledata.json'"
+                  [http-method]="'get'"
+                  [filter]="false"
+                  [enable-checkbox]="false"
+                  [data-reader]="'response.data'"
+                  [display-field]="'name'">
+  <ng-template #amexioBodyTmpl let-row="row">
+  <amexio-row>
+  <amexio-column [size]="12">
+  <amexio-image [c-class]="'around-image'"
+                height="50px"
+                width="50px"
+                path="assets/images/profile/{{row.profile}}">
+  </amexio-image>
+  <a>{{row.name}}</a>
+  </amexio-column>
+  </amexio-row>
+  </ng-template>
+  </amexio-listbox>
+  </amexio-dockbar-item>
+  </amexio-dockbar>

@@ -1,0 +1,20 @@
+{
+    "name": "Amexio Toolbar Item",
+    "description": "Toolbar",
+    "selector": " <amexio-toolbar-item>",
+    "properties": [
+      {
+        "name": "seperator-position",
+        "description": "Separator places the position of components to its left or right position.",
+        "version": "4.2 onwards",
+        "type": "string",
+        "default": ""
+      }
+    ],
+    "events": [
+      {
+        "name": "onClick",
+        "description": "Event is fired on toolbar component"
+      }
+    ]
+  }

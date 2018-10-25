@@ -1,0 +1,10 @@
+<!-- D3-Combo Chart -->
+<amexio-d3-combochart
+[title]="'Rice Production in India'" 
+(onChartClick)="onDefaultChartClick($event)" 
+(onLineClick)="onDefaultLineClick($event)" 
+(onLegendClick)="onUserDefineLegendClick($event)"
+[data]="barData"
+[line-data-index]="'Rice Export'">
+</amexio-d3-combochart>
+ 

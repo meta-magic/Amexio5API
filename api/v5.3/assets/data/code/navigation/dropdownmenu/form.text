@@ -1,0 +1,50 @@
+export class DropDownMenuDemo {
+                  payment :any[];
+                  transport: any[];
+
+  constructor(){
+  // Demo 1 : with SEPARATOR
+     
+    this.payment = [
+      {"label": "Visa", "icon": "fa fa-cc-visa"},
+      {"label": "Paypal", "icon": "fa fa-paypal", "separator": true},
+      {"label": "Google wallet", "icon": "fa fa-google-wallet"},
+      {"label": "Stripe", "icon": "fa fa-cc-stripe", "separator": true},
+      {"label": "Mastercard", "icon": "fa fa-cc-mastercard"},
+      {"label": "JCB", "icon": "fa fa-cc-jcb"}
+
+    ];
+
+  // Demo 4 :  without SEPARATOR
+
+    this.transport = [
+      {"label": "Motorcycle", "icon": "fa fa-motorcycle"},
+      {"label": "Plane", "icon": "fa fa-plane"},
+      {"label": "Ship", "icon": "fa fa-ship"},
+      {"label": "Space shuttle", "icon": "fa fa-space-shuttle"},
+      {"label": "Bicycle", "icon": "fa fa-bicycle"},
+      {"label": "Rocket", "icon": "fa fa-rocket"}
+    ];
+
+
+         }
+
+  onDropDownMenuClick(item: any) {
+    let jsonData = {
+      'icon': '',
+      'label': '',
+      'labelalign': ''
+    };
+    if (item.this.icon) {
+      jsonData.icon = item.this.icon;
+    }
+    if (item.this.label) {
+      jsonData.label = item.this.label;
+    }
+    if (item.this.labelalign) {
+      jsonData.labelalign = item.this.labelalign;
+    }
+    this.source = jsonData;
+  }
+}
+

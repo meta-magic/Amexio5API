@@ -1,0 +1,15 @@
+
+
+<!-- Tree with Expand and Collapse function on button Click -->
+
+<i    
+       [attr.class]="text" 
+       (click)="expandAlldata(id)">
+</i>
+                           
+<amexio-treeview 
+                    #treeID
+                [data-reader]="'item'" 
+                [data]="treeLocalExpandData" 
+                (nodeClick)="getNodeDataClick($event)">
+</amexio-treeview>

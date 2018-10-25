@@ -1,0 +1,36 @@
+{
+  "name": "Amexio area chart",
+  "description": "An area chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+  "selector": "<amexio-chart-area>",
+  "properties": [
+    {
+      "name": "width",
+      "description": "Width of chart",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "height",
+      "description": "Height of chart",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "description": "Local data for AreaChart",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "background-color",
+      "description": "Sets background color to chart",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    }
+  ],
+  "events": []
+}

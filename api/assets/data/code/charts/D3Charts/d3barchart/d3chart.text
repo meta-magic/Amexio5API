@@ -1,0 +1,85 @@
+
+
+export class AmexioD3BarChartDemoComponent
+{
+
+  userDefineColors: any;
+  defultColorData: any;
+  userDefineColorData: any; 
+  sourceData: any;
+  userDataSource: any;
+  barChartWithColorData: any;
+  barData: any;
+  sourceData1: any;
+
+  constructor() { 
+
+  this.userDefineColors = 
+    [
+      "#4040a1",
+      "#e06377",
+      " #7e4a35",
+      "#6b5b95",
+      "#feb236",
+      "#d64161",
+      "#ff7b25"
+    ]
+     this.defultColorData = [
+      ['year', 'performance'],
+      ['2011', 1020],
+      ['2012', 590],
+      ['2013', 1260],
+      ['2014', 830],
+      ['2015', 1030],
+      ['2016', 209],
+      ['2017', 1006]
+    ];
+
+    this.userDefineColorData =
+    [
+      ['city', 'population'],
+      ['Mumbai', 94423],
+      ['Kochi', 69932],
+      ['Delhi', 91345],
+      ['Chennai', 46467],
+      ['Pune', 31244],
+      ['Jaipur', 30461],
+      ['Ranchi', 84436]
+    ];
+
+       this.barData = 
+      [
+        ['year', 'production'],
+        ['2011', 300],
+        ['2012', 500],
+        ['2013', 700],
+        ['2014', 400],
+        ['2015', 600],
+        ['2016', 500],
+        ['2017', 200]
+      ];
+
+   }
+  
+  onDefaultLegendClick(event: any) {
+    this.sourceData = event;
+  }
+
+  onUserDefineLegendClick(event: any) {
+    this.userDataSource = event;
+  }
+
+  onDefaultChartClick(event: any) {
+    this.userDataSource = event;
+  }
+
+   onDefaultChartClick2(event: any) {
+    this.sourceData1 = event;
+   }
+ 
+     onDefaultLegendClick1(event: any) {
+    this.sourceData1 = event;
+   }
+
+}
+

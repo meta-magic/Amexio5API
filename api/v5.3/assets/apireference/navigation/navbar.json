@@ -1,0 +1,77 @@
+{
+  "properties": [
+    {
+      "name": "title",
+      "type": "string",
+      "default": "",
+      "description": "Title of navbar."
+    },{
+      "name": "logo",
+      "type": "string",
+      "default": "",
+      "description": "Logo of navbar."
+    },
+    {
+      "name": "enable-side-nav-position",
+      "type": "boolean",
+      "default": "",
+      "description": "Indicate if side-nav-bar is present"
+    }
+  ],
+  "navevents": [{
+        "name": "onNavLogoClick",
+        "description": "Fire when nav bar logo is clicked "
+    },
+    {
+        "name": "onNavTitleClick",
+        "description": "Fire when title is clicked"
+    }
+  ],
+  "propertiesitem": [
+    {
+      "name": "position-center",
+      "type": "string",
+      "default": "",
+      "description": "Show the content in center. <amexio-nav-item position-center></amexio-nav-item>."
+    },
+    {
+      "name": "position-left",
+      "type": "string",
+      "default": "",
+      "description": "Show the content left side .<amexio-nav-item position-left></amexio-nav-item>."
+    },
+    {
+      "name": "position-right",
+      "type": "string",
+      "default": "",
+      "description": "Show the content right side. <amexio-nav-item position-right></amexio-nav-item>."
+    },
+    {
+      "name": "type",
+      "type": "string",
+      "default": "",
+      "description": "Indicate the type of menu-items (link / button / textfield /menu/menucontainer ) For Advance development use (menucontainer) for custom dropdown menu you can used in navbar."
+    },
+    {
+      "name": "title",
+      "type": "string",
+      "default": "",
+      "description": "Title for link, button and menu header"
+    },{
+      "name": "icon",
+      "type": "string",
+      "default": "",
+      "description": "Icon for link, button and menu header"
+    },
+    {
+      "name": "data",
+      "type": "array",
+      "default": "",
+      "description": "Standard JSON format array data which is used for rendering menus. This is used when type=menu is defined."
+    }
+  ],
+    "events": [{
+        "name": "onNavItemClick",
+        "description": "Fire when nav item is clicked, This event is fired when nav item type is defined as 'link/button/menu' "
+    }]
+}

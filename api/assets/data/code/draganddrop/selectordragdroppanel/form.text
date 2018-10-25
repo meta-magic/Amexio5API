@@ -1,0 +1,15 @@
+export class ItemSelectorDragdropDemo {
+  selectedPanelData: any;
+  constructor() {
+  }
+  getDropData(data: any) {   
+    data.event.dataTransfer.setData("dragdata", JSON.stringify(data.data));
+  }
+  dragOver(event: any){
+    event.preventDefault();
+  }
+  drop(event: any) {
+    event.preventDefault();
+    this.selectedPanelData = JSON.parse(event.dataTransfer.getData('dragdata'))
+  }
+}

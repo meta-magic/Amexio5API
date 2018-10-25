@@ -1,0 +1,13 @@
+
+export class RecaptchaDemo {
+constructor() {
+}
+
+  onSuccess(event: any) {
+    console.log('res', event);
+  }
+  onFailure(event: any) {
+    console.log('res', event);
+    
+  }
+}

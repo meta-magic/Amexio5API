@@ -1,0 +1,20 @@
+<!--  Relative with floating group poisitioned bottom right-->
+
+<amexio-floating-group-button [relative]="true" 
+(onClick)="onFloatingClick($event)" [data]="floatingbuttongroup" [floating-group-position]="'top'"
+[icon]="'fa fa-ellipsis-v'" [type]="'theme-color'">
+</amexio-floating-group-button>
+
+<!--Relative with floating  group poisitioned top right-->
+
+<amexio-floating-group-button [relative]="true" 
+(onClick)="onFloatingClick($event)" [data]="floatingbuttongroup" [floating-group-position]="'bottom'"
+[icon]="'fa fa-ellipsis-v'" [type]="'green'">
+</amexio-floating-group-button>
+
+<!--Floating group poisitioned bottom right-->
+
+<amexio-floating-group-button (onClick)="onFloatingClick($event)" [data]="floatingbuttongroup" [floating-group-position]="'top'"
+[position-bottom]="'5%'" [position-right]="'5%'"
+[icon]="'fa fa-ellipsis-v'" [type]="'red'">
+</amexio-floating-group-button>

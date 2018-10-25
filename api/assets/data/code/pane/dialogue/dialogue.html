@@ -1,0 +1,139 @@
+
+        <!-- Material Design Pattern -->
+
+<!-- With Material Design :-  confirm dialogue-->
+
+<amexio-dialogue  [(show)]="confirmdialoguematerial"
+[button-size]="'medium'"
+[material-design]="true"
+[title]="'Confirm'"
+[message]="'Are you sure ?'"
+[message-type]="'confirm'" >
+</amexio-dialogue>
+
+<!-- With Material Design :-  Error dialogue-->
+
+<amexio-dialogue [(show)]="errordialoguematerial"
+[close-on-escape]="true"
+[material-design]="true"
+[message]="'Error Occurred.'"
+[primary-action-label]="'Ok'"
+[title]="'Error'"
+[message-type]="'error'"
+[type]="'alert'">
+</amexio-dialogue>
+
+<!-- With Material Design :- warning dialogue-->
+
+<amexio-dialogue [(show)]="warningdialoguematerial"
+[material-design]="true"
+[message]="'Data not found.'"
+[title]="'Warning'"
+[message-type]="'warning'"
+[type]="'alert'">
+</amexio-dialogue>
+
+<!-- With Material Design :-  help dialogue-->
+
+<amexio-dialogue [(show)]="helpdialoguematerial"
+[material-design]="true"
+[title]="'Help'"
+[message]="'Check Server.'"
+[message-type]="'help'"
+[type]="'alert'">
+</amexio-dialogue>
+
+<!-- With Material Design :- custom dialogue-->
+
+<amexio-dialogue [(show)]="customdialoguematerial"
+[material-design]="true"
+[close-on-escape]="false"
+[custom]="true"
+[title]="'Custom dialogue'"
+[type]="'confirm'">
+<amexio-body>
+<amexio-text-input field-label="Name" name="name"
+     place-holder="Enter name"
+     icon-feedback="true">
+</amexio-text-input>
+</amexio-body>
+<amexio-action>
+<amexio-button type="primary"
+ label="save">
+</amexio-button>
+</amexio-action>
+</amexio-dialogue>
+<amexio-row>
+<amexio-column size="12">
+<amexio-label
+size="small">
+(Escape functionality is disabled)
+</amexio-label>
+</amexio-column>
+</amexio-row>
+
+
+<!--Non Material Design Pattern-->
+
+<!-- Without Material Design :- confirm dialogue-->
+
+<amexio-dialogue  [(show)]="confirmdialoguenonmaterial"
+[button-size]="'medium'"
+[material-design]="false"
+[title]="'Confirm'"
+[message]="'Are you sure ?'"
+[message-type]="'confirm'" >
+</amexio-dialogue>
+
+<!-- Without Material Design :- Error dialogue-->
+
+<amexio-dialogue [(show)]="errordialoguenonmaterial"
+[close-on-escape]="true"
+[material-design]="false"
+[message]="'Error Occurred.'"
+[primary-action-label]="'Ok'"
+[title]="'Error'"
+[message-type]="'error'"
+[type]="'alert'">
+</amexio-dialogue>
+
+<!-- Without Material Design :- warning dialogue-->
+
+<amexio-dialogue [(show)]="warningdialoguenonmaterial"
+[material-design]="false"
+[message]="'Data not found.'"
+[title]="'Warning'"
+[message-type]="'warning'"
+[type]="'alert'">
+</amexio-dialogue>
+
+<!-- Without Material Design :- help dialogue-->
+
+<amexio-dialogue [(show)]="helpdialoguenonmaterial"
+[material-design]="false"
+[title]="'Help'"
+[message]="'Check Server.'"
+[message-type]="'help'"
+[type]="'alert'">
+</amexio-dialogue>
+
+<!--Without Material Design :- custom dialogue-->
+
+<amexio-dialogue [(show)]="customdialoguenonmaterial"
+[material-design]="false"
+[close-on-escape]="false"
+[custom]="true"
+[title]="'Custom dialogue'"
+[type]="'confirm'">
+<amexio-body>
+<amexio-text-input field-label="Name" name="name"
+   place-holder="Enter name"
+   icon-feedback="true"
+></amexio-text-input>
+</amexio-body>
+<amexio-action>
+<amexio-button type="primary"
+label="save">
+</amexio-button>
+</amexio-action>
+</amexio-dialogue>

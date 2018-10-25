@@ -1,0 +1,18 @@
+ <!--Inline Date Picker min,max and disabled date -->
+<amexio-date-time-picker [inline-datepicker]="true" [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true"
+[min-date]="'22-Mar-2016'" [max-date]="'22-Feb-2019'" [disabled-date]="disabledDate" [(ngModel)]="currentDate1">
+</amexio-date-time-picker>
+
+<!--Time Picker-->
+<amexio-date-time-picker [field-label]="'Time Of Birth'" [time-picker]="true" [date-picker]="false" [ngModel]="time" (change)="onChangeTime($event)">
+</amexio-date-time-picker>
+
+<!--Date Picker with min,max date-->
+<amexio-date-time-picker [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [min-date]="'22-Mar-2016'"
+[max-date]="'22-Feb-2019'" [(ngModel)]="currentDate">
+</amexio-date-time-picker>
+
+<!--Dropdown Date Picker with disabled date-->
+<amexio-date-time-picker [dropdown-datepicker]="true" [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true"
+[disabled-date]="disabledDate" [(ngModel)]="currentDate2">
+</amexio-date-time-picker>

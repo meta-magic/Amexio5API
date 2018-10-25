@@ -1,0 +1,37 @@
+{
+  "name": "Amexio spinner ",
+  "description": "spinner Component Provides up-to-date feedback on the spinner of a workflow or action with simple yet flexible spinner bars and easy to configure.",
+  "selector": "<amexio-spinner>",
+  "properties": [
+    {
+      "name": "show",
+      "description": "Shows / Hides the spinner .",
+      "version": "5.2.2 onwards",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
+      "name": "type",
+      "description": "Types of spinner:- fadingcircle/ ballspin/ firespin/ threebounce/ spinnerround/ ring/ halfcircle/ rectanglebounce ",
+      "version": "5.2.2 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "color",
+      "description": "Use different colors for spinner ",
+      "version": "5.2.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "size",
+      "description": "size for spinner(size in  px or % ) ",
+      "version": "5.2.2 onwards",
+      "type": "string",
+      "default": ""
+    }
+
+  ],
+  "events": []
+}

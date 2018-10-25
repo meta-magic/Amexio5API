@@ -1,0 +1,12 @@
+Sample data for Pie Chart.
+[
+      ['country', 'ratio'],
+      ['India', 30.3],
+      ['Spain', 9.52],
+      ['France', 13.68],
+      ['China', 18.71],
+      ['Germany', 8.01],
+      ['U.K', 8.01],
+      ['U.S', 14.01],
+      ['Korea', 4.01]
+]

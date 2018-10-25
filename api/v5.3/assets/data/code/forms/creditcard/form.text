@@ -1,0 +1,21 @@
+export class CreditCardDemo{
+constructor(){
+    this.creditcard = new CreditCardModel();
+    }
+}
+export class CreditCardModel {
+  
+    owner : string;
+    cvv : number;
+    cardnumber: number;
+    expMonth : number;
+    expYear : number;
+
+constructor(){
+    this.owner = 'ABC';
+    this.cvv = 123;
+    this.cardnumber = 4565488999999999;
+    this.expMonth= 3;
+    this.expYear = 2020;
+}
+}

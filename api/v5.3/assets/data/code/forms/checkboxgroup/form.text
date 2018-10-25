@@ -1,0 +1,45 @@
+export class CheckBoxGroupDemo {
+  checkboxGroupdata: any;
+  checkboxGroupdatadisabled : any;
+  checkboxGroupdatadisabledallitem: any;
+  constructor(){
+    this.checkboxGroupdata = {
+      response: {
+        data: [{
+          language: 'Angular 2', checked: false
+        }, {
+          language: 'JAVA', checked: false
+        }, {
+          language: 'C++', checked: false
+        }]
+      }
+    };
+
+    this.checkboxGroupdatadisabled = {
+          response: {
+            data: [{
+              language: 'Angular 2', checked: false,disabled : false
+            }, {
+              language: 'JAVA', checked: true,disabled : true
+            }, {
+              language: 'C++', checked: false,disabled : false
+            }]
+          }
+        };
+     this.checkboxGroupdatadisabledallitem = {
+      response: {
+        data: [{
+          language: 'Angular 2', checked: false
+        }, {
+          language: 'JAVA', checked: true
+        }, {
+          language: 'C++', checked: false
+        }]
+      }
+    };
+  }
+  //selected Checkbox event
+  selectedCheckboxgroup(data:any){
+    //make some operation here
+  }
+}

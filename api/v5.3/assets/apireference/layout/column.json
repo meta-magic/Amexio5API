@@ -1,0 +1,22 @@
+{
+  "name": " Amexio Column",
+  "description": " Amexio column system allows up to 12 columns across the page.",
+  "selector": " <amexio-column>",
+  "properties": [
+    {
+      "name": " size",
+      "description": " Column size ",
+      "version": " 4.0 onwards",
+      "type": " any",
+      "default": ""
+    },
+    {
+      "name": "fit",
+      "description": " Column height 100% ",
+      "version": " 5.0 onwards",
+      "type": " boolean",
+      "default": "false"
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,80 @@
+{
+  "datapoint": [
+    {
+      "name": "north",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enable north position"
+    },{
+      "name": "south",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enable south position"
+    },{
+      "name": "west",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enable west position"
+    },{
+      "name": "center",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enable center position"
+    },
+    {
+      "name": "east",
+      "type": "boolean",
+      "default": "false",
+      "description":"Enable east position"
+    }, {
+      "name": "background-color",
+      "type": "string",
+      "default": "",
+      "description":"Background color for datapoint."
+    }, {
+      "name": "font-color",
+      "type": "string",
+      "default": "",
+      "description":"Font color for datapoint."
+    }, {
+      "name": "amexio-color(from v4.1.X)",
+      "type": "string",
+      "default": "",
+      "description":"use different inbuilt amexio colors available (e.g amexio-black, amexio-red etc)"
+    }
+  ],
+  "location": [
+    {
+      "name": "background-color",
+      "type": "string",
+      "default": "",
+      "description":"Set background color"
+    }, {
+      "name": "font-color",
+      "type": "string",
+      "default": "",
+      "description":"Set font color"
+    }, {
+      
+      "name": "content-align",
+      "type": "string",
+      "default": "",
+      "description":"Set content align like : center,left,right"
+    }, {
+      "name": "width",
+      "type": "string",
+      "default": "",
+      "description":"Set width"
+    }, {
+      "name": "height",
+      "type": "string",
+      "default": "",
+      "description":"Set height"
+    }, {
+      "name": "c-class",
+      "type": "string",
+      "default": "",
+      "description":"To use custom css class"
+    }
+  ]
+}

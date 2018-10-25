@@ -1,0 +1,19 @@
+
+<!--  D3 pie chart with Default Color -->
+
+<amexio-d3-chart-pie 
+        [title]="'My Daily Activity'" 
+        [data]="defultColorData"
+        (onChartClick)="onDefaultChartClick($event)" 
+        (onLegendClick)="onDefaultLegendClick($event)">
+</amexio-d3-chart-pie>
+
+<!-- D3 pie chart with User Define Color -->
+
+<amexio-d3-chart-pie 
+        [data]="userDefineColorData" 
+        [title]="'Population of Cities in India'"
+        (onChartClick)="onDefaultChartClick($event)"  
+        (onLegendClick)="onUserDefineLegendClick($event)"
+        [color]="userDefineColors" >
+ </amexio-d3-chart-pie>

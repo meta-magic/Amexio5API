@@ -1,0 +1,84 @@
+{
+    "name": "Amexio D3-chart bar-stack",
+    "description": "An  D3-chart bar-stack  chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+    "selector": "<amexio-d3-chart-bar-stack>",
+    "properties": [
+        {
+            "name": "title",
+            "version": "0.0.3 Onwards",
+            "description": "Sets title to chart",
+            "type": "string",
+            "default": ""
+        },
+
+        {
+            "name": "width",
+            "version": "0.0.3 Onwards",
+            "description": "Width of chart",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "height",
+            "version": "0.0.3 Onwards",
+            "description": "Height of chart",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data",
+            "version": "0.0.3 Onwards",
+            "description": "Local data for Chart",
+            "type": "any[]",
+            "default": ""
+        },
+        {
+            "name": "legend",
+            "version": "0.0.3 Onwards",
+            "description": "Sets legend to D3 bar-stack chart",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "name": "color",
+            "version": "0.0.4 Onwards",
+            "description": "Sets color to D3 Bar chart",
+            "type": "any[]",
+            "default": ""
+        } ,     {
+            "name": "http-url",
+            "description": "REST url for fetching data.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "http-method",
+            "description": "Type of HTTP call, POST,GET etc.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data-reader",
+            "description": "Key in JSON Datasource for records.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        }
+    ],
+    "legend": [
+        {
+            "name": "onLegendClick()",
+            "version": "0.0.3  Onwards",
+            "description": "It will fire only on click on Legend Click in D3 bar-stack chart ."
+        }
+    ],
+    "chartevent": [
+        {
+            "name": "onChartClick()",
+            "version": "0.0.3  Onwards",
+            "description": "It will fire only on click on chart in D3 barstack chart ."
+        }
+    ]
+}

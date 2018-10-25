@@ -1,0 +1,129 @@
+
+//  (Demo 1):  Amexio Dropdown Menu icon on LEFT side with SEPERATOR
+
+<amexio-drop-down-menu
+                        [icon-align]="'left'"
+                        [title]="'Payment option'"
+                        [data]="payment"
+                        [icon]="'fa fa-truck'"
+                        [transparent]="false"
+                        (onClick)="onDropDownMenuClick($event)">
+</amexio-drop-down-menu>
+
+
+
+// (Demo 2): Amexio Dropdown Menu with some Advance Function
+//           user can use custom function here
+
+<amexio-drop-down-menu
+                        [title]="'Advance'"
+                        [icon]="'fa fa-flash'"
+                        (onClick)="onDropDownMenuClick($event)">
+                <amexio-drop-down-menu-item
+                                [separator]="true">
+
+                    <amexio-box background-color="purple" padding="true">
+                              <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+                    </amexio-box>
+                    <amexio-row>
+                            <amexio-column size="5">
+                                       <amexio-image [height]="'89.75px'" [width]="'89.75px'"  [c-class]="'image-round'"
+                                                     path="assets/images/profile/ketan.jpg">
+                                       </amexio-image>
+                            </amexio-column>
+                            <amexio-column size="7">
+                                        <amexio-label > Ketan Gote</amexio-label>
+                                        <amexio-label > xyz@metamagic.in</amexio-label><br>
+                                        <amexio-button  [size]="'small'" [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'"></amexio-button>
+                            </amexio-column>
+                    </amexio-row>
+
+                </amexio-drop-down-menu-item>
+
+                <amexio-drop-down-menu-item
+                                              [label]="'settings'"
+                                              [icon]="'fa fa-home'">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [label]="'help center'"
+                                              [icon]="'fa fa-car'"
+                                              [separator] ="true">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [label]="'Language'"
+                                              [icon]="'fa fa-map-marker'">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [label]="'sign out'"
+                                              [icon]="'fa fa-sign-out'">
+                </amexio-drop-down-menu-item>
+
+</amexio-drop-down-menu>
+
+
+// (Demo 3):  Amexio Dropdown Menu Group with icon position changes
+
+<amexio-drop-down-menu
+                        [title]="'Brands'"
+                        [icon]="'fa fa-slack'"
+                        (onClick)="onDropDownMenuClick($event)">
+
+                <amexio-drop-down-menu-item
+                                              [icon-align]="'right'"
+                                              [label-align]="'left'"
+                                              [label]="'VK'"
+                                              [icon]="'fa fa-vk'"
+                                              [separator]="false">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [icon-align]="'right'"
+                                              [label-align]="'left'"
+                                              [label]="'Twitter'"
+                                              [icon]="'fa fa-twitter'"
+                                              [separator]="false">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [icon-align]="'right'"
+                                              [label-align]="'left'"
+                                              [label]="'Telegram'"
+                                              [icon]="'fa fa-telegram'"
+                                              [separator]="true">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [icon-align]="'right'"
+                                              [label-align]="'left'"
+                                              [label]="'Github'"
+                                              [icon]="'fa fa-github-alt'"
+                                              [separator]="false">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [icon-align]="'right'"
+                                              [label-align]="'left'"
+                                              [label]="'Apple'"
+                                              [icon]="'fa fa-apple'"
+                                              [separator]="false">
+                </amexio-drop-down-menu-item>
+                <amexio-drop-down-menu-item
+                                              [icon-align]="'right'"
+                                              [label-align]="'left'"
+                                              [label]="'WhatsApp'"
+                                              [icon]="'fa fa-whatsapp'"
+                                              [separator]="false">
+                </amexio-drop-down-menu-item>
+
+</amexio-drop-down-menu>
+
+
+//  (Demo 4):   Amexio Dropdown Menu icon on Right side without SEPERATOR
+
+<amexio-drop-down-menu
+                         [icon-align]="'right'"
+                         [title]="'Transport'"
+                         [data]="transport"
+                         [down-arrow-icon] ="true"
+                         [icon]="'fa fa-credit-card'"
+                         [transparent]="false"
+                         (onClick)="onDropDownMenuClick($event)" >
+</amexio-drop-down-menu>
+
+

@@ -1,0 +1,11 @@
+<!--ITEM SELECTOR WITH DRAG AND DROP FUNCTIONALITY-->
+<amexio-item-selector [height]="250"
+                      [display-field]="'countryName'"
+                      [value-field]="'countryId'"
+                      (selectedRecords)="getSelectedData($event)"
+                      [http-url]="'assets/data/componentdata/selectordata.json'"
+                      [http-method]="'get'"
+                      [data-reader]="'data'"
+                      [enable-drag]="true"
+                      [enable-drop]="true">
+</amexio-item-selector>

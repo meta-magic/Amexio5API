@@ -1,0 +1,27 @@
+{
+    "name": "Amexio Button Group",
+    "description": "Amexio Button groups are containers for related action amexio-button.",
+    "selector": "<amexio-btn-group>",
+    "properties": [
+      {
+        "name": "size",
+        "description": "large, default, small & xsmall",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "badge",
+        "description": "Badge  describes the badge value that has to be displayed on button",
+        "version": "4.1.9 onwards",
+        "type": "number",
+        "default": ""
+      }
+    ],
+    "events": [
+      {
+        "name": "getButton",
+        "description": "Fire when button click"
+      }
+    ]
+  }

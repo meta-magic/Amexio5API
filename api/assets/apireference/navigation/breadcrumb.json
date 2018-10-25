@@ -1,0 +1,58 @@
+{
+  "properties": [
+    {
+      "name": "http-url",
+      "type": "string",
+      "version": "5.2.3 onwards",
+      "default": "",
+      "description": "REST url for fetching datasource."
+    },
+    {
+      "name": "http-method",
+      "type": "string",
+      "version": "5.2.3 onwards",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET."
+    },
+    {
+      "name": "data-reader",
+      "type": "string",
+      "version": "5.2.3 onwards",
+      "default": "",
+      "description": "Key in JSON Datasource for records."
+    },
+    {
+      "name": "data",
+      "version": "5.2.3 onwards",
+      "type": "any",
+      "default": "",
+      "description": "Local data for breadcrumb."
+    },
+    {
+      "name": "display-key",
+      "version": "5.2.3 onwards",
+      "type": "any[]",
+      "default": "text",
+      "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+    },
+    {
+      "name": "childarray-key",
+      "version": "5.2.3 onwards",
+      "type": "any[]",
+      "default": "children",
+      "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
+    }
+  ],
+  "events": [
+    {
+      "name": "onListItemClick",
+      "version": "5.2.3 onwards",
+      "description": "Fire when list of item  click"
+    },
+    {
+      "name": "onClick",
+      "version": "5.2.3 onwards",
+      "description": "Fire when breadcrumb click"
+    }
+  ]
+}

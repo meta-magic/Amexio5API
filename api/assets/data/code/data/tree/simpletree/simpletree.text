@@ -1,0 +1,14 @@
+
+export class SimpleTreeDemo {
+  selectedCustomData: any;
+  constructor() {}
+
+  getNodeData(data: any) {
+      /*Do Operation on data*/
+  }
+
+  /* custom array  Tree with user define keys */
+    getCustomNodeData(data: any) {
+     /* Do Operation on data */
+  }
+}

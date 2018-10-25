@@ -1,0 +1,50 @@
+{
+  "name": "Amexio Credit Card",
+  "description": "Credit Card for Payment",
+  "selector": "<amexio-creditcard>",
+  "properties": [
+    {
+      "name": "year-count",
+      "description": "The year count determine about the no. of year to to be displayed",
+      "version": "5.2.3 onwards",
+      "type": "number",
+      "default": "none"
+    },
+    {
+      "name": "show-label",
+      "description": "The show-label flag displays label for each text field.",
+      "version": "5.2.4 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "template",
+      "description": "Template are : 'single-column' and 'double-column'",
+      "version": "5.2.4 onwards",
+      "type": "string",
+      "default": "double-column"
+    }
+  ],
+  "model": [
+    {
+      "name": "owner",
+      "datatype": "string"
+    },
+    {
+      "name": "cvv",
+      "datatype": "number"
+    },
+    {
+      "name": "cardnumber",
+      "datatype": "string"
+    },
+    {
+      "name": "expMonth",
+      "datatype": "string"
+    },
+    {
+      "name": "expYear",
+      "datatype": "number"
+    }
+  ]
+}

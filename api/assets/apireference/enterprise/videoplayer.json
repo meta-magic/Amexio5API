@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "video-id",
+      "type": "string",
+      "default": "",
+      "description": "Set video Id."
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "default": "",
+      "description": "Height should be in Px Ex.500"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "description": "Width should be in percentage Ex.50"
+    },
+    {
+      "name": "url",
+      "type": "any",
+      "default": "",
+      "description": "url of the video"
+    }
+
+  ]
+}

@@ -1,0 +1,32 @@
+export class CardDemo {
+  flag: boolean;
+  
+  // Toggle event
+  
+  toggle() {
+    this.flag = !this.flag;
+  }
+
+// Context-menu Array 
+
+   rightclickdata: any;
+  constructor() {
+     this.flag = true;
+     this.rightclickdata = [
+  {
+    "text": "Add New",
+    "icon": "fa fa-plus",
+    "disabled": true
+  },
+  {
+    "text": "Edit",
+    "icon": "",
+    "seperator": true
+  },
+  {
+    "text": "Send data in email",
+    "icon": ""
+  }
+];
+  }
+}

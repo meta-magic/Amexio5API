@@ -1,0 +1,73 @@
+{
+  "name": "Amexio Rating",
+  "description": "A simple configurable star rating component with visual feedback.",
+  "selector": "<amexio-rating-input>",
+  "properties": [
+    {
+      "name": "field-label",
+      "version": "4.0 onwards",
+      "description": "The label of this field.",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "max",
+      "description": "Number of stars for rating component.",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    },
+    {
+      "name": "read-only",
+      "description": "If true will not react on any user events.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "titles",
+      "description": "Array of titles, default:1,2,3.",
+      "version": "4.0 onwards",
+      "type": "string[]",
+      "default": ""
+    },
+    {
+      "name": "disabled",
+      "description": "If true will not react on any user events and show disable icon over",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "required",
+      "description": "Validate field",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "full-icon",
+      "description": "Icon for selected rating and this attribute is useful only when user have custom rating icons.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "empty-icon",
+      "description": "Icon for non-selected rating and this attribute is useful only when user have custom rating icons",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    } 
+  ],
+  "events": [
+    {
+      "name": "onHover",
+      "description": "Fires on hovering component"
+    },
+    {
+      "name": "onLeave",
+      "description": "fires on leaving component and returns its value"
+    }
+  ]
+}

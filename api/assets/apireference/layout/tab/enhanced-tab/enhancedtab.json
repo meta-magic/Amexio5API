@@ -1,0 +1,126 @@
+{
+  "name": "Amexio Tab",
+  "description": "Tab component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs",
+  "selector": "<amexio-tab-view>",
+  "properties": [
+    {
+      "name": "closable",
+      "description": "This flag will make tab closable, applicable for all tab pills.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "header-align",
+      "description": "Specify position of tabs(left/right).",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "action",
+      "description": "This flag ensures the action Component",
+      "version": "4.1.9 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "divide-header-equally",
+      "description": "If \"true\" divides all tab equally.",
+      "version": "4.1.9 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "tab-position",
+      "description": "Position of tab can be (top/bottom).  When Tab is used in card and tab-position is bottom , make sure footer property of card is false",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": "top"
+    },
+    {
+      "name": "header",
+      "description": "Header for the Tab Layout.",
+      "version": "4.1.9 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "onClick",
+      "description": "Callback to invoke on activated tab event."
+    }
+  ],
+    "tabproperties": [
+      {
+        "name": "title",
+        "description": "Title on Tab Pill.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "disabled",
+        "description": "Disable property for tab",
+        "version": "4.1.4 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "active",
+        "description": "Set true for specific tab open as default tab..",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "icon",
+        "description": "Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "amexio-color",
+        "description": "Font color for the tab label",
+        "version": "4.1.9 onwards",
+        "type": "string",
+        "default": "black"
+      },
+      {
+        "name": "closable",
+        "description": "This flag will make tab closable, applicable for particular tab pills.",
+        "version": "4.2 onwards",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "methods": [
+      {
+        "name": "addDynamicTab(title: string, amexio-color: string, closable: boolean, DyanmicTabComponent)",
+        "version": "4.2 onwards",
+        "description": "Method to add tabs dynamically."
+      },
+      {
+        "name": "closeAllTabs()",
+        "version": "4.2 onwards",
+        "description": "Method to close all tabs altogether (only if the closable property is true)."
+      },
+      {
+        "name": "setActivetab(number: number)",
+        "version": "4.2 onwards",
+        "description": "Method to set tab active on the basis of tab sequence.(If tab index matches with input, method sets that tab active and returns true, else returns false)"
+      },
+      {
+        "name": "setActiveTab(title: string)",
+        "version": "4.2 onwards",
+        "description": "Method to set tab active on the basis of tab title. (If tab title matches with input, method sets that tab active and returns true, else returns false"
+      },
+      {
+        "name": "closeTabs(tabArray: array)",
+        "version": "4.2 onwards",
+        "description": "Method to close all other tabs(only if closable flag is true) , except few required tabs (those tabs title have to be added in array)"
+      }
+    ]
+  }

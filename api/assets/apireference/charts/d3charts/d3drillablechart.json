@@ -1,0 +1,10 @@
+{
+    "name": "Amexio D3-Drillable Chart",
+    "description": "",
+    "selector": "<amexio-drillable>",
+    "properties": [
+        {
+            "name": "Charts supporting Drill down Property",
+            "description": "<amexio-d3-chart-bar>, <amexio-d3-chart-pie>, <amexio-d3-chart-donut>"
+        }           
+    ]}

@@ -1,0 +1,97 @@
+{
+    "name": "Amexio Floating-Button",
+    "description": "A Floating button component with various position options (vertical/horizontal/top/bottom/left/right)",
+    "selector": "<amexio-floating-button>",
+    "properties": [
+      {
+        "name": "vertical-position",
+        "description": "top or bottom or center. This attribute is ignored if user specify position explicitly (using position-top/position-bottom/position-left/position-right)",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "horizontal-position",
+        "description": "left or right or center. This attribute is ignored if user specify position explicitly (using position-top/position-bottom/position-left/position-right)",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "position-top",
+        "description": "Takes top position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "top"
+      },
+      {
+        "name": "icon",
+        "description": "Fa-icon class",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "position-bottom",
+        "description": "Takes bottom position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "bottom"
+      },
+      {
+        "name": "position-left",
+        "description": "Takes left position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "left"
+      },
+      {
+        "name": "position-right",
+        "description": "Takes right position in percentage or pixel",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "right"
+      },
+      {
+        "name": "label",
+        "description": "Label on floating button, this is activated in case of block=square",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "block",
+        "description": "Display button as round or square",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": "circle"
+      },
+      {
+        "name": "type",
+        "description": "Type of button - default / theme-color / theme-backgroundcolor / green / red / yellow",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "disabled",
+        "description": "Enable/Disables the button",
+        "version": "4.1 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "relative",
+        "description": "Place floating button at relative position",
+        "version": "4.1 onwards",
+        "type": "boolean",
+        "default": "false"
+      }
+    ],
+    "events": [
+      {
+        "name": "onClick",
+        "description": "Event is fired when button is click"
+      }
+    ]
+  }

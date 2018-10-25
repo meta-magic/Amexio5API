@@ -1,0 +1,104 @@
+export class ListBoxDemo {
+  localData: any;
+  contextMenuData: any;
+  constructor() {
+
+    this.contextMenuData =
+            [{ "text": "Add New", "icon": "fa fa-arrows", "disabled": true },
+            { "text": "Edit", "icon": "", "seperator": true }
+                , { "text": "Send data in email", "icon": "" }];
+
+    this.localData = {
+    "response": {
+      "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+        {
+          "name": "Buck Kulkarni",
+          "name_official": "Buck Kulkarni",
+          "profile": "buck.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Araf Karsh Hamid",
+          "name_official": "Araf Karsh Hamid",
+          "profile": "karsh.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "ketan Gote",
+          "name_official": "Ketan Gote",
+          "profile": "ketan.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "vrushabh Kelwalkar",
+          "name_official": "vrushabh Kelwalkar",
+          "profile": "sagar.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Dattaram Gawas",
+          "name_official": "Dattaram Gawas",
+          "profile": "dats.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Sagar Jadhav",
+          "name_official": "Sagar Jadhav",
+          "profile": "sagar.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Samadhan Pardeshi",
+          "name_official": "Samadhan Pardeshi",
+          "profile": "Samadhan.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Sharad Jadhav",
+          "name_official": "Sharad Jadhav",
+          "profile": "ahutosh.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "payal Kulkarni",
+          "name_official": "payal Kulkarni",
+          "profile": "payal.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "jayashree Abhyankar",
+          "name_official": "jayashree Abhyankar",
+          "profile": "jayashree.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Rashmi Thakkar",
+          "name_official": "Rashmi Thakkar",
+          "profile": "rashmi.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Deepali Arvind",
+          "name_official": "Deepali Arvind",
+          "profile": "dipali.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Ashwini Agre",
+          "name_official": "Ashwini Agre",
+          "profile": "ashwini.jpg",
+          "email" : "XYZ@metamagic.in"
+        }
+      ]
+    }
+    };
+
+  }
+   onRowClick(data: any) {}
+
+   getSelectedData(data: any) {}
+
+   rightclick() {}
+}

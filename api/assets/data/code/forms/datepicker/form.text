@@ -1,0 +1,48 @@
+export class DateTimePickerDemo {
+ time: any;
+ disabledDate:any[];
+ currentDate: any;
+ currentDate1: any;
+ currentDate2: any;
+
+  constructor( ) {
+     this.disabledDate = [
+      {
+        "from": "13-Jul-2018",
+        "to": "15-Jul-2018"
+      },
+      {
+        "from": "20-Jul-2018",
+        "to": "23-Jul-2018"
+      },
+      {
+        "from": "15-Jun-2018",
+        "to": "19-Jun-2018"
+      },
+      {
+        "from": "27-Jun-2018",
+        "to": "29-Jun-2018"
+      },
+      {
+        "from": "23-Aug-2018",
+        "to": "28-Aug-2018"
+      },
+      {
+        "from": "17-Aug-2018",
+        "to": "19-Aug-2018"
+      },
+      {
+        "from": "19-Sep-2018",
+        "to": "21-Sep-2018"
+      },
+      {
+        "from": "25-Sep-2018",
+        "to": "28-Sep-2018"
+      } 
+    ];
+  }
+ 
+  onChangeTime(data: any) {
+  //some operation
+  }
+}

@@ -1,0 +1,17 @@
+export class AmexioSpinnerDemo {
+
+   clickShow: boolean = true;
+    text: string = 'Hide';
+
+  constructor() {}
+
+     onButtonClick(click: any) {
+
+        if (this.clickShow) {
+            this.text = 'Show';
+        } else {
+            this.text = 'Hide'
+        }
+        this.clickShow = !this.clickShow;
+    }
+}

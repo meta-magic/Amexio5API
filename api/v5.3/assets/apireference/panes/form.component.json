@@ -1,0 +1,69 @@
+{
+  "name": "Amexio Form",
+  "description": "Amexio Form provides an easy way to organize big form components and validating them.",
+  "selector": "<amexio-form>",
+  "properties": [
+    {
+      "name": "header-align",
+      "description": "Align of item elements inside card header example [right center left].",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
+      "name": "footer-align",
+      "description": "Align of item elements inside card footer example [right center left]",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": "right"
+    },
+    {
+      "name": "form-name",
+      "description": "Form binding attribute",
+      "version": "4.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "header",
+      "description": "Form header to display",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "show-error",
+      "description": "Flag to show form invalid error messages",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "height",
+      "description": "User can set the height to form",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "min-height",
+      "description": "Provides minimum height of the form.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "body-height",
+      "description": "Provides form body height.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "showErrorMsg",
+      "description": "Event fired if showError msg info button is clicked"
+    }
+  ]
+}

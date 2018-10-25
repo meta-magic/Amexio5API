@@ -1,0 +1,126 @@
+{
+  "name": "Amexio Tag Input",
+  "description": "Tags based multi input with typeahead facility.",
+  "selector": "<amexio-tag-input>",
+  "properties": [
+    {
+      "name": "field-label",
+      "description": "The label of this field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "allow-blank",
+      "description": "Sets if field is required",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "description": "Input data source",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data-reader",
+      "description": "Key in JSON datasource for records",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "http-method",
+      "description": "Type of HTTP call, POST,GET.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "http-url",
+      "description": "REST url for fetching datasource.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "display-field",
+      "description": "Name of key inside response data to display on ui.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "value-field",
+      "description": "Name of key inside response data.use to send to backend",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "font-style",
+      "description": "Set font-style to field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "font-family",
+      "description": "Set font-family to field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "font-size",
+      "description": "Set font-size to field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "enable-popover",
+      "description": "Set enable / disable popover.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "has-label",
+      "description": "flag to set label",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "key",
+      "description": "Key as input to tags",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "trigger-char",
+      "description": "Sets the trigger char length",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    }
+  ],
+  "events": [
+    {
+      "name": "input",
+      "description": "On input event field."
+    },
+    {
+      "name": "onChange",
+      "description": "on change event"
+    },
+    {
+      "name": "focus",
+      "description": "On field focus event"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "Amexio Fileupload",
+  "description": "This component use for uploading all types of files.",
+  "selector": "<amexio-fileupload>",
+  "properties": [
+    {
+      "name": "field-label",
+      "description": "The label of this field",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "param-name",
+      "description": "Used to specify URL query , same with backend rest controller paramater object Default file",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "http-url",
+      "description": "REST url for fetching datasource.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "http-method",
+      "description": "Type of HTTP call, POST,GET.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "file-type",
+      "description": "Defines the file type of file to upload. Shows only given file type at the time of file upload.example for 1.image [file-type]=image/* 2.for pdf [file-type]=application/pdf",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "multiple-file",
+      "description": "Defines if there are multiple file to upload",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "none"
+    },
+    {
+      "name": "droppable",
+      "description": "Allow Drop Zone For Files.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "none"
+    }
+  ],
+  "events": [
+    {
+      "name": "onRemove",
+      "description": "On remove click event"
+    },
+    {
+      "name": "onFileUpload",
+      "description": "fires on choosing file"
+    }
+  ]
+}

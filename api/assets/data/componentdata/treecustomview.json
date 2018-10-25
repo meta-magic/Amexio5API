@@ -1,0 +1,82 @@
+{
+  "customArray": [
+    {
+      "demo": "Web App",
+      "expand": true,
+      "object": [
+        {
+          "demo": "app",
+          "expand": true,
+          "object": [
+            {
+              "leaf": true,
+              "demo": "Application.js"
+            }
+          ]
+        },
+        {
+          "demo": "button",
+          "expand": true,
+          "object": [
+            {
+              "leaf": true,
+              "demo": "Button.js"
+            },
+            {
+              "leaf": true,
+              "demo": "Cycle.js"
+            },
+            {
+              "leaf": true,
+              "demo": "Split.js"
+            }
+          ]
+        },
+        {
+          "demo": "container",
+          "expand": true,
+          "object": [
+            {
+              "leaf": true,
+              "demo": "ButtonGroup.js"
+            },
+            {
+              "leaf": true,
+              "demo": "Container.js"
+            },
+            {
+              "leaf": true,
+              "demo": "Viewport.js",
+              "expand": false,
+              "object": [],
+              "lazy": {
+                "http-url": "data/treeview.json",
+                "http-method": "get"
+              }
+            }
+          ]
+        },
+        {
+          "demo": "core",
+          "expand": true,
+          "object": [
+            {
+              "demo": "dom",
+              "expand": false,
+              "object": [
+                {
+                  "leaf": true,
+                  "demo": "Element.form.js"
+                },
+                {
+                  "leaf": true,
+                  "demo": "Element.static-more.js"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

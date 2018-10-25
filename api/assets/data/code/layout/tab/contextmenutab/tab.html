@@ -1,0 +1,46 @@
+<!-- Tab layout with default context menu -->
+
+<amexio-tab-view [tab-position]="'top'" [default-context-menu]="true">
+  <amexio-tab title="Person" [active]="true" [closable]="'true'">
+    Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+    dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+    book.
+  </amexio-tab>
+  <amexio-tab title="Work">
+    Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+    placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+    posuere. Praesent ornare rutrum mi et condimentum.
+  </amexio-tab>
+  <amexio-tab title="Education" [closable]="'true'">
+    Education Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus.
+    Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor
+    hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+  </amexio-tab>
+</amexio-tab-view>
+</amexio-card>
+
+
+<!-- Tab layout with custom context menu -->
+
+  <amexio-tab-view [context-menu]="rightclickdata">
+    <amexio-tab title="Person" [active]="true">
+      Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+      dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      book.
+    </amexio-tab>
+    <amexio-tab title="Work">
+      Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+      placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+      posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Education">
+      Education Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus.
+      Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor
+      hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Hobbies">
+      Hobbies Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus.
+      Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor
+      hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+  </amexio-tab-view>

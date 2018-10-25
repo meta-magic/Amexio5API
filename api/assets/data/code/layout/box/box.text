@@ -1,0 +1,10 @@
+import {Component, OnInit} from '@angular/core';
+
+@Component({
+  selector : 'box-demo',
+  templateUrl : 'box.demo.html'
+})
+export class BoxDemo {
+constructor() {
+}
+}

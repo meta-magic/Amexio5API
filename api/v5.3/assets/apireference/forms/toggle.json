@@ -1,0 +1,34 @@
+{
+    "name": "Amexio Toggle",
+    "description": "Toggle Button",
+    "selector": "<amexio-toggle>",
+    "properties": [
+      {
+        "name": "shape",
+        "description": "Round or Square Shape for toggle switch ,example shape=round,square .",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "round"
+      },
+      {
+        "name": "field-label",
+        "description": "The label of this field.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "required",
+        "description": "sets if field is required",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "true"
+      }
+    ],
+    "events": [
+      {
+        "name": "onChange",
+        "description": "Event is fired on toggle component click"
+      }
+    ]
+  }

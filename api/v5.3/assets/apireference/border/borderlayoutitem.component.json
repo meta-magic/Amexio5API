@@ -1,0 +1,15 @@
+{
+  "name": "Amexio BorderLayout",
+  "description": "north, south, east, west, and center..",
+  "selector": "<amexio-borderlayout-item>",
+  "properties": [
+    {
+      "name": "position",
+      "description": "Layout the contents to North , East , West , Center & South positions",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+  "events": []
+}

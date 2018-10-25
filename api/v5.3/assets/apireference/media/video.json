@@ -1,0 +1,29 @@
+{
+  "name": "Amexio video player",
+  "description": "Video player component support all types of videos.",
+  "selector": "<amexio-video-player>",
+  "properties": [
+    {
+      "name": "path",
+      "description": "Path of video",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "extension",
+      "description": "Video extension",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "width",
+      "description": "Width of the video player window",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,46 @@
+
+
+export class AmexioD3PieChartDemoComponent
+{
+  piechartcolor: any;
+  defultColorData: any;
+  sourceData: any;
+  userDefineColorData: any;
+  
+  
+  constructor() { }
+
+   this.piechartcolor = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
+
+  this.defultColorData = 
+    [
+      ['browser', 'activity'],
+      ['IE', 39.3],
+      ['Chrome', 32.52],
+      ['Safari', 13.68],
+      ['Firefox', 8.71],
+      ['Others', 6.01]
+    ];
+
+    this.userDefineColorData =  [
+      ['country', 'ratio'],
+      ['India', 30.3],
+      ['Spain', 9.52],
+      ['France', 13.68],
+      ['China', 18.71],
+      ['Germany', 8.01],
+      ['U.K', 8.01],
+      ['U.S', 14.01],
+      ['Korea', 4.01]
+    ];
+  }
+
+  onLegendItemClick(event: any) {
+    this.sourceData = event;
+  }
+
+  onDefaultChartClick(event: any) {
+    this.userDataSource = event;
+  }
+}
+

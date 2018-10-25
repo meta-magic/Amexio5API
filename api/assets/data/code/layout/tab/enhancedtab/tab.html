@@ -1,0 +1,134 @@
+<!-- Tab Layout with Header, Tab alignment(right) and tab colors -->
+
+<amexio-tab-view header="Work Profile" [header-align]="'right'">
+    <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
+        Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.
+    </amexio-tab>
+    <amexio-tab title="Work" [amexio-color]="'blue'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+</amexio-tab-view>
+
+<!-- Tab Layout with Action Component(Radio Group). -->
+
+<amexio-tab-view [action]="true" [header-align]="'left'">
+    <amexio-tab-action>
+        <amexio-radio-group name="gender" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [horizontal]="true"
+            [data]="radioGroupData" [default-value]="'male'" (onSelection)="setSelectedGender($event)">
+        </amexio-radio-group>
+    </amexio-tab-action>
+    <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
+        Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.
+    </amexio-tab>
+    <amexio-tab title="Work" [amexio-color]="'blue'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Profile" [amexio-color]="'green'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Education" [amexio-color]="'red'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+</amexio-tab-view>
+
+<!-- Tab Layoout with Action Component(Button)-->
+
+<amexio-tab-view #tab [action]="true" [tab-position]="'top'">
+    <amexio-tab-action>
+        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
+        </amexio-button>
+    </amexio-tab-action>
+    <amexio-tab title="Person" [active]="true" [amexio-color]="'red'"  [closable]="true">
+        Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.
+    </amexio-tab>
+    <amexio-tab title="Work" [amexio-color]="'red'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Profile" [amexio-color]="'red'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Education" [amexio-color]="'red'" [closable]="true">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+</amexio-tab-view>
+<amexio-button [label]="'Close Tab'" [type]="'theme-color'" (onClick)="closeAllTabs(tab)" [tooltip]="'Add Tab'">
+</amexio-button>
+<amexio-button [label]="'Active Number Tab'" [type]="'theme-color'" (onClick)="setActiveTabNumber(tab)" [tooltip]="'Activate Tab'">
+</amexio-button>
+<amexio-button [label]="'Active Title Tab'" [type]="'theme-color'" (onClick)="setActiveTabTitle(tab)" [tooltip]="'Activate Tab'">
+</amexio-button>
+<amexio-button [label]="'Close Other Tabs'" [type]="'theme-color'" (onClick)="closeOtherTabs(tab)" [tooltip]="'Close Tab'" >
+</amexio-button>
+<!-- Tab Layout with Action Component (Rating)-->
+
+<amexio-tab-view [action][="true" [header-align]="'right'">
+    <amexio-tab-action>
+        <amexio-rating-input [(ngModel)]="rate" [max]="max" name="rate" [read-only]="isReadonly">
+        </amexio-rating-input>
+    </amexio-tab-action>
+    <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
+        Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.
+    </amexio-tab>
+    <amexio-tab title="Work" [amexio-color]="'blue'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Profile" [amexio-color]="'green'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Education" [amexio-color]="'red'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+</amexio-tab-view>
+
+<!-- Tab Layout with Tabs Divided Equally  -->
+
+<amexio-tab-view [divide-header-equally]=true>
+    <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
+        Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book.
+    </amexio-tab>
+    <amexio-tab title="Work" [amexio-color]="'blue'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Address" [amexio-color]="'green'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+    <amexio-tab title="Profile" [amexio-color]="'red'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum.
+    </amexio-tab>
+</amexio-tab-view>

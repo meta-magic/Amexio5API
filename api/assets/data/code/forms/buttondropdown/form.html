@@ -1,0 +1,72 @@
+<!--DropDown Button-->
+<amexio-btn-dropdown [label]="'Button'"
+                     [type]="'green'"
+                     [size]="'default'" >
+  <amexio-btn-dropdown-item [label]="'Link 1'"
+                            [icon]="'fa fa-arrows-alt'">
+  </amexio-btn-dropdown-item>
+  <amexio-btn-dropdown-item [label]="'Link 2'"
+                            [icon]="'fa fa-trash'">
+  </amexio-btn-dropdown-item>
+</amexio-btn-dropdown>
+
+<!-- Dropdown Button with size-->
+<amexio-btn-dropdown [label]="'Button'"
+                     [type]="'theme-color'"
+                     [size]="'large'">
+  <amexio-btn-dropdown-item [label]="'Link 1'" >
+  </amexio-btn-dropdown-item>
+  <amexio-btn-dropdown-item [label]="'Link 2'" >
+  </amexio-btn-dropdown-item>
+</amexio-btn-dropdown>
+
+<!--Dropdown Button with disabled link-->
+<amexio-btn-dropdown [label]="'Disabled Link'"
+                     [type]="'theme-color'"
+                     [size]="'default'">
+  <amexio-btn-dropdown-item [label]="'Disabled'"
+                            [icon]="'fa fa-fullscreen'"
+                            [disabled]="true">
+  </amexio-btn-dropdown-item>
+  <amexio-btn-dropdown-item [label]="'Link 2'"
+                            [icon]="'fa fa-trash'">
+  </amexio-btn-dropdown-item>
+</amexio-btn-dropdown>
+
+<!-- Button Dropdown with Badges-->
+<amexio-btn-dropdown [label]="'Button'"
+                     [type]="'primary'"
+                     [size]="'default'">
+  <amexio-btn-dropdown-item [label]="'Expand'"
+                            [badge]="31"
+                            [icon]="'fa fa-arrows-alt'">
+  </amexio-btn-dropdown-item>
+  <amexio-btn-dropdown-item [label]="'Delete'"
+                            [badge]="32"
+                            [icon]="'fa fa-trash'">
+  </amexio-btn-dropdown-item>
+</amexio-btn-dropdown>
+<amexio-btn-dropdown [label]="'Button'"
+                     [type]="'green'"
+                     [size]="'default'">
+  <amexio-btn-dropdown-item [label]="'Expand'"
+                            [badge]="33"
+                            [icon]="'fa fa-arrows-alt'">
+  </amexio-btn-dropdown-item>
+  <amexio-btn-dropdown-item [label]="'Delete'"
+                            [badge]="34"
+                            [icon]="'fa fa-trash'">
+  </amexio-btn-dropdown-item>
+</amexio-btn-dropdown>
+<amexio-btn-dropdown [label]="'Button'"
+                     [type]="'red'"
+                     [size]="'default'">
+  <amexio-btn-dropdown-item [label]="'Expand'"
+                            [badge]="35"
+                            [icon]="'fa fa-arrows-alt'">
+  </amexio-btn-dropdown-item>
+  <amexio-btn-dropdown-item [label]="'Delete'"
+                            [badge]="36"
+                            [icon]="'fa fa-trash'">
+  </amexio-btn-dropdown-item>
+</amexio-btn-dropdown>

@@ -1,0 +1,22 @@
+<!-- RELATIVE Floating buttons-->
+
+<amexio-floating-button [relative]="true" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+<amexio-floating-button [relative]="true"  [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
+<amexio-floating-button [relative]="true" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
+<amexio-floating-button [relative]="true" [icon]="'fa fa fa-telegram'" [type]="'theme-color'"></amexio-floating-button>
+
+<!--Vertical/Horizontal Poistioning-->
+
+<amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'left'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+<amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'right'" [label]="'top-right'" [icon]="'fa fa-telegram'" [type]="'green'"></amexio-floating-button>
+<amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'left'" [label]="'bottom-left'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
+<amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'right'" [label]="'bottom-right'" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
+<amexio-floating-button [vertical-position]="'center'" [horizontal-position]="'center'" [icon]="'fa fa-snowflake-o'" [type]="'red'" (onClick)="onFloatingButtonClick($event)"></amexio-floating-button>                
+
+<!--Right/Left/Top/Right Poistioning-->
+
+<amexio-floating-button [position-top]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+<amexio-floating-button [position-top]="'50%'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'green'"></amexio-floating-button>
+<amexio-floating-button [position-bottom]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'yellow'"></amexio-floating-button>
+<amexio-floating-button [position-bottom]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'red'"></amexio-floating-button>
+<amexio-floating-button [position-top]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'"></amexio-floating-button>

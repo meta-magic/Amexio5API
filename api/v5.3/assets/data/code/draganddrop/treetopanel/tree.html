@@ -1,0 +1,16 @@
+
+<!-- Drag and Drop : Tree to Panel -->
+<amexio-treeview [data-reader]="'data'" 
+                 (onDrag)="drag($event)" 
+                 [enable-drag]="true"
+                 [enable-drop]="false"
+                 [data]="treeLocalData">
+</amexio-treeview>
+
+<amexio-panel (dragover)="dragOver($event)" 
+              (drop)="drop($event)" 
+              [header]="true" 
+              [title]="'Panel'" 
+              [expanded]="true">
+    <pre><code>{{selectedData | json}}</code></pre>
+</amexio-panel>

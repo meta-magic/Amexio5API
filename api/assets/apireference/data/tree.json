@@ -1,0 +1,132 @@
+{
+  "properties": [
+    {
+      "name": "http-url",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "",
+      "description": "REST url for fetching data."
+    },
+    {
+      "name": "http-method",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET etc."
+    },
+    {
+      "name": "data",
+      "version": "4.0 onwards",
+      "type": "any[]",
+      "default": "",
+      "description": "Local Data binding."
+    },
+    {
+      "name": "data-reader",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": "",
+      "description": "Key in JSON Datasource for records."
+    },
+    {
+      "name": "enable-checkbox",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": "Enables checkbox for each row, this allows user for multi selection."
+    },
+    {
+      "name": "enable-drag",
+      "version": "5.0 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": "Nodes can be dragged."
+    },
+    {
+      "name": "enable-drop",
+      "version": "5.0 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": "Any node can be dropped in the tree structure."
+    },
+    {
+      "name": "across-tree",
+      "version": "5.0 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": "Dragging and dropping is possible across tree."
+    },
+    {
+      "name": "badge",
+      "version": "5.0 onwards",
+      "type": "boolean",
+      "default": "false",
+      "description": "Describes the badge value that has to be displayed tree node."
+    },
+    {
+      "name": "context-menu",
+      "version": "5.0.1 onwards",
+      "type": "any[]",
+      "default": "",
+      "description": "Context Menu provides the list of menus on right click (for Array structure: refer typescript code in source tab)"
+    },
+    {
+      "name": "display-key",
+      "version": "5.2.0 onwards",
+      "type": "any[]",
+      "default": "text",
+      "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+    },
+    {
+      "name": "child-array-key",
+      "version": "5.2.0 onwards",
+      "type": "any[]",
+      "default": "children",
+      "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
+    }
+  ],
+  "events": [
+    {
+      "name": "nodeClick",
+      "version": "5.0.1 onwards",
+      "description": "It will gives you clicked node data."
+    },
+    {
+      "name": "onTreeNodeChecked",
+      "version": "5.0.1 onwards",
+      "description": "It will gives whole tree data with checked flag status."
+    },
+    {
+      "name": "onDrag",
+      "version": "5.0.1 onwards",
+      "description": "It is fired when an element or text selection is being dragged by the user."
+    },
+    {
+      "name": "dragover",
+      "version": "5.0.1 onwards",
+      "description": "It is fired when an element or text selection is being dragged over a valid drop target"
+    },
+    {
+      "name": "onDrop",
+      "version": "5.0.1 onwards",
+      "description": "It is fired when an element or text selection is dropped on a valid drop target."
+    },
+    {
+      "name": "rightClick",
+      "version": "5.0.1 onwards",
+      "description": "It is fired when clicked on context menu, providing tree node data and selected context menu data."
+    }
+  ],
+  "methods": [
+    {
+      "name": "expandAll ()",
+      "version": "5.2 onwards",
+      "description": "Method to expandAll (open all Tree node) view of Tree."
+    },
+    {
+      "name": "collapseAll ()",
+      "version": "5.2 onwards",
+      "description": "Method to collapseAll (close all Tree node) view of Tree"
+    }
+  ]
+}

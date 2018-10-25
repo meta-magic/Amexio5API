@@ -1,0 +1,50 @@
+<!--  Spinner have some default types: fadingcircle, ballspin, firespin, threebounce, 
+    spinnerround, ring, halfcircle, rectanglebounce -->
+
+<!-- Button Click for showing and hiding the Spinner  -->
+<amexio-button [label]="text" [type]="'yellow'" [tooltip]="'show'" (onClick)="onButtonClick(click)">
+</amexio-button>
+
+<!-- check the #click for the binding purpose -->
+
+<!-- fading circle round loader -->
+
+<amexio-spinner #click [show]=clickShow [type]="'fadingcircle'" [color]="'red'" [size]="'10px'">
+</amexio-spinner>
+
+<!-- ball spin loader -->
+
+<amexio-spinner [show]=clickShow [type]="'ballspin'" [color]="'red'" [size]="'16px'">
+</amexio-spinner>
+
+<!-- fire spin loader -->
+
+<amexio-spinner [show]=clickShow [type]="'firespin'" [color]="'red'" [size]="'40px'">
+</amexio-spinner>
+
+<!-- three bounce loader -->
+
+<amexio-spinner [show]=clickShow [type]="'threebounce'" [color]="'red'" [size]="'15px'">
+</amexio-spinner>
+
+<!-- spinner round loader -->
+
+<amexio-spinner [show]='true' [type]="'spinnerround'" [color]="'red'" [size]="'10px'">
+</amexio-spinner>
+
+<!-- ring loader -->
+
+<amexio-spinner [show]=clickShow [type]="'ring'" [color]="'red'" [size]="'9px'">
+</amexio-spinner>
+
+<!--  These two are default spinners, only theme color are applied -->
+
+<!-- half circle loader -->
+
+<amexio-spinner [show]=clickShow [type]="'halfcircle'" [size]="'16px'">
+</amexio-spinner>
+
+<!-- rectangle Bounce loader -->
+
+<amexio-spinner [show]=clickShow [type]="'rectanglebounce'" [size]="'20px'">
+</amexio-spinner>

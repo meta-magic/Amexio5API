@@ -1,0 +1,57 @@
+{
+  "name": "Amexio bar chart",
+  "description": "An bar chart that is rendered within the browser using SVG. A bar chart is a chart that presents grouped data with rectangular bars with lengths proportional to the values that they represent.",
+  "selector": "<amexio-chart-bar>",
+  "properties": [
+    {
+      "name": "data",
+      "description": "Local data for AreaChart",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "width",
+      "description": "Width of chart",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "height",
+      "description": "Height of chart",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "stacked",
+      "description": "If set to true, stacks the elements for all series at each domain value.default value is false",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "x-axis-title",
+      "description": "Sets title for x axis",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "y-axis-title",
+      "description": "Sets title for y axis",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "background-color",
+      "description": "Sets background-color",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    }
+  ],
+  "events": []
+}

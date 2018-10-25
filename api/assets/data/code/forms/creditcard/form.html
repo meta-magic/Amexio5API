@@ -1,0 +1,8 @@
+<!-- CreditCard with Model Binding, label and double column template -->
+<amexio-creditcard [year-count]="4" [show-label]="true" [(ngModel)]="creditcard"></amexio-creditcard>
+
+<!-- CreditCard with double column template and without Model Binding and label -->
+<amexio-creditcard [show-label]="false" [year-count]="4"></amexio-creditcard>
+
+<!-- CreditCard with single column template -->
+<amexio-creditcard [template]="'single-column'" [year-count]="4"></amexio-creditcard>

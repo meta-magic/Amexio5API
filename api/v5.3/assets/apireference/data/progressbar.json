@@ -1,0 +1,64 @@
+{
+  "name": "Amexio progress bar",
+  "description": "Progress Bar Component Provides up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars and easy to configure.",
+  "selector": "<amexio-progress-bar>",
+  "properties": [
+    {
+      "name": "show",
+      "description": "Shows / Hides the progress bar.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
+      "name": "infinite",
+      "description": "Enable/Disable Infinite Mode.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "type",
+      "description": "Type of progress bar can be default,theme-color,theme-backgroundcolor, green, red, yellow( primary, secondary ,success , danger & warning",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "amexio-color",
+      "description": "Use different inbuilt amexio colors available (e.g amexio-black, amexio-red etc)",
+      "version": "4.1 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "current-value",
+      "description": "Current Position of progress.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "label",
+      "description": "Custom labels on bar.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "height",
+      "description": "Height of bar.",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "stripped",
+      "description": "Bar styled stripped.",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    }
+  ],
+  "events": []
+}
