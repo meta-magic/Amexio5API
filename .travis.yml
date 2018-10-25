@@ -35,7 +35,7 @@ before_script:
   - npm install node-sass
   - npm install --save del
   - ls -la
-  - cd src/styles/ && sh sasstocss.sh 
+  - cd src/styles/ 
   - cd ../../ && gulp build
   - cd dist && npm pack && mv amexio-ng-extensions-*.tgz amexio-ng-extensions.tgz
   - cd ../../
@@ -51,7 +51,7 @@ before_script:
 script: 
   - cd ../
   - pwd
-  - ls -la
+  - ls -la d3.amexio.github.io
   - npm install
   - npm install --save uglifyjs-webpack-plugin
   - npm install @angular-devkit/core --save
