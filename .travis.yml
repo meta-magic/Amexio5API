@@ -34,8 +34,11 @@ before_script:
 - ng build --prod amexio-chart-d3
 - npm pack dist/amexio-chart-d3/
 - mv amexio-chart-d3-*.tgz amexio-chart-d3.tgz
+- ls -la
+- pwd
 script:
 - cd ../
+- ls -la
 - npm install
 - npm install --save uglifyjs-webpack-plugin
 - npm install @angular-devkit/core --save
