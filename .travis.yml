@@ -1,64 +1,75 @@
 sudo: required
 dist: trusty
+
+#install google chrome, using addons
 addons:
   apt:
     sources:
-    - google-chrome
+      - google-chrome
     packages:
-    - google-chrome-stable
+      - google-chrome-stable
+  sonarcloud:
+    organization: "deepali-arvind-github" # the key of the org you chose at step #3
+    token:
+      secure: 081e2012239f75d61242a6d1d6605f0ee29dc019 # encrypted value of your token   
+
+env:
+  global:
+  - GITHUB_REPO: "meta-magic/AMEXIO5API"
 language: node_js
 node_js:
-- '8'
+  - "8"
+before_install:
+  - composer config --global github-oauth.github.com "$GITHUB_TOKEN"
+  
 before_script:
-- export CHROME_BIN=chromium-browser
-- export DISPLAY=:99.0
-- sh -e /etc/init.d/xvfb start
-- npm install --global gulp --save
-- gem install sass
-- git clone https://github.com/meta-magic/amexio.github.io -b v5.3
-- cd amexio.github.io
-- npm install 
-- npm install gulp --save
-- npm install node-sass
-- npm install --save del
-- ls -la
-- cd src/styles/ && sh sasstocss.sh 
-- cd ../../ && gulp build
-- cd dist && npm pack && mv amexio-ng-extensions-*.tgz amexio-ng-extensions.tgz
-- cd ../../
-- ls -la
-- git clone https://github.com/meta-magic/d3.amexio.github.io.git
-- cd d3.amexio.github.io/
-- npm install
-- npm install d3@^5.7.0
-- ng build --prod amexio-chart-d3
-- npm pack dist/amexio-chart-d3/
-- mv amexio-chart-d3-*.tgz amexio-chart-d3.tgz
-- ls -la
-- pwd
-script:
-- cd ../
-- ls -la
-- npm install
-- npm install --save uglifyjs-webpack-plugin
-- npm install @angular-devkit/core --save
-- npm i node-sass --save-dev
-- sudo rm -rf src/assets/themes/*
-- cp -rf amexio.github.io/src/styles/css/* src/assets/themes/
-- npm i amexio.github.io/dist/amexio-ng-extensions.tgz
-- ls -la
-- chmod -R 777 d3.amexio.github.io/amexio-chart-d3.tgz
-- ls -la
-- npm i d3.amexio.github.io/amexio-chart-d3.tgz --save
-- ng set defaults.styleExt scss
-- ng build --prod
-- cp -rf dist/* api/v5.3/
-- git add api
-- git commit -m "date"
-- git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:v5.2
-after_success:
-- codecov
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - npm install --global gulp --save
+  - gem install sass
+  - git clone https://github.com/meta-magic/amexio.github.io -b v5.3
+  - cd amexio.github.io
+  - npm install 
+  - npm install gulp --save
+  - npm install node-sass
+  - npm install --save del
+  - ls -la
+  - cd src/styles/ && sh sasstocss.sh 
+  - cd ../../ && gulp build
+  - cd dist && npm pack && mv amexio-ng-extensions-*.tgz amexio-ng-extensions.tgz
+  - cd ../../
+  - git clone https://github.com/meta-magic/d3.amexio.github.io.git 
+  - cd d3.amexio.github.io/
+  - npm install
+  - npm install d3@^5.7.0
+  - ng build --prod amexio-chart-d3
+  - npm pack dist/amexio-chart-d3/
+  - mv amexio-chart-d3-*.tgz amexio-chart-d3.tgz
+     
+script: 
+  - cd ../
+  - pwd
+  - npm install
+  - npm install --save uglifyjs-webpack-plugin
+  - npm install @angular-devkit/core --save
+  - npm i node-sass --save-dev
+  -  rm -rf src/assets/themes/*
+  - cp -rf amexio.github.io/src/styles/css/* src/assets/themes/
+  - npm i amexio.github.io/dist/amexio-ng-extensions.tgz
+  - npm i  d3.amexio.github.io/amexio-chart-d3.tgz
+  - ng set defaults.styleExt scss
+  - ng build --prod
+  - cd ../ 
+  - ls -la
+  - rm -rf api/v5.3/*
+  - cp -rf dist/* api/v5.3/
+  - git add api
+  - git commit -m "api-test"
+  - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:v5.2
+  
+  
+after_success: 
+  - codecov
 cache:
   yarn: true
-! '':
-  secure: TVhDv+vCAl2fRm9fR4sC4QUjDoPE7Dvz9GBeJz/n9tGcZa4zcFVVXdT8it4y2FSs5cw9xt1o97kTnojj9ciW7nbaVvppxPaNZ/YbtmMlWEiUa3lOTm8bIXO1IB4NewlgGMwqNH/IUWn2zgUbB71Ok+MSsC9DrevMTdN3cw8k+AXEnilDn02vLm/zFnECkxpeTf/xqcMki7/NfVK2p6E34ztKPr2MlAdPCwmScpWqb2DuB4BRUOPbriiA81iRZ6ycmYdm1Iw00avSeMVrSuHXJORVOT7kW85Y6RSex3iCjT2WSSbsNGLc+F6/bbXsRZMex2DXzDKNEGe3UCORyphiCgTvXsob+N26USyl8J/jU43PtLF4o2ItkdaaZrhc40aSJc+jSRJ8yBTUUrQ/CRiZP1wRVrR+bDrMNqs+EzD+eYXL26HjtAhWuf9wHBjEpOmDMZROCUWa5gio5JVu1DZ8R4pnQpDtwXXJ6v0ztN610XOSr68is0IIPLo3XH+dedfHmc98vy1vFdZJSEeBR+1L0YIC/v0ntnT8Hlr441aIOozJam2t6gK6DH9qeXbUxZ3Doq/erkCWD6rpmEMRfMFIevhQ7OwfNnzXR/qlfGlTIfFuhqI/OuhKVxH4f5/MLXpjQhpCVBIqQymuO2LA+0gqH35nzw4S5DeqRuzjeyLkqDk=
