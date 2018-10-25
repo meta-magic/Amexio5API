@@ -48,10 +48,8 @@ script:
 - npm i amexio.github.io/dist/amexio-ng-extensions.tgz
 - ls -la
 - chmod -R 777 d3.amexio.github.io/amexio-chart-d3.tgz
-- cd  d3.amexio.github.io/
 - ls -la
-- npm i amexio-chart-d3.tgz
-- cd ../
+- npm i d3.amexio.github.io/amexio-chart-d3.tgz --save
 - ng set defaults.styleExt scss
 - ng build --prod
 - cp -rf dist/* api/v5.3/
