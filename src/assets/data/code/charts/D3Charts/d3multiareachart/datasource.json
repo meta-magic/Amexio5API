@@ -1,6 +1,6 @@
 
 Data for Multi-Area chart:
-  Note: First record i.e date is plotted on x-axis and other will get plotted on y-axis as area.
+  Note: First record i.e 'date' is plotted on x-axis and other will get plotted on y-axis as area.
  [
       ["date", "index", "open", "close", "high"],
       ["2014", 58.13, 610, 234, 100],
