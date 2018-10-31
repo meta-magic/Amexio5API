@@ -8,95 +8,44 @@
             <amexio-tab title="Demo" active="true">
                 <amexio-row>
                     <amexio-column [size]="12">
-
                             <amexio-row>
-                                    <amexio-column [size]="8" [fit]="true">
+                                    <amexio-column [size]="12" [fit]="true">
                                         <amexio-card [header]="true" [show]="'true'">
                                             <amexio-header>
-                                                D3-bar chart with UserDefine Color
+                                                D3-histogram chart with UserDefined Color
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-d3-chart-bar  [title]="'Population of Cities in India'" (onChartClick)="onDefaultChartClick($event)" (onLegendClick)="onUserDefineLegendClick($event)"
-                                                    [color]="userDefineColors" [data]="userDefineColorData">
-                                                </amexio-d3-chart-bar>
+                                                <amexio-histogram
+                                                       [title]="'Histogram Chart '" 
+                                                       [data]="histogramdata"
+                                                       [color]="'blue'"
+                                                       (onChartClick)="onDefaultChartClick($event)" 
+                                                 ></amexio-histogram> 
                                             </amexio-body>
                                         </amexio-card>
                                     </amexio-column>
-                                    <amexio-column [size]="4" [fit]="true">
+                                </amexio-row>   
+                                <amexio-row>
+                                    <amexio-column [size]="12" [fit]="true">
                                         <amexio-card header="true" >
                                             <amexio-header>
                                                 Click On Legend/ Click on Chart
                                             </amexio-header>
                                             <amexio-body>
                                                 <pre><code>{{userDataSource |json }}</code></pre>
-
-                                            </amexio-body>
+                                             </amexio-body>
                                         </amexio-card>
 
                                     </amexio-column>
                                 </amexio-row>
-                                <amexio-row>
-                                    <amexio-column [size]="8" [fit]="true">
-                                        <amexio-card [header]="true" [show]="'true'">
-                                            <amexio-header>
-                                                D3-bar with Legend Default Color
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-d3-chart-bar [title]="'Company Performance Details'"  (onChartClick)="onDefaultChartClick1($event)"  (onLegendClick)="onDefaultLegendClick($event)" [data]="defultColorData">
-                                                </amexio-d3-chart-bar>
-                                            </amexio-body>
-                                        </amexio-card>
-                                    </amexio-column>
-                                    <amexio-column [size]="4" [fit]="true">
-                                        <amexio-card header="true" >
-                                            <amexio-header>
-                                                Click On Legend/ Click On Chart
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <pre><code>{{sourceData |json }}</code></pre>
-
-                                            </amexio-body>
-                                        </amexio-card>
-
-                                    </amexio-column>
-                                </amexio-row>
-                                <amexio-row>
-                                    <!-- -->
-                                    <amexio-column [size]="8" [fit]="true">
-                                        <amexio-card [header]="true" [show]="'true'" >
-                                            <amexio-header>
-                                                Horizontal D3-bar
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-d3-chart-bar [horizontal]="true" [title]="'Coffee Production Analysis'"  (onChartClick)="onDefaultChartClick2($event)"  (onLegendClick)="onDefaultLegendClick1($event)" [data]="barData">
-                                                </amexio-d3-chart-bar>
-                                            </amexio-body>
-                                        </amexio-card>
-                                    </amexio-column>
-                                    <amexio-column [size]="4" [fit]="true">
-                                        <amexio-card header="true" >
-                                            <amexio-header>
-                                                Click On Legend/ Click On Chart
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <pre><code>{{sourceData1 |json }}</code></pre>
-
-                                            </amexio-body>
-                                        </amexio-card>
-
-                                    </amexio-column>
-                                </amexio-row>
-
-
-
                     </amexio-column>
                 </amexio-row>
 
 
             </amexio-tab>
             <amexio-tab title="API Reference">
-                <amexio-datagrid title="D3-Bar-Chart Properties<amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'"
-                    [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
+                <amexio-datagrid title="D3-Histogram-Chart Properties</amexio-histogram>" [enable-column-fiter]="false" [http-method]="'get'"
+                    [http-url]="'assets/apireference/charts/d3charts/d3histogramchart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
@@ -104,14 +53,7 @@
                     <amexio-data-table-column [width]="40" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
                 <br>
-                <amexio-datagrid title="Legend<amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
-                    [data-reader]="'legend'" [enable-data-filter]="false">
-                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
-                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>                    
-                    <amexio-data-table-column [width]="55" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
-                </amexio-datagrid>
-                <br>
-                <amexio-datagrid title="Chart Event <amexio-d3-chart-bar>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
+                <amexio-datagrid title="Chart Event </amexio-histogram>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/charts/d3charts/d3barchart.json'"
                     [data-reader]="'chartevent'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>                   

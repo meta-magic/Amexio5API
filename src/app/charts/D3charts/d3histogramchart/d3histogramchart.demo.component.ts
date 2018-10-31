@@ -19,6 +19,7 @@ export class AmexioD3HistogramChartDemoComponent implements OnInit {
   sourceData: any;
   userDataSource: any;
   barChartWithColorData: any;
+  histogramdata:any;
   barData: any;
   sourceData1: any;
   constructor(private http: HttpClient) {
@@ -37,40 +38,38 @@ export class AmexioD3HistogramChartDemoComponent implements OnInit {
         "#d64161",
         "#ff7b25"
       ]
-    this.defultColorData = [
-      ['year', 'performance'],
-      ['2011', 1020],
-      ['2012', 590],
-      ['2013', 1260],
-      ['2014', 830],
-      ['2015', 1030],
-      ['2016', 209],
-      ['2017', 1006]
-    ];
-
-    this.userDefineColorData =
-    [
-      ['city', 'population'],
-      ['Mumbai', 94423],
-      ['Kochi', 69932],
-      ['Delhi', 91345],
-      ['Chennai', 46467],
-      ['Pune', 31244],
-      ['Jaipur', 30461],
-      ['Ranchi', 84436]
-    ];
-
-      this.barData = 
-      [
-        ['year', 'production'],
-        ['2011', 300],
-        ['2012', 500],
-        ['2013', 700],
-        ['2014', 400],
-        ['2015', 600],
-        ['2016', 500],
-        ['2017', 200]
-      ];
+      this.histogramdata=  [
+        ['Dinosaur', 'Length'],
+        ['Acrocanthosaurus (top-spined lizard)', 12.2],
+        ['Albertosaurus (Alberta lizard)', 9.1],
+        ['Allosaurus (other lizard)', 12.2],
+        ['Apatosaurus (deceptive lizard)', 22.9],
+        ['Archaeopteryx (ancient wing)', 0.9],
+        ['Argentinosaurus (Argentina lizard)', 36.6],
+        ['Baryonyx (heavy claws)', 9.1],
+        ['Brachiosaurus (arm lizard)', 30.5],
+        ['Ceratosaurus (horned lizard)', 6.1],
+        ['Coelophysis (hollow form)', 2.7],
+        ['Compsognathus (elegant jaw)', 0.9],
+        ['Deinonychus (terrible claw)', 2.7],
+        ['Diplodocus (double beam)', 27.1],
+        ['Dromicelomimus (emu mimic)', 3.4],
+        ['Gallimimus (fowl mimic)', 5.5],
+        ['Mamenchisaurus (Mamenchi lizard)', 21.0],
+        ['Megalosaurus (big lizard)', 7.9],
+        ['Microvenator (small hunter)', 1.2],
+        ['Ornithomimus (bird mimic)', 4.6],
+        ['Oviraptor (egg robber)', 1.5],
+        ['Plateosaurus (flat lizard)', 7.9],
+        ['Sauronithoides (narrow-clawed lizard)', 2.0],
+        ['Seismosaurus (tremor lizard)', 45.7],
+        ['Spinosaurus (spiny lizard)', 12.2],
+        ['Supersaurus (super lizard)', 30.5],
+        ['Tyrannosaurus (tyrant lizard)', 15.2],
+        ['Ultrasaurus (ultra lizard)', 30.5],
+        ['Velociraptor (swift robber)', 1.8]
+   ]
+  
        
   }
 
@@ -110,7 +109,7 @@ this.sourceData1 = event;
     let responseTs: any;
     let dataSource: any;
     //HTML FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3histogramchart/d3chart.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -118,14 +117,14 @@ this.sourceData1 = event;
     });
 
     // TS FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3histogramchart/d3chart.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     // DataSource FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/datasource.json', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3histogramchart/datasource.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -133,7 +132,7 @@ this.sourceData1 = event;
     });
 
     // User DataSource FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/usersource.json', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3histogramchart/usersource.json', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
