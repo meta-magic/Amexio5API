@@ -428,6 +428,9 @@
       path: 'amexio-d3-chart-histogram', loadChildren: './charts/D3charts/d3histogramchart/d3histogramchart.demo.module#D3HistogramChartDemoModule'
     }, 
     {
+      path: 'amexio-d3-chart-multiarea', loadChildren: './charts/D3charts/d3multiareachart/d3multiareachart.demo.module#D3MultiAreaChartDemoModule'
+    }, 
+    {
       path: 'drillable-with-single-target-demo', loadChildren: './charts/D3charts/d3drillablesingletarget/d3drillablesingletarget.demo.module#D3DrillableSingleTargetDemoModule'
     },
     {

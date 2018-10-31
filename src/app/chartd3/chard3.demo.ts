@@ -150,6 +150,26 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
           </amexio-card>
   </amexio-column>
   </amexio-row>
+----------
+<amexio-row>
+  
+          <amexio-column size="6" [fit]="true">
+                  <amexio-card [header]="true" [show]="'true'">
+                          <amexio-header>
+                                  amexio D3-Multi-Area chart
+                          </amexio-header>
+                          <amexio-body>
+                          <amexio-d3-chart-multiarea [data]="multiAreaData" [title]="'Stock Market Information'">
+                      </amexio-d3-chart-multiarea>
+                          </amexio-body>
+                  </amexio-card>
+          </amexio-column>
+
+          <amexio-column size="6" [fit]="true">
+          
+  </amexio-column>
+  </amexio-row>
+
 
 
   `
@@ -169,9 +189,21 @@ export class ChartD3Demo implements OnInit {
   multiData: any;
   comboChartData: any;
   horizontalBarData: any;
-  
+  multiAreaData:any;
 
   constructor(private http: HttpClient) {
+
+        this.multiAreaData = [
+                ["date", "index", "open", "close", "high"],
+                ["2014", 58.13, 610, 234, 100],
+                ["2015", 53.98, 626, 356, 150],
+                ["2016", 99.00, 543, 456, 200],
+                ["2017", 130.28, 443, 556, 250],
+                ["2018", 58.13, 610, 245, 300],
+                ["2019", 53.98, 626, 345, 350],
+                ["2020", 99.00, 543, 556, 400],
+                ["2021", 130.28, 443, 443, 500]
+              ];  
 
    this.comboChartData = [
         ['State', 'Rice Production', 'Rice Export'],

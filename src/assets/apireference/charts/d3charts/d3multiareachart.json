@@ -1,0 +1,103 @@
+{
+    "name": "Amexio D3-Chart Multi Area",
+    "description": "An  D3-Chart Multi Area  chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+    "selector": "<amexio-d3-chart-multiarea>",
+    "properties": [
+        {
+            "name": "title",
+            "version": "0.0.1 Onwards",
+            "description": "Sets title to chart",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "width",
+            "description": "Width of chart",
+            "version": "0.0.1 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "height",
+            "description": "Height of chart",
+            "version": "0.0.1 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data",
+            "description": "Local data for Chart",
+            "version": "0.0.1 Onwards",
+            "type": "any",
+            "default": ""
+        },
+        {
+            "name": "legend",
+            "description": "Sets legend to D3 multi-area chart",
+            "version": "0.0.1 Onwards",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "name": "http-url",
+            "description": "REST url for fetching data.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "http-method",
+            "description": "Type of HTTP call, POST,GET etc.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data-reader",
+            "description": "Key in JSON Datasource for records.",
+            "version": "0.0.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "level",
+            "description": "Sets level for chart when drillable property used",
+            "version": "0.0.6 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "target",
+            "description": "Sets  target for chart when drillable property used",
+            "version": "0.0.6 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "drillable-data",
+            "description": "Arrays of keys provided for chart, when drillable property used.",
+            "version": "0.0.6 Onwards",
+            "type": "any",
+            "default": ""
+        }
+    ],
+    "legend": [
+        {
+            "name": "onLegendClick()",
+            "version": "0.0.2 Onwards",
+            "description": "It will fire only on click on Legend Click in D3 multi-area chart ."
+        }
+    ],
+    "chartevent": [
+        {
+            "name": "onChartClick()",
+            "version": "0.0.2 Onwards",
+            "description": "It will fire only on click on chart in D3 multi-area chart ."
+        },
+        {
+            "name": "onTooltipClick()",
+            "version": "0.0.2 Onwards",
+            "description": "It will fire only on click of tooltip in D3 muti-area chart ."
+        }
+    ]
+}

@@ -683,6 +683,12 @@
                     "badge": "New",
                     "children": [
                         {
+                            "text": "Multi-Area Chart",
+                            "icon": "fa fa-area-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-multiarea"
+                        }, 
+                        {
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
