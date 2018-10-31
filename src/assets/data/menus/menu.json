@@ -698,6 +698,11 @@
                             "icon": "fa fa-pie-chart fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-donut"
+                        },{
+                            "text": "Histogram Chart",
+                            "icon": "fa fa-bar-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-histogram"
                         },
                         {
                             "text": "Line Chart",
