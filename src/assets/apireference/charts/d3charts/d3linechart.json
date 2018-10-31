@@ -44,7 +44,7 @@
             "description": "Sets legend to D3  line chart",
             "version": "0.0.2  Onwards",
             "type": "boolean",
-            "default": "false"
+            "default": "true"
         },   {
             "name": "http-url",
             "description": "REST url for fetching data.",

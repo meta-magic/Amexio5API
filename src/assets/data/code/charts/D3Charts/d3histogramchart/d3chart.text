@@ -1,12 +1,12 @@
 
-
 export class  HistogramComponent
 {
    histogramdata:any;
   userDataSource: any;
 
-  constructor() { 
- histogramdata=  [
+  constructor() {
+
+    histogramdata=  [
       ['Dinosaur', 'Length'],
       ['Acrocanthosaurus (top-spined lizard)', 12.2],
       ['Albertosaurus (Alberta lizard)', 9.1],
@@ -36,11 +36,12 @@ export class  HistogramComponent
       ['Tyrannosaurus (tyrant lizard)', 15.2],
       ['Ultrasaurus (ultra lizard)', 30.5],
       ['Velociraptor (swift robber)', 1.8]
- ]  
-   }
- onDefaultChartClick(event: any) {
-    this.userDataSource = event;
-  }
+     ]  
+    }
+ 
+    onDefaultChartClick(event: any) {
+      this.userDataSource = event;
+    }
 
 }
 
