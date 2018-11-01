@@ -90,11 +90,6 @@
     ],
     "chartevent": [
         {
-            "name": "onChartClick()",
-            "version": "0.0.7 Onwards",
-            "description": "It will fire only on click on chart in D3 multi-area chart ."
-        },
-        {
             "name": "onTooltipClick()",
             "version": "0.0.7 Onwards",
             "description": "It will fire only on click of tooltip in D3 muti-area chart ."
