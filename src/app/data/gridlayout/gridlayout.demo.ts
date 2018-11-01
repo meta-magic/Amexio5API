@@ -9,10 +9,10 @@ import {HttpClient} from "@angular/common/http";
   selector: 'gridlayout-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-      heading
+      Grid Layout
       </amexio-header>
       <amexio-body>
-        <p>Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Filtering(enable only for string and number type data) user define template for rendering for column header and column data, displaying summation of numeric column.</p>
+        <p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to layout major page areas or small user interface elements.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
@@ -23,21 +23,22 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-header>
                   <amexio-body>
                   <amexio-grid-component [data]="data">
-                  <amexio-grid-item style="border: 1px solid red; " [name]="'gheader'">Header</amexio-grid-item>
-                  <amexio-grid-item style="border: 1px solid blue" [name]="'gmenu'">Menu</amexio-grid-item>
-                  <amexio-grid-item style="border: 1px solid green" [name]="'gmain'">Main </amexio-grid-item>
-                  <amexio-grid-item style="border: 1px solid yellow" [name]="'gright'">Right</amexio-grid-item>
-                  <amexio-grid-item style="border: 1px solid orange" [name]="'gfooter'">Footer</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black; " [name]="'gheader'">Header</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gmenu'">Menu</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gmain'">Main </amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gright'">Right</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gfooter'">Footer</amexio-grid-item>
               </amexio-grid-component>
                   </amexio-body>
                 </amexio-card>
+                <br>
                 <amexio-card [header]="true">
                   <amexio-header>
                      Grid Layout with Components
                   </amexio-header>
                   <amexio-body>
                   <amexio-grid-component [data]="data1">
-                  <amexio-grid-item style="border: 1px solid red; " [name]="'gheader'">
+                  <amexio-grid-item [name]="'gheader'">
                
                   <amexio-card [header]="true">
                     <amexio-header>
@@ -70,7 +71,7 @@ import {HttpClient} from "@angular/common/http";
                                 [horizontal]="true"
                                 [data]="radioGroupData"
                                 [default-value]="'male'"
-                                (onSelection)="setSelectedGender($event)">
+                                >
                           </amexio-radio-group>
                   </amexio-column>
                   </amexio-row>
@@ -78,20 +79,19 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-card>
                   
                   </amexio-grid-item>
-                  <amexio-grid-item style="border: 1px solid blue" [name]="'gmenu'">
+                  <amexio-grid-item  [name]="'gmenu'">
                   <amexio-listbox [enable-checkbox]="true"
-                  [height]="400"
                   [header]="'Contacts'"
                   [search-placeholder]="'Search Contacts'"
                   [data]="localData"
                   [filter]="true"
                   [data-reader]="'response.data'"
                   [display-field]="'name_official'"
-                  (selectedRows)="getSelectedData($event)">
+                  >
                   </amexio-listbox>
                
                 </amexio-grid-item>
-                <amexio-grid-item style="border: 1px solid green" [name]="'gmain'">
+                <amexio-grid-item [name]="'gmain'">
                       <amexio-card>
                       <amexio-body>
                       <amexio-row>
@@ -111,7 +111,6 @@ import {HttpClient} from "@angular/common/http";
                                                 [display-field]="'language'"
                                                 [horizontal]="true"
                                                 [value-field]="'checked'"
-                                                (onSelection)="selectedCheckboxgroup($event)"
                                                 [data]="checkboxGroupdata">
                         </amexio-checkbox-group>
                         </amexio-column>
@@ -119,44 +118,109 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-body>
                       </amexio-card>
                 </amexio-grid-item>
-                <amexio-grid-item style="border: 1px solid orange" [name]="'gfooter'">
+
+                <amexio-grid-item [name]="'gfooter'">
                 
-                        <amexio-card>
-                          <amexio-body>
-                              <amexio-row>
-                                <amexio-column size="3">
-                                <amexio-button [label]="'Save'" 
-                                [type]="'green'" 
-                                [tooltip]="'Green Button'">
-                                 </amexio-button>
-
-                                </amexio-column>
-                                <amexio-column size="3">
-                                <amexio-button [label]="'Delete'" 
-                                [type]="'red'" 
-                                [tooltip]="'Red Button'">
-                                 </amexio-button>
-
-                                </amexio-column>
-                              </amexio-row>
-
-                          </amexio-body>
-                        </amexio-card>
+                   	
+<amexio-toolbar>
+  <amexio-toolbar-item position-left [seperator-position]="'right'">
+    <amexio-label size="medium" font-color="Black">
+      Compose
+    </amexio-label>
+  </amexio-toolbar-item>
+  <amexio-toolbar-item position-left [seperator-position]="'right'">
+    <amexio-btn-group>
+      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'Archive'" [icon]="'fa fa-archive'">
+      </amexio-button>
+      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'Save'" [icon]="'fa fa-exclamation-circle'">
+      </amexio-button>
+      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'delete'" [icon]="'fa fa-trash-o'">
+      </amexio-button>
+    </amexio-btn-group>
+  </amexio-toolbar-item>
+  <amexio-toolbar-item position-right>
+    <amexio-drop-down-menu [icon-align]="'left'" [title]="'Settings'" [padding]="'5px 10px'" [icon]="'fa fa-cog'">
+      <amexio-drop-down-menu-item [separator]="true">
+        <amexio-box background-color="purple" padding="true">
+          <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+        </amexio-box>
+        <amexio-row>
+          <amexio-column size="5">
+            <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'" path="assets/images/profile/ketan.jpg">
+            </amexio-image>
+          </amexio-column>
+          <amexio-column size="7">
+            <amexio-label> Ketan Gote</amexio-label>
+            <amexio-label> xyz@metamagic.in</amexio-label>
+            <br>
+            <amexio-button [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+            </amexio-button>
+          </amexio-column>
+        </amexio-row>
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Settings'" [icon]="'fa fa-folder'">
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Help Center'" [icon]="'fa fa-question-circle'" [separator]="true">
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Location'" [icon]="'fa fa-map-marker'">
+      </amexio-drop-down-menu-item>
+      <amexio-drop-down-menu-item [label]="'Sign Out'" [icon]="'fa fa-sign-out'">
+      </amexio-drop-down-menu-item>
+    </amexio-drop-down-menu>
+  </amexio-toolbar-item>
+  <amexio-toolbar-item position-left [seperator-position]="'left'">
+    <amexio-btn-group>
+      <amexio-button [size]="'medium'" [tooltip]="'Move to'" [icon]="'fa fa-folder'">
+      </amexio-button>
+      <amexio-button [size]="'medium'" [tooltip]="'Help'" [icon]="'fa fa-question'">
+      </amexio-button>
+    </amexio-btn-group>
+  </amexio-toolbar-item>
+</amexio-toolbar>
           
               </amexio-grid-item>
               </amexio-grid-component>
+              
                   </amexio-body>
                 </amexio-card>
+                <br>
                 <amexio-card [header]="true">
                 <amexio-header>
                    Grid Layout 
                 </amexio-header>
                 <amexio-body>
                 <amexio-grid-component [data]="data2">
-                <amexio-grid-item style="border: 1px solid red; " [name]="'gheader'">Header</amexio-grid-item>
-                <amexio-grid-item style="border: 1px solid blue" [name]="'gmenu'">Menu</amexio-grid-item>
-                <amexio-grid-item style="border: 1px solid green" [name]="'gmain'">Main </amexio-grid-item>
-                <amexio-grid-item style="border: 1px solid yellow" [name]="'gright'">Right</amexio-grid-item>
+                <amexio-grid-item [name]="'gheader'">
+                <amexio-image [path]="'assets/images/soap-bubble.jpg'" ></amexio-image>
+
+                </amexio-grid-item>
+                <amexio-grid-item [name]="'gmenu'">
+                <amexio-card [header]="false"
+             [footer]="true"
+             [footer-align]="'right'">
+  <amexio-body>
+    <amexio-image path="assets/images/carousel/set1/1.jpg"></amexio-image>
+    <br/>
+    <amexio-label size="small-bold">Let your startup grow!</amexio-label>
+    <amexio-label size="small">
+      Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+    </amexio-label>
+  </amexio-body>
+  <amexio-action >
+    <amexio-button [label]="'Button'"
+                   [type]="'primary'">
+    </amexio-button>
+  </amexio-action>
+</amexio-card>
+                </amexio-grid-item>
+             
+                <amexio-grid-item [name]="'gright'">
+                <amexio-panel [header]="false" expanded="true">
+                <amexio-label>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              </amexio-label>
+            </amexio-panel>
+                </amexio-grid-item>
             </amexio-grid-component>
                 </amexio-body>
               </amexio-card>
@@ -171,20 +235,15 @@ import {HttpClient} from "@angular/common/http";
                              [enable-data-filter]="false">
               <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'">
-                <ng-template #amexioBodyTmpl let-column let-row="row">
-                  <ng-container *ngIf="row.deprecated">
-                    <div style="text-decoration: line-through red;">{{row.name}}</div>
-                  </ng-container>
-                  <ng-container *ngIf="!row.deprecated">
-                    {{row.name}}
-                  </ng-container>
-                </ng-template>
               </amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false"
+              [text]="'Version'">
+</amexio-data-table-column>
               <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
+              <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
@@ -212,7 +271,7 @@ import {HttpClient} from "@angular/common/http";
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-filter-grid?embed=1&file=app/grid/filtergrid/filtergrid.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
+          Work in Progress
           </amexio-tab>
         </amexio-tab-view>
       </amexio-body>
@@ -242,12 +301,12 @@ export class GridLayoutDemo {
         ["gmenu", "gheader", "gheader", "gheader", "gheader", "gheader"],
         ["gmenu", "gmain", "gmain", "gmain", "gmain", "gmain"],
         ["gmenu", "gmain", "gmain", "gmain", "gmain", "gmain"],
-        ["gmenu", "gfooter", "gfooter", "gfooter", "gfooter", "gfooter"]
+        ["gfooter", "gfooter", "gfooter", "gfooter", "gfooter", "gfooter"]
       ];
       this.data2 = [
-        ["gmenu", "gmenu", "gheader", "gheader", "gright", "gright"],
-        ["gmenu", "gmenu", "gmain", "gmain", "gright", "gright"],
-        ["gmenu", "gmenu", "gmain", "gmain", "gright", "gright"]
+        ["gmenu", "gmenu", "gheader", "gheader", "gheader", "gheader"],
+        ["gmenu", "gmenu", "gheader", "gheader", "gheader", "gheader"],
+        ["gmenu", "gmenu", "gright", "gright", "gright", "gright"]
       ];
       this.localData = {
         "response": {
@@ -297,12 +356,18 @@ export class GridLayoutDemo {
               "email" : "XYZ@metamagic.in"
             },
             {
+              "name": "Nidhi Shah",
+              "name_official": "Nidhi Shah",
+              "profile": "dats.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            
+            {
               "name": "Sharad Jadhav",
               "name_official": "Sharad Jadhav",
               "profile": "ahutosh.jpg",
               "email" : "XYZ@metamagic.in"
-            }
-          ]
+            }          ]
         }
       }
       this.radioGroupData = {
@@ -334,7 +399,7 @@ export class GridLayoutDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/filter/filter.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/gridlayout/gridlayout.html',{responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -342,18 +407,11 @@ export class GridLayoutDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/filter/filter.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/data/gridlayout/gridlayout.text',{responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/datagridgroupby.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
     });
 
   }

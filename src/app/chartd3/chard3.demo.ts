@@ -172,6 +172,7 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
           </amexio-header>
           <amexio-body>
           <amexio-d3-chart-scatter
+          [title]="'Age vs Weight'"
           [data]="scatterChartData" 
           [color]="'green'">
       </amexio-d3-chart-scatter>

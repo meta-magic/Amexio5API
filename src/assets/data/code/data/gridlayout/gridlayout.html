@@ -1,0 +1,166 @@
+<!-- Sample Grid Layout -->
+
+<amexio-grid-component [data]="data">
+    <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
+</amexio-grid-component>
+
+<!-- Grid Layout with Components such as List box, Radio group, Tool bar, checkbox -->
+
+<amexio-grid-component [data]="data1">
+    <amexio-grid-item [name]="'gheader'">
+
+        <amexio-card [header]="true">
+            <amexio-header>
+                Employee's Registration
+            </amexio-header>
+
+            <amexio-body>
+                <amexio-row>
+                    <amexio-column size="6">
+                        <amexio-text-input field-label="FirstName" name="name" icon-feedback="true">
+                        </amexio-text-input>
+                    </amexio-column>
+                    <amexio-column size="6">
+                        <amexio-text-input field-label="LastName" name="name" icon-feedback="true">
+                        </amexio-text-input>
+                    </amexio-column>
+                </amexio-row>
+                <amexio-row>
+                    <amexio-column size="6">
+                        <amexio-radio-group [field-label]="'Select Gender'" name="gender" [data-reader]="'response.data'" [display-field]="'gender'"
+                            [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData" [default-value]="'male'">
+                        </amexio-radio-group>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body>
+        </amexio-card>
+
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gmenu'">
+        <amexio-listbox [enable-checkbox]="true" [header]="'Contacts'" [search-placeholder]="'Search Contacts'" [data]="localData"
+            [filter]="true" [data-reader]="'response.data'" [display-field]="'name_official'">
+        </amexio-listbox>
+
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gmain'">
+        <amexio-card>
+            <amexio-body>
+                <amexio-row>
+                    <amexio-column size="6">
+                        <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'"
+                            [enable-popover]="true" [icon-feedback]="true">
+                        </amexio-email-input>
+                    </amexio-column>
+                    <amexio-column size="6">
+                        <amexio-checkbox-group [field-label]="''" name="language" [data-reader]="'response.data'" [display-field]="'language'" [horizontal]="true"
+                            [value-field]="'checked'" [data]="checkboxGroupdata">
+                        </amexio-checkbox-group>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body>
+        </amexio-card>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gfooter'">
+
+
+        <amexio-toolbar>
+            <amexio-toolbar-item position-left [seperator-position]="'right'">
+                <amexio-label size="medium" font-color="Black">
+                    Compose
+                </amexio-label>
+            </amexio-toolbar-item>
+            <amexio-toolbar-item position-left [seperator-position]="'right'">
+                <amexio-btn-group>
+                    <amexio-button [size]="'medium'" [tooltip]="'Archive'" [icon]="'fa fa-archive'">
+                    </amexio-button>
+                    <amexio-button [size]="'medium'" [tooltip]="'Save'" [icon]="'fa fa-exclamation-circle'">
+                    </amexio-button>
+                    <amexio-button [size]="'medium'" [tooltip]="'delete'" [icon]="'fa fa-trash-o'">
+                    </amexio-button>
+                </amexio-btn-group>
+            </amexio-toolbar-item>
+            <amexio-toolbar-item position-right>
+                <amexio-drop-down-menu [icon-align]="'left'" [title]="'Settings'" [padding]="'5px 10px'" [icon]="'fa fa-cog'">
+                    <amexio-drop-down-menu-item [separator]="true">
+                        <amexio-box background-color="purple" padding="true">
+                            <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
+                        </amexio-box>
+                        <amexio-row>
+                            <amexio-column size="5">
+                                <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'" path="assets/images/profile/ketan.jpg">
+                                </amexio-image>
+                            </amexio-column>
+                            <amexio-column size="7">
+                                <amexio-label> Ketan Gote</amexio-label>
+                                <amexio-label> xyz@metamagic.in</amexio-label>
+                                <br>
+                                <amexio-button [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
+                                </amexio-button>
+                            </amexio-column>
+                        </amexio-row>
+                    </amexio-drop-down-menu-item>
+                    <amexio-drop-down-menu-item [label]="'Settings'" [icon]="'fa fa-folder'">
+                    </amexio-drop-down-menu-item>
+                    <amexio-drop-down-menu-item [label]="'Help Center'" [icon]="'fa fa-question-circle'" [separator]="true">
+                    </amexio-drop-down-menu-item>
+                    <amexio-drop-down-menu-item [label]="'Location'" [icon]="'fa fa-map-marker'">
+                    </amexio-drop-down-menu-item>
+                    <amexio-drop-down-menu-item [label]="'Sign Out'" [icon]="'fa fa-sign-out'">
+                    </amexio-drop-down-menu-item>
+                </amexio-drop-down-menu>
+            </amexio-toolbar-item>
+            <amexio-toolbar-item position-left [seperator-position]="'left'">
+                <amexio-btn-group>
+                    <amexio-button [size]="'medium'" [tooltip]="'Move to'" [icon]="'fa fa-folder'">
+                    </amexio-button>
+                    <amexio-button [size]="'medium'" [tooltip]="'Help'" [icon]="'fa fa-question'">
+                    </amexio-button>
+                </amexio-btn-group>
+            </amexio-toolbar-item>
+        </amexio-toolbar>
+
+    </amexio-grid-item>
+</amexio-grid-component>
+
+<!-- Grid Layout Example-->
+
+<amexio-card [header]="true">
+    <amexio-header>
+        Grid Layout
+    </amexio-header>
+    <amexio-body>
+        <amexio-grid-component [data]="data2">
+            <amexio-grid-item [name]="'gheader'">
+                <amexio-image [path]="'assets/images/soap-bubble.jpg'"></amexio-image>
+
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'gmenu'">
+                <amexio-card [header]="false" [footer]="true" [footer-align]="'right'">
+                    <amexio-body>
+                        <amexio-image path="assets/images/carousel/set1/1.jpg"></amexio-image>
+                        <br/>
+                        <amexio-label size="small-bold">Let your startup grow!</amexio-label>
+                        <amexio-label size="small">
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                        </amexio-label>
+                    </amexio-body>
+                    <amexio-action>
+                        <amexio-button [label]="'Button'" [type]="'primary'">
+                        </amexio-button>
+                    </amexio-action>
+                </amexio-card>
+            </amexio-grid-item>
+
+            <amexio-grid-item [name]="'gright'">
+                <amexio-panel [header]="false" expanded="true">
+                    <amexio-label>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </amexio-label>
+                </amexio-panel>
+            </amexio-grid-item>
+        </amexio-grid-component>
