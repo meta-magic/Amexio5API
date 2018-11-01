@@ -1,6 +1,6 @@
 
 
-export class AmexioD3BarChartDemoComponent
+export class AmexioD3MultiareaComponent
 {
   multiAreaData:any=[];
   userDataSource: any;

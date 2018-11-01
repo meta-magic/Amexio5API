@@ -1,5 +1,5 @@
 
-export class  HistogramComponent
+export class  AmexioD3HistogramComponent
 {
    histogramdata:any;
   userDataSource: any;
