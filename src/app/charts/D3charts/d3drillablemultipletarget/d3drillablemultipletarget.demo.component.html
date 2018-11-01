@@ -18,9 +18,9 @@
                                     </amexio-header>
                                     <amexio-body>
                                         <amexio-drillable>
-                                            <amexio-d3-chart-bar [title]="'Country Chart'" [http-url]="'https://restapi.amexio.org:8991/rest-sample-app/api/countrychart/findall'"
-                                                [http-method]="'get'" [level]=1 [target]=2 [drillable-data]="drillabledata" [color]="barchartcolor">
-                                            </amexio-d3-chart-bar>
+                                            <amexio-d3-chart-pie [title]="'Country Chart'" [http-url]="'https://restapi.amexio.org:8991/rest-sample-app/api/countrychart/findall'"
+                                            [http-method]="'get'" [level]=1 [target]=2 [drillable-data]="drillabledata" [color]="barchartcolor">
+                                        </amexio-d3-chart-pie>
 
                                             <amexio-d3-chart-bar [title]="'Population Chart'" [http-url]="'https://restapi.amexio.org:8991/rest-sample-app/api/state/findbycountry'"
                                                 [http-method]="'post'" [color]="barchartcolor" [drillable-data]="drillabledata"
