@@ -4,6 +4,13 @@
   "selector": "<amexio-radio-group>",
   "properties": [
     {
+      "name": "name",
+      "description": "The name provides the name for the radio group ",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
       "name": "field-label",
       "description": "The label of this field",
       "version": "4.0 onwards",
