@@ -1,0 +1,10 @@
+<!-- D3-waterfall Chart User Define Color -->
+<amexio-d3-chart-bar 
+        [width]="400"
+        [data]="userDefineColorData" 
+        [height]="400" 
+        [title]="'Population of Cities in India'"
+        (onChartClick)="onDefaultChartClick($event)"
+        (onLegendClick)="onUserDefineLegendClick($event)"
+        [color]="userDefineColors" >
+ </amexio-d3-chart-bar>
