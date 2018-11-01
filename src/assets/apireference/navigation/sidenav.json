@@ -5,7 +5,8 @@
       "type": "string",
       "default": "",
       "description": "Width of sidenav"
-    },{
+    },
+    {
       "name": "position",
       "type": "string",
       "default": "",
@@ -46,28 +47,64 @@
       "type": "any",
       "default": "",
       "description": "Local data for sidenav."
-    } ,
+    },
     {
       "name": "display-key",
-      "version": "5.2.3 onwards",
+      "version": "5.4 onwards",
       "type": "string",
       "default": "text",
       "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
     },
     {
       "name": "child-array-key",
-      "version": "5.2.3 onwards",
+      "version": "5.4 onwards",
       "type": "string",
       "default": "children",
       "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
     }
+   
   ],
- 
-  "events":[
+  "propertiesitem": [
+    {
+      "name": "separator",
+      "type": "boolean",
+      "version": "5.4 onwards",
+      "default": "false",
+      "description": "We can add separator between components."
+    },
+    {
+      "name": "label",
+      "type": "string",
+      "version": "5.4 onwards",
+      "default": "",
+      "description": "Providing user define Label to sidenav node."
+    },
+    {
+      "name": "icon",
+      "type": "string",
+      "version": "5.4 onwards",
+      "default": "",
+      "description": "Providing user define Icon to sidenav node."
+    },
+    {
+      "name": "badge",
+      "type": "any",
+      "version": "5.4 onwards",
+      "default": "",
+      "description": "Providing user define Badge to sidenav node."
+    },
+    {
+      "name": "expandIcon",
+      "type": "boolean",
+      "version": "5.4 onwards",
+      "default": "",
+      "description": "Providing user define icon, label, badge we added expandIcon at right side ."
+    }
+  ],
+  "events": [
     {
       "name": "nodeClick",
-       "description": "Fire when sidenav bar menu click"
-
+      "description": "Fire when sidenav bar menu click"
     }
   ]
 }

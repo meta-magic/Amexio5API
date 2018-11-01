@@ -23,13 +23,68 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-card [header]="true">
                   <amexio-header> Side Nav </amexio-header>
                   <amexio-body>
-                    <amexio-side-nav
-                      [http-url]="'assets/data/componentdata/sidenav.json'"
-                      [http-method]="'get'"
-                      [data-reader]="'data'"
-                      [width]="'275px'"
-                      [position]="'relative'">
-                    </amexio-side-nav>
+                  <amexio-side-nav
+                  [http-url]="'assets/data/componentdata/sidenav.json'"
+                  [http-method]="'get'"
+                  [data-reader]="'data'"
+                  [width]="'275px'"
+                  [position]="'relative'">
+                </amexio-side-nav>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-card [header]="true">
+                  <amexio-header> Side Nav with component </amexio-header>
+                  <amexio-body>
+                  <amexio-side-nav
+                  [width]="'275px'"
+                  [position]="'relative'">
+
+
+                  <amexio-sidenav-node [label]="'Johnny Depp'" [icon]="'fa fa-plus'" [badge]="20"  [expand-icon]=true >
+                  </amexio-sidenav-node>
+              
+                  <amexio-sidenav-node [expand-icon]=true  [separator]=true>
+                  <amexio-text-input field-label="Name"
+                             name="name"
+                             place-holder="Enter name"
+                             icon-feedback="true">
+                </amexio-text-input>
+                </amexio-sidenav-node>
+              
+                <amexio-sidenav-node  [separator]=false>
+                <amexio-checkbox [field-label]="'Tasks'" [(ngModel)]="check2" >
+                </amexio-checkbox>
+                </amexio-sidenav-node>
+
+                <amexio-sidenav-node   [separator]=false>
+                     
+                      <amexio-checkbox [field-label]="'Data'" [(ngModel)]="check3" >
+                      </amexio-checkbox>
+                </amexio-sidenav-node>
+
+                <amexio-sidenav-node     [separator]=false>
+                      <amexio-checkbox [field-label]="'Reminder'" [(ngModel)]="check1" >
+                      </amexio-checkbox>
+                </amexio-sidenav-node>
+
+                <amexio-sidenav-node     [separator]=true>
+              
+                <amexio-checkbox [field-label]="'Birthday'" [(ngModel)]="check" >
+                </amexio-checkbox>
+                </amexio-sidenav-node>
+         
+                <amexio-sidenav-node   >
+                    <amexio-toggle [field-label]="'Reminder'">
+                </amexio-toggle>
+              
+              </amexio-sidenav-node>
+               
+                </amexio-side-nav>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -50,6 +105,20 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Default'"></amexio-data-table-column>
               <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+            <amexio-datagrid title="Properties <amexio-sidenav-node>" [enable-column-fiter]="false"
+                            [http-method]="'get'"
+                            [http-url]="'assets/apireference/navigation/sidenav.json'"
+                            [data-reader]="'propertiesitem'"
+                            [enable-data-filter]="false">
+            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                  [text]="'Name'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+                                  [text]="'Type'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+                                  [text]="'Default'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                                  [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events" [enable-column-fiter]="false"
@@ -100,6 +169,23 @@ export class SideNavDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   dataSource:any;
+  check  : boolean = false;
+  check1 : boolean = true;
+  check2 : boolean = false;
+  check3 : boolean = true;
+
+  public max: number = 10;
+  public rate: number = 7;
+  public profileMaxRate: number = 5;
+  public customIconRate: number = 10;
+  public customRate: number = 5;
+  public profileRate: number = 2;
+  public disableProfileRate:number=3;
+  public disableProfileMaxRate:number=5;
+
+  titles: any = ['Poor', 'Fair', 'Average', 'Good', 'Excellent'];
+
+  construct
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }

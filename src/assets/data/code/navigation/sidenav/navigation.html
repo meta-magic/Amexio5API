@@ -1,8 +1,87 @@
-<!--Side nav bar-->
-<amexio-side-nav
-  [http-url]="'assets/data/componentdata/sidenav.json'"
-  [http-method]="'get'"
-  [data-reader]="'data'"
-  [width]="'275px'"
-  [position]="'relative'">
-</amexio-side-nav>
+<amexio-row>
+  <amexio-column size="12">
+    <amexio-card [header]="true">
+      <amexio-header> Side Nav </amexio-header>
+      <amexio-body>
+      <amexio-side-nav
+      [http-url]="'assets/data/componentdata/sidenav.json'"
+      [http-method]="'get'"
+      [data-reader]="'data'"
+      [width]="'275px'"
+      [position]="'relative'">
+      </amexio-side-nav>
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+</amexio-row>
+<!-- side nav with components -->
+
+<amexio-row>
+  <amexio-column size="12">
+    <amexio-card [header]="true">
+      <amexio-header> Side Nav with component </amexio-header>
+       <amexio-body>
+        <amexio-side-nav
+                    [width]="'275px'"
+                    [position]="'relative'">
+        <amexio-sidenav-node 
+                    [label]="'Johnny Depp'" 
+                    [icon]="'fa fa-plus'" 
+                    [badge]="20"  
+                    [expand-icon]=true >
+        </amexio-sidenav-node>
+    
+        <amexio-sidenav-node 
+                    [expand-icon]=true  
+                    [separator]=true>
+                <amexio-text-input
+                    field-label="Name"
+                    name="name"
+                    place-holder="Enter name"
+                    icon-feedback="true">
+                </amexio-text-input>
+         </amexio-sidenav-node>
+    
+          <amexio-sidenav-node  
+                    [separator]=false>
+                <amexio-checkbox 
+                    [field-label]="'Tasks'" 
+                    [(ngModel)]="check2" >
+                </amexio-checkbox>
+          </amexio-sidenav-node>
+
+          <amexio-sidenav-node   
+                    [separator]=false>
+                <amexio-checkbox 
+                    [field-label]="'Data'" 
+                    [(ngModel)]="check3" >
+                </amexio-checkbox>
+          </amexio-sidenav-node>
+
+          <amexio-sidenav-node     
+                    [separator]=false>
+                <amexio-checkbox 
+                    [field-label]="'Reminder'" 
+                    [(ngModel)]="check1" >
+                </amexio-checkbox>
+          </amexio-sidenav-node>
+
+          <amexio-sidenav-node     
+                    [separator]=true>
+                  <amexio-checkbox 
+                    [field-label]="'Birthday'" 
+                    [(ngModel)]="check" >
+                  </amexio-checkbox>
+          </amexio-sidenav-node>
+
+          <amexio-sidenav-node>
+                  <amexio-toggle 
+                    [field-label]="'Reminder'">
+                  </amexio-toggle>
+          </amexio-sidenav-node>
+        
+      </amexio-side-nav>
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+</amexio-row>
