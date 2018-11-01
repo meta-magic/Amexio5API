@@ -16,9 +16,12 @@
                                                 D3-waterfall chart
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-d3-chart-bar  [title]="'Population of Cities in India'" (onChartClick)="onDefaultChartClick($event)" (onLegendClick)="onUserDefineLegendClick($event)"
-                                                    [color]="userDefineColors" [data]="userDefineColorData">
-                                                </amexio-d3-chart-bar>
+                                                <amexio-d3-chart-waterfall 
+                                                [title]="'Product Information'" 
+                                                [data]="waterfallChartData"
+                                                (onChartClick)="onChartClick($event)"
+                                                (onLegendClick)="onLegendClick($event)">
+                                            </amexio-d3-chart-waterfall>
                                             </amexio-body>
                                         </amexio-card>
                                     </amexio-column>
@@ -28,7 +31,7 @@
                                                 Click On Legend/ Click on Chart
                                             </amexio-header>
                                             <amexio-body>
-                                                <pre><code>{{userDataSource |json }}</code></pre>
+                                                <pre><code>{{sourceData |json }}</code></pre>
 
                                             </amexio-body>
                                         </amexio-card>
@@ -41,7 +44,7 @@
 
             </amexio-tab>
             <amexio-tab title="API Reference">
-                <amexio-datagrid title="D3-Scatter-Chart Properties<amexio-d3-chart-waterfall>" [enable-column-fiter]="false" [http-method]="'get'"
+                <amexio-datagrid title="D3-Waterfall-Chart Properties<amexio-d3-chart-waterfall>" [enable-column-fiter]="false" [http-method]="'get'"
                     [http-url]="'assets/apireference/charts/d3charts/d3waterfallchart.json'" [data-reader]="'properties'" [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>

@@ -1,14 +1,10 @@
 
-Sample Data for Waterfall chart:
-  Note: First record i.e city is plotted on x-axis and population will get plotted on y-axis.
+  Note: First record i.e name is plotted on x-axis and population will get plotted on y-axis.
 
-[
-      ['city', 'population'],
-      ['Mumbai', 94423],
-      ['Kochi', 69932],
-      ['Delhi', 91345],
-      ['Chennai', 46467],
-      ['Pune', 31244],
-      ['Jaipur', 30461],
-      ['Ranchi', 84436]
-]
+  [
+    ["name","value"],
+    ["Product Revenue", 420000],
+    ["Services Revenue", 210000],
+    ["Fixed Costs", -170000],
+    ["letiable Costs", -140000 ]
+  ];   

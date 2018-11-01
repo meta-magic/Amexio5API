@@ -13,8 +13,7 @@ export class AmexioD3WaterfallChartDemoComponent implements OnInit {
   userDataSourceCode: string;
   dataSourceCode: string;
   copyMsgArray: any[];
-  defultColorData: any;
-  userDefineColors: any;
+  waterfallChartData: any;
   sourceData: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
@@ -22,37 +21,23 @@ export class AmexioD3WaterfallChartDemoComponent implements OnInit {
 
 
   ngOnInit() {
-    this.userDefineColors =
-      [
-        "#4040a1",
-        "#e06377",
-        "#7e4a35",
-        "#6b5b95",
-        "#feb236",
-        "#d64161",
-        "#ff7b25"
-      ]
-    this.defultColorData = [
-      ['year', 'performance'],
-      ['2011', 1020],
-      ['2012', 590],
-      ['2013', 1260],
-      ['2014', 830],
-      ['2015', 1030],
-      ['2016', 209],
-      ['2017', 1006]
+
+    this.waterfallChartData = [
+      ["name", "value"],
+      ["Product Revenue", 420000],
+      ["Services Revenue", 210000],
+      ["Fixed Costs", -170000],
+      ["letiable Costs", -140000]
     ];
-       
+
   }
 
-  onDefaultLegendClick(event: any) {
-
+  onLegendClick(event: any) {
     this.sourceData = event;
-
   }
 
-  onDefaultLegendClick1(event: any) {
-this.sourceData = event;
+  onChartClick(event: any) {
+    this.sourceData = event;
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE

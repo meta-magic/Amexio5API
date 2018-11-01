@@ -32,13 +32,6 @@
             "default": ""
         },
         {
-            "name": "color",
-            "description": "Sets color to D3 scatter chart",
-            "version": "0.0.7 Onwards",
-            "type": "any[]",
-            "default": ""
-        },
-        {
             "name": "legend",
             "description": "Sets legend to D3 scatter chart",
             "version": "0.0.7 Onwards",

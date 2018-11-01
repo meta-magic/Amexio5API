@@ -409,10 +409,9 @@
     {
       path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
     }, 
-
     {
-      path: 'amexio-d3-chart-waterfall', loadChildren: './charts/D3charts/d3barchart/d3waterfallchart.demo.module#D3WaterfallChartDemoModule'
-    }, 
+      path: 'amexio-d3-chart-waterfall', loadChildren: './charts/D3charts/d3waterfallchart/d3waterfallchart.demo.module#D3WaterfallChartDemoModule'
+    },  
     {
       path: 'amexio-d3-chart-scatter', loadChildren: './charts/D3charts/d3scatterchart/d3scatterchart.demo.module#D3ScatterChartDemoModule'
     }, 

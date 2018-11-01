@@ -1,8 +1,6 @@
 
-Sample Data for Scatter chart:
-
 [
-  ['Age', 'Weight'],
+  ["Age", "Weight"],
   [5, 35],
   [8, 40],
   [10, 45],

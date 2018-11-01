@@ -197,7 +197,18 @@ through a diverse collection of <span style="color: #0000FF"><ins>official</ins>
 </amexio-column>
 
 <amexio-column size="6" [fit]="true">
-
+<amexio-card [header]="true" [show]="'true'">
+<amexio-header>
+        amexio D3-Histogram chart
+</amexio-header>
+<amexio-body>
+<amexio-d3-chart-waterfall 
+[title]="'Product Information'" 
+[data]="waterfallChartData">
+</amexio-d3-chart-waterfall>
+ 
+</amexio-body>
+</amexio-card>
 </amexio-column>
   </amexio-row>
   
@@ -224,6 +235,7 @@ export class ChartD3Demo implements OnInit {
         multiAreaData: any;
         scatterChartData: any;
         histogramdata: any;
+        waterfallChartData: any;
 
         constructor(private http: HttpClient) {
 
@@ -379,6 +391,14 @@ export class ChartD3Demo implements OnInit {
                         ['Ultrasaurus (ultra lizard)', 30.5],
                         ['Velociraptor (swift robber)', 1.8]
                 ]
+
+                this.waterfallChartData = [
+                        ["name", "value"],
+                        ["Product Revenue", 420000],
+                        ["Services Revenue", 210000],
+                        ["Fixed Costs", -170000],
+                        ["letiable Costs", -140000]
+                      ];
         }
 
 
