@@ -457,6 +457,12 @@
                     ]
                 },
                 {
+                    "text": "Grid Layout",
+                    "icon": "fa fa-th",
+                    "badge": "New",
+                    "link": "gridlayout-demo"
+                },
+                {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
                     "link": "tree",

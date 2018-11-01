@@ -351,6 +351,10 @@
     {
       path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
     },
+    // Grid Layout
+    {
+      path: 'gridlayout-demo', loadChildren: './data/gridlayout/gridlayout.demo.module#GridLayoutDemoModule'
+    },
     /*Drag and Drop*/
     {
       path: 'within-tree', loadChildren: './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
