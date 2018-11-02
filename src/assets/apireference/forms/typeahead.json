@@ -11,6 +11,13 @@
       "default": ""
     },
     {
+      "name": "key",
+      "description": "The key is set for search purpose.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
       "name": "allow-blank",
       "description": "Sets if field is required",
       "version": "4.0 onwards",
