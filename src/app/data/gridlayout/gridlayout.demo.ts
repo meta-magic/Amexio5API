@@ -1,5 +1,5 @@
 /**
- * Created by sagar on 9/1/18.
+ * Created by rashmi on 2/1/18.
  */
 
 import {Component} from '@angular/core';
@@ -31,158 +31,211 @@ import {HttpClient} from "@angular/common/http";
               </amexio-grid-component>
                   </amexio-body>
                 </amexio-card>
+
                 <br>
+
                 <amexio-card [header]="true">
                   <amexio-header>
                      Grid Layout with Components
                   </amexio-header>
                   <amexio-body>
+
                   <amexio-grid-component [data]="data1">
+
                   <amexio-grid-item [name]="'gridheader'">
-               
-                  <amexio-card [header]="true">
-                    <amexio-header>
-                    Employee's Registration
-                    </amexio-header>
+                  <amexio-toolbar>
+<amexio-toolbar-item position-left [seperator-position]="'right'">
+<amexio-label size="medium" font-color="Black">
+Dashboard
+</amexio-label>
+</amexio-toolbar-item>
 
-
-                  <amexio-body>
-                  <amexio-row>
-                    <amexio-column size="6">
-                      <amexio-text-input field-label="FirstName"
-                                      name="name"
-                                      icon-feedback="true">
-                      </amexio-text-input>
-                      </amexio-column>
-                      <amexio-column size="6">
-                      <amexio-text-input field-label="LastName"
-                                    name="name"
-                                    icon-feedback="true">
-                      </amexio-text-input>
-                    </amexio-column>
-                  </amexio-row>
-                  <amexio-row>
-                  <amexio-column size="6">
-                         <amexio-radio-group [field-label]="'Select Gender'"
-                                  name ="gender"
-                                [data-reader]="'response.data'"
-                                [display-field]="'gender'"
-                                [value-field]="'genderId'"
-                                [horizontal]="true"
-                                [data]="radioGroupData"
-                                [default-value]="'male'"
-                                >
-                          </amexio-radio-group>
-                  </amexio-column>
-                  </amexio-row>
-                  </amexio-body>
-                </amexio-card>
-                  
-                  </amexio-grid-item>
-                  <amexio-grid-item  [name]="'gridmenu'">
-                  <amexio-listbox [enable-checkbox]="true"
-                  [header]="'Contacts'"
-                  [search-placeholder]="'Search Contacts'"
-                  [data]="localData"
-                  [filter]="true"
-                  [data-reader]="'response.data'"
-                  [display-field]="'name_official'"
-                  >
-                  </amexio-listbox>
-               
-                </amexio-grid-item>
-                <amexio-grid-item [name]="'gridmain'">
-                      <amexio-card>
-                      <amexio-body>
-                      <amexio-row>
-                        <amexio-column size="6">
-                        <amexio-email-input [field-label]="'Email Id'" name ="email"
-                        [place-holder]="'Enter Email Id'"
-                        [allow-blank]="false"
-                        [error-msg] ="'Please Enter Email Id'"
-                        [enable-popover]="true"
-                        [icon-feedback]="true">
-                        </amexio-email-input>
-                        </amexio-column>
-                        <amexio-column size="6">
-                        <amexio-checkbox-group [field-label]="''"
-                                                name="language"
-                                                [data-reader]="'response.data'"
-                                                [display-field]="'language'"
-                                                [horizontal]="true"
-                                                [value-field]="'checked'"
-                                                [data]="checkboxGroupdata">
-                        </amexio-checkbox-group>
-                        </amexio-column>
-                      </amexio-row>
-                      </amexio-body>
-                      </amexio-card>
-                </amexio-grid-item>
-
-                <amexio-grid-item [name]="'gridfooter'">
-                
-                   	
-<amexio-toolbar>
-  <amexio-toolbar-item position-left [seperator-position]="'right'">
-    <amexio-label size="medium" font-color="Black">
-      Compose
-    </amexio-label>
-  </amexio-toolbar-item>
-  <amexio-toolbar-item position-left [seperator-position]="'right'">
-    <amexio-btn-group>
-      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'Archive'" [icon]="'fa fa-archive'">
-      </amexio-button>
-      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'Save'" [icon]="'fa fa-exclamation-circle'">
-      </amexio-button>
-      <amexio-button [size]="'medium'" [label]="''" [type]="''" [tooltip]="'delete'" [icon]="'fa fa-trash-o'">
-      </amexio-button>
-    </amexio-btn-group>
-  </amexio-toolbar-item>
-  <amexio-toolbar-item position-right>
-    <amexio-drop-down-menu [icon-align]="'left'" [title]="'Settings'" [padding]="'5px 10px'" [icon]="'fa fa-cog'">
-      <amexio-drop-down-menu-item [separator]="true">
-        <amexio-box background-color="purple" padding="true">
-          <amexio-label size="small-bold">This account is managed by metamagic.in. </amexio-label>
-        </amexio-box>
+<amexio-toolbar-item position-right [seperator-position]="'right'">
+<amexio-searchbox [place-holder]="'Search'" [display-field]="'subject'" [data]="bindData" [width]="250">
+    <amexio-searchbox-options #search [title]="'Advance search'">
+        <amexio-text-input field-label="Subject:" name="subject" place-holder="Enter subject" icon-feedback="true" [(ngModel)]="subject">
+        </amexio-text-input>
+        <amexio-text-input field-label="From:" name="from" place-holder="Emailid" icon-feedback="true" [(ngModel)]="from">
+        </amexio-text-input>
+        <amexio-text-input field-label="To:" name="To" place-holder="Emailid" icon-feedback="true" [(ngModel)]="to">
+        </amexio-text-input>
         <amexio-row>
-          <amexio-column size="5">
-            <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'" path="assets/images/profile/ketan.jpg">
-            </amexio-image>
-          </amexio-column>
-          <amexio-column size="7">
-            <amexio-label> Ketan Gote</amexio-label>
-            <amexio-label> xyz@metamagic.in</amexio-label>
-            <br>
-            <amexio-button [label]="'My Account'" [type]="'theme-color'" [tooltip]="'My Account'">
-            </amexio-button>
-          </amexio-column>
+            <amexio-column [size]="'12'"></amexio-column>
         </amexio-row>
-      </amexio-drop-down-menu-item>
-      <amexio-drop-down-menu-item [label]="'Settings'" [icon]="'fa fa-folder'">
-      </amexio-drop-down-menu-item>
-      <amexio-drop-down-menu-item [label]="'Help Center'" [icon]="'fa fa-question-circle'" [separator]="true">
-      </amexio-drop-down-menu-item>
-      <amexio-drop-down-menu-item [label]="'Location'" [icon]="'fa fa-map-marker'">
-      </amexio-drop-down-menu-item>
-      <amexio-drop-down-menu-item [label]="'Sign Out'" [icon]="'fa fa-sign-out'">
-      </amexio-drop-down-menu-item>
-    </amexio-drop-down-menu>
-  </amexio-toolbar-item>
-  <amexio-toolbar-item position-left [seperator-position]="'left'">
-    <amexio-btn-group>
-      <amexio-button [size]="'medium'" [tooltip]="'Move to'" [icon]="'fa fa-folder'">
-      </amexio-button>
-      <amexio-button [size]="'medium'" [tooltip]="'Help'" [icon]="'fa fa-question'">
-      </amexio-button>
-    </amexio-btn-group>
-  </amexio-toolbar-item>
+        <amexio-button [label]="'Filter'" [type]="'theme-color'" [tooltip]="'toolTip'" [size]="'medium'" (onClick)="filter(search)">
+        </amexio-button>
+    </amexio-searchbox-options>
+</amexio-searchbox>
+</amexio-toolbar-item>
+<amexio-toolbar-item position-right>
+<amexio-btn-group>
+<amexio-button [size]="'medium'" [tooltip]="'Message'" [icon]="'fa fa-envelope'">
+</amexio-button>
+<amexio-button [size]="'medium'" [tooltip]="'Notification'" [icon]="'fa fa-bell'">
+</amexio-button>
+</amexio-btn-group>
+</amexio-toolbar-item>
 </amexio-toolbar>
-          
-              </amexio-grid-item>
-              </amexio-grid-component>
-              
+                  </amexio-grid-item>
+
+                  <amexio-grid-item [name]="'griddatapoint1'">
+                  <amexio-datapoints  [amexio-color]="'amexio-yellow'"  [west]="true" [center]="true" [east]="true" [south]="true">
+  <amexio-west [content-align]="'center'">
+    <amexio-image [icon-class]="'fa fa-line-chart'">
+    </amexio-image>
+  </amexio-west>
+  <amexio-center [content-align]="'center'">
+    <amexio-label size="small-bold">804</amexio-label><br/>
+    <amexio-label size="small">Memory Usage</amexio-label>
+  </amexio-center>
+  <amexio-south [content-align]="'center'">
+    <amexio-label>Updated: 05:35 AM</amexio-label>
+  </amexio-south>
+</amexio-datapoints>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'griddatapoint2'">
+<amexio-datapoints  [amexio-color]="'amexio-yellow'"  [west]="true" [center]="true" [east]="true" [south]="true">
+<amexio-west [content-align]="'center'">
+<amexio-image [icon-class]="'fa fa-line-chart'">
+</amexio-image>
+</amexio-west>
+<amexio-center [content-align]="'center'">
+<amexio-label size="small-bold">403</amexio-label><br/>
+<amexio-label size="small">Disk Usage</amexio-label>
+</amexio-center>
+<amexio-south [content-align]="'center'">
+<amexio-label>Updated: 12:42 PM</amexio-label>
+</amexio-south>
+</amexio-datapoints>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'griddatapoint3'">
+<amexio-datapoints  [amexio-color]="'amexio-yellow'"  [west]="true" [center]="true" [east]="true" [south]="true">
+<amexio-west [content-align]="'center'">
+<amexio-image [icon-class]="'fa fa-line-chart'">
+</amexio-image>
+</amexio-west>
+<amexio-center [content-align]="'center'">
+<amexio-label size="small-bold">976</amexio-label><br/>
+<amexio-label size="small">Ram Test</amexio-label>
+</amexio-center>
+<amexio-south [content-align]="'center'">
+<amexio-label>Updated: 09:35 PM</amexio-label>
+</amexio-south>
+</amexio-datapoints>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'griddatapoint4'">
+<amexio-datapoints  [amexio-color]="'amexio-yellow'"  [west]="true" [center]="true" [east]="true" [south]="true">
+<amexio-west [content-align]="'center'">
+<amexio-image [icon-class]="'fa fa-line-chart'">
+</amexio-image>
+</amexio-west>
+<amexio-center [content-align]="'center'">
+<amexio-label size="small-bold">496</amexio-label><br/>
+<amexio-label size="small">CPU Usage</amexio-label>
+</amexio-center>
+<amexio-south [content-align]="'center'">
+<amexio-label>Updated: 06:45 AM</amexio-label>
+</amexio-south>
+</amexio-datapoints>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'griddatapoint5'">
+<amexio-datapoints  [amexio-color]="'amexio-yellow'"  [west]="true" [center]="true" [east]="true" [south]="true">
+<amexio-west [content-align]="'center'">
+<amexio-image [icon-class]="'fa fa-line-chart'">
+</amexio-image>
+</amexio-west>
+<amexio-center [content-align]="'center'">
+<amexio-label size="small-bold">239</amexio-label><br/>
+<amexio-label size="small">Ram Usage</amexio-label>
+</amexio-center>
+<amexio-south [content-align]="'center'">
+<amexio-label>Updated: 08:55 PM</amexio-label>
+</amexio-south>
+</amexio-datapoints>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'gridfooter'">
+<amexio-card
+    [header]="false"
+    [footer]="false">
+        
+        <amexio-body>
+        <amexio-chart-area [data]="areaChartData"
+        [width]="'100%'" >
+   <amexio-chart-title [title]="'Activity'">
+   </amexio-chart-title>
+   <amexio-chart-legend [position]="'bottom'">
+   </amexio-chart-legend>
+</amexio-chart-area>
+        </amexio-body>
+</amexio-card>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'gridmenu'">
+<amexio-row>
+  <amexio-column size="12">
+    <amexio-card [header]="false">
+      <amexio-body>
+
+      <amexio-side-nav
+      [http-url]="'assets/data/componentdata/gridlayoutexp.json'"
+      [http-method]="'get'"
+      [data-reader]="'data'"
+      [width]="'275px'"
+      [position]="'relative'">
+      </amexio-side-nav>
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+</amexio-row>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'gridmenu2'">
+<amexio-row>
+  <amexio-column size="12">
+    <amexio-card [header]="false">
+      <amexio-body>
+
+      <amexio-side-nav
+      [http-url]="'assets/data/componentdata/gridlayoutexp.json'"
+      [http-method]="'get'"
+      [data-reader]="'data1'"
+      [width]="'275px'"
+      [position]="'relative'">
+      </amexio-side-nav>
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+</amexio-row>
+</amexio-grid-item>
+
+<amexio-grid-item [name]="'gridmenu1'">
+<amexio-row>
+<amexio-column size="5">
+  <amexio-image [height]="'69.75px'" [width]="'69.75px'" [c-class]="'image-round'" path="assets/images/profile/ketan.jpg">
+  </amexio-image>
+</amexio-column>
+<amexio-column size="7">
+  <amexio-label size="small"> Ketan Gote</amexio-label>
+  <amexio-label> xyz@metamagic.in</amexio-label>
+  </amexio-column>
+  </amexio-row>
+</amexio-grid-item>
+
+
+                  </amexio-grid-component>
+
+                  
                   </amexio-body>
                 </amexio-card>
+
+
+
+
                 <br>
                 <amexio-card [header]="true">
                 <amexio-header>
@@ -306,8 +359,8 @@ export class GridLayoutDemo {
   data1:any[];
   data2:any[];
   localData :any;
-  radioGroupData:any;
-  checkboxGroupdata:any;
+  areaChartData: any;
+
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
     this.data = [
@@ -316,100 +369,27 @@ export class GridLayoutDemo {
         ["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridright", "gridright"]
       ];
       this.data1 = [
-        ["gridmenu", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
-        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"],
-        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"],
-        ["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]
+        ["gridmenu1", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "griddatapoint1", "griddatapoint2", "griddatapoint3", "griddatapoint4", "griddatapoint5"],
+        ["gridmenu", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"],
+        ["gridmenu2", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]
       ];
       this.data2 = [
         ["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"],
         ["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"],
         ["gridmenu", "gridmenu", "gridright", "gridright", "gridright", "gridright"]
       ];
-      this.localData = {
-        "response": {
-          "success": true,
-            "message": "Fetching  Data  Request Succeeded: Profile",
-            "data": [
-            {
-              "name": "Buck Kulkarni",
-              "name_official": "Buck Kulkarni",
-              "profile": "buck.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            {
-              "name": "Araf Karsh Hamid",
-              "name_official": "Araf Karsh Hamid",
-              "profile": "karsh.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            {
-              "name": "ketan Gote",
-              "name_official": "Ketan Gote",
-              "profile": "ketan.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            {
-              "name": "vrushabh Kelwalkar",
-              "name_official": "vrushabh Kelwalkar",
-              "profile": "sagar.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            {
-              "name": "Dattaram Gawas",
-              "name_official": "Dattaram Gawas",
-              "profile": "dats.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            {
-              "name": "Sagar Jadhav",
-              "name_official": "Sagar Jadhav",
-              "profile": "sagar.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            {
-              "name": "Samadhan Pardeshi",
-              "name_official": "Samadhan Pardeshi",
-              "profile": "dats.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            {
-              "name": "Nidhi Shah",
-              "name_official": "Nidhi Shah",
-              "profile": "dats.jpg",
-              "email" : "XYZ@metamagic.in"
-            },
-            
-            {
-              "name": "Sharad Jadhav",
-              "name_official": "Sharad Jadhav",
-              "profile": "ahutosh.jpg",
-              "email" : "XYZ@metamagic.in"
-            }          ]
-        }
-      }
-      this.radioGroupData = {
-        response: {
-          data: [{
-            gender: 'Male', genderId: 'male'
-          }, {
-            gender: 'Female', genderId: 'female'
-          },]
-        }
-    }
-    this.checkboxGroupdata = {
-      response: {
-        data: [{
-          language: 'Angular', checked: false
-        }, 
-         {
-          language: 'Java', checked: false
-        },{
-          language: 'C++', checked: false
-        }
-      ]
-      }
-    }
+  
+      this.areaChartData=[
+        ['Count', 'Activity'],
+        ['1',  1000],
+        ['2',  1170],
+        ['3',  660],
+        ['4',  530],
+        ['5',  830],
+        ['6',  1000],
+        ['7',  130]
+      ];
   }
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
