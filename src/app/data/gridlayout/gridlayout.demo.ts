@@ -43,39 +43,26 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-grid-component [data]="data1">
 
                   <amexio-grid-item [name]="'gridheader'">
-                  <amexio-toolbar>
-<amexio-toolbar-item position-left [seperator-position]="'right'">
-<amexio-label size="medium" font-color="Black">
-Dashboard
-</amexio-label>
-</amexio-toolbar-item>
-
-<amexio-toolbar-item position-right [seperator-position]="'right'">
-<amexio-searchbox [place-holder]="'Search'" [display-field]="'subject'" [data]="bindData" [width]="250">
-    <amexio-searchbox-options #search [title]="'Advance search'">
-        <amexio-text-input field-label="Subject:" name="subject" place-holder="Enter subject" icon-feedback="true" [(ngModel)]="subject">
-        </amexio-text-input>
-        <amexio-text-input field-label="From:" name="from" place-holder="Emailid" icon-feedback="true" [(ngModel)]="from">
-        </amexio-text-input>
-        <amexio-text-input field-label="To:" name="To" place-holder="Emailid" icon-feedback="true" [(ngModel)]="to">
-        </amexio-text-input>
-        <amexio-row>
-            <amexio-column [size]="'12'"></amexio-column>
-        </amexio-row>
-        <amexio-button [label]="'Filter'" [type]="'theme-color'" [tooltip]="'toolTip'" [size]="'medium'" (onClick)="filter(search)">
-        </amexio-button>
-    </amexio-searchbox-options>
-</amexio-searchbox>
-</amexio-toolbar-item>
-<amexio-toolbar-item position-right>
-<amexio-btn-group>
-<amexio-button [size]="'medium'" [tooltip]="'Message'" [icon]="'fa fa-envelope'">
-</amexio-button>
-<amexio-button [size]="'medium'" [tooltip]="'Notification'" [icon]="'fa fa-bell'">
-</amexio-button>
-</amexio-btn-group>
-</amexio-toolbar-item>
-</amexio-toolbar>
+                  <div class = "navbardemo">
+                  <amexio-nav
+                  [enable-side-nav-position]="true"
+                  [title]="'DashBoard'"
+                  [logo]="'assets/images/logos/amexio-logo.png'">
+                            <amexio-nav-item position-right
+                                                      [type]="'button'"
+                                                      [icon]="'fa fa-bell fa-fw'">
+                            </amexio-nav-item>
+                            <amexio-nav-item position-right
+                                            [type]="'button'"
+                                            [icon]="'fa fa-envelope'">
+                            </amexio-nav-item>
+                          
+                           
+                           
+                        
+                </amexio-nav>
+                </div>
+                
                   </amexio-grid-item>
 
                   <amexio-grid-item [name]="'griddatapoint1'">
@@ -360,6 +347,7 @@ export class GridLayoutDemo {
   data2:any[];
   localData :any;
   areaChartData: any;
+  sidenavData: any;
 
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
@@ -380,6 +368,56 @@ export class GridLayoutDemo {
         ["gridmenu", "gridmenu", "gridright", "gridright", "gridright", "gridright"]
       ];
   
+      this.sidenavData = [
+        {
+          "text": "Home",
+          "icon" : "fa fa-home fa-fw",
+          "mdaIcon" : "home",
+          "link" : "/home/dashboard",
+          "selected":true
+        },
+        {
+          "text": "Apps",
+          "icon" : "fa fa-envelope fa-fw",
+          "mdaIcon" : "email",
+          "link" : "/home/email"
+        },
+        {
+          "text": "Component",
+          "icon" : "fa fa-user fa-fw",
+          "mdaIcon" : "account_box",
+          "link" : "/home/profile",
+          "badge": "32"
+        },
+        {
+          "text": "Charts",
+          "icon" : "fa fa-bars fa-fw",
+          "mdaIcon" : "account_box",
+          "link" : "/home/profile"
+         
+        },
+        {
+          "text": "Maps",
+          "icon" : "fa fa-map-marker fa-fw",
+          "mdaIcon" : "home",
+          "link" : "/home/dashboard",
+          "selected":true
+        },
+        {
+          "text": "Extra",
+          "icon" : "fa fa-envelope fa-fw",
+          "mdaIcon" : "email",
+          "link" : "/home/email",
+          "badge": "New"
+        },
+        {
+          "text": "Menu Levels",
+          "icon" : "fa fa-user fa-fw",
+          "mdaIcon" : "account_box",
+          "link" : "/home/profile",
+          "badge": "32"
+        }
+      ]
       this.areaChartData=[
         ['Count', 'Activity'],
         ['1',  1000],
