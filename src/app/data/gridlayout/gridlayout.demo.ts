@@ -319,11 +319,7 @@ import {HttpClient} from "@angular/common/http";
                   <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                 </ng-container>
               </amexio-tab>
-              <amexio-tab title="DataSource">
-                <ng-container *ngIf="dataSource">
-                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
-                </ng-container>
-              </amexio-tab>
+            
             </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
