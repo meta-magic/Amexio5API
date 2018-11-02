@@ -149,20 +149,20 @@ export class ChipsDemo {
       this.sampledatachips = [{
         icon: 'fa fa-home',
         label: 'Home',
-        color: 'red',
+        color: 'turquoise',
         badge: 4,
         closable: true
       },
       {
         icon: 'fa fa-download',
         label: "Download",
-        color:'blue',
+        color:'lightblue',
         badge: 5,
         closable: false
       }, {
         icon: 'fa fa-camera',
         label: "Camera",
-        color: 'green',
+        color: 'lightgreen',
         badge: 6,
         closable: true
       }, {
@@ -182,26 +182,26 @@ export class ChipsDemo {
       this.sampledatachip = [{
         icon: 'fa fa-linkedin-square',
         label: 'Linkedin',
-        color: 'red',
+        color: 'pink',
         badge: 4,
         closable: true
       },
       {
         icon: 'fa fa-internet-explorer',
         label: "Internet-Explorer",
-        color:'blue',
+        color:'lightblue',
         badge: 5,
         closable: false
       }, {
         icon: 'fa fa-github',
         label: "Github",
-        color: 'green',
+        color: 'lightgreen',
         badge: 6,
         closable: true
       }, {
         icon: 'fa fa-twitter',
         label: "Twitter",
-        color: 'yellow',
+        color: 'lightblue',
         badge: 7,
         closable: true
       }, {

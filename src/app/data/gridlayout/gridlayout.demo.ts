@@ -226,7 +226,7 @@ import {HttpClient} from "@angular/common/http";
                 <br>
                 <amexio-card [header]="true">
                 <amexio-header>
-                   Grid Layout 
+                   Grid Layout with Images
                 </amexio-header>
                 <amexio-body>
                 <amexio-grid-component [data]="data2">

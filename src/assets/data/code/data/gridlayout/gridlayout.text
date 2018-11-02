@@ -6,10 +6,10 @@ this.data = [
         ["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridright", "gridright"]
       ];
       this.data1 = [
-        ["gridmenu", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
-        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"],
-        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"],
-        ["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]
+        ["gridmenu1", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "griddatapoint1", "griddatapoint2", "griddatapoint3", "griddatapoint4", "griddatapoint5"],
+        ["gridmenu", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"],
+        ["gridmenu2", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]
       ];
       this.data2 = [
         ["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"],
