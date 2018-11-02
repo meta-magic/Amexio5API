@@ -23,11 +23,11 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-header>
                   <amexio-body>
                   <amexio-grid-component [data]="data">
-                  <amexio-grid-item style="border: 1px dashed black; " [name]="'gheader'">Header</amexio-grid-item>
-                  <amexio-grid-item style="border: 1px dashed black" [name]="'gmenu'">Menu</amexio-grid-item>
-                  <amexio-grid-item style="border: 1px dashed black" [name]="'gmain'">Main </amexio-grid-item>
-                  <amexio-grid-item style="border: 1px dashed black" [name]="'gright'">Right</amexio-grid-item>
-                  <amexio-grid-item style="border: 1px dashed black" [name]="'gfooter'">Footer</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
+                  <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
               </amexio-grid-component>
                   </amexio-body>
                 </amexio-card>
@@ -38,7 +38,7 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-header>
                   <amexio-body>
                   <amexio-grid-component [data]="data1">
-                  <amexio-grid-item [name]="'gheader'">
+                  <amexio-grid-item [name]="'gridheader'">
                
                   <amexio-card [header]="true">
                     <amexio-header>
@@ -79,7 +79,7 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-card>
                   
                   </amexio-grid-item>
-                  <amexio-grid-item  [name]="'gmenu'">
+                  <amexio-grid-item  [name]="'gridmenu'">
                   <amexio-listbox [enable-checkbox]="true"
                   [header]="'Contacts'"
                   [search-placeholder]="'Search Contacts'"
@@ -91,7 +91,7 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-listbox>
                
                 </amexio-grid-item>
-                <amexio-grid-item [name]="'gmain'">
+                <amexio-grid-item [name]="'gridmain'">
                       <amexio-card>
                       <amexio-body>
                       <amexio-row>
@@ -119,7 +119,7 @@ import {HttpClient} from "@angular/common/http";
                       </amexio-card>
                 </amexio-grid-item>
 
-                <amexio-grid-item [name]="'gfooter'">
+                <amexio-grid-item [name]="'gridfooter'">
                 
                    	
 <amexio-toolbar>
@@ -190,11 +190,11 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-header>
                 <amexio-body>
                 <amexio-grid-component [data]="data2">
-                <amexio-grid-item [name]="'gheader'">
+                <amexio-grid-item [name]="'gridheader'">
                 <amexio-image [path]="'assets/images/soap-bubble.jpg'" ></amexio-image>
 
                 </amexio-grid-item>
-                <amexio-grid-item [name]="'gmenu'">
+                <amexio-grid-item [name]="'gridmenu'">
                 <amexio-card [header]="false"
              [footer]="true"
              [footer-align]="'right'">
@@ -214,7 +214,7 @@ import {HttpClient} from "@angular/common/http";
 </amexio-card>
                 </amexio-grid-item>
              
-                <amexio-grid-item [name]="'gright'">
+                <amexio-grid-item [name]="'gridright'">
                 <amexio-panel [header]="false" expanded="true">
                 <amexio-label>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -238,7 +238,7 @@ import {HttpClient} from "@angular/common/http";
               </amexio-data-table-column>
               <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false"
               [text]="'Version'">
-</amexio-data-table-column>
+              </amexio-data-table-column>
               <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
@@ -246,6 +246,24 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
+            <amexio-datagrid title="Properties<amexio-grid-item>" [enable-column-fiter]="false"
+            [http-method]="'get'"
+            [http-url]="'assets/apireference/data/gridlayout.json'"
+            [data-reader]="'childproperties'"
+            [enable-data-filter]="false">
+<amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
+                       [text]="'Name'">
+</amexio-data-table-column>
+<amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false"
+[text]="'Version'">
+</amexio-data-table-column>
+<amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
+                       [text]="'Type'"></amexio-data-table-column>
+<amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
+                       [text]="'Default'"></amexio-data-table-column>
+<amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false"
+                       [text]="'Description'"></amexio-data-table-column>
+</amexio-datagrid>
           </amexio-tab>
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
@@ -293,20 +311,20 @@ export class GridLayoutDemo {
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
     this.data = [
-        ["gmenu", "gheader", "gheader", "gheader", "gheader", "gheader"],
-        ["gmenu", "gmain", "gmain", "gmain", "gright", "gright"],
-        ["gfooter", "gfooter", "gfooter", "gfooter", "gright", "gright"]
+        ["gridmenu", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridright", "gridright"],
+        ["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridright", "gridright"]
       ];
       this.data1 = [
-        ["gmenu", "gheader", "gheader", "gheader", "gheader", "gheader"],
-        ["gmenu", "gmain", "gmain", "gmain", "gmain", "gmain"],
-        ["gmenu", "gmain", "gmain", "gmain", "gmain", "gmain"],
-        ["gfooter", "gfooter", "gfooter", "gfooter", "gfooter", "gfooter"]
+        ["gridmenu", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"],
+        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"],
+        ["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]
       ];
       this.data2 = [
-        ["gmenu", "gmenu", "gheader", "gheader", "gheader", "gheader"],
-        ["gmenu", "gmenu", "gheader", "gheader", "gheader", "gheader"],
-        ["gmenu", "gmenu", "gright", "gright", "gright", "gright"]
+        ["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "gridmenu", "gridright", "gridright", "gridright", "gridright"]
       ];
       this.localData = {
         "response": {

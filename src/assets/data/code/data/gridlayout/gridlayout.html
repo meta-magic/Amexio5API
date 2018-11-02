@@ -11,7 +11,7 @@
 <!-- Grid Layout with Components such as List box, Radio group, Tool bar, checkbox -->
 
 <amexio-grid-component [data]="data1">
-    <amexio-grid-item [name]="'gheader'">
+    <amexio-grid-item [name]="'gridheader'">
 
         <amexio-card [header]="true">
             <amexio-header>
@@ -40,13 +40,13 @@
         </amexio-card>
 
     </amexio-grid-item>
-    <amexio-grid-item [name]="'gmenu'">
+    <amexio-grid-item [name]="'gridmenu'">
         <amexio-listbox [enable-checkbox]="true" [header]="'Contacts'" [search-placeholder]="'Search Contacts'" [data]="localData"
             [filter]="true" [data-reader]="'response.data'" [display-field]="'name_official'">
         </amexio-listbox>
 
     </amexio-grid-item>
-    <amexio-grid-item [name]="'gmain'">
+    <amexio-grid-item [name]="'gridmain'">
         <amexio-card>
             <amexio-body>
                 <amexio-row>
@@ -65,7 +65,7 @@
         </amexio-card>
     </amexio-grid-item>
 
-    <amexio-grid-item [name]="'gfooter'">
+    <amexio-grid-item [name]="'gridfooter'">
 
 
         <amexio-toolbar>
@@ -135,11 +135,11 @@
     </amexio-header>
     <amexio-body>
         <amexio-grid-component [data]="data2">
-            <amexio-grid-item [name]="'gheader'">
+            <amexio-grid-item [name]="'gridheader'">
                 <amexio-image [path]="'assets/images/soap-bubble.jpg'"></amexio-image>
 
             </amexio-grid-item>
-            <amexio-grid-item [name]="'gmenu'">
+            <amexio-grid-item [name]="'gridmenu'">
                 <amexio-card [header]="false" [footer]="true" [footer-align]="'right'">
                     <amexio-body>
                         <amexio-image path="assets/images/carousel/set1/1.jpg"></amexio-image>
@@ -156,7 +156,7 @@
                 </amexio-card>
             </amexio-grid-item>
 
-            <amexio-grid-item [name]="'gright'">
+            <amexio-grid-item [name]="'gridright'">
                 <amexio-panel [header]="false" expanded="true">
                     <amexio-label>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
