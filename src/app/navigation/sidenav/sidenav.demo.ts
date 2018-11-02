@@ -39,46 +39,81 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="12">
                 <amexio-card [header]="true">
                   <amexio-header> Side Nav with component </amexio-header>
-                  <amexio-body>
+                  <amexio-body> {{nodeData | json}}
                   <amexio-side-nav
                   [width]="'275px'"
                   [position]="'relative'">
 
-
-                  <amexio-sidenav-node [label]="'Johnny Depp'" [icon]="'fa fa-plus'" [badge]="20"  [expand-icon]=true >
+                  <amexio-sidenav-node>
+                  <amexio-label size="medium-bold">BetaMagic</amexio-label>
                   </amexio-sidenav-node>
-              
                   <amexio-sidenav-node [expand-icon]=true  [separator]=true>
-                  <amexio-text-input field-label="Name"
-                             name="name"
-                             place-holder="Enter name"
-                             icon-feedback="true">
-                </amexio-text-input>
+                  <amexio-row>
+              <amexio-column size="3">
+              <amexio-image [height]="'49.75px'" [width]="'49.75px'"  [c-class]="'image-round'"
+              path="assets/images/profile/ketan.jpg">
+                </amexio-image>
+                </amexio-column>
+                <amexio-column size="7">
+
+                <amexio-label > Ketan Gote</amexio-label>
+                <amexio-label > xyz@metamagic.in</amexio-label><br/>
+
+                    </amexio-column>
+                    </amexio-row>
+
                 </amexio-sidenav-node>
               
-                <amexio-sidenav-node  [separator]=false>
-                <amexio-checkbox [field-label]="'Tasks'" [(ngModel)]="check2" >
+                <amexio-sidenav-node  [separator]=true>
+                      <amexio-button [label]="'Compose'" 
+                      [icon]="'fa fa-plus'"
+                      [size]="'large'"
+                    [type]="'theme-color  '" 
+                    [tooltip]="'Background Button'">
+                      </amexio-button>
+                </amexio-sidenav-node>
+                
+               
+               <amexio-sidenav-node  [label]="'Input'"
+               [icon]="'fa fa-inbox'" [badge]="395"  [expand-icon]=true
+                >
+              </amexio-sidenav-node>
+              <amexio-sidenav-node  [label]="'Starred'"
+              [icon]="'fa fa-star'"   [expand-icon]=true
+               >
+             </amexio-sidenav-node>
+             <amexio-sidenav-node  [label]="'Send'"
+             [icon]="'fa fa-paper-plane'"   [expand-icon]=true
+              >
+            </amexio-sidenav-node>
+            <amexio-sidenav-node  [label]="'Draft'"
+            [icon]="'fa fa-save'"   [expand-icon]=true
+             >
+           </amexio-sidenav-node>
+
+                <amexio-sidenav-node  [separator]=true>
+                <amexio-checkbox [field-label]="'Rashmi Thakkar'" [(ngModel)]="check2" >
                 </amexio-checkbox>
                 </amexio-sidenav-node>
 
-                <amexio-sidenav-node   [separator]=false>
+                <amexio-sidenav-node   [separator]=true>
                      
-                      <amexio-checkbox [field-label]="'Data'" [(ngModel)]="check3" >
+                      <amexio-checkbox [field-label]="'Dattaram Gawas'" [(ngModel)]="check3" >
                       </amexio-checkbox>
                 </amexio-sidenav-node>
 
-                <amexio-sidenav-node     [separator]=false>
-                      <amexio-checkbox [field-label]="'Reminder'" [(ngModel)]="check1" >
+                <amexio-sidenav-node     [separator]=true>
+                      <amexio-checkbox [field-label]="'Sagar Jadhav'" [(ngModel)]="check1" >
                       </amexio-checkbox>
                 </amexio-sidenav-node>
 
                 <amexio-sidenav-node     [separator]=true>
               
-                <amexio-checkbox [field-label]="'Birthday'" [(ngModel)]="check" >
+                <amexio-checkbox [field-label]="'Kedar Kokil'" [(ngModel)]="check" >
                 </amexio-checkbox>
                 </amexio-sidenav-node>
          
-                <amexio-sidenav-node   >
+                <amexio-sidenav-node  [separator]=true >
                     <amexio-toggle [field-label]="'Reminder'">
                 </amexio-toggle>
               
@@ -168,6 +203,7 @@ export class SideNavDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
+  nodeData: any;
   dataSource:any;
   check  : boolean = false;
   check1 : boolean = true;
@@ -188,6 +224,11 @@ export class SideNavDemo {
   construct
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
+  }
+
+  onNodeClick(data: any) {
+
+    this.nodeData = data;
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
