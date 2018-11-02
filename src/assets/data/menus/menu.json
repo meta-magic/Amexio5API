@@ -19,7 +19,6 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
-            "badge":"1",
             "children": [
                 {
                     "text": "Accordion",
@@ -57,12 +56,7 @@
                         }
                     ]
                 },
-                {
-                    "text": "Grid Layout",
-                    "icon": "fa fa-th",
-                    "badge": "New",
-                    "link": "gridlayout-demo"
-                },
+               
                 {
                     "text": "Row",
                     "link": "row-demo",
@@ -190,7 +184,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "3",
+            "badge": "1",
             "children": [
                 {
                     "text": "Checkbox",
@@ -206,13 +200,12 @@
                     "text": "Chips",
                     "icon": "fa fa-chevron-circle-down fa-fw",
                     "link": "chips-demo",
-                    "badge":"New"
+                    "badge":"U"
                 },
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card",
-                    "link": "credit-card-demo",
-                    "badge": "New"
+                    "link": "credit-card-demo"
                 },
                 {
                     "text": "Date & Time Picker",
@@ -288,7 +281,6 @@
                 {
                     "text": "Recaptcha",
                     "icon": "fa fa-recycle",
-                    "badge": "New",
                     "link": "recaptcha-demo"
                 },
                 {
@@ -383,13 +375,11 @@
         },
         {
             "text": "Data",
-            "badge": "3",
             "icon": "fa fa-database fa-fw",
             "children": [
                 {
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
-                    "badge": "New",
                     "link": "amexio-spinner-demo"
                 },
                 {
@@ -468,18 +458,15 @@
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
                     "link": "tree",
-                    "badge": "2",
                     "children": [
                         {
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "U",
                             "link": "simple-tree"
                         },
                         {
                             "text": "Collapse",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "New",
                             "link": "collapsetree-demo"
                         },
                         {
@@ -604,13 +591,13 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars fa-fw",
-            "badge": "1",
+           
             "children": [
                 {
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right fa-fw",
-                    "link": "breadcrumb-demo",
-                    "badge": "New"
+                    "link": "breadcrumb-demo"
+                    
                 },
                 {
                     "text": "Dockbar",
@@ -635,8 +622,7 @@
                 {
                     "text": "Side Nav Bar",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "sidenav-demo",
-                    "badge":"U"
+                    "link": "sidenav-demo"
                 },
                 {
                     "text": "Tool Bar",
@@ -694,18 +680,15 @@
                         {
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "N",
                             "link": "amexio-d3-chart-bar"
                         },  {
                             "text": "Combo Chart",
                             "icon": "fa fa-area-chart fa-fw",
-                            "badge": "N",
                             "link": "amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "badge": "N",
                             "link": "amexio-d3-chart-donut"
                         },{
                             "text": "Histogram Chart",
@@ -716,7 +699,6 @@
                         {
                             "text": "Line Chart",
                             "icon": "fa fa-line-chart fa-fw",
-                            "badge": "N",
                             "link": "amexio-d3-chart-line"
                         },
                         {
@@ -728,13 +710,11 @@
                         {
                             "text": "MultiSeriesBar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "N",
                             "link": "amexio-d3-chart-multiseries"
                         },
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "badge": "N",
                             "link": "amexio-d3-chart-pie"
                         },
                         {
@@ -746,7 +726,6 @@
                         {
                             "text": "Stack Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "N",
                             "link": "amexio-d3-chart-bar-stack"
                         },
                         {
