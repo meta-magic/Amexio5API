@@ -27,103 +27,14 @@ import {HttpClient} from "@angular/common/http";
                   [http-url]="'assets/data/componentdata/sidenav.json'"
                   [http-method]="'get'"
                   [data-reader]="'data'"
-                  [width]="'275px'"
-                  [position]="'relative'">
+                  [width]="'320px'"
+                  [position]="'relative'" >
                 </amexio-side-nav>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
             </amexio-row>
 
-            <amexio-row>
-              <amexio-column size="12">
-                <amexio-card [header]="true">
-                  <amexio-header> Side Nav with component </amexio-header>
-                  <amexio-body> {{nodeData | json}}
-                  <amexio-side-nav
-                  [width]="'275px'"
-                  [position]="'relative'">
-
-                  <amexio-sidenav-node>
-                  <amexio-label size="medium-bold">BetaMagic</amexio-label>
-                  </amexio-sidenav-node>
-                  <amexio-sidenav-node [expand-icon]=true  [separator]=true>
-                  <amexio-row>
-              <amexio-column size="3">
-              <amexio-image [height]="'49.75px'" [width]="'49.75px'"  [c-class]="'image-round'"
-              path="assets/images/profile/ketan.jpg">
-                </amexio-image>
-                </amexio-column>
-                <amexio-column size="7">
-
-                <amexio-label > Ketan Gote</amexio-label>
-                <amexio-label > xyz@metamagic.in</amexio-label><br/>
-
-                    </amexio-column>
-                    </amexio-row>
-
-                </amexio-sidenav-node>
-              
-                <amexio-sidenav-node  [separator]=true>
-                      <amexio-button [label]="'Compose'" 
-                      [icon]="'fa fa-plus'"
-                      [size]="'large'"
-                    [type]="'theme-color  '" 
-                    [tooltip]="'Background Button'">
-                      </amexio-button>
-                </amexio-sidenav-node>
-                
-               
-               <amexio-sidenav-node  [label]="'Input'"
-               [icon]="'fa fa-inbox'" [badge]="395"  [expand-icon]=true
-                >
-              </amexio-sidenav-node>
-              <amexio-sidenav-node  [label]="'Starred'"
-              [icon]="'fa fa-star'"   [expand-icon]=true
-               >
-             </amexio-sidenav-node>
-             <amexio-sidenav-node  [label]="'Send'"
-             [icon]="'fa fa-paper-plane'"   [expand-icon]=true
-              >
-            </amexio-sidenav-node>
-            <amexio-sidenav-node  [label]="'Draft'"
-            [icon]="'fa fa-save'"   [expand-icon]=true
-             >
-           </amexio-sidenav-node>
-
-                <amexio-sidenav-node  [separator]=true>
-                <amexio-checkbox [field-label]="'Rashmi Thakkar'" [(ngModel)]="check2" >
-                </amexio-checkbox>
-                </amexio-sidenav-node>
-
-                <amexio-sidenav-node   [separator]=true>
-                     
-                      <amexio-checkbox [field-label]="'Dattaram Gawas'" [(ngModel)]="check3" >
-                      </amexio-checkbox>
-                </amexio-sidenav-node>
-
-                <amexio-sidenav-node     [separator]=true>
-                      <amexio-checkbox [field-label]="'Sagar Jadhav'" [(ngModel)]="check1" >
-                      </amexio-checkbox>
-                </amexio-sidenav-node>
-
-                <amexio-sidenav-node     [separator]=true>
-              
-                <amexio-checkbox [field-label]="'Kedar Kokil'" [(ngModel)]="check" >
-                </amexio-checkbox>
-                </amexio-sidenav-node>
-         
-                <amexio-sidenav-node  [separator]=true >
-                    <amexio-toggle [field-label]="'Reminder'">
-                </amexio-toggle>
-              
-              </amexio-sidenav-node>
-               
-                </amexio-side-nav>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
           
           </amexio-tab>
           <amexio-tab title="API Reference">
@@ -141,20 +52,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
-            <amexio-datagrid title="Properties <amexio-sidenav-node>" [enable-column-fiter]="false"
-                            [http-method]="'get'"
-                            [http-url]="'assets/apireference/navigation/sidenav.json'"
-                            [data-reader]="'propertiesitem'"
-                            [enable-data-filter]="false">
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                  [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                  [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                  [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                  [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid>
+           
             <br>
             <amexio-datagrid title="Events" [enable-column-fiter]="false"
                              [http-method]="'get'"
@@ -210,26 +108,73 @@ export class SideNavDemo {
   check2 : boolean = false;
   check3 : boolean = true;
 
-  public max: number = 10;
-  public rate: number = 7;
-  public profileMaxRate: number = 5;
-  public customIconRate: number = 10;
-  public customRate: number = 5;
-  public profileRate: number = 2;
-  public disableProfileRate:number=3;
-  public disableProfileMaxRate:number=5;
-
-  titles: any = ['Poor', 'Fair', 'Average', 'Good', 'Excellent'];
-
+  item: any
   construct
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
+    this.item = {
+      "data": [
+          {
+              "countryName": "Myanmar",
+              "countryCode1": "MM",
+              "countryCode2": "MMR",
+              "countryFlag": "MM.png",
+              "capital": "",
+              "currencyCode": "MMK",
+              "currencyName": "Kyat",
+              "currencySymbol": "K",
+              "capitalLatitude": null,
+              "capitalLongitude": null,
+              "isoNumeric": 104
+          },
+          {
+              "countryName": "U.S. Virgin Island",
+              "countryCode1": "VI",
+              "countryCode2": "VIR",
+              "countryFlag": "VI.png",
+              "capital": "",
+              "currencyCode": "USD",
+              "currencyName": "Dollar",
+              "currencySymbol": "$",
+              "capitalLatitude": null,
+              "capitalLongitude": null,
+              "isoNumeric": 850
+          },
+          {
+              "countryName": "Latvia",
+              "countryCode1": "LV",
+              "countryCode2": "LVA",
+              "countryFlag": "LV.png",
+              "capital": "",
+              "currencyCode": "LVL",
+              "currencyName": "Lat",
+              "currencySymbol": "Ls",
+              "capitalLatitude": null,
+              "capitalLongitude": null,
+              "isoNumeric": 428
+          },
+          {
+              "countryName": "British Indian Ocean Teritory",
+              "countryCode1": "IO",
+              "countryCode2": "IOT",
+              "countryFlag": "IO.png",
+              "capital": "",
+              "currencyCode": "USD",
+              "currencyName": "Dollar",
+              "currencySymbol": "$",
+              "capitalLatitude": null,
+              "capitalLongitude": null,
+              "isoNumeric": 86
+          }
+      ]
   }
 
-  onNodeClick(data: any) {
+  }
 
+  sideNodeClick(data: any) {
     this.nodeData = data;
   }
+
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
