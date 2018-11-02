@@ -23,7 +23,7 @@ export class AmexioD3WaterfallChartDemoComponent implements OnInit {
   ngOnInit() {
 
     this.waterfallChartData = [
-      ["name", "value"],
+      ["Product", "Yield"],
       ["Product Revenue", 420000],
       ["Services Revenue", 210000],
       ["Fixed Costs", -170000],
