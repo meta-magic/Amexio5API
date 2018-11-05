@@ -222,7 +222,7 @@ export class ChipsDemo {
     }
 
     onCloseClick(event: any){
-      this.emitdatachips = event;
+      this.emitdatachip = event;
     }
 
     //TO LOAD HTML AND TYPESCRIPT CODE
