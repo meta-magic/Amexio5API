@@ -20,7 +20,7 @@ import { HttpClient } from "@angular/common/http";
 <h2>Demo:Panel</h2>
             <amexio-row>
                 <amexio-column [size]="4">
-                    <amexio-panel [header]="true" title="Panel" [expanded]="false">
+                    <amexio-panel title="Panel" [expanded]="false">
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                         text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
                         make a type specimen book. It has survived not only five centuries, but also the leap into electronic
@@ -30,7 +30,7 @@ import { HttpClient } from "@angular/common/http";
                     </amexio-panel>
                 </amexio-column>
                 <amexio-column [size]="4">
-                    <amexio-panel [header]="true" title="Custom Header" expanded="true">
+                    <amexio-panel [border]="true" [header]="true" title="Custom Header" expanded="true">
                         <amexio-panel-header>
                             <amexio-image [icon-class]="'fa fa-refresh fa-fw'" (onClick)="refreshData()">
                             </amexio-image>
@@ -52,7 +52,7 @@ import { HttpClient } from "@angular/common/http";
 </amexio-dialogue>
                 </amexio-column>
                 <amexio-column [size]="4">
-                    <amexio-panel [header]="false" [height]="800" expanded="true">
+                    <amexio-panel [border]="true" [header]="false" [height]="800" expanded="true">
                         <amexio-header>
                             Custom Header
                         </amexio-header>
@@ -68,7 +68,7 @@ import { HttpClient } from "@angular/common/http";
             <h2>Demo:Panel with ToolBar</h2>
     <amexio-row>
         <amexio-column [size]="12">
-            <amexio-panel [header]="true" title="Custom Header" expanded="true">
+            <amexio-panel [border]="true" [header]="true" title="Custom Header" expanded="true">
                 <amexio-panel-header>
                     <amexio-label size="small" font-color="white">
                         My Drive
