@@ -103,7 +103,7 @@
                                                 <amexio-listbox [enable-header]="false" [header]="'Projects'"
                                                     [search-placeholder]="'Search'" [data]="contactList" [filter]="true"
                                                     [data-reader]="'response.data'" [display-field]="'name'" [border]="'none'"
-                                                    (onRowClick)="onProjectSelect($event)">
+                                                    >
                                                     <ng-template #amexioBodyTmpl let-row="row">
                                                         <amexio-row>
                                                             <amexio-column [size]="6">
@@ -123,7 +123,7 @@
                                                 <amexio-listbox [enable-header]="false" [header]="'Projects'"
                                                     [search-placeholder]="'Search'" [data]="contactList" [filter]="true"
                                                     [data-reader]="'response.data'" [display-field]="'name'" [border]="'none'"
-                                                    (onRowClick)="onProjectSelect($event)">
+                                                   >
                                                 </amexio-listbox>
                                             </amexio-tab>
                                         </amexio-tab-view>
