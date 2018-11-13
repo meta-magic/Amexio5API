@@ -410,6 +410,9 @@
       path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
     }, 
     {
+      path: 'amexio-d3-chart-bubble', loadChildren: './charts/D3charts/d3bubblechart/d3bubblechart.demo.module#D3BubbleChartDemoModule'
+    },
+    {
       path: 'amexio-d3-chart-waterfall', loadChildren: './charts/D3charts/d3waterfallchart/d3waterfallchart.demo.module#D3WaterfallChartDemoModule'
     },  
     {
