@@ -91,7 +91,6 @@ import {HttpClient} from "@angular/common/http";
                                       [value-field]="'genderId'"
                                       [http-method]="'get'"
                                       horizontal="true"
-                                      name="disableradio"
                                       [http-url]="'assets/data/componentdata/radiogroup_disable.json'"
                                       >
                   </amexio-radio-group>
@@ -215,7 +214,7 @@ export class RadioGroupDemo {
       this.typeScriptCode = responseTs;
     });
   //JSON FILE
-    this.http.get('assets/data/componentdata/radiogroup.json',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/radiogroup/radiogroup.json',{responseType: 'text'}).subscribe(data => {
       responseData = data;
     }, error => {
     }, () => {

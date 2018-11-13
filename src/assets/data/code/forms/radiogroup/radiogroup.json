@@ -1,0 +1,24 @@
+
+{
+    "data":[{
+      "gender":"Male",
+      "genderId":"male"
+    },{
+      "gender":"Female",
+      "genderId":"female"
+    }
+    ]
+  }
+
+// Json for single radio disable   
+
+{
+    "data": [{
+        "gender": "Male",
+        "genderId": "male",
+        "disabled": true
+    }, {
+        "gender": "Female",
+        "genderId": "female"
+    }]
+}
