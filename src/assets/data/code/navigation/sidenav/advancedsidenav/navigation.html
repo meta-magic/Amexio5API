@@ -1,18 +1,4 @@
-<!-- Simple side nav -->
-<amexio-row>
-  <amexio-column size="12">
-    <amexio-card [header]="true">
-      <amexio-header> Side Nav </amexio-header>
-      <amexio-body>
-        <amexio-side-nav [http-url]="'assets/data/componentdata/sidenav.json'" [http-method]="'get'" [data-reader]="'data'"
-          [width]="'275px'" [position]="'relative'">
-        </amexio-side-nav>
-      </amexio-body>
-    </amexio-card>
-  </amexio-column>
-</amexio-row>
-
-<!-- Advanced Side nav -->
+<!--  advanced side nav -->
 
 <amexio-side-nav [width]="'320px'" [position]="'relative'">
   <amexio-sidenav-node>
@@ -27,6 +13,8 @@
       </amexio-column>
     </amexio-row>
   </amexio-sidenav-node>
+
+
   <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-cog'" [label]="'Settings'">
     <amexio-row>
       <amexio-column [size]=6>
@@ -49,6 +37,8 @@
       </amexio-column>
     </amexio-row>
   </amexio-sidenav-node>
+
+
   <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-calendar'" [badge]="'4'" [label]="'Upcoming Event'">
     <amexio-timeline>
       <amexio-timeline-event [label]="'Dec 4'" [icon]="'fa fa-map-signs'">
@@ -65,6 +55,8 @@
       </amexio-timeline-event>
     </amexio-timeline>
   </amexio-sidenav-node>
+
+
   <amexio-sidenav-node [enable-border]="true" [collapsable]="true" [label]="'Contacts'" [icon]="'fa fa-address-book-o'">
     <amexio-tab-view [closable]="false">
       <amexio-tab [active]="true" [icon]="'fa fa-users'">
@@ -72,10 +64,10 @@
           [filter]="true" [data-reader]="'response.data'" [display-field]="'name'" [border]="'none'" (onRowClick)="onProjectSelect($event)">
           <ng-template #amexioBodyTmpl let-row="row">
             <amexio-row>
-              <amexio-column [size]="6">
+              <amexio-column [size]="3">
                 <amexio-image [c-class]="'around-image'" height="50px" width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
               </amexio-column>
-              <amexio-column [size]="6">
+              <amexio-column [size]="9">
                 {{row.name}}
               </amexio-column>
             </amexio-row>
@@ -89,4 +81,15 @@
       </amexio-tab>
     </amexio-tab-view>
   </amexio-sidenav-node>
+
+
+  <amexio-sidenav-node [enable-border]="true" [label]="'Reports'" [icon]="'fa fa-picture-o fa-fw'" [collapsable]="true"
+    [data]='reportsMenu'>
+  </amexio-sidenav-node>
+
+
+  <amexio-sidenav-node [enable-border]="true" [label]="'Dashboard'" [icon]="'fa fa-television fa-fw'" [collapsable]="true"
+    [data]='dashboardMenu'>
+  </amexio-sidenav-node>
+
 </amexio-side-nav>

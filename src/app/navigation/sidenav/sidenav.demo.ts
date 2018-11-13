@@ -6,171 +6,83 @@ import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'sidenav-demo', template: `
-    <amexio-card header="true">
-      <amexio-header>
-         Side Nav Bar 
-      </amexio-header>
-      <amexio-body>
-        <p>The Side Nav Bar Component is a familiar side navigation pattern for users.
-          Side nav bar can be placed on left or right side. It can fit as many navigation links as needed, scrolling
-          when the content exceeds the viewport.
-          Take a look at Datastructure format which this component can consume in datasource tab.</p>
-        <amexio-tab-view>
-          <amexio-tab title="Demo" active="true">
-            <amexio-row>
-              <amexio-column size="12">
-                <amexio-card [header]="true">
-                  <amexio-header> Side Nav </amexio-header>
-                  <amexio-body>
-                  <amexio-side-nav
-                  [http-url]="'assets/data/componentdata/sidenav.json'"
-                  [http-method]="'get'"
-                  [data-reader]="'data'"
-                  [width]="'320px'"
-                  [position]="'relative'" >
-                </amexio-side-nav>
-                  </amexio-body>
-                </amexio-card>
-              </amexio-column>
-            </amexio-row>
-
-          
-          </amexio-tab>
-          <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties<amexio-side-nav>" [enable-column-fiter]="false"
-                             [http-method]="'get'"
-                             [http-url]="'assets/apireference/navigation/sidenav.json'"
-                             [data-reader]="'properties'"
-                             [enable-data-filter]="false">
-              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid>
-           
-            <br>
-            <amexio-datagrid title="Events" [enable-column-fiter]="false"
-                             [http-method]="'get'"
-                             [http-url]="'assets/apireference/navigation/sidenav.json'"
-                             [data-reader]="'events'"
-                             [enable-data-filter]="false">
-              <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid>
-
-          </amexio-tab>
-          <amexio-tab title="Source">
-            <amexio-vertical-tab-view>
-              <amexio-tab title="HTML" [active]="true">
-                <ng-container *ngIf="htmlCode">
-                  <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                  <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-              <amexio-tab title="Type Script">
-                <ng-container *ngIf="typeScriptCode">
-                  <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-              <amexio-tab title="Data Source">
-                <ng-container *ngIf="dataSource">
-                  <prism-block [code]="dataSource" [language]="'json'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-            </amexio-vertical-tab-view>
-          </amexio-tab>
-          <amexio-tab title="Live">
-          <p align="center">Amexio Sandbox</p>
-          <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-side-nav-bar?embed=1&file=app/navigations/sidenavbar/sidenavbar.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
-          </amexio-tab>
-        </amexio-tab-view>
-      </amexio-body>
-    </amexio-card>
-    <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
-
-  `
+  selector: 'sidenav-demo', 
+  templateUrl: './sidenav.demo.html'
 })
 export class SideNavDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  nodeData: any;
-  dataSource:any;
-  check  : boolean = false;
-  check1 : boolean = true;
-  check2 : boolean = false;
-  check3 : boolean = true;
-
-  item: any
+  nodeData;selectedData: any;
+  dataSource;contactList:any;
+  
+  item; treeData; radioGroupData: any
   construct
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
-    this.item = {
-      "data": [
+
+    this.contactList = {
+      "response": {
+        "success": true,
+          "message": "Fetching  Data  Request Succeeded: Profile",
+          "data": [
           {
-              "countryName": "Myanmar",
-              "countryCode1": "MM",
-              "countryCode2": "MMR",
-              "countryFlag": "MM.png",
-              "capital": "",
-              "currencyCode": "MMK",
-              "currencyName": "Kyat",
-              "currencySymbol": "K",
-              "capitalLatitude": null,
-              "capitalLongitude": null,
-              "isoNumeric": 104
+            "name": "Buck Kulkarni",
+            "name_official": "Buck Kulkarni",
+            "profile": "buck.jpg",
+            "email" : "XYZ@metamagic.in"
           },
           {
-              "countryName": "U.S. Virgin Island",
-              "countryCode1": "VI",
-              "countryCode2": "VIR",
-              "countryFlag": "VI.png",
-              "capital": "",
-              "currencyCode": "USD",
-              "currencyName": "Dollar",
-              "currencySymbol": "$",
-              "capitalLatitude": null,
-              "capitalLongitude": null,
-              "isoNumeric": 850
+            "name": "Araf Karsh Hamid",
+            "name_official": "Araf Karsh Hamid",
+            "profile": "karsh.jpg",
+            "email" : "XYZ@metamagic.in"
           },
           {
-              "countryName": "Latvia",
-              "countryCode1": "LV",
-              "countryCode2": "LVA",
-              "countryFlag": "LV.png",
-              "capital": "",
-              "currencyCode": "LVL",
-              "currencyName": "Lat",
-              "currencySymbol": "Ls",
-              "capitalLatitude": null,
-              "capitalLongitude": null,
-              "isoNumeric": 428
+            "name": "Ketan Gote",
+            "name_official": "Ketan Gote",
+            "profile": "ketan.jpg",
+            "email" : "XYZ@metamagic.in"
+          },
+         
+          {
+            "name": "Dattaram Gawas",
+            "name_official": "Dattaram Gawas",
+            "profile": "dats.jpg",
+            "email" : "XYZ@metamagic.in"
           },
           {
-              "countryName": "British Indian Ocean Teritory",
-              "countryCode1": "IO",
-              "countryCode2": "IOT",
-              "countryFlag": "IO.png",
-              "capital": "",
-              "currencyCode": "USD",
-              "currencyName": "Dollar",
-              "currencySymbol": "$",
-              "capitalLatitude": null,
-              "capitalLongitude": null,
-              "isoNumeric": 86
+            "name": "Sagar Jadhav",
+            "name_official": "Sagar Jadhav",
+            "profile": "sagar.jpg",
+            "email" : "XYZ@metamagic.in"
+          },
+       
+          {
+            "name": "Rashmi Thakkar",
+            "name_official": "Rashmi Thakkar",
+            "profile": "rashmi.jpg",
+            "email" : "XYZ@metamagic.in"
+          },
+          {
+            "name": "Deepali Arvind",
+            "name_official": "Deepali Arvind",
+            "profile": "dipali.jpg",
+            "email" : "XYZ@metamagic.in"
+          },
+          {
+            "name": "Ashwini Agre",
+            "name_official": "Ashwini Agre",
+            "profile": "ashwini.jpg",
+            "email" : "XYZ@metamagic.in"
           }
-      ]
-  }
+        ]
+      }
+      };
 
   }
 
+  
   sideNodeClick(data: any) {
     this.nodeData = data;
   }

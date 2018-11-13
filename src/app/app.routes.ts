@@ -119,6 +119,9 @@
     {
       path: 'sidenav-demo', loadChildren: './navigation/sidenav/sidenav.demo.module#SideNavDemoModule'
     },
+    {             
+      path: 'sidenav-page', loadChildren: './navigation/sidenavpage/sidenavpage.demo.module#sideNavDemoPageModule'
+    },
     {
       path: 'navbar-demo', loadChildren: './navigation/navbar/navbar.demo.module#NavBarDemoModule'
     },
