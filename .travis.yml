@@ -45,11 +45,10 @@ before_script:
   - npm install d3@^5.7.0
   - ng build --prod amexio-chart-d3
   - npm pack dist/amexio-chart-d3
-  
-   
+  - mv amexio-chart-d3-*.tgz amexio-chart-d3.tgz   
 script: 
   - cd ../
-  - npm i ../d3.amexio.github.io/amexio-chart-d3-0.0.6.tgz
+  - npm i ../d3.amexio.github.io/amexio-chart-d3.tgz 
   - pwd
   - npm install
   - npm install --save uglifyjs-webpack-plugin
