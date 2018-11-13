@@ -68,7 +68,6 @@ script:
   - git commit -m "api-test"
   - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:v5.2
   
-  
 after_success: 
   - codecov
 cache:
