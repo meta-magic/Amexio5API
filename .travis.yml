@@ -27,17 +27,6 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - npm install --global gulp --save
   - gem install sass
-  - git clone https://github.com/meta-magic/amexio.github.io -b v5.3
-  - cd amexio.github.io
-  - npm install 
-  - npm install gulp --save
-  - npm install node-sass
-  - npm install --save del
-  - ls -la
-  - cd src/styles/ 
-  - cd ../../ && gulp build
-  - cd dist && npm pack && mv amexio-ng-extensions-*.tgz amexio-ng-extensions.tgz
-  - cd ../../
   - git clone https://github.com/meta-magic/d3.amexio.github.io.git 
   - cd d3.amexio.github.io/
   - npm install
@@ -56,7 +45,7 @@ script:
   - npm i node-sass --save-dev
   -  rm -rf src/assets/themes/*
   - cp -rf amexio.github.io/src/styles/css/* src/assets/themes/
-  - npm i /home/travis/build/meta-magic/Amexio5API/amexio.github.io/dist/amexio-ng-extensions.tgz
+  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-ng-extensions.tgz
   - ng set defaults.styleExt scss
   - ng build --prod
   - ls -la
