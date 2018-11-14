@@ -45,7 +45,7 @@ script:
   - npm i node-sass --save-dev
   -  rm -rf src/assets/themes/*
   - cp -rf amexio.github.io/src/styles/css/* src/assets/themes/
-  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-ng-extensions.tgz
+  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-ng-extensions.tgz?raw=true
   - ng set defaults.styleExt scss
   - ng build --prod
   - ls -la
