@@ -50,7 +50,7 @@ script:
   - ng build --prod
   - ls -la
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
-  - rm -rf amexio-api-website-test/api/v5.3/*
+  - mkdir amexio-api-website-test/api/v5.3/
   - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.3/
   - cd amexio-api-website-test/
   - git add api
