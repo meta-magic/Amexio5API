@@ -1,0 +1,69 @@
+{
+  "data": [
+    {
+      "countryName": "Myanmar",
+      "countryCode1": "MM",
+      "countryCode2": "MMR",
+      "countryFlag": "MM.png",
+      "capital": "",
+      "currencyCode": "MMK",
+      "currencyName": "Kyat",
+      "currencySymbol": "K",
+      "capitalLatitude": null,
+      "capitalLongitude": null,
+      "isoNumeric": 104
+    },
+    {
+      "countryName": "U.S. Virgin Island",
+      "countryCode1": "VI",
+      "countryCode2": "VIR",
+      "countryFlag": "VI.png",
+      "capital": "",
+      "currencyCode": "USD",
+      "currencyName": "Dollar",
+      "currencySymbol": "$",
+      "capitalLatitude": null,
+      "capitalLongitude": null,
+      "isoNumeric": 850
+    },
+    {
+      "countryName": "Latvia",
+      "countryCode1": "LV",
+      "countryCode2": "LVA",
+      "countryFlag": "LV.png",
+      "capital": "",
+      "currencyCode": "LVL",
+      "currencyName": "Lat",
+      "currencySymbol": "Ls",
+      "capitalLatitude": null,
+      "capitalLongitude": null,
+      "isoNumeric": 428
+    },
+    {
+      "countryName": "British Indian Ocean Teritory",
+      "countryCode1": "IO",
+      "countryCode2": "IOT",
+      "countryFlag": "IO.png",
+      "capital": "",
+      "currencyCode": "USD",
+      "currencyName": "Dollar",
+      "currencySymbol": "$",
+      "capitalLatitude": null,
+      "capitalLongitude": null,
+      "isoNumeric": 86
+    },
+    {
+      "countryName": "Reunion",
+      "countryCode1": "RE",
+      "countryCode2": "REU",
+      "countryFlag": "RE.png",
+      "capital": "",
+      "currencyCode": "EUR",
+      "currencyName": "Euro",
+      "currencySymbol": "€",
+      "capitalLatitude": null,
+      "capitalLongitude": null,
+      "isoNumeric": 638
+    }
+  ]
+}

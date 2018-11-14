@@ -2,11 +2,11 @@
  * Created by pratik on 16/1/18.
  */
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
- selector: 'window-demo',
- template: `
+  selector: 'window-demo',
+  template: `
    <amexio-card header="true">
      <amexio-header>
         Window Pane 
@@ -153,7 +153,6 @@ import {HttpClient} from "@angular/common/http";
                <amexio-window  [(show)]="showMaxWindowMaterial"
                                [footer]="true"
                                [material-design]="true"
-                               (close)="toggleMaxWindow('material')"
                                [maximize]="true">
                  <amexio-header>
                    Employee Form
@@ -212,7 +211,7 @@ import {HttpClient} from "@angular/common/http";
                <amexio-window   [(show)]="showClosableMaterial"
                                 [close-on-escape]="false"
                                 [material-design]="true"
-                                [closable]="true" (close)="toggleClosable('material')" >
+                                [closable]="true"  >
                  <amexio-header>
                    Employee Form
                  </amexio-header>
@@ -387,6 +386,7 @@ import {HttpClient} from "@angular/common/http";
                    </amexio-body>
                    <amexio-action>
                      <amexio-button [type]= "'default'"(onClick)="showBasicWindowNonMaterial = false" label="Cancel"></amexio-button>
+                     &nbsp;&nbsp;&nbsp;
                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save"></amexio-button>
                    </amexio-action>
 
@@ -404,7 +404,7 @@ import {HttpClient} from "@angular/common/http";
                  <amexio-window  [(show)]="showMaxWindowNonMaterial"
                                  [footer]="true"
                                  [material-design]="false"
-                                 (close)="toggleMaxWindow('nonmaterial')"
+                                 
                                  [maximize]="true">
                    <amexio-header>
                      Employee Form
@@ -463,7 +463,7 @@ import {HttpClient} from "@angular/common/http";
                  <amexio-window   [(show)]="showClosableNonMaterial"
                                   [close-on-escape]="false"
                                   [material-design]="false"
-                                  [closable]="true" (close)="toggleClosable('nonmaterial')" >
+                                  [closable]="true">
                    <amexio-header>
                      Employee Form
                    </amexio-header>
@@ -537,7 +537,7 @@ import {HttpClient} from "@angular/common/http";
                  [horizontal-position]="'center'">
                  <amexio-header>
                 <amexio-window-header>
-                <amexio-toolbar>
+                <amexio-toolbar >
                 <amexio-toolbar-item position-left>
                 <amexio-label size="small" >
                  Registration
@@ -657,7 +657,7 @@ import {HttpClient} from "@angular/common/http";
 
                  </amexio-body>
                  <amexio-action>
-                   <amexio-button [type]= "'default'"(onClick)="showBasicWindowNonMaterial = false" label="Cancel"></amexio-button>
+                   <amexio-button [type]= "'default'"(onClick)="showBasicWindowNonMaterial = false" label="Cancel"></amexio-button>&nbsp;&nbsp;&nbsp;
                    <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save"></amexio-button>
                  </amexio-action>
 
@@ -746,20 +746,20 @@ import {HttpClient} from "@angular/common/http";
 
 export class WindowDemoComponent {
 
-  showBasicWindowMaterial :boolean;
+  showBasicWindowMaterial: boolean;
   showBasicWindowNonMaterial: boolean;
-  showBasicWindowNonMateialToolbar:boolean;
+  showBasicWindowNonMateialToolbar: boolean;
 
-  showMaxWindowMaterial : boolean;
+  showMaxWindowMaterial: boolean;
   showMaxWindowNonMaterial: boolean;
 
-  showClosableMaterial : boolean;
-  showClosableNonMaterial:boolean;
+  showClosableMaterial: boolean;
+  showClosableNonMaterial: boolean;
 
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  asyncFlag : boolean;
+  asyncFlag: boolean;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -775,7 +775,7 @@ export class WindowDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/pane/window/window.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/pane/window/window.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -783,7 +783,7 @@ export class WindowDemoComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/pane/window/window.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/pane/window/window.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -796,43 +796,40 @@ export class WindowDemoComponent {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 
-  toggleBasicWindow(data: any){
-    if(data=='material'){
+  toggleBasicWindow(data: any) {
+    if (data == 'material') {
       this.showBasicWindowMaterial = !this.showBasicWindowMaterial;
     }
-    else if(data== 'nonmaterial')
-    {
-      this.showBasicWindowNonMaterial =! this.showBasicWindowNonMaterial;
-      
+    else if (data == 'nonmaterial') {
+      this.showBasicWindowNonMaterial = !this.showBasicWindowNonMaterial;
+
     }
-    else{
-      this.showBasicWindowNonMateialToolbar= !this.showBasicWindowNonMateialToolbar;
+    else {
+      this.showBasicWindowNonMateialToolbar = !this.showBasicWindowNonMateialToolbar;
     }
   }
-  toggleMaxWindow(data:any){
-    if(data=='material'){
+  toggleMaxWindow(data: any) {
+    if (data == 'material') {
       this.showMaxWindowMaterial = !this.showMaxWindowMaterial;
     }
-    else
-    {
-      this.showMaxWindowNonMaterial =! this.showMaxWindowNonMaterial;
+    else {
+      this.showMaxWindowNonMaterial = !this.showMaxWindowNonMaterial;
     }
   }
 
 
-  toggleClosable(data : any){
-    if(data=='material'){
+  toggleClosable(data: any) {
+    if (data == 'material') {
       this.showClosableMaterial = !this.showClosableMaterial;
     }
-    else
-    {
-      this.showClosableNonMaterial =! this.showClosableNonMaterial;
+    else {
+      this.showClosableNonMaterial = !this.showClosableNonMaterial;
     }
   }
 

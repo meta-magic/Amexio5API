@@ -10,7 +10,7 @@ import {HttpClient} from "@angular/common/http";
     <amexio-card header="true">
       <amexio-header>
          Nav Bar 
-      </amexio-header>
+      </amexio-header> 
       <amexio-body>
        <p>
          The Nav Bar Component is a familiar top navigation pattern for users.

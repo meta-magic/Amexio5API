@@ -64,13 +64,20 @@
     }
    
   ],
-  "propertiesitem": [
+  "propertiesitem": [{
+    "name": "display-key",
+    "version": "5.4 onwards",
+    "type": "string",
+    "default": "text",
+    "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+  },
+ 
     {
-      "name": "separator",
-      "type": "boolean",
+      "name": "data",
+      "type": "any",
       "version": "5.4 onwards",
-      "default": "false",
-      "description": "We can add separator between components."
+      "default": "",
+      "description": "We can pass local data to side nav node(child) components."
     },
     {
       "name": "label",
@@ -94,11 +101,18 @@
       "description": "Providing user define Badge to sidenav node."
     },
     {
-      "name": "expandIcon",
+      "name": "enable-border",
       "type": "boolean",
       "version": "5.4 onwards",
       "default": "",
-      "description": "Providing user define icon, label, badge we added expandIcon at right side ."
+      "description": "enable border to the side nav component."
+    },
+    {
+      "name": "collapsable",
+      "type": "boolean",
+      "version": "5.4 onwards",
+      "default": "",
+      "description": "collapsable side nav component."
     }
   ],
   "events": [

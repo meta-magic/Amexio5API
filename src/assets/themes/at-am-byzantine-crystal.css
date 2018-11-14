@@ -2537,7 +2537,6 @@ input:checked + .toggle-slider:before {
   cursor: pointer;
   flex-direction: row;
   justify-content: space-between;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
   padding-top: 2px;
   position: relative;
   padding: 10px; }
@@ -4430,6 +4429,14 @@ header .billboard .content-button {
   max-width: 79.1666635%; }
 
 /****************************************************************************
+    Component Name : Layout
+    Version : Amexio v5.4 onwards
+*****************************************************************************/
+/** rowcol - Structure CSS **/
+amexio-layout-columns amexio-layout-item {
+  padding: 5px; }
+
+/****************************************************************************
     Component Name : Menubar
     Version : Amexio v4.0 onwards
 *****************************************************************************/
@@ -4646,7 +4653,8 @@ header .billboard .content-button {
   padding: 5px; }
 
 .topnavbarunit2 {
-  line-height: 50px; }
+  line-height: 50px;
+  flex-grow: 1; }
 
 .topnavbarunit2-mobile {
   width: 100%;
@@ -4860,6 +4868,9 @@ header .billboard .content-button {
   position: fixed;
   z-index: 3;
   left: 0; }
+
+.sidenav-submenu-details .tablink {
+  padding: 0px; }
 
 .sidenav-mobile-bar-right {
   top: 10px;
@@ -6012,8 +6023,7 @@ verticalalign-tableft {
 
 .modal-window-table .tablerow .tablecol {
   display: table-cell;
-  vertical-align: middle;
-  width: 100%; }
+  vertical-align: baseline; }
 
 .modal-window-footer-max {
   bottom: 0px;

@@ -1,0 +1,110 @@
+<!--  advanced side nav -->
+
+<amexio-side-nav [width]="'320px'" [position]="'relative'">
+  <amexio-sidenav-node>
+    <amexio-row>
+      <amexio-column size="5">
+        <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'"
+         path="assets/images/profile/ketan.jpg">
+        </amexio-image>
+      </amexio-column>
+      <amexio-column size="7">
+        <amexio-label> Ketan Gote</amexio-label>
+        <amexio-label> xyz@metamagic.in</amexio-label><br />
+      </amexio-column>
+    </amexio-row>
+  </amexio-sidenav-node>
+
+
+  <amexio-sidenav-node [collapsable]="true" [enable-border]="true" 
+  [icon]="'fa fa-cog'" [label]="'Settings'">
+    <amexio-row>
+      <amexio-column [size]=6>
+        <amexio-button [block]="true" [size]="'small'" [label]="'Notification'"
+         [type]="'theme-color'" [icon]="'fa fa-envelope'">
+        </amexio-button>
+      </amexio-column>
+      <amexio-column [size]=6>
+        <amexio-button [block]="true" [size]="'small'" [label]="'Profile'" 
+        [type]="'theme-backgroundcolor'" [icon]="'fa fa-user'">
+        </amexio-button>
+      </amexio-column>
+    </amexio-row>
+    <amexio-row>
+      <amexio-column [size]=6>
+        <amexio-button [block]="true" [size]="'small'" [label]="'Revenue'" 
+        [type]="'green'" [icon]="'fa fa-money'">
+        </amexio-button>
+      </amexio-column>
+      <amexio-column [size]=6>
+        <amexio-button [block]="true" [size]="'small'" [label]="'My Feeds'"
+         [type]="'yellow'" [icon]="'fa fa-rss'">
+        </amexio-button>
+      </amexio-column>
+    </amexio-row>
+  </amexio-sidenav-node>
+
+
+  <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-calendar'"
+   [badge]="'4'" [label]="'Upcoming Event'">
+    <amexio-timeline>
+      <amexio-timeline-event [label]="'Dec 4'" [icon]="'fa fa-map-signs'">
+        <amexio-label> Amexio Meetup</amexio-label>
+      </amexio-timeline-event>
+      <amexio-timeline-event [label]="'Jan 4'" [icon]="'fa fa-map-signs'">
+        <amexio-label> Microservice Meetup</amexio-label>
+      </amexio-timeline-event>
+      <amexio-timeline-event [label]="'Feb 4'" [icon]="'fa fa-map-signs'">
+        <amexio-label> kubernetes Meetup</amexio-label>
+      </amexio-timeline-event>
+      <amexio-timeline-event [label]="'Feb 4'" [icon]="'fa fa-map-signs'">
+        <amexio-label> Blockchain Meetup</amexio-label>
+      </amexio-timeline-event>
+    </amexio-timeline>
+  </amexio-sidenav-node>
+
+
+  <amexio-sidenav-node [enable-border]="true" [collapsable]="true" 
+  [label]="'Contacts'" [icon]="'fa fa-address-book-o'">
+    <amexio-tab-view [closable]="false">
+      <amexio-tab [active]="true" [icon]="'fa fa-users'">
+        <amexio-listbox [enable-header]="false" [header]="'Projects'" 
+        [search-placeholder]="'Search'" [data]="contactList"
+          [filter]="true" [data-reader]="'response.data'" [display-field]="'name'" 
+          [border]="'none'" >
+          <ng-template #amexioBodyTmpl let-row="row">
+            <amexio-row>
+              <amexio-column [size]="3">
+                <amexio-image [c-class]="'around-image'" height="50px"
+                 width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
+              </amexio-column>
+              <amexio-column [size]="9">
+                {{row.name}}
+              </amexio-column>
+            </amexio-row>
+          </ng-template>
+        </amexio-listbox>
+      </amexio-tab>
+      <amexio-tab [icon]="'fa fa-star-o'">
+        <amexio-listbox [enable-header]="false" [header]="'Projects'" 
+        [search-placeholder]="'Search'" [data]="contactList"
+          [filter]="true" [data-reader]="'response.data'" [display-field]="'name'"
+           [border]="'none'" >
+        </amexio-listbox>
+      </amexio-tab>
+    </amexio-tab-view>
+  </amexio-sidenav-node>
+
+
+  <amexio-sidenav-node [enable-border]="true" [label]="'Reports'" 
+  [icon]="'fa fa-picture-o fa-fw'" [collapsable]="true"
+    [data]='reportsMenu'>
+  </amexio-sidenav-node>
+
+
+  <amexio-sidenav-node [enable-border]="true" [label]="'Dashboard'"
+   [icon]="'fa fa-television fa-fw'" [collapsable]="true"
+    [data]='dashboardMenu'>
+  </amexio-sidenav-node>
+
+</amexio-side-nav>

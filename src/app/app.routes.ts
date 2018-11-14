@@ -119,6 +119,9 @@
     {
       path: 'sidenav-demo', loadChildren: './navigation/sidenav/sidenav.demo.module#SideNavDemoModule'
     },
+    {             
+      path: 'sidenav-page', loadChildren: './navigation/sidenavpage/sidenavpage.demo.module#sideNavDemoPageModule'
+    },
     {
       path: 'navbar-demo', loadChildren: './navigation/navbar/navbar.demo.module#NavBarDemoModule'
     },
@@ -148,6 +151,12 @@
     },
     {
       path: 'row-demo', loadChildren: './layout/row/row.demo.module#RowDemoModule'
+    },
+    {
+      path: 'vertical-layout', loadChildren: './layout/verticallayout/verticallayout.demo.module#VerticalLayoutDemoModule'
+    },
+    {
+      path: 'horizontal-layout', loadChildren: './layout/horizontallayout/horizontallayout.demo.module#horizontalLayoutDemoModule'
     },
     {
       path: 'basic-tab-demo', loadChildren: './layout/tab/tab.demo.module#TabDemoModule'
@@ -409,6 +418,9 @@
     {
       path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
     }, 
+    {
+      path: 'amexio-d3-chart-bubble', loadChildren: './charts/D3charts/d3bubblechart/d3bubblechart.demo.module#D3BubbleChartDemoModule'
+    },
     {
       path: 'amexio-d3-chart-waterfall', loadChildren: './charts/D3charts/d3waterfallchart/d3waterfallchart.demo.module#D3WaterfallChartDemoModule'
     },  

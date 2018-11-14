@@ -20,6 +20,7 @@
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
             "children": [
+               
                 {
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
@@ -40,6 +41,7 @@
                     "link": "column-demo",
                     "icon": "fa fa-columns fa-fw"
                 },
+                
                 {
                     "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
@@ -56,7 +58,16 @@
                         }
                     ]
                 },
-               
+                {
+                    "text": "Vertical Layout",
+                    "icon": "fa fa-th fa-fw",
+                    "link": "vertical-layout"
+                },
+                {
+                    "text": "Horizontal Layout",
+                    "icon": "fa fa-th fa-fw",
+                    "link": "horizontal-layout"
+                },
                 {
                     "text": "Row",
                     "link": "row-demo",
@@ -633,6 +644,11 @@
                     "link": "sidenav-demo"
                 },
                 {
+                    "text": "Advanced Side Nav Bar",
+                    "icon": "fa fa-bars fa-fw",
+                    "link": "sidenav-page"
+                },
+                {
                     "text": "Tool Bar",
                     "icon": "fa fa-bars fa-fw",
                     "link": "toolbar-demo"
@@ -689,7 +705,15 @@
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
                             "link": "amexio-d3-chart-bar"
-                        },  {
+                        },  
+                        {
+                            "text": "Bubble Chart",
+                            "icon": "fa fa-dot-circle-o",
+                            "link": "amexio-d3-chart-bubble",
+                            "badge":"New"
+                        },  
+                        
+                        {
                             "text": "Combo Chart",
                             "icon": "fa fa-area-chart fa-fw",
                             "link": "amexio-d3-chart-combo"

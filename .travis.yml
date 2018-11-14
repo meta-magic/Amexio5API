@@ -15,7 +15,6 @@ addons:
 
 env:
   global:
-  - GITHUB_REPO: "meta-magic/Amexio5API"
 language: node_js
 node_js:
   - "8"
@@ -28,47 +27,23 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - npm install --global gulp --save
   - gem install sass
-  - git clone https://github.com/meta-magic/amexio.github.io -b v5.3
-  - cd amexio.github.io
-  - npm install 
-  - npm install gulp --save
-  - npm install node-sass
-  - npm install --save del
-  - ls -la
-  - cd src/styles/ 
-  - cd ../../ && gulp build
-  - cd dist && npm pack && mv amexio-ng-extensions-*.tgz amexio-ng-extensions.tgz
-  - cd ../../
-  - git clone https://github.com/meta-magic/d3.amexio.github.io.git 
-  - cd d3.amexio.github.io/
-  - npm install
-  - npm install d3@^5.7.0
-  - ng build --prod amexio-chart-d3
-  - npm pack dist/amexio-chart-d3
-  
-   
 script: 
-  - cd ../
-  - npm i ../d3.amexio.github.io/amexio-chart-d3-0.0.6.tgz
-  - pwd
   - npm install
   - npm install --save uglifyjs-webpack-plugin
   - npm install @angular-devkit/core --save
   - npm i node-sass --save-dev
-  -  rm -rf src/assets/themes/*
-  - cp -rf amexio.github.io/src/styles/css/* src/assets/themes/
-  - npm i amexio.github.io/dist/amexio-ng-extensions.tgz
+  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-chart-d3.tgz?raw=true
+  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-ng-extensions.tgz?raw=true
   - ng set defaults.styleExt scss
   - ng build --prod
-  - cd ../ 
-  - ls -la
-  - rm -rf api/v5.3/*
-  - cp -rf dist/* api/v5.3/
-  - git add api
-  - git commit -m "api-test"
-  - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:v5.2
-  
 after_success: 
   - codecov
+  - git clone https://github.com/meta-magic/amexio-api-website-test.git
+  - rm -rf amexio-api-website-test/api/v5.3/*
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.3/
+  - cd amexio-api-website-test/
+  - git add api
+  - git commit -m "${COMMIT}"
+  - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
 cache:
   yarn: true

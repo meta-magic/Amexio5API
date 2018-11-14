@@ -1,7 +1,0 @@
-{
-  "name": " Amexio BorderLayout",
-  "description": " north, south, east, west, and center..",
-  "selector": " <amexio-borderlayout>",
-  "properties": [],
-  "events": []
-}
