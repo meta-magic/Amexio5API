@@ -49,7 +49,7 @@ before_script:
 script: 
   - cd ../
   - ls -la
-  - npm i ../d3.amexio.github.io/amexio-chart-d3.tgz 
+  - npm i d3.amexio.github.io/amexio-chart-d3.tgz 
   - pwd
   - npm install
   - npm install --save uglifyjs-webpack-plugin
