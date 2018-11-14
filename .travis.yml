@@ -48,6 +48,7 @@ before_script:
   - mv amexio-chart-d3-*.tgz amexio-chart-d3.tgz   
 script: 
   - cd ../
+  - ls -la
   - npm i ../d3.amexio.github.io/amexio-chart-d3.tgz 
   - pwd
   - npm install
