@@ -62,7 +62,8 @@ script:
   - ls -la
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
   - rm -rf api/v5.3/*
-  - cp -rf /home/travis/build/meta-magic/Amexio5API/ api/v5.3/
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/ amexio-api-website-test/api/v5.3/
+  - cd amexio-api-website-test/
   - git add api
   - git commit -m "api-test"
   - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
