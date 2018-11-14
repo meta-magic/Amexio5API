@@ -15,7 +15,7 @@ addons:
 
 env:
   global:
-  - GITHUB_REPO: "meta-magic/Amexio5API"
+  - GITHUB_REPO: "meta-magic/amexio-api-website-test"
 language: node_js
 node_js:
   - "8"
@@ -61,11 +61,12 @@ script:
   - ng set defaults.styleExt scss
   - ng build --prod
   - ls -la
+  - git clone https://github.com/meta-magic/amexio-api-website-test.git
   - rm -rf api/v5.3/*
-  - cp -rf dist/* api/v5.3/
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/ api/v5.3/
   - git add api
   - git commit -m "api-test"
-  - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:v5.2
+  - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
   
 after_success: 
   - codecov
