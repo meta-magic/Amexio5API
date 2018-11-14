@@ -36,6 +36,8 @@ script:
   - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-ng-extensions.tgz?raw=true
   - ng set defaults.styleExt scss
   - ng build --prod
+after_success: 
+  - codecov
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
   - rm -rf amexio-api-website-test/api/v5.3/*
   - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.3/
@@ -43,8 +45,5 @@ script:
   - git add api
   - git commit -m "${COMMIT}"
   - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
-  
-after_success: 
-  - codecov
 cache:
   yarn: true
