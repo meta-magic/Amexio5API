@@ -28,9 +28,6 @@ before_script:
   - npm install --global gulp --save
   - gem install sass
 script: 
-  - cd ../
-  - ls -la
-  - pwd
   - npm install
   - npm install --save uglifyjs-webpack-plugin
   - npm install @angular-devkit/core --save
@@ -39,7 +36,6 @@ script:
   - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-ng-extensions.tgz?raw=true
   - ng set defaults.styleExt scss
   - ng build --prod
-  - ls -la
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
   - rm -rf amexio-api-website-test/api/v5.3/*
   - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.3/
