@@ -27,17 +27,10 @@ before_script:
   - sh -e /etc/init.d/xvfb start
   - npm install --global gulp --save
   - gem install sass
-  - git clone https://github.com/meta-magic/d3.amexio.github.io.git 
-  - cd d3.amexio.github.io/
-  - npm install
-  - npm install d3@^5.7.0
-  - ng build --prod amexio-chart-d3
-  - npm pack dist/amexio-chart-d3/
-  - mv amexio-chart-d3-*.tgz amexio-chart-d3.tgz   
 script: 
   - cd ../
   - ls -la
-  - npm i /home/travis/build/meta-magic/Amexio5API/d3.amexio.github.io/amexio-chart-d3.tgz 
+  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-chart-d3.tgz?raw=true
   - pwd
   - npm install
   - npm install --save uglifyjs-webpack-plugin
