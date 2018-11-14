@@ -60,7 +60,6 @@ script:
   - npm i /home/travis/build/meta-magic/Amexio5API/amexio.github.io/dist/amexio-ng-extensions.tgz
   - ng set defaults.styleExt scss
   - ng build --prod
-  - cd ../ 
   - ls -la
   - rm -rf api/v5.3/*
   - cp -rf dist/* api/v5.3/
