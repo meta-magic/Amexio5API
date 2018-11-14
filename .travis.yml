@@ -65,7 +65,7 @@ script:
   - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.3/
   - cd amexio-api-website-test/
   - git add api
-  - git commit -m "api-test"
+  - git commit -m "${COMMIT}"
   - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
   
 after_success: 
