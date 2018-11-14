@@ -80,11 +80,16 @@ export class SideNavDemo {
       }
       };
 
+
+      
   }
+
+  
 
   
   sideNodeClick(data: any) {
     this.nodeData = data;
+    console.log('chek click', this.nodeData);
   }
 
 

@@ -18,7 +18,8 @@
                             <amexio-body>
 
                                 <amexio-side-nav [http-url]="'assets/data/componentdata/sidenav.json'" [http-method]="'get'"
-                                    [data-reader]="'data'" [width]="'275px'" [position]="'relative'">
+                                    [data-reader]="'data'" [width]="'275px'" [position]="'relative'" 
+                                    >
                                 </amexio-side-nav>
                             </amexio-body>
                         </amexio-card>
@@ -27,9 +28,9 @@
                         <amexio-card [header]="true" [body-height]="80">
                             <amexio-header> Advanced Side Nav </amexio-header>
                             <amexio-body>
-                                <amexio-side-nav [width]="'320px'" [position]="'relative'">
+                                <amexio-side-nav [width]="'320px'" [position]="'relative'" >
 
-                                    <amexio-sidenav-node>
+                                    <amexio-sidenav-node  >
 
 
                                         <amexio-row>
@@ -48,8 +49,9 @@
                                         </amexio-row>
 
                                     </amexio-sidenav-node>
+
                                     <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-cog'"
-                                        [label]="'Settings'">
+                                        [label]="'Settings'" >
                                         <amexio-row>
                                             <amexio-column [size]=6>
                                                 <amexio-button [block]="true" [size]="'small'" [label]="'Notification'"
