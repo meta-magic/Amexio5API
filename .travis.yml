@@ -30,12 +30,12 @@ before_script:
 script: 
   - cd ../
   - ls -la
-  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-chart-d3.tgz?raw=true
   - pwd
   - npm install
   - npm install --save uglifyjs-webpack-plugin
   - npm install @angular-devkit/core --save
   - npm i node-sass --save-dev
+  - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-chart-d3.tgz?raw=true
   - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-ng-extensions.tgz?raw=true
   - ng set defaults.styleExt scss
   - ng build --prod
