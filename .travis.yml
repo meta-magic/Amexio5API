@@ -49,7 +49,7 @@ before_script:
 script: 
   - cd ../
   - ls -la
-  - npm i d3.amexio.github.io/amexio-chart-d3.tgz 
+  - npm i /home/travis/build/meta-magic/Amexio5API/d3.amexio.github.io/amexio-chart-d3.tgz 
   - pwd
   - npm install
   - npm install --save uglifyjs-webpack-plugin
@@ -57,7 +57,7 @@ script:
   - npm i node-sass --save-dev
   -  rm -rf src/assets/themes/*
   - cp -rf amexio.github.io/src/styles/css/* src/assets/themes/
-  - npm i amexio.github.io/dist/amexio-ng-extensions.tgz
+  - npm i /home/travis/build/meta-magic/Amexio5API/amexio.github.io/dist/amexio-ng-extensions.tgz
   - ng set defaults.styleExt scss
   - ng build --prod
   - cd ../ 
