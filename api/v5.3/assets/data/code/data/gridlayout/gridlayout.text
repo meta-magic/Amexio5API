@@ -1,0 +1,110 @@
+export class GridLayoutDemo {
+  constructor() {
+this.data = [
+        ["gridmenu", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "gridmain", "gridmain", "gridmain", "gridright", "gridright"],
+        ["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridright", "gridright"]
+      ];
+      this.data1 = [
+        ["gridmenu1", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "griddatapoint1", "griddatapoint2", "griddatapoint3", "griddatapoint4", "griddatapoint5"],
+        ["gridmenu", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"],
+        ["gridmenu2", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]
+      ];
+      this.data2 = [
+        ["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"],
+        ["gridmenu", "gridmenu", "gridright", "gridright", "gridright", "gridright"]
+      ];
+      this.localData = {
+        "response": {
+          "success": true,
+            "message": "Fetching  Data  Request Succeeded: Profile",
+            "data": [
+            {
+              "name": "Buck Kulkarni",
+              "name_official": "Buck Kulkarni",
+              "profile": "buck.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            {
+              "name": "Araf Karsh Hamid",
+              "name_official": "Araf Karsh Hamid",
+              "profile": "karsh.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            {
+              "name": "ketan Gote",
+              "name_official": "Ketan Gote",
+              "profile": "ketan.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            {
+              "name": "vrushabh Kelwalkar",
+              "name_official": "vrushabh Kelwalkar",
+              "profile": "sagar.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            {
+              "name": "Dattaram Gawas",
+              "name_official": "Dattaram Gawas",
+              "profile": "dats.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            {
+              "name": "Sagar Jadhav",
+              "name_official": "Sagar Jadhav",
+              "profile": "sagar.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            {
+              "name": "Samadhan Pardeshi",
+              "name_official": "Samadhan Pardeshi",
+              "profile": "dats.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            {
+              "name": "Nidhi Shah",
+              "name_official": "Nidhi Shah",
+              "profile": "dats.jpg",
+              "email" : "XYZ@metamagic.in"
+            },
+            
+            {
+              "name": "Sharad Jadhav",
+              "name_official": "Sharad Jadhav",
+              "profile": "ahutosh.jpg",
+              "email" : "XYZ@metamagic.in"
+            }          ]
+        }
+      }
+      this.radioGroupData = {
+        response: {
+          data: [{
+            gender: 'Male', genderId: 'male'
+          }, {
+            gender: 'Female', genderId: 'female'
+          },]
+        }
+    }
+    this.checkboxGroupdata = {
+      response: {
+        data: [{
+          language: 'Angular', checked: false
+        }, 
+         {
+          language: 'Java', checked: false
+        },{
+          language: 'C++', checked: false
+        }
+      ]
+      }
+    }
+
+
+
+
+
+
+  }
+}

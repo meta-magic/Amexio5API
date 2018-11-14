@@ -1,0 +1,56 @@
+{
+  "data":[
+    {
+      "text": "Home",
+      "icon" : "fa fa-home fa-fw",
+      "mdaIcon" : "home",
+      "link" : "/home/dashboard",
+      "selected":true
+    },
+    {
+      "text": "Apps",
+      "icon" : "fa fa-envelope fa-fw",
+      "mdaIcon" : "email",
+      "link" : "/home/email"
+    },
+    {
+      "text": "Component",
+      "icon" : "fa fa-user fa-fw",
+      "mdaIcon" : "account_box",
+      "link" : "/home/profile",
+      "badge": "32"
+    },
+    {
+      "text": "Charts",
+      "icon" : "fa fa-bars fa-fw",
+      "mdaIcon" : "account_box",
+      "link" : "/home/profile"
+     
+    }
+    
+  ]
+,
+"data1":[
+    {
+      "text": "Maps",
+      "icon" : "fa fa-map-marker fa-fw",
+      "mdaIcon" : "home",
+      "link" : "/home/dashboard",
+      "selected":true
+    },
+    {
+      "text": "Extra",
+      "icon" : "fa fa-envelope fa-fw",
+      "mdaIcon" : "email",
+      "link" : "/home/email",
+      "badge": "New"
+    },
+    {
+      "text": "Menu Levels",
+      "icon" : "fa fa-user fa-fw",
+      "mdaIcon" : "account_box",
+      "link" : "/home/profile",
+      "badge": "32"
+    }
+    
+  ]}

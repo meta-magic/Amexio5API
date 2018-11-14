@@ -44,7 +44,7 @@
             "description": "Sets legend to D3 Combo chart",
             "version": "0.0.6 Onwards",
             "type": "boolean",
-            "default": "false"
+            "default": "true"
         },
         {
             "name": "http-url",
@@ -67,6 +67,28 @@
             "type": "string",
             "default": ""
         },
+
+        {
+            "name": "level",
+            "description": "Sets level for chart when drillable property used",
+            "version": "0.0.6 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "target",
+            "description": "Sets  target for chart when drillable property used",
+            "version": "0.0.6 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "drillable-data",
+            "description": "Arrays of keys provided for chart, when drillable property used.",
+            "version": "0.0.6 Onwards",
+            "type": "any",
+            "default": ""
+        },
         {
             "name": "line-color",
             "description": "Sets line color in D3 chart",
@@ -80,6 +102,13 @@
             "version": "0.0.6 Onwards",
             "type": "string",
             "default": ""
+        },
+        {
+            "name": "horizontal-scale",
+            "description": "Sets Horizontal scaling ",
+            "version": "0.0.7 Onwards",
+            "type": "boolean",
+            "default": "true"
         }
     ],
     "legend": [

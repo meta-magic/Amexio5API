@@ -1,0 +1,10 @@
+
+  Note: First record i.e Product is plotted on x-axis and population will get plotted on y-axis.
+
+  [
+    ["Product","Yield"],
+    ["Product Revenue", 420000],
+    ["Services Revenue", 210000],
+    ["Fixed Costs", -170000],
+    ["letiable Costs", -140000 ]
+  ];   

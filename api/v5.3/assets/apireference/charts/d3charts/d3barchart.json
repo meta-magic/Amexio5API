@@ -50,7 +50,7 @@
             "description": "Sets legend to D3 Bar chart",
             "version": "0.0.1 Onwards",
             "type": "boolean",
-            "default": "false"
+            "default": "true"
         },
         {
             "name": "http-url",
@@ -93,6 +93,13 @@
             "version": "0.0.6 Onwards",
             "type": "any",
             "default": ""
+        },
+        {
+            "name": "horizontal-scale",
+            "description": "Sets Horizontal scaling ",
+            "version": "0.0.7 Onwards",
+            "type": "boolean",
+            "default": "true"
         }
     ],
     "legend": [

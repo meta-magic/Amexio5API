@@ -1,37 +1,53 @@
-<!--Horizontal Radio Group with lcoal data-->
+<!--Horizontal Radio Group with local data-->
 
-<amexio-radio-group [field-label]="'Horizontal Radio Group'"
-                     name ="gender"
+<amexio-radio-group [field-label]="'Horizontal Radio Group'" 
+                    name ="gender"
                     [data-reader]="'response.data'"
                     [display-field]="'gender'"
                     [value-field]="'genderId'"
                     [horizontal]="true"
                     [data]="radioGroupData"
-                    [default-value]="'male'"
+                    [(ngModel)]="model1"
                     (onSelection)="setSelectedGender($event)">
 </amexio-radio-group>
 
 <!--Vertical Radio Group With Http URL-->
 
-<amexio-radio-group [field-label]="'Vertical RadioGroup'"
-                     name ="gender"
+<amexio-radio-group [field-label]="'Vertical Radio Group'" 
+                    name ="gender1"
                     [data-reader]="'data'"
                     [display-field]="'gender'"
                     [value-field]="'genderId'"
                     [http-method]="'get'"
-                    [default-value]="'female'"
+                    [(ngModel)]="model2"
                     [http-url]="'assets/data/componentdata/radiogroup.json'"
                     (onSelection)="setSelectedGender($event)">
 </amexio-radio-group>
 
 <!--Disabled Horizontal Radio Group -->
-<amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="genderxy"
+
+<amexio-radio-group [field-label]="'Horizontal Radio Group'" 
+                    name ="gendery"
                     [data-reader]="'data'"
                     [display-field]="'gender'"
                     [value-field]="'genderId'"
                     [http-method]="'get'"
-                    [default-value]="'female'"
                     horizontal="true"
+                    [(ngModel)]="model3"
                     [http-url]="'assets/data/componentdata/radiogroup.json'"
                     disabled="true">
 </amexio-radio-group>
+
+<!-- Horizontal Radio Group with Single Item Disabled -->
+
+<amexio-radio-group [field-label]="'Horizontal Radio Group '" 
+                    name ="genderx"
+                    [data-reader]="'data'"
+                    [(ngModel)]="model4"
+                    [display-field]="'gender'"
+                    [value-field]="'genderId'"
+                    [http-method]="'get'"
+                    horizontal="true"
+                    [http-url]="'assets/data/componentdata/radiogroup_disable.json'">
+</amexio-radio-group>
+

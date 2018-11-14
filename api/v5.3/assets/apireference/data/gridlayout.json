@@ -1,0 +1,21 @@
+{
+  "properties": [
+    {
+      "name": "data",
+      "type": "array",
+      "default": "",
+      "description":"It is a 2D array",
+      "version": "5.4 onwards"
+    }
+  ],
+
+  "childproperties":[
+    {
+      "name": "name",
+      "type": "string",
+      "default": "",
+      "description":"It is type which given according to the pattern of data input",
+      "version": "5.4 onwards"
+    }
+  ]
+}

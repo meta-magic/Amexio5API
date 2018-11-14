@@ -56,6 +56,7 @@
                         }
                     ]
                 },
+               
                 {
                     "text": "Row",
                     "link": "row-demo",
@@ -204,8 +205,8 @@
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card",
-                    "link": "credit-card-demo",
-                    "badge": "New"
+                    "badge":"New",
+                    "link": "credit-card-demo"
                 },
                 {
                     "text": "Date & Time Picker",
@@ -281,7 +282,7 @@
                 {
                     "text": "Recaptcha",
                     "icon": "fa fa-recycle",
-                    "badge": "New",
+                    "badge":"New",
                     "link": "recaptcha-demo"
                 },
                 {
@@ -323,7 +324,6 @@
         },
         {
             "text": "Form Actions",
-            "badge": "1",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [
                 {
@@ -377,13 +377,13 @@
         },
         {
             "text": "Data",
-            "badge": "2",
             "icon": "fa fa-database fa-fw",
+            "badge":"3",
             "children": [
                 {
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
-                    "badge": "New",
+                    "badge":"New",
                     "link": "amexio-spinner-demo"
                 },
                 {
@@ -457,23 +457,24 @@
                         }
                     ]
                 },
+             
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
                     "link": "tree",
-                    "badge": "2",
+                    "badge":"2",
                     "children": [
                         {
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "U",
+                            "badge":"U",
                             "link": "simple-tree"
                         },
                         {
                             "text": "Collapse",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "New",
-                            "link": "collapsetree-demo"
+                            "link": "collapsetree-demo",
+                            "badge":"New"
                         },
                         {
                             "text": "With Template",
@@ -564,8 +565,8 @@
                 },
                 {
                     "text": "Grid",
-                    "icon": "fa fa-database fa-fw",
-                    "link": "contextual-menu-grid"
+                    "link": "contextual-menu-grid",
+                    "icon": "fa fa-database fa-fw"
                 },
                 {
                     "text": "List Box",
@@ -597,13 +598,14 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars fa-fw",
-            "badge": "1",
+           "badge":"1",
             "children": [
                 {
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right fa-fw",
                     "link": "breadcrumb-demo",
-                    "badge": "New"
+                    "badge":"New"
+                    
                 },
                 {
                     "text": "Dockbar",
@@ -629,6 +631,11 @@
                     "text": "Side Nav Bar",
                     "icon": "fa fa-bars fa-fw",
                     "link": "sidenav-demo"
+                },
+                {
+                    "text": "Advanced Side Nav Bar",
+                    "icon": "fa fa-bars fa-fw",
+                    "link": "sidenav-page"
                 },
                 {
                     "text": "Tool Bar",
@@ -676,7 +683,7 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
-            "badge": "7",
+            "badge": "4",
             "children": [
                 {
                     "text": "D3 Charts",
@@ -686,43 +693,67 @@
                         {
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "New",
                             "link": "amexio-d3-chart-bar"
-                        },  {
+                        },  
+                        {
+                            "text": "Bubble Chart",
+                            "icon": "fa fa-dot-circle-o",
+                            "link": "amexio-d3-chart-bubble",
+                            "badge":"New"
+                        },  
+                        
+                        {
                             "text": "Combo Chart",
                             "icon": "fa fa-area-chart fa-fw",
-                            "badge": "New",
                             "link": "amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "badge": "New",
                             "link": "amexio-d3-chart-donut"
+                        },{
+                            "text": "Histogram Chart",
+                            "icon": "fa fa-bar-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-histogram"
                         },
                         {
                             "text": "Line Chart",
                             "icon": "fa fa-line-chart fa-fw",
-                            "badge": "New",
                             "link": "amexio-d3-chart-line"
                         },
                         {
+                            "text": "Multi-Area Chart",
+                            "icon": "fa fa-area-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-multiarea"
+                        }, 
+                        {
                             "text": "MultiSeriesBar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "New",
                             "link": "amexio-d3-chart-multiseries"
                         },
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "badge": "New",
                             "link": "amexio-d3-chart-pie"
                         },
                         {
-                            "text": "Stack Chart",
-                            "icon": "fa fa-bar-chart fa-fw",
+                            "text": "Scatter Chart",
+                            "icon": "fa fa-dot-circle-o",
                             "badge": "New",
+                            "link": "amexio-d3-chart-scatter"
+                        }, 
+                        {
+                            "text": "Stack Bar Chart",
+                            "icon": "fa fa-bar-chart fa-fw",
                             "link": "amexio-d3-chart-bar-stack"
+                        },
+                        {
+                            "text": "Waterfall Chart",
+                            "icon": "fa fa-line-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-waterfall"
                         }
                     ]
                 },
@@ -798,6 +829,7 @@
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-calendar fa-fw",
+                            "badge":"N",
                             "link": "timeline-chart-demo"
                         }
                     ]

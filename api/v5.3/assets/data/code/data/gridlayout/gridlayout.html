@@ -1,0 +1,208 @@
+<!-- Sample Grid Layout -->
+
+<amexio-grid-component [data]="data">
+    <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
+    <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
+</amexio-grid-component>
+
+<!-- Grid Layout with Components such as List box, Radio group, Tool bar, checkbox -->
+
+<amexio-grid-component [data]="data1">
+
+    <amexio-grid-item [name]="'gridheader'">
+        <div class="navbardemo">
+            <amexio-nav [enable-side-nav-position]="true" [title]="'DashBoard'" [logo]="'assets/images/logos/amexio-logo.png'">
+                <amexio-nav-item position-right [type]="'button'" [icon]="'fa fa-bell fa-fw'">
+                </amexio-nav-item>
+                <amexio-nav-item position-right [type]="'button'" [icon]="'fa fa-envelope'">
+                </amexio-nav-item>
+            </amexio-nav>
+        </div>
+
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'griddatapoint1'">
+        <amexio-datapoints [amexio-color]="'amexio-yellow'" [west]="true" [center]="true" [east]="true" [south]="true">
+            <amexio-west [content-align]="'center'">
+                <amexio-image [icon-class]="'fa fa-line-chart'">
+                </amexio-image>
+            </amexio-west>
+            <amexio-center [content-align]="'center'">
+                <amexio-label size="small-bold">804</amexio-label>
+                <br/>
+                <amexio-label size="small">Memory Usage</amexio-label>
+            </amexio-center>
+            <amexio-south [content-align]="'center'">
+                <amexio-label>Updated: 05:35 AM</amexio-label>
+            </amexio-south>
+        </amexio-datapoints>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'griddatapoint2'">
+        <amexio-datapoints [amexio-color]="'amexio-yellow'" [west]="true" [center]="true" [east]="true" [south]="true">
+            <amexio-west [content-align]="'center'">
+                <amexio-image [icon-class]="'fa fa-line-chart'">
+                </amexio-image>
+            </amexio-west>
+            <amexio-center [content-align]="'center'">
+                <amexio-label size="small-bold">403</amexio-label>
+                <br/>
+                <amexio-label size="small">Disk Usage</amexio-label>
+            </amexio-center>
+            <amexio-south [content-align]="'center'">
+                <amexio-label>Updated: 12:42 PM</amexio-label>
+            </amexio-south>
+        </amexio-datapoints>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'griddatapoint3'">
+        <amexio-datapoints [amexio-color]="'amexio-yellow'" [west]="true" [center]="true" [east]="true" [south]="true">
+            <amexio-west [content-align]="'center'">
+                <amexio-image [icon-class]="'fa fa-line-chart'">
+                </amexio-image>
+            </amexio-west>
+            <amexio-center [content-align]="'center'">
+                <amexio-label size="small-bold">976</amexio-label>
+                <br/>
+                <amexio-label size="small">Ram Test</amexio-label>
+            </amexio-center>
+            <amexio-south [content-align]="'center'">
+                <amexio-label>Updated: 09:35 PM</amexio-label>
+            </amexio-south>
+        </amexio-datapoints>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'griddatapoint4'">
+        <amexio-datapoints [amexio-color]="'amexio-yellow'" [west]="true" [center]="true" [east]="true" [south]="true">
+            <amexio-west [content-align]="'center'">
+                <amexio-image [icon-class]="'fa fa-line-chart'">
+                </amexio-image>
+            </amexio-west>
+            <amexio-center [content-align]="'center'">
+                <amexio-label size="small-bold">496</amexio-label>
+                <br/>
+                <amexio-label size="small">CPU Usage</amexio-label>
+            </amexio-center>
+            <amexio-south [content-align]="'center'">
+                <amexio-label>Updated: 06:45 AM</amexio-label>
+            </amexio-south>
+        </amexio-datapoints>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'griddatapoint5'">
+        <amexio-datapoints [amexio-color]="'amexio-yellow'" [west]="true" [center]="true" [east]="true" [south]="true">
+            <amexio-west [content-align]="'center'">
+                <amexio-image [icon-class]="'fa fa-line-chart'">
+                </amexio-image>
+            </amexio-west>
+            <amexio-center [content-align]="'center'">
+                <amexio-label size="small-bold">239</amexio-label>
+                <br/>
+                <amexio-label size="small">Ram Usage</amexio-label>
+            </amexio-center>
+            <amexio-south [content-align]="'center'">
+                <amexio-label>Updated: 08:55 PM</amexio-label>
+            </amexio-south>
+        </amexio-datapoints>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gridfooter'">
+        <amexio-card [header]="false" [footer]="false">
+
+            <amexio-body>
+                <amexio-chart-area [data]="areaChartData" [width]="'100%'">
+                    <amexio-chart-title [title]="'Activity'">
+                    </amexio-chart-title>
+                    <amexio-chart-legend [position]="'bottom'">
+                    </amexio-chart-legend>
+                </amexio-chart-area>
+            </amexio-body>
+        </amexio-card>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gridmenu'">
+        <amexio-row>
+            <amexio-column size="12">
+                <amexio-card [header]="false">
+                    <amexio-body>
+
+                        <amexio-side-nav [http-url]="'assets/data/componentdata/gridlayoutexp.json'" [http-method]="'get'" [data-reader]="'data'"
+                            [width]="'275px'" [position]="'relative'">
+                        </amexio-side-nav>
+                    </amexio-body>
+                </amexio-card>
+            </amexio-column>
+        </amexio-row>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gridmenu2'">
+        <amexio-row>
+            <amexio-column size="12">
+                <amexio-card [header]="false">
+                    <amexio-body>
+
+                        <amexio-side-nav [http-url]="'assets/data/componentdata/gridlayoutexp.json'" [http-method]="'get'" [data-reader]="'data1'"
+                            [width]="'275px'" [position]="'relative'">
+                        </amexio-side-nav>
+                    </amexio-body>
+                </amexio-card>
+            </amexio-column>
+        </amexio-row>
+    </amexio-grid-item>
+
+    <amexio-grid-item [name]="'gridmenu1'">
+        <amexio-row>
+            <amexio-column size="5">
+                <amexio-image [height]="'69.75px'" [width]="'69.75px'" [c-class]="'image-round'" path="assets/images/profile/ketan.jpg">
+                </amexio-image>
+            </amexio-column>
+            <amexio-column size="7">
+                <amexio-label size="small"> Ketan Gote</amexio-label>
+                <amexio-label> xyz@metamagic.in</amexio-label>
+            </amexio-column>
+        </amexio-row>
+    </amexio-grid-item>
+
+
+</amexio-grid-component>
+
+<!-- Grid Layout Example-->
+
+<amexio-card [header]="true">
+    <amexio-header>
+        Grid Layout
+    </amexio-header>
+    <amexio-body>
+        <amexio-grid-component [data]="data2">
+            <amexio-grid-item [name]="'gridheader'">
+                <amexio-image [path]="'assets/images/soap-bubble.jpg'"></amexio-image>
+
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'gridmenu'">
+                <amexio-card [header]="false" [footer]="true" [footer-align]="'right'">
+                    <amexio-body>
+                        <amexio-image path="assets/images/carousel/set1/1.jpg"></amexio-image>
+                        <br/>
+                        <amexio-label size="small-bold">Let your startup grow!</amexio-label>
+                        <amexio-label size="small">
+                            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi.
+                        </amexio-label>
+                    </amexio-body>
+                    <amexio-action>
+                        <amexio-button [label]="'Button'" [type]="'primary'">
+                        </amexio-button>
+                    </amexio-action>
+                </amexio-card>
+            </amexio-grid-item>
+
+            <amexio-grid-item [name]="'gridright'">
+                <amexio-panel [header]="false" expanded="true">
+                    <amexio-label>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </amexio-label>
+                </amexio-panel>
+            </amexio-grid-item>
+        </amexio-grid-component>

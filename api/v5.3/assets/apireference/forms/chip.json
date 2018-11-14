@@ -1,0 +1,50 @@
+{
+  "name": "Amexio Chip",
+  "description": "Chips allow users to enter information, make selections, filter content, or trigger actions. Chips appear dynamically as a group of multiple interactive elements.",
+  "selector": "<amexio-chip>",
+  "properties": [
+    {
+      "name": "icon",
+      "description": "It resembles icon of label",
+      "version": "5.3.2 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "label",
+      "description": "It resembles the written data",
+      "version": "5.3.2 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "badge",
+      "description": "It shows number count.",
+      "version": "5.3.2 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "closable",
+      "description": "It disables the chip.",
+      "version": "5.3.2 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "color",
+      "description": "It provides different color to chip.",
+      "version": "5.3.2 onwards",
+      "type": "any",
+      "default": ""
+    }
+  
+  ],
+  "events": [
+    {
+      "name": " onChipLabelClick",
+      "version": "5.3.2 onwards",
+      "description": "emits particular chip data on click of chip label"
+    }  
+  ]
+}

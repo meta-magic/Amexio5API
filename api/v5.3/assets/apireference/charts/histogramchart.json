@@ -31,30 +31,7 @@
       "type": "string",
       "default": "",
       "description": "Color of chart title."
-    },
-    {
-      "name": "font-name",
-      "type": "string",
-      "default": "",
-      "description": "Font name of chart title."
-    },
-    {
-      "name": "font-size",
-      "type": "number",
-      "default": "",
-      "description": "Font size of chart title."
-    },
-    {
-      "name": "bold",
-      "type": "boolean",
-      "default": "false",
-      "description": "Set true for title in bold font."
-    },
-    {
-      "name": "italic",
-      "type": "boolean",
-      "default": "false",
-      "description": "Set true for title text in italic style."
     }
+   
   ]
 }
