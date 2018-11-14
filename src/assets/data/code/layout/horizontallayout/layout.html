@@ -1,0 +1,70 @@
+<!-- Demo 1 -->
+
+<amexio-layout-columns [orientation]="'vertical'" [border]="false">
+  <amexio-layout-item [fit]="true" *ngFor="let alignment of ['start','space-between','center']">
+      <b>Alignment is {{alignment}}</b>
+      <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+          <amexio-layout-item *ngFor="let item of  ['1','2','3']">
+              <amexio-card [header]="false">
+                  <amexio-body>
+                      <amexio-image [width]="'75px'" path="assets/images/carousel/set1/{{item}}.jpg"></amexio-image>
+                  </amexio-body>
+              </amexio-card>
+          </amexio-layout-item>
+      </amexio-layout-columns>
+  </amexio-layout-item>
+</amexio-layout-columns>
+<!-- Demo 2 -->
+
+<amexio-layout-columns [orientation]="'vertical'" [border]="false">
+  <amexio-layout-item [fit]="true" *ngFor="let alignment of ['end','space-around','space-evenly']">
+      <b>Alignment is {{alignment}}</b>
+      <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+          <amexio-layout-item *ngFor="let item of  ['1','2','3']">
+              <amexio-card [header]="false">
+                  <amexio-body>
+                      <amexio-image [width]="'75px'" path="assets/images/carousel/set1/{{item}}.jpg"></amexio-image>
+                  </amexio-body>
+              </amexio-card>
+          </amexio-layout-item>
+      </amexio-layout-columns>
+  </amexio-layout-item>
+</amexio-layout-columns>
+
+<!-- Demo 3:- horizontal + Column Layout-->
+
+
+<amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="'space-between'">
+  <amexio-layout-item [padding]="'0px'" [fit]="true">
+    <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'space-between'">
+      <amexio-layout-item *ngFor="let item of ['1','2','3']">
+        Vertical item <b>{{item}}</b>
+      </amexio-layout-item>
+    </amexio-layout-columns>
+  </amexio-layout-item>
+
+  <amexio-layout-item [padding]="'0px 5px'" [fit]="true">
+    <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'space-between'">
+      <amexio-layout-item  *ngFor="let item of ['start','center','end']">
+          <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="item">
+              <amexio-layout-item *ngFor="let litem of ['1','2']">
+                Horizontal <b> {{item}} {{litem}}</b>
+              </amexio-layout-item>
+          </amexio-layout-columns>
+      </amexio-layout-item>
+    </amexio-layout-columns> 
+  </amexio-layout-item>
+
+  <amexio-layout-item [padding]="'0px 5px'"  [fit]="true">
+    <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'start'">
+      <amexio-layout-item [fit]="true"  *ngFor="let alignment of  ['start','center','end','space-between','space-around','space-evenly']">
+        <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+          <amexio-layout-item  *ngFor="let item of ['1','2']" >
+            Hor {{alignment}} {{item}}
+          </amexio-layout-item>
+        </amexio-layout-columns>
+      </amexio-layout-item>
+    </amexio-layout-columns>
+  </amexio-layout-item>
+
+</amexio-layout-columns>

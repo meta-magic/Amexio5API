@@ -153,6 +153,12 @@
       path: 'row-demo', loadChildren: './layout/row/row.demo.module#RowDemoModule'
     },
     {
+      path: 'vertical-layout', loadChildren: './layout/verticallayout/verticallayout.demo.module#VerticalLayoutDemoModule'
+    },
+    {
+      path: 'horizontal-layout', loadChildren: './layout/horizontallayout/horizontallayout.demo.module#horizontalLayoutDemoModule'
+    },
+    {
       path: 'basic-tab-demo', loadChildren: './layout/tab/tab.demo.module#TabDemoModule'
     },
     {

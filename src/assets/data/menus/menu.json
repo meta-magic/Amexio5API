@@ -20,6 +20,7 @@
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
             "children": [
+               
                 {
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
@@ -40,6 +41,7 @@
                     "link": "column-demo",
                     "icon": "fa fa-columns fa-fw"
                 },
+                
                 {
                     "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
@@ -56,7 +58,16 @@
                         }
                     ]
                 },
-               
+                {
+                    "text": "Vertical Layout",
+                    "icon": "fa fa-th fa-fw",
+                    "link": "vertical-layout"
+                },
+                {
+                    "text": "Horizontal Layout",
+                    "icon": "fa fa-th fa-fw",
+                    "link": "horizontal-layout"
+                },
                 {
                     "text": "Row",
                     "link": "row-demo",

@@ -1,0 +1,53 @@
+{
+  "name": " Amexio Layouts ",
+  "description": " Amexio column system allows up to 12 columns across the page.",
+  "selector": " <amexio-column>",
+  "properties": [
+    {
+      "name": " border",
+      "description": " border to the layouts ",
+      "version": " 5.4 onwards",
+      "type": " boolean",
+      "default": "true"
+    },
+    {
+      "name": "fit",
+      "description": " Column height 100% ",
+      "version": " 5.4 onwards",
+      "type": " boolean",
+      "default": "true"
+    },
+    {
+      "name": "alignment",
+      "description": " alignment of layouts  (start,center,end, space-between, space-around, space-evenly)",
+      "version": " 5.4 onwards",
+      "type": " string",
+      "default": ""
+    },
+    {
+      "name": "orientation",
+      "description": " orientation to the layouts ( Vertical, horizontal) ",
+      "version": " 5.4 onwards",
+      "type": " string",
+      "default": "horizontal"
+    }
+  ],
+  "propertiesitem": [
+  
+    {
+      "name": "padding",
+      "description": "padding to the layout item",
+      "version": "5.4 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "fit",
+      "description": " Column height 100% ",
+      "version": " 5.4 onwards",
+      "type": " boolean",
+      "default": "true"
+    }
+  ],
+  "events": []
+}

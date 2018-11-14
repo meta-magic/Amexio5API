@@ -32,6 +32,7 @@ import {HttpClient} from "@angular/common/http";
                                       [http-url]="'assets/data/componentdata/country.json'"
                                       [http-method]="'get'"
                                       [field-label]="'Country Name'"
+                                      
                     >
                     </amexio-typeahead>
 
