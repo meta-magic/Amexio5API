@@ -534,7 +534,7 @@
         {
             "text": "Drag and Drop",
             "icon": "fa fa-arrows-alt",
-            "badge": "2",
+            "badge": "1",
             "children": [
                 {
                     "text": "Within Tree",
@@ -556,12 +556,6 @@
                     "icon": "fa fa-exchange fa-fw",
                     "badge": "New",
                     "link": "itemselectordragdrop-demo"
-                },
-                {
-                    "text": "Item Selector to Panel",
-                    "icon": "fa fa-exchange fa-fw",
-                    "badge": "New",
-                    "link": "selectordragdrop-panel"
                 }
             ]
         },
