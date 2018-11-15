@@ -60,12 +60,12 @@
                 },
                 {
                     "text": "Vertical Layout",
-                    "icon": "fa fa-th fa-fw",
+                    "icon": "fa fa-pause fa-fw",
                     "link": "vertical-layout"
                 },
                 {
                     "text": "Horizontal Layout",
-                    "icon": "fa fa-th fa-fw",
+                    "icon": "fa fa-align-justify fa-fw",
                     "link": "horizontal-layout"
                 },
                 {
