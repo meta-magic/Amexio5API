@@ -1,8 +1,8 @@
 /**
  * Created by pratik on 16/1/18.
  */
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'accordion-demo',
@@ -216,6 +216,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
 
+                    <br>
             <amexio-datagrid title="Properties <amexio-accordion-tab>"
             [enable-column-fiter]="false"
             [http-method]="'get'"
@@ -233,8 +234,11 @@ import {HttpClient} from "@angular/common/http";
 <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                        [text]="'Description'"></amexio-data-table-column>
 </amexio-datagrid>
-
-
+<br>
+<amexio-panel border="true">
+                             <amexio-label>amexio-accordion-header is a container, which can contain any amexio component.</amexio-label>
+                    </amexio-panel>
+                    <br>
             <amexio-datagrid title="Events <amexio-accordion-tab>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/layout/accordion/accordion.pane.json'"
@@ -276,11 +280,11 @@ import {HttpClient} from "@angular/common/http";
   `
 })
 
-export class AccordionDemoComponent{
+export class AccordionDemoComponent {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  asyncFlag : boolean;
+  asyncFlag: boolean;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
@@ -296,7 +300,7 @@ export class AccordionDemoComponent{
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/accordion/accordion.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/layout/accordion/accordion.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -304,7 +308,7 @@ export class AccordionDemoComponent{
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/accordion/accordion.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/layout/accordion/accordion.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -317,9 +321,9 @@ export class AccordionDemoComponent{
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 }
