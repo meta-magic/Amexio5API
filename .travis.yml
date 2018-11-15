@@ -33,7 +33,7 @@ script:
   - npm install @angular-devkit/core --save
   - npm i node-sass --save-dev
   - wget  https://github.com/meta-magic/amexio-ios/blob/master/themes.tar.gz
-  - tar -zxvf themes.tar.gz 
+  - tar xvf themes.tar.gz 
   - rm -rf src/assets/themes/*
   - cp -rf themes/* src/assets/themes/
   - npm i https://github.com/meta-magic/amexio-ios/blob/master/amexio-chart-d3.tgz?raw=true
