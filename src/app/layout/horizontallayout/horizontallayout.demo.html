@@ -3,32 +3,33 @@
         horizontal Layouts
     </amexio-header>
     <amexio-body>
+            <p>
+                    A Horizontal layout lays out a container with single column and multiple rows.
+            </p>
         <amexio-tab-view>
             <amexio-tab title="Demo" active="true">
 
-                    <amexio-row>
-                            <amexio-column [size]="4">
-                    <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
-                            <amexio-layout-item style="height:300px;" [fit]="true" *ngFor="let alignment of ['start']">
-        
-                                <b>Alignment is {{alignment}}</b>
-        
-                                <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'vertical'" [alignment]="alignment">
-                                    <amexio-layout-item *ngFor="let item of  ['1','2','3']">
-        
-                                        <amexio-panel [header]="true" [border]="true"  [title]="'Panel'+item" [expanded]="(item === '1') ">
-                                            <amexio-label>
-                                                Panel Content
-                                            </amexio-label>
-                                        </amexio-panel>
-                                    </amexio-layout-item>
-        
-                                </amexio-layout-columns>
-                            </amexio-layout-item>
-                        </amexio-layout-columns>
-                        </amexio-column>
-                        </amexio-row>
+                <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['start']">
 
+                        <b>Alignment is {{alignment}}</b>
+
+                        <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+                            <amexio-layout-item *ngFor="let item of  ['1','2','3']">
+
+                                <amexio-panel [header]="true" [border]="true" [title]="'Panel'+item" [expanded]="true ">
+                                    <amexio-label>
+                                        Panel Content
+                                    </amexio-label>
+                                </amexio-panel>
+                            </amexio-layout-item>
+
+                        </amexio-layout-columns>
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+
+                <br /><br />
+                <hr />
 
                 <amexio-layout-columns [orientation]="'vertical'" [border]="false">
                     <amexio-layout-item [fit]="true" *ngFor="let alignment of ['start','space-between','center']">
@@ -47,73 +48,73 @@
                                 </amexio-card>
                             </amexio-layout-item>
 
-                            </amexio-layout-columns>
+                        </amexio-layout-columns>
                     </amexio-layout-item>
-                    </amexio-layout-columns>
+                </amexio-layout-columns>
 
-                    <br /><br />
-                    <amexio-layout-columns [orientation]="'vertical'" [border]="false">
-                        <amexio-layout-item [fit]="true" *ngFor="let alignment of ['end','space-around','space-evenly']">
+                <br /><br />
+                <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['end','space-around','space-evenly']">
 
-                            <b>Alignment is {{alignment}}</b>
+                        <b>Alignment is {{alignment}}</b>
 
-                            <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
-                                <amexio-layout-item *ngFor="let item of  ['1','2','3']">
+                        <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+                            <amexio-layout-item *ngFor="let item of  ['1','2','3']">
 
-                                    <amexio-card [header]="false">
-                                        <amexio-body>
-                                            <amexio-image [width]="'75px'" path="assets/images/carousel/set1/{{item}}.jpg"></amexio-image>
+                                <amexio-card [header]="false">
+                                    <amexio-body>
+                                        <amexio-image [width]="'75px'" path="assets/images/carousel/set1/{{item}}.jpg"></amexio-image>
 
-                                        </amexio-body>
+                                    </amexio-body>
 
-                                    </amexio-card>
-                                </amexio-layout-item>
-
-                            </amexio-layout-columns>
-                        </amexio-layout-item>
-                    </amexio-layout-columns>
-                    <br /> <br />
-
-                    <b> Demo - Horizontal + Column Layout </b>
-                    <hr />
-                    <div style="height: 300px;">
-
-                        <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="'space-between'">
-                            <amexio-layout-item [padding]="'0px'" [fit]="true">
-                                <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'space-between'">
-                                    <amexio-layout-item *ngFor="let item of ['1','2','3']">
-                                        Vertical item <b>{{item}}</b>
-                                    </amexio-layout-item>
-                                </amexio-layout-columns>
-                            </amexio-layout-item>
-
-                            <amexio-layout-item [padding]="'0px 5px'" [fit]="true">
-                                <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'space-between'">
-                                    <amexio-layout-item *ngFor="let item of ['start','center','end']">
-                                        <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="item">
-                                            <amexio-layout-item *ngFor="let litem of ['1','2']">
-                                                Horizontal <b> {{item}} {{litem}}</b>
-                                            </amexio-layout-item>
-                                        </amexio-layout-columns>
-                                    </amexio-layout-item>
-                                </amexio-layout-columns>
-                            </amexio-layout-item>
-
-                            <amexio-layout-item [padding]="'0px 5px'" [fit]="true">
-                                <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'start'">
-                                    <amexio-layout-item [fit]="true" *ngFor="let alignment of  ['start','center','end','space-between','space-around','space-evenly']">
-                                        <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
-                                            <amexio-layout-item *ngFor="let item of ['1','2']">
-                                                Hor {{alignment}} {{item}}
-                                            </amexio-layout-item>
-                                        </amexio-layout-columns>
-                                    </amexio-layout-item>
-                                </amexio-layout-columns>
+                                </amexio-card>
                             </amexio-layout-item>
 
                         </amexio-layout-columns>
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+                <br /> <br />
 
-                    </div>
+                <b> Demo - Horizontal + Column Layout </b>
+                <hr />
+                <div style="height: 300px;">
+
+                    <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="'space-between'">
+                        <amexio-layout-item [padding]="'0px'" [fit]="true">
+                            <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'space-between'">
+                                <amexio-layout-item *ngFor="let item of ['1','2','3']">
+                                    Vertical item <b>{{item}}</b>
+                                </amexio-layout-item>
+                            </amexio-layout-columns>
+                        </amexio-layout-item>
+
+                        <amexio-layout-item [padding]="'0px 5px'" [fit]="true">
+                            <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'space-between'">
+                                <amexio-layout-item *ngFor="let item of ['start','center','end']">
+                                    <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="item">
+                                        <amexio-layout-item *ngFor="let litem of ['1','2']">
+                                            Horizontal <b> {{item}} {{litem}}</b>
+                                        </amexio-layout-item>
+                                    </amexio-layout-columns>
+                                </amexio-layout-item>
+                            </amexio-layout-columns>
+                        </amexio-layout-item>
+
+                        <amexio-layout-item [padding]="'0px 5px'" [fit]="true">
+                            <amexio-layout-columns [border]="true" [orientation]="'vertical'" [alignment]="'start'">
+                                <amexio-layout-item [fit]="true" *ngFor="let alignment of  ['start','center','end','space-between','space-around','space-evenly']">
+                                    <amexio-layout-columns [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+                                        <amexio-layout-item *ngFor="let item of ['1','2']">
+                                            Hor {{alignment}} {{item}}
+                                        </amexio-layout-item>
+                                    </amexio-layout-columns>
+                                </amexio-layout-item>
+                            </amexio-layout-columns>
+                        </amexio-layout-item>
+
+                    </amexio-layout-columns>
+
+                </div>
 
 
 
@@ -124,8 +125,8 @@
                     [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
                         [text]="'Name'"></amexio-data-table-column>
-                        <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
-                               [text]="'Version'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Version'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                         [text]="'Type'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
@@ -133,24 +134,22 @@
                     <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
                         [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
-<br>
-                <amexio-datagrid title="Properties : <Amexio-layout-item>" [enable-column-fiter]="false"
-                    [http-method]="'get'"
-                    [http-url]="'assets/apireference/layout/verticallayout.json'"
-                    [data-reader]="'propertiesitem'"
+                <br>
+                <amexio-datagrid title="Properties : <Amexio-layout-item>" [enable-column-fiter]="false" [http-method]="'get'"
+                    [http-url]="'assets/apireference/layout/verticallayout.json'" [data-reader]="'propertiesitem'"
                     [enable-data-filter]="false">
-     <amexio-data-table-column [width]="15"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                               [text]="'Name'"></amexio-data-table-column>
-     <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
-                               [text]="'Version'"></amexio-data-table-column>
-     <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                               [text]="'Type'"></amexio-data-table-column>
-     <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                               [text]="'Default'"></amexio-data-table-column>
-     <amexio-data-table-column [width]="35" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                               [text]="'Description'"></amexio-data-table-column>
-   </amexio-datagrid>
-   <br>
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Version'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Type'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Default'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="35" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+                        [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <br>
 
 
             </amexio-tab>
