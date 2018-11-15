@@ -6,6 +6,28 @@
         <amexio-tab-view>
             <amexio-tab title="Demo" active="true">
 
+                    <amexio-row>
+                            <amexio-column [size]="4">
+                    <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
+                            <amexio-layout-item style="height:300px;" [fit]="true" *ngFor="let alignment of ['start']">
+        
+                                <b>Alignment is {{alignment}}</b>
+        
+                                <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'vertical'" [alignment]="alignment">
+                                    <amexio-layout-item *ngFor="let item of  ['1','2','3']">
+        
+                                        <amexio-panel [header]="true" [border]="true"  [title]="'Panel'+item" [expanded]="(item === '1') ">
+                                            <amexio-label>
+                                                Panel Content
+                                            </amexio-label>
+                                        </amexio-panel>
+                                    </amexio-layout-item>
+        
+                                </amexio-layout-columns>
+                            </amexio-layout-item>
+                        </amexio-layout-columns>
+                        </amexio-column>
+                        </amexio-row>
 
 
                 <amexio-layout-columns [orientation]="'vertical'" [border]="false">
