@@ -11,14 +11,14 @@
 
 
                 <amexio-layout-columns [orientation]="'vertical'" [border]="false">
-                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['start','space-between','center']">
+                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['start']">
 
                         <b>Alignment is {{alignment}}</b>
 
                         <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
                             <amexio-layout-item *ngFor="let item of  ['1','2','3']">
 
-                                <amexio-panel [header]="true" [border]="true" [title]="'Panel'+item" [expanded]="(item === '3') ">
+                                <amexio-panel [header]="true" [border]="true" [title]="'Panel'+item" [expanded]="true ">
                                     <amexio-label>
                                         Panel Content
                                     </amexio-label>
