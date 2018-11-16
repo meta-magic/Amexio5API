@@ -5,7 +5,7 @@
   "properties": [
     {
       "name": "header",
-      "description": "User can bind title for accordion tab.",
+      "description": "Header property is work as Title To carousel.",
       "version": "4.0 onwards",
       "type": "string",
       "default": ""

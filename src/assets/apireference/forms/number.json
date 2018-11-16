@@ -106,7 +106,7 @@
         "description": "Flag to set label",
         "version": "4.0 onwards",
         "type": "boolean",
-        "default": "false"
+        "default": "true"
       },
       {
         "name": "pattern",

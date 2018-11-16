@@ -7,216 +7,7 @@ import { HttpClient } from "@angular/common/http";
 
 @Component({
         selector: 'chart-d3-page',
-        template: `
-  <amexio-row>
-  <amexio-column size="12">
-  <amexio-card [header]="false" [show]="'true'">
- 
-  <amexio-body> 
-  <amexio-image [path]="'assets/images/logos/D3_chart_page1.jpg'"[tooltip]="'Image'"></amexio-image>
- 
-<p><b>D3</b> allows you to bind arbitrary data to a Document Object Model (DOM), 
-and then apply data-driven transformations to the document. For example, 
-you can use D3 to generate an HTML table from an array of numbers. 
-Or, use the same data to create an interactive SVG bar chart with smooth transitions 
-and interaction.</p>
-
-<p>D3 is not a monolithic framework that seeks to provide every conceivable feature. 
-Instead, D3 solves the crux of the problem: efficient manipulation of documents
-based on data. This avoids proprietary representation and affords extraordinary
-flexibility, exposing the full capabilities of web standards such as HTML, SVG, and CSS.
-With minimal overhead, D3 is extremely fast, supporting large datasets and dynamic 
-behaviors for interaction and animation. D3’s functional style allows code reuse 
-through a diverse collection of <span style="color: #0000FF"><ins>official</ins></span> and <span style="color: #0000FF"><ins>community-developed</ins></span> modules.</p>
-
-  </amexio-body>
-  </amexio-card>
-  </amexio-column>
-  </amexio-row>
-
-
-          <amexio-row>
-          <amexio-column size="6" [fit]="true">
-                  <amexio-card [header]="true" [show]="'true'">
-                          <amexio-header>
-                                  amexio D3-bar chart
-                          </amexio-header>
-                          <amexio-body>
-                                  <amexio-d3-chart-bar [title]="'Population of Cities in India'" [color]="userDefineColors"
-                                          [data]="userDefineColorData">
-                                  </amexio-d3-chart-bar>
-                          </amexio-body>
-                  </amexio-card>
-          </amexio-column>
-  
-          <amexio-column size="6" [fit]="true">
-                  <amexio-card [header]="true" [show]="'true'">
-                          <amexio-header>
-                                  amexio D3-line chart
-                          </amexio-header>
-                          <amexio-body>
-                          <amexio-d3-chart-line [title]="'Popularity Of XYZ & PQR'" [data]="doubleLineData">
-                          </amexio-d3-chart-line>
-                          </amexio-body>
-                  </amexio-card>
-          </amexio-column>
-  </amexio-row>
-  
-  
-  
-  <amexio-row>
-  
-          <amexio-column size="6" [fit]="true">
-                  <amexio-card [header]="true" [show]="'true'">
-                          <amexio-header>
-                                  amexio D3-donut chart
-                          </amexio-header>
-                          <amexio-body>
-                          <amexio-d3-chart-donut [title]="'Visiter Visit Browse Ratio'" [color]="donutDataColor"
-                          [data]="donutData">
-                  </amexio-d3-chart-donut>
-                          </amexio-body>
-                  </amexio-card>
-          </amexio-column>
-
-          <amexio-column size="6" [fit]="true">
-          <amexio-card [header]="true" [show]="'true'">
-                  <amexio-header>
-                          amexio D3-pie chart
-                  </amexio-header>
-                  <amexio-body>
-                          <amexio-d3-chart-pie [title]="'Visiter Visit Country Ratio'" [color]="donutDataColor"
-                                  [data]="pieData">
-                          </amexio-d3-chart-pie>
-                  </amexio-body>
-          </amexio-card>
-  </amexio-column>
-  </amexio-row>
-
-  <amexio-row>
-  <amexio-column size="6" [fit]="true">
-  <amexio-card [header]="true" [show]="'true'">
-                                    <amexio-header>
-                                        Amexio D3-multiseries Chart
-                                    </amexio-header>
-                                    <amexio-body>
-                                        <amexio-d3-chart-multiseries   [data]="stackData" >
-                                       </amexio-d3-chart-multiseries>
-                                  </amexio-body>
-                                </amexio-card>
- </amexio-column>
-
-<amexio-column size="6" [fit]="true">
-<amexio-card [header]="true" [show]="'true'">
-        <amexio-header>
-                amexio D3-Stack Bar chart
-        </amexio-header>
-        <amexio-body>
-        <amexio-d3-chart-barstack 
-        [data]="stackData">
-        </amexio-d3-chart-barstack> 
-
-        </amexio-body>
-</amexio-card>
-</amexio-column>
-  </amexio-row>
-<amexio-row>
-  
-          <amexio-column size="6" [fit]="true">
-                  <amexio-card [header]="true" [show]="'true'">
-                          <amexio-header>
-                                  amexio D3-Horizontal bar chart
-                          </amexio-header>
-                          <amexio-body>
-                          <amexio-d3-chart-bar 
-                          [horizontal]="true" 
-                          [data]="horizontalBarData">
-                   </amexio-d3-chart-bar>
-                          </amexio-body>
-                  </amexio-card>
-          </amexio-column>
-
-          <amexio-column size="6" [fit]="true">
-          <amexio-card [header]="true" [show]="'true'">
-                  <amexio-header>
-                          amexio D3-Combo Chart
-                  </amexio-header>
-                  <amexio-body>
-                          <amexio-d3-combochart
-                                [data]="comboChartData"
-                                [line-data-index]="'Rice Export'">
-                         </amexio-d3-combochart>
-                  </amexio-body>
-          </amexio-card>
-  </amexio-column>
-  </amexio-row>
-
-  <amexio-row>
-  
-          <amexio-column size="6" [fit]="true">
-                  <amexio-card [header]="true" [show]="'true'">
-                          <amexio-header>
-                                  amexio D3-Multi-Area chart
-                          </amexio-header>
-                          <amexio-body>
-                          <amexio-d3-chart-multiarea [data]="multiAreaData" [title]="'Stock Market Information'">
-                      </amexio-d3-chart-multiarea>
-                          </amexio-body>
-                  </amexio-card>
-          </amexio-column>
-
-  <amexio-column size="6" [fit]="true">
-  <amexio-card [header]="true" [show]="'true'">
-          <amexio-header>
-                  amexio D3-Scatter chart
-          </amexio-header>
-          <amexio-body>
-          <amexio-d3-chart-scatter
-          [title]="'Age vs Weight'"
-          [data]="scatterChartData" 
-          [color]="'green'">
-      </amexio-d3-chart-scatter>
-          </amexio-body>
-  </amexio-card>
-</amexio-column>
-  </amexio-row>
-
-  <amexio-row>
-  <amexio-column size="6" [fit]="true">
-  <amexio-card [header]="true" [show]="'true'">
-          <amexio-header>
-                  amexio D3-Histogram chart
-          </amexio-header>
-          <amexio-body>
-          <amexio-d3-chart-histogram
-                                                       [title]="'Histogram Chart '" 
-                                                       [data]="histogramdata"
-                                                       [color]="'blue'"
-                                                 ></amexio-d3-chart-histogram> 
-          </amexio-body>
-  </amexio-card>
-</amexio-column>
-
-<amexio-column size="6" [fit]="true">
-<amexio-card [header]="true" [show]="'true'">
-<amexio-header>
-        amexio D3-Histogram chart
-</amexio-header>
-<amexio-body>
-<amexio-d3-chart-waterfall 
-[title]="'Product Information'" 
-[data]="waterfallChartData">
-</amexio-d3-chart-waterfall>
- 
-</amexio-body>
-</amexio-card>
-</amexio-column>
-  </amexio-row>
-  
-
-
-
-  `
+       templateUrl: './chartd3.demo.html',
 })
 export class ChartD3Demo implements OnInit {
         htmlCode: string;
@@ -237,6 +28,9 @@ export class ChartD3Demo implements OnInit {
         scatterChartData: any;
         histogramdata: any;
         waterfallChartData: any;
+        bubblechart:any;
+        userDataSource: any;
+      
 
         constructor(private http: HttpClient) {
 
@@ -295,6 +89,20 @@ export class ChartD3Demo implements OnInit {
                                 ['Jaipur', 30461],
                                 ['Ranchi', 84436]
                         ]
+
+                this.bubblechart=   [
+                        ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
+                        ['CAN',    80.66,              1.67,      'North America',  33739900],
+                        ['DEU',    79.84,              1.36,      'Europe',         81902307],
+                        ['DNK',    78.6,               1.84,      'Europe',         5523095],
+                        ['EGY',    72.73,              2.78,      'Middle East',    79716203],
+                        ['GBR',    80.05,              2,         'Europe',         61801570],
+                        ['IRN',    72.49,              1.7,       'Middle East',    73137148],
+                        ['IRQ',    68.09,              4.77,      'Middle East',    31090763],
+                        ['ISR',    81.55,              2.96,      'Middle East',    7485600],
+                        ['RUS',    68.6,               1.54,      'Europe',         141850000],
+                        ['USA',    78.09,              2.05,      'North America',  307007000]
+                      ];        
         }
         ngOnInit() {
 

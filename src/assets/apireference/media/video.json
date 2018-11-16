@@ -10,13 +10,7 @@
       "type": "any",
       "default": ""
     },
-    {
-      "name": "extension",
-      "description": "Video extension",
-      "version": "4.0 onwards",
-      "type": "any",
-      "default": ""
-    },
+    
     {
       "name": "width",
       "description": "Width of the video player window",

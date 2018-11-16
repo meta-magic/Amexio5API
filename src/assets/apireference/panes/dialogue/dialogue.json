@@ -23,13 +23,6 @@
       "description" : "Different Sizes of Buttons availabe : large, default, small & xsmall"
     },
     {
-      "name": "content-align",
-      "description": "Alignment of  contents to right or left or center.",
-      "version": "4.0 onwards",
-      "type": "string",
-      "default": "center"
-    },
-    {
       "name": "close-on-escape",
       "description": "Dialogue box closes on click of Escape Key.",
       "version": "4.2 onwards",
@@ -88,9 +81,9 @@
     },
     {
       "name": "type",
-      "description": "Mode to open, alert or dialogue mode.",
+      "description": "Confirm and Alert are two alert type of dialogue, by using (ALERT/CONFIRM) user give (alert/confirm) message.",
       "version": "4.0 onwards",
-      "type": "'confirm'| 'alert'",
+      "type": "'string'",
       "default": "confirm"
     },
     {
@@ -98,7 +91,7 @@
       "description": "Label to be displayed for primary action.",
       "version": "4.0 onwards",
       "type": "'string",
-      "default": "default"
+      "default": "ok"
     },
     {
       "name": "secondary-action-label",

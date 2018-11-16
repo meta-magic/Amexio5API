@@ -54,7 +54,7 @@ import {Http} from "@angular/http";
                      [text]="'Description'"></amexio-data-table-column>
 </amexio-datagrid>
 <br>
-            <amexio-datagrid title="Vertical Tab Properties <amexio-vertical-tab-view >" [enable-column-fiter]="false"
+            <amexio-datagrid title="Right Align Vertical Tab Properties <amexio-right-vertical-tab-view >" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/layout/tab/vertical-tab/right-vertical.json'"
                              [data-reader]="'properties'"

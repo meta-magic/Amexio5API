@@ -86,7 +86,7 @@
     }, {
       "name": "has-label",
       "type": "boolean",
-      "default": "false",
+      "default": "True",
       "description":"Hide/unhide field label"
     },{
       "name": "enable-popover",

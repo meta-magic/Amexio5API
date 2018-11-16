@@ -19,7 +19,7 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
-            "badge": "3",
+            "badge": "4",
             "children": [
                
                 {
@@ -72,6 +72,13 @@
                     "badge": "New",
                     "link": "horizontal-layout"
                 },
+  {   
+                    "text": "Grid Layout",
+                    "icon": "fa fa-th fa-fw",
+                    "badge": "New",
+                    "link": "gridlayout-demo"
+
+                },
                 {
                     "text": "Row",
                     "link": "row-demo",
@@ -82,7 +89,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "1",
+            "badge": "2",
             "children": [
                 {
                     "text": "Carousel",
@@ -107,6 +114,7 @@
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
+                    "badge": "U",
                     "link": "panel"
                 },
                 {
@@ -607,7 +615,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars fa-fw",
-           "badge":"1",
+           "badge":"2",
             "children": [
                 {
                     "text": "Breadcrumb",
@@ -642,8 +650,9 @@
                     "link": "sidenav-demo"
                 },
                 {
-                    "text": "Advanced Side Nav Bar",
+                    "text": " Side Panel",
                     "icon": "fa fa-bars fa-fw",
+                    "badge": "New",
                     "link": "sidenav-page"
                 },
                 {

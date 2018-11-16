@@ -92,7 +92,7 @@
       "description": "flag to set label",
       "version": "4.0 onwards",
       "type": "boolean",
-      "default": "false"
+      "default": "True"
     },
     {
       "name": "key",

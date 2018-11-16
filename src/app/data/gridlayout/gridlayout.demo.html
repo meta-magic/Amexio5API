@@ -1,0 +1,89 @@
+<amexio-card header="true">
+    <amexio-header>
+        Grid Layout
+    </amexio-header>
+    <amexio-body>
+        <p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to layout major page areas or
+            small user interface elements.</p>
+        <amexio-tab-view>
+            <amexio-tab title="Demo" active="true">
+                <amexio-row>
+                    <amexio-column size="12">
+                        <amexio-card [header]="true">
+                            <amexio-header>
+                                Grid Layout
+                            </amexio-header>
+                            <amexio-body>
+                                <amexio-grid-component [layout]="'home'">
+                                    <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
+                                </amexio-grid-component>
+                            </amexio-body>
+                        </amexio-card>
+                        <amexio-card [header]="true">
+                            <amexio-header>
+                                Grid Layout
+                            </amexio-header>
+                            <amexio-body>
+                                <amexio-grid-component [layout]="'login'">
+                                    <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
+                                    <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
+                                </amexio-grid-component>
+                            </amexio-body>
+                        </amexio-card>
+                    </amexio-column>
+                </amexio-row>
+            </amexio-tab>
+            <amexio-tab title="API Reference">
+                <amexio-datagrid title="Properties<amexio-grid-component>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
+                    [data-reader]="'properties'" [enable-data-filter]="false">
+                    <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Version'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <amexio-datagrid title="Properties<amexio-grid-item>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
+                    [data-reader]="'childproperties'" [enable-data-filter]="false">
+                    <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Version'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+            </amexio-tab>
+            <amexio-tab title="Source">
+                <div style="overflow-y: scroll">
+                    <amexio-vertical-tab-view>
+                        <amexio-tab title="HTML" [active]="true">
+                            <ng-container *ngIf="htmlCode">
+                                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
+                                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+                            </ng-container>
+                        </amexio-tab>
+                        <amexio-tab title="Type Script">
+                            <ng-container *ngIf="typeScriptCode">
+                                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+                            </ng-container>
+                        </amexio-tab>
+
+                    </amexio-vertical-tab-view>
+                </div>
+            </amexio-tab>
+            <amexio-tab title="Live">
+                <p align="center">Amexio Sandbox</p>
+                Work in Progress
+            </amexio-tab>
+        </amexio-tab-view>
+    </amexio-body>
+</amexio-card>

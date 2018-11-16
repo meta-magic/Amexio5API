@@ -4,6 +4,13 @@
   "selector": "<amexio-dropdown>",
   "properties": [
     {
+      "name": "place-holder",
+      "description": "Show place-holder inside dropdown component",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
       "name": "field-label",
       "description": "The label of this field",
       "version": "4.0 onwards",
