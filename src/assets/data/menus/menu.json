@@ -19,6 +19,7 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
+            "badge": "3",
             "children": [
                
                 {
@@ -29,6 +30,7 @@
                 {
                     "text": "Border Layout",
                     "icon": "fa fa-id-card-o fa-fw",
+                    "badge": "U",
                     "link": "border"
                 },
                 {
@@ -61,11 +63,13 @@
                 {
                     "text": "Vertical Layout",
                     "icon": "fa fa-pause fa-fw",
+                    "badge": "New",
                     "link": "vertical-layout"
                 },
                 {
                     "text": "Horizontal Layout",
                     "icon": "fa fa-align-justify fa-fw",
+                    "badge": "New",
                     "link": "horizontal-layout"
                 },
                 {
@@ -688,12 +692,12 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
-            "badge": "4",
+            "badge": "5",
             "children": [
                 {
                     "text": "D3 Charts",
                     "icon": "fa fa-openid fa-fw",
-                    "badge": "New",
+                    "badge": "5",
                     "children": [
                         {
                             "text": "Bar Chart",
