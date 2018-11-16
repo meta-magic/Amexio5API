@@ -18,13 +18,6 @@
       "default": "true"
     },
     {
-      "name": "border",
-      "description": "Provides the border for panel if true",
-      "version": "5.4 onwards",
-      "type": "boolean",
-      "default": "false"
-    },
-    {
       "name": "expanded",
       "description": "Pane will expand or collapse based on the boolean.",
       "version": "4.0 onwards",

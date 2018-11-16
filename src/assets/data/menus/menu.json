@@ -19,7 +19,7 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
-            "badge": "3",
+            "badge": "1",
             "children": [
                
                 {
@@ -60,18 +60,7 @@
                         }
                     ]
                 },
-                {
-                    "text": "Vertical Layout",
-                    "icon": "fa fa-pause fa-fw",
-                    "badge": "New",
-                    "link": "vertical-layout"
-                },
-                {
-                    "text": "Horizontal Layout",
-                    "icon": "fa fa-align-justify fa-fw",
-                    "badge": "New",
-                    "link": "horizontal-layout"
-                },
+               
                 {
                     "text": "Row",
                     "link": "row-demo",
@@ -104,7 +93,7 @@
                     "icon": "fa fa-id-card-o fa-fw",
                     "link": "fieldset"
                 },
-                {
+                {   
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
                     "link": "panel"
@@ -199,7 +188,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "3",
+            "badge": "2",
             "children": [
                 {
                     "text": "Checkbox",
@@ -211,12 +200,7 @@
                     "icon": "fa fa-list fa-fw",
                     "link": "checkboxgroup-demo"
                 },
-                {
-                    "text": "Chips",
-                    "icon": "fa fa-chevron-circle-down fa-fw",
-                    "link": "chips-demo",
-                    "badge":"New"
-                },
+               
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card",
