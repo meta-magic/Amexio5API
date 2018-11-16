@@ -8,7 +8,7 @@
       "description": "Set value true for collapsible fieldset.",
       "version": "4.0 onwards",
       "type": "boolean",
-      "default": "true"
+      "default": "false"
     },
     {
       "name": "title",

@@ -1,6 +1,6 @@
 <!-- DEMO 1  -->
 <!--Simple panel-->
-<amexio-panel [header]="true" [title]="'Panel'" [expanded]="true">
+<amexio-panel  [header]="true" [title]="'Panel'" [expanded]="true">
   <amexio-label>
     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
     text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -12,7 +12,7 @@
 
 <!--Custom  header panel-->
 
-<amexio-panel [header]="true" [title]="'Custom Header'" [expanded]="true">
+<amexio-panel [border]="true" [header]="true" [title]="'Custom Header'" [expanded]="true">
   <amexio-header>
     <amexio-image [icon-class]="'fa fa-refresh fa-fw'">
   </amexio-header>
@@ -30,7 +30,7 @@
 
 <!--panel without header-->
 
-<amexio-panel [header]="false" [height]="800" expanded="true">
+<amexio-panel [border]="true" [header]="false" [height]="800" expanded="true">
   <amexio-header>
     Custom Header
   </amexio-header>
@@ -49,7 +49,7 @@
 
 <!--Custom  header panel-->
 
-<amexio-panel [header]="true" [title]="'Custom Header'" [expanded]="true" [context-menu]="rightclickdata">
+<amexio-panel [border]="true" [header]="true" [title]="'Custom Header'" [expanded]="true" [context-menu]="rightclickdata">
   <amexio-header>
     <amexio-image [icon-class]="'fa fa-refresh fa-fw'">
   </amexio-header>
@@ -69,7 +69,7 @@
 
 <!-- Custom header with Toolbar within panel-header -->
 
-<amexio-panel [header]="true" title="Custom Header" expanded="true">
+<amexio-panel [border]="true" [header]="true" title="Custom Header" expanded="true">
   <amexio-panel-header>
       <amexio-label size="small" font-color="white">
           My Drive

@@ -25,6 +25,13 @@
       "default": "false"
     },
     {
+      "name": "border",
+      "description": "Provides the border for panel if true",
+      "version": "5.4 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
       "name": "height",
       "description": "Height of panel must be in px ex.100, 250..",
       "version": "4.0 onwards",
