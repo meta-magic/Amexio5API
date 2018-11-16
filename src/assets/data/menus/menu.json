@@ -625,11 +625,7 @@
                     "icon": "fa fa-bars fa-fw",
                     "link": "sidenav-demo"
                 },
-                {
-                    "text": "Advanced Side Nav Bar",
-                    "icon": "fa fa-bars fa-fw",
-                    "link": "sidenav-page"
-                },
+              
                 {
                     "text": "Tool Bar",
                     "icon": "fa fa-bars fa-fw",
