@@ -14,13 +14,13 @@
                                 Grid Layout
                             </amexio-header>
                             <amexio-body>
-                                <amexio-grid-component [layout]="'Layout1'">
+                                <amexio-layout-grid [layout]="'Layout1'">
                                     <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
-                                </amexio-grid-component>
+                                </amexio-layout-grid>
                             </amexio-body>
                         </amexio-card>
                         <amexio-card [header]="true">
@@ -28,13 +28,13 @@
                                 Grid Layout
                             </amexio-header>
                             <amexio-body>
-                                <amexio-grid-component [layout]="'Layout2'">
+                                <amexio-layout-grid [layout]="'Layout2'">
                                     <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
                                     <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
-                                </amexio-grid-component>
+                                </amexio-layout-grid>
                             </amexio-body>
                         </amexio-card>
                         <amexio-card [header]="true">
@@ -42,7 +42,7 @@
                                 Grid Layout
                             </amexio-header>
                             <amexio-body>
-                                <amexio-grid-component [layout]="'Home'">
+                                <amexio-layout-grid [layout]="'Home'">
                                     <amexio-grid-item  [name]="'gridheader'">
                                         <amexio-button [label]="'Home'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
                                         </amexio-button>&nbsp;&nbsp;
@@ -169,14 +169,14 @@
                                         
                                         
                                         </amexio-grid-item>
-                                </amexio-grid-component>
+                                </amexio-layout-grid>
                             </amexio-body>
                         </amexio-card>
                     </amexio-column>
                 </amexio-row>
             </amexio-tab>
             <amexio-tab title="API Reference">
-                <amexio-datagrid title="Properties<amexio-grid-component>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
+                <amexio-datagrid title="Properties<amexio-layout-grid>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
                     [data-reader]="'properties'" [enable-data-filter]="false">
                     <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
                     </amexio-data-table-column>
