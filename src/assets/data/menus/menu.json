@@ -60,7 +60,12 @@
                         }
                     ]
                 },
-               
+                {   
+                    "text": "Grid Layout",
+                    "icon": "fa fa-pause fa-fw",
+                    "link": "gridlayout-demo"
+
+                },
                 {
                     "text": "Row",
                     "link": "row-demo",

@@ -1,10 +1,10 @@
 {
   "properties": [
     {
-      "name": "data",
-      "type": "array",
-      "default": "",
-      "description":"It is a 2D array",
+      "name": "layout",
+      "type": "string",
+      "default": "desktop",
+      "description":"It is name of layout to be plotted",
       "version": "5.4 onwards"
     }
   ],
