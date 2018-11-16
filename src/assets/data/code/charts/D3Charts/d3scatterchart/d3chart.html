@@ -8,3 +8,14 @@
         (onLegendClick)="onLegendClick($event)"
         [color]="'green'" >
  </amexio-d3-chart-scatter>
+
+ <!-- D3-scatter chart with Multiple Scatter Points -->
+ <amexio-d3-chart-scatter 
+        [width]="400"
+        [data]="mineralScatterChartData" 
+        [height]="400" 
+        [title]="'Minerals'"
+        [vertical-scale]="false"
+        (onChartClick)="onChartClick1($event)"
+        (onLegendClick)="onLegendClick1($event)">
+</amexio-d3-chart-scatter>
