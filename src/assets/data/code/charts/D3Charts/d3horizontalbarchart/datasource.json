@@ -1,0 +1,13 @@
+
+Sample Data for Horizontal Bar chart:
+  Note: First record i.e year is plotted on y-axis and production will get plotted on y-axis.
+[
+        ['year', 'production'],
+        ['2011', 300],
+        ['2012', 500],
+        ['2013', 700],
+        ['2014', 400],
+        ['2015', 600],
+        ['2016', 500],
+        ['2017', 200]
+];

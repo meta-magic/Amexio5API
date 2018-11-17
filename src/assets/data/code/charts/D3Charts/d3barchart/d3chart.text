@@ -9,8 +9,7 @@ export class AmexioD3BarChartDemoComponent
   sourceData: any;
   userDataSource: any;
   barChartWithColorData: any;
-  barData: any;
-  sourceData1: any;
+    
 
   constructor() { 
 
@@ -47,18 +46,7 @@ export class AmexioD3BarChartDemoComponent
       ['Ranchi', 84436]
     ];
 
-       this.barData = 
-      [
-        ['year', 'production'],
-        ['2011', 300],
-        ['2012', 500],
-        ['2013', 700],
-        ['2014', 400],
-        ['2015', 600],
-        ['2016', 500],
-        ['2017', 200]
-      ];
-
+      
    }
   
   onDefaultLegendClick(event: any) {
@@ -72,14 +60,6 @@ export class AmexioD3BarChartDemoComponent
   onDefaultChartClick(event: any) {
     this.userDataSource = event;
   }
-
-   onDefaultChartClick2(event: any) {
-    this.sourceData1 = event;
-   }
- 
-     onDefaultLegendClick1(event: any) {
-    this.sourceData1 = event;
-   }
 
 }
 
