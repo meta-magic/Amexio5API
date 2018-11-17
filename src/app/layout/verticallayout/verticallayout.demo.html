@@ -17,7 +17,7 @@
                         <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'vertical'" [alignment]="alignment">
                             <amexio-layout-item *ngFor="let item of  ['1','2','3']">
 
-                                <amexio-panel [header]="true" [border]="false" [title]="'Panel'+item" [expanded]="(item === '1') ">
+                                <amexio-panel [fit]="false" [header]="true" [border]="false" [title]="'Panel'+item" [expanded]="(item === '1') ">
                                     <amexio-label>
                                         Panel Content
                                     </amexio-label>
