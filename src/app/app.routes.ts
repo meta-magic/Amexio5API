@@ -417,6 +417,9 @@
 
     {
       path: 'amexio-d3-chart-bar', loadChildren: './charts/D3charts/d3barchart/d3barchart.demo.module#D3BarChartDemoModule'
+    },
+    {
+      path: 'amexio-d3-chart-horizontal', loadChildren: './charts/D3charts/d3horizontalbarchart/d3horizontalbarchart.demo.module#D3HorizontalBarChartComponentModule'
     }, 
     {
       path: 'amexio-d3-chart-bubble', loadChildren: './charts/D3charts/d3bubblechart/d3bubblechart.demo.module#D3BubbleChartDemoModule'
