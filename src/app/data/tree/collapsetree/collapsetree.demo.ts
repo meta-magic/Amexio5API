@@ -22,8 +22,8 @@ import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
                             <amexio-header style="width:100%">
                             <amexio-toolbar>
                             <amexio-toolbar-item position-left >
-                            <i [attr.class]="text" 
-                            (click)="expandAlldata(id)"></i>
+                            <amexio-image [ngClass]="text" (click)="expandAlldata(id)">
+                                 </amexio-image>
                             </amexio-toolbar-item>
                             <amexio-toolbar-item position-left >
                              <label style="margin-top: 0px; font-size: 18px">
