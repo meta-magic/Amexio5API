@@ -362,7 +362,13 @@
     },
     // Grid Layout
     {
-      path: 'gridlayout-demo', loadChildren: './data/gridlayout/gridlayout.demo.module#GridLayoutDemoModule'
+      path: 'gridlayout-demo', loadChildren: './layout/gridlayout/gridlayoutbasic/gridlayout.demo.module#GridLayoutDemoModule'
+    },
+    {
+      path: 'gridlayout-demo-exp1', loadChildren: './layout/gridlayout/gridlayoutone/gridlayout.demo.module#GridLayoutDemoModule'
+    }, 
+    {
+      path: 'gridlayout-demo-exp2', loadChildren: './layout/gridlayout/gridlayouttwo/gridlayout.demo.module#GridLayoutDemoModule'
     },
     /*Drag and Drop*/
     {

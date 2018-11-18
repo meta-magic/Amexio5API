@@ -3,7 +3,7 @@ import {RouterModule} from "@angular/router";
 import {AmexioWidgetModule,AmexioChartsModule, AmexioDashBoardModule, AmexioGridLayoutService} from "amexio-ng-extensions";
 import {FormsModule} from "@angular/forms";
 import {CommonModule} from "@angular/common";
-import {SharedModule} from "../../shared.module";
+import {SharedModule} from "../../../shared.module";
 import {GridLayoutDemo} from "./gridlayout.demo";
 import {HttpClientModule} from "@angular/common/http";
 
