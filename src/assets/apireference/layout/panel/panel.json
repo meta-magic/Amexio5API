@@ -32,6 +32,13 @@
       "default": "false"
     },
     {
+      "name": "collapsible",
+      "description": "Provides the collapse property, if true",
+      "version": "5.4 onwards",
+      "type": "boolean",
+      "default": "true"
+    },
+    {
       "name": "height",
       "description": "Height of panel must be in px ex.100, 250..",
       "version": "4.0 onwards",
