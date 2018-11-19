@@ -26,16 +26,17 @@ export class GridLayoutDemo {
     this._gridlayoutService.createLayout('Layout1','desktop')
     .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright"])
-    .addlayout(["gridleft", "gridmenu2", "gridmenu2", "gridright"])
-    .addlayout(["gridleft", "gridmenu3", "gridmenu4", "gridright"])
-    .addlayout(["gridleft", "gridmenu5", "gridmenu5", "gridright"]);
+    .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright"])
+    .addlayout(["gridleft", "gridmenu2", "gridmenu3", "gridright"])
+    .addlayout(["gridleft", "gridmenu4", "gridmenu4", "gridright"]);
 
     this._gridlayoutService.createLayout('Layout1','tab')
     .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
-    .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright"])
-    .addlayout(["gridleft", "gridmenu2", "gridmenu2", "gridright"])
-    .addlayout(["gridleft", "gridmenu3", "gridmenu3", "gridmenu4"])
-    .addlayout(["gridleft", "gridmenu5", "gridmenu5", "gridmenu5"]);
+    .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridmenu1"])
+    .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridmenu1"])
+    .addlayout(["gridright", "gridmenu2", "gridmenu2", "gridmenu2"])
+    .addlayout(["gridright", "gridmenu3", "gridmenu3", "gridmenu3"])
+    .addlayout(["gridright", "gridmenu4", "gridmenu4", "gridmenu4"]);
 
     this._gridlayoutService.createLayout('Layout1','mobile')
    .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
@@ -43,7 +44,6 @@ export class GridLayoutDemo {
     .addlayout(["gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2"])
     .addlayout(["gridmenu3", "gridmenu3", "gridmenu3", "gridmenu3"])
     .addlayout(["gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"])
-    .addlayout(["gridmenu5", "gridmenu5", "gridmenu5", "gridmenu5"])
     .addlayout(["gridleft", "gridleft", "gridleft", "gridleft"])
     .addlayout(["gridright", "gridright", "gridright", "gridright"]);
 

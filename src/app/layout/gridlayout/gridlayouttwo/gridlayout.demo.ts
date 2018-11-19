@@ -25,13 +25,13 @@ export class GridLayoutDemo {
   constructor(private http: HttpClient,private _gridlayoutService : AmexioGridLayoutService) {
     this._gridlayoutService.createLayout('Layout1','desktop')
     .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
-    .addlayout(["gridheader1", "gridheader2", "gridheader2", "gridheader2"])
+    .addlayout(["gridheader1", "gridheader1", "gridheader2", "gridheader2"])
     .addlayout(["gridleft", "gridmain", "gridmain", "gridright"])
     .addlayout(["gridleft", "gridfooter1", "gridfooter", "gridfooter"]);
 
     this._gridlayoutService.createLayout('Layout1','tab')
     .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
-    .addlayout(["gridheader1", "gridheader2", "gridheader2", "gridheader2"])
+    .addlayout(["gridheader1", "gridheader1", "gridheader2", "gridheader2"])
     .addlayout(["gridmain", "gridmain", "gridmain", "gridright"])
     .addlayout(["gridfooter1", "gridfooter", "gridfooter", "gridfooter"])
     .addlayout(["gridleft", "gridleft", "gridleft", "gridleft"]);
