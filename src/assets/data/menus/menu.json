@@ -500,7 +500,6 @@
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
-                    "link": "tree",
                     "badge":"2",
                     "children": [
                         {

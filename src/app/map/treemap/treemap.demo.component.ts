@@ -18,6 +18,10 @@ import {HttpClient} from "@angular/common/http";
              <amexio-column size="12">
                <amexio-map-treemap [title]="'tree'" [height]="'500px'" [width]="'100%'" [data]="treeMapData"
                                    [max-color]="'#0d0'" [mid-color]="'#ddd'" [min-color]="'#f00'" [max-post-depth]="2" [show-scale]="true">
+
+                                   <amexio-map-title 
+                                   [title]="'TreeMapDemo'">
+                                   </amexio-map-title>
                </amexio-map-treemap>
              </amexio-column>
            </amexio-row>
@@ -38,7 +42,8 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Map Title Properties<amexio-map-treemap>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Map Title Properties<amexio-map-title
+            >" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/map/treemap.json'"
                              [data-reader]="'chartTitle'"
