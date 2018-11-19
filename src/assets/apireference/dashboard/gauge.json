@@ -35,11 +35,6 @@
       "type": "number",
       "default": "",
       "description":"The highest value for a range marked by a yellow color."
-    },{
-      "name": "scale-value",
-      "type": "number",
-      "default": "",
-      "description":"The number of minor tick section in each major tick section."
     }
   ]
 }

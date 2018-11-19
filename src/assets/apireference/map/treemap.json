@@ -61,11 +61,6 @@
       "default": "",
       "description": "Font name of chart title."
     },  {
-      "name": "font-size",
-      "type": "number",
-      "default": "",
-      "description": "Font size of chart title."
-    },  {
       "name": "bold",
       "type": "boolean",
       "default": "false",
