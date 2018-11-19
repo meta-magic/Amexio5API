@@ -24,20 +24,20 @@ export class GridLayoutDemo {
 
   constructor(private http: HttpClient,private _gridlayoutService : AmexioGridLayoutService) {
     this._gridlayoutService.createLayout('Layout1','desktop')
-    .addlayout([".", "gridheader", "gridheader", "."])
+    .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridheader1", "gridheader2", "gridheader2", "gridheader2"])
     .addlayout(["gridleft", "gridmain", "gridmain", "gridright"])
     .addlayout(["gridleft", "gridfooter1", "gridfooter", "gridfooter"]);
 
     this._gridlayoutService.createLayout('Layout1','tab')
-    .addlayout([".", "gridheader", "gridheader", "."])
+    .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridheader1", "gridheader2", "gridheader2", "gridheader2"])
     .addlayout(["gridmain", "gridmain", "gridmain", "gridright"])
     .addlayout(["gridfooter1", "gridfooter", "gridfooter", "gridfooter"])
     .addlayout(["gridleft", "gridleft", "gridleft", "gridleft"]);
 
     this._gridlayoutService.createLayout('Layout1','mobile')
-    .addlayout([".", "gridheader", "gridheader", "."])
+    .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
     .addlayout(["gridheader2", "gridheader2", "gridheader2", "gridheader2"])
     .addlayout(["gridright", "gridright", "gridright", "gridright"])
@@ -46,43 +46,7 @@ export class GridLayoutDemo {
     .addlayout(["gridleft", "gridleft", "gridleft", "gridleft"]);
 
     
-    this._gridlayoutService.createLayout('Layout2','desktop')
-    .addlayout(["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"])
-    .addlayout(["gridmenu", "gridmenu", "gridmain", "gridmain", "gridright", "gridright"])
-    .addlayout(["gridmenu", "gridmenu", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
-    this._gridlayoutService.createLayout('Layout2','mobile')
-    .addlayout(["gridheader", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"])
-    .addlayout(["gridmenu", "gridmenu", "gridmenu", "gridmenu", "gridmenu", "gridmenu"])
-    .addlayout(["gridmain", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"])
-    .addlayout(["gridright", "gridright", "gridright", "gridright", "gridright", "gridright"])
-    .addlayout(["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
-    this._gridlayoutService.createLayout('Layout2','tab')
-    .addlayout(["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"])
-    .addlayout(["gridmenu", "gridmenu", "gridmain", "gridmain", "gridmain", "gridmain"])
-    .addlayout(["gridmenu", "gridmenu", "gridright", "gridright", "gridright", "gridright"])
-    .addlayout(["gridmenu", "gridmenu", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
-
-    this._gridlayoutService.createLayout('Home','desktop')
-    .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4", "gridheader5", "gridheader6"])
-    .addlayout(["gridtitle", "gridtitle", "gridmain", "gridmain", "gridright1", "gridright1"])
-    .addlayout(["gridmenu", "gridmenu", "gridmain", "gridmain", "gridright2", "gridright2"])
-    .addlayout(["gridmenu", "gridmenu", "gridmain", "gridmain", "gridright3", "gridright3"]);
-    this._gridlayoutService.createLayout('Home','mobile')
-    .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4", "gridheader5", "gridheader6"])
-    .addlayout(["gridmain", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"])
-    .addlayout(["gridtitle", "gridtitle", "gridtitle", "gridtitle", "gridtitle", "gridtitle"])
-    .addlayout(["gridmenu", "gridmenu", "gridmenu", "gridmenu", "gridmenu", "gridmenu"])
-    .addlayout(["gridright1", "gridright1", "gridright1", "gridright1", "gridright1", "gridright1"])
-    .addlayout(["gridright2", "gridright2", "gridright2", "gridright2", "gridright2", "gridright2"])
-    .addlayout(["gridright3", "gridright3", "gridright3", "gridright3", "gridright3", "gridright3"]);
-    this._gridlayoutService.createLayout('Home','tab')
-    .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4", "gridheader5", "gridheader6"])
-    .addlayout(["gridmain", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"])
-    .addlayout(["gridtitle", "gridtitle", "gridtitle", "gridright1", "gridright1", "gridright1"])
-    .addlayout(["gridmenu", "gridmenu", "gridmenu", "gridright2", "gridright2", "gridright2"])
-    .addlayout(["gridright3", "gridright3", "gridright3", "gridright3", "gridright3", "gridright3"]);
-
-    this.getHtmlAndTypeScriptCode();
+        this.getHtmlAndTypeScriptCode();
   }
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {

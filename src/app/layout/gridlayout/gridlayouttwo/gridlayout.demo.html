@@ -16,9 +16,19 @@
                             <amexio-body>
                                 <amexio-layout-grid [layout]="'Layout1'">
                                     <amexio-grid-item [name]="'gridheader'">
-                                        <amexio-label [size]="'large-bold'">
-                                            THE COLLECTION
-                                        </amexio-label>
+                                        <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                                            <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+
+                                                <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+                                                    <amexio-layout-item *ngFor="let item of  ['1']">
+                                                        <amexio-label [size]="'large-bold'">
+                                                            THE COLLECTION
+                                                        </amexio-label>
+                                                    </amexio-layout-item>
+
+                                                </amexio-layout-columns>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
                                     </amexio-grid-item>
                                     <amexio-grid-item [name]="'gridheader1'">
                                         <amexio-box background-color="gray" border-color="black" border="all" border-dotted="false" padding="true">
@@ -36,7 +46,7 @@
                                         </amexio-label>
                                     </amexio-grid-item>
                                     <amexio-grid-item [name]="'gridright'">
-                                        <amexio-panel title="Panel" [expanded]="false">
+                                        <amexio-panel title="Panel" [expanded]="true">
                                             Inspired by painter Yago Hortal’s one-of-a-kind, vivid artwork, this set features 40 shades of color for cheeks and eyes.
                                             The panels easily pop in and out, making it perfectly portable for holiday trips.
                                             Smashbox partnered with breakthrough artist Yago Hortal to create these mega-vibrant,
@@ -44,25 +54,28 @@
                                             bold pops of color to always-flattering neutrals.
                                         </amexio-panel>
                                     </amexio-grid-item>
-                                    <amexio-grid-item  [name]="'gridfooter'">
-                                            <amexio-layout-columns [orientation]="'vertical'" [border]="false">
-                                                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['start']">
-                                                                                      
-                                                      <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
-                                                        <amexio-layout-item *ngFor="let item of  ['1','2','3','4']">
-                                                  
-                                                                <amexio-image path="assets/images/grid1.jpg"></amexio-image>
+                                    <amexio-grid-item [name]="'gridfooter'">
+                                        <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                                            <amexio-layout-item [fit]="true" *ngFor="let alignment of ['start']">
 
-                                                        </amexio-layout-item>
-                                                  
-                                                      </amexio-layout-columns>
+                                                <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+                                                    <amexio-layout-item *ngFor="let item of  ['1','2','3','4']">
+
+                                                        <amexio-panel [header]="false" [border]="true" [expanded]="true">
+                                                            <amexio-label>
+                                                                Panel Content
+                                                            </amexio-label>
+                                                        </amexio-panel>
                                                     </amexio-layout-item>
-                                                  </amexio-layout-columns>
+
+                                                </amexio-layout-columns>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
                                     </amexio-grid-item>
-                                    <amexio-grid-item  [name]="'gridleft'">
+                                    <amexio-grid-item [name]="'gridleft'">
                                         Left
                                     </amexio-grid-item>
-                                    <amexio-grid-item  [name]="'gridmain'">
+                                    <amexio-grid-item [name]="'gridmain'">
                                         <amexio-image path="assets/images/grid1.jpg"></amexio-image>
                                     </amexio-grid-item>
                                     <amexio-grid-item [name]="'gridfooter1'">

@@ -16,13 +16,23 @@
                             <amexio-body>
                                 <amexio-layout-grid [layout]="'Layout1'">
                                     <amexio-grid-item [name]="'gridheader'">
-                                        <amexio-label size="large-bold">
-                                            Grid Pile
-                                        </amexio-label>
-                                        <br>
-                                        <amexio-label size="medium-bold">
-                                            Stacked CSS Grid Effect
-                                        </amexio-label>
+                                        <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                                            <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+
+                                                <amexio-layout-columns [fit]="true" [border]="true" [orientation]="'horizontal'" [alignment]="alignment">
+                                                    <amexio-layout-item *ngFor="let item of  ['1']">
+                                                        <amexio-label size="large-bold">
+                                                            Grid Pile
+                                                        </amexio-label>
+                                                        <br>
+                                                        <amexio-label size="medium-bold">
+                                                            Stacked CSS Grid Effect
+                                                        </amexio-label>
+                                                    </amexio-layout-item>
+
+                                                </amexio-layout-columns>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
                                     </amexio-grid-item>
 
                                     <amexio-grid-item [name]="'gridmenu1'">
@@ -30,7 +40,8 @@
                                     </amexio-grid-item>
 
                                     <amexio-grid-item [name]="'gridmenu2'">
-                                        <amexio-panel [border]="false" [header]="true" [collapsible]="false" title="Magical content restructuring with CSS Grid stacks" [expanded]="true">
+                                        <amexio-panel [border]="false" [header]="true" [collapsible]="false" title="Magical content restructuring with CSS Grid stacks"
+                                            [expanded]="true">
                                             This example demonstrates how to reposition content in a view by stacking multiple grids on top of one another. The goal
                                             of the example is to retain a logical markup structure while still allowing content
                                             to be split up and positioned on the grid. Case in point: From a HTML semantics

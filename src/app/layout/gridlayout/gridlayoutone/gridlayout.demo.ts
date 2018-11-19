@@ -24,21 +24,21 @@ export class GridLayoutDemo {
 
   constructor(private http: HttpClient,private _gridlayoutService : AmexioGridLayoutService) {
     this._gridlayoutService.createLayout('Layout1','desktop')
-    .addlayout([".", "gridheader", "gridheader", "."])
+    .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright"])
     .addlayout(["gridleft", "gridmenu2", "gridmenu2", "gridright"])
     .addlayout(["gridleft", "gridmenu3", "gridmenu4", "gridright"])
     .addlayout(["gridleft", "gridmenu5", "gridmenu5", "gridright"]);
 
     this._gridlayoutService.createLayout('Layout1','tab')
-    .addlayout([".", "gridheader", "gridheader", "."])
+    .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright"])
     .addlayout(["gridleft", "gridmenu2", "gridmenu2", "gridright"])
     .addlayout(["gridleft", "gridmenu3", "gridmenu3", "gridmenu4"])
     .addlayout(["gridleft", "gridmenu5", "gridmenu5", "gridmenu5"]);
 
     this._gridlayoutService.createLayout('Layout1','mobile')
-   .addlayout([".", "gridheader", "gridheader", "."])
+   .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridmenu1", "gridmenu1", "gridmenu1", "gridmenu1"])
     .addlayout(["gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2"])
     .addlayout(["gridmenu3", "gridmenu3", "gridmenu3", "gridmenu3"])
