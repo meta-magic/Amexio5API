@@ -741,9 +741,7 @@
                             "icon": "fa fa-dot-circle-o fa-fw",
                             "link": "amexio-d3-chart-bubble",
                             "badge":"New"
-                        }, 
-                          
-                        
+                        },
                         {
                             "text": "Combo Chart",
                             "icon": "fa fa-area-chart fa-fw",
@@ -753,7 +751,8 @@
                             "text": "Donut Chart",
                             "icon": "fa fa-pie-chart fa-fw",
                             "link": "amexio-d3-chart-donut"
-                        },{
+                        },
+                        {
                             "text": "Histogram Chart",
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
