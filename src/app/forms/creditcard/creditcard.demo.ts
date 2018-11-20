@@ -10,18 +10,18 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
   template: `
       <amexio-card header="true">
       <amexio-header>
-         Credit Card 
+         Credit Card
       </amexio-header>
       <amexio-body>
-        <p> Amexio Credit Card can be used basically for payment purpose. 
+        <p> Amexio Credit Card can be used basically for payment purpose.
         </p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
-    <amexio-form form-name="validateForm" header="true" show-error="true">
-              <amexio-form-header style="width:100%">
+    <amexio-card form-name="validateForm" header="true" show-error="true">
+              <amexio-card-header style="width:100%">
              Credit Card
-              </amexio-form-header>
-         <amexio-form-body>
+              </amexio-card-header>
+         <amexio-card-body>
           <amexio-row>
             <amexio-column size="9">
               <pre><code>{{creditcard|json}}</code></pre>
@@ -38,8 +38,8 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
 
               </amexio-column>
             </amexio-row>
-        </amexio-form-body>
-  </amexio-form>
+        </amexio-card-body>
+  </amexio-card>
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-creditcard>" [enable-column-fiter]="false"
@@ -70,7 +70,7 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
                         [text]="'Datatype'"></amexio-data-table-column>
 </amexio-datagrid>
           </amexio-tab>
-          
+
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
               <div style="overflow-y: scroll">
@@ -86,10 +86,10 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
                     <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                   </ng-container>
                 </amexio-tab>
-              </amexio-vertical-tab-view> 
+              </amexio-vertical-tab-view>
               </div>
             </div>
-           
+
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>

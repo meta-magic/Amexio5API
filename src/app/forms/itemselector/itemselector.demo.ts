@@ -172,7 +172,6 @@ export class ItemSelectorDemo {
 
   drop(event: any) {
     event.preventDefault();
-    console.log('event' +event);
     this.selectedData = JSON.parse(event.dataTransfer.getData('dragdata'))
   }
 }

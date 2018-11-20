@@ -143,12 +143,9 @@ export class RecaptchaDemo {
 
   onSuccess(event: any) {
     this.response = event;
-    console.log('res', this.response);
   }
   onFailure(event: any) {
-    this.response = event;
-    console.log('res', this.response);
-    
+    this.response = event;    
   }
 }
 

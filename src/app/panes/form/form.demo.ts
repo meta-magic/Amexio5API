@@ -9,166 +9,220 @@ import {HttpClient} from "@angular/common/http";
   template: `
       <amexio-card header="true">
       <amexio-header>
-         Form 
+         Form
       </amexio-header>
       <amexio-body>
-        <p> Amexio Form can be used basically for validation purposes  
+        <p> Amexio Form can be used basically for validation purposes
         </p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
           <h2>Demo: Form </h2>
-    <amexio-form form-name="validateForm" header="true" show-error="true">
-              <amexio-form-header style="width:100%">
+          <amexio-form form-name="validateForm" header="true" show-error="true">
+          <amexio-form-header style="width:100%">
              Form
-              </amexio-form-header>
-              <amexio-form-body>
-                      <amexio-row>
-                        <amexio-column [size]="6">
-                            <amexio-text-input [min-length]="3" [max-length]="5" [allow-blank]="false" field-label="Firstname" name="name1" place-holder="Enter firstname" icon-feedback="true">
-                            </amexio-text-input>
-                        </amexio-column>
-                        <amexio-column [size]="6">
-                            <amexio-text-input field-label="Lastname" name="name" place-holder="Enter lastname(not mandatory)" allow-blank="false" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required" max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
-                            </amexio-text-input>
-                        </amexio-column>
-                      </amexio-row>
-
-                      <amexio-textarea-input [disabled]="false" [field-label]="'Address'" name="Address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
-                    <amexio-row>    
-                      <amexio-column [size]="6">
-                            <amexio-radio-group name="name" 
-                            [field-label]="'Gender'" 
-                            [horizontal]="true" 
-                            [allow-blank]="false" 
-                            [data-reader]="'response.data'" 
-                            [display-field]="'gender'" 
-                            [value-field]="'genderId'" 
-                            [data]="radioGroupData">
-                            </amexio-radio-group>
-                      </amexio-column>
-                      <amexio-column [size]="6">
-                          <amexio-checkbox-group
-                            [field-label]="'Hobbies'" name="language"
-                            [horizontal]="true"
-                            [required] = "true"
-                            [disabled]= "false"
-                            [data-reader]="'response.data'"
-                            [display-field]="'language'"
-                            [value-field]="'checked'"
-                            [data]="checkboxGroupdata">
-                          </amexio-checkbox-group>
-                      </amexio-column>
-                    </amexio-row>
-                      <amexio-row>
-                          <amexio-column [size]="6">
-                              <amexio-tag-input [data-reader]="'response.data'" [http-url]="'assets/data/componentdata/countryy.json'" [has-label]="true" [http-method]="'get'" [key]="'countryName'" [allow-blank]="false" [display-field]="'countryName'" [field-label]="'Having visa'">
-                              </amexio-tag-input>
-                          </amexio-column>
-                          <amexio-column [size]="6">
-                              <amexio-dropdown [place-holder]="'Choose City'" name="city" [allow-blank]="false" [data-reader]="'response.data'" [field-label]="'City'" [http-url]="'assets/data/componentdata/cities.json'" [http-method]="'get'" [search]="'true'" [display-field]="'cityName'" [value-field]="'cityName'">
-                              </amexio-dropdown>
-                          </amexio-column>
-                      </amexio-row>
-                      <amexio-row>
-                        <amexio-column size="6">
-                            <amexio-number-input [enable-popover]="true" [field-label]="'Age'" [place-holder]="'Enter age'" [allow-blank]="false" [error-msg]="'Please enter age'" [min-value]="1" [min-error-msg]="'age can not be less than 1'" [max-value]="100" [max-error-msg]="'age can not be greater than 100'" [icon-feedback]="true">
-                            </amexio-number-input>
-                        </amexio-column>
-                        <amexio-column [size]="6">
-                            <amexio-date-time-picker [(ngModel)]="currentDate" [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [required]="true" >
-                            </amexio-date-time-picker>
-                        </amexio-column>
-                      </amexio-row>
-
-                      <amexio-row>
-                        <amexio-column [size]="6">
-                            <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
-                            </amexio-email-input>
-                        </amexio-column>
-                        <amexio-column [size]="6">
-                            <amexio-password-input [enable-popover]="true" [field-label]="'Password Input'" name="password" [place-holder]="'Enter Password'" [allow-blank]="false" [error-msg]="'Please enter password'" [min-length]="6" [min-error-msg]="'Minimum 6 char required'" [max-length]="32" [max-error-msg]="'Maximum 32 char allowed'" [icon-feedback]="true">
-                            </amexio-password-input>
-                        </amexio-column>
-                      </amexio-row>
-
-                      <amexio-checkbox [field-label]="'Agree'" [required]="true">
-                      </amexio-checkbox>
-             </amexio-form-body>
-           <amexio-form-action>
-                <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
-                </amexio-button>
-                <amexio-button [label]="'Cancel'"
-                                  [type]="'theme-backgroundcolor'"
-                                  [tooltip]="'Cancel'">
-                  </amexio-button>
-                <!-- <amexio-btn-group>
-                  <amexio-button [label]="'Disabled'"
-                                  [type]="'theme-color'"
-                                  [tooltip]="'Disabled'"
-                                  [disabled]="'true'"
-                                  [form-bind]="'validateForm'">
-                  </amexio-button>
-                  <amexio-button [label]="'Enabled'"
-                                  [type]="'theme-color'"
-                                  [tooltip]="'Enabled'">
-                  </amexio-button>
-                </amexio-btn-group> -->
-
+          </amexio-form-header>
+          <amexio-form-body>
+             <amexio-row>
+                <amexio-column [size]="6">
+                   <amexio-text-input [min-length]="3"
+                   [(ngModel)]="userRegistration.firstName"
+                   [max-length]="5" [allow-blank]="false"
+                   field-label="First Name" name="Firstname"
+                   place-holder="Enter first name"
+                   icon-feedback="true">
+                   </amexio-text-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                   <amexio-text-input field-label="Last Name" name="lastName"
+                   [(ngModel)]="userRegistration.lastName" place-holder="Enter last name(not mandatory)"
+                   allow-blank="true" error-msg="Please enter last name"
+                   [min-length]="3" min-error-msg="Minimum 3 char required"
+                   [max-length]="10" max-error-msg="Maximum 10 char allowed"
+                   icon-feedback="true">
+                   </amexio-text-input>
+                </amexio-column>
+             </amexio-row>
+             <amexio-textarea-input [disabled]="false" [field-label]="'Address'" name="Address"
+             [(ngModel)]="userRegistration.address" [place-holder]="'Enter address'"
+             [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'"
+             [columns]="'2'" [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
+             <amexio-row>
+                <amexio-column [size]="6">
+                   <amexio-radio-group
+                   [name]="'genderList'"
+                   [field-label]="'Gender'"
+                   [horizontal]="true"
+                   [allow-blank]="false"
+                   [(ngModel)]="userRegistration.gender"
+                   [data-reader]="'response.data'"
+                   [display-field]="'gender'"
+                   [value-field]="'genderId'"
+                   [data]="radioGroupData">
+                   </amexio-radio-group>
+                </amexio-column>
+                <amexio-column [size]="6">
+                   <amexio-checkbox-group
+                   [field-label]="'Hobbies'"
+                   name="hobbies"
+                   [(ngModel)]="userRegistration.hobbies"
+                   [horizontal]="true"
+                   [required] = "true"
+                   [disabled]= "false"
+                   [data-reader]="'response.data'"
+                   [display-field]="'hobbieName'"
+                   [value-field]="'checked'"
+                   [data]="checkboxGroupdata">
+                   </amexio-checkbox-group>
+                </amexio-column>
+             </amexio-row>
+             <amexio-row>
+                <amexio-column [size]="6">
+                   <amexio-tag-input [data-reader]="'response.data'"
+                   [http-url]="'assets/data/componentdata/countryy.json'"
+                   [has-label]="true" [http-method]="'get'"
+                   [key]="'countryName'"
+                   [allow-blank]="false"
+                   [display-field]="'countryName'"
+                   [field-label]="'Having visa'">
+                   </amexio-tag-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                   <amexio-dropdown [place-holder]="'Choose City'"
+                   name="city"
+                   [(ngModel)]="userRegistration.city"
+                   [allow-blank]="false"
+                   [data-reader]="'response.data'"
+                   [field-label]="'City'"
+                   [http-url]="'assets/data/componentdata/cities.json'"
+                   [http-method]="'get'" [search]="'true'"
+                   [display-field]="'cityName'"
+                   [value-field]="'cityName'">
+                   </amexio-dropdown>
+                </amexio-column>
+             </amexio-row>
+             <amexio-row>
+                <amexio-column size="6">
+                   <amexio-number-input
+                   [name]="'age'"
+                   [(ngModel)]="userRegistration.age"
+                   [enable-popover]="true"
+                   [field-label]="'Age'" [place-holder]="'Enter age'"
+                   [allow-blank]="false"
+                   [error-msg]="'Please enter age'"
+                   [min-value]="18"
+                   [min-error-msg]="'age can not be less than 18'"
+                   [max-value]="100"
+                   [max-error-msg]="'age can not be greater than 100'"
+                   [icon-feedback]="true">
+                   </amexio-number-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                   <amexio-date-time-picker
+                   [(ngModel)]="userRegistration.dateOfBirth"
+                   name="dateOfBirth"
+                   [field-label]="'Date Of Birth'"
+                   [time-picker]="false"
+                   [date-picker]="true"
+                   [required]="true" >
+                   </amexio-date-time-picker>
+                </amexio-column>
+             </amexio-row>
+             <amexio-row>
+                <amexio-column [size]="6">
+                   <amexio-email-input [field-label]="'Email Id'"
+                   name="email"
+                   [(ngModel)]="userRegistration.email"
+                   [place-holder]="'Enter Email Id'"
+                   [allow-blank]="false"
+                   [error-msg]="'Please Enter Email Id'"
+                   [enable-popover]="true"
+                   [icon-feedback]="true">
+                   </amexio-email-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                   <amexio-password-input [enable-popover]="true"
+                   [field-label]="'Password Input'"
+                   name="password"
+                   [(ngModel)]="userRegistration.password"
+                   [place-holder]="'Enter Password'"
+                   [allow-blank]="false"
+                   [error-msg]="'Please enter password'"
+                   [min-length]="6" [min-error-msg]="'Minimum 6 char required'"
+                   [max-length]="32" [max-error-msg]="'Maximum 32 char allowed'"
+                   [icon-feedback]="true">
+                   </amexio-password-input>
+                </amexio-column>
+             </amexio-row>
+             <amexio-checkbox [field-label]="'Agree'" name="agree" [required]="true" [(ngModel)]="userRegistration.agree">
+             </amexio-checkbox>
+          </amexio-form-body>
+          <amexio-form-action>
+             <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
+             </amexio-button>
+             <amexio-button [label]="'Cancel'"
+             [type]="'theme-backgroundcolor'"
+             [tooltip]="'Cancel'">
+             </amexio-button>
           </amexio-form-action>
-  </amexio-form>
+       </amexio-form>
+  <b>Model Data </b>:
+  {{userRegistration|json}}
   <h2>Demo:Form with Toolbar</h2>
   <amexio-form form-name="validateForm" header="true" show-error="true">
-              <amexio-form-header style="width:100%">
-               <amexio-toolbar>
-                  <amexio-toolbar-item position-left >
-                  <amexio-label size="small" >
-                   Registration
-                  </amexio-label>
-                </amexio-toolbar-item>
-                  
-                  <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-th" aria-hidden="true"></i>
-                  </amexio-toolbar-item>
-                  <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i>
-                  </amexio-toolbar-item>
-                  <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-question-circle" aria-hidden="true"></i>
-                  </amexio-toolbar-item>
-                  <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-cog" aria-hidden="true"></i>
-                  </amexio-toolbar-item>
-               </amexio-toolbar>
-              </amexio-form-header>
-              <amexio-form-body>
-                      <amexio-row>
-                        <amexio-column [size]="6">
-                            <amexio-text-input [min-length]="3" [max-length]="5" [allow-blank]="false" field-label="Firstname" name="name1" place-holder="Enter firstname" icon-feedback="true">
-                            </amexio-text-input>
-                        </amexio-column>
-                        <amexio-column [size]="6">
-                            <amexio-text-input field-label="Lastname" name="name" place-holder="Enter lastname(not mandatory)" allow-blank="false" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required" max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
-                            </amexio-text-input>
-                        </amexio-column>
-                      </amexio-row>
-
-
-                      
-             </amexio-form-body>
-           <amexio-form-action>
-                <amexio-button  [label]="'Save'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
-                </amexio-button>
-                <amexio-button [label]="'Cancel'"
-                                  [type]="'theme-backgroundcolor'"
-                                  [tooltip]="'Cancel'">
-                  </amexio-button>
-            
-
-          </amexio-form-action>
-  </amexio-form>
- 
+  <amexio-form-header style="width:100%">
+     <amexio-toolbar>
+        <amexio-toolbar-item position-left >
+           <amexio-label size="small" >
+              Registration
+           </amexio-label>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+           <i class="fa fa-th" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+           <i class="fa fa-info-circle" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+           <i class="fa fa-question-circle" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+        <amexio-toolbar-item position-right [seperator-position]="'left'">
+           <i class="fa fa-cog" aria-hidden="true"></i>
+        </amexio-toolbar-item>
+     </amexio-toolbar>
+  </amexio-form-header>
+  <amexio-form-body>
+     <amexio-row>
+        <amexio-column [size]="6">
+           <amexio-text-input [min-length]="3"
+           [(ngModel)]="firstName"
+           [max-length]="5" [allow-blank]="false"
+           field-label="First Name" name="Firstname"
+           place-holder="Enter first name"
+           icon-feedback="true">
+           </amexio-text-input>
+        </amexio-column>
+        <amexio-column [size]="6">
+           <amexio-text-input field-label="Last Name" name="lastName"
+           [(ngModel)]="lastName" place-holder="Enter last name(not mandatory)"
+           allow-blank="true" error-msg="Please enter last name"
+           [min-length]="3" min-error-msg="Minimum 3 char required"
+           [max-length]="10" max-error-msg="Maximum 10 char allowed"
+           icon-feedback="true">
+           </amexio-text-input>
+        </amexio-column>
+     </amexio-row>
+  </amexio-form-body>
+  <amexio-form-action>
+     <amexio-button  [label]="'Save'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
+     </amexio-button>
+     <amexio-button [label]="'Cancel'"
+     [type]="'theme-backgroundcolor'"
+     [tooltip]="'Cancel'">
+     </amexio-button>
+  </amexio-form-action>
+</amexio-form>
           </amexio-tab>
-          
+
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-form>" [enable-column-fiter]="false"
                              [http-method]="'get'"
@@ -185,8 +239,8 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
              <br/>
-              
-           
+
+
 
             <amexio-datagrid title="Events <amexio-form>" [enable-column-fiter]="false"
                              [http-method]="'get'"
@@ -199,7 +253,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-tab>
-          
+
           <amexio-tab title="Source">
             <div style="overflow-y: scroll">
               <div style="overflow-y: scroll">
@@ -215,10 +269,10 @@ import {HttpClient} from "@angular/common/http";
                     <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                   </ng-container>
                 </amexio-tab>
-              </amexio-vertical-tab-view> 
+              </amexio-vertical-tab-view>
               </div>
             </div>
-           
+
           </amexio-tab>
           <amexio-tab title="Live">
           <p align="center">Amexio Sandbox</p>
@@ -240,20 +294,23 @@ export class FormDemoComponent{
   checkboxGroupdata : any;
   currentDate : Date = new Date();
   payment :any;
+  userRegistration:UserRegistration;
+  firstName:string;
+  lastName:string;
   constructor(private http: HttpClient) {
-
+    this.userRegistration = new UserRegistration();
    this.checkboxGroupdata = {
       response:{
         data:[{
-          language:'Learning',
+          hobbieName:'Learning',
           checked: false,
           disabled : false
         },{
-          language:'Shopping',
+          hobbieName:'Shopping',
           checked: false,
           disabled : false
         },{
-          language:'Fishing',
+          hobbieName:'Fishing',
           checked: false,
           disabled : false
         }
@@ -323,4 +380,18 @@ export class FormDemoComponent{
   refreshData() {
     this.refreshDialogue = !this.refreshDialogue;
   }
+}
+
+export class UserRegistration {
+  firstName:string;
+  lastName:string;
+  agree:boolean;
+  address:string;
+  gender:string;
+  hobbies:any[]=[];
+  city:string;
+  age:number;
+  dateOfBirth:any;
+  email:string;
+  password:string;
 }
