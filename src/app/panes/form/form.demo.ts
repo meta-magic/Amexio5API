@@ -2,14 +2,14 @@
  * Created by anaghak07 on 16/4/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-
+import {HttpClient} from '@angular/common/http';
+import { EmplpoyeeRegistration } from './employee.registration';
 @Component({
   selector: 'form-demo',
   templateUrl: 'form.demo.html',
 })
 
-export class FormDemoComponent{
+export class FormDemoComponent {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -20,10 +20,23 @@ export class FormDemoComponent{
   currentDate : Date = new Date();
   payment :any;
   userRegistration:UserRegistration;
+  emplpoyeeRegistration: EmplpoyeeRegistration;
   firstName:string;
   lastName:string;
+  departmentData: any;
   constructor(private http: HttpClient) {
     this.userRegistration = new UserRegistration();
+    this.emplpoyeeRegistration = new EmplpoyeeRegistration();
+    this.departmentData = [{
+      'deptId':'1',
+      'deptName' :'Engineering'
+    },{
+      'deptId':'2',
+      'deptName' :'Tech Suppport'
+    },{
+      'deptId':'3',
+      'deptName' :'HR'
+    }]
    this.checkboxGroupdata = {
       response:{
         data:[{
@@ -108,15 +121,18 @@ export class FormDemoComponent{
 }
 
 export class UserRegistration {
-  firstName:string;
-  lastName:string;
-  agree:boolean;
-  address:string;
-  gender:string;
-  hobbies:any[]=[];
-  city:string;
-  age:number;
-  dateOfBirth:any;
-  email:string;
-  password:string;
-}
+  firstName: string;
+  lastName: string;
+  agree: boolean;
+  address: string;
+  gender: string;
+  hobbies: any[];
+  city: string;
+  age: number;
+  dateOfBirth: any;
+  email: string;
+  password: string;
+  constructor() {
+    this.hobbies = [];
+  }
+ }
