@@ -129,7 +129,7 @@ export class UserRegistration {
   hobbies: any[];
   city: string;
   age: number;
-  dateOfBirth: any;
+  dateOfBirth = new Date();
   email: string;
   password: string;
   constructor() {
