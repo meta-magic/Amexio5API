@@ -83,6 +83,11 @@ import {HttpClient} from "@angular/common/http";
                     <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
                   </ng-container>
                 </amexio-tab>
+                <amexio-tab title="Module">
+                <ng-container *ngIf="moduleCode">
+                  <prism-block [code]="moduleCode" [language]="'typescript'"></prism-block>
+                </ng-container>
+              </amexio-tab>
               </amexio-vertical-tab-view>
             </div>
           </amexio-tab>
@@ -101,6 +106,7 @@ import {HttpClient} from "@angular/common/http";
 export class RecaptchaDemo {
   htmlCode: string;
   typeScriptCode: string;
+  moduleCode:string;
   copyMsgArray: any[];
   response: any;
   age:number=10;
@@ -127,6 +133,13 @@ export class RecaptchaDemo {
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
+    });
+    // MODULE FILE
+    this.http.get('assets/data/code/forms/recaptcha/module.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
+    }, error => {
+    }, () => {
+      this.moduleCode = responseTs;
     });
 
   }
