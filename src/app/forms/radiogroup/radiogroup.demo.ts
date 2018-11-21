@@ -176,6 +176,7 @@ export class RadioGroupDemo {
   //selected Checkbox event
   setSelectedGender(data:any){
   //make some operation here
+
   }
   constructor(private http: HttpClient) {
     this.radioGroupData = {
