@@ -152,6 +152,7 @@ import {HttpClient} from "@angular/common/http";
                    [icon-feedback]="true">
                    </amexio-password-input>
                 </amexio-column>
+
              </amexio-row>
              <amexio-checkbox [field-label]="'Agree'" name="agree" [required]="true" [(ngModel)]="userRegistration.agree">
              </amexio-checkbox>
