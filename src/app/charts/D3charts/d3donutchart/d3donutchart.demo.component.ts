@@ -33,7 +33,7 @@ export class AmexioD3DonutChartDemoComponent implements OnInit {
 
   ngOnInit() {
 
-    this.userDefineColors = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"];
+    this.userDefineColors = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00","#b9936c"];
 
     this.defultColorData = 
     [
