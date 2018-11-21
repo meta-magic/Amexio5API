@@ -48,7 +48,7 @@
                                             </amexio-column>
 
                                             <amexio-column [size]="6">
-                                                <amexio-panel [header]="false" [border]="false" [expanded]="true">
+                                                <amexio-panel [fit]="true" [header]="false" [border]="false" [expanded]="true">
                                                     This example demonstrates how to reposition content in a view by stacking multiple grids on top of one another. The goal
                                                     of the example is to retain a logical markup structure while still allowing
                                                     content to be split up and positioned on the grid. Case in point: From
@@ -58,7 +58,7 @@
                                                 </amexio-panel>
                                             </amexio-column>
                                             <amexio-column [size]="6">
-                                                <amexio-panel [header]="false" [border]="false" [expanded]="true">
+                                                <amexio-panel [fit]="true" [header]="false" [border]="false" [expanded]="true">
                                                     shows how stacking two grids allows the sidebar items to appear as if they are placed on the same grid as the main content
                                                     while they are in reality placed in a separate grid positioned within
                                                     and superimposed on top of the original grid. A detailed breakdown of
@@ -114,7 +114,7 @@
 
 
                                     <amexio-grid-item [name]="'gridleft'">
-                                        <amexio-panel [border]="false" [header]="true" title="First Sidebar Item" [collapsible]="false" [expanded]="true">
+                                        <amexio-panel [fit]="true" [border]="false" [header]="true" title="First Sidebar Item" [collapsible]="false" [expanded]="true">
                                             This is the first of two sidebar sections. It appears as the first of two items in the sidebar aside element which is located
                                             after the main element in the HTML source order. On narrow screens it visually
                                             appears after the main element. On medium screens it appears at the top of the
@@ -123,7 +123,7 @@
                                     </amexio-grid-item>
 
                                     <amexio-grid-item [name]="'gridright'">
-                                        <amexio-panel [border]="false" [header]="true" title="Second Sidebar Item" [expanded]="true" [collapsible]="false">
+                                        <amexio-panel [fit]="true" [border]="false" [header]="true" title="Second Sidebar Item" [expanded]="true" [collapsible]="false">
                                             This is the second of two sidebar sections. It appears as the second of two items in the sidebar aside element which is located
                                             after the main element in the HTML source order. On narrow screens it visually
                                             appears after the first sidebar item. On medium screens it appears as the second
@@ -154,7 +154,7 @@
                                     </amexio-grid-item>
 
                                     <amexio-grid-item [name]="'gridmenu4'">
-                                        <amexio-panel [border]="false" [header]="false" [collapsible]="false" [expanded]="true">
+                                        <amexio-panel [fit]="true" [border]="false" [header]="false" [collapsible]="false" [expanded]="true">
                                             <amexio-label size="medium-bold">Subgrid could be nice here
                                             </amexio-label>
                                             <br>
