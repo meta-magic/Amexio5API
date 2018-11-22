@@ -211,6 +211,10 @@
     {
       path: 'form-demo', loadChildren: './panes/form/form.demo.module#FormDemoModule'
     },
+     
+    {
+      path: 'reactive-form', loadChildren: './panes/reactiveform/reactiveform.demo.module#ReactiveFormComponentModule'
+    },
     {
       path: 'dialouge', loadChildren: './panes/dialogue/dialogue.demo.module#DialogueDemoModule'
     },
