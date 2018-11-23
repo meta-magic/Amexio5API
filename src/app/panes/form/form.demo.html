@@ -162,7 +162,7 @@
                                 </amexio-date-time-picker>
                             </amexio-column>
                         </amexio-row>
-                        <amexio-form-group [group]="'address'">
+                        <amexio-fieldset [form-group]="'address'" title="Address">
                             <amexio-row>
                                 <amexio-column [size]="6">
                                     <amexio-text-input field-label="Street" [name]="'street'" [(ngModel)]="emplpoyeeRegistration.address.street" place-holder="Enter street" enable-popover="true" [min-length]="3" min-error-msg="Minimum 3 char required" [allow-blank]="false" error-msg="Please enter street"
@@ -182,7 +182,7 @@
                                     </amexio-text-input>
                                 </amexio-column>
                             </amexio-row>
-                        </amexio-form-group>
+                        </amexio-fieldset>
                     </amexio-form-body>
                     <amexio-form-action>
                         <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'empployeeForm'">
@@ -191,8 +191,9 @@
                         </amexio-button>
                     </amexio-form-action>
                 </amexio-form>
-                <b>Model Data :</b> {{emplpoyeeRegistration | json}} <br>
-                <b>Form Data :</b> {{empForm.form.value | json}}<br>
+                <br>
+                <b style="color:blue">Model Data : </b> {{emplpoyeeRegistration | json}} <br>
+                <b style="color:green">Form Data : </b> {{empForm.form.value | json}}<br>
             </amexio-tab>
 
             <amexio-tab title="API Reference">
