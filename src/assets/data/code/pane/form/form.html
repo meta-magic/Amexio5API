@@ -117,84 +117,67 @@
 
 <!-- Employee Registration form with address -->
 <amexio-form #empForm form-name="empployeeForm" header="true" [header-align]="'left'" show-error="true">
-        <amexio-form-header style='width:100%; display:flex;justify-content:inherit;'>
-           Employee Registration
-        </amexio-form-header>
-        <amexio-form-body>
-           <amexio-row>
-              <amexio-column [size]="6">
-                 <amexio-text-input [(ngModel)]="emplpoyeeRegistration.firstName" [min-length]="3"  [max-length]="5" [allow-blank]="false" field-label="First Name" [name]="'Firstname'" place-holder="Enter first name" icon-feedback="true">
-                 </amexio-text-input>
-              </amexio-column>
-              <amexio-column [size]="6">
-                 <amexio-text-input field-label="Last Name" [name]="'lastName'" [(ngModel)]="emplpoyeeRegistration.lastName" place-holder="Enter last name" [allow-blank]="false" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required"
-                 [max-length]="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
-                 </amexio-text-input>
-              </amexio-column>
-           </amexio-row>
-           <amexio-row>
-              <amexio-column [size]="6">
-                 <amexio-radio-group [name]="'genderList'" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [(ngModel)]="emplpoyeeRegistration.gender" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
-                 </amexio-radio-group>
-              </amexio-column>
-              <amexio-column [size]="6">
-                 <amexio-dropdown [place-holder]="'Choose Department'" [name]="'department'" [(ngModel)]="emplpoyeeRegistration.department" [allow-blank]="false" [field-label]="'Department'" [search]="'true'"
-                 [data]="departmentData" [display-field]="'deptName'" [value-field]="'deptId'">
-                 </amexio-dropdown>
-              </amexio-column>
-           </amexio-row>
-           <amexio-row>
-              <amexio-column [size]="6">
-                 <amexio-email-input [field-label]="'Email Id'" [name]="'email'" [(ngModel)]="emplpoyeeRegistration.email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
-                 </amexio-email-input>
-              </amexio-column>
-              <amexio-column [size]="6">
-                 <amexio-date-time-picker [(ngModel)]="emplpoyeeRegistration.dateOfBirth" [name]="'dateOfBirth'" [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [required]="true">
-                 </amexio-date-time-picker>
-              </amexio-column>
-           </amexio-row>
-           <amexio-fieldset [collapsible]="true" title="Address">
-              <amexio-row>
-                 <amexio-column [size]="6">
-                    <amexio-text-input field-label="Street" 
-                    [name]="'street'"
-                    [(ngModel)]="emplpoyeeRegistration.address.street" 
-                    place-holder="Enter street" 
-                    enable-popover="true"
-                    [min-length]="3" 
-                    min-error-msg="Minimum 3 char required"
-                    [allow-blank]="false" error-msg="Please enter street" 
-                    icon-feedback="true">
+    <amexio-form-header style='width:100%; display:flex;justify-content:inherit;'>
+        Employee Registration
+    </amexio-form-header>
+    <amexio-form-body>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-text-input [(ngModel)]="emplpoyeeRegistration.firstName" [min-length]="3" [max-length]="5" [allow-blank]="false" field-label="First Name" [name]="'Firstname'" place-holder="Enter first name" icon-feedback="true">
+                </amexio-text-input>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-text-input field-label="Last Name" [name]="'lastName'" [(ngModel)]="emplpoyeeRegistration.lastName" place-holder="Enter last name" [allow-blank]="false" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required"
+                    [max-length]="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                </amexio-text-input>
+            </amexio-column>
+        </amexio-row>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-radio-group [name]="'genderList'" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [(ngModel)]="emplpoyeeRegistration.gender" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
+                </amexio-radio-group>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-dropdown [place-holder]="'Choose Department'" [name]="'department'" [(ngModel)]="emplpoyeeRegistration.department" [allow-blank]="false" [field-label]="'Department'" [search]="'true'" [data]="departmentData" [display-field]="'deptName'" [value-field]="'deptId'">
+                </amexio-dropdown>
+            </amexio-column>
+        </amexio-row>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-email-input [field-label]="'Email Id'" [name]="'email'" [(ngModel)]="emplpoyeeRegistration.email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
+                </amexio-email-input>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-date-time-picker [(ngModel)]="emplpoyeeRegistration.dateOfBirth" [name]="'dateOfBirth'" [field-label]="'Date Of Birth'" [time-picker]="false" [date-picker]="true" [required]="true">
+                </amexio-date-time-picker>
+            </amexio-column>
+        </amexio-row>
+        <amexio-fieldset [form-group]="'address'" title="Address">
+            <amexio-row>
+                <amexio-column [size]="6">
+                    <amexio-text-input field-label="Street" [name]="'street'" [(ngModel)]="emplpoyeeRegistration.address.street" place-holder="Enter street" enable-popover="true" [min-length]="3" min-error-msg="Minimum 3 char required" [allow-blank]="false" error-msg="Please enter street"
+                        icon-feedback="true">
                     </amexio-text-input>
-                 </amexio-column>
-                 <amexio-column [size]="6">
-                    <amexio-text-input field-label="city" [name]="'city'" 
-                    [(ngModel)]="emplpoyeeRegistration.address.city" 
-                    [min-length]="3" 
-                    enable-popover="true"
-                    min-error-msg="Minimum 3 char required"
-                    place-holder="Enter city" [allow-blank]="false" 
-                    error-msg="Please enter city" 
-                    icon-feedback="true">
+                </amexio-column>
+                <amexio-column [size]="6">
+                    <amexio-text-input field-label="city" [name]="'city'" [(ngModel)]="emplpoyeeRegistration.address.city" [min-length]="3" enable-popover="true" min-error-msg="Minimum 3 char required" place-holder="Enter city" [allow-blank]="false" error-msg="Please enter city"
+                        icon-feedback="true">
                     </amexio-text-input>
-                 </amexio-column>
-              </amexio-row>
-              <amexio-row>
-                 <amexio-column [size]="6">
-                    <amexio-text-input field-label="pincode" [name]="'pincode'" 
-                    [(ngModel)]="emplpoyeeRegistration.address.pincode"  [min-length]="3" 
-                    enable-popover="true"
-                    min-error-msg="Minimum 3 char required" place-holder="Enter pincode" [allow-blank]="false" error-msg="Please enter pincode"
-                    icon-feedback="true">
+                </amexio-column>
+            </amexio-row>
+            <amexio-row>
+                <amexio-column [size]="6">
+                    <amexio-text-input field-label="pincode" [name]="'pincode'" [(ngModel)]="emplpoyeeRegistration.address.pincode" [min-length]="3" enable-popover="true" min-error-msg="Minimum 3 char required" place-holder="Enter pincode" [allow-blank]="false" error-msg="Please enter pincode"
+                        icon-feedback="true">
                     </amexio-text-input>
-                 </amexio-column>
-              </amexio-row>
-           </amexio-fieldset>
-        </amexio-form-body>
-        <amexio-form-action>
-           <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'empployeeForm'">
-           </amexio-button>
-           <amexio-button [label]="'Cancel'" [type]="'theme-backgroundcolor'" [tooltip]="'Cancel'">
-           </amexio-button>
-        </amexio-form-action>
-     </amexio-form>
+                </amexio-column>
+            </amexio-row>
+        </amexio-fieldset>
+    </amexio-form-body>
+    <amexio-form-action>
+        <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'empployeeForm'">
+        </amexio-button>
+        <amexio-button [label]="'Cancel'" [type]="'theme-backgroundcolor'" [tooltip]="'Cancel'">
+        </amexio-button>
+    </amexio-form-action>
+</amexio-form>

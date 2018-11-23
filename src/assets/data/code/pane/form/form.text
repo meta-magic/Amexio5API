@@ -6,11 +6,11 @@
     templateUrl : 'form.demo.html'
   })
 
-  userRegistration:UserRegistration;
-  emplpoyeeRegistration: EmplpoyeeRegistration;
-
   export class FormDemoComponent {
     radioGroupData :any;
+    userRegistration:UserRegistration;
+    emplpoyeeRegistration: EmplpoyeeRegistration;
+
     constructor() {
     this.userRegistration = new UserRegistration();
     this.emplpoyeeRegistration = new EmplpoyeeRegistration();
@@ -41,14 +41,14 @@ export class EmplpoyeeRegistration {
       this.address = new Address();
     }
   }
-  
+
   export class Address {
     street: string;
-    city: string; 
+    city: string;
     state: string;
     country: string;
     pincode: number;
-    constructor() { 
-  
+    constructor() {
+
     }
   }
