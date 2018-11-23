@@ -120,7 +120,19 @@
                 {
                     "text": "Form",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "form-demo"
+                    "children": [
+                        {
+                            "text": "Amexio-Form",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "form-demo"
+                        },
+                        {
+                            "text": "Amexio-ReactiveForm",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "reactive-form"
+
+                        }
+                    ]
                 },
                 {
                     "text": "Fieldset",

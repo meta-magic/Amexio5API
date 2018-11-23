@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule} from "@angular/forms";
 import { AppComponent } from './app.component';
-
+import { HttpClient,HttpClientModule } from '@angular/common/http';
 // To import D3-Chart :- 
 
 import { AmexioChartD3Module } from 'amexio-chart-d3';
@@ -15,8 +15,9 @@ import { AmexioChartD3Module } from 'amexio-chart-d3';
     BrowserModule,
     FormsModule,
     AmexioChartD3Module,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

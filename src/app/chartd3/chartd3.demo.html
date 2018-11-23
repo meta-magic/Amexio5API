@@ -62,7 +62,7 @@
                 amexio D3-donut chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-donut [title]="'Visiter Visit Browse Ratio'" [color]="donutDataColor" [data]="donutData">
+                <amexio-d3-chart-donut [title]="'Browser Popularity'" [color]="donutDataColor" [data]="donutData">
                 </amexio-d3-chart-donut>
             </amexio-body>
         </amexio-card>
@@ -74,7 +74,7 @@
                 amexio D3-pie chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-pie [title]="'Visiter Visit Country Ratio'" [color]="donutDataColor" [data]="pieData">
+                <amexio-d3-chart-pie [title]="'Visitor Visit Country Ratio'" [color]="userDefineColors" [data]="pieData">
                 </amexio-d3-chart-pie>
             </amexio-body>
         </amexio-card>
@@ -176,7 +176,7 @@
     <amexio-column size="6" [fit]="true">
         <amexio-card [header]="true" [show]="'true'">
             <amexio-header>
-                amexio D3-Histogram chart
+                amexio D3-Waterfall chart
             </amexio-header>
             <amexio-body>
                 <amexio-d3-chart-waterfall [title]="'Product Information'" [data]="waterfallChartData">

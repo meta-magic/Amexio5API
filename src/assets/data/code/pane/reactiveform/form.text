@@ -1,0 +1,76 @@
+
+
+export class reactiveFormComponent {
+
+  // for simple Reactive Form
+  radioGroupData: any[] = [];
+  employeeForm: FormGroup;
+
+  // For form Inside form & for form group Inside form
+  employeeFormInsideForm: FormGroup;
+  addressForm: FormGroup;
+  address: Address;
+
+  employeeFormGroup: FormGroup;
+
+  constructor(private fb: FormBuilder) {
+    this.address = new Address();
+    this.radioGroupData = [{
+      genderName: 'Male',
+      genderId: 'male'
+    }, {
+      genderName: 'Female',
+      genderId: 'female'
+    }];
+  }
+
+ // Demo1 : - Simple Reactive Form
+
+  this.employeeForm = this.fb.group({
+  FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+  LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+  Email: ['', [Validators.required, Validators.email]],
+  Age: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
+  Gender: ['', [Validators.required]],
+  Agree: ['', [Validators.required, Validators.requiredTrue]]
+});
+
+// Demo 2: -  Forms within Forms
+
+this.employeeFormInsideForm = this.fb.group({
+  FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+  LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+  Email: ['', [Validators.required, Validators.email]],
+  Age: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
+  Gender: ['', [Validators.required]],
+  Agree: ['', [Validators.required, Validators.requiredTrue]]
+});
+
+// HERE INNER ADDRESS FORM VALIDATION ADDED
+
+this.addressForm = this.fb.group({
+  TemporaryAddress: ['', [Validators.required]],
+  PermanentAddress: ['', [Validators.required]]
+});
+
+// Demo3 : - Forms Group Inside Forms 
+
+this.employeeFormGroup = this.fb.group({
+  FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+  LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+  Email: ['', [Validators.required, Validators.email]],
+  Age: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
+  Gender: ['', [Validators.required]],
+  Agree: ['', [Validators.required, Validators.requiredTrue]],
+  AddressFormGroup: new FormGroup({
+    temporaryAddress: new FormControl('', Validators.required),
+    permanentAddress: new FormControl('', Validators.required)
+  })
+});
+}
+
+// THIS MODEL CLASS IS USED FOR BINDING TO EMPLOYEE ADDRESS
+export class Address {
+  tempAddress: string;
+  perAddress: string;
+}
