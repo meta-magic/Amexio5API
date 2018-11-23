@@ -15,7 +15,7 @@
                     <amexio-form-body>
                         <amexio-row>
                             <amexio-column [size]="6">
-                                <amexio-text-input [min-length]="3" [(ngModel)]="userRegistration.firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="Firstname" place-holder="Enter first name" icon-feedback="true">
+                                <amexio-text-input [min-length]="3" [(ngModel)]="userRegistration.firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="firstName" place-holder="Enter first name" icon-feedback="true">
                                 </amexio-text-input>
                             </amexio-column>
                             <amexio-column [size]="6">
@@ -107,7 +107,7 @@
                     <amexio-form-body>
                         <amexio-row>
                             <amexio-column [size]="6">
-                                <amexio-text-input [min-length]="3" [(ngModel)]="firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="Firstname" place-holder="Enter first name" icon-feedback="true">
+                                <amexio-text-input [min-length]="3" [(ngModel)]="firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="firstName" place-holder="Enter first name" icon-feedback="true">
                                 </amexio-text-input>
                             </amexio-column>
                             <amexio-column [size]="6">
@@ -162,7 +162,7 @@
                                 </amexio-date-time-picker>
                             </amexio-column>
                         </amexio-row>
-                        <amexio-fieldset [collapsible]="true" title="Address">
+                        <amexio-form-group [group]="'address'">
                             <amexio-row>
                                 <amexio-column [size]="6">
                                     <amexio-text-input field-label="Street" [name]="'street'" [(ngModel)]="emplpoyeeRegistration.address.street" place-holder="Enter street" enable-popover="true" [min-length]="3" min-error-msg="Minimum 3 char required" [allow-blank]="false" error-msg="Please enter street"
@@ -182,7 +182,7 @@
                                     </amexio-text-input>
                                 </amexio-column>
                             </amexio-row>
-                        </amexio-fieldset>
+                        </amexio-form-group>
                     </amexio-form-body>
                     <amexio-form-action>
                         <amexio-button [disabled]="false" [label]="'OK'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'empployeeForm'">
