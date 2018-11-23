@@ -1,0 +1,117 @@
+<amexio-layout-grid [layout]="'Layout2'">
+    <amexio-grid-item [name]="'gridheader'">
+        <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+            <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+
+                <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
+                    <amexio-layout-item *ngFor="let item of  ['1']">
+                        <amexio-label [size]="'large-bold'">
+                            THE COLLECTION
+                        </amexio-label>
+                    </amexio-layout-item>
+
+                </amexio-layout-columns>
+            </amexio-layout-item>
+        </amexio-layout-columns>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridheader1'">
+        <amexio-box background-color="gray" border-color="black" border="all" border-dotted="false" padding="true">
+            <amexio-label>
+                CLASSIC
+            </amexio-label>
+            <br>
+            <amexio-label>Holiday</amexio-label>
+            <br>
+            <amexio-label>COLLECTION</amexio-label>
+        </amexio-box>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridheader2'">
+        <amexio-label [size]="'large-56'">
+            ART . LOVE . COLOR
+        </amexio-label>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridright'">
+        <amexio-panel title="Panel" [expanded]="true">
+            Inspired by painter Yago Hortal’s one-of-a-kind, vivid artwork, this set features 40 shades of color for cheeks and eyes.
+            The panels easily pop in and out, making it perfectly portable for holiday trips. Smashbox partnered with breakthrough
+            artist Yago Hortal to create these mega-vibrant, limited-edition kits featuring all of their bestsellers in a
+            range of shades—from bold pops of color to always-flattering neutrals.
+        </amexio-panel>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridright1'">
+        <amexio-button [label]="'More Details'" [type]="'grey'" [tooltip]="'large'" [block]="true">
+        </amexio-button>
+
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridfooter1'">
+        <amexio-layout-grid [layout]="'gridimagelayout'">
+            <amexio-grid-item [name]="'gridimage1'">
+                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'gridimage2'">
+                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'gridimage3'">
+                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'gridimage4'">
+                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+            </amexio-grid-item>
+        </amexio-layout-grid>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridleft'">
+        <amexio-label>
+            <b>Shop By </b>
+        </amexio-label>
+        <hr/>
+        <amexio-layout-grid [layout]="'leftlayout'">
+            <amexio-grid-item [name]="'leftlayout1'">
+                <amexio-panel [header]="false" [expanded]="true">
+                    Makeup
+                    <br> Skincare
+                    <br> Fragrance
+                </amexio-panel>
+
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'leftlayout2'">
+                <amexio-panel [header]="false" [expanded]="true">
+                    Bath & Body
+                    <br> Hair
+                    <br> Nails
+                </amexio-panel>
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'leftlayout3'">
+                <amexio-panel [header]="false" [expanded]="true">
+                    Tools & Brushes
+                    <br> Men
+                    <br> Gifts
+                </amexio-panel>
+            </amexio-grid-item>
+            <amexio-grid-item [name]="'leftlayout4'">
+                <amexio-panel [header]="false" [expanded]="true">
+                    Sales
+                    <br> Brands
+                </amexio-panel>
+
+            </amexio-grid-item>
+
+        </amexio-layout-grid>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridmain'">
+        <amexio-image path="assets/images/grid1.jpg"></amexio-image>
+    </amexio-grid-item>
+    <amexio-grid-item [name]="'gridfooter'">
+        <amexio-label [size]="'large-bold'">
+            OUR
+        </amexio-label>
+        <br>
+        <amexio-label [size]="'large-bold'">
+            COMUNITY
+        </amexio-label>
+        <br>
+        <amexio-label [size]="'large-bold'">
+            FEATURING: YOU!
+        </amexio-label>
+    </amexio-grid-item>
+
+</amexio-layout-grid>
