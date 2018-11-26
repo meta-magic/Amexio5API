@@ -104,7 +104,7 @@
         {
             "name": "label-color",
             "description": "Sets label color in D3 Bar Chart",
-            "version": "0.0.7 Onwards",
+            "version": "0.0.8 Onwards",
             "type": "string",
             "default": ""
         }
