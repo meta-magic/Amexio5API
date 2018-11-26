@@ -51,7 +51,7 @@ export class GridLayoutDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/data/gridlayout/gridlayout.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/data/gridlayout/gridlayoutexp3.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -59,7 +59,7 @@ export class GridLayoutDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/data/gridlayout/gridlayout.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/data/gridlayout/gridlayoutexp3.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

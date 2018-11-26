@@ -374,6 +374,9 @@
     {
       path: 'gridlayout-demo-exp2', loadChildren: './layout/gridlayout/gridlayouttwo/gridlayout.demo.module#GridLayoutDemoModule'
     },
+    {
+      path: 'gridlayout-demo-exp3', loadChildren: './layout/gridlayout/gridlayoutthree/gridlayout.demo.module#GridLayoutDemoModule'
+    },
     /*Drag and Drop*/
     {
       path: 'within-tree', loadChildren: './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
