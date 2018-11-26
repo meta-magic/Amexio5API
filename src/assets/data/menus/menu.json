@@ -115,15 +115,31 @@
                     "link": "dialouge"
                 },
                 {
-                    "text": "Form",
+                    "text": "Form (HTML)",
                     "icon": "fa fa-window-maximize fa-fw",
                     "children": [{
-                            "text": "Amexio Form",
+                            "text": "Template Driven",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "html-form-demo"
+                        },
+                        {
+                            "text": "Reactive Forms",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "html-reactive-form"
+
+                        }
+                    ]
+                },
+                {
+                    "text": "Amexio Forms",
+                    "icon": "fa fa-window-maximize fa-fw",
+                    "children": [{
+                            "text": "Template Driven",
                             "icon": "fa fa-window-maximize fa-fw",
                             "link": "form-demo"
                         },
                         {
-                            "text": "Reactive Forms With Amexio",
+                            "text": "Reactive Forms",
                             "icon": "fa fa-window-maximize fa-fw",
                             "link": "reactive-form"
 

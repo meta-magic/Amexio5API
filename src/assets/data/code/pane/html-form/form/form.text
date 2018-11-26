@@ -1,0 +1,54 @@
+
+  import {Component, OnInit} from '@angular/core';
+
+  @Component({
+    selector : 'form-demo',
+    templateUrl : 'form.demo.html'
+  })
+
+  export class FormDemoComponent {
+    radioGroupData :any;
+    userRegistration:UserRegistration;
+    emplpoyeeRegistration: EmplpoyeeRegistration;
+
+    constructor() {
+    this.userRegistration = new UserRegistration();
+    this.emplpoyeeRegistration = new EmplpoyeeRegistration();
+    this.radioGroupData = {
+      response:{
+        data:[{
+          gender:'Male',
+          genderId:'male'
+        },{
+          gender:'Female',
+          genderId:'female',
+          disabled : true
+        },
+        ]
+      }
+    };
+  }
+
+export class EmplpoyeeRegistration {
+    firstName: string;
+    lastName: string;
+    address: Address;
+    gender: string;
+    email: string;
+    department: string;
+    dateOfBirth: any;
+    constructor() {
+      this.address = new Address();
+    }
+  }
+
+  export class Address {
+    street: string;
+    city: string;
+    state: string;
+    country: string;
+    pincode: number;
+    constructor() {
+
+    }
+  }

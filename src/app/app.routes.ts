@@ -6,13 +6,13 @@
   export const APP_ROUTE: Routes = [/**Forms Routes*/
     {
       path: '', redirectTo: 'getting-started', pathMatch: 'full'
-    }, 
+    },
     {
       path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
-    }, 
+    },
     {
       path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
-    }, 
+    },
     {
       path: 'amexio-colors', loadChildren: './theme/theme.module#ThemeModule'
     },
@@ -119,7 +119,7 @@
     {
       path: 'sidenav-demo', loadChildren: './navigation/sidenav/sidenav.demo.module#SideNavDemoModule'
     },
-    {             
+    {
       path: 'sidenav-page', loadChildren: './navigation/sidenavpage/sidenavpage.demo.module#sideNavDemoPageModule'
     },
     {
@@ -211,9 +211,15 @@
     {
       path: 'form-demo', loadChildren: './panes/form/form.demo.module#FormDemoModule'
     },
-     
+
     {
       path: 'reactive-form', loadChildren: './panes/reactiveform/reactiveform.demo.module#ReactiveFormComponentModule'
+    },
+    {
+      path:'html-reactive-form',loadChildren:'./panes/form-html/reactive-forms/reactiveform.demo.module#HtmlReactiveFormComponentModule'
+    },
+    {
+      path:'html-form-demo',loadChildren :'./panes/form-html/template-driven/form.demo.module#HtmlFormDemoModule'
     },
     {
       path: 'dialouge', loadChildren: './panes/dialogue/dialogue.demo.module#DialogueDemoModule'
@@ -323,7 +329,7 @@
     },
     {
       path: 'collapsetree-demo', loadChildren: './data/tree/collapsetree/collapsetree.demo.module#CollapseTreeDemoModule'
-    },              
+    },
     {
       path: 'template-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
     },
@@ -370,7 +376,7 @@
     },
     {
       path: 'gridlayout-demo-exp1', loadChildren: './layout/gridlayout/gridlayoutone/gridlayout.demo.module#GridLayoutDemoModule'
-    }, 
+    },
     {
       path: 'gridlayout-demo-exp2', loadChildren: './layout/gridlayout/gridlayouttwo/gridlayout.demo.module#GridLayoutDemoModule'
     },
@@ -390,7 +396,7 @@
     {
       path: 'selectordragdrop-panel', loadChildren: './draganddrop/selectordragdroppanel/selectordragdroppanel.demo.module#ItemSelectorDragdropPanelModule'
     },
-    
+
     /*Contextual Menus*/
     {
       path: 'contextual-menu-tree', loadChildren: './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'
@@ -430,46 +436,46 @@
     },
     {
       path: 'amexio-d3-chart-horizontal', loadChildren: './charts/D3charts/d3horizontalbarchart/d3horizontalbarchart.demo.module#D3HorizontalBarChartComponentModule'
-    }, 
+    },
     {
       path: 'amexio-d3-chart-bubble', loadChildren: './charts/D3charts/d3bubblechart/d3bubblechart.demo.module#D3BubbleChartDemoModule'
     },
     {
       path: 'amexio-d3-chart-waterfall', loadChildren: './charts/D3charts/d3waterfallchart/d3waterfallchart.demo.module#D3WaterfallChartDemoModule'
-    },  
+    },
     {
       path: 'amexio-d3-chart-scatter', loadChildren: './charts/D3charts/d3scatterchart/d3scatterchart.demo.module#D3ScatterChartDemoModule'
-    }, 
+    },
     {
       path: 'amexio-d3-chart-combo', loadChildren: './charts/D3charts/d3combochart/d3combochart.demo.module#D3ComboChartDemoModule'
     },
     {
       path: 'amexio-d3-chart-bar-stack', loadChildren: './charts/D3charts/d3barstackchart/d3barstackchart.demo.module#D3BarStackChartDemoModule'
-    }, 
+    },
     {
       path: 'amexio-d3-chart-line', loadChildren: './charts/D3charts/d3linechart/d3linechart.demo.module#D3LineChartDemoModule'
-    }, 
+    },
     {
       path: 'amexio-d3-chart-donut', loadChildren: './charts/D3charts/d3donutchart/d3donutchart.demo.module#D3DonutChartDemoModule'
-    }, 
+    },
     {
       path: 'amexio-d3-chart-pie', loadChildren: './charts/D3charts/d3piechart/d3piechart.demo.module#D3PieChartDemoModule'
-    }, 
-    
+    },
+
     {
       path: 'amexio-d3-chart-multiseries', loadChildren: './charts/D3charts/d3multiserieschart/d3multiserieschart.demo.module#D3MultiSeriesChartDemoModule'
-    }, 
+    },
     {
       path: 'amexio-d3-chart-histogram', loadChildren: './charts/D3charts/d3histogramchart/d3histogramchart.demo.module#D3HistogramChartDemoModule'
-    }, 
+    },
     {
       path: 'amexio-d3-chart-multiarea', loadChildren: './charts/D3charts/d3multiareachart/d3multiareachart.demo.module#D3MultiAreaChartDemoModule'
-    }, 
+    },
     {
       path: 'drillable-with-single-target-demo', loadChildren: './charts/D3charts/d3drillablesingletarget/d3drillablesingletarget.demo.module#D3DrillableSingleTargetDemoModule'
     },
     {
       path: 'drillable-with-multiple-target-demo', loadChildren: './charts/D3charts/d3drillablemultipletarget/d3drillablemultipletarget.demo.module#D3DrillableMultipleTargetDemoModule'
-    }, 
-    
+    },
+
   ];
