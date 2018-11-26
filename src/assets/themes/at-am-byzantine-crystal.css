@@ -1932,6 +1932,41 @@ input:checked + .toggle-slider:before {
   font-size: 18px;
   font-weight: bold; }
 
+.large-44 {
+  font-size: 44px;
+  line-height: 45px; }
+
+.large-44-bold {
+  font-size: 44px;
+  font-weight: bold; }
+
+.large-50 {
+  font-size: 50px;
+  line-height: 55px; }
+
+.large-50-bold {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 55px; }
+
+.large-56 {
+  font-size: 56px;
+  line-height: 60px; }
+
+.large-56-bold {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 60px; }
+
+.large-78 {
+  font-size: 78px;
+  line-height: 70px; }
+
+.large-78-bold {
+  font-size: 78px;
+  font-weight: bold;
+  line-height: 70px; }
+
 /****************************************************************************
     Component Name : Box
     Version : Amexio v4.0 onwards
@@ -4247,7 +4282,7 @@ header .billboard .content-button {
   grid-template-areas: 'north north north north north north' 'east center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-N-E-C-W-S aside {
   border: 0px solid none; }
@@ -4258,7 +4293,7 @@ header .billboard .content-button {
   grid-template-areas: 'north north north north north north' 'east center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-N-E-C-S aside {
   border: 0px solid none; }
@@ -4269,7 +4304,7 @@ header .billboard .content-button {
   grid-template-areas: 'north north north north north north' 'center center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-N-C-W-S aside {
   border: 0px solid none; }
@@ -4280,7 +4315,7 @@ header .billboard .content-button {
   grid-template-areas: 'east center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-E-C-W-S aside {
   border: 0px solid none; }
@@ -4291,7 +4326,7 @@ header .billboard .content-button {
   grid-template-areas: 'north north north north north north' 'center center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-N-C-S aside {
   border: 0px solid none; }
@@ -4302,7 +4337,7 @@ header .billboard .content-button {
   grid-template-areas: 'east center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-E-C-S aside {
   border: 0px solid none; }
@@ -4313,7 +4348,7 @@ header .billboard .content-button {
   grid-template-areas: 'center center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-C-W-S aside {
   border: 0px solid none; }
@@ -4324,7 +4359,7 @@ header .billboard .content-button {
   grid-template-areas: 'north north north north north north' 'center center center center center center';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-N-C aside {
   border: 0px solid none; }
@@ -4335,7 +4370,7 @@ header .billboard .content-button {
   grid-template-areas: 'center center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%; }
 
 .borderlayout-container-C-S aside {
   border: 0px solid none; }
