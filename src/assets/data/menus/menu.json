@@ -88,6 +88,11 @@
                             "text": "gridlayout-Ex2",
                             "icon": "fa fa-indent fa-fw",
                             "link": "gridlayout-demo-exp2"
+                        },
+                        {
+                            "text": "gridlayout-Ex3",
+                            "icon": "fa fa-indent fa-fw",
+                            "link": "gridlayout-demo-exp3"
                         }
                     ]
 
