@@ -137,22 +137,10 @@ import {HttpClient} from "@angular/common/http";
                       [horizontal-position]="'left'"
                       [close-on-escape] ="true"
                       [background-color]="'green'"
+                      [icon]="'	fa fa-check-square-o fa-fw'"
                       [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="4000">
-                      <ng-template #amexioNotificationTemp let-data="data">
-
-                        <amexio-row>
-                          <amexio-column size="2">
-                            <amexio-image [icon-class]="'	fa fa-check'" style="font-size: 25px;">
-                            </amexio-image> &nbsp;&nbsp;
-                          </amexio-column>
-                          <amexio-column size="8">
-                            <amexio-label size="small-bold" font-color="white" >Success Message </amexio-label>
-                            <amexio-label font-color="white" > {{data}}</amexio-label>
-                          </amexio-column>
-                        </amexio-row>
-                        
-                      </ng-template>
+                     
                       
                     </amexio-notification>
                     <amexio-button
@@ -215,7 +203,7 @@ import {HttpClient} from "@angular/common/http";
                       [vertical-position]="'bottom'"
                       [horizontal-position]="'right'"
                       [close-on-escape] ="true"
-                      [auto-dismiss-msg]="false"
+                      [auto-dismiss-msg]="true"
                       [auto-dismiss-msg-interval]="6000">
 
                       <ng-template #amexioNotificationTemp let-data="data">
