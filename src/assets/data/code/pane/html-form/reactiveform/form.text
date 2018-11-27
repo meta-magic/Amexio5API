@@ -10,8 +10,9 @@ export class ReactiveFormComponent {
   employeeFormInsideForm: FormGroup;
   addressForm: FormGroup;
   address: Address;
-
   employeeFormGroup: FormGroup;
+  // TO DYNAMIC FORMS
+  dynamicEmployeeForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
     this.address = new Address();
@@ -66,7 +67,41 @@ this.employeeFormGroup = this.fb.group({
     temporaryAddress: new FormControl('', Validators.required),
     permanentAddress: new FormControl('', Validators.required)
   })
-});
+ });
+   // TO DYNAMIC FORMS
+    this.dynamicEmployeeForm = this.fb.group({
+      FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      Email: ['', [Validators.required, Validators.email]],
+      Age: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
+      Gender: ['', [Validators.required]],
+      Agree: ['', [Validators.required, Validators.requiredTrue]],
+      phones : this.fb.array([])
+    });
+  }
+
+  // GET PHONE FORMS
+  get phoneForms() {
+    return this.dynamicEmployeeForm.get('phones') as FormArray;
+  }
+
+  // ADD PHONE NUMBER
+  addPhone() {
+    const phone = this.fb.group({
+      phoneLabel: ['', [Validators.required]],
+      countryCode: ['', [Validators.required]],
+      phoneNumber: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(10), Validators.pattern('[0-9 ]*')]]
+    });
+    this.phoneForms.push(phone);
+  }
+
+  // THIS EVENT FIRE WHEN USER ADD PHONE NUMBER
+  addPhoneClick() {
+    this.enableFieldSet = true;
+    this.addPhone();
+  }
+
+
 }
 
 // THIS MODEL CLASS IS USED FOR BINDING TO EMPLOYEE ADDRESS

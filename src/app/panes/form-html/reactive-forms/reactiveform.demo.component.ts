@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+import { FormArray } from '@angular/forms';
 
 
 @Component({
@@ -20,14 +21,14 @@ export class HtmlReactiveFormComponent implements OnInit {
   age: number;
   radioGroupData: any[] = [];
   employeeForm: FormGroup;
-
-
   employeeFormInsideForm: FormGroup;
   addressForm: FormGroup;
   address: Address;
-
   employeeFormGroup: FormGroup;
+  enableFieldSet: boolean;
 
+  // TO DYNAMIC FORMS
+  dynamicEmployeeForm: FormGroup;
   constructor(private http: HttpClient, private fb: FormBuilder) {
     this.address = new Address();
     this.radioGroupData = [{
@@ -67,9 +68,7 @@ export class HtmlReactiveFormComponent implements OnInit {
       PermanentAddress: ['', [Validators.required]]
     });
 
-
     // froms inside group
-
 
     this.employeeFormGroup = this.fb.group({
       FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
@@ -83,14 +82,48 @@ export class HtmlReactiveFormComponent implements OnInit {
         permanentAddress: new FormControl('', Validators.required)
       })
     });
+
+    this.dynamicEmployeeForm = this.fb.group({
+      FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      Email: ['', [Validators.required, Validators.email]],
+      Age: ['', [Validators.required, Validators.min(18), Validators.max(100)]],
+      Gender: ['', [Validators.required]],
+      Agree: ['', [Validators.required, Validators.requiredTrue]],
+      phones : this.fb.array([])
+    });
   }
 
+  // GET PHONE FORMS
+  get phoneForms() {
+    return this.dynamicEmployeeForm.get('phones') as FormArray;
+  }
+
+  // ADD PHONE NUMBER
+  addPhone() {
+    const phone = this.fb.group({
+      phoneLabel: ['', [Validators.required]],
+      countryCode: ['', [Validators.required]],
+      phoneNumber: ['', [Validators.required, Validators.minLength(8), Validators.maxLength(10), Validators.pattern('[0-9 ]*')]]
+    });
+    this.phoneForms.push(phone);
+  }
+
+  // THIS EVENT FIRE WHEN USER ADD PHONE NUMBER
+  addPhoneClick() {
+    this.enableFieldSet = true;
+    this.addPhone();
+  }
   //THIS METHOD IS USED FOR MAKING PERMANENT ADDRESS AS TEMP ADDRESS BASE UPON CHECKED
   onCheckClick(data: any) {
     if (data) {
       this.address.perAddress = this.address.tempAddress;
     }
 
+  }
+
+  onDeleteClick(index:number) {
+    this.phoneForms.removeAt(index);
   }
 
 
