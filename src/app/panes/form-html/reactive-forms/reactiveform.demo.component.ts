@@ -26,11 +26,18 @@ export class HtmlReactiveFormComponent implements OnInit {
   address: Address;
   employeeFormGroup: FormGroup;
   enableFieldSet: boolean;
-
+  emplpoyeeRegistration: EmplpoyeeRegistration;
+  registration:Registration;
+  registration1:Registration;
+  dynamicFormsReg:DynamicFormsReg;
   // TO DYNAMIC FORMS
   dynamicEmployeeForm: FormGroup;
   constructor(private http: HttpClient, private fb: FormBuilder) {
     this.address = new Address();
+    this.emplpoyeeRegistration = new EmplpoyeeRegistration();
+    this.registration1 = new Registration();
+    this.registration = new Registration();
+    this.dynamicFormsReg = new DynamicFormsReg();
     this.radioGroupData = [{
       genderName: 'Male',
       genderId: 'male'
@@ -112,21 +119,29 @@ export class HtmlReactiveFormComponent implements OnInit {
   // THIS EVENT FIRE WHEN USER ADD PHONE NUMBER
   addPhoneClick() {
     this.enableFieldSet = true;
+    this.dynamicFormsReg.add(new Phone());
     this.addPhone();
   }
   //THIS METHOD IS USED FOR MAKING PERMANENT ADDRESS AS TEMP ADDRESS BASE UPON CHECKED
-  onCheckClick(data: any) {
+  onCheckClick1(data: any) {
     if (data) {
-      this.address.perAddress = this.address.tempAddress;
+      this.registration.address.perAddress = this.registration.address.tempAddress;
     }
-
   }
 
-  onDeleteClick(index:number) {
+  onCheckClick2(data: any) {
+    if (data) {
+      this.registration1.address.perAddress = this.registration1.address.tempAddress;
+    }
+  }
+
+  onDeleteClick(index: number) {
     this.phoneForms.removeAt(index);
   }
 
-
+  onAddClick(data:any) {
+    this.dynamicFormsReg.add(data);
+  }
 
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
@@ -171,3 +186,39 @@ export class Address {
   perAddress: string;
 }
 
+
+export class EmplpoyeeRegistration {
+  firstName: string;
+  lastName: string;
+  email: string;
+  age: number;
+  gender: string;
+  agree: any;
+  constructor() {
+  }
+}
+
+export class Registration extends EmplpoyeeRegistration{
+  address :Address;
+  constructor(){
+    super();
+    this.address = new Address();
+  }
+}
+
+export class DynamicFormsReg extends EmplpoyeeRegistration {
+  phones: Phone[];
+  constructor() {
+    super();
+    this.phones = [];
+  }
+  add(phone:Phone) {
+    this.phones.push(phone);
+  }
+}
+
+export class Phone {
+  phoneLabel:string;
+  countryCode:string;
+  phoneNumber:string;
+}
