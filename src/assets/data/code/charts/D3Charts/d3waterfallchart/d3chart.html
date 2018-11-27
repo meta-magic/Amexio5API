@@ -1,6 +1,9 @@
 <!-- D3-waterfall Chart User Define Color -->
 <amexio-d3-chart-waterfall 
   [title]="'Product Information'" 
-  [data]="waterfallChartData">
+  [data]="waterfallChartData"
+  [label-color]="'white'"
+  (onChartClick)="onChartClick($event)"
+  (onLegendClick)="onLegendClick($event)">
 </amexio-d3-chart-waterfall>
 
