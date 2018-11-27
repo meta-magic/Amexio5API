@@ -32,6 +32,13 @@
       "default": "false"
     },
     {
+      "name": "content-align",
+      "description": "Provides the alignment(left, right, center) for content present in panel",
+      "version": "5.4 onwards",
+      "type": "string",
+      "default": "left"
+    },
+    {
       "name": "collapsible",
       "description": "Provides the collapse property, if true",
       "version": "5.4 onwards",
