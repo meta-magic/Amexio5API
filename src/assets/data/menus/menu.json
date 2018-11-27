@@ -18,7 +18,7 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
-            "badge": "4",
+            "badge": "3",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
@@ -27,7 +27,6 @@
                 {
                     "text": "Border Layout",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "badge": "U",
                     "link": "border"
                 },
                 {
@@ -200,7 +199,7 @@
                     "text": "Timeline",
                     "icon": "fa fa-history",
                     "link": "timeline",
-                    "badge": "New"
+                    "badge": "U"
                 },
                 {
                     "text": "Window",
@@ -259,7 +258,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "3",
+            "badge": "1",
             "children": [{
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o fa-fw",
@@ -279,7 +278,6 @@
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card",
-                    "badge": "New",
                     "link": "credit-card-demo"
                 },
                 {
@@ -355,7 +353,6 @@
                 {
                     "text": "Recaptcha",
                     "icon": "fa fa-recycle",
-                    "badge": "New",
                     "link": "recaptcha-demo"
                 },
                 {
@@ -452,7 +449,6 @@
             "children": [{
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
-                    "badge": "New",
                     "link": "amexio-spinner-demo"
                 },
                 {
@@ -538,8 +534,7 @@
                         {
                             "text": "Collapse",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "collapsetree-demo",
-                            "badge": "New"
+                            "link": "collapsetree-demo"
                         },
                         {
                             "text": "With Template",
@@ -607,7 +602,6 @@
                 {
                     "text": "Within Item Selector",
                     "icon": "fa fa-exchange fa-fw",
-                    "badge": "New",
                     "link": "itemselectordragdrop-demo"
                 }
             ]
@@ -655,12 +649,11 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars fa-fw",
-            "badge": "2",
+            "badge": "1",
             "children": [{
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right fa-fw",
-                    "link": "breadcrumb-demo",
-                    "badge": "New"
+                    "link": "breadcrumb-demo"
                 },
                 {
                     "text": "Dockbar",
