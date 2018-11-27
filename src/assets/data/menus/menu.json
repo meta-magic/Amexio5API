@@ -221,6 +221,7 @@
                 {
                     "text": "Form (HTML)",
                     "icon": "fa fa-window-maximize fa-fw",
+                    "badge": "2",
                     "children": [{
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize fa-fw",
@@ -238,6 +239,7 @@
                 {
                     "text": "Amexio Forms",
                     "icon": "fa fa-window-maximize fa-fw",
+                    "badge": "2",
                     "children": [{
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize fa-fw",
