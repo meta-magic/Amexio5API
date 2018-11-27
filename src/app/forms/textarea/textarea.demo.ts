@@ -25,7 +25,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-textarea-input [enable-popover]="true"  [field-label]="'Textarea Input'" name ="Address"
                                            [place-holder]="'permanent Address'"
-                                           [allow-blank]="true" [error-msg] ="'Please enter Address'"
+                                           [allow-blank]="false" [error-msg] ="'Please enter Address'"
                                            [icon-feedback]="true" [rows]="'4'" [columns]="'2'">
                     </amexio-textarea-input>
 

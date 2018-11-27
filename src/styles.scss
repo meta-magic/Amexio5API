@@ -226,5 +226,15 @@
 fill: #17bf3c;
 }
 
- 
+.label-block{
+  font-size: 4vw;
+}
 
+@media only screen and (max-width: 1024px) {
+  .label-block{
+    font-size: 9.5vw;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+  }
+}
