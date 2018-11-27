@@ -49,7 +49,7 @@ export class GridLayoutDemo {
     .addlayout(["gridmain", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"])
     .addlayout(["gridright", "gridright", "gridright", "gridright", "gridright", "gridright"])
     .addlayout(["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
-    this._gridlayoutService.createLayout('LayoutSample3','tab')
+    this._gridlayoutService.createLayout('LayoutSample2','tab')
     .addlayout(["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"])
     .addlayout(["gridmenu", "gridmenu", "gridmain", "gridmain", "gridmain", "gridmain"])
     .addlayout(["gridmenu", "gridmenu", "gridright", "gridright", "gridright", "gridright"])
