@@ -16,11 +16,7 @@
                             <amexio-body>
                                 <amexio-layout-grid [layout]="'Layout1'">
                                     <amexio-grid-item [name]="'gridheader'">
-                                        <amexio-layout-columns [orientation]="'vertical'" [border]="false">
-                                            <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
-
-                                                <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
-                                                    <amexio-layout-item *ngFor="let item of  ['1']">
+                                            <amexio-panel style="text-align: center" [expanded]="true">
                                                         <amexio-label size="large-bold">
                                                             GRID Pile
                                                         </amexio-label>
@@ -28,10 +24,7 @@
                                                         <amexio-label size="medium-bold">
                                                             Stacked CSS Grid Effect
                                                         </amexio-label>
-                                                    </amexio-layout-item>
-                                                </amexio-layout-columns>
-                                            </amexio-layout-item>
-                                        </amexio-layout-columns>
+                                            </amexio-panel>
                                     </amexio-grid-item>
 
                                     <amexio-grid-item [name]="'gridmenu1'">
