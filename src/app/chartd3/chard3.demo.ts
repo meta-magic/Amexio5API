@@ -102,11 +102,11 @@ export class ChartD3Demo implements OnInit {
 
                 this.donutData = [
                         ['browser', 'activity'],
-                        ['IE', 39.3],
-                        ['Chrome', 32.52],
-                        ['Safari', 13.68],
-                        ['Firefox', 8.71],
-                        ['Others', 6.01]
+                        ['IE', 11.43],
+                        ['Chrome', 63.14],
+                        ['Safari', 3.83],
+                        ['Firefox', 10.23],
+                        ['Others', 10.01]
                 ];
 
 

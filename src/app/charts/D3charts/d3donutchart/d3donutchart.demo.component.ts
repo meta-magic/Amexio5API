@@ -37,12 +37,12 @@ export class AmexioD3DonutChartDemoComponent implements OnInit {
 
     this.defultColorData = 
     [
-      ['browser', 'popularity'],
-      ['IE', 300],
-      ['Chrome', 500],
-      ['Safari', 700],
-      ['Firefox', 400],
-      ['Others', 600]
+      ['browser', 'activity'],
+      ['IE', 11.43],
+      ['Chrome', 63.14],
+      ['Safari', 3.83],
+      ['Firefox', 10.23],
+      ['Others', 10.01]
     ];
 
     this.userDefineColorData = 
