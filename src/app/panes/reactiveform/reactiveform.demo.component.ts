@@ -20,16 +20,18 @@ export class reactiveFormComponent implements OnInit {
   age: number;
   radioGroupData: any[] = [];
   employeeForm: FormGroup;
-
-
   employeeFormInsideForm: FormGroup;
   addressForm: FormGroup;
   address: Address;
-
   employeeFormGroup: FormGroup;
-
+  emplpoyeeRegistration: EmplpoyeeRegistration;
+  registration: Registration;
+  registration1: Registration;
   constructor(private http: HttpClient, private fb: FormBuilder) {
     this.address = new Address();
+    this.emplpoyeeRegistration = new EmplpoyeeRegistration();
+    this.registration1 = new Registration();
+    this.registration = new Registration();
     this.radioGroupData = [{
       genderName: 'Male',
       genderId: 'male'
@@ -68,7 +70,7 @@ export class reactiveFormComponent implements OnInit {
     });
 
 
-    // froms inside group 
+    // froms inside group
 
 
     this.employeeFormGroup = this.fb.group({
@@ -85,13 +87,18 @@ export class reactiveFormComponent implements OnInit {
     });
   }
 
-  //THIS METHOD IS USED FOR MAKING PERMANENT ADDRESS AS TEMP ADDRESS BASE UPON CHECKED
-  onCheckClick(data: any) {
-    if (data) {
-      this.address.perAddress = this.address.tempAddress;
+    //THIS METHOD IS USED FOR MAKING PERMANENT ADDRESS AS TEMP ADDRESS BASE UPON CHECKED
+    onCheckClick1(data: any) {
+      if (data) {
+        this.registration.address.perAddress = this.registration.address.tempAddress;
+      }
     }
-
-  }
+  
+    onCheckClick2(data: any) {
+      if (data) {
+        this.registration1.address.perAddress = this.registration1.address.tempAddress;
+      }
+    }
 
 
 
@@ -132,9 +139,27 @@ export class reactiveFormComponent implements OnInit {
 }
 
 
-//THIS MODEL CLASS IS USED FOR BINDING TO EMPLOYEE ADDRESS
+// THIS MODEL CLASS IS USED FOR BINDING TO EMPLOYEE ADDRESS
 export class Address {
   tempAddress: string;
   perAddress: string;
 }
 
+export class EmplpoyeeRegistration {
+  firstName: string;
+  lastName: string;
+  email: string;
+  age: number;
+  gender: string;
+  agree: any;
+  constructor() {
+  }
+}
+
+export class Registration extends EmplpoyeeRegistration {
+  address: Address;
+  constructor() {
+    super();
+    this.address = new Address();
+  }
+}
