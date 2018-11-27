@@ -56,19 +56,19 @@ export class GridLayoutDemo {
     this._gridlayoutService.createLayout('gridimagelayout', 'tab')
       .addlayout(["gridimage1", "gridimage2", "gridimage3", "gridimage4"]);
     this._gridlayoutService.createLayout('gridimagelayout', 'mobile')
-      .addlayout(["gridimage1", "gridimage2"])
-      .addlayout(["gridimage3", "gridimage4"]);
+      .addlayout(["gridimage1", "gridimage1", "gridimage2", "gridimage2"])
+      .addlayout(["gridimage3", "gridimage3", "gridimage4", "gridimage4"]);
     this._gridlayoutService.createLayout('leftlayout', 'desktop')
-      .addlayout(["leftlayout1"])
-      .addlayout(["leftlayout2"])
-      .addlayout(["leftlayout3"])
-      .addlayout(["leftlayout4"]);
+      .addlayout(["leftlayout1", "leftlayout1", "leftlayout1", "leftlayout1"])
+      .addlayout(["leftlayout2", "leftlayout2", "leftlayout2", "leftlayout2"])
+      .addlayout(["leftlayout3", "leftlayout3", "leftlayout3", "leftlayout3"])
+      .addlayout(["leftlayout4", "leftlayout4", "leftlayout4", "leftlayout4"]);
     this._gridlayoutService.createLayout('leftlayout', 'tab')
       .addlayout(["leftlayout1", "leftlayout2", "leftlayout3", "leftlayout4"]);
 
     this._gridlayoutService.createLayout('leftlayout', 'mobile')
-      .addlayout(["leftlayout1", "leftlayout2"])
-      .addlayout(["leftlayout3", "leftlayout4"]);
+      .addlayout(["leftlayout1", "leftlayout1", "leftlayout2", "leftlayout2"])
+      .addlayout(["leftlayout3", "leftlayout3", "leftlayout4", "leftlayout4"]);
 
     this.getHtmlAndTypeScriptCode();
   }

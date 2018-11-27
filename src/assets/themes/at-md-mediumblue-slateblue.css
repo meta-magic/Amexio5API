@@ -1228,7 +1228,7 @@ button {
 
 .input-control-feedback {
   position: absolute;
-  top: 30px;
+  bottom: 10px;
   right: 0;
   display: block;
   width: 38px;
@@ -1539,6 +1539,7 @@ textarea:required {
   min-width: 250px;
   text-align: start;
   border-radius: 2px;
+  font-size: 17px;
   z-index: 1;
   display: block; }
   .notification i {
@@ -1973,6 +1974,41 @@ input:checked + .toggle-slider:before {
 .small-bold {
   font-size: 18px;
   font-weight: bold; }
+
+.large-44 {
+  font-size: 44px;
+  line-height: 45px; }
+
+.large-44-bold {
+  font-size: 44px;
+  font-weight: bold; }
+
+.large-50 {
+  font-size: 50px;
+  line-height: 55px; }
+
+.large-50-bold {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 55px; }
+
+.large-56 {
+  font-size: 56px;
+  line-height: 60px; }
+
+.large-56-bold {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 60px; }
+
+.large-78 {
+  font-size: 78px;
+  line-height: 70px; }
+
+.large-78-bold {
+  font-size: 78px;
+  font-weight: bold;
+  line-height: 70px; }
 
 /****************************************************************************
     Component Name : Box
@@ -2553,24 +2589,8 @@ input:checked + .toggle-slider:before {
   padding: 10px;
   display: block; }
 
-.dropdownmenu-right {
+.menu-right {
   right: 10px; }
-
-.label-alignment-css {
-  float: right;
-  width: 80%;
-  text-align: left; }
-
-.dropdown-menu-icon-div {
-  width: 20%;
-  display: inline; }
-
-.dropdown-menu-a {
-  width: auto; }
-
-.icon-false-css {
-  width: 80%;
-  padding-left: 30px; }
 
 /*****************************************************************************
  Component Name : Toolbar
@@ -6230,7 +6250,7 @@ verticalalign-tableft {
   grid-template-areas: 'north north north north north north' 'east center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-N-E-C-W-S aside {
   border: 0px solid none; }
@@ -6241,7 +6261,7 @@ verticalalign-tableft {
   grid-template-areas: 'north north north north north north' 'east center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-N-E-C-S aside {
   border: 0px solid none; }
@@ -6252,7 +6272,7 @@ verticalalign-tableft {
   grid-template-areas: 'north north north north north north' 'center center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-N-C-W-S aside {
   border: 0px solid none; }
@@ -6263,7 +6283,7 @@ verticalalign-tableft {
   grid-template-areas: 'east center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-E-C-W-S aside {
   border: 0px solid none; }
@@ -6274,7 +6294,7 @@ verticalalign-tableft {
   grid-template-areas: 'north north north north north north' 'center center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-N-C-S aside {
   border: 0px solid none; }
@@ -6285,7 +6305,7 @@ verticalalign-tableft {
   grid-template-areas: 'east center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-E-C-S aside {
   border: 0px solid none; }
@@ -6296,7 +6316,7 @@ verticalalign-tableft {
   grid-template-areas: 'center center center center center west' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-C-W-S aside {
   border: 0px solid none; }
@@ -6307,7 +6327,7 @@ verticalalign-tableft {
   grid-template-areas: 'north north north north north north' 'center center center center center center';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-N-C aside {
   border: 0px solid none; }
@@ -6318,7 +6338,7 @@ verticalalign-tableft {
   grid-template-areas: 'center center center center center center' 'south south south south south south';
   grid-gap: 2px;
   padding: 2px;
-  grid-template-columns: auto; }
+  grid-template-columns: repeat(6, 1fr); }
 
 .borderlayout-container-C-S aside {
   border: 0px solid none; }

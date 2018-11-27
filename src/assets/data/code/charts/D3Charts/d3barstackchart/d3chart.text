@@ -10,15 +10,15 @@ export class AmexioD3StackChartDemoComponent
   colorArray = [ "blue", "yellow", "green",];
 
   constructor() { 
-
+ 
 this.userDefineColorData = [
       ['Year', 'Sales', 'Expenses', 'Profit'],
-      ['2014', 1000, 400, 200],
+      ['2014', 1000, 400, 375],
       ['2015', 1170, 460, 250],
       ['2016', 660, 1120, 300],
       ['2017', 1030, 540, 350],
-      ['2019', 1090, 740, 450],
-      ['2019', 1050, 640, 350]
+      ['2018', 900, 600, 275],
+      ['2019', 600, 1000, 400]
     ];
   }
 
