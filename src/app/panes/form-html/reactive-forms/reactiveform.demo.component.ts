@@ -25,7 +25,7 @@ export class HtmlReactiveFormComponent implements OnInit {
   addressForm: FormGroup;
   address: Address;
   employeeFormGroup: FormGroup;
-  enableFieldSet:boolean;
+  enableFieldSet: boolean;
 
   // TO DYNAMIC FORMS
   dynamicEmployeeForm: FormGroup;
@@ -68,9 +68,7 @@ export class HtmlReactiveFormComponent implements OnInit {
       PermanentAddress: ['', [Validators.required]]
     });
 
-
     // froms inside group
-
 
     this.employeeFormGroup = this.fb.group({
       FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],

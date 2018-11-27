@@ -19,9 +19,7 @@
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
             "badge": "4",
-            "children": [
-
-                {
+            "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
                     "link": "accordion"
@@ -42,7 +40,6 @@
                     "link": "column-demo",
                     "icon": "fa fa-columns fa-fw"
                 },
-
                 {
                     "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
@@ -95,8 +92,6 @@
                             "link": "gridlayout-demo-exp3"
                         }
                     ]
-
-
                 },
                 {
                     "text": "Row",
@@ -119,38 +114,7 @@
                     "icon": "fa fa-window-maximize fa-fw",
                     "link": "dialouge"
                 },
-                {
-                    "text": "Form (HTML)",
-                    "icon": "fa fa-window-maximize fa-fw",
-                    "children": [{
-                            "text": "Template Driven",
-                            "icon": "fa fa-window-maximize fa-fw",
-                            "link": "html-form-demo"
-                        },
-                        {
-                            "text": "Reactive Forms",
-                            "icon": "fa fa-window-maximize fa-fw",
-                            "link": "html-reactive-form"
 
-                        }
-                    ]
-                },
-                {
-                    "text": "Amexio Forms",
-                    "icon": "fa fa-window-maximize fa-fw",
-                    "children": [{
-                            "text": "Template Driven",
-                            "icon": "fa fa-window-maximize fa-fw",
-                            "link": "form-demo"
-                        },
-                        {
-                            "text": "Reactive Forms",
-                            "icon": "fa fa-window-maximize fa-fw",
-                            "link": "reactive-form"
-
-                        }
-                    ]
-                },
                 {
                     "text": "Fieldset",
                     "icon": "fa fa-id-card-o fa-fw",
@@ -242,6 +206,51 @@
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
                     "link": "window"
+                }
+            ]
+        },
+        {
+            "text": "Forms",
+            "icon": "fa fa-clone fa-fw",
+            "badge": "4",
+            "children": [{
+                    "text": "Fieldset",
+                    "icon": "fa fa-id-card-o fa-fw",
+                    "link": "fieldset"
+                },
+                {
+                    "text": "Form (HTML)",
+                    "icon": "fa fa-window-maximize fa-fw",
+                    "children": [{
+                            "text": "Template Driven",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "html-form-demo",
+                            "badge": "New"
+                        },
+                        {
+                            "text": "Reactive Forms",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "html-reactive-form",
+                            "badge": "New"
+                        }
+                    ]
+                },
+                {
+                    "text": "Amexio Forms",
+                    "icon": "fa fa-window-maximize fa-fw",
+                    "children": [{
+                            "text": "Template Driven",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "form-demo",
+                            "badge": "New"
+                        },
+                        {
+                            "text": "Reactive Forms",
+                            "icon": "fa fa-window-maximize fa-fw",
+                            "link": "reactive-form",
+                            "badge": "New"
+                        }
+                    ]
                 }
             ]
         },
@@ -417,7 +426,6 @@
                         }
                     ]
                 },
-
                 {
                     "text": "Notification",
                     "icon": "fa fa-comments fa-fw",
@@ -515,7 +523,6 @@
                         }
                     ]
                 },
-
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
@@ -652,7 +659,6 @@
                     "icon": "fa fa-arrow-right fa-fw",
                     "link": "breadcrumb-demo",
                     "badge": "New"
-
                 },
                 {
                     "text": "Dockbar",
@@ -716,14 +722,12 @@
                     "icon": "fa fa-bar-chart fa-fw",
                     "link": "drillable-with-single-target-demo",
                     "badge": "New"
-
                 },
                 {
                     "text": "Multiple Targets",
                     "icon": "fa fa-bar-chart fa-fw",
                     "link": "drillable-with-multiple-target-demo",
                     "badge": "New"
-
                 }
             ]
         },
