@@ -13,6 +13,12 @@
       "description": "Closable icon on notification."
     },
     {
+      "name": "icon",
+      "type": "any",
+      "default": "none",
+      "description": " Icon on notification."
+    },
+    {
       "name": "vertical-position",
       "type": "string",
       "default": "",

@@ -99,19 +99,9 @@
         [close-on-escape] ="true"
         [background-color]="'green'"
         [auto-dismiss-msg]="false"
+        [icon]="'fa fa-check-square-o fa-fw'"
         [auto-dismiss-msg-interval]="4000">
-        <ng-template   #amexioNotificationTemp let-data="data" >
-          <amexio-row>
-            <amexio-column size="2">
-              <amexio-image [icon-class]="'	fa fa-check'" style="font-size: 25px;">
-              </amexio-image> &nbsp;&nbsp;
-            </amexio-column>
-            <amexio-column size="8">
-              <amexio-label size="small-bold" font-color="white" >Success Message </amexio-label>
-              <amexio-label font-color="white" > {{data}} </amexio-label>
-            </amexio-column>
-          </amexio-row>
-        </ng-template>
+        
       </amexio-notification>
 
 
