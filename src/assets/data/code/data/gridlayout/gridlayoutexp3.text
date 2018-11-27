@@ -2,7 +2,7 @@ import AmexioGridLayoutService from "amexio-ng-extensions";
 
 export class GridLayoutDemo{
  constructor(private http: HttpClient, private _gridlayoutService: AmexioGridLayoutService) {
-    this._gridlayoutService.createLayout('Home', 'desktop')
+   this._gridlayoutService.createLayout('Home', 'desktop')
       .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4"])
       .addlayout(["gridtitle", "gridmain", "gridmain", "gridright1"])
       .addlayout(["gridmenu", "gridmain", "gridmain", "gridright2"])

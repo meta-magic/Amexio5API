@@ -45,7 +45,6 @@ export class GridLayoutDemo {
       .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
       .addlayout(["gridheader2", "gridheader2", "gridheader2", "gridheader2"])
       .addlayout(["gridright", "gridright", "gridright", "gridright"])
-      // .addlayout(["gridright1", "gridright1", "gridright1", "gridright1"])
       .addlayout(["gridmain", "gridmain", "gridmain", "gridmain"])
       .addlayout(["gridfooter", "gridfooter", "gridfooter", "gridfooter"])
       .addlayout(["gridfooter1", "gridfooter1", "gridfooter1", "gridfooter1"])
