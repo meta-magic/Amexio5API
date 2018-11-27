@@ -3,8 +3,9 @@
         Grid Layout
     </amexio-header>
     <amexio-body>
-        <p>CSS Grid Layout introduces a two-dimensional grid system to CSS. Grids can be used to layout major page areas or
-            small user interface elements.</p>
+        <p>CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can
+            handle both columns and rows. Grid Layout can be used by applying CSS rules both to a parent element (which becomes
+            the Grid Container) and to that elements children (which become Grid Items).</p>
         <amexio-tab-view>
             <amexio-tab title="Demo" active="true">
                 <amexio-row>
@@ -16,15 +17,15 @@
                             <amexio-body>
                                 <amexio-layout-grid [layout]="'Layout1'">
                                     <amexio-grid-item [name]="'gridheader'">
-                                            <amexio-panel style="text-align: center" [expanded]="true">
-                                                        <amexio-label size="large-bold">
-                                                            GRID Pile
-                                                        </amexio-label>
-                                                        <br>
-                                                        <amexio-label size="medium-bold">
-                                                            Stacked CSS Grid Effect
-                                                        </amexio-label>
-                                            </amexio-panel>
+                                        <amexio-panel style="text-align: center" [expanded]="true">
+                                            <amexio-label size="large-bold">
+                                                GRID Pile
+                                            </amexio-label>
+                                            <br>
+                                            <amexio-label size="medium-bold">
+                                                Stacked CSS Grid Effect
+                                            </amexio-label>
+                                        </amexio-panel>
                                     </amexio-grid-item>
 
                                     <amexio-grid-item [name]="'gridmenu1'">
@@ -69,9 +70,9 @@
                                         <amexio-panel [border]="false" [header]="true" title="First Sidebar Item" [collapsible]="true" [expanded]="true">
                                             This is the first of two sidebar sections. It appears as the first of two items in the sidebar aside element which is located
                                             after the main element in the HTML source order. On narrow screens it visually
-                                            appears after the main element.On narrow screens it visually
-                                            appears after the main element. On medium screens it appears at the top of the
-                                            left-hand sidebar. On wide screens it appears at the top of the left-hand sidebar.
+                                            appears after the main element.On narrow screens it visually appears after the
+                                            main element. On medium screens it appears at the top of the left-hand sidebar.
+                                            On wide screens it appears at the top of the left-hand sidebar.
                                         </amexio-panel>
                                     </amexio-grid-item>
                                     <amexio-grid-item [name]="'gridright1'">
