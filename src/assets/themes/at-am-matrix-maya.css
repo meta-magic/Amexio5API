@@ -405,8 +405,10 @@ button {
   outline: none;
   user-select: none;
   border: 1px solid #ced4da;
+  padding: .5rem 1rem;
   border-radius: 2px;
-  transition: all .2s ease-in-out; }
+  transition: all .2s ease-in-out;
+  margin-right: 5px !important; }
 
 .btn-badge {
   padding: .25em .4em;
@@ -6432,7 +6434,6 @@ amexio-layout amexio-layout-item {
   position: absolute;
   background-color: #333;
   border: 3px solid #ffffff;
-  z-index: 100;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
