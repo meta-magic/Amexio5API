@@ -36,6 +36,10 @@
         </amexio-column>
     </amexio-row>
 </form>
+<!-- VALIDATION FLAG ADDED TO BUTTON -->
+<amexio-button [label]="'Save'" [disabled]="!employeeForm.valid" [type]="'green'" [tooltip]="'Save Form'">
+</amexio-button>
+
 <!-- Form Within Form -->
 <form [formGroup]="employeeFormInsideForm">
     <amexio-row>
@@ -107,6 +111,9 @@
         </amexio-column>
     </amexio-row>
 </form>
+<!-- VALIDATION FLAG ADDED TO BUTTON -->
+<amexio-button [label]="'Save'" [disabled]="!employeeFormInsideForm.valid" [type]="'green'" [tooltip]="'Save Form'">
+</amexio-button>
 
 <!-- Form Group Inside Form -->
 <form [formGroup]="employeeFormGroup">
@@ -172,70 +179,77 @@
         </amexio-column>
     </amexio-row>
 </form>
-<!--   Reactive Form with Dynamic Forms -->
+<!-- VALIDATION FLAG ADDED TO BUTTON -->
+<amexio-button [label]="'Save'" [disabled]="!employeeFormGroup.valid" [type]="'green'" [tooltip]="'Save Form'">
+</amexio-button>
 
+<!--   Reactive Form with Dynamic Forms -->
 <form [formGroup]="dynamicEmployeeForm">
-        <amexio-row>
-            <amexio-column size="6">
-                <amexio-text-input formControlName="FirstName" [field-label]="'First Name'" [allow-blank]="true" [error-msg]="'Please enter valid First Name'" [enable-popover]="true" [place-holder]="'Please enter first name'" [min-length]="2" [disabled]="false" [icon-feedback]="false"
-                    [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'" [max-length]="20">
+    <amexio-row>
+        <amexio-column size="6">
+            <amexio-text-input formControlName="FirstName" [field-label]="'First Name'" [allow-blank]="true" [error-msg]="'Please enter valid First Name'" [enable-popover]="true" [place-holder]="'Please enter first name'" [min-length]="2" [disabled]="false" [icon-feedback]="false"
+                [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'" [max-length]="20">
+            </amexio-text-input>
+        </amexio-column>
+        <amexio-column size="6">
+            <amexio-text-input formControlName="LastName" [field-label]="'Last Name'" [place-holder]="'Please enter last name'" [allow-blank]="true" [error-msg]="'errorMsg'" [enable-popover]="true" [min-length]="2" [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'"
+                [max-length]="20">
+                [icon-feedback]="true" >
+            </amexio-text-input>
+        </amexio-column>
+    </amexio-row>
+    <amexio-row>
+        <amexio-column size="6">
+            <amexio-email-input formControlName="Email" [field-label]="'Email Id'" [place-holder]="'Please enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
+            </amexio-email-input>
+        </amexio-column>
+        <amexio-column size="6">
+            <amexio-number-input formControlName="Age" [enable-popover]="true" [field-label]="'Age'" [place-holder]="'Enter age'" [error-msg]="'Please enter age'" [min-value]="18" [min-error-msg]="'age can not be less than 18'" [max-value]="100" [max-error-msg]="'age can not be greater than 100'"
+                [icon-feedback]="true">
+            </amexio-number-input>
+        </amexio-column>
+    </amexio-row>
+    <amexio-row>
+        <amexio-column size="6">
+            <amexio-button [label]="'Add Phone'" [type]="'green'" [tooltip]="'Add Phone'" (onClick)="addPhoneClick()">
+            </amexio-button>
+        </amexio-column>
+    </amexio-row>
+    <amexio-fieldset *ngIf="enableFieldSet" formArrayName="phones" [collapsible]="false" [title]="'Add Phone Numbers'">
+        <amexio-row *ngFor="let phone of phoneForms.controls;let i=index" [formGroupName]="i">
+            <amexio-column size="3">
+                <amexio-text-input formControlName="phoneLabel" [(ngModel)]="phone.value.phoneLabel" enable-popover="true" field-label="Phone Label" name="phoneLabel" place-holder="Enter phone label" allow-blank="false" min-length="3" min-error-msg="Minimum 3 char required"
+                    max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
                 </amexio-text-input>
             </amexio-column>
-            <amexio-column size="6">
-                <amexio-text-input formControlName="LastName" [field-label]="'Last Name'" [place-holder]="'Please enter last name'" [allow-blank]="true" [error-msg]="'errorMsg'" [enable-popover]="true" [min-length]="2" [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'"
-                    [max-length]="20">
-                    [icon-feedback]="true" >
+            <amexio-column size="3">
+                <amexio-text-input formControlName="countryCode" [(ngModel)]="phone.value.countryCode" enable-popover="true" field-label="Country Code" name="countryCode" place-holder="Enter country code" allow-blank="false" min-length="1" min-error-msg="Minimum 1 char required"
+                    max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
                 </amexio-text-input>
             </amexio-column>
-        </amexio-row>
-        <amexio-row>
-            <amexio-column size="6">
-                <amexio-email-input formControlName="Email" [field-label]="'Email Id'" [place-holder]="'Please enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
-                </amexio-email-input>
+            <amexio-column size="3">
+                <amexio-text-input formControlName="phoneNumber" [(ngModel)]="phone.value.phoneNumber" enable-popover="true" field-label="Phone Number" name="phoneNumber" place-holder="Enter Phone Number" allow-blank="false" min-length="8" min-error-msg="Minimum 8 char required"
+                    max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                </amexio-text-input>
             </amexio-column>
-            <amexio-column size="6">
-                <amexio-number-input formControlName="Age" [enable-popover]="true" [field-label]="'Age'" [place-holder]="'Enter age'" [error-msg]="'Please enter age'" [min-value]="18" [min-error-msg]="'age can not be less than 18'" [max-value]="100" [max-error-msg]="'age can not be greater than 100'"
-                    [icon-feedback]="true">
-                </amexio-number-input>
+            <amexio-column size="3">
+                <amexio-button [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'" (onClick)="onDeleteClick(i)">
+                </amexio-button>
             </amexio-column>
         </amexio-row>
-        <amexio-row>
-            <amexio-column size="6">
-                <amexio-button [label]="'Add Phone'" [type]="'green'" [tooltip]="'Add Phone'" (onClick)="addPhoneClick()">
-                  </amexio-button> 
-            </amexio-column>
-          </amexio-row>
-          <amexio-fieldset *ngIf="enableFieldSet" formArrayName="phones" [collapsible]="false" [title]="'Add Phone Numbers'">
-            <amexio-row *ngFor="let phone of phoneForms.controls;let i=index" [formGroupName]="i">
-                  <amexio-column size="3">
-                      <amexio-text-input formControlName="phoneLabel" [(ngModel)]="phone.value.phoneLabel" enable-popover="true" field-label="Phone Label" name="phoneLabel" place-holder="Enter phone label" allow-blank="false" min-length="3" min-error-msg="Minimum 3 char required" max-length="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
-                      </amexio-text-input>
-                  </amexio-column>
-                  <amexio-column size="3">
-                      <amexio-text-input formControlName="countryCode" [(ngModel)]="phone.value.countryCode" enable-popover="true" field-label="Country Code" name="countryCode" place-holder="Enter country code" allow-blank="false" min-length="1" min-error-msg="Minimum 1 char required" max-length="10" max-error-msg="Maximum 10 char allowed"
-                          icon-feedback="true">
-                      </amexio-text-input>
-                  </amexio-column>
-                  <amexio-column size="3">
-                      <amexio-text-input formControlName="phoneNumber" [(ngModel)]="phone.value.phoneNumber" enable-popover="true" field-label="Phone Number" name="phoneNumber" place-holder="Enter Phone Number" allow-blank="false" min-length="8" min-error-msg="Minimum 8 char required" max-length="10" max-error-msg="Maximum 10 char allowed"
-                          icon-feedback="true">
-                      </amexio-text-input>
-                  </amexio-column>
-                  <amexio-column size="3" >
-                      <amexio-button  [label]="'Delete'"  [type]="'red'" [tooltip]="'delete'"  [icon]="'fa fa-trash'" (onClick)="onDeleteClick(i)">
-                      </amexio-button>
-                  </amexio-column>
-              </amexio-row>
-          </amexio-fieldset>
-        <amexio-row>
-            <amexio-column size="6">
-                <amexio-radio-group formControlName="Gender" [field-label]="'Gender'" [horizontal]="true" [display-field]="'genderName'" [value-field]="'genderId'" [data]="radioGroupData">
-                </amexio-radio-group>
-            </amexio-column>
-            <amexio-column size="6">
-                <amexio-checkbox formControlName="Agree" [field-label]="'Agree'">
-                </amexio-checkbox>
-            </amexio-column>
-        </amexio-row>
-       
-    </form>
+    </amexio-fieldset>
+    <amexio-row>
+        <amexio-column size="6">
+            <amexio-radio-group formControlName="Gender" [field-label]="'Gender'" [horizontal]="true" [display-field]="'genderName'" [value-field]="'genderId'" [data]="radioGroupData">
+            </amexio-radio-group>
+        </amexio-column>
+        <amexio-column size="6">
+            <amexio-checkbox formControlName="Agree" [field-label]="'Agree'">
+            </amexio-checkbox>
+        </amexio-column>
+    </amexio-row>
+
+</form>
+<!-- VALIDATION FLAG ADDED TO BUTTON -->
+<amexio-button [label]="'Save'" [disabled]="!dynamicEmployeeForm.valid" [type]="'green'" [tooltip]="'Save Form'">
+</amexio-button>
