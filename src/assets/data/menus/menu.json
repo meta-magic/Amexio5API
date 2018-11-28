@@ -27,6 +27,7 @@
                 {
                     "text": "Border Layout",
                     "icon": "fa fa-id-card-o fa-fw",
+                    "badge":"U",
                     "link": "border"
                 },
                 {
