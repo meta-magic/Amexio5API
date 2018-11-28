@@ -212,13 +212,13 @@ export class DynamicFormsReg extends EmplpoyeeRegistration {
     super();
     this.phones = [];
   }
-  add(phone:Phone) {
+  add(phone: Phone) {
     this.phones.push(phone);
   }
 }
 
 export class Phone {
-  phoneLabel:string;
-  countryCode:string;
-  phoneNumber:string;
+  phoneLabel: string;
+  countryCode: string;
+  phoneNumber: string;
 }
