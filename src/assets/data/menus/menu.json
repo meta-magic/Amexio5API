@@ -18,7 +18,7 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
-            "badge": "3",
+            "badge": "4",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
@@ -56,13 +56,13 @@
                     ]
                 },
                 {
-                    "text": "Vertical Layout",
+                    "text": "Column Vertical",
                     "icon": "fa fa-pause fa-fw",
                     "badge": "New",
                     "link": "vertical-layout"
                 },
                 {
-                    "text": "Horizontal Layout",
+                    "text": "Column Horizontal",
                     "icon": "fa fa-align-justify fa-fw",
                     "badge": "New",
                     "link": "horizontal-layout"
