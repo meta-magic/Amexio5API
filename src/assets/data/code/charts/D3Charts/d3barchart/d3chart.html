@@ -5,6 +5,7 @@
         [height]="400" 
         [title]="'Population of Cities in India'"
         [label-color]="'white'"
+        [label]="true"
         (onChartClick)="onDefaultChartClick($event)"
         (onLegendClick)="onUserDefineLegendClick($event)"
         [color]="userDefineColors" >
@@ -12,8 +13,9 @@
 
 <!-- D3-bar Chart By Default Color -->
 <amexio-d3-chart-bar 
-        [data]="defultColorData"
         [title]="'Company Performance Details'" 
+        [data]="defultColorData"
+        [label]="true"
         (onChartClick)="onDefaultChartClick($event)" 
         (onLegendClick)="onDefaultLegendClick($event)" >
 </amexio-d3-chart-bar>
