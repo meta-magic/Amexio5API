@@ -1,12 +1,12 @@
 <!--Basic Text Field-->
-
+ 
 <amexio-text-input field-label="Name"
                    name="name"
                    place-holder="Enter name"
                    icon-feedback="true">
 </amexio-text-input>
 
-<!--Input Without Label and Icon feedback-->
+<!--Input Without Label & Icon feedback-->
 
 <amexio-text-input name="name"
                    place-holder="Enter name"
@@ -38,27 +38,31 @@
 
 <!--Font Styling-->
 
-<amexio-text-input field-label="Name"
-                   name="name"
-                   place-holder="Enter name"
-                   icon-feedback="true"
-                   font-style="italic">
+<amexio-text-input 
+                  label="Name"
+                  name="name"
+                  place-holder="Enter name"
+                  icon-feedback="true"
+                  font-style="italic">
 </amexio-text-input>
 
-<!-- Family Styling-->
+<!-- Font Size & Family Styling-->
 
-<amexio-text-input [field-label]="'Name'"
-                    name="name"
-                   [place-holder]="'Enter name'"
-                   [icon-feedback]="true"
-                   [font-style]="'italic'">
+<amexio-text-input 
+                  [field-label]="'Name'"
+                  name="name"
+                  [place-holder]="'Enter name'"
+                  [icon-feedback]="false"
+                  [font-size]="'large'">
 </amexio-text-input>
 
-<!--Font Size -->
+<!--Input With Pattern -->
 
-<amexio-text-input [field-label]="'Name'"
-                    name="name"
-                   [place-holder]="'Enter name'"
-                   [icon-feedback]="true"
-                   [font-size]="'large'">
+<amexio-text-input 
+                  name="name" 
+                  [field-label]="'Name'"
+                  [place-holder]="'Enter name'"
+                  [pattern]="'[a-z]'" 
+                  [icon-feedback]="true">
 </amexio-text-input>
+
