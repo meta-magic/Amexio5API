@@ -37,9 +37,18 @@ import { HttpClient } from "@angular/common/http";
                       </amexio-column>
                      
                    <amexio-column [size]="6">
-                        <ng-container *ngIf="outputData">
+
+                   <amexio-card [header]="true" [body-height]="50">
+                   <amexio-header>
+                   Output Code
+                   </amexio-header>
+                   <amexio-body >
+                   <ng-container *ngIf="outputData">
                         <pre><code>  {{outputData|json}} </code></pre>
                         </ng-container>
+                   </amexio-body>
+                   </amexio-card>
+                        
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
