@@ -1,119 +1,131 @@
 <!-- TimeLine Example1 -->
-<amexio-timeline [content-alignment]="'center'">
-    <amexio-timeline-event [label]="'08:30'" [icon]="'fa fa-file'" [content-border]="true" [content-alignment]="'left'">
+<amexio-timeline [content-alignment]="''">
+    <amexio-timeline-event [label]="'08:30'" [icon]="'fa fa-file'">
         <amexio-label size="large-bold">REGISTRATION</amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="'09:00'" [icon]="'fa fa-microphone'" [content-border]="true" [content-alignment]="'right'">
+    <amexio-timeline-event [label]="'09:00'" [icon]="'fa fa-microphone'">
         <amexio-label>Keynote Talk:Disrupting the Disruptors- Where does Blockchain go from here
         </amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="'09:15'" [icon]="'fa fa-microphone'" [content-border]="true" [content-alignment]="'left'">
+    <amexio-timeline-event [label]="'09:15'" [icon]="'fa fa-microphone'">
         <amexio-label>Blockchain in Enterprise- How Companies are using Blockchain Today
         </amexio-label>
-        <amexio-chips *ngFor="let item of sampledatachip1">
-            <amexio-chip [label]="item.label" [color]="item.color">
+        <amexio-chips>
+            <amexio-chip [label]="'Araf Karsh Hamid'" [color]="'grey'">
             </amexio-chip>
         </amexio-chips>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="'09:50'" [icon]="'fa fa-coffee'" [content-border]="true" [content-alignment]="'right'">
+    <amexio-timeline-event [label]="'09:50'" [icon]="'fa fa-coffee'">
         <amexio-label>Networking Break
         </amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="'10:05'" [icon]="'fa fa-microphone'" [content-border]="true" [content-alignment]="'left'">
+    <amexio-timeline-event [label]="'10:05'" [icon]="'fa fa-microphone'">
         <amexio-label>Understand Blockchain HyperLedger Fabric For Enterprises
         </amexio-label>
-        <amexio-chips *ngFor="let item of sampledatachip2">
-            <amexio-chip [label]="item.label" [color]="item.color">
+        <amexio-chips>
+            <amexio-chip [label]="'Ketan Gote'" [color]="'grey'">
             </amexio-chip>
         </amexio-chips>
     </amexio-timeline-event>
 </amexio-timeline>
 
 <!-- TimeLine Example 2 -->
-<amexio-timeline [content-alignment]="'center'">
-    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'" [content-border]="true" [content-alignment]="'left'">
+<amexio-timeline [content-alignment]="''">
+    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'">
         <amexio-image [path]="'assets/images/timeline/ataturk_1.jpg'" [filter]="'sepia'" [image-title]="'1981'" [title-position]="'bottom-left'">
         </amexio-image>
         <amexio-label>
             He was born in 1881 (probably in the spring) in Salonica, then an Ottoman city, now inGreece. His father Ali Riza, a customs
-            official turned lumber merchant, died when Mustafawas still a boy. His mother Zubeyde, adevout and strong-willed
-            woman, raised him and his sister.
+            official turned lumber merchant, died when Mustafawas still a boy. His mother
+            Zubeyde, adevout and strong-willed woman, raised him and his sister.
         </amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'" [content-border]="true" [content-alignment]="'right'">
+    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'">
         <amexio-image [path]="'assets/images/timeline/mustafa-kemal.jpg'" [filter]="'sepia'" [image-title]="'1983'" [title-position]="'bottom-left'">
         </amexio-image>
-        <amexio-label>First enrolled in a traditionalreligious school, he soon switched to a modern school. In 1893, he entered a military
-            highschool where his mathematics teacher gave him the second name Kemal (meaning perfection)in recognition of
-            young Mustafa's superior achievement.
+        <amexio-label>First enrolled in a traditionalreligious school, he soon switched to a modern school.
+            In 1893, he entered a military highschool where his mathematics teacher gave
+            him the second name Kemal (meaning perfection)in recognition of young Mustafa's
+            superior achievement.
         </amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'" [content-border]="true" [content-alignment]="'left'">
+    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'">
         <amexio-image [path]="'assets/images/timeline/mustafa-kemal1.jpg'" [filter]="'sepia'" [image-title]="'1905'" [title-position]="'bottom-left'">
         </amexio-image>
-        <amexio-label>In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of Staff Captain. Posted in Damascus,
-            he started with several colleagues, a clandestinesociety called "Homeland and Freedom" to fight against the Sultan'sdespotism.
+        <amexio-label>In 1905, Mustafa Kemal graduated from the War Academy in Istanbul with the rank of
+            Staff Captain. Posted in Damascus, he started with several colleagues, a clandestinesociety
+            called "Homeland and Freedom" to fight against the Sultan'sdespotism.
         </amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'" [content-border]="true" [content-alignment]="'right'">
+    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'">
         <amexio-image [path]="'assets/images/timeline/ataturk-10-kasim.jpg'" [filter]="'sepia'" [image-title]="'1908'" [title-position]="'bottom-left'">
         </amexio-image>
-        <amexio-label>In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer flourished as he won his heroism
-            in the far corners of the Ottoman Empire,including Albania and Tripoli. He also briefly served as a staff officer
-            in Salonica andIstanbul and as a military attache in Sofia.
+        <amexio-label>In 1908 he helped the group of officers who toppled the Sultan. Mustafa Kemal'scareer
+            flourished as he won his heroism in the far corners of the Ottoman Empire,including
+            Albania and Tripoli. He also briefly served as a staff officer in Salonica andIstanbul
+            and as a military attache in Sofia.
         </amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'" [content-border]="true" [content-alignment]="'left'">
+    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'">
         <amexio-image [path]="'assets/images/timeline/mustafa-kemal2.jpg'" [filter]="'sepia'" [image-title]="'1915'" [title-position]="'bottom-left'">
         </amexio-image>
-        <amexio-label>In 1915, when Dardanelles campaign was launched, Colonel Mustafa Kemal became anational hero by winning successive
-            victories and finally repelling the invaders.
+        <amexio-label>In 1915, when Dardanelles campaign was launched, Colonel Mustafa Kemal became anational
+            hero by winning successive victories and finally repelling the invaders.
         </amexio-label>
     </amexio-timeline-event>
-    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'" [content-border]="true" [content-alignment]="'right'">
+    <amexio-timeline-event [label]="''" [icon]="'fa fa-asterisk'">
         <amexio-image [path]="'assets/images/timeline/atatürk-ün-inanılmaz-karizmatik.jpg'" [filter]="'sepia'" [image-title]="'1916'"
             [title-position]="'bottom-left'">
         </amexio-image>
         <amexio-label>
             Promotedto general in 1916, at age 35, he liberated two major provinces in eastern Turkey thatyear. In the next two years,
-            he served as commander of several Ottoman armies inPalestine, Aleppo, and elsewhere, achieving another major
-            victory by stopping the enemyadvance at Aleppo.
+            he served as commander of several Ottoman armies inPalestine, Aleppo, and elsewhere,
+            achieving another major victory by stopping the enemyadvance at Aleppo.
         </amexio-label>
     </amexio-timeline-event>
 </amexio-timeline>
 
 <!-- TimeLine Example 3 -->
 <amexio-timeline [content-alignment]="'right'">
-        <amexio-timeline-event [label]="'Week One'" [icon]="'fa fa-book'" [content-border]="true">
-            <amexio-label size="medium-bold">UNDERSTAND</amexio-label>
-            <amexio-label size="small">Gather existing knowledge,expose assumptions and unknowns</amexio-label>
-        </amexio-timeline-event>
-        <amexio-timeline-event [label]="'Week Two'" [icon]="'fa fa-certificate'" [content-border]="true">
-            <amexio-label size="medium-bold"> DIVERGE</amexio-label>
-            <amexio-label size="small">Elluminate all paths.Our goal is to explore as many possibilities as possible,regardless of how realistic,feasible or viable they may or may not be. </amexio-label>
-        </amexio-timeline-event>
-        <amexio-timeline-event [label]="'Week Three'" [icon]="'fa fa-asterisk'" [content-border]="true">
-            <amexio-label size="medium-bold">CONVERGE</amexio-label>
-            <amexio-label size="small">Our Goal is to take all of the possibilities that we have exposed over the past two weeks and hone in on a single version of the prototype that we will build tomorrow </amexio-label>
-        </amexio-timeline-event>
-        <amexio-timeline-event [label]="'Week Four'" [icon]="'fa fa-cogs'" [content-border]="true">
-            <amexio-label size="medium-bold">PROTOTYPING</amexio-label>
-            <amexio-label size="small">During this phase you will build a quick and dirty prototype.Since you only have at most a week to build the prototype it should be low-fi as you can get away with during Testing.</amexio-label>
-        </amexio-timeline-event>
-        <amexio-timeline-event [label]="'Week Five'" [icon]="'fa fa-edit'" [content-border]="true">
-            <amexio-label size="medium-bold">TESTING</amexio-label>
-            <amexio-label size="small">Going into each test you should have a plan of what you area testing and how you know if that is successful or not.</amexio-label>
-        </amexio-timeline-event>
-        <amexio-timeline-event [label]="'Week Six'" [icon]="'fa fa-spinner'" [content-border]="true">
-            <amexio-label size="medium-bold">REITERATION</amexio-label>
-            <amexio-label size="small">To reiterate something is to say or do something again, or many times.Let me reiterate:if you reapeat yourself,you're reiterating the thing you originally said.</amexio-label>
-        </amexio-timeline-event>
-        <amexio-timeline-event [label]="'Week Seven'" [icon]="'fa fa-calendar'" [content-border]="true">
-                <amexio-label size="medium-bold">REVIEW</amexio-label>
-                <amexio-label size="small">To look back over something for evaluation or memory.*The year in review* is a popular form of news feature near the end of December.</amexio-label>
-            </amexio-timeline-event>
-            <amexio-timeline-event [label]="'Week Eight'" [icon]="'fa fa-thumbs-up'" [content-border]="true">
-                    <amexio-label size="medium-bold">FINALIZE </amexio-label>
-                   <amexio-label size="small">When you put the finishing touches on something,such as agreeeing on a specific time and place to meet your friend on Saturday,you finalie your plans.</amexio-label>     
-                </amexio-timeline-event>
-    </amexio-timeline>
+    <amexio-timeline-event [label]="'Week One'" [icon]="'fa fa-book'" [content-border]="true">
+        <amexio-label size="medium-bold">UNDERSTAND</amexio-label>
+        <amexio-label size="small">Gather existing knowledge,expose assumptions and unknowns</amexio-label>
+    </amexio-timeline-event>
+    <amexio-timeline-event [label]="'Week Two'" [icon]="'fa fa-certificate'" [content-border]="true">
+        <amexio-label size="medium-bold"> DIVERGE</amexio-label>
+        <amexio-label size="small">Elluminate all paths.Our goal is to explore as many possibilities as possible,regardless
+            of how realistic,feasible or viable they may or may not be. </amexio-label>
+    </amexio-timeline-event>
+    <amexio-timeline-event [label]="'Week Three'" [icon]="'fa fa-asterisk'" [content-border]="true">
+        <amexio-label size="medium-bold">CONVERGE</amexio-label>
+        <amexio-label size="small">Our Goal is to take all of the possibilities that we have exposed over the past two
+            weeks and hone in on a single version of the prototype that we will build tomorrow
+        </amexio-label>
+    </amexio-timeline-event>
+    <amexio-timeline-event [label]="'Week Four'" [icon]="'fa fa-cogs'" [content-border]="true">
+        <amexio-label size="medium-bold">PROTOTYPING</amexio-label>
+        <amexio-label size="small">During this phase you will build a quick and dirty prototype.Since you only have
+            at most a week to build the prototype it should be low-fi as you can get away
+            with during Testing.</amexio-label>
+    </amexio-timeline-event>
+    <amexio-timeline-event [label]="'Week Five'" [icon]="'fa fa-edit'" [content-border]="true">
+        <amexio-label size="medium-bold">TESTING</amexio-label>
+        <amexio-label size="small">Going into each test you should have a plan of what you area testing and how you
+            know if that is successful or not.</amexio-label>
+    </amexio-timeline-event>
+    <amexio-timeline-event [label]="'Week Six'" [icon]="'fa fa-spinner'" [content-border]="true">
+        <amexio-label size="medium-bold">REITERATION</amexio-label>
+        <amexio-label size="small">To reiterate something is to say or do something again, or many times.Let me reiterate:if
+            you reapeat yourself,you're reiterating the thing you originally said.</amexio-label>
+    </amexio-timeline-event>
+    <amexio-timeline-event [label]="'Week Seven'" [icon]="'fa fa-calendar'" [content-border]="true">
+        <amexio-label size="medium-bold">REVIEW</amexio-label>
+        <amexio-label size="small">To look back over something for evaluation or memory.*The year in review* is a popular
+            form of news feature near the end of December.</amexio-label>
+    </amexio-timeline-event>
+    <amexio-timeline-event [label]="'Week Eight'" [icon]="'fa fa-thumbs-up'" [content-border]="true">
+        <amexio-label size="medium-bold">FINALIZE </amexio-label>
+        <amexio-label size="small">When you put the finishing touches on something,such as agreeeing on a specific time
+            and place to meet your friend on Saturday,you finalie your plans.</amexio-label>
+    </amexio-timeline-event>
+</amexio-timeline>
