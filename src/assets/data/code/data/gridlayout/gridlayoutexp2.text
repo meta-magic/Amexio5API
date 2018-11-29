@@ -1,4 +1,5 @@
- import { AmexioGridLayoutService} from "amexio-ng-extensions";
+import {AmexioLayoutModule} from 'amexio-ng-extensions';
+import { AmexioGridLayoutService} from "amexio-ng-extensions";
 
  export class GridLayoutDemo {
  constructor(private http: HttpClient,private _gridlayoutService : AmexioGridLayoutService) {

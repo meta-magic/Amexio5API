@@ -17,7 +17,7 @@
                                         D3-bar-stack Chart with default Colors
                                     </amexio-header>
                                     <amexio-body>
-                                        <amexio-d3-chart-barstack [data]="userDefineColorData"  [label-color]="'white'" [title]="'STACKBARCHART'" (onLegendClick)="onUserDefineLegendClick($event)"
+                                        <amexio-d3-chart-barstack [data]="userDefineColorData" [label]="true" [label-color]="'white'" [title]="'STACKBARCHART'" (onLegendClick)="onUserDefineLegendClick($event)"
                                             (onChartClick)="onDefaultChartClick($event)">
                                         </amexio-d3-chart-barstack>
                                     </amexio-body>
@@ -45,7 +45,7 @@
                                         D3-bar-stack Chart with User Defined Colors
                                     </amexio-header>
                                     <amexio-body>
-                                        <amexio-d3-chart-barstack [data]="userDefineColorData" [color] = "colorArray" [title]="'STACKBARCHART'" (onLegendClick)="onUserDefineLegendClick1($event)"
+                                        <amexio-d3-chart-barstack [data]="userDefineColorData" [label]="true" [color] = "colorArray" [title]="'STACKBARCHART'" (onLegendClick)="onUserDefineLegendClick1($event)"
                                             (onChartClick)="onDefaultChartClick1($event)">
                                         </amexio-d3-chart-barstack>
                                     </amexio-body>

@@ -1,29 +1,41 @@
 {
-    "name": "Amexio Timeline Event",
-    "description": "Amexio Timeline is the presentation of a chronological sequence of events. ",
-    "selector": "<amexio-timeline-event>",
     "properties": [
       {
+        "name": "content-alignment",
+        "description": "Content alignment is line for content section.",
+        "version": "5.4 onwards",
+        "type": "string",
+        "default": ""
+      }
+    ],
+    "childproperties":[
+      {
+        "name": "content-alignment",
+        "description": "Content alignment is alignment for the content section .",
+        "version": "5.4 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
         "name": "content-border",
-        "description": "Content border is border for the content section .",
-        "version": "5.2 onwards",
+        "description": "Content border is border for the content section.",
+        "version": "5.4 onwards",
         "type": "boolean",
         "default": "false"
       },
       {
         "name": "label",
         "description": "Label for timeline.",
-        "version": "5.2 onwards",
+        "version": "5.4 onwards",
         "type": "string",
         "default": ""
       },
       {
         "name": "icon",
         "description": "Icon for timeline.",
-        "version": "5.2 onwards",
+        "version": "5.4 onwards",
         "type": "string",
         "default": ""
       }
-    ],
-    "events": []
+  ]
   }

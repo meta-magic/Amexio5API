@@ -33,7 +33,7 @@
                 amexio D3-bar chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-bar [title]="'Population of Cities in India'" [color]="userDefineColors" [data]="userDefineColorData">
+                <amexio-d3-chart-bar [title]="'Population of Cities in India'" [label]="true" [color]="userDefineColors" [data]="userDefineColorData">
                 </amexio-d3-chart-bar>
             </amexio-body>
         </amexio-card>
@@ -45,7 +45,7 @@
                 amexio D3-line chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-line [title]="'Popularity Of XYZ & PQR'" [data]="doubleLineData">
+                <amexio-d3-chart-line [title]="'Popularity Of XYZ & PQR'" [label]="true" [data]="doubleLineData">
                 </amexio-d3-chart-line>
             </amexio-body>
         </amexio-card>
@@ -88,7 +88,7 @@
                 Amexio D3-multiseries Chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-multiseries [data]="stackData">
+                <amexio-d3-chart-multiseries [data]="stackData" [label]="true">
                 </amexio-d3-chart-multiseries>
             </amexio-body>
         </amexio-card>
@@ -100,7 +100,7 @@
                 amexio D3-Stack Bar chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-barstack [data]="stackData">
+                <amexio-d3-chart-barstack [data]="stackData" [label]="true">
                 </amexio-d3-chart-barstack>
 
             </amexio-body>
@@ -179,7 +179,7 @@
                 amexio D3-Waterfall chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-waterfall [title]="'Product Information'" [data]="waterfallChartData">
+                <amexio-d3-chart-waterfall [title]="'Product Information'" [data]="waterfallChartData" [label]="true">
                 </amexio-d3-chart-waterfall>
 
             </amexio-body>

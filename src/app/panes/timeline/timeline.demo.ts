@@ -14,8 +14,21 @@ export class TimelineDemoComponent {
   typeScriptCode: string;
   copyMsgArray: any[];
   asyncFlag : boolean;
+  sampledatachip1:any;
+  sampledatachip2:any;
   constructor(private http: HttpClient) {
+    this.sampledatachip1=[{
+      icon: 'fa fa-linkedin-square',
+      label: 'Aarf Karsh Hamid',
+      color: 'grey'
+    }]
+    this.sampledatachip2=[{
+      icon: 'fa fa-linkedin-square',
+      label: 'Ketan Gote',
+      color: 'grey'
+    }]
     this.getHtmlAndTypeScriptCode();
+    
   }
   getDta() {
     this.asyncFlag = true;

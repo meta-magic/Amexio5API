@@ -18,7 +18,7 @@
         {
             "text": "Layouts",
             "icon": "fa fa-desktop fa-fw",
-            "badge": "3",
+            "badge": "4",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
@@ -27,12 +27,13 @@
                 {
                     "text": "Border Layout",
                     "icon": "fa fa-id-card-o fa-fw",
+                    "badge":"U",
                     "link": "border"
                 },
                 {
                     "text": "Box",
                     "link": "box-demo",
-                    "icon": "fa fa-square"
+                    "icon": "fa fa-square fa-fw"
                 },
                 {
                     "text": "Column",
@@ -55,13 +56,13 @@
                     ]
                 },
                 {
-                    "text": "Vertical Layout",
+                    "text": "Column Vertical",
                     "icon": "fa fa-pause fa-fw",
                     "badge": "New",
                     "link": "vertical-layout"
                 },
                 {
-                    "text": "Horizontal Layout",
+                    "text": "Column Horizontal",
                     "icon": "fa fa-align-justify fa-fw",
                     "badge": "New",
                     "link": "horizontal-layout"
@@ -127,7 +128,7 @@
                 },
                 {
                     "text": "Steps",
-                    "icon": "fa fa-step-forward",
+                    "icon": "fa fa-step-forward fa-fw",
                     "children": [{
                             "text": "Step Box",
                             "link": "step-box",
@@ -194,12 +195,6 @@
                             ]
                         }
                     ]
-                },
-                {
-                    "text": "Timeline",
-                    "icon": "fa fa-history",
-                    "link": "timeline",
-                    "badge": "U"
                 },
                 {
                     "text": "Window",
@@ -277,7 +272,7 @@
                 },
                 {
                     "text": "Credit-Card",
-                    "icon": "fa fa-credit-card",
+                    "icon": "fa fa-credit-card fa-fw",
                     "link": "credit-card-demo"
                 },
                 {
@@ -327,7 +322,7 @@
                 },
                 {
                     "text": "Label",
-                    "icon": "fa fa-terminal",
+                    "icon": "fa fa-terminal fa-fw",
                     "link": "label-demo"
                 },
                 {
@@ -352,7 +347,7 @@
                 },
                 {
                     "text": "Recaptcha",
-                    "icon": "fa fa-recycle",
+                    "icon": "fa fa-recycle fa-fw",
                     "link": "recaptcha-demo"
                 },
                 {
@@ -372,7 +367,7 @@
                 },
                 {
                     "text": "Tag Field",
-                    "icon": "fa fa-tags",
+                    "icon": "fa fa-tags fa-fw",
                     "link": "taginput-demo"
                 },
                 {
@@ -415,12 +410,12 @@
                         },
                         {
                             "text": "Floating Button",
-                            "icon": "fa fa-circle-o",
+                            "icon": "fa fa-circle-o fa-fw",
                             "link": "floatingbutton-demo"
                         },
                         {
                             "text": "Floating Group",
-                            "icon": "fa fa-circle-o",
+                            "icon": "fa fa-circle-o fa-fw",
                             "link": "floatinggroupbutton-demo"
                         }
                     ]
@@ -574,6 +569,12 @@
                     ]
                 },
                 {
+                    "text": "Timeline",
+                    "icon": "fa fa-history",
+                    "link": "timeline",
+                    "badge": "U"
+                },
+                {
                     "text": "ListBox",
                     "icon": "fa fa-list fa-fw",
                     "link": "listbox-demo"
@@ -662,7 +663,7 @@
                 },
                 {
                     "text": "Dropdown Menu",
-                    "icon": "fa fa-chevron-circle-down",
+                    "icon": "fa fa-chevron-circle-down fa-fw",
                     "link": "dropdownmenu"
                 },
                 {
