@@ -36,11 +36,10 @@ import { HttpClient } from "@angular/common/http";
                         </amexio-tag-input>
                       </amexio-column>
                      
-                      <amexio-column [size]="6" >
-
-                    
-                        <pre><code> {{countryNameList|json}} </code> </pre>
-                      
+                   <amexio-column [size]="6">
+                        <ng-container *ngIf="countryNameList">
+                          {{countryNameList|json}}
+                        </ng-container>
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
