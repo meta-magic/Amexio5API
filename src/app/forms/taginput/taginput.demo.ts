@@ -37,8 +37,8 @@ import { HttpClient } from "@angular/common/http";
                       </amexio-column>
                      
                    <amexio-column [size]="6">
-                        <ng-container *ngIf="countryNameList">
-                          {{countryNameList|json}}
+                        <ng-container *ngIf="outputData">
+                        <pre><code>  {{outputData|json}} </code></pre>
                         </ng-container>
                       </amexio-column>
                     </amexio-row>
@@ -111,10 +111,10 @@ export class TagInputDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  countryNameList: string;
+  outputData: any;
   dataSource: string;
   onRecordSelect(data: any) {
-    this.countryNameList = data;
+    this.outputData = data;
   }
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
