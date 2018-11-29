@@ -38,14 +38,9 @@ import { HttpClient } from "@angular/common/http";
                      
                       <amexio-column [size]="6" >
 
-                      <amexio-card [header]="true" [body-height]="50" >
-                      <amexio-header>
-                      Output
-                      </amexio-header>
-                      <amexio-body>
-                         {{countryNameList|json}} 
-                        </amexio-body>
-                      </amexio-card >
+                    
+                        <pre><code> {{countryNameList|json}} </code> </pre>
+                      
                       </amexio-column>
                     </amexio-row>
                   </amexio-body>
