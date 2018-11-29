@@ -9,7 +9,7 @@ import { HttpClient } from "@angular/common/http";
   template: `
    <amexio-card header="true">
      <amexio-header>
-        Window Pane 
+        Window Pane
      </amexio-header>
      <amexio-body>
        <p>Window Pane component is a customizable Modal Pane in which user can enter custom content</p>
@@ -19,9 +19,9 @@ import { HttpClient } from "@angular/common/http";
              <amexio-header> Material Pattern</amexio-header>
              <amexio-body>
            <amexio-row>
-            
-                 
-               
+
+
+
              <amexio-column [size]="4">
                <amexio-button type="success"
                               (onClick)="toggleBasicWindow('material')"
@@ -136,7 +136,7 @@ import { HttpClient } from "@angular/common/http";
                  </amexio-body>
                  <amexio-action>
                    <amexio-button [type]= "'default'"(onClick)="showBasicWindowMaterial = false" label="Cancel"></amexio-button>
-                    &nbsp;&nbsp;&nbsp; <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowMaterial = false" label="Save"></amexio-button>
+                     <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowMaterial = false" label="Save"></amexio-button>
                  </amexio-action>
 
                </amexio-window>
@@ -262,16 +262,16 @@ import { HttpClient } from "@angular/common/http";
                  </amexio-column>
                </amexio-row>
              </amexio-column>
-              
+
            </amexio-row>
              </amexio-body>
            </amexio-card>
-           
+
            <amexio-card [header]="true">
              <amexio-header>Non Material Pattern </amexio-header>
              <amexio-body>
              <amexio-row>
-               
+
                <amexio-column [size]="4">
                  <amexio-button type="success"
                                 (onClick)="toggleBasicWindow('nonmaterial')"
@@ -386,7 +386,6 @@ import { HttpClient } from "@angular/common/http";
                    </amexio-body>
                    <amexio-action>
                      <amexio-button [type]= "'default'"(onClick)="showBasicWindowNonMaterial = false" label="Cancel"></amexio-button>
-                     &nbsp;&nbsp;&nbsp;
                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save"></amexio-button>
                    </amexio-action>
 
@@ -404,7 +403,7 @@ import { HttpClient } from "@angular/common/http";
                  <amexio-window  [(show)]="showMaxWindowNonMaterial"
                                  [footer]="true"
                                  [material-design]="false"
-                                 
+
                                  [maximize]="true">
                    <amexio-header>
                      Employee Form
@@ -522,7 +521,7 @@ import { HttpClient } from "@angular/common/http";
            <amexio-header>Non Material Pattern with Toolbar </amexio-header>
            <amexio-body>
            <amexio-row>
-             
+
              <amexio-column [size]="4">
                <amexio-button type="success"
                               (onClick)="toggleBasicWindow('nonmaterialtoolbar')"
@@ -543,7 +542,7 @@ import { HttpClient } from "@angular/common/http";
                  Registration
                 </amexio-label>
               </amexio-toolbar-item>
-               
+
                 <amexio-toolbar-item position-right [seperator-position]="'left'">
                 <i class="fa fa-th" aria-hidden="true"></i>
                 </amexio-toolbar-item>
@@ -657,21 +656,21 @@ import { HttpClient } from "@angular/common/http";
 
                  </amexio-body>
                  <amexio-action>
-                   <amexio-button [type]= "'default'"(onClick)="showBasicWindowNonMaterial = false" label="Cancel"></amexio-button>&nbsp;&nbsp;&nbsp;
+                   <amexio-button [type]= "'default'"(onClick)="showBasicWindowNonMaterial = false" label="Cancel"></amexio-button>
                    <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save"></amexio-button>
                  </amexio-action>
 
                </amexio-window>
-              
+
              </amexio-column>
              <amexio-column [size]="4">
-            
+
              </amexio-column>
              <amexio-column [size]="4">
-              
+
                <amexio-row>
                  <amexio-column [size]="'12'">
-                
+
                  </amexio-column>
                </amexio-row>
              </amexio-column>
@@ -679,11 +678,11 @@ import { HttpClient } from "@angular/common/http";
            </amexio-row>
            </amexio-body>
          </amexio-card>
-           
+
          </amexio-tab>
-         
-         
-         
+
+
+
          <amexio-tab title="API Reference">
            <amexio-datagrid title="Properties <amexio-window>" [enable-column-fiter]="false"
                             [http-method]="'get'"
