@@ -43,7 +43,7 @@ import { HttpClient } from "@angular/common/http";
                       Output
                       </amexio-header>
                       <amexio-body>
-                        <pre><code>  {{countryNameList|json}} </code> </pre>
+                         {{countryNameList|json}} 
                         </amexio-body>
                       </amexio-card >
                       </amexio-column>
