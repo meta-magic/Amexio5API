@@ -43,7 +43,7 @@
             "name": "color",
             "version": "0.0.4 Onwards",
             "description": "Sets color to D3 Bar chart",
-            "type": "any[]",
+            "type": "any",
             "default": ""
         } ,     {
             "name": "http-url",
@@ -99,6 +99,13 @@
             "version": "0.0.8 Onwards",
             "type": "string",
             "default": ""
+        },
+        {
+            "name": "label",
+            "description": "Sets label on D3 Bar-stack Chart",
+            "version": "0.0.8 Onwards",
+            "type": "boolean",
+            "default": "false"
         }
     ],
     "legend": [

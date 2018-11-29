@@ -3,6 +3,7 @@
 
 <amexio-d3-chart-barstack 
                         [title]="'STACKBARCHART'" 
+                        [label]="true"
                         [label-color]="'white'"
                         [data]="userDefineColorData" 
                         (onChartClick)="onDefaultChartClick($event)" 
@@ -14,6 +15,7 @@
 <amexio-d3-chart-barstack 
                         [title]="'STACKBARCHART'" 
                         [data]="userDefineColorData" 
+                        [label]="true"
                         [color]="colorArray"
                         (onChartClick)="onDefaultChartClick($event)" 
                         (onLegendClick)="onUserDefineLegendClick($event)">

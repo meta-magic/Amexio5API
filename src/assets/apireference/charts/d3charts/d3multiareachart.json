@@ -28,7 +28,7 @@
             "name": "data",
             "description": "Local data for Chart",
             "version": "0.0.7 Onwards",
-            "type": "any",
+            "type": "any[]",
             "default": ""
         },
         {
