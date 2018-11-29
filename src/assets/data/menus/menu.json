@@ -197,12 +197,6 @@
                     ]
                 },
                 {
-                    "text": "Timeline",
-                    "icon": "fa fa-history",
-                    "link": "timeline",
-                    "badge": "U"
-                },
-                {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
                     "link": "window"
@@ -573,6 +567,12 @@
                             "link": "horizontal-tree"
                         }
                     ]
+                },
+                {
+                    "text": "Timeline",
+                    "icon": "fa fa-history",
+                    "link": "timeline",
+                    "badge": "U"
                 },
                 {
                     "text": "ListBox",

@@ -189,7 +189,7 @@
       path: 'step-box-icon', loadChildren: './layout/steps/stepbox-icon/stepbox.icon.demo.module#StepBoxIconDemoModule'
     },
     {
-      path: 'timeline', loadChildren: './panes/timeline/timeline.demo.module#TimelineDemoModule'
+      path: 'timeline', loadChildren: './data/timeline/timeline.demo.module#TimelineDemoModule'
     },
     {
       path: 'accordion', loadChildren: './panes/accordion/accordion.demo.module#AccordionDemoModule'
