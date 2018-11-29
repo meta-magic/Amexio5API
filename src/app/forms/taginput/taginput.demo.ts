@@ -43,9 +43,7 @@ import { HttpClient } from "@angular/common/http";
                       Output
                       </amexio-header>
                       <amexio-body>
-                        <ng-container *ngIf="countryNameList">
                         <pre><code>  {{countryNameList|json}} </code> </pre>
-                        </ng-container>
                         </amexio-body>
                       </amexio-card >
                       </amexio-column>
