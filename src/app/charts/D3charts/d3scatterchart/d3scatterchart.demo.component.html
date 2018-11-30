@@ -16,8 +16,10 @@
                                         D3-scatter chart with UserDefine Color
                                     </amexio-header>
                                     <amexio-body>
-                                        <amexio-d3-chart-scatter
+                                        <amexio-d3-chart-scatter 
                                         [data]="scatterChartData" 
+                                        [label]="true"
+                                        [label-color]="'#0000b3'"
                                         [color]="'green'"
                                         (onChartClick)="onChartClick($event)"
                                         (onLegendClick)="onLegendClick($event)">
@@ -50,6 +52,7 @@
                                         <amexio-d3-chart-scatter 
                                         [width]="400"
                                         [data]="mineralScatterChartData" 
+                                        [label]="true"
                                         [height]="400" 
                                         [title]="'Minerals'"
                                         [vertical-scale]="false"
