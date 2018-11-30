@@ -436,7 +436,7 @@
         {
             "text": "Data",
             "icon": "fa fa-database fa-fw",
-            "badge": "3",
+            "badge": "1",
             "children": [{
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
@@ -515,11 +515,9 @@
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
-                    "badge": "2",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "U",
                             "link": "simple-tree"
                         },
                         {
