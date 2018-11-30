@@ -315,11 +315,7 @@
                     "icon": "fa fa-file fa-fw",
                     "link": "fileupload-demo"
                 },
-                {
-                    "text": "Form",
-                    "icon": "fa fa-window-maximize fa-fw",
-                    "link": "form-demo"
-                },
+                
                 {
                     "text": "Label",
                     "icon": "fa fa-terminal fa-fw",
