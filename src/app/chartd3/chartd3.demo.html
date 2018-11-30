@@ -33,7 +33,7 @@
                 amexio D3-bar chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-bar [title]="'Population of Cities in India'" [label]="true" [color]="userDefineColors" [data]="userDefineColorData">
+                <amexio-d3-chart-bar [title]="'Population Of Cities In India'" [label]="true" [color]="userDefineColors" [data]="userDefineColorData">
                 </amexio-d3-chart-bar>
             </amexio-body>
         </amexio-card>
@@ -88,7 +88,7 @@
                 Amexio D3-multiseries Chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-multiseries [data]="stackData" [label]="true">
+                <amexio-d3-chart-multiseries [title]="'Market Information'" [data]="stackData" [label]="true">
                 </amexio-d3-chart-multiseries>
             </amexio-body>
         </amexio-card>
@@ -100,7 +100,7 @@
                 amexio D3-Stack Bar chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-barstack [data]="stackData" [label]="true">
+                <amexio-d3-chart-barstack [title]="'Market Information'" [data]="stackData" [label]="true">
                 </amexio-d3-chart-barstack>
 
             </amexio-body>
@@ -115,7 +115,7 @@
                 amexio D3-Horizontal bar chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-bar [horizontal]="true" [data]="horizontalBarData">
+                <amexio-d3-chart-bar [title]="'Production Information'" [horizontal]="true" [data]="horizontalBarData">
                 </amexio-d3-chart-bar>
             </amexio-body>
         </amexio-card>
@@ -127,7 +127,7 @@
                 amexio D3-Combo Chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-combochart [data]="comboChartData" [line-data-index]="'Rice Export'">
+                <amexio-d3-combochart [title]="'State Wise Rice Production'" [data]="comboChartData" [line-data-index]="'Rice Export'">
                 </amexio-d3-combochart>
             </amexio-body>
         </amexio-card>
@@ -168,7 +168,7 @@
                 amexio D3-Histogram chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-histogram [title]="'Histogram Chart '" [data]="histogramdata" [color]="'blue'"></amexio-d3-chart-histogram>
+                <amexio-d3-chart-histogram [title]="'Count Of Dinosaur '" [data]="histogramdata" [color]="'blue'"></amexio-d3-chart-histogram>
             </amexio-body>
         </amexio-card>
     </amexio-column>
@@ -195,7 +195,7 @@
                 amexio D3-Bubble chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-bubble [title]="'Bubble Chart '" [data]="bubblechart">
+                <amexio-d3-chart-bubble [title]="'Region Wise Life Expectancy '" [data]="bubblechart">
                 </amexio-d3-chart-bubble>
             </amexio-body>
         </amexio-card>
