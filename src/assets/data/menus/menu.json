@@ -103,7 +103,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "2",
+            "badge": "1",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
@@ -578,7 +578,6 @@
         {
             "text": "Drag and Drop",
             "icon": "fa fa-arrows-alt",
-            "badge": "1",
             "children": [{
                     "text": "Within Tree",
                     "icon": "fa fa-tree fa-fw",
