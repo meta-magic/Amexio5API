@@ -87,6 +87,20 @@
             "version": "0.0.7 Onwards",
             "type": "any",
             "default": ""
+        },
+        {
+            "name": "label-color",
+            "description": "Sets label color in D3 Histogram Chart",
+            "version": "0.0.8 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "label",
+            "description": "Sets label on D3 Histogram Chart",
+            "version": "0.0.8 Onwards",
+            "type": "boolean",
+            "default": "false"
         }
     ],
     "legend": [

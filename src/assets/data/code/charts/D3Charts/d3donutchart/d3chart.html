@@ -1,5 +1,6 @@
 <!-- donut chart User Define legend Color -->
 <amexio-d3-chart-donut 
+[label]="true"
 [title]="'Visitor Visit Country Ratio'" 
 [color]="userDefineColors" 
 [data]="userDefineColorData"
@@ -8,7 +9,8 @@
 </amexio-d3-chart-donut>
 
 <!--  donut chart By default legend Color -->
-<amexio-d3-chart-donut 
+<amexio-d3-chart-donut
+[label]="true" 
 [title]="'Browser Information'" 
 [data]="defultColorData" 
 (onChartClick)="onDefaultChartClick1($event)"  

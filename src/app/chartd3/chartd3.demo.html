@@ -62,7 +62,7 @@
                 amexio D3-donut chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-donut [title]="'Browser Popularity'" [color]="donutDataColor" [data]="donutData">
+                <amexio-d3-chart-donut [label]="true" [title]="'Browser Popularity'" [color]="donutDataColor" [data]="donutData">
                 </amexio-d3-chart-donut>
             </amexio-body>
         </amexio-card>
@@ -74,7 +74,7 @@
                 amexio D3-pie chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-pie [title]="'Visitor Visit Country Ratio'" [color]="userDefineColors" [data]="pieData">
+                <amexio-d3-chart-pie [label]="true" [title]="'Visitor Visit Country Ratio'" [color]="userDefineColors" [data]="pieData">
                 </amexio-d3-chart-pie>
             </amexio-body>
         </amexio-card>
@@ -115,7 +115,7 @@
                 amexio D3-Horizontal bar chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-bar [title]="'Production Information'" [horizontal]="true" [data]="horizontalBarData">
+                <amexio-d3-chart-bar [label]="true" [title]="'Production Information'" [horizontal]="true" [data]="horizontalBarData">
                 </amexio-d3-chart-bar>
             </amexio-body>
         </amexio-card>
@@ -168,7 +168,7 @@
                 amexio D3-Histogram chart
             </amexio-header>
             <amexio-body>
-                <amexio-d3-chart-histogram [title]="'Count Of Dinosaur '" [data]="histogramdata" [color]="'blue'"></amexio-d3-chart-histogram>
+                <amexio-d3-chart-histogram [label]="true" [title]="'Count Of Dinosaur'" [data]="histogramdata" [color]="'blue'"></amexio-d3-chart-histogram>
             </amexio-body>
         </amexio-card>
     </amexio-column>
