@@ -86,6 +86,20 @@
             "version": "0.0.7 Onwards",
             "type": "boolean",
             "default": "true"
+        },
+        {
+            "name": "label-color",
+            "description": "Sets label color in D3 Bar Chart",
+            "version": "0.0.8 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "label",
+            "description": "Sets label on D3 Bar Chart",
+            "version": "0.0.8 Onwards",
+            "type": "boolean",
+            "default": "false"
         }
     ],
     "legend": [

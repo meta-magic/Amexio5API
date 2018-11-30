@@ -60,9 +60,7 @@ export class AmexioD3DonutChartDemoComponent implements OnInit {
   }
 
   onDefaultLegendClick(event: any) {
-
     this.sourceData = event;
-
   }
 
   onDefaultChartClick1(event: any) {
