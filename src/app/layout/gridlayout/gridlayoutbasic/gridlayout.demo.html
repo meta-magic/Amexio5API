@@ -12,7 +12,7 @@
                     <amexio-column size="12">
                         <amexio-card [header]="true">
                             <amexio-header>
-                                Grid Layout
+                                Grid Layout : Sample Example1
                             </amexio-header>
                             <amexio-body>
                                 <amexio-layout-grid [layout]="'LayoutSample1'">
@@ -24,28 +24,32 @@
                                 </amexio-layout-grid>
                                 <br>
                                 <h2> Steps To Create Above Grid Layout :-</h2>
-                                    <amexio-box border-color="red" border="left" padding="true">
+                                <amexio-box border-color="red" border="left" padding="true">
                                     <ul>
                                         <li>
-                                            Firstly you need to import AmexioGridLayoutService.
+                                            Firstly you need to import AmexioGridLayoutService, GridConfig and GridConstants from amexio-ng-extensions.
                                         </li>
                                         <li>
-                                            To create grid-template-areas, need to call createLayout method where first attribute will be the name of the Ui and second
-                                            will be the layout type(desktop, tab or mobile) then call addlayout method to
-                                            design grid-template-areas. (Refer source tab - typescript code)
+                                            To create grid-template-areas, need to create a method creating GridConfig model where first attribute will be the name of
+                                            the Ui and second will be the layout type(desktop, tab or mobile) then call addlayout
+                                            method to design grid-template-areas. (Refer source tab - typescript code)
+                                        </li>
+                                        <li>
+                                            Call above created method in constructor and createLayout from the service to generate Uis for individual layout type. (Refer
+                                            source tab - typescript code).
                                         </li>
                                         <li>
                                             grid-area: Gives an item a name so that it can be referenced by a template created with the grid-template-areas property.
                                             It can contain any amexio component withih it. (Refer source tab- html code)
                                         </li>
                                     </ul>
-                                    </amexio-box>
+                                </amexio-box>
                             </amexio-body>
                         </amexio-card>
                         <br>
                         <amexio-card [header]="true">
                             <amexio-header>
-                                Grid Layout
+                                Grid Layout : Sample Example2
                             </amexio-header>
                             <amexio-body>
                                 <amexio-layout-grid [layout]="'LayoutSample2'">
@@ -71,6 +75,7 @@
                     <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
                 </amexio-datagrid>
+                <br>
                 <amexio-datagrid title="Properties<amexio-grid-item>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
                     [data-reader]="'childproperties'" [enable-data-filter]="false">
                     <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
