@@ -515,11 +515,10 @@
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
-                    "badge": "2",
+                    "badge": "1",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "U",
                             "link": "simple-tree"
                         },
                         {
