@@ -5,6 +5,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioGridLayoutService } from "amexio-ng-extensions";
+import { GridConstants } from 'amexio-ng-extensions';
+import { GridConfig } from 'amexio-ng-extensions';
 
 @Component({
   selector: 'gridlayout-demo-exp3', templateUrl: 'gridlayout.demo.html'
@@ -16,25 +18,35 @@ export class GridLayoutDemo {
   copyMsgArray: any[];
   selectedData: any;
   data: any[];
-  data1: any[];
-  data2: any[];
-  localData: any;
-  areaChartData: any;
-  sidenavData: any;
+  gridDesktop: GridConfig;
+  gridTablet: GridConfig;
+  gridMobile: GridConfig;  
+
 
   constructor(private http: HttpClient, private _gridlayoutService: AmexioGridLayoutService) {
-    this._gridlayoutService.createLayout('Home', 'desktop')
+      this.createLayouts();
+    this._gridlayoutService.createLayout(this.gridDesktop);
+    this._gridlayoutService.createLayout(this.gridTablet);
+    this._gridlayoutService.createLayout(this.gridMobile);
+
+    this.getHtmlAndTypeScriptCode();
+  }
+
+  createLayouts() {
+    this.gridDesktop = new GridConfig('Home', GridConstants.Desktop)
       .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4"])
       .addlayout(["gridtitle", "gridmain", "gridmain", "gridright1"])
       .addlayout(["gridmenu", "gridmain", "gridmain", "gridright2"])
       .addlayout(["gridmenu", "gridmain", "gridmain", "gridright3"]);
-    this._gridlayoutService.createLayout('Home', 'tab')
+
+      this.gridTablet = new GridConfig('Home', GridConstants.Tablet)
       .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4"])
       .addlayout(["gridmain", "gridmain", "gridmain", "gridmain"])
       .addlayout(["gridtitle", "gridtitle", "gridright1", "gridright1"])
       .addlayout(["gridmenu", "gridmenu", "gridright2", "gridright2"])
       .addlayout(["gridright3", "gridright3", "gridright3", "gridright3"]);
-    this._gridlayoutService.createLayout('Home', 'mobile')
+
+      this.gridMobile = new GridConfig('Home', GridConstants.Mobile)
       .addlayout(["gridheader1", "gridheader2", "gridheader3", "gridheader4"])
       .addlayout(["gridmain", "gridmain", "gridmain", "gridmain"])
       .addlayout(["gridtitle", "gridtitle", "gridtitle", "gridtitle"])
@@ -42,8 +54,6 @@ export class GridLayoutDemo {
       .addlayout(["gridright1", "gridright1", "gridright1", "gridright1"])
       .addlayout(["gridright2", "gridright2", "gridright2", "gridright2"])
       .addlayout(["gridright3", "gridright3", "gridright3", "gridright3"]);
-
-    this.getHtmlAndTypeScriptCode();
   }
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
