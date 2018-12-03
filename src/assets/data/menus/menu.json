@@ -103,7 +103,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "2",
+            "badge": "1",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
@@ -315,11 +315,7 @@
                     "icon": "fa fa-file fa-fw",
                     "link": "fileupload-demo"
                 },
-                {
-                    "text": "Form",
-                    "icon": "fa fa-window-maximize fa-fw",
-                    "link": "form-demo"
-                },
+                
                 {
                     "text": "Label",
                     "icon": "fa fa-terminal fa-fw",
@@ -440,7 +436,7 @@
         {
             "text": "Data",
             "icon": "fa fa-database fa-fw",
-            "badge": "3",
+            "badge": "1",
             "children": [{
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
@@ -519,11 +515,9 @@
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
-                    "badge": "2",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
-                            "badge": "U",
                             "link": "simple-tree"
                         },
                         {
@@ -584,7 +578,6 @@
         {
             "text": "Drag and Drop",
             "icon": "fa fa-arrows-alt",
-            "badge": "1",
             "children": [{
                     "text": "Within Tree",
                     "icon": "fa fa-tree fa-fw",
@@ -738,12 +731,18 @@
                     "children": [{
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "link": "amexio-d3-chart-bar",
-                            "children": [{
-                                "text": "Bar chart-Horizontal",
-                                "icon": "fa fa-bar-chart fa-fw",
-                                "link": "amexio-d3-chart-horizontal"
-                            }]
+                            "children": [
+                                {
+                                    "text": "Bar chart-vertical",
+                                    "icon": "fa fa-bar-chart fa-fw",
+                                    "link": "amexio-d3-chart-bar"
+                                },
+                                {
+                                    "text": "Bar chart-Horizontal",
+                                    "icon": "fa fa-bar-chart fa-fw",
+                                    "link": "amexio-d3-chart-horizontal"
+                                }
+                            ]
                         },
                         {
                             "text": "Bubble Chart ",

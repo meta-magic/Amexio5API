@@ -17,7 +17,7 @@
                                                         D3-donut with  Legend UserDefine Color
                                                     </amexio-header>
                                                     <amexio-body>
-                                                        <amexio-d3-chart-donut [title]="'Visitor Visit Country Ratio'" [color]="userDefineColors" [data]="userDefineColorData" (onChartClick)="onDefaultChartClick($event)"  (onLegendClick)="onUserDefineLegendClick($event)">
+                                                        <amexio-d3-chart-donut [label]="true" [title]="'Visitor Visit Country Ratio'" [color]="userDefineColors" [data]="userDefineColorData" (onChartClick)="onDefaultChartClick($event)"  (onLegendClick)="onUserDefineLegendClick($event)">
                                                         </amexio-d3-chart-donut>
                                                     </amexio-body>
                                                 </amexio-card>
@@ -51,7 +51,7 @@
                                                         D3-donut with By Default Colors
                                                     </amexio-header>
                                                     <amexio-body>
-                                                        <amexio-d3-chart-donut [title]="'Browser Information'" [data]="defultColorData" (onChartClick)="onDefaultChartClick1($event)"  (onLegendClick)="onDefaultLegendClick($event)">
+                                                        <amexio-d3-chart-donut [label]="true" [title]="'Browser Information'" [data]="defultColorData" (onChartClick)="onDefaultChartClick1($event)"  (onLegendClick)="onDefaultLegendClick($event)">
                                                         </amexio-d3-chart-donut>
                                                     </amexio-body>
                                                 </amexio-card>

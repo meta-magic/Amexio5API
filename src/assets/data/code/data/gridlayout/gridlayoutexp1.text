@@ -1,16 +1,30 @@
 import {AmexioLayoutModule} from 'amexio-ng-extensions';
-import { AmexioGridLayoutService} from "amexio-ng-extensions";
+import { AmexioGridLayoutService, GridConfig, GridConstants} from "amexio-ng-extensions";
 
 export class GridLayoutDemo {
+  gridDesktop: GridConfig;
+  gridTablet: GridConfig;
+  gridMobile: GridConfig;
+
   constructor(private http: HttpClient,private _gridlayoutService : AmexioGridLayoutService) {
-   this._gridlayoutService.createLayout('Layout1', 'desktop')
+    // Creates All the Layout Configs;
+    this.createLayouts();
+
+    // Create the Layouts
+    this._gridlayoutService.createLayout(this.gridDesktop);
+    this._gridlayoutService.createLayout(this.gridTablet);
+    this._gridlayoutService.createLayout(this.gridMobile);
+  }
+    // Create Layout Configurations for Desktop / Mobile / Tablets
+  createLayouts() {
+    this.gridDesktop = new GridConfig('Layout1', GridConstants.Desktop)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright1"])
       .addlayout(["gridleft", "gridmenu2", "gridmenu3", "gridright2"])
       .addlayout(["gridleft", "gridmenu4", "gridmenu4", "gridright3"])
       .addlayout(["gridleft", "gridmenu4", "gridmenu4", "gridright4"]);
 
-    this._gridlayoutService.createLayout('Layout1', 'tab')
+      this.gridTablet = new GridConfig('Layout1', GridConstants.Tablet)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridmenu1", "gridmenu1"])
       .addlayout(["gridright1", "gridmenu2", "gridmenu2", "gridmenu3", "gridmenu3"])
@@ -19,7 +33,7 @@ export class GridLayoutDemo {
       .addlayout(["gridright3", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"])
       .addlayout(["gridright4", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"]);
 
-    this._gridlayoutService.createLayout('Layout1', 'mobile')
+      this.gridMobile = new GridConfig('Layout1', GridConstants.Mobile)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridmenu1", "gridmenu1", "gridmenu1", "gridmenu1"])
       .addlayout(["gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2"])

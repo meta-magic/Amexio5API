@@ -2,6 +2,8 @@
 <amexio-d3-chart-scatter 
         [width]="400"
         [data]="scatterChartData" 
+        [label]="true"
+        [label-color]="'#0000b3'"
         [height]="400" 
         [title]="'Age vs Weight'"
         (onChartClick)="onChartClick($event)"
@@ -13,6 +15,7 @@
  <amexio-d3-chart-scatter 
         [width]="400"
         [data]="mineralScatterChartData" 
+        [label]="true"
         [height]="400" 
         [title]="'Minerals'"
         [vertical-scale]="false"

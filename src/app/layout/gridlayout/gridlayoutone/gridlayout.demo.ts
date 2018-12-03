@@ -5,6 +5,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioGridLayoutService } from "amexio-ng-extensions";
+import { GridConstants } from 'amexio-ng-extensions';
+import { GridConfig } from 'amexio-ng-extensions';
 
 @Component({
   selector: 'gridlayout-demo-exp1', templateUrl: 'gridlayout.demo.html'
@@ -16,21 +18,28 @@ export class GridLayoutDemo {
   copyMsgArray: any[];
   selectedData: any;
   data: any[];
-  data1: any[];
-  data2: any[];
-  localData: any;
-  areaChartData: any;
-  sidenavData: any;
+  gridDesktop: GridConfig;
+  gridTablet: GridConfig;
+  gridMobile: GridConfig; 
 
   constructor(private http: HttpClient, private _gridlayoutService: AmexioGridLayoutService) {
-    this._gridlayoutService.createLayout('Layout1', 'desktop')
+    this.createLayouts();
+    this._gridlayoutService.createLayout(this.gridDesktop);
+    this._gridlayoutService.createLayout(this.gridTablet);
+    this._gridlayoutService.createLayout(this.gridMobile);
+
+    this.getHtmlAndTypeScriptCode();
+  }
+
+  createLayouts() {
+    this.gridDesktop = new GridConfig('Layout1', GridConstants.Desktop)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridright1"])
       .addlayout(["gridleft", "gridmenu2", "gridmenu3", "gridright2"])
       .addlayout(["gridleft", "gridmenu4", "gridmenu4", "gridright3"])
       .addlayout(["gridleft", "gridmenu4", "gridmenu4", "gridright4"]);
 
-    this._gridlayoutService.createLayout('Layout1', 'tab')
+      this.gridTablet = new GridConfig('Layout1', GridConstants.Tablet)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridleft", "gridmenu1", "gridmenu1", "gridmenu1", "gridmenu1"])
       .addlayout(["gridright1", "gridmenu2", "gridmenu2", "gridmenu3", "gridmenu3"])
@@ -39,7 +48,7 @@ export class GridLayoutDemo {
       .addlayout(["gridright3", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"])
       .addlayout(["gridright4", "gridmenu4", "gridmenu4", "gridmenu4", "gridmenu4"]);
 
-    this._gridlayoutService.createLayout('Layout1', 'mobile')
+      this.gridMobile = new GridConfig('Layout1', GridConstants.Mobile)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridmenu1", "gridmenu1", "gridmenu1", "gridmenu1"])
       .addlayout(["gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2"])
@@ -50,8 +59,6 @@ export class GridLayoutDemo {
       .addlayout(["gridright2", "gridright2", "gridright2", "gridright2"])
       .addlayout(["gridright3", "gridright3", "gridright3", "gridright3"])
       .addlayout(["gridright4", "gridright4", "gridright4", "gridright4"]);
-
-    this.getHtmlAndTypeScriptCode();
   }
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {

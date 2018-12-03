@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'taginput-demo', template: `
@@ -35,13 +35,22 @@ import {HttpClient} from "@angular/common/http";
                         >
                         </amexio-tag-input>
                       </amexio-column>
-                      <amexio-column [size]="6">
-                        <ng-container *ngIf="countryNameList">
-                          {{countryNameList|json}}
+                     
+                   <amexio-column [size]="6">
+
+                   <amexio-card [header]="true" [body-height]="50">
+                   <amexio-header>
+                   Output Code
+                   </amexio-header>
+                   <amexio-body >
+                   <ng-container *ngIf="outputData">
+                        <pre><code>  {{outputData|json}} </code></pre>
                         </ng-container>
+                   </amexio-body>
+                   </amexio-card>
+                        
                       </amexio-column>
                     </amexio-row>
-
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -111,10 +120,10 @@ export class TagInputDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  countryNameList: string;
-  dataSource:string;
-  onRecordSelect(data:any){
-    this.countryNameList=data;
+  outputData: any;
+  dataSource: string;
+  onRecordSelect(data: any) {
+    this.outputData = data;
   }
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
@@ -124,9 +133,9 @@ export class TagInputDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
-    let responseData:any;
+    let responseData: any;
     //HTML FILE
-    this.http.get('assets/data/code/forms/taginput/form.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/taginput/form.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -134,14 +143,14 @@ export class TagInputDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/taginput/form.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/taginput/form.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
     //JSON FILE
-    this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/componentdata/country.json', { responseType: 'text' }).subscribe(data => {
       responseData = data;
     }, error => {
     }, () => {
@@ -154,9 +163,9 @@ export class TagInputDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 }

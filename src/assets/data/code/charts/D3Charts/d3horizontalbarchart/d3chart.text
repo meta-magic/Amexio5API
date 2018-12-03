@@ -5,7 +5,7 @@ export class AmexioD3HorizontalBarChartDemoComponent
 
   userDefineColors: any;
   barData: any;
-  sourceData1: any;
+  sourceData: any;
 
   constructor() { 
 
@@ -35,11 +35,11 @@ export class AmexioD3HorizontalBarChartDemoComponent
    }
   
    onDefaultChartClick(event: any) {
-    this.sourceData1 = event;
+    this.sourceData = event;
    }
  
      onDefaultLegendClick1(event: any) {
-    this.sourceData1 = event;
+    this.sourceData = event;
    }
 
 }

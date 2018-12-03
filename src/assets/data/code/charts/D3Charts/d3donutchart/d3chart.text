@@ -3,11 +3,10 @@ export class AmexioD3DonutChartDemoComponent {
 {
 
   userDefineColors: any;
-  defultColorData: any;
+  defaultColorData: any;
   userDefineColorData: any;
   sourceData: any;
   userDataSource: any;
-  barChartWithColorData: any;
   
   constructor() { 
 
@@ -24,7 +23,7 @@ export class AmexioD3DonutChartDemoComponent {
       "#ff7b25"
     ];
     
-   this.defultColorData = 
+   this.defaultColorData = 
     [
       ['browser', 'popularity'],
       ['IE', 300],

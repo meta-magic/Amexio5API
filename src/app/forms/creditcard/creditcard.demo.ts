@@ -3,7 +3,7 @@
  */
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditcard/creditcardmodel.component';
+import { AmexioCreditCardModel } from 'amexio-ng-extensions';
 
 @Component({
   selector: 'credit-card-demo',
@@ -35,7 +35,6 @@ import { AmexioCreditCardModel } from 'amexio-ng-extensions/module/forms/creditc
               <h2>Credit Card with single column template</h2>
               <br>
               <amexio-creditcard [template]="'single-column'" [year-count]="4"></amexio-creditcard>
-
               </amexio-column>
             </amexio-row>
         </amexio-body>
@@ -106,9 +105,9 @@ export class CreditCardDemo {
   copyMsgArray: any[];
   asyncFlag: boolean;
   refreshDialogue: boolean;
-  creditcard: creditcardtemp;
+  creditcard: AmexioCreditCardModel;
   constructor(private http: HttpClient) {
-    this.creditcard = new creditcardtemp();
+    this.creditcard = new AmexioCreditCardModel();
     this.getHtmlAndTypeScriptCode();
   }
   getDta() {
@@ -155,13 +154,5 @@ export class CreditCardDemo {
   }
 
 }
-export class creditcardtemp {
 
-  owner = 'ABC';
-  cvv = 123;
-  cardnumber = 4444444444444444;
-  expMonth = 2;
-  expYear = 2020;
-
-}
 

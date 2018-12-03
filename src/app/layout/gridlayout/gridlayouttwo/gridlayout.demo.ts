@@ -5,7 +5,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioGridLayoutService } from "amexio-ng-extensions";
-
+import { GridConstants } from 'amexio-ng-extensions';
+import { GridConfig } from 'amexio-ng-extensions';
 @Component({
   selector: 'gridlayout-demo-exp2', templateUrl: 'gridlayout.demo.html'
 })
@@ -16,21 +17,44 @@ export class GridLayoutDemo {
   copyMsgArray: any[];
   selectedData: any;
   data: any[];
-  data1: any[];
-  data2: any[];
-  localData: any;
-  areaChartData: any;
-  sidenavData: any;
+  gridDesktop: GridConfig;
+  gridTablet: GridConfig;
+  gridMobile: GridConfig;
+
+  leftGridDesktop: GridConfig;
+  leftGridTablet: GridConfig;
+  leftGridMobile: GridConfig;
+
+  imageGridDesktop: GridConfig;
+  imageGridTablet: GridConfig;
+  imageGridMobile: GridConfig;
 
   constructor(private http: HttpClient, private _gridlayoutService: AmexioGridLayoutService) {
-    this._gridlayoutService.createLayout('Layout2', 'desktop')
+    this.createLayouts();
+    this._gridlayoutService.createLayout(this.imageGridDesktop);
+    this._gridlayoutService.createLayout(this.imageGridTablet);
+    this._gridlayoutService.createLayout(this.imageGridMobile);
+
+    this._gridlayoutService.createLayout(this.leftGridDesktop);
+    this._gridlayoutService.createLayout(this.leftGridTablet);
+    this._gridlayoutService.createLayout(this.leftGridMobile);
+
+    this._gridlayoutService.createLayout(this.gridDesktop);
+    this._gridlayoutService.createLayout(this.gridTablet);
+    this._gridlayoutService.createLayout(this.gridMobile);
+
+    this.getHtmlAndTypeScriptCode();
+  }
+
+  createLayouts() {
+    this.gridDesktop = new GridConfig('Layout2', GridConstants.Desktop)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridheader1", "gridheader1", "gridheader2", "gridheader2"])
-      .addlayout(["gridleft", "gridmain", "gridmain", "gridright"])
-      .addlayout(["gridleft", "gridmain", "gridmain", "gridright"])
-      .addlayout(["gridleft", "gridfooter", "gridfooter1", "gridfooter1"]);
+      .addlayout(["gridleft1", "gridmain", "gridmain", "gridright"])
+      .addlayout(["gridleft1", "gridmain", "gridmain", "gridright"])
+      .addlayout(["gridleft1", "gridfooter", "gridfooter1", "gridfooter1"]);
 
-    this._gridlayoutService.createLayout('Layout2', 'tab')
+    this.gridTablet = new GridConfig('Layout2', GridConstants.Tablet)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
       .addlayout(["gridheader2", "gridheader2", "gridright", "gridright"])
@@ -38,9 +62,9 @@ export class GridLayoutDemo {
       .addlayout(["gridmain", "gridmain", "gridmain", "gridmain"])
       .addlayout(["gridfooter", "gridfooter", "gridfooter", "gridfooter"])
       .addlayout(["gridfooter1", "gridfooter1", "gridfooter1", "gridfooter1"])
-      .addlayout(["gridleft", "gridleft", "gridleft", "gridleft"]);
+      .addlayout(["gridleft1", "gridleft1", "gridleft1", "gridleft1"]);
 
-    this._gridlayoutService.createLayout('Layout2', 'mobile')
+    this.gridMobile = new GridConfig('Layout2', GridConstants.Mobile)
       .addlayout(["gridheader", "gridheader", "gridheader", "gridheader"])
       .addlayout(["gridheader1", "gridheader1", "gridheader1", "gridheader1"])
       .addlayout(["gridheader2", "gridheader2", "gridheader2", "gridheader2"])
@@ -48,28 +72,30 @@ export class GridLayoutDemo {
       .addlayout(["gridmain", "gridmain", "gridmain", "gridmain"])
       .addlayout(["gridfooter", "gridfooter", "gridfooter", "gridfooter"])
       .addlayout(["gridfooter1", "gridfooter1", "gridfooter1", "gridfooter1"])
-      .addlayout(["gridleft", "gridleft", "gridleft", "gridleft"]);
+      .addlayout(["gridleft1", "gridleft1", "gridleft1", "gridleft1"]);
 
-    this._gridlayoutService.createLayout('gridimagelayout', 'desktop')
+    this.imageGridDesktop = new GridConfig('gridimagelayout', GridConstants.Desktop)
       .addlayout(["gridimage1", "gridimage2", "gridimage3", "gridimage4"]);
-    this._gridlayoutService.createLayout('gridimagelayout', 'tab')
+
+    this.imageGridTablet = new GridConfig('gridimagelayout', GridConstants.Tablet)
       .addlayout(["gridimage1", "gridimage2", "gridimage3", "gridimage4"]);
-    this._gridlayoutService.createLayout('gridimagelayout', 'mobile')
+
+    this.imageGridMobile = new GridConfig('gridimagelayout', GridConstants.Mobile)
       .addlayout(["gridimage1", "gridimage1", "gridimage2", "gridimage2"])
       .addlayout(["gridimage3", "gridimage3", "gridimage4", "gridimage4"]);
-    this._gridlayoutService.createLayout('leftlayout', 'desktop')
+
+    this.leftGridDesktop = new GridConfig('leftlayout', GridConstants.Desktop)
       .addlayout(["leftlayout1", "leftlayout1", "leftlayout1", "leftlayout1"])
       .addlayout(["leftlayout2", "leftlayout2", "leftlayout2", "leftlayout2"])
       .addlayout(["leftlayout3", "leftlayout3", "leftlayout3", "leftlayout3"])
       .addlayout(["leftlayout4", "leftlayout4", "leftlayout4", "leftlayout4"]);
-    this._gridlayoutService.createLayout('leftlayout', 'tab')
+
+    this.leftGridTablet = new GridConfig('leftlayout', GridConstants.Tablet)
       .addlayout(["leftlayout1", "leftlayout2", "leftlayout3", "leftlayout4"]);
 
-    this._gridlayoutService.createLayout('leftlayout', 'mobile')
+    this.leftGridMobile = new GridConfig('leftlayout', GridConstants.Mobile)
       .addlayout(["leftlayout1", "leftlayout1", "leftlayout2", "leftlayout2"])
       .addlayout(["leftlayout3", "leftlayout3", "leftlayout4", "leftlayout4"]);
-
-    this.getHtmlAndTypeScriptCode();
   }
   //TO LOAD HTML AND TYPESCRIPT CODE
   getHtmlAndTypeScriptCode() {
