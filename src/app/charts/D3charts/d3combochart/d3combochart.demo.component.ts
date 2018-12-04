@@ -29,11 +29,11 @@ export class AmexioD3ComboChartDemoComponent implements OnInit {
   ngOnInit() {
    this.barData =  [
     ['State', 'Rice Production', 'Rice Export'],
-    ['Andhra Pradesh',     600, 50],
-    ['Kerala',      500, 100],
-    ['Tamil Nadu',  400, 350],
-    ['Assam', 250, 200],
-    ['Maharshtra',    300, 250]
+    ['Andhra Pradesh',     600, 150],
+    ['Kerala',      500, 350],
+    ['Tamil Nadu',  400, 275],
+    ['Assam', 250, 80],
+    ['Maharshtra',    300, 170]
   ];
         
   }
