@@ -25,17 +25,23 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-body>
                     <amexio-typeahead [data-reader]="'data'"
                                       [key]="'countryCode1'"
-                                      [value-field]="'countryCode1'"
                                       [display-field]="'countryName'"
                                       [place-holder]="'Search'"
-                                      [(ngModel)]="sample"
+                                      [(ngModel)]="country"
                                       [http-url]="'assets/data/componentdata/country.json'"
                                       [http-method]="'get'"
-                                      [field-label]="'Country Name'"
-                                      
-                    >
+                                      [field-label]="'Country Name'">
                     </amexio-typeahead>
-
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+              <amexio-column size="6">
+              <amexio-card header="true">
+                  <amexio-header>
+                     Selected Value
+                  </amexio-header>
+                  <amexio-body>
+                    {{country}}
                   </amexio-body>
                 </amexio-card>
               </amexio-column>
@@ -103,7 +109,7 @@ import {HttpClient} from "@angular/common/http";
 })
 export class TypeAheadDemo {
   htmlCode: string;
-  sample: any;
+  country: any;
   typeScriptCode: string;
   copyMsgArray: any[];
   typeAHeadData: any;
