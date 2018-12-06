@@ -17,6 +17,7 @@ const routes: Routes = [
 ]
 @NgModule({
     imports: [CommonModule, FormsModule,HttpClientModule,SharedModule,ReactiveFormsModule,
+      ReactiveFormsModule.withConfig({warnOnNgModelWithFormControl: 'never'}),
         AmexioWidgetModule,RouterModule.forChild(routes)],
     exports: [RouterModule],
     declarations: [HtmlReactiveFormComponent],
