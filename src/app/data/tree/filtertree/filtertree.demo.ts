@@ -9,7 +9,7 @@ import {HttpClient} from "@angular/common/http";
   selector: 'tree-filter-demo', template: `
     <amexio-card header="true">
       <amexio-header>
-         Filter Tree 
+         Filter Tree
       </amexio-header>
       <amexio-body>
         <p>A Expandable Tree Component for Angular, having Filtering functionality.</p>
@@ -19,11 +19,11 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                     Filter Tree 
+                     Filter Tree
                   </amexio-header>
                   <amexio-body>
                     <amexio-tree-filter-view [data-reader]="'data'"
-                                             [http-method]="'get'" (selectedRecord)="getNodeData($event)"
+                                             [http-method]="'get'" (nodeClick)="getNodeData($event)"
                                              [http-url]="'assets/data/componentdata/sidenav.json'">
                     </amexio-tree-filter-view>
                   </amexio-body>
@@ -32,7 +32,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-column size="6">
                 <amexio-card [header]="true">
                   <amexio-header>
-                     Selected Data 
+                     Selected Data
                   </amexio-header>
                   <amexio-body>
                     <pre><code>{{selectedData | json}}</code></pre>
@@ -50,7 +50,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [data-index]="'name'" [width]="24" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
             <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
-              
+
                                         <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
@@ -65,7 +65,7 @@ import {HttpClient} from "@angular/common/http";
               <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>
             <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
-              
+
               <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
@@ -242,6 +242,7 @@ export class FilterTreeDemo {
   }
 
   getNodeData(data: any) {
+    debugger
     this.selectedData = data;
   }
 }
