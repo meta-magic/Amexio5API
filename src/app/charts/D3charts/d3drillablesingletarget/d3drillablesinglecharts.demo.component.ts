@@ -40,7 +40,7 @@ export class AmexioD3DrillableSingleTargetDemoComponent implements OnInit {
     let responseTs: any;
     let dataSource: any;
     //HTML FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3multipletarget/d3chart.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3drillablechart/d3chart.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -48,7 +48,7 @@ export class AmexioD3DrillableSingleTargetDemoComponent implements OnInit {
     });
 
     // TS FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3multipletarget/d3chart.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/charts/D3Charts/d3drillablechart/d3chart.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
