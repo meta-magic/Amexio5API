@@ -91,6 +91,27 @@
             "version": "0.0.7 Onwards",
             "type": "boolean",
             "default": "true"
+        },
+        {
+            "name": "label-color",
+            "description": "Sets label color in D3 Bubble Chart",
+            "version": "0.1.0 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "label",
+            "description": "Sets label on D3 Bubble Chart",
+            "version": "0.1.0 Onwards",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "name": "zoom-enable",
+            "description": "Enables panning , zooming on double click of bubbles",
+            "version": "0.1.0 Onwards",
+            "type": "boolean",
+            "default": "false"
         }
     ],
   
