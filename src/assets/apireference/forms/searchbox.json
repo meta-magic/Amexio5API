@@ -57,6 +57,22 @@
     } 
 
   ],
+  "childproperties":[
+    {
+      "name": "title",
+      "type": "string",
+      "default": "",
+      "description":"Sets title to search option",
+      "version": "5.4 onwards"
+    },
+    {
+      "name": "form-width",
+      "type": "number",
+      "default": "",
+      "description":"Sets formwidth",
+      "version": "5.4 onwards"
+    }
+  ],
   "events":[
     {
       "name": "keyup",

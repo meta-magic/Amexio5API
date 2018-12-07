@@ -1,5 +1,15 @@
 export class WindowDemoComponent {
 
+  showBasicWindowMaterial: boolean;
+  showBasicWindowNonMaterial: boolean;
+  showBasicWindowNonMateialToolbar: boolean;
+
+  showMaxWindowMaterial: boolean;
+  showMaxWindowNonMaterial: boolean;
+
+  showClosableMaterial: boolean;
+  showClosableNonMaterial: boolean;
+
   rightclickdata: any;
   constructor() {
      this.rightclickdata = [
@@ -18,4 +28,35 @@ export class WindowDemoComponent {
     "icon": ""
   }
 ];
+toggleBasicWindow(data: any) {
+    if (data == 'material') {
+      this.showBasicWindowMaterial = !this.showBasicWindowMaterial;
+    }
+    else if (data == 'nonmaterial') {
+      this.showBasicWindowNonMaterial = !this.showBasicWindowNonMaterial;
+
+    }
+    else {
+      this.showBasicWindowNonMateialToolbar = !this.showBasicWindowNonMateialToolbar;
+    }
+  }
+  toggleMaxWindow(data: any) {
+    if (data == 'material') {
+      this.showMaxWindowMaterial = !this.showMaxWindowMaterial;
+    }
+    else {
+      this.showMaxWindowNonMaterial = !this.showMaxWindowNonMaterial;
+    }
+  }
+
+
+  toggleClosable(data: any) {
+    if (data == 'material') {
+      this.showClosableMaterial = !this.showClosableMaterial;
+    }
+    else {
+      this.showClosableNonMaterial = !this.showClosableNonMaterial;
+    }
+  }
+
 }
