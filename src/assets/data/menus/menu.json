@@ -794,6 +794,12 @@
                             "link": "amexio-d3-chart-scatter"
                         },
                         {
+                            "text": "Timeline Chart",
+                            "icon": "fa fa-bar-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-timeline"
+                        },
+                        {
                             "text": "Stack Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
                             "link": "amexio-d3-chart-bar-stack"
