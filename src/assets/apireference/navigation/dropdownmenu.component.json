@@ -1,7 +1,7 @@
 {
   "name": "Amexio Dropdown Menu",
   "description": "Drop-Down-Menu component has been created to render N numbers of drop-down options based on data-set configured. Data-set can be configured using HTTP call OR Define fix number of dropdown-options.",
-  "selector": "<amexio-dropdown>",
+  "selector": "<amexio-drop-down-menu>",
   "properties": [
 
     {
