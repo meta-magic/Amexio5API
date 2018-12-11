@@ -44,10 +44,10 @@ script:
 after_success: 
   - codecov
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
-  - rm -rf amexio-api-website-test/api/v5.4/*
-  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.4/
+  - rm -rf amexio-api-website-test/api/v5.3/*
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.3/
   - cd amexio-api-website-test/
-  - git add api
+  - git add api/v5.3/
   - git commit -m "${COMMIT}"
   - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
 cache:
