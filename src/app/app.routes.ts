@@ -183,6 +183,9 @@
       path: 'verticalright-tab-demo', loadChildren: './layout/tab/verticalrighttab/verticalrighttab.demo.module#VerticalRightTabDemoModule'
     },
     {
+      path: 'enhanced-vertical-tab-demo', loadChildren: './layout/tab/enhancedverticaltab/enhancedverticaltab.demo.module#EnhancedVerticalTabDemoModule'
+    },
+    {
       path: 'step-box', loadChildren: './layout/steps/stepbox/stepbox.demo.module#StepBoxDemoModule'
     },
     {

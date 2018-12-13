@@ -1,0 +1,117 @@
+<amexio-card header="true">
+    <amexio-header>
+        Enhanced Tab
+    </amexio-header>
+    <amexio-body>
+        <p>Enhanced Tab component for Angular Apps with multiple configurations such as Tab, Header, Tab Alignments, Tabs divided
+            Closable,Tab Colors and Tab Position</p>
+        <amexio-tab-view>
+            <amexio-tab title="Demo" active="true">
+                <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+                    <amexio-header>
+                        Tab layout with Color,Closable and Left Bottom aligned
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-vertical-tab-view [closable]="true" [tabPosition]="'bottom'">
+                            <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
+                                Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry.</amexio-tab>
+                            <amexio-tab title="Work" [amexio-color]="'blue'" [icon]="'fa fa-building'">
+                                Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus.
+                            </amexio-tab>
+                            <amexio-tab title="Team" [icon]="'fa fa-users'">
+                                Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
+                                ridiculus mus.
+                            </amexio-tab>
+                            <amexio-tab title="Disabled" [disabled]=true [icon]="'fa fa-snowflake'">
+                                Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
+                                ridiculus mus.
+                            </amexio-tab>
+                        </amexio-vertical-tab-view>
+                    </amexio-body>
+                </amexio-card>
+                <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+                    <amexio-header>
+                        Tab layout Color,Closable and Right Bottom aligned
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-right-vertical-tab-view [closable]="true" [tabPosition]="'bottom'">
+                            <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
+                                Personal Lorem Ipsum is simply text of printing and typesetting industry.
+                            </amexio-tab>
+                            <amexio-tab title="Work" [amexio-color]="'blue'" [icon]="'fa fa-building'">
+                                Work Nullam nec dolor lobortis, dictum ac, massa. Donec id suscipit.
+                            </amexio-tab>
+                            <amexio-tab title="Team" [icon]="'fa fa-users'">
+                                Team Phasellus in condimentum. In et sem. Orci varius penatibus.
+                            </amexio-tab>
+                            <amexio-tab title="Disabled" [disabled]=true [icon]="'fa fa-snowflake'">
+                                Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
+                                ridiculus mus.
+                            </amexio-tab>
+                        </amexio-right-vertical-tab-view>
+                    </amexio-body>
+                </amexio-card>
+            </amexio-tab>
+            <amexio-tab title="API Reference">
+                <amexio-datagrid title="Tab View Properties  <amexio-vertical-tab-view>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/tab/enhanced-vertical-tab/enhancedverticaltab.json'"
+                    [data-reader]="'properties'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <br>
+                <amexio-datagrid title="Tab Properties  <amexio-tab>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/tab/enhanced-vertical-tab/enhancedverticaltab.json'"
+                    [data-reader]="'tabproperties'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="45" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <br>
+                <amexio-datagrid title="Tab Events" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/tab/enhanced-vertical-tab/enhancedverticaltab.json'"
+                    [data-reader]="'events'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="40" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="60" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid>
+                <br>
+                <!-- <amexio-datagrid title="Tab Methods" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/tab/enhanced-vertical-tab/enhancedverticaltab.json'"
+                    [data-reader]="'methods'" [enable-data-filter]="false">
+                    <amexio-data-table-column [width]="40" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+                    <amexio-data-table-column [width]="40" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+                </amexio-datagrid> -->
+
+            </amexio-tab>
+            <amexio-tab title="Source">
+                <div style="overflow-y: scroll">
+                    <amexio-vertical-tab-view>
+                        <amexio-tab title="HTML" [active]="true">
+                            <ng-container *ngIf="htmlCode">
+                                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
+                                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+                            </ng-container>
+                        </amexio-tab>
+                        <amexio-tab title="Type Script">
+                            <ng-container *ngIf="typeScriptCode">
+                                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+                            </ng-container>
+                        </amexio-tab>
+                        <amexio-tab title="Dynamic Tab">
+                            <ng-container *ngIf="typeScriptCode2">
+                                <prism-block [code]="typeScriptCode2" [language]="'typescript'"></prism-block>
+                            </ng-container>
+                        </amexio-tab>
+                    </amexio-vertical-tab-view>
+                </div>
+            </amexio-tab>
+            <amexio-tab title="Live">
+                <p align="center">Amexio Sandbox</p>
+                <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-horizontal-enhanced-tab?embed=1&file=app/tabs/enhancedtab/enhancedtab.demo.html&view=editor"
+                    frameborder="0" allowfullscren="allowfullscren"></iframe>
+            </amexio-tab>
+        </amexio-tab-view>
+    </amexio-body>
+</amexio-card>

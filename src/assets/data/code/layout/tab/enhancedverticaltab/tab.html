@@ -1,0 +1,35 @@
+<!-- Tab layout with Color,Closable and Left Bottom aligned -->
+
+<amexio-vertical-tab-view [closable]="true" [tabPosition]="'bottom'">
+    <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
+        Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry.</amexio-tab>
+    <amexio-tab title="Work" [amexio-color]="'blue'" [icon]="'fa fa-building'">
+        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus.
+    </amexio-tab>
+    <amexio-tab title="Team" [icon]="'fa fa-users'">
+        Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
+        ridiculus mus.
+    </amexio-tab>
+    <amexio-tab title="Disabled" [disabled]=t rue [icon]="'fa fa-snowflake'">
+        Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
+        ridiculus mus.
+    </amexio-tab>
+</amexio-vertical-tab-view>
+
+<!-- Tab layout Color,Closable and Right Bottom aligned -->
+
+<amexio-right-vertical-tab-view [closable]="true" [tabPosition]="'bottom'">
+    <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
+        Personal Lorem Ipsum is simply text of printing and typesetting industry.
+    </amexio-tab>
+    <amexio-tab title="Work" [amexio-color]="'blue'" [icon]="'fa fa-building'">
+        Work Nullam nec dolor lobortis, dictum ac, massa. Donec id suscipit.
+    </amexio-tab>
+    <amexio-tab title="Team" [icon]="'fa fa-users'">
+        Team Phasellus in condimentum. In et sem. Orci varius penatibus.
+    </amexio-tab>
+    <amexio-tab title="Disabled" [disabled]=t rue [icon]="'fa fa-snowflake'">
+        Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
+        ridiculus mus.
+    </amexio-tab>
+</amexio-right-vertical-tab-view>

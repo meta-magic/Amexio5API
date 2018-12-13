@@ -191,6 +191,11 @@
                                     "text": "Right Aligned",
                                     "link": "verticalright-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
+                                },
+                                {
+                                    "text": "Enhanced",
+                                    "link": "enhanced-vertical-tab-demo",
+                                    "icon": "fa fa-leaf fa-fw"
                                 }
                             ]
                         }
