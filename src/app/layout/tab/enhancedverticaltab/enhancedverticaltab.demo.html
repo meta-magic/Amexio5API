@@ -12,10 +12,9 @@
                         Tab layout with Color,Closable and Left Bottom aligned
                     </amexio-header>
                     <amexio-body>
-                            <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
-                            </amexio-button> 
-                         <amexio-vertical-tab-view #tab [closable]="true" [tabPosition]="'bottom'">
-                              
+                        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
+                        </amexio-button>
+                        <amexio-vertical-tab-view #tab [closable]="true" [tabPosition]="'bottom'">
                             <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
                                 Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry.</amexio-tab>
                             <amexio-tab title="Work" [amexio-color]="'blue'" [icon]="'fa fa-building'">
@@ -29,7 +28,7 @@
                                 Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
                                 ridiculus mus.
                             </amexio-tab>
-                        </amexio-vertical-tab-view> 
+                        </amexio-vertical-tab-view>
                     </amexio-body>
                 </amexio-card>
                 <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
@@ -37,10 +36,10 @@
                         Tab layout Color,Closable and Right Bottom aligned
                     </amexio-header>
                     <amexio-body>
-                            <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addrighttab(tab1)" [tooltip]="'Add Tab'">
-                            </amexio-button>
+                        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addrighttab(tab1)" [tooltip]="'Add Tab'">
+                        </amexio-button>
                         <amexio-right-vertical-tab-view #tab1 [closable]="true" [tabPosition]="'bottom'">
-                              
+
                             <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
                                 Personal Lorem Ipsum is simply text of printing and typesetting industry.
                             </amexio-tab>
@@ -59,8 +58,9 @@
                 </amexio-card>
             </amexio-tab>
             <amexio-tab title="API Reference">
-                <amexio-datagrid title="Tab View Properties  <amexio-vertical-tab-view>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/layout/tab/enhanced-vertical-tab/enhancedverticaltab.json'"
-                    [data-reader]="'properties'" [enable-data-filter]="false">
+                <amexio-datagrid title="Tab View Properties  <amexio-vertical-tab-view>" [enable-column-fiter]="false" [http-method]="'get'"
+                    [http-url]="'assets/apireference/layout/tab/enhanced-vertical-tab/enhancedverticaltab.json'" [data-reader]="'properties'"
+                    [enable-data-filter]="false">
                     <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
                     <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>

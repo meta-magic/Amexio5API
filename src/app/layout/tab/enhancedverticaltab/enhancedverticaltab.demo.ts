@@ -37,6 +37,7 @@ export class EnhancedVerticalTabDemo {
   getHtmlAndTypeScriptCode() {
     let responseHtml: any;
     let responseTs: any;
+    let code: any;
 
     //HTML FILE
     this.http.get('assets/data/code/layout/tab/enhancedverticaltab/tab.html').subscribe(data => {
@@ -52,6 +53,13 @@ export class EnhancedVerticalTabDemo {
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
+    });
+      //TS FILE
+      this.http.get('assets/data/code/layout/tab/enhancedverticaltab/dynamictab.text').subscribe(data => {
+        code = data.text();
+    }, error => {
+    }, () => {
+        this.typeScriptCode2 = code;
     });
 
   }

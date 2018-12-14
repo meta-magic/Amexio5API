@@ -1,6 +1,8 @@
-<!-- Tab layout with Color,Closable and Left Bottom aligned -->
+<!-- Tab layout with Dynamic Tab ,Color,Closable and Bottom Left Aligned -->
 
-<amexio-vertical-tab-view [closable]="true" [tabPosition]="'bottom'">
+<amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
+</amexio-button>
+<amexio-vertical-tab-view #tab [closable]="true" [tabPosition]="'bottom'">
     <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
         Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry.</amexio-tab>
     <amexio-tab title="Work" [amexio-color]="'blue'" [icon]="'fa fa-building'">
@@ -10,15 +12,18 @@
         Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
         ridiculus mus.
     </amexio-tab>
-    <amexio-tab title="Disabled" [disabled]=t rue [icon]="'fa fa-snowflake'">
+    <amexio-tab title="Disabled" [disabled]=true [icon]="'fa fa-snowflake'">
         Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
         ridiculus mus.
     </amexio-tab>
 </amexio-vertical-tab-view>
 
-<!-- Tab layout Color,Closable and Right Bottom aligned -->
+<!-- Tab layout with Dynamic Tab ,Color,Closable and Bottom Right Aligned -->
 
-<amexio-right-vertical-tab-view [closable]="true" [tabPosition]="'bottom'">
+<amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addrighttab(tab1)" [tooltip]="'Add Tab'">
+</amexio-button>
+<amexio-right-vertical-tab-view #tab1 [closable]="true" [tabPosition]="'bottom'">
+
     <amexio-tab title="Personal" [active]="true" [amexio-color]="'grey'" [icon]="'fa fa-user-circle'">
         Personal Lorem Ipsum is simply text of printing and typesetting industry.
     </amexio-tab>
@@ -28,7 +33,7 @@
     <amexio-tab title="Team" [icon]="'fa fa-users'">
         Team Phasellus in condimentum. In et sem. Orci varius penatibus.
     </amexio-tab>
-    <amexio-tab title="Disabled" [disabled]=t rue [icon]="'fa fa-snowflake'">
+    <amexio-tab title="Disabled" [disabled]=true [icon]="'fa fa-snowflake'">
         Team Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,nascetur
         ridiculus mus.
     </amexio-tab>
