@@ -1,12 +1,12 @@
 <!-- Simple Form -->
 <amexio-form form-name="validateForm" header="true" show-error="true">
-    <amexio-form-header style="width:100%">
+    <amexio-form-header style='width:100%;'>
         Form
     </amexio-form-header>
     <amexio-form-body>
         <amexio-row>
             <amexio-column [size]="6">
-                <amexio-text-input [min-length]="3" [(ngModel)]="userRegistration.firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="Firstname" place-holder="Enter first name" icon-feedback="true">
+                <amexio-text-input [min-length]="3" [(ngModel)]="userRegistration.firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="firstName" place-holder="Enter first name" icon-feedback="true">
                 </amexio-text-input>
             </amexio-column>
             <amexio-column [size]="6">
@@ -15,14 +15,15 @@
                 </amexio-text-input>
             </amexio-column>
         </amexio-row>
-        <amexio-textarea-input [field-label]="'Address'" name="Address" [(ngModel)]="userRegistration.address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
+        <amexio-textarea-input  [field-label]="'Address'" name="Address" [(ngModel)]="userRegistration.address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false"
+            [enable-popover]="true"></amexio-textarea-input>
         <amexio-row>
             <amexio-column [size]="6">
                 <amexio-radio-group [name]="'genderList'" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [(ngModel)]="userRegistration.gender" [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
                 </amexio-radio-group>
             </amexio-column>
             <amexio-column [size]="6">
-                <amexio-checkbox-group [field-label]="'Hobbies'" name="hobbies" [(ngModel)]="userRegistration.hobbies" [horizontal]="true" [required]="true" [data-reader]="'response.data'" [display-field]="'hobbieName'" [value-field]="'checked'" [data]="checkboxGroupdata">
+                <amexio-checkbox-group [field-label]="'Hobbies'" name="hobbies" [(ngModel)]="userRegistration.hobbies" [horizontal]="true" [required]="true"  [data-reader]="'response.data'" [display-field]="'hobbieName'" [value-field]="'checked'" [data]="checkboxGroupdata">
                 </amexio-checkbox-group>
             </amexio-column>
         </amexio-row>
@@ -69,16 +70,19 @@
         </amexio-button>
     </amexio-form-action>
 </amexio-form>
-
-<!-- Form with Tool Bar -->
+<br>
+<b style="color:green">Form Model Data : </b> {{simpleForm.form.value | json}}<br>
+<b style="color:blue">UI Model Data </b>: {{userRegistration|json}} <br>
+<h2>Demo: Form with Toolbar</h2>
 <amexio-form form-name="validateForm" header="true" show-error="true">
-    <amexio-form-header style="width:100%">
+    <amexio-form-header style='width:100%;display:inherit'>
         <amexio-toolbar>
             <amexio-toolbar-item position-left>
                 <amexio-label size="small">
                     Registration
                 </amexio-label>
             </amexio-toolbar-item>
+
             <amexio-toolbar-item position-right [seperator-position]="'left'">
                 <i class="fa fa-th" aria-hidden="true"></i>
             </amexio-toolbar-item>
@@ -96,7 +100,7 @@
     <amexio-form-body>
         <amexio-row>
             <amexio-column [size]="6">
-                <amexio-text-input [min-length]="3" [(ngModel)]="firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="Firstname" place-holder="Enter first name" icon-feedback="true">
+                <amexio-text-input [min-length]="3" [(ngModel)]="firstName" [max-length]="5" [allow-blank]="false" field-label="First Name" name="firstName" place-holder="Enter first name" icon-feedback="true">
                 </amexio-text-input>
             </amexio-column>
             <amexio-column [size]="6">
@@ -104,6 +108,7 @@
                     max-error-msg="Maximum 10 char allowed" icon-feedback="true">
                 </amexio-text-input>
             </amexio-column>
+
         </amexio-row>
     </amexio-form-body>
     <amexio-form-action>
@@ -113,8 +118,8 @@
         </amexio-button>
     </amexio-form-action>
 </amexio-form>
-
-<!-- Employee Registration form with address -->
+<br>
+<h2>Demo: Employee Registration with address </h2>
 <amexio-form #empForm form-name="empployeeForm" header="true" [header-align]="'left'" show-error="true">
     <amexio-form-header style='width:100%; display:flex;justify-content:inherit;'>
         Employee Registration

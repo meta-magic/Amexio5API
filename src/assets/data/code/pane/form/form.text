@@ -7,13 +7,54 @@
   })
 
   export class FormDemoComponent {
-    radioGroupData :any;
-    userRegistration:UserRegistration;
-    emplpoyeeRegistration: EmplpoyeeRegistration;
+  radioGroupData : any;
+  checkboxGroupdata : any;
+  currentDate : Date = new Date();
+  payment :any;
+  userRegistration:UserRegistration;
+  emplpoyeeRegistration: EmplpoyeeRegistration;
+  firstName:string;
+  lastName:string;
+  departmentData: any;
 
     constructor() {
     this.userRegistration = new UserRegistration();
     this.emplpoyeeRegistration = new EmplpoyeeRegistration();
+    this.departmentData = [{
+      'deptId':'1',
+      'deptName' :'Engineering'
+    },{
+      'deptId':'2',
+      'deptName' :'Tech Suppport'
+    },{
+      'deptId':'3',
+      'deptName' :'HR'
+    }]
+   this.checkboxGroupdata = {
+      response:{
+        data:[{
+          hobbieName:'Learning',
+          checked: false,
+          disabled : false
+        },{
+          hobbieName:'Shopping',
+          checked: false,
+          disabled : false
+        },{
+          hobbieName:'Fishing',
+          checked: false,
+          disabled : false
+        }
+        ]}};
+        this.payment=[
+          {"label": "Open With", "icon": "fa fa-arrows-alt "},
+          {"label": "Make a Copy", "icon": "fa fa-files-o","separator":"true"},
+          {"label": "Refresh", "icon": "fa fa-refresh"},
+          {"label": "Add Star", "icon": "fa fa-star"},
+          {"label": "download", "icon": "fa fa-download"},
+          {"label": "bookmark", "icon": "fa fa-bookmark"}
+        ];
+
     this.radioGroupData = {
       response:{
         data:[{
@@ -22,14 +63,31 @@
         },{
           gender:'Female',
           genderId:'female',
-          disabled : true
         },
         ]
       }
     };
   }
+}
 
-export class EmplpoyeeRegistration {
+export class UserRegistration {
+  firstName: string;
+  lastName: string;
+  agree: boolean;
+  address: string;
+  gender: string;
+  hobbies: any[];
+  city: string;
+  age: number;
+  dateOfBirth = new Date();
+  email: string;
+  password: string;
+  constructor() {
+    this.hobbies = [];
+   }
+  }
+
+  export class EmplpoyeeRegistration {
     firstName: string;
     lastName: string;
     address: Address;
@@ -41,14 +99,14 @@ export class EmplpoyeeRegistration {
       this.address = new Address();
     }
   }
-
+  
   export class Address {
     street: string;
-    city: string;
+    city: string; 
     state: string;
     country: string;
     pincode: number;
-    constructor() {
-
+    constructor() { 
+  
     }
   }
