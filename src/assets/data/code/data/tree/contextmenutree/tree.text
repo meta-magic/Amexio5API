@@ -1,7 +1,7 @@
 export class CheckboxTreeDemo {
 
-    rightclickdata = any;
-    treeLocalData = any;
+    rightclickdata: any;
+    treeLocalData: any;
 
   constructor() {
        this.rightclickdata=

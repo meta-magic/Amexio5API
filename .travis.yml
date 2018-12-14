@@ -47,7 +47,7 @@ after_success:
   - rm -rf amexio-api-website-test/api/v5.4/*
   - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.4/
   - cd amexio-api-website-test/
-  - git add api
+  - git add api/v5.4/
   - git commit -m "${COMMIT}"
   - git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
 cache:

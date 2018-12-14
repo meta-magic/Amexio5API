@@ -183,6 +183,9 @@
       path: 'verticalright-tab-demo', loadChildren: './layout/tab/verticalrighttab/verticalrighttab.demo.module#VerticalRightTabDemoModule'
     },
     {
+      path: 'enhanced-vertical-tab-demo', loadChildren: './layout/tab/enhancedverticaltab/enhancedverticaltab.demo.module#EnhancedVerticalTabDemoModule'
+    },
+    {
       path: 'step-box', loadChildren: './layout/steps/stepbox/stepbox.demo.module#StepBoxDemoModule'
     },
     {
@@ -473,6 +476,9 @@
     },
     {
       path: 'amexio-d3-chart-multiarea', loadChildren: './charts/D3charts/d3multiareachart/d3multiareachart.demo.module#D3MultiAreaChartDemoModule'
+    },
+    {
+      path: 'amexio-d3-chart-timeline', loadChildren: './charts/D3charts/d3timelinechart/d3timelinechart.demo.module#D3TimelineChartDemoModule'
     },
     {
       path: 'drillable-with-single-target-demo', loadChildren: './charts/D3charts/d3drillablesingletarget/d3drillablesingletarget.demo.module#D3DrillableSingleTargetDemoModule'

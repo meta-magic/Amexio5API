@@ -1,0 +1,16 @@
+export class EnhancedVerticalTabDemo {
+tabcountleft: number = 4;
+tabcountright:number = 4;
+  addtab(tab: any) {
+    this.tabcountleft++;
+    let title = 'Tab ' + this.tabcountleft;
+    let cmp = tab.addDynamicTab(title, "red", true, DyanmicVerticalTabComponent);
+    cmp.content = "Content of " + title;
+  }
+  addrighttab(tab1: any) {
+    this.tabcountright++;
+    let title = 'Tab ' + this.tabcountright;
+    let cmp = tab1.addDynamicTab(title, "red", true, DyanmicVerticalTabComponent);
+    cmp.content = "Content of " + title;
+  }
+}

@@ -56,15 +56,24 @@ import {HttpClient} from "@angular/common/http";
                 </amexio-card>
               </amexio-column>
             </amexio-row>
-          </amexio-tab>
+          </amexio-tab> 
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-dropdown>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/dropdown.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
-              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Name'"></amexio-data-table-column>
+              
+               <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+                        <ng-template #amexioBodyTmpl let-column let-row="row">
+                            <ng-container *ngIf="row.deprecated">
+                                <div style="text-decoration: line-through red;">{{row.name}}</div>
+                            </ng-container>
+                            <ng-container *ngIf="!row.deprecated">
+                                {{row.name}}
+                            </ng-container>
+                        </ng-template>
+                    </amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Type'"></amexio-data-table-column>
               <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"

@@ -191,6 +191,11 @@
                                     "text": "Right Aligned",
                                     "link": "verticalright-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
+                                },
+                                {
+                                    "text": "Enhanced",
+                                    "link": "enhanced-vertical-tab-demo",
+                                    "icon": "fa fa-leaf fa-fw"
                                 }
                             ]
                         }
@@ -792,6 +797,12 @@
                             "icon": "fa fa-dot-circle-o fa-fw",
                             "badge": "New",
                             "link": "amexio-d3-chart-scatter"
+                        },
+                        {
+                            "text": "Timeline Chart",
+                            "icon": "fa fa-bar-chart fa-fw",
+                            "badge": "New",
+                            "link": "amexio-d3-chart-timeline"
                         },
                         {
                             "text": "Stack Bar Chart",
