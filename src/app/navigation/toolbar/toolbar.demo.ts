@@ -376,6 +376,10 @@ import { HttpClient } from "@angular/common/http";
  </amexio-panel>
  
             <br>
+            <amexio-box border-color="brown" border="right-left"  padding="true" background-color="brown">
+            <amexio-label> <b>Amexio toolbar acts as container, which contain Amexio-Toolbar-item. </b>  </amexio-label>
+                          </amexio-box>
+                          <br>
             <amexio-datagrid title="Properties <amexio-toolbar-item>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/toolbaritem.json'" 
