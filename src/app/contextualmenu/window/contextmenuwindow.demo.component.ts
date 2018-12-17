@@ -44,7 +44,7 @@ export class ContextMenuWindowDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/pane/window/window.html', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/pane/window/contextmenuwindow.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -52,7 +52,7 @@ export class ContextMenuWindowDemoComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/pane/window/window.text', { responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/pane/window/contextmenuwindow.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

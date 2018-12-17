@@ -22,9 +22,9 @@
     {
       "deprecated":false,
       "name": "allow-blank",
-      "description": "Sets if field is required",
+      "description": "Sets if field is required (true or false)",
       "version": "4.0 onwards",
-      "type": "string",
+      "type": "(true or false)",
       "default": ""
     },
     {

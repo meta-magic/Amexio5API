@@ -27,7 +27,7 @@
       "name": "allow-blank",
       "type": "boolean",
       "default": "false",
-      "description":"true to make this field required."
+      "description":"true to make this field required (true or false)."
     },
     {
       "name": "place-holder",

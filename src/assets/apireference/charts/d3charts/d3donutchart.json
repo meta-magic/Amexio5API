@@ -32,7 +32,7 @@
             "default": ""
         },
         {
-            "name": "colors",
+            "name": "color",
             "description": "Sets color to D3 donut chart",
             "version": "0.0.1  Onwards",
             "type": "any[]",
