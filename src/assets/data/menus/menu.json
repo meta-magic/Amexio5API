@@ -103,7 +103,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "1",
+            "badge": "2",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
@@ -144,6 +144,7 @@
                 {
                     "text": "Tab",
                     "icon": "fa fa-folder fa-fw",
+                    "badge":"1",
                     "children": [{
                             "text": "Horizontal",
                             "icon": "fa fa-indent fa-fw",
@@ -182,6 +183,7 @@
                         {
                             "text": "Vertical",
                             "icon": "fa fa-outdent fa-fw",
+                            "badge":"1",
                             "children": [{
                                     "text": "Left Aligned",
                                     "link": "vertical-tab-demo",
@@ -195,7 +197,8 @@
                                 {
                                     "text": "Enhanced",
                                     "link": "enhanced-vertical-tab-demo",
-                                    "icon": "fa fa-leaf fa-fw"
+                                    "icon": "fa fa-leaf fa-fw",
+                                    "badge":"New"
                                 }
                             ]
                         }
