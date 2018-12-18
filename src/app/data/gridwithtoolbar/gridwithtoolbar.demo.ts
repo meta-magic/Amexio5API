@@ -40,7 +40,8 @@ import {HttpClient} from "@angular/common/http";
                                         <amexio-label size="small">
                                             My Drive
                                         </amexio-label>
-                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                       <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
+                                        
                                     </amexio-datagrid-header>
                                     <amexio-data-table-column [data-index]="'countryName'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
                                     </amexio-data-table-column>

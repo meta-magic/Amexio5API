@@ -27,6 +27,11 @@ import { Http } from "@angular/http";
             <amexio-card [header]="true" [footer]="true" [show]="flag" [footer-align]="'right'" height="250">
               <amexio-header>
                 Employee Registration
+
+                <amexio-button [label]="'Transparent'" 
+                [type]="'transparent'" 
+                [tooltip]="'Transparent Button'">
+        </amexio-button>
               </amexio-header>
               <amexio-body>
                 <amexio-row>

@@ -543,18 +543,18 @@ import { HttpClient } from "@angular/common/http";
                 </amexio-label>
               </amexio-toolbar-item>
 
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-th" aria-hidden="true"></i>
-                </amexio-toolbar-item>
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                </amexio-toolbar-item>
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </amexio-toolbar-item>
-                <amexio-toolbar-item position-right [seperator-position]="'left'">
-                <i class="fa fa-cog" aria-hidden="true"></i>
-                </amexio-toolbar-item>
+              <amexio-toolbar-item position-right [seperator-position]="'left'">
+              <amexio-image aria-hidden="true" [icon-class]="'fa fa-th'"> </amexio-image>
+            </amexio-toolbar-item>
+            <amexio-toolbar-item position-right [seperator-position]="'left'">
+              <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
+            </amexio-toolbar-item>
+            <amexio-toolbar-item position-right [seperator-position]="'left'">
+              <amexio-image aria-hidden="true" [icon-class]="'fa fa-question-circle'"> </amexio-image>
+            </amexio-toolbar-item>
+            <amexio-toolbar-item position-right [seperator-position]="'left'">
+              <amexio-image aria-hidden="true" [icon-class]="'fa fa-cog'"> </amexio-image>
+            </amexio-toolbar-item>
              </amexio-toolbar>
                 </amexio-window-header>
                  </amexio-header>

@@ -129,16 +129,20 @@ import { HttpClient } from "@angular/common/http";
                         
                    </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-th" aria-hidden="true"></i>
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-th'" > </amexio-image>
+                
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-info-circle" aria-hidden="true"></i>
+             
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-info-circle'" > </amexio-image>
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-question-circle" aria-hidden="true"></i>
+                
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-question-circle'" > </amexio-image>
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                  <i class="fa fa-cog" aria-hidden="true"></i>
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-cog'" > </amexio-image>
+                  
                   </amexio-toolbar-item>
                    
 
@@ -190,8 +194,7 @@ import { HttpClient } from "@angular/common/http";
                     place-holder="Enter name"
                     icon-feedback="true">
                     </amexio-text-input>
-                    <i class="fa fa-info-circle" aria-hidden="true" style="margin:5px"></i>
-                  
+                    <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-info-circle'"  style="margin:5px"> </amexio-image>
                 </amexio-panel-header>
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
@@ -214,16 +217,25 @@ import { HttpClient } from "@angular/common/http";
              </amexio-toolbar-item>
                
                <amexio-toolbar-item position-right [seperator-position]="'left'">
-               <i class="fa fa-th" aria-hidden="true"></i>
+               <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-th'" > </amexio-image>
+                  
+             
+               
                </amexio-toolbar-item>
                <amexio-toolbar-item position-right [seperator-position]="'left'">
-               <i class="fa fa-info-circle" aria-hidden="true"></i>
+            
+               <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-info-circle'" > </amexio-image>
+                  
                </amexio-toolbar-item>
                <amexio-toolbar-item position-right [seperator-position]="'left'">
-               <i class="fa fa-question-circle" aria-hidden="true"></i>
+               <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-question'" > </amexio-image>
+                  
+            
                </amexio-toolbar-item>
                <amexio-toolbar-item position-right [seperator-position]="'left'">
-               <i class="fa fa-cog" aria-hidden="true"></i>
+               <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-cog'" > </amexio-image>
+                  
+            
                </amexio-toolbar-item>
             </amexio-toolbar>
            </amexio-form-header>
@@ -253,16 +265,24 @@ import { HttpClient } from "@angular/common/http";
                       </amexio-label>
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                      <i class="fa fa-th" aria-hidden="true"></i>
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-th'" > </amexio-image>
+                  
+                  
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                      <i class="fa fa-info-circle" aria-hidden="true"></i>
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-info-circle'" > </amexio-image>
+                  
+                 
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                      <i class="fa fa-question-circle" aria-hidden="true"></i>
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-question-circle'" > </amexio-image>
+                  
+                    
                   </amexio-toolbar-item>
                   <amexio-toolbar-item position-right [seperator-position]="'left'">
-                      <i class="fa fa-cog" aria-hidden="true"></i>
+                  <amexio-image  aria-hidden="true"  [icon-class]="'fa fa-cog'" > </amexio-image>
+                  
+                      
                   </amexio-toolbar-item>
                 </amexio-toolbar>
               </amexio-window-header>
