@@ -28,10 +28,6 @@ import { Http } from "@angular/http";
               <amexio-header>
                 Employee Registration
 
-                <amexio-button [label]="'Transparent'" 
-                [type]="'transparent'" 
-                [tooltip]="'Transparent Button'">
-        </amexio-button>
               </amexio-header>
               <amexio-body>
                 <amexio-row>
