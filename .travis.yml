@@ -43,6 +43,9 @@ script:
   - ng build --prod
 after_success: 
   - codecov
+  - git add src/assets/themes
+  - git commit -m "[skip travis]  themes-updated"
+  - git push --force --quiet "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.4
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
   - rm -rf amexio-api-website-test/api/v5.4/*
   - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.4/
