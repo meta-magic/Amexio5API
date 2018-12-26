@@ -32,13 +32,13 @@ script:
   - npm install --save uglifyjs-webpack-plugin
   - npm install @angular-devkit/core --save
   - npm i node-sass --save-dev
-  - wget  https://github.com/meta-magic/amexio-ios/blob/v5.4/themes.tar.gz?raw=true
+  - wget  https://github.com/meta-magic/amexio-ios/blob/v5.5/themes.tar.gz?raw=true
   - mv themes.tar.gz?raw=true themes.tar.gz 
   - tar -xzvf themes.tar.gz 
   - rm -rf src/assets/themes/*
   - cp -rf themes/* src/assets/themes/
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.4/amexio-chart-d3.tgz?raw=true
-  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.4/amexio-ng-extensions.tgz?raw=true
+  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-ng-extensions.tgz?raw=true
   - ng set defaults.styleExt scss
   - ng build --prod
 after_success: 
@@ -47,8 +47,8 @@ after_success:
   - git commit -m "[skip travis]  themes-updated"
   - git push --force --quiet "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.4
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
-  - rm -rf amexio-api-website-test/api/v5.4/*
-  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.4/
+  - rm -rf amexio-api-website-test/api/v5.5/*
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.5/
   - cd amexio-api-website-test/
   - git add api/v5.4/
   - git commit -m "${COMMIT}"
