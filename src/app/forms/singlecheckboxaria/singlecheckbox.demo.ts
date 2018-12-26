@@ -6,7 +6,7 @@ import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'singlecheckbox-demo', template: `
+  selector: 'singlecheckbox-demo-aria', template: `
     <amexio-card header="true">
       <amexio-header>
          Single Checkbox 
@@ -22,8 +22,8 @@ import {HttpClient} from "@angular/common/http";
                      Single Checkbox 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox [field-label]="'Agree'" [(ngModel)]="check"
-                                     (onSelection)="onCheckClick($event)"></amexio-checkbox>
+                    <amexio-checkbox-aria [field-label]="'Agree'" [(ngModel)]="check"
+                                     (onSelection)="onCheckClick($event)"></amexio-checkbox-aria>
                     <p>Selected Value : {{check}}</p>
                   </amexio-body>
                 </amexio-card>
@@ -35,9 +35,9 @@ import {HttpClient} from "@angular/common/http";
                      Single Checkbox with disable 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox [field-label]="'Agree'"
+                    <amexio-checkbox-aria [field-label]="'Agree'"
                                      disabled="true"
-                                     ></amexio-checkbox>
+                                     ></amexio-checkbox-aria>
                   </amexio-body>
                 </amexio-card>
               </amexio-column>

@@ -271,6 +271,21 @@
                     "text": "Text Area",
                     "icon": "fa fa-text-width fa-fw",
                     "link": "textarea-demo"
+                },
+                {
+                    "text": "Checkbox without input tag",
+                    "icon": "fa fa-text-width fa-fw",
+                    "link": "singlecheckbox-demo-aria"
+                },
+                {
+                    "text": "Checkbox with input tag",
+                    "icon": "fa fa-check-square-o fa-fw",
+                    "link": "singlecheckbox-demo"
+                },
+                {
+                    "text": "Checkbox Group",
+                    "icon": "fa fa-list fa-fw",
+                    "link": "checkboxgroup-demo"
                 }
             ]
         },
