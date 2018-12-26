@@ -273,9 +273,9 @@
                     "link": "textarea-demo"
                 },
                 {
-                    "text": "Checkbox without input tag",
-                    "icon": "fa fa-text-width fa-fw",
-                    "link": "singlecheckbox-demo-aria"
+                    "text": "Checkbox Group",
+                    "icon": "fa fa-list fa-fw",
+                    "link": "checkboxgroup-demo"
                 },
                 {
                     "text": "Checkbox with input tag",
