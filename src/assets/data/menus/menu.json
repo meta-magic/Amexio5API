@@ -273,11 +273,6 @@
                     "link": "textarea-demo"
                 },
                 {
-                    "text": "Checkbox Group",
-                    "icon": "fa fa-list fa-fw",
-                    "link": "checkboxgroup-demo"
-                },
-                {
                     "text": "Checkbox with input tag",
                     "icon": "fa fa-check-square-o fa-fw",
                     "link": "singlecheckbox-demo"
