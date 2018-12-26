@@ -137,7 +137,8 @@ body {
   display: table-row; }
 
 .vertical-table .vertical-tablerow .vertical-tablecol {
-  display: table-cell; }
+  display: table-cell;
+  vertical-align: middle; }
 
 .listbox .header .table .tablerow .tablecol {
   padding-right: 0px !important; }
@@ -151,10 +152,11 @@ body {
   color: #1f1b00; }
 
 .verticalalign-tableft {
+  vertical-align: top !important;
   border-right: 1px solid #ced4da !important; }
 
 .verticalalign-tabright {
-  display: inline-table;
+  vertical-align: top !important;
   border-left: 1px solid #ced4da !important; }
 
 .verticalalign-tabcontent {
@@ -177,10 +179,6 @@ element over the whole parent element
   right: 0;
   bottom: 0;
   left: 0; }
-
-input:disabled {
-  opacity: 0.55;
-  cursor: not-allowed; }
 
 /*
 Spin animation for .loading-mask::after
@@ -5249,7 +5247,6 @@ header .billboard .content-button {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  flex-grow: 1;
   padding-left: 16px;
   padding-right: 16px; }
 
@@ -5716,6 +5713,7 @@ fieldset {
 .tabcontent {
   width: inherit;
   position: relative;
+  vertical-align: top !important;
   padding: 10px 0px; }
 
 /**VERTICAL TABS**/
@@ -5732,25 +5730,21 @@ fieldset {
 .verticalnavtab .defaultnode {
   cursor: pointer;
   color: #121212;
-  padding: 10px; }
+  padding: 10px;
+  width: 100%; }
 
 .verticalnavtab .defaultnode:hover {
-  font-weight: bold; }
+  font-weight: bold;
+  width: 100%; }
 
 .verticalnavtab .leftactivetab {
   font-weight: bold;
+  width: 100%;
   border-right: 3px solid #fee12b; }
-
-.tabposition-top {
-  display: table-cell;
-  vertical-align: top; }
-
-.tabposition-bottom {
-  display: table-cell;
-  vertical-align: bottom; }
 
 .verticalnavtab .rightactivetab {
   font-weight: bold;
+  width: 100%;
   border-left: 3px solid #fee12b; }
 
 .verticalnavtab-left {
@@ -5761,10 +5755,12 @@ fieldset {
   font-weight: bold;
   width: auto; }
 
-.verticalalign-tableft {
+verticalalign-tableft {
+  vertical-align: top !important;
   border-right: 1px solid #ced4da !important; }
 
 .verticalalign-tabright {
+  vertical-align: top !important;
   border-left: 1px solid #ced4da !important; }
 
 .verticalalign-tabcontent {
@@ -5833,14 +5829,6 @@ fieldset {
 
 .righttable .righttablerow .righttablecol {
   vertical-align: middle; }
-
-.tabposition-right-top {
-  display: table-cell;
-  vertical-align: top; }
-
-.tabposition-right-bottom {
-  display: table-cell;
-  vertical-align: bottom; }
 
 /****************************************************************************
     Component Name : Window
