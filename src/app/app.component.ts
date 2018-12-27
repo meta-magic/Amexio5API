@@ -103,10 +103,7 @@ this.amexiotechmenus =  [
   {
   "text": "Start Using",
   "icon": "fa fa-television fa-fw",
-  "submenus": [{
-    "text": "Component Example",
-    "link": "http://demo.amexio.tech/"
-  },
+  "submenus": [
     {
     "text": "Pricing",
     "link": "https://amexio.tech/pricing"
@@ -127,7 +124,11 @@ this.amexiotechmenus =  [
   {
   "text": "Training",
   "icon": "fa fa-user fa-fw",
-  "submenus": [{
+  "submenus": [
+    {
+      "text": "Component Example",
+      "link": "http://demo.amexio.tech/"
+    },{
     "text": "Amexio Training",
     "link": "http://metaarivu.com/amexio-training"
   }]
