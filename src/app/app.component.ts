@@ -85,10 +85,18 @@ this.amexiotechmenus =  [
   {
   "text": "Products",
   "icon": "fa fa-snowflake-o fa-fw",
-  "submenus": [{
+  "submenus": [
+    
+ 
+    {
     "text": "Amexio API",
     "link": "https://amexio.tech/amexio-api"
-  }, {
+  }, 
+  {
+    "text": "Amexio D3 Charts",
+    "link": " https://amexio.tech/amexio-d3-charts"
+  },
+  {
     "text": "Amexio Canvas",
     "link": "https://amexio.tech/amexio-canvas"
   }, {
@@ -97,6 +105,10 @@ this.amexiotechmenus =  [
   }, {
     "text": "Amexio Plugins",
     "link": "https://amexio.tech/amexio-plugins-1"
+  },
+  {
+    "text": "Amexio Demo Apps",
+    "link": " https://demo.amexio.org/se/v5.1/index.html"
   }
 ]
 },
@@ -107,13 +119,23 @@ this.amexiotechmenus =  [
     {
     "text": "Pricing",
     "link": "https://amexio.tech/pricing"
-  }, {
+  }, 
+  
+  {
+    "text": "Quality-Assurance",
+    "link": "https://amexio.tech/quality-assurance"
+  },
+  {
     "text": "Downloads",
     "link": "https://amexio.tech/download"
   }, {
     "text": "Subscribe ",
     "link": "https://canvas.amexio.org/#/user/signup"
-  }, {
+  }, 
+  {
+    "text": "Support",
+    "link": "https://amexio.tech/support"
+  },{
     "text": "Canvas Login (Beta)",
     "link": "https://canvas.amexio.org/"
   }, {
