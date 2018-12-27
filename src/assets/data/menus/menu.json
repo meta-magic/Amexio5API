@@ -258,27 +258,6 @@
                 }
             ]
         },
-
-        {
-            "text": "Aria",
-            "icon": "fa fa-odnoklassniki fa-fw",
-            "children": [{
-                    "text": "Text Input",
-                    "icon": "fa fa-file-text-o fa-fw",
-                    "link": "textinput"
-                },
-                {
-                    "text": "Text Area",
-                    "icon": "fa fa-text-width fa-fw",
-                    "link": "textarea-demo"
-                },
-                {
-                    "text": "Checkbox with input tag",
-                    "icon": "fa fa-check-square-o fa-fw",
-                    "link": "singlecheckbox-demo"
-                }
-            ]
-        },
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",

@@ -22,7 +22,7 @@ import {HttpClient} from "@angular/common/http";
                      Single Checkbox 
                   </amexio-header>
                   <amexio-body>
-                    <amexio-checkbox [field-label]="'Agree'" [(ngModel)]="check"
+                    <amexio-checkbox [field-label]="'I Agree terms and conditions'" [(ngModel)]="check"
                                      (onSelection)="onCheckClick($event)"></amexio-checkbox>
                     <p>Selected Value : {{check}}</p>
                   </amexio-body>
