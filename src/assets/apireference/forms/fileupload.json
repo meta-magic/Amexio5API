@@ -49,7 +49,7 @@
       "name": "droppable",
       "description": "Allow Drop Zone For Files.",
       "version": "4.0 onwards",
-      "type": "string",
+      "type": "boolean",
       "default": "none"
     }
   ],

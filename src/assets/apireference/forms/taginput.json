@@ -84,7 +84,7 @@
       "name": "enable-popover",
       "description": "Set enable / disable popover.",
       "version": "4.0 onwards",
-      "type": "string",
+      "type": "boolean",
       "default": ""
     },
     {

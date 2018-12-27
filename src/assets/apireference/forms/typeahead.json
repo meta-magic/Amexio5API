@@ -60,6 +60,13 @@
       "default": ""
     },
     {
+      "name": "value-field",
+      "description": "Name of key inside response data.use to send to backend",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
       "name": "error-msg",
       "description": "Sets the error message",
       "version": "4.0 onwards",
@@ -112,7 +119,7 @@
       "name": "enable-popover",
       "description": "Set enable / disable popover.",
       "version": "4.0 onwards",
-      "type": "string",
+      "type": "boolean",
       "default": ""
     },
     {

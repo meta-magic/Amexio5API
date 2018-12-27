@@ -84,7 +84,7 @@
       "name": "data",
       "description": "Local data for radio group.",
       "version": "4.0 onwards",
-      "type": "any",
+      "type": "any[]",
       "default": ""
     },
     {

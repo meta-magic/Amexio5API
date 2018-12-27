@@ -11,6 +11,12 @@
       "type": "number",
       "default": "",
       "description":"number of records on one page"
+    },
+    {
+      "name": "size",
+      "type": "any",
+      "default": "",
+      "description":"size of the pagintor"
     }
   ],
   "events":[

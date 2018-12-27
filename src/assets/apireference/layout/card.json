@@ -11,11 +11,18 @@
       "default": "left"
     },
     {
-      "name": "header",
-      "description": "User can enable header of card by setting this flag to true..",
+      "name": "footer-align",
+      "description": "right,center,left..",
       "version": "4.0 onwards",
       "type": "string",
       "default": "left"
+    },
+    {
+      "name": "header",
+      "description": "User can enable header of card by setting this flag to true..",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
     },
     {
       "name": "footer",
@@ -23,13 +30,6 @@
       "version": "4.0 onwards",
       "type": "boolean",
       "default": "false"
-    },
-    {
-      "name": "footer-align",
-      "description": "right,center,left..",
-      "version": "4.0 onwards",
-      "type": "string",
-      "default": "left"
     },
     {
       "name": "show",

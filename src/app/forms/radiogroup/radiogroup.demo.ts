@@ -23,7 +23,8 @@ import {HttpClient} from "@angular/common/http";
                      Horizontal Radio Group
                   </amexio-header>
                   <amexio-body> 
-                    <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gender"
+                    <amexio-radio-group [field-label]="'Horizontal Radio Group'"
+                                        name ="gender"
                                         [data-reader]="'response.data'"
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
