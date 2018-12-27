@@ -68,9 +68,6 @@
       path: 'singlecheckbox-demo', loadChildren: './forms/singlecheckbox/singlecheckbox.demo.module#SinglecheckboxDemoModule'
     },
     {
-      path: 'singlecheckbox-demo-aria', loadChildren: './forms/singlecheckboxaria/singlecheckbox.demo.module#SinglecheckboxDemoModule'
-    },
-    {
       path: 'date-picker-demo', loadChildren: './forms/datepicker/datepicker.demo.module#DateTimeDemoModule'
     },
     {
