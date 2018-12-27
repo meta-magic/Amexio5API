@@ -38,10 +38,10 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-row>
                   <amexio-row>
                     <amexio-column size=12>
-                    <amexio-button [label]="'Vertical/Horizontal Poistioning'" (onClick)="onFloatingButtonClick1($event)" [type]="'theme-color'" [tooltip]="'Using Vertical/Horizontal Poistioning'"></amexio-button>
+                    <amexio-button [label]="'Vertical/Horizontal Positioning'" (onClick)="onFloatingButtonClick1($event)" [type]="'theme-color'" [tooltip]="'Using Vertical/Horizontal Positioning'"></amexio-button>
                     <br/>
                     <br/>
-                    <amexio-button [label]="'Right/Left/Top/Right Poistioning'" (onClick)="onFloatingButtonClick2($event)" [type]="'theme-color'" [tooltip]="'Using Vertical/Horizontal Poistioning'"></amexio-button>
+                    <amexio-button [label]="'Right/Left/Top/Right Positioning'" (onClick)="onFloatingButtonClick2($event)" [type]="'theme-color'" [tooltip]="'Using Right/Left/Top/Right Positioning'"></amexio-button>
                     </amexio-column>
                   </amexio-row>
 
