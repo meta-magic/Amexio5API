@@ -150,8 +150,15 @@ body {
 .defaultcolor {
   color: #001f1f; }
 
-.vertical-table .vertical-tablerow .vertical-tablecol {
-  display: table-cell; }
+.verticalalign-tableft {
+  border-right: 1px solid #ced4da !important; }
+
+.verticalalign-tabright {
+  display: inline-table;
+  border-left: 1px solid #ced4da !important; }
+
+.verticalalign-tabcontent {
+  vertical-align: top !important; }
 
 /*
 We set the element we are applying our loading mask to relative
@@ -170,6 +177,10 @@ element over the whole parent element
   right: 0;
   bottom: 0;
   left: 0; }
+
+input:disabled {
+  opacity: 0.55;
+  cursor: not-allowed; }
 
 /*
 Spin animation for .loading-mask::after
@@ -5238,6 +5249,7 @@ header .billboard .content-button {
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  flex-grow: 1;
   padding-left: 16px;
   padding-right: 16px; }
 
@@ -5820,7 +5832,7 @@ fieldset {
   position: absolute; }
 
 .righttable .righttablerow .righttablecol {
-  display: table; }
+  vertical-align: middle; }
 
 .tabposition-right-top {
   display: table-cell;
