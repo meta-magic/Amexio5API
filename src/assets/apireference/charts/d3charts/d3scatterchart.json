@@ -39,6 +39,13 @@
             "default": "blue"
         },
         {
+            "name": "zoom-enable",
+            "description": "Enables panning , zooming on double click of bubbles",
+            "version": "0.1.0 Onwards",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
             "name": "legend",
             "description": "Sets legend to D3 Scatter chart",
             "version": "0.0.7 Onwards",
