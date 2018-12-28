@@ -400,6 +400,7 @@
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [{
                     "text": "Buttons",
+                    "badge":"3",
                     "icon": "fa fa-keyboard-o fa-fw",
                     "children": [{
                             "text": "Button",

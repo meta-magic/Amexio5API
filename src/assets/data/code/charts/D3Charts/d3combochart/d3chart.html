@@ -1,9 +1,40 @@
-<!-- D3-Combo Chart -->
+<!-- D3-Combo Chart scenario 1: bar + line + data-->
 <amexio-d3-combochart [title]="'Rice Production in India'" 
-[label]="true" 
-[data]="barData" 
-[line-data-index]="'Rice Export'"
-(onChartClick)="onDefaultChartClick($event)"
-(onLineClick)="onDefaultLineClick($event)" 
-(onLegendClick)="onUserDefineLegendClick($event)">
+(onChartClick)="onDefaultChartClicksc1($event)"
+(onLineClick)="onDefaultLineClicksc1($event)"
+(onLegendClick)="onUserDefineLegendClicksc1($event)" 
+[data]="barData"
+[bar-data-index]="barArray"
+[line-data-index]="lineArray"
+>
 </amexio-d3-combochart>
+
+<!-- D3-Combo Chart scenario 2: line + data-->
+<amexio-d3-combochart [title]="'Rice Production in India'"
+(onChartClick)="onDefaultChartClicksc2($event)" 
+(onLineClick)="onDefaultLineClicksc2($event)"
+(onLegendClick)="onUserDefineLegendClicksc2($event)" 
+[data]="barData"
+[line-data-index]="lineArray2"
+>
+</amexio-d3-combochart>
+
+<!-- D3-Combo Chart scenario 3: bar + data-->
+<amexio-d3-combochart [title]="'Rice Production in India'" 
+ (onChartClick)="onDefaultChartClicksc3($event)" 
+ (onLineClick)="onDefaultLineClicksc3($event)"
+ (onLegendClick)="onUserDefineLegendClicksc3($event)" 
+ [data]="barData"
+ [bar-data-index]="barArray"
+ >
+ </amexio-d3-combochart>
+
+<!-- D3-Combo Chart scenario 4: data-->
+ <amexio-d3-combochart [title]="'Rice Production in India'" 
+ [label]="true" 
+ (onChartClick)="onDefaultChartClicksc4($event)"  
+ (onLineClick)="onDefaultLineClicksc4($event)"
+ (onLegendClick)="onUserDefineLegendClicksc4($event)" 
+ [data]="barData"
+ >
+ </amexio-d3-combochart>

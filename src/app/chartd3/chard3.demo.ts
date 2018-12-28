@@ -30,7 +30,10 @@ export class ChartD3Demo implements OnInit {
         waterfallChartData: any;
         bubblechart:any;
         userDataSource: any;
-      
+        barData: any[];
+        lineArray: any[];
+        lineArray2: any[];
+        barArray: any[];
 
         constructor(private http: HttpClient) {
 
@@ -56,6 +59,27 @@ export class ChartD3Demo implements OnInit {
                         ['Bihar', 400, 380],
                         ['Orissa', 500, 200]
                 ];
+                this.barData = [
+                        ['State', 'Corn Export', 'Bajra Export', 'Rice Export', 'Wheat Export', 'Jowar Export'],
+                        ['Andhra Pradesh', 600, 500, 250, 50, 95],
+                        ['Kerala', 500, 400, 75, 150, 195],
+                        ['Tamil Nadu', 400, 300, 250, 50, 95],
+                        ['Assam', 250, 150, 75, 150, 195],
+                        ['Maharshtra', 300, 200, 250, 50, 95]
+                      ];
+                      this.lineArray = [
+                        { column: "Rice Export", label: true, color: "green" },
+                        { column: "Jowar Export" },
+                        { column: "Wheat Export" }
+                      ];
+                      this.lineArray2 = [
+                        { column: "Jowar Export" },
+                        { column: "Wheat Export", label: true }
+                      ];
+                      this.barArray = [
+                        { column: "Corn Export", label: true },
+                        { column: "Bajra Export", label: true }];     
+                    
 
                 this.horizontalBarData = [
                         ['year', 'production'],

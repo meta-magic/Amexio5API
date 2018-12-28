@@ -17,7 +17,13 @@ export class AmexioD3ComboChartDemoComponent implements OnInit {
   defultColorData: any;
   userDefineColorData: any;
   sourceData: any;
-  userDataSource: any;
+  userDataSourcesc4: any;
+  userDataSourcesc1: any;
+  userDataSourcesc2: any;
+  userDataSourcesc3: any;
+  lineArray: any[] = [];
+  lineArray2: any[] = [];
+  barArray: any[] = [];
   barChartWithColorData: any;
   barData: any;
   sourceData1: any;
@@ -27,28 +33,79 @@ export class AmexioD3ComboChartDemoComponent implements OnInit {
 
 
   ngOnInit() {
-   this.barData =  [
-    ['State', 'Rice Production', 'Rice Export'],
-    ['Andhra Pradesh',     600, 150],
-    ['Kerala',      500, 350],
-    ['Tamil Nadu',  400, 275],
-    ['Assam', 250, 80],
-    ['Maharshtra',    300, 170]
-  ];
-        
+    this.barData = [
+      ['State', 'Corn Export', 'Bajra Export', 'Rice Export', 'Wheat Export', 'Jowar Export'],
+      ['Andhra Pradesh', 600, 500, 250, 50, 95],
+      ['Kerala', 500, 400, 75, 150, 195],
+      ['Tamil Nadu', 400, 300, 250, 50, 95],
+      ['Assam', 250, 150, 75, 150, 195],
+      ['Maharshtra', 300, 200, 250, 50, 95]
+    ];
+    this.lineArray = [
+      { column: "Rice Export", label: true, color: "green" },
+      { column: "Jowar Export" },
+      { column: "Wheat Export" }
+    ];
+    this.lineArray2 = [
+      { column: "Jowar Export" },
+      { column: "Wheat Export", label: true }
+    ];
+    this.barArray = [
+      { column: "Corn Export", label: true },
+      { column: "Bajra Export", label: true }];
   }
-   
-  onDefaultChartClick(event: any) {
-    this.userDataSource = event;
+  //scenario 1 bar + line + data
+  onDefaultChartClicksc1(event: any) {
+    this.userDataSourcesc1 = event;
   }
 
-  onDefaultLineClick(event: any) {
-    this.userDataSource = event;
+  onDefaultLineClicksc1(event: any) {
+    this.userDataSourcesc1 = event;
   }
 
-  onUserDefineLegendClick(event: any) {
+  onUserDefineLegendClicksc1(event: any) {
+    this.userDataSourcesc1 = event;
+  }
 
-    this.userDataSource = event;
+  //scenario 2 line + data
+  onDefaultChartClicksc2(event: any) {
+    this.userDataSourcesc2 = event;
+  }
+
+  onDefaultLineClicksc2(event: any) {
+    this.userDataSourcesc2 = event;
+  }
+
+  onUserDefineLegendClicksc2(event: any) {
+    this.userDataSourcesc4 = event;
+  }
+
+  //scenario 3 bar + data
+  onDefaultChartClicksc3(event: any) {
+    this.userDataSourcesc3 = event;
+  }
+
+  onDefaultLineClicksc3(event: any) {
+    this.userDataSourcesc3 = event;
+  }
+
+  onUserDefineLegendClicksc3(event: any) {
+
+    this.userDataSourcesc3 = event;
+  }
+
+  //scenario 4 data
+  onDefaultChartClicksc4(event: any) {
+    this.userDataSourcesc4 = event;
+  }
+
+  onDefaultLineClicksc4(event: any) {
+    this.userDataSourcesc4 = event;
+  }
+
+  onUserDefineLegendClicksc4(event: any) {
+
+    this.userDataSourcesc4 = event;
   }
 
   //TO LOAD HTML AND TYPESCRIPT CODE

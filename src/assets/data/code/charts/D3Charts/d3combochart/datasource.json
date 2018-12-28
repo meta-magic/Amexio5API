@@ -1,9 +1,9 @@
-Rice Production in India
+Food Production in India
 [
-  ['State', 'Rice Production', 'Rice Export'],
-  ['Andhra Pradesh',     600, 150],
-  ['Kerala',      500, 350],
-  ['Tamil Nadu',  400, 275],
-  ['Assam', 250, 80],
-  ['Maharshtra',    300, 170]
-  ]
+      ['State', 'Corn Export', 'Bajra Export', 'Rice Export', 'Wheat Export', 'Jowar Export'],
+      ['Andhra Pradesh', 600, 500, 250, 50, 95],
+      ['Kerala', 500, 400, 75, 150, 195],
+      ['Tamil Nadu', 400, 300, 250, 50, 95],
+      ['Assam', 250, 150, 75, 150, 195],
+      ['Maharshtra', 300, 200, 250, 50, 95]
+]
