@@ -27,15 +27,7 @@
       "version": "4.0.0 onwards"
 
     },
-    {
-      "deprecated":false,
-      "name": "sort",
-      "type": "boolean",
-      "default": "true",
-      "description":"Set column Sortable.",
-      "version": "4.2 onwards"
-
-    },
+    
     {
       "deprecated":false,
       "name": "data-reader",
@@ -178,6 +170,14 @@
       "default": "",
       "description":"Set column label.",
       "version": "4.0.0 onwards"
+
+    },
+    {
+      "name": "sort",
+      "type": "boolean",
+      "default": "true",
+      "description":"Set column Sortable.",
+      "version": "4.2 onwards"
 
     },
     {
