@@ -37,6 +37,13 @@
       "version": "4.1.9 onwards",
       "type": "string",
       "default": "black"
+    },
+    {
+      "name": "closable",
+      "description": "This flag will make tab closable, applicable for particular tab pills.",
+      "version": "4.2 onwards",
+      "type": "boolean",
+      "default": "false"
     }
   ],
   "events": []

@@ -9,6 +9,13 @@
             "version": "4.0 onwards",
             "type": "boolean",
             "default": "false"
+        },
+        {
+            "name": "tabPosition",
+            "description": "Position of tab can be (top/bottom)",
+            "version": "5.4 onwards",
+            "type": "string",
+            "default": "top"
         }
     ],
     "events": [
