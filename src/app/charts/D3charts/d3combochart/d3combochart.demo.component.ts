@@ -42,7 +42,7 @@ export class AmexioD3ComboChartDemoComponent implements OnInit {
       ['Maharshtra', 300, 200, 250, 50, 95]
     ];
     this.lineArray = [
-      { column: "Rice Export", label: true, color: "green" },
+      { column: "Rice Export", label: true, color: "#7a3b2e" },
       { column: "Jowar Export" },
       { column: "Wheat Export" }
     ];

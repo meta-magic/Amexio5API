@@ -68,7 +68,7 @@ export class ChartD3Demo implements OnInit {
                         ['Maharshtra', 300, 200, 250, 50, 95]
                       ];
                       this.lineArray = [
-                        { column: "Rice Export", label: true, color: "green" },
+                        { column: "Rice Export", label: true, color: "yellow" },
                         { column: "Jowar Export" },
                         { column: "Wheat Export" }
                       ];
