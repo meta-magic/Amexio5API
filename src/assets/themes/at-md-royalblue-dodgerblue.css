@@ -809,6 +809,9 @@ button {
   border-radius: .25rem;
   margin-left: 3px; }
 
+.button-dropdown-main {
+  cursor: pointer; }
+
 .button-dropdown {
   position: absolute;
   padding: .5rem 1rem;
