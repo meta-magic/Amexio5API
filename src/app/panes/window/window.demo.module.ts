@@ -22,4 +22,5 @@ const routes: Routes = [
 })
 export class WindowDemoModule { }
 
+
 export const routedComponents = [WindowDemoComponent];

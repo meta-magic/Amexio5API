@@ -8,6 +8,7 @@ import {
   MapLoaderService, AmexioDashBoardModule, DashboardLoaderService, AmexioPaneModule, IconLoaderService
 } from "amexio-ng-extensions";
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
 import { AmexioChartD3Module } from 'amexio-chart-d3';
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule, HttpClientModule,
     AmexioChartD3Module, AmexioChartD3Module,
     AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,

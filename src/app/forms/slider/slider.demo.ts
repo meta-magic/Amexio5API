@@ -28,7 +28,7 @@ import {HttpClient} from "@angular/common/http";
                       {{stepVal1}}
                      </amexio-column>
                      <amexio-column [size]="6">
-                       <amexio-slider disabled = "true" min-value="0" max-value="50" step-value="2" [(ngModel)]="stepVal2"></amexio-slider>
+                       <amexio-slider disabled = "true" min-value="0" max-value="50" [step-value]="2" [(ngModel)]="stepVal2"></amexio-slider>
                        {{stepVal2}}
                      </amexio-column>
                    </amexio-row>
