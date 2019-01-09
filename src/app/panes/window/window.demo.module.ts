@@ -18,8 +18,4 @@ const routes: Routes = [
 @NgModule({
   imports: [CommonModule,HttpClientModule,SharedModule,FormsModule,AmexioWidgetModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations : [WindowDemoComponent]
-})
-export class WindowDemoModule { }
-
 export const routedComponents = [WindowDemoComponent];
