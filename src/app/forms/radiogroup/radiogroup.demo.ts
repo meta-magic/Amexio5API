@@ -171,7 +171,7 @@ export class RadioGroupDemo {
   radioGroupData: any;
   model1:  string = 'male';
   model2:  string = 'female';
-  model3:  string = 'male';
+  model3:  string = 'male1';
   model4: string = 'female';
 
   //selected Checkbox event

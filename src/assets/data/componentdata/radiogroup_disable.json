@@ -1,11 +1,12 @@
 {
     "data": [{
         "gender": "Male",
-        "genderId": "maleId"
+        "genderId": "male",
+        "disabled": true
+
     }, {
         "gender": "Female",
-        "genderId": "femaleId",
-        "disabled": true
+        "genderId": "female"
 
     }]
 }
