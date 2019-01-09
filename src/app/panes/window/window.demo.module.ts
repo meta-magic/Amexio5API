@@ -10,7 +10,6 @@ import {SharedModule} from "../../shared.module";
 import {FormsModule} from "@angular/forms";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {HttpClientModule} from "@angular/common/http";
-import { AmexioWindowPaneComponent1 } from 'src/app/component/window/window.pane.component';
 
 const routes: Routes = [
   { path: '', component: WindowDemoComponent },
@@ -19,7 +18,7 @@ const routes: Routes = [
 @NgModule({
   imports: [CommonModule,HttpClientModule,SharedModule,FormsModule,AmexioWidgetModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations : [WindowDemoComponent, AmexioWindowPaneComponent1]
+  declarations : [WindowDemoComponent]
 })
 export class WindowDemoModule { }
 
