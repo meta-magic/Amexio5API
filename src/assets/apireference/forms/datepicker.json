@@ -82,7 +82,7 @@
     },
     {
       "name": "dropdown-datepicker",
-      "description": "sets dropdown datepicker",
+      "description": "sets year dropdown in datepicker",
       "version": "4.2 onwards",
       "type": "boolean",
       "default": "false"

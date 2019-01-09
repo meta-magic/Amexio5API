@@ -114,7 +114,7 @@ import { HttpClient } from "@angular/common/http";
             <amexio-column [size]="'6'">
             <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
             <amexio-header>
-               Date Picker with month dropdown and disabled date
+               Date Picker with Year dropdown and disabled date
             </amexio-header>
             <amexio-body>
               <amexio-row>

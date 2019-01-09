@@ -64,7 +64,7 @@ import {HttpClient} from "@angular/common/http";
                   </amexio-header>
                   <amexio-body> 
                     <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gendery"
-                                        [data-reader]="'data'"
+                                        [data-reader]="'radiodata'"
                                         [display-field]="'gender'"
                                         [value-field]="'genderId'"
                                         [http-method]="'get'"
