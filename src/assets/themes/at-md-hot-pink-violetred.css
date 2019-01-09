@@ -5400,7 +5400,6 @@ fieldset {
   cursor: pointer; }
 
 .collapsible-fieldset {
-  height: 0;
   overflow: hidden; }
 
 .collapsible-fieldset.active {
