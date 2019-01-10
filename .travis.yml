@@ -33,7 +33,7 @@ script:
   - tar -xzvf themes.tar.gz 
   - rm -rf src/assets/themes/*
   - cp -rf themes/* src/assets/themes/
-  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.4-dec/amexio-chart-d3.tgz?raw=true
+  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-chart-d3.tgz?raw=true
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-ng-extensions.tgz?raw=true
   - ng set defaults.styleExt scss
   - ng build --prod
