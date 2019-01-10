@@ -8,10 +8,6 @@ addons:
       - google-chrome
     packages:
       - google-chrome-stable
-  sonarcloud:
-    organization: "deepali-arvind-github" # the key of the org you chose at step #3
-    token:
-      secure: 081e2012239f75d61242a6d1d6605f0ee29dc019 # encrypted value of your token   
 
 env:
   global:
