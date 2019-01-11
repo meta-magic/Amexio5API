@@ -100,7 +100,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge":"4",
+            "badge":"5",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
@@ -420,7 +420,7 @@
         },
         {
             "text": "Form Actions",
-            "badge":"3",
+            "badge":"4",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [{
                     "text": "Buttons",
