@@ -5196,6 +5196,9 @@ amexio-layout-columns amexio-layout-item {
   border: 1px solid black;
   background-color: #ecff82; }
 
+.breadcrumb-group:hover .arrow-group-css {
+  border-left: 1px solid black; }
+
 .arrow-group-css:hover {
   border-left: 1px solid black; }
 

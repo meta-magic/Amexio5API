@@ -5037,6 +5037,9 @@ header .billboard .content-button {
   border: 1px solid #520029;
   background-color: #ffb8db; }
 
+.breadcrumb-group:hover .arrow-group-css {
+  border-left: 1px solid #520029; }
+
 .arrow-group-css:hover {
   border-left: 1px solid #520029; }
 
