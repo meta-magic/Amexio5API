@@ -586,6 +586,11 @@
                     "text": "ListBox",
                     "icon": "fa fa-list fa-fw",
                     "link": "listbox-demo"
+                },
+                {
+                    "text": "Google Map",
+                    "icon": "fa fa-map-marker",
+                    "link": "google-map-demo"
                 }
             ]
         },
