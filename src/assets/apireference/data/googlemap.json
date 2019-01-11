@@ -1,0 +1,63 @@
+{
+  "properties": [
+    {
+      "deprecated":false,
+      "name": "data",
+      "type": "array",
+      "default": "",
+      "description":"use GoogleMapOverlays model class which is exported as part of library. It consist of latitude, longitude, title, show-title, icon & json object",
+      "version": "5.6 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "height",
+      "type": "string",
+      "default": "250px",
+      "description":"Height for google map.",
+      "version": "5.6 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "width",
+      "type": "string",
+      "default": "100% of container",
+      "description":"Width for google map. value can be percentage of pixel",
+      "version": "5.6 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "initial-zoom-level",
+      "type": "number",
+      "default": "2",
+      "description":"User can provide zoom-level of map by default",
+      "version": "5.6 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "initial-lat",
+      "type": "number",
+      "default": "51.507351",
+      "description":"Load map by default at latitude when loaded",
+      "version": "5.6 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "initial-lng",
+      "type": "number",
+      "default": "-0.127758",
+      "description":"Load map by default at longitude when loaded",
+      "version": "5.6 onwards"
+    }
+  ],
+  "events":[
+    {
+      "name": "onMarkerClick",
+      "description":"It will fire on click of marker on google map"
+    }
+  ]
+}

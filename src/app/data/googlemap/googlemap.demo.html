@@ -8,7 +8,7 @@
       <amexio-tab title="Demo" active=true>
         <amexio-row>
           <amexio-column [size]=12>
-            <amexio-google-map [initial-zoom-level]="2" [height]="'500px'" [overlays]="overlays" (onMarkerClick)="onMarkerClick($event)">
+            <amexio-google-map [initial-zoom-level]="2" [height]="'500px'" [data]="data" (onMarkerClick)="onMarkerClick($event)">
 
             </amexio-google-map>
 
@@ -30,9 +30,15 @@
         </amexio-row>
       </amexio-tab>
 
-      <amexio-tab title="API Reference" [disabled]="true">
-        <amexio-datagrid title="Properties <amexio-button>" [enable-column-fiter]="false" [http-method]="'get'"
-          [http-url]="'assets/apireference/forms/button.component.json'" [data-reader]="'properties'"
+      <amexio-tab title="API Reference">
+          <amexio-box border-color="brown" border="left" padding="true" background-color="brown">
+              <amexio-label>
+                Make sure you include google map script and key in your index.html <br/><br/>
+                {{script}}
+              </amexio-label>
+            </amexio-box>
+        <amexio-datagrid title="Properties <amexio-google-map>" [enable-column-fiter]="false" [http-method]="'get'"
+          [http-url]="'assets/apireference/data/googlemap.json'" [data-reader]="'properties'"
           [enable-data-filter]="false">
           <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
           <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
@@ -42,7 +48,7 @@
             [text]="'Description'"></amexio-data-table-column>
         </amexio-datagrid>
         <br>
-        <amexio-datagrid title="Events" [http-method]="'get'" [http-url]="'assets/apireference/forms/button.component.json'"
+        <amexio-datagrid title="Events" [http-method]="'get'" [http-url]="'assets/apireference/data/googlemap.json'"
           [data-reader]="'events'" [enable-data-filter]="false">
           <amexio-data-table-column [width]="20" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
           <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
@@ -50,7 +56,7 @@
         </amexio-datagrid>
 
       </amexio-tab>
-      <amexio-tab title="Source"  [disabled]="true">
+      <amexio-tab title="Source">
         <div style="overflow-y: scroll">
           <amexio-vertical-tab-view>
             <amexio-tab title="HTML" [active]="true">
