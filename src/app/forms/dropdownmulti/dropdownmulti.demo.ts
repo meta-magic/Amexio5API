@@ -36,6 +36,8 @@ import {HttpClient} from "@angular/common/http";
                           [data-reader]="'data'"
                           [multi-select]="true"
                           (onMultiSelect)="onMultiSelectValue($event)"
+                          [enable-sort]="true"
+                          [sort]="'asc'"
                         >
                         </amexio-dropdown>
                       </amexio-column>

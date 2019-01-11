@@ -38,6 +38,8 @@ import {HttpClient} from "@angular/common/http";
                       [search]="true"
                       [display-field]="'name'"
                       [value-field]="'id'"
+                      [enable-sort]="true"
+                      [sort]="'asc'"
                       (onSingleSelect)="getRowData($event)">
                       <ng-template #amexioBodyTmpl let-column let-row="row">
                       <amexio-label>

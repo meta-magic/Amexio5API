@@ -36,7 +36,9 @@ import {HttpClient} from "@angular/common/http";
                                          [http-url]="'assets/data/componentdata/country.json'"
                                          [http-method]="'get'"
                                          [display-field]="'countryName'"
-                                         [value-field]="'countryCode1'">
+                                         [value-field]="'countryCode1'"
+                                         [enable-sort]="true"
+                                         [sort]="'asc'">
                         </amexio-dropdown>
                       </amexio-column>
                     </amexio-row>

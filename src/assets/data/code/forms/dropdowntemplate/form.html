@@ -7,7 +7,9 @@ name="country"
 [http-method]="'get'"
 [search]="true"
 [display-field]="'name'"
-[value-field]="'id'">
+[value-field]="'id'"
+[enable-sort]="true"
+[sort]="'asc'">
 
 <ng-template #amexioBodyTmpl let-column let-row="row">
 <amexio-label>
