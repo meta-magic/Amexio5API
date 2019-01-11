@@ -650,7 +650,6 @@
         {
             "text": "Contextual Menus",
             "icon": "fa fa-bars",
-            "badge": "U",
             "children": [{
                     "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
