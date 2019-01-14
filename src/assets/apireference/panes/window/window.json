@@ -16,7 +16,13 @@
       "version": "4.2 onwards",
       "type": "string",
       "default": "center"
-
+    },
+    {
+      "name": "top",
+      "description": "We can give top height to window in percentage or pixel",
+      "version": "5.2 onwards",
+      "type": "string",
+      "default": ""
     },
     {
       "name": "horizontal-position",
