@@ -1,0 +1,7 @@
+<!-- GOOGLE MAP, check data in typescript-->
+<amexio-google-map [initial-zoom-level]="2" [height]="'500px'" [data]="data" (onMarkerClick)="onMarkerClick($event)">
+</amexio-google-map>
+
+<br/>
+<!-- Print data on click of marker-->
+{{markerdata | json}}

@@ -17,11 +17,13 @@
         },
         {
             "text": "Layouts",
+            "badge": "1",
             "icon": "fa fa-desktop fa-fw",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "accordion"
+                    "link": "accordion",
+                    "badge": "U"
                 },
                 {
                     "text": "Border Layout",
@@ -98,7 +100,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge":"1",
+            "badge":"5",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
@@ -107,18 +109,24 @@
                 {
                     "text": "Dialogue",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "dialouge"
+                    "link": "dialouge",
+                    "badge": "U"
+
                 },
 
                 {
                     "text": "Fieldset",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "link": "fieldset"
+                    "link": "fieldset",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "panel"
+                    "link": "panel",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Steps",
@@ -201,7 +209,9 @@
                 {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "window"
+                    "link": "window",
+                    "badge": "U"
+
                 }
             ]
         },
@@ -253,7 +263,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "8",
+            "badge": "16",
             "children": [{
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o fa-fw",
@@ -278,10 +288,13 @@
                 {
                     "text": "Date & Time Picker",
                     "icon": "fa fa-calendar fa-fw",
-                    "link": "date-picker-demo"
+                    "link": "date-picker-demo",
+                    "badge": "U"
+
                 },
                 {
                     "text": "DropDown",
+                    "badge": "U",
                     "icon": "fa fa-caret-square-o-down fa-fw",
                     "children": [{
                             "text": "Basic",
@@ -315,13 +328,16 @@
                 {
                     "text": "File Upload",
                     "icon": "fa fa-file fa-fw",
-                    "link": "fileupload-demo"
+                    "link": "fileupload-demo",
+                    "badge": "U"
                 },
                 
                 {
                     "text": "Label",
                     "icon": "fa fa-terminal fa-fw",
-                    "link": "label-demo"
+                    "link": "label-demo",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Number Field",
@@ -362,17 +378,23 @@
                 {
                     "text": "Slider",
                     "icon": "fa fa-sliders fa-fw",
-                    "link": "slider-demo"
+                    "link": "slider-demo",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Type Ahead",
                     "icon": "fa fa-search-minus fa-fw",
-                    "link": "typeahead-demo"
+                    "link": "typeahead-demo",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Tag Field",
                     "icon": "fa fa-tags fa-fw",
-                    "link": "taginput-demo"
+                    "link": "taginput-demo",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Text Field",
@@ -390,17 +412,19 @@
                 {
                     "text": "Toggle",
                     "icon": "fa fa-toggle-on fa-fw",
-                    "link": "toggle-demo"
+                    "link": "toggle-demo",
+                    "badge": "U"
+
                 }
             ]
         },
         {
             "text": "Form Actions",
-            "badge":"3",
+            "badge":"4",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [{
                     "text": "Buttons",
-                    "badge":"3",
+                    "badge":"4",
                     "icon": "fa fa-keyboard-o fa-fw",
                     "children": [{
                             "text": "Button",
@@ -418,7 +442,9 @@
                         {
                             "text": "Button Dropdown",
                             "icon": "fa fa-building fa-fw",
-                            "link": "buttondropdown-demo"
+                            "link": "buttondropdown-demo",
+                            "badge": "U"
+
                         },
                         {
                             "text": "Floating Button",
@@ -453,6 +479,7 @@
         {
             "text": "Data",
             "icon": "fa fa-database fa-fw",
+            "badge":"1",
             "children": [{
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
@@ -586,6 +613,12 @@
                     "text": "ListBox",
                     "icon": "fa fa-list fa-fw",
                     "link": "listbox-demo"
+                },
+                {
+                    "text": "Google Map",
+                    "icon": "fa fa-map-marker",
+                    "link": "google-map-demo",
+                    "badge":"New"
                 }
             ]
         },

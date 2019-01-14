@@ -325,6 +325,9 @@
     {
       path: 'tree-data-template', loadChildren: './data/treedatatemplate/treedatatemplate.demo.module#TreeDataTemplateDemoModule'
     },
+    {
+      path: 'google-map-demo', loadChildren: './data/googlemap/googlemap.demo.module#GoogleMapModule'
+    },
 
     /*Tree*/
     {

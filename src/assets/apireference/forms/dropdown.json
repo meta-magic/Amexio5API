@@ -85,6 +85,22 @@
     },
     {
       "deprecated":false,
+      "name": "enable-sort",
+      "description": "true for  enable sorting",
+      "version": "5.5.1 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "deprecated":false,
+      "name": "sort",
+      "description": "define type of sort asc/desc",
+      "version": "5.5.1 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "deprecated":false,
       "name": "multi-select",
       "description": "true for select multiple options",
       "version": "4.0 onwards",

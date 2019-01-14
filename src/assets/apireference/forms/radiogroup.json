@@ -21,7 +21,7 @@
       "name": "horizontal",
       "description": "Set true for horizontal checkbox",
       "version": "4.0 onwards",
-      "type": "string",
+      "type": "boolean",
       "default": ""
     },
     {

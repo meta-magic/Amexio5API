@@ -1,0 +1,85 @@
+<amexio-card header="true">
+  <amexio-header>
+    Google Map Demo
+  </amexio-header>
+  <amexio-body>
+    <p>A Google Map Demo, show overlays and emitt the data on-click on overlay.</p>
+    <amexio-tab-view>
+      <amexio-tab title="Demo" active=true>
+        <amexio-row>
+          <amexio-column [size]=12>
+            <amexio-google-map [initial-zoom-level]="2" [height]="'500px'" [data]="data" (onMarkerClick)="onMarkerClick($event)">
+
+            </amexio-google-map>
+
+          </amexio-column>
+        </amexio-row>
+        <amexio-row>
+          <amexio-column [size]=12>
+            <amexio-card header="true">
+              <amexio-header>
+                Data emitted on click
+              </amexio-header>
+              <amexio-body>
+                <pre>{{markerdata | json}}</pre>
+              </amexio-body>
+            </amexio-card>
+
+
+          </amexio-column>
+        </amexio-row>
+      </amexio-tab>
+
+      <amexio-tab title="API Reference">
+          <amexio-box border-color="brown" border="left" padding="true" background-color="brown">
+              <amexio-label>
+                Make sure you include google map script and key in your index.html <br/><br/>
+                {{script}}
+              </amexio-label>
+            </amexio-box>
+        <amexio-datagrid title="Properties <amexio-google-map>" [enable-column-fiter]="false" [http-method]="'get'"
+          [http-url]="'assets/apireference/data/googlemap.json'" [data-reader]="'properties'"
+          [enable-data-filter]="false">
+          <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+          <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
+          <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+            [text]="'Default'"></amexio-data-table-column>
+          <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+            [text]="'Description'"></amexio-data-table-column>
+        </amexio-datagrid>
+        <br>
+        <amexio-datagrid title="Events" [http-method]="'get'" [http-url]="'assets/apireference/data/googlemap.json'"
+          [data-reader]="'events'" [enable-data-filter]="false">
+          <amexio-data-table-column [width]="20" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+          <amexio-data-table-column [width]="80" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
+            [text]="'Description'"></amexio-data-table-column>
+        </amexio-datagrid>
+
+      </amexio-tab>
+      <amexio-tab title="Source">
+        <div style="overflow-y: scroll">
+          <amexio-vertical-tab-view>
+            <amexio-tab title="HTML" [active]="true">
+              <ng-container *ngIf="htmlCode">
+                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
+                <div>
+                  <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+                </div>
+              </ng-container>
+            </amexio-tab>
+            <amexio-tab title="Type Script">
+              <ng-container *ngIf="typeScriptCode">
+                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+              </ng-container>
+            </amexio-tab>
+          </amexio-vertical-tab-view>
+        </div>
+      </amexio-tab>
+      <amexio-tab title="Live"  [disabled]="true">
+        <p align="center">Amexio Sandbox</p>
+        Work in progress
+      </amexio-tab>
+    </amexio-tab-view>
+  </amexio-body>
+</amexio-card>
+<!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
