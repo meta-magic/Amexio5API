@@ -21,7 +21,7 @@ export class GoogleMapDemo {
   script : string;
 
   constructor(private http: HttpClient) {
-    this.script = "<script type='text/javascript' src='https://maps.google.com/maps/api/js?key=your-key' async=''></script>"
+    // this.script = "<script type='text/javascript' src='https://maps.google.com/maps/api/js?key=your-key' async=''></script>"
     this.getHtmlAndTypeScriptCode();
     this.data = [];
     this.data.push(new GoogleMapOverlays(43.653225,-79.383186,'Toronto, Canada',true,null,{country:'Canada', capital:'Toronto', population:'20, Million'}));
