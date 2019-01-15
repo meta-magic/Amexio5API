@@ -6,12 +6,13 @@ import {CommonModule} from "@angular/common";
 import {SharedModule} from "../../shared.module";
 import {HttpClientModule} from "@angular/common/http";
 import { GoogleMapDemo } from "./googlemap.demo";
+import {AmexioDataModule} from "amexio-ng-extensions";
 /**
  * Created by ketan on 11/1/18.
  */
 @NgModule({
   declarations: [GoogleMapDemo],
-  imports: [CommonModule, FormsModule, HttpClientModule,SharedModule, AmexioWidgetModule, RouterModule.forChild([{
+  imports: [CommonModule, FormsModule, HttpClientModule,SharedModule, AmexioWidgetModule,AmexioDataModule, RouterModule.forChild([{
     path: '', component: GoogleMapDemo, pathMatch: 'full'
   }])],
   providers: []

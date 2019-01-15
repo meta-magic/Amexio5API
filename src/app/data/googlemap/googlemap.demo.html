@@ -8,8 +8,8 @@
       <amexio-tab title="Demo" active=true>
         <amexio-row>
           <amexio-column [size]=12>
-            <amexio-google-map [initial-zoom-level]="2" [height]="'500px'" [data]="data" (onMarkerClick)="onMarkerClick($event)">
-
+            <amexio-google-map [initial-zoom-level]="2" [height]="'500px'" [data]="data" [data-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
+            (onMarkerClick)="onMarkerClick($event)">
             </amexio-google-map>
 
           </amexio-column>
@@ -41,6 +41,7 @@
           [http-url]="'assets/apireference/data/googlemap.json'" [data-reader]="'properties'"
           [enable-data-filter]="false">
           <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
+          <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false"[text]="'version'"></amexio-data-table-column>
           <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
           <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
             [text]="'Default'"></amexio-data-table-column>
