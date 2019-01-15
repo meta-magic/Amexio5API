@@ -93,6 +93,13 @@
         "version": "5.4 onwards",
         "type": "string",
         "default": "default"
+      },
+      {
+        "name": "tool-tip",
+        "description": "Provides tooltip to the button",
+        "version": "5.5.2 onwards",
+        "type": "string",
+        "default": ""
       }
     ],
     "events": [

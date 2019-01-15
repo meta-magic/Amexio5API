@@ -24,16 +24,16 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-body>
                   <amexio-row>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+                      <amexio-floating-button [relative]="true" [tool-tip]="'Setting'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
                     </amexio-column>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true"  [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
+                      <amexio-floating-button [relative]="true"  [tool-tip]="'User'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
                     </amexio-column>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
+                      <amexio-floating-button [relative]="true"  [tool-tip]="'open'" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
                     </amexio-column>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true" [icon]="'fa fa fa-telegram'" [type]="'theme-color'"></amexio-floating-button>
+                      <amexio-floating-button [relative]="true" [tool-tip]="'message'" [icon]="'fa fa fa-telegram'" [type]="'theme-color'"></amexio-floating-button>
                     </amexio-column>
                   </amexio-row>
                   <amexio-row>
