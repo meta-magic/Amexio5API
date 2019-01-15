@@ -52,6 +52,14 @@ export class AppComponent {
         "link": 'http://api.amexio.org',
         "submenus": [
           {
+            "text": "Version 5.4",
+            "link": "../v5.4/index.html"
+          },
+          {
+            "text": "Version 5.3",
+            "link": "../v5.3/index.html"
+          },
+          {
             "text": "Version 5.2",
             "link": "../v5.2/index.html"
           },
@@ -137,6 +145,10 @@ export class AppComponent {
           }, {
             "text": "License and Other Docs",
             "link": "https://amexio.tech/license-and-other-docs-1"
+          },
+          {
+            "text" : "Roadmap",
+            "link" : "https://amexio.tech/roadmap"
           }]
       },
       {
