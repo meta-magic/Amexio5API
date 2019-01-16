@@ -2559,8 +2559,7 @@ input:checked + .toggle-slider:before {
 
 .floatingbtntooltip {
   position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black; }
+  display: inline-block; }
 
 .floatingbtntooltip .floatingbtntooltiptext {
   visibility: hidden;
