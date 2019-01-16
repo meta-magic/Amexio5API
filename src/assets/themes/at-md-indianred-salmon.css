@@ -1118,7 +1118,7 @@ button {
   background-color: #ff7a6b; }
 
 .drodown-caret-down {
-  color: black; }
+  color: rgba(0, 0, 0, 0.42); }
 
 .list-items-selected {
   background-color: #ffbfb8;
@@ -1182,7 +1182,8 @@ button {
 .input-control {
   font-size: 14px;
   background-color: #ffffff;
-  color: #121212; }
+  color: #121212;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42); }
 
 ::placeholder {
   color: #ced4da; }
@@ -1234,7 +1235,6 @@ button {
   line-height: 2;
   border-radius: 0px;
   border: none;
-  border-bottom: 2px solid #ced4da;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
 
 .input-control:focus {
@@ -3914,6 +3914,26 @@ header .billboard .content-button {
   border-top: 3px solid white; }
 
 /****************************************************************************
+    Component Name : Enterprise Appointment
+    Version : Amexio v5.5.2 onwards
+*****************************************************************************/
+/** enterprise - Visual CSS **/
+.weekdaycomponent {
+  display: block;
+  border: 1px solid #ced4da;
+  box-shadow: 0 1px 3px 0 #ced4da; }
+
+.availableweekday {
+  color: #ffffff;
+  background-color: #fa8072;
+  cursor: pointer; }
+
+.notavailableweekday {
+  text-decoration: line-through;
+  cursor: not-allowed;
+  color: lightgray; }
+
+/****************************************************************************
     Component Name : Datapoints
     Version : Amexio v4.0 onwards
 *****************************************************************************/
@@ -5562,6 +5582,15 @@ fieldset {
   background-color: #ff7a6b;
   color: #1f0300; }
 
+.tabcontent::-webkit-scrollbar-track {
+  background-color: #dbc5c2; }
+
+.tabcontent::-webkit-scrollbar {
+  background-color: #dbc5c2; }
+
+.tabcontent::-webkit-scrollbar-thumb {
+  background-color: #fa8072; }
+
 /** Theme Colors for Tab*/
 /** CSS Class definitions for the Amexio Colors --- */
 /** Amexio Colors --- 
@@ -5746,6 +5775,13 @@ fieldset {
   width: inherit;
   position: relative;
   padding: 10px 0px; }
+
+.tabcontent::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+.tabcontent::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
 
 /**VERTICAL TABS**/
 .verticalnavtab {
