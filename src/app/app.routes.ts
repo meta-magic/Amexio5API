@@ -366,7 +366,10 @@
     },
     {
       path: 'ee-content', loadChildren: './enterprise/content/content.demo.module#ContentRoutingModule'
-    },
+    },  
+    {
+      path: 'ee-appointment', loadChildren: './enterprise/appointment/appointment.demo.module#EEAppointmentRoutingModule'
+    },      
     {
       path: 'ee-video', loadChildren: './enterprise/youtube-player/youtube.demo.module#YoutubePlayerModule'
     },

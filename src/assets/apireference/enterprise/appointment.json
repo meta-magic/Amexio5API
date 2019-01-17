@@ -1,0 +1,68 @@
+{
+    "name": "Amexio Enterprise Appointment",
+    "description": "An appointment component used to schedule appointment with available dates and time.",
+    "selector": "<amexio-d3-chart-bar>",
+    "properties": [
+        {
+            "name": "height",
+            "version": "5.5.2 Onwards",
+            "description": "Sets height to appointment card",
+            "type": "string",
+            "default": "auto"
+        },
+        {
+            "name": "start-time",
+            "description": "Sets the start time",
+            "version": "5.5.2 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "end-time",
+            "description": "Sets the end time",
+            "version": "5.5.2 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "no-of-days",
+            "description": "Sets number of number of days available",
+            "version": "5.5.2 Onwards",
+            "type": "number",
+            "default": "7"
+        },
+        {
+            "name": "date",
+            "description": "Sets color to D3 Bar chart",
+            "version": "5.5.2 Onwards",
+            "type": "date",
+            "default": ""
+        },
+        {
+            "name": "available-slots",
+            "description": "Slots available",
+            "version": "5.5.2 Onwards",
+            "type": "",
+            "default": ""
+        },
+        {
+            "name": "multi-select",
+            "description": "Allows to select multiple appointments",
+            "version": "5.5.2 Onwards",
+            "type": "boolean",
+            "default": "false"
+        }
+    ],
+    "events": [
+        {
+            "name": "onSingleSelect()",
+            "version": "5.5.2 Onwards",
+            "description": "It will fire on selection of single time."
+        },
+        {
+            "name": "onMultiSelect()",
+            "version": "5.5.2 Onwards",
+            "description": "It will fire on selection of multiple time."
+        }
+    ]
+}

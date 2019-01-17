@@ -977,8 +977,13 @@
                 },
                 {
                     "text": "Multi-item Carousel",
-                    "icon": "fa fa-television fa-fw",
+                    "icon": "fa fa-calendar fa-fw",
                     "link": "multi-item-carousel"
+                },{
+                    "text": "Appointment",
+                    "icon": "fa fa-calendar fa-fw",
+                    "link": "ee-appointment",
+                    "badge": "New"
                 }
             ]
         }

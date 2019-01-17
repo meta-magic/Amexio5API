@@ -1,0 +1,35 @@
+import { AvailableSlotsModel } from 'amexio-ng-extensions';
+
+export class EEAppointmentDemoComponent {
+
+  date =  new Date();
+  availableslots: AvailableSlotsModel[];
+  multipleAvailableslots: AvailableSlotsModel[];
+  singleSelectedData: any;
+  multiSelectedData: any;
+
+    constructor(private http: HttpClient) {
+    const atr = [10,12];
+    const atr_1 = [13,15];
+
+    this.availableslots = [];
+    this.availableslots.push(new AvailableSlotsModel(new Date(),atr));
+    this.availableslots.push(new AvailableSlotsModel(new Date(this.date.getTime() + (24 * 60 * 60 * 1000)),atr_1));
+
+    const atr1 = [12,14,15];
+    const atr2 = [13,14,17];
+
+    this.multipleAvailableslots = [];
+    this.multipleAvailableslots.push(new AvailableSlotsModel(new Date(),atr1));
+    this.multipleAvailableslots.push(new AvailableSlotsModel(new Date(this.date.getTime() + (24 * 60 * 60 * 1000)),atr2));
+  }
+
+  onSingleSelect(event: any) {
+    this.singleSelectedData = event;
+  }
+
+  onMultiSelect(event: any) {
+    this.multiSelectedData = event;
+  }onSelect(event: any) {
+  }
+}

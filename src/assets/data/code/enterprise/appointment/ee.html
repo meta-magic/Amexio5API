@@ -1,0 +1,23 @@
+
+<!-- Appointment Demo: Single Select Date -->
+
+<amexio-ee-appointment
+[height]="'200px'" 
+[date]="date"
+[start-time]="10"
+[end-time]="15" 
+[available-slots]="availableslots" 
+(onSingleSelect) = "onSingleSelect($event)">
+</amexio-ee-appointment>
+
+<!-- Appointment Demo: Multiple Select Date -->
+
+<amexio-ee-appointment
+[height]="'200px'" 
+[date]="date" 
+[multi-select]="true"
+[start-time]="12"
+[end-time]="17" 
+[available-slots]="multipleAvailableslots"
+(onMultiSelect) = "onMultiSelect($event)">
+</amexio-ee-appointment>
