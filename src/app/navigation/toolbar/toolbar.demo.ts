@@ -468,6 +468,8 @@ import { HttpClient } from "@angular/common/http";
   `
 })
 export class ToolbarDemo implements OnInit {
+  firstName: string;
+  lastName: string;
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -531,5 +533,6 @@ export class ToolbarDemo implements OnInit {
     this.showBasicWindowNonMateialToolbar= !this.showBasicWindowNonMateialToolbar;
   }
 }
+
 
 
