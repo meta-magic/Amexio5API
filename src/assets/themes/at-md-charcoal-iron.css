@@ -1101,6 +1101,9 @@ button {
   cursor: not-allowed;
   pointer-events: none; }
 
+.notclickable {
+  pointer-events: none; }
+
 /****************************************************************************
     Component Name : Dropdown
     Version : Amexio v4.0 onwards
@@ -5316,8 +5319,8 @@ header .billboard .content-button {
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid #ced4da;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14);
+  border: 0px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   height: 100%; }
 
 .card-container > * {
@@ -5327,7 +5330,6 @@ header .billboard .content-button {
 .card-header {
   display: flex;
   padding: 10px 24px;
-  border-bottom: 1px solid #ced4da;
   font-size: 20px;
   font-weight: 300;
   text-transform: capitalize; }
@@ -5396,8 +5398,7 @@ header .billboard .content-button {
   position: relative;
   display: flex;
   flex-direction: column;
-  border: 1px solid #ced4da;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14); }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .form-container > * {
   padding: 10px;
@@ -5405,7 +5406,6 @@ header .billboard .content-button {
 
 .form-header {
   padding: 10px 24px;
-  border-bottom: 1px solid #ced4da;
   font-size: 20px;
   font-weight: 300;
   text-transform: capitalize;
