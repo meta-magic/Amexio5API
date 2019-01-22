@@ -20,7 +20,7 @@ export class AmexioSpinnerDemo {
     isBoxShow: boolean = false;
     colorModel: ColorModel;
     clickShow: boolean = true;
-    buttonShowHide: string = 'Hide  ';
+    buttonShowHide: string = 'Show';
     text: string = 'Hide';
 
     showSpinner: any;
@@ -135,16 +135,16 @@ export class AmexioSpinnerDemo {
 
     onAdvanceClick() {
         if (this.spinnerModel.hposition != null && this.spinnerModel.spinnerType != null && this.spinnerModel.vposition != null) {
-            this.buttonShowHide = 'show';
+            this.buttonShowHide = 'Show';
 
         } else {
-            this.buttonShowHide = 'hide';
+            this.buttonShowHide = 'Hide';
         }
         this.isBoxShow = !this.isBoxShow;
         if(this.isBoxShow){
-            this.buttonShowHide = 'hide';
+            this.buttonShowHide = 'Hide';
         }else{
-            this.buttonShowHide = 'show';
+            this.buttonShowHide = 'Show';
         }
     }
 }
