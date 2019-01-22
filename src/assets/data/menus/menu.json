@@ -478,11 +478,13 @@
         },
         {
             "text": "Data",
+            "badge": "1",
             "icon": "fa fa-database fa-fw",
            
             "children": [{
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
+                    "badge": "U",
                     "link": "amexio-spinner-demo"
                 },
                 {

@@ -103,27 +103,51 @@
 </amexio-card>
 
 <!-- Toolbar in Form Header -->
-<amexio-form-header style="width:100%">
-  <amexio-toolbar>
-    <amexio-toolbar-item position-left>
-      <amexio-label size="small">
-        Registration
-      </amexio-label>
-    </amexio-toolbar-item>
-    <amexio-toolbar-item position-right [seperator-position]="'left'">
-      <amexio-image aria-hidden="true" [icon-class]="'fa fa-th'"> </amexio-image>
-    </amexio-toolbar-item>
-    <amexio-toolbar-item position-right [seperator-position]="'left'">
-      <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
-    </amexio-toolbar-item>
-    <amexio-toolbar-item position-right [seperator-position]="'left'">
-      <amexio-image aria-hidden="true" [icon-class]="'fa fa-question'"> </amexio-image>
-    </amexio-toolbar-item>
-    <amexio-toolbar-item position-right [seperator-position]="'left'">
-      <amexio-image aria-hidden="true" [icon-class]="'fa fa-cog'"> </amexio-image>
-    </amexio-toolbar-item>
-  </amexio-toolbar>
-</amexio-form-header>
+<amexio-form form-name="validateForm" header="true" show-error="true">
+  <amexio-form-header style='width:100%;display:inherit'>
+    <amexio-toolbar>
+      <amexio-toolbar-item position-left>
+        <amexio-label size="small">
+          Registration
+        </amexio-label>
+      </amexio-toolbar-item>
+
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <amexio-image aria-hidden="true" [icon-class]="'fa fa-th'"> </amexio-image>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <amexio-image aria-hidden="true" [icon-class]="'fa fa-question-circle'"> </amexio-image>
+      </amexio-toolbar-item>
+      <amexio-toolbar-item position-right [seperator-position]="'left'">
+        <amexio-image aria-hidden="true" [icon-class]="'fa fa-cog'"> </amexio-image>
+      </amexio-toolbar-item>
+    </amexio-toolbar>
+  </amexio-form-header>
+  <amexio-form-body>
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-text-input [min-length]="3" [(ngModel)]="firstName" [max-length]="5" [allow-blank]="false" field-label="First Name"
+          name="firstName" place-holder="Enter first name" icon-feedback="true">
+        </amexio-text-input>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-text-input field-label="Last Name" name="lastName" [(ngModel)]="lastName" place-holder="Enter last name(not mandatory)"
+          allow-blank="true" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required"
+          [max-length]="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+        </amexio-text-input>
+      </amexio-column>
+    </amexio-row>
+  </amexio-form-body>
+  <amexio-form-action>
+    <amexio-button [label]="'Save'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
+    </amexio-button>
+    <amexio-button [label]="'Cancel'" [type]="'theme-backgroundcolor'" [tooltip]="'Cancel'">
+    </amexio-button>
+  </amexio-form-action>
+</amexio-form>
 
 <!-- Toolbar In Window Header -->
 <amexio-button type="success" (onClick)="toggleBasicWindow('nonmaterialtoolbar')" label="Basic Window">

@@ -40,7 +40,7 @@
     },
     {
       "name": "height",
-      "description": "User can set the height to body..",
+      "description": "User can set the height to body in percentage.",
       "version": "4.0 onwards",
       "type": "any",
       "default": ""

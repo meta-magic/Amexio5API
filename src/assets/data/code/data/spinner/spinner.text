@@ -3,9 +3,70 @@ export class AmexioSpinnerDemo {
    clickShow: boolean = true;
     text: string = 'Hide';
 
-  constructor() {}
+    spinnerData: any;
+    AdvanceBoxShow: boolean = true;
+    advanceData: string = 'Hide';
 
-     onButtonClick(click: any) {
+    spinnerType: string;
+    hposition: string;
+    vposition: string;
+
+  constructor() {
+  this.spinnerData = {
+            "type": [
+                    {
+                        "spinnerType": "rectanglebounce",
+                    },
+                    {
+                        "spinnerType": "ring",
+                    },
+                    {
+                        "spinnerType": "halfcircle",
+                    },
+                    {
+                        "spinnerType": "fadingcircle",
+                    },
+                    {
+                        "spinnerType": "ballspin",
+                    },
+                    {
+                        "spinnerType": "firespin",
+                    },
+                    {
+                        "spinnerType": "threebounce",
+                    },
+                    {
+                        "spinnerType": "spinnerround",
+                    }
+            ],
+            "horizontalPosition": [
+                    {
+                        "hposition": "left"
+                    },
+                    {
+                        "hposition": "center"
+                    },
+                    {
+                        "hposition": "right"
+                    }
+            ],
+            "verticalPosition": [
+                    {
+                        "vposition": "top"
+                    },
+                    {
+                        "vposition": "center"
+                    },
+                    {
+                        "vposition": "bottom"
+                    }
+            ]
+          }
+
+      
+  }
+
+     onButtonClick() {
 
         if (this.clickShow) {
             this.text = 'Show';
@@ -13,5 +74,14 @@ export class AmexioSpinnerDemo {
             this.text = 'Hide'
         }
         this.clickShow = !this.clickShow;
+    }
+
+    onAdvanceClick() {
+        if(this.AdvanceBoxShow) {
+            this.advanceData = 'Show';
+        } else {
+            this.advanceData =' Hide';
+        }
+        this.AdvanceBoxShow = !this.AdvanceBoxShow;
     }
 }

@@ -1,6 +1,47 @@
 <!--  Spinner have some default types: fadingcircle, ballspin, firespin, threebounce, 
     spinnerround, ring, halfcircle, rectanglebounce -->
 
+
+<!-- Advance Spinner Demo with horizontal-position && vertical-position -->
+
+
+<amexio-row>
+    <amexio-column [size]="4" [fit]=true>
+        <amexio-card [header]="true" [body-height]="45" [footer]="true" [footer-align]="'right'">
+            <amexio-header>
+                Advanced Spinner
+            </amexio-header>
+            <amexio-body>
+                <amexio-spinner [show]=AdvanceBoxShow [type]="spinnerType" [vertical-position]="vposition"
+                    [horizontal-position]="hposition" [color]="'blue'">
+                </amexio-spinner>
+
+                <amexio-dropdown [(ngModel)]="spinnerType" [place-holder]="'Choose'" [data-reader]="'type'"
+                    [field-label]="'Choose Spinner Type'" [data]="spinnerData" [display-field]="'spinnerType'"
+                    [value-field]="'spinnerType'">
+                </amexio-dropdown>
+
+                <amexio-dropdown [(ngModel)]="vposition" [place-holder]="'Choose'"  [data-reader]="'verticalPosition'"
+                    [field-label]="'Choose vertical-position'" [data]="spinnerData" [display-field]="'vposition'"
+                    [value-field]="'vposition'">
+                </amexio-dropdown>
+
+                <amexio-dropdown [(ngModel)]="hposition" [place-holder]="'Choose'" [data-reader]="'horizontalPosition'"
+                    [field-label]="'Choose horizontal-position'" [data]="spinnerData" [display-field]="'hposition'"
+                    [value-field]="'hposition'">
+                </amexio-dropdown>
+            </amexio-body>
+
+            <amexio-action>
+                <amexio-button [label]="advanceData" [type]="'green'" [tooltip]="'show'" (onClick)="onAdvanceClick(click)">
+                </amexio-button>
+            </amexio-action>
+        </amexio-card>
+    </amexio-column>
+</amexio-row>
+
+<!-- Relative Position Demo -->
+
 <!-- Button Click for showing and hiding the Spinner  -->
 <amexio-button [label]="text" [type]="'yellow'" [tooltip]="'show'" (onClick)="onButtonClick(click)">
 </amexio-button>
@@ -9,42 +50,50 @@
 
 <!-- fading circle round loader -->
 
-<amexio-spinner #click [show]=clickShow [type]="'fadingcircle'" [color]="'red'" [size]="'10px'">
+<amexio-spinner #click [show]=clickShow [type]="'fadingcircle'" relative="true"
+    [color]="'red'" [size]="'10px'">
 </amexio-spinner>
 
 <!-- ball spin loader -->
 
-<amexio-spinner [show]=clickShow [type]="'ballspin'" [color]="'red'" [size]="'16px'">
+<amexio-spinner [show]=clickShow [type]="'ballspin'" relative="true"
+    [color]="'red'" [size]="'16px'">
 </amexio-spinner>
 
 <!-- fire spin loader -->
 
-<amexio-spinner [show]=clickShow [type]="'firespin'" [color]="'red'" [size]="'40px'">
+<amexio-spinner [show]=clickShow [type]="'firespin'" relative="true"
+    [color]="'red'" [size]="'40px'">
 </amexio-spinner>
 
 <!-- three bounce loader -->
 
-<amexio-spinner [show]=clickShow [type]="'threebounce'" [color]="'red'" [size]="'15px'">
+<amexio-spinner [show]=clickShow [type]="'threebounce'" relative="true"
+    [color]="'red'" [size]="'15px'">
 </amexio-spinner>
 
 <!-- spinner round loader -->
 
-<amexio-spinner [show]='true' [type]="'spinnerround'" [color]="'red'" [size]="'10px'">
+<amexio-spinner [show]='true' [type]="'spinnerround'" relative="true"
+    [color]="'red'" [size]="'10px'">
 </amexio-spinner>
 
 <!-- ring loader -->
 
-<amexio-spinner [show]=clickShow [type]="'ring'" [color]="'red'" [size]="'9px'">
+<amexio-spinner [show]=clickShow [type]="'ring'" [color]="'red'" relative="true"
+    [size]="'9px'">
 </amexio-spinner>
 
 <!--  These two are default spinners, only theme color are applied -->
 
 <!-- half circle loader -->
 
-<amexio-spinner [show]=clickShow [type]="'halfcircle'" [size]="'16px'">
+<amexio-spinner [show]=clickShow [type]="'halfcircle'" relative="true"
+    [size]="'16px'">
 </amexio-spinner>
 
 <!-- rectangle Bounce loader -->
 
-<amexio-spinner [show]=clickShow [type]="'rectanglebounce'" [size]="'20px'">
+<amexio-spinner [show]=clickShow [type]="'rectanglebounce'" relative="true"
+    [size]="'20px'">
 </amexio-spinner>
