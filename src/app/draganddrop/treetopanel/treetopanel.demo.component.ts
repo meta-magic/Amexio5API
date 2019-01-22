@@ -37,7 +37,7 @@ import { HttpClient } from "@angular/common/http";
             </amexio-column>
 
             <amexio-column [size]="6">
-            <amexio-panel (dragover)="dragOver($event)" (drop)="drop($event)" [header]="true" [title]="'Panel'" [expanded]="true">
+            <amexio-panel (dragover)="dragOver($event)" (drop)="drop($event)" [header]="true" [title]="'Panel'" [border]="true" [expanded]="true">
             <pre><code>{{selectedData | json}}</code></pre>
            </amexio-panel>
             </amexio-column>
