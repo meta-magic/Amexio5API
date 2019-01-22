@@ -4,82 +4,84 @@
 
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-
+import { SpinnerModel } from './spinner.model';
 @Component({
     selector: 'amexio-spinner-demo',
     templateUrl: './spinner.demo.html',
-  
+
 })
 export class AmexioSpinnerDemo {
     htmlCode: string;
     typeScriptCode: string;
     copyMsgArray: any[];
     color: any;
+    boxFlag: any;
     spinnerData: any;
-    AdvanceBoxShow: boolean = true;
+    isBoxShow: boolean = false;
     colorModel: ColorModel;
     clickShow: boolean = true;
-    advanceData: string = 'Hide';
+    buttonShowHide: string = 'Hide  ';
     text: string = 'Hide';
 
+    showSpinner: any;
     spinnerType: string;
     hposition: string;
     vposition: string;
-
+    spinnerModel: SpinnerModel;
     constructor(private http: HttpClient) {
         this.getHtmlAndTypeScriptCode();
         this.colorModel = new ColorModel();
-
+        this.spinnerModel = new SpinnerModel();
         this.spinnerData = {
             "type": [
-              {
-                "spinnerType": "rectanglebounce",
-              },
-              {
-                "spinnerType": "ring",
-              },
-              {
-                "spinnerType": "halfcircle",
-              },
-              {
-                "spinnerType": "fadingcircle",
-              },
-              {
-                "spinnerType": "ballspin",
-              },
-              {
-                "spinnerType": "firespin",
-              },
-              {
-                "spinnerType": "threebounce",
-              },
-              {
-                "spinnerType": "spinnerround",
-              }
+                {
+                    "spinnerType": "rectanglebounce",
+                },
+                {
+                    "spinnerType": "ring",
+                },
+                {
+                    "spinnerType": "halfcircle",
+                },
+                {
+                    "spinnerType": "fadingcircle",
+                },
+                {
+                    "spinnerType": "ballspin",
+                },
+                {
+                    "spinnerType": "firespin",
+                },
+                {
+                    "spinnerType": "threebounce",
+                },
+                {
+                    "spinnerType": "spinnerround",
+                }
             ],
             "horizontalPosition": [
-              {
-                "hposition": "left"
-              },
-              {
-                "hposition": "center"
-              },
-              {
-                "hposition": "right"
-              }
+                {
+                    "hposition": "left"
+                },
+                {
+                    "hposition": "center"
+                },
+                {
+                    "hposition": "right"
+                }
             ],
             "verticalPosition": [
-              {
-                "vposition": "top"
-              },
-              {
-                "vposition": "center"
-              },
-              {
-                "vposition": "bottom"
-              }
+                {
+                    "vposition": "top"
+                },
+                {
+                    "vposition": "center"
+                },
+                {
+                    "vposition": "bottom"
+                }
             ]
-          }
+        }
     }
 
     //TO LOAD HTML AND TYPESCRIPT CODE
@@ -116,9 +118,9 @@ export class AmexioSpinnerDemo {
     }
 
     //THIS METHOD IS USED FOR SETTING COLOR FOR INDICATOR
-        setColorForIndictor(colorName: any) {
-            this.colorModel.color = colorName.target.value;
-        }
+    setColorForIndictor(colorName: any) {
+        this.colorModel.color = colorName.target.value;
+    }
     // Method For the spinner show and hide
     onButtonClick() {
 
@@ -130,13 +132,20 @@ export class AmexioSpinnerDemo {
         this.clickShow = !this.clickShow;
     }
 
+
     onAdvanceClick() {
-        if(this.AdvanceBoxShow) {
-            this.advanceData = 'Show';
+        if (this.spinnerModel.hposition != null && this.spinnerModel.spinnerType != null && this.spinnerModel.vposition != null) {
+            this.buttonShowHide = 'show';
+
         } else {
-            this.advanceData =' Hide';
+            this.buttonShowHide = 'hide';
         }
-        this.AdvanceBoxShow = !this.AdvanceBoxShow;
+        this.isBoxShow = !this.isBoxShow;
+        if(this.isBoxShow){
+            this.buttonShowHide = 'hide';
+        }else{
+            this.buttonShowHide = 'show';
+        }
     }
 }
 

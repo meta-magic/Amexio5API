@@ -21,7 +21,7 @@
                                 <amexio-label size="small-bold">Select Color For Spinner : -</amexio-label>
                                 <input type="color" id="head" name="color" (input)="setColorForIndictor($event)" value="colorModel.color" />
 
-                              
+
                                 <amexio-row>
                                     <amexio-column [size]="4" [fit]=true>
                                         <amexio-card [header]="true" [body-height]="45" [footer]="true" [footer-align]="'right'">
@@ -29,30 +29,29 @@
                                                 Advanced Spinner
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-spinner [show]=AdvanceBoxShow [type]="spinnerType"
-                                                    [vertical-position]="vposition" [horizontal-position]="hposition"
-                                                    [color]="colorModel.color">
-                                                </amexio-spinner>
-
-                                                <amexio-dropdown [(ngModel)]="spinnerType" [place-holder]="'Choose'"
+                                                    <amexio-spinner *ngIf="isBoxShow" [type]="spinnerModel.spinnerType"
+                                                        [vertical-position]="spinnerModel.vposition" [horizontal-position]="spinnerModel.hposition"
+                                                        [color]="colorModel.color">
+                                                    </amexio-spinner>
+                                                <amexio-dropdown  [place-holder]="'Choose'" [(ngModel)]="spinnerModel.spinnerType"
                                                     [data-reader]="'type'" [field-label]="'Choose Spinner Type'" [data]="spinnerData"
                                                     [display-field]="'spinnerType'" [value-field]="'spinnerType'">
                                                 </amexio-dropdown>
 
-                                                <amexio-dropdown [(ngModel)]="vposition" [place-holder]="'Choose'" 
-                                                    [data-reader]="'verticalPosition'" [field-label]="'Choose vertical-position'"
-                                                    [data]="spinnerData" [display-field]="'vposition'" [value-field]="'vposition'">
+                                                <amexio-dropdown [(ngModel)]="spinnerModel.vposition" [place-holder]="'Choose'"
+                                                    [data-reader]="'verticalPosition'" [field-label]="'Choose Vertical Position'"
+                                                    [data]="spinnerData" [display-field]="'vposition'" [value-field]="'vposition'" >
                                                 </amexio-dropdown>
 
-                                                <amexio-dropdown [(ngModel)]="hposition" [place-holder]="'Choose'"
-                                                [data-reader]="'horizontalPosition'" [field-label]="'Choose horizontal-position'"
-                                                [data]="spinnerData" [display-field]="'hposition'" [value-field]="'hposition'">
-                                            </amexio-dropdown>
+                                                <amexio-dropdown [(ngModel)]="spinnerModel.hposition" [place-holder]="'Choose'"
+                                                    [data-reader]="'horizontalPosition'" [field-label]="'Choose Horizontal Position'"
+                                                    [data]="spinnerData" [display-field]="'hposition'" [value-field]="'hposition'">
+                                                </amexio-dropdown>
                                             </amexio-body>
 
                                             <amexio-action>
-                                                <amexio-button  [label]="advanceData" [type]="'green'"
-                                                    [tooltip]="'show'" (onClick)="onAdvanceClick()">
+                                                <amexio-button [label]="buttonShowHide" [type]="'green'" [tooltip]="'show'"
+                                                    (onClick)="onAdvanceClick()">
                                                 </amexio-button>
                                             </amexio-action>
                                         </amexio-card>
@@ -129,7 +128,8 @@
                                                 ring loader
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-spinner [show]=clickShow [size]="'10px'" [color]="colorModel.color" relative="true" [type]="'ring'">
+                                                <amexio-spinner [show]=clickShow [size]="'10px'" [color]="colorModel.color"
+                                                    relative="true" [type]="'ring'">
                                                 </amexio-spinner>
                                             </amexio-body>
                                         </amexio-card>
@@ -152,8 +152,7 @@
                                                 rectangle Bounce loader
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-spinner [show]=clickShow [size]="'9px'" relative="true"
-                                                    [type]="'rectanglebounce'" >
+                                                <amexio-spinner [show]=clickShow [size]="'9px'" relative="true" [type]="'rectanglebounce'">
                                                 </amexio-spinner>
                                             </amexio-body>
                                         </amexio-card>
