@@ -28,13 +28,15 @@ script:
   - npm install --save uglifyjs-webpack-plugin
   - npm install @angular-devkit/core --save
   - npm i node-sass --save-dev
-  - wget  https://github.com/meta-magic/amexio-ios/blob/v5.5/themes.tar.gz?raw=true
-  - mv themes.tar.gz?raw=true themes.tar.gz 
-  - tar -xzvf themes.tar.gz 
-  - rm -rf src/assets/themes/*
-  - cp -rf themes/* src/assets/themes/
-  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-chart-d3.tgz?raw=true
+  #- wget  https://github.com/meta-magic/amexio-ios/blob/v5.5/themes.tar.gz?raw=true
+  #- mv themes.tar.gz?raw=true themes.tar.gz 
+  #- tar -xzvf themes.tar.gz 
+ # - rm -rf src/assets/themes/*
+ # - cp -rf themes/* src/assets/themes/
+  - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-ng-extensions.tgz?raw=true
+  - rm -rf src/assets/themes/*
+  - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
   - ng set defaults.styleExt scss
   - ng build --prod
 after_success: 
