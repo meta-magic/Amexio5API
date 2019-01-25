@@ -22,7 +22,7 @@ import {HttpClient} from '@angular/common/http';
              Demo
             </amexio-header>
               <amexio-body>
-              <amexio-social [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-social>
+              <amexio-social [api-key]="'1058071755845-u02r0iuj3ul062csfm3t2dfk3u9v74fq.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-social>
               </amexio-body>
               </amexio-card>
                </amexio-column>
