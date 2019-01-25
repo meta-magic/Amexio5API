@@ -263,7 +263,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "16",
+            "badge": "18",
             "children": [{
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o fa-fw",
