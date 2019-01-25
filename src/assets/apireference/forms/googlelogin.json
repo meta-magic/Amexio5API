@@ -1,0 +1,24 @@
+{
+    "name": "Amexio Social",
+    "description": "this component is use for google oauth login",
+    "selector": "<amexio-social>",
+    "properties": [{
+            "name": "api-key",
+            "description": "user api key which is generate on google developer webside",
+            "version": "5.5.3 onwards",
+            "type": "string",
+            "default": "none"
+        },
+        {
+            "name": "type",
+            "description": "type attribute  have multiple option like google,linkedin support",
+            "version": "5.5.3 onwards",
+            "type": "string",
+            "default": "none"
+        }
+    ],
+    "events": [{
+        "name": "onLogin",
+        "description": "event is fired when user loggedin successfully."
+    }]
+}

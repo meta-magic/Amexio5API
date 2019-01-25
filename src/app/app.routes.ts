@@ -74,6 +74,12 @@
       path: 'taginput-demo', loadChildren: './forms/taginput/taginput.demo.module#TagInputDemoModule'
     },
     {
+      path: 'google-login-demo', loadChildren: './forms/socialmedialogin/googlelogin/googlelogin.demo.module#GoogleLoginModule'
+    },
+    {
+      path: 'linkedin-login-demo', loadChildren: './forms/socialmedialogin/linkedinlogin/linkedinlogin.demo.module#LinkedinLoginModule'
+    },
+    {
       path: 'itemselector-demo', loadChildren: './forms/itemselector/itemselector.demo.module#ItemSelectorDemoModule'
     },
     {
@@ -366,10 +372,10 @@
     },
     {
       path: 'ee-content', loadChildren: './enterprise/content/content.demo.module#ContentRoutingModule'
-    },  
+    },
     {
       path: 'ee-appointment', loadChildren: './enterprise/appointment/appointment.demo.module#EEAppointmentRoutingModule'
-    },      
+    },
     {
       path: 'ee-video', loadChildren: './enterprise/youtube-player/youtube.demo.module#YoutubePlayerModule'
     },

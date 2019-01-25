@@ -100,7 +100,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge":"5",
+            "badge": "5",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
@@ -146,7 +146,7 @@
                 {
                     "text": "Tab",
                     "icon": "fa fa-folder fa-fw",
-                    "badge":"1",
+                    "badge": "1",
                     "children": [{
                             "text": "Horizontal",
                             "icon": "fa fa-indent fa-fw",
@@ -185,7 +185,7 @@
                         {
                             "text": "Vertical",
                             "icon": "fa fa-outdent fa-fw",
-                            "badge":"1",
+                            "badge": "1",
                             "children": [{
                                     "text": "Left Aligned",
                                     "link": "vertical-tab-demo",
@@ -200,7 +200,7 @@
                                     "text": "Enhanced",
                                     "link": "enhanced-vertical-tab-demo",
                                     "icon": "fa fa-leaf fa-fw",
-                                    "badge":"New"
+                                    "badge": "New"
                                 }
                             ]
                         }
@@ -268,18 +268,19 @@
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o fa-fw",
                     "link": "singlecheckbox-demo",
-                    "badge":"U"
+                    "badge": "U"
                 },
                 {
                     "text": "Checkbox Group",
                     "icon": "fa fa-list fa-fw",
                     "link": "checkboxgroup-demo",
-                    "badge":"U"
+                    "badge": "U"
                 },
                 {
                     "text": "Chips",
                     "icon": "fa fa-chevron-circle-down fa-fw",
-                    "link": "chips-demo"                },
+                    "link": "chips-demo"
+                },
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card fa-fw",
@@ -322,7 +323,7 @@
                     "text": "Email Field",
                     "icon": "fa fa-envelope-o fa-fw",
                     "link": "email-demo",
-                    "badge":"U"
+                    "badge": "U"
 
                 },
                 {
@@ -331,7 +332,18 @@
                     "link": "fileupload-demo",
                     "badge": "U"
                 },
-                
+                {
+                    "text": "Google Login",
+                    "icon": "fa fa-google fa-fw",
+                    "link": "google-login-demo",
+                    "badge": "New"
+                },
+                {
+                    "text": "LinkedIn Login",
+                    "icon": "fa fa-linkedin-square fa-fw",
+                    "link": "linkedin-login-demo",
+                    "badge": "New"
+                },
                 {
                     "text": "Label",
                     "icon": "fa fa-terminal fa-fw",
@@ -343,21 +355,21 @@
                     "text": "Number Field",
                     "icon": "fa fa-phone fa-fw",
                     "link": "number-demo",
-                    "badge":"U"
+                    "badge": "U"
 
                 },
                 {
                     "text": "Password Field",
                     "icon": "fa fa-text-width fa-fw",
                     "link": "password-demo",
-                    "badge":"U"
+                    "badge": "U"
 
                 },
                 {
                     "text": "Radio Group",
                     "icon": "fa fa-stop-circle-o fa-fw",
                     "link": "radiogroup-demo",
-                    "badge":"U"
+                    "badge": "U"
 
                 },
                 {
@@ -399,14 +411,14 @@
                 {
                     "text": "Text Field",
                     "link": "textinput",
-                    "badge":"U",
+                    "badge": "U",
                     "icon": "fa fa-file-text-o fa-fw"
                 },
                 {
                     "text": "TextArea Field",
                     "icon": "fa fa-text-width fa-fw",
                     "link": "textarea-demo",
-                    "badge":"U"
+                    "badge": "U"
 
                 },
                 {
@@ -420,23 +432,23 @@
         },
         {
             "text": "Form Actions",
-            "badge":"4",
+            "badge": "4",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [{
                     "text": "Buttons",
-                    "badge":"4",
+                    "badge": "4",
                     "icon": "fa fa-keyboard-o fa-fw",
                     "children": [{
                             "text": "Button",
                             "icon": "fa fa-building-o fa-fw",
                             "link": "button-demo",
-                            "badge":"U"
+                            "badge": "U"
                         },
                         {
                             "text": "Button Group",
                             "icon": "fa fa-newspaper-o fa-fw",
                             "link": "buttongroup-demo",
-                            "badge":"U"
+                            "badge": "U"
 
                         },
                         {
@@ -450,7 +462,7 @@
                             "text": "Floating Button",
                             "icon": "fa fa-circle-o fa-fw",
                             "link": "floatingbutton-demo",
-                            "badge":"U"
+                            "badge": "U"
                         },
                         {
                             "text": "Floating Group",
@@ -480,7 +492,7 @@
             "text": "Data",
             "badge": "1",
             "icon": "fa fa-database fa-fw",
-           
+
             "children": [{
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
@@ -610,7 +622,8 @@
                 {
                     "text": "Timeline",
                     "icon": "fa fa-history",
-                    "link": "timeline"                },
+                    "link": "timeline"
+                },
                 {
                     "text": "ListBox",
                     "icon": "fa fa-list fa-fw",
@@ -769,8 +782,7 @@
                     "children": [{
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "children": [
-                                {
+                            "children": [{
                                     "text": "Bar chart-vertical",
                                     "icon": "fa fa-bar-chart fa-fw",
                                     "link": "amexio-d3-chart-bar"
@@ -790,13 +802,13 @@
                         },
                         {
                             "text": "Combo Chart",
-                            "badge":"U",
+                            "badge": "U",
                             "icon": "fa fa-area-chart fa-fw",
                             "link": "amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",
-                            "badge":"U",
+                            "badge": "U",
                             "icon": "fa fa-pie-chart fa-fw",
                             "link": "amexio-d3-chart-donut"
                         },
@@ -823,7 +835,7 @@
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "amexio-d3-chart-pie"
                         },
                         {
@@ -944,7 +956,7 @@
         },
         {
             "text": "Maps",
-            "badge":"1",
+            "badge": "1",
             "icon": "fa fa-globe fa-fw",
             "children": [{
                     "text": "Geo Chart",
@@ -960,7 +972,7 @@
                     "text": "Google Map",
                     "icon": "fa fa-map-marker",
                     "link": "google-map-demo",
-                    "badge":"New"
+                    "badge": "New"
                 }
             ]
         },
@@ -981,7 +993,7 @@
                     "text": "Multi-item Carousel",
                     "icon": "fa fa-calendar fa-fw",
                     "link": "multi-item-carousel"
-                },{
+                }, {
                     "text": "Appointment",
                     "icon": "fa fa-calendar fa-fw",
                     "link": "ee-appointment",
