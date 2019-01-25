@@ -22,22 +22,14 @@ before_script:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - npm install --global gulp --save
-  - gem install sass
 script: 
   - npm install
   - npm install --save uglifyjs-webpack-plugin
   - npm install @angular-devkit/core --save
-  - npm i node-sass --save-dev
-  #- wget  https://github.com/meta-magic/amexio-ios/blob/v5.5/themes.tar.gz?raw=true
-  #- mv themes.tar.gz?raw=true themes.tar.gz 
-  #- tar -xzvf themes.tar.gz 
- # - rm -rf src/assets/themes/*
- # - cp -rf themes/* src/assets/themes/
   - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-ng-extensions.tgz?raw=true
   - rm -rf src/assets/themes/*
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
-  - ng set defaults.styleExt scss
   - ng build --prod
 after_success: 
   - codecov
@@ -50,6 +42,6 @@ after_success:
   - cd amexio-api-website-test/
   - git add api/v5.5/
   - git commit -m "${COMMIT}"
-  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git push --force --quiet "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master; fi
+  - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git push "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master; fi
 cache:
   yarn: true
