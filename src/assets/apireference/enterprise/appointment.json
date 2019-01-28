@@ -51,7 +51,36 @@
             "version": "5.5.2 Onwards",
             "type": "boolean",
             "default": "false"
+        },
+        {
+            "name": "available-slots-bg-color",
+            "description": "Sets background color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "available-slots-color",
+            "description": "Sets color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "selected-slots-bg-color",
+            "description": "Sets selected color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "selected-slots-color",
+            "description": "Sets color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
         }
+        
     ],
     "events": [
         {

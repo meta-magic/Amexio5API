@@ -52,6 +52,14 @@
       "default": "-0.127758",
       "description":"Load map by default at longitude when loaded",
       "version": "5.5.1 onwards"
+    },
+    {
+      "deprecated":false,
+      "name": "min-height",
+      "type": "string",
+      "default": "250px",
+      "description":"Sets minimum height for google map",
+      "version": "5.5.4 onwards"
     }
   ],
   "events":[
