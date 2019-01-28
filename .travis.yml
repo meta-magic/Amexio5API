@@ -29,6 +29,7 @@ script:
   - rm -rf src/assets/themes/*
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
   - ng build --prod
+  - pwd
 after_success: 
   - codecov
   - git add src/assets/themes
