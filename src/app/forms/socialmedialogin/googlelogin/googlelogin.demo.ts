@@ -24,12 +24,12 @@ import {HttpClient} from '@angular/common/http';
               <amexio-body>
               <amexio-row>
               <amexio-column size="12">
-              <amexio-social [label]="'Signup With Google'"  [api-key]="'644642582036-hn15j2lag4h5o4t6lhjpk7pmm2q7bv1i.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-social>
+              <amexio-login-social [label]="'Signup With Google'"  [api-key]="'644642582036-hn15j2lag4h5o4t6lhjpk7pmm2q7bv1i.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-login-social>
               </amexio-column>
               </amexio-row>
               <amexio-row>
               <amexio-column size="12">
-              <amexio-social  [api-key]="'644642582036-hn15j2lag4h5o4t6lhjpk7pmm2q7bv1i.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-social>
+              <amexio-login-social  [api-key]="'644642582036-hn15j2lag4h5o4t6lhjpk7pmm2q7bv1i.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-login-social>
               </amexio-column>
               </amexio-row>
 
@@ -60,7 +60,7 @@ import {HttpClient} from '@angular/common/http';
           </amexio-label>
         </amexio-box>
         <br>
-            <amexio-datagrid title="Properties <amexio-social>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties <amexio-login-social>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/googlelogin.json'"
                              [data-reader]="'properties'"
@@ -76,7 +76,7 @@ import {HttpClient} from '@angular/common/http';
 
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events <amexio-social> " [http-method]="'get'"
+            <amexio-datagrid title="Events <amexio-login-social> " [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/googlelogin.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"

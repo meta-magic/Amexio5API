@@ -24,12 +24,12 @@ import {HttpClient} from '@angular/common/http';
               <amexio-body>
               <amexio-row>
               <amexio-column size="12">
-              <amexio-social [label]="'Signup With Linkedin'"  [api-key]="'813fmfeb1398lq'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-social>
+              <amexio-login-social [label]="'Signup With Linkedin'"  [api-key]="'813fmfeb1398lq'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-login-social>
               </amexio-column>
               </amexio-row>
               <amexio-row>
               <amexio-column size="12">
-              <amexio-social  [api-key]="'813fmfeb1398lq'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-social>
+              <amexio-login-social  [api-key]="'813fmfeb1398lq'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-login-social>
               </amexio-column>
               </amexio-row>
               </amexio-body>
@@ -59,7 +59,7 @@ import {HttpClient} from '@angular/common/http';
           </amexio-label>
         </amexio-box>
         <br>
-            <amexio-datagrid title="Properties <amexio-social>" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties <amexio-login-social>" [enable-column-fiter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/linkedinlogin.json'"
                              [data-reader]="'properties'"
@@ -75,7 +75,7 @@ import {HttpClient} from '@angular/common/http';
 
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events <amexio-social> " [http-method]="'get'"
+            <amexio-datagrid title="Events <amexio-login-social> " [http-method]="'get'"
                              [http-url]="'assets/apireference/forms/linkedinlogin.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
