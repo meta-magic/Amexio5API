@@ -5,14 +5,14 @@ import {Component} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 @Component({
-  selector: 'linkedin-login-demo', template: `
+  selector: 'facebook-login-demo', template: `
     <amexio-card header="true" [body-height]="80">
       <amexio-header>
-       Linkedin Login
+       Facebook Login
       </amexio-header>
       <amexio-body>
-        <p>Amexio Linkedin Sign-In component manages the OAuth flow and token lifecycle,
-         simplifying your integration with Linkedin APIs using amexio component.</p>
+        <p>Amexio Facebook Sign-In component manages the OAuth flow and token lifecycle,
+         simplifying your integration with Facebook APIs using amexio component.</p>
         <amexio-tab-view>
           <amexio-tab title="Demo" active="true">
             <amexio-row>
@@ -24,12 +24,12 @@ import {HttpClient} from '@angular/common/http';
               <amexio-body>
               <amexio-row>
               <amexio-column size="12">
-              <amexio-login-social [label]="'Signup With Linkedin'"  [api-key]="'8110cgvg7wbie7'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-login-social>
+              <amexio-login-social [label]="'Signup With Facebook'"  [api-key]="'320512778592240'" [type]="'facebook'" (onLogin)="onLoginClick($event)"></amexio-login-social>
               </amexio-column>
               </amexio-row>
               <amexio-row>
               <amexio-column size="12">
-              <amexio-login-social  [api-key]="'8110cgvg7wbie7'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-login-social>
+              <amexio-login-social  [api-key]="'813fmfeb1398lq'" [type]="'facebook'" (onLogin)="onLoginClick($event)"></amexio-login-social>
               </amexio-column>
               </amexio-row>
               </amexio-body>
@@ -43,7 +43,7 @@ import {HttpClient} from '@angular/common/http';
               <amexio-body>
              <amexio-row>
              <amexio-column size="12" [fit]="true">
-             {{linkedinLoginData|json}}
+             {{facebookLoginData|json}}
              </amexio-column>
              </amexio-row>
               </amexio-body>
@@ -54,7 +54,7 @@ import {HttpClient} from '@angular/common/http';
           <amexio-tab title="API Reference">
           <amexio-box border-color="brown" border="left" padding="true" background-color="brown">
           <amexio-label>
-            Make sure api-key is created before use this component.refer Linkedin developer webside to create key <a href="https://developer.linkedin.com/docs/signin-with-linkedin" target="_blank">Linkedin Sign-In</a>
+            Make sure api-key is created before use this component.refer Facebook developer webside to create key <a href="https://developers.facebook.com/apps" target="_blank">Facebook Sign-In</a>
             <br/><br/>
           </amexio-label>
         </amexio-box>
@@ -111,17 +111,17 @@ import {HttpClient} from '@angular/common/http';
     <!--<amexio-notification [data]="copyMsgArray"></amexio-notification>-->
   `
 })
-export class LinkedinLoginDemo {
+export class FacebookLoginDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  linkedinLoginData: any;
+  facebookLoginData: any;
   constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
   onLoginClick(data: any) {
-    this.linkedinLoginData = data;
+    this.facebookLoginData = data;
   }
 
   // TO LOAD HTML AND TYPESCRIPT CODE
@@ -130,7 +130,7 @@ export class LinkedinLoginDemo {
     let responseTs: any;
 
     // HTML FILE
-    this.http.get('assets/data/code/forms/linkedinlogin/form.html', {responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/facebooklogin/form.html', {responseType: 'text'}).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -138,7 +138,7 @@ export class LinkedinLoginDemo {
     });
 
     // TS FILE
-    this.http.get('assets/data/code/forms/linkedinlogin/form.text', {responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/facebooklogin/form.text', {responseType: 'text'}).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {

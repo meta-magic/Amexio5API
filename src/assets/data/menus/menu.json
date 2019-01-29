@@ -332,6 +332,12 @@
                     "badge": "U"
                 },
                 {
+                    "text": "Facebook Login",
+                    "icon": "fa fa-facebook fa-fw",
+                    "link": "facebook-login-demo",
+                    "badge": "New"
+                },
+                {
                     "text": "Google Login",
                     "icon": "fa fa-google fa-fw",
                     "link": "google-login-demo",

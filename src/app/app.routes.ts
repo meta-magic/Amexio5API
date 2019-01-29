@@ -74,6 +74,9 @@
       path: 'taginput-demo', loadChildren: './forms/taginput/taginput.demo.module#TagInputDemoModule'
     },
     {
+      path: 'facebook-login-demo', loadChildren: './forms/socialmedialogin/facebooklogin/facebooklogin.demo.module#FacebookLoginModule'
+    },
+    {
       path: 'google-login-demo', loadChildren: './forms/socialmedialogin/googlelogin/googlelogin.demo.module#GoogleLoginModule'
     },
     {
