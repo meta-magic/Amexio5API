@@ -22,7 +22,17 @@ import {HttpClient} from '@angular/common/http';
              Demo
             </amexio-header>
               <amexio-body>
-              <amexio-social [api-key]="'644642582036-hn15j2lag4h5o4t6lhjpk7pmm2q7bv1i.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-social>
+              <amexio-row>
+              <amexio-column size="12">
+              <amexio-social [label]="'Signup With Google'"  [api-key]="'644642582036-hn15j2lag4h5o4t6lhjpk7pmm2q7bv1i.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-social>
+              </amexio-column>
+              </amexio-row>
+              <amexio-row>
+              <amexio-column size="12">
+              <amexio-social  [api-key]="'644642582036-hn15j2lag4h5o4t6lhjpk7pmm2q7bv1i.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)"></amexio-social>
+              </amexio-column>
+              </amexio-row>
+
               </amexio-body>
               </amexio-card>
                </amexio-column>
