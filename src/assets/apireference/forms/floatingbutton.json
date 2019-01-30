@@ -74,6 +74,20 @@
         "default": ""
       },
       {
+        "name" : "color",
+        "description" : "sets icon color",
+        "version" : "5.5.4 onwards",
+        "type" : "string",
+        "default" : "white color"
+      },
+      {
+        "name" : "bg-color",
+        "datatype" : "string",
+        "version" : "5.5.4 onwards",
+        "default" : "none",
+        "description" : "sets background color of floating button."
+      },
+      {
         "name": "disabled",
         "description": "Enable/Disables the button",
         "version": "4.1 onwards",

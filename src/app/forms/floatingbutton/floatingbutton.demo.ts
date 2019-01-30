@@ -24,7 +24,7 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-body>
                   <amexio-row>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true" [tool-tip]="'Setting'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+                      <amexio-floating-button [bg-color]="'#a2b9bc'"  [color]="' #6b5b95'"[relative]="true" [tool-tip]="'Setting'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
                     </amexio-column>
                     <amexio-column size=3>
                       <amexio-floating-button [relative]="true"  [tool-tip]="'User'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
@@ -58,7 +58,7 @@ import {HttpClient} from "@angular/common/http";
                   <amexio-floating-button [position-top]="'50%'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'green'"></amexio-floating-button>
                   <amexio-floating-button [position-bottom]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'yellow'"></amexio-floating-button>
                   <amexio-floating-button [position-bottom]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'red'"></amexio-floating-button>
-                  <amexio-floating-button [position-top]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'"></amexio-floating-button>
+                  <amexio-floating-button [position-top]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [bg-color]="'blue'"></amexio-floating-button>
                   
                 </div>
                 </amexio-body>

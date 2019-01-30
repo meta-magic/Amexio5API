@@ -16,7 +16,7 @@
         },
         {
             "text": "Layouts",
-            "badge": "1",
+            "badge": "2",
             "icon": "fa fa-desktop fa-fw",
             "children": [{
                     "text": "Accordion",
@@ -27,7 +27,8 @@
                 {
                     "text": "Border Layout",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "link": "border"
+                    "link": "border",
+                    "badge": "U"
                 },
                 {
                     "text": "Box",
@@ -99,7 +100,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars fa-fw",
-            "badge": "5",
+            "badge": "6",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
@@ -130,6 +131,7 @@
                 {
                     "text": "Steps",
                     "icon": "fa fa-step-forward fa-fw",
+                    "badge": "U",
                     "children": [{
                             "text": "Step Box",
                             "link": "step-box",
