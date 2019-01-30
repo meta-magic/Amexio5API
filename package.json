@@ -28,7 +28,7 @@
     "font-awesome": "^4.7.0",
     "ngx-cookie-service": "^1.0.10",
     "prismjs": "^1.14.0",
-    "rxjs": "^6.2.1",
+    "rxjs": "6.2.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
