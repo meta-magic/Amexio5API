@@ -61,7 +61,7 @@ import {HttpClient} from '@angular/common/http';
         <br>
             <amexio-datagrid title="Properties <amexio-login-social>" [enable-column-fiter]="false"
                              [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/linkedinlogin.json'"
+                             [http-url]="'assets/apireference/forms/facebooklogin.json'"
                              [data-reader]="'properties'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="10" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
@@ -76,7 +76,7 @@ import {HttpClient} from '@angular/common/http';
             </amexio-datagrid>
             <br>
             <amexio-datagrid title="Events <amexio-login-social> " [http-method]="'get'"
-                             [http-url]="'assets/apireference/forms/linkedinlogin.json'" [data-reader]="'events'"
+                             [http-url]="'assets/apireference/forms/facebooklogin.json'" [data-reader]="'events'"
                              [enable-data-filter]="false">
               <amexio-data-table-column [width]="20"[data-index]="'name'" [data-type]="'string'" [hidden]="false"
                                         [text]="'Name'"></amexio-data-table-column>

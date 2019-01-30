@@ -1,10 +1,10 @@
 {
     "name": "Amexio Social",
-    "description": "this component is use for google oauth login",
+    "description": "this component is use for facebook oauth login",
     "selector": "<amexio-social>",
     "properties": [{
             "name": "api-key",
-            "description": "user api key which is generate on linkedin developer webside",
+            "description": "user api key which is generate on facebook developer webside",
             "version": "5.5.3 onwards",
             "type": "string",
             "default": "none"
