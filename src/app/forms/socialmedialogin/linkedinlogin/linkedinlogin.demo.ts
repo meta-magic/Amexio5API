@@ -32,6 +32,11 @@ import {HttpClient} from '@angular/common/http';
               <amexio-login-social  [api-key]="'8110cgvg7wbie7'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-login-social>
               </amexio-column>
               </amexio-row>
+              <amexio-row>
+              <amexio-column size="12">
+              <amexio-login-social [style-type]="'circle'"  [api-key]="'8110cgvg7wbie7'" [type]="'linkedin'" (onLogin)="onLoginClick($event)"></amexio-login-social>
+              </amexio-column>
+              </amexio-row>
               </amexio-body>
               </amexio-card>
                </amexio-column>
