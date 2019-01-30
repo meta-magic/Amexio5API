@@ -1,3 +1,11 @@
-<!--Google Login-->
+<!--facebook Login With Label-->
+<amexio-login-social [label]="'Sign up with Facebook'" [api-key]="'320512778592240'" [type]="'facebook'" (onLogin)="onLoginClick($event)">
+</amexio-login-social>
+
+<!--facebook Login Without Label-->
 <amexio-login-social [api-key]="'320512778592240'" [type]="'facebook'" (onLogin)="onLoginClick($event)">
+</amexio-login-social>
+
+<!--facebook Login With Circle style-->
+<amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'" (onLogin)="onLoginClick($event)">
 </amexio-login-social>

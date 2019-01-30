@@ -1,3 +1,11 @@
-<!--Linkedin Login-->
+<!--Linkedin Login With Label-->
+<amexio-login-social [label]="Sign up with Linkedin" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" (onLogin)="onLoginClick($event)">
+</amexio-login-social>
+
+<!--Linkedin Login Without Label-->
 <amexio-login-social [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" (onLogin)="onLoginClick($event)">
+</amexio-login-social>
+
+<!--Linkedin Login With Circle-->
+<amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" (onLogin)="onLoginClick($event)">
 </amexio-login-social>

@@ -1,3 +1,11 @@
-<!--Google Login-->
+<!--Google Login With Label-->
+<amexio-login-social [label]="'Sign up with Google'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)">
+</amexio-login-social>
+
+<!--Google Login Without Label-->
 <amexio-login-social [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)">
+</amexio-login-social>
+
+<!--Google Login With Circle style-->
+<amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'" [type]="'google'" (onLogin)="onLoginClick($event)">
 </amexio-login-social>
