@@ -2,6 +2,7 @@
 
 <amexio-button [label]="'Backgrund Color'" 
                [type]="'theme-backgroundcolor'" 
+               []
                [tooltip]="'Background Button'">
 </amexio-button>
 <amexio-button [label]="'Theme Color'" 
@@ -16,9 +17,10 @@
                [type]="'red'" 
                [tooltip]="'Red Button'">
 </amexio-button>
-<amexio-button [label]="'Yellow'" 
-               [type]="'yellow'" 
-               [tooltip]="'Yellow Button'">
+<amexio-button [label]="'custom color'" 
+               [color]="'#674d3c'" 
+               [bg-color]="'#a2836e'" 
+               [tooltip]="'custom color Button'">
 </amexio-button>
 <amexio-button [label]="'Transparent'" 
                [type]="'transparent'" 
@@ -102,3 +104,20 @@
                [type]="'red'" 
                [tooltip]="'Danger Button'">
 </amexio-button>
+<!-- Button With custom colors-->
+    <amexio-button [label]="'Next'"  
+                   [color]="'#622569'" 
+                   [bg-color]="'#96ceb4'"  
+                   [tooltip]="'Next'">
+   </amexio-button>
+    <amexio-button [label]="'Download'" 
+                   [bg-color]="'#f4a688'" 
+                   [color]="'brown'" 
+                   [tooltip]="'Download'">
+    </amexio-button>
+    <amexio-button [label]="'Delete'" 
+                   [bg-color]="'#b7d7e8'" 
+                   [color]="'blue'" 
+                   [tooltip]="'delete'">
+    </amexio-button>
+   

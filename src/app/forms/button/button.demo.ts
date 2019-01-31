@@ -25,7 +25,7 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-body>
                   <amexio-row>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Theme Color'" [type]="'theme-color'" [tooltip]="'Primary Button'"></amexio-button>
+                     <amexio-button [label]="'Theme Color'" [type]="'theme-color'" [tooltip]="'Primary Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="1"></amexio-column>
                     <amexio-column size="2">
@@ -35,7 +35,7 @@ import {HttpClient} from "@angular/common/http";
                       <amexio-button [label]="'Red'" [type]="'red'" [tooltip]="'danger Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
-                      <amexio-button [label]="'Yellow'" [type]="'yellow'" [tooltip]="'Warning Button'"></amexio-button>
+                      <amexio-button [label]="'Yellow'"[tooltip]="'Warning Button'"></amexio-button>
                     </amexio-column>
                     <amexio-column size="2">
                       <amexio-button [label]="'Transparent'" [type]="'transparent'" [tooltip]="'Transparent Button'"></amexio-button>
@@ -83,7 +83,7 @@ import {HttpClient} from "@angular/common/http";
                         <amexio-button [label]="'Next'" [type]="'theme-color'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
-                        <amexio-button [label]="'Download'" [type]="'green'" [tooltip]="'Save'" [icon]="'fa fa-save'"></amexio-button>
+                        <amexio-button [label]="'Download'" [type]="'green'" [tooltip]="'Download'" [icon]="'fa fa-save'"></amexio-button>
                       </amexio-column>
                       <amexio-column [size]="4">
                         <amexio-button [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'"></amexio-button>
@@ -167,7 +167,30 @@ import {HttpClient} from "@angular/common/http";
 
             </amexio-column>
             </amexio-row>
-
+           <!-- custom color buttons -->
+           <amexio-row>
+              <amexio-column [size]="12">
+                <amexio-card [header]="true">
+                  <amexio-header>
+                      Button with custom color
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column [size]="4">
+                        <amexio-button [label]="'Next'"  [color]="'#622569'" [bg-color]="'#96ceb4'"  [tooltip]="'Next'"></amexio-button>
+                      </amexio-column>
+                      <amexio-column [size]="4">
+                        <amexio-button [label]="'Download'" [bg-color]="'#f4a688'" [color]="'brown'" [tooltip]="'Download'"></amexio-button>
+                      </amexio-column>
+                      <amexio-column [size]="4">
+                        <amexio-button [label]="'Delete'" [bg-color]="'#b7d7e8'" [color]="'blue'" [tooltip]="'delete'"></amexio-button>
+                      </amexio-column>
+                    </amexio-row>
+                  </amexio-body>
+                </amexio-card>
+              </amexio-column>
+            </amexio-row>
+           <!-- custom color buttons end here-->
           </amexio-tab>
           <amexio-tab title="API Reference">
             <amexio-datagrid title="Properties <amexio-button>" [enable-column-fiter]="false"

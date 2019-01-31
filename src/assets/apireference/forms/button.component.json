@@ -32,6 +32,20 @@
       "default": ""
     },
     {
+      "name" : "bg-color",
+      "description" : "Sets the background color",
+      "version" : "5.5.4 onwards",
+      "type" :  "string",
+      "default" : ""
+    },
+    {
+      "name" : "color",
+      "description" : "Sets the color",
+      "version" : "5.5.4 onwards",
+      "type" :  "string",
+      "default" : ""
+    },
+    {
       "name": "tooltip",
       "description": "tooltip on button hover",
       "version": "4.1 onwards",
