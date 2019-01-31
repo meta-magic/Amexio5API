@@ -2540,6 +2540,9 @@ input:checked + .toggle-slider:before {
 .floatingbutton-relative {
   position: relative; }
 
+.floatingbutton-absolute {
+  position: absolute; }
+
 .floatingbutton-fixed {
   position: fixed; }
 
