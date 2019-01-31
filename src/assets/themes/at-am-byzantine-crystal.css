@@ -405,6 +405,24 @@ image using the content attribute.
   background: white;
   color: #70196F; }
 
+.button-transparent:hover:enabled {
+  background-color: #70196F; }
+
+.button-transparent::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  background: #70196F;
+  opacity: 0;
+  border-radius: 100%;
+  -webkit-transform: scale(1, 1) translate(-50%);
+  transform: scale(1, 1) translate(-50%);
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%; }
+
 /** button - Structure CSS **/
 button {
   display: inline-block;
