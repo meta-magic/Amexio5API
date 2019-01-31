@@ -102,6 +102,13 @@
         "default": "false"
       },
       {
+        "name": "absolute",
+        "description": "Place floating button at absolute position",
+        "version": "5.5.5 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
         "name": "size",
         "description": "Size for floating button (large, default, small)",
         "version": "5.4 onwards",
