@@ -1,0 +1,147 @@
+{
+  "title": "Amexio panel",
+  "description": "Panel provides an easy way to organize big forms by grouping the fields in panel.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-panel>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "description": "Title for panel.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "header",
+          "description": "Enable/Disabled header.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "expanded",
+          "description": "Pane will expand or collapse based on the boolean.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "border",
+          "description": "Provides the border for panel if true",
+          "version": "5.4 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "content-align",
+          "description": "Provides the alignment(left, right, center) for content present in panel",
+          "version": "5.4 onwards",
+          "type": "string",
+          "default": "left"
+        },
+        {
+          "name": "collapsible",
+          "description": "Provides the collapse property, if true",
+          "version": "5.4 onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "height",
+          "description": "Height of panel must be in px ex.100, 250..",
+          "version": "4.0 onwards",
+          "type": "number",
+          "default": "none"
+        },
+        {
+          "name": "context-menu",
+          "description": "Context Menu provides the panel on right click(for Array structure: refer typescript code in source tab)",
+          "version": "5.1.6 onwards",
+          "type": "any[]",
+          "default": ""
+        },
+        {
+          "name": "amexio-panel-header",
+          "description": "Panel Header renders any component within it by using toolbar as its outer shell",
+          "version": "5.1.6 onwards",
+          "type": "",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onClick",
+          "description": "Fires the on accordion pane click event."
+        },
+        {
+          "name": "rightClick",
+          "description": "It is fired when clicked on context menu providing Panel node data and selected context menu data."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "layout/panel/panel.html",
+    "tsUrl": "layout/panel/panel.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-panel1?embed=1&file=app/panels/panel/panel.demo.html&view=editor"
+  }
+}
