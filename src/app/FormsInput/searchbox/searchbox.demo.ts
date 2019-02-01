@@ -159,7 +159,6 @@ export class SearchBox implements OnInit {
       }
 
     ];
-    this.getHtmlAndTypeScriptCode();
     this.searchdata = this.localData;
    }
 

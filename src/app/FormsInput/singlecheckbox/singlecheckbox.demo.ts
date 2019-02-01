@@ -19,7 +19,6 @@ export class SinglecheckboxDemo {
   }
 
   constructor() {
-    this.getHtmlAndTypeScriptCode();
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
