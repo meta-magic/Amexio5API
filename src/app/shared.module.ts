@@ -1,17 +1,11 @@
 import { Component, Input, Renderer2, ElementRef, AfterViewInit ,NgModule} from '@angular/core';
 declare var Prism: any;
-import {CommonModule, TitleCasePipe} from "@angular/common";
+import {CommonModule} from "@angular/common";
 /* Import prism core */
 import 'prismjs/prism';
 
 /* Import the language you need to highlight */
 import 'prismjs/components/prism-typescript';
-import { AmexioApiReferenceComponent } from './amexioStructureDemo/apiReference/amexioapireference.component';
-import { AmexioStructureComponent } from "./amexioStructureDemo/amexiostructure/amexiostructure.component";
-import { AmexioApiDemoComponent } from "./amexioStructureDemo/apiDemo/amexioapidemo.component";
-import { AmexioApiSourceCodeComponent } from "./amexioStructureDemo/apiSourceCode/apisourcecode.component";
-import { AmexioApiLiveDemoComponent } from "./amexioStructureDemo/apiLiveDemo/apilivedemo.component";
-import { AmexioWidgetModule } from 'amexio-ng-extensions';
 
 
 @Component({
@@ -39,11 +33,12 @@ export class PrismComponent implements AfterViewInit {
   }
 }
 
+
 @NgModule({
-  imports: [CommonModule , AmexioWidgetModule],
-  exports: [PrismComponent,AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
-  declarations: [PrismComponent,AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
-  providers: [TitleCasePipe],
+  imports: [CommonModule],
+  exports: [PrismComponent],
+  declarations: [PrismComponent],
+  providers: [],
 })
 export class SharedModule {
 }

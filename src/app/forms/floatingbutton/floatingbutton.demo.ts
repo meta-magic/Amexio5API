@@ -2,8 +2,8 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'floating-button-demo', template: `
@@ -24,46 +24,60 @@ import {HttpClient} from "@angular/common/http";
                 <amexio-body>
                   <amexio-row>
                     <amexio-column size=3>
-                      <amexio-floating-button [bg-color]="'#a2b9bc'"  [color]="' #6b5b95'"[relative]="true" [tool-tip]="'Setting'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+                      <amexio-floating-button [bg-color]="'#a2b9bc'"  [color]="' #6b5b95'"[relative]="true" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
                     </amexio-column>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true"  [tool-tip]="'User'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
+                      <amexio-floating-button [relative]="true" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
                     </amexio-column>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true"  [tool-tip]="'open'" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
+                      <amexio-floating-button [relative]="true" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
                     </amexio-column>
                     <amexio-column size=3>
-                      <amexio-floating-button [relative]="true" [tool-tip]="'message'" [icon]="'fa fa fa-telegram'" [type]="'theme-color'"></amexio-floating-button>
+                      <amexio-floating-button [relative]="true" [icon]="'fa fa fa-telegram'" [type]="'theme-color'"></amexio-floating-button>
                     </amexio-column>
                   </amexio-row>
-                  <amexio-row>
-                    <amexio-column size=12>
-                    <amexio-button [label]="'Vertical/Horizontal Positioning'" (onClick)="onFloatingButtonClick1($event)" [type]="'theme-color'" [tooltip]="'Using Vertical/Horizontal Positioning'"></amexio-button>
-                    <br/>
-                    <br/>
-                    <amexio-button [label]="'Right/Left/Top/Right Positioning'" (onClick)="onFloatingButtonClick2($event)" [type]="'theme-color'" [tooltip]="'Using Right/Left/Top/Right Positioning'"></amexio-button>
-                    </amexio-column>
-                  </amexio-row>
-
-                <div *ngIf="toggle1">
-                  <amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'left'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
-                  <amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'right'" [label]="'top-right'" [icon]="'fa fa-telegram'" [type]="'green'"></amexio-floating-button>
-                  <amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'left'" [label]="'bottom-left'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
-                  <amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'right'" [label]="'bottom-right'" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
-                  <amexio-floating-button [vertical-position]="'center'" [horizontal-position]="'center'" [icon]="'fa fa-snowflake-o'" [type]="'red'" (onClick)="onFloatingButtonClick($event)"></amexio-floating-button>                
-                </div>              
-
-                <div *ngIf="toggle2">
-                  <amexio-floating-button [position-top]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
-                  <amexio-floating-button [position-top]="'50%'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'green'"></amexio-floating-button>
-                  <amexio-floating-button [position-bottom]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'yellow'"></amexio-floating-button>
-                  <amexio-floating-button [position-bottom]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'red'"></amexio-floating-button>
-                  <amexio-floating-button [position-top]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [bg-color]="'blue'"></amexio-floating-button>
-                  
-                </div>
+                 
                 </amexio-body>
               </amexio-card>
+              <amexio-card [header]="true" [body-height]="'50%'">
+              <amexio-header>
+                 Floating Button with tooltip 
+              </amexio-header>
+              <amexio-body>
+                <amexio-row>
+                  <amexio-column size=3>
+                    <amexio-floating-button [bg-color]="'#a2b9bc'"  [color]="' #6b5b95'"[relative]="true" [tool-tip]="'Setting'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+                  </amexio-column>
+                  <amexio-column size=3>
+                    <amexio-floating-button [relative]="true"  [tool-tip]="'User'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
+                  </amexio-column>
+                </amexio-row>
+                <amexio-row>
+                <amexio-column size=12>
+                <amexio-button [label]="'Vertical/Horizontal Positioning'" (onClick)="onFloatingButtonClick1($event)" [type]="'theme-color'" [tooltip]="'Using Vertical/Horizontal Positioning'"></amexio-button>
+                <br/>
+                <br/>
+                <amexio-button [label]="'Right/Left/Top/Right Positioning'" (onClick)="onFloatingButtonClick2($event)" [type]="'theme-color'" [tooltip]="'Using Right/Left/Top/Right Positioning'"></amexio-button>
+                </amexio-column>
+              </amexio-row>
 
+            <div *ngIf="toggle1">
+              <amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'left'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+              <amexio-floating-button [vertical-position]="'top'" [horizontal-position]="'right'" [label]="'top-right'" [icon]="'fa fa-telegram'" [type]="'green'"></amexio-floating-button>
+              <amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'left'" [label]="'bottom-left'" [icon]="'fa fa-user-circle-o'" [type]="'yellow'"></amexio-floating-button>
+              <amexio-floating-button [vertical-position]="'bottom'" [horizontal-position]="'right'" [label]="'bottom-right'" [icon]="'fa fa-envelope-open'" [type]="'red'"></amexio-floating-button>
+              <amexio-floating-button [vertical-position]="'center'" [horizontal-position]="'center'" [icon]="'fa fa-snowflake-o'" [type]="'red'" (onClick)="onFloatingButtonClick($event)"></amexio-floating-button>                
+            </div>              
+
+            <div *ngIf="toggle2">
+              <amexio-floating-button [position-top]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'theme-color'"></amexio-floating-button>
+              <amexio-floating-button [position-top]="'50%'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'green'"></amexio-floating-button>
+              <amexio-floating-button [position-bottom]="'30px'" [position-right]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'yellow'"></amexio-floating-button>
+              <amexio-floating-button [position-bottom]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [type]="'red'"></amexio-floating-button>
+              <amexio-floating-button [position-top]="'30px'" [position-left]="'40px'" [label]="'top-left'" [icon]="'fa fa-snowflake-o'" [bg-color]="'blue'"></amexio-floating-button>       
+            </div>
+              </amexio-body>
+            </amexio-card>
             </amexio-column>
             </amexio-row>
             
@@ -130,11 +144,11 @@ export class FloatingButtonDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  asyncFlag : boolean;
-  toggle1 : boolean = false;
-  toggle2 : boolean = false;
-    constructor(private http: HttpClient) {
-      this.getHtmlAndTypeScriptCode();
+  asyncFlag: boolean;
+  toggle1: boolean = false;
+  toggle2: boolean = false;
+  constructor(private http: HttpClient) {
+    this.getHtmlAndTypeScriptCode();
   }
   getDta() {
     this.asyncFlag = true;
@@ -148,7 +162,7 @@ export class FloatingButtonDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/forms/floatingbutton/form.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/floatingbutton/form.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -156,7 +170,7 @@ export class FloatingButtonDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/forms/floatingbutton/form.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/forms/floatingbutton/form.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -169,18 +183,18 @@ export class FloatingButtonDemo {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 
-  onFloatingButtonClick1(event :any){
+  onFloatingButtonClick1(event: any) {
     this.toggle1 = !this.toggle1;
     this.toggle2 = false;
   }
 
-  onFloatingButtonClick2(event :any){
+  onFloatingButtonClick2(event: any) {
     this.toggle2 = !this.toggle2;
     this.toggle1 = false;
   }

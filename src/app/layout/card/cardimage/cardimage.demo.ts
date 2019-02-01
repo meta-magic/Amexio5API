@@ -3,7 +3,7 @@
  */
 
 import {Component} from '@angular/core'
-import { HttpClient } from '@angular/common/http';
+import {Http} from "@angular/http";
 
 @Component({
   selector: 'card-image-demo',
@@ -14,7 +14,7 @@ export class CardImageDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   flag: boolean;
-  constructor(private http: HttpClient) {
+  constructor(private http: Http) {
     this.flag = true;
     this.getHtmlAndTypeScriptCode();
   }
@@ -25,16 +25,16 @@ export class CardImageDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/card/cardimage/layout.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
+    this.http.get('assets/data/code/layout/card/cardimage/layout.html').subscribe(data => {
+      responseHtml = data.text();
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/card/cardimage/layout.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
+    this.http.get('assets/data/code/layout/card/cardimage/layout.text').subscribe(data => {
+      responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

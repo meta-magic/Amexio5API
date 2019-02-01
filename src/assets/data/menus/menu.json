@@ -14,29 +14,30 @@
             "link": "d3-charts",
             "icon": "fa fa-openid fa-fw"
         },
-      {
+        {
             "text": "Layouts",
-            "badge": "1",
+            "badge": "2",
             "icon": "fa fa-desktop fa-fw",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "layout/accordion-demo",
+                    "link": "accordion",
                     "badge": "U"
                 },
                 {
                     "text": "Border Layout",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "link": "layout/border-demo"
+                    "link": "border",
+                    "badge": "U"
                 },
                 {
                     "text": "Box",
-                    "link": "layout/box-demo",
+                    "link": "box-demo",
                     "icon": "fa fa-square fa-fw"
                 },
                 {
                     "text": "Column",
-                    "link": "layout/column-demo",
+                    "link": "column-demo",
                     "icon": "fa fa-columns fa-fw"
                 },
                 {
@@ -44,12 +45,12 @@
                     "icon": "fa fa-id-card-o fa-fw",
                     "children": [{
                             "text": "Form",
-                            "link": "layout/card-form-demo",
+                            "link": "card-form-demo",
                             "icon": "fa fa-leaf fa-fw"
                         },
                         {
                             "text": "Image",
-                            "link": "layout/card-image-demo",
+                            "link": "card-image-demo",
                             "icon": "fa fa-leaf fa-fw"
                         }
                     ]
@@ -57,12 +58,12 @@
                 {
                     "text": "Column Vertical",
                     "icon": "fa fa-pause fa-fw",
-                    "link": "layout/vertical-layout"
+                    "link": "vertical-layout"
                 },
                 {
                     "text": "Column Horizontal",
                     "icon": "fa fa-align-justify fa-fw",
-                    "link": "layout/horizontal-layout"
+                    "link": "horizontal-layout"
                 },
                 {
                     "text": "Grid Layout",
@@ -70,28 +71,28 @@
                     "children": [{
                             "text": "Grid Layout Basic",
                             "icon": "fa fa-indent fa-fw",
-                            "link": "layout/gridlayout-demo"
+                            "link": "gridlayout-demo"
                         },
                         {
                             "text": "gridlayout-Ex1",
                             "icon": "fa fa-indent fa-fw",
-                            "link": "layout/gridlayout-demo-exp1"
+                            "link": "gridlayout-demo-exp1"
                         },
                         {
                             "text": "gridlayout-Ex2",
                             "icon": "fa fa-indent fa-fw",
-                            "link": "layout/gridlayout-demo-exp2"
+                            "link": "gridlayout-demo-exp2"
                         },
                         {
                             "text": "gridlayout-Ex3",
                             "icon": "fa fa-indent fa-fw",
-                            "link": "layout/gridlayout-demo-exp3"
+                            "link": "gridlayout-demo-exp3"
                         }
                     ]
                 },
                 {
                     "text": "Row",
-                    "link": "layout/row-demo",
+                    "link": "row-demo",
                     "icon": "fa fa-bars fa-fw"
                 }
             ]
@@ -209,7 +210,7 @@
                 {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "panes/window-demo",
+                    "link": "window",
                     "badge": "U"
 
                 }
@@ -753,12 +754,12 @@
             "children": [{
                     "text": "Image",
                     "icon": "fa fa-picture-o fa-fw",
-                    "link": "media-demo/image"
+                    "link": "image-demo"
                 },
                 {
                     "text": "Video Player",
                     "icon": "fa fa-video-camera fa-fw",
-                    "link": "media-demo/video"
+                    "link": "video-demo"
                 }
             ]
         },

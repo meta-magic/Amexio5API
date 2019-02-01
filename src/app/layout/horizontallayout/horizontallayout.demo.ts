@@ -3,10 +3,10 @@
  */
 
 import { Component } from '@angular/core'
-import { HttpClient } from '@angular/common/http';
+import { Http } from "@angular/http";
 
 @Component({
-  selector: 'horizontal-layout',
+  selector: 'layout-demo',
   templateUrl: './horizontallayout.demo.html'
 
 })
@@ -15,7 +15,7 @@ export class horizontalLayoutDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -25,16 +25,16 @@ export class horizontalLayoutDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/horizontallayout/layout.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
+    this.http.get('assets/data/code/layout/horizontallayout/layout.html').subscribe(data => {
+      responseHtml = data.text();
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/horizontallayout/layout.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
+    this.http.get('assets/data/code/layout/horizontallayout/layout.text').subscribe(data => {
+      responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

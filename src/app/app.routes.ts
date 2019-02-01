@@ -10,9 +10,6 @@
     {
       path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
     },
-    { 
-      path: 'google-media', loadChildren: './forms/socialmedia/google/google.demo.module#GoogleSocialMediaModule'
-    },
     {
       path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
     },
@@ -134,7 +131,7 @@
     {
       path: 'sidenav-page', loadChildren: './navigation/sidenavpage/sidenavpage.demo.module#sideNavDemoPageModule'
     },
-    { 
+    {
       path: 'navbar-demo', loadChildren: './navigation/navbar/navbar.demo.module#NavBarDemoModule'
     },
     {
@@ -143,13 +140,32 @@
     {
       path: 'toolbar-demo', loadChildren: './navigation/toolbar/toolbar.demo.module#ToolbarDemoModule'
     },
-    /** Media*/ 
+    /** Media*/
     {
-      path: 'media-demo', loadChildren: './media/media.module#MediaModule'
+      path: 'image-demo', loadChildren: './media/image/image.demo.module#ImageDemoModule'
+    },
+    {
+      path: 'video-demo', loadChildren: './media/video/video.demo.module#VideoDemoModule'
     },
     /**Layout Routes*/
     {
-      path: 'layout', loadChildren: './layout/layout.module#LayoutModule'
+      path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'
+    },
+
+    {
+      path: 'card-image-demo', loadChildren: './layout/card/cardimage/cardimage.demo.module#CardImageDemoModule'
+    },
+    {
+      path: 'column-demo', loadChildren: './layout/column/column.demo.module#ColumnDemoModule'
+    },
+    {
+      path: 'row-demo', loadChildren: './layout/row/row.demo.module#RowDemoModule'
+    },
+    {
+      path: 'vertical-layout', loadChildren: './layout/verticallayout/verticallayout.demo.module#VerticalLayoutDemoModule'
+    },
+    {
+      path: 'horizontal-layout', loadChildren: './layout/horizontallayout/horizontallayout.demo.module#horizontalLayoutDemoModule'
     },
     {
       path: 'basic-tab-demo', loadChildren: './layout/tab/tab.demo.module#TabDemoModule'
@@ -159,6 +175,9 @@
     },
     {
       path: 'icon-tab-demo', loadChildren: './layout/tab/iconwithtab/iconwithtab.demo.module#IconWithTabDemoModule'
+    },
+    {
+      path: 'box-demo', loadChildren: './layout/box/box.demo.module#BoxDemoModule'
     },
     {
       path: 'scrollable-tab-demo', loadChildren: './layout/tab/scrollabletab/scrollabletab.demo.module#ScrollableTabDemoModule'
@@ -182,7 +201,10 @@
       path: 'step-box-icon', loadChildren: './layout/steps/stepbox-icon/stepbox.icon.demo.module#StepBoxIconDemoModule'
     },
     {
-      path: 'panes', loadChildren: './panes/panes.module#PanesModule'
+      path: 'timeline', loadChildren: './data/timeline/timeline.demo.module#TimelineDemoModule'
+    },
+    {
+      path: 'accordion', loadChildren: './panes/accordion/accordion.demo.module#AccordionDemoModule'
     },
     {
       path: 'panel', loadChildren: './panes/panel/panel.demo.module#PanelDemoModule'
@@ -214,6 +236,10 @@
     {
       path: 'dialouge', loadChildren: './panes/dialogue/dialogue.demo.module#DialogueDemoModule'
     },
+    {
+      path: 'border', loadChildren: './layout/border/border.demo.module#BorderDemoRoutingModule'
+    },
+
     /**Chart Routes*/
     {
       path: 'area-chart-demo', loadChildren: './charts/googlechart/areachart/areachart.demo.module#AreaChartDemoModule'
@@ -363,6 +389,18 @@
       path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
     },
     // Grid Layout
+    {
+      path: 'gridlayout-demo', loadChildren: './layout/gridlayout/gridlayoutbasic/gridlayout.demo.module#GridLayoutDemoModule'
+    },
+    {
+      path: 'gridlayout-demo-exp1', loadChildren: './layout/gridlayout/gridlayoutone/gridlayout.demo.module#GridLayoutDemoModule'
+    },
+    {
+      path: 'gridlayout-demo-exp2', loadChildren: './layout/gridlayout/gridlayouttwo/gridlayout.demo.module#GridLayoutDemoModule'
+    },
+    {
+      path: 'gridlayout-demo-exp3', loadChildren: './layout/gridlayout/gridlayoutthree/gridlayout.demo.module#GridLayoutDemoModule'
+    },
     /*Drag and Drop*/
     {
       path: 'within-tree', loadChildren: './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'

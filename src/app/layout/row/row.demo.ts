@@ -3,7 +3,7 @@
  */
 
 import {Component} from '@angular/core'
-import { HttpClient } from '@angular/common/http';
+import {Http} from "@angular/http";
 
 @Component({
   selector: 'row-demo', template: `
@@ -101,7 +101,7 @@ export class RowDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: HttpClient) {
+  constructor(private http: Http) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -111,16 +111,16 @@ export class RowDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/row/layout.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
+    this.http.get('assets/data/code/layout/row/layout.html').subscribe(data => {
+      responseHtml = data.text();
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/row/layout.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
+    this.http.get('assets/data/code/layout/row/layout.text').subscribe(data => {
+      responseTs = data.text();
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
