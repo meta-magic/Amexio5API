@@ -39,7 +39,7 @@ import {TabDemo} from './tab/basictab/tab.demo';
         CommonModule,
         FormsModule,
         HttpClientModule,
-        SharedModule,
+        SharedModule.forRoot(),
         AmexioWidgetModule,
         RouterModule.forChild(PANES_ROUTE),
     ],

@@ -218,11 +218,7 @@
         {
             "text": "Forms",
             "icon": "fa fa-clone fa-fw",
-            "children": [{
-                    "text": "Fieldset",
-                    "icon": "fa fa-id-card-o fa-fw",
-                    "link": "fieldset"
-                },
+            "children": [
                 {
                     "text": "Form (HTML)",
                     "icon": "fa fa-window-maximize fa-fw",
@@ -267,29 +263,29 @@
             "children": [{
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o fa-fw",
-                    "link": "singlecheckbox-demo",
+                    "link": "forms-Input/singlecheckbox-demo",
                     "badge": "U"
                 },
                 {
                     "text": "Checkbox Group",
                     "icon": "fa fa-list fa-fw",
-                    "link": "checkboxgroup-demo",
+                    "link": "forms-Input/checkboxgroup-demo",
                     "badge": "U"
                 },
                 {
                     "text": "Chips",
                     "icon": "fa fa-chevron-circle-down fa-fw",
-                    "link": "chips-demo"
+                    "link": "forms-Input/chips-demo"
                 },
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card fa-fw",
-                    "link": "credit-card-demo"
+                    "link": "forms-Input/credit-card-demo"
                 },
                 {
                     "text": "Date & Time Picker",
                     "icon": "fa fa-calendar fa-fw",
-                    "link": "date-picker-demo",
+                    "link": "forms-Input/date-picker-demo",
                     "badge": "U"
 
                 },
@@ -300,137 +296,137 @@
                     "children": [{
                             "text": "Basic",
                             "icon": "fa fa-caret-down fa-fw",
-                            "link": "dropdownbasic"
+                            "link": "forms-Input/dropdownbasic"
                         },
                         {
                             "text": "Filter Search",
                             "icon": "fa fa-arrow-circle-down fa-fw",
-                            "link": "dropdownfilter"
+                            "link": "forms-Input/dropdownfilter"
                         },
                         {
                             "text": "Multi Select",
                             "icon": "fa fa-chevron-circle-down fa-fw",
-                            "link": "dropdownmulti"
+                            "link": "forms-Input/dropdownmulti"
                         },
                         {
                             "text": "Template",
                             "icon": "fa fa-chevron-circle-down fa-fw",
-                            "link": "dropdowntemplate"
+                            "link": "forms-Input/dropdowntemplate"
                         }
                     ]
                 },
                 {
                     "text": "Email Field",
                     "icon": "fa fa-envelope-o fa-fw",
-                    "link": "email-demo",
+                    "link": "forms-Input/email-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "File Upload",
                     "icon": "fa fa-file fa-fw",
-                    "link": "fileupload-demo",
+                    "link": "forms-Input/fileupload-demo",
                     "badge": "U"
                 },
                 {
                     "text": "Facebook Login",
                     "icon": "fa fa-facebook fa-fw",
-                    "link": "facebook-login-demo",
+                    "link": "forms-Input/facebook-login-demo",
                     "badge": "New"
                 },
                 {
                     "text": "Google Login",
                     "icon": "fa fa-google fa-fw",
-                    "link": "google-login-demo",
+                    "link": "forms-Input/google-login-demo",
                     "badge": "New"
                 },
                 {
                     "text": "LinkedIn Login",
                     "icon": "fa fa-linkedin-square fa-fw",
-                    "link": "linkedin-login-demo",
+                    "link": "forms-Input/linkedin-login-demo",
                     "badge": "New"
                 },
                 {
                     "text": "Label",
                     "icon": "fa fa-terminal fa-fw",
-                    "link": "label-demo",
+                    "link": "forms-Input/label-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Number Field",
                     "icon": "fa fa-phone fa-fw",
-                    "link": "number-demo",
+                    "link": "forms-Input/number-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Password Field",
                     "icon": "fa fa-text-width fa-fw",
-                    "link": "password-demo",
+                    "link": "forms-Input/password-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Radio Group",
                     "icon": "fa fa-stop-circle-o fa-fw",
-                    "link": "radiogroup-demo",
+                    "link": "forms-Input/radiogroup-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Rating",
                     "icon": "fa fa-star-half-empty fa-fw",
-                    "link": "rating-demo"
+                    "link": "forms-Input/rating-demo"
                 },
                 {
                     "text": "Recaptcha",
                     "icon": "fa fa-recycle fa-fw",
-                    "link": "recaptcha-demo"
+                    "link": "forms-Input/recaptcha-demo"
                 },
                 {
                     "text": "Search Box",
                     "icon": "fa fa-search fa-fw",
-                    "link": "searchbox-demo"
+                    "link": "forms-Input/searchbox-demo"
                 },
                 {
                     "text": "Slider",
                     "icon": "fa fa-sliders fa-fw",
-                    "link": "slider-demo",
+                    "link": "forms-Input/slider-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Type Ahead",
                     "icon": "fa fa-search-minus fa-fw",
-                    "link": "typeahead-demo",
+                    "link": "forms-Input/typeahead-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Tag Field",
                     "icon": "fa fa-tags fa-fw",
-                    "link": "taginput-demo",
+                    "link": "forms-Input/taginput-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Text Field",
-                    "link": "textinput",
+                    "link": "forms-Input/textinput",
                     "badge": "U",
                     "icon": "fa fa-file-text-o fa-fw"
                 },
                 {
                     "text": "TextArea Field",
                     "icon": "fa fa-text-width fa-fw",
-                    "link": "textarea-demo",
+                    "link": "forms-Input/textarea-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Toggle",
                     "icon": "fa fa-toggle-on fa-fw",
-                    "link": "toggle-demo",
+                    "link": "forms-Input/toggle-demo",
                     "badge": "U"
 
                 }

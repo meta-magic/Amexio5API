@@ -21,7 +21,7 @@ import { RouterModule } from "@angular/router";
         CommonModule, 
         FormsModule, 
         HttpClientModule, 
-        SharedModule, 
+        SharedModule.forRoot(), 
         AmexioWidgetModule,
         RouterModule.forChild(MEDIA_ROUTE),
     ],
