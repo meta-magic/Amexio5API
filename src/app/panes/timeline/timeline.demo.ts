@@ -2,33 +2,33 @@
  * Created by pratik on 16/1/18.
  */
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
- selector: 'timeline-demo',
- templateUrl:'timeline.demo.html'
+  selector: 'timeline-demo',
+  templateUrl: 'timeline.demo.html'
 })
 
 export class TimelineDemoComponent {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
-  asyncFlag : boolean;
-  sampledatachip1:any;
-  sampledatachip2:any;
+  asyncFlag: boolean;
+  sampledatachip1: any;
+  sampledatachip2: any;
   constructor(private http: HttpClient) {
-    this.sampledatachip1=[{
+    this.sampledatachip1 = [{
       icon: 'fa fa-linkedin-square',
       label: 'Aarf Karsh Hamid',
       color: 'grey'
     }]
-    this.sampledatachip2=[{
+    this.sampledatachip2 = [{
       icon: 'fa fa-linkedin-square',
       label: 'Ketan Gote',
       color: 'grey'
     }]
     this.getHtmlAndTypeScriptCode();
-    
+
   }
   getDta() {
     this.asyncFlag = true;
@@ -42,7 +42,7 @@ export class TimelineDemoComponent {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/timeline/timeline.html',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/layout/timeline/timeline.html', { responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -50,7 +50,7 @@ export class TimelineDemoComponent {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/timeline/timeline.text',{responseType: 'text'}).subscribe(data => {
+    this.http.get('assets/data/code/layout/timeline/timeline.text', { responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
@@ -63,9 +63,9 @@ export class TimelineDemoComponent {
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {
       this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
+      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
   }
 }

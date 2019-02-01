@@ -6,7 +6,8 @@ import {Component} from '@angular/core'
 import {Http} from "@angular/http";
 
 @Component({
-  selector: 'context-menu-tab-demo', templateUrl:'contextmenutab.demo.html'
+  selector: 'context-menu-tab-demo',
+  templateUrl:'contextmenutab.demo.html'
 
   
 })

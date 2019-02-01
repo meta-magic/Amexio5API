@@ -3,8 +3,8 @@
  */
 
 import { Component } from '@angular/core'
-import { Http } from "@angular/http";
 import { DyanmicVerticalTabComponent } from './dynamicverticaltabdemo.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'enhanced-vertical-tab-demo', templateUrl: 'enhancedverticaltab.demo.html'
@@ -14,7 +14,7 @@ export class EnhancedVerticalTabDemo {
   typeScriptCode: string;
   typeScriptCode2: string;
   copyMsgArray: any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
   // title = 'component';
@@ -40,23 +40,23 @@ export class EnhancedVerticalTabDemo {
     let code: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/tab/enhancedverticaltab/tab.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/layout/tab/enhancedverticaltab/tab.html',{ responseType: 'text' }).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/enhancedverticaltab/tab.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/layout/tab/enhancedverticaltab/tab.text',{ responseType: 'text' }).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;
     });
       //TS FILE
       this.http.get('assets/data/code/layout/tab/enhancedverticaltab/dynamictab.text').subscribe(data => {
-        code = data.text();
+        code = data;
     }, error => {
     }, () => {
         this.typeScriptCode2 = code;

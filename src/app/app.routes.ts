@@ -10,9 +10,7 @@
     {
       path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
     },
-    { 
-      path: 'google-media', loadChildren: './forms/socialmedia/google/google.demo.module#GoogleSocialMediaModule'
-    },
+
     {
       path: 'textinput', loadChildren: './forms/text/text.demo.module#TextDemoModule'
     },
@@ -143,7 +141,7 @@
     {
       path: 'toolbar-demo', loadChildren: './navigation/toolbar/toolbar.demo.module#ToolbarDemoModule'
     },
-    /** Media*/ 
+    /** Media Routes*/ 
     {
       path: 'media-demo', loadChildren: './media/media.module#MediaModule'
     },
@@ -151,51 +149,9 @@
     {
       path: 'layout', loadChildren: './layout/layout.module#LayoutModule'
     },
-    {
-      path: 'basic-tab-demo', loadChildren: './layout/tab/tab.demo.module#TabDemoModule'
-    },
-    {
-      path: 'closable-tab-demo', loadChildren: './layout/tab/closabletab/closabletab.demo.module#ClosableTabDemoModule'
-    },
-    {
-      path: 'icon-tab-demo', loadChildren: './layout/tab/iconwithtab/iconwithtab.demo.module#IconWithTabDemoModule'
-    },
-    {
-      path: 'scrollable-tab-demo', loadChildren: './layout/tab/scrollabletab/scrollabletab.demo.module#ScrollableTabDemoModule'
-    },
-    {
-      path: 'enhanced-tab-demo', loadChildren: './layout/tab/enhancedtab/enhancedtab.demo.module#EnhancedTabDemoModule'
-    },
-    {
-      path: 'vertical-tab-demo', loadChildren: './layout/tab/verticaltab/verticaltab.demo.module#VerticalTabDemoModule'
-    },
-    {
-      path: 'verticalright-tab-demo', loadChildren: './layout/tab/verticalrighttab/verticalrighttab.demo.module#VerticalRightTabDemoModule'
-    },
-    {
-      path: 'enhanced-vertical-tab-demo', loadChildren: './layout/tab/enhancedverticaltab/enhancedverticaltab.demo.module#EnhancedVerticalTabDemoModule'
-    },
-    {
-      path: 'step-box', loadChildren: './layout/steps/stepbox/stepbox.demo.module#StepBoxDemoModule'
-    },
-    {
-      path: 'step-box-icon', loadChildren: './layout/steps/stepbox-icon/stepbox.icon.demo.module#StepBoxIconDemoModule'
-    },
+    /** panes Routes*/
     {
       path: 'panes', loadChildren: './panes/panes.module#PanesModule'
-    },
-    {
-      path: 'panel', loadChildren: './panes/panel/panel.demo.module#PanelDemoModule'
-    },
-
-    {
-      path: 'carousel', loadChildren: './panes/carousel/carousel.demo.module#CarouselDemoModule'
-    },
-    {
-      path: 'fieldset', loadChildren: './panes/fieldset/fieldset.demo.module#FieldSetDemoModule'
-    },
-    {
-      path: 'window', loadChildren: './panes/window/window.demo.module#WindowDemoModule'
     },
 
     {
@@ -211,9 +167,7 @@
     {
       path:'html-form-demo',loadChildren :'./panes/form-html/template-driven/form.demo.module#HtmlFormDemoModule'
     },
-    {
-      path: 'dialouge', loadChildren: './panes/dialogue/dialogue.demo.module#DialogueDemoModule'
-    },
+  
     /**Chart Routes*/
     {
       path: 'area-chart-demo', loadChildren: './charts/googlechart/areachart/areachart.demo.module#AreaChartDemoModule'

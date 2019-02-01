@@ -103,12 +103,12 @@
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent fa-fw",
-                    "link": "carousel"
+                    "link": "panes/carousel-demo"
                 },
                 {
                     "text": "Dialogue",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "dialouge",
+                    "link": "panes/dialogue-demo",
                     "badge": "U"
 
                 },
@@ -116,14 +116,14 @@
                 {
                     "text": "Fieldset",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "link": "fieldset",
+                    "link": "panes/fieldset-demo",
                     "badge": "U"
 
                 },
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "panel",
+                    "link": "panes/panel-demo",
                     "badge": "U"
 
                 },
@@ -133,12 +133,12 @@
                     "badge": "U",
                     "children": [{
                             "text": "Step Box",
-                            "link": "step-box",
+                            "link": "panes/step-box-demo",
                             "icon": "fa fa-leaf fa-fw"
                         },
                         {
                             "text": "Step Box Icon",
-                            "link": "step-box-icon",
+                            "link": "panes/stepbox-icon-demo",
                             "icon": "fa fa-leaf fa-fw"
                         }
                     ]
@@ -152,27 +152,27 @@
                             "icon": "fa fa-indent fa-fw",
                             "children": [{
                                     "text": "Basic",
-                                    "link": "basic-tab-demo",
+                                    "link": "panes/basic-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
                                 },
                                 {
                                     "text": "Closable",
-                                    "link": "closable-tab-demo",
+                                    "link": "panes/closable-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
                                 },
                                 {
                                     "text": "Tab with Icon",
-                                    "link": "icon-tab-demo",
+                                    "link": "panes/icon-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
                                 },
                                 {
                                     "text": "Scrollable",
-                                    "link": "scrollable-tab-demo",
+                                    "link": "panes/scrollable-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
                                 },
                                 {
                                     "text": "Enhanced",
-                                    "link": "enhanced-tab-demo",
+                                    "link": "panes/enhanced-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
                                 },
                                 {
@@ -188,17 +188,17 @@
                             "badge": "1",
                             "children": [{
                                     "text": "Left Aligned",
-                                    "link": "vertical-tab-demo",
+                                    "link": "panes/vertical-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
                                 },
                                 {
                                     "text": "Right Aligned",
-                                    "link": "verticalright-tab-demo",
+                                    "link": "panes/verticalright-tab-demo",
                                     "icon": "fa fa-leaf fa-fw"
                                 },
                                 {
                                     "text": "Enhanced",
-                                    "link": "enhanced-vertical-tab-demo",
+                                    "link": "panes/enhanced-vertical-tab-demo",
                                     "icon": "fa fa-leaf fa-fw",
                                     "badge": "New"
                                 }

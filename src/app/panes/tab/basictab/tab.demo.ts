@@ -2,15 +2,16 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
+import {Component} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 
 @Component({
-  selector: 'verticalright-tab-demo', 
-  templateUrl: './verticalrighttab.demo.html',
+  selector: 'basic-tab-demo',
+  templateUrl:'./tab.demo.html',
+  
 })
-export class VerticalRightTabDemo {
+export class TabDemo {
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
@@ -24,7 +25,7 @@ export class VerticalRightTabDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/tab/verticalrighttab/tab.html',{ responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/basictab/layout.html',{ responseType: 'text' }).subscribe(data => {
       responseHtml = data;
     }, error => {
     }, () => {
@@ -32,7 +33,7 @@ export class VerticalRightTabDemo {
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/verticalrighttab/tab.text',{ responseType: 'text' }).subscribe(data => {
+    this.http.get('assets/data/code/layout/tab/basictab/tab.text',{ responseType: 'text' }).subscribe(data => {
       responseTs = data;
     }, error => {
     }, () => {
