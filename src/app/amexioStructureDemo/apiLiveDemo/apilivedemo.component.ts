@@ -1,13 +1,12 @@
 
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'amexio-api-livedemo',
    templateUrl: 'apilivedemo.component.html',
 })
 
-export class AmexioApiLiveDemoComponent implements OnInit {
-
+export class AmexioApiLiveDemoComponent {
 
   @Input('disabled') disabled : boolean;
   @Input('stackblitz-url') stackblitzUrl: string;
@@ -15,9 +14,4 @@ export class AmexioApiLiveDemoComponent implements OnInit {
   constructor() {
 
   }
-
-  ngOnInit() {
-
-  }
-
 }

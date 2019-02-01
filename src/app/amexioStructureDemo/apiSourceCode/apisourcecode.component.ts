@@ -18,7 +18,6 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   dataSource: any;
 
   constructor(private http: HttpClient) {
-
   }
 
   ngOnInit() {
@@ -27,17 +26,19 @@ export class AmexioApiSourceCodeComponent implements OnInit {
     this.loadDataSourceUrl();
 
   }
+  // LOADING HTML URL
   loadHtmlUrl() {
     this.http.get(this.htmlUrl, { responseType: 'text' }).subscribe(data => {
       this.htmlCode = data;
     });
   }
+  // LOADING TYPESCRIPT URL
   loadTsUrl() {
     this.http.get(this.tsUrl, { responseType: 'text' }).subscribe(data => {
       this.typeScriptCode = data;
     });
   }
-
+// LOADING DATA SOURCE URL
   loadDataSourceUrl() {
     this.http.get(this.datacodeUrl, { responseType: 'text' }).subscribe(data => {
       this.dataSource = data;

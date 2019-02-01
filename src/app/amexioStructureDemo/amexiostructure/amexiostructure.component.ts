@@ -14,7 +14,7 @@ export class AmexioStructureComponent implements OnInit, AfterContentInit {
 
   @Input('description') description: string;
 
-
+// 
   amexoiApiRef: AmexioApiReferenceComponent;
   @ContentChildren(AmexioApiReferenceComponent) apiRefernce: QueryList<AmexioApiReferenceComponent>;
   listOfAPIReference: AmexioApiReferenceComponent[];
