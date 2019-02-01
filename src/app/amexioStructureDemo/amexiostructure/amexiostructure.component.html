@@ -7,12 +7,12 @@
         <span>
             {{comData.description}}
         </span>
-      <amexio-tab-view [closable]="false">
-        <amexio-tab title="Demo" [active]="false" [closable]="false" [disabled]="false">
+      <amexio-tab-view [closable]="true">
+        <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
           <ng-content select="amexio-api-demo"></ng-content>
         </amexio-tab>
 
-        <amexio-tab title="Api Reference" [active]="true" [closable]="false" [disabled]="false">
+        <amexio-tab title="Api Reference" [active]="false" [closable]="false" [disabled]="false">
           <amexio-api-reference [data]="comData.apiRefMetadata" ></amexio-api-reference>
         </amexio-tab>
 
