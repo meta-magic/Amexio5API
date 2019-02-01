@@ -1,0 +1,29 @@
+<div style="overflow-y: scroll">
+  <amexio-vertical-tab-view>
+
+    <ng-container *ngIf="htmlUrl">
+      <amexio-tab title="HTML" [active]="true">
+        <ng-container *ngIf=" htmlCode">
+          <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+        </ng-container>
+      </amexio-tab>
+    </ng-container>
+
+    <ng-container *ngIf="tsUrl">
+      <amexio-tab title="Type Script">
+        <ng-container *ngIf=" tsUrl && typeScriptCode">
+          <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+        </ng-container>
+      </amexio-tab>
+    </ng-container>
+
+    <ng-container *ngIf="datacodeUrl">
+      <amexio-tab title="Data Source">
+        <ng-container *ngIf=" dataSource">
+          <prism-block [code]="dataSource" [language]="'json'"></prism-block>
+        </ng-container>
+      </amexio-tab>
+    </ng-container>
+
+  </amexio-vertical-tab-view>
+</div>
