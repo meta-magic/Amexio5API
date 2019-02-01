@@ -1,4 +1,4 @@
-import { Component, Input, Renderer2, ElementRef, AfterViewInit ,NgModule} from '@angular/core';
+import {Component, Input, Renderer2, ElementRef, AfterViewInit, NgModule, ModuleWithProviders} from '@angular/core';
 declare var Prism: any;
 import {CommonModule, TitleCasePipe} from "@angular/common";
 /* Import prism core */
@@ -12,6 +12,7 @@ import { AmexioApiDemoComponent } from "./amexioStructureDemo/apiDemo/amexioapid
 import { AmexioApiSourceCodeComponent } from "./amexioStructureDemo/apiSourceCode/apisourcecode.component";
 import { AmexioApiLiveDemoComponent } from "./amexioStructureDemo/apiLiveDemo/apilivedemo.component";
 import { AmexioWidgetModule } from 'amexio-ng-extensions';
+import {RestCallService} from "./services/restcall.service";
 
 
 @Component({
@@ -43,7 +44,13 @@ export class PrismComponent implements AfterViewInit {
   imports: [CommonModule , AmexioWidgetModule],
   exports: [PrismComponent,AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
   declarations: [PrismComponent,AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
-  providers: [TitleCasePipe],
+
 })
 export class SharedModule {
+  static forRoot(): ModuleWithProviders {
+    return {
+      ngModule: SharedModule,
+      providers: [TitleCasePipe, RestCallService],
+    };
+  }
 }

@@ -1,43 +1,29 @@
 /**
  * Created by anaghak07 on 13/3/18.
  */
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {RestCallService} from "../../services/restcall.service";
 
 @Component({
   selector: 'box-demo',
   templateUrl: './box.demo.html',
 })
-export class BoxDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+export class BoxDemo implements OnInit{
   copyMsgArray: any[];
   age:number=10;
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+  comData: any;
+  constructor(private _rCService: RestCallService) {}
+
+  ngOnInit(): void {
+   this.getComponentData();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs:any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/box/box.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
+  getComponentData() {
+    this._rCService.getCall('assets/test.json').subscribe(
+      (res: any) => {
+      this.comData = res;
     });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/box/box.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

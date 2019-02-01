@@ -32,15 +32,15 @@ import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
          horizontalLayoutDemo, CardImageDemo,
           CardFormDemo,ColumnDemo,BorderDemoComponent,AccordionDemoComponent,
           GridLayoutDemo,GridLayoutDemoOne,GridLayoutDemoTwo,GridLayoutDemoThree
-        
-        
-        
+
+
+
         ],
     imports: [
         CommonModule,
         FormsModule,
         HttpClientModule,
-        SharedModule,
+        SharedModule.forRoot(),
         AmexioWidgetModule,
         RouterModule.forChild(LAYOUT_ROUTE),
     ],

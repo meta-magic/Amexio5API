@@ -1,0 +1,113 @@
+{
+  "title": "Amexio Box",
+  "description": "Amexio Box can be easily wrapped around any other component and configure using the different responsive styling.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-box>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "border",
+          "description": "top / right / left / bottom / all / top-bottom / left-right",
+          "version": "4.1 onwards",
+          "type": "string",
+          "default": "none"
+        },
+        {
+          "name": "border-color",
+          "description": "red / blue / green / yellow / brown / purple",
+          "version": "4.1 onwards",
+          "type": "string",
+          "default": "theme's border color"
+        },
+        {
+          "name": "background-color",
+          "description": "red / blue / green / yellow / brown / purple",
+          "version": "4.1 onwards",
+          "type": "string",
+          "default": "theme's background color"
+        },
+        {
+          "name": "padding",
+          "description": "Padding to all sides",
+          "version": "4.1 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "box-height",
+          "description": "Height to box",
+          "version": "4.1.2 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "box-width",
+          "description": "Width to box",
+          "version": "4.1.2 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "border-dotted",
+          "description": "Dotted border",
+          "version": "4.1.8 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "align",
+          "description": "Align to box \"left\" \"right\" \"center\"",
+          "version": "4.1.8 onwards",
+          "type": "string",
+          "default": "left"
+        },
+        {
+          "name": "closable",
+          "description": "Cosable box",
+          "version": "4.1.8 onwards",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    }
+  ],
+  "sourceMetadata":{
+    "htmlUrl": "layout/box/box.html",
+    "tsUrl":"layout/box/box.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata":{
+    "disabled":false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v41-box?embed=1&file=app/forms/box/box.demo.html"
+  }
+}
