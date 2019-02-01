@@ -2,7 +2,7 @@
  * Created by anaghak07 on 13/3/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {RestCallService} from "../../services/restcall.service";
+import {RestCallService} from "../../apimetadata/services/restcall.service";
 
 @Component({
   selector: 'box-demo',

@@ -1,6 +1,7 @@
 
 import { Component, OnInit, Input} from '@angular/core';
-import {RestCallService} from '../../services/restcall.service';
+import {RestCallService} from '../../apimetadata/services/restcall.service';
+import {ComDataInterface} from '../../apimetadata/models/component.structure';
 @Component({
   selector: 'amexio-api-structure',
   templateUrl: 'amexiostructure.component.html',
@@ -8,18 +9,14 @@ import {RestCallService} from '../../services/restcall.service';
 
 export class AmexioStructureComponent implements OnInit {
 
-  @Input('title') title: string;
-
-  @Input('description') description: string;
-
   @Input('url') url: string;
 
-  comData: any;
+  @Input('custom-com-data') customComData: ComDataInterface;
 
-  constructor(private _rCService: RestCallService) {
+  comData: ComDataInterface;
 
+  constructor(private _rCService: RestCallService) {}
 
-  }
   ngOnInit() {
     if (this.url) {
       this.getComponentData();
@@ -28,8 +25,30 @@ export class AmexioStructureComponent implements OnInit {
 
   getComponentData() {
     this._rCService.getCall(this.url).subscribe(
-      (res: any) => {
-        this.comData = res;
+      (res: ComDataInterface) => {
+        if (this.customComData) {
+          this.addCustomData(res);
+        } else {
+          this.comData = res;
+        }
       });
   }
+
+  addCustomData(response: ComDataInterface) {
+    if (this.customComData.title) {
+      response.title = this.customComData.title;
+    }
+    if (this.customComData.description) {
+      response.description = this.customComData.description;
+    }
+    if (this.customComData.sourceMetadata) {
+      response.sourceMetadata = this.customComData.sourceMetadata;
+    }
+    if (this.customComData.liveMetadata) {
+      response.liveMetadata = this.customComData.liveMetadata;
+    }
+    this.comData = response;
+  }
 }
+
+

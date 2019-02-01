@@ -12,7 +12,7 @@ import { AmexioApiDemoComponent } from "./amexioStructureDemo/apiDemo/amexioapid
 import { AmexioApiSourceCodeComponent } from "./amexioStructureDemo/apiSourceCode/apisourcecode.component";
 import { AmexioApiLiveDemoComponent } from "./amexioStructureDemo/apiLiveDemo/apilivedemo.component";
 import { AmexioWidgetModule } from 'amexio-ng-extensions';
-import {RestCallService} from "./services/restcall.service";
+import {RestCallService} from "./apimetadata/services/restcall.service";
 
 
 @Component({
