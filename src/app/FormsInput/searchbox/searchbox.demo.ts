@@ -1,14 +1,11 @@
 
-import { Component, HostListener, ElementRef, OnInit } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'searchbox-demo',
   templateUrl : './searchbox.demo.html',
 })
 export class SearchBox implements OnInit {
-  htmlCode: string;
-  typeScriptCode: string;
   copyMsgArray: any[];
 
   subject: string = "";
@@ -17,7 +14,7 @@ export class SearchBox implements OnInit {
   localData: any;
   searchdata: any[];
   bindData: any[] = [];
-  constructor(private http: HttpClient, private element: ElementRef) {
+  constructor( private element: ElementRef) {
     this.localData = [
 
       {
@@ -214,30 +211,6 @@ export class SearchBox implements OnInit {
     return ((value1 + "").startsWith(value2))
   }
 
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/forms/searchbox/form.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/forms/searchbox/form.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-
-  }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

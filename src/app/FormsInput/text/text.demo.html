@@ -1,0 +1,84 @@
+
+<amexio-api-structure [url]="''">
+  <amexio-api-demo>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Basic Text Field
+          </amexio-header>
+          <amexio-body>
+            <amexio-text-input field-label="Name" name="name" place-holder="Enter name" icon-feedback="true"></amexio-text-input>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Input Without Label & Icon feedback
+          </amexio-header>
+          <amexio-body>
+            <amexio-text-input name="name" place-holder="Enter name" has-label="false"></amexio-text-input>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Min/Max Validations
+          </amexio-header>
+          <amexio-body>
+            <amexio-text-input enable-popover="true" [enable-popover]="true" field-label="Name" name="name" place-holder="Enter name" [allow-blank]="false" error-msg="Please Enter Name" [min-length]="1" min-error-msg="Minimum 1 Char Required" [max-length]="10"
+                               max-error-msg="Maximum 10 Char Allowed" [icon-feedback]="true"></amexio-text-input>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Disabled Text Field
+          </amexio-header>
+          <amexio-body>
+            <amexio-text-input name="name" field-label="Name" place-holder="Enter name" disabled="true"></amexio-text-input>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Font Styling
+          </amexio-header>
+          <amexio-body>
+            <amexio-text-input field-label="Name" name="name" place-holder="Enter name" icon-feedback="true" font-style="italic"></amexio-text-input>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Font Size & Family Styling
+          </amexio-header>
+          <amexio-body>
+            <amexio-text-input [field-label]="'Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="false" [font-size]="'large'"></amexio-text-input>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Input with Pattern
+          </amexio-header>
+          <amexio-body>
+            <amexio-text-input name="name" [field-label]="'Name'" [place-holder]="'Enter name'" [pattern]="'[a-z]'" [icon-feedback]="true"></amexio-text-input>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
+  </amexio-api-demo>
+</amexio-api-structure>
