@@ -30,7 +30,7 @@ script:
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
   - git add src/assets/themes
   - git commit -m "[skip travis]  themes-updated"
-  - git push --force --quiet "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.4
+  - git push  "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.4
   - ng build --prod
   - pwd
 after_success: 
