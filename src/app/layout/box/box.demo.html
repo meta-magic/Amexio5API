@@ -1,6 +1,6 @@
 
-<ng-container *ngIf="comData">
-  <amexio-api-structure [title]="comData.title" [description]="comData.description">
+
+  <amexio-api-structure  [url]="'assets/componentjson/box.json'">
     <amexio-api-demo>
       <h2>Box Component</h2>
       <amexio-row>
@@ -78,14 +78,4 @@
       </amexio-row>
     </amexio-api-demo>
 
-    <amexio-api-reference [data]="comData.apiRefMetadata" >
-    </amexio-api-reference>
-    <amexio-api-sourcecode
-      [html-url]="comData.sourceMetadata.htmlUrl"
-      [ts-url]="comData.sourceMetadata.tsUrl">
-    </amexio-api-sourcecode>
-    <amexio-api-livedemo [disabled]="false" [stackblitz-url]="comData.liveMetadata.stackblitzUrl">
-    </amexio-api-livedemo>
   </amexio-api-structure>
-
-</ng-container>

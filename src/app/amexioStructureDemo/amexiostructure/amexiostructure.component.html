@@ -1,29 +1,41 @@
-<amexio-card [header]="true" [header-align]="'left'">
+<ng-container *ngIf="comData">
+  <amexio-card [header]="true" [header-align]="'left'">
     <amexio-header>
-        {{title}}
+      {{comData.title}}
     </amexio-header>
     <amexio-body>
         <span>
-            {{description}}
+            {{comData.description}}
         </span>
-        <amexio-tab-view [closable]="false">
-            <amexio-tab title="Demo" [active]="false" [closable]="false" [disabled]="false">
-                <ng-content select="amexio-api-demo"></ng-content>
-            </amexio-tab>
+      <amexio-tab-view [closable]="false">
+        <amexio-tab title="Demo" [active]="false" [closable]="false" [disabled]="false">
+          <ng-content select="amexio-api-demo"></ng-content>
+        </amexio-tab>
 
-            <amexio-tab title="Api Reference" [active]="true" [closable]="false" [disabled]="false">
-                <ng-content select="amexio-api-reference"></ng-content>
-            </amexio-tab>
+        <amexio-tab title="Api Reference" [active]="true" [closable]="false" [disabled]="false">
+          <amexio-api-reference [data]="comData.apiRefMetadata" ></amexio-api-reference>
+        </amexio-tab>
 
-            <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
-                <ng-content select="amexio-api-sourcecode"></ng-content>
-            </amexio-tab>
+        <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
+          <amexio-api-sourcecode
+            [html-url]="comData.sourceMetadata.htmlUrl"
+            [ts-url]="comData.sourceMetadata.tsUrl">
+          </amexio-api-sourcecode>
+        </amexio-tab>
 
-            <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="liveDemoComponent.disabled">
-                <p align="center">AmexioSandbox</p>
-                <ng-content select="amexio-api-livedemo"></ng-content>
-            </amexio-tab>
+        <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="comData.liveMetadata.disabled">
+          <p align="center">AmexioSandbox</p>
+          <amexio-api-livedemo [disabled]="false" [stackblitz-url]="comData.liveMetadata.stackblitzUrl">
+          </amexio-api-livedemo>
+        </amexio-tab>
 
-        </amexio-tab-view>
+      </amexio-tab-view>
     </amexio-body>
-</amexio-card>
+  </amexio-card>
+</ng-container>
+
+
+
+
+
+

@@ -2,7 +2,6 @@
  * Created by anaghak07 on 13/3/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 import {RestCallService} from "../../services/restcall.service";
 
 @Component({
@@ -11,7 +10,6 @@ import {RestCallService} from "../../services/restcall.service";
 })
 export class BoxDemo implements OnInit{
   copyMsgArray: any[];
-  age:number=10;
   comData: any;
   constructor(private _rCService: RestCallService) {}
 
