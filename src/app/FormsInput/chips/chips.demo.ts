@@ -3,15 +3,12 @@
  */
 
 import { Component } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
 
 @Component({
-    selector: 'chips-demo', templateUrl:'chips.demo.html'
+    selector: 'chips-demo',
+    templateUrl:'chips.demo.html'
 })
 export class ChipsDemo {
-    htmlCode: string;
-    typeScriptCode: string;
-    dataSource: string;
     copyMsgArray: any[];
     checkboxGroupdata: any;
     checkboxGroupdatadisabled: any;
@@ -20,7 +17,7 @@ export class ChipsDemo {
     sampledatachip:any;
     emitdatachips: any;
     emitdatachip: any;
-    constructor(private http: HttpClient) {
+    constructor() {
       this.sampledatachips = [{
         icon: 'fa fa-home',
         label: 'Home',
@@ -87,7 +84,6 @@ export class ChipsDemo {
         closable: true
       }
       ]
-        this.getHtmlAndTypeScriptCode();
     }
     onChipsLabelClick(event: any){
       this.emitdatachips  = event;
@@ -98,35 +94,6 @@ export class ChipsDemo {
 
     onCloseClick(event: any){
       this.emitdatachip = event;
-    }
-
-    //TO LOAD HTML AND TYPESCRIPT CODE
-    getHtmlAndTypeScriptCode() {
-        let responseHtml: any;
-        let responseTs: any;
-        let responseData: any;
-        //HTML FILE
-        this.http.get('assets/data/code/forms/chips/form.html', { responseType: 'text' }).subscribe(data => {
-            responseHtml = data;
-        }, error => {
-        }, () => {
-            this.htmlCode = responseHtml;
-        });
-
-        //TS FILE
-        this.http.get('assets/data/code/forms/chips/form.text', { responseType: 'text' }).subscribe(data => {
-            responseTs = data;
-        }, error => {
-        }, () => {
-            this.typeScriptCode = responseTs;
-        });
-        //TS FILE
-        this.http.get('assets/data/code/forms/chips/datasource.json', { responseType: 'text' }).subscribe(data => {
-            responseData = data;
-        }, error => {
-        }, () => {
-            this.dataSource = responseData;
-        });
     }
 
     //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

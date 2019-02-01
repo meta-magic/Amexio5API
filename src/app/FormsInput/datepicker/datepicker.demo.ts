@@ -3,15 +3,12 @@
  */
 
 import { Component } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
 
 @Component({
-  selector: 'date-picker-demo', 
+  selector: 'date-picker-demo',
   templateUrl: './datepicker.demo.html',
 })
 export class DateTimePickerDemo {
-  htmlCode: string;
-  typeScriptCode: string;
   copyMsgArray: any[];
   currentDate: any;
   currentDate1: any;
@@ -25,8 +22,7 @@ export class DateTimePickerDemo {
     this.time = data;
   }
 
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+  constructor() {
     this.disabledDate = [
       {
         "from": "13-Jul-2018",
@@ -59,31 +55,8 @@ export class DateTimePickerDemo {
       {
         "from": "25-Sep-2018",
         "to": "28-Sep-2018"
-      } 
+      }
     ];
-  }
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/forms/datepicker/form.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/forms/datepicker/form.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

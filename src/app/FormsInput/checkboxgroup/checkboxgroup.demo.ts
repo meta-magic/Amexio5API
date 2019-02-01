@@ -3,25 +3,20 @@
  */
 
 import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'checkboxgroup-demo', 
+  selector: 'checkboxgroup-demo',
   templateUrl: './checkboxgroup.demo.html',
 })
 export class CheckBoxGroupDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource:string;
   copyMsgArray: any[];
   checkboxGroupdata: any;
-  checkboxGroupdatadisabled : any;
+  checkboxGroupdatadisabled: any;
   checkboxGroupdatadisabledallitem:any;
-  //selected Checkbox event
   selectedCheckboxgroup(data:any){
   //make some operation here
   }
-  constructor(private http: HttpClient) {
+  constructor() {
     this.checkboxGroupdata = {
       response: {
         data: [{
@@ -55,36 +50,6 @@ export class CheckBoxGroupDemo {
         }]
       }
     };
-    this.getHtmlAndTypeScriptCode();
-  }
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-    let responseData:any;
-    //HTML FILE
-    this.http.get('assets/data/code/forms/checkboxgroup/form.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/forms/checkboxgroup/form.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //TS FILE
-    this.http.get('assets/data/componentdata/checkgroup.json',{responseType: 'text'}).subscribe(data => {
-      responseData = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseData;
-    });
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
