@@ -1,0 +1,175 @@
+{
+  "title": "",
+  "description": "Step-box component is an indicator for the steps in a workflow.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Steps Properties <amexio-steps>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "index",
+          "description": "Show the indexes of steps.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "icon",
+          "description": "icon for stepbox.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "block",
+          "description": "Show block based on boolean.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "data",
+          "description": "Provides data for stepblock.",
+          "version": "4.0 onwards",
+          "type": "any",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Step Block Properties <amexio-step-block>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "active",
+          "description": "The current active step.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "label",
+          "description": "Label for step.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "icon",
+          "description": "Icon for step box.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Steps Events <amexio-steps>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onClick",
+          "description": "Event emitted on block click."
+        },
+        {
+          "name": "getStepBlockData",
+          "description": "Gives stepblock information ."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": ""
+  }
+}

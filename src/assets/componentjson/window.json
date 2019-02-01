@@ -1,0 +1,178 @@
+{
+  "title": "Amexio Window",
+  "description": "Window Pane component is a customizable Modal Pane in which user can enter custom content.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-window>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "footer-align",
+          "description": "Alignment of footer contents to right or left.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": "right"
+        },
+        {
+          "name": "vertical-position",
+          "description": "Alignment of window dialog to top or bottom or center.",
+          "version": "4.2 onwards",
+          "type": "string",
+          "default": "center"
+        },
+        {
+          "name": "top",
+          "description": "We can give top height to window in percentage or pixel",
+          "version": "5.2 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "horizontal-position",
+          "description": "Alignment of window dialog to left or right or center.",
+          "version": "4.2 onwards",
+          "type": "string",
+          "default": "center"
+        },
+        {
+          "name": "show",
+          "description": "uses two way binding to Show / Hide Window.",
+          "version": "4.1 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "material-design",
+          "description": "user doesn't want header background color then user can use  material-design is equal to true ",
+          "version": "4.1 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "show-window",
+          "description": "Show / Hide Window.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "close-on-escape",
+          "description": "Window box closes on click of Escape Key.",
+          "version": "4.2 onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "body-height",
+          "description": "Assign body height in percentage, in case of maximize=true it will be set to 100% by default",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "maximize",
+          "description": "User can maximize the window to full screen.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "closable",
+          "description": "User can close the window.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "header",
+          "description": "it is flag that decides header visibility",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "footer",
+          "description": "it is flag that decides footer visibility",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "context-menu",
+          "description": "Context Menu provides the Window on right click(for Array structure: refer typescript code in source tab)",
+          "version": "5.1.6 onwards",
+          "type": "any[]",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "rightClick",
+          "description": "It is fired when clicked on context menu providing Window node data and selected context menu data."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "pane/window/window.html",
+    "tsUrl": "pane/window/window.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-window?embed=1&file=app/panels/window/window.demo.html"
+  }
+}
