@@ -2,7 +2,6 @@
  * Created by pratik on 16/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'dialogue-demo', 
@@ -37,7 +36,7 @@ export class DialogueDemoComponent {
 
 
 
-  constructor(private http: HttpClient) {
+  constructor() {
    }
 
 
