@@ -1,0 +1,15 @@
+{
+  "title": "Amexio  Row",
+  "description": "Amexio uses a series of rows and columns to layout and align content and is fully responsive.",
+  "apiRefMetadata": [
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "/row/layout.html",
+    "tsUrl": "/row/layout.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-rowlayout?embed=1&file=app/layouts/row/row.demo.html"
+  }
+}
