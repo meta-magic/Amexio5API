@@ -7,7 +7,9 @@ import { DOCUMENT } from '@angular/platform-browser';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styles: [`
-  
+  .BgColor {
+    
+  }
   `]
 })
 export class AppComponent {
