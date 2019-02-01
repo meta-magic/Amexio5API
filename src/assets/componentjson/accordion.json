@@ -167,8 +167,8 @@
     }
   ],
   "sourceMetadata":{
-    "htmlUrl": "/accordion/accordion.html",
-    "tsUrl":"/accordion/accordion.text",
+    "htmlUrl": "layout/accordion/accordion.html",
+    "tsUrl":"layout/accordion/accordion.text",
     "datasourceUrl": ""
   },
   "liveMetadata":{

@@ -4,8 +4,8 @@
   "apiRefMetadata": [
   ],
   "sourceMetadata": {
-    "htmlUrl": "/row/layout.html",
-    "tsUrl": "/row/layout.text",
+    "htmlUrl": "layout/row/layout.html",
+    "tsUrl": "layout/row/layout.text",
     "datasourceUrl": ""
   },
   "liveMetadata": {

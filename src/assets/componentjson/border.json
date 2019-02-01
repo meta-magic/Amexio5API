@@ -46,8 +46,8 @@
     }
   ],
   "sourceMetadata": {
-    "htmlUrl": "/border/border.html",
-    "tsUrl": "/border/border.text",
+    "htmlUrl": "border/border.html",
+    "tsUrl": "border/border.text",
     "datasourceUrl": ""
   },
   "liveMetadata": {
