@@ -11,7 +11,7 @@ import {HttpClientModule} from "@angular/common/http";
  */
 @NgModule({
   declarations: [CustomColSizeDemo],
-  imports: [CommonModule, FormsModule, HttpClientModule,SharedModule, AmexioWidgetModule, RouterModule.forChild([{
+  imports: [CommonModule, FormsModule, HttpClientModule, SharedModule.forRoot(), AmexioWidgetModule, RouterModule.forChild([{
     path: '', component: CustomColSizeDemo, pathMatch: 'full'
   }])],
   providers: []

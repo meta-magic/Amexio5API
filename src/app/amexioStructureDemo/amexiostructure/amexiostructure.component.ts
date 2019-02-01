@@ -1,7 +1,7 @@
 
 import { Component, OnInit, Input} from '@angular/core';
 import {RestCallService} from '../../apimetadata/services/restcall.service';
-import {ComDataInterface} from '../../apimetadata/models/component.structure';
+import {ComponentDataStructure} from '../../apimetadata/models/component.structure';
 @Component({
   selector: 'amexio-api-structure',
   templateUrl: 'amexiostructure.component.html',
@@ -11,9 +11,9 @@ export class AmexioStructureComponent implements OnInit {
 
   @Input('url') url: string;
 
-  @Input('custom-com-data') customComData: ComDataInterface;
+  @Input('custom-com-data') customComData: ComponentDataStructure;
 
-  comData: ComDataInterface;
+  comData: ComponentDataStructure;
 
   constructor(private _rCService: RestCallService) {}
 
@@ -25,7 +25,7 @@ export class AmexioStructureComponent implements OnInit {
 
   getComponentData() {
     this._rCService.getCall(this.url).subscribe(
-      (res: ComDataInterface) => {
+      (res: ComponentDataStructure) => {
         if (this.customComData) {
           this.addCustomData(res);
         } else {
@@ -34,7 +34,7 @@ export class AmexioStructureComponent implements OnInit {
       });
   }
 
-  addCustomData(response: ComDataInterface) {
+  addCustomData(response: ComponentDataStructure) {
     if (this.customComData.title) {
       response.title = this.customComData.title;
     }

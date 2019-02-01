@@ -1,7 +1,7 @@
 
 import {Component, OnInit, Input} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {CODE_BASE_PATH} from '../../constants/service.constant';
+import {CODE_BASE_PATH, DATASOURCE_BASE_PATH} from '../../apimetadata/constants/service.constant';
 
 @Component({
   selector: 'amexio-api-sourcecode',
@@ -22,6 +22,7 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   }
 
   ngOnInit() {
+    debugger;
     if (this.htmlUrl) {
       this.loadHtmlUrl();
     }
@@ -46,7 +47,7 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   }
 // LOADING DATA SOURCE URL
   loadDataSourceUrl() {
-    this._httpClient.get(CODE_BASE_PATH + this.dataSourceUrl, { responseType: 'text' }).subscribe(data => {
+    this._httpClient.get(DATASOURCE_BASE_PATH + this.dataSourceUrl, { responseType: 'text' }).subscribe(data => {
       this.dataSource = data;
     });
   }

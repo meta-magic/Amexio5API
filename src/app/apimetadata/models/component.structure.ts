@@ -2,23 +2,28 @@
  * Created by dattaram on 1/2/19.
  */
 
-export interface ComDataInterface {
+export class ComponentDataStructure {
   title: string;
   description: string;
-  sourceMetadata: SourceMetadataInterface;
-  liveMetadata: any;
-  apiRefMetadata: ApiMetadataInterface[];
+  sourceMetadata = new SourceMetadata();
+  liveMetadata = new LiveMetadata();
+  apiRefMetadata: ApiMetadata[] = [];
 }
 
-export interface  SourceMetadataInterface {
+export class  SourceMetadata {
   htmlUrl: string;
   tsUrl: string;
   datasourceUrl: string;
 }
 
 
-export interface  ApiMetadataInterface {
+export class ApiMetadata {
   gridTitle: string;
   columnDefinition: any[];
   gridData: any[];
+}
+
+export class LiveMetadata {
+  disabled: boolean;
+  stackblitzUrl: string;
 }
