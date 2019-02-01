@@ -3,7 +3,7 @@
  */
 
 import { Component } from '@angular/core'
-import { Http } from "@angular/http";
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'vertical-layout',
@@ -14,7 +14,7 @@ export class verticalLayoutDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
 
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.getHtmlAndTypeScriptCode();
   }
 
@@ -24,16 +24,16 @@ export class verticalLayoutDemo {
     let responseTs: any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/verticallayout/layout.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/layout/verticallayout/layout.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/verticallayout/layout.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/layout/verticallayout/layout.text', {responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

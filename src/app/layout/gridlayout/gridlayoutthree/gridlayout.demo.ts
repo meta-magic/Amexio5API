@@ -11,7 +11,7 @@ import { GridConfig } from 'amexio-ng-extensions';
 @Component({
   selector: 'gridlayout-demo-exp3', templateUrl: 'gridlayout.demo.html'
 })
-export class GridLayoutDemo {
+export class GridLayoutDemoThree {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;
