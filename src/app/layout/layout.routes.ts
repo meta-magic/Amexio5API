@@ -6,7 +6,7 @@ import { BoxDemo } from './box/box.demo';
 import { horizontalLayoutDemo } from './horizontallayout/horizontallayout.demo';
 import { CardImageDemo } from './card/cardimage/cardimage.demo';
 import { CardFormDemo } from './card/cardform/cardform.demo';
-import { ColumnDemo } from './column/coulmn.demo';
+import { ColumnDemo } from './column/column.demo';
 import { BorderDemoComponent } from './border/border.demo.component';
 import { AccordionDemoComponent } from './accordion/accordion.demo';
 import { GridLayoutDemoTwo } from './gridlayout/gridlayouttwo/gridlayout.demo';
