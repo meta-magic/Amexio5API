@@ -1,0 +1,71 @@
+{
+  "title": "Amexio Column",
+  "description": "Amexio column system allows up to 12 columns across the page.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-column>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+      "name": " size",
+      "description": " Column size ",
+      "version": " 4.0 onwards",
+      "type": " any",
+      "default": ""
+    },
+    {
+      "name": "fit",
+      "description": " Column height 100% ",
+      "version": " 5.0 onwards",
+      "type": " boolean",
+      "default": "false"
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "/column/layout.html",
+    "tsUrl": "/column/layout.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-columnlayout?embed=1&file=app/layouts/column/column.demo.html"
+  }
+}
