@@ -1,0 +1,78 @@
+{
+  "title": "Amexio carousel",
+  "description": "The CarouselView displays a collection of images or other content in a horizontal layout with built-in navigation between the items.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-carousel>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+       {
+      "name": "header",
+      "description": "Header property is work as Title To carousel.",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "data",
+      "description": "Data Containing Image Path, Information and Video URL Refer the DataSource Tab",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "shuffle-interval",
+      "description": "Time interval for shuffling images",
+      "version": "4.0 onwards",
+      "type": "number",
+      "default": ""
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "layout/carousel/carousel.html",
+    "tsUrl": "layout/carousel/carousel.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-panel-carousel?embed=1&file=app/panels/carousel/carousel.demo.html"
+  }
+}
