@@ -1,0 +1,141 @@
+{
+  "title": "",
+  "description": "",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Layout Properties <amexio-layout-columns>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": " border",
+          "description": " border to the layouts ",
+          "version": " 5.4 onwards",
+          "type": " boolean",
+          "default": "true"
+        },
+        {
+          "name": "fit",
+          "description": " Column height 100% ",
+          "version": " 5.4 onwards",
+          "type": " boolean",
+          "default": "true"
+        },
+        {
+          "name": "alignment",
+          "description": " alignment of layouts  (start,center,end, space-between, space-around, space-evenly)",
+          "version": " 5.4 onwards",
+          "type": " string",
+          "default": ""
+        },
+        {
+          "name": "orientation",
+          "description": " orientation to the layouts ( Vertical, horizontal) ",
+          "version": " 5.4 onwards",
+          "type": " string",
+          "default": "horizontal"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Layout Item Properties <amexio-layout-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+      "name": "padding",
+      "description": "padding to the layout item",
+      "version": "5.4 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "fit",
+      "description": " Column height 100% ",
+      "version": " 5.4 onwards",
+      "type": " boolean",
+      "default": "true"
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": ""
+  }
+}
