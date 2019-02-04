@@ -1,0 +1,79 @@
+{
+  "title": "Amexio ToolBar",
+  "description": "The Tool Bar Component is a familiar Tool Bar pattern for users. Tool Bar has Label Component left align, than Label, button,and Drop Down Components on right side.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-toolbar-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "seperator-position",
+          "type": "string",
+          "default": "",
+          "description": "Separator places the position of components to its left or right position."
+        }
+        ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+        "name": "onClick",
+        "description": "Event is fired on toolbar component"
+      }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "navigation/toolbar/form.html",
+    "tsUrl": "navigation/toolbar/form.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-toolbar?embed=1&file=src/app/navigation/toolbar/toolbar.demo.html"
+  }
+}
