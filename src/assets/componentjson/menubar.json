@@ -1,0 +1,91 @@
+{
+  "title": "Amexio MenuBar",
+  "description": "Menu bar component show menu list on top.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-menu>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "http-url",
+          "type": "string",
+          "default": "",
+          "description": "REST url for fetching datasource."
+        },
+        {
+          "name": "http-method",
+          "type": "string",
+          "default": "",
+          "description": "Type of HTTP call, POST,GET."
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": "",
+          "description": "Local data for menubar."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "nodeClick",
+          "description": "Fire when menubar bar click."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "navigation/menubar/navigation.html",
+    "tsUrl": "navigation/menubar/navigation.text",
+    "datasourceUrl": "assets/data/componentdata/menubar.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-menu-bar?embed=1&file=app/navigations/menubar/menubar.demo.html"
+  }
+}
