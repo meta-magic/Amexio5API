@@ -51,18 +51,29 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   /** panes Routes*/
   {
     path: 'panes', loadChildren: './panes/panes.module#PanesModule'
-  },
+  },  
 
   /** Contextual Menu Routes*/
   {
     path: 'contextualmenu', loadChildren: './contextualmenu/contextualmenu.module#ContextualMenuModule'
   },
 
+  /**Dashboard Routes*/
+  {
+    path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'
+  },
 
 
+  /**Map Routes*/
+  {
+    path: 'map', loadChildren: './map/map.module#MapModule'
+  },
 
+ /** Enterprise */
+  {
+    path: 'enterprise', loadChildren: './enterprise/enterprise.module#EnterpriseModule'
+  },
 
-  
 
   {
     path: 'form-demo', loadChildren: './Forms/form/form.demo.module#FormDemoModule'
@@ -112,40 +123,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     loadChildren: './charts/googlechart/timelinechart/timelinechart.demo.module#TimelineChartDemoModule'
   },
 
-  /**Dashboard Routes*/
-  {
-    path: 'gauge-dashboard-demo', loadChildren: './dashboard/gauge/gauge.demo.module#GaugeDemoModule'
-  }, {
-    path: 'datapoint', loadChildren: './dashboard/datapoints/datapoint.demo.module#DatapointsModule'
-  },
-
-  /**Map Routes*/
-  {
-    path: 'geo-chart-demo', loadChildren: './map/geochart/geochart.demo.module#GeoChartDemoModule'
-  }, {
-    path: 'tree-map-demo', loadChildren: './map/treemap/treemap.demo.module#TreeMapDemoModule'
-  },
-
-  /**Data Routes*/
-
-  {
-    path: 'google-map-demo', loadChildren: './data/googlemap/googlemap.demo.module#GoogleMapModule'
-  },
-  {
-    path: 'multi-item-carousel', loadChildren: './enterprise/multi-item-carousel/multi.item.carousel#EECarouselDemoRoutingModule'
-  },
-  {
-    path: 'ee-content', loadChildren: './enterprise/content/content.demo.module#ContentRoutingModule'
-  },
-  {
-    path: 'ee-appointment', loadChildren: './enterprise/appointment/appointment.demo.module#EEAppointmentRoutingModule'
-  },
-  {
-    path: 'ee-video', loadChildren: './enterprise/youtube-player/youtube.demo.module#YoutubePlayerModule'
-  },
-  {
-    path: 'license', loadChildren: './license/license.module#LicenseModule'
-  },
   /* D3-Charts */
 
   {

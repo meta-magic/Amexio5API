@@ -1,0 +1,101 @@
+<amexio-card header="true">
+    <amexio-header>
+      Data Point
+    </amexio-header>
+    <amexio-body>
+      <p>Represent the summary of the data in bullet point format.</p>
+      <amexio-tab-view>
+        <amexio-tab title="Demo" active="true">
+          <amexio-row>
+            <amexio-column [size]="6">
+              <amexio-datapoints [amexio-color]="'amexio-yellow'" [west]="true" [center]="true" [east]="true" [south]="true">
+                <amexio-west  [content-align]="'center'">
+                  <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
+                  </amexio-image>
+                </amexio-west>
+                <amexio-center [content-align]="'center'">
+                  <amexio-label size="large-bold">$200 Million</amexio-label><br/>
+                  <amexio-label size="medium">Sales Volume</amexio-label>
+                </amexio-center>
+                <amexio-south [c-class]= "'amexio-yellow-light'" [content-align]="'center'">
+                  <amexio-label>10% More than last year</amexio-label>
+                </amexio-south>
+              </amexio-datapoints>
+            </amexio-column>
+            <amexio-column [size]="6">
+
+              <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true">
+                <amexio-west [content-align]="'center'">
+                  <amexio-image [icon-class]="'fa fa-line-chart fa-3x'">
+                  </amexio-image>
+                </amexio-west>
+                <amexio-center [content-align]="'center'">
+                  <amexio-label size="large-bold">$10 Million</amexio-label>
+                  <br/>
+                  <amexio-label size="medium">Sales Revenue</amexio-label>
+                </amexio-center>
+                <amexio-south [content-align]="'center'">
+                  <amexio-label>5% More than last year</amexio-label>
+                </amexio-south>
+              </amexio-datapoints>
+            </amexio-column>
+             
+          </amexio-row>
+          
+         
+        </amexio-tab>
+        <amexio-tab title="API Reference">
+          <amexio-datagrid title="Data Point Properties<amexio-datapoints>" [enable-column-fiter]="false"
+                           [http-method]="'get'"
+                           [http-url]="'assets/apireference/dashboard/datapoint.json'"
+                           [data-reader]="'datapoint'"
+                           [enable-data-filter]="false">
+            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                      [text]="'Name'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+                                      [text]="'Type'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+                                      [text]="'Default'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                      [hidden]="false"
+                                      [text]="'Description'"></amexio-data-table-column>
+          </amexio-datagrid>
+          <br>
+          <amexio-datagrid title=" Data Point Region Properties ( Center, East, South, North, West )" [enable-column-fiter]="false"
+                           [http-method]="'get'"
+                           [http-url]="'assets/apireference/dashboard/datapoint.json'"
+                           [data-reader]="'location'"
+                           [enable-data-filter]="false">
+            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
+                                      [text]="'Name'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
+                                      [text]="'Type'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
+                                      [text]="'Default'"></amexio-data-table-column>
+            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'"
+                                      [hidden]="false"
+                                      [text]="'Description'"></amexio-data-table-column>
+          </amexio-datagrid>
+        </amexio-tab>
+        <amexio-tab title="Source">
+          <amexio-vertical-tab-view>
+            <amexio-tab title="HTML" [active]="true">
+              <ng-container *ngIf="htmlCode">
+                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
+                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
+              </ng-container>
+            </amexio-tab>
+            <amexio-tab title="Type Script">
+              <ng-container *ngIf="typeScriptCode">
+                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
+              </ng-container>
+            </amexio-tab>
+          </amexio-vertical-tab-view>
+        </amexio-tab>
+        <amexio-tab title="Live">
+        <p align="center">Amexio Sandbox</p>
+<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-datapoint" frameborder="0" allowfullscren="allowfullscren"></iframe>
+        </amexio-tab>
+      </amexio-tab-view>
+    </amexio-body>
+  </amexio-card>

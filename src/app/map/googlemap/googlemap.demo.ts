@@ -9,7 +9,7 @@ import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'googlemap-demo',
-  templateUrl: './googlemap.demo.html'
+  templateUrl: './googlemap.demo.html',
 })
 export class GoogleMapDemo {
   htmlCode: string;

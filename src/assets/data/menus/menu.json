@@ -947,12 +947,12 @@
             "children": [{
                     "text": "Gauge Chart",
                     "icon": "fa fa-tachometer fa-fw",
-                    "link": "gauge-dashboard-demo"
+                    "link": "dashboard/gauge-dashboard-demo"
                 },
                 {
                     "text": "Data Points",
                     "icon": "fa fa-address-card-o fa-fw",
-                    "link": "datapoint"
+                    "link": "dashboard/datapoint-demo"
                 }
             ]
         },
@@ -963,17 +963,17 @@
             "children": [{
                     "text": "Geo Chart",
                     "icon": "fa fa-globe fa-fw",
-                    "link": "geo-chart-demo"
+                    "link": "map/geo-chart-demo"
                 },
                 {
                     "text": "Tree Map",
                     "icon": "fa fa-trello fa-fw",
-                    "link": "tree-map-demo"
+                    "link": "map/tree-map-demo"
                 },
                 {
                     "text": "Google Map",
                     "icon": "fa fa-map-marker",
-                    "link": "google-map-demo",
+                    "link": "map/googlemap-demo",
                     "badge": "New"
                 }
             ]
@@ -984,21 +984,21 @@
             "children": [{
                     "text": "Media Content",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "link": "ee-content"
+                    "link": "enterprise/ee-content-demo"
                 },
                 {
                     "text": "YouTube Video Player",
                     "icon": "fa fa-video-camera fa-fw",
-                    "link": "ee-video"
+                    "link": "enterprise/ee-video-demo"
                 },
                 {
                     "text": "Multi-item Carousel",
                     "icon": "fa fa-calendar fa-fw",
-                    "link": "multi-item-carousel"
+                    "link": "enterprise/multi-item-carousel-demo"
                 }, {
                     "text": "Appointment",
                     "icon": "fa fa-calendar fa-fw",
-                    "link": "ee-appointment",
+                    "link": "enterprise/ee-appointment-demo",
                     "badge": "New"
                 }
             ]
