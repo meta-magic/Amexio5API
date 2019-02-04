@@ -28,6 +28,11 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'data', loadChildren: './data/Data.module#DataModule'
   },
 
+  /** Drag and Drop Tree*/
+
+  {
+    path: 'dragdrop', loadChildren: './draganddrop/DragDrop.module#DragDropModule'
+  },
 
   /** Navigation*/
   {
@@ -152,21 +157,21 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   // Grid Layout
   /*Drag and Drop*/
-  {
-    path: 'within-tree', loadChildren: './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
-  },
-  {
-    path: 'across-tree', loadChildren: './draganddrop/acrosstree/acrosstree.demo.module#AcrossTreeDemoModule'
-  },
-  {
-    path: 'tree-to-panel', loadChildren: './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
-  },
-  {
-    path: 'itemselectordragdrop-demo', loadChildren: './draganddrop/itemselectordragdrop/itemselectordragdrop.demo.module#ItemSelectorDragdropDemoModule'
-  },
-  {
-    path: 'selectordragdrop-panel', loadChildren: './draganddrop/selectordragdroppanel/selectordragdroppanel.demo.module#ItemSelectorDragdropPanelModule'
-  },
+  // {
+  //   path: 'within-tree', loadChildren: './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
+  // },
+  // {
+  //   path: 'across-tree', loadChildren: './draganddrop/acrosstree/acrosstree.demo.module#AcrossTreeDemoModule'
+  // },
+  // {
+  //   path: 'tree-to-panel', loadChildren: './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
+  // },
+  // {
+  //   path: 'itemselectordragdrop-demo', loadChildren: './draganddrop/itemselectordragdrop/itemselectordragdrop.demo.module#ItemSelectorDragdropDemoModule'
+  // },
+  // {
+  //   path: 'selectordragdrop-panel', loadChildren: './draganddrop/selectordragdroppanel/selectordragdroppanel.demo.module#ItemSelectorDragdropPanelModule'
+  // },
 
   /*Contextual Menus*/
   {

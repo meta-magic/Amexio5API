@@ -8,12 +8,18 @@ import { DRAGDROP_ROUTE } from "./DragDrop.routes";
 
 import { RouterModule } from "@angular/router";
 
+import { AcrossTreeDemo } from "./acrosstree/acrosstree.demo.component";
+import { ItemSelectorDragdropDemo } from "./itemselectordragdrop/itemselectordragdrop.demo";
+import { WithinTreeDemo } from "./withintree/withintree.demo.component";
+import { TreeToPanelDemo } from "./treetopanel/treetopanel.demo.component";
+
  
 /**
  * Created by kedar on 4/2/19.
  */
 @NgModule({
-    declarations: [ 
+    declarations: [ AcrossTreeDemo, WithinTreeDemo, TreeToPanelDemo , 
+        ItemSelectorDragdropDemo
     
     ],
     imports: [
@@ -26,6 +32,6 @@ import { RouterModule } from "@angular/router";
     ],
     providers: []
 })
-export class FormsActionModule {
+export class DragDropModule {
 
 }
