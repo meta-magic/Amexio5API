@@ -21,30 +21,18 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'itemselector-demo', loadChildren: './data/itemselector/itemselector.demo.module#ItemSelectorDemoModule'
   },
-  
-  /**Button */
+
+  /** Forms Action */
+
   {
-    path: 'button-demo', loadChildren: './FormsAction/button/button.demo.module#ButtonDemoModule'
+    path: 'forms-Action', loadChildren: './FormsAction/FormsAction.module#FormsActionModule'
   },
-  {
-    path: 'buttongroup-demo', loadChildren: './FormsAction/buttongroup/buttongroup.demo.module#ButtonGroupDemoModule'
-  },
-  {
-    path: 'buttondropdown-demo', loadChildren: './FormsAction/buttondropdown/buttondropdown.demo.module#ButtonDropDownDemoModule'
-  },
-  {
-    path: 'floatingbutton-demo', loadChildren: './FormsAction/floatingbutton/floatingbutton.demo.module#FloatingButtonDemoModule'
-  },
-  {
-    path: 'floatinggroupbutton-demo', loadChildren: './FormsAction/floatinggroup/floatinggroupbutton.demo.module#FloatingGroupButtonDemoModule'
-  },
+
   /** Navigation*/
   {
     path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
   },
-  {
-    path: 'notification-demo', loadChildren: './FormsAction/notification/notification.demo.module#NotificationDemoModule'
-  },
+
   {
     path: 'sidenav-demo', loadChildren: './navigation/sidenav/sidenav.demo.module#SideNavDemoModule'
   },
@@ -136,9 +124,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
 
   /**Data Routes*/
-  {
-    path: 'paginator-demo', loadChildren: './FormsAction/paginator/paginator.demo.module#PaginatorDemoModule'
-  },
+  
   {
     path: 'listbox-demo', loadChildren: './data/listbox/listbox.demo.module#ListBoxDemoModule'
   },
@@ -208,10 +194,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
-  },
-  /*Progress bar*/
-  {
-    path: 'progressbar-demo', loadChildren: './FormsAction/progressbar/progressbar.demo.module#ProgressBarDemoModule'
   },
   {
     path: 'amexio-spinner-demo', loadChildren: './data/spinner/spinner.demo.module#AmexioSpinnerDemoModule'

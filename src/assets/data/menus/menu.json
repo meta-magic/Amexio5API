@@ -443,50 +443,50 @@
                     "children": [{
                             "text": "Button",
                             "icon": "fa fa-building-o fa-fw",
-                            "link": "button-demo",
+                            "link": "forms-Action/button-demo",
                             "badge": "U"
                         },
                         {
                             "text": "Button Group",
                             "icon": "fa fa-newspaper-o fa-fw",
-                            "link": "buttongroup-demo",
+                            "link": "forms-Action/buttongroup-demo",
                             "badge": "U"
 
                         },
                         {
                             "text": "Button Dropdown",
                             "icon": "fa fa-building fa-fw",
-                            "link": "buttondropdown-demo",
+                            "link": "forms-Action/buttondropdown-demo",
                             "badge": "U"
 
                         },
                         {
                             "text": "Floating Button",
                             "icon": "fa fa-circle-o fa-fw",
-                            "link": "floatingbutton-demo",
+                            "link": "forms-Action/floatingbutton-demo",
                             "badge": "U"
                         },
                         {
                             "text": "Floating Group",
                             "icon": "fa fa-circle-o fa-fw",
-                            "link": "floatinggroupbutton-demo"
+                            "link": "forms-Action/floatinggroupbutton-demo"
                         }
                     ]
                 },
                 {
                     "text": "Notification",
                     "icon": "fa fa-comments fa-fw",
-                    "link": "notification-demo"
+                    "link": "forms-Action/notification-demo"
                 },
                 {
                     "text": "Paginator",
                     "icon": "fa fa-arrows-h fa-fw",
-                    "link": "paginator-demo"
+                    "link": "forms-Action/paginator-demo"
                 },
                 {
                     "text": "Progress Bar",
                     "icon": "fa fa-circle-o-notch fa-fw",
-                    "link": "progressbar-demo"
+                    "link": "forms-Action/progressbar-demo"
                 }
             ]
         },
