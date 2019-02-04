@@ -1,0 +1,79 @@
+{
+  "title": "Amexio video player",
+  "description": "Video player component support all types of videos.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-video-player>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+      {
+      "name": "path",
+      "description": "Path of video",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    
+    {
+      "name": "width",
+      "description": "Width of the video player window",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    },
+    {
+      "name": "extension",
+      "description": "extension of the video player .",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": ""
+    }
+        ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "media/video/media.html",
+    "tsUrl": "media/video/media.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-video?embed=1&file=src/app/video/video.demo.component.html&view=editor"
+  }
+}
