@@ -1,0 +1,140 @@
+{
+    "title": "Amexio Rating",
+    "description": "A simple configurable star rating component with visual feedback.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-rating-input>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "field-label",
+            "version": "4.0 onwards",
+            "description": "The label of this field.",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "max",
+            "description": "Number of stars for rating component.",
+            "version": "4.0 onwards",
+            "type": "number",
+            "default": ""
+          },
+          {
+            "name": "read-only",
+            "description": "If true will not react on any user events.",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "titles",
+            "description": "Array of titles, default:1,2,3.",
+            "version": "4.0 onwards",
+            "type": "string[]",
+            "default": ""
+          },
+          {
+            "name": "disabled",
+            "description": "If true will not react on any user events and show disable icon over",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "required",
+            "description": "Validate field",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "full-icon",
+            "description": "Icon for selected rating and this attribute is useful only when user have custom rating icons.",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "empty-icon",
+            "description": "Icon for non-selected rating and this attribute is useful only when user have custom rating icons",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+            "name": "onHover",
+            "description": "Fires on hovering component"
+          },
+          {
+            "name": "onLeave",
+            "description": "fires on leaving component and returns its value"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/rating/form.html",
+      "tsUrl": "forms/rating/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-rating?embed=1&file=app/forms/rating/rating.demo.html"
+    }
+  }

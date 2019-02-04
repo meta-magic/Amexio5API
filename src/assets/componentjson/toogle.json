@@ -1,0 +1,101 @@
+{
+    "title": "Amexio Toogle",
+    "description": "Toggle Switches are checkboxes with a toggle switch UI.",
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-toggle>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "shape",
+                    "description": "Round or Square Shape for toggle switch ,example shape=round,square .",
+                    "version": "4.0 onwards",
+                    "type": "string",
+                    "default": "round"
+                },
+                {
+                    "name": "field-label",
+                    "description": "The label of this field.",
+                    "version": "4.0 onwards",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": "required",
+                    "description": "sets if field is required",
+                    "version": "4.0 onwards",
+                    "type": "boolean",
+                    "default": "true"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Events",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "onChange",
+                    "description": "Event is fired on toggle component click"
+                }
+            ]
+        }
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "forms/toggle/form.html",
+        "tsUrl": "forms/toggle/form.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-toggle?embed=1&file=app/forms/toggle/toggle.demo.html"
+    }
+}

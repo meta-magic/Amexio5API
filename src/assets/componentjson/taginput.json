@@ -1,13 +1,20 @@
 {
-    "title": "",
-    "description": "Drop-Down component has been created to render N numbers of drop-down items based on data-set configured. Data-set can be configured using HTTP call OR Define fix number of dropdown-items. User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.",
+    "title": "Amexio Tag Input",
+    "description": "Tags based multi input with typeahead facility.",
     "apiRefMetadata": [
       {
-        "gridTitle": "Properties <amexio-dropdown>",
+        "gridTitle": "Properties <amexio-tag-input>",
         "columnDefinition": [
           {
             "dataindex": "name",
             "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
             "width": 15,
             "hidden": false,
             "datatype": "string"
@@ -36,15 +43,6 @@
         ],
         "gridData": [
           {
-            "deprecated": false,
-            "name": "place-holder",
-            "description": "Show place-holder inside dropdown component",
-            "version": "4.0 onwards",
-            "type": "string",
-            "default": ""
-          },
-          {
-            "deprecated": false,
             "name": "field-label",
             "description": "The label of this field",
             "version": "4.0 onwards",
@@ -52,23 +50,20 @@
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "allow-blank",
             "description": "Sets if field is required (true or false)",
             "version": "4.0 onwards",
-            "type": "(true or false)",
-            "default": ""
+            "type": "boolean",
+            "default": "false"
           },
           {
-            "deprecated": false,
             "name": "data",
-            "description": "Local data for dropdown.",
+            "description": "Input data source",
             "version": "4.0 onwards",
-            "type": "any",
+            "type": "string",
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "data-reader",
             "description": "Key in JSON datasource for records",
             "version": "4.0 onwards",
@@ -76,7 +71,6 @@
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "http-method",
             "description": "Type of HTTP call, POST,GET.",
             "version": "4.0 onwards",
@@ -84,7 +78,6 @@
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "http-url",
             "description": "REST url for fetching datasource.",
             "version": "4.0 onwards",
@@ -92,7 +85,6 @@
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "display-field",
             "description": "Name of key inside response data to display on ui.",
             "version": "4.0 onwards",
@@ -100,7 +92,6 @@
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "value-field",
             "description": "Name of key inside response data.use to send to backend",
             "version": "4.0 onwards",
@@ -108,47 +99,6 @@
             "default": ""
           },
           {
-            "deprecated": false,
-            "name": "search",
-            "description": "true for search box enable",
-            "version": "4.0 onwards",
-            "type": "boolean",
-            "default": "false"
-          },
-          {
-            "deprecated": false,
-            "name": "enable-sort",
-            "description": "true for  enable sorting",
-            "version": "5.5.1 onwards",
-            "type": "boolean",
-            "default": "false"
-          },
-          {
-            "deprecated": false,
-            "name": "sort",
-            "description": "define type of sort asc/desc",
-            "version": "5.5.1 onwards",
-            "type": "string",
-            "default": ""
-          },
-          {
-            "deprecated": false,
-            "name": "multi-select",
-            "description": "true for select multiple options",
-            "version": "4.0 onwards",
-            "type": "boolean",
-            "default": "false"
-          },
-          {
-            "deprecated": true,
-            "name": "error-msg",
-            "description": "Sets the error message",
-            "version": "4.0 onwards",
-            "type": "string",
-            "default": ""
-          },
-          {
-            "deprecated": false,
             "name": "font-style",
             "description": "Set font-style to field",
             "version": "4.0 onwards",
@@ -156,7 +106,6 @@
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "font-family",
             "description": "Set font-family to field",
             "version": "4.0 onwards",
@@ -164,7 +113,6 @@
             "default": ""
           },
           {
-            "deprecated": false,
             "name": "font-size",
             "description": "Set font-size to field",
             "version": "4.0 onwards",
@@ -172,20 +120,32 @@
             "default": ""
           },
           {
-            "deprecated": false,
-            "name": "has-label",
-            "description": "flag to set label",
-            "version": "4.0 onwards",
-            "type": "boolean",
-            "default": "false"
-          },
-          {
-            "deprecated": false,
             "name": "enable-popover",
             "description": "Set enable / disable popover.",
             "version": "4.0 onwards",
             "type": "boolean",
-            "default": "false"
+            "default": ""
+          },
+          {
+            "name": "has-label",
+            "description": "flag to set label",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "True"
+          },
+          {
+            "name": "key",
+            "description": "Key as input to tags",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "trigger-char",
+            "description": "Sets the trigger char length",
+            "version": "4.0 onwards",
+            "type": "number",
+            "default": ""
           }
         ]
       },
@@ -207,39 +167,27 @@
         ],
         "gridData": [
           {
-            "name": "onBlur",
-            "description": "On blur event"
-          },
-          {
-            "name": "input",
-            "description": "On input event field."
-          },
-          {
-            "name": "focus",
-            "description": "On field focus event"
-          },
-          {
-            "name": "onSingleSelect",
-            "description": "Fire when drop down item selected."
-          },
-          {
-            "name": "onMultiSelect",
-            "description": "Fire when multiple record select in drop down.this event is only applied when multi-select=true"
-          },
-          {
-            "name": "onClick",
-            "description": "On record select event.this event is only for normal dropdown."
-          }
+        "name": "input",
+        "description": "On input event field."
+      },
+      {
+        "name": "onChange",
+        "description": "on change event"
+      },
+      {
+        "name": "focus",
+        "description": "On field focus event"
+      }
         ]
       }
     ],
     "sourceMetadata": {
-      "htmlUrl": "",
-      "tsUrl": "",
-      "datasourceUrl": ""
+      "htmlUrl": "forms/taginput/form.html",
+      "tsUrl": "forms/taginput/form.text",
+      "datasourceUrl": "assets/data/componentdata/country.json"
     },
     "liveMetadata": {
       "disabled": false,
-      "stackblitzUrl": ""
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-taginput?embed=1&file=app/forms/taginput/taginput.demo.html"
     }
   }
