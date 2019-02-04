@@ -1,0 +1,192 @@
+{
+    "title": "Amexio Number Input",
+    "description": "Number input component has been created with different configurable attributes for validation (min/max value, allow blank, custom regex), custom error message, help, custom styles.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-number-input>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "field-label",
+            "description": "The label of this field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "allow-blank",
+            "description": "Sets if field is required (true or false)",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": ""
+          },
+          {
+            "name": "min-value",
+            "description": "Defines the min range limit for number input.",
+            "version": "4.0 onwards",
+            "type": "number",
+            "default": ""
+          },
+          {
+            "name": "max-value",
+            "description": "Defines the max range limit for number input.",
+            "version": "4.0 onwards",
+            "type": "number",
+            "default": ""
+          },
+          {
+            "name": "error-msg",
+            "description": "Sets the error message",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "min-error-msg",
+            "description": "Sets the error message for min validation",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "max-error-msg",
+            "description": "Sets the error message for max validation",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "place-holder",
+            "description": "Show place-holder inside dropdown component",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "disabled",
+            "description": "True to disable the field.",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "font-style",
+            "description": "Set font-style to field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "font-family",
+            "description": "Set font-family to field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "font-size",
+            "description": "Set font-size to field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "has-label",
+            "description": "Flag to set label",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "true"
+          },
+          {
+            "name": "pattern",
+            "description": "Apply Reg-ex to the field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "enable-popover",
+            "description": "Set enable / disable popover.",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": ""
+          },
+          {
+            "name": "icon-feedback",
+            "description": "Enables / disables icon feedback",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+            "name": "input",
+            "description": "On input event field."
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/number/form.html",
+      "tsUrl": "forms/number/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-number?embed=1&file=app/forms/number/number.demo.html"
+    }
+  }

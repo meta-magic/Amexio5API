@@ -1,0 +1,108 @@
+{
+    "title": "Amexio Facebook Login",
+    "description": "Amexio Facebook Sign-In component manages the OAuth flow and token lifecycle, simplifying your integration with Facebook APIs using amexio component.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-login-social>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+              {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+              "name": "api-key",
+              "description": "user api key which is generate on facebook developer webside",
+              "version": "5.5.3 onwards",
+              "type": "string",
+              "default": "none"
+          },
+          {
+              "name": "type",
+              "description": "type attribute have multiple option like google,linkedin,facebook support",
+              "version": "5.5.3 onwards",
+              "type": "string",
+              "default": "none"
+          },
+          {
+              "name": "label",
+              "description": "set the label",
+              "version": "5.5.3 onwards",
+              "type": "string",
+              "default": "none"
+          },
+          {
+              "name": "style-type",
+              "description": "set the style type like circle,square",
+              "version": "5.5.3 onwards",
+              "type": "string",
+              "default": "square"
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+           {
+          "name": "onLogin",
+          "description": "event is fired when user loggedin successfully."
+      }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/facebooklogin/form.html",
+      "tsUrl": "forms/facebooklogin/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-facebook-login?embed=1&file=app/forms/facebook/facebook.demo.component.html&view=editor"
+    }
+  }

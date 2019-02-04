@@ -141,7 +141,7 @@
     "sourceMetadata": {
       "htmlUrl": "forms/checkboxgroup/form.html",
       "tsUrl": "forms/checkboxgroup/form.text",
-      "datasourceUrl": ""
+      "datasourceUrl": "assets/data/componentdata/checkgroup.json"
     },
     "liveMetadata": {
       "disabled": false,

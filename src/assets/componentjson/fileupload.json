@@ -1,0 +1,133 @@
+{
+    "title": "Amexio File Upload",
+    "description": "This component use for uploading all types of files.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-fileupload>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+           {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+        "name": "field-label",
+        "description": "The label of this field",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "param-name",
+        "description": "Used to specify URL query , same with backend rest controller paramater object Default file",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "http-url",
+        "description": "REST url for fetching datasource.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "http-method",
+        "description": "Type of HTTP call, POST,GET.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "file-type",
+        "description": "Defines the file type of file to upload. Shows only given file type at the time of file upload.example for 1.image [file-type]=image/* 2.for pdf [file-type]=application/pdf",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "multiple-file",
+        "description": "Defines if there are multiple file to upload",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": "none"
+      },
+      {
+        "name": "droppable",
+        "description": "Allow Drop Zone For Files.",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "none"
+      }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+           {
+        "name": "onRemove",
+        "description": "On remove click event"
+      },
+      {
+        "name": "onFileUpload",
+        "description": "fires on choosing file"
+      }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/fileupload/form.html",
+      "tsUrl": "forms/fileupload/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-fileupload?embed=1&file=app/forms/fileupload/fileupload.demo.html"
+    }
+  }
