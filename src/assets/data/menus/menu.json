@@ -704,42 +704,42 @@
             "children": [{
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right fa-fw",
-                    "link": "breadcrumb-demo"
+                    "link": "navigation/breadcrumb-demo"
                 },
                 {
                     "text": "Dockbar",
                     "icon": "fa fa-th-large fa-fw",
-                    "link": "dockbar-demo"
+                    "link": "navigation/dockbar-demo"
                 },
                 {
                     "text": "Dropdown Menu",
                     "icon": "fa fa-chevron-circle-down fa-fw",
-                    "link": "dropdownmenu"
+                    "link": "navigation/dropdownmenu-demo"
                 },
                 {
                     "text": "Menu Bar",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "menubar-demo"
+                    "link": "navigation/menubar-demo"
                 },
                 {
                     "text": "Nav Bar",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "navbar-demo"
+                    "link": "navigation/navbar-demo"
                 },
                 {
                     "text": "Side Nav Bar",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "sidenav-demo"
+                    "link": "navigation/sidenav-demo"
                 },
                 {
                     "text": " Side Panel",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "sidenav-page"
+                    "link": "navigation/sidenav-page-demo"
                 },
                 {
                     "text": "Tool Bar",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "toolbar-demo"
+                    "link": "navigation/toolbar-demo"
                 }
             ]
         },

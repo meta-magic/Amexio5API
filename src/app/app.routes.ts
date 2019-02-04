@@ -11,8 +11,8 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
   },
 
-   /** Forms Input */
-   {
+  /** Forms Input */
+  {
     path: 'forms-Input', loadChildren: './FormsInput/FormsInput.module#FormsInputModule'
   },
 
@@ -22,9 +22,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'forms-Action', loadChildren: './FormsAction/FormsAction.module#FormsActionModule'
   },
 
-   /** DATA contain grid and Tree*/
+  /** DATA contain grid and Tree*/
 
-   {
+  {
     path: 'data', loadChildren: './data/Data.module#DataModule'
   },
 
@@ -35,25 +35,11 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
 
   /** Navigation*/
-  {
-    path: 'dockbar-demo', loadChildren: './navigation/dockbar/dockbar.demo.module#DockbarDemoModule'
-  },
 
   {
-    path: 'sidenav-demo', loadChildren: './navigation/sidenav/sidenav.demo.module#SideNavDemoModule'
+    path: 'navigation', loadChildren: './navigation/navigation.module#NavigationModule'
   },
-  {
-    path: 'sidenav-page', loadChildren: './navigation/sidenavpage/sidenavpage.demo.module#sideNavDemoPageModule'
-  },
-  {
-    path: 'navbar-demo', loadChildren: './navigation/navbar/navbar.demo.module#NavBarDemoModule'
-  },
-  {
-    path: 'menubar-demo', loadChildren: './navigation/menubar/menubar.demo.module#MenuBarDemoModule'
-  },
-  {
-    path: 'toolbar-demo', loadChildren: './navigation/toolbar/toolbar.demo.module#ToolbarDemoModule'
-  },
+  
   /** Media Routes*/
   {
     path: 'media-demo', loadChildren: './media/media.module#MediaModule'
@@ -74,10 +60,10 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'reactive-form', loadChildren: './Forms/reactiveform/reactiveform.demo.module#ReactiveFormComponentModule'
   },
   {
-    path:'html-reactive-form',loadChildren:'./Forms/form-html/reactive-forms/reactiveform.demo.module#HtmlReactiveFormComponentModule'
+    path: 'html-reactive-form', loadChildren: './Forms/form-html/reactive-forms/reactiveform.demo.module#HtmlReactiveFormComponentModule'
   },
   {
-    path:'html-form-demo',loadChildren :'./Forms/form-html/template-driven/form.demo.module#HtmlFormDemoModule'
+    path: 'html-form-demo', loadChildren: './Forms/form-html/template-driven/form.demo.module#HtmlFormDemoModule'
   },
 
   /**Chart Routes*/
@@ -130,10 +116,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
 
   /**Data Routes*/
-  
-  {
-    path: 'breadcrumb-demo', loadChildren: './navigation/breadcrumb/breadcrumb.demo.module#BreadcrumbDemoModule'
-  },
+
   {
     path: 'google-map-demo', loadChildren: './data/googlemap/googlemap.demo.module#GoogleMapModule'
   },
@@ -155,31 +138,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
   },
-  // Grid Layout
-  /*Drag and Drop*/
-  // {
-  //   path: 'within-tree', loadChildren: './draganddrop/withintree/withintree.demo.module#WithinTreeDemoModule'
-  // },
-  // {
-  //   path: 'across-tree', loadChildren: './draganddrop/acrosstree/acrosstree.demo.module#AcrossTreeDemoModule'
-  // },
-  // {
-  //   path: 'tree-to-panel', loadChildren: './draganddrop/treetopanel/treetopanel.demo.module#TreeToPanelDemoModule'
-  // },
-  // {
-  //   path: 'itemselectordragdrop-demo', loadChildren: './draganddrop/itemselectordragdrop/itemselectordragdrop.demo.module#ItemSelectorDragdropDemoModule'
-  // },
-  // {
-  //   path: 'selectordragdrop-panel', loadChildren: './draganddrop/selectordragdroppanel/selectordragdroppanel.demo.module#ItemSelectorDragdropPanelModule'
-  // },
 
   /*Contextual Menus*/
   {
     path: 'contextual-menu-tree', loadChildren: './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'
   },
-  // {
-  //   path: 'contextual-menu-grid', loadChildren: './contextualmenu/grid/contextmenugrid.demo.module#ContextualMenuGridDemoModule'
-  // },
+
   {
     path: 'contextual-menu-listbox', loadChildren: './contextualmenu/listbox/contextmenulistbox.demo.module#ContextualMenuListBoxDemoModule'
   },
