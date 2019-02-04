@@ -1,0 +1,195 @@
+{
+  "title": "Amexio NavBar",
+  "description": "The Nav Bar Component is a familiar top navigation pattern for users. Nav bar has Logo/Title left align, than link, text field, button and menus on right side. v4.1 Nav bar is not backward compatible of v4.0.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Nav Properties <amexio-nav>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title of navbar."
+        },
+        {
+          "name": "logo",
+          "type": "string",
+          "default": "",
+          "description": "Logo of navbar."
+        },
+        {
+          "name": "enable-side-nav-position",
+          "type": "boolean",
+          "default": "",
+          "description": "Indicate if side-nav-bar is present"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Item Properties <amexio-nav-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "position-center",
+          "type": "string",
+          "default": "",
+          "description": "Show the content in center. <amexio-nav-item position-center></amexio-nav-item>."
+        },
+        {
+          "name": "position-left",
+          "type": "string",
+          "default": "",
+          "description": "Show the content left side .<amexio-nav-item position-left></amexio-nav-item>."
+        },
+        {
+          "name": "position-right",
+          "type": "string",
+          "default": "",
+          "description": "Show the content right side. <amexio-nav-item position-right></amexio-nav-item>."
+        },
+        {
+          "name": "type",
+          "type": "string",
+          "default": "",
+          "description": "Indicate the type of menu-items (link / button / textfield /menu/menucontainer ) For Advance development use (menucontainer) for custom dropdown menu you can used in navbar."
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title for link, button and menu header"
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "",
+          "description": "Icon for link, button and menu header"
+        },
+        {
+          "name": "data",
+          "type": "array",
+          "default": "",
+          "description": "Standard JSON format array data which is used for rendering menus. This is used when type=menu is defined."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Nav Events <amexio-nav>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onNavLogoClick",
+          "description": "Fire when nav bar logo is clicked "
+        },
+        {
+          "name": "onNavTitleClick",
+          "description": "Fire when title is clicked"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Item Events <amexio-nav-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onNavItemClick",
+          "description": "Fire when nav item is clicked, This event is fired when nav item type is defined as 'link/button/menu' "
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "navigation/navbar/navigation.html",
+    "tsUrl": "navigation/navbar/navigation.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v41-navbar?embed=1&file=app/forms/navbar/navbar.demo.html&view=editor"
+  }
+}

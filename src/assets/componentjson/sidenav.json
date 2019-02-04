@@ -1,0 +1,226 @@
+{
+  "title": "Amexio Side Nav Bar",
+  "description": "The Side Nav Bar Component is a familiar side navigation pattern for users. Side nav bar can be placed on left or right side. It can fit as many navigation links as needed, scrolling when the content exceeds the viewport. Take a look at Datastructure format which this component can consume in datasource tab.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Side Nav Properties <amexio-side-nav>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "width",
+          "type": "string",
+          "default": "",
+          "description": "Width of sidenav"
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "",
+          "description": "Sidenav bar rendering position. example position='relative','right' "
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title of sidenav bar "
+        },
+        {
+          "name": "title-image",
+          "type": "string",
+          "default": "",
+          "description": "Title image of sidenav bar "
+        },
+        {
+          "name": "http-url",
+          "type": "string",
+          "default": "",
+          "description": "REST url for fetching datasource."
+        },
+        {
+          "name": "http-method",
+          "type": "string",
+          "default": "",
+          "description": "Type of HTTP call, POST,GET."
+        },
+        {
+          "name": "data-reader",
+          "type": "string",
+          "default": "",
+          "description": "Key in JSON datasource for records"
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "default": "",
+          "description": "Local data for sidenav."
+        },
+        {
+          "name": "display-key",
+          "version": "5.4 onwards",
+          "type": "string",
+          "default": "text",
+          "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+        },
+        {
+          "name": "child-array-key",
+          "version": "5.4 onwards",
+          "type": "string",
+          "default": "children",
+          "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Node Properties <amexio-sidenav-node>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "display-key",
+          "version": "5.4 onwards",
+          "type": "string",
+          "default": "text",
+          "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+        },
+        {
+          "name": "data",
+          "type": "any",
+          "version": "5.4 onwards",
+          "default": "",
+          "description": "We can pass local data to side nav node(child) components."
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "version": "5.4 onwards",
+          "default": "",
+          "description": "Providing user define Label to sidenav node."
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "version": "5.4 onwards",
+          "default": "",
+          "description": "Providing user define Icon to sidenav node."
+        },
+        {
+          "name": "badge",
+          "type": "any",
+          "version": "5.4 onwards",
+          "default": "",
+          "description": "Providing user define Badge to sidenav node."
+        },
+        {
+          "name": "enable-border",
+          "type": "boolean",
+          "version": "5.4 onwards",
+          "default": "",
+          "description": "enable border to the side nav component."
+        },
+        {
+          "name": "collapsable",
+          "type": "boolean",
+          "version": "5.4 onwards",
+          "default": "",
+          "description": "collapsable side nav component."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Nav Events <amexio-nav>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "nodeClick",
+          "description": "Fire when sidenav bar menu click"
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "navigation/sidenav/navigation.html",
+    "tsUrl": "navigation/sidenav/navigation.text",
+    "datasourceUrl": "assets/data/componentdata/sidenav.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-side-panel?embed=1&file=app/navigation/sidenav/sidenav.demo.html"
+  }
+}
