@@ -1,0 +1,267 @@
+{
+  "title": "Amexio area chart",
+  "description": "An area chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-chart-area>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "width",
+          "description": "Width of chart",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "height",
+          "description": "Height of chart",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "data",
+          "description": "Local data for AreaChart",
+          "version": "4.0 onwards",
+          "type": "any",
+          "default": ""
+        },
+        {
+          "name": "background-color",
+          "description": "Sets background color to chart",
+          "version": "4.0 onwards",
+          "type": "any",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart TitleProperties <amexio-chart-title>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "description": "Title to display above the chart.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "position",
+          "description": "position of chart title",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "color",
+          "description": "Color of chart title.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-name",
+          "description": "Font style of chart title.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-size",
+          "description": "Font size of chart title.",
+          "version": "4.0 onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "bold",
+          "description": "Set true for title in bold font.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "italic",
+          "description": "Set true for title text in italic style.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Legend Properties <amexio-chart-legend>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+        "name": "position",
+        "description": "Position of the legend.'bottom' - Below the chart.'top' - Above the chart.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "alignment",
+        "description": "Alignment of the legend.'start' - Aligned to the start of the area allocated for the legend.'center' - Centered in the area allocated for the legend 'end' - Aligned to the end of the area allocated for the legend.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "color",
+        "description": "'red' or '#00cc00'.",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "font-name",
+        "description": "Font style of chart legend",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "font-size",
+        "description": "Font size of chart legend",
+        "version": "4.0 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "bold",
+        "description": "Set true for Legend text in bold",
+        "version": "4.0 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "max-lines",
+        "description": "Maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend.",
+        "version": "4.0 onwards",
+        "type": "number",
+        "default": ""
+      }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/areachart/chart.html",
+    "tsUrl": "charts/areachart/chart.text",
+    "datasourceUrl": "assets/data/code/charts/areachart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-areachart?embed=1&file=app/charts/areachart/areachart.demo.html"
+  }
+}
