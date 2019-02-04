@@ -512,62 +512,62 @@
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-database fa-fw",
-                            "link": "simple-grid"
+                            "link": "data/simplegrid-demo"
                         },
                         {
                             "text": "Column Sizing",
                             "icon": "fa fa-database fa-fw",
-                            "link": "custom-col-grid"
+                            "link": "data/custom-col-grid-demo"
                         },
                         {
                             "text": "Template",
                             "icon": "fa fa-database fa-fw",
-                            "link": "template-grid"
+                            "link": "data/template-grid-demo"
                         },
                         {
                             "text": "Filter",
                             "icon": "fa fa-database fa-fw",
-                            "link": "filter-grid"
+                            "link": "data/filter-grid-demo"
                         },
                         {
                             "text": "Filter-Global",
                             "icon": "fa fa-database fa-fw",
-                            "link": "global-filter-grid"
+                            "link": "data/global-filter-grid-demo"
                         },
                         {
                             "text": "Group By",
                             "icon": "fa fa-database fa-fw",
-                            "link": "groupby-grid"
+                            "link": "data/groupby-grid-demo"
                         },
                         {
                             "text": "Header Template",
                             "icon": "fa fa-database fa-fw",
-                            "link": "header-template"
+                            "link": "data/header-template-demo"
                         },
                         {
                             "text": "Grid with scroll",
                             "icon": "fa fa-database fa-fw",
-                            "link": "scroll-grid"
+                            "link": "data/scroll-grid-demo"
                         },
                         {
                             "text": "Grid with Toolbar",
                             "icon": "fa fa-database fa-fw",
-                            "link": "gridwithtoolbar-demo"
+                            "link": "data/gridwithtoolbar-demo"
                         },
                         {
                             "text": "Grid with Context menu",
                             "icon": "fa fa-database fa-fw",
-                            "link": "context-menu-grid"
+                            "link": "data/grid-context-menu-demo"
                         },
                         {
                             "text": "Tree Data Grid",
                             "icon": "fa fa-database fa-fw",
-                            "link": "tree-data-grid"
+                            "link": "data/tree-data-grid-demo"
                         },
                         {
                             "text": "Tree Data Template",
                             "icon": "fa fa-database fa-fw",
-                            "link": "tree-data-template"
+                            "link": "data/tree-data-template-demo"
                         }
                     ]
                 },

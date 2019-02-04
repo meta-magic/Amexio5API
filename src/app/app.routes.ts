@@ -129,41 +129,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'breadcrumb-demo', loadChildren: './navigation/breadcrumb/breadcrumb.demo.module#BreadcrumbDemoModule'
   },
-  /*grid....*/
-  // {
-  //   path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
-  // },
-  {
-    path: 'gridwithtoolbar-demo', loadChildren: './data/gridwithtoolbar/gridwithtoolbar.demo.module#GridWithToolBarDemoModule'
-  },
-  {
-    path: 'template-grid', loadChildren: './data/gridwithtemplate/gridwithtemplate.demo.module#GridWithTemplateDemoModule'
-  },
-  {
-    path: 'header-template', loadChildren: './data/headertemplate/headertemplate.demo.module#HeaderTemplateDemoModule'
-  },
-  {
-    path: 'filter-grid', loadChildren: './data/filtergrid/filtergrid.demo.module#FilterGridDemoModule'
-  },
-  {
-    path: 'groupby-grid', loadChildren: './data/groupby/groupbygrid.demo.module#GroupByGridDemoModule'
-  },
-  {
-    path: 'custom-col-grid', loadChildren: './data/customcolsize/customcolsizegrid.demo.module#CustomColSizeDemoModule'
-  },
-  {
-    path: 'scroll-grid', loadChildren: './data/gridwithscroll/gridwithscroll.demo.module#GridWithScrollDemoModule'
-  },
-
-  {
-    path: 'global-filter-grid', loadChildren: './data/globalfiltergrid/globalfilter.demo.module#GlobalFilterDemoModule'
-  },
-  {
-    path: 'tree-data-grid', loadChildren: './data/treedatagrid/treedatagrid.demo.module#TreeDataGridDemoModule'
-  },
-  {
-    path: 'tree-data-template', loadChildren: './data/treedatatemplate/treedatatemplate.demo.module#TreeDataTemplateDemoModule'
-  },
   {
     path: 'google-map-demo', loadChildren: './data/googlemap/googlemap.demo.module#GoogleMapModule'
   },
@@ -207,9 +172,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'contextual-menu-tree', loadChildren: './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'
   },
-  {
-    path: 'contextual-menu-grid', loadChildren: './contextualmenu/grid/contextmenugrid.demo.module#ContextualMenuGridDemoModule'
-  },
+  // {
+  //   path: 'contextual-menu-grid', loadChildren: './contextualmenu/grid/contextmenugrid.demo.module#ContextualMenuGridDemoModule'
+  // },
   {
     path: 'contextual-menu-listbox', loadChildren: './contextualmenu/listbox/contextmenulistbox.demo.module#ContextualMenuListBoxDemoModule'
   },

@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
 @Component({
-  selector: 'simplegridr-demo', template: `
+  selector: 'simplegrid-demo', template: `
   <amexio-api-structure [custom-com-data]="customSourceData"  [url]="'assets/componentjson/grid.json'">
     <amexio-api-demo>
       <amexio-row>
