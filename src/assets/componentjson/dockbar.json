@@ -1,0 +1,121 @@
+{
+  "title": "Amexio Dockbar",
+  "description": "The dockbar is a bar of tools and menus.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Dockbar Properties <amexio-dockbar>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "height",
+          "type": "string",
+          "default": "",
+          "description": "Height of dockbar."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Item Properties <amexio-dockbar-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title of dockbar item."
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "default": "",
+          "description": "Width of dockbar item."
+        },
+        {
+          "name": "path",
+          "type": "string",
+          "default": "",
+          "description": "Specifies the URL of an image.Use this attribute only for images."
+        },
+        {
+          "name": "icon",
+          "type": "string",
+          "default": "",
+          "description": "Icon name Material Example: icon='home', Fontawesome Example: icon='fa fa-address-book."
+        },
+        {
+          "name": "mda",
+          "type": "string",
+          "default": "",
+          "description": "This attribute use for only material icons.Example:mda='material-icons'"
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "navigation/dockbar/navigation.html",
+    "tsUrl": "navigation/dockbar/navigation.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-dockbar?embed=1&file=app/navigations/dockbar/dockbar.demo.html"
+  }
+}
