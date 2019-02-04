@@ -3,7 +3,7 @@
  */
 
 import {Component} from '@angular/core'
-import {Http} from "@angular/http";
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'context-menu-tab-demo',
@@ -16,7 +16,7 @@ export class ContextMenuTabDemo {
   typeScriptCode: string;
   copyMsgArray: any[];
   rightclickdata : any[];
-  constructor(private http: Http) {
+  constructor(private http: HttpClient) {
     this.rightclickdata = [
       {
         "text": "Back",
@@ -42,16 +42,16 @@ export class ContextMenuTabDemo {
     let responseTs:any;
 
     //HTML FILE
-    this.http.get('assets/data/code/layout/tab/contextmenutab/tab.html').subscribe(data => {
-      responseHtml = data.text();
+    this.http.get('assets/data/code/layout/tab/contextmenutab/tab.html',{responseType: 'text'}).subscribe(data => {
+      responseHtml = data;
     }, error => {
     }, () => {
       this.htmlCode = responseHtml;
     });
 
     //TS FILE
-    this.http.get('assets/data/code/layout/tab/contextmenutab/tab.text').subscribe(data => {
-      responseTs = data.text();
+    this.http.get('assets/data/code/layout/tab/contextmenutab/tab.text',{responseType: 'text'}).subscribe(data => {
+      responseTs = data;
     }, error => {
     }, () => {
       this.typeScriptCode = responseTs;

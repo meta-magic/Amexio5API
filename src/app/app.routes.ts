@@ -39,7 +39,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'navigation', loadChildren: './navigation/navigation.module#NavigationModule'
   },
-  
+
   /** Media Routes*/
   {
     path: 'media-demo', loadChildren: './media/media.module#MediaModule'
@@ -52,6 +52,17 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'panes', loadChildren: './panes/panes.module#PanesModule'
   },
+
+  /** Contextual Menu Routes*/
+  {
+    path: 'contextualmenu', loadChildren: './contextualmenu/contextualmenu.module#ContextualMenuModule'
+  },
+
+
+
+
+
+  
 
   {
     path: 'form-demo', loadChildren: './Forms/form/form.demo.module#FormDemoModule'
@@ -135,35 +146,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'license', loadChildren: './license/license.module#LicenseModule'
   },
-  {
-    path: 'dropdownmenu', loadChildren: './navigation/dropdownmenu/dropdownmenu.demo.module#DropDownMenuDemoModule'
-  },
-
-  /*Contextual Menus*/
-  {
-    path: 'contextual-menu-tree', loadChildren: './contextualmenu/tree/contextmenutree.demo.module#ContextualMenuTreeDemoModule'
-  },
-
-  {
-    path: 'contextual-menu-listbox', loadChildren: './contextualmenu/listbox/contextmenulistbox.demo.module#ContextualMenuListBoxDemoModule'
-  },
-  {
-    path: 'contextual-menu-tab', loadChildren: './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
-  },
-
-  {
-    path: 'contextmenu-card-form', loadChildren: './contextualmenu/card/contextmenucardform.demo.module#ContextMenuCardFormDemoModule'
-  },
-  {
-    path: 'contextual-menu-tab', loadChildren: './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
-  },
-  {
-    path: 'contextmenu-panel', loadChildren: './contextualmenu/panel/contextmenupanel.demo.module#ContextMenuPanelDemoModule'
-  },
-  {
-    path: 'contextmenu-window', loadChildren: './contextualmenu/window/contextmenuwindow.demo.module#ContextMenuWindowDemoModule'
-  },
-
   /* D3-Charts */
 
   {

@@ -664,37 +664,37 @@
             "children": [{
                     "text": "Card",
                     "icon": "fa fa-id-card-o fa-fw",
-                    "link": "contextmenu-card-form"
+                    "link": "contextualmenu/contextmenu-card-form-demo"
                 },
                 {
                     "text": "Grid",
-                    "link": "contextual-menu-grid",
+                    "link": "contextualmenu/contextual-menu-grid-demo",
                     "icon": "fa fa-database fa-fw"
                 },
                 {
                     "text": "List Box",
                     "icon": "fa fa-list fa-fw",
-                    "link": "contextual-menu-listbox"
+                    "link": "contextualmenu/contextual-menu-listbox-demo"
                 },
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars fa-fw",
-                    "link": "contextmenu-panel"
+                    "link": "contextualmenu/contextmenu-panel-demo"
                 },
                 {
                     "text": "Tab",
                     "icon": "fa fa-folder fa-fw",
-                    "link": "contextual-menu-tab"
+                    "link": "contextualmenu/contextual-menu-tab-demo"
                 },
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree fa-fw",
-                    "link": "contextual-menu-tree"
+                    "link": "contextualmenu/contextual-menu-tree-demo"
                 },
                 {
                     "text": "Window",
                     "icon": "fa fa-window-maximize fa-fw",
-                    "link": "contextmenu-window"
+                    "link": "contextualmenu/contextmenu-window-demo"
                 }
             ]
         },
