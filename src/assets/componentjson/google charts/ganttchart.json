@@ -1,0 +1,86 @@
+{
+  "title": "Amexio Gantt chart",
+  "description": "A Gantt chart is a type of chart that illustrates the breakdown of a project into its component tasks.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-chart-gantt>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+       {
+            "name": "width",
+            "type": "number",
+            "default": "",
+            "description": "Width of chart"
+        },
+        {
+            "name": "data",
+            "type": "Array",
+            "default": "",
+            "description": "For the use of local data "
+        }, {
+            "name": "critical-path-enabled",
+            "type": "boolean",
+            "default": "false",
+            "description": "The critical path in a Gantt chart is the path, or paths,that directly affect the finish date "
+        }, {
+            "name": "inner-grid-dark-track-color",
+            "type": "string",
+            "default": "",
+            "description": "The fill color of the alternate, dark inner grid track."
+        },
+        {
+            "name": "inner-grid-track-color",
+            "type": "string",
+            "default": "",
+            "description": "The fill color of the inner grid track."
+        }
+
+         ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/ganttchart/chart.html",
+    "tsUrl": "charts/ganttchart/chart.text",
+    "datasourceUrl": "assets/data/code/charts/ganttchart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-gantt-chart?embed=1&file=app/charts/timelinechart/ganttchart.demo.html&view=editor"
+  }
+}
