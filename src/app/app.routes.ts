@@ -181,9 +181,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'contextual-menu-tab', loadChildren: './contextualmenu/tab/contextmenutab.demo.module#ContextMenuTabDemoModule'
   },
-  {
-    path: 'context-menu-grid', loadChildren: './data/gridwithcontextmenu/gridwithcontextmenu.demo.module#GridWithScrollDemoModule'
-  },
 
   {
     path: 'contextmenu-card-form', loadChildren: './contextualmenu/card/contextmenucardform.demo.module#ContextMenuCardFormDemoModule'

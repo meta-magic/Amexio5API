@@ -1,0 +1,25 @@
+<amexio-api-structure [custom-com-data]="customSourceData"  [url]="'assets/componentjson/grid.json'">
+    <amexio-api-demo>
+      <amexio-row>
+        <amexio-column size="12">
+          <amexio-card [header]="true">
+            <amexio-header>
+              Simple Data Grid
+            </amexio-header>
+            <amexio-body>
+              <amexio-datagrid [enable-column-fiter]="true" title="Simple Data Grid " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'"
+                               [data-reader]="'data'" [page-size]="10">
+
+                <amexio-data-table-column [data-index]="'countryName'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
+                </amexio-data-table-column>
+                <amexio-data-table-column [sort]="false" [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
+                <amexio-data-table-column [data-index]="'currencyName'" [data-type]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+              </amexio-datagrid>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
+      </amexio-row>
+    </amexio-api-demo>
+
+  </amexio-api-structure>
+

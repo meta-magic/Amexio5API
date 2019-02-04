@@ -1,5 +1,5 @@
 import { NgModule } from "@angular/core";
-import { AmexioWidgetModule ,LoadRecaptchaService } from "amexio-ng-extensions";
+import { AmexioWidgetModule  } from "amexio-ng-extensions";
 import { FormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
@@ -36,7 +36,7 @@ import { ButtonDemo } from './button/button.demo';
         AmexioWidgetModule,
         RouterModule.forChild(FORMSACTION_ROUTE),
     ],
-    providers: [LoadRecaptchaService]
+    providers: []
 })
 export class FormsActionModule {
 
