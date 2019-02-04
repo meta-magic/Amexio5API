@@ -21,7 +21,7 @@
     "@angular/platform-browser-dynamic": "^6.0.5",
     "@angular/router": "^6.0.5",
     "amexio-chart-d3": "^0.1.1",
-    "amexio-ng-extensions": "^5.2.3",
+    "amexio-ng-extensions": "file:../../IO/amexio.github.io/dist/amexio-ng-extensions-5.5.4.tgz",
     "classlist.js": "^1.1.20150312",
     "core-js": "^2.5.4",
     "d3": "^5.7.0",
