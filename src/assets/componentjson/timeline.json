@@ -1,0 +1,134 @@
+{
+  "title": "Amexio Timeline",
+  "description": "A timeline is the presentation of a chronological sequence of events along a drawn line that enables a viewer to understand temporal relationships quickly.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Timeline Properties <amexio-timeline>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "content-alignment",
+          "description": "Content alignment is line for content section.",
+          "version": "5.4 onwards",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    },
+     {
+      "gridTitle": "Timeline Event Properties <amexio-timeline-event>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+        "name": "content-alignment",
+        "description": "Content alignment is alignment for the content section .",
+        "version": "5.4 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "content-border",
+        "description": "Content border is border for the content section.",
+        "version": "5.4 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "label",
+        "description": "Label for timeline.",
+        "version": "5.4 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "icon",
+        "description": "Icon for timeline.",
+        "version": "5.4 onwards",
+        "type": "string",
+        "default": ""
+      }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "layout/timeline/timeline.html",
+    "tsUrl": "layout/timeline/timeline.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-timeline?embed=1&file=app/timeline-demo/timeline/timeline.demo.component.ts"
+  }
+}

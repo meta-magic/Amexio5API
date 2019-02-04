@@ -111,7 +111,7 @@
   "sourceMetadata": {
     "htmlUrl": "",
     "tsUrl": "",
-    "datasourceUrl": ""
+    "datasourceUrl": "assets/data/componentdata/selectordata.json"
   },
   "liveMetadata": {
     "disabled": false,
