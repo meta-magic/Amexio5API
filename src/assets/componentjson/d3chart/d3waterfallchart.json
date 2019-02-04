@@ -1,0 +1,216 @@
+{
+  "title": "Amexio D3-chart waterfall",
+  "description": "An D3 waterfall chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-d3-chart-waterfall>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+       {
+            "name": "title",
+            "version": "0.0.7 Onwards",
+            "description": "Sets title to chart",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "width",
+            "description": "Width of chart",
+            "version": "0.0.7 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "height",
+            "description": "Height of chart",
+            "version": "0.0.7 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data",
+            "description": "Local data for Chart",
+            "version": "0.0.7 Onwards",
+            "type": "any[]",
+            "default": ""
+        },
+        {
+            "name": "legend",
+            "description": "Sets legend to D3 scatter chart",
+            "version": "0.0.7 Onwards",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "name": "http-url",
+            "description": "REST url for fetching data.",
+            "version": "0.0.7 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "http-method",
+            "description": "Type of HTTP call, POST,GET etc.",
+            "version": "0.0.7 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "data-reader",
+            "description": "Key in JSON Datasource for records.",
+            "version": "0.0.7 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "level",
+            "description": "Sets level for chart when drillable property used",
+            "version": "0.0.6 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "target",
+            "description": "Sets  target for chart when drillable property used",
+            "version": "0.0.7 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "drillable-data",
+            "description": "Arrays of keys provided for chart, when drillable property used.",
+            "version": "0.0.7 Onwards",
+            "type": "any",
+            "default": ""
+        },  {
+            "name": "horizontal-scale",
+            "description": "Sets Horizontal scaling ",
+            "version": "0.0.7 Onwards",
+            "type": "boolean",
+            "default": "true"
+        },
+        {
+            "name": "label-color",
+            "description": "Sets label color in D3 waterfall Chart",
+            "version": "0.0.8 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "label",
+            "description": "Sets label on D3 waterfall Chart",
+            "version": "0.0.8 Onwards",
+            "type": "boolean",
+            "default": "false"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Legend Events <amexio-d3-chart-waterfall>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+          {
+            "name": "onLegendClick()",
+            "version": "0.0.7 Onwards",
+            "description": "It will fire only on click on Legend Click in D3 scatter chart ."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Events <amexio-d3-chart-waterfall>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+       {
+            "name": "onChartClick()",
+            "version": "0.0.7 Onwards",
+            "description": "It will fire only on click on chart in D3 scatter chart ."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/D3Charts/d3waterfallchart/d3chart.html",
+    "tsUrl": "charts/D3Charts/d3waterfallchart/d3chart.text",
+    "datasourceUrl": "assets/data/code/charts/D3Charts/d3waterfallchart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-d3-chart-waterfall?embed=1&file=src/app/d3chart/d3barchart/d3barchart.demo.component.html&view=editor"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "title": "Amexio D3-Drillable Chart",
+  "description": "",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-drillable>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+      {
+            "name": "Charts supporting Drill down Property",
+            "description": "<amexio-d3-chart-bar>, <amexio-d3-chart-pie>, <amexio-d3-chart-donut>"
+        }    
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": ""
+  }
+}
