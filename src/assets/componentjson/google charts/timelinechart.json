@@ -1,0 +1,69 @@
+{
+  "title": "Amexio timeline chart",
+  "description": "A timeline is a chart that depicts how a set of resources are used over time.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-chart-timeline>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "width",
+          "type": "number",
+          "default": "",
+          "description": "Width of chart"
+        },
+        {
+          "name": "data",
+          "type": "Array",
+          "default": "",
+          "description": "For the use of local data "
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/timelinechart/chart.html",
+    "tsUrl": "charts/timelinechart/chart.text",
+    "datasourceUrl": "assets/data/code/charts/timelinechart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-timelinechart?embed=1&file=app/charts/timelinechart/timelinechart.demo.html"
+  }
+}
