@@ -1,0 +1,231 @@
+{
+  "title": "",
+  "description": "",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-d3-chart-bar>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "version": "0.0.1 Onwards",
+          "description": "Sets title to chart",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "width",
+          "description": "Width of chart",
+          "version": "0.0.1 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "height",
+          "description": "Height of chart",
+          "version": "0.0.1 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "data",
+          "description": "Local data for Chart",
+          "version": "0.0.1 Onwards",
+          "type": "any[]",
+          "default": ""
+        },
+        {
+          "name": "color",
+          "description": "Sets color to D3 Bar chart",
+          "version": "0.0.1 Onwards",
+          "type": "any",
+          "default": ""
+        },
+        {
+          "name": "horizontal",
+          "description": "Sets Horizontal D3 Bar chart",
+          "version": "0.0.5 Onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "legend",
+          "description": "Sets legend to D3 Bar chart",
+          "version": "0.0.1 Onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "http-url",
+          "description": "REST url for fetching data.",
+          "version": "0.0.4 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "http-method",
+          "description": "Type of HTTP call, POST,GET etc.",
+          "version": "0.0.4 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "data-reader",
+          "description": "Key in JSON Datasource for records.",
+          "version": "0.0.4 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "level",
+          "description": "Sets level for chart when drillable property used",
+          "version": "0.0.6 Onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "target",
+          "description": "Sets  target for chart when drillable property used",
+          "version": "0.0.6 Onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "drillable-data",
+          "description": "Arrays of keys provided for chart, when drillable property used.",
+          "version": "0.0.6 Onwards",
+          "type": "any",
+          "default": ""
+        },
+        {
+          "name": "horizontal-scale",
+          "description": "Sets Horizontal scaling ",
+          "version": "0.0.7 Onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "label-color",
+          "description": "Sets label color in D3 Bar Chart",
+          "version": "0.0.8 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "label",
+          "description": "Sets label on D3 Bar Chart",
+          "version": "0.0.8 Onwards",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Legend Events <amexio-d3-chart-bar>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onLegendClick()",
+          "version": "0.0.2 Onwards",
+          "description": "It will fire only on click on Legend Click in D3 bar chart ."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Events <amexio-d3-chart-bar>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onChartClick()",
+          "version": "0.0.2 Onwards",
+          "description": "It will fire only on click on chart in D3 bar chart ."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": ""
+  }
+}
