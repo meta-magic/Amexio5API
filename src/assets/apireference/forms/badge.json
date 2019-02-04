@@ -1,0 +1,77 @@
+{
+  "name": "Amexio Badge",
+  "description": "Badges are small status descriptors for UI elements.",
+  "selector": "<amexio-button>",
+  "properties": [
+    {
+      "name": "absolute",
+      "description": "position of badge is absolute ",
+      "version": "5.5.5 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "background",
+      "description": "background color or gradient",
+      "version": "5.5.5 onwards",
+      "type": "string",
+      "default": "theme background color"
+    },
+    {
+      "name": "color",
+      "description": "color of badge",
+      "version": "5.5.5 onwards",
+      "type": "string",
+      "default": "theme color"
+    },
+    {
+      "name": "top",
+      "description": "badge position of top. this attrbute work when absolute is true",
+      "version": "5.5.5 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "left",
+      "description": "badge position of left. this attrbute work when absolute is true",
+      "version": "5.5.5 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "right",
+      "description": "badge position of right. this attrbute work when absolute is true",
+      "version": "5.5.5 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "bottom",
+      "description": "badge position of bottom. this attrbute work when absolute is true",
+      "version": "5.5.5 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "orientation",
+      "description": "vertical or horizontal.",
+      "version": "5.5.5 onwards",
+      "type": "string",
+      "default": "vertical"
+    },
+    {
+      "name" : "height",
+      "description" : "height of badge",
+      "version": "5.5.5 onwards",
+      "type" :  "string",
+      "default" : ""
+    },
+    {
+      "name" : "width",
+      "description" : "width of badge",
+      "version": "5.5.5 onwards",
+      "type" :  "string",
+      "default" : ""
+    }
+  ]
+}

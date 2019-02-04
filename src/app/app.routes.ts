@@ -104,6 +104,9 @@
 
     /**Button */
     {
+      path: 'badge-demo', loadChildren: './forms/badge/badge.demo.module#BadgeDemoModule'
+    },
+    {
       path: 'button-demo', loadChildren: './forms/button/button.demo.module#ButtonDemoModule'
     },
     {
@@ -150,6 +153,9 @@
     /**Layout Routes*/
     {
       path: 'card-form-demo', loadChildren: './layout/card/cardform/cardform.demo.module#CardFormDemoModule'
+    },
+    {
+      path: 'card-ce-demo', loadChildren: './creative/cardce/card.demo.module#CreativeCardDemoModule'
     },
 
     {

@@ -1,0 +1,43 @@
+<!-- Badge Non-Veg -->
+<amexio-card-ce>
+    <amexio-image width="100%" path="https://www.seriouseats.com/recipes/images/2015/07/20150728-homemade-whopper-food-lab-35-1500x1125.jpg"></amexio-image>
+    <amexio-badge [absolute]="true" [background]="'red'" [color]="'white'" [top]="'0px'" [right]="'0px'">
+        <amexio-label size="red">Non-Veg</amexio-label>
+    </amexio-badge>
+
+    <amexio-header-ce [border-bottom]="true" [align]="'space-between'">
+        <amexio-label size="medium-bold">Burger lovers</amexio-label>
+        <amexio-image [icon-class]="'fa fa-phone fa-1x'" [tooltip]="'Phone'"></amexio-image>
+    </amexio-header-ce>
+    <amexio-body-ce>
+        <amexio-label>Tonight's availability</amexio-label> <br />
+        <amexio-chips *ngFor="let item of ['07:00', '08:00', '09:00', '11:00']">
+            <amexio-chip [label]="item" [color]="item.color"> </amexio-chip>
+        </amexio-chips>
+    </amexio-body-ce>
+</amexio-card-ce>
+
+<!-- Badge 2019 Jan -->
+<amexio-card-ce>
+    <amexio-header-ce>
+        <amexio-image width="50px" height="50px" [filter]="'round'" path="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/022014/triumph_motorcycles_2013.jpg?itok=rysgr_NR"></amexio-image>
+        <amexio-label size="medium-bold">Triumph Bonneville T120 </amexio-label>
+    </amexio-header-ce>
+    <amexio-image width="100%" path="http://imagesvc.timeincapp.com/v3/foundry/image/?q=70&w=1440&url=https%3A%2F%2Ftimedotcom.files.wordpress.com%2F2018%2F12%2F3201_spt_2019_20191540_original-2.jpg%3Fquality%3D85"></amexio-image>
+    <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'6%'" [right]="'5%'">
+        <amexio-label size="large">2019</amexio-label>
+        <amexio-label>Jan</amexio-label>
+    </amexio-badge>
+
+    <amexio-body-ce>
+        <p>
+            It accomplishes that goal with unique finishes and a limited production run. Let’s take a look at what makes the 2019 Triumph Bonneville T120 Diamond Edition a special motorcycle.
+        </p>
+    </amexio-body-ce>
+    <amexio-action-ce>
+        <amexio-button [label]="'BUY'" [type]="'transparent'" [tooltip]="'BUY'">
+        </amexio-button>
+        <amexio-button [label]="'SELL'" [type]="'transparent'" [tooltip]="'SELL'">
+        </amexio-button>
+    </amexio-action-ce>
+</amexio-card-ce>

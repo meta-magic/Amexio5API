@@ -16,7 +16,7 @@
         },
         {
             "text": "Layouts",
-            "badge": "2",
+            "badge": "3",
             "icon": "fa fa-desktop fa-fw",
             "children": [{
                     "text": "Accordion",
@@ -54,6 +54,11 @@
                             "icon": "fa fa-leaf fa-fw"
                         }
                     ]
+                },
+                {
+                    "text": "Creative Card",
+                    "icon": "fa fa-creative-commons fa-fw",
+                    "link": "card-ce-demo"
                 },
                 {
                     "text": "Column Vertical",
@@ -264,8 +269,13 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
-            "badge": "19",
+            "badge": "20",
             "children": [{
+                    "text": "Badge",
+                    "icon": "fa fa-id-badge fa-fw",
+                    "link": "badge-demo",
+                    "badge": "NEW"
+                }, {
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o fa-fw",
                     "link": "singlecheckbox-demo",
