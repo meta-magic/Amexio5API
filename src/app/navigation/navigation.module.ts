@@ -25,12 +25,12 @@ import { BreadcrumbDemo } from './breadcrumb/breadcrumb.demo';
 @NgModule({
     declarations: [ MenuBarDemo, ToolbarDemo, SideNavRightDemo, sideNavDemoPage,
         SideNavDemo, NavbarDemo, DropDownMenuDemo, DockbarDemo, BreadcrumbDemo
-    
+
     ],
     imports: [
-        CommonModule, 
-        FormsModule, 
-        HttpClientModule, 
+        CommonModule,
+        FormsModule,
+        HttpClientModule,
         SharedModule.forRoot(),
         AmexioWidgetModule,
         RouterModule.forChild(NAVIGATION_ROUTE),

@@ -1,26 +1,17 @@
-import { Component, OnInit, Input, AfterContentInit } from '@angular/core';
-import * as d3 from 'd3';
-import { HttpClient } from '@angular/common/http';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'drillable-with-single-target-demo',
   templateUrl: './d3drillablesingletarget.demo.component.html'
 })
 export class AmexioD3DrillableSingleTargetDemoComponent implements OnInit {
-
-  htmlCode: string;
-  typeScriptCode: string;
-  copyMsgArray: any[];
   drillabledata:any;
   barchartcolor: any;
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+  constructor() {
   }
-
-
   ngOnInit() {
      this.drillabledata=["label","value","name"];
-    
+
      this.barchartcolor =
       [
         "#4040a1",
@@ -31,41 +22,9 @@ export class AmexioD3DrillableSingleTargetDemoComponent implements OnInit {
         "#d64161",
         "#ff7b25"
       ]
-       
+
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-    let dataSource: any;
-    //HTML FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3drillablechart/d3chart.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    // TS FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3drillablechart/d3chart.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-   
-  }
-
-  //this code use copy to html code from tabpanel
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    } else {
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    }
-  }
 
 
 
