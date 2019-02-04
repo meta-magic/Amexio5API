@@ -174,9 +174,9 @@
       ],
       "gridData": [
         {
-          "name": "onLegendClick()",
-          "version": "0.0.2 Onwards",
-          "description": "It will fire only on click on Legend Click in D3 bar chart ."
+            "name": "onLegendClick()",
+            "version": "0.0.3  Onwards",
+            "description": "It will fire only on click on Legend Click in D3 bar-stack chart ."
         }
       ]
     },

@@ -180,10 +180,10 @@
         }
       ],
       "gridData": [
-        {
-          "name": "onLegendClick()",
-          "version": "0.0.2 Onwards",
-          "description": "It will fire only on click on Legend Click in D3 bar chart ."
+         {
+            "name": "onLegendClick()",
+            "version": "0.0.7 Onwards",
+            "description": "It will fire only on click on Legend Click in D3 Bubble chart ."
         }
       ]
     },
@@ -212,12 +212,12 @@
       ],
       "gridData": [
         {
-          "name": "onChartClick()",
-          "version": "0.0.2 Onwards",
-          "description": "It will fire only on click on chart in D3 bar chart ."
+            "name": "onChartClick()",
+            "version": "0.0.7 Onwards",
+            "description": "It will fire only on click on chart in D3 Bubble chart ."
         }
       ]
-    }
+    }  
   ],
   "sourceMetadata": {
     "htmlUrl": "charts/D3Charts/d3bubblechart/d3chart.html",
