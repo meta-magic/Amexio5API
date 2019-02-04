@@ -206,9 +206,9 @@
     }
   ],
   "sourceMetadata": {
-    "htmlUrl": "charts/D3Charts/d3linechart/d3chart.html",
-    "tsUrl": "charts/D3Charts/d3linechart/d3chart.text",
-    "datasourceUrl": "assets/data/code/charts/D3Charts/d3linechart/datasource.json"
+    "htmlUrl": "charts/D3Charts/d3multiareachart/d3chart.html",
+    "tsUrl": "charts/D3Charts/d3multiareachart/d3chart.text",
+    "datasourceUrl": "assets/data/code/charts/D3Charts/d3multiareachart/datasource.json"
   },
   "liveMetadata": {
     "disabled": false,
