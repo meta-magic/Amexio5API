@@ -1,0 +1,86 @@
+{
+  "title": "Amexio Gauge Chart",
+  "description": "A gauge with a dial, rendered within the browser using SVG. Guages are available under AmexioDashboardModule from amexio-ng-extensions/dashboard",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-dashboard-gauge>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+      {
+      "name": "height",
+      "type": "number",
+      "default": "",
+      "description":"Height of chart"
+    },{
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "description":"Width of chart"
+    },{
+      "name": "data",
+      "type": "Array",
+      "default": "",
+      "description":"Local data for gauge chart"
+    },{
+      "name": "red-color-from",
+      "type": "number",
+      "default": "",
+      "description":"The lowest value for a range marked by a red color."
+    },{
+      "name": "red-color-to",
+      "type": "number",
+      "default": "",
+      "description":"The highest value for a range marked by a red color."
+    },{
+      "name": "yellow-color-from",
+      "type": "number",
+      "default": "",
+      "description":"The lowest value for a range marked by a yellow color."
+    },{
+      "name": "yellow-color-to",
+      "type": "number",
+      "default": "",
+      "description":"The highest value for a range marked by a yellow color."
+    }  
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "dashboard/gauge/chart.html",
+    "tsUrl": "dashboard/gauge/chart.text",
+    "datasourceUrl": "assets/data/code/dashboard/gauge/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-gauge?embed=1&file=app/dashboard/gauge/gauge.demo.html"
+  }
+}
