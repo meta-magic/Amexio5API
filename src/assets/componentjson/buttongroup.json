@@ -1,0 +1,87 @@
+{
+    "title": "Amexio Button Group",
+    "description": "Button groups are containers for related action amexio-button.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-btn-group>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "size",
+            "description": "large, default, small & xsmall",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+            "name": "getButton",
+            "description": "Fire when button click"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/datepicker/form.html",
+      "tsUrl": "forms/detepicker/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-datepicker?ctl=1&embed=1&file=app/forms/datepicker/datepicker.demo.html"
+    }
+  }
