@@ -1,0 +1,68 @@
+{
+  "title": "Amexio Geo Chart",
+  "description": "Data can be plotted on a Map using Amexio's AmexioMapModule. All Mapping widgets are available under amexio-ng-extensions/maps",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-map-geo-chart>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+      {
+      "name": "height",
+      "type": "number",
+      "default": "",
+      "description": "Height of chart"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "description": "Width of chart"
+    },
+    {
+      "name": "data",
+      "type": "array",
+      "default": "",
+      "description": "Local data for GeoChart"
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "map/geochart/chart.html",
+    "tsUrl": "map/geochart/chart.text",
+    "datasourceUrl": "assets/data/code/map/geochart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-geochart?embed=1&file=app/map/geochart/geochart.demo.html"
+  }
+}
