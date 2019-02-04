@@ -1,0 +1,178 @@
+{
+  "title": "Amexio Accordion",
+  "description": "Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs.",
+  "apiRefMetadata": [
+    { 
+      "gridTitle": "Properties <amexio-accordion>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+      "name": " expand-all",
+      "description": " Pane will expand or collapse based on the boolean",
+      "version": " 4.0 onwards",
+      "type": " boolean",
+      "default": " false"
+    },
+    {
+      "name": " transparent",
+      "description": " Apply Transparent styles to accordion",
+      "version": " 4.0 onwards",
+      "type": " boolean",
+      "default": " false"
+    },
+    {
+      "name": " angle-icon ",
+      "description": " Can use Angle Icons instead of default plus/minus icons",
+      "version": " 4.0 onwards",
+      "type": " boolean",
+      "default": " false"
+      }
+      ]
+    },
+    {
+      "gridTitle": "Tab Properties <amexio-accordion-tab>",
+      "columnDefinition": [
+       {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+      "name": "active",
+      "description": "user can Set true for specific accordian open as default",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "left-icon",
+      "description": "places the icon on left",
+      "version": "4.0 onwards",
+      "type": "string",
+      "default": ""
+    },
+    {
+      "name": "angle-icon",
+      "description": "Can use Angle Icons instead of default plus/minus icons",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "disabled",
+      "description": "Disabled specific panes",
+      "version": "4.0 onwards",
+      "type": "boolean",
+      "default": "false"
+    },
+    {
+      "name": "header",
+      "description": "User can bind title for accordion tab",
+      "version": "4.0 onwards",
+      "type": "any",
+      "default": "none"
+    }
+      ]
+    },
+    {
+      "gridTitle": "Events <amexio-accordion-tab>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+      "name": "emittedEvent",
+      "description": "Fires on the accordion pane click event."
+    }
+      ]
+    }
+  ],
+  "sourceMetadata":{
+    "htmlUrl": "layout/accordion/accordion.html",
+    "tsUrl":"layout/accordion/accordion.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata":{
+    "disabled":false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-accordion?embed=1&file=app/layouts/accordion/accordion.demo.html"
+  }
+} 

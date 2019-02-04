@@ -22,6 +22,8 @@ import { IconWithTabDemo } from "./tab/iconwithtab/iconwithtab.demo";
 import { VerticalRightTabDemo } from "./tab/verticalrighttab/verticalrighttab.demo";
 import { VerticalTabDemo } from "./tab/verticaltab/verticaltab.demo";
 import {TabDemo} from './tab/basictab/tab.demo';
+import { DyanmicTabComponent } from "./tab/enhancedtab/dynamictabdemo.component";
+import { DyanmicVerticalTabComponent } from "./tab/enhancedverticaltab/dynamicverticaltabdemo.component";
 
 /**
  * Created by kedar on 1/2/19.
@@ -30,8 +32,8 @@ import {TabDemo} from './tab/basictab/tab.demo';
     declarations: [WindowDemoComponent, StepBoxIconComponent, StepBoxDemoComponent,
         ClosableTabDemo, PanelDemoComponent, FieldSetDemoComponent,DialogueDemoComponent,
         CarouselDemoComponent, EnhancedTabDemo,EnhancedVerticalTabDemo,ScrollableTabDemo,
-        IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo
-        
+        IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo, DyanmicTabComponent,
+        DyanmicVerticalTabComponent,
 
 
     ],

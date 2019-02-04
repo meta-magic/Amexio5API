@@ -12,13 +12,14 @@ import { AcrossTreeDemo } from "./acrosstree/acrosstree.demo.component";
 import { ItemSelectorDragdropDemo } from "./itemselectordragdrop/itemselectordragdrop.demo";
 import { WithinTreeDemo } from "./withintree/withintree.demo.component";
 import { TreeToPanelDemo } from "./treetopanel/treetopanel.demo.component";
+import { ItemSelectorDragdropPanel } from "./selectordragdroppanel/selectordragdroppanel.demo";
 
  
 /**
  * Created by kedar on 4/2/19.
  */
 @NgModule({
-    declarations: [ AcrossTreeDemo, WithinTreeDemo, TreeToPanelDemo , 
+    declarations: [ AcrossTreeDemo, WithinTreeDemo, TreeToPanelDemo ,ItemSelectorDragdropPanel, 
         ItemSelectorDragdropDemo
     
     ],
