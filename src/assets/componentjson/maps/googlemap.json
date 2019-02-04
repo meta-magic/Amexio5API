@@ -1,0 +1,143 @@
+{
+  "title": "Amexio Google Map",
+  "description": "A Google Map Demo, show overlays and emitt the data on-click on overlay.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Map Properties <amexio-google-map>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+      "deprecated":false,
+      "name": "data",
+      "type": "array",
+      "default": "",
+      "description":"use GoogleMapOverlays model class which is exported as part of library. It consist of latitude, longitude, title, show-title, icon & json object",
+      "version": "5.5.1 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "height",
+      "type": "string",
+      "default": "250px",
+      "description":"Height for google map.",
+      "version": "5.5.1 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "width",
+      "type": "string",
+      "default": "100% of container",
+      "description":"Width for google map. value can be percentage of pixel",
+      "version": "5.5.1 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "initial-zoom-level",
+      "type": "number",
+      "default": "2",
+      "description":"User can provide zoom-level of map by default",
+      "version": "5.5.1 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "initial-lat",
+      "type": "number",
+      "default": "51.507351",
+      "description":"Load map by default at latitude when loaded",
+      "version": "5.5.1 onwards"
+
+    },
+    {
+      "deprecated":false,
+      "name": "initial-lng",
+      "type": "number",
+      "default": "-0.127758",
+      "description":"Load map by default at longitude when loaded",
+      "version": "5.5.1 onwards"
+    },
+    {
+      "deprecated":false,
+      "name": "min-height",
+      "type": "string",
+      "default": "250px",
+      "description":"Sets minimum height for google map",
+      "version": "5.5.4 onwards"
+    }
+      ]
+    },
+    {
+      "gridTitle": "Events <amexio-google-map>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+      "name": "onMarkerClick",
+      "description":"It will fire on click of marker on google map"
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "data/googlemap/googlemap.html",
+    "tsUrl": "data/googlemap/googlemap.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-googlemap-f4u8ns?embed=1&file=app/map/googlemap/googlemap.demo.html&view=editor"
+  }
+}
