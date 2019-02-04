@@ -3,53 +3,14 @@
  */
 
 import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 
 @Component({
-  selector: 'paginator-demo', 
+  selector: 'paginator-demo',
   templateUrl :'./paginator.demo.html',
 })
 export class PaginatorDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  copyMsgArray: any[];
   currentPage: number = 1;
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-  }
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/paginator/paginator.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/paginator/paginator.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
-
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-    } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-    }
-  }
+  constructor() {}
 
   loadPageData(pageNumber:number) {
    this.currentPage = pageNumber;
