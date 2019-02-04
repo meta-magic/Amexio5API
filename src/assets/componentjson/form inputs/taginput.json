@@ -1,0 +1,193 @@
+{
+    "title": "Amexio Tag Input",
+    "description": "Tags based multi input with typeahead facility.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-tag-input>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "field-label",
+            "description": "The label of this field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "allow-blank",
+            "description": "Sets if field is required (true or false)",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "data",
+            "description": "Input data source",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "data-reader",
+            "description": "Key in JSON datasource for records",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "http-method",
+            "description": "Type of HTTP call, POST,GET.",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "http-url",
+            "description": "REST url for fetching datasource.",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "display-field",
+            "description": "Name of key inside response data to display on ui.",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "value-field",
+            "description": "Name of key inside response data.use to send to backend",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "font-style",
+            "description": "Set font-style to field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "font-family",
+            "description": "Set font-family to field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "font-size",
+            "description": "Set font-size to field",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "enable-popover",
+            "description": "Set enable / disable popover.",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": ""
+          },
+          {
+            "name": "has-label",
+            "description": "flag to set label",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "True"
+          },
+          {
+            "name": "key",
+            "description": "Key as input to tags",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "trigger-char",
+            "description": "Sets the trigger char length",
+            "version": "4.0 onwards",
+            "type": "number",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+        "name": "input",
+        "description": "On input event field."
+      },
+      {
+        "name": "onChange",
+        "description": "on change event"
+      },
+      {
+        "name": "focus",
+        "description": "On field focus event"
+      }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/taginput/form.html",
+      "tsUrl": "forms/taginput/form.text",
+      "datasourceUrl": "assets/data/componentdata/country.json"
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-taginput?embed=1&file=app/forms/taginput/taginput.demo.html"
+    }
+  }
