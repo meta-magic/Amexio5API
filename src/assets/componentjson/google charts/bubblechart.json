@@ -1,0 +1,351 @@
+{
+  "title": "Amexio bubble chart",
+  "description": "A bubble chart is used to visualize a data set with two to four dimensions. The first two dimensions are visualized as coordinates, the third as color and the fourth as size.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-chart-bubble>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "height",
+          "type": "number",
+          "default": "",
+          "description": "Height of chart"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "default": "",
+          "description": "Width of chart"
+        },
+        {
+          "name": "data",
+          "type": "Array",
+          "default": "",
+          "description": "For the use of local data "
+        },
+        {
+          "name": "axis-color",
+          "type": "Array",
+          "default": "false",
+          "description": "An object that specifies a mapping between color column values and colors or a gradient scale.example:['#FF0000', '#00FF00'] or ['yellow', 'red']"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Title Properties <amexio-chart-title>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title to display above the chart."
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "default": "",
+          "description": "Color of chart title."
+        },
+        {
+          "name": "font-name",
+          "type": "string",
+          "default": "",
+          "description": "Font name of chart title."
+        },
+        {
+          "name": "font-size",
+          "type": "number",
+          "default": "",
+          "description": "Font size of chart title."
+        },
+        {
+          "name": "bold",
+          "type": "boolean",
+          "default": "false",
+          "description": "Set true for title in bold font."
+        },
+        {
+          "name": "italic",
+          "type": "boolean",
+          "default": "false",
+          "description": "Set true for title text in italic Style."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Legend Properties <amexio-chart-legend>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "position",
+          "type": "string",
+          "default": "",
+          "description": "Position of the legend.'bottom' - Below the chart.'top' - Above the chart."
+        },
+        {
+          "name": "alignment",
+          "type": "string",
+          "default": "",
+          "description": "Alignment of the legend.'start' - Aligned to the start of the area allocated for the legend.'center' - Centered in the area allocated for the legend 'end' - Aligned to the end of the area allocated for the legend."
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "default": "",
+          "description": "Color of chart legend. for example: 'red' or '#00cc00'."
+        },
+        {
+          "name": "font-name",
+          "type": "string",
+          "default": "",
+          "description": "Font name of chart legend."
+        },
+        {
+          "name": "font-size",
+          "type": "number",
+          "default": "",
+          "description": "Font size of chart legend."
+        },
+        {
+          "name": "bold",
+          "type": "boolean",
+          "default": "false",
+          "description": "Set true for legend text in bold font."
+        },
+        {
+          "name": "max-lines",
+          "type": "number",
+          "default": "",
+          "description": "Maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Horizontal Axis  Properties <amexio-chart-horizontal-axis>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title of the chart for the horizontal axis."
+        },
+        {
+          "name": "title-color",
+          "type": "string",
+          "default": "",
+          "description": "The color of the chart for the horizontal axis."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Vertical Axis Properties <amexio-chart-vertical-axis>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+       {
+      "name": "title",
+      "type": "string",
+      "default": "",
+      "description": "Title of the chart for the Vertical axis."
+    },
+    {
+      "name": "title-color",
+      "type": "string",
+      "default": "",
+      "description": "The color of the chart for the Vertical axis."
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/bubblechart/chart.html",
+    "tsUrl": "charts/bubblechart/chart.text",
+    "datasourceUrl": "assets/data/code/charts/bubblechart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-bubblechart?embed=1&file=app/charts/bubblechart/bubblechart.demo.html"
+  }
+}
