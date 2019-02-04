@@ -51,7 +51,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   /** panes Routes*/
   {
     path: 'panes', loadChildren: './panes/panes.module#PanesModule'
-  },  
+  },
 
   /** Contextual Menu Routes*/
   {
@@ -69,10 +69,24 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'map', loadChildren: './map/map.module#MapModule'
   },
 
- /** Enterprise */
+  /** Enterprise */
   {
     path: 'enterprise', loadChildren: './enterprise/enterprise.module#EnterpriseModule'
   },
+
+  /** drillableD3Chart */
+  {
+    path: 'drillableD3Chart', loadChildren: './drillableChart/drillablechart.module#DrillableD3ChartModule'
+  },
+  /** Google Chart Routes*/
+  {
+    path: 'google-chart', loadChildren: './charts/googlechart/googlechart.module#GoogleChartModule'
+  },
+
+
+
+
+
 
 
   {
@@ -88,41 +102,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'html-form-demo', loadChildren: './Forms/form-html/template-driven/form.demo.module#HtmlFormDemoModule'
   },
 
-  /**Chart Routes*/
-  {
-    path: 'area-chart-demo', loadChildren: './charts/googlechart/areachart/areachart.demo.module#AreaChartDemoModule'
-  }, {
-    path: 'bar-chart-demo', loadChildren: './charts/googlechart/barchart/barchart.demo.module#BarChartDemoModule'
-  }, {
-    path: 'bubble-chart-demo', loadChildren: './charts/googlechart/bubblechart/bubblechart.demo.module#BubbleChartDemoModule'
-  }, {
-    path: 'candlestick-chart-demo',
-    loadChildren: './charts/googlechart/candlestickchart/candlestickchart.demo.module#CandlestickChartDemoModule'
-  }, {
-    path: 'candlestickwaterfall-chart-demo',
-    loadChildren: './charts/googlechart/candlestickwaterfallchart/candlestickchartwaterfall.demo.module#CandlestickWaterfallChartDemoModule'
-  }, {
-    path: 'column-chart-demo', loadChildren: './charts/googlechart/columnchart/columnchart.demo.module#ColumnChartDemoModule'
-  }, {
-    path: 'combo-chart-demo', loadChildren: './charts/googlechart/combochart/combochart.demo.module#ComboChartDemoModule'
-  }, {
-    path: 'donut-chart-demo', loadChildren: './charts/googlechart/donutchart/donutchart.demo.module#DonutChartDemoModule'
-  }, {
-    path: 'gantt-chart-demo', loadChildren: './charts/googlechart/ganttchart/ganttchart.demo.module#GanttChartDemoModule'
-  }, {
-    path: 'histogram-chart-demo',
-    loadChildren: './charts/googlechart/histogramchart/histogramchart.demo.module#HistogramChartDemoModule'
-  }, {
-    path: 'line-chart-demo', loadChildren: './charts/googlechart/linechart/linechart.demo.module#LineChartDemoModule'
-  }, {
-    path: 'pie-chart-demo', loadChildren: './charts/googlechart/piechart/piechart.demo.module#PieChartDemoModule'
-  }, {
-    path: 'scatter-chart-demo', loadChildren: './charts/googlechart/scatterchart/scatterchart.demo.module#ScatterChartDemoModule'
-  }, {
-    path: 'timeline-chart-demo',
-    loadChildren: './charts/googlechart/timelinechart/timelinechart.demo.module#TimelineChartDemoModule'
-  },
-
+  
   /* D3-Charts */
 
   {
@@ -167,12 +147,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'amexio-d3-chart-timeline', loadChildren: './charts/D3charts/d3timelinechart/d3timelinechart.demo.module#D3TimelineChartDemoModule'
-  },
-  {
-    path: 'drillable-with-single-target-demo', loadChildren: './charts/D3charts/d3drillablesingletarget/d3drillablesingletarget.demo.module#D3DrillableSingleTargetDemoModule'
-  },
-  {
-    path: 'drillable-with-multiple-target-demo', loadChildren: './charts/D3charts/d3drillablemultipletarget/d3drillablemultipletarget.demo.module#D3DrillableMultipleTargetDemoModule'
-  },
+  }
 
 ];

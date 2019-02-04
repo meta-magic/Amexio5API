@@ -764,12 +764,12 @@
             "children": [{
                     "text": "Single Target",
                     "icon": "fa fa-bar-chart fa-fw",
-                    "link": "drillable-with-single-target-demo"
+                    "link": "drillableD3Chart/drillable-with-single-target-demo"
                 },
                 {
                     "text": "Multiple Targets",
                     "icon": "fa fa-bar-chart fa-fw",
-                    "link": "drillable-with-multiple-target-demo"
+                    "link": "drillableD3Chart/drillable-with-multiple-target-demo"
                 }
             ]
         },
@@ -870,72 +870,72 @@
                     "children": [{
                             "text": "Area Chart",
                             "icon": "fa fa-area-chart fa-fw",
-                            "link": "area-chart-demo"
+                            "link": "google-chart/area-chart-demo"
                         },
                         {
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "link": "bar-chart-demo"
+                            "link": "google-chart/bar-chart-demo"
                         },
                         {
                             "text": "Bubble Chart",
                             "icon": "fa fa-circle fa-fw",
-                            "link": "bubble-chart-demo"
+                            "link": "google-chart/bubble-chart-demo"
                         },
                         {
                             "text": "Candlestick Chart",
                             "icon": "fa fa-stack-exchange fa-fw",
-                            "link": "candlestick-chart-demo"
+                            "link": "google-chart/candlestick-chart-demo"
                         },
                         {
                             "text": "Candlestick Waterfall",
                             "icon": "fa fa-tint fa-fw",
-                            "link": "candlestickwaterfall-chart-demo"
+                            "link": "google-chart/candlestickwaterfall-chart-demo"
                         },
                         {
                             "text": "Column Chart",
                             "icon": "fa fa-columns fa-fw",
-                            "link": "column-chart-demo"
+                            "link": "google-chart/column-chart-demo"
                         },
                         {
                             "text": "Combo Chart",
                             "icon": "fa fa-area-chart fa-fw",
-                            "link": "combo-chart-demo"
+                            "link": "google-chart/combo-chart-demo"
                         },
                         {
                             "text": "Donut Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "link": "donut-chart-demo"
+                            "link": "google-chart/donut-chart-demo"
                         },
                         {
                             "text": "Gantt Chart",
                             "icon": "fa fa-calendar fa-fw",
-                            "link": "gantt-chart-demo"
+                            "link": "google-chart/gantt-chart-demo"
                         },
                         {
                             "text": "Histogram Chart",
                             "icon": "fa fa-bars fa-fw",
-                            "link": "histogram-chart-demo"
+                            "link": "google-chart/histogram-chart-demo"
                         },
                         {
                             "text": "Line Chart",
                             "icon": "fa fa-line-chart fa-fw",
-                            "link": "line-chart-demo"
+                            "link": "google-chart/line-chart-demo"
                         },
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "link": "pie-chart-demo"
+                            "link": "google-chart/pie-chart-demo"
                         },
                         {
                             "text": "Scatter Chart",
                             "icon": "fa fa-dot-circle-o fa-fw",
-                            "link": "scatter-chart-demo"
+                            "link": "google-chart/scatter-chart-demo"
                         },
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-calendar fa-fw",
-                            "link": "timeline-chart-demo"
+                            "link": "google-chart/timeline-chart-demo"
                         }
                     ]
                 }

@@ -6,69 +6,7 @@ import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'scatter-chart-demo',
-  template: `
-    <amexio-card header="true">
-      <amexio-header>
-         Timeline Chart Component 
-      </amexio-header>
-      <amexio-body>
-        <p>A timeline is a chart that depicts how a set of resources are used over time.</p>
-        <amexio-tab-view>
-          <amexio-tab title="Demo" active="true">
-           <amexio-row>
-             <amexio-column size="12">
-               <amexio-chart-timeline [data]="timelineChartData" [width]="'100%'"  ></amexio-chart-timeline>
-             </amexio-column>
-           </amexio-row>
-          </amexio-tab>
-          <amexio-tab title="API Reference">
-            <amexio-datagrid title="Chart Properties<amexio-chart-timeline>" [enable-column-fiter]="false"
-                             [http-method]="'get'"
-                             [http-url]="'assets/apireference/charts/timelinechart.json'"
-                             [data-reader]="'chart'"
-                             [enable-data-filter]="false" >
-              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Name'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Type'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Default'"></amexio-data-table-column>
-              <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                        [text]="'Description'"></amexio-data-table-column>
-            </amexio-datagrid>
-            
-          </amexio-tab>
-          <amexio-tab title="Source">
-            <div style="overflow-y: scroll">
-            <amexio-vertical-tab-view>
-              <amexio-tab title="HTML" [active]="true">
-                <ng-container *ngIf="htmlCode">
-                  <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                  <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-              <amexio-tab title="Type Script">
-                <ng-container *ngIf="typeScriptCode">
-                  <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-              <amexio-tab title="Data Source">
-                <ng-container *ngIf="dataSourceCode">
-                  <prism-block [code]="dataSourceCode" [language]="'json'"></prism-block>
-                </ng-container>
-              </amexio-tab>
-            </amexio-vertical-tab-view>
-            </div>
-          </amexio-tab>
-          <amexio-tab title="Live">
-           <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-timelinechart?embed=1&file=app/charts/timelinechart/timelinechart.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
-          </amexio-tab>
-        </amexio-tab-view>
-      </amexio-body>
-    </amexio-card>
-  
-  `
+ templateUrl: './timelinechart.demo.component.html',
 })
 export class TimelineChartDemoComponent implements OnInit {
   timelineChartData:any;
