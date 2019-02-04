@@ -10,16 +10,10 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
   },
-  {
-    path: 'timeline', loadChildren: './data/timeline/timeline.demo.module#TimelineDemoModule'
-  },
 
    /** Forms Input */
    {
     path: 'forms-Input', loadChildren: './FormsInput/FormsInput.module#FormsInputModule'
-  },
-  {
-    path: 'itemselector-demo', loadChildren: './data/itemselector/itemselector.demo.module#ItemSelectorDemoModule'
   },
 
   /** Forms Action */
@@ -27,6 +21,13 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'forms-Action', loadChildren: './FormsAction/FormsAction.module#FormsActionModule'
   },
+
+   /** DATA contain grid and Tree*/
+
+   {
+    path: 'data', loadChildren: './data/Data.module#DataModule'
+  },
+
 
   /** Navigation*/
   {
@@ -126,15 +127,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   /**Data Routes*/
   
   {
-    path: 'listbox-demo', loadChildren: './data/listbox/listbox.demo.module#ListBoxDemoModule'
-  },
-  {
     path: 'breadcrumb-demo', loadChildren: './navigation/breadcrumb/breadcrumb.demo.module#BreadcrumbDemoModule'
   },
   /*grid....*/
-  {
-    path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
-  },
+  // {
+  //   path: 'simple-grid', loadChildren: './data/simplegrid/simplegrid.demo.module#SimpleGridDemoModule'
+  // },
   {
     path: 'gridwithtoolbar-demo', loadChildren: './data/gridwithtoolbar/gridwithtoolbar.demo.module#GridWithToolBarDemoModule'
   },
@@ -168,35 +166,6 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   },
   {
     path: 'google-map-demo', loadChildren: './data/googlemap/googlemap.demo.module#GoogleMapModule'
-  },
-
-  /*Tree*/
-  {
-    path: 'simple-tree', loadChildren: './data/tree/simpletree/simpletree.demo.module#SimpleTreeDemoModule'
-  },
-  {
-    path: 'collapsetree-demo', loadChildren: './data/tree/collapsetree/collapsetree.demo.module#CollapseTreeDemoModule'
-  },
-  {
-    path: 'template-tree', loadChildren: './data/tree/treewithtemplate/treewithtemplate.demo.module#TreeWithTemplateDemoModule'
-  },
-  {
-    path: 'filter-tree', loadChildren: './data/tree/filtertree/filtertree.demo.module#FilterTreeDemoModule'
-  },
-  {
-    path: 'checkbox-tree', loadChildren: './data/tree/checkboxtree/checkboxtree.demo.module#CheckboxTreeDemoModule'
-  },
-  {
-    path: 'dragdrop-tree', loadChildren: './data/tree/treedragdrop/treedragdrop.demo.module#DragDropTreeDemoModule'
-  },
-  {
-    path: 'badge-tree', loadChildren: './data/tree/treewithbadge/treewithbadge.demo.module#TreeWithBadgeDemoModule'
-  },
-  {
-    path: 'horizontal-tree', loadChildren: './data/tree/horizontaltree/horizontaltree.demo.module#HorizontalTreeDemoModule'
-  },
-  {
-    path: 'amexio-spinner-demo', loadChildren: './data/spinner/spinner.demo.module#AmexioSpinnerDemoModule'
   },
   {
     path: 'multi-item-carousel', loadChildren: './enterprise/multi-item-carousel/multi.item.carousel#EECarouselDemoRoutingModule'
@@ -250,9 +219,7 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'context-menu-grid', loadChildren: './data/gridwithcontextmenu/gridwithcontextmenu.demo.module#GridWithScrollDemoModule'
   },
-  {
-    path: 'context-menu-tree', loadChildren: './data/tree/contextmenutree/contextmenutree.demo.module#ContextMenuTreeDemoModule'
-  },
+
   {
     path: 'contextmenu-card-form', loadChildren: './contextualmenu/card/contextmenucardform.demo.module#ContextMenuCardFormDemoModule'
   },

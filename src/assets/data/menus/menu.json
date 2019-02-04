@@ -499,12 +499,12 @@
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner fa-fw",
                     "badge": "U",
-                    "link": "amexio-spinner-demo"
+                    "link": "data/amexio-spinner-demo"
                 },
                 {
                     "text": "Item Selector",
                     "icon": "fa fa-exchange fa-fw",
-                    "link": "itemselector-demo"
+                    "link": "data/itemselector-demo"
                 },
                 {
                     "text": "Grid",
@@ -577,59 +577,59 @@
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "simple-tree"
+                            "link": "data/simple-tree-demo"
                         },
                         {
                             "text": "Collapse",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "collapsetree-demo"
+                            "link": "data/collapsetree-demo"
                         },
                         {
                             "text": "With Template",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "template-tree"
+                            "link": "data/template-tree-demo"
                         },
                         {
                             "text": "Filter",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "filter-tree"
+                            "link": "data/filter-tree-demo"
                         },
                         {
                             "text": "With Checkbox",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "checkbox-tree"
+                            "link": "data/checkbox-tree-demo"
                         },
                         {
                             "text": "With Drag Drop",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "dragdrop-tree"
+                            "link": "data/dragdrop-tree-demo"
                         },
                         {
                             "text": "With Badge",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "badge-tree"
+                            "link": "data/badge-tree-demo"
                         },
                         {
                             "text": "With Context Menu",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "context-menu-tree"
+                            "link": "data/context-menu-tree-demo"
                         },
                         {
                             "text": "Horizontal",
                             "icon": "fa fa-tree fa-fw",
-                            "link": "horizontal-tree"
+                            "link": "data/horizontal-tree-demo"
                         }
                     ]
                 },
                 {
                     "text": "Timeline",
                     "icon": "fa fa-history",
-                    "link": "timeline"
+                    "link": "data/timeline-demo"
                 },
                 {
                     "text": "ListBox",
                     "icon": "fa fa-list fa-fw",
-                    "link": "listbox-demo"
+                    "link": "data/listbox-demo"
                 }
             ]
         },
