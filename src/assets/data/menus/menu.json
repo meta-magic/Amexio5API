@@ -787,80 +787,80 @@
                             "children": [{
                                     "text": "Bar chart-vertical",
                                     "icon": "fa fa-bar-chart fa-fw",
-                                    "link": "amexio-d3-chart-bar"
+                                    "link": "D3chart/amexio-d3-chart-bar"
                                 },
                                 {
                                     "text": "Bar chart-Horizontal",
                                     "icon": "fa fa-bar-chart fa-fw",
-                                    "link": "amexio-d3-chart-horizontal"
+                                    "link": "D3chart/amexio-d3-chart-horizontal"
                                 }
                             ]
                         },
                         {
                             "text": "Bubble Chart ",
                             "icon": "fa fa-dot-circle-o fa-fw",
-                            "link": "amexio-d3-chart-bubble",
+                            "link": "D3chart/amexio-d3-chart-bubble",
                             "badge": "U"
                         },
                         {
                             "text": "Combo Chart",
                             "badge": "U",
                             "icon": "fa fa-area-chart fa-fw",
-                            "link": "amexio-d3-chart-combo"
+                            "link": "D3chart/amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",
                             "badge": "U",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "link": "amexio-d3-chart-donut"
+                            "link": "D3chart/amexio-d3-chart-donut"
                         },
                         {
                             "text": "Histogram Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "link": "amexio-d3-chart-histogram"
+                            "link": "D3chart/amexio-d3-chart-histogram"
                         },
                         {
                             "text": "Line Chart",
                             "icon": "fa fa-line-chart fa-fw",
-                            "link": "amexio-d3-chart-line"
+                            "link": "D3chart/amexio-d3-chart-line"
                         },
                         {
                             "text": "Multi-Area Chart",
                             "icon": "fa fa-area-chart fa-fw",
-                            "link": "amexio-d3-chart-multiarea"
+                            "link": "D3chart/amexio-d3-chart-multiarea"
                         },
                         {
                             "text": "MultiSeriesBar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "link": "amexio-d3-chart-multiseries"
+                            "link": "D3chart/amexio-d3-chart-multiseries"
                         },
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart fa-fw",
                             "badge": "U",
-                            "link": "amexio-d3-chart-pie"
+                            "link": "D3chart/amexio-d3-chart-pie"
                         },
                         {
                             "text": "Scatter Chart",
                             "icon": "fa fa-dot-circle-o fa-fw",
                             "badge": "U",
-                            "link": "amexio-d3-chart-scatter"
+                            "link": "D3chart/amexio-d3-chart-scatter"
                         },
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-bar-chart fa-fw",
                             "badge": "New",
-                            "link": "amexio-d3-chart-timeline"
+                            "link": "D3chart/amexio-d3-chart-timeline"
                         },
                         {
                             "text": "Stack Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "link": "amexio-d3-chart-bar-stack"
+                            "link": "D3chart/amexio-d3-chart-bar-stack"
                         },
                         {
                             "text": "Waterfall Chart",
                             "icon": "fa fa-line-chart fa-fw",
-                            "link": "amexio-d3-chart-waterfall"
+                            "link": "D3chart/amexio-d3-chart-waterfall"
                         }
                     ]
                 },

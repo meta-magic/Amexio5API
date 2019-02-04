@@ -6,7 +6,7 @@ import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 // import * as d3 from 'd3';
 // import { AmexioChartD3Module } from 'amexio-chart-d3';
-
+ 
 
 @Component({
   selector: 'amexio-d3-chart-donut-demo',

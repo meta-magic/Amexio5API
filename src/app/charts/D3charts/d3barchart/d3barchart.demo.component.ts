@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, AfterContentInit } from '@angular/core';
 import * as d3 from 'd3';
 import { HttpClient } from '@angular/common/http';
-
+ 
 @Component({
   selector: 'amexio-d3-chart-bar-demo',
   templateUrl: './d3barchart.demo.component.html'
