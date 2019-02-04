@@ -1,0 +1,129 @@
+{
+  "title": "Amexio histogram chart",
+  "description": "A histogram is a chart that groups numeric data into bins, displaying the bins as segmented columns.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-chart-histogram>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "height",
+          "type": "number",
+          "default": "",
+          "description": "Height of chart"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "default": "",
+          "description": "Width of chart"
+        },
+        {
+          "name": "data",
+          "type": "Array",
+          "default": "",
+          "description": "For the use of local data "
+        }
+      ]
+    },
+      {
+      "gridTitle": "Chart Title Properties <amexio-chart-title>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title to display above the chart."
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "default": "",
+          "description": "Color of chart title."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/histogramchart/chart.html",
+    "tsUrl": "charts/histogramchart/chart.text",
+    "datasourceUrl": "assets/data/code/charts/histogramchart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-histogramchart?embed=1&file=app/charts/histogramchart/histogramchart.demo.html"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "title": "Amexio line chart",
+  "description": "A line chart that is rendered within the browser using SVG.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-chart-line>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "height",
+          "type": "number",
+          "default": "",
+          "description": "Height of chart"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "default": "",
+          "description": "Width of chart"
+        },
+        {
+          "name": "data",
+          "type": "Array",
+          "default": "",
+          "description": "For the use of local data "
+        }
+      ]
+    },
+  {
+      "gridTitle": "Chart Legend Properties <amexio-chart-legend>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "position",
+          "description": "Position of the legend.'bottom' - Below the chart.'top' - Above the chart.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "alignment",
+          "description": "Alignment of the legend.'start' - Aligned to the start of the area allocated for the legend.'center' - Centered in the area allocated for the legend 'end' - Aligned to the end of the area allocated for the legend.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "color",
+          "description": "'red' or '#00cc00'.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-name",
+          "description": "Font style of chart legend",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-size",
+          "description": "Font size of chart legend",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "bold",
+          "description": "Set true for Legend text in bold",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "max-lines",
+          "description": "Maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend.",
+          "version": "4.0 onwards",
+          "type": "number",
+          "default": ""
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/linechart/chart.html",
+    "tsUrl": "charts/linechart/chart.text",
+    "datasourceUrl": "assets/data/code/charts/linechart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-linechart?embed=1&file=app/charts/linechart/linechart.demo.html"
+  }
+}
