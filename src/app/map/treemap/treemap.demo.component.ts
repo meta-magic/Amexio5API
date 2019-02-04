@@ -2,19 +2,14 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 @Component({
   selector: 'tree-map-demo',
  templateUrl: './treemap.demo.component.html',
 })
 export class TreeMapDemoComponent implements OnInit {
   treeMapData:any;
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSourceCode:string;
-  copyMsgArray: any[];
-  constructor(private http: HttpClient) {
-    this.treeMapData=[
+  constructor() {
+    this.treeMapData =[
       ['Location', 'Parent', 'Market trade volume (size)', 'Market increase/decrease (color)'],
       ['Global',    null,                 0,                               0],
       ['America',   'Global',             0,                               0],
@@ -45,45 +40,6 @@ export class TreeMapDemoComponent implements OnInit {
       ['Congo',     'Africa',             10,                              12],
       ['Zaire',     'Africa',             8,                               10]
     ];
-    this.getHtmlAndTypeScriptCode();
-  }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs:any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/map/treemap/chart.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/map/treemap/chart.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //DataSource FILE
-    this.http.get('assets/data/code/map/treemap/datasource.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSourceCode = responseTs;
-    });
-  }
-
-  //this code use copy to html code from tabpanel
-  onCopyClick(){
-    if(this.copyMsgArray.length>=1){
-      this.copyMsgArray=[];
-      this.copyMsgArray.push({'msg':'Code Copied', 'type' : 'info'});
-    }else{
-      this.copyMsgArray.push({'msg':'Code Copied', 'type' : 'info'});
-    }
   }
   ngOnInit() {
   }
