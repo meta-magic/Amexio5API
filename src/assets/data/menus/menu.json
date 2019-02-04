@@ -226,13 +226,13 @@
                     "children": [{
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize fa-fw",
-                            "link": "html-form-demo",
+                            "link": "forms/html-form-demo",
                             "badge": "New"
                         },
                         {
                             "text": "Reactive Forms",
                             "icon": "fa fa-window-maximize fa-fw",
-                            "link": "html-reactive-form",
+                            "link": "forms/html-reactive-form",
                             "badge": "New"
                         }
                     ]
@@ -243,13 +243,13 @@
                     "children": [{
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize fa-fw",
-                            "link": "form-demo",
+                            "link": "forms/form-demo",
                             "badge": "New"
                         },
                         {
                             "text": "Reactive Forms",
                             "icon": "fa fa-window-maximize fa-fw",
-                            "link": "reactive-form",
+                            "link": "forms/reactive-form",
                             "badge": "New"
                         }
                     ]

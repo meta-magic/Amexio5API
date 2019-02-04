@@ -89,26 +89,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'D3chart', loadChildren: './charts/D3charts/D3charts.module#D3ChartModule'
   },
 
-  
+
+  /** Forms HTML AND REACTIVE */
 
   {
-    path: 'form-demo', loadChildren: './Forms/form/form.demo.module#FormDemoModule'
-  },
-  {
-    path: 'reactive-form', loadChildren: './Forms/reactiveform/reactiveform.demo.module#ReactiveFormComponentModule'
-  },
-  {
-    path: 'html-reactive-form', loadChildren: './Forms/form-html/reactive-forms/reactiveform.demo.module#HtmlReactiveFormComponentModule'
-  },
-  {
-    path: 'html-form-demo', loadChildren: './Forms/form-html/template-driven/form.demo.module#HtmlFormDemoModule'
-  },
-
-
-
-
-
-
+    path: 'forms', loadChildren: './Forms/forms.module#FormsDemoModule'
+  }
 
 
 ];
