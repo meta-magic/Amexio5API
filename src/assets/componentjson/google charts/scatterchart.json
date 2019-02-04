@@ -1,0 +1,371 @@
+{
+  "title": "Amexio scatter chart",
+  "description": "Scatter charts plot points on a graph. When the user hovers over the points, tooltips are displayed with more information.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Chart Properties <amexio-chart-scatter>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "height",
+          "type": "number",
+          "default": "",
+          "description": "Height of chart"
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "default": "",
+          "description": "Width of chart"
+        },
+        {
+          "name": "data",
+          "type": "Array",
+          "default": "",
+          "description": "For the use of local data "
+        },
+        {
+          "name": "is3d",
+          "type": "boolean",
+          "default": "",
+          "description": "If you set the is3d option to true, your pie chart will be drawn as though it has three dimensions"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Title Properties <amexio-chart-title>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "description": "Title to display above the chart.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "position",
+          "description": "position of chart title",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "color",
+          "description": "Color of chart title.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-name",
+          "description": "Font style of chart title.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-size",
+          "description": "Font size of chart title.",
+          "version": "4.0 onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "bold",
+          "description": "Set true for title in bold font.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "italic",
+          "description": "Set true for title text in italic style.",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Legend Properties <amexio-chart-legend>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "position",
+          "description": "Position of the legend.'bottom' - Below the chart.'top' - Above the chart.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "alignment",
+          "description": "Alignment of the legend.'start' - Aligned to the start of the area allocated for the legend.'center' - Centered in the area allocated for the legend 'end' - Aligned to the end of the area allocated for the legend.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "color",
+          "description": "'red' or '#00cc00'.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-name",
+          "description": "Font style of chart legend",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-size",
+          "description": "Font size of chart legend",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "bold",
+          "description": "Set true for Legend text in bold",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "max-lines",
+          "description": "Maximum number of lines in the legend. Set this to a number greater than one to add lines to your legend.",
+          "version": "4.0 onwards",
+          "type": "number",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Horizontal Axis  Properties <amexio-chart-horizontal-axis>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title of the chart for the horizontal axis."
+        },
+        {
+          "name": "title-color",
+          "type": "string",
+          "default": "",
+          "description": "The color of the chart for the horizontal axis."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Chart Vertical Axis Properties <amexio-chart-vertical-axis>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title of the chart for the Vertical axis."
+        },
+        {
+          "name": "title-color",
+          "type": "string",
+          "default": "",
+          "description": "The color of the chart for the Vertical axis."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "charts/scatterchart/chart.html",
+    "tsUrl": "charts/scatterchart/chart.text",
+    "datasourceUrl": "assets/data/code/charts/scatterchart/datasource.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-scatterchart?embed=1&file=app/charts/scatterchart/scatterchart.demo.html"
+  }
+}
