@@ -28,18 +28,19 @@ script:
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.5/amexio-ng-extensions.tgz?raw=true
   - rm -rf src/assets/themes/*
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
-  - git add src/assets/themes
-  - git commit -m "[skip travis]  themes-updated"
-  - git push --force --quiet "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.5
   - ng build --prod
   - pwd
 after_success: 
   - codecov
+  - git add src/assets/themes
+  - git commit -m "[skip travis]  themes-updated"
+  - git push  "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.5
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
-  - rm -rf amexio-api-website-test/api/v5.5/*
-  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.5/
+  - mkdir amexio-api-website-test/api/v5.5-test/
+  - rm -rf amexio-api-website-test/api/v5.5-test/*
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.5-test/
   - cd amexio-api-website-test/
-  - git add api/v5.5/
+  - git add api/v5.5-test/
   - git commit -m "${COMMIT}"
   - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git push "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master; fi
 cache:
