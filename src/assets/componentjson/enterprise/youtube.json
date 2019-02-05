@@ -1,0 +1,74 @@
+{
+  "title": "Amexio YouTube Video Player",
+  "description": "A simple configurable of video player.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-ee-youtube-player>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+      {
+      "name": "video-id",
+      "type": "string",
+      "default": "",
+      "description": "Set video Id."
+    },
+    {
+      "name": "height",
+      "type": "number",
+      "default": "",
+      "description": "Height should be in Px Ex.500"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "description": "Width should be in percentage Ex.50"
+    },
+    {
+      "name": "url",
+      "type": "any",
+      "default": "",
+      "description": "url of the video"
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "enterprise/videoplayer/ee.html",
+    "tsUrl": "enterprise/videoplayer/ee.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-youtube-player?embed=1&file=app/enterprise/youtube-player/youtube.demo.html"
+  }
+}

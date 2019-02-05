@@ -1,0 +1,176 @@
+{
+  "title": "Amexio media content",
+  "description": "A simple configurable star rating component with visual feedback.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-ee-content>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "bg-image-url",
+          "type": "string",
+          "default": "",
+          "description": "Background image from content."
+        },
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Set title."
+        },
+        {
+          "name": "description",
+          "type": "string",
+          "default": "",
+          "description": "Set Description."
+        },
+        {
+          "name": "contents",
+          "type": "array[]",
+          "default": "",
+          "description": "Array of content must be in key value pair."
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "default": "",
+          "description": "Set video link."
+        },
+        {
+          "name": "watch",
+          "type": "boolean",
+          "default": "false",
+          "description": "Enable watch button."
+        },
+        {
+          "name": "season-no",
+          "type": "string",
+          "default": "",
+          "description": "Season of specific series"
+        },
+        {
+          "name": "match-percentage",
+          "type": "",
+          "default": "",
+          "description": "Match Percentage of media"
+        },
+        {
+          "name": "my-list",
+          "type": "boolean",
+          "default": "false",
+          "description": "Enable MyList button."
+        },
+        {
+          "name": "age-limit",
+          "type": "string",
+          "default": "",
+          "description": "Set age limit."
+        },
+        {
+          "name": "release-year",
+          "type": "string",
+          "default": "",
+          "description": "Set release Year."
+        },
+        {
+          "name": "close",
+          "type": "boolean",
+          "default": "false",
+          "description": "Enable close content."
+        },
+        {
+          "name": "rate",
+          "type": "number",
+          "default": "",
+          "description": "Set rating max value(max=5) and current rating(rate=3)."
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onWatchClick",
+          "description": "Get watch button click."
+        },
+        {
+          "name": "onAddListClick",
+          "description": "Get add list button click."
+        },
+        {
+          "name": "onLikeClick",
+          "description": "Get like click."
+        },
+        {
+          "name": "onUnlikeLikeClick",
+          "description": "Get unlike click."
+        },
+        {
+          "name": "onCloseClick",
+          "description": "Get close content click."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "enterprise/content/ee.html",
+    "tsUrl": "enterprise/content/ee.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-mediacontent?embed=1&file=app/enterprise/content/content.demo.html"
+  }
+}
