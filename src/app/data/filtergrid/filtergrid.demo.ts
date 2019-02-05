@@ -5,6 +5,9 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'filtergrid-demo', 
   templateUrl: './filtergrid.demo.html',
@@ -15,39 +18,26 @@ export class FilterGridDemo {
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+  }
+ 
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/filter/filter.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/filter/filter.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/datagridgroupby.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
-
+  createCustomSourceData() {
+    this.customSourceData.title = 'Data Grid With Filter';
+    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/filter/filter.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/filter/filter.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/datagridgroupby.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-column-sizing-grid?embed=1&file=app/grid/columnsize/columnsize.demo.html&view=editor';
   }
+
+ 
+ 
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

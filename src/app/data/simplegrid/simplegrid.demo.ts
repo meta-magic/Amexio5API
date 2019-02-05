@@ -27,7 +27,7 @@ export class SimpleGridDemo implements OnInit{
     this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/simplegrid/simplegrid.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/simplegrid/simplegrid.text';
-    this.customSourceData.sourceMetadata.datasourceUrl = 'country.json';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-simple-grid?embed=1&file=app/grid/simplegrid/simplegrid.demo.html&view=editor';
   }
 

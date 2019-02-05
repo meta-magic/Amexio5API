@@ -5,48 +5,34 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
 @Component({
   selector: 'custom-col-size-grid-demo', 
   templateUrl :'./customcolsizegrid.demo.html',
 })
 export class CustomColSizeDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+  
   dataSource: string;
   copyMsgArray: any[];
   clickedRowData: any;
+ 
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+  }
+ 
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/customcolsize/customcolsize.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/customcolsize/customcolsize.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/gridtemplate.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
-
+  createCustomSourceData() {
+    this.customSourceData.title = 'Data Grid With Custom Column Size';
+    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/customcolsize/customcolsize.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/customcolsize/customcolsize.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/gridtemplate.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-column-sizing-grid?embed=1&file=app/grid/columnsize/columnsize.demo.html&view=editor';
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
