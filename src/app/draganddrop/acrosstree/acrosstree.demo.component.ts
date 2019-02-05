@@ -2,27 +2,23 @@
  * Created by rashmi on 20/6/18.
  */
 
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
 @Component({
   selector: 'dragdroptree-demo', 
   templateUrl :'./acrosstree.demo.component.html',
 })
-export class AcrossTreeDemo {
+export class AcrossTreeDemo implements OnInit{
   @ViewChild('tree') treeRef: any;
   @ViewChild('tree1') treeRef1: any;
-
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
-  copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;
   treeLocalData1: any;
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-
+    this.customSourceData = new ComponentDataStructure();
     this.treeLocalData = {
       "data": [{
         "text": "Web App",
@@ -183,36 +179,17 @@ export class AcrossTreeDemo {
     };
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
 
-    //HTML FILE
-    this.http.get('assets/data/code/draganddrop/acrosstree/tree.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/draganddrop/acrosstree/tree.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
-
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    } else {
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    }
+  
+  createCustomSourceData() {
+    this.customSourceData.title = 'Tree With Drag Drop Functionality';
+    this.customSourceData.description = 'A Expandable Tree component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/acrosstree/tree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/acrosstree/tree.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dropdown-withintree?embed=1&file=app/tree/simpletree/simpletree.demo.html&view=editor';
   }
 
   getNodeData(data: any) {
