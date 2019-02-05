@@ -1,56 +1,46 @@
- 
-<amexio-api-structure  [url]="'assets/componentjson/forminputs/checkboxgroup.json'">
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/forminputs/dropdown.json'">
   <amexio-api-demo>
 
-  <amexio-row>
-    <amexio-column size="6">
-      <amexio-card header="true">
-        <amexio-header>
-           Dropdown with Template 
-        </amexio-header>
-        <amexio-body>
-          <amexio-row>
-            <amexio-column size="12">
-            <amexio-dropdown [(ngModel)]="id"
-            [place-holder]="'Choose'"
-            name="id"
-            [data-reader]="'data'"
-            [field-label]="'Choose Country'"
-            [http-url]="'assets/data/componentdata/gridtemplate.json'"
-            [http-method]="'get'"
-            [search]="true"
-            [display-field]="'name'"
-            [value-field]="'id'"
-            [enable-sort]="true"
-            [sort]="'asc'"
-            (onSingleSelect)="getRowData($event)">
-            <ng-template #amexioBodyTmpl let-column let-row="row">
-            <amexio-label>
-              <amexio-image [width]="100" [path]="'assets/images/flags/flags/'+row.flag_32"></amexio-image>
-            </amexio-label>&nbsp;&nbsp;
-            <amexio-label>{{row.name}}</amexio-label>
-            <amexio-label>( {{row.name_official}} )</amexio-label>
-            </ng-template>
-            
-            </amexio-dropdown>
-            </amexio-column>
-          </amexio-row>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-    <amexio-column [size]="6">
-      <amexio-card header="true">
-        <amexio-header>
-          Selected Record Data
-        </amexio-header>
-        <amexio-body>
-        {{clickedRowData|json}}
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-  </amexio-row>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Dropdown with Template
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-dropdown [(ngModel)]="id" [place-holder]="'Choose'" name="id" [data-reader]="'data'"
+                  [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/gridtemplate.json'"
+                  [http-method]="'get'" [search]="true" [display-field]="'name'" [value-field]="'id'" [enable-sort]="true"
+                  [sort]="'asc'" (onSingleSelect)="getRowData($event)">
+                  <ng-template #amexioBodyTmpl let-column let-row="row">
+                    <amexio-label>
+                      <amexio-image [width]="100" [path]="'assets/images/flags/flags/'+row.flag_32"></amexio-image>
+                    </amexio-label>&nbsp;&nbsp;
+                    <amexio-label>{{row.name}}</amexio-label>
+                    <amexio-label>( {{row.name_official}} )</amexio-label>
+                  </ng-template>
+
+                </amexio-dropdown>
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Selected Record Data
+          </amexio-header>
+          <amexio-body>
+            {{clickedRowData|json}}
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
 
 
 
-</amexio-api-demo>
+  </amexio-api-demo>
 </amexio-api-structure>

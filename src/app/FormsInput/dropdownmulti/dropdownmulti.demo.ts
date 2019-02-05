@@ -5,6 +5,9 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
+
+
 @Component({
   selector: 'dropdownmulti',
   templateUrl: './dropdownmulti.demo.html',
@@ -14,7 +17,21 @@ export class DropDownMultiDemo {
   copyMsgArray: any[];
   listOfFriut: any = [];
 
+  
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
+    this.customSourceData = new ComponentDataStructure();
+
+  }
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
+  createCustomSourceData() {
+    this.customSourceData.title = 'Dropdown Multi Select ';
+    this.customSourceData.description = 'Drop-Down component has been created to render N numbers of drop-down items based on data-set configured with template. Data-set can be configured using HTTP call OR Define fix number of dropdown-items. User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'forms/dropdownmulti/form.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'forms/dropdownmulti/form.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dropdown-multiselect?embed=1&file=app/forms/dropdownmulti/dropdownmulti.demo.html&view=editor';
   }
 
   onMultiSelectValue(data: any) {
