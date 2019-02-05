@@ -365,6 +365,14 @@ image using the content attribute.
   background-color: #ffffff;
   color: #000000; }
 
+.fa-2x {
+  font-size: 2em !important;
+  margin-top: 24% !important; }
+
+.fa-3x {
+  font-size: 3em !important;
+  margin-top: 12% !important; }
+
 /** Initialze Component variables ------------ */
 /****************************************************************************
     Component Name : Button
@@ -377,7 +385,8 @@ image using the content attribute.
   color: #121212; }
 
 .button-secondary:hover:enabled {
-  background-color: #e6e6e6; }
+  background-color: #e6e6e6;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .btn-badge {
   background-color: #ffe16b;
@@ -417,7 +426,8 @@ image using the content attribute.
   color: #a39662; }
 
 .button-primary:hover:enabled {
-  background-color: #f8cf2d; }
+  background-color: #f8cf2d;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .button-success {
   background-color: #5cb85c;
@@ -433,7 +443,8 @@ image using the content attribute.
   color: #ffffff; }
 
 .button-danger:hover:enabled {
-  background-color: #c9302c; }
+  background-color: #c9302c;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .button-warning {
   background-color: #f0ad4e;
@@ -441,14 +452,19 @@ image using the content attribute.
   color: #ffffff; }
 
 .button-warning:hover:enabled {
-  background-color: #ec971f; }
+  background-color: #ec971f;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .button-transparent {
   background: #ffffff;
   color: #121212; }
 
 .button-transparent:hover:enabled {
-  background-color: #ced4da; }
+  background-color: #ced4da;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.button-default:hover:enabled {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
 
 .button-transparent::after {
   content: '';
@@ -2506,6 +2522,12 @@ input:checked + .toggle-slider:before {
   left: 50%;
   transform: translate(-50%, -50%); }
 
+.img-relative {
+  position: relative; }
+
+.img-absolute {
+  position: absolute; }
+
 /****************************************************************************
     Component Name : Float Button
     Version : Amexio v4.1 onwards
@@ -3508,6 +3530,28 @@ input:checked + .toggle-slider:before {
 ****************************************************************************/
 /** Grid Layout- Visual CSS **/
 /** Grid Layout- Structure CSS **/
+/*****************************************************************************
+ Component Name : Amexio Badge
+ Version : Amexio v5.5.5 onwards
+****************************************************************************/
+/** Amexio Badge- Structure CSS **/
+.amexio-badge {
+  display: flex;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box; }
+
+/** Amexio Badge- Vars CSS **/
+/** Amexio Badge- Visual CSS **/
+.amexio-badge {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.amexio-badge-color {
+  background: #ffffff;
+  color: #1f1700; }
+
 /****************************************************************************
     Component Name : Enterprise Content
     Version : Amexio v4.0 onwards
@@ -6726,6 +6770,96 @@ amexio-layout amexio-layout-item {
 amexio-layout-columns amexio-layout-item {
   padding: 5px; }
 
+/****************************************************************************
+    Component Name : Creative
+    Version : Amexio v5.5.5 onwards
+*****************************************************************************/
+/** rowcol - Structure CSS **/
+.card-container-ce {
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  height: 100%; }
+
+.card-container-ce-bg-color {
+  background-color: #fff; }
+
+.card-container-ce-color {
+  color: #121212; }
+
+.card-container-header {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative; }
+
+.card-container-header .card-container-header-div {
+  height: auto; }
+
+.card-container-header > * {
+  padding-right: 10px;
+  margin-top: 0px; }
+
+.card-container-body {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  flex-grow: 1;
+  position: relative; }
+
+.card-container-footer {
+  padding: 10px;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+.card-container-footer > * {
+  padding-right: 10px;
+  margin-top: 0px; }
+
+.card-action-border {
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+
+.card-header-border {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* ONLY WIDER ACTION */
+.card-container-wider-action {
+  margin: 0px 10px; }
+
+.card-container-wider-action amexio-action-ce {
+  margin: 0px -10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+/* ONLY NARROWER ACTION */
+.card-container-narrower-action {
+  margin: 10px 10px; }
+
+.card-container-narrower-action amexio-action-ce {
+  margin: -10px 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+/* ONLY WIDER HEADER */
+.card-container-wider-header {
+  margin: 0px 10px; }
+
+.card-container-wider-header amexio-header-ce {
+  margin: 0px -10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.card-container-narrower-header {
+  margin: 10px 10px; }
+
+.card-container-narrower-header amexio-header-ce {
+  margin: -10px 10px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
 /** Initialze Animation variables ------------ */
 /****************************************************************************
                 Animation CSS for Checkbox 
@@ -6883,6 +7017,48 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
     background-position: 0 0; }
   100% {
     background-position: 60px 0; } }
+/****************************************************************************
+                Animation CSS for Floating Button 
+*****************************************************************************/
+.floatingbutton:after {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  -ms-border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transition: transform 0.5s, opacity 0.5s;
+  -webkit-transition: transform 0.5s, opacity 0.5s;
+  -moz-transition: transform 0.5s, opacity 0.5s;
+  -o-transition: transform 0.5s, opacity 0.5s;
+  -ms-transition: transform 0.5s, opacity 0.5s; }
+
+.floatingbutton:active:after {
+  opacity: 0.7;
+  transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  transition: 0s;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s; }
+
 /** Initialze Responsive Design variables ------------ */
 /****************************************************************************
                     Media Query for width - 375
