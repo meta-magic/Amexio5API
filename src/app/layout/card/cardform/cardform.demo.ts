@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core'
 import { HttpClient } from '@angular/common/http';
 import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
 
-
+ 
 @Component({
   selector: 'card-form-demo',
   templateUrl: './cardform.demo.html'
