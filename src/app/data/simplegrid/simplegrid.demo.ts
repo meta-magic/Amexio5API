@@ -17,7 +17,7 @@ export class SimpleGridDemo implements OnInit{
   constructor(private http: HttpClient) {
     this.customSourceData = new ComponentDataStructure();
   }
-
+ 
   ngOnInit(): void {
     this.createCustomSourceData();
   }

@@ -5,42 +5,41 @@
 import {Component} from '@angular/core'
 import { HttpClient } from '@angular/common/http';
 
+import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
+
+
 @Component({
   selector: 'card-image-demo',
   templateUrl: './cardimage.demo.component.html'
 })
 export class CardImageDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+ 
   copyMsgArray: any[];
   flag: boolean;
+
+  customSourceData: ComponentDataStructure;
+
+
   constructor(private http: HttpClient) {
+    this.customSourceData = new ComponentDataStructure();
+
     this.flag = true;
-    this.getHtmlAndTypeScriptCode();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs:any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/card/cardimage/layout.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/card/cardimage/layout.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'Card';
+    this.customSourceData.description = 'A Simple Card which renders card based on title, body and actions user has configured.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'layout/card/cardimage/layout.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'layout/card/cardimage/layout.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-cardimage?embed=1&file=app/layouts/cardimage/cardimage.demo.html&view=editor';
+  }
+
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
