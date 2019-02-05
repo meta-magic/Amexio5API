@@ -2,25 +2,21 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {Component, OnInit} from '@angular/core';
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
 @Component({
   selector: 'sidenav-demo', 
   templateUrl: './sidenav.demo.html'
 })
-export class SideNavDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  copyMsgArray: any[];
+export class SideNavDemo implements OnInit {
   nodeData;selectedData: any;
   dataSource;contactList:any;
-  
-  item; treeData; radioGroupData: any
+  item; treeData; radioGroupData: any;
+  customSourceData: ComponentDataStructure;
   construct
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-
+  constructor() {
+    this.customSourceData = new ComponentDataStructure();
     this.contactList = {
       "response": {
         "success": true,
@@ -78,58 +74,24 @@ export class SideNavDemo {
           }
         ]
       }
-      };
+      };      
+  }  
 
-
-      
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
-
   
-
-  
+  createCustomSourceData() {
+    this.customSourceData.title = 'Side Nav Bar';
+    this.customSourceData.description = 'The Side Nav Bar Component is a familiar side navigation pattern for users. Side nav bar can be placed on left or right side. It can fit as many navigation links as needed, scrolling when the content exceeds the viewport. Take a look at Datastructure format which this component can consume in datasource tab.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'navigation/sidenav/navigation.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'navigation/sidenav/navigation.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/sidenav.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-side-panel?embed=1&file=app/navigation/sidenav/sidenav.demo.html&view=editor';
+  }
   sideNodeClick(data: any) {
     this.nodeData = data;
     console.log('chek click', this.nodeData);
-  }
-
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-  let datasourceData:any;
-    //HTML FILE
-    this.http.get('assets/data/code/navigation/sidenav/navigation.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/navigation/sidenav/navigation.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //TS FILE
-    this.http.get('assets/data/componentdata/sidenav.json',{responseType: 'text'}).subscribe(data => {
-      datasourceData = data;
-    }, error => {
-    }, () => {
-      this.dataSource = datasourceData;
-    });
-  }
-
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-    } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-    }
   }
 }
 
