@@ -1,0 +1,119 @@
+{
+    "title": "Amexio Button Dropdown",
+    "description": "A Dropdown Button component with various modes and configurations.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-btn-dropdown>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "label",
+            "description": "Label on button",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "type",
+            "description": "Default,theme-color,theme-backgroundcolor, green, red, yellow ( primary, secondary ,success , danger & warning Depricated v4.1 onwards)",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "disabled",
+            "description": "Enable/Disables the button",
+            "version": "4.0 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "size",
+            "description": "Large, default, small & xsmall",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "badge",
+            "description": "Badge  describes the badge value that has to be displayed on button",
+            "version": "4.1.9 onwards",
+            "type": "number",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+            "name": "click",
+            "description": "Fire when button-dropdown  click"
+          },
+          {
+            "name": "getLinkData",
+            "description": "Fire when button-dropdown item link click"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/buttondropdown/form.html",
+      "tsUrl": "forms/buttondropdown/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-buttondropdown?embed=1&file=app/forms/buttondropdown/buttondropdown.demo.html&view=editor"
+    }
+  }
