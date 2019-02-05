@@ -29,7 +29,6 @@ export class AmexioSpinnerDemo {
     vposition: string;
     spinnerModel: SpinnerModel;
     constructor(private http: HttpClient) {
-        this.getHtmlAndTypeScriptCode();
         this.colorModel = new ColorModel();
         this.spinnerModel = new SpinnerModel();
         this.spinnerData = {
@@ -84,29 +83,7 @@ export class AmexioSpinnerDemo {
         }
     }
 
-    //TO LOAD HTML AND TYPESCRIPT CODE
-    getHtmlAndTypeScriptCode() {
-        let responseHtml: any;
-        let responseTs: any;
-
-        //HTML FILE
-        this.http.get('assets/data/code/data/spinner/spinner.html', { responseType: 'text' }).subscribe(data => {
-            responseHtml = data;
-        }, error => {
-        }, () => {
-            this.htmlCode = responseHtml;
-        });
-
-        //TS FILE
-        this.http.get('assets/data/code/data/spinner/spinner.text', { responseType: 'text' }).subscribe(data => {
-            responseTs = data;
-        }, error => {
-        }, () => {
-            this.typeScriptCode = responseTs;
-        });
-
-    }
-
+   
     //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
     onCopyClick() {
         if (this.copyMsgArray.length >= 1) {

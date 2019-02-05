@@ -5,6 +5,9 @@
 import {Component, ViewChild} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'itemselector-demo', 
   templateUrl : './itemselector.demo.html',
@@ -18,40 +21,27 @@ export class ItemSelectorDemo {
   selectedData: any;
   dataSource:string;
   selectedData1: any;
+  
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
   }
   getSelectedData(data: any) {
     this.selectedData = data;
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-    let responseData:any;
-    //HTML FILE
-    this.http.get('assets/data/code/forms/itemselector/form.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
+  
 
-    //TS FILE
-    this.http.get('assets/data/code/forms/itemselector/form.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //JSON FILE
-    this.http.get('assets/data/componentdata/selectordata.json',{responseType: 'text'}).subscribe(data => {
-      responseData = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseData;
-    });
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
 
+  createCustomSourceData() {
+    this.customSourceData.title = 'Amexio Item-Selector';
+    this.customSourceData.description = 'ItemSelector is a specialized MultiSelect field that renders as a pair of MultiSelect field, one with available options and the other with selected options. A set of buttons in between allows items to be moved between the fields and reordered within the selection.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'forms/itemselector/form.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'forms/itemselector/form.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-itemselector?embed=1&file=app/data/itemselector/itemselector.demo.html&view=editor';
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

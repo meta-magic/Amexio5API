@@ -10,12 +10,10 @@ import {HttpClient} from "@angular/common/http";
 })
 
 export class TimelineDemoComponent {
-  htmlCode: string;
-  typeScriptCode: string;
+  
   copyMsgArray: any[];
   asyncFlag : boolean;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
     
   }
   getDta() {
@@ -24,28 +22,7 @@ export class TimelineDemoComponent {
       this.asyncFlag = false;
     }, 3000);
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/timeline/timeline.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/timeline/timeline.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
+  
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
