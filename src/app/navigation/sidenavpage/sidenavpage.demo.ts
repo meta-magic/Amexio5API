@@ -3,8 +3,7 @@
  */
 
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
 @Component({
     selector: 'sidenav-page',
@@ -12,18 +11,14 @@ import {HttpClient} from "@angular/common/http";
     
 })
 export class sideNavDemoPage implements OnInit {
-    htmlCode: string;
-    typeScriptCode: string;
-    copyMsgArray: any[];
     nodeData;selectedData: any;
     dataSource;contactList:any;
     reportsMenu;dashboardMenu: any;
-    
+    customSourceData: ComponentDataStructure;
     item; treeData; radioGroupData: any
     construct
-    constructor(private http: HttpClient) {
-      this.getHtmlAndTypeScriptCode();
-  
+    constructor() {
+      this.customSourceData = new ComponentDataStructure();
       this.contactList = {
         "response": {
           "success": true,
@@ -115,44 +110,18 @@ export class sideNavDemoPage implements OnInit {
                     "link" : "/home/maps"
                   }
        ]
+    } 
+    ngOnInit(): void {
+      this.createCustomSourceData();
     }
-  
     
-    ngOnInit() {}
-  
-  
-    //TO LOAD HTML AND TYPESCRIPT CODE
-    getHtmlAndTypeScriptCode() {
-      let responseHtml: any;
-      let responseTs: any;
-    let datasourceData:any;
-      //HTML FILE
-      this.http.get('assets/data/code/navigation/sidenav/advancedsidenav/navigation.html',{responseType: 'text'}).subscribe(data => {
-        responseHtml = data;
-      }, error => {
-      }, () => {
-        this.htmlCode = responseHtml;
-      });
-  
-      //TS FILE
-      this.http.get('assets/data/code/navigation/sidenav/advancedsidenav/navigation.text',{responseType: 'text'}).subscribe(data => {
-        responseTs = data;
-      }, error => {
-      }, () => {
-        this.typeScriptCode = responseTs;
-      });
-      
-     
-    }
-  
-    //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-    onCopyClick() {
-      if (this.copyMsgArray.length >= 1) {
-        this.copyMsgArray = [];
-        this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-      } else {
-        this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-      }
+    createCustomSourceData() {
+      this.customSourceData.title = 'Side Nav Bar';
+      this.customSourceData.description = 'The Side Nav Bar Component is a familiar side navigation pattern for users. Side nav bar can be placed on left or right side. It can fit as many navigation links as needed, scrolling when the content exceeds the viewport. Take a look at Datastructure format which this component can consume in datasource tab.';
+      this.customSourceData.sourceMetadata.htmlUrl = 'navigation/sidenav/advancedsidenav/navigation.html';
+      this.customSourceData.sourceMetadata.tsUrl = 'navigation/sidenav/advancedsidenav/navigation.text';
+      this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/sidenav.json';
+      this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-side-navpage?embed=1&file=app/navigation/sidenavpage/sidenavpage.demo.html&view=editor';
     }
   }
   
