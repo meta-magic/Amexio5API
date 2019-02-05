@@ -1,0 +1,172 @@
+{
+  "title": "Amexio Enterprise Appointment",
+  "description": "An appointment component used to schedule appointment with available dates and time.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-ee-appointment>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+            "name": "height",
+            "version": "5.5.2 Onwards",
+            "description": "Sets height to appointment card",
+            "type": "string",
+            "default": "auto"
+        },
+        {
+            "name": "start-time",
+            "description": "Sets the start time",
+            "version": "5.5.2 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "end-time",
+            "description": "Sets the end time",
+            "version": "5.5.2 Onwards",
+            "type": "number",
+            "default": ""
+        },
+        {
+            "name": "no-of-days",
+            "description": "Sets number of number of days available",
+            "version": "5.5.2 Onwards",
+            "type": "number",
+            "default": "7"
+        },
+        {
+            "name": "date",
+            "description": "Sets color to D3 Bar chart",
+            "version": "5.5.2 Onwards",
+            "type": "date",
+            "default": ""
+        },
+        {
+            "name": "available-slots",
+            "description": "Slots available",
+            "version": "5.5.2 Onwards",
+            "type": "",
+            "default": ""
+        },
+        {
+            "name": "multi-select",
+            "description": "Allows to select multiple appointments",
+            "version": "5.5.2 Onwards",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "name": "available-slots-bg-color",
+            "description": "Sets background color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "available-slots-color",
+            "description": "Sets color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "selected-slots-bg-color",
+            "description": "Sets selected color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
+        },
+        {
+            "name": "selected-slots-color",
+            "description": "Sets color for available slots",
+            "version": "5.5.4 Onwards",
+            "type": "string",
+            "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+            "name": "onSingleSelect()",
+            "version": "5.5.2 Onwards",
+            "description": "It will fire on selection of single time."
+        },
+        {
+            "name": "onMultiSelect()",
+            "version": "5.5.2 Onwards",
+            "description": "It will fire on selection of multiple time."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "enterprise/appointment/ee.html",
+    "tsUrl": "enterprise/appointment/ee.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-appointment1?embed=1&file=app/enterprise/appointment/appointment.demo.html&view=editor"
+  }
+}

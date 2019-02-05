@@ -1,0 +1,99 @@
+{
+  "title": "Amexio Multi EE Carousel",
+  "description": "A Awesome Multi Item Media Carousel, which comes preloaded with video playing and a full blown detailing page embedded in the component itself.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-media-ee-carousel>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title for the Carousel"
+        },
+        {
+          "name": "data",
+          "type": "Array",
+          "default": "",
+          "description": "Data Containing Image Path, Information and Video URL Refer the DataSource Tab"
+        },
+        {
+          "name": "carousel-type",
+          "type": "string",
+          "default": "",
+          "description": "Stlyed Carousel for Vertical or Horizontal Media"
+        },
+        {
+          "name": "has-details",
+          "type": "boolean",
+          "default": "false",
+          "description": "Provide a embedded view for more information on the media"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+      {
+      "name": "onVideoLoad",
+      "description": "Emits with a video id to play."
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "enterprise/multicarusel/ee.html",
+    "tsUrl": "enterprise/multicarusel/ee.text",
+    "datasourceUrl": "assets/data/code/enterprise/multicarusel/ee.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-multi-ee-carousel?embed=1&file=src/app/multi-item-carousel/carousel.demo.component.html&view=editor"
+  }
+}
