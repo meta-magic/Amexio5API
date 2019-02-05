@@ -4,6 +4,8 @@
 
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
 
 @Component({
     selector: 'dragdroptree-demo', 
@@ -18,8 +20,9 @@ export class WithinTreeDemo {
     selectedData: any;
     treeLocalData: any;
 
+    customSourceData: ComponentDataStructure;
     constructor(private http: HttpClient) {
-        this.getHtmlAndTypeScriptCode();
+      this.customSourceData = new ComponentDataStructure();
 
         this.treeLocalData = {
             "data": [{
@@ -105,27 +108,17 @@ export class WithinTreeDemo {
 
     }
 
-    //TO LOAD HTML AND TYPESCRIPT CODE
-    getHtmlAndTypeScriptCode() {
-        let responseHtml: any;
-        let responseTs: any;
-
-        //HTML FILE
-        this.http.get('assets/data/code/draganddrop/withintree/tree.html', { responseType: 'text' }).subscribe(data => {
-            responseHtml = data;
-        }, error => {
-        }, () => {
-            this.htmlCode = responseHtml;
-        });
-
-        //TS FILE
-        this.http.get('assets/data/code/draganddrop/withintree/tree.text', { responseType: 'text' }).subscribe(data => {
-            responseTs = data;
-        }, error => {
-        }, () => {
-            this.typeScriptCode = responseTs;
-        });
-    }
+    ngOnInit(): void {
+        this.createCustomSourceData();
+      }
+      
+      createCustomSourceData() {
+        this.customSourceData.title = 'within tree Drag Drop Functionality';
+        this.customSourceData.description = 'A within Tree component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
+        this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/withintree/tree.html';
+        this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/withintree/tree.text';
+        this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dropdown-withintree?embed=1&file=app/tree/simpletree/simpletree.demo.html&view=editor';
+      }
 
     //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
     onCopyClick() {

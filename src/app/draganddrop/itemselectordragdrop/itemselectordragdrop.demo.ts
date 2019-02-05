@@ -4,6 +4,8 @@
 
 import {Component, ViewChild} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
 
 @Component({
   selector: 'itemselectordragdrop-demo',
@@ -18,42 +20,27 @@ export class ItemSelectorDragdropDemo {
   selectedData: any;
   dataSource:string;
   selectedData1: any;
+
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
   }
   getSelectedData(data: any) {
     this.selectedData = data;
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-    let responseData:any;
-    //HTML FILE /home/betamagic/5_Branch/New-API-5.2-Branch/Amexio5API/src/assets/data/code/draganddrop/itemselectordragdrop/form.html
-    this.http.get('assets/data/code/draganddrop/itemselectordragdrop/form.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
+  
 
-    //TS FILE
-    this.http.get('assets/data/code/draganddrop/itemselectordragdrop/form.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //JSON FILE
-    this.http.get('assets/data/componentdata/selectordata.json',{responseType: 'text'}).subscribe(data => {
-      responseData = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseData;
-    });
-
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
-
+  
+  createCustomSourceData() {
+    this.customSourceData.title = 'itemselector With Drag Drop Functionality';
+    this.customSourceData.description = 'A Expandable Item selector component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/itemselectordragdrop/form.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/itemselectordragdrop/form.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-itemselector-draganddrop?embed=1&file=src/app/itemselector/itemselector.demo.component.html&view=editor';
+  }
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {

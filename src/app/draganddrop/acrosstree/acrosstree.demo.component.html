@@ -1,40 +1,45 @@
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/data/tree.json'">
-  <amexio-api-demo> 
-<amexio-row>
-<amexio-column size="12">
-<amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
-<amexio-header>
-Drag Drop Functionality across Tree
-</amexio-header>
-<amexio-body>
-<amexio-row>
-    <amexio-column [size]="6">
-        <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
-            <amexio-header>
-                Tree 1
-            </amexio-header>
-            <amexio-body>
-            <amexio-treeview #tree  (onDrop)="getDropData1($event)" [data-reader]="'data'" [enable-drag]="true" [enable-drop]="true" [data]="treeLocalData" [across-tree]="true">
-            </amexio-treeview>
-            </amexio-body>
-        </amexio-card>
-    </amexio-column>
+    <amexio-api-demo>
+        
+        <amexio-row>
+            <amexio-column size="12">
+                <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+                    <amexio-header>
+                        Drag Drop Functionality across Tree
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-row>
+                            <amexio-column [size]="6">
+                                <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+                                    <amexio-header>
+                                        Tree 1
+                                    </amexio-header>
+                                    <amexio-body>
+                                        <amexio-treeview #tree (onDrop)="getDropData1($event)" [data-reader]="'data'"
+                                            [enable-drag]="true" [enable-drop]="true" [data]="treeLocalData"
+                                            [across-tree]="true">
+                                        </amexio-treeview>
+                                    </amexio-body>
+                                </amexio-card>
+                            </amexio-column>
 
-    <amexio-column [size]="6">
-        <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
-            <amexio-header>
-                Tree 2
-            </amexio-header>
-            <amexio-body>
-            <amexio-treeview #tree1 (onDrop)="getDropData($event)" [data-reader]="'data'" [enable-drag]="true" [enable-drop]="true" [data]="treeLocalData1" [across-tree]="true">
-            </amexio-treeview>
-            </amexio-body>
-        </amexio-card>
-    </amexio-column>
-</amexio-row>
-</amexio-body>
-</amexio-card>
-</amexio-column>
-</amexio-row>
-</amexio-api-demo>
+                            <amexio-column [size]="6">
+                                <amexio-card [header]="true" [footer]="false" [footer-align]="'right'">
+                                    <amexio-header>
+                                        Tree 2
+                                    </amexio-header>
+                                    <amexio-body>
+                                        <amexio-treeview #tree1 (onDrop)="getDropData($event)" [data-reader]="'data'"
+                                            [enable-drag]="true" [enable-drop]="true" [data]="treeLocalData1"
+                                            [across-tree]="true">
+                                        </amexio-treeview>
+                                    </amexio-body>
+                                </amexio-card>
+                            </amexio-column>
+                        </amexio-row>
+                    </amexio-body>
+                </amexio-card>
+            </amexio-column>
+        </amexio-row>
+    </amexio-api-demo>
 </amexio-api-structure>

@@ -189,7 +189,7 @@ export class AcrossTreeDemo implements OnInit{
     this.customSourceData.description = 'A Expandable Tree component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
     this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/acrosstree/tree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/acrosstree/tree.text';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dropdown-withintree?embed=1&file=app/tree/simpletree/simpletree.demo.html&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v5-dragdropacrosstree?embed=1&file=app/tree/acrosstree/acrosstree.demo.html&view=editor';
   }
 
   getNodeData(data: any) {

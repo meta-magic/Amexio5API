@@ -4,6 +4,7 @@
 
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
 @Component({
   selector: 'dragdroptree-demo', 
@@ -18,8 +19,9 @@ export class TreeToPanelDemo {
   selectedData: any;
   treeLocalData: any;
   treeLocalData1: any;
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
 
     this.treeLocalData = {
       "data": [{
@@ -104,27 +106,20 @@ export class TreeToPanelDemo {
     };
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
 
-    //HTML FILE
-    this.http.get('assets/data/code/draganddrop/treetopanel/tree.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
 
-    //TS FILE
-    this.http.get('assets/data/code/draganddrop/treetopanel/tree.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+  
+  createCustomSourceData() {
+    this.customSourceData.title = 'Tree to panel Drag Drop Functionality';
+    this.customSourceData.description = 'A Tree to panel component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/treetopanel/tree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/treetopanel/tree.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dragdroppanel?embed=1&file=app/tree/acrosstree/acrosstree.demo.html&view=editor';
+  }
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
