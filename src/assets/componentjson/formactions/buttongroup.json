@@ -76,12 +76,12 @@
       }
     ],
     "sourceMetadata": {
-      "htmlUrl": "forms/datepicker/form.html",
-      "tsUrl": "forms/detepicker/form.text",
+      "htmlUrl": "forms/buttongroup/form.html",
+      "tsUrl": "forms/buttongroup/form.text",
       "datasourceUrl": ""
     },
     "liveMetadata": {
       "disabled": false,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-datepicker?ctl=1&embed=1&file=app/forms/datepicker/datepicker.demo.html"
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-buttongroup?embed=1&file=app/forms/buttongroup/buttongroup.demo.html"
     }
   }
