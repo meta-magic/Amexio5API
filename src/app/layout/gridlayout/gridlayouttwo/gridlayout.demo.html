@@ -1,188 +1,139 @@
-<amexio-card header="true">
-    <amexio-header>
-        Grid Layout
-    </amexio-header>
-    <amexio-body>
-        <p>CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can
-            handle both columns and rows. Grid Layout can be used by applying CSS rules both to a parent element (which becomes
-            the Grid Container) and to that elements children (which become Grid Items).</p>
-        <amexio-tab-view>
-            <amexio-tab title="Demo" active="true">
-                <amexio-row>
-                    <amexio-column size="12">
-                        <amexio-card [header]="true">
-                            <amexio-header>
-                                Grid Layout
-                            </amexio-header>
-                            <amexio-body>
-                                <amexio-layout-grid [layout]="'Layout2'">
-                                    <amexio-grid-item [name]="'gridheader'">
-                                        <amexio-panel [content-align]="'center'" [expanded]="true">
-                                            <amexio-label [size]="'large-9vw-bold'">
-                                                <u>THE COLLECTION</u>
-                                            </amexio-label>
+        
+        <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/layouts/gridLayout.json'">
+            <amexio-api-demo>
+        
+        
+        <amexio-row>
+            <amexio-column size="12">
+                <amexio-card [header]="true">
+                    <amexio-header>
+                        Grid Layout
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-layout-grid [layout]="'Layout2'">
+                            <amexio-grid-item [name]="'gridheader'">
+                                <amexio-panel [content-align]="'center'" [expanded]="true">
+                                    <amexio-label [size]="'large-9vw-bold'">
+                                        <u>THE COLLECTION</u>
+                                    </amexio-label>
+                                </amexio-panel>
+                            </amexio-grid-item>
+
+                            <amexio-grid-item [name]="'gridheader1'">
+                                <amexio-panel [content-align]="'center'" [border]="true" [expanded]="true">
+                                    <amexio-label>
+                                        CLASSIC
+                                    </amexio-label>
+                                    <br>
+                                    <amexio-label>
+                                        <em>
+                                            <u>Holiday</u>
+                                        </em>
+                                    </amexio-label>
+                                    <br>
+                                    <amexio-label>COLLECTION</amexio-label>
+                                </amexio-panel>
+                            </amexio-grid-item>
+                            <amexio-grid-item [name]="'gridheader2'">
+                                <h2 class="label-block">
+                                    ART . LOVE . COLOR
+                                </h2>
+                            </amexio-grid-item>
+                            <amexio-grid-item [name]="'gridright'">
+                                <amexio-panel title="Panel" [expanded]="true">
+                                    Inspired by painter Yago Hortal’s one-of-a-kind, vivid artwork, this set features 40 shades of color for cheeks and eyes.
+                                    The panels easily pop in and out, making it perfectly portable for holiday trips.
+                                    limited-edition kits featuring all of their bestsellers in a range of shades—from
+                                    bold pops of color to always-flattering neutrals.
+                                </amexio-panel>
+                                <amexio-panel [content-align]="'center'" [border]="true" [expanded]="true">
+                                    <amexio-label>
+                                        MORE DETAILS
+                                    </amexio-label>
+                                </amexio-panel>
+                            </amexio-grid-item>
+                            <!-- <amexio-grid-item [name]="'gridright1'"> -->
+
+
+                            <!-- </amexio-grid-item> -->
+                            <amexio-grid-item [name]="'gridfooter1'">
+                                <amexio-layout-grid [layout]="'gridimagelayout'">
+                                    <amexio-grid-item [name]="'gridimage1'">
+                                        <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+                                    </amexio-grid-item>
+                                    <amexio-grid-item [name]="'gridimage2'">
+                                        <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+                                    </amexio-grid-item>
+                                    <amexio-grid-item [name]="'gridimage3'">
+                                        <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+                                    </amexio-grid-item>
+                                    <amexio-grid-item [name]="'gridimage4'">
+                                        <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
+                                    </amexio-grid-item>
+                                </amexio-layout-grid>
+                            </amexio-grid-item>
+                            <amexio-grid-item [name]="'gridleft1'">
+                                <amexio-label [size]="'medium-bold'">
+                                    Shop By
+                                </amexio-label>
+                                <hr/>
+                                <amexio-layout-grid [layout]="'leftlayout'">
+                                    <amexio-grid-item [name]="'leftlayout1'">
+                                        <amexio-panel [header]="false" [expanded]="true">
+                                            Makeup
+                                            <br> Skincare
+                                            <br> Fragrance
+                                        </amexio-panel>
+
+                                    </amexio-grid-item>
+                                    <amexio-grid-item [name]="'leftlayout2'">
+                                        <amexio-panel [header]="false" [expanded]="true">
+                                            Bath & Body
+                                            <br> Hair
+                                            <br> Nails
                                         </amexio-panel>
                                     </amexio-grid-item>
-
-                                    <amexio-grid-item [name]="'gridheader1'">
-                                        <amexio-panel [content-align]="'center'" [border]="true" [expanded]="true">
-                                            <amexio-label>
-                                                CLASSIC
-                                            </amexio-label>
-                                            <br>
-                                            <amexio-label>
-                                                <em>
-                                                    <u>Holiday</u>
-                                                </em>
-                                            </amexio-label>
-                                            <br>
-                                            <amexio-label>COLLECTION</amexio-label>
+                                    <amexio-grid-item [name]="'leftlayout3'">
+                                        <amexio-panel [header]="false" [expanded]="true">
+                                            Tools & Brushes
+                                            <br> Men
+                                            <br> Gifts
                                         </amexio-panel>
                                     </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridheader2'">
-                                        <h2 class="label-block">
-                                            ART . LOVE . COLOR
-                                        </h2>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridright'">
-                                        <amexio-panel title="Panel" [expanded]="true">
-                                            Inspired by painter Yago Hortal’s one-of-a-kind, vivid artwork, this set features 40 shades of color for cheeks and eyes.
-                                            The panels easily pop in and out, making it perfectly portable for holiday trips.
-                                            limited-edition kits featuring all of their bestsellers in a range of shades—from
-                                            bold pops of color to always-flattering neutrals.
+                                    <amexio-grid-item [name]="'leftlayout4'">
+                                        <amexio-panel [header]="false" [expanded]="true">
+                                            Sales
+                                            <br> Brands
                                         </amexio-panel>
-                                        <amexio-panel [content-align]="'center'" [border]="true" [expanded]="true">
-                                            <amexio-label>
-                                                MORE DETAILS
-                                            </amexio-label>
-                                        </amexio-panel>
-                                    </amexio-grid-item>
-                                    <!-- <amexio-grid-item [name]="'gridright1'"> -->
 
-
-                                    <!-- </amexio-grid-item> -->
-                                    <amexio-grid-item [name]="'gridfooter1'">
-                                        <amexio-layout-grid [layout]="'gridimagelayout'">
-                                            <amexio-grid-item [name]="'gridimage1'">
-                                                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
-                                            </amexio-grid-item>
-                                            <amexio-grid-item [name]="'gridimage2'">
-                                                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
-                                            </amexio-grid-item>
-                                            <amexio-grid-item [name]="'gridimage3'">
-                                                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
-                                            </amexio-grid-item>
-                                            <amexio-grid-item [name]="'gridimage4'">
-                                                <amexio-image [path]="'assets/images/imggrid.jpg'" [tooltip]="'Image'"></amexio-image>
-                                            </amexio-grid-item>
-                                        </amexio-layout-grid>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridleft1'">
-                                        <amexio-label [size]="'medium-bold'">
-                                            Shop By
-                                        </amexio-label>
-                                        <hr/>
-                                        <amexio-layout-grid [layout]="'leftlayout'">
-                                            <amexio-grid-item [name]="'leftlayout1'">
-                                                <amexio-panel [header]="false" [expanded]="true">
-                                                    Makeup
-                                                    <br> Skincare
-                                                    <br> Fragrance
-                                                </amexio-panel>
-
-                                            </amexio-grid-item>
-                                            <amexio-grid-item [name]="'leftlayout2'">
-                                                <amexio-panel [header]="false" [expanded]="true">
-                                                    Bath & Body
-                                                    <br> Hair
-                                                    <br> Nails
-                                                </amexio-panel>
-                                            </amexio-grid-item>
-                                            <amexio-grid-item [name]="'leftlayout3'">
-                                                <amexio-panel [header]="false" [expanded]="true">
-                                                    Tools & Brushes
-                                                    <br> Men
-                                                    <br> Gifts
-                                                </amexio-panel>
-                                            </amexio-grid-item>
-                                            <amexio-grid-item [name]="'leftlayout4'">
-                                                <amexio-panel [header]="false" [expanded]="true">
-                                                    Sales
-                                                    <br> Brands
-                                                </amexio-panel>
-
-                                            </amexio-grid-item>
-
-                                        </amexio-layout-grid>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridmain'">
-
-                                        <amexio-image path="assets/images/grid1.jpg"></amexio-image>
-
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridfooter'">
-                                        <amexio-panel [content-align]="'center'" [expanded]="true">
-                                            <amexio-label [size]="'large-24-bold'">
-                                                OUR
-                                                <br>
-                                                <em>COMMUNITY</em>
-                                                <br> FEATURING YOU!
-                                            </amexio-label>
-                                        </amexio-panel>
                                     </amexio-grid-item>
 
                                 </amexio-layout-grid>
-                            </amexio-body>
-                        </amexio-card>
+                            </amexio-grid-item>
+                            <amexio-grid-item [name]="'gridmain'">
 
-                    </amexio-column>
-                </amexio-row>
-            </amexio-tab>
-            <amexio-tab title="API Reference">
-                <amexio-datagrid title="Properties<amexio-layout-grid>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
-                    [data-reader]="'properties'" [enable-data-filter]="false">
-                    <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Version'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
-                </amexio-datagrid>
-                <br>
-                <amexio-datagrid title="Properties<amexio-grid-item>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
-                    [data-reader]="'childproperties'" [enable-data-filter]="false">
-                    <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Version'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
-                </amexio-datagrid>
-            </amexio-tab>
-            <amexio-tab title="Source">
-                <div style="overflow-y: scroll">
-                    <amexio-vertical-tab-view>
-                        <amexio-tab title="HTML" [active]="true">
-                            <ng-container *ngIf="htmlCode">
-                                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-                            </ng-container>
-                        </amexio-tab>
-                        <amexio-tab title="Type Script">
-                            <ng-container *ngIf="typeScriptCode">
-                                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-                            </ng-container>
-                        </amexio-tab>
+                                <amexio-image path="assets/images/grid1.jpg"></amexio-image>
 
-                    </amexio-vertical-tab-view>
-                </div>
-            </amexio-tab>
-            <amexio-tab title="Live">
-                <p align="center">Amexio Sandbox</p>
-                <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-gridlayouttwo?embed=1&file=app/layouts/gridlayout/gridlayouttwo/gridlayout.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
-            </amexio-tab>
-        </amexio-tab-view>
-    </amexio-body>
-</amexio-card>
+                            </amexio-grid-item>
+                            <amexio-grid-item [name]="'gridfooter'">
+                                <amexio-panel [content-align]="'center'" [expanded]="true">
+                                    <amexio-label [size]="'large-24-bold'">
+                                        OUR
+                                        <br>
+                                        <em>COMMUNITY</em>
+                                        <br> FEATURING YOU!
+                                    </amexio-label>
+                                </amexio-panel>
+                            </amexio-grid-item>
+
+                        </amexio-layout-grid>
+                    </amexio-body>
+                </amexio-card>
+
+            </amexio-column>
+        </amexio-row>
+
+
+        </amexio-api-demo>
+        </amexio-api-structure>
+        

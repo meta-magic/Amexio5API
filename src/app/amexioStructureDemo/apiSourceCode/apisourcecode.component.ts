@@ -13,10 +13,17 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   @Input('ts-url') tsUrl: string;
   @Input('html-url') htmlUrl: string;
   @Input('data-source-url') dataSourceUrl: string;
+  @Input('dynamic-url') dynamicUrl: string;
+  @Input('module-url') moduleUrl: string;
+  
+
 
   htmlCode: any;
   typeScriptCode: any;
   dataSource: any;
+
+  dynamicCode: any;
+  moduleCode: any;
 
   constructor(private _httpClient: HttpClient) {
   }
@@ -31,6 +38,12 @@ export class AmexioApiSourceCodeComponent implements OnInit {
     }
     if (this.dataSourceUrl) {
       this.loadDataSourceUrl();
+    }
+    if (this.dynamicUrl) {
+      this.loadDynamicUrl();
+    }
+    if (this.moduleUrl) {
+      this.loadModuleUrl();
     }
   }
   // LOADING HTML URL
@@ -49,6 +62,22 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   loadDataSourceUrl() {
     this._httpClient.get(DATASOURCE_BASE_PATH + this.dataSourceUrl, { responseType: 'text' }).subscribe(data => {
       this.dataSource = data;
+    });
+  }
+  
+
+   // LOADING DYNAMIC URL
+   loadDynamicUrl() {
+     debugger;
+    this._httpClient.get(CODE_BASE_PATH + this.dynamicUrl, { responseType: 'text' }).subscribe(data => {
+      this.dynamicCode = data;
+    });
+  }
+
+   // LOADING MODULE URL
+   loadModuleUrl() {
+    this._httpClient.get(CODE_BASE_PATH + this.moduleUrl, { responseType: 'text' }).subscribe(data => {
+      this.moduleCode = data;
     });
   }
 }

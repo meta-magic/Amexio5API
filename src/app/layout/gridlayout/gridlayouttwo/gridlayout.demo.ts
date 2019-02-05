@@ -2,17 +2,19 @@
  * Created by rashmi on 2/1/18.
  */
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioGridLayoutService } from "amexio-ng-extensions";
 import { GridConstants } from 'amexio-ng-extensions';
 import { GridConfig } from 'amexio-ng-extensions';
+
+import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
+
 @Component({
   selector: 'gridlayout-demo-exp2', templateUrl: 'gridlayout.demo.html'
 })
-export class GridLayoutDemoTwo {
-  htmlCode: string;
-  typeScriptCode: string;
+export class GridLayoutDemoTwo implements OnInit {
+
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
@@ -29,7 +31,12 @@ export class GridLayoutDemoTwo {
   imageGridTablet: GridConfig;
   imageGridMobile: GridConfig;
 
+  customSourceData: ComponentDataStructure;
+
   constructor(private http: HttpClient, private _gridlayoutService: AmexioGridLayoutService) {
+   
+    this.customSourceData = new ComponentDataStructure();
+   
     this.createLayouts();
     this._gridlayoutService.createLayout(this.imageGridDesktop);
     this._gridlayoutService.createLayout(this.imageGridTablet);
@@ -42,9 +49,20 @@ export class GridLayoutDemoTwo {
     this._gridlayoutService.createLayout(this.gridDesktop);
     this._gridlayoutService.createLayout(this.gridTablet);
     this._gridlayoutService.createLayout(this.gridMobile);
-
-    this.getHtmlAndTypeScriptCode();
   }
+
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
+  createCustomSourceData() {
+    this.customSourceData.title = 'Grid Layout';
+    this.customSourceData.description = 'CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows. Grid Layout can be used by applying CSS rules both to a parent element (which becomes the Grid Container) and to that elements children (which become Grid Items).';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/gridlayout/gridlayoutexp2.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/gridlayout/gridlayoutexp2.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-gridlayouttwo?embed=1&file=app/layouts/gridlayout/gridlayouttwo/gridlayout.demo.html&view=editor';
+  }
+
+
 
   createLayouts() {
     this.gridDesktop = new GridConfig('Layout2', GridConstants.Desktop)
@@ -97,29 +115,7 @@ export class GridLayoutDemoTwo {
       .addlayout(["leftlayout1", "leftlayout1", "leftlayout2", "leftlayout2"])
       .addlayout(["leftlayout3", "leftlayout3", "leftlayout4", "leftlayout4"]);
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/gridlayout/gridlayoutexp2.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/gridlayout/gridlayoutexp2.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
-
+ 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {

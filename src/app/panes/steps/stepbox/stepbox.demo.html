@@ -1,116 +1,45 @@
-<amexio-card header="true">
-    <amexio-header>
-       Step Box 
-    </amexio-header>
-    <amexio-body>
-      <p>Step-box component is an indicator for the steps in a workflow.</p>
-      <amexio-tab-view>
-        <amexio-tab title="Demo" active="true">
-          <amexio-row>
-            <amexio-column size="12">
-              <!--block is true for showing step box  -->
-              <amexio-label [size]="'medium'">Step box
-              </amexio-label>
-              <amexio-steps [block]="true" [index]="true">
-                <amexio-step-block [label]="'User'" [active]="true" ></amexio-step-block>
-                <amexio-step-block [label]="'Shop'" [active]="false" ></amexio-step-block>
-                <amexio-step-block [label]="'Payment'" [active]="false"></amexio-step-block>
-                <amexio-step-block [label]="'Confirmation'" [active]="false" ></amexio-step-block>
-              </amexio-steps>
-            </amexio-column>
-          </amexio-row>
-          <amexio-row>
-            <amexio-column size="12">
-              <!--block is true for showing step box  -->
-              <amexio-label [size]="'medium'">Step box with clickabel</amexio-label>
-              <amexio-steps [block]="true" [index]="true" (onClick)="stepBlockClick($event)">
-                <amexio-step-block [label]="'User'" [active]="user" ></amexio-step-block>
-                <amexio-step-block [label]="'Shop'" [active]="shop" ></amexio-step-block>
-                <amexio-step-block [label]="'Payment'" [active]="payment"></amexio-step-block>
-                <amexio-step-block [label]="'Confirmation'" [active]="confirmation"></amexio-step-block>
-              </amexio-steps>
-            </amexio-column>
-          </amexio-row>
-          <amexio-row>
-            <amexio-column size="12">
-              index is true for number inside circle
-              <br>
-              <amexio-label [size]="'medium'">Step-box index
-              </amexio-label>
-              <amexio-steps [index]="true">
-                <amexio-step-block [label]="'Step-1'" [active]="true"></amexio-step-block>
-                <amexio-step-block [label]="'Step-2'" [active]="false"></amexio-step-block>
-                <amexio-step-block [label]="'Step-3'" [active]="false"></amexio-step-block>
-                <amexio-step-block [label]="'Step-4'" [active]="false"></amexio-step-block>
-              </amexio-steps>
-            </amexio-column>
-          </amexio-row>
-         </amexio-tab>
-        <amexio-tab title="API Reference">
-          <amexio-datagrid title="Properties <amexio-steps>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/layout/steps/step.json'"
-                           [data-reader]="'properties'"
-                           [enable-data-filter]="false">
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/panels/step.json'">
+  <amexio-api-demo>
 
-          <amexio-datagrid title="Properties <amexio-step-block>" [enable-column-fiter]="false"
-          [http-method]="'get'"
-          [http-url]="'assets/apireference/layout/steps/step-block.json'"
-          [data-reader]="'properties'"
-          [enable-data-filter]="false">
-<amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Name'"></amexio-data-table-column>
-<amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Type'"></amexio-data-table-column>
-<amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Default'"></amexio-data-table-column>
-<amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                     [text]="'Description'"></amexio-data-table-column>
-</amexio-datagrid>
-
-          <amexio-datagrid title="Events" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/layout/steps/step.json'"
-                           [data-reader]="'events'"
-                           [enable-data-filter]="false">
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-         
-        </amexio-tab>
-        <amexio-tab title="Source">
-          <div style="overflow-y: scroll">
-          <amexio-vertical-tab-view>
-            <amexio-tab title="HTML" [active]="true">
-              <ng-container *ngIf="htmlCode">
-                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-            <amexio-tab title="Type Script">
-              <ng-container *ngIf="typeScriptCode">
-                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-          </amexio-vertical-tab-view>
-          </div>
-        </amexio-tab>
-        <amexio-tab title="Live">
-        <p align="center">Amexio Sandbox</p>
-        <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-stepbox?embed=1&file=app/panels/stepbox/stepbox.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
-        </amexio-tab>
-      </amexio-tab-view>
-    </amexio-body>
-  </amexio-card>
-  <amexio-notification [data]="clickMsgArray" vertical-position="top" horizontal-position="right" auto-dismiss-msg="true" auto-dismiss-msg-interval="1000"></amexio-notification>
+    <amexio-row>
+      <amexio-column size="12">
+        <!--block is true for showing step box  -->
+        <amexio-label [size]="'medium'">Step box
+        </amexio-label>
+        <amexio-steps [block]="true" [index]="true">
+          <amexio-step-block [label]="'User'" [active]="true" ></amexio-step-block>
+          <amexio-step-block [label]="'Shop'" [active]="false" ></amexio-step-block>
+          <amexio-step-block [label]="'Payment'" [active]="false"></amexio-step-block>
+          <amexio-step-block [label]="'Confirmation'" [active]="false" ></amexio-step-block>
+        </amexio-steps>
+      </amexio-column>
+    </amexio-row>
+    <amexio-row>
+      <amexio-column size="12">
+        <!--block is true for showing step box  -->
+        <amexio-label [size]="'medium'">Step box with clickabel</amexio-label>
+        <amexio-steps [block]="true" [index]="true" (onClick)="stepBlockClick($event)">
+          <amexio-step-block [label]="'User'" [active]="user" ></amexio-step-block>
+          <amexio-step-block [label]="'Shop'" [active]="shop" ></amexio-step-block>
+          <amexio-step-block [label]="'Payment'" [active]="payment"></amexio-step-block>
+          <amexio-step-block [label]="'Confirmation'" [active]="confirmation"></amexio-step-block>
+        </amexio-steps>
+      </amexio-column>
+    </amexio-row>
+    <amexio-row>
+      <amexio-column size="12">
+        index is true for number inside circle
+        <br>
+        <amexio-label [size]="'medium'">Step-box index
+        </amexio-label>
+        <amexio-steps [index]="true">
+          <amexio-step-block [label]="'Step-1'" [active]="true"></amexio-step-block>
+          <amexio-step-block [label]="'Step-2'" [active]="false"></amexio-step-block>
+          <amexio-step-block [label]="'Step-3'" [active]="false"></amexio-step-block>
+          <amexio-step-block [label]="'Step-4'" [active]="false"></amexio-step-block>
+        </amexio-steps>
+      </amexio-column>
+    </amexio-row>
+   
+    </amexio-api-demo>
+    </amexio-api-structure>

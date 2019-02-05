@@ -2,44 +2,38 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
+import {Component, OnInit} from '@angular/core'
 import { HttpClient } from '@angular/common/http';
+
+import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
 
 
 @Component({
   selector: 'verticalright-tab-demo', 
   templateUrl: './verticalrighttab.demo.html',
 })
-export class VerticalRightTabDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+export class VerticalRightTabDemo  implements OnInit{
+ 
+  customSourceData: ComponentDataStructure;
+
   copyMsgArray: any[];
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs:any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/tab/verticalrighttab/tab.html',{ responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/tab/verticalrighttab/tab.text',{ responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'vertical Right kedar Tab ';
+    this.customSourceData.description = ' Vertical Right Tab  component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/verticalrighttab/tab.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/verticalrighttab/dynamictab.text';
+    this.customSourceData.sourceMetadata.dynamicUrl = 'layout/tab/enhancedverticaltab/tab.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-horizontal-enhanced-tab?embed=1&file=app/tabs/enhancedtab/enhancedtab.demo.html&view=editor';
+  }
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

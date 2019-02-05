@@ -7,25 +7,32 @@ import { DyanmicTabComponent } from './dynamictabdemo.component';
 import { HttpClient } from '@angular/common/http';
 
 
+import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
+
 @Component({
     selector: 'enhanced-tab-demo', 
     templateUrl: './enhancedtab.demo.html',
 })
 export class EnhancedTabDemo {
-    htmlCode: string;
+   
     tabArray: any;
-    typeScriptCode: string;
+    
     copyMsgArray: any[];
     radioGroupData: any;
-    typeScriptCode2: string;
+ 
     public rate: number = 7;
     public max: number = 10;
     public isReadonly: boolean = false;
+
+    
+
+    customSourceData: ComponentDataStructure;
+     
     constructor(private http: HttpClient) {
+        this.customSourceData = new ComponentDataStructure();
         this.tabArray = [
             "work"
          ]
-        this.getHtmlAndTypeScriptCode();
         this.radioGroupData = {
             response: {
                 data: [{
@@ -37,36 +44,19 @@ export class EnhancedTabDemo {
         }
     }
 
-    //TO LOAD HTML AND TYPESCRIPT CODE
-    getHtmlAndTypeScriptCode() {
-        let responseHtml: any;
-        let responseTs: any;
-        let code: any;
-        //HTML FILE
-        this.http.get('assets/data/code/layout/tab/enhancedtab/tab.html',{ responseType: 'text' }).subscribe(data => {
-            responseHtml = data;
-        }, error => {
-        }, () => {
-            this.htmlCode = responseHtml;
-        });
 
-        //TS FILE
-        this.http.get('assets/data/code/layout/tab/enhancedtab/tab.text',{ responseType: 'text' }).subscribe(data => {
-            responseTs = data;
-        }, error => {
-        }, () => {
-            this.typeScriptCode = responseTs;
-        });
+    ngOnInit(): void {
+        this.createCustomSourceData();
+      }
+      createCustomSourceData() {
+        this.customSourceData.title = 'Enhanced Tab ';
+        this.customSourceData.description = 'Enhanced Tab  component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs.';
+        this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/enhancedtab/tab.html';
+        this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/enhancedtab/tab.text';
+        this.customSourceData.sourceMetadata.dynamicUrl = 'layout/tab/enhancedtab/dynamictab.text';
+        this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-horizontal-enhanced-tab?embed=1&file=app/tabs/enhancedtab/enhancedtab.demo.html&view=editor';
+      }
 
-        //TS FILE
-        this.http.get('assets/data/code/layout/tab/enhancedtab/dynamictab.text',{ responseType: 'text' }).subscribe(data => {
-            code = data;
-        }, error => {
-        }, () => {
-            this.typeScriptCode2 = code;
-        });
-
-    }
 
     //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
     onCopyClick() {

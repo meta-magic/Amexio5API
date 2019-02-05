@@ -2,17 +2,19 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
+import {Component, OnInit} from '@angular/core'
 import {Http} from "@angular/http";
 import { HttpClient } from '@angular/common/http';
+
+import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
+
 
 @Component({
   selector: 'step-box', 
   templateUrl: './stepbox.demo.html',
 })
-export class StepBoxDemoComponent {
-  htmlCode: string;
-  typeScriptCode: string;
+export class StepBoxDemoComponent implements OnInit{
+
   copyMsgArray: any[];
   user:boolean;
   shop:boolean;
@@ -20,13 +22,29 @@ export class StepBoxDemoComponent {
   confirmation:boolean;
   clickMsgArray:any=[];
 
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+
+    
     this.user=false;
     this.shop=true;
     this.payment=false;
     this.confirmation=false;
   }
+
+
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
+  createCustomSourceData() {
+    this.customSourceData.title = 'Step Box';
+    this.customSourceData.description = 'Step-box component is an indicator for the steps in a workflow.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'layout/steps/steps.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'layout/steps/steps.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-stepbox?embed=1&file=app/panels/stepbox/stepbox.demo.html&view=editor';
+  }
+
 
 // step box click event
   stepBlockClick(event:any){
@@ -60,29 +78,6 @@ export class StepBoxDemoComponent {
   }
   
 
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/steps/steps.html',{ responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/steps/steps.text',{ responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

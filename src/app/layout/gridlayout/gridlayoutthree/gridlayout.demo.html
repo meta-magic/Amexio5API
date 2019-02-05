@@ -1,193 +1,148 @@
-<amexio-card header="true">
-    <amexio-header>
-        Grid Layout
-    </amexio-header>
-    <amexio-body>
-        <p>CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows. Grid Layout can be used by applying CSS rules both to a parent element (which becomes the Grid Container) and to that elements children (which become Grid Items).</p>
-        <amexio-tab-view>
-            <amexio-tab title="Demo" active="true">
-                <amexio-row>
-                    <amexio-column size="12">
-                        <amexio-card [header]="true">
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/layouts/gridLayout.json'">
+    <amexio-api-demo>
+
+<amexio-row>
+    <amexio-column size="12">
+        <amexio-card [header]="true">
+            <amexio-header>
+                Grid Layout
+            </amexio-header>
+            <amexio-body>
+
+                <amexio-layout-grid [layout]="'Home'">
+                    <amexio-grid-item [name]="'gridheader1'">
+                        <amexio-button [label]="'Home'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
+                        </amexio-button>
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridheader2'">
+                        <amexio-button [label]="'About'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
+                        </amexio-button>
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridheader3'">
+                        <amexio-button [label]="'Gallery'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
+                        </amexio-button>
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridheader4'">
+                        <amexio-button [label]="'Content'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
+                        </amexio-button>
+                    </amexio-grid-item>
+
+
+
+                    <amexio-grid-item [name]="'gridtitle'">
+
+                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
                             <amexio-header>
-                                Grid Layout
+                                Warli Painting
                             </amexio-header>
                             <amexio-body>
-
-                                <amexio-layout-grid [layout]="'Home'">
-                                    <amexio-grid-item [name]="'gridheader1'">
-                                        <amexio-button [label]="'Home'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
-                                        </amexio-button>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridheader2'">
-                                        <amexio-button [label]="'About'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
-                                        </amexio-button>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridheader3'">
-                                        <amexio-button [label]="'Gallery'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
-                                        </amexio-button>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridheader4'">
-                                        <amexio-button [label]="'Content'" [type]="'transparent'" [tooltip]="'Home'" [size]="'small'">
-                                        </amexio-button>
-                                    </amexio-grid-item>
-                                   
-
-
-                                    <amexio-grid-item [name]="'gridtitle'">
-
-                                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
-                                            <amexio-header>
-                                                Warli Painting
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-image path="assets/images/warli1.jpg"></amexio-image>
-                                                <amexio-label size="small">
-                                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
-                                                </amexio-label>
-                                            </amexio-body>
-
-                                        </amexio-card>
-
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridmain'">
-
-                                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
-                                            <amexio-header>
-                                                Gallerist
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-image path="assets/images/soap-bubble.jpg"></amexio-image>
-                                                <amexio-label size="small">
-                                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
-                                                    text ever since the 1500s, when an unknown printer took a galley of type
-                                                    and scrambled it to make a type specimen book. Lorem Ipsum is simply
-                                                    dummy text of the printing and typesetting industry. Lorem Ipsum has
-                                                    been the industry's standard dummy text ever since the 1500s, when an
-                                                    unknown printer took a galley of type and scrambled it to make a type
-                                                    specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting
-                                                    industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                                    since the 1500s, when an unknown printer took a galley of type and scrambled
-                                                    it to make a type specimen book. Lorem Ipsum is simply dummy text of
-                                                    the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                                    standard dummy text ever since the 1500s, when an unknown printer took
-                                                    a galley of type and scrambled it to make a type specimen book.
-
-                                                </amexio-label>
-                                            </amexio-body>
-
-                                        </amexio-card>
-
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridright1'">
-                                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
-                                            <amexio-header>
-                                                Calligraphy
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-image path="assets/images/calligraphy.jpg"></amexio-image>
-                                                <amexio-label size="small">
-                                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.
-                                                </amexio-label>
-                                            </amexio-body>
-
-                                        </amexio-card>
-
-
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridright2'">
-                                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
-                                            <amexio-header>
-                                                Landscape
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-image path="assets/images/landscape.jpg"></amexio-image>
-                                                <amexio-label size="small">
-                                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates. Temporibus autem
-                                                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-                                                    ut et voluptates.
-                                                </amexio-label>
-                                            </amexio-body>
-
-                                        </amexio-card>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridright3'">
-                                        <amexio-panel [header]="true" [title]="'Imaginary Drawing'" [expanded]="true">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
-
-
-                                        </amexio-panel>
-                                    </amexio-grid-item>
-                                    <amexio-grid-item [name]="'gridmenu'">
-                                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
-                                            <amexio-header>
-                                                Origami
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-image path="assets/images/origami.jpg"></amexio-image>
-                                                <amexio-label size="small">
-                                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates. Temporibus autem
-                                                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
-                                                    ut et voluptates.
-
-                                                </amexio-label>
-                                            </amexio-body>
-
-                                        </amexio-card>
-                                    </amexio-grid-item>
-                                </amexio-layout-grid>
-
+                                <amexio-image path="assets/images/warli1.jpg"></amexio-image>
+                                <amexio-label size="small">
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                                    eveniet ut et voluptates.
+                                </amexio-label>
                             </amexio-body>
+
                         </amexio-card>
 
-                    </amexio-column>
-                </amexio-row>
-            </amexio-tab>
-            <amexio-tab title="API Reference">
-                <amexio-datagrid title="Properties<amexio-layout-grid>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
-                    [data-reader]="'properties'" [enable-data-filter]="false">
-                    <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Version'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
-                </amexio-datagrid>
-                <br>
-                <amexio-datagrid title="Properties<amexio-grid-item>" [enable-column-fiter]="false" [http-method]="'get'" [http-url]="'assets/apireference/data/gridlayout.json'"
-                    [data-reader]="'childproperties'" [enable-data-filter]="false">
-                    <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'version'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Version'">
-                    </amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Type'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
-                    <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
-                </amexio-datagrid>
-            </amexio-tab>
-            <amexio-tab title="Source">
-                <div style="overflow-y: scroll">
-                    <amexio-vertical-tab-view>
-                        <amexio-tab title="HTML" [active]="true">
-                            <ng-container *ngIf="htmlCode">
-                                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-                            </ng-container>
-                        </amexio-tab>
-                        <amexio-tab title="Type Script">
-                            <ng-container *ngIf="typeScriptCode">
-                                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-                            </ng-container>
-                        </amexio-tab>
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridmain'">
 
-                    </amexio-vertical-tab-view>
-                </div>
-            </amexio-tab>
-            <amexio-tab title="Live">
-                <p align="center">Amexio Sandbox</p>
-                <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-gridlayoutthree?embed=1&file=app/layouts/gridlayout/gridlayoutthree/gridlayout.demo.html&view=editor" frameborder="0" allowfullscren="allowfullscren"></iframe>
-            </amexio-tab>
-        </amexio-tab-view>
-    </amexio-body>
-</amexio-card>
+                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
+                            <amexio-header>
+                                Gallerist
+                            </amexio-header>
+                            <amexio-body>
+                                <amexio-image path="assets/images/soap-bubble.jpg"></amexio-image>
+                                <amexio-label size="small">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy
+                                    text ever since the 1500s, when an unknown printer took a galley of type
+                                    and scrambled it to make a type specimen book. Lorem Ipsum is simply
+                                    dummy text of the printing and typesetting industry. Lorem Ipsum has
+                                    been the industry's standard dummy text ever since the 1500s, when an
+                                    unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the industry's standard dummy text ever
+                                    since the 1500s, when an unknown printer took a galley of type and scrambled
+                                    it to make a type specimen book. Lorem Ipsum is simply dummy text of
+                                    the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                    standard dummy text ever since the 1500s, when an unknown printer took
+                                    a galley of type and scrambled it to make a type specimen book.
+
+                                </amexio-label>
+                            </amexio-body>
+
+                        </amexio-card>
+
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridright1'">
+                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
+                            <amexio-header>
+                                Calligraphy
+                            </amexio-header>
+                            <amexio-body>
+                                <amexio-image path="assets/images/calligraphy.jpg"></amexio-image>
+                                <amexio-label size="small">
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                                    eveniet ut et voluptates.
+                                </amexio-label>
+                            </amexio-body>
+
+                        </amexio-card>
+
+
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridright2'">
+                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
+                            <amexio-header>
+                                Landscape
+                            </amexio-header>
+                            <amexio-body>
+                                <amexio-image path="assets/images/landscape.jpg"></amexio-image>
+                                <amexio-label size="small">
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                                    eveniet ut et voluptates. Temporibus autem
+                                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+                                    ut et voluptates.
+                                </amexio-label>
+                            </amexio-body>
+
+                        </amexio-card>
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridright3'">
+                        <amexio-panel [header]="true" [title]="'Imaginary Drawing'" [expanded]="true">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy.
+
+
+                        </amexio-panel>
+                    </amexio-grid-item>
+                    <amexio-grid-item [name]="'gridmenu'">
+                        <amexio-card [header]="true" [footer]="false" [footer-align]="'left'" [header-align]="'left'">
+                            <amexio-header>
+                                Origami
+                            </amexio-header>
+                            <amexio-body>
+                                <amexio-image path="assets/images/origami.jpg"></amexio-image>
+                                <amexio-label size="small">
+                                    Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+                                    eveniet ut et voluptates. Temporibus autem
+                                    quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+                                    ut et voluptates.
+
+                                </amexio-label>
+                            </amexio-body>
+
+                        </amexio-card>
+                    </amexio-grid-item>
+                </amexio-layout-grid>
+
+            </amexio-body>
+        </amexio-card>
+
+    </amexio-column>
+</amexio-row>
+
+</amexio-api-demo>
+</amexio-api-structure>

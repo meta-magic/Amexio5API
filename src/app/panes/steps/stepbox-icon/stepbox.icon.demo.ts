@@ -4,14 +4,16 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
+
+
 @Component({
  selector: 'stepbox-icon-demo',
  templateUrl: './stepboxicon.demo.html',
 })
 
 export class StepBoxIconComponent {
-  htmlCode: string;
-  typeScriptCode: string;
+  
   copyMsgArray: any[];
   user:boolean;
   shop:boolean;
@@ -19,12 +21,27 @@ export class StepBoxIconComponent {
   confirmation:boolean;
   clickMsgArray:any=[];
 
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+
     this.user=false;
     this.shop=true;
     this.payment=false;
     this.confirmation=false;
+  }
+
+
+
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
+  createCustomSourceData() {
+    this.customSourceData.title = 'Step Box';
+    this.customSourceData.description = 'Step-box component is an indicator for the steps in a workflow.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'layout/steps/steps_icon.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'layout/steps/steps.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-stepboxicon?embed=1&file=app/panels/stepboxicon/stepboxicon.demo.html&view=editor';
   }
 
 // step box click event
@@ -59,29 +76,6 @@ export class StepBoxIconComponent {
   }
 
 
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/steps/steps_icon.html',{ responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/steps/steps.text',{ responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

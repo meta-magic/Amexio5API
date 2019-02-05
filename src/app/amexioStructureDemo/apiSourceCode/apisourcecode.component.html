@@ -11,7 +11,7 @@
 
     <ng-container *ngIf="tsUrl">
       <amexio-tab title="Type Script">
-        <ng-container *ngIf=" tsUrl && typeScriptCode">
+        <ng-container *ngIf="  typeScriptCode">
           <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
         </ng-container>
       </amexio-tab>
@@ -24,6 +24,22 @@
         </ng-container>
       </amexio-tab>
     </ng-container>
+
+    <ng-container *ngIf="dynamicUrl">
+        <amexio-tab title="Dynamic Code">
+          <ng-container *ngIf=" dynamicCode">
+            <prism-block [code]="dynamicCode" [language]="'typescript'"></prism-block>
+          </ng-container>
+        </amexio-tab>
+      </ng-container>
+
+      <ng-container *ngIf="moduleUrl">
+          <amexio-tab title="Module Code">
+            <ng-container *ngIf=" moduleCode">
+              <prism-block [code]="moduleCode" [language]="'typescript'"></prism-block>
+            </ng-container>
+          </amexio-tab>
+        </ng-container>
 
   </amexio-vertical-tab-view>
 </div>

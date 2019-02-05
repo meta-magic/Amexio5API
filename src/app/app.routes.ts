@@ -7,8 +7,16 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: '', redirectTo: 'getting-started', pathMatch: 'full'
   },
+
+  /** Getting Started  Page */
   {
     path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
+  },
+
+  /** D3 Chart Page */
+
+  {
+    path: 'd3-charts', loadChildren: './chartd3/chartd3.demo.module#ChartD3DemoModule'
   },
 
   /** Forms Input */
