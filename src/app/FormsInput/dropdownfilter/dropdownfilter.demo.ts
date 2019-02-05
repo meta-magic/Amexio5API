@@ -10,43 +10,11 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './dropdownfilter.demo.html',
 })
 export class DropDownFilterDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource:string;
+  
   copyMsgArray: any[];
   countryCode1:string;
   sportName: any;
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-  }
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-    let responseData:any;
-    //HTML FILE
-    this.http.get('assets/data/code/forms/dropdownfilter/form.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/forms/dropdownfilter/form.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //TS FILE
-    this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
-      responseData = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseData;
-    });
+  constructor() {
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

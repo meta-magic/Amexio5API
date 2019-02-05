@@ -1,0 +1,42 @@
+
+
+<amexio-api-structure [url]="'assets/componentjson/forminputs/taginput.json'">
+    <amexio-api-demo>
+
+<amexio-row>
+    <amexio-column size="12">
+        <amexio-card header="true">
+            <amexio-header>
+                Simple Tags Input
+            </amexio-header>
+            <amexio-body>
+                <amexio-row>
+                    <amexio-column [size]="6">
+                        <amexio-tag-input [data-reader]="'data'" [http-url]="'assets/data/componentdata/country.json'"
+                            [http-method]="'get'" [key]="'countryName'" [display-field]="'countryName'" [value-field]="'countryName'"
+                            [field-label]="'Country Name'" (onChange)="onRecordSelect($event)">
+                        </amexio-tag-input>
+                    </amexio-column>
+
+                    <amexio-column [size]="6">
+
+                        <amexio-card [header]="true" [body-height]="50">
+                            <amexio-header>
+                                Output Code
+                            </amexio-header>
+                            <amexio-body>
+                                <ng-container *ngIf="outputData">
+                                    <pre><code>  {{outputData|json}} </code></pre>
+                                </ng-container>
+                            </amexio-body>
+                        </amexio-card>
+
+                    </amexio-column>
+                </amexio-row>
+            </amexio-body>
+        </amexio-card>
+    </amexio-column>
+</amexio-row>
+
+</amexio-api-demo>
+</amexio-api-structure>
