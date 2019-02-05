@@ -3,7 +3,6 @@
  */
 
 import {Component} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'dropdownmenu', 
@@ -12,18 +11,12 @@ import {HttpClient} from "@angular/common/http";
 export class DropDownMenuDemo {
 
   sourceData: any ;
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
-  copyMsgArray: any[];
   countryCode1: string;
   payment: any[];
   transport: any[];
 
-  constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+  constructor() {
 
-  
     this.payment = [
       {"label": "Visa", "icon": "fa fa-cc-visa"},
       {"label": "Paypal", "icon": "fa fa-paypal", "separator": true},
@@ -44,48 +37,6 @@ export class DropDownMenuDemo {
       {"label": "Rocket", "icon": "fa fa-rocket"}
     ];
   }
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtmlData: any;
-    let responseTs: any;
-    let responseData: any;
-    //HTML FILE
-    this.http.get('assets/data/code/navigation/dropdownmenu/form.html', {responseType: 'text'}).subscribe(data => {
-      responseHtmlData = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtmlData;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/navigation/dropdownmenu/form.text', {responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    //TS FILE
-    // this.http.get('assets/data/componentdata/country.json',{responseType: 'text'}).subscribe(data => {
-    //   responseData = data;
-    // }, error => {
-    // }, () => {
-    //   this.dataSource = responseData;
-    // });
-
-  }
-
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-    } else {
-      this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
-    }
-  }
-
   onDropDownMenuClick(event: any) {
     
     let jsonData={
