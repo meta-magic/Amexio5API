@@ -4,6 +4,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'contextmenu-window',
   templateUrl: './contextmenuwindow.demo.component.html',
@@ -25,12 +28,13 @@ export class ContextMenuWindowDemoComponent {
   copyMsgArray: any[];
   asyncFlag: boolean;
   rightclickdata: any;
-
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
+    this.customSourceData = new ComponentDataStructure();
+
     this.rightclickdata =
       [{ "text": "Add New", "icon": "fa fa-plus", "disabled": true }, { "text": "Edit", "icon": "", "seperator": true }
         , { "text": "Send data in email", "icon": "" }];
-    this.getHtmlAndTypeScriptCode();
   }
   getDta() {
     this.asyncFlag = true;
@@ -38,28 +42,18 @@ export class ContextMenuWindowDemoComponent {
       this.asyncFlag = false;
     }, 3000);
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
 
-    //HTML FILE
-    this.http.get('assets/data/code/pane/contextmenuwindow/window.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/pane/contextmenuwindow/window.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+  createCustomSourceData() {
+    this.customSourceData.title = 'context menu window ';
+    this.customSourceData.description = 'Window Pane component is a customizable Modal Pane in which user can enter custom content';
+    this.customSourceData.sourceMetadata.htmlUrl = 'pane/contextmenuwindow/window.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'pane/contextmenuwindow/window.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-tab-contextualmenu?embed=1&file=src/app/contextualmenu/tab/contextmenutab.demo.html&view=editor';
+  }
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
