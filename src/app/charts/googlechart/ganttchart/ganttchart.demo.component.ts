@@ -2,7 +2,6 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'gantt-chart-demo',
@@ -12,11 +11,7 @@ export class GanttChartDemoComponent implements OnInit {
   ganttChartData:any;
   ganttChartWithNoDepData:any;
   ganttChartWithGropResources:any;
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSourceCode:string;
-  copyMsgArray: any[];
-  constructor(private http: HttpClient) {
+  constructor() {
     this.ganttChartData=[
       [{"datatype":'string',"label": 'Task ID'},{"datatype":'string',"label":  'Task Name'},{"datatype":'string', "label": 'Resource'},{"datatype":'date',"label":  'Start'},{"datatype":'date',"label":  'End'},{"datatype":'number',"label":  'Duration'},{"datatype":'number', "label": 'Percent Complete'},{"datatype":'string', "label": 'Dependencies'}],
             ['toTrain', 'Walk to train stop', 'walk', null, null, this.toMilliseconds(5), 100, null],
@@ -78,48 +73,9 @@ export class GanttChartDemoComponent implements OnInit {
          null, new Date(2015, 0, 6), this.toMilliseconds(1), 100, 'Research']
 
     ];
-    this.getHtmlAndTypeScriptCode();
   }
   toMilliseconds(days:number){
     return days * 24 * 60 * 60 * 1000;
-  }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs:any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/charts/ganttchart/chart.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/charts/ganttchart/chart.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //DataSource FILE
-    this.http.get('assets/data/code/charts/ganttchart/datasource.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSourceCode = responseTs;
-    });
-  }
-
-  //this code use copy to html code from tabpanel
-  onCopyClick(){
-    if(this.copyMsgArray.length>=1){
-      this.copyMsgArray=[];
-      this.copyMsgArray.push({'msg':'Code Copied', 'type' : 'info'});
-    }else{
-      this.copyMsgArray.push({'msg':'Code Copied', 'type' : 'info'});
-    }
   }
   ngOnInit() {
   }

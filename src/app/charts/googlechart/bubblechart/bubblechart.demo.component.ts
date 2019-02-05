@@ -2,8 +2,6 @@
  * Created by sagar on 11/1/18.
  */
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-
 @Component({
   selector: 'bubble-chart-demo',
   templateUrl: './bubblechart.demo.component.html',
@@ -11,11 +9,7 @@ import {HttpClient} from "@angular/common/http";
 export class BubbleChartDemoComponent implements OnInit {
   bubbleChartData:any;
   bubbleChartColorAxis:any;
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSourceCode:string;
-  copyMsgArray: any[];
-  constructor(private http: HttpClient) {
+  constructor() {
     this.bubbleChartData=[
       ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
       ['CAN',    80.66,              1.67,      'North America',  33739900],
@@ -39,45 +33,6 @@ export class BubbleChartDemoComponent implements OnInit {
       ['',   72,  170,      100],
       ['',   68,  477,      80]
     ];
-    this.getHtmlAndTypeScriptCode();
-  }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs:any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/charts/bubblechart/chart.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/charts/bubblechart/chart.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    //DataSource FILE
-    this.http.get('assets/data/code/charts/bubblechart/datasource.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSourceCode = responseTs;
-    });
-  }
-
-  //this code use copy to html code from tabpanel
-  onCopyClick(){
-    if(this.copyMsgArray.length>=1){
-      this.copyMsgArray=[];
-      this.copyMsgArray.push({'msg':'Code Copied', 'type' : 'info'});
-    }else{
-      this.copyMsgArray.push({'msg':'Code Copied', 'type' : 'info'});
-    }
   }
   ngOnInit() {
   }

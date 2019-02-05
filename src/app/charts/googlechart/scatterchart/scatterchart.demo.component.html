@@ -1,123 +1,13 @@
-<amexio-card header="true">
-    <amexio-header>
-       Scatter Chart 
-    </amexio-header>
-    <amexio-body>
-      <p>Scatter charts plot points on a graph. When the user hovers over the points, tooltips are displayed with more information.</p>
-      <amexio-tab-view>
-        <amexio-tab title="Demo" active="true">
-         <amexio-row>
-           <amexio-column size="12">
-             <amexio-chart-scatter [height]="'400px'" [data]="scatterChartData">
-               <amexio-chart-title [title]="'Age vs. Weight comparison'"></amexio-chart-title>
-               <amexio-chart-horizontal-axis [title]="'Age'"></amexio-chart-horizontal-axis>
-               <amexio-chart-vertical-axis [title]="'Weight'"></amexio-chart-vertical-axis>
-             </amexio-chart-scatter>
-           </amexio-column>
-         </amexio-row>
-        </amexio-tab>
-        <amexio-tab title="API Reference">
-          <amexio-datagrid title="Chart Properties<amexio-chart-scatter>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/scatterchart.json'"
-                           [data-reader]="'chart'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <br>
-          <amexio-datagrid title="Chart Title Properties<amexio-chart-title>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/scatterchart.json'"
-                           [data-reader]="'chartTitle'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <br>
-          <amexio-datagrid title="Chart Legend Properties<amexio-chart-legend>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/scatterchart.json'"
-                           [data-reader]="'chartLegend'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <br>
-          <amexio-datagrid title="Chart Horizontal Axis <amexio-chart-horizontal-axis>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/scatterchart.json'"
-                           [data-reader]="'horizontalAxis'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <br>
-          <amexio-datagrid title="Chart Vertical Axis <amexio-chart-vertical-axis>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/scatterchart.json'"
-                           [data-reader]="'verticalAxis'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-        </amexio-tab>
-        <amexio-tab title="Source">
-          <div style="overflow-y: scroll">
-          <amexio-vertical-tab-view>
-            <amexio-tab title="HTML" [active]="true">
-              <ng-container *ngIf="htmlCode">
-                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-            <amexio-tab title="Type Script">
-              <ng-container *ngIf="typeScriptCode">
-                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-            <amexio-tab title="Data Source">
-              <ng-container *ngIf="dataSourceCode">
-                <prism-block [code]="dataSourceCode" [language]="'json'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-          </amexio-vertical-tab-view>
-          </div>
-        </amexio-tab>
-        <amexio-tab title="Live">
-         <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-scatterchart?embed=1&file=app/charts/scatterchart/scatterchart.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
-        </amexio-tab>
-      </amexio-tab-view>
-    </amexio-body>
-  </amexio-card>
+<amexio-api-structure [url]="'assets/componentjson/charts/google charts/piechart.json'">
+  <amexio-api-demo>
+    <amexio-row>
+      <amexio-column size="12">
+        <amexio-chart-scatter [height]="'400px'" [data]="scatterChartData">
+          <amexio-chart-title [title]="'Age vs. Weight comparison'"></amexio-chart-title>
+          <amexio-chart-horizontal-axis [title]="'Age'"></amexio-chart-horizontal-axis>
+          <amexio-chart-vertical-axis [title]="'Weight'"></amexio-chart-vertical-axis>
+        </amexio-chart-scatter>
+      </amexio-column>
+    </amexio-row>
+  </amexio-api-demo>
+</amexio-api-structure>

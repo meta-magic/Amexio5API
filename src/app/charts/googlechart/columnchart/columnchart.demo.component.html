@@ -1,99 +1,18 @@
-<amexio-card header="true">
-    <amexio-header>
-       Column Chart 
-    </amexio-header>
-    <amexio-body>
-      <p>A column chart is a vertical bar chart rendered in the browser using SVG.</p>
-      <amexio-tab-view>
-        <amexio-tab title="Demo" active="true">
-         <amexio-row>
-           <amexio-column size="6">
-             <amexio-chart-column [data]="columnChartData" [height]="'400px'" [width]="'100%'" >
-               <amexio-chart-title [title]="'Motivation and Energy Level Throughout the Day'"></amexio-chart-title>
-               <amexio-chart-legend [position]="'bottom'"></amexio-chart-legend>
-             </amexio-chart-column>
-           </amexio-column>
-           <amexio-column size="6">
-             <amexio-chart-column [data]="columnStackChartData" [height]="'400px'"[width]="'100%'"  [stacked]="true">
-               <amexio-chart-title [title]="'Motivation Level Throughout the Day'"></amexio-chart-title>
-               <amexio-chart-legend [position]="'bottom'"></amexio-chart-legend>
-             </amexio-chart-column>
-           </amexio-column>
-         </amexio-row>
-        </amexio-tab>
-        <amexio-tab title="API Reference">
-          <amexio-datagrid title="Chart Properties<amexio-chart-column> " [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/columnchart.json'"
-                           [data-reader]="'chart'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <br>
-          <amexio-datagrid title="Chart Title Properties<amexio-chart-title>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/columnchart.json'"
-                           [data-reader]="'chartTitle'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <br>
-          <amexio-datagrid title="Chart Legend Properties<amexio-chart-legend>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/charts/columnchart.json'"
-                           [data-reader]="'chartLegend'"
-                           [enable-data-filter]="false" >
-            <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'type'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="10" [data-index]="'default'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-         
-        </amexio-tab>
-        <amexio-tab title="Source">
-          <div style="overflow-y: scroll">
-          <amexio-vertical-tab-view>
-            <amexio-tab title="HTML" [active]="true">
-              <ng-container *ngIf="htmlCode">
-                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-            <amexio-tab title="Type Script">
-              <ng-container *ngIf="typeScriptCode">
-                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-            <amexio-tab title="Data Source">
-              <ng-container *ngIf="dataSourceCode">
-                <prism-block [code]="dataSourceCode" [language]="'json'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-          </amexio-vertical-tab-view>
-          </div>
-        </amexio-tab>
-        <amexio-tab title="Live">
-                    <p align="center">Amexio Sandbox</p>
-<iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-columnchart?embed=1&file=app/charts/columnchart/columnchart.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
-        </amexio-tab>
-      </amexio-tab-view>
-    </amexio-body>
-  </amexio-card>
+<amexio-api-structure [url]="'assets/componentjson/charts/google charts/columnchart.json'">
+  <amexio-api-demo> 
+<amexio-row>
+    <amexio-column size="6">
+      <amexio-chart-column [data]="columnChartData" [height]="'400px'" [width]="'100%'" >
+        <amexio-chart-title [title]="'Motivation and Energy Level Throughout the Day'"></amexio-chart-title>
+        <amexio-chart-legend [position]="'bottom'"></amexio-chart-legend>
+      </amexio-chart-column>
+    </amexio-column>
+    <amexio-column size="6">
+      <amexio-chart-column [data]="columnStackChartData" [height]="'400px'"[width]="'100%'"  [stacked]="true">
+        <amexio-chart-title [title]="'Motivation Level Throughout the Day'"></amexio-chart-title>
+        <amexio-chart-legend [position]="'bottom'"></amexio-chart-legend>
+      </amexio-chart-column>
+    </amexio-column>
+  </amexio-row>
+  </amexio-api-demo>
+  </amexio-api-structure>
