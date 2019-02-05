@@ -4,6 +4,9 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'contextmenu-listbox-demo', 
   templateUrl: './contextmenulistbox.demo.html',
@@ -49,13 +52,15 @@ export class ContextMenuListBoxDemo {
   projectData: any;
   browserData: any;
   contextMenuData: any;
+
+ customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
+    this.customSourceData = new ComponentDataStructure();
     this.contextMenuData =
     [{ "text": "Add New", "icon": "fa fa-arrows", "disabled": true },
     { "text": "Edit", "icon": "", "seperator": true }
         , { "text": "Send data in email", "icon": "" }];
 
-    this.getHtmlAndTypeScriptCode();
     this.localData = {"response": {
       "success": true,
         "message": "Fetching  Data  Request Succeeded: Profile",
@@ -187,29 +192,20 @@ export class ContextMenuListBoxDemo {
 
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/contextmenulistbox/listbox.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/contextmenulistbox/listbox.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
 
+  createCustomSourceData() {
+    this.customSourceData.title = 'listbox With context menu';
+    this.customSourceData.description = 'Simple list box which allows user to select one of more items from list based on configuration. User can provide custom template to change look and feel and with context menu (right-click mouse operation)';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/contextmenulistbox/listbox.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/contextmenulistbox/listbox.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-listbox-contextmenu?embed=1&file=src/app/contextualmenu/list/list.demo.component.html&view=editor';
+  }
+
+ 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {

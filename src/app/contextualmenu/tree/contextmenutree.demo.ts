@@ -4,24 +4,27 @@
 
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
 
 @Component({
   selector: 'contextmenutree-demo', 
   templateUrl: './contextmenutree.demo.html',
 })
 export class ContextMenuTreeDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+ 
   copyMsgArray: any[];
   treeLocalData: any;
   rightclickdata: any;
-
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
+    this.customSourceData = new ComponentDataStructure();
+   
     this.rightclickdata=
     [{"text":"Add New","icon":"fa fa-plus","disabled":true},{"text":"Edit","icon":"","seperator":true}
      ,{"text":"Send data in email","icon":""}];
 
-    this.getHtmlAndTypeScriptCode();
+    
 
     this.treeLocalData = {
       "data": [{
@@ -111,27 +114,21 @@ export class ContextMenuTreeDemo {
     };
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
 
-    //HTML FILE
-    this.http.get('assets/data/code/data/tree/contextmenutree/tree.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/tree/contextmenutree/tree.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'Tree With context menu';
+    this.customSourceData.description = 'Context menu Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/checkboxtree/checkboxtree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/tree/checkboxtree/checkboxtree.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeview.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-tree-with-checkbox?embed=1&file=app/tree/treewithcheckbox/treewithcheckbox.demo.html&view=editor';
+  }
+
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
