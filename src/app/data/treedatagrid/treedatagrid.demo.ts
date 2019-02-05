@@ -5,6 +5,9 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'treedata-grid-demo',
   templateUrl : './treedatagrid.demo.html'
@@ -15,39 +18,29 @@ export class TreeDataGridDemo {
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
+
+
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-  }
+    this.customSourceData = new ComponentDataStructure();
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/treedatagrid/treedatagrid.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/treedatagrid/treedatagrid.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/treedatatable.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
 
   }
+
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'Tree Data Grid';
+    this.customSourceData.description = 'Collapsible Data Grid Component displays data in expandable/collapsible rows.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/treedatagrid/treedatagrid.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/treedatagrid/treedatagrid.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treedatatable.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-tree-data-grid?embed=1&file=app/grid/treedatagrid/treedatagrid.demo.html&view=editor';
+  }
+
+  
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

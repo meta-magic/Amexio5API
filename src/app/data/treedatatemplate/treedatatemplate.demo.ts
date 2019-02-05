@@ -3,6 +3,10 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
+
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'treedata-grid-demo', 
   templateUrl: './treedatatemplate.demo.html',
@@ -14,39 +18,26 @@ export class TreeDataTemplateDemo {
   copyMsgArray: any[];
   selectedData: any;
   checkFlag: boolean;
+  
+
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+  }
+ 
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
+  createCustomSourceData() {
+    this.customSourceData.title = 'Tree Data Template';
+    this.customSourceData.description = 'Collapsible Data Grid Component displays data in expandable/collapsible rows.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/treedatatemplate/treedatatemplate.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/treedatatemplate/treedatatemplate.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treedatatable.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-tree-data-grid?embed=1&file=app/grid/treedatagrid/treedatagrid.demo.html&view=editor';
+}
 
-    //HTML FILE
-    this.http.get('assets/data/code/data/treedatatemplate/treedatatemplate.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/treedatatemplate/treedatatemplate.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/treedatatable.json', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
-
-  }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

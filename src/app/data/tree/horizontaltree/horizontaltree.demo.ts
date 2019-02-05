@@ -5,6 +5,9 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'horizontal-tree-demo',
   templateUrl : './horizontaltree.demo.html',
@@ -16,9 +19,10 @@ export class HorizontalTreeDemo {
   copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-
+    this.customSourceData = new ComponentDataStructure();
+   
     this.treeLocalData = {
       "data": [{
         "text": "Web App",
@@ -102,33 +106,17 @@ export class HorizontalTreeDemo {
     };
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
 
-    //HTML FILE
-    this.http.get('assets/data/code/data/tree/horizontaltree/horizontaltree.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/tree/horizontaltree/horizontaltree.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/sidenav.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
+  createCustomSourceData() {
+    this.customSourceData.title = 'horizontal Tree';
+    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/horizontaltree/horizontaltree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/tree/horizontaltree/horizontaltree.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/sidenav.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-tree-horizontal?embed=1&file=app/tree/treehorizontal/treehorizontal.demo.html&view=editor';
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

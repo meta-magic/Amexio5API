@@ -5,6 +5,10 @@
 import { Component } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
+
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'grid-template-demo', 
   templateUrl: './gridwithtemplate.demo.html',
@@ -48,8 +52,12 @@ export class GridWithTemplateDemo {
   actionWindowFlag: boolean;
   projectData: any;
   browserData: any;
+  
+ 
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+    
     this.projectData = {
       "response": {
         "success": true,
@@ -124,35 +132,19 @@ export class GridWithTemplateDemo {
 
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/templategrid/templategrid.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/gridtemplate.json', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
-
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'Data Grid With template';
+    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/templategrid/templategrid.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/templategrid/templategrid.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/gridtemplate.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-template-grid?embed=1&file=app/grid/templategrid/templategrid.demo.html&view=editor';
+  }
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

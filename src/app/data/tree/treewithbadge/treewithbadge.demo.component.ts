@@ -5,19 +5,22 @@
 import {Component} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'treewithbadge-demo', 
   templateUrl : './treewithbadge.demo.component.html',
 })
 export class TreeWithBadgeDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+  
   copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+   
 
     this.treeLocalData = {
       "data": [{
@@ -107,35 +110,18 @@ export class TreeWithBadgeDemo {
     };
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/tree/treewithbadge/tree.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/tree/treewithbadge/tree.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/treeviewwithbadge.json',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
 
+  createCustomSourceData() {
+    this.customSourceData.title = 'Tree With Badge';
+    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/treewithbadge/tree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/tree/treewithbadge/tree.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeviewwithbadge.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-tree-with-badge?embed=1&file=app/tree/simpletree/simpletree.demo.html&view=editor';
+  }
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {

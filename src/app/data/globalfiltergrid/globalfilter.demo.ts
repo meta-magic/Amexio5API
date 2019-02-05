@@ -33,8 +33,8 @@ export class GlobalFilterDemo implements OnInit {
   createCustomSourceData() {
     this.customSourceData.title = 'Data Grid With Global Filter';
     this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Common Filtering for all columns(enable only for string and number)(Filtering Criteria: starts with, ends with and contains) user define template for rendering for column header and column data, displaying summation of numeric column.';
-    this.customSourceData.sourceMetadata.htmlUrl = 'data/globalfilter/globalfilter.html';
-    this.customSourceData.sourceMetadata.tsUrl = 'data/globalfilter/globalfilter.text';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/globalfiltergrid/globalfiltergrid.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/globalfiltergrid/globalfiltergrid.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/gridtemplate.json';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-global-filter-grid?embed=1&file=app/grid/filtergrid/filtergrid.demo.html&view=editor';
   }

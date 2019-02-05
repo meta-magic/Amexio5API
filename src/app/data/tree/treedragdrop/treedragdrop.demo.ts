@@ -5,6 +5,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
+import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'dragdroptree-demo',
   templateUrl :'./treedragdrop.demo.html',
@@ -14,16 +17,18 @@ export class DragDropTreeDemo {
   @ViewChild('tree') treeRef: any;
   @ViewChild('tree1') treeRef1: any;
 
-  htmlCode: string;
-  typeScriptCode: string;
+ 
   dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;
   treeLocalData1: any;
   treeData: any;
+
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+   
 
     this.treeData = {
       "data": [{
@@ -267,27 +272,18 @@ export class DragDropTreeDemo {
     };
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/tree/dragdroptree/dragdroptree.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/tree/dragdroptree/dragdroptree.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'drag and drop Tree';
+    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/dragdroptree/dragdroptree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/tree/dragdroptree/dragdroptree.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dragdrop?embed=1&file=app/tree/acrosstree/acrosstree.demo.html&view=editor';
+  }
+  
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

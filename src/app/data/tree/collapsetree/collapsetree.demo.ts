@@ -5,6 +5,8 @@
 import { Component, ElementRef } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
+import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
+
 
 @Component({
   selector: 'collapsetree-demo',
@@ -33,9 +35,10 @@ export class CollapseTreeDemo {
     }
     this.expand = !this.expand;
   }
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-
+    this.customSourceData = new ComponentDataStructure();
+   
 
     this.treeLocalExpandData = {
       "item": [{
@@ -120,6 +123,18 @@ export class CollapseTreeDemo {
     };
   }
 
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'Collapseable And Expandable Tree ';
+    this.customSourceData.description = 'A Collapse and Expandable Tree component which create Tree View based on standard datasource attached.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/collapsetree/collapsetree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/tree/collapsetree/collapsetree.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-collapseble-tree?embed=1&file=app/collapsetree/simpletree/simpletree.demo.html&view=editor';
+  }
+
   getNodeData(data: any) {
     this.selectedData = data;
   }
@@ -127,29 +142,7 @@ export class CollapseTreeDemo {
     this.expandSelectedData = data;
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/tree/collapsetree/collapsetree.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/tree/collapsetree/collapsetree.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
-
+ 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {

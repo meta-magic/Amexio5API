@@ -6,6 +6,9 @@ import { Component, ElementRef } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
 
+import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
+
+
 @Component({
   selector: 'simpletree-demo', 
   templateUrl :'./simpletree.demo.html',
@@ -23,9 +26,10 @@ export class SimpleTreeDemo {
   customArrayLocalData: any;
 
 
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
-
+    this.customSourceData = new ComponentDataStructure();
+   
     this.treeLocalData = {
       "data": [{
         "text": "Web App",
@@ -190,6 +194,18 @@ export class SimpleTreeDemo {
       }]
     };
 
+  }
+  ngOnInit(): void {
+    this.createCustomSourceData();
+  }
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'simple Tree';
+    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/simpletree/simpletree.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/tree/simpletree/simpletree.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeview.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-simple-tree?embed=1&file=app/tree/simpletree/simpletree.demo.html&view=editor';
   }
 
   getNodeData(data: any) {

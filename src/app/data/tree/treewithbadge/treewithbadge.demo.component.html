@@ -1,97 +1,29 @@
-<amexio-card header="true">
-    <amexio-header>
-       Tree with Badge
-    </amexio-header>
-    <amexio-body>
-      <p>A Simple Expandable Tree component which create Tree View based on standard datasource attached with badge property</p>
-      <amexio-tab-view>
-        <amexio-tab title="Demo" active="true">
-          <amexio-row>
-            <amexio-column size="6">
-              <amexio-card [header]="true">
-                <amexio-header>
-                   Simple Tree 
-                </amexio-header>
-                <amexio-body>
-                  <amexio-treeview [badge]="true" [data-reader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
-                  </amexio-treeview>
-                </amexio-body>
-              </amexio-card>
-            </amexio-column>
-            <amexio-column size="6">
-              <amexio-card [header]="true">
-                <amexio-header>
-                   Selected Data 
-                </amexio-header>
-                <amexio-body>
-                  <pre><code>{{selectedData | json}}</code></pre>
-                </amexio-body>
-              </amexio-card>
-            </amexio-column>
-          </amexio-row>
-        </amexio-tab>
-        <amexio-tab title="API Reference">
-          <amexio-datagrid title="Properties<amexio-treeview>" [enable-column-fiter]="false"
-                           [http-method]="'get'"
-                           [http-url]="'assets/apireference/data/tree.json'"
-                           [data-reader]="'properties'"
-                           [enable-data-filter]="false">
-            <amexio-data-table-column [data-index]="'name'" [width]="24" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-            <amexio-data-table-column [width]="20" [data-index]="'version'" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Version'"></amexio-data-table-column>
-            <amexio-data-table-column [data-index]="'type'" [width]="10" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Type'"></amexio-data-table-column>
-            <amexio-data-table-column [data-index]="'default'" [width]="10" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Default'"></amexio-data-table-column>
-            <amexio-data-table-column [data-index]="'description'" [width]="45" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <br>
-          <amexio-datagrid title="Events" [http-method]="'get'"
-                           [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'events'"
-                           [enable-data-filter]="false">
-            <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Name'"></amexio-data-table-column>
-          <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
-            
-            <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false"
-                                      [text]="'Description'"></amexio-data-table-column>
-          </amexio-datagrid>
-          <amexio-datagrid title="Methods" [http-method]="'get'" [http-url]="'assets/apireference/data/tree.json'" [data-reader]="'methods'"
-          [enable-data-filter]="false">
-          <amexio-data-table-column [data-index]="'name'" [width]="20" [data-type]="'string'" [hidden]="false" [text]="'Name'"></amexio-data-table-column>
-          <amexio-data-table-column [width]="15" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
-          <amexio-data-table-column [data-index]="'description'" [width]="65" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
-      </amexio-datagrid>
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/data/tree.json'">
+  <amexio-api-demo>
+   
+   <amexio-row>
+      <amexio-column size="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+             Simple Tree 
+          </amexio-header>
+          <amexio-body>
+            <amexio-treeview [badge]="true" [data-reader]="'data'" [data]="treeLocalData" (nodeClick)="getNodeData($event)">
+            </amexio-treeview>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column size="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+             Selected Data 
+          </amexio-header>
+          <amexio-body>
+            <pre><code>{{selectedData | json}}</code></pre>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
 
-        </amexio-tab>
-        <amexio-tab title="Source">
-          <div style="overflow-y: scroll">
-          <amexio-vertical-tab-view>
-            <amexio-tab title="HTML" [active]="true">
-              <ng-container *ngIf="htmlCode">
-                <!--<clip-copy [htmlCode]="htmlCode" (onClick)="onCopyClick()"></clip-copy>-->
-                <prism-block [code]="htmlCode" [language]="'html'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-            <amexio-tab title="Type Script">
-              <ng-container *ngIf="typeScriptCode">
-                <prism-block [code]="typeScriptCode" [language]="'typescript'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-            <amexio-tab title="DataSource">
-              <ng-container *ngIf="dataSource">
-                <prism-block [code]="dataSource" [language]="'json'"></prism-block>
-              </ng-container>
-            </amexio-tab>
-          </amexio-vertical-tab-view>
-          </div>
-        </amexio-tab>
-        <amexio-tab title="Live">
-        <p align="center">Amexio Sandbox</p>
-        <iframe style="width: 100%; height: 600px" src="https://stackblitz.com/edit/amexio-v4-tree-with-badge?embed=1&file=app/tree/simpletree/simpletree.demo.html" frameborder="0" allowfullscren="allowfullscren"></iframe>
-        </amexio-tab>
-      </amexio-tab-view>
-    </amexio-body>
-  </amexio-card>
+    </amexio-api-demo>
+    </amexio-api-structure>
