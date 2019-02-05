@@ -8,8 +8,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AmexioD3BarChartDemoComponent implements OnInit {
 
-  htmlCode: string;
-  typeScriptCode: string;
+  // htmlCode: string;
+  // typeScriptCode: string;
   userDataSourceCode: string;
   dataSourceCode: string;
   copyMsgArray: any[];
@@ -22,7 +22,7 @@ export class AmexioD3BarChartDemoComponent implements OnInit {
   barData: any;
   sourceData1: any;
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+   // this.getHtmlAndTypeScriptCode();
   }
 
 
@@ -104,43 +104,43 @@ this.sourceData1 = event;
     this.userDataSource = event;
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-    let dataSource: any;
-    //HTML FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
+  // //TO LOAD HTML AND TYPESCRIPT CODE
+  // getHtmlAndTypeScriptCode() {
+  //   let responseHtml: any;
+  //   let responseTs: any;
+  //   let dataSource: any;
+  //   //HTML FILE
+  //   this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.html', { responseType: 'text' }).subscribe(data => {
+  //     responseHtml = data;
+  //   }, error => {
+  //   }, () => {
+  //     this.htmlCode = responseHtml;
+  //   });
 
-    // TS FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-    // DataSource FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/datasource.json', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSourceCode = responseTs;
-    });
+  //   // TS FILE
+  //   this.http.get('assets/data/code/charts/D3Charts/d3barchart/d3chart.text', { responseType: 'text' }).subscribe(data => {
+  //     responseTs = data;
+  //   }, error => {
+  //   }, () => {
+  //     this.typeScriptCode = responseTs;
+  //   });
+  //   // DataSource FILE
+  //   this.http.get('assets/data/code/charts/D3Charts/d3barchart/datasource.json', { responseType: 'text' }).subscribe(data => {
+  //     responseTs = data;
+  //   }, error => {
+  //   }, () => {
+  //     this.dataSourceCode = responseTs;
+  //   });
 
-    // User DataSource FILE
-    this.http.get('assets/data/code/charts/D3Charts/d3barchart/usersource.json', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.userDataSourceCode = responseTs;
-    });
+  //   // User DataSource FILE
+  //   this.http.get('assets/data/code/charts/D3Charts/d3barchart/usersource.json', { responseType: 'text' }).subscribe(data => {
+  //     responseTs = data;
+  //   }, error => {
+  //   }, () => {
+  //     this.userDataSourceCode = responseTs;
+  //   });
 
-  }
+  // }
 
   //this code use copy to html code from tabpanel
   onCopyClick() {
