@@ -1,0 +1,136 @@
+{
+    "title": "Amexio Form",
+    "description": "Amexio Form can be used basically for validation purposes. amexio-form component gives more power over the html form tag.1. Shows error messages when form is invalid.2. User need not to add extra validations to inputs .only add min,max,min-length,max-length in amexio input fields.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-form>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "header-align",
+            "description": "Align of item elements inside card header example [right center left].",
+            "version": "4.2 onwards",
+            "type": "string",
+            "default": "left"
+          },
+          {
+            "name": "footer-align",
+            "description": "Align of item elements inside card footer example [right center left]",
+            "version": "4.2 onwards",
+            "type": "string",
+            "default": "right"
+          },
+          {
+            "name": "form-name",
+            "description": "Form binding attribute",
+            "version": "4.2 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "name": "header",
+            "description": "Form header to display",
+            "version": "4.2 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "show-error",
+            "description": "Flag to show form invalid error messages",
+            "version": "4.2 onwards",
+            "type": "boolean",
+            "default": "false"
+          },
+          {
+            "name": "height",
+            "description": "User can set the height to form",
+            "version": "4.0 onwards",
+            "type": "any",
+            "default": ""
+          },
+          {
+            "name": "min-height",
+            "description": "Provides minimum height of the form.",
+            "version": "4.0 onwards",
+            "type": "any",
+            "default": ""
+          },
+          {
+            "name": "body-height",
+            "description": "Provides form body height.",
+            "version": "4.0 onwards",
+            "type": "any",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+            "name": "showErrorMsg",
+            "description": "Event fired if showError msg info button is clicked"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "pane/form/form.html",
+      "tsUrl": "pane/form/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v42-form?embed=1&file=app/forms/form/form.demo.html&view=editor"
+    }
+  }
