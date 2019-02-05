@@ -5,41 +5,34 @@
 import { Component } from '@angular/core'
 import { HttpClient } from '@angular/common/http';
 
+import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
+
+
 @Component({
   selector: 'vertical-layout',
   templateUrl: './verticallayout.demo.html'
 })
 export class verticalLayoutDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+ 
   copyMsgArray: any[];
 
+  customSourceData: ComponentDataStructure;
+
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/verticallayout/layout.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/verticallayout/layout.text', {responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
+  createCustomSourceData() {
+    this.customSourceData.title = 'Vertical Layouts';
+    this.customSourceData.description = 'A Vertical layout lays out a container with single column and multiple rows.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'layout/verticallayout/layout.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'layout/verticallayout/layout.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-column-vertical?embed=1&file=app/layout/verticallayout/verticallayout.demo.html&view=editor';
+  }
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
