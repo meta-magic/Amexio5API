@@ -67,12 +67,12 @@
       }
     ],
     "sourceMetadata": {
-      "htmlUrl": "layout/accordion/accordion.html",
-      "tsUrl": "layout/accordion/accordion.text",
+      "htmlUrl": "forms/creditcard/form.html",
+      "tsUrl": "forms/creditcard/form.text",
       "datasourceUrl": ""
     },
     "liveMetadata": {
       "disabled": false,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-credit-card?embed=1&file=app/creditcard/creditcard/creditcard.demo.html"
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-credit-card?embed=1&file=app/creditcard/creditcard/creditcard.demo.html&view=editor"
     }
   }
