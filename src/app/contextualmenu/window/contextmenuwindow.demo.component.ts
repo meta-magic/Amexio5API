@@ -51,7 +51,7 @@ export class ContextMenuWindowDemoComponent {
     this.customSourceData.description = 'Window Pane component is a customizable Modal Pane in which user can enter custom content';
     this.customSourceData.sourceMetadata.htmlUrl = 'pane/contextmenuwindow/window.html';
     this.customSourceData.sourceMetadata.tsUrl = 'pane/contextmenuwindow/window.text';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-tab-contextualmenu?embed=1&file=src/app/contextualmenu/tab/contextmenutab.demo.html&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-window-contextmenu-demo?embed=1&file=src/app/contextualmenu/window/window.demo.component.html&view=editor';
   }
 
 
