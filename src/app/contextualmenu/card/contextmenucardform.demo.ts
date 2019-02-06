@@ -34,7 +34,7 @@ export class ContextMenuCardFormDemo {
 
   createCustomSourceData() {
     this.customSourceData.title = 'Card contextmenu';
-    this.customSourceData.description = 'A Simple Card which renders card based on title, body and actions user has configured.';
+    this.customSourceData.description = 'A Simple Card which renders card based on title, body and actions that user configures with context menu option. (Right Click functionality).';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/card/carddemo/layout.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/card/carddemo/layout.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-card-contextmenu-demo?embed=1&file=src/app/contextualmenu/card/card.demo.component.html&view=editor';
