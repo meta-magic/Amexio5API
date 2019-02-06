@@ -2,44 +2,39 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core'
+import {Component, OnInit} from '@angular/core'
 import { HttpClient } from '@angular/common/http';
+
+import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
+
 
 
 @Component({
   selector: 'vertical-tab-demo', 
   templateUrl :'./verticaltab.demo.html',
 })
-export class VerticalTabDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+export class VerticalTabDemo implements OnInit{
+
   copyMsgArray: any[];
+
+  customSourceData: ComponentDataStructure;
+
+
   constructor(private http: HttpClient) {
-    this.getHtmlAndTypeScriptCode();
+    this.customSourceData = new ComponentDataStructure();
+  }
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs:any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/layout/tab/verticaltab/tab.html',{ responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/layout/tab/verticaltab/tab.text',{ responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  createCustomSourceData() {
+    this.customSourceData.title = 'Left Aligned Vertical Tab ';
+    this.customSourceData.description = ' Vertical Left Tab  component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/verticaltab/tab.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/verticaltab/tab.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-right-aligned-vertical-tab?embed=1&file=app/tabs/rightverticaltab/rightverticaltab.demo.html&view=editor';
   }
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

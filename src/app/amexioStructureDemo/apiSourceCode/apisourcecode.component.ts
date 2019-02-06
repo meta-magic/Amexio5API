@@ -29,7 +29,6 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   }
 
   ngOnInit() {
-    debugger;
     if (this.htmlUrl) {
       this.loadHtmlUrl();
     }
@@ -68,7 +67,6 @@ export class AmexioApiSourceCodeComponent implements OnInit {
 
    // LOADING DYNAMIC URL
    loadDynamicUrl() {
-     debugger;
     this._httpClient.get(CODE_BASE_PATH + this.dynamicUrl, { responseType: 'text' }).subscribe(data => {
       this.dynamicCode = data;
     });

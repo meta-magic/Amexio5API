@@ -4,24 +4,23 @@
       {{comData.title}}
     </amexio-header>
     <amexio-body>
-        <span>
-            {{comData.description}}
-        </span>
+      <span>
+        {{comData.description}}
+      </span>
       <amexio-tab-view [closable]="true">
         <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
           <ng-content select="amexio-api-demo"></ng-content>
         </amexio-tab>
 
-        <amexio-tab title="Api Reference" [active]="false" [closable]="false" [disabled]="false">
-          <amexio-api-reference [data]="comData.apiRefMetadata" ></amexio-api-reference>
-        </amexio-tab>
+        <ng-container *ngIf="comData.apiRefMetadata &&  comData.apiRefMetadata.length > 0">
+          <amexio-tab title="Api Reference" [active]="false" [closable]="false" [disabled]="false">
+            <amexio-api-reference [data]="comData.apiRefMetadata"></amexio-api-reference>
+          </amexio-tab>
+        </ng-container>
 
         <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
-          <amexio-api-sourcecode
-            [html-url]="comData.sourceMetadata.htmlUrl"
-            [ts-url]="comData.sourceMetadata.tsUrl"
-            [dynamic-url]= "comData.sourceMetadata.dynamicUrl"
-            [module-url]="comData.sourceMetadata.moduleUrl"
+          <amexio-api-sourcecode [html-url]="comData.sourceMetadata.htmlUrl" [ts-url]="comData.sourceMetadata.tsUrl"
+            [dynamic-url]="comData.sourceMetadata.dynamicUrl" [module-url]="comData.sourceMetadata.moduleUrl"
             [data-source-url]="comData.sourceMetadata.datasourceUrl">
           </amexio-api-sourcecode>
         </amexio-tab>
@@ -36,9 +35,3 @@
     </amexio-body>
   </amexio-card>
 </ng-container>
-
-
-
-
-
-

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
+
 
 @Component({
   selector: 'amexio-d3-chart-bar-demo',
@@ -10,10 +12,15 @@ export class AmexioD3HorizontalBarChartComponent implements OnInit {
   userDataSource: any;
   barData: any;
   sourceData1: any;
+  
+  customSourceData: ComponentDataStructure;
   constructor() {
+    this.customSourceData = new ComponentDataStructure();
  
   }
   ngOnInit() {
+    this.createCustomSourceData();
+
     this.userDefineColors =
       [
         "#4040a1",
@@ -38,6 +45,16 @@ export class AmexioD3HorizontalBarChartComponent implements OnInit {
         ['2017', 200]
       ];
        
+  }
+
+
+  createCustomSourceData() {
+    this.customSourceData.title = 'D3 Horizontal  Bar Chart';
+    this.customSourceData.description = 'An D3 Horizontal bar chart that is rendered within the browser using SVG .Displays tips when hovering over points.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'charts/D3Charts/d3horizontalbarchart/d3chart.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'charts/D3Charts/d3horizontalbarchart/d3chart.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/code/charts/D3Charts/d3horizontalbarchart/datasource.json';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-d3-chart-horizontal-bar?embed=1&file=src/app/d3chart/d3barchart/d3barchart.demo.component.html&view=editor';
   }
 
   onDefaultLegendClick(event: any) {

@@ -178,8 +178,8 @@
                                 {
                                     "text": "With Context Menu",
                                     "icon": "fa fa-leaf fa-fw",
-                                    "link": "contextual-menu-tab"
-                                }
+                                    "link": "contextualmenu/contextual-menu-tab-demo"
+                                } 
                             ]
                         },
                         {

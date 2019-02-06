@@ -26,11 +26,10 @@ export class VerticalRightTabDemo  implements OnInit{
   }
 
   createCustomSourceData() {
-    this.customSourceData.title = 'vertical Right kedar Tab ';
+    this.customSourceData.title = 'Right Aligned vertical Tab ';
     this.customSourceData.description = ' Vertical Right Tab  component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs.';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/verticalrighttab/tab.html';
-    this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/verticalrighttab/dynamictab.text';
-    this.customSourceData.sourceMetadata.dynamicUrl = 'layout/tab/enhancedverticaltab/tab.text';
+    this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/verticalrighttab/tab.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-horizontal-enhanced-tab?embed=1&file=app/tabs/enhancedtab/enhancedtab.demo.html&view=editor';
   }
 

@@ -13,9 +13,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   templateUrl: './filtergrid.demo.html',
 })
 export class FilterGridDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+
   copyMsgArray: any[];
   selectedData: any;
   customSourceData: ComponentDataStructure;
