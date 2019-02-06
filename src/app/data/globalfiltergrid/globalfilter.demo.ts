@@ -13,9 +13,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   templateUrl: './globalfilter.demo.html',
 })
 export class GlobalFilterDemo implements OnInit {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+ 
   copyMsgArray: any[];
   clickedRowData: any;
  

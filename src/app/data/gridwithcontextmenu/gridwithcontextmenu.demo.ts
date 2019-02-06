@@ -2,7 +2,7 @@
  * Created by rashmi on 29/6/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
@@ -11,10 +11,8 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'grid-context-menu-demo', 
   templateUrl :'./gridwithcontextmenu.demo.html',
 })
-export class GridWithContextMenuDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+export class GridWithContextMenuDemo implements OnInit{
+  
   copyMsgArray: any[];
   selectedData: any;
   contextMenuColData: any[];

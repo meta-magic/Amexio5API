@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -39,8 +39,7 @@ import {HttpClient} from "@angular/common/http";
   ]
 })
 export class ListBoxDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+  
   copyMsgArray: any[];
   localData: any;
   onRowClickData: any;
@@ -56,7 +55,6 @@ export class ListBoxDemo {
     { "text": "Edit", "icon": "", "seperator": true }
         , { "text": "Send data in email", "icon": "" }];
 
-    this.getHtmlAndTypeScriptCode();
     this.localData = {"response": {
       "success": true,
         "message": "Fetching  Data  Request Succeeded: Profile",
@@ -188,28 +186,7 @@ export class ListBoxDemo {
 
   }
 
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
 
-    //HTML FILE
-    this.http.get('assets/data/code/data/listbox/listbox.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/listbox/listbox.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

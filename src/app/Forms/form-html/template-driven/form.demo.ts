@@ -12,7 +12,7 @@ import {ComponentDataStructure} from "../../../apimetadata/models/component.stru
   templateUrl: 'form.demo.html',
 })
 
-export class HtmlFormDemoComponent {
+export class HtmlFormDemoComponent implements OnInit{
   
   copyMsgArray: any[];
   asyncFlag : boolean;

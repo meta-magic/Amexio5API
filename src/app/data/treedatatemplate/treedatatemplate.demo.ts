@@ -1,6 +1,6 @@
 
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 
@@ -11,10 +11,8 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'treedata-grid-demo', 
   templateUrl: './treedatatemplate.demo.html',
 })
-export class TreeDataTemplateDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+export class TreeDataTemplateDemo implements OnInit{
+ 
   copyMsgArray: any[];
   selectedData: any;
   checkFlag: boolean;

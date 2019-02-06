@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
 
@@ -11,9 +11,8 @@ import {ComponentDataStructure} from "../../../apimetadata/models/component.stru
   selector: 'contextmenutree-demo', 
   templateUrl :'./contextmenutree.demo.component.html',
 })
-export class ContextMenuTreeDemo {
-  htmlCode: string;
-  typeScriptCode: string;
+export class ContextMenuTreeDemo implements OnInit {
+
   copyMsgArray: any[];
   treeLocalData: any;
   rightclickdata: any;

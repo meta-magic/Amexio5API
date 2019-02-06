@@ -15,7 +15,6 @@ import { ComponentDataStructure } from '../../../apimetadata/models/component.st
 })
 export class GridLayoutDemo  implements OnInit{
  
-  dataSource: string;
   copyMsgArray: any[];
   selectedData: any;
   data: any[];

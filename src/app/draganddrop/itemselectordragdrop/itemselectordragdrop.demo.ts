@@ -2,7 +2,7 @@
  * Created by kedar on 11/9/18.
  */
 
-import {Component, ViewChild} from '@angular/core';
+import {Component, ViewChild, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
@@ -11,14 +11,13 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'itemselectordragdrop-demo',
   templateUrl: './itemselectordragdrop.demo.html',
 })
-export class ItemSelectorDragdropDemo {
+export class ItemSelectorDragdropDemo implements OnInit{
   @ViewChild('item') itemRef: any;
 
-  htmlCode: string;
-  typeScriptCode: string;
+ 
   copyMsgArray: any[];
   selectedData: any;
-  dataSource:string;
+  
   selectedData1: any;
 
   customSourceData: ComponentDataStructure;

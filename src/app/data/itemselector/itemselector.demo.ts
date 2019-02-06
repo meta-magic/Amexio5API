@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component, ViewChild} from '@angular/core';
+import {Component, ViewChild, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
@@ -12,14 +12,12 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'itemselector-demo', 
   templateUrl : './itemselector.demo.html',
 })
-export class ItemSelectorDemo {
+export class ItemSelectorDemo implements OnInit{
   @ViewChild('item') itemRef: any;
 
-  htmlCode: string;
-  typeScriptCode: string;
+ 
   copyMsgArray: any[];
   selectedData: any;
-  dataSource:string;
   selectedData1: any;
   
   customSourceData: ComponentDataStructure;

@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
 
@@ -11,7 +11,7 @@ import { ComponentDataStructure } from '../../apimetadata/models/component.struc
   selector: 'buttongroup-demo',
   templateUrl:'./buttongroup.demo.html',
 })
-export class ButtonGroupDemo {
+export class ButtonGroupDemo implements OnInit{
 
  
 

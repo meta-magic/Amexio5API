@@ -2,7 +2,7 @@
  * Created by kedar on 17/10/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
@@ -12,10 +12,8 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'gridwithtoolbar-demo', 
   templateUrl: './gridwithtoolbar.demo.html',
 })
-export class GridWithToolBarDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+export class GridWithToolBarDemo implements OnInit {
+ 
   copyMsgArray: any[];
   selectedData: any;
   

@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
 
@@ -13,10 +13,8 @@ import {ComponentDataStructure} from "../../../apimetadata/models/component.stru
   selector: 'simpletree-demo', 
   templateUrl :'./simpletree.demo.html',
 })
-export class SimpleTreeDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+export class SimpleTreeDemo implements OnInit{
+ 
   dataCustomSource: string;
   copyMsgArray: any[];
   selectedData: any;
@@ -215,40 +213,7 @@ export class SimpleTreeDemo {
   getCustomNodeData(data: any) {
     this.selectedCustomData = data;
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/data/tree/simpletree/simpletree.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/data/tree/simpletree/simpletree.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-    this.http.get('assets/data/componentdata/treeview.json', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataSource = responseTs;
-    });
-    this.http.get('assets/data/componentdata/treecustomview.json', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.dataCustomSource = responseTs;
-    });
-  }
+ 
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

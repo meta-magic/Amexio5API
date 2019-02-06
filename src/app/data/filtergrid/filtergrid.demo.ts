@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */ 
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
@@ -12,7 +12,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'filtergrid-demo', 
   templateUrl: './filtergrid.demo.html',
 })
-export class FilterGridDemo {
+export class FilterGridDemo implements OnInit{
 
   copyMsgArray: any[];
   selectedData: any;

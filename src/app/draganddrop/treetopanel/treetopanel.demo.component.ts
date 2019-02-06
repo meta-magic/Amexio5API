@@ -2,7 +2,7 @@
  * Created by rashmi on 20/6/18.
  */
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
 
@@ -10,11 +10,9 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'dragdroptree-demo', 
   templateUrl: './treetopanel.demo.component.html',
 })
-export class TreeToPanelDemo {
+export class TreeToPanelDemo implements OnInit{
 
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+ 
   copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;

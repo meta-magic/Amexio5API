@@ -2,7 +2,7 @@
  * Created by kedar on 19/9/18.
  */
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { SpinnerModel } from './spinner.model';
 @Component({
@@ -11,8 +11,6 @@ import { SpinnerModel } from './spinner.model';
 
 })
 export class AmexioSpinnerDemo {
-    htmlCode: string;
-    typeScriptCode: string;
     copyMsgArray: any[];
     color: any;
     boxFlag: any;

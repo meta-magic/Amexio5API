@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
@@ -12,7 +12,7 @@ import { ComponentDataStructure } from '../../apimetadata/models/component.struc
   selector: 'dropdownfilter', 
   templateUrl: './dropdownfilter.demo.html',
 })
-export class DropDownFilterDemo {
+export class DropDownFilterDemo implements OnInit{
   
   copyMsgArray: any[];
   countryCode1:string;

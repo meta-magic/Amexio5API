@@ -2,7 +2,7 @@
  * Created by rashmi on 5/6/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
@@ -12,7 +12,7 @@ import { ComponentDataStructure } from '../../apimetadata/models/component.struc
   selector: 'dropdowntemplate',
   templateUrl: './dropdowntemplate.demo.html',
 })
-export class DropDownTemplateDemo {
+export class DropDownTemplateDemo implements OnInit{
   
   clickedRowData: any;
   

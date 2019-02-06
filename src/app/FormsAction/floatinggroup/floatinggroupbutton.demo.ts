@@ -2,14 +2,14 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
 
 @Component({
   selector: 'floating-group-button-demo',
   templateUrl :'./floatinggroupbutton.demo.html',
 })
-export class FloatingGroupButtonDemo {
+export class FloatingGroupButtonDemo implements OnInit {
   asyncFlag : boolean;
   floatingbuttongroup : any[];
   customSourceData: ComponentDataStructure;

@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
@@ -12,10 +12,8 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   selector: 'groupbygrid-demo',
   templateUrl :'./groupbygrid.demo.html'
 })
-export class GroupByGridDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+export class GroupByGridDemo  implements OnInit{
+  
   copyMsgArray: any[];
   selectedData: any;
   

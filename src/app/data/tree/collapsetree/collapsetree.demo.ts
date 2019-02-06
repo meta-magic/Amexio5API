@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { AmexioTreeViewComponent } from 'amexio-ng-extensions';
 import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
@@ -12,10 +12,8 @@ import {ComponentDataStructure} from "../../../apimetadata/models/component.stru
   selector: 'collapsetree-demo',
   templateUrl :'./collapsetree.demo.html',
 })
-export class CollapseTreeDemo {
-  htmlCode: string;
-  typeScriptCode: string;
-  dataSource: string;
+export class CollapseTreeDemo implements OnInit{
+ 
   copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;

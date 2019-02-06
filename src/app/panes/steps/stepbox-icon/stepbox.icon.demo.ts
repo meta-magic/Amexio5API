@@ -12,7 +12,7 @@ import { ComponentDataStructure } from '../../../apimetadata/models/component.st
  templateUrl: './stepboxicon.demo.html',
 })
 
-export class StepBoxIconComponent {
+export class StepBoxIconComponent implements OnInit{
   
   copyMsgArray: any[];
   user:boolean;

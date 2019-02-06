@@ -2,7 +2,7 @@
  * Created by Rashmi on 30/4/18.
  */
 
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 import { DyanmicTabComponent } from './dynamictabdemo.component';
 import { HttpClient } from '@angular/common/http';
 
@@ -13,7 +13,7 @@ import { ComponentDataStructure } from '../../../apimetadata/models/component.st
     selector: 'enhanced-tab-demo', 
     templateUrl: './enhancedtab.demo.html',
 })
-export class EnhancedTabDemo {
+export class EnhancedTabDemo implements OnInit {
    
     tabArray: any;
     

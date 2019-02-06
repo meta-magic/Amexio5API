@@ -2,7 +2,7 @@
  * Created by Manisha on 22/6/18.
  */
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
@@ -45,7 +45,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
 `
   ]
 })
-export class HeaderTemplateDemo {
+export class HeaderTemplateDemo implements OnInit {
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;

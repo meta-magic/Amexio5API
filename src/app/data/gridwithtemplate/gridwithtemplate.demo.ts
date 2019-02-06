@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */ 
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 
@@ -42,7 +42,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
 `
   ]
 })
-export class GridWithTemplateDemo {
+export class GridWithTemplateDemo implements OnInit{
   htmlCode: string;
   typeScriptCode: string;
   dataSource: string;

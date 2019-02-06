@@ -2,7 +2,7 @@
  * Created by sagar on 9/1/18.
  */
 
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
@@ -12,7 +12,7 @@ import {ComponentDataStructure} from "../../../apimetadata/models/component.stru
   selector: 'treewithbadge-demo', 
   templateUrl : './treewithbadge.demo.component.html',
 })
-export class TreeWithBadgeDemo {
+export class TreeWithBadgeDemo implements OnInit {
   
   copyMsgArray: any[];
   selectedData: any;

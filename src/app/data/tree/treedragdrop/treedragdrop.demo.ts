@@ -2,7 +2,7 @@
  * Created by rashmi on 20/6/18.
  */
 
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 
 import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
@@ -12,13 +12,13 @@ import {ComponentDataStructure} from "../../../apimetadata/models/component.stru
   selector: 'dragdroptree-demo',
   templateUrl :'./treedragdrop.demo.html',
 })
-export class DragDropTreeDemo {
+export class DragDropTreeDemo implements OnInit{
 
   @ViewChild('tree') treeRef: any;
   @ViewChild('tree1') treeRef1: any;
 
  
-  dataSource: string;
+  
   copyMsgArray: any[];
   selectedData: any;
   treeLocalData: any;
