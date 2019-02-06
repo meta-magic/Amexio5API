@@ -1,11 +1,29 @@
 <amexio-api-structure [url]="'assets/componentjson/charts/google charts/ganttchart.json'">
   <amexio-api-demo>
-      <amexio-row>
-          <amexio-column size="12">
-          <amexio-label>A simple example</amexio-label><br>
-            <amexio-chart-gantt  [data]="ganttChartData" [width]="'100%'"  >
-            </amexio-chart-gantt>
-          </amexio-column>
-        </amexio-row>
+    <amexio-row>
+      <amexio-column size="12">
+      <amexio-label>A simple example</amexio-label><br>
+        <amexio-chart-gantt  [data]="ganttChartData" [width]="'100%'"  >
+        </amexio-chart-gantt>
+      </amexio-column>
+    </amexio-row>
+    <br>
+    <amexio-row>
+    <amexio-column size="12">
+    <amexio-label>A Gantt Chart with no dependencies</amexio-label><br>
+      <amexio-chart-gantt [data]="ganttChartWithNoDepData" [width]="'100%'"  >
+      </amexio-chart-gantt>
+
+    </amexio-column>
+  </amexio-row>
+  <br>
+  <amexio-row>
+  <amexio-column size="12">
+  <amexio-label>A Gantt Chart with grouping resources</amexio-label><br>
+    <amexio-chart-gantt [data]="ganttChartWithGropResources" [width]="'100%'"  >
+    </amexio-chart-gantt>
+
+  </amexio-column>
+</amexio-row>
     </amexio-api-demo>
     </amexio-api-structure>
