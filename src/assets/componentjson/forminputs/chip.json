@@ -138,17 +138,17 @@
             "hidden": false
           },
           {
-            "dataindex": "description",
-            "text": "Description",
-            "width": 60,
-            "hidden": false
-          },
-          {
             "dataindex": "version",
             "text": "Version",
             "width": 15,
             "hidden": false,
             "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
           }
         ],
         "gridData": [
@@ -173,18 +173,18 @@
             "width": 15,
             "hidden": false
           },
-          {
-            "dataindex": "description",
-            "text": "Description",
-            "width": 60,
-            "hidden": false
-          },
-          {
+           {
             "dataindex": "version",
             "text": "Version",
             "width": 15,
             "hidden": false,
             "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
           }],
         "gridData":[
           {
