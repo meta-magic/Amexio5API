@@ -110,7 +110,7 @@
         ]
       },
       {
-        "gridTitle": "Events <amexio-date-time-picke>",
+        "gridTitle": "Events <amexio-date-time-picker>",
         "columnDefinition": [
           {
             "dataindex": "name",
