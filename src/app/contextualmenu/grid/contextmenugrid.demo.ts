@@ -42,7 +42,7 @@ export class GridWithContextMenuDemo {
     this.customSourceData.sourceMetadata.htmlUrl = 'data/contextmenugrid/contextmenugrid.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/contextmenugrid/contextmenugrid.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-template-grid?embed=1&file=app/grid/templategrid/templategrid.demo.html&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-grid-contextmenu?embed=1&file=src/app/contextualmenu/grid/grid.demo.component.html';
   }
 
 

@@ -47,7 +47,7 @@ export class ContextMenuTabDemo {
   }
   createCustomSourceData() {
     this.customSourceData.title = 'context menu Tab ';
-    this.customSourceData.description = 'context menu Tab  component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs.';
+    this.customSourceData.description = 'Tab component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs and with custom context menu (right click operation) and default context menu(close all and close others).';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/contextmenutab/tab.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/contextmenutab/tab.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-tab-contextualmenu?embed=1&file=src/app/contextualmenu/tab/contextmenutab.demo.html&view=editor';
