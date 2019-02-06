@@ -16,7 +16,7 @@
         },
       {
             "text": "Layouts",
-            "badge": "1",
+            "badge": "2",
             "icon": "fa fa-desktop fa-fw",
             "children": [{
                     "text": "Accordion",
@@ -57,6 +57,7 @@
                 {
                     "text": "Creative Card",
                     "icon": "fa fa-creative-commons fa-fw",
+                    "badge": "NEW",
                     "link": "creative/card-ce-demo"
                 },
                 {
