@@ -116,8 +116,8 @@
       }
     ],
     "sourceMetadata": {
-      "htmlUrl": "",
-      "tsUrl": "",
+      "htmlUrl": "forms/badge/form.html",
+      "tsUrl": "forms/badge/form.text",
       "datasourceUrl": ""
     },
     "liveMetadata": {
