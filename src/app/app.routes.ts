@@ -102,7 +102,12 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
 
   {
     path: 'forms', loadChildren: './Forms/forms.module#FormsDemoModule'
-  }
+  },
+
+
+  {
+    path: 'creative', loadChildren: './creative/creative.module#CreativeModule'
+  },
 
 
 ];

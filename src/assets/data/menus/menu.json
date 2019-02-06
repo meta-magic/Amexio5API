@@ -55,6 +55,11 @@
                     ]
                 },
                 {
+                    "text": "Creative Card",
+                    "icon": "fa fa-creative-commons fa-fw",
+                    "link": "creative/card-ce-demo"
+                },
+                {
                     "text": "Column Vertical",
                     "icon": "fa fa-pause fa-fw",
                     "link": "layout/vertical-layout"
@@ -260,7 +265,14 @@
             "text": "Form Inputs",
             "icon": "fa fa-clone fa-fw",
             "badge": "19",
-            "children": [{
+            "children": [
+                {
+                    "text": "Badge",
+                    "icon": "fa fa-id-badge fa-fw",
+                    "link": "forms-Input/badge-demo",
+                    "badge": "NEW"
+                },
+                {
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o fa-fw",
                     "link": "forms-Input/singlecheckbox-demo",

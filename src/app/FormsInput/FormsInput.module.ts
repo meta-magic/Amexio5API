@@ -36,6 +36,7 @@ import { TextDemo } from "./text/text.demo";
 import { TextareaDemo } from "./textarea/textarea.demo";
 import { ToggleDemo } from "./toggle/toggle.demo";
 import { TypeAheadDemo } from "./typeahead/typeahead.demo";
+import {BadgeDemo} from './badge/badge.demo';
 /**
  * Created by kedar on 1/2/19.
  */
@@ -45,7 +46,7 @@ import { TypeAheadDemo } from "./typeahead/typeahead.demo";
         DropDownDemo,DropDownFilterDemo, DropDownMultiDemo, DropDownTemplateDemo, EmailDemo,
         FileuploadDemo,LabelDemo,NumberDemo,PasswordDemo,RadioGroupDemo,RatingDemo,
         RecaptchaDemo,SearchBox,SliderDemo,FacebookLoginDemo,GoogleLoginDemo,LinkedinLoginDemo,
-        TagInputDemo,TextDemo, TextareaDemo, ToggleDemo, TypeAheadDemo
+        TagInputDemo,TextDemo, TextareaDemo, ToggleDemo, TypeAheadDemo,BadgeDemo
     
     ],
     imports: [

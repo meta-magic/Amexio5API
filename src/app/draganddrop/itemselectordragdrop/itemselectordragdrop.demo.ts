@@ -39,6 +39,7 @@ export class ItemSelectorDragdropDemo {
     this.customSourceData.description = 'A Expandable Item selector component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
     this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/itemselectordragdrop/form.html';
     this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/itemselectordragdrop/form.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/selectordata.json';    
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-itemselector-draganddrop?embed=1&file=src/app/itemselector/itemselector.demo.component.html&view=editor';
   }
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

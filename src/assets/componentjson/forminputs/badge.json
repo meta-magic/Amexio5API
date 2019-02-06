@@ -121,7 +121,7 @@
       "datasourceUrl": ""
     },
     "liveMetadata": {
-      "disabled": false,
+      "disabled": true,
       "stackblitzUrl": ""
     }
   }

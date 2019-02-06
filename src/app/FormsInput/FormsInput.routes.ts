@@ -29,6 +29,8 @@ import { TextDemo } from "./text/text.demo";
 import { TextareaDemo } from "./textarea/textarea.demo";
 import { ToggleDemo } from "./toggle/toggle.demo";
 import { TypeAheadDemo } from "./typeahead/typeahead.demo";
+import {BadgeDemo} from './badge/badge.demo';
+
 
 
 export const FORMSINPUT_ROUTE: Routes = [
@@ -113,5 +115,9 @@ export const FORMSINPUT_ROUTE: Routes = [
     },
     {
         path: 'typeahead-demo', component: TypeAheadDemo,
-    }
+    },
+    {
+        path: 'badge-demo', component: BadgeDemo,
+    },
+    
 ]
