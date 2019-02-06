@@ -106,7 +106,33 @@
           "description": "Local data for item selectors."
         }
       ]
+    },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+      "name": "selectedRecords",
+      "description":"Get selected value Object."
+    },{
+      "name": "availableRecords",
+      "description":"Get available values objects.."
     }
+        ]
+      }
   ],
   "sourceMetadata": {
     "htmlUrl": "",

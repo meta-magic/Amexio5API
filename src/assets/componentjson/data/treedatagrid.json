@@ -1,0 +1,191 @@
+{
+  "title": "",
+  "description": "",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-tree-data-table>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+      "name": "data",
+      "type": "any[]",
+      "default": "",
+      "description": "Local Data binding."
+    },
+    {
+      "name": "data-reader",
+      "type": "string",
+      "default": "",
+      "description": "Key in JSON Datasource for records."
+    },
+    {
+      "name": "http-method",
+      "type": "string",
+      "default": "",
+      "description": "Type of HTTP call, POST,GET etc."
+    },
+    {
+      "name": "http-url",
+      "type": "string",
+      "default": "",
+      "description": "REST url for fetching data."
+    },
+    {
+      "name": "display-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data to display on ui."
+    },
+    {
+      "name": "value-field",
+      "type": "string",
+      "default": "",
+      "description": "Name of key inside response data.use to send to backend."
+    }
+      ]
+    },
+    {
+      "gridTitle": "Column Properties <amexio-data-table-column>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+          {
+      "name": "text",
+      "type": "string",
+      "default": "",
+      "description": "Set column label.",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "data-index",
+      "type": "string",
+      "default": "",
+      "description": "JSON key from datasource.",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "hidden",
+      "type": "boolean",
+      "default": "false",
+      "description": "Hide column.",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "data-type",
+      "type": "string",
+      "default": "",
+      "description": "Data type of column (string/number).",
+      "version": "4.0.0 onwards"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "",
+      "version": "4.0.0 onwards",
+      "description": "Custom width for each column.Width must be in % but no need to mention %."
+    }
+
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+         {
+      "name": "rowSelect",
+      "description": "It will gives you row clicked data."
+    },
+    {
+      "name": "selectedRecord",
+      "description":"It will fire only on selection of row and gives you selected record data."
+    }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": "assets/data/componentdata/treedatatable.json"
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": ""
+  }
+}
