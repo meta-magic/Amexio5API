@@ -64,6 +64,47 @@
             "default": " false"
           }
         ]
+      },
+      {
+        "gridTitle": "Model for Credit card",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 20,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "datatype",
+            "text": "Datatype",
+            "width": 20,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "owner",
+            "datatype": "string"
+          },
+          {
+            "name": "cvv",
+            "datatype": "number"
+          },
+          {
+            "name": "cardnumber",
+            "datatype": "number"
+          },
+          {
+            "name": "expMonth",
+            "datatype": "number"
+          },
+          {
+            "name": "expYear",
+            "datatype": "number"
+          }
+        ]
       }
     ],
     "sourceMetadata": {
