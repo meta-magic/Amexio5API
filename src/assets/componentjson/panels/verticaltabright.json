@@ -1,4 +1,4 @@
-{ 
+{
     "title": "",
     "description": "",
     "apiRefMetadata": [
@@ -55,6 +55,90 @@
                     "version": "5.4 onwards",
                     "type": "string",
                     "default": "top"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Tab Properties <amexio-tab>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "title",
+                    "description": "Title on Tab Pill.",
+                    "version": "4.0 onwards",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": "disabled",
+                    "description": "Disable property for tab",
+                    "version": "4.1.4 onwards",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "active",
+                    "description": "Set true for specific tab open as default tab..",
+                    "version": "4.0 onwards",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "icon",
+                    "description": "Supports glyphicon only. Can add directly home instead of 'glyphicon glyphicon-home.",
+                    "version": "4.0 onwards",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": "amexio-color",
+                    "description": "Font color for the tab label",
+                    "version": "4.1.9 onwards",
+                    "type": "string",
+                    "default": "black"
+                },
+                {
+                    "name": "closable",
+                    "description": "This flag will make tab closable, applicable for particular tab pills.",
+                    "version": "4.2 onwards",
+                    "type": "boolean",
+                    "default": "false"
                 }
             ]
         },
