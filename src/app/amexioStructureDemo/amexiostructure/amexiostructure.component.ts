@@ -20,6 +20,8 @@ export class AmexioStructureComponent implements OnInit {
   ngOnInit() {
     if (this.url) {
       this.getComponentData();
+    } else {
+      this.addCustomData(this.customComData);
     }
   }
 

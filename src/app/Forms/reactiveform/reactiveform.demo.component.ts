@@ -6,14 +6,15 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { FormGroup, FormBuilder, Validators, FormControl, FormArray } from '@angular/forms';
 
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
 @Component({
   selector: 'reactive-form',
   templateUrl: './reactiveform.demo.html',
 })
 
 export class reactiveFormComponent implements OnInit {
-
-  htmlCode; typeScriptCode; checkboxGroupdata: any;
+ checkboxGroupdata: any;
   copyMsgArray: any = [];
   age: number;
   radioGroupData: any[] = [];
@@ -28,7 +29,10 @@ export class reactiveFormComponent implements OnInit {
   dynamicFormsReg: DynamicFormsReg;
   dynamicEmployeeForm: FormGroup;
   enableFieldSet: boolean;
+
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient, private fb: FormBuilder) {
+    this.customSourceData = new ComponentDataStructure();
     this.address = new Address();
     this.emplpoyeeRegistration = new EmplpoyeeRegistration();
     this.registration1 = new Registration();
@@ -42,9 +46,10 @@ export class reactiveFormComponent implements OnInit {
       genderId: 'female'
     }];
 
-    this.getHtmlAndTypeScriptCode();
   }
-  ngOnInit() {
+  ngOnInit(): void  {
+    this.createCustomSourceData();
+
     this.employeeForm = this.fb.group({
       FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
       LastName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
@@ -100,6 +105,20 @@ export class reactiveFormComponent implements OnInit {
 
   }
 
+  createCustomSourceData() {
+    this.customSourceData.title = 'Reactive Forms With Amexio Inputs Components';
+    this.customSourceData.description = 'Reactive forms provide a model-driven approach to handling form inputs whose values change over time. Reactive forms can be used basically for validation purposes and below examples show reactive forms with amexio inputs components. User can add any complex validations.';
+    this.customSourceData.sourceMetadata.htmlUrl = 'pane/reactiveform/form.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'pane/reactiveform/form.text';
+    
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/simple-reactive-forms-tu9tkf?file=src%2Fapp%2Famexio-reactive-forms%2Famexio-reactive-forms%2Famexio-reactive-forms.component.html';
+    this.customSourceData.liveMetadata.stackblitzUrl1 = 'https://stackblitz.com/edit/reactive-forms-within-forms-wxnrvo?embed=1&file=src/app/app.component.ts';
+    this.customSourceData.liveMetadata.stackblitzUrl2 = 'https://stackblitz.com/edit/amexio-reactive-form-group-inside-form-usemf8?embed=1&file=src/app/app.component.ts';
+  
+    
+
+  }
+
     //THIS METHOD IS USED FOR MAKING PERMANENT ADDRESS AS TEMP ADDRESS BASE UPON CHECKED
     onCheckClick1(data: any) {
       if (data) {
@@ -143,29 +162,6 @@ export class reactiveFormComponent implements OnInit {
     this.dynamicFormsReg.add(data);
   }
 
-
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/pane/reactiveform/form.html', { responseType: 'text' }).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/pane/reactiveform/form.text', { responseType: 'text' }).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
-  }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

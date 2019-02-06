@@ -27,7 +27,7 @@ import { HtmlFormDemoComponent } from './form-html/template-driven/form.demo';
         FormsModule, 
         ReactiveFormsModule,
         HttpClientModule, 
-        SharedModule, 
+        SharedModule.forRoot(), 
         AmexioWidgetModule,
         RouterModule.forChild(FORMS_ROUTE),
     ],

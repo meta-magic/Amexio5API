@@ -27,7 +27,14 @@
 
         <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="comData.liveMetadata.disabled">
           <p align="center">AmexioSandbox</p>
-          <amexio-api-livedemo [disabled]="false" [stackblitz-url]="comData.liveMetadata.stackblitzUrl">
+          <amexio-api-livedemo [disabled]="false" 
+          
+          [stackblitz-url]="comData.liveMetadata.stackblitzUrl" 
+          [stackblitz-url1]="comData.liveMetadata.stackblitzUrl1" 
+          [stackblitz-url2]="comData.liveMetadata.stackblitzUrl2" 
+
+          
+          >
           </amexio-api-livedemo>
         </amexio-tab>
 

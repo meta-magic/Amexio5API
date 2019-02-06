@@ -1,8 +1,20 @@
 
 <ng-content></ng-content>
 
-<ng-container *ngIf="urlSafe">
+<ng-container *ngIf="urlSafe && stackblitzUrl">
   <iframe style="width: 100%; height: 600px" [src]="urlSafe"
+          frameborder="0" allowfullscren="allowfullscren"></iframe>
+</ng-container>
+
+
+<ng-container *ngIf="urlSafe1 && stackblitzUrl1">
+  <iframe style="width: 100%; height: 600px" [src]="urlSafe1"
+          frameborder="0" allowfullscren="allowfullscren"></iframe>
+</ng-container>
+
+
+<ng-container *ngIf="urlSafe2 && stackblitzUrl2">
+  <iframe style="width: 100%; height: 600px" [src]="urlSafe2"
           frameborder="0" allowfullscren="allowfullscren"></iframe>
 </ng-container>
 

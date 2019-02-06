@@ -28,4 +28,7 @@ export class ApiMetadata {
 export class LiveMetadata {
   disabled: boolean;
   stackblitzUrl: string;
+  stackblitzUrl1: string;
+  stackblitzUrl2: string;
+  
 }

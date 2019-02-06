@@ -4,6 +4,9 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { EmplpoyeeRegistration } from './employee.registration';
+
+import {ComponentDataStructure} from "../../apimetadata/models/component.structure";
+
 @Component({
   selector: 'form-demo',
   templateUrl: 'form.demo.html',
@@ -24,7 +27,10 @@ export class FormDemoComponent {
   firstName:string;
   lastName:string;
   departmentData: any;
+
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
+    this.customSourceData = new ComponentDataStructure();
     this.userRegistration = new UserRegistration();
     this.emplpoyeeRegistration = new EmplpoyeeRegistration();
     this.departmentData = [{
@@ -74,36 +80,21 @@ export class FormDemoComponent {
         ]
       }
     };
-    this.getHtmlAndTypeScriptCode();
   }
-  getDta() {
-    this.asyncFlag = true;
-    setTimeout(() => {
-      this.asyncFlag = false;
-    }, 3000);
+
+  ngOnInit(): void {
+    this.createCustomSourceData();
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
 
-    //HTML FILE
-    this.http.get('assets/data/code/pane/form/form.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/pane/form/form.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  createCustomSourceData() {
+    this.customSourceData.title = 'Form ';
+    this.customSourceData.description = 'Amexio Form can be used basically for validation purposes. amexio-form component gives more power over the html form tag. 1. Shows error messages when form is invalid. 2. User need not to add extra validations to inputs .only add min,max,min-length,max-length in amexio input fields';
+    this.customSourceData.sourceMetadata.htmlUrl = 'pane/form/form.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'pane/form/form.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v42-form?embed=1&file=app/forms/form/form.demo.html&view=editor';
   }
+
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

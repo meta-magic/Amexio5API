@@ -4,14 +4,16 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { EmplpoyeeRegistration } from './employee.registration';
+
+import {ComponentDataStructure} from "../../../apimetadata/models/component.structure";
+
 @Component({
   selector: 'form-demo',
   templateUrl: 'form.demo.html',
 })
 
 export class HtmlFormDemoComponent {
-  htmlCode: string;
-  typeScriptCode: string;
+  
   copyMsgArray: any[];
   asyncFlag : boolean;
   refreshDialogue: boolean;
@@ -24,7 +26,11 @@ export class HtmlFormDemoComponent {
   firstName:string;
   lastName:string;
   departmentData: any;
+
+  customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
+    this.customSourceData = new ComponentDataStructure();
+  
     this.userRegistration = new UserRegistration();
     this.emplpoyeeRegistration = new EmplpoyeeRegistration();
     this.departmentData = [{
@@ -74,35 +80,18 @@ export class HtmlFormDemoComponent {
         ]
       }
     };
-    this.getHtmlAndTypeScriptCode();
   }
-  getDta() {
-    this.asyncFlag = true;
-    setTimeout(() => {
-      this.asyncFlag = false;
-    }, 3000);
+ 
+
+  ngOnInit(): void  {
+    this.createCustomSourceData();
   }
-  //TO LOAD HTML AND TYPESCRIPT CODE
-  getHtmlAndTypeScriptCode() {
-    let responseHtml: any;
-    let responseTs: any;
-
-    //HTML FILE
-    this.http.get('assets/data/code/pane/html-form/form/form.html',{responseType: 'text'}).subscribe(data => {
-      responseHtml = data;
-    }, error => {
-    }, () => {
-      this.htmlCode = responseHtml;
-    });
-
-    //TS FILE
-    this.http.get('assets/data/code/pane/html-form/form/form.text',{responseType: 'text'}).subscribe(data => {
-      responseTs = data;
-    }, error => {
-    }, () => {
-      this.typeScriptCode = responseTs;
-    });
-
+  createCustomSourceData() {
+    this.customSourceData.title = 'Form With HTML Form Tag And Amexio Inputs Components';
+    this.customSourceData.description = 'Html Form can be used basically for validation purposes';
+    this.customSourceData.sourceMetadata.htmlUrl = 'pane/html-form/form/form.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'pane/html-form/form/form.text';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v42-form?embed=1&file=app/forms/form/form.demo.html&view=editor';
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
