@@ -29,29 +29,22 @@
         ],
         "gridData": [
           {
-            "name": "feild-label",
-            "description": "The label of this field",
+            "name": "field-label",
             "type": "string",
-            "default": "none"
+            "default": "",
+            "description":"The label of this field"
           },
           {
             "name": "disabled",
-            "description": "If true will not react on any user events and show disable icon over",
             "type": "boolean",
-            "default":"false"
+            "default": "false",
+            "description":"If true will not react on any user events and show disable icon over"
           },
           {
             "name": "required",
-            "description": "Validate field",
             "type": "boolean",
-            "default": "false"
-          },
-          {
-            "name": "padding",
-            "description": "Padding to all sides",
-            "version": "4.1 onwards",
-            "type": "boolean",
-            "default": "false"
+            "default": "false",
+            "description":"Validate field"
           }
         ]
       },
@@ -73,12 +66,8 @@
         ],
         "gridData": [
           {
-            "name": "onClick",
-            "description": "Fires the on accordion pane click event."
-          },
-          {
-            "name": "rightClick",
-            "description": "It is fired when clicked on context menu providing Panel node data and selected context menu data."
+            "name": "onSelection",
+            "description":"Event fired on checkbox click."
           }
         ]
       }
