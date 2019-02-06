@@ -13,6 +13,13 @@
           "datatype": "string"
         },
         {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
           "dataindex": "type",
           "text": "Type",
           "width": 15,
@@ -20,8 +27,8 @@
           "datatype": "string"
         },
         {
-          "dataindex": "version",
-          "text": "Version",
+          "dataindex": "default",
+          "text": "Default",
           "width": 15,
           "hidden": false,
           "datatype": "string"
