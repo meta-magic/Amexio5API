@@ -213,6 +213,6 @@
   },
   "liveMetadata": {
     "disabled": false,
-    "stackblitzUrl": "https://stackblitz.com/edit/amexio-d3-chart-histogram?embed=1&file=src/app/d3chart/d3linechart/d3linechart.demo.component.html&view=editor"
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-d3-chart-histogram?embed=1&file=src/app/d3chart/d3histogramchart/d3histogramchart.demo.component.html&view=editor"
   }
 }
