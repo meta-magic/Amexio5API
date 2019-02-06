@@ -1,4 +1,4 @@
-export class  AmexioD3HistogramComponent
+export class  AmexioD3BubbleComponent
 {
    bubblechart:any;
   userDataSource: any;

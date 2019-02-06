@@ -117,7 +117,7 @@ export class sideNavDemoPage implements OnInit {
     
     createCustomSourceData() {
       this.customSourceData.title = 'Side Nav Bar';
-      this.customSourceData.description = 'The Side Nav Bar Component is a familiar side navigation pattern for users. Side nav bar can be placed on left or right side. It can fit as many navigation links as needed, scrolling when the content exceeds the viewport. Take a look at Datastructure format which this component can consume in datasource tab.';
+      this.customSourceData.description = 'The Advanced Side Nav Bar Component is a familiar side navigation pattern for users. Advanced Side nav bar can be placed on left or right side. It can fit as many navigation links as needed, scrolling when the content exceeds the viewport. Take a look at Datastructure format which this component can consume in datasource tab.';
       this.customSourceData.sourceMetadata.htmlUrl = 'navigation/sidenav/advancedsidenav/navigation.html';
       this.customSourceData.sourceMetadata.tsUrl = 'navigation/sidenav/advancedsidenav/navigation.text';
       this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/sidenav.json';
