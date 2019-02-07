@@ -15,9 +15,8 @@ export class AmexioStructureComponent implements OnInit {
 
   comData: ComponentDataStructure;
 
-  constructor(private _rCService: RestCallService) {
-    this.comData = new ComponentDataStructure;
-  }
+
+  constructor(private _rCService: RestCallService) {}
 
   ngOnInit() {
     if (this.url) {
