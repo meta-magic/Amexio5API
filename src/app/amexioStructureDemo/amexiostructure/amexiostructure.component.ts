@@ -15,9 +15,6 @@ export class AmexioStructureComponent implements OnInit {
 
   comData: ComponentDataStructure;
 
-  title = '';
-  description = '';
-
   constructor(private _rCService: RestCallService) {
     this.comData = new ComponentDataStructure;
   }
@@ -28,8 +25,6 @@ export class AmexioStructureComponent implements OnInit {
     } else {
       this.addCustomData(this.customComData);
     }
-    this.title = this.comData.title;
-    this.description =  this.comData.description;
   }
 
   getComponentData() {

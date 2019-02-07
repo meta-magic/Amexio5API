@@ -3,8 +3,8 @@
  */
 
 export class ComponentDataStructure {
-  title: string;
-  description: string;
+  title = 'Title';
+  description = 'Description';
   sourceMetadata = new SourceMetadata();
   liveMetadata = new LiveMetadata();
   apiRefMetadata: ApiMetadata[] = [];
@@ -30,5 +30,5 @@ export class LiveMetadata {
   stackblitzUrl: string;
   stackblitzUrl1: string;
   stackblitzUrl2: string;
-  
+
 }
