@@ -27,6 +27,7 @@ export class DropDownDemo implements OnInit {
     this.customSourceData.description = 'Drop-Down component has been created to render N numbers of drop-down items based on data-set configured with template. Data-set can be configured using HTTP call OR Define fix number of dropdown-items. User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.';
     this.customSourceData.sourceMetadata.htmlUrl = 'forms/dropdown/form.html';
     this.customSourceData.sourceMetadata.tsUrl = 'forms/dropdown/form.text';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dropdown?embed=1&file=app/forms/dropdown/dropdown.demo.html&view=editor';
   }
 
