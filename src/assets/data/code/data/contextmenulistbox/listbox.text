@@ -1,4 +1,4 @@
-export class ListBoxDemo {
+export class contextmenulistbox {
   localData: any;
   contextMenuData: any;
   constructor() {

@@ -1,4 +1,4 @@
-export class PanelDemoComponent{
+export class panelcontextmenu{
   rightclickdata: any;
   constructor() {
      this.rightclickdata = [

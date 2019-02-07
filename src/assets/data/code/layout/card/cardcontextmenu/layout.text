@@ -1,4 +1,4 @@
-export class CardDemo {
+export class cardcontextmenu {
   flag: boolean;
   
   // Toggle event

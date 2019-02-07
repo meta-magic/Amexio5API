@@ -1,4 +1,4 @@
-export class SimpleTreeDemo {
+export class TreeWithBadgeDemo {
   constructor() {}
 
   getNodeData(data: any) {

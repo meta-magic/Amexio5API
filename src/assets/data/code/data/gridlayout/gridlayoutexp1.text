@@ -1,7 +1,7 @@
 import {AmexioLayoutModule} from 'amexio-ng-extensions';
 import { AmexioGridLayoutService, GridConfig, GridConstants} from "amexio-ng-extensions";
 
-export class GridLayoutDemo {
+export class GridLayoutDemoOne {
   gridDesktop: GridConfig;
   gridTablet: GridConfig;
   gridMobile: GridConfig;
