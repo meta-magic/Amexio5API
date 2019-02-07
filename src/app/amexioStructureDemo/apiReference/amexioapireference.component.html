@@ -3,7 +3,7 @@
 <br>
 <ng-container  *ngFor="let apiData of data"> 
    <amexio-datagrid  [title]="apiData.gridTitle"   [data]="apiData.gridData">
-        <amexio-data-table-column *ngFor="let col of apiData.columnDefinition" 
+        <amexio-data-table-column *ngFor="let col of apiData.columnDefinition"
                                   [data-index]="col.dataindex"
                                   [data-type]="'string'"
                                   [hidden]="false"
@@ -21,4 +21,5 @@
                                   </ng-container>
         </amexio-data-table-column>
    </amexio-datagrid>
+  <br><br>
  </ng-container>
