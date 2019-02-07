@@ -21,7 +21,6 @@ export class TreeWithTemplateDemo  implements OnInit{
   constructor(private http: HttpClient) {
     this.customSourceData = new ComponentDataStructure();
    
-
     this.treeLocalData = {
       "data": [{
         "text": "Web App",
@@ -114,7 +113,7 @@ export class TreeWithTemplateDemo  implements OnInit{
     this.customSourceData.description = 'To define the detail template, nested ng-template tag inside the AmexioTreeComponent component. The template context is set to the current node.    ';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/treetemplate/treetemplate.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/treetemplate/treetemplate.text';
-    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeviewwithbadge.json';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/sidenav.json';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-tree-with-template?embed=1&file=app/tree/treewithtemplate/treewithtemplate.demo.html&view=editor';
   }
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
