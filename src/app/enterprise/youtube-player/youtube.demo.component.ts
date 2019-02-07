@@ -23,7 +23,7 @@ import {HttpClient} from "@angular/common/http";
                    <amexio-card header="true">
                      <amexio-header> Video player without Width </amexio-header>
                      <amexio-body>
-                       <amexio-ee-youtube-player url="https://www.youtube.com/embed/U7elNhHwgBU"
+                       <amexio-ee-youtube-player url="https://www.youtube.com/embed/Rciv-Vb299Y"
                                                  [height]="450">
 
                        </amexio-ee-youtube-player>
@@ -37,7 +37,7 @@ import {HttpClient} from "@angular/common/http";
                    <amexio-card header="true">
                      <amexio-header> Video player with Width </amexio-header>
                      <amexio-body>
-                   <amexio-ee-youtube-player url="https://www.youtube.com/embed/U7elNhHwgBU"
+                   <amexio-ee-youtube-player url="https://www.youtube.com/embed/Rciv-Vb299Y"
                                              [height]="450" [width]="50">
 
                    </amexio-ee-youtube-player>
