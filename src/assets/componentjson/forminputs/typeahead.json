@@ -213,7 +213,7 @@
     "sourceMetadata": {
         "htmlUrl": "forms/typehead/form.html",
         "tsUrl": "forms/typehead/form.text",
-        "datasourceUrl": ""
+        "datasourceUrl": "assets/data/componentdata/country.json"
     },
     "liveMetadata": {
         "disabled": false,

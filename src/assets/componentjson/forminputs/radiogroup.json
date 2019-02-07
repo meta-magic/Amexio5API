@@ -162,7 +162,7 @@
     "sourceMetadata": {
       "htmlUrl": "forms/radiogroup/form.html",
       "tsUrl": "forms/radiogroup/form.text",
-      "datasourceUrl": ""
+      "datasourceUrl": "assets/data/code/forms/radiogroup/radiogroup.json"
     },
     "liveMetadata": {
       "disabled": false,
