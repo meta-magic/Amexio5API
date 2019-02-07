@@ -4896,7 +4896,7 @@ header .billboard .content-button {
 .sidenav-mobile-bar-right {
   color: #1b0808; }
 
-.sidenav {
+.sidenav-color {
   background-color: #ffffff;
   color: #121212; }
 
@@ -4926,10 +4926,6 @@ header .billboard .content-button {
   background-color: #ffffff; }
 
 .sidenav .title {
-  background-color: #ffffff;
-  color: #121212; }
-
-.sidenav .headernode {
   background-color: #ffffff;
   color: #121212; }
 

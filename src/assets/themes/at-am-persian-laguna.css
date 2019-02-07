@@ -5145,7 +5145,7 @@ amexio-layout-columns amexio-layout-item {
 .sidenav-mobile-bar-right {
   color: white; }
 
-.sidenav {
+.sidenav-color {
   background-color: #ffe578;
   color: #043963; }
 
@@ -5175,10 +5175,6 @@ amexio-layout-columns amexio-layout-item {
   background-color: #ffe578; }
 
 .sidenav .title {
-  background-color: #ffe578;
-  color: #043963; }
-
-.sidenav .headernode {
   background-color: #ffe578;
   color: #043963; }
 
