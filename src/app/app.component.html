@@ -1,34 +1,34 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
-  <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'"
-    [logo]="'assets/images/logos/amexio-logo.png'">
+  <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
 
-    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus"
-    [type]="'menu'"
-    [title]="menus.text"
-    [icon]="menus.icon"
-    [data]="menus.submenus"
-      (onNavItemClick)="externalLink($event)">
+    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon"
+      [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
     </amexio-nav-item>
   </amexio-nav>
 
   <amexio-row>
     <amexio-column [size]="'2pt5'" style="padding-top: 68px;">
-      <amexio-side-nav
-        [http-url]="'assets/data/menus/menu.json'"
-        [http-method]="'get'"
-        [data-reader]="'data'"
-        [height]="'92%'"
+      <amexio-side-nav [http-url]="'assets/data/menus/menu.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'"
         (nodeClick)="onNodeClick($event)">
       </amexio-side-nav>
     </amexio-column>
-    <amexio-column  [size]="'9pt5'">
+    <amexio-column [size]="'9pt5'">
       <div class="route-container">
-        <div class="loadingnav" *ngIf="isRouteLoading">Loading&#8230;</div>
-        <router-outlet ></router-outlet>
+        <div *ngIf="isRouteLoading">
+
+          <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
+            [color]="'black'" [size]="'7px'">
+          </amexio-spinner>
+
+        </div>
+
+        <router-outlet></router-outlet>
       </div>
-      <br/><br/>
+      <br /><br />
       <div id="footer1" style="bottom: 0;">
-        <p style="text-align: center;">  © 2018 MetaMagic Global Inc, NJ, USA.  All Rights Reserved. Source Code :  <a href="https://api.amexio.org/api/license.html" target="_blank">Apache 2 License</a>  Docs by <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC By 3.0</a></p>
+        <p style="text-align: center;"> © 2018 MetaMagic Global Inc, NJ, USA. All Rights Reserved. Source Code : <a
+            href="https://api.amexio.org/api/license.html" target="_blank">Apache 2 License</a> Docs by <a href="https://creativecommons.org/licenses/by/3.0/"
+            target="_blank">CC By 3.0</a></p>
       </div>
       <br>
       <br>

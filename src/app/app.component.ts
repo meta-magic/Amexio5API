@@ -236,7 +236,8 @@ export class AppComponent {
     this.amexioNav.close();
   }
   onNodeClick(node: any) {
-    if (node.hasOwnProperty('link'))
-      this.router.navigate([node.link])
+    if (node.hasOwnProperty('link')){
+      this.router.navigate([node.link]);
+    }
   }
 }

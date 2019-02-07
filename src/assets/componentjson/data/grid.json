@@ -146,14 +146,7 @@
           "description": "Set false to hide Column toggle functionality.",
           "version": "4.0.0 onwards"
         },
-        {
-          "deprecated": false,
-          "name": "enable-column-filter",
-          "type": "boolean",
-          "default": "true",
-          "description": "Set false to hide Column toggle functionality.",
-          "version": "4.0.0 onwards"
-        },
+       
         {
           "deprecated": false,
           "name": "global-filter",
