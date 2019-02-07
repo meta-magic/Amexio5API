@@ -139,6 +139,49 @@
         "version": "4.1.9 onwards",
         "type": "string",
         "default": ""
+      },
+      {
+        "name": "relative",
+        "description": "Place floating button at relative position",
+        "version": "5.5.5 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+      {
+        "name": "absolute",
+        "description": "Place floating button at absolute position",
+        "version": "5.5.5 onwards",
+        "type": "boolean",
+        "default": "false"
+      },
+
+      {
+        "name": "position-top",
+        "description": "Sets top attribute to image",
+        "version": "5.5.5 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "position-bottom",
+        "description": "Sets bottom attribute to image",
+        "version": "5.5.5 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "position-left",
+        "description": "Sets left attribute to image",
+        "version": "5.5.5 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "position-right",
+        "description": "Sets right attribute to image",
+        "version": "5.5.5 onwards",
+        "type": "string",
+        "default": ""
       }
 
         ]
