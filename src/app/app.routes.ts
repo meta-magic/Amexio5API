@@ -8,11 +8,17 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: '', redirectTo: 'getting-started', pathMatch: 'full'
   },
 
+  
+
   /** Getting Started  Page */
   {
     path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
   },
 
+  /** Amexio Color  Page */
+  {
+    path: 'amexio-colors', loadChildren: './theme/theme.module#ThemeModule'
+  },
   /** D3 Chart Page */
 
   {
