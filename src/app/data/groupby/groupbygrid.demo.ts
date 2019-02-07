@@ -28,7 +28,7 @@ export class GroupByGridDemo  implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'Data Grid Group By';
-    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Filtering(enable only for string and number type data), user define template for rendering for column header and column data, displaying summation of numeric column and grouping column.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/groupby/groupby.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/groupby/groupby.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/datagridgroupby.json';

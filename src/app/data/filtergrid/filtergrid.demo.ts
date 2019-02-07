@@ -27,7 +27,7 @@ export class FilterGridDemo implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'Data Grid With Filter';
-    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection,Filtering(enable only for string and number type data) user define template for rendering for column header and column data, displaying summation of numeric column.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/filter/filter.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/filter/filter.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/datagridgroupby.json';

@@ -141,7 +141,7 @@ export class HeaderTemplateDemo implements OnInit {
 
   createCustomSourceData() {
     this.customSourceData.title = 'Header Template';
-    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.description = 'Defines header template for user customization AmexioColumn component. The template context is set to the current header.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/headertemplate/headertemplate.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/headertemplate/headertemplate.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/headertemplateemail.json';

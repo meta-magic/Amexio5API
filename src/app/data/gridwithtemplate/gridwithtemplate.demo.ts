@@ -138,7 +138,7 @@ export class GridWithTemplateDemo implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'Data Grid With template';
-    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.description = 'To define the detail template, nest an ng-template tag inside the AmexioColumn component. The template context is set to the current row.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/templategrid/templategrid.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/templategrid/templategrid.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/gridtemplate.json';

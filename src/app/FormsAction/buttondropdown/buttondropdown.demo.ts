@@ -24,7 +24,7 @@ export class ButtonDropDownDemo implements OnInit{
   }
   createCustomSourceData() {
     this.customSourceData.title = 'Button Dropdown';
-    this.customSourceData.description = 'A button component with various modes and configurations.';
+    this.customSourceData.description = 'A Dropdown Button component with various modes and configurations.';
     this.customSourceData.sourceMetadata.htmlUrl = 'forms/buttondropdown/form.html';
     this.customSourceData.sourceMetadata.tsUrl = 'forms/buttondropdown/form.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-buttondropdown?embed=1&file=app/forms/buttondropdown/buttondropdown.demo.html&view=editor';
