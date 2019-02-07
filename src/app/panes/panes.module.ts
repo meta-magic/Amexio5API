@@ -45,7 +45,8 @@ import { DyanmicVerticalTabComponent } from "./tab/enhancedverticaltab/dynamicve
         AmexioWidgetModule,
         RouterModule.forChild(PANES_ROUTE),
     ],
-    providers: []
+    providers: [],
+    entryComponents:[DyanmicTabComponent, DyanmicVerticalTabComponent]
 })
 export class PanesModule {
 
