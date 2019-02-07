@@ -112,7 +112,7 @@ export class TreeToPanelDemo implements OnInit{
   
   createCustomSourceData() {
     this.customSourceData.title = 'Tree to panel Drag Drop Functionality';
-    this.customSourceData.description = 'A Tree to panel component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
+    this.customSourceData.description = 'A Tree to panel component which create Tree View based on standard datasource attached and having functionality of drag and drop:  Tree to panel.';
     this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/treetopanel/tree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/treetopanel/tree.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dragdroppanel?embed=1&file=app/tree/acrosstree/acrosstree.demo.html&view=editor';
