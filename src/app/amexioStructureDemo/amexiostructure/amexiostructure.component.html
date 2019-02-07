@@ -1,11 +1,11 @@
 
   <amexio-card [header]="true" [header-align]="'left'">
     <amexio-header>
-        <ng-container *ngIf="(comData && comData.title)">{{comData.title}}</ng-container>
+        <ng-container>{{title}}</ng-container>
     </amexio-header>
     <amexio-body>
       <span>
-        <ng-container *ngIf="(comData && comData.description)">{{comData.description}}</ng-container>
+        <ng-container>{{description}}</ng-container>
       </span>
       <amexio-tab-view [closable]="true">
         <amexio-tab  title="Demo" [active]="true" [closable]="false" [disabled]="false">

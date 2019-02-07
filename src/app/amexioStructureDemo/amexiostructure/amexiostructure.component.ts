@@ -15,7 +15,12 @@ export class AmexioStructureComponent implements OnInit {
 
   comData: ComponentDataStructure;
 
-  constructor(private _rCService: RestCallService) {}
+  title = '';
+  description = '';
+
+  constructor(private _rCService: RestCallService) {
+    this.comData = new ComponentDataStructure;
+  }
 
   ngOnInit() {
     if (this.url) {
@@ -23,6 +28,8 @@ export class AmexioStructureComponent implements OnInit {
     } else {
       this.addCustomData(this.customComData);
     }
+    this.title = this.comData.title;
+    this.description =  this.comData.description;
   }
 
   getComponentData() {
