@@ -210,6 +210,6 @@
   },
   "liveMetadata": {
     "disabled": false,
-    "stackblitzUrl": "https://stackblitz.com/edit/amexio-d3-chart-timeline?embed=1&file=src/app/d3chart/d3timelinechart/d3timelinechart.demo.module.ts&view=editor"
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-d3-chart-timeline?embed=1&file=src/app/d3chart/d3timelinechart/d3timelinechart.demo.component.html&view=editor"
   }
 }
