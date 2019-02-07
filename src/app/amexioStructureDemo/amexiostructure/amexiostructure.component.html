@@ -1,46 +1,42 @@
-<ng-container *ngIf="comData">
+
   <amexio-card [header]="true" [header-align]="'left'">
     <amexio-header>
-      {{comData.title}}
+        <ng-container *ngIf="(comData && comData.title)">{{comData.title}}</ng-container>
     </amexio-header>
     <amexio-body>
       <span>
-        {{comData.description}}
+        <ng-container *ngIf="(comData && comData.description)">{{comData.description}}</ng-container>
       </span>
       <amexio-tab-view [closable]="true">
-        <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
+        <amexio-tab  title="Demo" [active]="true" [closable]="false" [disabled]="false">
           <ng-content select="amexio-api-demo"></ng-content>
         </amexio-tab>
 
-        <ng-container *ngIf="comData.apiRefMetadata &&  comData.apiRefMetadata.length > 0">
-          <amexio-tab title="Api Reference" [active]="false" [closable]="false" [disabled]="false">
+        <amexio-tab title="Api Reference" [active]="false" [closable]="false" [disabled]="false">
+          <ng-container *ngIf="comData && comData.apiRefMetadata &&  comData.apiRefMetadata.length > 0">
             <ng-content select="amexio-api-reference"></ng-content>
             <amexio-api-reference [data]="comData.apiRefMetadata"></amexio-api-reference>
-           
-          </amexio-tab>
-        </ng-container>
+          </ng-container>
+        </amexio-tab>
 
         <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
+            <ng-container *ngIf="comData && comData.sourceMetadata">
           <amexio-api-sourcecode [html-url]="comData.sourceMetadata.htmlUrl" [ts-url]="comData.sourceMetadata.tsUrl"
             [dynamic-url]="comData.sourceMetadata.dynamicUrl" [module-url]="comData.sourceMetadata.moduleUrl"
             [data-source-url]="comData.sourceMetadata.datasourceUrl">
           </amexio-api-sourcecode>
+          </ng-container>
         </amexio-tab>
 
-        <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="comData.liveMetadata.disabled">
+        <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="(comData && comData.liveMetadata && comData.liveMetadata.disabled)">
           <p align="center">AmexioSandbox</p>
-          <amexio-api-livedemo [disabled]="false" 
-          
-          [stackblitz-url]="comData.liveMetadata.stackblitzUrl" 
-          [stackblitz-url1]="comData.liveMetadata.stackblitzUrl1" 
-          [stackblitz-url2]="comData.liveMetadata.stackblitzUrl2" 
-
-          
-          >
+          <ng-container *ngIf="comData && comData.liveMetadata">
+          <amexio-api-livedemo [disabled]="false" [stackblitz-url]="comData.liveMetadata.stackblitzUrl"
+            [stackblitz-url1]="comData.liveMetadata.stackblitzUrl1" [stackblitz-url2]="comData.liveMetadata.stackblitzUrl2">
           </amexio-api-livedemo>
+        </ng-container>
         </amexio-tab>
 
       </amexio-tab-view>
     </amexio-body>
   </amexio-card>
-</ng-container>
