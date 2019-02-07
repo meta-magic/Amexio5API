@@ -110,7 +110,7 @@ export class HorizontalTreeDemo implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'horizontal Tree';
-    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.description = 'A Horizontal Tree Component.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/horizontaltree/horizontaltree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/horizontaltree/horizontaltree.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/sidenav.json';

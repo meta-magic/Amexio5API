@@ -35,7 +35,7 @@ export class ItemSelectorDragdropDemo implements OnInit{
   
   createCustomSourceData() {
     this.customSourceData.title = 'itemselector With Drag Drop Functionality';
-    this.customSourceData.description = 'A Expandable Item selector component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
+    this.customSourceData.description = 'ItemSelector is a specialized with drag and drop functionality. Drag and drop is possible from left to right and vice versa and item selector to panel    ';
     this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/itemselectordragdrop/form.html';
     this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/itemselectordragdrop/form.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/selectordata.json';    

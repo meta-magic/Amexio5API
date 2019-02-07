@@ -199,7 +199,7 @@ export class SimpleTreeDemo implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'simple Tree';
-    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.description = 'A Simple Expandable Tree component which create Tree View based on standard datasource attached.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/simpletree/simpletree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/simpletree/simpletree.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeview.json';

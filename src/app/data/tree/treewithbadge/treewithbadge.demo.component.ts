@@ -116,7 +116,7 @@ export class TreeWithBadgeDemo implements OnInit {
 
   createCustomSourceData() {
     this.customSourceData.title = 'Tree With Badge';
-    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.description = 'A Simple Expandable Tree component which create Tree View based on standard datasource attached with badge property    ';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/treewithbadge/tree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/treewithbadge/tree.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeviewwithbadge.json';

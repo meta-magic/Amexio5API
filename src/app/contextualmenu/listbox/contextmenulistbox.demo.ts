@@ -201,7 +201,6 @@ export class ContextMenuListBoxDemo {
     this.customSourceData.description = 'Simple list box which allows user to select one of more items from list based on configuration. User can provide custom template to change look and feel and with context menu (right-click mouse operation)';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/contextmenulistbox/listbox.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/contextmenulistbox/listbox.text';
-    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-listbox-contextmenu?embed=1&file=src/app/contextualmenu/list/list.demo.component.html&view=editor';
   }
 

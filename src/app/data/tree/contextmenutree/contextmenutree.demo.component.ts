@@ -122,7 +122,7 @@ export class ContextMenuTreeDemo implements OnInit {
 
   createCustomSourceData() {
     this.customSourceData.title = 'Tree With Context Menu';
-    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.description = 'A Expandable Tree component which create Tree View based on standard datasource with context menu(right-click mouse operation)';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/contextmenutree/tree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/contextmenutree/tree.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-tree-contextmenu-demo?embed=1&file=src/app/contextualmenu/tree/tree.demo.component.html&view=editor';

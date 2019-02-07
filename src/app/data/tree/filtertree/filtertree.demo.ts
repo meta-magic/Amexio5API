@@ -112,7 +112,7 @@ export class FilterTreeDemo implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'Filter Tree';
-    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Filtering functionality.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/filtertree/filtertree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/filtertree/filtertree.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/sidenav.json';

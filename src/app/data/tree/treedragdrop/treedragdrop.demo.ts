@@ -278,7 +278,7 @@ export class DragDropTreeDemo implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'drag and drop Tree';
-    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.description = 'A Expandable Tree component which create Tree View based on standard datasource attached and having functionality of drag and drop (within tree as well as across tree).    ';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/dragdroptree/dragdroptree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/dragdroptree/dragdroptree.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dragdrop?embed=1&file=app/tree/acrosstree/acrosstree.demo.html&view=editor';

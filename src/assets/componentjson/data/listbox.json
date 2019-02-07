@@ -151,7 +151,7 @@
   ],
   "sourceMetadata": {
     "htmlUrl": "data/listbox/listbox.html",
-    "tsUrl": "data/listbox/listbox",
+    "tsUrl": "data/listbox/listbox.text",
     "datasourceUrl": ""
   },
   "liveMetadata": {

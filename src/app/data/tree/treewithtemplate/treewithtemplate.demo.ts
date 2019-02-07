@@ -111,7 +111,7 @@ export class TreeWithTemplateDemo  implements OnInit{
 
   createCustomSourceData() {
     this.customSourceData.title = 'Tree With template';
-    this.customSourceData.description = 'A Expandable Tree Component for Angular, having Checkbox functionality.';
+    this.customSourceData.description = 'To define the detail template, nested ng-template tag inside the AmexioTreeComponent component. The template context is set to the current node.    ';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/treetemplate/treetemplate.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/treetemplate/treetemplate.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeviewwithbadge.json';
