@@ -202,7 +202,7 @@ export class SimpleTreeDemo implements OnInit{
     this.customSourceData.description = 'A Simple Expandable Tree component which create Tree View based on standard datasource attached.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/tree/simpletree/simpletree.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/tree/simpletree/simpletree.text';
-    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/treeview.json';
+    this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/simpletreeview.json';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-simple-tree?embed=1&file=app/tree/simpletree/simpletree.demo.html&view=editor';
   }
 
