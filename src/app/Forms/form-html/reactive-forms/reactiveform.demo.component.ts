@@ -111,7 +111,7 @@ export class HtmlReactiveFormComponent implements OnInit {
 
 
   createCustomSourceData() {
-    this.customSourceData.title = 'Reactive  kk  Forms With HTML Form Tag And Amexio Inputs Components ';
+    this.customSourceData.title = 'Reactive  Forms With HTML Form Tag And Amexio Inputs Components ';
     this.customSourceData.description = 'Reactive Forms can be used basically for validation purposes and below examples show reactive forms with amexio inputs components';
     this.customSourceData.sourceMetadata.htmlUrl = 'pane/html-form/reactiveform/form.html';
     this.customSourceData.sourceMetadata.tsUrl = 'pane/html-form/reactiveform/form.text';
