@@ -4909,16 +4909,6 @@ header .billboard .content-button {
 .sidenav::-webkit-scrollbar-thumb {
   background-color: #696969; }
 
-.sidenav-submenu-details::-webkit-scrollbar-track {
-  background-color: #dbc2c2; }
-
-.sidenav-submenu-details::-webkit-scrollbar {
-  width: 6px;
-  background-color: #dbc2c2; }
-
-.sidenav-submenu-details::-webkit-scrollbar-thumb {
-  background-color: #9c9c9c; }
-
 .left {
   background-color: #ffffff; }
 
@@ -5057,7 +5047,7 @@ header .billboard .content-button {
   max-height: 0; }
 
 .sidenav-submenu-expanded {
-  max-height: 1000px;
+  max-height: 10000px;
   overflow: auto; }
 
 .nav-badge {
