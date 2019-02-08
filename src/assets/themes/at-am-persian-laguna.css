@@ -5158,16 +5158,6 @@ amexio-layout-columns amexio-layout-item {
 .sidenav::-webkit-scrollbar-thumb {
   background-color: #ffe578; }
 
-.sidenav-submenu-details::-webkit-scrollbar-track {
-  background-color: #f5f5f5; }
-
-.sidenav-submenu-details::-webkit-scrollbar {
-  width: 6px;
-  background-color: #f5f5f5; }
-
-.sidenav-submenu-details::-webkit-scrollbar-thumb {
-  background-color: #fff9de; }
-
 .left {
   background-color: #ffe578; }
 
@@ -5306,7 +5296,7 @@ amexio-layout-columns amexio-layout-item {
   max-height: 0; }
 
 .sidenav-submenu-expanded {
-  max-height: 1000px;
+  max-height: 10000px;
   overflow: auto; }
 
 .nav-badge {
