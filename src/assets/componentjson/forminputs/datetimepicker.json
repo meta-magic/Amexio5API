@@ -1,157 +1,159 @@
 {
     "title": "Amexio Date Time Picker",
     "description": "This component is flexible for both Date and time picker with all required configurations in Style.",
-    "apiRefMetadata": [
-      {
-        "gridTitle": "Properties <amexio-date-time-picker>",
-        "columnDefinition": [
-          {
-            "dataindex": "name",
-            "text": "Name",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "type",
-            "text": "Type",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "default",
-            "text": "Default",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "description",
-            "text": "Description",
-            "width": 60,
-            "hidden": false,
-            "datatype": "string"
-          }
-        ],
-        "gridData": [
-          {
-            "name": " date-format",
-            "description": "The label of this field",
-            "type": "string",
-            "default": ""
-          },
-          {
-            "name": " date-picker",
-            "description": " Enable/Disable Date Picker",
-            "type": " boolean",
-            "default": " false"
-          },
-          {
-            "name": " time-picker ",
-            "description": "Enable/Disable Time Picker",
-            "type": " boolean",
-            "default": " false"
-          },
-          {
-            "name": "field-label ",
-            "description": "The label of this field",
-            "type": " string",
-            "default": ""
-          },
-          {
-            "name": "disabled",
-            "description": "Disable Date/Time Picker field",
-            "type": "boolean",
-            "default": "false"
-          },
-           {
-            "name": "read-only",
-            "description": "Disable Date/Time Picker field",
-            "type": "boolean",
-            "default": "false"
-          },
-          {
-            "name": "required",
-            "description": "Flag to allow blank field or not",
-            "type": "boolean",
-            "default": "false"
-          },
-           {
-            "name": "min-date",
-            "description": "sets minimum date range",
-            "type": "string",
-            "default": "none"
-          },
-          {
-            "name": "max-date",
-            "description": "sets maximum date range",
-            "type": "string",
-            "default": "none"
-          },
-           {
-            "name": "disabled-date",
-            "description": "sets disabled dates range",
-            "type": "any",
-            "default": "none"
-          },
-            {
-            "name": "inline-datepicker",
-            "description": "sets inline calender",
-            "type": "boolean",
-            "default": "false"
-          },
-           {
-            "name": "dropdown-datepicker",
-            "description": "sets year dropdown in datepicker",
-            "type": "boolean",
-            "default": "false"
-          }
-        ]
-      },
-      {
-        "gridTitle": "Events <amexio-date-time-picker>",
-        "columnDefinition": [
-          {
-            "dataindex": "name",
-            "text": "Name",
-            "width": 15,
-            "hidden": false
-          },
-          {
-            "dataindex": "description",
-            "text": "Description",
-            "width": 60,
-            "hidden": false
-          }
-        ],
-        "gridData": [
-          {
-            "name": "blur",
-            "description": "On blur event"
-          },
-          {
-            "name": "change",
-            "description": "On field value change event"
-          },
-          {
-            "name": "input",
-            "description": "On input event field."
-          },
-          {
-            "name": "focus",
-            "description": "On field focus event"
-          }
-        ]
-      }
+    "apiRefMetadata": [{
+            "gridTitle": "Properties <amexio-date-time-picker>",
+            "columnDefinition": [{
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [{
+                    "name": "place-holder",
+                    "description": "place-holder of field",
+                    "type": " string",
+                    "default": ""
+                },
+                {
+                    "name": " date-format",
+                    "description": "The label of this field",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": " date-picker",
+                    "description": " Enable/Disable Date Picker",
+                    "type": " boolean",
+                    "default": " false"
+                },
+                {
+                    "name": " time-picker ",
+                    "description": "Enable/Disable Time Picker",
+                    "type": " boolean",
+                    "default": " false"
+                },
+                {
+                    "name": "field-label ",
+                    "description": "The label of this field",
+                    "type": " string",
+                    "default": ""
+                },
+
+                {
+                    "name": "disabled",
+                    "description": "Disable Date/Time Picker field",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "read-only",
+                    "description": "Disable Date/Time Picker field",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "required",
+                    "description": "Flag to allow blank field or not",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "min-date",
+                    "description": "sets minimum date range",
+                    "type": "string",
+                    "default": "none"
+                },
+                {
+                    "name": "max-date",
+                    "description": "sets maximum date range",
+                    "type": "string",
+                    "default": "none"
+                },
+                {
+                    "name": "disabled-date",
+                    "description": "sets disabled dates range",
+                    "type": "any",
+                    "default": "none"
+                },
+                {
+                    "name": "inline-datepicker",
+                    "description": "sets inline calender",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "dropdown-datepicker",
+                    "description": "sets year dropdown in datepicker",
+                    "type": "boolean",
+                    "default": "false"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Events <amexio-date-time-picker>",
+            "columnDefinition": [{
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [{
+                    "name": "blur",
+                    "description": "On blur event"
+                },
+                {
+                    "name": "change",
+                    "description": "On field value change event"
+                },
+                {
+                    "name": "input",
+                    "description": "On input event field."
+                },
+                {
+                    "name": "focus",
+                    "description": "On field focus event"
+                }
+            ]
+        }
     ],
     "sourceMetadata": {
-      "htmlUrl": "forms/datepicker/form.html",
-      "tsUrl": "forms/datepicker/form.text",
-      "datasourceUrl": ""
+        "htmlUrl": "forms/datepicker/form.html",
+        "tsUrl": "forms/datepicker/form.text",
+        "datasourceUrl": ""
     },
     "liveMetadata": {
-      "disabled": false,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-datepicker?ctl=1&embed=1&file=app/forms/datepicker/datepicker.demo.html"
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-datepicker?ctl=1&embed=1&file=app/forms/datepicker/datepicker.demo.html"
     }
-  }
+}
