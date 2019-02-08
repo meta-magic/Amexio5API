@@ -481,6 +481,10 @@ image using the content attribute.
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%; }
 
+.font-with-label {
+  padding-left: 5px;
+  font-family: Roboto, Trebuchet MS, Arial, Helvetica, sans-serif; }
+
 /** button - Structure CSS **/
 button {
   display: inline-block;
@@ -1443,8 +1447,8 @@ textarea:required {
 
 .checkbox-disable {
   opacity: 0.55;
-  pointer-events: none;
-  background-color: #dbc2cf; }
+  cursor: not-allowed;
+  pointer-events: none; }
 
 /** checkbox - Structure CSS **/
 .input-box {
@@ -2593,6 +2597,9 @@ input:checked + .toggle-slider:before {
   background-color: #f8d9ac;
   color: #ffffff; }
 
+.floatingbutton-circle:focus {
+  outline: none; }
+
 /** floatingbutton - Structure CSS **/
 .floatingbutton {
   z-index: 3;
@@ -3523,6 +3530,13 @@ input:checked + .toggle-slider:before {
   background-color: black;
   margin-right: 3px;
   color: whitesmoke; }
+
+.chiplabelicon {
+  cursor: pointer;
+  padding-left: 10px; }
+
+.chiplabel {
+  cursor: pointer; }
 
 /*****************************************************************************
  Component Name : Grid Layout
@@ -5600,7 +5614,10 @@ fieldset {
   margin-top: 0px; }
 
 .stepwizard-row {
-  display: table-row; }
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between; }
 
 .stepwizard {
   display: table;
@@ -5620,6 +5637,7 @@ fieldset {
   z-index: 0; }
 
 .stepwizard-step {
+  width: 100%;
   display: table-cell;
   text-align: center;
   position: relative; }
@@ -7032,7 +7050,7 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
   -o-transition: transform 0.5s, opacity 0.5s;
   -ms-transition: transform 0.5s, opacity 0.5s; }
 
-.floatingbutton:active:after {
+.floatingbutton:focus:not(:active) {
   opacity: 0.7;
   transform: scale(0, 0);
   -webkit-transform: scale(0, 0);
