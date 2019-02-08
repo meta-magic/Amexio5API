@@ -13,6 +13,7 @@ import { ComponentDataStructure } from '../../apimetadata/models/component.struc
 export class DropDownDemo implements OnInit {
   copyMsgArray: any[];
   countryCode1:string;
+  personName:string;
 
   customSourceData: ComponentDataStructure;
   constructor() {
