@@ -92,14 +92,14 @@
         },
         {
           "name": "display-key",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "type": "string",
           "default": "text",
           "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
         },
         {
           "name": "child-array-key",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "type": "string",
           "default": "children",
           "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
@@ -107,28 +107,28 @@
         {
           "name": "enable-border",
           "type": "boolean",
-          "version": "5.5.5 Onwards",
+          "version": "5.5.5 onwards",
           "default": "true",
           "description": "By default enable-border is enabled."
         },
         {
           "name": "background",
           "type": "string",
-          "version": "5.5.5 Onwards",
+          "version": "5.5.5 onwards",
           "default": "",
           "description": "User can define custom background color or pass gradient."
         },
         {
           "name": "color",
           "type": "string",
-          "version": "5.5.5 Onwards",
+          "version": "5.5.5 onwards",
           "default": "",
           "description": "User can define custom color."
         },
         {
           "name": "bg-image",
-          "type": "boolean",
-          "version": "5.4.0 Onwards",
+          "type": "string",
+          "version": "5.4.0 onwards",
           "default": "",
           "description": "User can pass background image"
         }
@@ -176,7 +176,7 @@
       "gridData": [
         {
           "name": "display-key",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "type": "string",
           "default": "text",
           "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
@@ -184,42 +184,42 @@
         {
           "name": "data",
           "type": "any",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "default": "",
           "description": "We can pass local data to side nav node(child) components."
         },
         {
           "name": "label",
           "type": "string",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "default": "",
           "description": "Providing user define Label to sidenav node."
         },
         {
           "name": "icon",
           "type": "string",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "default": "",
           "description": "Providing user define Icon to sidenav node."
         },
         {
           "name": "badge",
           "type": "any",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "default": "",
           "description": "Providing user define Badge to sidenav node."
         },
         {
           "name": "enable-border",
           "type": "boolean",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "default": "",
           "description": "enable border to the side nav component."
         },
         {
           "name": "collapsable",
           "type": "boolean",
-          "version": "5.4.0 Onwards",
+          "version": "5.4.0 onwards",
           "default": "",
           "description": "collapsable side nav component."
         }
