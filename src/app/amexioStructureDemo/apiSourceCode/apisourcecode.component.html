@@ -25,6 +25,14 @@
       </amexio-tab>
     </ng-container>
 
+    <ng-container *ngIf="dataSourceUrl1">
+        <amexio-tab title="Second Data Source">
+          <ng-container *ngIf=" dataSource1">
+            <prism-block [code]="dataSource1" [language]="'json'"></prism-block>
+          </ng-container>
+        </amexio-tab>
+      </ng-container>
+
     <ng-container *ngIf="dynamicUrl">
         <amexio-tab title="Dynamic Code">
           <ng-container *ngIf=" dynamicCode">

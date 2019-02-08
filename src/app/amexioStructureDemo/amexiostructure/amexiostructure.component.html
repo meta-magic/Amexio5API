@@ -23,7 +23,9 @@
             <ng-container *ngIf="comData && comData.sourceMetadata">
           <amexio-api-sourcecode [html-url]="comData.sourceMetadata.htmlUrl" [ts-url]="comData.sourceMetadata.tsUrl"
             [dynamic-url]="comData.sourceMetadata.dynamicUrl" [module-url]="comData.sourceMetadata.moduleUrl"
-            [data-source-url]="comData.sourceMetadata.datasourceUrl">
+            [data-source-url]="comData.sourceMetadata.datasourceUrl"
+            [data-source-url1]="comData.sourceMetadata.datasourceUrl1"
+            >
           </amexio-api-sourcecode>
           </ng-container>
         </amexio-tab>

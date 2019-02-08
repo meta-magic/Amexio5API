@@ -16,6 +16,7 @@ export class  SourceMetadata {
   dynamicUrl: string;
   moduleUrl: string;
   datasourceUrl: string;
+  datasourceUrl1: string;
 }
 
 
