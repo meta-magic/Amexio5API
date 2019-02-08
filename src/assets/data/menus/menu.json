@@ -447,7 +447,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "4",
+            "badge": "6",
             "icon": "fa fa-keyboard-o fa-fw",
             "children": [{
                     "text": "Buttons",
@@ -489,11 +489,13 @@
                 {
                     "text": "Notification",
                     "icon": "fa fa-comments fa-fw",
+                    "badge": "U",
                     "link": "forms-Action/notification-demo"
                 },
                 {
                     "text": "Paginator",
                     "icon": "fa fa-arrows-h fa-fw",
+                    "badge": "U",
                     "link": "forms-Action/paginator-demo"
                 },
                 {
@@ -505,7 +507,7 @@
         },
         {
             "text": "Data",
-            "badge": "1",
+            "badge": "2",
             "icon": "fa fa-database fa-fw",
 
             "children": [{
@@ -522,9 +524,11 @@
                 {
                     "text": "Grid",
                     "icon": "fa fa-database fa-fw",
+                    "badge": "1",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-database fa-fw",
+                            "badge": "U",
                             "link": "data/simplegrid-demo"
                         },
                         {
@@ -759,9 +763,11 @@
         {
             "text": "Media",
             "icon": "fa fa-keyboard-o fa-fw",
+            "badge": "1",
             "children": [{
                     "text": "Image",
                     "icon": "fa fa-picture-o fa-fw",
+                    "badge": "U",
                     "link": "media-demo/image"
                 },
                 {
@@ -789,11 +795,11 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o fa-fw",
-            "badge": "6",
+           
             "children": [{
                     "text": "D3 Charts",
                     "icon": "fa fa-openid fa-fw",
-                    "badge": "6",
+                   
                     "children": [{
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart fa-fw",
@@ -812,18 +818,18 @@
                         {
                             "text": "Bubble Chart ",
                             "icon": "fa fa-dot-circle-o fa-fw",
-                            "link": "D3chart/amexio-d3-chart-bubble",
-                            "badge": "U"
+                            "link": "D3chart/amexio-d3-chart-bubble"
+                            
                         },
                         {
                             "text": "Combo Chart",
-                            "badge": "U",
+                            
                             "icon": "fa fa-area-chart fa-fw",
                             "link": "D3chart/amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",
-                            "badge": "U",
+                           
                             "icon": "fa fa-pie-chart fa-fw",
                             "link": "D3chart/amexio-d3-chart-donut"
                         },
@@ -850,19 +856,19 @@
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart fa-fw",
-                            "badge": "U",
+                           
                             "link": "D3chart/amexio-d3-chart-pie"
                         },
                         {
                             "text": "Scatter Chart",
                             "icon": "fa fa-dot-circle-o fa-fw",
-                            "badge": "U",
+                           
                             "link": "D3chart/amexio-d3-chart-scatter"
                         },
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-bar-chart fa-fw",
-                            "badge": "New",
+                            
                             "link": "D3chart/amexio-d3-chart-timeline"
                         },
                         {
