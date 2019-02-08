@@ -13,6 +13,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
 export class SimpleGridDemo implements OnInit{
   copyMsgArray: any[];
   selectedData: any;
+  selectedRecord: any;
   customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
     this.customSourceData = new ComponentDataStructure();
@@ -28,6 +29,7 @@ export class SimpleGridDemo implements OnInit{
     this.customSourceData.sourceMetadata.htmlUrl = 'data/simplegrid/simplegrid.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/simplegrid/simplegrid.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
+    this.customSourceData.sourceMetadata.datasourceUrl1 = 'assets/data/componentdata/personProfile.json';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-simple-grid?embed=1&file=app/grid/simplegrid/simplegrid.demo.html&view=editor';
   }
 
@@ -43,6 +45,10 @@ export class SimpleGridDemo implements OnInit{
 
   getSelectedData(data: any) {
     this.selectedData = data;
+  }
+
+  getSelectedRecord(data: any) {
+    this.selectedRecord = data;
   }
 }
 

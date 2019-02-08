@@ -1,6 +1,6 @@
 {
   "name": "Amexio Dropdown",
-  "description": "Drop-Down component has been created to render N numbers of drop-down items based on data-set configured. Data-set can be configured using HTTP call OR Define fix number of dropdown-items. User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.",
+  "description": "Drop-Down component has been created to render N numbers of drop-down items based on data-set configured. Data-set can be configured using HTTP call or Define fix number of dropdown-items. User can configure different attributes for enabling filter, multi-select, maximum selection in case of multi select.",
   "selector": "<amexio-dropdown>",
   "properties": [
     {
@@ -24,7 +24,7 @@
       "name": "allow-blank",
       "description": "Sets if field is required (true or false)",
       "version": "4.0 onwards",
-      "type": "(true or false)",
+      "type": "boolean",
       "default": ""
     },
     {

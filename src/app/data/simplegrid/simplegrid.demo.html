@@ -18,6 +18,24 @@
             </amexio-body>
           </amexio-card>
         </amexio-column>
+        <br>
+        <amexio-column size="12">
+          <amexio-card [header]="true">
+            <amexio-header>
+              Simple Data Grid with inner structure
+            </amexio-header>
+            <amexio-body>
+              <amexio-datagrid [enable-column-fiter]="true" title="Simple Data Grid with inner structure" [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/personProfile.json'"
+                               [data-reader]="'data'" [page-size]="10">
+
+                <amexio-data-table-column [data-index]="'personName'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedRecord($event)">
+                </amexio-data-table-column>
+                <amexio-data-table-column [sort]="false" [data-index]="'designation'" [data-type]="'string'" [hidden]="false" [text]="'Designation'"></amexio-data-table-column>
+                <amexio-data-table-column [data-index]="'address.addressLabel'" [data-type]="'string'" [hidden]="false" [text]="'Address'"></amexio-data-table-column>
+              </amexio-datagrid>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
       </amexio-row>
     </amexio-api-demo>
 

@@ -56,7 +56,7 @@
             "name": "allow-blank",
             "description": "Sets if field is required (true or false)",
             "version": "4.0 onwards",
-            "type": "(true or false)",
+            "type": "boolean",
             "default": ""
           },
           {

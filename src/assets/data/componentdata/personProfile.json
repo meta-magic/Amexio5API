@@ -1,0 +1,94 @@
+{
+    "data": [
+      {
+        "personName": "Kailas Sharma",
+        "personAge": "45",
+        "designation": "Manager",
+        "address": {
+          "addressLabel": "A12- Daffodils",
+          "city": "Pune",
+           "pincode": "411028"
+        }
+      },
+  {
+        "personName": "Pooja Bhardwaj",
+        "personAge": "30",
+        "designation": "Business Analyst",
+        "address": {
+          "addressLabel": "C Wing- Sudarshan Heritage",
+          "city": "Pune",
+           "pincode": "400011"
+        }
+      },
+   {
+        "personName": "Kalyani Bhandari",
+        "personAge": "26",
+        "designation": "Ui Developer",
+        "address": {
+          "addressLabel": "Shop No- 18",
+          "city": "Pune",
+           "pincode": "411028"
+        }
+      },
+      {
+        "personName": "Suraj Thakkar",
+        "personAge": "41",
+        "designation": "Senior Developer",
+        "address": {
+          "addressLabel": "B-14 RadhaKrihna Society",
+          "city": "Pune",
+           "pincode": "411027"
+        }
+      },
+      {
+        "personName": "Amruta Bhapkar",
+        "personAge": "25",
+        "designation": "Software Tester",
+        "address": {
+          "addressLabel": "Shop No-2 Airtel Store",
+          "city": "Pune",
+           "pincode": "411028"
+        }
+      },
+      {
+        "personName": "Jaydeep Saxena",
+        "personAge": "35",
+        "designation": "Developer",
+        "address": {
+          "addressLabel": "Building-2, Near Woodland Showroom",
+          "city": "Pune",
+           "pincode": "411003"
+        }
+      },
+      {
+        "personName": "Shweta Kulkarni",
+        "personAge": "24",
+        "designation": "Jr. Developer",
+        "address": {
+          "addressLabel": "C2- Hauz Khas",
+          "city": "Delhi",
+           "pincode": "110001"
+        }
+      },
+      {
+        "personName": "Karan Mathur",
+        "personAge": "35",
+        "designation": "Developer",
+        "address": {
+          "addressLabel": "A-23 Kalyani Society",
+          "city": "Pune",
+           "pincode": "411025"
+        }
+      },
+      {
+        "personName": "Kashish Sethi",
+        "personAge": "32",
+        "designation": "Software Tester",
+        "address": {
+          "addressLabel": "Block 1- Gradiant Bldg",
+          "city": "Pune",
+           "pincode": "411001"
+        }
+      }
+    ]
+  }

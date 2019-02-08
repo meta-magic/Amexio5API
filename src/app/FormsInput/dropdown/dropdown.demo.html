@@ -43,5 +43,45 @@
       </amexio-card>
     </amexio-column>
   </amexio-row>
+  <amexio-row>
+    <amexio-column size="6">
+      <amexio-card header="true">
+        <amexio-header>
+           Dropdown Component with Inner Structure
+        </amexio-header>
+        <amexio-body>
+          <amexio-row>
+            <amexio-column size="12">
+              <amexio-dropdown [(ngModel)]="personName"
+                               [place-holder]="'Choose'"
+                               name="countryCode1"
+                               [data-reader]="'data'"
+                               [field-label]="'Address'"
+                               [http-url]="'assets/data/componentdata/personProfile.json'"
+                               [http-method]="'get'"
+                               [display-field]="'address.addressLabel'"
+                               [value-field]="'personName'"
+                               [enable-sort]="true"
+                               [sort]="'asc'"
+              >
+              </amexio-dropdown>
+            </amexio-column>
+          </amexio-row>
+        </amexio-body>
+      </amexio-card>
+    </amexio-column>
+    <amexio-column [size]="6">
+      <amexio-card header="true">
+        <amexio-header>
+          Owner
+        </amexio-header>
+        <amexio-body>
+        <ng-container *ngIf="personName">
+          {{personName}}
+        </ng-container>
+        </amexio-body>
+      </amexio-card>
+    </amexio-column>
+  </amexio-row>
   </amexio-api-demo>
   </amexio-api-structure>

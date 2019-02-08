@@ -11,3 +11,18 @@
                  [enable-sort]="true"
                  [sort]="'asc'">
 </amexio-dropdown>
+
+
+<!--Simple dropdown with inner structure-->
+<amexio-dropdown [(ngModel)]="personName"
+                 [place-holder]="'Address'"
+                 name="personName"
+                 [data-reader]="'data'"
+                 [field-label]="'Address'"
+                 [http-url]="'assets/data/componentdata/personProfile.json'"
+                 [http-method]="'get'"
+                 [display-field]="'address.addressLabel'"
+                 [value-field]="'personName'"
+                 [enable-sort]="true"
+                 [sort]="'asc'">
+</amexio-dropdown>
