@@ -1,261 +1,260 @@
 {
-  "title": "",
-  "description": "",
-  "apiRefMetadata": [
-    {
-      "gridTitle": "Side Nav Properties <amexio-side-nav>",
-      "columnDefinition": [
-        {
-          "dataindex": "name",
-          "text": "Name",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
+    "title": "",
+    "description": "",
+    "apiRefMetadata": [{
+            "gridTitle": "Side Nav Properties <amexio-side-nav>",
+            "columnDefinition": [{
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [{
+                    "name": "width",
+                    "type": "string",
+                    "default": "",
+                    "description": "Width of sidenav"
+                },
+                {
+                    "name": "position",
+                    "type": "string",
+                    "default": "",
+                    "description": "Sidenav bar rendering position. example position='relative','right' "
+                },
+                {
+                    "name": "title",
+                    "type": "string",
+                    "default": "",
+                    "description": "Title of sidenav bar "
+                },
+                {
+                    "name": "title-image",
+                    "type": "string",
+                    "default": "",
+                    "description": "Title image of sidenav bar "
+                },
+                {
+                    "name": "http-url",
+                    "type": "string",
+                    "default": "",
+                    "description": "REST url for fetching datasource."
+                },
+                {
+                    "name": "http-method",
+                    "type": "string",
+                    "default": "",
+                    "description": "Type of HTTP call, POST,GET."
+                },
+                {
+                    "name": "data-reader",
+                    "type": "string",
+                    "default": "",
+                    "description": "Key in JSON datasource for records"
+                },
+                {
+                    "name": "data",
+                    "type": "any",
+                    "default": "",
+                    "description": "Local data for sidenav."
+                },
+                {
+                    "name": "display-key",
+                    "version": "5.4.0 onwards",
+                    "type": "string",
+                    "default": "text",
+                    "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+                },
+                {
+                    "name": "child-array-key",
+                    "version": "5.4.0 onwards",
+                    "type": "string",
+                    "default": "children",
+                    "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
+                },
+                {
+                    "name": "enable-border",
+                    "type": "boolean",
+                    "version": "5.5.5 onwards",
+                    "default": "true",
+                    "description": "By default enable-border is enabled."
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "version": "5.5.5 onwards",
+                    "default": "",
+                    "description": "User can define custom background color or pass gradient."
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "version": "5.5.5 onwards",
+                    "default": "",
+                    "description": "User can define custom color."
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "version": "5.4.0 onwards",
+                    "default": "",
+                    "description": "User can pass background image"
+                }
+            ]
         },
         {
-          "dataindex": "version",
-          "text": "Version",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
+            "gridTitle": "Node Properties <amexio-sidenav-node>",
+            "columnDefinition": [{
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [{
+                    "name": "display-key",
+                    "version": "5.4.0 onwards",
+                    "type": "string",
+                    "default": "text",
+                    "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
+                },
+                {
+                    "name": "data",
+                    "type": "any",
+                    "version": "5.4.0 onwards",
+                    "default": "",
+                    "description": "We can pass local data to side nav node(child) components."
+                },
+                {
+                    "name": "label",
+                    "type": "string",
+                    "version": "5.4.0 onwards",
+                    "default": "",
+                    "description": "Providing user define Label to sidenav node."
+                },
+                {
+                    "name": "icon",
+                    "type": "string",
+                    "version": "5.4.0 onwards",
+                    "default": "",
+                    "description": "Providing user define Icon to sidenav node."
+                },
+                {
+                    "name": "badge",
+                    "type": "any",
+                    "version": "5.4.0 onwards",
+                    "default": "",
+                    "description": "Providing user define Badge to sidenav node."
+                },
+                {
+                    "name": "icon-color",
+                    "type": "string",
+                    "version": "5.5.6 Onwards",
+                    "default": "",
+                    "description": "Color of icons"
+                },
+                {
+                    "name": "enable-border",
+                    "type": "boolean",
+                    "version": "5.4.0 onwards",
+                    "default": "",
+                    "description": "enable border to the side nav component."
+                },
+                {
+                    "name": "collapsable",
+                    "type": "boolean",
+                    "version": "5.4.0 onwards",
+                    "default": "",
+                    "description": "collapsable side nav component."
+                }
+            ]
         },
         {
-          "dataindex": "type",
-          "text": "Type",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
-        },
-        {
-          "dataindex": "default",
-          "text": "Default",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
-        },
-        {
-          "dataindex": "description",
-          "text": "Description",
-          "width": 60,
-          "hidden": false,
-          "datatype": "string"
+            "gridTitle": "Nav Events <amexio-nav>",
+            "columnDefinition": [{
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [{
+                "name": "nodeClick",
+                "description": "Fire when sidenav bar menu click"
+            }]
         }
-      ],
-      "gridData": [
-        {
-          "name": "width",
-          "type": "string",
-          "default": "",
-          "description": "Width of sidenav"
-        },
-        {
-          "name": "position",
-          "type": "string",
-          "default": "",
-          "description": "Sidenav bar rendering position. example position='relative','right' "
-        },
-        {
-          "name": "title",
-          "type": "string",
-          "default": "",
-          "description": "Title of sidenav bar "
-        },
-        {
-          "name": "title-image",
-          "type": "string",
-          "default": "",
-          "description": "Title image of sidenav bar "
-        },
-        {
-          "name": "http-url",
-          "type": "string",
-          "default": "",
-          "description": "REST url for fetching datasource."
-        },
-        {
-          "name": "http-method",
-          "type": "string",
-          "default": "",
-          "description": "Type of HTTP call, POST,GET."
-        },
-        {
-          "name": "data-reader",
-          "type": "string",
-          "default": "",
-          "description": "Key in JSON datasource for records"
-        },
-        {
-          "name": "data",
-          "type": "any",
-          "default": "",
-          "description": "Local data for sidenav."
-        },
-        {
-          "name": "display-key",
-          "version": "5.4.0 onwards",
-          "type": "string",
-          "default": "text",
-          "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
-        },
-        {
-          "name": "child-array-key",
-          "version": "5.4.0 onwards",
-          "type": "string",
-          "default": "children",
-          "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
-        },
-        {
-          "name": "enable-border",
-          "type": "boolean",
-          "version": "5.5.5 onwards",
-          "default": "true",
-          "description": "By default enable-border is enabled."
-        },
-        {
-          "name": "background",
-          "type": "string",
-          "version": "5.5.5 onwards",
-          "default": "",
-          "description": "User can define custom background color or pass gradient."
-        },
-        {
-          "name": "color",
-          "type": "string",
-          "version": "5.5.5 onwards",
-          "default": "",
-          "description": "User can define custom color."
-        },
-        {
-          "name": "bg-image",
-          "type": "string",
-          "version": "5.4.0 onwards",
-          "default": "",
-          "description": "User can pass background image"
-        }
-      ]
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "",
+        "tsUrl": "",
+        "datasourceUrl": ""
     },
-    {
-      "gridTitle": "Node Properties <amexio-sidenav-node>",
-      "columnDefinition": [
-        {
-          "dataindex": "name",
-          "text": "Name",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
-        },
-        {
-          "dataindex": "version",
-          "text": "Version",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
-        },
-        {
-          "dataindex": "type",
-          "text": "Type",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
-        },
-        {
-          "dataindex": "default",
-          "text": "Default",
-          "width": 15,
-          "hidden": false,
-          "datatype": "string"
-        },
-        {
-          "dataindex": "description",
-          "text": "Description",
-          "width": 60,
-          "hidden": false,
-          "datatype": "string"
-        }
-      ],
-      "gridData": [
-        {
-          "name": "display-key",
-          "version": "5.4.0 onwards",
-          "type": "string",
-          "default": "text",
-          "description": "Display Key provides the user defined key to parent json Array (parent key name can be changed)"
-        },
-        {
-          "name": "data",
-          "type": "any",
-          "version": "5.4.0 onwards",
-          "default": "",
-          "description": "We can pass local data to side nav node(child) components."
-        },
-        {
-          "name": "label",
-          "type": "string",
-          "version": "5.4.0 onwards",
-          "default": "",
-          "description": "Providing user define Label to sidenav node."
-        },
-        {
-          "name": "icon",
-          "type": "string",
-          "version": "5.4.0 onwards",
-          "default": "",
-          "description": "Providing user define Icon to sidenav node."
-        },
-        {
-          "name": "badge",
-          "type": "any",
-          "version": "5.4.0 onwards",
-          "default": "",
-          "description": "Providing user define Badge to sidenav node."
-        },
-        {
-          "name": "enable-border",
-          "type": "boolean",
-          "version": "5.4.0 onwards",
-          "default": "",
-          "description": "enable border to the side nav component."
-        },
-        {
-          "name": "collapsable",
-          "type": "boolean",
-          "version": "5.4.0 onwards",
-          "default": "",
-          "description": "collapsable side nav component."
-        }
-      ]
-    },
-    {
-      "gridTitle": "Nav Events <amexio-nav>",
-      "columnDefinition": [
-        {
-          "dataindex": "name",
-          "text": "Name",
-          "width": 15,
-          "hidden": false
-        },
-        {
-          "dataindex": "description",
-          "text": "Description",
-          "width": 60,
-          "hidden": false
-        }
-      ],
-      "gridData": [
-        {
-          "name": "nodeClick",
-          "description": "Fire when sidenav bar menu click"
-        }
-      ]
+    "liveMetadata": {
+        "disabled": false,
+        "stackblitzUrl": ""
     }
-  ],
-  "sourceMetadata": {
-    "htmlUrl": "",
-    "tsUrl": "",
-    "datasourceUrl": ""
-  },
-  "liveMetadata": {
-    "disabled": false,
-    "stackblitzUrl": ""
-  }
 }
