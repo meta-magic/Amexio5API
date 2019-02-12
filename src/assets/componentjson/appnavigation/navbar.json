@@ -13,6 +13,13 @@
           "datatype": "string"
         },
         {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
           "dataindex": "type",
           "text": "Type",
           "width": 15,
@@ -29,7 +36,7 @@
         {
           "dataindex": "description",
           "text": "Description",
-          "width": 60,
+          "width": 40,
           "hidden": false,
           "datatype": "string"
         }
@@ -37,12 +44,14 @@
       "gridData": [
         {
           "name": "title",
+          "version":"",
           "type": "string",
           "default": "",
           "description": "Title of navbar."
         },
         {
           "name": "logo",
+          "version":"",
           "type": "string",
           "default": "",
           "description": "Logo of navbar."
@@ -52,6 +61,20 @@
           "type": "boolean",
           "default": "",
           "description": "Indicate if side-nav-bar is present"
+        },
+        {
+          "name": "color",
+          "version": "5.5.6 onwards",
+          "type": "string",
+          "default": "",
+          "description": "Provides color to the navigation menus"
+        },
+        {
+          "name": "transparent",
+          "version": "5.5.6 onwards",
+          "type": "boolean",
+          "default": "false",
+          "description": "If true, sets the transparent nav bar"
         }
       ]
     },
