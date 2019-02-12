@@ -5,13 +5,13 @@
                  [http-method]="'get'"
                  [http-url]="'assets/data/componentdata/country.json'" 
                  [data-reader]="'data'" 
-                 [page-size]="10">
+                 [page-size]="10"
+                 (selectedRowData)="getSelectedRecord($event)">
     <amexio-data-table-column 
         [data-index]="'countryName'" 
         [data-type]="'string'" 
         [hidden]="false" 
-        [text]="'Name'"
-        (selectedRowData)="getSelectedData($event)">
+        [text]="'Name'">
     </amexio-data-table-column>
     <amexio-data-table-column 
         [sort]="false" 
@@ -36,13 +36,13 @@
                  [http-method]="'get'"
                  [http-url]="'assets/data/componentdata/personProfile.json'" 
                  [data-reader]="'data'" 
-                 [page-size]="10">
+                 [page-size]="10"
+                 (selectedRowData)="getSelectedRecord($event)">
     <amexio-data-table-column 
         [data-index]="'personName'" 
         [data-type]="'string'" 
         [hidden]="false" 
-        [text]="'Name'"
-        (selectedRowData)="getSelectedRecord($event)">
+        [text]="'Name'">
     </amexio-data-table-column>
     <amexio-data-table-column 
         [sort]="false" 
