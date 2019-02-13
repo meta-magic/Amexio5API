@@ -342,7 +342,7 @@ image using the content attribute.
   color: black; }
 
 .button-secondary:hover:enabled {
-  background-color: #e6e6e6;
+  background-color: black;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .btn-badge {
@@ -441,6 +441,40 @@ image using the content attribute.
 .font-with-label {
   padding-left: 5px;
   font-family: Roboto, Trebuchet MS, Arial, Helvetica, sans-serif; }
+
+.button-primary-disabled {
+  background-color: #a09e9e;
+  border-color: #a09e9e;
+  pointer-events: none;
+  color: #FFBF00;
+  cursor: not-allowed; }
+
+.button-success-disabled {
+  background-color: #a3d7a3;
+  border-color: #a3d7a3;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #FFBF00; }
+
+.button-danger-disabled {
+  background-color: #eba5a3;
+  border-color: #eba5a3;
+  pointer-events: none;
+  color: #FFBF00; }
+
+.button-warning-disabled {
+  background-color: #f8d9ac;
+  border-color: #f8d9ac;
+  color: #FFBF00;
+  pointer-events: none;
+  cursor: not-allowed; }
+
+.disabled {
+  background-color: lightgray;
+  border-color: lightgray;
+  color: #FFBF00;
+  pointer-events: none;
+  cursor: not-allowed; }
 
 /** button - Structure CSS **/
 button {
@@ -578,7 +612,7 @@ button {
   color: black; }
 
 .button-secondary:hover:enabled {
-  background-color: #e6e6e6; }
+  background-color: black; }
 
 .btn-group-primary-badge {
   background-color: black;
@@ -4170,7 +4204,6 @@ header .billboard .content-button {
   color: #FFBF00; }
 
 .horizontaltreeview-node-label:hover {
-  border-color: black;
   color: #FFBF00;
   background-color: rgba(255, 191, 0, 0.4); }
 
@@ -4963,7 +4996,7 @@ amexio-layout-columns amexio-layout-item {
 .nav-dropdown:hover .nav-dropdown-content .nav-menu-container a {
   color: #FFBF00; }
 
-.transparentNav {
+.topnav .transparentNav {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6) !important;
   background-color: transparent !important; }
 
@@ -6519,10 +6552,10 @@ fieldset {
   margin-top: 1%; }
 
 .amexio-root-window-content > * {
-  padding: 10px 16px !important; }
+  padding: 10px 16px; }
 
 .amexio-layout-columns-height {
-  height: unset !important; }
+  height: unset; }
 
 @media only screen and (max-width: 600px) {
   .amexio-root-window-content {
@@ -6536,18 +6569,22 @@ fieldset {
   max-height: 100%; }
 
 .modal-window-header {
-  display: flex !important;
-  font-size: 20px !important;
-  font-weight: 300 !important;
-  text-transform: capitalize !important; }
+  display: flex;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize; }
 
 .modal-window-footer {
   display: flex; }
 
+.modal-window-material-footer {
+  background-color: white;
+  color: black; }
+
 .model-maximize {
-  width: 100% !important;
-  height: 100% !important;
-  top: 0 !important; }
+  width: 100%;
+  height: 100%;
+  top: 0; }
 
 .content-max-height .window-middle {
   height: 100%; }
