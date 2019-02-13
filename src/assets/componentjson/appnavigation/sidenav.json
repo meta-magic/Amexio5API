@@ -207,7 +207,7 @@
                 {
                     "name": "icon-color",
                     "type": "string",
-                    "version": "5.5.6 Onwards",
+                    "version": "5.6 Onwards",
                     "default": "",
                     "description": "Color of icons"
                 },

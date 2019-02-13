@@ -741,11 +741,13 @@
                 {
                     "text": "Nav Bar",
                     "icon": "fa fa-bars  ",
+                    "badge": "U",
                     "link": "navigation/navbar-demo"
                 },
                 {
                     "text": "Side Nav Bar",
                     "icon": "fa fa-bars  ",
+                    "badge":"U",
                     "link": "navigation/sidenav-demo"
                 },
                 {

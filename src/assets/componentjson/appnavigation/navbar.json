@@ -64,14 +64,14 @@
         },
         {
           "name": "color",
-          "version": "5.5.6 onwards",
+          "version": "5.6 onwards",
           "type": "string",
           "default": "",
           "description": "Provides color to the navigation menus"
         },
         {
           "name": "transparent",
-          "version": "5.5.6 onwards",
+          "version": "5.6 onwards",
           "type": "boolean",
           "default": "false",
           "description": "If true, sets the transparent nav bar"
