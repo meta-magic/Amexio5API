@@ -53,14 +53,14 @@
           "name": "width",
           "description": "Width of chart",
           "version": "0.0.1 Onwards",
-          "type": "string",
+          "type": "number",
           "default": ""
         },
         {
           "name": "height",
           "description": "Height of chart",
           "version": "0.0.1 Onwards",
-          "type": "string",
+          "type": "number",
           "default": ""
         },
         {
@@ -153,6 +153,13 @@
           "version": "0.0.8 Onwards",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "yaxis-interval",
+          "description": "Sets number of ticks on Y-axis",
+          "version": "0.1.2 Onwards",
+          "type": "number",
+          "default": ""
         }
       ]
     },
