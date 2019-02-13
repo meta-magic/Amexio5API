@@ -3,7 +3,7 @@
 <!-- With Material Design :- Simple Window-->
 
 <amexio-window [body-height]="40" [(show)]="showBasicWindowMaterial" [close-on-escape]="true" [material-design]="true" [footer]="true"
-  [vertical-position]="'top'" [horizontal-position]="'center'">
+[width]="'auto'">
   <amexio-header>
     Employee Form
   </amexio-header>
@@ -155,7 +155,7 @@
 <!-- Without Material Design :- Simple Window-->
 
 <amexio-window [body-height]="40" [(show)]="showBasicWindowMaterial" [close-on-escape]="true" [material-design]="false" [footer]="true"
-  [vertical-position]="'top'" [horizontal-position]="'center'">
+[width]="'auto'">
   <amexio-header>
     Employee Form
   </amexio-header>
@@ -304,7 +304,7 @@
 <!-- Context-menu with Window -->
 
 <amexio-window [body-height]="40" [(show)]="showBasicWindowMaterial" [close-on-escape]="true" [material-design]="true" [footer]="true"
-  [vertical-position]="'top'" [horizontal-position]="'center'" [context-menu]="rightclickdata">
+[width]="'auto'" [context-menu]="rightclickdata">
   <amexio-header>
     Employee Form
   </amexio-header>
