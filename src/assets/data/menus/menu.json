@@ -718,6 +718,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars  ",
+            "badge":"2",
             "children": [{
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right  ",
