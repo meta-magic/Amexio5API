@@ -2,7 +2,7 @@ export class PaginatorDemo {
   constructor(){
   }
   //paginator onPageChange event
-  loadPageData(pageNumber:number){
+  loadPageData(pageInfo:any){
     //add Some Operation
   }
 }
