@@ -78,7 +78,7 @@
           },
           {
             "name": "onPageChange",
-            "description": "It will gives you current page number"
+            "description": "It will gives you pageNumber, current and next state of pagination."
           }
         ]
       }

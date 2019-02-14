@@ -12,8 +12,8 @@ export class PaginatorDemo {
   currentPage: number = 1;
   constructor() {}
 
-  loadPageData(pageNumber:number) {
-   this.currentPage = pageNumber;
+  loadPageData(pageInfo: any) {
+   this.currentPage = pageInfo.pageNumber;
   }
 }
 
