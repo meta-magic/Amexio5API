@@ -146,7 +146,7 @@
           "description": "Set false to hide Column toggle functionality.",
           "version": "4.0.0 onwards"
         },
-       
+
         {
           "deprecated": false,
           "name": "global-filter",
@@ -162,6 +162,22 @@
           "type": "any[]",
           "default": "",
           "description": "Context Menu provides the list of menus on right click (for Array structure: refer typescript code in source tab)"
+        },
+        {
+          "deprecated": false,
+          "name": "total-data-count",
+          "type": "number",
+          "default": "0",
+          "description": "Set max number of records.",
+          "version": "5.5 onwards"
+        },
+        {
+          "deprecated": false,
+          "name": "server-side-paging",
+          "version": "5.5 onwords",
+          "type": "boolean",
+          "default": "false",
+          "description": "Set true for server side pagination ( if it is true then you should provide [total-data-count]. It is mandatory)."
         }
       ]
     },
@@ -288,6 +304,10 @@
         {
           "name": "rightClick",
           "description": "It is fired when clicked on context menu providing row data and selected context menu data."
+        },
+        {
+          "name": "onPageChange",
+          "description": "It is fired when server side pagination is enable. It will gives you pageNumber, current and next state of pagination."
         }
       ]
     }
