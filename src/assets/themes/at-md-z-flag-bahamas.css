@@ -5362,11 +5362,19 @@ header .billboard .content-button {
   color: red; }
 
 /** accordion - Structure CSS **/
+amexio-accordion {
+  display: flex;
+  flex-direction: column; }
+
+amexio-accordion > amexio-accordion-tab {
+  padding-bottom: 1px; }
+
 .accordion {
   cursor: pointer;
   padding: 10px;
   width: 100%;
-  border-color: #ced4da;
+  border: none;
+  border-radius: 0px;
   text-align: left;
   outline: none;
   font-size: 17px;
