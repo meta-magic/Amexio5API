@@ -9,11 +9,12 @@
                                         D3-line with multiple lines
                                     </amexio-header>
                                     <amexio-body>
-                                        <amexio-d3-chart-line (onChartClick)="onDefaultChartClick($event)" [label]="true" (onLegendClick)="onUserDefineLegendClick($event)"
-                                                (onLegendClick)="onUserDefineLegendClick($event)"
-                                                [title]="'Popularity Of XYZ & PQR'"
+                                        <amexio-d3-chart-line 
+                                                 (onChartClick)="onUserDefineChartClick($event)" 
+                                                 [label]="true" 
+                                                 (onLegendClick)="onUserDefineLegendClick($event)"
+                                                 [title]="'Popularity Of XYZ & PQR'"
                                                 [data] = "doubleLineData"
-                                                [label-color] = "'brown'"
                                                 >
                                              </amexio-d3-chart-line>
                                     </amexio-body>
@@ -41,7 +42,8 @@
                                                 D3-line With Single line
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-d3-chart-line (onChartClick)="onDefaultChartClick($event)"  (onLegendClick)="onDefaultLegendClick($event)"
+                                                <amexio-d3-chart-line 
+                                                (onChartClick)="onDefaultChartClick($event)"
                                                 (onLegendClick)="onDefaultLegendClick($event)"
                                                 [title]="'CNX Resources Corp'"
                                                 [label]="true"
@@ -71,8 +73,10 @@
                                                 D3-line with Yaxis interval
                                             </amexio-header>
                                             <amexio-body>
-                                                <amexio-d3-chart-line (onChartClick)="onChartClick($event)" [label]="true" (onLegendClick)="onUserDefineLegendClick($event)"
-                                                        (onLegendClick)="onLegendClick($event)"
+                                                <amexio-d3-chart-line 
+                                                        (onChartClick)="onLineChartClick($event)" 
+                                                        [label]="true" 
+                                                        (onLegendClick)="onLineLegendClick($event)"
                                                         [title]="'Company Performance'"
                                                         [data] = "lineData"
                                                         [label-color] = "'brown'"

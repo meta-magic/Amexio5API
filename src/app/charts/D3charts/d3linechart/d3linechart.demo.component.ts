@@ -29,6 +29,11 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     this.sourceData = event;
 
   }
+
+  onUserDefineChartClick(event: any) {
+    this.userDataSource = event; 
+  }
+
   onUserDefineLegendClick(event: any) {
 
     this.userDataSource = event;
@@ -38,11 +43,11 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     this.sourceData = event;
   }
 
-  onLegendClick(event: any) {
+  onLineLegendClick(event: any) {
     this.userDataSource3 = event;
   }
 
-  onChartClick(event: any) {
+  onLineChartClick(event: any) {
     this.userDataSource3 = event;
   }
 }
