@@ -36,7 +36,7 @@ export class ServerSidePaginationDemo implements OnInit {
 
   createCustomSourceData() {
     this.customSourceData.title = 'Server Side Pagination Data Grid';
-    this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column.';
+    this.customSourceData.description = 'Data grid With server-side pagination enable, user can bring only require data and show. Based on total-count (attribute mapped) and initial datasize number of pages will be shown.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/serversidepagination/serversidepagination.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/serversidepagination/serversidepagination.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
