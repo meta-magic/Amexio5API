@@ -7,7 +7,7 @@ export class ServerSidePaginationDemo implements OnInit {
   constructor(private _httpClient: HttpClient) {}
 
   ngOnInit(): void {
-   this.getData(0 , 50);
+   this.getData(0 , 10);
   }
 
   getData(startIndex: number, lastIndex: number) {

@@ -22,7 +22,7 @@ export class ServerSidePaginationDemo implements OnInit {
 
   ngOnInit(): void {
     this.createCustomSourceData();
-    this.getData(0 , 50);
+    this.getData(0 , 10);
   }
 
   getData(startIndex: number, lastIndex: number) {
