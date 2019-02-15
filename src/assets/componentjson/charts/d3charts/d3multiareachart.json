@@ -139,6 +139,20 @@
           "version": "0.0.8 Onwards",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "color",
+          "description": "Sets color to  area in D3 Multiarea chart",
+          "version": "0.1.2  Onwards",
+          "type": "any[]",
+          "default": ""
+        },
+        {
+          "name": "yaxis-interval",
+          "description": "Sets number of ticks on Y-axis",
+          "version": "0.1.2 Onwards",
+          "type": "number",
+          "default": ""
         }
       ]
     },
