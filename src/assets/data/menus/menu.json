@@ -185,7 +185,7 @@
                                     "text": "With Context Menu",
                                     "icon": "fa fa-leaf  ",
                                     "link": "contextualmenu/contextual-menu-tab-demo"
-                                } 
+                                }
                             ]
                         },
                         {
@@ -532,6 +532,11 @@
                             "link": "data/simplegrid-demo"
                         },
                         {
+                          "text": "Server Side Pagination",
+                          "icon": "fa fa-database  ",
+                          "link": "data/server-side-pagination-demo"
+                        },
+                        {
                             "text": "Column Sizing",
                             "icon": "fa fa-database  ",
                             "link": "data/custom-col-grid-demo"
@@ -798,11 +803,11 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o  ",
-           
+
             "children": [{
                     "text": "D3 Charts",
                     "icon": "fa fa-openid  ",
-                   
+
                     "children": [{
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart  ",
@@ -822,17 +827,17 @@
                             "text": "Bubble Chart ",
                             "icon": "fa fa-dot-circle-o  ",
                             "link": "D3chart/amexio-d3-chart-bubble"
-                            
+
                         },
                         {
                             "text": "Combo Chart",
-                            
+
                             "icon": "fa fa-area-chart  ",
                             "link": "D3chart/amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",
-                           
+
                             "icon": "fa fa-pie-chart  ",
                             "link": "D3chart/amexio-d3-chart-donut"
                         },
@@ -859,19 +864,19 @@
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart  ",
-                           
+
                             "link": "D3chart/amexio-d3-chart-pie"
                         },
                         {
                             "text": "Scatter Chart",
                             "icon": "fa fa-dot-circle-o  ",
-                           
+
                             "link": "D3chart/amexio-d3-chart-scatter"
                         },
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-bar-chart  ",
-                            
+
                             "link": "D3chart/amexio-d3-chart-timeline"
                         },
                         {

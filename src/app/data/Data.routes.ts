@@ -1,35 +1,36 @@
 import { Routes } from '@angular/router';
 
 import { ItemSelectorDemo } from './itemselector/itemselector.demo';
-import { ListBoxDemo } from "./listbox/listbox.demo";
-import { TimelineDemoComponent } from "./timeline/timeline.demo";
-import { AmexioSpinnerDemo } from "./spinner/spinner.demo";
+import { ListBoxDemo } from './listbox/listbox.demo';
+import { TimelineDemoComponent } from './timeline/timeline.demo';
+import { AmexioSpinnerDemo } from './spinner/spinner.demo';
 //  Tree
 import { SimpleTreeDemo } from './tree/simpletree/simpletree.demo';
-import { CheckboxTreeDemo } from "./tree/checkboxtree/checkboxtree.demo";
-import { CollapseTreeDemo } from "./tree/collapsetree/collapsetree.demo";
-import { ContextMenuTreeDemo } from "./tree/contextmenutree/contextmenutree.demo.component";
-import { FilterTreeDemo } from "./tree/filtertree/filtertree.demo";
-import { HorizontalTreeDemo } from "./tree/horizontaltree/horizontaltree.demo";
-import { TreeWithBadgeDemo } from "./tree/treewithbadge/treewithbadge.demo.component";
-import { DragDropTreeDemo } from "./tree/treedragdrop/treedragdrop.demo";
+import { CheckboxTreeDemo } from './tree/checkboxtree/checkboxtree.demo';
+import { CollapseTreeDemo } from './tree/collapsetree/collapsetree.demo';
+import { ContextMenuTreeDemo } from './tree/contextmenutree/contextmenutree.demo.component';
+import { FilterTreeDemo } from './tree/filtertree/filtertree.demo';
+import { HorizontalTreeDemo } from './tree/horizontaltree/horizontaltree.demo';
+import { TreeWithBadgeDemo } from './tree/treewithbadge/treewithbadge.demo.component';
+import { DragDropTreeDemo } from './tree/treedragdrop/treedragdrop.demo';
 import { TreeWithTemplateDemo } from './tree/treewithtemplate/treewithtemplate.demo';
-// Grid 
+// Grid
 import { SimpleGridDemo } from './simplegrid/simplegrid.demo';
-import { CustomColSizeDemo } from "./customcolsize/customcolsizegrid.demo";
-import { FilterGridDemo } from "./filtergrid/filtergrid.demo";
-import { GlobalFilterDemo } from "./globalfiltergrid/globalfilter.demo";
-import { GridWithTemplateDemo } from "./gridwithtemplate/gridwithtemplate.demo";
+import { CustomColSizeDemo } from './customcolsize/customcolsizegrid.demo';
+import { FilterGridDemo } from './filtergrid/filtergrid.demo';
+import { GlobalFilterDemo } from './globalfiltergrid/globalfilter.demo';
+import { GridWithTemplateDemo } from './gridwithtemplate/gridwithtemplate.demo';
 import { GridWithContextMenuDemo } from './gridwithcontextmenu/gridwithcontextmenu.demo';
 
-import { GridWithScrollDemo } from "./gridwithscroll/gridwithscroll.demo";
-import { GridWithToolBarDemo } from "./gridwithtoolbar/gridwithtoolbar.demo";
-import { GroupByGridDemo } from "./groupby/groupbygrid.demo";
-import { HeaderTemplateDemo } from "./headertemplate/headertemplate.demo";
-import { TreeDataGridDemo } from "./treedatagrid/treedatagrid.demo";
-import { TreeDataTemplateDemo } from "./treedatatemplate/treedatatemplate.demo";
+import { GridWithScrollDemo } from './gridwithscroll/gridwithscroll.demo';
+import { GridWithToolBarDemo } from './gridwithtoolbar/gridwithtoolbar.demo';
+import { GroupByGridDemo } from './groupby/groupbygrid.demo';
+import { HeaderTemplateDemo } from './headertemplate/headertemplate.demo';
+import { TreeDataGridDemo } from './treedatagrid/treedatagrid.demo';
+import { TreeDataTemplateDemo } from './treedatatemplate/treedatatemplate.demo';
+import {ServerSidePaginationDemo} from './serversidepagination/serversidepagination.demo';
 
- 
+
 
 
 export const DATA_ROUTE: Routes = [
@@ -112,6 +113,7 @@ export const DATA_ROUTE: Routes = [
     {
         path: 'grid-context-menu-demo', component: GridWithContextMenuDemo,
     },
-
-    
-]
+    {
+      path: 'server-side-pagination-demo', component: ServerSidePaginationDemo,
+    }
+];

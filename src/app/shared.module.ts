@@ -13,6 +13,7 @@ import { AmexioApiSourceCodeComponent } from "./amexioStructureDemo/apiSourceCod
 import { AmexioApiLiveDemoComponent } from "./amexioStructureDemo/apiLiveDemo/apilivedemo.component";
 import { AmexioWidgetModule } from 'amexio-ng-extensions';
 import {RestCallService} from "./apimetadata/services/restcall.service";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @Component({
@@ -41,9 +42,9 @@ export class PrismComponent implements AfterViewInit {
 }
 
 @NgModule({
-  imports: [CommonModule , AmexioWidgetModule],
-  exports: [PrismComponent,AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
-  declarations: [PrismComponent,AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
+  imports: [CommonModule , AmexioWidgetModule, HttpClientModule],
+  exports: [PrismComponent, AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
+  declarations: [PrismComponent, AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
 
 })
 export class SharedModule {

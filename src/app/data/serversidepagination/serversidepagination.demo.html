@@ -1,0 +1,46 @@
+<amexio-api-structure [custom-com-data]="customSourceData"  [url]="'assets/componentjson/data/grid.json'">
+  <amexio-api-demo>
+    <amexio-row>
+      <amexio-column size="12">
+        <amexio-spinner [show]=showLoader [type]="'fadingcircle'" [vertical-position]="'center'"
+                        [horizontal-position]="'center'" [color]="'red'">
+        </amexio-spinner>
+        <amexio-card [header]="true">
+          <amexio-header>
+            Server Side Pagination Data Grid
+          </amexio-header>
+          <amexio-body>
+            <amexio-datagrid
+              title="Country Data "
+              [data]="countryData"
+              [height]="500"
+              [server-side-paging]="true"
+              [total-data-count]="totalDataCount"
+              (onPageChange)="loadPageData($event)">
+              <amexio-data-table-column
+                [data-index]="'countryName'"
+                [data-type]="'string'"
+                [sort]="true"
+                [text]="'Name'">
+              </amexio-data-table-column>
+              <amexio-data-table-column
+                [sort]="true"
+                [data-index]="'countryCode1'"
+                [data-type]="'string'"
+                [text]="'Country Code'">
+              </amexio-data-table-column>
+              <amexio-data-table-column
+                [sort]="true"
+                [data-index]="'currencyName'"
+                [data-type]="'string'"
+                [text]="'Currency'">
+              </amexio-data-table-column>
+            </amexio-datagrid>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
+  </amexio-api-demo>
+
+</amexio-api-structure>
+
