@@ -45,7 +45,7 @@ export class ServerSidePaginationDemo implements OnInit {
 
 
   loadPageData(pageInfo: any) {
-    this.getData(pageInfo.next.startIndex, (pageInfo.next.endIndex > this.totalDataCount) ? this.totalDataCount : pageInfo.next.endIndex );
+    this.getData(pageInfo.next.startIndex - 1, (pageInfo.next.endIndex > this.totalDataCount) ? this.totalDataCount : pageInfo.next.endIndex );
   }
 }
 
