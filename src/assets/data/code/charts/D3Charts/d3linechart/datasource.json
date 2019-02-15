@@ -227,3 +227,37 @@ Sample Data for Single Line chart:
   ]
 ] 
 
+Sample Data for Yaxis-interval
+[
+  [
+    {"datatype":"number","label":"Day"},
+    {"datatype":"number","label":"Sales"},
+    {"datatype":"number","label":"Profit"}
+  ],
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      10,
+      5
+    ],
+    [
+      2,
+      23,
+      15
+    ],
+    [
+      3,
+      17,
+      9
+    ],
+    [
+      4,
+      18,
+      10
+    ]
+]
+
