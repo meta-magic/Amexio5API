@@ -116,7 +116,7 @@ import { CookieService } from 'ngx-cookie-service';
   `
 })
 export class ThemeComponent implements OnInit {
-  
+
   mdThemeData : any;
   amexioThemeData : any;
   hasThemeInit : boolean = false;
@@ -135,7 +135,7 @@ export class ThemeComponent implements OnInit {
       }, error => {
       }, () => {
         this.mdThemeData = response;
-        
+
       });
 
       this.http.get('assets/data/theme/theme-api-showcase-amexio.json',{responseType: 'json'}).subscribe(data => {
@@ -143,16 +143,16 @@ export class ThemeComponent implements OnInit {
       }, error => {
       }, () => {
         this.amexioThemeData = response;
-        
-      });      
+
+      });
   }
 
-  
+
   addNewTheme(newTheme: any,existingTheme : any) {
     let linkEl = document.createElement('link');
     linkEl.onload = ()=>{
       this.removeExistingTheme(existingTheme);
-    
+
     };
     linkEl.setAttribute('rel', 'stylesheet');
     linkEl.id = 'themeid';
@@ -170,14 +170,18 @@ export class ThemeComponent implements OnInit {
         }
       }
     }
-  }  
-  
+  }
+
   themeChange(theme: any) {
     this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
     let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
     // this.removeExistingTheme(currentTheme);
     this.addNewTheme(this.newThemePath,currentTheme);
-    this.cookieService.set('theme_name_v4', theme.themeCssFile);
+    const themeObj = {
+      id: Math.floor(Math.random() * 9) + 1  ,
+      themeName: theme.themeCssFile
+    };
+    this.cookieService.set('theme-info', JSON.stringify(themeObj));
   }
 
 
