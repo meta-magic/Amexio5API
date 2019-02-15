@@ -507,7 +507,7 @@
         },
         {
             "text": "Data",
-            "badge": "2",
+            "badge": "3",
             "icon": "fa fa-database  ",
 
             "children": [{
@@ -524,7 +524,7 @@
                 {
                     "text": "Grid",
                     "icon": "fa fa-database  ",
-                    "badge": "1",
+                    "badge": "2",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-database  ",
@@ -534,6 +534,7 @@
                         {
                           "text": "Server Side Pagination",
                           "icon": "fa fa-database  ",
+                          "badge": "NEW",
                           "link": "data/server-side-pagination-demo"
                         },
                         {
