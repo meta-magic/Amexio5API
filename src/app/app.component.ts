@@ -62,6 +62,10 @@ export class AppComponent {
         "link": 'http://api.amexio.org',
         "submenus": [
           {
+            "text": "Version 5.5",
+            "link": "../v5.5/index.html"
+          },
+          {
             "text": "Version 5.4",
             "link": "../v5.4/index.html"
           },

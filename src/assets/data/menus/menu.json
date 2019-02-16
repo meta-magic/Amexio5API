@@ -16,13 +16,12 @@
         },
       {
             "text": "Layouts",
-            "badge": "2",
+            "badge": "1",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars  ",
-                    "link": "layout/accordion-demo",
-                    "badge": "U"
+                    "link": "layout/accordion-demo"
                 },
                 {
                     "text": "Border Layout",
@@ -105,7 +104,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "6",
+            "badge": "2",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent  ",
@@ -122,21 +121,16 @@
                 {
                     "text": "Fieldset",
                     "icon": "fa fa-id-card-o  ",
-                    "link": "panes/fieldset-demo",
-                    "badge": "U"
-
+                    "link": "panes/fieldset-demo"
                 },
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars  ",
-                    "link": "panes/panel-demo",
-                    "badge": "U"
-
+                    "link": "panes/panel-demo"
                 },
                 {
                     "text": "Steps",
                     "icon": "fa fa-step-forward  ",
-                    "badge": "U",
                     "children": [{
                             "text": "Step Box",
                             "link": "panes/step-box-demo",
@@ -152,7 +146,6 @@
                 {
                     "text": "Tab",
                     "icon": "fa fa-folder  ",
-                    "badge": "1",
                     "children": [{
                             "text": "Horizontal",
                             "icon": "fa fa-indent  ",
@@ -191,7 +184,6 @@
                         {
                             "text": "Vertical",
                             "icon": "fa fa-outdent  ",
-                            "badge": "1",
                             "children": [{
                                     "text": "Left Aligned",
                                     "link": "panes/vertical-tab-demo",
@@ -205,8 +197,7 @@
                                 {
                                     "text": "Enhanced",
                                     "link": "panes/enhanced-vertical-tab-demo",
-                                    "icon": "fa fa-leaf  ",
-                                    "badge": "New"
+                                    "icon": "fa fa-leaf  "
                                 }
                             ]
                         }
@@ -228,18 +219,15 @@
                 {
                     "text": "Form (HTML)",
                     "icon": "fa fa-window-maximize  ",
-                    "badge": "2",
                     "children": [{
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize  ",
-                            "link": "forms/html-form-demo",
-                            "badge": "New"
+                            "link": "forms/html-form-demo"
                         },
                         {
                             "text": "Reactive Forms",
                             "icon": "fa fa-window-maximize  ",
-                            "link": "forms/html-reactive-form",
-                            "badge": "New"
+                            "link": "forms/html-reactive-form"
                         }
                     ]
                 },
@@ -249,14 +237,12 @@
                     "children": [{
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize  ",
-                            "link": "forms/form-demo",
-                            "badge": "New"
+                            "link": "forms/form-demo"
                         },
                         {
                             "text": "Reactive Forms",
                             "icon": "fa fa-window-maximize  ",
-                            "link": "forms/reactive-form",
-                            "badge": "New"
+                            "link": "forms/reactive-form"
                         }
                     ]
                 }
@@ -265,7 +251,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "21",
+            "badge": "6",
             "children": [
                 {
                     "text": "Badge",
@@ -276,14 +262,12 @@
                 {
                     "text": "Checkbox",
                     "icon": "fa fa-check-square-o  ",
-                    "link": "forms-Input/singlecheckbox-demo",
-                    "badge": "U"
+                    "link": "forms-Input/singlecheckbox-demo"
                 },
                 {
                     "text": "Checkbox Group",
                     "icon": "fa fa-list  ",
-                    "link": "forms-Input/checkboxgroup-demo",
-                    "badge": "U"
+                    "link": "forms-Input/checkboxgroup-demo"
                 },
                 {
                     "text": "Chips",
@@ -298,8 +282,7 @@
                 {
                     "text": "Date & Time Picker",
                     "icon": "fa fa-calendar  ",
-                    "link": "forms-Input/date-picker-demo",
-                    "badge": "U"
+                    "link": "forms-Input/date-picker-demo"
 
                 },
                 {
@@ -331,61 +314,49 @@
                 {
                     "text": "Email Field",
                     "icon": "fa fa-envelope-o  ",
-                    "link": "forms-Input/email-demo",
-                    "badge": "U"
+                    "link": "forms-Input/email-demo"
 
                 },
                 {
                     "text": "File Upload",
                     "icon": "fa fa-file  ",
-                    "link": "forms-Input/fileupload-demo",
-                    "badge": "U"
+                    "link": "forms-Input/fileupload-demo"
                 },
                 {
                     "text": "Facebook Login",
                     "icon": "fa fa-facebook  ",
-                    "link": "forms-Input/facebook-login-demo",
-                    "badge": "New"
+                    "link": "forms-Input/facebook-login-demo"
                 },
                 {
                     "text": "Google Login",
                     "icon": "fa fa-google  ",
-                    "link": "forms-Input/google-login-demo",
-                    "badge": "New"
+                    "link": "forms-Input/google-login-demo"
                 },
                 {
                     "text": "LinkedIn Login",
                     "icon": "fa fa-linkedin-square  ",
-                    "link": "forms-Input/linkedin-login-demo",
-                    "badge": "New"
+                    "link": "forms-Input/linkedin-login-demo"
                 },
                 {
                     "text": "Label",
                     "icon": "fa fa-terminal  ",
-                    "link": "forms-Input/label-demo",
-                    "badge": "U"
-
+                    "link": "forms-Input/label-demo"
                 },
                 {
                     "text": "Number Field",
                     "icon": "fa fa-phone  ",
-                    "link": "forms-Input/number-demo",
-                    "badge": "U"
+                    "link": "forms-Input/number-demo"
 
                 },
                 {
                     "text": "Password Field",
                     "icon": "fa fa-text-width  ",
-                    "link": "forms-Input/password-demo",
-                    "badge": "U"
-
+                    "link": "forms-Input/password-demo"
                 },
                 {
                     "text": "Radio Group",
                     "icon": "fa fa-stop-circle-o  ",
-                    "link": "forms-Input/radiogroup-demo",
-                    "badge": "U"
-
+                    "link": "forms-Input/radiogroup-demo"
                 },
                 {
                     "text": "Rating",
@@ -408,9 +379,7 @@
                 {
                     "text": "Slider",
                     "icon": "fa fa-sliders  ",
-                    "link": "forms-Input/slider-demo",
-                    "badge": "U"
-
+                    "link": "forms-Input/slider-demo"
                 },
                 {
                     "text": "Type Ahead",
@@ -429,38 +398,32 @@
                 {
                     "text": "Text Field",
                     "link": "forms-Input/textinput",
-                    "badge": "U",
                     "icon": "fa fa-file-text-o  "
                 },
                 {
                     "text": "TextArea Field",
                     "icon": "fa fa-text-width  ",
-                    "link": "forms-Input/textarea-demo",
-                    "badge": "U"
-
+                    "link": "forms-Input/textarea-demo"
                 },
                 {
                     "text": "Toggle",
                     "icon": "fa fa-toggle-on  ",
-                    "link": "forms-Input/toggle-demo",
-                    "badge": "U"
-
+                    "link": "forms-Input/toggle-demo"
                 }
             ]
         },
         {
             "text": "Form Actions",
-            "badge": "6",
+            "badge": "2",
             "icon": "fa fa-keyboard-o  ",
             "children": [{
                     "text": "Buttons",
-                    "badge": "4",
+                    "badge": "1",
                     "icon": "fa fa-keyboard-o  ",
                     "children": [{
                             "text": "Button",
                             "icon": "fa fa-building-o  ",
-                            "link": "forms-Action/button-demo",
-                            "badge": "U"
+                            "link": "forms-Action/button-demo"
                         },
                         {
                             "text": "Button Group",
@@ -472,16 +435,12 @@
                         {
                             "text": "Button Dropdown",
                             "icon": "fa fa-building  ",
-                            "link": "forms-Action/buttondropdown-demo",
-                            "badge": "U"
-
+                            "link": "forms-Action/buttondropdown-demo"
                         },
                         {
                             "text": "Floating Button",
                             "icon": "fa fa-circle-o  ",
-                            "link": "forms-Action/floatingbutton-demo",
-                            "badge": "U"
-                        },
+                            "link": "forms-Action/floatingbutton-demo"                        },
                         {
                             "text": "Floating Group",
                             "icon": "fa fa-circle-o  ",
@@ -492,7 +451,6 @@
                 {
                     "text": "Notification",
                     "icon": "fa fa-comments  ",
-                    "badge": "U",
                     "link": "forms-Action/notification-demo"
                 },
                 {
@@ -516,7 +474,6 @@
             "children": [{
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner  ",
-                    "badge": "U",
                     "link": "data/amexio-spinner-demo"
                 },
                 {
@@ -527,7 +484,7 @@
                 {
                     "text": "Grid",
                     "icon": "fa fa-database  ",
-                    "badge": "2",
+                    "badge": "3",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-database  ",
@@ -535,7 +492,7 @@
                             "link": "data/simplegrid-demo"
                         },
                         {
-                          "text": "Server Side Pagination",
+                          "text": "Grid - Lazy Loading",
                           "icon": "fa fa-database  ",
                           "badge": "NEW",
                           "link": "data/server-side-pagination-demo"
@@ -812,9 +769,10 @@
             "children": [{
                     "text": "D3 Charts",
                     "icon": "fa fa-openid  ",
-
+                     "badge":"11",
                     "children": [{
                             "text": "Bar Chart",
+                            "badge":"U",
                             "icon": "fa fa-bar-chart  ",
                             "children": [{
                                     "text": "Bar chart-vertical",
@@ -831,12 +789,13 @@
                         {
                             "text": "Bubble Chart ",
                             "icon": "fa fa-dot-circle-o  ",
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-bubble"
 
                         },
                         {
                             "text": "Combo Chart",
-
+                            "badge":"U",
                             "icon": "fa fa-area-chart  ",
                             "link": "D3chart/amexio-d3-chart-combo"
                         },
@@ -848,50 +807,55 @@
                         },
                         {
                             "text": "Histogram Chart",
+                            "badge":"U",
                             "icon": "fa fa-bar-chart  ",
                             "link": "D3chart/amexio-d3-chart-histogram"
                         },
                         {
                             "text": "Line Chart",
                             "icon": "fa fa-line-chart  ",
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-line"
                         },
                         {
                             "text": "Multi-Area Chart",
                             "icon": "fa fa-area-chart  ",
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-multiarea"
                         },
                         {
                             "text": "MultiSeriesBar Chart",
                             "icon": "fa fa-bar-chart  ",
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-multiseries"
                         },
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart  ",
-
                             "link": "D3chart/amexio-d3-chart-pie"
                         },
                         {
                             "text": "Scatter Chart",
                             "icon": "fa fa-dot-circle-o  ",
-
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-scatter"
                         },
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-bar-chart  ",
-
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-timeline"
                         },
                         {
                             "text": "Stack Bar Chart",
                             "icon": "fa fa-bar-chart  ",
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-bar-stack"
                         },
                         {
                             "text": "Waterfall Chart",
                             "icon": "fa fa-line-chart  ",
+                            "badge":"U",
                             "link": "D3chart/amexio-d3-chart-waterfall"
                         }
                     ]
@@ -990,7 +954,6 @@
         },
         {
             "text": "Maps",
-            "badge": "1",
             "icon": "fa fa-globe  ",
             "children": [{
                     "text": "Geo Chart",
@@ -1005,9 +968,8 @@
                 {
                     "text": "Google Map",
                     "icon": "fa fa-map-marker",
-                    "link": "map/googlemap-demo",
-                    "badge": "New"
-                }
+                    "link": "map/googlemap-demo"
+                                }
             ]
         },
         {
@@ -1030,8 +992,7 @@
                 }, {
                     "text": "Appointment",
                     "icon": "fa fa-calendar  ",
-                    "link": "enterprise/ee-appointment-demo",
-                    "badge": "New"
+                    "link": "enterprise/ee-appointment-demo"
                 }
             ]
         }

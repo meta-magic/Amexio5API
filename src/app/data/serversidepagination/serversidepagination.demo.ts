@@ -35,8 +35,8 @@ export class ServerSidePaginationDemo implements OnInit {
   }
 
   createCustomSourceData() {
-    this.customSourceData.title = 'Server Side Pagination Data Grid';
-    this.customSourceData.description = 'Data grid With server-side pagination enable, user can bring only require data and show. Based on total-count (attribute mapped) and initial datasize number of pages will be shown.';
+    this.customSourceData.title = 'Grid- Lazy Loading';
+    this.customSourceData.description = 'Data grid With lazy loading enabled for large data sets pagination, user can bring only require data and show. Based on total-count (attribute mapped) and initial datasize number of pages will be shown.';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/serversidepagination/serversidepagination.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/serversidepagination/serversidepagination.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';

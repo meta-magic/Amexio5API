@@ -19,7 +19,7 @@ export class FloatingGroupButtonDemo implements OnInit {
 
       this.floatingbuttongroup = [
         {'label':'Facebook', 'icon':'fa fa-facebook','type':'yellow'},
-        {'label':'Twitter', 'icon':'fa fa-facebook','type':'green'},
+        {'label':'Twitter', 'icon':'fa fa-twitter','type':'green'},
         {'label':'Google', 'icon':'fa fa-google-plus','type':'theme-color'}
       ];
   }
