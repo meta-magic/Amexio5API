@@ -1,0 +1,28 @@
+<!-- SERVER SIDE PAGINATION -->
+
+<amexio-datagrid
+                title="Country Data "
+                [data]="countryData"
+                [height]="500"
+                [server-side-paging]="true"
+                [total-data-count]="totalDataCount"
+                (onPageChange)="loadPageData($event)">
+  <amexio-data-table-column
+        [data-index]="'countryName'"
+        [data-type]="'string'"
+        [sort]="true"
+        [text]="'Name'">
+  </amexio-data-table-column>
+  <amexio-data-table-column
+        [sort]="true"
+        [data-index]="'countryCode1'"
+        [data-type]="'string'"
+        [text]="'Country Code'">
+  </amexio-data-table-column>
+  <amexio-data-table-column
+        [sort]="true"
+        [data-index]="'currencyName'"
+        [data-type]="'string'"
+        [text]="'Currency'">
+  </amexio-data-table-column>
+</amexio-datagrid>

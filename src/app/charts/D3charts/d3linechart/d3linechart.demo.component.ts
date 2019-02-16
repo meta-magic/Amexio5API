@@ -10,17 +10,18 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
   userDefineColorData: any;
   sourceData: any;
   userDataSource: any;
+  userDataSource3: any;
   singlelinedata: any;
-
+  lineData: any;
   constructor() {
   }
-
 
   ngOnInit() {
    this.singlelinedata = [[{"datatype":"number","label":"Day"},{"datatype":"number","label":"CNX Resources Corp"}],[0,0],[1,10],[2,23],[3,17],[4,18],[5,9],[6,11],[7,27],[8,33],[9,40],[10,32],[11,35],[12,30],[13,40],[14,42],[15,47],[16,44],[17,48],[18,52],[19,54],[20,42],[21,55],[22,56],[23,57],[24,60],[25,50],[26,52],[27,51],[28,49]]
   
     this.doubleLineData =[[{"datatype":"number","label":"Day"},{"datatype":"number","label":"XYZ"},{"datatype":"number","label":"PQR"}],[0,0,0],[1,10,5],[2,23,15],[3,17,9],[4,18,10],[5,9,5],[6,11,3],[7,27,19],[8,33,25],[9,40,32],[10,32,24],[11,35,27],[12,30,22],[13,40,32],[14,42,34],[15,47,39]]
-  
+   
+    this.lineData = [[{"datatype":"number","label":"Day"},{"datatype":"number","label":"Sales"},{"datatype":"number","label":"Profit"}],[0,0,0],[1,10,5],[2,23,15],[3,17,9],[4,18,10]];
   }
 
   onDefaultLegendClick(event: any) {
@@ -28,12 +29,25 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     this.sourceData = event;
 
   }
+
+  onUserDefineChartClick(event: any) {
+    this.userDataSource = event; 
+  }
+
   onUserDefineLegendClick(event: any) {
 
     this.userDataSource = event;
   }
 
   onDefaultChartClick(event: any) {
-    this.userDataSource = event;
+    this.sourceData = event;
+  }
+
+  onLineLegendClick(event: any) {
+    this.userDataSource3 = event;
+  }
+
+  onLineChartClick(event: any) {
+    this.userDataSource3 = event;
   }
 }

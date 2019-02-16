@@ -2,6 +2,8 @@ import { Component, ViewChild, Inject } from '@angular/core';
 import { RouteConfigLoadEnd, RouteConfigLoadStart, Router } from "@angular/router";
 import { AmexioNavBarComponent } from "amexio-ng-extensions";
 import { DOCUMENT } from '@angular/platform-browser';
+import {CookieService} from "ngx-cookie-service";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
@@ -17,9 +19,15 @@ export class AppComponent {
   amexiotechmenus: any[];
   isRouteLoading: boolean = false;
 
+  mdThemeData: any[] = [];
+
+  newThemePath = '';
+
   @ViewChild(AmexioNavBarComponent) amexioNav;
 
-  constructor(public router: Router, @Inject(DOCUMENT) private document: any) {
+  constructor(public router: Router, @Inject(DOCUMENT) private document: any,
+              private _httpClient: HttpClient,
+              private _cookieService: CookieService) {
     this.topMenuData = JSON.parse(`[
     {
       "label" : "Features",
@@ -213,6 +221,8 @@ export class AppComponent {
   }
 
   ngOnInit() {
+    debugger;
+    this.changeTheme();
     this.router.events.subscribe(event => {
       if (event instanceof RouteConfigLoadStart) {
         this.isRouteLoading = true;
@@ -220,6 +230,65 @@ export class AppComponent {
         this.isRouteLoading = false;
       }
     });
+  }
+
+
+  changeTheme() {
+    this._httpClient.get('assets/data/theme/material-themes.json').subscribe((res: any) => {
+      this.mdThemeData = res.bestThemes;
+      },
+      (error: any)=>{
+      console.log(error)},
+      ()=>{
+      let themeRef: any;
+      let themeId = 1;
+        if (this._cookieService.check('theme-info')) {
+          themeId = JSON.parse(this._cookieService.get('theme-info')).id + 1;
+          themeId = this.mdThemeData.length - 1 < themeId ? 0 : themeId;
+          themeRef = this.mdThemeData[themeId];
+        } else {
+          themeId = 0;
+          themeRef = this.mdThemeData[0];
+        }
+        this._cookieService.set('theme-info', JSON.stringify({id: themeId, themeName: themeRef.themeCssFile}));
+        this.themeChange(themeRef);
+    });
+  }
+
+  addNewTheme(newTheme: any,existingTheme : any) {
+    let linkEl = document.createElement('link');
+    linkEl.onload = ()=>{
+      this.removeExistingTheme(existingTheme);
+
+    };
+    linkEl.setAttribute('rel', 'stylesheet');
+    linkEl.id = 'themeid';
+    linkEl.href = newTheme;
+    document.head.appendChild(linkEl);
+  }
+
+  //removed old theme css
+  removeExistingTheme(keyList: any) {
+    if (keyList != null && keyList && keyList.length != 0) {
+      for (let i=0; i<keyList.length; i++) {
+        let key = keyList[i];
+        if (key.id == 'themeid') {
+          document.head.removeChild(key);
+        }
+      }
+    }
+  }
+
+  themeChange(theme: any) {
+    this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
+    let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
+    // this.removeExistingTheme(currentTheme);
+    this.addNewTheme(this.newThemePath,currentTheme);
+    const themeObj = {
+      id: Math.floor(Math.random() * 9) + 1  ,
+      themeName: theme.themeCssFile
+    };
+   // this._cookieService.set('theme-info', JSON.stringify(themeObj));
   }
 
   externalLink(event: any) {

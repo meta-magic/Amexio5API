@@ -2668,10 +2668,14 @@ input:checked + .toggle-slider:before {
   left: 50%; }
 
 .floatingbutton-circle {
-  border-radius: 50px;
-  width: 60px;
-  height: 60px;
-  line-height: 60px; }
+  border-radius: 50%;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 5px 2px;
+  text-align: center;
+  width: 30px;
+  height: 30px; }
 
 .floatingbutton:hover {
   box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2) !important;
@@ -2693,7 +2697,14 @@ input:checked + .toggle-slider:before {
   line-height: 30px; }
 
 .floatingbutton-square {
-  padding: .5rem 1rem; }
+  border-radius: 0px !important;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 30px;
+  margin: 5px 2px;
+  text-align: center;
+  width: 30px;
+  height: 30px; }
 
 .floatingbtntooltip {
   position: relative;
@@ -4423,6 +4434,9 @@ header .billboard .content-button {
 .listbox-height::-webkit-scrollbar {
   width: 6px; }
 
+.list-box-items {
+  background-color: #ffc0b8; }
+
 .listbox .list {
   margin: 0;
   padding: 0;
@@ -5358,11 +5372,19 @@ header .billboard .content-button {
   color: red; }
 
 /** accordion - Structure CSS **/
+amexio-accordion {
+  display: flex;
+  flex-direction: column; }
+
+amexio-accordion > amexio-accordion-tab {
+  padding-bottom: 1px; }
+
 .accordion {
   cursor: pointer;
   padding: 10px;
   width: 100%;
-  border-color: #ced4da;
+  border: none;
+  border-radius: 0px;
   text-align: left;
   outline: none;
   font-size: 17px;
@@ -6103,186 +6125,6 @@ fieldset {
   color: #2b452b; }
 
 /** window - Structure CSS **/
-/*
-
-.root-window{
-  flex-direction: column;
-  position: fixed; !* Stay in place *!
-  z-index: 3; !* Sit on top *!
-  //background-color: $modalBGColor; !* Black w/ opacity *!
-  width: 100%;
-  height: 100%;
-  //left: 0;
-  //top: 0;
-}
-.modal-window-lg{
-  flex-direction: column;
-  // position: fixed; !* Stay in place *!
-  // z-index: 1; !* Sit on top *!
-  //padding-top: 100px; !* Location of the box *!
-  // width: 100%;
-
-  height: 100%;
-
-  //overflow: auto; !* Enable scroll if needed *!
-}
-
-
-.modal-window-content{
-  position: absolute;
-  // background-color: #fefefe;
-  margin: auto;
-  padding: 0px;
-  // border-radius: .3rem;
-  // border: 1px solid #888;
-  width: 80%;
-  //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  border: 0px;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-
-}
-
-.modal-window-max{
-
-}
-
-.modal-window-min{
-  // padding-top: 70px;
-}
-
-.modal-window-content > * {
-  padding: 10px;
-  min-height: auto!important;
-}
-
-
-.modal-window-content-max{
-  width: 100%;
-  height: 100%;
-  top: 0% !important;
-  left: 0% !important;
-}
-
-.window-material-design-header{
-  display: flex;
-  border-bottom: $modalBorderSize solid $modalBorderColor;
-  font-weight: 300;
-  //border-radius: .3rem;
-  font-size: 20px;
-  text-transform: capitalize;
-}
-
-.modal-window-header{
-  display: flex;
-  //background: $cardHeaderBGColor;
-  //border-bottom: $modalBorderSize solid $modalBorderColor;
-  // font-size: 20px;
-  // color: $cardHeaderColor;
-  font-weight: 300;
-  text-transform: capitalize;
-}
-
-.modal-window-middle{
-  //font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 80% ;
-  overflow-y: auto;
-  overflow-x: hidden;
-  background-color: white;
-}
-
-.modal-window-middle::-webkit-scrollbar-track
-{
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  //  background-color: #F5F5F5;
-}
-
-.modal-window-middle::-webkit-scrollbar
-{
-  width: 6px;
-  //  background-color: #F5F5F5;
-}
-
-.modal-window-middle::-webkit-scrollbar-thumb
-{
-  // background-color: $themeBGColor;
-}
-
-
-.window-material-design-footer{
-
-  display: flex;
-  border-top: 1px solid #eceeef;
-
-  padding-right: 16px;
-  background-color: white;
-  //border-radius: 0 0 .3rem .3rem;
-}
-
-.modal-window-footer{
-  display: flex;
-  // background-color: $cardFooterBGColor;
-  // color: $cardFooterColor;
-  border-top: $modalBorderSize solid $modalBorderColor;
-}
-
-.modal-window-table{
-  display: table;
-  width: 100%;
-}
-
-.modal-window-table .tablerow{
-  display: table-row;
-}
-.window-material-design-header .modal-window-table .tablerow .tablecol{
-  display: table-cell;
-  vertical-align: middle;
-  padding-bottom: 15px;
-
-}
-
-.modal-window-table .tablerow .tablecol{
-  display: table-cell;
-  vertical-align: baseline;
-
-}
-
-.modal-window-footer-max {
-  bottom: 0px;
-  position: absolute;
-  width: 99%;
-}
-.footer-right-align {
-  padding-right: 7px;
-}
-.window-left{
-  left:20px;
-
-}
-
-.window-right{
-  right:7px;
-}
-
-.window-top{
-  top:10px;
-}
-
-.window-center{
-  top:20%;
-  left: 10%;
-}
-
-.window-bottom{
-  bottom:10%;
-}
-
-
-
-*/
 /* WINDOW */
 .amexio-root-window {
   background: rgba(128, 127, 127, 0.6);
@@ -6347,6 +6189,16 @@ fieldset {
 .amexio-root-window-content .window-middle::-webkit-scrollbar {
   width: 6px;
   height: 6px; }
+
+amexio-window-header {
+  width: 100%;
+  display: inline-flex; }
+
+amexio-window-header > amexio-toolbar {
+  flex-grow: 1; }
+
+amexio-window-header > amexio-toolbar > .toolbar {
+  padding: 0px; }
 
 /****************************************************************************
     Component Name : Dialogue

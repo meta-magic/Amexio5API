@@ -185,7 +185,7 @@
                                     "text": "With Context Menu",
                                     "icon": "fa fa-leaf  ",
                                     "link": "contextualmenu/contextual-menu-tab-demo"
-                                } 
+                                }
                             ]
                         },
                         {
@@ -265,7 +265,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "19",
+            "badge": "21",
             "children": [
                 {
                     "text": "Badge",
@@ -390,7 +390,8 @@
                 {
                     "text": "Rating",
                     "icon": "fa fa-star-half-empty  ",
-                    "link": "forms-Input/rating-demo"
+                    "link": "forms-Input/rating-demo",
+                    "badge": "U"
                 },
                 {
                     "text": "Recaptcha",
@@ -400,7 +401,9 @@
                 {
                     "text": "Search Box",
                     "icon": "fa fa-search  ",
-                    "link": "forms-Input/searchbox-demo"
+                    "link": "forms-Input/searchbox-demo",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Slider",
@@ -507,7 +510,7 @@
         },
         {
             "text": "Data",
-            "badge": "2",
+            "badge": "4",
             "icon": "fa fa-database  ",
 
             "children": [{
@@ -524,12 +527,18 @@
                 {
                     "text": "Grid",
                     "icon": "fa fa-database  ",
-                    "badge": "1",
+                    "badge": "2",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-database  ",
                             "badge": "U",
                             "link": "data/simplegrid-demo"
+                        },
+                        {
+                          "text": "Server Side Pagination",
+                          "icon": "fa fa-database  ",
+                          "badge": "NEW",
+                          "link": "data/server-side-pagination-demo"
                         },
                         {
                             "text": "Column Sizing",
@@ -646,7 +655,8 @@
                 {
                     "text": "ListBox",
                     "icon": "fa fa-list  ",
-                    "link": "data/listbox-demo"
+                    "link": "data/listbox-demo",
+                    "badge": "U"
                 }
             ]
         },
@@ -798,11 +808,11 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o  ",
-           
+
             "children": [{
                     "text": "D3 Charts",
                     "icon": "fa fa-openid  ",
-                   
+
                     "children": [{
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart  ",
@@ -822,17 +832,17 @@
                             "text": "Bubble Chart ",
                             "icon": "fa fa-dot-circle-o  ",
                             "link": "D3chart/amexio-d3-chart-bubble"
-                            
+
                         },
                         {
                             "text": "Combo Chart",
-                            
+
                             "icon": "fa fa-area-chart  ",
                             "link": "D3chart/amexio-d3-chart-combo"
                         },
                         {
                             "text": "Donut Chart",
-                           
+
                             "icon": "fa fa-pie-chart  ",
                             "link": "D3chart/amexio-d3-chart-donut"
                         },
@@ -859,19 +869,19 @@
                         {
                             "text": "Pie Chart",
                             "icon": "fa fa-pie-chart  ",
-                           
+
                             "link": "D3chart/amexio-d3-chart-pie"
                         },
                         {
                             "text": "Scatter Chart",
                             "icon": "fa fa-dot-circle-o  ",
-                           
+
                             "link": "D3chart/amexio-d3-chart-scatter"
                         },
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-bar-chart  ",
-                            
+
                             "link": "D3chart/amexio-d3-chart-timeline"
                         },
                         {

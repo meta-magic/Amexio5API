@@ -1,16 +1,27 @@
-<!--  D3 Chart line chart:  Double line-->
+<!--  D3 Chart line chart:  Multiple line-->
 <amexio-d3-chart-line   (onLegendClick)="onUserDefineLegendClick($event)" 
                         (onChartClick)="onUserDefineLegendClick($event)"
                         [title]="'Popularity Of XYZ & PQR'" 
                         [data]="doubleLineData"
                         [label]="true"
-                        [label-color]="'brown'">
+                        >
 </amexio-d3-chart-line>
 
 <!-- D3-chart line chart: single line-->
-<amexio-d3-chart-line   (onLegendClick)="onDefaultLegendClick($event)" 
-                        (onChartClick)="onDefaultLegendClick($event)" 
-                        [title]="'CNX Resources Corp'"
-                        [data]="singlelinedata"
-                        [label]="true">
+<amexio-d3-chart-line (onChartClick)="onDefaultChartClick($event)"
+                      (onLegendClick)="onDefaultLegendClick($event)"
+                      [title]="'CNX Resources Corp'"
+                      [label]="true"
+                      [data] = "singlelinedata">
 </amexio-d3-chart-line>
+
+<!-- D3-chart line chart: Yaxis-interval-->
+<amexio-d3-chart-line (onChartClick)="onLineChartClick($event)" 
+                      [label]="true" 
+                      (onLegendClick)="onLineLegendClick($event)"
+                      [title]="'Company Performance'"
+                      [data] = "lineData"
+                      [label-color] = "'brown'"
+                      [yaxis-interval] = "5"
+                      >
+                      </amexio-d3-chart-line>

@@ -72,8 +72,8 @@
         },
         {
           "name": "color",
-          "description": "Sets color to D3  line chart",
-          "version": "0.0.2  Onwards",
+          "description": "Sets color to  lines in D3 line chart",
+          "version": "0.1.2  Onwards",
           "type": "any[]",
           "default": ""
         },

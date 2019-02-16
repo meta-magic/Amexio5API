@@ -1,0 +1,28 @@
+
+export class ServerSidePaginationDemo implements OnInit {
+
+  countryData: any[] = [];
+  totalDataCount = 239;
+
+  constructor(private _httpClient: HttpClient) {}
+
+  ngOnInit(): void {
+   this.getData(0 , 10);
+  }
+
+  getData(startIndex: number, lastIndex: number) {
+      this._httpClient.get('https://restapi.amexio.org:8991/rest-sample-app/api/region/country/' + startIndex + '/' + lastIndex).subscribe(
+        (res: any) => {
+          this.countryData = res.response.data;
+        });
+  }
+
+  loadPageData(pageInfo: any) {
+      this.getData(pageInfo.next.startIndex, (pageInfo.next.endIndex > this.totalDataCount) ? this.totalDataCount : pageInfo.next.endIndex );
+
+      // pageInfo is object having three key.
+      // 1. pageNumber : active page number
+      // 2. current : current state of pagination.
+      // 3. next: next state of pagination.
+  }
+}
