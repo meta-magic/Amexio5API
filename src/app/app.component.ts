@@ -225,7 +225,6 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    debugger;
     this.changeTheme();
     this.router.events.subscribe(event => {
       if (event instanceof RouteConfigLoadStart) {
