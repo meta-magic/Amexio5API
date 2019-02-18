@@ -630,39 +630,6 @@
   ],
   "bestThemes": [
     {
-      "themeName": "Army Olive",
-      "themeCssFile": "at-md-army-olive",
-      "rgb": 4936480,
-      "hue": 69,
-      "version": 4,
-      "style": "Material Design",
-      "navBarBGColor": "#4b5320",
-      "navBarFontColor": "#f8f9f0",
-      "link": "AT-MD-Army-Olive.jpg"
-    },
-    {
-      "themeName": "Ash Stone Black",
-      "themeCssFile": "at-md-ash-stone-black",
-      "rgb": 5524554,
-      "hue": 12,
-      "version": 4,
-      "style": "Material Design",
-      "navBarBGColor": "#544c4a",
-      "navBarFontColor": "#f5f4f4",
-      "link": "AT-MD-Ash-Stone-Black.jpg"
-    },
-    {
-      "themeName": "Black",
-      "themeCssFile": "at-md-black",
-      "rgb": 0,
-      "hue": 0,
-      "version": 4,
-      "style": "Material Design",
-      "navBarBGColor": "#000000",
-      "navBarFontColor": "#f5f5f5",
-      "link": "AT-MD-Black.jpg"
-    },
-    {
       "themeName": "Blue",
       "themeCssFile": "at-md-blue",
       "rgb": 1402304,
@@ -673,29 +640,18 @@
       "navBarFontColor": "#f1f7fd",
       "link": "AT-MD-Blue.jpg"
     },
-    {
-      "themeName": "Blue Grey",
-      "themeCssFile": "at-md-blue-grey",
-      "rgb": 1390406,
-      "hue": 198,
+     {
+      "themeName": "Cerise Magenta",
+      "themeCssFile": "at-md-cerise-magenta",
+      "rgb": 14561635,
+      "hue": 343,
       "version": 4,
       "style": "Material Design",
-      "navBarBGColor": "#153746",
-      "navBarFontColor": "#f3f9fb",
-      "link": "AT-MD-Blue-Grey.jpg"
+      "navBarBGColor": "#de3163",
+      "navBarFontColor": "#fefbfc",
+      "link": "AT-MD-Cerise-Magenta.jpg"
     },
-    {
-      "themeName": "Bruntor Tangerine",
-      "themeCssFile": "at-md-bruntor-tangerine",
-      "rgb": 9846784,
-      "hue": 26,
-      "version": 4,
-      "style": "Material Design",
-      "navBarBGColor": "#964000",
-      "navBarFontColor": "#fff3eb",
-      "link": "AT-MD-Bruntor-Tangerine.jpg"
-    },
-    {
+     {
       "themeName": "Chocolate Russet",
       "themeCssFile": "at-md-chocolate-russet",
       "rgb": 8341019,
@@ -706,7 +662,18 @@
       "navBarFontColor": "#fbf4ee",
       "link": "AT-MD-Chocolate-Russet.jpg"
     },
-    {
+   {
+      "themeName": "Darkgreen Darkolivegreen",
+      "themeCssFile": "at-md-darkgreen-darkolivegreen",
+      "rgb": 25600,
+      "hue": 120,
+      "version": 4.1,
+      "style": "Material Design",
+      "navBarBGColor": "#006400",
+      "navBarFontColor": "#ebffeb",
+      "link": "AT-MD-Darkgreen-Darkolivegreen.jpg"
+    },
+      {
       "themeName": "Darkmagenta Darkorchid",
       "themeCssFile": "at-md-darkmagenta-darkorchid",
       "rgb": 9109643,
@@ -718,59 +685,93 @@
       "link": "AT-MD-Darkmagenta-Darkorchid.jpg"
     },
     {
-      "themeName": "Darkslateblue Indigo",
-      "themeCssFile": "at-md-darkslateblue-indigo",
-      "rgb": 4734347,
-      "hue": 248,
+      "themeName": "Firebrick Crimson",
+      "themeCssFile": "at-md-firebrick-crimson",
+      "rgb": 11674146,
+      "hue": 0,
       "version": 4.1,
       "style": "Material Design",
-      "navBarBGColor": "#483d8b",
-      "navBarFontColor": "#f8f8fc",
-      "link": "AT-MD-Darkslateblue-Indigo.jpg"
+      "navBarBGColor": "#b22222",
+      "navBarFontColor": "#fceeee",
+      "link": "AT-MD-Firebrick-Crimson.jpg"
     },
-    {
-      "themeName": "Darkslategray Dimgray",
-      "themeCssFile": "at-md-darkslategray-dimgray",
-      "rgb": 3100495,
-      "hue": 180,
-      "version": 4.1,
-      "style": "Material Design",
-      "navBarBGColor": "#2f4f4f",
-      "navBarFontColor": "#f2f7f7",
-      "link": "AT-MD-Darkslategray-Dimgray.jpg"
-    },
-    {
-      "themeName": "Mahogany Barny Red",
-      "themeCssFile": "at-md-mahogany-barny-red",
-      "rgb": 4328713,
-      "hue": 4,
+     {
+      "themeName": "Gold Amber",
+      "themeCssFile": "at-md-gold-amber",
+      "rgb": 16752640,
+      "hue": 38,
       "version": 4,
       "style": "Material Design",
-      "navBarBGColor": "#420d09",
-      "navBarFontColor": "#fdeeed",
-      "link": "AT-MD-Mahogany-Barny-Red.jpg"
+      "navBarBGColor": "#ffa000",
+      "navBarFontColor": "#241700",
+      "link": "AT-MD-Gold-Amber.jpg"
     },
-    {
-      "themeName": "Navy Royalblue",
-      "themeCssFile": "at-md-navy-royalblue",
-      "rgb": 128,
+   {
+      "themeName": "Grape Violet",
+      "themeCssFile": "at-md-grape-violet",
+      "rgb": 7286184,
+      "hue": 272,
+      "version": 4,
+      "style": "Material Design",
+      "navBarBGColor": "#6f2da8",
+      "navBarFontColor": "#faf7fd",
+      "link": "AT-MD-Grape-Violet.jpg"
+    },
+   {
+      "themeName": "Mediumblue Deepskyblue",
+      "themeCssFile": "at-md-mediumblue-deepskyblue",
+      "rgb": 205,
       "hue": 240,
       "version": 4.1,
       "style": "Material Design",
-      "navBarBGColor": "#000080",
+      "navBarBGColor": "#0000cd",
       "navBarFontColor": "#f5f5ff",
-      "link": "AT-MD-Navy-Royalblue.jpg"
+      "link": "AT-MD-Mediumblue-Deepskyblue.jpg"
     },
     {
-      "themeName": "Yale Azure",
-      "themeCssFile": "at-md-yale-azure",
-      "rgb": 937106,
-      "hue": 212,
-      "version": 4,
+      "themeName": "Germany",
+      "themeCssFile": "at-md-z-flag-germany",
+      "rgb": 14685739,
+      "hue": 354,
+      "version": 4.1,
       "style": "Material Design",
-      "navBarBGColor": "#0e4c92",
-      "navBarFontColor": "#f1f7fe",
-      "link": "AT-MD-Yale-Azure.jpg"
+      "navBarBGColor": "#e0162b",
+      "navBarFontColor": "#fffafb",
+      "link": "AT-MD-Z-Flag-Germany.jpg"
+    },
+     {
+      "themeName": "India",
+      "themeCssFile": "at-md-z-flag-india",
+      "rgb": 16744448,
+      "hue": 30,
+      "version": 4.1,
+      "style": "Material Design",
+      "navBarBGColor": "#ff8000",
+      "navBarFontColor": "#241200",
+      "link": "AT-MD-Z-Flag-India.jpg"
+    },
+      {
+      "themeName": "USA",
+      "themeCssFile": "at-md-z-flag-usa",
+      "rgb": 14685739,
+      "hue": 354,
+      "version": 4.1,
+      "style": "Material Design",
+      "navBarBGColor": "#e0162b",
+      "navBarFontColor": "#fffafb",
+      "link": "AT-MD-Z-Flag-USA.jpg"
+    },
+    {
+      "themeName": "Japan",
+      "themeCssFile": "at-md-z-flag-japan",
+      "rgb": 16777215,
+      "hue": 0,
+      "version": 4.1,
+      "style": "Material Design",
+      "navBarBGColor": "#ffffff",
+      "navBarFontColor": "#121212",
+      "link": "AT-MD-Z-Flag-Japan.jpg"
     }
+   
   ]
 }
