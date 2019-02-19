@@ -1,5 +1,4 @@
-
-<amexio-api-structure  [url]="'assets/componentjson/forminputs/chip.json'">
+<amexio-api-structure [url]="'assets/componentjson/forminputs/chip.json'">
   <amexio-api-demo>
     <amexio-row>
 
@@ -9,8 +8,7 @@
             Chips with Data Input
           </amexio-header>
           <amexio-body>
-            <amexio-chips [data]="sampledatachips" (selectedchipsData)="onChipsLabelClick($event)"
-                          (onCloseClick)="onCloseClick($event)"></amexio-chips>
+            <amexio-chips [data]="sampledatachips" (selectedchipsData)="onChipDataLabelClick($event)" (onCloseClick)="onChipDataCloseClick($event)"></amexio-chips>
             <pre><code>{{emitdatachips | json}}</code></pre>
           </amexio-body>
         </amexio-card>
@@ -19,12 +17,18 @@
             Chip with multiple Inputs
           </amexio-header>
           <amexio-body>
-            <amexio-chips *ngFor="let item of sampledatachip">
-              <amexio-chip [icon]="item.icon" [label]="item.label" [color]="item.color" [badge]="item.badge"
-                           [closable]="item.closable" (labelClick)="onChipLabelClick($event)" (closeClick)="onCloseClick($event)">
+            <amexio-chips (selectedchipsData)="onChipsLabelClick($event)" (onCloseClick)="onCloseClick($event)">
+              <amexio-chip [icon]="'fa fa-linkedin-square'" [label]="'Linkedin'" [color]="'red'" [badge]="4" [closable]="true">
               </amexio-chip>
+
+              <amexio-chip [icon]="'fa fa-internet-explorer'" [label]="'Internet-Explorer'" [color]="'blue'" [badge]="2" [closable]="false">
+              </amexio-chip>
+
+              <amexio-chip [icon]="'fa fa-github'" [label]="'Github'" [color]="'green'" [badge]="3" [closable]="true">
+              </amexio-chip>
+
             </amexio-chips>
-            <pre><code>{{emitdatachip | json}}</code></pre>
+            <pre><code>{{multipleemitchips | json}}</code></pre>
           </amexio-body>
         </amexio-card>
       </amexio-column>

@@ -26,51 +26,20 @@ export class ChipsDemo {
         "closable": true
       }
       ]
-      this.sampledatachip = [{
-        icon: 'fa fa-linkedin-square',
-        label: 'Linkedin',
-        color: 'red',
-        badge: 4,
-        closable: true
-      },
-      {
-        icon: 'fa fa-internet-explorer',
-        label: "Internet-Explorer",
-        color:'blue',
-        badge: 5,
-        closable: false
-      }, {
-        icon: 'fa fa-github',
-        label: "Github",
-        color: 'green',
-        badge: 6,
-        closable: true
-      }, {
-        icon: 'fa fa-twitter',
-        label: "Twitter",
-        color: 'yellow',
-        badge: 7,
-        closable: true
-      }, {
-        icon: 'fa fa-reddit',
-        label: "Reddit",
-        color: '',
-        badge: 8,
-        closable: true
-      }
-      ]
     }
 
-
-
-    onLabelClick(event: any){
+   onChipDataLabelClick(event: any){
       this.emitdatachips  = event;
     }
-    onChipLabelClick(event: any){
+   
+    onChipDataCloseClick(event: any){
       this.emitdatachip = event;
     }
+    onChipsLabelClick(event: any){
+      this.multipleemitchips  = event;
+    }
     onCloseClick(event: any){
-      this.emitdatachips = event;
+      this.multipleemitchip = event;
     }
 
 }

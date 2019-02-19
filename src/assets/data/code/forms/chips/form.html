@@ -1,20 +1,33 @@
 <!-- Chips Component with Json Data  -->
-
-<amexio-chips [data] = "sampledatachips" 
-            (onLabelClick)="onLabelClick($event)" 
-            (onCloseClick)="onCloseClick($event)">
+<amexio-chips [data]="sampledatachips"
+             (selectedchipsData)="onChipDataLabelClick($event)"
+             (onCloseClick)="onChipDataCloseClick($event)">
 </amexio-chips>
-<pre><code>{{emitdata | json}}</code></pre>
+<pre><code>{{emitdatachips | json}}</code></pre>
 
 <!-- Chips Component with multiple Inputs -->
 
-<amexio-chips *ngFor="let item of sampledatachip">
-    <amexio-chip 
-            [icon]="item.icon" [label]= "item.label"
-            [color]= "item.color" [badge]= "item.badge" 
-            [closable]= "item.closable" 
-            (labelClick)="onChipLabelClick($event)" 
-            (closeClick)="onCloseClick($event)">
+<amexio-chips (selectedchipsData)="onChipsLabelClick($event)"
+              (onCloseClick)="onCloseClick($event)">
+    <amexio-chip [icon]="'fa fa-linkedin-square'"
+                 [label]="'Linkedin'"
+                 [color]="'red'"
+                 [badge]="4" 
+                 [closable]="true">
+    </amexio-chip>
+
+    <amexio-chip [icon]="'fa fa-internet-explorer'" 
+                 [label]="'Internet-Explorer'"
+                 [color]="'blue'"
+                 [badge]="2"
+                 [closable]="false">
+    </amexio-chip>
+
+    <amexio-chip [icon]="'fa fa-github'" 
+                 [label]="'Github'"
+                 [color]="'green'"
+                 [badge]="3" 
+                 [closable]="true">
     </amexio-chip>
 </amexio-chips>
-<pre><code>{{emitdatachip | json}}</code></pre>
+  <pre><code>{{multipleemitchips | json}}</code></pre>

@@ -17,6 +17,8 @@ export class ChipsDemo {
     sampledatachip:any;
     emitdatachips: any;
     emitdatachip: any;
+    multipleemitchips:any;
+    multipleemitchip:any
     constructor() {
       this.sampledatachips = [{
         icon: 'fa fa-home',
@@ -85,15 +87,18 @@ export class ChipsDemo {
       }
       ]
     }
-    onChipsLabelClick(event: any){
+    onChipDataLabelClick(event: any){
       this.emitdatachips  = event;
     }
-    onChipLabelClick(event: any){
+   
+    onChipDataCloseClick(event: any){
       this.emitdatachip = event;
     }
-
+    onChipsLabelClick(event: any){
+      this.multipleemitchips  = event;
+    }
     onCloseClick(event: any){
-      this.emitdatachip = event;
+      this.multipleemitchip = event;
     }
 
     //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
