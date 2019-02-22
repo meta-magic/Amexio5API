@@ -1,16 +1,20 @@
 <amexio-api-structure [url]="'assets/componentjson/arc/arc.json'">
+    <amexio-api-reference>
+        <amexio-box border-color="brown" border="left" padding="true" background-color="brown">
+            <amexio-label>
+                Make sure when you do PRODUCTION build, you have disabled AOT in "angular.json". Latest CLI will not inject compiler class if AOT is enabled, due to which Runtime Component will fail to load a component.
+            </amexio-label>
+        </amexio-box>
+    </amexio-api-reference>
     <amexio-api-demo>
         <amexio-card header="true">
             <amexio-header> Amexio Run Time</amexio-header>
             <amexio-body>
-
                 <ng-container *ngIf="htmltemplate">
-                    <amexio-runtime [html-template]="htmltemplate" [ts-class]="tscode" (onInit)="onARCInit($event)"></amexio-runtime>
+                    <amexio-runtime [html-template]="htmltemplate" [ts-class]="tscode" (onInit)="onARCInit($event)">
+                    </amexio-runtime>
                 </ng-container>
-                
-
             </amexio-body>
         </amexio-card>
-
     </amexio-api-demo>
 </amexio-api-structure>

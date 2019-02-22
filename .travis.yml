@@ -28,7 +28,7 @@ script:
   - npm i https://github.com/meta-magic/amexio-ios/blob/v5.6/amexio-ng-extensions.tgz?raw=true
   - rm -rf src/assets/themes/*
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
-  - ng build 
+  - ng build --prod
 after_success: 
   - codecov
   - git add src/assets/themes
