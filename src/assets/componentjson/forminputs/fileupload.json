@@ -103,20 +103,38 @@
             "hidden": false
           },
           {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false
+          },
+          {
             "dataindex": "description",
             "text": "Description",
-            "width": 60,
+            "width": 70,
             "hidden": false
           }
         ],
         "gridData": [
            {
         "name": "onRemove",
+        "version":"",
         "description": "On remove click event"
       },
       {
         "name": "onFileUpload",
+        "version":"",
         "description": "fires on choosing file"
+      },
+      {
+        "name": "success",
+        "version":"5.6.1 onwards",
+        "description": "fires on successfully file upload"
+      },
+      {
+        "name": "error",
+        "version":"5.6.1 onwards",
+        "description": "fires on error during file upload"
       }
         ]
       }
