@@ -10,10 +10,8 @@
         <amexio-card header="true">
             <amexio-header> Amexio Run Time</amexio-header>
             <amexio-body>
-                <ng-container *ngIf="htmltemplate">
                     <amexio-runtime [html-template]="htmltemplate" [ts-class]="tscode" (onInit)="onARCInit($event)">
                     </amexio-runtime>
-                </ng-container>
             </amexio-body>
         </amexio-card>
     </amexio-api-demo>
