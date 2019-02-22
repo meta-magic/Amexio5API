@@ -23,7 +23,8 @@
                                [value-field]="'countryCode1'"
                                [enable-sort]="true"
                                [sort]="'asc'"
-              >
+              ><amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
+
               </amexio-dropdown>
             </amexio-column>
           </amexio-row>
@@ -43,6 +44,8 @@
       </amexio-card>
     </amexio-column>
   </amexio-row>
+
+
   <amexio-row>
     <amexio-column size="6">
       <amexio-card header="true">
@@ -78,6 +81,52 @@
         <amexio-body>
         <ng-container *ngIf="personName">
           {{personName}}
+        </ng-container>
+        </amexio-body>
+      </amexio-card>
+    </amexio-column>
+  </amexio-row>
+
+
+  <amexio-row>
+    <amexio-column size="6">
+      <amexio-card header="true">
+        <amexio-header>
+           Dropdown Component with ng-content
+        </amexio-header>
+        <amexio-body>
+          <amexio-row>
+            <amexio-column size="12">
+              <amexio-dropdown [(ngModel)]="fruitName"
+              [place-holder]="'Choose'"
+              name="fruitName"
+              [data-reader]="'data'"
+              [field-label]="'Fruit'"
+              [http-url]="'assets/data/componentdata/fruits.json'"
+              [http-method]="'get'"
+              [display-field]="'fruitName'"
+              [value-field]="'fruitName'"
+              [enable-sort]="true"
+              [sort]="'asc'">
+<amexio-button [color]="'green'"
+            [label]="'Add More Fruits'" 
+            [type]="'transparent'" 
+            [tooltip]="'Add More'">
+</amexio-button>
+</amexio-dropdown>
+            </amexio-column>
+          </amexio-row>
+        </amexio-body>
+      </amexio-card>
+    </amexio-column>
+    <amexio-column [size]="6">
+      <amexio-card header="true">
+        <amexio-header>
+          Fruit Selected
+        </amexio-header>
+        <amexio-body>
+        <ng-container *ngIf="fruitName">
+          {{fruitName}}
         </ng-container>
         </amexio-body>
       </amexio-card>

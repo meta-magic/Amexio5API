@@ -26,3 +26,22 @@
                  [enable-sort]="true"
                  [sort]="'asc'">
 </amexio-dropdown>
+
+<!-- Dropdown Component with ng-content -->
+<amexio-dropdown [(ngModel)]="fruitName"
+                 [place-holder]="'Choose'"
+                 name="fruitName"
+                 [data-reader]="'data'"
+                 [field-label]="'Fruit'"
+                 [http-url]="'assets/data/componentdata/fruits.json'"
+                 [http-method]="'get'"
+                 [display-field]="'fruitName'"
+                 [value-field]="'fruitName'"
+                 [enable-sort]="true"
+                 [sort]="'asc'">
+                 <amexio-button [color]="'green'"
+                                [label]="'Add More Fruits'" 
+                                [type]="'transparent'" 
+                                [tooltip]="'Add More'">
+                 </amexio-button>
+</amexio-dropdown>

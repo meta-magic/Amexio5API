@@ -16,11 +16,12 @@
         },
       {
             "text": "Layouts",
-            "badge": "1",
+            "badge": "3",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars  ",
+                    "badge":"U",
                     "link": "layout/accordion-demo"
                 },
                 {
@@ -96,7 +97,8 @@
                 },
                 {
                     "text": "Amexio Runtime (ARC)",
-                    "icon": "fa fa-th  ",
+                    "icon": "fa fa-th",
+                    "badge":"NEW",
                     "link": "layout/arc-demo"
                 },
                 {
@@ -109,7 +111,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "2",
+            "badge": "4",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent  ",
@@ -122,7 +124,6 @@
                     "badge": "U"
 
                 },
-
                 {
                     "text": "Fieldset",
                     "icon": "fa fa-id-card-o  ",
@@ -131,6 +132,7 @@
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars  ",
+                    "badge":"U",
                     "link": "panes/panel-demo"
                 },
                 {
@@ -150,6 +152,7 @@
                 },
                 {
                     "text": "Tab",
+                    "badge":"U",
                     "icon": "fa fa-folder  ",
                     "children": [{
                             "text": "Horizontal",
@@ -256,7 +259,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "6",
+            "badge": "7",
             "children": [
                 {
                     "text": "Badge",
@@ -276,6 +279,7 @@
                 },
                 {
                     "text": "Chips",
+                    "badge":"U",
                     "icon": "fa fa-chevron-circle-down  ",
                     "link": "forms-Input/chips-demo"
                 },
@@ -473,7 +477,7 @@
         },
         {
             "text": "Data",
-            "badge": "4",
+            "badge": "3",
             "icon": "fa fa-database  ",
 
             "children": [{
@@ -489,7 +493,7 @@
                 {
                     "text": "Grid",
                     "icon": "fa fa-database  ",
-                    "badge": "3",
+                    "badge": "2",
                     "children": [{
                             "text": "Simple",
                             "icon": "fa fa-database  ",
@@ -690,7 +694,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars  ",
-            "badge":"2",
+            "badge":"3",
             "children": [{
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right  ",
@@ -703,6 +707,7 @@
                 },
                 {
                     "text": "Dropdown Menu",
+                    "badge":"U",
                     "icon": "fa fa-chevron-circle-down  ",
                     "link": "navigation/dropdownmenu-demo"
                 },
@@ -738,11 +743,9 @@
         {
             "text": "Media",
             "icon": "fa fa-keyboard-o  ",
-            "badge": "1",
             "children": [{
                     "text": "Image",
                     "icon": "fa fa-picture-o  ",
-                    "badge": "U",
                     "link": "media-demo/image"
                 },
                 {

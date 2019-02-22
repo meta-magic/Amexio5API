@@ -275,6 +275,11 @@
           "name": "closeTabs(tabArray: array)",
           "version": "4.2 onwards",
           "description": "Method to close all other tabs(only if closable flag is true) , except few required tabs (those tabs title have to be added in array)"
+        },
+        {
+          "name": "closeAll()",
+          "version": "5.6.1 onwards",
+          "description": "Method to close all tabs(even if closable flag is true)"
         }
       ]
     }

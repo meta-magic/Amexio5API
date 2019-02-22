@@ -6,6 +6,8 @@
     {"fruitName": "Avacado","code": "Avacado","checked":false},
     {"fruitName": "Grapes","code": "Grapes","checked":false},
     {"fruitName": "Mango","code": "Mango","checked":false},
-    {"fruitName": "Banana","code": "Banana","checked":false}
+    {"fruitName": "Banana","code": "Banana","checked":false},   
+    {"fruitName": "Kiwi","code": "Kiwi","checked":false},
+    {"fruitName": "Strawberry","code": "Strawberry","checked":false}
   ]
 }

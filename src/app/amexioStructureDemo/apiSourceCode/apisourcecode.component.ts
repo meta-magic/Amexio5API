@@ -14,15 +14,15 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   @Input('html-url') htmlUrl: string;
   @Input('data-source-url') dataSourceUrl: string;
   @Input('data-source-url1') dataSourceUrl1: string;
+  @Input('data-source-url2') dataSourceUrl2: string;
   @Input('dynamic-url') dynamicUrl: string;
   @Input('module-url') moduleUrl: string;
   
-
-
   htmlCode: any;
   typeScriptCode: any;
   dataSource: any;
   dataSource1: any;
+  dataSource2: any;
 
   dynamicCode: any;
   moduleCode: any;
@@ -42,6 +42,9 @@ export class AmexioApiSourceCodeComponent implements OnInit {
     }
     if (this.dataSourceUrl1) {
       this.loadDataSourceUrl1();
+    }
+    if (this.dataSourceUrl2) {
+      this.loadDataSourceUrl2();
     }
     if (this.dynamicUrl) {
       this.loadDynamicUrl();
@@ -76,6 +79,12 @@ export class AmexioApiSourceCodeComponent implements OnInit {
     });
   }
   
+    // LOADING DATA SOURCE URL 3nd 
+  loadDataSourceUrl2() {
+    this._httpClient.get(DATASOURCE_BASE_PATH + this.dataSourceUrl2, { responseType: 'text' }).subscribe(data => {
+      this.dataSource2 = data;
+    });
+  }
 
    // LOADING DYNAMIC URL
    loadDynamicUrl() {

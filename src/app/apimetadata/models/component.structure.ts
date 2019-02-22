@@ -17,6 +17,7 @@ export class  SourceMetadata {
   moduleUrl: string;
   datasourceUrl: string;
   datasourceUrl1: string;
+  datasourceUrl2: string;
 }
 
 
