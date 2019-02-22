@@ -44,6 +44,7 @@ import { ArcDemoComponent } from "./arc/arc.demo.component";
         AmexioWidgetModule,
         RouterModule.forChild(LAYOUT_ROUTE),
     ],
+    entryComponents: [ArcDemoComponent],
     providers: []
 })
 export class LayoutModule {
