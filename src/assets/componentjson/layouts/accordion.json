@@ -62,7 +62,21 @@
       "version": " 4.0 onwards",
       "type": " boolean",
       "default": " false"
-      }
+      },
+      {
+        "name": "background",
+        "description": "Provides background color for accordion header",
+        "version": " 5.6.1 onwards",
+        "type": " string",
+        "default": ""
+        },
+        {
+          "name": "color",
+          "description": "Provides foreground color for accordion header",
+          "version": " 5.6.1 onwards",
+          "type": " string",
+          "default": ""
+          }
       ]
     },
     {

@@ -104,7 +104,21 @@
           "version": "5.1.6 onwards",
           "type": "",
           "default": ""
-        }
+        },
+        {
+          "name": "background",
+          "description": "Provides background color for panel header",
+          "version": " 5.6.1 onwards",
+          "type": " string",
+          "default": ""
+          },
+          {
+            "name": "color",
+            "description": "Provides foreground color for panel header",
+            "version": " 5.6.1 onwards",
+            "type": " string",
+            "default": ""
+            }
       ]
     },
     {
