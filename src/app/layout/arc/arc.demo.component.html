@@ -9,9 +9,12 @@
     <amexio-api-demo>
         <amexio-card header="true">
             <amexio-header> Amexio Run Time</amexio-header>
-            <amexio-body>
+            <amexio-body>   
+                    <br/>             
                     <amexio-runtime [html-template]="htmltemplate" [ts-class]="tscode" (onInit)="onARCInit($event)">
-                    </amexio-runtime>
+                    </amexio-runtime> 
+                    <br/>
+                    <b>Above Registrion form is rendered dynamically using 'amexio-runtime' component</b>
             </amexio-body>
         </amexio-card>
     </amexio-api-demo>
