@@ -1,0 +1,30 @@
+import { Component, OnInit } from "@angular/core";
+import { HttpClient } from "@angular/common/http";
+
+const DYNAMIC_CLASS = class { constructor () {console.log("ARC")}};
+
+@Component({
+    selector: 'arc-demo',
+    templateUrl: './arc.demo.component.html'
+})
+export class ArcDemoComponent implements OnInit {
+
+    htmltemplate: string;
+
+    tscode: any;
+
+    constructor(private http: HttpClient) {
+    }
+
+    ngOnInit() {
+        this.http.get("assets/arc.json")
+            .subscribe((resp: any) => {
+                this.htmltemplate = resp.html;
+                this.tscode = DYNAMIC_CLASS;
+            });
+    }
+
+    onARCInit(event: any) {
+        console.log("Called when Amexio runtime component is initialized ", event);
+    }
+}

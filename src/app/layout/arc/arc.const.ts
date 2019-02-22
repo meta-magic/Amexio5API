@@ -1,0 +1,1 @@
+export const DYNAMIC_CLASS_1 = class { constructor () {console.log("ARC")}};

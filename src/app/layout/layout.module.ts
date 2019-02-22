@@ -22,6 +22,7 @@ import { GridLayoutDemoTwo } from "./gridlayout/gridlayouttwo/gridlayout.demo";
 import { GridLayoutDemoThree } from "./gridlayout/gridlayoutthree/gridlayout.demo";
 import { GridLayoutDemoOne } from "./gridlayout/gridlayoutone/gridlayout.demo";
 import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
+import { ArcDemoComponent } from "./arc/arc.demo.component";
 
 
 /**
@@ -31,9 +32,8 @@ import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
     declarations: [ RowDemo ,BoxDemo, verticalLayoutDemo,
          horizontalLayoutDemo, CardImageDemo,
           CardFormDemo,ColumnDemo,BorderDemoComponent,AccordionDemoComponent,
-          GridLayoutDemo,GridLayoutDemoOne,GridLayoutDemoTwo,GridLayoutDemoThree
-
-
+          GridLayoutDemo,GridLayoutDemoOne,GridLayoutDemoTwo,GridLayoutDemoThree,
+          ArcDemoComponent
 
         ],
     imports: [

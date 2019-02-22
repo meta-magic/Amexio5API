@@ -95,6 +95,11 @@
                     ]
                 },
                 {
+                    "text": "Amexio Runtime (ARC)",
+                    "icon": "fa fa-th  ",
+                    "link": "layout/arc-demo"
+                },
+                {
                     "text": "Row",
                     "link": "layout/row-demo",
                     "icon": "fa fa-bars  "

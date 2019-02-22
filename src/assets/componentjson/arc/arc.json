@@ -1,0 +1,63 @@
+{
+  "title": "Amexio Runtime Component (ARC)",
+  "description": "Amexio runtime component is container which takes valid HTML template and valid Typescript Class to generate and load component at runtime",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-runtime>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "html-template",
+          "description": "This can be any proper HTML template. e.g <amexio-label size='large'> ARC</amexio-label>",
+          "version": "5.6 onwards",
+          "type": "string",
+          "default": ""
+        },{
+          "name": "ts-code",
+          "description": "This can be any proper typescript class. e.g  class ABCD { constructor () {console.log('ARC')}}",
+          "version": "5.6 onwards",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "arc/arc.html",
+    "tsUrl": "arc/arc.txt",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-borderlayout?embed=1&file=app/layouts/borderlayout/borderlayout.demo.html"
+  }
+}
