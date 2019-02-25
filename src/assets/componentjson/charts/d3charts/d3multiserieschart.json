@@ -144,6 +144,13 @@
           "version": "0.1.3 Onwards",
           "type": "number",
           "default": ""
+        },
+        {
+          "name": "color",
+          "description": "Sets color to the bar",
+          "version": "0.1.3 Onwards",
+          "type": "any",
+          "default": ""
         }
       ]
     },
