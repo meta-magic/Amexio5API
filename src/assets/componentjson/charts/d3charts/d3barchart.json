@@ -156,8 +156,15 @@
         },
         {
           "name": "yaxis-interval",
-          "description": "Sets number of ticks on Y-axis",
+          "description": "Sets number of ticks on Y-axis (Only for vertical bar chart)",
           "version": "0.1.2 Onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "xaxis-interval",
+          "description": "Sets number of ticks on X-axis (Only for horizontal bar chart)",
+          "version": "0.1.3 Onwards",
           "type": "number",
           "default": ""
         }
