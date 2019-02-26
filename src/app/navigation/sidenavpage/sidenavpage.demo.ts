@@ -16,7 +16,6 @@ export class sideNavDemoPage implements OnInit {
     reportsMenu;dashboardMenu: any;
     customSourceData: ComponentDataStructure;
     item; treeData; radioGroupData: any
-    construct
     constructor() {
       this.customSourceData = new ComponentDataStructure();
       this.contactList = {

@@ -423,7 +423,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "2",
+            "badge": "3",
             "icon": "fa fa-keyboard-o  ",
             "children": [{
                     "text": "Buttons",
@@ -454,6 +454,12 @@
                             "text": "Floating Group",
                             "icon": "fa fa-circle-o  ",
                             "link": "forms-Action/floatinggroupbutton-demo"
+                        },
+                        {
+                            "text": "Creative ProgressBar",
+                            "icon": "fa fa-eercast fa-fw",
+                            "badge": "NEW",
+                            "link": "creative/progress-ce-demo"
                         }
                     ]
                 },

@@ -1,0 +1,155 @@
+{
+    "title": "Amexio Progress Bar Ce",
+    "description": "Amexio Circular Progress Bar diffrent styles",
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-progress-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "type",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Set type to the circular creative progress bar('radial/ring/pie')."
+                },
+                {
+                    "name": "size",
+                    "type": "string",
+                    "default": "30px",
+                    "version": "5.6.0 onwords",
+                    "description": "Size to label of progress bar."
+                },
+                {
+                    "name": "label-color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "label color to the progress bar"
+                },
+                {
+                    "name": "background-color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Background color to the circular creative progress bar."
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "height of progress "
+                },
+                {
+                    "name": "width",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "width of progress "
+                },
+                {
+                    "name": "progress-color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Active border of progress bar color "
+                },
+                {
+                    "name": "inactive-progress-color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Inactive border of progress bar color."
+                },
+                {
+                    "name": "unit",
+                    "type": "string",
+                    "default": "%",
+                    "version": "5.6.0 onwords",
+                    "description": "Unit to the label value."
+                },
+                {
+                    "name": "label",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Label to progress bar."
+                },
+                {
+                    "name": "progress-value",
+                    "type": "number",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Give progress value to progress bar."
+                },
+                {
+                    "name": "tooltip",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Tooltip to progress bar(like completed/finished)."
+                },
+                {
+                    "name": "show-label",
+                    "type": "boolean",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Label is show or not."
+                },
+                {
+                    "name": "show-unit",
+                    "type": "boolean",
+                    "default": "",
+                    "version": "5.6.0 onwords",
+                    "description": "Unit of label is show or not."
+                }
+            ]
+        }
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "creative/progressce/progressce.html",
+        "tsUrl": "creative/progressce/progressce.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": true,
+        "stackblitzUrl": ""
+    }
+}
