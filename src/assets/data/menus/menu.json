@@ -454,12 +454,6 @@
                             "text": "Floating Group",
                             "icon": "fa fa-circle-o  ",
                             "link": "forms-Action/floatinggroupbutton-demo"
-                        },
-                        {
-                            "text": "Creative ProgressBar",
-                            "icon": "fa fa-eercast fa-fw",
-                            "badge": "NEW",
-                            "link": "creative/progress-ce-demo"
                         }
                     ]
                 },
@@ -478,6 +472,12 @@
                     "text": "Progress Bar",
                     "icon": "fa fa-circle-o-notch  ",
                     "link": "forms-Action/progressbar-demo"
+                },
+                {
+                    "text": "Creative ProgressBar",
+                    "icon": "fa fa-eercast fa-fw",
+                    "badge": "NEW",
+                    "link": "creative/progress-ce-demo"
                 }
             ]
         },
