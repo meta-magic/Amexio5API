@@ -3604,6 +3604,76 @@ input:checked + .toggle-slider:before {
   background: #ffffff;
   color: #1a1f00; }
 
+/*****************************************************************************
+ Component Name : Amexio Progress-ce
+ Version : Amexio v5.6.0 onwards
+****************************************************************************/
+/** Amexio Progress-ce- Structure CSS **/
+.circularProgress {
+  float: left;
+  margin-left: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%; }
+
+.innerCircle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* FOR RADIAL */
+.radial {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 108px;
+  font-size: 24px; }
+
+/*  FOR RING */
+.ring {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 108px;
+  font-size: 24px; }
+
+/*  FOR PIE */
+.pie {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin-left: 16px;
+  margin-top: 16px;
+  text-align: center;
+  line-height: 108px;
+  font-size: 24px; }
+
+/** Amexio Progress-ce- Vars CSS **/
+/** Amexio Progress-ce- Visual CSS **/
+.circularProgress {
+  border: 2px solid #f2f2f2;
+  background-color: #ffffff; }
+
+/* FOR RADIAL */
+.radial {
+  background-color: #ffffff; }
+
+/*  FOR RING */
+.ring {
+  background-color: #ffffff; }
+
 /****************************************************************************
     Component Name : Enterprise Content
     Version : Amexio v4.0 onwards
