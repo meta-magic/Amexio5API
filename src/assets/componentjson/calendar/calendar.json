@@ -1,0 +1,57 @@
+{
+    "title": "Amexio Calendar Component",
+    "description": "Amexio Calendar is way of showing your daily, weekly, month and yearly appointments or meetings",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-calendar>",
+        "columnDefinition": [
+
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "events",
+            "description": "This can be proper event array consisting of that standard objects. For array structure please take a look into source tab",
+            "version": "5.7 onwards",
+            "type": "array",
+            "default": ""
+          },{
+            "name": "calendar-date",
+            "description": "User can set calendar date, by default it is current date.",
+            "version": "5.7 onwards",
+            "type": "date object",
+            "default": "current date"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "calendar/calendar.html",
+      "tsUrl": "calendar/calendar.txt",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": true,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-borderlayout?embed=1&file=app/layouts/borderlayout/borderlayout.demo.html"
+    }
+  }

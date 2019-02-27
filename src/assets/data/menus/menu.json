@@ -1007,6 +1007,10 @@
                     "text": "Appointment",
                     "icon": "fa fa-calendar  ",
                     "link": "enterprise/ee-appointment-demo"
+                }, {
+                    "text": "Calenar",
+                    "icon": "fa fa-calendar  ",
+                    "link": "enterprise/ee-calendar-demo"
                 }
             ]
         }
