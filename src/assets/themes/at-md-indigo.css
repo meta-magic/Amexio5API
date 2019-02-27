@@ -4171,6 +4171,10 @@ header .billboard .content-button {
     Component Name : Enterprise Calendar
     Version : Amexio v5.7 onwards
 *****************************************************************************/
+.calendar-header {
+  background-color: #9fa8da;
+  color: #f8f8fc; }
+
 .calendar-header-items {
   border: 1px solid #ced4da; }
 
@@ -4178,7 +4182,7 @@ header .billboard .content-button {
   border: 1px solid #ced4da; }
 
 .calendar-inactive {
-  color: #626ca3; }
+  opacity: 0.5; }
 
 .calendar-active-box {
   background-color: #b8c2ff;
@@ -4189,11 +4193,19 @@ header .billboard .content-button {
   background-color: #b8c2ff;
   color: #000c52; }
 
+.calendar-year-month-hasevent {
+  color: #6b81ff;
+  cursor: pointer; }
+
 .calendar-header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: capitalize; }
 
 .calendar-header-items {
   padding: 0.571em 1em;
@@ -4259,6 +4271,31 @@ header .billboard .content-button {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
+
+.calendar-year {
+  flex-direction: row;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.calendar-year-box {
+  text-align: center;
+  padding: 10px;
+  flex: 0 0 25%;
+  max-width: 50%;
+  box-sizing: border-box;
+  padding: 5px;
+  flex-wrap: wrap; }
+
+.calendar-year-month {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  line-height: 24px; }
+
+.calendar-year-month-today {
+  height: 100%;
+  width: 100%; }
 
 /****************************************************************************
     Component Name : Datapoints
