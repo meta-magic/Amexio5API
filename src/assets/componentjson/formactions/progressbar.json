@@ -78,6 +78,13 @@
             "default": ""
           },
           {
+            "name": "tooltip",
+            "description": "tooltip for progress bar(eg.Completed/finished)",
+            "version": "5.6.0 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
             "name": "label",
             "description": "Custom labels on bar.",
             "version": "4.0 onwards",
