@@ -1008,7 +1008,7 @@
                     "icon": "fa fa-calendar  ",
                     "link": "enterprise/ee-appointment-demo"
                 }, {
-                    "text": "Calenar",
+                    "text": "Calendar",
                     "icon": "fa fa-calendar  ",
                     "link": "enterprise/ee-calendar-demo"
                 }
