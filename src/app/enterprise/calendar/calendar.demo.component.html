@@ -1,7 +1,7 @@
 <amexio-api-structure [url]="'assets/componentjson/calendar/calendar.json'">
     <amexio-api-demo>
-        <div style="height:1100px;">
-            <amexio-calendar (onEventClicked)="onEventClicked($event)" [events]="events">
+        <div style="height:2000px;">
+            <amexio-calendar [calendar-date]="calendardate" (onEventClicked)="onEventClicked($event)" [events]="events">
             </amexio-calendar>            
         </div>
     </amexio-api-demo>

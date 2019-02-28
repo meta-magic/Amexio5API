@@ -11,47 +11,93 @@ export class CalendarDemoComponent implements OnInit {
     calendarDate = new Date();
 
     constructor(private http: HttpClient) {
+        this.calendarDate = new Date(1551697131284);
         this.events = [
             {
-                "title": "All Day Event",
-                "start": "2019-02-25"
+              "title": "Kubernetes Workshop",
+              "start": "2019-02-25T11:00:00",
+              "end": "2019-03-02T14:00:00"
             },
             {
-                "title": "Microservice Workshop",
-                "start": "2019-02-07",
-                "end": "2019-02-09"
+              "title": "Microservice Workshop",
+              "start": "2019-02-25T03:00:00",
+              "end": "2019-03-03T06:00:00"
             },
             {
-                "title": "Amexio Meetup",
-                "start": "2019-02-28T04:00:00",
-                "end": "2019-02-28T05:00:00"
+              "title": "Docker Workshop",
+              "start": "2019-03-07",
+              "end": "2019-03-09"
             },
             {
-                "title": "Amexio Meetup 2.1",
-                "start": "2019-02-27T11:25:00",
-                "end": "2019-02-27T12:25:00"
+              "title": "Kubernetes Workshop",
+              "start": "2019-03-11",
+              "end": "2019-03-12"
             },
             {
-                "title": "Amexio Meetup 2.0",
-                "start": "2019-02-26T17:00:00",
-                "end": "2019-02-26T19:25:00"
+              "title": "Microservice Workshop",
+              "start": "2019-03-13",
+              "end": "2019-03-14"
             },
             {
-                "title": "Amexio Meetup 3",
-                "start": "2019-02-22T18:25:00",
-                "end": "2019-02-22T21:25:00"
+              "title": "Docker Workshop",
+              "start": "2019-03-17",
+              "end": "2019-03-18"
             },
             {
-                "title": "121 Conference",
-                "start": "2019-02-12",
-                "end": "2019-02-13"
+              "title": "Amexio Meetup",
+              "start": "2019-03-25T18:00:00",
+              "end": "2019-03-25T20:00:00"
             },
             {
-                "title": "122 Conference",
-                "start": "2019-02-22",
-                "end": "2019-02-24"
+              "title": "Angular Event",
+              "start": "2019-03-27T11:25:00",
+              "end": "2019-03-27T12:25:00"
+            },
+            {
+              "title": "Amexio Meetup",
+              "start": "2019-03-16T11:00:00",
+              "end": "2019-03-16T12:30:00"
+            },
+            {
+              "title": "Amexio Meetup ",
+              "start": "2019-02-22T18:25:00",
+              "end": "2019-02-22T21:25:00"
+            },
+            {
+              "title": "121 Conference",
+              "start": "2019-04-12",
+              "end": "2019-04-13"
+            },
+            {
+              "title": "122 Conference",
+              "start": "2019-05-22",
+              "end": "2019-05-24"
+            },
+            {
+              "title": "All Hands Meeting",
+              "start": "2019-02-28T10:15:00",
+              "end": "2019-02-28T10:30:00"
+            },
+            {
+              "title": "All Hands Meeting",
+              "start": "2019-04-30T10:15:00",
+              "end": "2019-04-30T10:30:00"
+            },
+            {
+              "title": "All Hands Meeting",
+              "start": "2019-05-31T10:15:00",
+              "end": "2019-05-31T10:30:00"
+            },
+            {
+              "title": "Technology Conference",
+              "start": "2019-03-05"
+            },
+            {
+              "title": "All Hands Meeting",
+              "start": "2019-03-22T10:15:00",
+              "end": "2019-03-22T12:30:00"
             }
-        ];
+          ];
     }
 
     ngOnInit() {        
