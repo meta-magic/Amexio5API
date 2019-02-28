@@ -11,7 +11,7 @@ export class CalendarDemoComponent implements OnInit {
     calendarDate = new Date();
 
     constructor(private http: HttpClient) {
-        this.calendarDate = new Date(1551697131284);
+        
         this.events = [
             {
               "title": "Kubernetes Workshop",
