@@ -5,7 +5,20 @@
       {
         "gridTitle": "Properties <amexio-calendar>",
         "columnDefinition": [
-
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
           {
             "dataindex": "type",
             "text": "Type",
