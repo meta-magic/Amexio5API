@@ -41,7 +41,14 @@
             "version": "5.7 onwards",
             "type": "date object",
             "default": "current date"
+          },{
+            "name": "event-color-grouping",
+            "description": "Event color grouping. Event will be grouped on predefined color and bakground color",
+            "version": "5.7 onwards",
+            "type": "boolean",
+            "default": "false"
           }
+          
         ]
       }
     ],

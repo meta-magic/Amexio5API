@@ -82,18 +82,18 @@ export class CalendarDemoComponent implements OnInit {
             },
             {
               "title": "All Hands Meeting",
-              "start": "2019-02-28T10:15:00",
-              "end": "2019-02-28T10:30:00"
+              "start": "2019-02-28T09:15:00",
+              "end": "2019-02-28T10:15:00"
             },
             {
               "title": "All Hands Meeting",
-              "start": "2019-04-30T10:15:00",
-              "end": "2019-04-30T10:30:00"
+              "start": "2019-04-30T09:15:00",
+              "end": "2019-04-30T10:15:00"
             },
             {
               "title": "All Hands Meeting",
-              "start": "2019-05-31T10:15:00",
-              "end": "2019-05-31T10:30:00"
+              "start": "2019-05-31T09:15:00",
+              "end": "2019-05-31T09:15:00"
             },
             {
               "title": "Technology Conference",
@@ -101,8 +101,8 @@ export class CalendarDemoComponent implements OnInit {
             },
             {
               "title": "All Hands Meeting",
-              "start": "2019-03-22T10:15:00",
-              "end": "2019-03-22T12:30:00"
+              "start": "2019-03-22T09:15:00",
+              "end": "2019-03-22T10:15:00"
             }
           ];
 
