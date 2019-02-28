@@ -4197,6 +4197,50 @@ header .billboard .content-button {
   color: #ff896b;
   cursor: pointer; }
 
+.calendar-ul {
+  list-style-position: inside;
+  padding-left: 0; }
+
+.calendar-active-custom-color {
+  height: 100%;
+  margin: 0px -5px; }
+
+.calendar-active-1 {
+  background-color: sandybrown;
+  color: #211102; }
+
+.calendar-active-2 {
+  background-color: darkmagenta;
+  color: #fffaff; }
+
+.calendar-active-3 {
+  background-color: deepskyblue;
+  color: #000507; }
+
+.calendar-active-4 {
+  background-color: #1d008b;
+  color: #fffaff; }
+
+.calendar-active-5 {
+  background-color: seagreen;
+  color: #f0faf4; }
+
+.calendar-active-6 {
+  background-color: coral;
+  color: #240a00; }
+
+.calendar-active-7 {
+  background-color: gold;
+  color: #241e00; }
+
+.calendar-active-8 {
+  background-color: #ff9900;
+  color: #241500; }
+
+.calendar-active-9 {
+  background-color: black;
+  color: white; }
+
 .calendar-header {
   display: flex;
   flex-direction: row;
@@ -4258,8 +4302,9 @@ header .billboard .content-button {
   cursor: pointer; }
 
 .calendar-ul {
-  margin-left: -20px;
-  list-style: none; }
+  list-style: none;
+  list-style-position: inside;
+  padding: 10px; }
 
 .calendar-li {
   padding-bottom: 5px;
