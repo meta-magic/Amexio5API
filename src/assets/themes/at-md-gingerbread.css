@@ -1304,7 +1304,7 @@ button {
   line-height: 2;
   border-radius: 0px;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  border-bottom: 1px solid #121212;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
 
 .input-control:focus {
@@ -5592,7 +5592,7 @@ header .billboard .content-button {
   color: #1f0800; }
 
 .accordion:after {
-  color: red; }
+  color: #dc143c; }
 
 .panel {
   background-color: #ffffff;
