@@ -104,7 +104,14 @@
           "version": "5.1.6 onwards",
           "type": "any[]",
           "default": ""
-        }
+        },
+        {
+            "name": "enable-lifecycle-events",
+            "description": "Enable lifecycle events example [all/init/ready/destroy].",
+            "version": "5.7 onwards",
+            "type": "string",
+            "default": ""
+          }
       ]
     },
     {
@@ -117,6 +124,13 @@
           "hidden": false
         },
         {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+        {
           "dataindex": "description",
           "text": "Description",
           "width": 60,
@@ -127,7 +141,23 @@
         {
           "name": "rightClick",
           "description": "It is fired when clicked on context menu providing Card node data and selected context menu data."
-        }
+        },
+          {
+            "name": "initiated",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "ready",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "destroy",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+          }
+
       ]
     }
   ],

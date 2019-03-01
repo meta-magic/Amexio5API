@@ -104,7 +104,14 @@
           "type": "boolean",
           "default": "false",
           "description": "If true add two context menus i.e close All and close Others tabs"
-        }
+        },
+         {
+            "name": "enable-lifecycle-events",
+            "description": "Enable lifecycle events example [all/init/ready/destroy].",
+            "version": "5.7 onwards",
+            "type": "string",
+            "default": ""
+          }
       ]
     },
     {
@@ -224,7 +231,23 @@
           "name": "rightClick",
           "version": "5.0.3 onwards",
           "description": "It is fired when clicked on context menu, providing tree node data and selected context menu data."
-        }
+        },
+         {
+            "name": "initiated",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "ready",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "destroy",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+          }
+
       ]
     },
     {

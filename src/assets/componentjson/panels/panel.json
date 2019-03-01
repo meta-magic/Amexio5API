@@ -8,7 +8,7 @@
         {
           "dataindex": "name",
           "text": "Name",
-          "width": 15,
+          "width": 20,
           "hidden": false,
           "datatype": "string"
         },
@@ -118,7 +118,14 @@
             "version": " 5.6.1 onwards",
             "type": " string",
             "default": ""
-            }
+            },
+           {
+            "name": "enable-lifecycle-events",
+            "description": "Enable lifecycle events example [all/init/ready/destroy].",
+            "version": "5.7 onwards",
+            "type": "string",
+            "default": ""
+          }
       ]
     },
     {
@@ -130,6 +137,12 @@
           "width": 15,
           "hidden": false
         },
+        {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false
+          },
         {
           "dataindex": "description",
           "text": "Description",
@@ -145,7 +158,23 @@
         {
           "name": "rightClick",
           "description": "It is fired when clicked on context menu providing Panel node data and selected context menu data."
-        }
+        },
+         {
+            "name": "initiated",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "ready",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "destroy",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+          }
+
       ]
     }
   ],

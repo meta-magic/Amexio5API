@@ -8,7 +8,7 @@
                 {
                     "dataindex": "name",
                     "text": "Name",
-                    "width": 15,
+                    "width": 20,
                     "hidden": false,
                     "datatype": "string"
                 },
@@ -83,6 +83,13 @@
                     "default": "",
                     "version": "5.5.5 onwards",
                     "description": "card wider or narrower style. examples wider-header,wider-action,narrower-header,narrower-action,wider-all,narrower-all"
+                },
+                {
+                    "name": "enable-lifecycle-events",
+                    "description": "Enable lifecycle events example [all/init/ready/destroy].",
+                    "version": "5.7 onwards",
+                    "type": "string",
+                    "default": ""
                 }
             ]
         },
@@ -344,7 +351,49 @@
                     "description": "set direction of card action"
                 }
             ]
+        },
+          {
+      "gridTitle": "Events <amexio-card-ce>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 20,
+          "hidden": false
+        },
+       {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
         }
+      ],
+      "gridData": [
+        {
+            "name": "initiated",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "ready",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+          },
+          {
+            "name": "destroy",
+            "version":"5.7 onwards",
+            "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+          }
+
+      ]
+    }
     ],
     "sourceMetadata": {
         "htmlUrl": "creative/cardce/creative.html",
