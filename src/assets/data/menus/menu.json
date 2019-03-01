@@ -989,6 +989,7 @@
         {
             "text": "Enterprise",
             "icon": "fa fa-medium",
+            "badge": "1",
             "children": [{
                     "text": "Media Content",
                     "icon": "fa fa-id-card-o  ",
@@ -1010,6 +1011,7 @@
                 }, {
                     "text": "Calendar",
                     "icon": "fa fa-calendar  ",
+                    "badge": "NEW",
                     "link": "enterprise/ee-calendar-demo"
                 }
             ]
