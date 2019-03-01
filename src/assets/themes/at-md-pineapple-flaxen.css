@@ -1281,7 +1281,8 @@ button {
   color: #d9534f; }
 
 .inputgroup .tooltiptext {
-  background-color: #ffeeb8; }
+  background-color: #ffeeb8;
+  color: #523f00; }
 
 .input-control-disabled {
   background-color: #dbd5c2; }
@@ -1333,8 +1334,8 @@ button {
 *****************************************************************************/
 /** fileupload - Visual CSS **/
 .upload-drop-zone {
-  color: #d5b85a;
-  border-color: #d5b85a; }
+  color: #1c1707;
+  border-color: #1c1707; }
 
 .upload-drop-zone.drop {
   color: #1f1b00;
@@ -2865,7 +2866,7 @@ input:checked + .toggle-slider:before {
   color: #1f1700; }
 
 .iconColor {
-  color: #ffffff; }
+  color: #1c1707; }
 
 .advancesearchbtn {
   background-color: #d5b85a;

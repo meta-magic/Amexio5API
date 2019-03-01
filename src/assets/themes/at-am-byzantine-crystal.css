@@ -1239,7 +1239,8 @@ button {
   color: #d9534f; }
 
 .inputgroup .tooltiptext {
-  background-color: #f3c8f2; }
+  background-color: #f3c8f2;
+  color: #70196F; }
 
 .input-control-disabled {
   background-color: #a09e9e; }
@@ -1291,8 +1292,8 @@ button {
 *****************************************************************************/
 /** fileupload - Visual CSS **/
 .upload-drop-zone {
-  color: #70196F;
-  border-color: #70196F; }
+  color: white;
+  border-color: white; }
 
 .upload-drop-zone.drop {
   color: #70196F;
