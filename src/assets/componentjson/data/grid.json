@@ -174,7 +174,7 @@
         {
           "deprecated": false,
           "name": "server-side-paging",
-          "version": "5.5 onwords",
+          "version": "5.5 onwards",
           "type": "boolean",
           "default": "false",
           "description": "Set true for server side pagination ( if it is true then you should provide [total-data-count]. It is mandatory)."

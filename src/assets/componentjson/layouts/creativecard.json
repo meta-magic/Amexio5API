@@ -46,42 +46,42 @@
                     "name": "align",
                     "type": "string",
                     "default": "start",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "alignement of card example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background image of card"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "card content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background color or gradient of card"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "height of card"
                 },
                 {
                     "name": "style-type",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "card wider or narrower style. examples wider-header,wider-action,narrower-header,narrower-action,wider-all,narrower-all"
                 }
             ]
@@ -130,49 +130,49 @@
                     "name": "align",
                     "type": "string",
                     "default": "start",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "alignement of card header example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background image of card header"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "card header content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background color or gradient of card"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "height of card header"
                 },
                 {
                     "name": "border-bottom",
                     "type": "boolean",
                     "default": "false",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "set true border will enable for header bottom"
                 },
                 {
                     "name": "direction",
                     "type": "string",
                     "default": "row",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "set direction of card header"
                 }
             ]
@@ -221,35 +221,35 @@
                     "name": "align",
                     "type": "string",
                     "default": "end",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "alignement of card body example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background image of card body"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "card body content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background color or gradient of card body"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "height of card body"
                 }
             ]
@@ -298,49 +298,49 @@
                     "name": "align",
                     "type": "string",
                     "default": "end",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "alignement of card action example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background image of card action"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "card action content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "background color or gradient of card"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "height of card action"
                 },
                 {
                     "name": "border-top",
                     "type": "boolean",
                     "default": "false",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "set true border will enable for action top"
                 },
                 {
                     "name": "direction",
                     "type": "string",
                     "default": "row",
-                    "version": "5.5.5 onwords",
+                    "version": "5.5.5 onwards",
                     "description": "set direction of card action"
                 }
             ]
