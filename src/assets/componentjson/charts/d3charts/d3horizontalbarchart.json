@@ -163,7 +163,7 @@
         },
         {
           "name": "show-zero-values",
-          "description": "shows zero values in D3 chart",
+          "description": "Shows zero values in D3 chart",
           "version": "0.1.3 Onwards",
           "type": "boolean",
           "default": "true"

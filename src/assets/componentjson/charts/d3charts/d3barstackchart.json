@@ -150,7 +150,7 @@
         {
           "name": "yaxis-interval",
           "description": "Sets number of intervals on Y-axis",
-          "version": "0.1.3 Onwards",
+          "version": "0.1.2 Onwards",
           "type": "number",
           "default": ""
         }
