@@ -1261,7 +1261,7 @@ button {
   line-height: 2;
   border-radius: 0px;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; }
 
 .input-control:focus {
@@ -5840,7 +5840,7 @@ amexio-layout-columns amexio-layout-item {
   color: #FFBF00; }
 
 .accordion:after {
-  color: red; }
+  color: #dc143c; }
 
 .panel {
   background-color: #000000;
