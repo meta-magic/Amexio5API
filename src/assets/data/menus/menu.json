@@ -111,9 +111,10 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "4",
+            "badge": "5",
             "children": [{
                     "text": "Carousel",
+                    "badge": "U",
                     "icon": "fa fa-indent  ",
                     "link": "panes/carousel-demo"
                 },
@@ -700,7 +701,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars  ",
-            "badge":"3",
+            "badge":"4",
             "children": [{
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right  ",
@@ -737,6 +738,7 @@
                 {
                     "text": " Side Panel",
                     "icon": "fa fa-bars  ",
+                    "badge":"U",
                     "link": "navigation/sidenav-page-demo"
                 },
                 {
@@ -779,7 +781,7 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o  ",
-
+            "badge":"U",
             "children": [{
                     "text": "D3 Charts",
                     "icon": "fa fa-openid  ",
@@ -815,7 +817,6 @@
                         },
                         {
                             "text": "Donut Chart",
-
                             "icon": "fa fa-pie-chart  ",
                             "link": "D3chart/amexio-d3-chart-donut"
                         },

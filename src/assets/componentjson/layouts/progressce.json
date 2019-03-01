@@ -46,98 +46,98 @@
                     "name": "type",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Set type to the circular creative progress bar('radial/ring/pie')."
                 },
                 {
                     "name": "size",
                     "type": "string",
                     "default": "30px",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Size to label of progress bar."
                 },
                 {
                     "name": "label-color",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "label color to the progress bar"
                 },
                 {
                     "name": "background-color",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Background color to the circular creative progress bar."
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "height of progress "
                 },
                 {
                     "name": "width",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "width of progress "
                 },
                 {
                     "name": "progress-color",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Active border of progress bar color "
                 },
                 {
                     "name": "inactive-progress-color",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Inactive border of progress bar color."
                 },
                 {
                     "name": "unit",
                     "type": "string",
                     "default": "%",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Unit to the label value."
                 },
                 {
                     "name": "label",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Label to progress bar."
                 },
                 {
                     "name": "progress-value",
                     "type": "number",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Give progress value to progress bar."
                 },
                 {
                     "name": "tooltip",
                     "type": "string",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Tooltip to progress bar(like completed/finished)."
                 },
                 {
                     "name": "show-label",
                     "type": "boolean",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Label is show or not."
                 },
                 {
                     "name": "show-unit",
                     "type": "boolean",
                     "default": "",
-                    "version": "5.6.0 onwards",
+                    "version": "5.7 Onwards",
                     "description": "Unit of label is show or not."
                 }
             ]
