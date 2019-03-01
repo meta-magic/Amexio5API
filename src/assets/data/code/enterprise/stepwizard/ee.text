@@ -1,0 +1,41 @@
+export class StepWizardDemoComponent implements OnInit {
+
+  userRegistration:UserRegistration;
+  address:Address;
+  payment:Payment;
+
+  constructor() {
+    this.userRegistration = new UserRegistration();
+    this.address = new Address();
+    this.payment= new Payment();
+  }
+
+  ngOnInit() {
+  }
+
+  onDoneClick() {
+
+  }
+}
+
+export class UserRegistration {
+  firstName: string;
+  lastName: string;
+  phone: number;
+  email: string;
+  constructor() {
+  }
+}
+
+export class Address {
+  address1: string;
+  pincode: string;
+  constructor() {
+  }
+}
+
+export class Payment {
+  payment: string;
+  constructor() {
+  }
+}

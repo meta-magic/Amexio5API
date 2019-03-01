@@ -113,10 +113,9 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "5",
+            "badge": "4",
             "children": [{
                     "text": "Carousel",
-                    "badge": "U",
                     "icon": "fa fa-indent  ",
                     "link": "panes/carousel-demo"
                 },
@@ -994,7 +993,7 @@
         {
             "text": "Enterprise",
             "icon": "fa fa-medium",
-            "badge": "1",
+            "badge": "2",
             "children": [{
                     "text": "Media Content",
                     "icon": "fa fa-id-card-o  ",
@@ -1018,6 +1017,11 @@
                     "icon": "fa fa-calendar  ",
                     "badge": "NEW",
                     "link": "enterprise/ee-calendar-demo"
+                }, {
+                    "text": "Steps Wizard",
+                    "icon": "fa fa-step-forward",
+                    "badge": "NEW",
+                    "link": "enterprise/step-wizard-demo"
                 }
             ]
         }

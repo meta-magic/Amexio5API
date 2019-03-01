@@ -1,0 +1,157 @@
+{
+  "title": "Amexio Step-Wizard",
+  "description": "Step Wizard is a sequence of dialog boxes that lead the user through a series of well-defined steps. ",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-step-wizard>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 20,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "show-step-number",
+          "description": "Shows step number",
+          "version": " 5.7 Onwards",
+          "type": "boolean",
+          "default": " true"
+        },
+        {
+          "name": " header-background",
+          "description": " Provides header backgroud color",
+          "version": " 5.7 Onwards",
+          "type": " string",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Tab Properties <amexio-step-wizard-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 20,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "description": "Provides the title for the step",
+          "version": "5.7 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "icon",
+          "description": "Places the icon for the step",
+          "version": "5.7 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "active",
+          "description": "Sets active step if flag is true",
+          "version": "5.7 Onwards",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events <amexio-step-wizard>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "finalStage",
+          "description": "Fires when all steps get completed and emits all step data."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "enterprise/stepwizard/ee.html",
+    "tsUrl": "enterprise/stepwizard/ee.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-appointment1?embed=1&file=app/enterprise/appointment/appointment.demo.html&view=editor"
+  }
+}

@@ -13,13 +13,13 @@ import { EECarouselDemoComponent } from "./multi-item-carousel/multi.item.carous
 import { EEContentDemoComponent } from "./content/content.compnent";
 import { EEAppointmentDemoComponent } from "./appointment/appointment.component";
 import { CalendarDemoComponent } from "./calendar/calendar.demo.component";
-
+import {StepWizardDemoComponent} from './steps-wizard/step-wizard.component';
 /**
  * Created by kedar on 4/2/19.
  */
 @NgModule({
     declarations: [YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-        EEAppointmentDemoComponent, CalendarDemoComponent ],
+        EEAppointmentDemoComponent, CalendarDemoComponent ,StepWizardDemoComponent],
     imports: [
         CommonModule, 
         AmexioEnterpriseModule,
