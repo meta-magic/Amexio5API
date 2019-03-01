@@ -156,7 +156,14 @@
         },
         {
           "name": "yaxis-interval",
-          "description": "Sets number of ticks on Y-axis",
+          "description": "Sets number of intervals on Y-axis",
+          "version": "0.1.3 Onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "xaxis-interval",
+          "description": "Sets number of intervals on X-axis",
           "version": "0.1.3 Onwards",
           "type": "number",
           "default": ""

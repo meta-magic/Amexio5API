@@ -140,7 +140,7 @@
         },
         {
           "name": "yaxis-interval",
-          "description": "Sets number of ticks on Y-axis",
+          "description": "Sets number of intervals on Y-axis",
           "version": "0.1.3 Onwards",
           "type": "number",
           "default": ""
@@ -151,6 +151,13 @@
           "version": "0.1.3 Onwards",
           "type": "any",
           "default": ""
+        },
+        {
+          "name": "show-zero-values",
+          "description": "shows zero values in chart",
+          "version": "0.1.3 Onwards",
+          "type": "boolean",
+          "default": "true"
         }
       ]
     },

@@ -1,9 +1,9 @@
 {
-  "title": "Amexio D3-Chart Multi Area",
-  "description": "An D3 multi-area chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+  "title": "",
+  "description": "",
   "apiRefMetadata": [
     {
-      "gridTitle": "Chart Properties <amexio-d3-chart-multiarea>",
+      "gridTitle": "Chart Properties <amexio-d3-chart-bar>",
       "columnDefinition": [
         {
           "dataindex": "name",
@@ -44,7 +44,7 @@
       "gridData": [
         {
           "name": "title",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.1 Onwards",
           "description": "Sets title to chart",
           "type": "string",
           "default": ""
@@ -52,70 +52,84 @@
         {
           "name": "width",
           "description": "Width of chart",
-          "version": "0.0.7 Onwards",
-          "type": "string",
+          "version": "0.0.1 Onwards",
+          "type": "number",
           "default": ""
         },
         {
           "name": "height",
           "description": "Height of chart",
-          "version": "0.0.7 Onwards",
-          "type": "string",
+          "version": "0.0.1 Onwards",
+          "type": "number",
           "default": ""
         },
         {
           "name": "data",
           "description": "Local data for Chart",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.1 Onwards",
           "type": "any[]",
           "default": ""
         },
         {
+          "name": "color",
+          "description": "Sets color to D3 Bar chart",
+          "version": "0.0.1 Onwards",
+          "type": "any",
+          "default": ""
+        },
+        {
+          "name": "horizontal",
+          "description": "Sets Horizontal D3 Bar chart",
+          "version": "0.0.5 Onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
           "name": "legend",
-          "description": "Sets legend to D3 multi-area chart",
-          "version": "0.0.7 Onwards",
+          "description": "Sets legend to D3 Bar chart",
+          "version": "0.0.1 Onwards",
           "type": "boolean",
           "default": "true"
         },
         {
           "name": "http-url",
           "description": "REST url for fetching data.",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.4 Onwards",
           "type": "string",
           "default": ""
         },
         {
           "name": "http-method",
           "description": "Type of HTTP call, POST,GET etc.",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.4 Onwards",
           "type": "string",
           "default": ""
         },
         {
           "name": "data-reader",
           "description": "Key in JSON Datasource for records.",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.4 Onwards",
           "type": "string",
           "default": ""
         },
         {
           "name": "level",
           "description": "Sets level for chart when drillable property used",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.6 Onwards",
           "type": "number",
           "default": ""
         },
         {
           "name": "target",
           "description": "Sets  target for chart when drillable property used",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.6 Onwards",
           "type": "number",
           "default": ""
         },
         {
           "name": "drillable-data",
           "description": "Arrays of keys provided for chart, when drillable property used.",
-          "version": "0.0.7 Onwards",
+          "version": "0.0.6 Onwards",
           "type": "any",
           "default": ""
         },
@@ -128,36 +142,37 @@
         },
         {
           "name": "label-color",
-          "description": "Sets label color in D3 Multiarea Chart",
+          "description": "Sets label color in D3 Bar Chart",
           "version": "0.0.8 Onwards",
           "type": "string",
           "default": ""
         },
         {
           "name": "label",
-          "description": "Sets label on D3 Multiarea Chart",
+          "description": "Sets label on D3 Bar Chart",
           "version": "0.0.8 Onwards",
           "type": "boolean",
           "default": "false"
         },
         {
-          "name": "color",
-          "description": "Sets color to  area in D3 Multiarea chart",
-          "version": "0.1.2  Onwards",
-          "type": "any[]",
-          "default": ""
-        },
-        {
-          "name": "yaxis-interval",
-          "description": "Sets number of intervals on Y-axis",
-          "version": "0.1.2 Onwards",
+          "name": "xaxis-interval",
+          "description": "Sets number of intervals on X-axis (Only for horizontal bar chart)",
+          "version": "0.1.3 Onwards",
           "type": "number",
           "default": ""
+        },
+        {
+          "name": "show-zero-values",
+          "description": "shows zero values in D3 chart",
+          "version": "0.1.3 Onwards",
+          "type": "boolean",
+          "default": "true"
         }
+
       ]
     },
     {
-      "gridTitle": "Legend Events <amexio-d3-chart-multiarea>",
+      "gridTitle": "Legend Events <amexio-d3-chart-bar>",
       "columnDefinition": [
         {
           "dataindex": "name",
@@ -181,14 +196,14 @@
       ],
       "gridData": [
         {
-            "name": "onLegendClick()",
-            "version": "0.0.7 Onwards",
-            "description": "It will fire only on click on Legend Click in D3 multi-area chart ."
+          "name": "onLegendClick()",
+          "version": "0.0.2 Onwards",
+          "description": "It will fire only on click on Legend Click in D3 bar chart ."
         }
       ]
     },
     {
-      "gridTitle": "Chart Events <amexio-d3-chart-multiarea>",
+      "gridTitle": "Chart Events <amexio-d3-chart-bar>",
       "columnDefinition": [
         {
           "dataindex": "name",
@@ -211,21 +226,21 @@
         }
       ],
       "gridData": [
-         {
-            "name": "onChartClick()",
-            "version": "0.0.7 Onwards",
-            "description": "It will fire only on click of tooltip in D3 muti-area chart ."
+        {
+          "name": "onChartClick()",
+          "version": "0.0.2 Onwards",
+          "description": "It will fire only on click on chart in D3 bar chart ."
         }
       ]
     }
   ],
   "sourceMetadata": {
-    "htmlUrl": "charts/D3Charts/d3multiareachart/d3chart.html",
-    "tsUrl": "charts/D3Charts/d3multiareachart/d3chart.text",
-    "datasourceUrl": "assets/data/code/charts/D3Charts/d3multiareachart/datasource.json"
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": ""
   },
   "liveMetadata": {
     "disabled": false,
-    "stackblitzUrl": "https://stackblitz.com/edit/amexio-d3-chartmultiarea?embed=1&file=src/app/d3chart/d3multiareachart/d3multiareachart.demo.component.html&view=editor"
+    "stackblitzUrl": ""
   }
 }
