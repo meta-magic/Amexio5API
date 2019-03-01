@@ -1143,7 +1143,7 @@ button {
   background-color: #1b1d22; }
 
 .drodown-caret-down {
-  color: rgba(0, 0, 0, 0.42); }
+  color: rgba(255, 255, 255, 0.7); }
 
 .list-items-selected {
   background-color: rgba(255, 253, 208, 0.4);
@@ -3386,6 +3386,15 @@ input:checked + .toggle-slider:before {
     Version : Amexio v4.2 onwards
 ****************************************************************************/
 /** CreditCard - Visual CSS **/
+.image-label .fa {
+  color: rgba(255, 255, 255, 0.7) !important; }
+
+.image .fa {
+  color: rgba(255, 255, 255, 0.7) !important; }
+
+.imageSglCol .fa {
+  color: rgba(255, 255, 255, 0.7) !important; }
+
 /** CreditCard - Structure CSS **/
 /* CSS FOR SINGLE COLUMN */
 .creditCardFormSglCol {
@@ -4154,10 +4163,6 @@ header .billboard .content-button {
   color: #1b1d22;
   cursor: pointer; }
 
-.calendar-ul {
-  list-style-position: inside;
-  padding-left: 0; }
-
 .calendar-active-custom-color {
   height: 100%;
   margin: 0px -5px; }
@@ -4261,9 +4266,10 @@ header .billboard .content-button {
 .calendar-ul {
   list-style: none;
   list-style-position: inside;
-  padding: 10px; }
+  padding: 10px 2px; }
 
 .calendar-li {
+  padding-left: 5px;
   padding-bottom: 5px;
   cursor: pointer; }
 
@@ -4772,7 +4778,7 @@ header .billboard .content-button {
   z-index: 1;
   padding: 10px 0px;
   overflow-y: auto;
-  background-color: white !important;
+  background-color: #292b2c !important;
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); }
 
 .context-menu-list .context-menu-list-items {
@@ -5723,7 +5729,7 @@ amexio-layout-columns amexio-layout-item {
   background-color: #ffffff; }
 
 .context-menu-list1 {
-  background-color: #ffffff !important;
+  background-color: #292b2c;
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2), 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12); }
 
 .context-menu-list1 :hover {
@@ -6121,7 +6127,7 @@ fieldset {
 *****************************************************************************/
 /** steps - Visual CSS **/
 .step-label-highlight {
-  color: linear-gradient(#40434D, #000000);
+  color: #FEE12B;
   font-weight: bold; }
 
 .stepwizard-step p {
@@ -6137,21 +6143,25 @@ fieldset {
   font-size: 12px; }
 
 .step-box-table-item {
-  background-color: #292b2c;
+  background-color: #292b2c; }
+
+.step-box-table-item a {
   color: rgba(255, 255, 255, 0.7); }
 
 .step-box-table-item.active {
   background-color: #1b1d22 !important; }
 
 .step-box-table-item.disbaled {
-  background-color: #a09e9e; }
+  background-color: #a09e9e;
+  color: #FEE12B; }
 
 .index-step-inactive {
   background-color: rgba(255, 253, 208, 0.4);
-  color: inherit; }
+  color: #292b2c; }
 
 .step-box-table-item-hover:hover {
-  background-color: rgba(255, 253, 208, 0.4); }
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #292b2c; }
 
 /** steps - Structure CSS **/
 .stepwizard-step p {
@@ -6645,7 +6655,8 @@ fieldset {
   font-weight: 400;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: transparent;
+  background-color: #292b2c;
+  color: rgba(255, 255, 255, 0.7);
   max-height: 100%; }
 
 .modal-window-header {
