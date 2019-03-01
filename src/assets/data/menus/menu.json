@@ -16,7 +16,7 @@
         },
       {
             "text": "Layouts",
-            "badge": "3",
+            "badge": "4",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
@@ -42,8 +42,10 @@
                 {
                     "text": "Card",
                     "icon": "fa fa-id-card-o  ",
+                    "badge": "1",
                     "children": [{
                             "text": "Form",
+                            "badge":"U",
                             "link": "layout/card-form-demo",
                             "icon": "fa fa-leaf  "
                         },
@@ -223,6 +225,7 @@
         },
         {
             "text": "Forms",
+            "badge": "1",
             "icon": "fa fa-clone  ",
             "children": [
                 {
@@ -243,6 +246,7 @@
                 {
                     "text": "Amexio Forms",
                     "icon": "fa fa-window-maximize  ",
+                    "badge": "U",
                     "children": [{
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize  ",
