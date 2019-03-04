@@ -38,7 +38,7 @@ after_success:
   - rm -rf amexio-api-website-test/api/v5.7/*
   - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.7/
   - cd amexio-api-website-test/
-  - git add api/v5.6/
+  - git add api/v5.7/
   - git commit -m "${COMMIT}"
   - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git push "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master; fi
 cache:
