@@ -69,6 +69,13 @@
           "version": " 5.4 onwards",
           "type": " string",
           "default": "horizontal"
+        },
+        {
+          "name": "responsive-mode",
+          "description": "If true, changes perticular horizontal orientation to vertical orientation",
+          "version": " 5.7 onwards",
+          "type": " boolean",
+          "default": "false"
         }
       ]
     },

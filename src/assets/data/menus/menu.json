@@ -16,7 +16,7 @@
         },
       {
             "text": "Layouts",
-            "badge": "4",
+            "badge": "3",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
@@ -97,12 +97,7 @@
                         }
                     ]
                 },
-                {
-                    "text": "Amexio Runtime (ARC)",
-                    "icon": "fa fa-th",
-                    "badge":"NEW",
-                    "link": "layout/arc-demo"
-                },
+                
                 {
                     "text": "Row",
                     "link": "layout/row-demo",
@@ -113,7 +108,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "4",
+            "badge": "5",
             "children": [{
                     "text": "Carousel",
                     "icon": "fa fa-indent  ",
@@ -136,6 +131,12 @@
                     "icon": "fa fa-bars  ",
                     "badge":"U",
                     "link": "panes/panel-demo"
+                },
+                {
+                    "text": "Amexio Runtime (ARC)",
+                    "icon": "fa fa-th",
+                    "badge":"NEW",
+                    "link": "layout/arc-demo"
                 },
                 {
                     "text": "Steps",
