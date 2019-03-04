@@ -21,11 +21,11 @@ before_script:
   - export CHROME_BIN=chromium-browser
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
-  - npm install --global gulp --save
+  #- npm install --global gulp --save
 script: 
   - npm install
   - npm i https://github.com/meta-magic/d3-charts-tar/blob/master/amexio-chart-d3.tgz?raw=true
-  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.6/amexio-ng-extensions.tgz?raw=true
+  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.7/amexio-ng-extensions.tgz?raw=true
   - rm -rf src/assets/themes/*
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
   - ng build --prod
@@ -35,8 +35,8 @@ after_success:
   - git commit -m "[skip travis]  themes-updated"
   - git push  "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.5
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
-  - rm -rf amexio-api-website-test/api/v5.6/*
-  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.6/
+  - rm -rf amexio-api-website-test/api/v5.7/*
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.7/
   - cd amexio-api-website-test/
   - git add api/v5.6/
   - git commit -m "${COMMIT}"
