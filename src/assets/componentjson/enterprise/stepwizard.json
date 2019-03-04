@@ -50,11 +50,18 @@
           "default": " true"
         },
         {
-          "name": " header-background",
+          "name": "header-background",
           "description": " Provides header backgroud color",
           "version": " 5.7 Onwards",
           "type": " string",
           "default": ""
+        },
+        {
+          "name": "footer-align",
+          "description": "alignment of action button.Ex. flex-start, flex-end, center",
+          "version": " 5.7 Onwards",
+          "type": " string",
+          "default": "space-between"
         }
       ]
     },

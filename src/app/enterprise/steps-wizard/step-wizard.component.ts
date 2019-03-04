@@ -22,7 +22,7 @@ export class StepWizardDemoComponent implements OnInit {
   ngOnInit() {
   }
 
-  onDoneClick() {
+  finalStageClick(event:any) {
 
   }
 }

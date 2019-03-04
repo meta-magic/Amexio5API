@@ -2,7 +2,7 @@
 <!-- Step-Wizard Demo -->
 <amexio-row>
     <amexio-column size="12">
-        <amexio-step-wizard (onDoneClick)="onDoneClick($event)" [header-background]="'linear-gradient(40deg, rgb(32, 150, 255), rgb(5, 255, 163))'">
+        <amexio-step-wizard (finalStage)="finalStageClick($event)" [header-background]="'linear-gradient(40deg, rgb(32, 150, 255), rgb(5, 255, 163))'">
             <amexio-step-wizard-item title="User Details">
                 <amexio-row>
                     <amexio-column [size]="6">
