@@ -87,6 +87,19 @@ body {
   padding-left: 5px;
   vertical-align: middle; }
 
+.table {
+  display: table;
+  padding: 5px; }
+
+.table .tablerow {
+  display: table-row; }
+
+.table .tablerow .tablecol {
+  display: table-cell;
+  padding-right: 5px;
+  padding-left: 5px;
+  vertical-align: middle; }
+
 .vertical-table {
   display: table;
   padding: 5px; }
@@ -5610,6 +5623,16 @@ amexio-layout-columns amexio-layout-item {
   background-color: #f3c8f2;
   color: #70196F; }
 
+.sidenav .headernode:focus {
+  background-color: #f3c8f2;
+  color: #70196F;
+  outline: none !important; }
+
+.innerSideNav:focus {
+  background-color: #f3c8f2;
+  color: #70196F;
+  outline: none !important; }
+
 .sidenav .headernodeSeparator:hover {
   background-color: #f3c8f2;
   color: #70196F; }
@@ -6545,6 +6568,24 @@ fieldset {
   border-bottom: 1px solid #000000 !important;
   color: #000000; }
 
+.table1 {
+  display: table;
+  padding: 5px; }
+
+.table1 .tablerow {
+  display: table-row; }
+
+.table1 .tablerow .tablecol {
+  display: table-cell;
+  padding-right: 5px;
+  padding-left: 5px;
+  vertical-align: middle; }
+
+.table1:focus {
+  background-color: #f3c8f2;
+  color: #70196F;
+  outline: none !important; }
+
 /** tab - Structure CSS **/
 .tab {
   position: relative;
@@ -6747,8 +6788,8 @@ fieldset {
   background-color: white; }
 
 .modal-window-footer {
-  background-color: transparent;
-  color: white; }
+  background: white;
+  color: #70196F; }
 
 /** window - Structure CSS **/
 /* WINDOW */
