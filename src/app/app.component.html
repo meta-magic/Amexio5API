@@ -1,41 +1,29 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
-  <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
+    <amexio-homepage-ce [type]="'0'">
+        <amexio-homepage-northpanel>
+            <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
 
-    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon"
-      [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
-    </amexio-nav-item>
-  </amexio-nav>
+                <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
+                </amexio-nav-item>
+            </amexio-nav>
 
-  <amexio-row>
-    <amexio-column [size]="'2pt5'" style="padding-top: 68px;">
-      <amexio-side-nav [http-url]="'assets/data/menus/menu.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'"
-        (nodeClick)="onNodeClick($event)">
-      </amexio-side-nav>
-    </amexio-column>
-    <amexio-column [size]="'9pt5'">
-      <div class="route-container">
-        <div *ngIf="isRouteLoading">
 
-          <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'"
-            [color]="'black'" [size]="'7px'">
-          </amexio-spinner>
-
-        </div>
-
-        <router-outlet></router-outlet>
-      </div>
-      <br /><br />
-      <div id="footer1" style="bottom: 0;">
-        <p style="text-align: center;">
-            ©2018-19 MetaMagic Global Inc, 1st floor, 46 Stuyvesant Avenue, NJ, USA. BetaMagic Global Pvt Ltd, INDIA.. All Rights Reserved. Source Code : <a
-            href="https://api.amexio.org/api/license.html" target="_blank">Apache 2 License</a> Docs by <a href="https://creativecommons.org/licenses/by/3.0/"
-            target="_blank">CC By 3.0</a></p>
-      </div>
-      <br>
-      <br>
-      <br>
-    </amexio-column>
-  </amexio-row>
-
+        </amexio-homepage-northpanel>
+        <amexio-homepage-westpanel>
+            <amexio-side-nav [http-url]="'assets/data/menus/menu.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
+            </amexio-side-nav>
+        </amexio-homepage-westpanel>
+        <amexio-homepage-centerpanel >
+            <div *ngIf="isRouteLoading">
+                <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
+                </amexio-spinner>
+            </div>
+            <amexio-row>
+                <amexio-column size="12">
+                        <router-outlet></router-outlet>
+                </amexio-column>
+            </amexio-row>
+           
+        </amexio-homepage-centerpanel>
+    </amexio-homepage-ce>
 </div>
-removed data
