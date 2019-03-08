@@ -1,5 +1,5 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
-    <amexio-homepage-ce [type]="'0'">
+    <amexio-homepage-ce [type]="'1'">
         <amexio-homepage-northpanel>
             <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
 
@@ -13,17 +13,13 @@
             <amexio-side-nav [http-url]="'assets/data/menus/menu.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
             </amexio-side-nav>
         </amexio-homepage-westpanel>
-        <amexio-homepage-centerpanel >
+        <amexio-homepage-centerpanel>
             <div *ngIf="isRouteLoading">
                 <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
                 </amexio-spinner>
             </div>
-            <amexio-row>
-                <amexio-column size="12">
-                        <router-outlet></router-outlet>
-                </amexio-column>
-            </amexio-row>
-           
+            <router-outlet></router-outlet>
+
         </amexio-homepage-centerpanel>
     </amexio-homepage-ce>
 </div>

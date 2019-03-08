@@ -10,7 +10,7 @@ import {HttpClient} from "@angular/common/http";
   templateUrl: './app.component.html',
   styles: [`
   .BgColor {
-    
+
   }
   `]
 })
@@ -22,7 +22,7 @@ export class AppComponent {
   mdThemeData: any[] = [];
 
   newThemePath = '';
-
+  type="2";
   @ViewChild(AmexioNavBarComponent) amexioNav;
 
   constructor(public router: Router, @Inject(DOCUMENT) private document: any,
