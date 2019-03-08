@@ -24,6 +24,7 @@ import { VerticalTabDemo } from "./tab/verticaltab/verticaltab.demo";
 import {TabDemo} from './tab/basictab/tab.demo';
 import { DyanmicTabComponent } from "./tab/enhancedtab/dynamictabdemo.component";
 import { DyanmicVerticalTabComponent } from "./tab/enhancedverticaltab/dynamicverticaltabdemo.component";
+import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
 
 /**
  * Created by kedar on 1/2/19.
@@ -33,7 +34,7 @@ import { DyanmicVerticalTabComponent } from "./tab/enhancedverticaltab/dynamicve
         ClosableTabDemo, PanelDemoComponent, FieldSetDemoComponent,DialogueDemoComponent,
         CarouselDemoComponent, EnhancedTabDemo,EnhancedVerticalTabDemo,ScrollableTabDemo,
         IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo, DyanmicTabComponent,
-        DyanmicVerticalTabComponent,
+        DyanmicVerticalTabComponent, OverlayDemoComponent
 
 
     ],

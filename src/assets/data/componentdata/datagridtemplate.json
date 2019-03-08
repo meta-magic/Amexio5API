@@ -6,81 +6,99 @@
       {
         "User": "Buck Kulkarni",
         "profile": "buck.jpg",
-        "Date":"19-03-2018",
-        "Usage":42,
-        "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
-        "Payment":"ebay.png",
-        "Activity":"4 mins ago"
-      },{
-         "User": "Araf Karsh Hamid",
-          "profile": "karsh.jpg",
-          "Date":"2-03-2018",
-        "Usage":96,
-        "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
-        "Payment":"masterCard.jpg",
-        "Activity":"5 mins ago"
-      },{
-
-         "User": "Ketan Gote",
-         "profile": "ketan.jpg",
-          "Date":"7-04-2018",
-        "Usage":0,
-        "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
-        "Payment":"paypal.jpg",
-        "Activity":" a mins ago"
-      },{
+        "Date": "19-03-2018",
+        "Usage": 42,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "ebay.png",
+        "Activity": "4 mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 1245875481
+      },
+      {
+        "User": "Araf Karsh Hamid",
+        "profile": "karsh.jpg",
+        "Date": "2-03-2018",
+        "Usage": 96,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "masterCard.jpg",
+        "Activity": "5 mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 9685875481
+      },
+      {
+        "User": "Ketan Gote",
+        "profile": "ketan.jpg",
+        "Date": "7-04-2018",
+        "Usage": 0,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "paypal.jpg",
+        "Activity": " a mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 9945875481
+      },
+      {
         "User": "Dattaram Gawas",
         "profile": "dats.jpg",
-         "Date":"19-01-2018",
-        "Usage":7,
-        "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
-        "Payment":"masterCard.jpg",
-        "Activity":"a mins ago"
-      },{
-       "User": "Sagar Jadhav",
-       "profile": "sagar.jpg",
-        "Date":"4-03-2018",
-        "Usage":36,
-        "usageFromDate":"June 11,2015",
-       "usageToDate":"Jul 10,2015",
-        "Payment":"paypal.jpg",
-        "Activity":"a mins ago"
+        "Date": "19-01-2018",
+        "Usage": 7,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "masterCard.jpg",
+        "Activity": "a mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 8545875481
       },
-
+      {
+        "User": "Sagar Jadhav",
+        "profile": "sagar.jpg",
+        "Date": "4-03-2018",
+        "Usage": 36,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "paypal.jpg",
+        "Activity": "a mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 7545875481
+      },
       {
         "User": "Rashmi Thakkar",
         "profile": "rashmi.jpg",
-        "Date":"22-02-2018",
-        "Usage":80,
-        "usageFromDate":"June 11,2015",
-        "usageToDate":"Jul 10,2015",
-        "Payment":"visa.jpg",
-        "Activity":"8 mins ago"
-      },{
+        "Date": "22-02-2018",
+        "Usage": 80,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "visa.jpg",
+        "Activity": "8 mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 1245877548
+      },
+      {
         "User": "Deepali Arvind",
         "profile": "dipali.jpg",
-        "Date":"1-03-2018",
-        "Usage":83,
-        "usageFromDate":"June 11,2015",
-        "usageToDate":"Jul 10,2015",
-        "Payment":"masterCard.jpg",
-        "Activity":"6 mins ago"
+        "Date": "1-03-2018",
+        "Usage": 83,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "masterCard.jpg",
+        "Activity": "6 mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 9975875481
       },
       {
         "User": "Ashwini Agre",
         "profile": "ashwini.jpg",
-        "Date":"1-03-2018",
-        "Usage":83,
-        "usageFromDate":"June 11,2015",
-        "usageToDate":"Jul 10,2015",
-        "Payment":"masterCard.jpg",
-        "Activity":"9 mins ago"
+        "Date": "1-03-2018",
+        "Usage": 83,
+        "usageFromDate": "June 11,2015",
+        "usageToDate": "Jul 10,2015",
+        "Payment": "masterCard.jpg",
+        "Activity": "9 mins ago",
+        "email": "xyz@metamagic.in",
+        "phone": 1275875481
       }
-
     ]
   }
 }

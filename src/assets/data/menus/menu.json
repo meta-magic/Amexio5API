@@ -103,7 +103,7 @@
                         }
                     ]
                 },
-                
+
                 {
                     "text": "Row",
                     "link": "layout/row-demo",
@@ -226,7 +226,13 @@
                     "link": "panes/window-demo",
                     "badge": "U"
 
-                }
+                },
+              {
+                "text": "Overlay Container",
+                "icon": "fa fa-snowflake-o",
+                "badge":"NEW",
+                "link": "panes/overlay-demo"
+              }
             ]
         },
         {
