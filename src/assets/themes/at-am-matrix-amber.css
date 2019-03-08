@@ -5710,8 +5710,8 @@ amexio-layout-columns amexio-layout-item {
   color: #FFBF00; }
 
 .sidenav .activenode {
-  background-color: #000000;
-  color: inherit; }
+  background-color: #000000 !important;
+  color: inherit !important; }
 
 .sidenav .border {
   border-bottom: 3px solid #FFBF00; }
@@ -7359,7 +7359,7 @@ amexio-layout amexio-layout-item {
 
 /** Amexio overlay Structure CSS **/
 .overlayContainer {
-  position: fixed;
+  position: absolute;
   z-index: 4;
   padding: 10px;
   margin: 10px;

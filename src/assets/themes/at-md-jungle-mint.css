@@ -5460,8 +5460,8 @@ amexio-homepage-westpanel .sidenav-color {
   color: #005200; }
 
 .sidenav .activenode {
-  background-color: #6bff6b;
-  color: inherit; }
+  background-color: #6bff6b !important;
+  color: inherit !important; }
 
 .sidenav .border {
   border-bottom: 1px solid #ced4da; }
@@ -7110,7 +7110,7 @@ amexio-layout amexio-layout-item {
 
 /** Amexio overlay Structure CSS **/
 .overlayContainer {
-  position: fixed;
+  position: absolute;
   z-index: 4;
   padding: 10px;
   margin: 10px;
