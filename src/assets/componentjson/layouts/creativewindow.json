@@ -420,17 +420,17 @@
             "gridData": [
                 {
                     "name": "initiated",
-                    "version": "5.7 onwards",
+                    "version": "5.8 onwards",
                     "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
                 },
                 {
                     "name": "ready",
-                    "version": "5.7 onwards",
+                    "version": "5.8 onwards",
                     "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
                 },
                 {
                     "name": "destroy",
-                    "version": "5.7 onwards",
+                    "version": "5.8 onwards",
                     "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
                 }
             ]
