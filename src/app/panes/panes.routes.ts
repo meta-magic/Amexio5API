@@ -14,11 +14,12 @@ import { IconWithTabDemo } from './tab/iconwithtab/iconwithtab.demo';
 import { VerticalRightTabDemo } from './tab/verticalrighttab/verticalrighttab.demo';
 import { VerticalTabDemo } from './tab/verticaltab/verticaltab.demo';
 import { TabDemo } from './tab/basictab/tab.demo';
+import {OverlayDemoComponent} from './overlaycontainer/overlay.demo.component';
 
 
 /**
  * Created by kedar on 1/2/19.
- */ 
+ */
 
 export const PANES_ROUTE: Routes = [
     {
@@ -28,7 +29,7 @@ export const PANES_ROUTE: Routes = [
         path: 'closable-tab-demo', component: ClosableTabDemo,
     },
     {
-        path: 'stepbox-icon-demo', component: StepBoxIconComponent, 
+        path: 'stepbox-icon-demo', component: StepBoxIconComponent,
     },
     {
         path: 'step-box-demo', component: StepBoxDemoComponent,
@@ -55,7 +56,7 @@ export const PANES_ROUTE: Routes = [
         path: 'scrollable-tab-demo', component: ScrollableTabDemo,
     },
     {
-        path: 'icon-tab-demo', component:  IconWithTabDemo, 
+        path: 'icon-tab-demo', component:  IconWithTabDemo,
     },
     {
         path: 'verticalright-tab-demo', component: VerticalRightTabDemo,
@@ -66,7 +67,10 @@ export const PANES_ROUTE: Routes = [
     {
         path: 'basic-tab-demo', component: TabDemo,
     },
-    
-    
-   
-]
+    {
+      path: 'overlay-demo', component: OverlayDemoComponent,
+    },
+
+
+
+];

@@ -1,0 +1,55 @@
+<amexio-datagrid
+  [page-size] = "10"
+  [data-reader]="'response.data'"
+  [http-url]="'assets/data/componentdata/datagridtemplate.json'"
+  [http-method]="'get'">
+  <amexio-data-table-column [width]="30" [data-index]="'User'" [data-type]="'string'" [hidden]="false" [text]="'Full Name'"></amexio-data-table-column>
+  <amexio-data-table-column  [width]="30" [data-index]="'email'" [data-type]="'string'" [hidden]="false" [text]="'Job Title'">
+  </amexio-data-table-column>
+  <amexio-data-table-column [width]="30" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="'Action'">
+    <ng-template #amexioBodyTmpl let-column let-row="row">
+      <amexio-row>
+        <amexio-column [size]="12">
+          <amexio-image (onClick)="ovRef.toggle($event)" style="color:grey;" [icon-class]="'fa fa-pencil fa-2x'"></amexio-image>
+
+          <amexio-overlay-container #ovRef [position]="'relative'" [closable]="true">
+
+            <amexio-row>
+              <amexio-column [size]="3">
+                <amexio-image [path]="'assets/images/profile/'+row.profile" [c-class]="'image-round'">
+                </amexio-image>
+              </amexio-column>
+              <amexio-column [size]="9">
+                <amexio-label size="small">
+                  {{row.User}}
+                </amexio-label>
+                <br>
+                <amexio-label size="small" font-color="grey">
+                  Registered:{{row.Date}}
+                </amexio-label>
+              </amexio-column>
+            </amexio-row>
+
+            <amexio-row>
+              <amexio-column [size]="12">
+                <amexio-text-input [(ngModel)]="row.User"  [allow-blank]="false" field-label="Name" name="name" place-holder="name" icon-feedback="false">
+                </amexio-text-input>
+              </amexio-column>
+              <amexio-column [size]="12">
+                <amexio-text-input [(ngModel)]="row.phone" field-label="Mobile No" name="mobile"  place-holder="mobile"
+                                   [max-length]="10"  icon-feedback="false">
+                </amexio-text-input>
+              </amexio-column>
+              <amexio-column [size]="12">
+                <amexio-text-input [(ngModel)]="row.email" field-label="Email Id" name="email"  place-holder="email"
+                                   icon-feedback="false">
+                </amexio-text-input>
+              </amexio-column>
+            </amexio-row>
+
+          </amexio-overlay-container>
+        </amexio-column>
+      </amexio-row>
+    </ng-template>
+  </amexio-data-table-column>
+</amexio-datagrid>

@@ -1,0 +1,108 @@
+{
+  "title": "Amexio Overlay Container",
+  "description": "A Overlay Container is component container. We can add any component within overlay.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-overlay-container>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "close-on-escape",
+          "description": "close overlay container on Escape Key.",
+          "version": "5.8 onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "body-height",
+          "description": "Assign body height in percentage like 50,30",
+          "version": "5.8 onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "closable",
+          "description": "User can close the overlay container.",
+          "version": "5.8 onwards",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "width",
+          "description": "Provides width in percentage like '50%'.",
+          "version": "5.8 onwards",
+          "type": "string",
+          "default": "auto"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "toggle",
+          "description": "It is used to toggle overlay container. It required one parameter that is '$event'"
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "pane/overlaycontainer/overlaycontainer.html",
+    "tsUrl": "pane/overlaycontainer/overlaycontainer.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": ""
+  }
+}

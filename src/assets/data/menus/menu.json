@@ -63,6 +63,12 @@
                     "link": "creative/card-ce-demo"
                 },
                 {
+                    "text": "Creative Window",
+                    "icon": "fa fa-window-maximize",
+                    "badge": "NEW",
+                    "link": "creative/window-ce-demo"
+                },
+                {
                     "text": "Column Vertical",
                     "icon": "fa fa-pause  ",
                     "link": "layout/vertical-layout"
@@ -97,7 +103,7 @@
                         }
                     ]
                 },
-                
+
                 {
                     "text": "Row",
                     "link": "layout/row-demo",
@@ -220,7 +226,13 @@
                     "link": "panes/window-demo",
                     "badge": "U"
 
-                }
+                },
+              {
+                "text": "Overlay Container",
+                "icon": "fa fa-snowflake-o",
+                "badge":"NEW",
+                "link": "panes/overlay-demo"
+              }
             ]
         },
         {

@@ -4447,6 +4447,85 @@ amexio-step-wizard .form-footer {
   font-weight: 600;
   margin-right: 7px; }
 
+amexio-homepage-northpanel .topnav {
+  padding: 0px; }
+
+amexio-homepage-northpanel .topnav-lhs {
+  flex: 0 0 19%;
+  max-width: 19%; }
+
+amexio-homepage-northpanel .topnav-lhs-mobile {
+  flex: none;
+  max-width: 100%; }
+
+amexio-homepage-northpanel .topnav-rhs {
+  flex-grow: 1; }
+
+amexio-homepage-northpanel .topnavbarunit1-mobile {
+  padding-left: 45px; }
+
+amexio-homepage-westpanel .homepage-westpanel {
+  padding-top: 50px; }
+
+amexio-homepage-centerpanel .homepage-centerpanel {
+  padding: 10px; }
+
+amexio-homepage-northpanel .top-nav-button {
+  padding-left: 0px; }
+
+.homepage-1 .sidenav::-webkit-scrollbar,
+.homepage-2 .sidenav::-webkit-scrollbar {
+  width: 3px; }
+
+.homepage-centerpanel-flex {
+  flex-grow: 1;
+  padding-top: 50px; }
+
+.homepage-northpanel-flex {
+  display: flex;
+  flex-direction: row; }
+
+.homepage-1 .sidenav .border,
+.homepage-2 .sidenav .border {
+  border-bottom: none; }
+
+.collaspe-icon-style {
+  margin-right: -26px;
+  z-index: 2;
+  height: 50px;
+  background-color: linear-gradient(#40434D, #000000);
+  color: white;
+  width: 50px;
+  border-radius: 100%;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2) !important;
+  filter: grayscale(20%);
+  transform: perspective(1px) translateZ(0);
+  transition-duration: 0.5s;
+  transition-property: box-shadow; }
+
+.homepage-2 .homepage-expand {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.homepage-2 .homepage-collapse {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row; }
+
+.homepage-1 .homepage-expand {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+
+.homepage-1 .homepage-collapse {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row; }
+
 /****************************************************************************
     Component Name : Datapoints
     Version : Amexio v4.0 onwards
@@ -5172,7 +5251,8 @@ amexio-layout-columns amexio-layout-item {
   line-height: 24px;
   font-weight: 400;
   flex-grow: 1;
-  position: relative; }
+  position: relative;
+  display: block; }
 
 .card-container-footer {
   padding: 10px;
@@ -5290,6 +5370,11 @@ amexio-layout-columns amexio-layout-item {
   .menubar .menuheader .menulink:hover .menu-content {
     display: block; }
 
+.menulink:focus {
+  outline: none !important;
+  background: rgba(255, 253, 208, 0.4) !important;
+  color: #603A63; }
+
 .menu-content {
   display: none;
   padding: 10px;
@@ -5299,6 +5384,9 @@ amexio-layout-columns amexio-layout-item {
 
 .menu-content-display {
   display: block !important; }
+
+.menu-content-hide {
+  display: none !important; }
 
 .menu-content-left {
   left: 0;
@@ -5331,10 +5419,20 @@ amexio-layout-columns amexio-layout-item {
   padding: 10px;
   cursor: pointer; }
 
+.menu-links-header:focus {
+  outline: none !important;
+  background: rgba(255, 253, 208, 0.4) !important;
+  color: #603A63; }
+
 .menu-content .menu-content-cols .content .menulinks {
   width: 100%;
   padding: 5px 10px 0px 10px;
   cursor: pointer; }
+
+.menulinks:focus {
+  outline: none !important;
+  background: rgba(255, 253, 208, 0.4) !important;
+  color: #603A63; }
 
 /****************************************************************************
     Component Name : Navbar
@@ -5627,22 +5725,22 @@ amexio-layout-columns amexio-layout-item {
   color: #603A63;
   outline: none !important; }
 
-.innerSideNav:focus {
-  background-color: rgba(255, 253, 208, 0.4);
-  color: #603A63;
-  outline: none !important; }
-
 .sidenav .headernodeSeparator:hover {
   background-color: rgba(255, 253, 208, 0.4);
   color: #603A63; }
+
+.sidenav .defaultnode:focus {
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63;
+  outline: none !important; }
 
 .sidenav .defaultnode:hover {
   background-color: rgba(255, 253, 208, 0.4);
   color: #603A63; }
 
 .sidenav .activenode {
-  background-color: rgba(255, 253, 208, 0.4);
-  color: inherit; }
+  background-color: rgba(255, 253, 208, 0.4) !important;
+  color: inherit !important; }
 
 .sidenav .border {
   border-bottom: 2px solid #603A63; }
@@ -5983,6 +6081,22 @@ amexio-layout-columns amexio-layout-item {
   width: 80%;
   float: right;
   display: inline; }
+
+.context-menu-list-items1:focus {
+  background-color: rgba(255, 253, 208, 0.4);
+  outline: none; }
+
+.breadcrumb-group:focus {
+  background: rgba(255, 253, 208, 0.4);
+  outline: none; }
+
+.arrow-group-css:focus {
+  background: rgba(255, 253, 208, 0.4);
+  outline: none; }
+
+.label-icon-css:focus {
+  background: rgba(255, 253, 208, 0.4);
+  outline: none; }
 
 /****************************************************************************
     Component Name : Accordion
@@ -6827,7 +6941,8 @@ fieldset {
   overflow-x: hidden;
   background-color: white;
   color: #603A63;
-  max-height: 100%; }
+  max-height: 100%;
+  outline: none; }
 
 .modal-window-header {
   display: flex;
@@ -7256,6 +7371,156 @@ amexio-layout amexio-layout-item {
 
   .timeline .timeline-item .timeline-panel-right {
     width: 94%; } }
+/*****************************************************************************
+ Component Name : Amexio overlay container 
+  Version : Amexio v5.7.0 onwards
+****************************************************************************/
+/** Amexio overlay Vars CSS **/
+/** Amexio overlay Visual CSS **/
+.containerClass::-webkit-scrollbar-track {
+  background-color: #f5f5f5; }
+
+.containerClass::-webkit-scrollbar {
+  background-color: #f5f5f5; }
+
+.containerClass::-webkit-scrollbar-thumb {
+  background-color: white; }
+
+/** Amexio overlay Structure CSS **/
+.overlayContainer {
+  position: absolute;
+  z-index: 4;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  transition: opacity 0.3s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.leftTopArrow::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  border-width: 15px;
+  border-style: solid;
+  transform: rotate(180deg);
+  border-color: rgba(255, 253, 208, 0.4) transparent transparent transparent; }
+
+.rightTopArrow::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  right: 10px;
+  border-width: 15px;
+  border-style: solid;
+  transform: rotate(180deg);
+  border-color: rgba(255, 253, 208, 0.4) transparent transparent transparent; }
+
+.rightBottomArrow::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: rgba(255, 253, 208, 0.4) transparent transparent transparent; }
+
+.leftBottomArrow::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  border-width: 15px;
+  border-style: solid;
+  border-color: rgba(255, 253, 208, 0.4) transparent transparent transparent; }
+
+.hideoverlay {
+  display: none; }
+
+.iconClass {
+  position: absolute;
+  top: -8px;
+  font-size: 20px;
+  cursor: pointer; }
+
+.containerClass {
+  overflow-y: auto; }
+
+.containerClass::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+
+.containerClass::-webkit-scrollbar {
+  width: 6px;
+  height: 6px; }
+
+/****************************************************************************
+    Component Name : Window CE
+    Version : Amexio v5.8 onwards
+*****************************************************************************/
+/** windowce - Vars CSS **/
+/** windowce - Visual CSS **/
+.amexio-root-window-ce {
+  background: rgba(128, 127, 127, 0.6); }
+
+/** windowce - Structure CSS **/
+.amexio-root-window-ce {
+  background: rgba(128, 127, 127, 0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 0;
+  left: 0; }
+
+.amexio-root-window-content-ce {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 96%;
+  margin-top: 1%; }
+
+.amexio-root-window-content-ce > * {
+  padding: 0px; }
+
+.card-container-body {
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+  line-height: 24px;
+  font-weight: 400;
+  flex-grow: 1;
+  position: relative; }
+
+/* .amexio-root-window-content-ce .window-middle::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.amexio-root-window-content-ce .window-middle::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+} */
+.window-header-ce {
+  padding: 10px;
+  position: relative;
+  display: flex; }
+
+.window-header-div-ce {
+  display: flex;
+  flex-grow: 50;
+  flex-direction: row; }
+
+.window-header-content-ce {
+  display: flex;
+  flex-direction: column; }
+
+.window-header-inner-div-ce {
+  flex-grow: 1;
+  flex-direction: row; }
+
 /****************************************************************************
                     Media Query for width - 375
 *****************************************************************************/

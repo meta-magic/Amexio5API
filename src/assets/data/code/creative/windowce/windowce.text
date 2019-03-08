@@ -1,0 +1,25 @@
+export class CreativeWindowComponent {
+   showSideModal: boolean;
+   showCenterModal:boolean;
+   showLoginWindow:boolean;
+   showInfoModal:boolean;
+   showFrameWindow:boolean;
+  constructor() {
+     
+}
+  onSideModalClick(){
+   this.showSideModal = !this.showSideModal;
+  }
+  showInfoModalClick(){
+   this.showInfoModal = !this.showInfoModal;
+  } 
+  onloginWindowClick(){
+   this.showLoginWindow = ! this.showLoginWindow;
+  }
+  onCenterModalClick(){
+    this.showCenterModal = ! this.showCenterModal;
+  }
+  onFrameModalClick(){
+   this.showFrameWindow =! this.showFrameWindow;
+  }
+}

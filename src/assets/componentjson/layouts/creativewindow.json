@@ -1,0 +1,448 @@
+{
+    "title": "Amexio Creative Window",
+    "description": "Amexio creative window diffrent styles",
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-window-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 20,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "start",
+                    "version": "5.8 onwards",
+                    "description": "alignment of window example start,center,end"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background image of window"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "window content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background color or gradient of window"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "height of window"
+                },
+                {
+                    "name": "enable-lifecycle-events",
+                    "description": "Enable lifecycle events example [all/init/ready/destroy].",
+                    "version": "5.8 onwards",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": "vertical-position",
+                    "description": "Alignment of window dialog to top or bottom or center.",
+                    "version": "5.8 onwards",
+                    "type": "string",
+                    "default": "center"
+                },
+                {
+                    "name": "horizontal-position",
+                    "description": "Alignment of window dialog to left or right or center.",
+                    "version": "5.8 onwards",
+                    "type": "string",
+                    "default": "center"
+                },
+                {
+                    "name": "show",
+                    "description": "uses two way binding to Show / Hide Window.",
+                    "version": "5.8 onwards",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "close-on-escape",
+                    "description": "Window box closes on click of Escape Key.",
+                    "version": "5.8 onwards",
+                    "type": "boolean",
+                    "default": "true"
+                },
+                {
+                    "name": "maximize",
+                    "description": "User can maximize the window to full screen.",
+                    "version": "5.8 onwards",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "closable",
+                    "description": "User can close the window.",
+                    "version": "5.8 onwards",
+                    "type": "boolean",
+                    "default": "true"
+                },
+                {
+                    "name": "width",
+                    "description": "Provides width to the window",
+                    "version": "5.8 onwards",
+                    "type": "string",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "gridTitle": "Properties of <amexio-header-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "start",
+                    "version": "5.8 onwards",
+                    "description": "alignment of window header example start,center,end"
+                },
+                {
+                    "name": "vertical-align ",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "alignment of window header example top,center,bottom"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background image of window header"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "window header content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background color or gradient of window"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "height of window header"
+                },
+                {
+                    "name": "border-bottom",
+                    "type": "boolean",
+                    "default": "false",
+                    "version": "5.8 onwards",
+                    "description": "set true border will enable for header bottom"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Properties of <amexio-body-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "end",
+                    "version": "5.8 onwards",
+                    "description": "alignment of window body example start,center,end"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background image of window body"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "window body content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background color or gradient of window body"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "height of window body"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Properties of <amexio-action-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "end",
+                    "version": "5.8 onwards",
+                    "description": "alignment of window action example start,center,end"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background image of window action"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "window action content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "background color or gradient of window"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "height of window action"
+                },
+                {
+                    "name": "border-top",
+                    "type": "boolean",
+                    "default": "false",
+                    "version": "5.8 onwards",
+                    "description": "set true border will enable for action top"
+                },
+                {
+                    "name": "direction",
+                    "type": "string",
+                    "default": "row",
+                    "version": "5.8 onwards",
+                    "description": "set direction of window action"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Events <amexio-window-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 20,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "initiated",
+                    "version": "5.8 onwards",
+                    "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+                },
+                {
+                    "name": "ready",
+                    "version": "5.8 onwards",
+                    "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+                },
+                {
+                    "name": "destroy",
+                    "version": "5.8 onwards",
+                    "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+                }
+            ]
+        }
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "creative/windowce/windowce.html",
+        "tsUrl": "creative/windowce/windowce.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": true,
+        "stackblitzUrl": ""
+    }
+}

@@ -9,13 +9,14 @@ import { CREATIVE_ROUTE } from "./creative.routes";
 
 import { RouterModule } from "@angular/router";
 import { CreativeCardDemo } from "./cardce/card.demo";
+import { CreativeWindowDemo } from "./windowce/window.demo";
 import {CreativeCircularProgressBarDemo} from './progressce/progressce.component';
 
 /**
  * Created by kedar on 6/2/19.
  */
 @NgModule({
-    declarations: [CreativeCardDemo, CreativeCircularProgressBarDemo],
+    declarations: [CreativeCardDemo,CreativeWindowDemo, CreativeCircularProgressBarDemo],
     imports: [
         CommonModule, 
         FormsModule, 
