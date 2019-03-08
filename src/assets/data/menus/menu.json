@@ -63,6 +63,12 @@
                     "link": "creative/card-ce-demo"
                 },
                 {
+                    "text": "Creative Window",
+                    "icon": "fa fa-window-maximize",
+                    "badge": "NEW",
+                    "link": "creative/window-ce-demo"
+                },
+                {
                     "text": "Column Vertical",
                     "icon": "fa fa-pause  ",
                     "link": "layout/vertical-layout"
