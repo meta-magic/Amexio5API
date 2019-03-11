@@ -4539,10 +4539,6 @@ amexio-homepage-northpanel .top-nav-button {
   display: flex;
   flex-direction: row; }
 
-.homepage-1 .sidenav .border,
-.homepage-2 .sidenav .border {
-  border-bottom: none; }
-
 .collaspe-icon-style {
   margin-right: -26px;
   z-index: 2;
@@ -7243,19 +7239,10 @@ amexio-layout amexio-layout-item {
   flex-direction: column;
   justify-content: center;
   height: 96%;
-  margin-top: 1%; }
+  padding: 5px; }
 
 .amexio-root-window-content-ce > * {
   padding: 0px; }
-
-.card-container-body {
-  padding: 10px;
-  font-size: 14px;
-  display: block;
-  line-height: 24px;
-  font-weight: 400;
-  flex-grow: 1;
-  position: relative; }
 
 /* .amexio-root-window-content-ce .window-middle::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
