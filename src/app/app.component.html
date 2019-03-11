@@ -6,7 +6,6 @@
                 <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
                 </amexio-nav-item>
             </amexio-nav>
-
         </amexio-homepage-northpanel>
         <amexio-homepage-westpanel>
             <amexio-side-nav [http-url]="'assets/data/menus/menu.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
