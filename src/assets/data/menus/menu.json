@@ -14,14 +14,14 @@
             "link": "d3-charts",
             "icon": "fa fa-openid  "
         },
-      {
+        {
             "text": "Layouts",
             "badge": "3",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars  ",
-                    "badge":"U",
+                    "badge": "U",
                     "link": "layout/accordion-demo"
                 },
                 {
@@ -45,7 +45,7 @@
                     "badge": "1",
                     "children": [{
                             "text": "Form",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "layout/card-form-demo",
                             "icon": "fa fa-leaf  "
                         },
@@ -61,6 +61,12 @@
                     "icon": "fa fa-creative-commons  ",
                     "badge": "NEW",
                     "link": "creative/card-ce-demo"
+                },
+                {
+                    "text": "Creative Home Page",
+                    "icon": "fa fa-home",
+                    "badge": "NEW",
+                    "link": "creative/homepage-ce-demo"
                 },
                 {
                     "text": "Creative Window",
@@ -135,13 +141,13 @@
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars  ",
-                    "badge":"U",
+                    "badge": "U",
                     "link": "panes/panel-demo"
                 },
                 {
                     "text": "Amexio Runtime (ARC)",
                     "icon": "fa fa-th",
-                    "badge":"NEW",
+                    "badge": "NEW",
                     "link": "layout/arc-demo"
                 },
                 {
@@ -161,7 +167,7 @@
                 },
                 {
                     "text": "Tab",
-                    "badge":"U",
+                    "badge": "U",
                     "icon": "fa fa-folder  ",
                     "children": [{
                             "text": "Horizontal",
@@ -233,8 +239,7 @@
             "text": "Forms",
             "badge": "1",
             "icon": "fa fa-clone  ",
-            "children": [
-                {
+            "children": [{
                     "text": "Form (HTML)",
                     "icon": "fa fa-window-maximize  ",
                     "children": [{
@@ -271,8 +276,7 @@
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
             "badge": "7",
-            "children": [
-                {
+            "children": [{
                     "text": "Badge",
                     "icon": "fa fa-id-badge  ",
                     "link": "forms-Input/badge-demo",
@@ -290,7 +294,7 @@
                 },
                 {
                     "text": "Chips",
-                    "badge":"U",
+                    "badge": "U",
                     "icon": "fa fa-chevron-circle-down  ",
                     "link": "forms-Input/chips-demo"
                 },
@@ -460,7 +464,8 @@
                         {
                             "text": "Floating Button",
                             "icon": "fa fa-circle-o  ",
-                            "link": "forms-Action/floatingbutton-demo"                        },
+                            "link": "forms-Action/floatingbutton-demo"
+                        },
                         {
                             "text": "Floating Group",
                             "icon": "fa fa-circle-o  ",
@@ -518,10 +523,10 @@
                             "link": "data/simplegrid-demo"
                         },
                         {
-                          "text": "Grid - Lazy Loading",
-                          "icon": "fa fa-database  ",
-                          "badge": "NEW",
-                          "link": "data/server-side-pagination-demo"
+                            "text": "Grid - Lazy Loading",
+                            "icon": "fa fa-database  ",
+                            "badge": "NEW",
+                            "link": "data/server-side-pagination-demo"
                         },
                         {
                             "text": "Column Sizing",
@@ -711,7 +716,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars  ",
-            "badge":"4",
+            "badge": "4",
             "children": [{
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right  ",
@@ -724,7 +729,7 @@
                 },
                 {
                     "text": "Dropdown Menu",
-                    "badge":"U",
+                    "badge": "U",
                     "icon": "fa fa-chevron-circle-down  ",
                     "link": "navigation/dropdownmenu-demo"
                 },
@@ -742,13 +747,13 @@
                 {
                     "text": "Side Nav Bar",
                     "icon": "fa fa-bars  ",
-                    "badge":"U",
+                    "badge": "U",
                     "link": "navigation/sidenav-demo"
                 },
                 {
                     "text": " Side Panel",
                     "icon": "fa fa-bars  ",
-                    "badge":"U",
+                    "badge": "U",
                     "link": "navigation/sidenav-page-demo"
                 },
                 {
@@ -791,14 +796,14 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o  ",
-            "badge":"U",
+            "badge": "U",
             "children": [{
                     "text": "D3 Charts",
                     "icon": "fa fa-openid  ",
-                     "badge":"11",
+                    "badge": "11",
                     "children": [{
                             "text": "Bar Chart",
-                            "badge":"U",
+                            "badge": "U",
                             "icon": "fa fa-bar-chart  ",
                             "children": [{
                                     "text": "Bar chart-vertical",
@@ -815,13 +820,13 @@
                         {
                             "text": "Bubble Chart ",
                             "icon": "fa fa-dot-circle-o  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-bubble"
 
                         },
                         {
                             "text": "Combo Chart",
-                            "badge":"U",
+                            "badge": "U",
                             "icon": "fa fa-area-chart  ",
                             "link": "D3chart/amexio-d3-chart-combo"
                         },
@@ -832,26 +837,26 @@
                         },
                         {
                             "text": "Histogram Chart",
-                            "badge":"U",
+                            "badge": "U",
                             "icon": "fa fa-bar-chart  ",
                             "link": "D3chart/amexio-d3-chart-histogram"
                         },
                         {
                             "text": "Line Chart",
                             "icon": "fa fa-line-chart  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-line"
                         },
                         {
                             "text": "Multi-Area Chart",
                             "icon": "fa fa-area-chart  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-multiarea"
                         },
                         {
                             "text": "MultiSeriesBar Chart",
                             "icon": "fa fa-bar-chart  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-multiseries"
                         },
                         {
@@ -862,25 +867,25 @@
                         {
                             "text": "Scatter Chart",
                             "icon": "fa fa-dot-circle-o  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-scatter"
                         },
                         {
                             "text": "Timeline Chart",
                             "icon": "fa fa-bar-chart  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-timeline"
                         },
                         {
                             "text": "Stack Bar Chart",
                             "icon": "fa fa-bar-chart  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-bar-stack"
                         },
                         {
                             "text": "Waterfall Chart",
                             "icon": "fa fa-line-chart  ",
-                            "badge":"U",
+                            "badge": "U",
                             "link": "D3chart/amexio-d3-chart-waterfall"
                         }
                     ]
@@ -994,7 +999,7 @@
                     "text": "Google Map",
                     "icon": "fa fa-map-marker",
                     "link": "map/googlemap-demo"
-                                }
+                }
             ]
         },
         {

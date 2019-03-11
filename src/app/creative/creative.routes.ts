@@ -1,11 +1,12 @@
 import { Routes } from '@angular/router';
 import { CreativeCardDemo } from './cardce/card.demo';
-import { CreativeWindowDemo } from "./windowce/window.demo";
+import { CreativeWindowDemo } from './windowce/window.demo';
 import { CreativeCircularProgressBarDemo } from './progressce/progressce.component';
+import { HomePageDemo } from './homepage/homepage.demo';
 
 
 /**
- * Created by kedar on 6/2/19. 
+ * Created by kedar on 6/2/19.
  */
 export const CREATIVE_ROUTE: Routes = [
 
@@ -17,6 +18,8 @@ export const CREATIVE_ROUTE: Routes = [
     },
     {
         path: 'progress-ce-demo', component: CreativeCircularProgressBarDemo,
+    },
+    {
+      path: 'homepage-ce-demo', component: HomePageDemo
     }
-   
-]
+];

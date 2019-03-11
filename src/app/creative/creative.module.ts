@@ -11,17 +11,18 @@ import { RouterModule } from "@angular/router";
 import { CreativeCardDemo } from "./cardce/card.demo";
 import { CreativeWindowDemo } from "./windowce/window.demo";
 import {CreativeCircularProgressBarDemo} from './progressce/progressce.component';
+import { HomePageDemo } from './homepage/homepage.demo';
 
 /**
  * Created by kedar on 6/2/19.
  */
 @NgModule({
-    declarations: [CreativeCardDemo,CreativeWindowDemo, CreativeCircularProgressBarDemo],
+    declarations: [CreativeCardDemo,CreativeWindowDemo, CreativeCircularProgressBarDemo,HomePageDemo],
     imports: [
-        CommonModule, 
-        FormsModule, 
-        HttpClientModule, 
-        SharedModule.forRoot(), 
+        CommonModule,
+        FormsModule,
+        HttpClientModule,
+        SharedModule.forRoot(),
         AmexioWidgetModule,
         RouterModule.forChild(CREATIVE_ROUTE),
     ],

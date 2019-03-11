@@ -1,0 +1,59 @@
+{
+    "title": "Amexio Creative Home Page ",
+    "description": "This component shows diffrent type of home pages ",
+    "apiRefMetadata": [{
+        "gridTitle": "Properties <amexio-homepage-ce>",
+        "columnDefinition": [{
+                "dataindex": "name",
+                "text": "Name",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "version",
+                "text": "Version",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "type",
+                "text": "Type",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "default",
+                "text": "Default",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "description",
+                "text": "Description",
+                "width": 60,
+                "hidden": false,
+                "datatype": "string"
+            }
+        ],
+        "gridData": [{
+            "name": "type",
+            "description": "type of home page like 1,2,3",
+            "version": "5.7.2 onwards",
+            "type": "string",
+            "default": "1"
+        }]
+    }],
+    "sourceMetadata": {
+        "htmlUrl": "creative/homepage/creative.html",
+        "tsUrl": "creative/homepage/creative.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": true,
+        "stackblitzUrl": ""
+    }
+}
