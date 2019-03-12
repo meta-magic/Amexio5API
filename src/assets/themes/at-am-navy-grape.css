@@ -4535,9 +4535,6 @@ amexio-homepage-northpanel .top-nav-button {
   transition-duration: 0.5s;
   transition-property: box-shadow; }
 
-amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
-  flex-grow: 0.3; }
-
 /****************************************************************************
     Component Name : Datapoints
     Version : Amexio v4.0 onwards
