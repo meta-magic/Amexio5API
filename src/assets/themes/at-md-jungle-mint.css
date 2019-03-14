@@ -4668,6 +4668,26 @@ amexio-homepage-northpanel .top-nav-button {
 .datatable-row:nth-child(odd) {
   background-color: #f5f5f5; }
 
+.datatable-col:focus {
+  background-color: #b8ffb8;
+  color: #005200;
+  outline: none; }
+
+.float-right .enablecolumnfilter:focus {
+  background-color: #b8ffb8;
+  color: #005200;
+  outline: none; }
+
+.dropdown-list .list-items:focus {
+  background-color: #b8ffb8;
+  color: #005200;
+  outline: none; }
+
+.datatable-filter-icon:focus {
+  background-color: #b8ffb8;
+  color: #005200;
+  outline: none; }
+
 /** Datatable - Visual CSS **/
 .datatabletitle {
   font-size: 1.5em;
@@ -4843,6 +4863,12 @@ amexio-homepage-northpanel .top-nav-button {
 
 .itemselector-list-active {
   background-color: #6bff6b; }
+
+.itemselector-list-active:focus {
+  background-color: #6bff6b; }
+
+.itemselector-list:focus {
+  background-color: #b8ffb8; }
 
 .itemselector-list:hover {
   background-color: #b8ffb8; }
@@ -6161,6 +6187,11 @@ fieldset {
   font-weight: bold;
   cursor: pointer; }
 
+.collapsible-legend:focus {
+  outline: none;
+  background-color: #b8ffb8;
+  color: #005200; }
+
 .collapsible-fieldset {
   overflow: hidden; }
 
@@ -6780,6 +6811,21 @@ amexio-window-header > amexio-toolbar > .toolbar {
 .dialogue-header {
   background: #98bf98;
   color: #121212; }
+
+.dialogue-table:focus {
+  outline: none;
+  background-color: #b8ffb8;
+  color: #005200; }
+
+.tablecol:focus {
+  outline: none;
+  background-color: #b8ffb8;
+  color: #005200; }
+
+.dialogue-message:focus {
+  outline: none;
+  background-color: #b8ffb8;
+  color: #005200; }
 
 .dialogue-footer {
   background-color: #ffffff;
@@ -8177,7 +8223,7 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 @media screen and (max-width: 600px) {
   .footer-right-align {
     padding-right: 15px; } }
-@media only screen and (min-width: 375px) and (max-width: 450px) {
+@media only screen and (max-width: 568px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.2; } }
 /****************************************************************************
@@ -8637,7 +8683,7 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.1; } }
 /****************************************************************************
@@ -8838,9 +8884,6 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1440px) {
-  amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
-    flex-grow: 0.1; } }
 /****************************************************************************
                     Media Query for width - 1440
 *****************************************************************************/

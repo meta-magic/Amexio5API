@@ -4625,6 +4625,26 @@ amexio-homepage-northpanel .top-nav-button {
 .datatable-row:nth-child(odd) {
   background-color: rgba(55, 20, 2, 0.5); }
 
+.datatable-col:focus {
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63;
+  outline: none; }
+
+.float-right .enablecolumnfilter:focus {
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63;
+  outline: none; }
+
+.dropdown-list .list-items:focus {
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63;
+  outline: none; }
+
+.datatable-filter-icon:focus {
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63;
+  outline: none; }
+
 /** Datatable - Visual CSS **/
 .datatabletitle {
   font-size: 1.5em;
@@ -4799,6 +4819,12 @@ amexio-homepage-northpanel .top-nav-button {
   background-color: #a09e9e; }
 
 .itemselector-list-active {
+  background-color: rgba(255, 253, 208, 0.4); }
+
+.itemselector-list-active:focus {
+  background-color: rgba(255, 253, 208, 0.4); }
+
+.itemselector-list:focus {
   background-color: rgba(255, 253, 208, 0.4); }
 
 .itemselector-list:hover {
@@ -6410,6 +6436,11 @@ fieldset {
   font-weight: bold;
   cursor: pointer; }
 
+.collapsible-legend:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63; }
+
 .collapsible-fieldset {
   overflow: hidden; }
 
@@ -7028,6 +7059,21 @@ amexio-window-header > amexio-toolbar > .toolbar {
 
 .dialogue-header {
   background: linear-gradient(#40434D, #000000);
+  color: #603A63; }
+
+.dialogue-table:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63; }
+
+.tablecol:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #603A63; }
+
+.dialogue-message:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4);
   color: #603A63; }
 
 .dialogue-footer {
@@ -7933,7 +7979,7 @@ amexio-layout amexio-layout-item {
 @media screen and (max-width: 600px) {
   .footer-right-align {
     padding-right: 15px; } }
-@media only screen and (min-width: 375px) and (max-width: 450px) {
+@media only screen and (max-width: 568px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.2; } }
 /****************************************************************************
@@ -8393,7 +8439,7 @@ amexio-layout amexio-layout-item {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.1; } }
 /****************************************************************************
@@ -8594,9 +8640,6 @@ amexio-layout amexio-layout-item {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1440px) {
-  amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
-    flex-grow: 0.1; } }
 /****************************************************************************
                     Media Query for width - 1440
 *****************************************************************************/

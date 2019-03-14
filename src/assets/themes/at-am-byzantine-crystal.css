@@ -4626,6 +4626,26 @@ amexio-homepage-northpanel .top-nav-button {
 .datatable-row:nth-child(odd) {
   background-color: #ECEFF1; }
 
+.datatable-col:focus {
+  background-color: #f3c8f2;
+  color: #70196F;
+  outline: none; }
+
+.float-right .enablecolumnfilter:focus {
+  background-color: #f3c8f2;
+  color: #70196F;
+  outline: none; }
+
+.dropdown-list .list-items:focus {
+  background-color: #f3c8f2;
+  color: #70196F;
+  outline: none; }
+
+.datatable-filter-icon:focus {
+  background-color: #f3c8f2;
+  color: #70196F;
+  outline: none; }
+
 /** Datatable - Visual CSS **/
 .datatabletitle {
   font-size: 1.5em;
@@ -4801,6 +4821,12 @@ amexio-homepage-northpanel .top-nav-button {
 
 .itemselector-list-active {
   background-color: #e99fe9; }
+
+.itemselector-list-active:focus {
+  background-color: #e99fe9; }
+
+.itemselector-list:focus {
+  background-color: #f3c8f2; }
 
 .itemselector-list:hover {
   background-color: #f3c8f2; }
@@ -6411,6 +6437,11 @@ fieldset {
   font-weight: bold;
   cursor: pointer; }
 
+.collapsible-legend:focus {
+  outline: none;
+  background-color: #f3c8f2;
+  color: #70196F; }
+
 .collapsible-fieldset {
   overflow: hidden; }
 
@@ -7029,6 +7060,21 @@ amexio-window-header > amexio-toolbar > .toolbar {
 
 .dialogue-header {
   background: #70196F;
+  color: #70196F; }
+
+.dialogue-table:focus {
+  outline: none;
+  background-color: #f3c8f2;
+  color: #70196F; }
+
+.tablecol:focus {
+  outline: none;
+  background-color: #f3c8f2;
+  color: #70196F; }
+
+.dialogue-message:focus {
+  outline: none;
+  background-color: #f3c8f2;
   color: #70196F; }
 
 .dialogue-footer {
@@ -7934,7 +7980,7 @@ amexio-layout amexio-layout-item {
 @media screen and (max-width: 600px) {
   .footer-right-align {
     padding-right: 15px; } }
-@media only screen and (min-width: 375px) and (max-width: 450px) {
+@media only screen and (max-width: 568px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.2; } }
 /****************************************************************************
@@ -8394,7 +8440,7 @@ amexio-layout amexio-layout-item {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.1; } }
 /****************************************************************************
@@ -8595,9 +8641,6 @@ amexio-layout amexio-layout-item {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1440px) {
-  amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
-    flex-grow: 0.1; } }
 /****************************************************************************
                     Media Query for width - 1440
 *****************************************************************************/
