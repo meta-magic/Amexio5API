@@ -47,7 +47,7 @@ export class CreativeFormComponent implements OnInit{
   this.employeeForm = this.fb.group({
       FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
       Subject: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(100)]],
-       Message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(1000000)]],
+      Message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(1000000)]],
     });
  }
 
