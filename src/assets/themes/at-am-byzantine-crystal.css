@@ -4475,7 +4475,7 @@ amexio-homepage-northpanel .topnav-lhs-mobile > div > span {
 amexio-homepage-northpanel .topnav-rhs {
   flex-grow: 1; }
 
-amexio-homepage-northpanel .topnavbarunit1-mobile {
+amexio-homepage-northpanel .topnav-lhs-mobile {
   padding-left: 45px; }
 
 amexio-homepage-westpanel .homepage-westpanel {
@@ -4535,6 +4535,10 @@ amexio-homepage-northpanel .top-nav-button {
 
 .homepage3-bar .fa {
   font-size: 26px; }
+
+.collaspe-icon-style amexio-image {
+  display: flex;
+  align-items: center; }
 
 .collaspe-icon-style {
   z-index: 2;
@@ -4826,10 +4830,12 @@ amexio-homepage-northpanel .top-nav-button {
   background-color: #e99fe9; }
 
 .itemselector-list-active:focus {
-  background-color: #e99fe9; }
+  background-color: #e99fe9;
+  outline: none; }
 
 .itemselector-list:focus {
-  background-color: #f3c8f2; }
+  background-color: #f3c8f2;
+  outline: none; }
 
 .itemselector-list:hover {
   background-color: #f3c8f2; }
@@ -5512,7 +5518,7 @@ amexio-layout-columns amexio-layout-item {
 .topnav a label {
   color: #E84C1A; }
 
-.topnavbarunit2-mobile {
+.topnav-rhs-color {
   background-color: white;
   color: #E84C1A; }
 
@@ -5592,16 +5598,11 @@ amexio-layout-columns amexio-layout-item {
   cursor: pointer;
   padding: 0px 8px; }
 
-.topnavbarunit1 {
-  line-height: 50px; }
-
-.topnavbarunit1-mobile {
+.topnav-lhs-mobile {
   width: 100%;
-  padding: 5px; }
-
-.topnavbarunit2 {
-  line-height: 50px;
-  flex-grow: 1; }
+  padding: 5px;
+  display: flex;
+  justify-content: space-between; }
 
 .topnavbarunit2-mobile {
   width: 100%;
@@ -5628,6 +5629,7 @@ amexio-layout-columns amexio-layout-item {
 
 .topnavmainbarinneritems-mobile {
   width: 100%;
+  height: 40px;
   border-bottom: 1px solid #70196F; }
 
 .topnavmainbarinneritems .nav-dropdown {
@@ -5703,7 +5705,8 @@ amexio-layout-columns amexio-layout-item {
 
 .sidenav-padding {
   display: inline-flex;
-  flex-direction: row; }
+  flex-direction: row;
+  align-items: center; }
 
 .sidenav-mobile-bar {
   height: 50px; }
@@ -5713,6 +5716,19 @@ amexio-layout-columns amexio-layout-item {
   justify-content: center;
   padding: 0px 10px;
   left: 0; }
+
+.topnav-lhs {
+  height: 100%;
+  height: 50px; }
+
+.topnav-rhs {
+  height: 100%;
+  height: 50px;
+  flex-grow: 1; }
+
+.topnav-lhs,
+.topnav-rhs > * {
+  align-items: center; }
 
 /****************************************************************************
     Component Name : Paginator
@@ -5828,13 +5844,11 @@ amexio-layout-columns amexio-layout-item {
 /** sidenav - Structure CSS **/
 .sidenav-mobile-bar {
   top: 10px;
-  padding: 10px;
   position: relative;
   z-index: 3; }
 
 .sidenav-mobile-bar-left {
   top: 10px;
-  padding: 10px;
   position: fixed;
   z-index: 3;
   left: 0; }
@@ -5844,7 +5858,6 @@ amexio-layout-columns amexio-layout-item {
 
 .sidenav-mobile-bar-right {
   top: 10px;
-  padding: 10px;
   position: fixed;
   z-index: 3;
   right: 0; }
@@ -5896,7 +5909,7 @@ amexio-layout-columns amexio-layout-item {
   padding: 13px 0px 13px 17px;
   padding-left: 100%;
   margin-left: -100%;
-  border-top: 1px  solid #ced4da !important; }
+  border-top: 1px solid #ced4da !important; }
 
 .sidenav .headernodeSeparator .node-icon {
   padding-right: 20px; }
