@@ -1,5 +1,5 @@
- <amexio-api-structure [url]="'assets/componentjson/layouts/creativeform.json'">
-    <amexio-api-demo> 
+<amexio-api-structure [url]="'assets/componentjson/layouts/creativeform.json'">
+    <amexio-api-demo>
         <amexio-row>
             <amexio-column [size]="12">
                 <amexio-card [header]="true">
@@ -7,16 +7,16 @@
                         Creative Form Demo
                     </amexio-header>
                     <amexio-body>
-                         <amexio-row>
+                        <amexio-row>
                             <amexio-column [size]="4" [fit]="true">
                                 <h4>Form Demo 1</h4>
-                                <amexio-form-ce color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'" form-name="validateForm" [show-error]="false">
+                                <amexio-form-ce color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'" form-name="validateForm" [show-error]="true">
                                     <amexio-header-ce align="center" [border-bottom]="false">
                                         <amexio-label size="large-bold">
                                             Login
                                         </amexio-label>
                                     </amexio-header-ce>
-                                    <amexio-body-ce>
+                                    <amexio-body-ce height="250px">
                                         <amexio-layout-columns style="font-size:2em;" [border]="false" [fit]="true" [alignment]="'start'" [orientation]="'vertical'">
                                             <amexio-layout-item>
                                                 <amexio-text-input [(ngModel)]="login.userId" [field-label]="'User Id'" [allow-blank]="false" [place-holder]="'Please enter userid'"></amexio-text-input>
@@ -29,41 +29,33 @@
                                         </amexio-layout-columns>
                                     </amexio-body-ce>
 
-                                    <amexio-action-ce [border-top]="true" [align]="'center'" style="color:white; font-size:2em;">
+                                    <amexio-action-ce [border-top]="false" [align]="'center'" style="color:white; font-size:2em;">
                                         <amexio-button [disabled]="false" [form-bind]="'validateForm'" [label]="'Get Started'" [type]="'theme-color'" [tooltip]="'Get Started'"
                                             [block]="true">
                                         </amexio-button>
                                     </amexio-action-ce>
                                 </amexio-form-ce>
                             </amexio-column>
-
                             <amexio-column [size]="4" [fit]="true">
                                 <h4>Form Demo 2</h4>
-                                <amexio-form-ce form-name="validateRegisterForm" [show-error]="true" [style-type]="'narrower-header'">
-                                    <amexio-header-ce [background]="'linear-gradient(60deg,#26c6da,#00acc1)'" [align]="'center'">
-                                        <amexio-image [icon-class]="'fa fa-user fa-2x'"></amexio-image>
-                                        &nbsp;
-                                        <amexio-label [size]="'medium-bold'">Register</amexio-label>
+                                <amexio-form-ce form-name="validatUserForm" [show-error]="false">
+                                    <amexio-header-ce [height]="'70px'" [background]="'linear-gradient(40deg, red, black)'"  align="center" vertical-align="top">
+                                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/sagar.jpg"></amexio-image>
                                     </amexio-header-ce>
-                                    <amexio-body-ce>
-                                        <amexio-email-input [field-label]="'Email Id'" name="email" [(ngModel)]="registrationModel.email" [place-holder]="'Enter Email Id'"
-                                            [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true"
-                                            [icon-feedback]="true">
-                                        </amexio-email-input>
-                                        <amexio-password-input [enable-popover]="true" [field-label]="'Password '" name="password" [(ngModel)]="registrationModel.password"
-                                            [place-holder]="'Enter Password'" [allow-blank]="false" [error-msg]="'Please enter password'"
-                                            [min-length]="6" [min-error-msg]="'Minimum 6 char required'" [max-length]="32" [max-error-msg]="'Maximum 32 char allowed'"
-                                            [icon-feedback]="true">
-                                        </amexio-password-input>
-                                        <amexio-password-input [enable-popover]="true" [field-label]="'Repeat Password '" name="password" [(ngModel)]="registrationModel.repeatpassword"
-                                            [place-holder]="'Enter Password'" [allow-blank]="false" [error-msg]="'Please enter password'"
-                                            [min-length]="6" [min-error-msg]="'Minimum 6 char required'" [max-length]="32" [max-error-msg]="'Maximum 32 char allowed'"
-                                            [icon-feedback]="true">
-                                        </amexio-password-input>
+                                    <amexio-body-ce align="center" height="220px">
+                                        <br /><br /><br>
+                                        <amexio-label [size]="'medium-bold'">
+                                            Sagar Jadhav
+                                        </amexio-label>
+                                        <br><br>
+                                        <amexio-password-input [has-label]="false" [field-label]="'Password'" [(ngModel)]="ngModel" [place-holder]="'Please enter password'" [allow-blank]="false"> </amexio-password-input>
                                         <br>
                                     </amexio-body-ce>
-                                    <amexio-action-ce [align]="'end'" [color]="'grey'" [border-top]="true">
-                                        <amexio-button [disabled]="false" [label]="'Register'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateRegisterForm'">
+                                    <amexio-action-ce [background]="'linear-gradient(40deg, red, black)'"  [align]="'space-between'" [border-top]="true">
+                                        <amexio-label enable-click="true" [size]="'small-bold'" font-color="white">
+                                            Forgot password ?
+                                        </amexio-label>
+                                        <amexio-button  [disabled]="false" icon="fa fa-sign-in" [label]="'Login'" [type]="'green'" [tooltip]="'Login'" [form-bind]="'validatUserForm'">
                                         </amexio-button>
                                     </amexio-action-ce>
                                 </amexio-form-ce>
@@ -71,31 +63,43 @@
                             </amexio-column>
                             <amexio-column [size]="4" [fit]="true">
                                 <h4>Form Demo 3</h4>
-                                <amexio-form-ce form-name="validatUserForm" [show-error]="false">
-                                    <amexio-header-ce [background]="'linear-gradient(40deg, red, black)'" [height]="'50px'" align="center" vertical-align="top">
-                                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/sagar.jpg"></amexio-image>
+                            <amexio-form-ce [formGroup]="employeeForm" [style-type]="'narrower-header'">
+                                    <amexio-header-ce [border-bottom]="true" [height]="'45px'" [background]="'linear-gradient(60deg,#26c6da,#00acc1)'" [align]="'center'">
+                                        <amexio-label [size]="'medium-bold'">
+                                            Write To Us
+                                        </amexio-label>
                                     </amexio-header-ce>
-                                    <amexio-body-ce align="center" height="210px">
-                                        <br /><br /><br>
-                                        <amexio-label [size]="'medium'">
-                                           Sagar Jadhav
-                                        </amexio-label>
-                                        <br><br>
-                                        <amexio-password-input [(ngModel)]="ngModel" [place-holder]="'Please enter password'" [allow-blank]="false"> </amexio-password-input>
-                                       <br>
+                                    <amexio-body-ce [align]="'start'">
+                                        <amexio-text-input formControlName="FirstName" [(ngModel)]="employeeFormModel.firstName" [field-label]="'First Name'" [allow-blank]="false"
+                                            [error-msg]="'Please enter valid First Name'" [enable-popover]="true" [place-holder]="'Please enter first name'"
+                                            [min-length]="2" [icon-feedback]="false" [min-error-msg]="'Minimum 2 char allowed'"
+                                            [max-error-msg]="'Maximum 20 char allowed'" [max-length]="20">
+                                        </amexio-text-input>
+                                        <amexio-text-input formControlName="Subject" [(ngModel)]="employeeFormModel.subject" [field-label]="'Subject'" [allow-blank]="false"
+                                            [error-msg]="'Please enter subject'" [enable-popover]="true" [place-holder]="'Please enter subject'"
+                                            [icon-feedback]="false" >
+                                        </amexio-text-input>
+                                        <amexio-textarea-input
+                                             formControlName="Message"
+                                            [enable-popover]="true"
+                                            [field-label]="'Message'"
+                                            [(ngModel)]="employeeFormModel.message"
+                                            [place-holder]="'Your Message'"
+                                            [allow-blank]="false"
+                                            [error-msg]="'Please enter your message'"
+                                            [icon-feedback]="true"
+                                            [rows]="'2'"
+                                            [columns]="'2'">
+                                        </amexio-textarea-input>
                                     </amexio-body-ce>
-                                    <amexio-action-ce [background]="'linear-gradient(40deg, red, black)'" [align]="'space-between'" [border-top]="true">
-                                         <amexio-label enable-click="true" [size]="'small-bold'" font-color="white">
-                                            Forgot password ?
-                                        </amexio-label>
-                                        <amexio-button [disabled]="false" icon="fa fa-sign-in" [label]="'Login'" [type]="'green'" [tooltip]="'Login'" [form-bind]="'validatUserForm'">
+                                    <amexio-action-ce align="center" [border-top]="true">
+                                        <amexio-button [disabled]="!employeeForm.valid" icon="fa fa-paper-plane" [label]="'Send'" [type]="'primary'" [tooltip]="'Send'">
                                         </amexio-button>
                                     </amexio-action-ce>
                                 </amexio-form-ce>
-
                             </amexio-column>
                         </amexio-row>
-                           <amexio-row>
+                        <amexio-row>
                             <amexio-column size="12" [fit]="true">
                                 <h4>Form Demo 4</h4>
                                 <amexio-form-ce align="space-between" form-name="validateForm" [show-error]="true">
@@ -189,10 +193,9 @@
 
                             </amexio-column>
                         </amexio-row>
-
                     </amexio-body>
                 </amexio-card>
             </amexio-column>
         </amexio-row>
-    <!-- </amexio-api-demo>
-</amexio-api-structure> -->
+         </amexio-api-demo>
+</amexio-api-structure> 

@@ -11,27 +11,17 @@ export class CreativeFormDemo implements OnInit{
   radioGroupData : any;
   checkboxGroupdata : any;
   currentDate : Date = new Date();
-  departmentData : any;
   userRegistration:UserRegistration;
   login:LoginModel;
   userLoginModel:UserLoginModel;
-  registrationModel:RegistrationModel;
+  employeeFormModel:EmployeeFormModel
+  employeeForm:FormGroup;
   constructor(private fb:FormBuilder) {
       this.userRegistration = new UserRegistration();
       this.login = new LoginModel();
       this.userLoginModel = new UserLoginModel();
-      this.registrationModel = new RegistrationModel();
-       this.departmentData = [{
-      'deptId':'1',
-      'deptName' :'Engineering'
-    },{
-      'deptId':'2',
-      'deptName' :'Tech Suppport'
-    },{
-      'deptId':'3',
-      'deptName' :'HR'
-    }]
-   this.checkboxGroupdata = {
+      this.employeeFormModel = new EmployeeFormModel();
+       this.checkboxGroupdata = {
       response:{
         data:[{
           hobbieName:'Learning',
@@ -63,7 +53,11 @@ export class CreativeFormDemo implements OnInit{
 
 }
  ngOnInit(){
-  
+  this.employeeForm = this.fb.group({
+      FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      Subject: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(100)]],
+       Message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(1000000)]],
+    });
  }
 } 
 
@@ -83,14 +77,7 @@ export class UserRegistration {
     this.hobbies = [];
   }
  }
-export class RegistrationModel{
-    email:String;
-    password:string;
-    repeatpassword:String;
-    constructor(){
 
-    }
-}
 export class LoginModel {
   userId: string;
   password:string;
@@ -101,6 +88,16 @@ export class LoginModel {
   }
 export class UserLoginModel{
   password:string;
+  constructor(){
+
+  }  
+}
+
+export class EmployeeFormModel{
+  firstName:string;
+  email:string;
+  subject:string;
+  message:String;
   constructor(){
 
   }  

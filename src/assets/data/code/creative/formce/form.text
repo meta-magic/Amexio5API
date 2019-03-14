@@ -1,17 +1,17 @@
-
-export class CreativeFormComponent{
+import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup  ,Validators, FormControl} from "@angular/forms";
+export class CreativeFormComponent implements OnInit{
   userRegistration:UserRegistration;
   login:LoginModel;
   radioGroupData : any;
   checkboxGroupdata : any;
   currentDate : Date = new Date();
   userLoginModel:UserLoginModel;
-  registrationModel:RegistrationModel;
-  constructor() {
+  employeeForm:FormGroup;
+  constructor(private fb:FormBuilder) {
       this.userRegistration = new UserRegistration();
       this.login = new LoginModel();
       this.userLoginModel = new UserLoginModel();
-      this.registrationModel = new RegistrationModel();
       this.checkboxGroupdata = {
       response:{
         data:[{
@@ -43,6 +43,13 @@ export class CreativeFormComponent{
     };
 
 }
+ ngOnInit(){
+  this.employeeForm = this.fb.group({
+      FirstName: ['', [Validators.required, Validators.minLength(2), Validators.maxLength(20)]],
+      Subject: ['', [Validators.required, Validators.minLength(4), Validators.maxLength(100)]],
+       Message: ['', [Validators.required, Validators.minLength(10), Validators.maxLength(1000000)]],
+    });
+ }
 
 } 
 
@@ -62,14 +69,7 @@ export class UserRegistration {
     this.hobbies = [];
   }
  }
-export class RegistrationModel{
-    email:String;
-    password:string;
-    repeatpassword:String;
-    constructor(){
 
-    }
-}
 export class LoginModel {
   userId: string;
   password:string;
@@ -83,3 +83,13 @@ export class UserLoginModel{
   constructor(){
 
   }  
+
+  export class EmployeeFormModel{
+  firstName:string;
+  email:string;
+  subject:string;
+  message:String;
+  constructor(){
+
+  }  
+}
