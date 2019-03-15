@@ -5495,6 +5495,7 @@ amexio-homepage-northpanel .top-nav-button {
   display: inline-block;
   float: right;
   padding-right: 10px;
+  padding-top: 8px;
   cursor: pointer; }
 
 .topnavmainbaritems amexio-nav-item1:last-child .topnavmainbarinneritems .nav-dropdown-content {
