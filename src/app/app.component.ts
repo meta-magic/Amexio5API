@@ -189,7 +189,8 @@ export class AppComponent {
           { "text": "US Election Results", "link": "https://demo.amexio.org/se/us-election/ " },
           { "text": "Insurance Portal", "link": "https://demo.amexio.org/se/insuranceportal/#/home" },
           { "text": "Movie Portal", "link": "https://demo.amexio.org/ee/" },
-          { "text": "NpmStats", "link": "https://www.npmstats.com/" }
+          { "text": "NpmStats", "link": "https://www.npmstats.com/" },
+          { "text": "Creative Cards", "link": "https://meta-magic.github.io/amexio-ce-demo/#/home/dashboard" }
         ]
       },
       {
