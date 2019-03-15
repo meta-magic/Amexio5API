@@ -41,8 +41,8 @@
         ],
         "gridData": [{
             "name": "type",
-            "description": "type of home page like 1,2,3",
-            "version": "5.7.2 onwards",
+            "description": "type of home page like 1,2",
+            "version": "5.8 onwards",
             "type": "string",
             "default": "1"
         }]
