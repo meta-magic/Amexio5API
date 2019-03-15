@@ -148,7 +148,7 @@
                 },
                 {
                     "name": "onPreviousStepClick",
-                    "description": "Fire when next button click and current step data with title"
+                    "description": "Fire when previous button click and current step data with title"
                 }
             ]
         }
