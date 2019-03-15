@@ -1916,6 +1916,10 @@ input:checked + .toggle-slider:before {
   color: #241700;
   font-weight: normal; }
 
+.focusOnSlider:focus {
+  outline: none;
+  border: 2px solid #ffe5b8; }
+
 /** range - Structure CSS **/
 .ui-slider {
   position: relative;
