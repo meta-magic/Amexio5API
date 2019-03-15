@@ -30,8 +30,8 @@
           </amexio-api-sourcecode>
           </ng-container>
         </amexio-tab>
-
-        <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="comData.liveMetadata.disabled">
+      
+        <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="comData?.liveMetadata?.disabled">
           <p align="center">AmexioSandbox</p>
           <ng-container *ngIf="comData && comData.liveMetadata">
           <amexio-api-livedemo [disabled]="false" [stackblitz-url]="comData.liveMetadata.stackblitzUrl"
