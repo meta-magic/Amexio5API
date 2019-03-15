@@ -1,0 +1,165 @@
+<!-- Form Demo 1 -->
+
+<amexio-form-ce color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'" form-name="validateForm" [show-error]="false">
+    <amexio-header-ce align="center" [border-bottom]="false">
+        <amexio-label size="large-bold">
+            Login
+        </amexio-label>
+    </amexio-header-ce>
+    <amexio-body-ce>
+        <amexio-layout-columns style="font-size:2em;" [border]="false" [fit]="true" [alignment]="'start'" [orientation]="'vertical'">
+            <amexio-layout-item>
+                <amexio-text-input [(ngModel)]="login.userId" [field-label]="'User Id'" [allow-blank]="false" [place-holder]="'Please enter userid'"
+                ></amexio-text-input>
+                <amexio-password-input [(ngModel)]="login.password" [field-label]="'Password'" [place-holder]="'Please enter password'" [allow-blank]="false">
+                </amexio-password-input>
+            </amexio-layout-item>
+            <amexio-layout-item>
+                <amexio-checkbox required="true" [(ngModel)]="login.subscribe" [field-label]="'Subscribe to newsletter'"></amexio-checkbox>
+            </amexio-layout-item>
+        </amexio-layout-columns>
+    </amexio-body-ce>
+
+    <amexio-action-ce [border-top]="true" [align]="'center'" style="color:white; font-size:2em;">
+        <amexio-button [disabled]="false" [form-bind]="'validateForm'" [label]="'Get Started'" [type]="'yellow'" [tooltip]="'Get Started'"
+            [block]="true">
+        </amexio-button>
+
+    </amexio-action-ce>
+
+</amexio-form-ce>
+
+
+<!-- Form Demo 2-->
+<amexio-form-ce form-name="validatUserForm" [show-error]="false">
+    <amexio-header-ce [height]="'70px'" [background]="'linear-gradient(40deg, red, black)'" align="center" vertical-align="top">
+        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/sagar.jpg"></amexio-image>
+    </amexio-header-ce>
+    <amexio-body-ce align="center" height="220px">
+        <amexio-label [size]="'medium-bold'">
+            Sagar Jadhav
+        </amexio-label>
+        <amexio-password-input [has-label]="false" [field-label]="'Password'" [(ngModel)]="userLoginModel.password" [place-holder]="'Please enter password'"
+            [allow-blank]="false"> </amexio-password-input>
+    </amexio-body-ce>
+    <amexio-action-ce [background]="'linear-gradient(40deg, red, black)'" [align]="'space-between'" [border-top]="true">
+        <amexio-label enable-click="true" [size]="'small-bold'" font-color="white">
+            Forgot password ?
+        </amexio-label>
+        <amexio-button [disabled]="false" icon="fa fa-sign-in" [label]="'Login'" [type]="'green'" [tooltip]="'Login'" [form-bind]="'validatUserForm'">
+        </amexio-button>
+    </amexio-action-ce>
+</amexio-form-ce>
+<!-- Form Demo 3 -->
+
+<amexio-form-ce [formGroup]="employeeForm" [style-type]="'narrower-header'">
+    <amexio-header-ce [border-bottom]="true" [height]="'50px'" [background]="'linear-gradient(60deg,#26c6da,#00acc1)'" [align]="'center'">
+        <amexio-label [size]="'large-bold'">
+            Write To Us
+        </amexio-label>
+    </amexio-header-ce>
+    <amexio-body-ce [align]="'start'">
+        <amexio-text-input formControlName="FirstName" [(ngModel)]="employeeFormModel.firstName" [field-label]="'First Name'" [allow-blank]="false"
+            [error-msg]="'Please enter valid First Name'" [enable-popover]="true" [place-holder]="'Please enter first name'"
+            [min-length]="2" [icon-feedback]="false" [min-error-msg]="'Minimum 2 char allowed'" [max-error-msg]="'Maximum 20 char allowed'"
+            [max-length]="20">
+        </amexio-text-input>
+        <amexio-text-input formControlName="Subject" [(ngModel)]="employeeFormModel.subject" [field-label]="'Subject'" [allow-blank]="false"
+            [error-msg]="'Please enter subject'" [enable-popover]="true" [place-holder]="'Please enter subject'" [icon-feedback]="false">
+        </amexio-text-input>
+        <amexio-textarea-input formControlName="Message" [enable-popover]="true" [field-label]="'Message'" [(ngModel)]="employeeFormModel.message"
+            [place-holder]="'Your Message'" [allow-blank]="false" [error-msg]="'Please enter your message'" [icon-feedback]="true"
+            [rows]="'2'" [columns]="'2'">
+        </amexio-textarea-input>
+    </amexio-body-ce>
+    <amexio-action-ce align="center" [border-top]="true">
+        <amexio-button [disabled]="!employeeForm.valid" icon="fa fa-paper-plane" [label]="'Send'" [type]="'primary'" [tooltip]="'Send'">
+        </amexio-button>
+    </amexio-action-ce>
+
+    <!-- Form Demo 4 -->
+    <amexio-form-ce align="space-between" form-name="validateForm" [show-error]="true">
+        <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'75px'" align="start">
+            <amexio-label [size]="'large'">
+                Form
+            </amexio-label>
+        </amexio-header-ce>
+        <amexio-body-ce [align]="'start'">
+            <amexio-row>
+                <amexio-column [size]="6">
+                    <amexio-text-input [min-length]="3" [(ngModel)]="userRegistration.firstName" [max-length]="5" [allow-blank]="false" field-label="First Name"
+                        name="firstName" place-holder="Enter first name" icon-feedback="true">
+                    </amexio-text-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                    <amexio-text-input field-label="Last Name" name="lastName" [(ngModel)]="userRegistration.lastName" place-holder="Enter last name(not mandatory)"
+                        allow-blank="true" error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required"
+                        [max-length]="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                    </amexio-text-input>
+                </amexio-column>
+            </amexio-row>
+            <amexio-textarea-input [field-label]="'Address'" name="Address" [(ngModel)]="userRegistration.address" [place-holder]="'Enter address'"
+                [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false"
+                [enable-popover]="true"></amexio-textarea-input>
+            <amexio-row>
+                <amexio-column [size]="6">
+                    <amexio-radio-group [name]="'genderList'" [field-label]="'Gender'" [horizontal]="true" [allow-blank]="false" [(ngModel)]="userRegistration.gender"
+                        [data-reader]="'response.data'" [display-field]="'gender'" [value-field]="'genderId'" [data]="radioGroupData">
+                    </amexio-radio-group>
+                </amexio-column>
+                <amexio-column [size]="6">
+                    <amexio-checkbox-group [field-label]="'Hobbies'" name="hobbies" [(ngModel)]="userRegistration.hobbies" [horizontal]="true"
+                        [required]="true" [data-reader]="'response.data'" [display-field]="'hobbieName'" [value-field]="'checked'"
+                        [data]="checkboxGroupdata">
+                    </amexio-checkbox-group>
+                </amexio-column>
+            </amexio-row>
+            <amexio-row>
+                <amexio-column [size]="6">
+                    <amexio-tag-input [data-reader]="'response.data'" [http-url]="'assets/data/componentdata/countryy.json'" [has-label]="true"
+                        [http-method]="'get'" [key]="'countryName'" [allow-blank]="false" [display-field]="'countryName'" [field-label]="'Having visa'">
+                    </amexio-tag-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                    <amexio-dropdown [place-holder]="'Choose City'" name="city" [(ngModel)]="userRegistration.city" [allow-blank]="false" [data-reader]="'response.data'"
+                        [field-label]="'City'" [http-url]="'assets/data/componentdata/cities.json'" [http-method]="'get'" [search]="'true'"
+                        [display-field]="'cityName'" [value-field]="'cityName'">
+                    </amexio-dropdown>
+                </amexio-column>
+            </amexio-row>
+            <amexio-row>
+                <amexio-column size="6">
+                    <amexio-number-input [name]="'age'" [(ngModel)]="userRegistration.age" [enable-popover]="true" [field-label]="'Age'" [place-holder]="'Enter age'"
+                        [allow-blank]="false" [error-msg]="'Please enter age'" [min-value]="18" [min-error-msg]="'age can not be less than 18'"
+                        [max-value]="100" [max-error-msg]="'age can not be greater than 100'" [icon-feedback]="true">
+                    </amexio-number-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                    <amexio-date-time-picker [(ngModel)]="userRegistration.dateOfBirth" name="dateOfBirth" [field-label]="'Date Of Birth'" [time-picker]="false"
+                        [date-picker]="true" [required]="true">
+                    </amexio-date-time-picker>
+                </amexio-column>
+            </amexio-row>
+            <amexio-row>
+                <amexio-column [size]="6">
+                    <amexio-email-input [field-label]="'Email Id'" name="email" [(ngModel)]="userRegistration.email" [place-holder]="'Enter Email Id'"
+                        [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
+                    </amexio-email-input>
+                </amexio-column>
+                <amexio-column [size]="6">
+                    <amexio-password-input [enable-popover]="true" [field-label]="'Password Input'" name="password" [(ngModel)]="userRegistration.password"
+                        [place-holder]="'Enter Password'" [allow-blank]="false" [error-msg]="'Please enter password'" [min-length]="6"
+                        [min-error-msg]="'Minimum 6 char required'" [max-length]="32" [max-error-msg]="'Maximum 32 char allowed'"
+                        [icon-feedback]="true">
+                    </amexio-password-input>
+                </amexio-column>
+            </amexio-row>
+            <amexio-checkbox [field-label]="'Agree'" name="agree" [required]="true" [(ngModel)]="userRegistration.agree">
+            </amexio-checkbox>
+
+        </amexio-body-ce>
+        <amexio-action-ce align="end" [border-top]="true">
+            <amexio-button [disabled]="false" [label]="'Save'" [type]="'primary'" [tooltip]="'Save'" [form-bind]="'validateForm'">
+            </amexio-button>
+        </amexio-action-ce>
+    </amexio-form-ce>

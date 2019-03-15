@@ -1304,6 +1304,9 @@ button {
 .inputgroup {
   position: relative; }
 
+.inputgroup ::placeholder {
+  padding-left: 5px !important; }
+
 .inputgroup > label {
   display: inline-block;
   margin-bottom: .5rem; }
@@ -4490,6 +4493,28 @@ amexio-step-wizard .form-footer {
   font-weight: 600;
   margin-right: 7px; }
 
+.lhs-mobile {
+  flex: 1 1 100% !important;
+  max-width: 100% !important; }
+
+.rhs-mobile {
+  flex: 1 1 100% !important;
+  max-width: 100% !important;
+  height: 100% !important; }
+
+.topnav-lhs-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: start; }
+
+.topnav-lhs-inner-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.topnavmainbaritems-mobile {
+  width: 100%; }
+
 amexio-homepage-northpanel .topnav {
   padding: 0px; }
 
@@ -4512,9 +4537,10 @@ amexio-homepage-northpanel .topnav-lhs-mobile > div > span {
   padding: 0px !important; }
 
 amexio-homepage-northpanel .topnav-rhs {
-  flex-grow: 1; }
+  flex-grow: 1;
+  height: 50px; }
 
-amexio-homepage-northpanel .topnavbarunit1-mobile {
+amexio-homepage-northpanel .topnav-lhs-mobile {
   padding-left: 45px; }
 
 amexio-homepage-westpanel .homepage-westpanel {
@@ -4560,7 +4586,9 @@ amexio-homepage-northpanel .top-nav-button {
   flex-direction: row; }
 
 .collaspe-icon-style {
-  margin-right: -26px;
+  position: fixed;
+  left: 17%;
+  top: 0px;
   width: 50px;
   border-radius: 100%;
   height: 50px; }
@@ -4571,6 +4599,13 @@ amexio-homepage-northpanel .top-nav-button {
 
 .homepage-bar-collapse .fa {
   font-size: 26px; }
+
+.homepage3-bar .fa {
+  font-size: 26px; }
+
+.collaspe-icon-style amexio-image {
+  display: flex;
+  align-items: center; }
 
 .collaspe-icon-style {
   z-index: 2;
@@ -4589,8 +4624,11 @@ amexio-homepage-northpanel .top-nav-button {
   cursor: pointer;
   transition: all .2s ease-in-out;
   transition-duration: .4s;
-  transition-property: color,margin;
+  transition-property: color, margin;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1); }
+
+.homepage3-bar {
+  cursor: pointer; }
 
 /****************************************************************************
     Component Name : Datapoints
@@ -4661,6 +4699,26 @@ amexio-homepage-northpanel .top-nav-button {
 
 .datatable-row:nth-child(odd) {
   background-color: #f5f5f5; }
+
+.datatable-col:focus {
+  background-color: #ffc2b8;
+  color: #520c00;
+  outline: none; }
+
+.float-right .enablecolumnfilter:focus {
+  background-color: #ffc2b8;
+  color: #520c00;
+  outline: none; }
+
+.dropdown-list .list-items:focus {
+  background-color: #ffc2b8;
+  color: #520c00;
+  outline: none; }
+
+.datatable-filter-icon:focus {
+  background-color: #ffc2b8;
+  color: #520c00;
+  outline: none; }
 
 /** Datatable - Visual CSS **/
 .datatabletitle {
@@ -4837,6 +4895,14 @@ amexio-homepage-northpanel .top-nav-button {
 
 .itemselector-list-active {
   background-color: #ff816b; }
+
+.itemselector-list-active:focus {
+  background-color: #ff816b;
+  outline: none; }
+
+.itemselector-list:focus {
+  background-color: #ffc2b8;
+  outline: none; }
 
 .itemselector-list:hover {
   background-color: #ffc2b8; }
@@ -5226,10 +5292,6 @@ amexio-homepage-northpanel .top-nav-button {
 .topnav a label {
   color: #240a00; }
 
-.topnavbarunit2-mobile {
-  background-color: #ff4500;
-  color: #240a00; }
-
 .topnavmainbarinneritems .nav-dropdown-content {
   background-color: #ff4500;
   color: #240a00; }
@@ -5306,16 +5368,11 @@ amexio-homepage-northpanel .top-nav-button {
   cursor: pointer;
   padding: 0px 8px; }
 
-.topnavbarunit1 {
-  line-height: 50px; }
-
-.topnavbarunit1-mobile {
+.topnav-lhs-mobile {
   width: 100%;
-  padding: 5px; }
-
-.topnavbarunit2 {
-  line-height: 50px;
-  flex-grow: 1; }
+  padding: 5px;
+  display: flex;
+  justify-content: space-between; }
 
 .topnavbarunit2-mobile {
   width: 100%;
@@ -5323,7 +5380,8 @@ amexio-homepage-northpanel .top-nav-button {
 
 .topnavmainbar {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: inherit; }
 
 .topnavmainbar-mobile {
   flex-direction: column; }
@@ -5331,10 +5389,13 @@ amexio-homepage-northpanel .top-nav-button {
 .topnavmainbaritems {
   display: flex;
   justify-content: space-between;
-  flex-direction: row; }
+  flex-direction: row;
+  height: inherit;
+  align-items: center; }
 
 .topnavmainbaritems-mobile {
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: unset; }
 
 .topnavmainbarinneritems {
   display: inline-block;
@@ -5342,6 +5403,7 @@ amexio-homepage-northpanel .top-nav-button {
 
 .topnavmainbarinneritems-mobile {
   width: 100%;
+  height: 40px;
   border-bottom: 1px solid #ced4da; }
 
 .topnavmainbarinneritems .nav-dropdown {
@@ -5349,7 +5411,8 @@ amexio-homepage-northpanel .top-nav-button {
   overflow: hidden; }
 
 .topnavmainbarinneritems-mobile .nav-dropdown {
-  width: 100%; }
+  width: 100%;
+  line-height: 50px; }
 
 .top-nav-link {
   padding: 0px 8px; }
@@ -5359,8 +5422,7 @@ amexio-homepage-northpanel .top-nav-button {
 
 .topnavmainbarinneritems-mobile .nav-dropdown .nav-dropbtn .dropdownicon {
   float: right;
-  margin-right: 20px;
-  line-height: 50px; }
+  margin-right: 20px; }
 
 .nav-dropdown .nav-dropbtn i {
   padding: 0px 5px; }
@@ -5388,7 +5450,7 @@ amexio-homepage-northpanel .top-nav-button {
 .topnavmainbarinneritems .nav-dropdown-content a {
   text-decoration: none;
   display: block;
-  padding: 0px 10px;
+  padding: 10px 10px;
   text-align: left; }
 
 .nav-dropdown:hover .nav-dropbtn .dropdownicon {
@@ -5410,6 +5472,28 @@ amexio-homepage-northpanel .top-nav-button {
 
 .nav-dropdown-content-right .nav-dropdown-content {
   right: 10px; }
+
+.navbar-logo {
+  width: 50px;
+  height: 50px; }
+
+.sidenav-padding {
+  display: inline-flex;
+  flex-direction: row;
+  height: 50px;
+  align-items: center; }
+
+.sidenav-mobile-bar {
+  height: 50px; }
+
+.sidenav-mobile-bar-left {
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px;
+  left: 0; }
+
+.homepage-collapse {
+  align-items: center; }
 
 /****************************************************************************
     Component Name : Paginator
@@ -5525,13 +5609,11 @@ amexio-homepage-northpanel .top-nav-button {
 /** sidenav - Structure CSS **/
 .sidenav-mobile-bar {
   top: 10px;
-  padding: 10px;
   position: relative;
   z-index: 3; }
 
 .sidenav-mobile-bar-left {
   top: 10px;
-  padding: 10px;
   position: fixed;
   z-index: 3;
   left: 0; }
@@ -5541,7 +5623,6 @@ amexio-homepage-northpanel .top-nav-button {
 
 .sidenav-mobile-bar-right {
   top: 10px;
-  padding: 10px;
   position: fixed;
   z-index: 3;
   right: 0; }
@@ -5593,7 +5674,7 @@ amexio-homepage-northpanel .top-nav-button {
   padding: 13px 0px 13px 17px;
   padding-left: 100%;
   margin-left: -100%;
-  border-top: 1px  solid #ced4da !important; }
+  border-top: 1px solid #ced4da !important; }
 
 .sidenav .headernodeSeparator .node-icon {
   padding-right: 20px; }
@@ -6154,6 +6235,11 @@ fieldset {
   border: 0;
   font-weight: bold;
   cursor: pointer; }
+
+.collapsible-legend:focus {
+  outline: none;
+  background-color: #ffc2b8;
+  color: #520c00; }
 
 .collapsible-fieldset {
   overflow: hidden; }
@@ -6775,6 +6861,21 @@ amexio-window-header > amexio-toolbar > .toolbar {
   background: #ff6347;
   color: #121212; }
 
+.dialogue-table:focus {
+  outline: none;
+  background-color: #ffc2b8;
+  color: #520c00; }
+
+.tablecol:focus {
+  outline: none;
+  background-color: #ffc2b8;
+  color: #520c00; }
+
+.dialogue-message:focus {
+  outline: none;
+  background-color: #ffc2b8;
+  color: #520c00; }
+
 .dialogue-footer {
   background-color: #ffffff;
   color: #610f00; }
@@ -7306,6 +7407,28 @@ amexio-layout amexio-layout-item {
   flex-grow: 1;
   flex-direction: row; }
 
+/** creative form - Structure CSS **/
+.form-container-ce {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.form-container-ce > * {
+  /* padding: 10px; */ }
+
+.card-container-body {
+  padding: 10px;
+  font-size: 14px;
+  display: block;
+  line-height: 24px;
+  font-weight: 400;
+  flex-grow: 1;
+  position: relative; }
+
+.dailogue-header-ce .dialogue-table {
+  display: flex; }
+
 /****************************************************************************
     Component Name : Border Layout
     Version : Amexio v4.0 onwards
@@ -7551,14 +7674,14 @@ amexio-layout-columns amexio-layout-item {
   position: relative;
   display: block; }
 
-.card-container-footer {
+.creative-footer {
   padding: 10px;
   text-transform: capitalize;
   display: flex;
   flex-direction: row;
   align-items: center; }
 
-.card-container-footer > * {
+.creative-footer > * {
   padding-right: 10px;
   margin-top: 0px; }
 
@@ -8171,7 +8294,7 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 @media screen and (max-width: 600px) {
   .footer-right-align {
     padding-right: 15px; } }
-@media only screen and (min-width: 375px) and (max-width: 450px) {
+@media only screen and (max-width: 568px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.2; } }
 /****************************************************************************
@@ -8631,7 +8754,7 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.1; } }
 /****************************************************************************
@@ -8832,7 +8955,7 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 /************************************************************************/
 /*        HOMEPAGE LAYOUT Media Q COMPONENT         */
 /************************************************************************/
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.1; } }
 /****************************************************************************

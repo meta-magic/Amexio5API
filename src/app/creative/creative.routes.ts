@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
 import { CreativeCardDemo } from './cardce/card.demo';
 import { CreativeWindowDemo } from './windowce/window.demo';
+import { CreativeFormDemo } from './formce/form.demo';
 import { CreativeCircularProgressBarDemo } from './progressce/progressce.component';
 import { HomePageDemo } from './homepage/homepage.demo';
 
@@ -14,7 +15,10 @@ export const CREATIVE_ROUTE: Routes = [
         path: 'card-ce-demo', component: CreativeCardDemo,
     },
     {
-        path: 'window-ce-demo', component: CreativeWindowDemo,
+        path: 'window-ce-demo', component: CreativeWindowDemo,     
+    },
+    {
+        path: 'form-ce-demo', component: CreativeFormDemo,
     },
     {
         path: 'progress-ce-demo', component: CreativeCircularProgressBarDemo,
