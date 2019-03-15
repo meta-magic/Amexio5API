@@ -877,6 +877,10 @@ button {
     color: #FCF4A3; }
   .datedropdown li {
     color: #FEE12B; }
+  .datedropdown li:focus {
+    outline: none;
+    background: rgba(255, 253, 208, 0.4) !important;
+    color: #292b2c !important; }
 
 .datetimepicker {
   background: #292b2c; }
@@ -890,6 +894,10 @@ button {
       color: #FEE12B; }
     .datetimepicker .days li:hover {
       color: #1b1d22; }
+    .datetimepicker .days li:focus {
+      outline: none;
+      background: rgba(255, 253, 208, 0.4) !important;
+      color: #292b2c !important; }
     .datetimepicker .days .active {
       background: #1b1d22;
       color: #FCF4A3; }
@@ -908,6 +916,10 @@ button {
       color: #FEE12B; }
     .datetimepicker1 .days li:hover {
       color: #1b1d22; }
+    .datetimepicker1 .days li:focus {
+      outline: none;
+      background: rgba(255, 253, 208, 0.4) !important;
+      color: #292b2c !important; }
     .datetimepicker1 .days .active {
       background: #1b1d22;
       color: #FCF4A3; }
