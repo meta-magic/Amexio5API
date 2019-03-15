@@ -23,6 +23,11 @@ export class HtmlReactiveFormComponent implements OnInit {
   copyMsgArray: any = [];
   age: number;
   radioGroupData: any[] = [];
+  radioGroupData1: any[] = [];
+  radioGroupData2: any[] = [];
+  radioGroupData3: any[] = [];
+
+  
   employeeForm: FormGroup;
   employeeFormInsideForm: FormGroup;
   addressForm: FormGroup;
@@ -51,7 +56,27 @@ export class HtmlReactiveFormComponent implements OnInit {
       genderName: 'Female',
       genderId: 'female'
     }];
-
+    this.radioGroupData1 = [{
+      genderName1: 'Male',
+      genderId1: 'male'
+    }, {
+      genderName1: 'Female',
+      genderId1: 'female'
+    }];
+    this.radioGroupData2 = [{
+      genderName2: 'Male',
+      genderId2: 'male'
+    }, {
+      genderName2: 'Female',
+      genderId2: 'female'
+    }];
+    this.radioGroupData3 = [{
+      genderName3: 'Male',
+      genderId3: 'male'
+    }, {
+      genderName3: 'Female',
+      genderId3: 'female'
+    }];
   }
   ngOnInit(): void  {
     this.createCustomSourceData();

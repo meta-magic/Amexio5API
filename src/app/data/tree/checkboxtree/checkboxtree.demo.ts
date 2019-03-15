@@ -70,13 +70,7 @@ export class CheckboxTreeDemo implements OnInit {
               },
               {
                 "leaf": true,
-                "text": "Viewport.js",
-                "expand" : true,
-                "children":[],
-                "lazy":{
-                  "http-url":"data/treeview.json",
-                  "http-method": "get"
-                }
+                "text": "Viewport.js"
               }
             ]
           },

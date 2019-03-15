@@ -1916,6 +1916,10 @@ input:checked + .toggle-slider:before {
   color: #f7f9f1;
   font-weight: normal; }
 
+.focusOnSlider:focus {
+  outline: none;
+  border: 2px solid #edffb8; }
+
 /** range - Structure CSS **/
 .ui-slider {
   position: relative;
@@ -5072,6 +5076,11 @@ amexio-homepage-northpanel .top-nav-button {
 .tree-node-label-hover:hover {
   background-color: #edffb8;
   color: #3d5200; }
+
+.tree-node-label-hover:focus {
+  background-color: #edffb8;
+  color: #3d5200;
+  outline: none; }
 
 .treenode-label-active {
   background-color: #daff6b;
