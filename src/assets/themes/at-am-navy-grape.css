@@ -4707,6 +4707,14 @@ amexio-homepage-northpanel .top-nav-button {
   color: #000080;
   outline: none; }
 
+.float-right-datagridlist {
+  float: right; }
+
+.float-right-datagridlist:focus {
+  background-color: #e6e6ff;
+  color: #000080;
+  outline: none; }
+
 /** Datatable - Visual CSS **/
 .datatabletitle {
   font-size: 1.5em;
