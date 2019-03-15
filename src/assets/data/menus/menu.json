@@ -69,18 +69,6 @@
                     "link": "creative/homepage-ce-demo"
                 },
                 {
-                    "text": "Creative Window",
-                    "icon": "fa fa-window-maximize",
-                    "badge": "NEW",
-                    "link": "creative/window-ce-demo"
-                },
-                {
-                    "text": "Creative Form",
-                    "icon": "fa fa-window-maximize",
-                    "badge": "NEW",
-                    "link": "creative/form-ce-demo"
-                },
-                {
                     "text": "Column Vertical",
                     "icon": "fa fa-pause  ",
                     "link": "layout/vertical-layout"
@@ -131,6 +119,12 @@
                     "text": "Carousel",
                     "icon": "fa fa-indent  ",
                     "link": "panes/carousel-demo"
+                },
+                {
+                    "text": "Creative Window",
+                    "icon": "fa fa-window-maximize",
+                    "badge": "NEW",
+                    "link": "creative/window-ce-demo"
                 },
                 {
                     "text": "Dialogue",
@@ -257,6 +251,11 @@
                             "text": "Reactive Forms",
                             "icon": "fa fa-window-maximize  ",
                             "link": "forms/html-reactive-form"
+                        },   {
+                            "text": "Creative Form",
+                            "icon": "fa fa-window-maximize",
+                            "badge": "NEW",
+                            "link": "creative/form-ce-demo"
                         }
                     ]
                 },
