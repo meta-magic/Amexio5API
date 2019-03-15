@@ -1451,6 +1451,9 @@ textarea:required {
   cursor: not-allowed;
   pointer-events: none; }
 
+.focusOnCheckbox {
+  border: solid #FEE12B !important; }
+
 /** checkbox - Structure CSS **/
 .input-box {
   display: inline-block;
@@ -1623,6 +1626,26 @@ textarea:required {
     background-size: 30px 30px;
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
+.progress .success:focus {
+  border: 2px solid rgba(255, 253, 208, 0.4);
+  outline: none; }
+
+.progress .warning:focus {
+  border: 2px solid rgba(255, 253, 208, 0.4);
+  outline: none; }
+
+.progress .danger:focus {
+  border: 2px solid rgba(255, 253, 208, 0.4);
+  outline: none; }
+
+.progress .red:focus {
+  border: 2px solid rgba(255, 253, 208, 0.4);
+  outline: none; }
+
+.progress .stripped:focus {
+  border: 2px solid rgba(255, 253, 208, 0.4);
+  outline: none; }
+
 /** progress - Structure CSS **/
 .progress {
   height: 20px;
@@ -1765,6 +1788,10 @@ input:checked + .toggle-slider {
   width: 60px;
   height: 34px;
   vertical-align: middle; }
+
+.toggle:focus {
+  outline: none;
+  border: 2px solid #292b2c; }
 
 .toggle input {
   display: none; }
@@ -2857,6 +2884,9 @@ input:checked + .toggle-slider:before {
 .search-dropdown-list {
   border-color: #FEE12B;
   background-color: #292b2c; }
+
+.input-group:focus {
+  outline: none; }
 
 /** Searchbox - Structure CSS **/
 .hrclass {
@@ -5761,6 +5791,14 @@ amexio-layout-columns amexio-layout-item {
   background-color: #1b1d22;
   color: #FEE12B; }
 
+.paginator-page:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4); }
+
+.paginator-pages:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4); }
+
 /** paginator - Structure CSS **/
 .paginator {
   padding: 10px; }
@@ -6511,6 +6549,11 @@ fieldset {
 .step-block-icon-disable {
   color: #FEE12B; }
 
+.step-box-table-item:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4) !important;
+  color: #292b2c; }
+
 .stepwizard-row:before {
   background-color: #292b2c; }
 
@@ -6524,7 +6567,7 @@ fieldset {
   color: rgba(255, 255, 255, 0.7); }
 
 .step-box-table-item.active {
-  background-color: #1b1d22 !important; }
+  background-color: #1b1d22; }
 
 .step-box-table-item.disbaled {
   background-color: #a09e9e;

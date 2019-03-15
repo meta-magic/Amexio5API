@@ -1452,6 +1452,9 @@ textarea:required {
   cursor: not-allowed;
   pointer-events: none; }
 
+.focusOnCheckbox {
+  border: solid #70196F !important; }
+
 /** checkbox - Structure CSS **/
 .input-box {
   display: inline-block;
@@ -1624,6 +1627,26 @@ textarea:required {
     background-size: 30px 30px;
     background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent); }
 
+.progress .success:focus {
+  border: 2px solid #f3c8f2;
+  outline: none; }
+
+.progress .warning:focus {
+  border: 2px solid #f3c8f2;
+  outline: none; }
+
+.progress .danger:focus {
+  border: 2px solid #f3c8f2;
+  outline: none; }
+
+.progress .red:focus {
+  border: 2px solid #f3c8f2;
+  outline: none; }
+
+.progress .stripped:focus {
+  border: 2px solid #f3c8f2;
+  outline: none; }
+
 /** progress - Structure CSS **/
 .progress {
   height: 20px;
@@ -1766,6 +1789,10 @@ input:checked + .toggle-slider {
   width: 60px;
   height: 34px;
   vertical-align: middle; }
+
+.toggle:focus {
+  outline: none;
+  border: 2px solid #70196F; }
 
 .toggle input {
   display: none; }
@@ -2858,6 +2885,9 @@ input:checked + .toggle-slider:before {
 .search-dropdown-list {
   border-color: #70196F;
   background-color: white; }
+
+.input-group:focus {
+  outline: none; }
 
 /** Searchbox - Structure CSS **/
 .hrclass {
@@ -5762,6 +5792,14 @@ amexio-layout-columns amexio-layout-item {
   background-color: #e99fe9;
   color: #70196F; }
 
+.paginator-page:focus {
+  outline: none;
+  background-color: #f3c8f2; }
+
+.paginator-pages:focus {
+  outline: none;
+  background-color: #f3c8f2; }
+
 /** paginator - Structure CSS **/
 .paginator {
   padding: 10px; }
@@ -6512,6 +6550,11 @@ fieldset {
 .step-block-icon-disable {
   color: #70196F; }
 
+.step-box-table-item:focus {
+  outline: none;
+  background-color: #f3c8f2 !important;
+  color: #70196F; }
+
 .stepwizard-row:before {
   background-color: #ECEFF1; }
 
@@ -6525,7 +6568,7 @@ fieldset {
   color: #70196F; }
 
 .step-box-table-item.active {
-  background-color: #e99fe9 !important; }
+  background-color: #e99fe9; }
 
 .step-box-table-item.disbaled {
   background-color: #a09e9e;
