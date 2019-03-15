@@ -5073,6 +5073,11 @@ amexio-homepage-northpanel .top-nav-button {
   background-color: #ffb8c4;
   color: #52000e; }
 
+.tree-node-label-hover:focus {
+  background-color: #ffb8c4;
+  color: #52000e;
+  outline: none; }
+
 .treenode-label-active {
   background-color: #ff6b84;
   color: #1f0005; }
