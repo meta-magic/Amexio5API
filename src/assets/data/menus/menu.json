@@ -251,11 +251,6 @@
                             "text": "Reactive Forms",
                             "icon": "fa fa-window-maximize  ",
                             "link": "forms/html-reactive-form"
-                        },   {
-                            "text": "Creative Form",
-                            "icon": "fa fa-window-maximize",
-                            "badge": "NEW",
-                            "link": "creative/form-ce-demo"
                         }
                     ]
                 },
@@ -274,6 +269,12 @@
                             "link": "forms/reactive-form"
                         }
                     ]
+                },
+                {
+                    "text": "Creative Form",
+                    "icon": "fa fa-window-maximize",
+                    "badge": "NEW",
+                    "link": "creative/form-ce-demo"
                 }
             ]
         },
