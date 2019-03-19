@@ -2823,6 +2823,16 @@ input:checked + .toggle-slider:before {
 .toolbaritemseperatorright {
   border-right: 1px solid #8D021F; }
 
+.toolbar:focus {
+  background-color: #8D021F;
+  color: white;
+  outline: none; }
+
+.toolbar-item:focus {
+  background-color: #8D021F;
+  color: white;
+  outline: none; }
+
 /** Toolbar - Structure CSS **/
 .toolbar {
   cursor: pointer;
@@ -6537,6 +6547,10 @@ amexio-form-header {
   padding: 125px 16px;
   cursor: pointer; }
 
+.tablistitems:focus {
+  border: 2px solid transparent;
+  outline: none; }
+
 /****************************************************************************
     Component Name : Fieldset
     Version : Amexio v4.0 onwards
@@ -7368,6 +7382,10 @@ amexio-window-header > amexio-toolbar > .toolbar {
 
 .panel-panel::-webkit-scrollbar-thumb {
   background-color: #ffe578; }
+
+.panel-panel:focus {
+  background-color: #8D021F;
+  color: white; }
 
 /** panel - Structure CSS **/
 .panel-accordion {
