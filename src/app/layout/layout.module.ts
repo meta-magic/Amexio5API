@@ -22,7 +22,6 @@ import { GridLayoutDemoTwo } from "./gridlayout/gridlayouttwo/gridlayout.demo";
 import { GridLayoutDemoThree } from "./gridlayout/gridlayoutthree/gridlayout.demo";
 import { GridLayoutDemoOne } from "./gridlayout/gridlayoutone/gridlayout.demo";
 import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
-import { ArcDemoComponent } from "./arc/arc.demo.component";
 
 
 /**
@@ -33,7 +32,6 @@ import { ArcDemoComponent } from "./arc/arc.demo.component";
          horizontalLayoutDemo, CardImageDemo,
           CardFormDemo,ColumnDemo,BorderDemoComponent,AccordionDemoComponent,
           GridLayoutDemo,GridLayoutDemoOne,GridLayoutDemoTwo,GridLayoutDemoThree,
-          ArcDemoComponent
 
         ],
     imports: [
@@ -44,7 +42,7 @@ import { ArcDemoComponent } from "./arc/arc.demo.component";
         AmexioWidgetModule,
         RouterModule.forChild(LAYOUT_ROUTE),
     ],
-    entryComponents: [ArcDemoComponent],
+    entryComponents: [],
     providers: []
 })
 export class LayoutModule {

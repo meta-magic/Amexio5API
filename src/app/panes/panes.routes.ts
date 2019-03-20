@@ -14,7 +14,8 @@ import { IconWithTabDemo } from './tab/iconwithtab/iconwithtab.demo';
 import { VerticalRightTabDemo } from './tab/verticalrighttab/verticalrighttab.demo';
 import { VerticalTabDemo } from './tab/verticaltab/verticaltab.demo';
 import { TabDemo } from './tab/basictab/tab.demo';
-import {OverlayDemoComponent} from './overlaycontainer/overlay.demo.component';
+import { OverlayDemoComponent } from './overlaycontainer/overlay.demo.component';
+import { ArcDemoComponent } from './arc/arc.demo.component';
 
 
 /**
@@ -56,7 +57,7 @@ export const PANES_ROUTE: Routes = [
         path: 'scrollable-tab-demo', component: ScrollableTabDemo,
     },
     {
-        path: 'icon-tab-demo', component:  IconWithTabDemo,
+        path: 'icon-tab-demo', component: IconWithTabDemo,
     },
     {
         path: 'verticalright-tab-demo', component: VerticalRightTabDemo,
@@ -68,7 +69,10 @@ export const PANES_ROUTE: Routes = [
         path: 'basic-tab-demo', component: TabDemo,
     },
     {
-      path: 'overlay-demo', component: OverlayDemoComponent,
+        path: 'overlay-demo', component: OverlayDemoComponent,
+    },
+    {
+        path: 'arc-demo', component: ArcDemoComponent,
     },
 
 

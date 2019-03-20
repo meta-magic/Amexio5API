@@ -13,7 +13,6 @@ import { GridLayoutDemoTwo } from './gridlayout/gridlayouttwo/gridlayout.demo';
 import { GridLayoutDemoThree } from './gridlayout/gridlayoutthree/gridlayout.demo';
 import { GridLayoutDemoOne } from './gridlayout/gridlayoutone/gridlayout.demo';
 import { GridLayoutDemo } from './gridlayout/gridlayoutbasic/gridlayout.demo';
-import { ArcDemoComponent } from './arc/arc.demo.component';
 
 export const LAYOUT_ROUTE: Routes = [
     {
@@ -55,7 +54,5 @@ export const LAYOUT_ROUTE: Routes = [
     {
         path: 'gridlayout-demo-exp3', component: GridLayoutDemoThree,
     },
-    {
-        path: 'arc-demo', component: ArcDemoComponent,
-    },
+    
 ]

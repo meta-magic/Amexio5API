@@ -25,6 +25,7 @@ import {TabDemo} from './tab/basictab/tab.demo';
 import { DyanmicTabComponent } from "./tab/enhancedtab/dynamictabdemo.component";
 import { DyanmicVerticalTabComponent } from "./tab/enhancedverticaltab/dynamicverticaltabdemo.component";
 import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
+import { ArcDemoComponent } from "./arc/arc.demo.component";
 
 /**
  * Created by kedar on 1/2/19.
@@ -34,7 +35,7 @@ import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
         ClosableTabDemo, PanelDemoComponent, FieldSetDemoComponent,DialogueDemoComponent,
         CarouselDemoComponent, EnhancedTabDemo,EnhancedVerticalTabDemo,ScrollableTabDemo,
         IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo, DyanmicTabComponent,
-        DyanmicVerticalTabComponent, OverlayDemoComponent
+        DyanmicVerticalTabComponent, OverlayDemoComponent, ArcDemoComponent
 
 
     ],
@@ -47,7 +48,7 @@ import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
         RouterModule.forChild(PANES_ROUTE),
     ],
     providers: [],
-    entryComponents:[DyanmicTabComponent, DyanmicVerticalTabComponent]
+    entryComponents:[DyanmicTabComponent, DyanmicVerticalTabComponent, ArcDemoComponent]
 })
 export class PanesModule {
 

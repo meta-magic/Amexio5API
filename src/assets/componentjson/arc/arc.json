@@ -64,7 +64,7 @@
     "datasourceUrl": ""
   },
   "liveMetadata": {
-    "disabled": true,
-    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-borderlayout?embed=1&file=app/layouts/borderlayout/borderlayout.demo.html"
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-arc-component?embed=1&file=app/panel/ARC/ARC.demo.html&view=editor"
   }
 }

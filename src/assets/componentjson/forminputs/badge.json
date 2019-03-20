@@ -121,7 +121,7 @@
       "datasourceUrl": ""
     },
     "liveMetadata": {
-      "disabled": true,
-      "stackblitzUrl": ""
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-badge?embed=1&file=app/formInput/badge/badge.demo.html&view=editor"
     }
   }
