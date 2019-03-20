@@ -159,7 +159,7 @@
         "datasourceUrl": ""
     },
     "liveMetadata": {
-        "disabled": true,
-        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-appointment1?embed=1&file=app/enterprise/appointment/appointment.demo.html&view=editor"
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-step-wizard?embed=1&file=app/enterprise/stepwizard/stepwizard.demo.html&view=editor"
     }
 }

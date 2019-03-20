@@ -71,7 +71,7 @@
       "datasourceUrl": ""
     },
     "liveMetadata": {
-      "disabled": true,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-borderlayout?embed=1&file=app/layouts/borderlayout/borderlayout.demo.html"
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-calendar-component?embed=1&file=app/enterprise/calendar/calendar.demo.html&view=editor"
     }
   }

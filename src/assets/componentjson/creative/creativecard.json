@@ -1,9 +1,9 @@
 {
-    "title": "Amexio Creative Form",
-    "description": "Amexio creative form diffrent styles",
+    "title": "Amexio Creative Card",
+    "description": "Amexio creative card diffrent styles",
     "apiRefMetadata": [
         {
-            "gridTitle": "Properties <amexio-form-ce>",
+            "gridTitle": "Properties <amexio-card-ce>",
             "columnDefinition": [
                 {
                     "dataindex": "name",
@@ -46,64 +46,50 @@
                     "name": "align",
                     "type": "string",
                     "default": "start",
-                    "version": "5.8 onwards",
-                    "description": "alignement of form example start,center,end"
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background image of form"
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "form content color"
+                    "version": "5.5.5 onwards",
+                    "description": "card content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background color or gradient of form"
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "height of form"
+                    "version": "5.5.5 onwards",
+                    "description": "height of card"
                 },
                 {
                     "name": "style-type",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "form wider or narrower style. examples wider-header,wider-action,narrower-header,narrower-action,wider-all,narrower-all"
+                    "version": "5.5.5 onwards",
+                    "description": "card wider or narrower style. examples wider-header,wider-action,narrower-header,narrower-action,wider-all,narrower-all"
                 },
                 {
                     "name": "enable-lifecycle-events",
                     "description": "Enable lifecycle events example [all/init/ready/destroy].",
-                    "version": "5.8 onwards",
+                    "version": "5.7 onwards",
                     "type": "string",
                     "default": ""
-                },
-                {
-                    "name": "form-name",
-                    "type": "string",
-                    "default": "",
-                    "version": "5.8 onwards",
-                    "description": "Form binding attribute"
-                },
-                {
-                    "name": "show-error",
-                    "description": "Flag to show form invalid error messages icon",
-                    "version": "5.8 onwards",
-                    "type": "boolean",
-                    "default": "false"
                 }
             ]
         },
@@ -151,50 +137,50 @@
                     "name": "align",
                     "type": "string",
                     "default": "start",
-                    "version": "5.8 onwards",
-                    "description": "alignement of form header example start,center,end"
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card header example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background image of form header"
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card header"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "form header content color"
+                    "version": "5.5.5 onwards",
+                    "description": "card header content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background color or gradient of form"
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "height of form header"
+                    "version": "5.5.5 onwards",
+                    "description": "height of card header"
                 },
                 {
                     "name": "border-bottom",
                     "type": "boolean",
                     "default": "false",
-                    "version": "5.8 onwards",
+                    "version": "5.5.5 onwards",
                     "description": "set true border will enable for header bottom"
                 },
                 {
                     "name": "direction",
                     "type": "string",
                     "default": "row",
-                    "version": "5.8 onwards",
-                    "description": "set direction of form header"
+                    "version": "5.5.5 onwards",
+                    "description": "set direction of card header"
                 }
             ]
         },
@@ -242,36 +228,36 @@
                     "name": "align",
                     "type": "string",
                     "default": "end",
-                    "version": "5.8 onwards",
-                    "description": "alignement of form body example start,center,end"
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card body example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background image of form body"
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card body"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "form body content color"
+                    "version": "5.5.5 onwards",
+                    "description": "card body content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background color or gradient of form body"
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card body"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "height of form body"
+                    "version": "5.5.5 onwards",
+                    "description": "height of card body"
                 }
             ]
         },
@@ -319,55 +305,55 @@
                     "name": "align",
                     "type": "string",
                     "default": "end",
-                    "version": "5.8 onwards",
-                    "description": "alignement of form action example start,center,end"
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card action example start,center,end"
                 },
                 {
                     "name": "bg-image",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background image of form action"
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card action"
                 },
                 {
                     "name": "color",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "form action content color"
+                    "version": "5.5.5 onwards",
+                    "description": "card action content color"
                 },
                 {
                     "name": "background",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "background color or gradient of form"
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card"
                 },
                 {
                     "name": "height",
                     "type": "string",
                     "default": "",
-                    "version": "5.8 onwards",
-                    "description": "height of form action"
+                    "version": "5.5.5 onwards",
+                    "description": "height of card action"
                 },
                 {
                     "name": "border-top",
                     "type": "boolean",
                     "default": "false",
-                    "version": "5.8 onwards",
+                    "version": "5.5.5 onwards",
                     "description": "set true border will enable for action top"
                 },
                 {
                     "name": "direction",
                     "type": "string",
                     "default": "row",
-                    "version": "5.8 onwards",
-                    "description": "set direction of form action"
+                    "version": "5.5.5 onwards",
+                    "description": "set direction of card action"
                 }
             ]
         },
           {
-      "gridTitle": "Events <amexio-form-ce>",
+      "gridTitle": "Events <amexio-card-ce>",
       "columnDefinition": [
         {
           "dataindex": "name",
@@ -392,17 +378,17 @@
       "gridData": [
         {
             "name": "initiated",
-            "version":"5.8 onwards",
+            "version":"5.7 onwards",
             "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
           },
           {
             "name": "ready",
-            "version":"5.8 onwards",
+            "version":"5.7 onwards",
             "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
           },
           {
             "name": "destroy",
-            "version":"5.8 onwards",
+            "version":"5.7 onwards",
             "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
           }
 
@@ -410,12 +396,12 @@
     }
     ],
     "sourceMetadata": {
-        "htmlUrl": "/creative/formce/form.html",
-        "tsUrl": "creative/formce/form.text",
+        "htmlUrl": "creative/cardce/creative.html",
+        "tsUrl": "creative/cardce/creative.text",
         "datasourceUrl": ""
     },
     "liveMetadata": {
-        "disabled": true,
-        "stackblitzUrl": ""
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-card?embed=1&file=app/layout/Creativecard/creativecard.demo.html&view=editor"
     }
 }
