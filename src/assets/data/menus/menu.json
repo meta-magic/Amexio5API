@@ -485,7 +485,7 @@
         },
         {
             "text": "Data",
-            "badge": "3",
+            "badge": "4",
             "icon": "fa fa-database  ",
 
             "children": [{
@@ -633,6 +633,7 @@
                 },
               {
                 "text": "Property Grid",
+                "badge": "NEW",
                 "icon": "fa fa-database",
                 "link": "data/propertygrid-demo"
               }

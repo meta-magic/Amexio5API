@@ -44,18 +44,21 @@
       "gridData": [
         {
           "name": "key-value-data",
+          "version": "5.9.0 onwards",
           "type": "any[]",
           "default": "[]",
           "description": "data should be array of PropertyGridModel object"
         },
         {
           "name": "has-border",
+          "version": "5.9.0 onwards",
           "type": "boolean",
           "default": "false",
           "description": "enable border for grid"
         },
         {
           "name": "has-colon",
+          "version": "5.9.0 onwards",
           "type": "boolean",
           "default": "false",
           "description": "enable colon after LHS fieldName."
