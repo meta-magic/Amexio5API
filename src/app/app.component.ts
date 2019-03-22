@@ -2,8 +2,8 @@ import { Component, ViewChild, Inject } from '@angular/core';
 import { RouteConfigLoadEnd, RouteConfigLoadStart, Router } from "@angular/router";
 import { AmexioNavBarComponent } from "amexio-ng-extensions";
 import { DOCUMENT } from '@angular/platform-browser';
-import {CookieService} from "ngx-cookie-service";
-import {HttpClient} from "@angular/common/http";
+import { CookieService } from "ngx-cookie-service";
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-root',
@@ -22,12 +22,12 @@ export class AppComponent {
   mdThemeData: any[] = [];
 
   newThemePath = '';
-  type="2";
+  type = "2";
   @ViewChild(AmexioNavBarComponent) amexioNav;
 
   constructor(public router: Router, @Inject(DOCUMENT) private document: any,
-              private _httpClient: HttpClient,
-              private _cookieService: CookieService) {
+    private _httpClient: HttpClient,
+    private _cookieService: CookieService) {
     this.topMenuData = JSON.parse(`[
     {
       "label" : "Features",
@@ -169,8 +169,8 @@ export class AppComponent {
             "link": "https://amexio.tech/license-and-other-docs-1"
           },
           {
-            "text" : "Roadmap",
-            "link" : "https://amexio.tech/roadmap"
+            "text": "Roadmap",
+            "link": "https://amexio.tech/roadmap"
           }]
       },
       {
@@ -248,12 +248,13 @@ export class AppComponent {
   changeTheme() {
     this._httpClient.get('assets/data/theme/material-themes.json').subscribe((res: any) => {
       this.mdThemeData = res.bestThemes;
+    },
+      (error: any) => {
+        console.log(error)
       },
-      (error: any)=>{
-      console.log(error)},
-      ()=>{
-      let themeRef: any;
-      let themeId = 1;
+      () => {
+        let themeRef: any;
+        let themeId = 1;
         if (this._cookieService.check('theme-info')) {
           themeId = JSON.parse(this._cookieService.get('theme-info')).id + 1;
           themeId = this.mdThemeData.length - 1 < themeId ? 0 : themeId;
@@ -262,14 +263,14 @@ export class AppComponent {
           themeId = 0;
           themeRef = this.mdThemeData[0];
         }
-        this._cookieService.set('theme-info', JSON.stringify({id: themeId, themeName: themeRef.themeCssFile}));
+        this._cookieService.set('theme-info', JSON.stringify({ id: themeId, themeName: themeRef.themeCssFile }));
         this.themeChange(themeRef);
-    });
+      });
   }
 
-  addNewTheme(newTheme: any,existingTheme : any) {
+  addNewTheme(newTheme: any, existingTheme: any) {
     let linkEl = document.createElement('link');
-    linkEl.onload = ()=>{
+    linkEl.onload = () => {
       this.removeExistingTheme(existingTheme);
 
     };
@@ -282,7 +283,7 @@ export class AppComponent {
   //removed old theme css
   removeExistingTheme(keyList: any) {
     if (keyList != null && keyList && keyList.length != 0) {
-      for (let i=0; i<keyList.length; i++) {
+      for (let i = 0; i < keyList.length; i++) {
         let key = keyList[i];
         if (key.id == 'themeid') {
           document.head.removeChild(key);
@@ -295,12 +296,12 @@ export class AppComponent {
     this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
     let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
     // this.removeExistingTheme(currentTheme);
-    this.addNewTheme(this.newThemePath,currentTheme);
+    this.addNewTheme(this.newThemePath, currentTheme);
     const themeObj = {
-      id: Math.floor(Math.random() * 9) + 1  ,
+      id: Math.floor(Math.random() * 9) + 1,
       themeName: theme.themeCssFile
     };
-   // this._cookieService.set('theme-info', JSON.stringify(themeObj));
+    // this._cookieService.set('theme-info', JSON.stringify(themeObj));
   }
 
   externalLink(event: any) {
@@ -317,7 +318,7 @@ export class AppComponent {
     this.amexioNav.close();
   }
   onNodeClick(node: any) {
-    if (node.hasOwnProperty('link')){
+    if (node.hasOwnProperty('link')) {
       this.router.navigate([node.link]);
     }
   }

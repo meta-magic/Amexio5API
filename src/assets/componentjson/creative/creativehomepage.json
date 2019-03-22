@@ -53,7 +53,7 @@
         "datasourceUrl": ""
     },
     "liveMetadata": {
-        "disabled": true,
-        "stackblitzUrl": ""
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-homepage?embed=1&file=app/layout/homepage/homepage.demo.html&view=editor"
     }
 }

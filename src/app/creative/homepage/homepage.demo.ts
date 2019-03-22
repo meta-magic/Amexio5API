@@ -18,11 +18,16 @@ import {HttpClient} from '@angular/common/http';
 })
 export class HomePageDemo {
  
-  DEMO_URL = 'https://meta-magic.github.io/amexio-ce-demo/#/home/dashboard?type=';
+  DEMO_FIRST_URL = 'https://meta-magic.github.io/amexio-ce-demo/#/home/dashboard?type=1';
+  DEMO_SEC_URL = 'https://meta-magic.github.io/amexio-ce-demo/#/home/dashboardtwo?type=2';
   constructor(private http: HttpClient) {
   }
-  onHomePageClick(type: string) {
-    window.open(this.DEMO_URL + type, '_blank');
+  onDemoFirstClick() {
+    window.open(this.DEMO_FIRST_URL);
+  }
+  onDemoSecondClick() {
+    window.open(this.DEMO_SEC_URL);
+
   }
 }
 
