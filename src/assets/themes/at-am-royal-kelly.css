@@ -744,7 +744,8 @@ $modalFooterColor : $cardFooterColor;*/
 
 .disabled {
   background-color: #a09e9e;
-  color: #4CBB17; }
+  color: #4CBB17;
+  cursor: not-allowed; }
 
 .button-primary:hover:enabled {
   background-color: #3a8e11;
@@ -809,14 +810,12 @@ $modalFooterColor : $cardFooterColor;*/
 .button-primary-disabled {
   background-color: #a09e9e;
   border-color: #a09e9e;
-  pointer-events: none;
   color: #4CBB17;
   cursor: not-allowed; }
 
 .button-success-disabled {
   background-color: #a3d7a3;
   border-color: #a3d7a3;
-  pointer-events: none;
   cursor: not-allowed;
   color: #4CBB17; }
 
@@ -830,14 +829,12 @@ $modalFooterColor : $cardFooterColor;*/
   background-color: #f8d9ac;
   border-color: #f8d9ac;
   color: #4CBB17;
-  pointer-events: none;
   cursor: not-allowed; }
 
 .disabled {
   background-color: lightgray;
   border-color: lightgray;
   color: #4CBB17;
-  pointer-events: none;
   cursor: not-allowed; }
 
 /** button - Structure CSS **/
@@ -5183,6 +5180,9 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   line-height: 38px;
   text-align: center; }
 
+.iconPaddingStyle {
+  padding-right: 5px; }
+
 /****************************************************************************
     Component Name : Horizontaltreeview
     Version : Amexio v4.0 onwards
@@ -5452,6 +5452,11 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 .context-menu-separator {
   border-bottom: 1px solid gray; }
+
+.horizontaltreeview-node-label:focus {
+  outline: none;
+  background-color: rgba(255, 253, 208, 0.4);
+  color: #292b2c; }
 
 /** Treenode - Structure CSS **/
 .treeview {

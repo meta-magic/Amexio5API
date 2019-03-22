@@ -428,7 +428,8 @@ image using the content attribute.
 
 .disabled {
   background-color: #dbd2c2;
-  color: #a38b62; }
+  color: #a38b62;
+  cursor: not-allowed; }
 
 .button-primary:hover:enabled {
   background-color: #ffd182;
@@ -493,14 +494,12 @@ image using the content attribute.
 .button-primary-disabled {
   background-color: #dbd2c2;
   border-color: #dbd2c2;
-  pointer-events: none;
   color: #a38b62;
   cursor: not-allowed; }
 
 .button-success-disabled {
   background-color: #a3d7a3;
   border-color: #a3d7a3;
-  pointer-events: none;
   cursor: not-allowed;
   color: #a38b62; }
 
@@ -514,14 +513,12 @@ image using the content attribute.
   background-color: #f8d9ac;
   border-color: #f8d9ac;
   color: #a38b62;
-  pointer-events: none;
   cursor: not-allowed; }
 
 .disabled {
   background-color: lightgray;
   border-color: lightgray;
   color: #a38b62;
-  pointer-events: none;
   cursor: not-allowed; }
 
 /** button - Structure CSS **/
@@ -4867,6 +4864,9 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   line-height: 38px;
   text-align: center; }
 
+.iconPaddingStyle {
+  padding-right: 5px; }
+
 /****************************************************************************
     Component Name : Horizontaltreeview
     Version : Amexio v4.0 onwards
@@ -5136,6 +5136,11 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 .context-menu-separator {
   border-bottom: 1px solid gray; }
+
+.horizontaltreeview-node-label:focus {
+  outline: none;
+  background-color: #ffe5b8;
+  color: #523400; }
 
 /** Treenode - Structure CSS **/
 .treeview {
