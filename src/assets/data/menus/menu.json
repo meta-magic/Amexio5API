@@ -428,7 +428,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "1",
+            "badge": "2",
             "icon": "fa fa-keyboard-o  ",
             "children": [{
                     "text": "Buttons",
@@ -463,6 +463,7 @@
                 {
                     "text": "Notification",
                     "icon": "fa fa-comments  ",
+                    "badge": "U",
                     "link": "forms-Action/notification-demo"
                 },
                 {

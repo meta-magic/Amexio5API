@@ -187,7 +187,7 @@
                     "type": "string",
                     "default": "",
                     "version": "5.8 onwards",
-                    "description": "alignment of window header example top,center,bottom"
+                    "description": "alignment of window closable icon as top,center,bottom"
                 },
                 {
                     "name": "bg-image",
