@@ -128,10 +128,7 @@
                     "hidden": false
                 }
             ],
-            "gridData": [{
-                    "name": "blur",
-                    "description": "On blur event"
-                },
+            "gridData": [
                 {
                     "name": "change",
                     "description": "On field value change event"
