@@ -34,7 +34,7 @@ export class CreativeCardDemo {
           'bgcolor': 'linear-gradient(40deg,#a8ff78, #78ffd6)'
         },
         {
-          'name': 'Rashmi Thakker',
+          'name': 'Rashmi Thakkar',
           'description': 'UI Developer',
           'imagepath': 'assets/images/profile/rashmi.jpg',
           'bgcolor': 'linear-gradient(40deg,#457fca, #5691c8)'
