@@ -4279,6 +4279,14 @@ header .billboard .content-button {
   background-color: black;
   color: white; }
 
+.calendar-box-items:focus {
+  background-color: #fec3cf;
+  outline: none; }
+
+.calendar-user-active:focus {
+  background-color: #fec3cf;
+  outline: none; }
+
 .calendar-header {
   display: flex;
   flex-direction: row;
