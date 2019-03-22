@@ -630,7 +630,12 @@
                     "text": "ListBox",
                     "icon": "fa fa-list  ",
                     "link": "data/listbox-demo"
-                }
+                },
+              {
+                "text": "Property Grid",
+                "icon": "fa fa-database",
+                "link": "data/propertygrid-demo"
+              }
             ]
         },
         {

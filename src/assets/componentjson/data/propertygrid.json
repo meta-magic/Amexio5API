@@ -1,0 +1,113 @@
+{
+  "title": "Amexio Property Grid",
+  "description": "Using Property grid we can  display data in tabular format.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-property-grid>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "key-value-data",
+          "type": "any[]",
+          "default": "[]",
+          "description": "data should be array of PropertyGridModel object"
+        },
+        {
+          "name": "has-border",
+          "type": "boolean",
+          "default": "false",
+          "description": "enable border for grid"
+        },
+        {
+          "name": "has-colon",
+          "type": "boolean",
+          "default": "false",
+          "description": "enable colon after LHS fieldName."
+        }
+      ]
+    },
+
+    {
+      "gridTitle": "Property Grid Model",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 20,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "datatype",
+          "text": "Datatype",
+          "width": 20,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "fieldName",
+          "datatype": "string"
+        },
+        {
+          "name": "fieldValue",
+          "datatype": "string"
+        },
+        {
+          "name": "fieldIcon",
+          "datatype": "string"
+        },
+        {
+          "name": "onlyIcon",
+          "datatype": "boolean"
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "data/propertygrid/propertygrid.html",
+    "tsUrl": "data/propertygrid/propertygrid.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": ""
+  }
+}

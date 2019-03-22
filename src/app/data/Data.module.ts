@@ -36,6 +36,7 @@ import { TreeDataGridDemo } from './treedatagrid/treedatagrid.demo';
 import { TreeDataTemplateDemo } from './treedatatemplate/treedatatemplate.demo';
 import {ServerSidePaginationDemo} from './serversidepagination/serversidepagination.demo';
 import {AmexioWidgetModule} from "amexio-ng-extensions";
+import {PropertyGridDemoComponent} from "./propertygrid/propertygrid.demo";
 
 
 /**
@@ -49,7 +50,8 @@ import {AmexioWidgetModule} from "amexio-ng-extensions";
 
         SimpleGridDemo, CustomColSizeDemo, FilterGridDemo, GlobalFilterDemo, GridWithTemplateDemo,
         GridWithContextMenuDemo, GridWithScrollDemo, GridWithToolBarDemo , GroupByGridDemo, HeaderTemplateDemo,
-        TreeDataGridDemo, TreeDataTemplateDemo, ServerSidePaginationDemo
+        TreeDataGridDemo, TreeDataTemplateDemo, ServerSidePaginationDemo,
+        PropertyGridDemoComponent
 
     ],
     imports: [

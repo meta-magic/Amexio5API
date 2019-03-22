@@ -1,0 +1,19 @@
+{
+  "employeeDetails": {
+    "personName": "Dattaram Gawas",
+    "personAge": 27,
+    "address": "Plat No 105, Galaxy Heights, Hadapsar",
+    "designation": "Software Engineer",
+    "mobileNo": 2143541247,
+    "city": "Pune",
+    "country": "India",
+    "pincode": "411028"
+  },
+  "companyDetails": {
+    "companyName": "Metamagic global",
+    "address": "office 329, Amanora Chamber, Amanora Mall, Hadapsar",
+    "city": "Pune",
+    "country": "India",
+    "pincode": "411028"
+  }
+}
