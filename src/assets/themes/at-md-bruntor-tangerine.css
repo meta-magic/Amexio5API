@@ -4327,6 +4327,10 @@ header .billboard .content-button {
   outline: none; }
 
 .calendar-user-active:focus {
+  background-color: #ffe4b8 !important;
+  outline: none; }
+
+.focuscls:focus {
   background-color: #ffe4b8;
   outline: none; }
 
@@ -4635,6 +4639,11 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   width: 3px; }
 
 .homepage-centerpanel-flex {
+  flex-grow: 1;
+  padding-top: 50px;
+  width: 81%; }
+
+.homepage-centerpanel-flex-fullview {
   flex-grow: 1;
   padding-top: 50px; }
 
