@@ -31,7 +31,7 @@ export class DropDownDemo implements OnInit {
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
     this.customSourceData.sourceMetadata.datasourceUrl1 = 'assets/data/componentdata/personProfile.json';
     this.customSourceData.sourceMetadata.datasourceUrl2 = 'assets/data/componentdata/fruits.json';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dropdown?embed=1&file=app/forms/dropdown/dropdown.demo.html&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-dropdown-basic?embed=1&file=app/forms/dropdown/dropdown.demo.html&view=editor';
   }
 
 

@@ -31,7 +31,7 @@ export class FilterGridDemo implements OnInit{
     this.customSourceData.sourceMetadata.htmlUrl = 'data/filter/filter.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/filter/filter.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/datagridgroupby.json';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-global-filter-grid?embed=1&file=app/grid/filtergrid/filtergrid.demo.html&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-filter-grid-test?embed=1&file=app/app.component.ts&view=editor';
   }
 
  

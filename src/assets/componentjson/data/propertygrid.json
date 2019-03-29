@@ -110,7 +110,7 @@
     "datasourceUrl": ""
   },
   "liveMetadata": {
-    "disabled": true,
-    "stackblitzUrl": ""
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-property-grid?embed=1&file=app/data/PropertyGrid/propertygrid.demo.html&view=editor"
   }
 }

@@ -31,7 +31,7 @@ export class ClosableTabDemo implements OnInit{
     this.customSourceData.description = 'Closable Tab  component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs.';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/closabletab/tab.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/closabletab/tab.text';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-tab-basic-bw4ppe?embed=1&file=src/app/basic/tab/tab.demo.component.html&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-horizontal-closable-tab?embed=1&file=app/app.component.ts&view=editor';
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
