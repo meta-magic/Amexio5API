@@ -428,7 +428,7 @@
         },
         {
             "text": "Form Actions",
-            "badge": "2",
+            "badge": "3",
             "icon": "fa fa-keyboard-o  ",
             "children": [{
                     "text": "Buttons",
@@ -456,6 +456,7 @@
                         {
                             "text": "Floating Group",
                             "icon": "fa fa-circle-o  ",
+                            "badge": "U",
                             "link": "forms-Action/floatinggroupbutton-demo"
                         }
                     ]
@@ -964,6 +965,7 @@
         },
         {
             "text": "Maps",
+            "badge": "1",
             "icon": "fa fa-globe  ",
             "children": [{
                     "text": "Geo Chart",
@@ -973,6 +975,7 @@
                 {
                     "text": "Tree Map",
                     "icon": "fa fa-trello  ",
+                    "badge": "U",
                     "link": "map/tree-map-demo"
                 },
                 {
@@ -985,7 +988,7 @@
         {
             "text": "Enterprise",
             "icon": "fa fa-medium",
-            "badge": "2",
+            "badge": "3",
             "children": [{
                     "text": "Media Content",
                     "icon": "fa fa-id-card-o  ",
@@ -1003,6 +1006,7 @@
                 }, {
                     "text": "Appointment",
                     "icon": "fa fa-calendar  ",
+                    "badge": "U",
                     "link": "enterprise/ee-appointment-demo"
                 }, {
                     "text": "Calendar",

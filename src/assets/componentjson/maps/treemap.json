@@ -149,6 +149,37 @@
           "description": "Set true for title text in italic style."
         }
       ]
+    },
+    {
+      "gridTitle": "Events <amexio-map-treemap>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 20,
+          "hidden": false
+        },
+       {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+            "name": "onClick",
+            "version":"5.9.2 onwards",
+            "description": "Event fired when clicked on any map section"
+          }
+      ]
     }
   ],
   "sourceMetadata": {
