@@ -32,7 +32,7 @@ export class VerticalTabDemo implements OnInit{
     this.customSourceData.description = ' Vertical Left Tab  component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs.';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/verticaltab/tab.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/verticaltab/tab.text';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-left-aligned-vertical-tab?embed=1&file=app/app.component.ts&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-left-aligned-verticaltab?embed=1&file=app/tabs/leftverticaltab/leftverticaltab.demo.html&view=editor';
   }
 
 

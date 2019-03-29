@@ -40,7 +40,7 @@ export class ServerSidePaginationDemo implements OnInit {
     this.customSourceData.sourceMetadata.htmlUrl = 'data/serversidepagination/serversidepagination.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/serversidepagination/serversidepagination.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/componentdata/country.json';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/server-side-paging?embed=1&file=src/app/grid/serverside.paging.component.html&view=editor';
+    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-grid-lazyloading?embed=1&file=app/grid/calendar/serverside.paging.component.html&view=editor';
   }
 
 
