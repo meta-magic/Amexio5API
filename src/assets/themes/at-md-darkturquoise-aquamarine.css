@@ -2787,6 +2787,14 @@ input:checked + .toggle-slider:before {
     Version : Amexio v4.1 onwards
 *****************************************************************************/
 /** floatingbuttongroup - Visual CSS **/
+.floatinggroupitems:focus {
+  border: 3px solid #b8ffe7 !important;
+  outline: none; }
+
+.floatingbutton-circle:focus {
+  border: 3px solid #b8ffe7 !important;
+  outline: none; }
+
 /** floatingbuttongroup - Structure CSS **/
 .floatinggroup {
   position: fixed;
@@ -4238,6 +4246,11 @@ header .billboard .content-button {
   color: #00ecf0;
   background-color: #6bffce;
   cursor: pointer; }
+
+.availableweekday:focus {
+  outline: none;
+  color: #002418;
+  background: #7fffd4; }
 
 .availableweekday:hover {
   background-color: #7fffd4;
