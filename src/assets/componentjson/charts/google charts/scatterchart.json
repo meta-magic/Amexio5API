@@ -59,12 +59,6 @@
           "type": "Array",
           "default": "",
           "description": "For the use of local data "
-        },
-        {
-          "name": "is3d",
-          "type": "boolean",
-          "default": "",
-          "description": "If you set the is3d option to true, your pie chart will be drawn as though it has three dimensions"
         }
       ]
     },

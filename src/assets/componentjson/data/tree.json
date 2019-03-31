@@ -125,6 +125,13 @@
           "type": "any[]",
           "default": "children",
           "description": "Child Array Key provides the user defined key to children json object (children key name can be changed)"
+        },
+        {
+          "name": "filter-tree-flag",
+          "version": "5.0.0 onwards",
+          "type": "boolean",
+          "default": "false",
+          "description": "If true , provides filter for tree"
         }
       ]
     },

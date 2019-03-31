@@ -125,6 +125,13 @@
             "version": "5.7 onwards",
             "type": "string",
             "default": ""
+          },
+          {
+            "name": "fit",
+            "description": "sets fit layout for panel.",
+            "version": "5.7 onwards",
+            "type": "boolean",
+            "default": "false"
           }
       ]
     },

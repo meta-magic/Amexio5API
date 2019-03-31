@@ -49,18 +49,6 @@
             "description": "The label of this field"
           },
           {
-            "name": "rows",
-            "type": "number",
-            "default": "",
-            "description": "Number of rows for textarea."
-          },
-          {
-            "name": "columns",
-            "type": "number",
-            "default": "",
-            "description": "Number of column for textarea."
-          },
-          {
             "name": "pattern",
             "type": "string",
             "default": "",

@@ -105,6 +105,24 @@
           "type": "string",
           "default": "",
           "description": "This attribute use for only material icons.Example:mda='material-icons'"
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "default": "false",
+          "description": "sets dockbar item active.'"
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "",
+          "description": "sets label name for dockbar item.'"
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "default": "",
+          "description": "Provides Height of dockbar item'"
         }
       ]
     }

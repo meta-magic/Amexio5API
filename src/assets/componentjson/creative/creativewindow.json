@@ -223,6 +223,13 @@
                     "default": "false",
                     "version": "5.8 onwards",
                     "description": "set true border will enable for header bottom"
+                },
+                {
+                    "name": "icon-align",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.8 onwards",
+                    "description": "sets icon alignment"
                 }
             ]
         },

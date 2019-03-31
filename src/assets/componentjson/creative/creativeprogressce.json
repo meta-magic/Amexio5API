@@ -139,6 +139,13 @@
                     "default": "",
                     "version": "5.7 Onwards",
                     "description": "Unit of label is show or not."
+                },
+                {
+                    "name": "label-color",
+                    "type": "string",
+                    "default": "black",
+                    "version": "5.7 Onwards",
+                    "description": "Provides the color for the label."
                 }
             ]
         }

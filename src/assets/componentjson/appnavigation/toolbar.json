@@ -40,6 +40,18 @@
           "type": "string",
           "default": "",
           "description": "Separator places the position of components to its left or right position."
+        },
+        {
+          "name": "position-left",
+          "type": "string",
+          "default": "",
+          "description": "Show the content left side .<amexio-toolbar-item position-left></amexio-toolbar-item>."
+        },
+        {
+          "name": "position-right",
+          "type": "string",
+          "default": "",
+          "description": "Show the content right side. <amexio-toolbar-item position-right></amexio-toolbar-item>."
         }
         ]
     },

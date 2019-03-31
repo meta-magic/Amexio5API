@@ -167,6 +167,10 @@
       ],
       "gridData": [
         {
+          "name": "close",
+          "description": "It is fired when clicked on close of window."
+        },
+        {
           "name": "rightClick",
           "description": "It is fired when clicked on context menu providing Window node data and selected context menu data."
         }

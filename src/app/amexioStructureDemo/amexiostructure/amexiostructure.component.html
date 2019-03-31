@@ -12,7 +12,7 @@
           <ng-content select="amexio-api-demo"></ng-content>
         </amexio-tab>
 
-        <amexio-tab title="Api Reference" [active]="false" [closable]="false" [disabled]="false">
+        <amexio-tab title="API Reference" [active]="false" [closable]="false" [disabled]="false">
           <ng-container *ngIf="comData && comData.apiRefMetadata &&  comData.apiRefMetadata.length > 0">
             <ng-content select="amexio-api-reference"></ng-content>
             <amexio-api-reference [data]="comData.apiRefMetadata"></amexio-api-reference>

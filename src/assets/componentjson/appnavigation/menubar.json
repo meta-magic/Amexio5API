@@ -52,6 +52,18 @@
           "type": "any",
           "default": "",
           "description": "Local data for menubar."
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "",
+          "description": "Provides label to menubar."
+        },
+        {
+          "name": "data-reader",
+          "type": "string",
+          "default": "",
+          "description": "Key in JSON datasource for records."
         }
       ]
     },

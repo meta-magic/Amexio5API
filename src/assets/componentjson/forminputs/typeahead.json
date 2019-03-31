@@ -106,13 +106,6 @@
                     "default": ""
                 },
                 {
-                    "name": "error-msg",
-                    "description": "Sets the error message",
-                    "version": "4.0 onwards",
-                    "type": "none",
-                    "default": "none"
-                },
-                {
                     "name": "place-holder",
                     "description": "Show place-holder inside dropdown component",
                     "version": "4.0 onwards",
@@ -153,13 +146,6 @@
                     "version": "4.0 onwards",
                     "type": "boolean",
                     "default": "true "
-                },
-                {
-                    "name": "enable-popover",
-                    "description": "Set enable / disable popover.",
-                    "version": "4.0 onwards",
-                    "type": "boolean",
-                    "default": ""
                 },
                 {
                     "name": "trigger-char",

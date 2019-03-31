@@ -1,77 +1,115 @@
 {
-    "title": "Amexio Calendar Component",
-    "description": "Amexio Calendar is way of showing your daily, weekly, month and yearly appointments or meetings",
-    "apiRefMetadata": [
-      {
-        "gridTitle": "Properties <amexio-calendar>",
-        "columnDefinition": [
-          {
-            "dataindex": "name",
-            "text": "Name",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "version",
-            "text": "Version",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "type",
-            "text": "Type",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "default",
-            "text": "Default",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "description",
-            "text": "Description",
-            "width": 60,
-            "hidden": false,
-            "datatype": "string"
-          }
-        ],
-        "gridData": [
-          {
-            "name": "events",
-            "description": "This can be proper event array consisting of that standard objects. For array structure please take a look into source tab",
-            "version": "5.7 onwards",
-            "type": "array",
-            "default": ""
-          },{
-            "name": "calendar-date",
-            "description": "User can set calendar date, by default it is current date.",
-            "version": "5.7 onwards",
-            "type": "date object",
-            "default": "current date"
-          },{
-            "name": "event-color-grouping",
-            "description": "Event color grouping. Event will be grouped on predefined color and bakground color",
-            "version": "5.7 onwards",
-            "type": "boolean",
-            "default": "false"
-          }
-          
-        ]
-      }
-    ],
-    "sourceMetadata": {
-      "htmlUrl": "calendar/calendar.html",
-      "tsUrl": "calendar/calendar.txt",
-      "datasourceUrl": ""
+  "title": "Amexio Calendar Component",
+  "description": "Amexio Calendar is way of showing your daily, weekly, month and yearly appointments or meetings",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-calendar>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "events",
+          "description": "This can be proper event array consisting of that standard objects. For array structure please take a look into source tab",
+          "version": "5.7 onwards",
+          "type": "array",
+          "default": ""
+        },
+        {
+          "name": "calendar-date",
+          "description": "User can set calendar date, by default it is current date.",
+          "version": "5.7 onwards",
+          "type": "date object",
+          "default": "current date"
+        },
+        {
+          "name": "event-color-grouping",
+          "description": "Event color grouping. Event will be grouped on predefined color and bakground color",
+          "version": "5.7 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "header-type",
+          "description": "Provides header short/full/min",
+          "version": "5.7 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "title",
+          "description": "Provides title for calendar",
+          "version": "5.7 onwards",
+          "type": "string",
+          "default": ""
+        }
+      ]
     },
-    "liveMetadata": {
-      "disabled": false,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-calendar-component?embed=1&file=app/enterprise/calendar/calendar.demo.html&view=editor"
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onEventClicked",
+          "description": "Emits event data when clicked on event."
+        }
+      ]
     }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "calendar/calendar.html",
+    "tsUrl": "calendar/calendar.txt",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-calendar-component?embed=1&file=app/enterprise/calendar/calendar.demo.html&view=editor"
   }
+}

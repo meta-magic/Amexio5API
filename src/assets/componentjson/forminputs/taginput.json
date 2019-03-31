@@ -120,13 +120,6 @@
             "default": ""
           },
           {
-            "name": "enable-popover",
-            "description": "Set enable / disable popover.",
-            "version": "4.0 onwards",
-            "type": "boolean",
-            "default": ""
-          },
-          {
             "name": "has-label",
             "description": "flag to set label",
             "version": "4.0 onwards",

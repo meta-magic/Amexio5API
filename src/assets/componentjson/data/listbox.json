@@ -114,6 +114,13 @@
           "type": "any[]",
           "default": "",
           "description": "Context Menu provides the list of menus on right click (for Array structure: refer typescript code in source tab)"
+        },
+        {
+          "name": "border",
+          "version": "5.0.1 onwards",
+          "type": "string",
+          "default": "1px solid #ced4da",
+          "description": "Border for listbox"
         }
       ]
     },

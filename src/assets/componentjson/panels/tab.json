@@ -105,6 +105,13 @@
           "default": "false",
           "description": "If true add two context menus i.e close All and close Others tabs"
         },
+        {
+            "name": "action-type-align",
+            "description": "specify position of action type(left/right).",
+            "version": "5.0.3 onwards",
+            "type": "string",
+            "default": "left"
+          },
          {
             "name": "enable-lifecycle-events",
             "description": "Enable lifecycle events example [all/init/ready/destroy].",

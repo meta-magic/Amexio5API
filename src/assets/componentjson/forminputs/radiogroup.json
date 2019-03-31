@@ -64,13 +64,6 @@
             "default": ""
           },
           {
-            "name": "max-length",
-            "description": "The smallest positive representable number -that is, the positive number closest to zero (without actually being zero). The smallest negative representable number is -max-length.",
-            "version": "4.0 onwards",
-            "type": "number",
-            "default": ""
-          },
-          {
             "name": "allow-blank",
             "description": "Sets if field is required (true or false)",
             "version": "4.0 onwards",

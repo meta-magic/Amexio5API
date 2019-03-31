@@ -97,6 +97,13 @@
             "version": "4.0 onwards",
             "type": "string",
             "default": ""
+          },
+          {
+            "name": "icon-class",
+            "description": "Sets if custom icon class is required.",
+            "version": "4.0 onwards",
+            "type": "string",
+            "default": "star-icon"
           }
         ]
       },

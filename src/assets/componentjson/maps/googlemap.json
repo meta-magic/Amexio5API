@@ -102,6 +102,14 @@
       "default": "250px",
       "description":"Sets minimum height for google map",
       "version": "5.5.4 onwards"
+    },
+    {
+      "deprecated":false,
+      "name": "google-map-key",
+      "type": "string",
+      "default": "",
+      "description":"Sets key for google map",
+      "version": "5.5.4 onwards"
     }
       ]
     },
@@ -127,6 +135,10 @@
          {
       "name": "onMarkerClick",
       "description":"It will fire on click of marker on google map"
+    },
+    {
+      "name": "onReady",
+      "description":"It is fired when map is loaded"
     }
       ]
     }

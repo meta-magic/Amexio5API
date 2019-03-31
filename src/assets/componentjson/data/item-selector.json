@@ -130,6 +130,10 @@
     },{
       "name": "availableRecords",
       "description":"Get available values objects.."
+    },
+    {
+      "name": "onDrag",
+      "description":"Emits node data when node is dragged."
     }
         ]
       }

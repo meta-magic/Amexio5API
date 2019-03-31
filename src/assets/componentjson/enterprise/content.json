@@ -119,6 +119,18 @@
           "type": "number",
           "default": "",
           "description": "Set rating max value(max=5) and current rating(rate=3)."
+        },
+        {
+          "name": "max",
+          "type": "number",
+          "default": "",
+          "description": "Set rating max value."
+        },
+        {
+          "name": "isReadOnly",
+          "type": "boolean",
+          "default": "",
+          "description": "true if rating is read only."
         }
       ]
     },
