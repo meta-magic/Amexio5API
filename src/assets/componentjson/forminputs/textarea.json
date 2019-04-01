@@ -125,6 +125,12 @@
             "type": "boolean",
             "default": "false",
             "description": "Set enable / disable popover."
+          },
+          {
+            "name": "name",
+            "description": "name can be provided or it can also be generated using field label",
+            "type": "string",
+            "default": ""
           }
         ]
       },

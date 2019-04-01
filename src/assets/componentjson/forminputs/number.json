@@ -175,7 +175,19 @@
         "gridData": [
           {
             "name": "input",
-            "description": "On input event field."
+            "description": "On input event."
+          },
+          {
+            "name": "focus",
+            "description": "On focus event."
+          },
+          {
+            "name": "onBlur",
+            "description": "On Blur event."
+          },
+          {
+            "name": "change",
+            "description": "On change event."
           }
         ]
       }
