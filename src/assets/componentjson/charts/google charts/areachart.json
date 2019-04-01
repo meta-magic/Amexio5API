@@ -62,13 +62,6 @@
           "version": "4.0 onwards",
           "type": "any",
           "default": ""
-        },
-        {
-          "name": "background-color",
-          "description": "Sets background color to chart",
-          "version": "4.0 onwards",
-          "type": "any",
-          "default": ""
         }
       ]
     },
