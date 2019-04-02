@@ -144,7 +144,7 @@
         },
         {
           "name": "italic",
-          "type": "string",
+          "type": "boolean",
           "default": "false",
           "description": "Set true for title text in italic style."
         }
