@@ -118,6 +118,13 @@
             "version": "5.7 onwards",
             "type": "string",
             "default": ""
+          },
+          {
+            "name": "active-bg-color",
+            "description": "sets background color for active tab.",
+            "version": "5.9.3 onwards",
+            "type": "boolean",
+            "default": "false"
           }
       ]
     },
