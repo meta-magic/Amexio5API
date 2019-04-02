@@ -3,7 +3,7 @@
     "description": "Text input component has been created with different configurable attributes for validation (min/max length, allow blank, custom regex), custom error message, help, custom styles.",
     "apiRefMetadata": [
       {
-        "gridTitle": "Properties <amexio-textinput>",
+        "gridTitle": "Properties <amexio-text-input>",
         "columnDefinition": [
           {
             "dataindex": "name",
