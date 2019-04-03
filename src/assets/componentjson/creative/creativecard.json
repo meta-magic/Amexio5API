@@ -188,6 +188,13 @@
                     "default": "",
                     "version": "5.5.5 onwards",
                     "description": "sets icon alignment"
+                },
+                {
+                    "name": "apply-theme-color",
+                    "type": "boolean",
+                    "default": "false",
+                    "version": "5.10 onwards",
+                    "description": "Card header backgound color and color can be set to theme color if apply-theme-color flag is true."
                 }
             ]
         },
