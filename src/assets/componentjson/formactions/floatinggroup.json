@@ -64,6 +64,13 @@
                     "default": "none"
                 },
                 {
+                    "name": "size",
+                    "description": "Size for floating button (large, default, small)",
+                    "version": "5.4 onwards",
+                    "type": "string",
+                    "default": "default"
+                  },
+                {
                     "name": "position-top",
                     "description": "Takes top position in percentage or pixel",
                     "version": "4.1 onwards",

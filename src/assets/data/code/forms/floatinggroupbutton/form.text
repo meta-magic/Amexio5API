@@ -1,12 +1,25 @@
 export class FloatingGroupButtonDemo 
 {
-    floatingbuttongroup : any[];
+  floatingbuttongroupOne : any[];
+  floatingbuttongroupTwo:any[];
+  floatingbuttongroupThree:any[];
+
     constructor() {
-        this.floatingbuttongroup = [
-            {'label':'Facebook', 'icon':'fa fa-facebook','type':'warning'},
-            {'label':'Twitter', 'icon':'fa fa-facebook','type':'success'},
-            {'label':'Google', 'icon':'fa fa-google-plus','type':'primary'}
-        ];
+       this.floatingbuttongroupOne = [
+        {'label':'Facebook', 'icon':'fa fa-facebook','type':'yellow'},
+        {'label':'Twitter', 'icon':'fa fa-twitter','type':'green'},
+        {'label':'Google', 'icon':'fa fa-google-plus','type':'theme-color'}
+      ];
+      this.floatingbuttongroupTwo = [
+        {'label':'Facebook', 'icon':'fa fa-facebook','type':'yellow'},
+        {'label':'Twitter', 'icon':'fa fa-twitter','type':'green'},
+        {'label':'Google', 'icon':'fa fa-google-plus','type':'theme-color'}
+      ];
+      this.floatingbuttongroupThree = [
+        {'label':'Facebook', 'icon':'fa fa-facebook','type':'yellow'},
+        {'label':'Twitter', 'icon':'fa fa-twitter','type':'green'},
+        {'label':'Google', 'icon':'fa fa-google-plus','type':'theme-color'}
+      ];
     }
 
   onFloatingClick(event:any){
