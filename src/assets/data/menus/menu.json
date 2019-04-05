@@ -111,7 +111,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "3",
+            "badge": "4",
             "children": [{
                     "text": "Carousel",
                     "badge": "U",
@@ -163,6 +163,7 @@
                 {
                     "text": "Tab",
                     "icon": "fa fa-folder  ",
+                    "badge":"U",
                     "children": [{
                             "text": "Horizontal",
                             "icon": "fa fa-indent  ",
