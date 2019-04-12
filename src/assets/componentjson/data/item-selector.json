@@ -146,5 +146,53 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": ""
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties  <amexio-item-selector>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Right Arrow",
+          "description": "On right click of item selector elements get selected and moves to next item selector panel."
+        },{
+          "name": "Left Arrow",
+          "description": "On left click of item selector elements get selected and moves to pervious item selector panel."
+        },
+        {
+          "name": "Up Arrow",
+          "description": "On Up Arrow click navigates from current to previous item."
+        },
+        {
+          "name": "Down Arrow",
+          "description": "On Down Arrow click navigates from current to next item."
+        },
+        {
+          "name": "Enter",
+          "description": "On enter click elements get selected inside item selector."
+        },
+        {
+          "name": "Home",
+          "description": "On click of Home will move element to first element."
+        },
+        {
+          "name": "End",
+          "description": "On click of End will move element to last element."
+        }
+      ]
+    }
+  ]
 }

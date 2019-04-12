@@ -171,5 +171,30 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": ""
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties  <amexio-steps>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Should navigate over elements of step and read the name of step label. "
+        }
+      ]
+    }
+  ] 
 }

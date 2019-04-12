@@ -1,6 +1,35 @@
 {
   "title": "Amexio BorderLayout",
   "description": "A border layout lays out a container, arranging and resizing its components to fit in five regions: north, south, east, west, and center.",
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-borderlayout-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Moves focus to the next focusable element.All focusable elements in the layout are included in the page Tab sequence."
+        },
+        {
+          "name": "Shift+Tab",
+          "description": " Moves focus to the previous focusable element.All focusable elements in the layout are included in the page Tab sequence."
+        }
+      ]
+    }
+  ],
   "apiRefMetadata": [
     {
       "gridTitle": "Item Properties <amexio-borderlayout-item>",

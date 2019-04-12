@@ -185,5 +185,38 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-window?embed=1&file=app/panels/window/window.demo.html"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties  <amexio-window>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Moves focus to next focusable element inside the window. "
+        },
+        {
+          "name": "Shift+Tab",
+          "description": " Moves focus to previous focusable element inside the window."
+        },
+        {
+          "name": "Escape",
+          "description": "Closes the window."
+        }
+      ]
+    }
+  ] 
 }

@@ -167,5 +167,28 @@
     "liveMetadata": {
         "disabled": false,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-v41-floatingbuttongroup?embed=1&file=app/app.component.ts"
-    }
+    },
+    "apiaccessibledata":[
+        {
+          "gridTitle": "Properties <amexio-floating-group-button>",
+          "columnDefinition": [
+            {
+              "dataindex": "name",
+              "text": "Key",
+              "width": 30
+            },
+            {
+              "dataindex": "description",
+              "text": "Function",
+              "width": 70
+            }
+          ],
+          "gridData": [
+            {
+              "name": "Tab",
+              "description":"Navigates on Tab click to the next active element."
+            }
+          ]
+        }
+      ]
 }

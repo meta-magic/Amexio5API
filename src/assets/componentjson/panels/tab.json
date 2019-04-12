@@ -329,5 +329,46 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": ""
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties  <amexio-tab>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Should navigate over elements of step and read the name of step label. "
+        },
+        {
+          "name": "Right Arrow && Down Arrow",
+          "description": "Moves focus from current tab  to the next tab. "
+        },
+        {
+          "name": "Left Arrow && Up Arrow",
+          "description": "Moves focus from current tab  to the previous tab. "
+        },
+        {
+          "name": "Home",
+          "description": "Moves focus to the first tab and activates it. "
+        },
+        {
+          "name": "End",
+          "description": "Moves focus to the last tab and activates it. "
+        }
+      ]
+    }
+  ] 
 }

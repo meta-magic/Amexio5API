@@ -193,5 +193,38 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-dialogue?embed=1&file=app/panels/dialogue/dialogue.demo.html"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties  <amexio-dialogue>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Moves focus to next focusable element inside the dialog. "
+        },
+        {
+          "name": "Shift+Tab",
+          "description": " Moves focus to previous focusable element inside the dialog."
+        },
+        {
+          "name": "Escape",
+          "description": "Closes the dialog."
+        }
+      ]
+    }
+  ]  
 }

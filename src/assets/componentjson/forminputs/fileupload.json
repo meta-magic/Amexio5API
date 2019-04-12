@@ -147,5 +147,29 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-fileupload?embed=1&file=app/forms/fileupload/fileupload.demo.html"
-    }
+    },
+    "apiaccessibledata": [
+      {
+          "gridTitle": "Properties <amexio-fileupload>",
+          "columnDefinition": [
+              {
+                  "dataindex": "name",
+                  "text": "Key",
+                  "width": 30
+              },
+              {
+                  "dataindex": "description",
+                  "text": "Function",
+                  "width": 70
+              }
+          ],
+          "gridData": [
+              {
+                  "name": "Enter",
+                  "description": "It choose the file to be Uploaded."
+              }
+             
+          ]
+      }
+  ]
   }

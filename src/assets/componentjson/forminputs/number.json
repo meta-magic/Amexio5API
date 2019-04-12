@@ -200,5 +200,34 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-number?embed=1&file=app/forms/number/number.demo.html"
-    }
+    },
+    "apiaccessibledata": [
+      {
+          "gridTitle": "Properties <amexio-number-input>",
+          "columnDefinition": [
+              {
+                  "dataindex": "name",
+                  "text": "Key",
+                  "width": 30
+              },
+              {
+                  "dataindex": "description",
+                  "text": "Function",
+                  "width": 70
+              }
+          ],
+          "gridData": [
+              {
+                  "name": "Tab",
+                  "description": "Navigate to the next element."
+              },
+              {
+                  "name": "Shift+Tab",
+                  "description": "Navigate to the previous element."
+              }
+              
+             
+          ]
+      }
+  ]
   }

@@ -193,5 +193,34 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-panel1?embed=1&file=app/panels/panel/panel.demo.html&view=editor"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties  <amexio-panel>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Should navigate over elements of panel and read the name of panel label. "
+        },
+        {
+          "name": "Space && Enter",
+          "description": "Should read Expand and collapse and should read the panel label name."
+        }
+      ]
+    }
+  ] 
 }

@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "Component": "Accordian",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Border-Layout",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Box",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Column-Vertical",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Column-Horizontal",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        }
+    ]
+}

@@ -275,5 +275,34 @@
     "liveMetadata": {
         "disabled": false,
         "stackblitzUrl": ""
-    }
+    },
+    "apiaccessibledata":[
+        {
+          "gridTitle": "Properties <amexio-side-nav>",
+          "columnDefinition": [
+            {
+              "dataindex": "name",
+              "text": "Key",
+              "width": 30
+              
+            },
+            {
+              "dataindex": "description",
+              "text": "Function",
+              "width": 70
+           
+            }
+          ],
+          "gridData": [
+            {
+              "name": "Tab",
+              "description":"Navigates on Tab click to the next element."
+            },
+            {
+              "name": "Shift+Tab",
+              "description": "Navigates on Shift+Tab click to the previous element."
+            }
+          ]
+        }
+      ]
 }

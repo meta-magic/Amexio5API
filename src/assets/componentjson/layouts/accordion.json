@@ -1,6 +1,55 @@
 {
   "title": "Amexio Accordion",
   "description": "Accordion provides an easy way to organize big forms by grouping the fields in accordion tabs.",
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-accordion>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Space or Enter",
+          "description": "When focus is on the accordion header of a collapsed section, expands the section"
+        },
+        {
+          "name": "Tab",
+          "description": "Moves focus to the next focusable element.All focusable elements in the accordion are included in the page Tab sequence."
+        },
+        {
+          "name": "Shift+Tab",
+          "description": " Moves focus to the previous focusable element.All focusable elements in the accordion are included in the page Tab sequence."
+        },
+        {
+          "name": "Down Arrow",
+          "description": "When focus is on an accordion header, moves focus to the next accordion header.When focus is on last accordion header, moves focus to first accordion header."
+        },
+        {
+          "name": "Up Arrow",
+          "description": " When focus is on an accordion header, moves focus to the previous accordion header.When focus is on first accordion header, moves focus to last accordion header."
+        },
+        {
+          "name": "Home",
+          "description": "When focus is on an accordion header, moves focus to the first accordion header."
+        },
+        {
+          "name": "End",
+          "description": " When focus is on an accordion header, moves focus to the last accordion header."
+        }
+      ]
+    }
+  ],
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-accordion>",

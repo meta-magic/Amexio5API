@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "Component": "Checkbox",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Checkbox Group",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Chips",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Credit-Card",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Date & Time Picker",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Dropdown",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        }
+        
+    ]
+}

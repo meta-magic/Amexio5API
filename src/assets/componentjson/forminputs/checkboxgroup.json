@@ -146,5 +146,30 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-checkboxgroup?embed=1&file=app/forms/checkboxgroup/checkboxgroup.demo.html"
-    }
+    },
+    "apiaccessibledata":[
+      {
+        "gridTitle": "Properties <amexio-checkbox-group>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+            
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+         
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Space",
+            "description": "Toggles the check box checked and Unchecked."
+          }
+        ]
+      }
+    ]
   }

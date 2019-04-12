@@ -116,5 +116,38 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-progressbar?embed=1&file=app/data/progressbar/progressbar.demo.html"
-    }
+    },
+    "apiaccessibledata":[
+      {
+        "gridTitle": "Properties <amexio-progress-bar>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+            
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+         
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description": "Moves focus to next focusable element.. "
+          },
+          {
+            "name": "Shift+Tab",
+            "description": " Moves focus to previous focusable element."
+          },
+          {
+            "name": "Enter",
+            "description": "Focuses the selected element"
+          }
+        ]
+      }
+    ]
   }

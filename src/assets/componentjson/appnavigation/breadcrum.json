@@ -130,5 +130,46 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-breadcrumb-demo?embed=1&file=src/app/breadcrumb/breadcrumb.demo.component.html&view=editor"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-breadcrumb>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Navigates on Tab click to the next element."
+        },
+        {
+          "name": "Shift+Tab",
+          "description": "Navigates on Shift+Tab click to the previous element."
+        },
+        {
+          "name": "Arrow Up",
+          "description": "Moves focus from current to previous element."
+        },
+        {
+          "name": "Arrow Down",
+          "description": "Moves focus from current to next element."
+        },
+        {
+          "name": "Enter",
+          "description": "Opens list and moves focus to first item in the list"
+        }
+      ]
+    }
+  ]
 }

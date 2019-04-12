@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "Component": "Carousel",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Dialogue",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Fieldset",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Panel",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Step",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Tab",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        }
+    ]
+}

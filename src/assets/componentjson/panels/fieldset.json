@@ -67,5 +67,34 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-fieldset?embed=1&file=app/panels/fieldset/fieldset.demo.html"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties  <amexio-fieldset>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Should navigate over elements of fieldset and read the name of fieldset. "
+        },
+        {
+          "name": "Space && Enter",
+          "description": "Should read Expand and collapse and should read the fieldset name."
+        }
+      ]
+    }
+  ]  
 }

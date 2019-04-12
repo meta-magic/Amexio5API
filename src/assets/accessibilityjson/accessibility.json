@@ -1,0 +1,26 @@
+
+ {
+      "data": [{
+        "Key": "Space or Enter", 
+        "Function": "When focus is on the accordion header of a collapsed section, expands the section"
+      }, {
+        "Key": "Tab", 
+        "Function": "Moves focus to the next focusable element.All focusable elements in the accordion are included in the page Tab sequence."
+      }, {
+        "Key": "Shift+Tab", 
+        "Function": " Moves focus to the previous focusable element.All focusable elements in the accordion are included in the page Tab sequence."
+      },{
+        "Key": "Down Arrow:", 
+        "Function": "When focus is on an accordion header, moves focus to the next accordion header.When focus is on last accordion header, moves focus to first accordion header."
+      },{
+        "Key": "Up Arrow", 
+        "Function": " When focus is on an accordion header, moves focus to the previous accordion header.When focus is on first accordion header, moves focus to last accordion header."
+      },{
+        "Key": "Home", 
+        "Function": "When focus is on an accordion header, moves focus to the first accordion header."
+      },{
+        "Key": "End", 
+        "Function": " When focus is on an accordion header, moves focus to the last accordion header."
+      }]
+  }   
+  

@@ -1,0 +1,39 @@
+{
+    "data": [
+        {
+            "Component": "Breadcrumb",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Dockbar",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "DropDown Menu",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "MenuBar",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "SideNav Bar",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "SidePanel",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Tool Bar",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        }
+    ]
+}

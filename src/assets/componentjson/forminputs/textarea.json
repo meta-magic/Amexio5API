@@ -178,5 +178,28 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-textarea-input?embed=1&file=app/forms/textarea/textarea.demo.html"
-    }
+    },
+    "apiaccessibledata": [
+      {
+          "gridTitle": "Properties <amexio-textarea>",
+          "columnDefinition": [
+              {
+                  "dataindex": "name",
+                  "text": "Key",
+                  "width": 30
+              },
+              {
+                  "dataindex": "description",
+                  "text": "Function",
+                  "width": 70
+              }
+          ],
+          "gridData": [
+              {
+                  "name": "Tab",
+                  "description": "Navigates over the textarea"
+              }
+          ]
+      }
+  ]
   }

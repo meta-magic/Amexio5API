@@ -1,0 +1,34 @@
+{
+    "data": [
+        {
+            "Component": "Email Field",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "File Upload",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Label",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Number Field",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Password Field",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Radio Group",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        }
+    ]
+}

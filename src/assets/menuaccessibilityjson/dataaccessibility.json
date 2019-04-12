@@ -1,0 +1,29 @@
+{
+    "data": [
+        {
+            "Component": "Item Selector",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Grid",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Tree",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Timeline",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "ListBox",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        }
+    ]
+}

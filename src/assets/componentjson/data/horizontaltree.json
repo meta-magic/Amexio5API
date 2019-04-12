@@ -112,5 +112,42 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": ""
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-horizontal-treeview>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70 
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Enter",
+          "description": "On enter click the node of horizontal tree expands."
+        },
+        {
+          "name": "Down Arrow",
+          "description": "Moves focus to the next node that is focusable without opening or closing a node.If focus is on the last node, does nothing."
+        },
+        {
+          "name": "Up Arrow",
+          "description": " Moves focus one cell Up.If focus is on the top cell in the column, focus does not move."
+        },
+        {
+          "name": "Right Arrow",
+          "description": "Moves focus down scrolling so the bottom row in the currently visible set of rows becomes the first visible row.If focus is in the last row, focus does not move."
+        }
+      ]
+    }
+  ]
 }

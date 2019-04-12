@@ -135,5 +135,34 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-dockbar?embed=1&file=app/navigations/dockbar/dockbar.demo.html"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-dockbar>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Navigates on Tab click to the next element."
+        },
+        {
+          "name": "Shift+Tab",
+          "description": "Navigates on Shift+Tab click to the previous element."
+        }
+      ]
+    }
+  ]
 }

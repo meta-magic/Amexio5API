@@ -210,5 +210,34 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-chips-demo?embed=1&file=app/forminputs/chips/chips.demo.html&view=editor"
-    }
+    },
+    "apiaccessibledata":[
+      {
+        "gridTitle": "Properties <amexio-chip>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+            
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+         
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Arrow Right",
+            "description": "Navigates the chip from current chip to next chip"
+          },
+          {
+            "name": "Arrow Left",
+            "description": "Navigates the chip from current chip to previous chip"
+          }
+        ]
+      }
+    ]
   }

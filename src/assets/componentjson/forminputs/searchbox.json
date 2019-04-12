@@ -101,7 +101,7 @@
         ]
       },
       {
-        "gridTitle": "Properties <amexio-searchbox-options>",
+        "gridTitle": "Properties <amexio-searchbox>",
         "columnDefinition": [
           {
             "dataindex": "name",
@@ -196,5 +196,36 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-searchbox?embed=1&file=src/app/forms/searchbox/searchbox.demo.html "
-    }
+    },
+    "apiaccessibledata": [
+      {
+        "gridTitle": "Properties <amexio-searchbox>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description": "Navigates to the element."
+          },
+          {
+            "name": "Arrow Down",
+            "description": "Navigate to the list of dropdown and moves from current to next element"
+          },
+          {
+            "name": "Arrow Up",
+            "description": "Navigate to the list of dropdown and moves from current to previous element."
+          }
+        ]
+      }
+    ]
   }

@@ -1,6 +1,32 @@
 {
   "title": "Amexio Box",
   "description": "Amexio Box can be easily wrapped around any other component and configure using the different responsive styling.",
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-box>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Moves focus to the next focusable element.All focusable elements in the box are included in the page Tab sequence."
+        }
+       
+      ]
+    }
+  ],
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-box>",

@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "Component": "Appointment",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Calender",
+            "Keyboard": "Yes",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Steps Wizard",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        }
+    ]
+}

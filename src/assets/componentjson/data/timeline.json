@@ -130,5 +130,35 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-timeline?embed=1&file=app/timeline-demo/timeline/timeline.demo.component.ts"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-timeline>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Navigates on Tab click to the next element."
+        },
+        {
+          "name": "Shift+Tab",
+          "description": "Navigates on Shift+Tab click to the previous element."
+        }
+      ]
+    }
+  ]
+
 }

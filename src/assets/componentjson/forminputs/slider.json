@@ -136,5 +136,52 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-slider?embed=1&file=app/forms/slider/slider.demo.html"
-    }
+    },
+    "apiaccessibledata": [
+      {
+        "gridTitle": "Properties <amexio-slider>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description": "Navigates to the element."
+          },
+          {
+            "name": "Down/Left Arrow",
+            "description": "Decrease the value of slider"
+          },
+          {
+            "name": "Up/Right Arrow",
+            "description": "Increase the value of slider."
+          },
+          {
+            "name": "Home",
+            "description": "Set to minimum value."
+          },
+          {
+            "name": "End",
+            "description": "Set to maximum value."
+          },
+          {
+            "name": "Page Up",
+            "description": "Set slider to 10 times up"
+          },
+          {
+            "name": "Page Down",
+            "description": "Set slider to 10 times down"
+          }
+        ]
+      }
+    ]
   }

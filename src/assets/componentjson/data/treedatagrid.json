@@ -187,5 +187,54 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": ""
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-tree-data-table>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Right/Left Arrow",
+          "description": " Moves focus one cell to the right/left.If focus is on the right-most/left-most cell in the row, focus does not move."
+        },
+        {
+          "name": "Down Arrow",
+          "description": " Moves focus one cell down.If focus is on the bottom cell in the column, focus does not move."
+        },
+        {
+          "name": "Up Arrow",
+          "description": " Moves focus one cell Up.If focus is on the top cell in the column, focus does not move."
+        },
+        {
+          "name": "Page Down",
+          "description": "Moves focus down scrolling so the bottom row in the currently visible set of rows becomes the first visible row.If focus is in the last row, focus does not move."
+        },
+        {
+          "name": "Page Up",
+          "description": "Moves focus up scrolling so the top row in the currently visible set of rows becomes the last visible row.If focus is in the first row of the grid, focus does not move."
+        },
+        {
+          "name": "Home",
+          "description": "Moves focus to the first cell in the row that contains focus."
+        },
+        {
+          "name": "End",
+          "description": "Moves focus to the last cell in the row that contains focus."
+        }
+      ]
+    }
+  ]
 }

@@ -99,5 +99,52 @@
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-menu-bar?embed=1&file=app/navigations/menubar/menubar.demo.html"
-  }
+  },
+  "apiaccessibledata":[
+    {
+      "gridTitle": "Properties <amexio-menu>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+          
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+       
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description":"Navigates on Tab click to the next element."
+        },
+        {
+          "name": "Shift+Tab",
+          "description": "Navigates on Shift+Tab click to the previous element."
+        },
+        {
+          "name": "Arrow Left",
+          "description": "Navigates focus from current element to the previous element."
+        },
+        {
+          "name": "Arrow Right",
+          "description": "Navigates focus from current element to the next element."
+        },
+        { 
+          "name": "Arrow Up",
+          "description": "Navigates focus from current element to the next element.And if focus comes to last element shift to first element"
+
+        },
+        { 
+          "name": "Arrow Down",
+          "description": "Navigates focus from current element to the next element.And if focus comes to last element shift to first element"
+
+        }
+      ]
+    }
+  ]
 }

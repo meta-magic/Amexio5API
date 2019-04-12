@@ -150,5 +150,36 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-rating?embed=1&file=app/forms/rating/rating.demo.html"
-    }
+    },
+    "apiaccessibledata": [
+      {
+        "gridTitle": "Properties <amexio-rating-input>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description": "Navigates To the rating element."
+          },
+          {
+            "name": "Arrow Right",
+            "description": "Toggles the rating and selects it."
+          },
+          {
+            "name": "Arrow Left",
+            "description": "Toggles the rating and selects it."
+          }
+        ]
+      }
+    ]
   }

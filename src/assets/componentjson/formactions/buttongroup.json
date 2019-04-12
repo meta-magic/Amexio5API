@@ -83,5 +83,32 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-buttongroup?embed=1&file=app/forms/buttongroup/buttongroup.demo.html"
-    }
+    },
+    "apiaccessibledata":[
+      {
+        "gridTitle": "Properties <amexio-btn-group>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description":"Navigates on Tab click to the next active element."
+          },
+          {
+            "name": "Enter",
+            "description":"Toggles the button."
+          }
+        ]
+      }
+    ]
   }

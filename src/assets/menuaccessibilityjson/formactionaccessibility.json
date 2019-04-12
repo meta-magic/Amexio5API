@@ -1,0 +1,24 @@
+{
+    "data": [
+        {
+            "Component": "Button",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Notification",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Paginator",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        },
+        {
+            "Component": "Progress Bar",
+            "Keyboard": "No",
+            "Screen-Reader": "Yes"
+        }
+    ]
+}

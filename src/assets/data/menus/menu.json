@@ -15,6 +15,11 @@
             "icon": "fa fa-openid  "
         },
         {
+            "text": "Amexio Accessibility",
+            "link": "amexio-accessibility",
+            "icon": "fa fa-universal-access"
+        },
+        {
             "text": "Layouts",
             "badge": "2",
             "icon": "fa fa-desktop  ",

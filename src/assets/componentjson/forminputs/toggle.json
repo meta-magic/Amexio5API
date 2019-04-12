@@ -97,5 +97,30 @@
     "liveMetadata": {
         "disabled": false,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-toggle?embed=1&file=app/forms/toggle/toggle.demo.html"
-    }
+    },
+    "apiaccessibledata":[
+        {
+          "gridTitle": "Properties  <amexio-toggle>",
+          "columnDefinition": [
+            {
+              "dataindex": "name",
+              "text": "Key",
+              "width": 30
+              
+            },
+            {
+              "dataindex": "description",
+              "text": "Function",
+              "width": 70
+           
+            }
+          ],
+          "gridData": [
+            {
+              "name": "Space",
+              "description": "Toggles the toogle box checked and unchecked."
+            }
+          ]
+        }
+      ]
 }

@@ -115,5 +115,35 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-credit-card?embed=1&file=app/creditcard/creditcard/creditcard.demo.html&view=editor"
-    }
+    },
+    "apiaccessibledata":[
+      {
+        "gridTitle": "Properties <amexio-creditcard>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+            
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+         
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description": "Navigates  from current element to next element"
+          },
+          {
+            "name": "Shift Tab",
+            "description": "Navigates  from current element to previous element"
+          }
+        ]
+      }
+    ]
+    
   }

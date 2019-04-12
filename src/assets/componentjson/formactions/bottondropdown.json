@@ -115,5 +115,40 @@
     "liveMetadata": {
       "disabled": false,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-buttondropdown?embed=1&file=app/forms/buttondropdown/buttondropdown.demo.html&view=editor"
-    }
+    },
+    "apiaccessibledata":[
+      {
+        "gridTitle": "Properties <amexio-btn-dropdown>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description":"Navigates on Tab click to the next active element."
+          },
+          {
+            "name": "Enter",
+            "description":"Toggles the button."
+          },
+          {
+            "name": "Up Arrow",
+            "description":"Navigate focus from current element to the previous element.If focus is in first element the navigate to last element."
+          },
+          {
+            "name": "Down Arrow",
+            "description":"Navigate focus from current element to the next element.If focus is in last element it navigates to first element"
+          }
+        ]
+      }
+    ]
   }
