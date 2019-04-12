@@ -58,44 +58,46 @@ export class AppComponent {
     this.amexiotechmenus = [
       {
         "text": "Home",
-        "icon": "fa fa-home fa-fw fa-lg ",
+        "icon": "fa fa-home fa-fw fa-lg",
         "link": 'http://api.amexio.org',
         "submenus": [
           {
-            "text": "Version 5.8",
-            "link": "../v5.8/index.html"
-          },
-          {
-            "text": "Version 5.7",
-            "link": "../v5.7/index.html"
-          },
-          {
-            "text": "Version 5.6",
-            "link": "../v5.6/index.html"
-          },
-          {
-            "text": "Version 5.5",
-            "link": "../v5.5/index.html"
-          },
-          {
-            "text": "Version 5.4",
-            "link": "../v5.4/index.html"
-          },
-          {
-            "text": "Version 5.3",
-            "link": "../v5.3/index.html"
-          },
-          {
-            "text": "Version 5.2",
-            "link": "../v5.2/index.html"
-          },
-          {
-            "text": "Version 5.1",
-            "link": "../v5.1/index.html"
-          },
-          {
             "text": "Version 5.0",
-            "link": "../v5.0/index.html"
+            "link": "../v5.0/index.html",
+            "submenus": [
+              {
+                "text": "Version 5.1",
+                "link": "../v5.1/index.html"
+              },
+              {
+                "text": "Version 5.2",
+                "link": "../v5.2/index.html"
+              },
+              {
+                "text": "Version 5.3",
+                "link": "../v5.3/index.html"
+              },
+              {
+                "text": "Version 5.4",
+                "link": "../v5.4/index.html"
+              },
+              {
+                "text": "Version 5.5",
+                "link": "../v5.5/index.html"
+              },
+              {
+                "text": "Version 5.6",
+                "link": "../v5.6/index.html"
+              },
+              {
+                "text": "Version 5.7",
+                "link": "../v5.7/index.html"
+              },
+              {
+                "text": "Version 5.8",
+                "link": "../v5.8/index.html"
+              }   
+            ]
           },
           {
             "text": "Version 4.0",

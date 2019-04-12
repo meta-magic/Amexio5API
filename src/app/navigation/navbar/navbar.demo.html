@@ -68,6 +68,29 @@
 
 
                         </div>
+                        
+                    </amexio-body>
+                </amexio-card>
+                <br/>
+                <amexio-card header="true">
+                    <amexio-header>
+                        Nav Bar With Submenus Demo
+                    </amexio-header>
+                    <amexio-body>
+                        <div class="navbardemo">
+
+                            <amexio-nav [enable-side-nav-position]="false">
+ 
+                                <amexio-nav-item position-left *ngFor="let menus of navBarData" [type]="'menu'"
+                                    [title]="menus.text" [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
+                                </amexio-nav-item>
+
+
+                            </amexio-nav>
+
+
+                        </div>
+                        
                     </amexio-body>
                 </amexio-card>
             </amexio-column>
