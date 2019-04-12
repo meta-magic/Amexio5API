@@ -1,0 +1,50 @@
+<amexio-api-structure [url]="'assets/componentjson/forminputs/rangeslider.json'">
+  <amexio-api-demo>
+    <amexio-row>
+      <amexio-column size="12">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Range Slider
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+             
+              
+              <amexio-column [size]="3">
+                  <amexio-label>
+                      Without Range Slider
+                    </amexio-label><br /><br />
+                <amexio-value-range [max-range]="500" [range]="true">
+                </amexio-value-range>
+              </amexio-column>
+             
+              <amexio-column [size]="3">
+              </amexio-column>
+            
+              <amexio-column [size]="3">
+                  <amexio-label>
+                      Vertical Range Slider
+                    </amexio-label><br /><br />
+                <amexio-value-range [(ngModel)]="rangeValues" orientation="vertical" [max-range]="100" [range]="true">
+                </amexio-value-range>
+              </amexio-column>
+            </amexio-row>
+
+
+            <amexio-row>
+              
+              <amexio-column [size]="3">
+                  <amexio-label>
+                      Step Range Slider
+                    </amexio-label><br /><br />
+                <amexio-value-range [step-value]="0.5" [max-range]="5" [range]="true">
+                </amexio-value-range>
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+
+    </amexio-row>
+  </amexio-api-demo>
+</amexio-api-structure>

@@ -1,0 +1,9 @@
+export class SliderDemo {
+
+ rangeValues: number[] = [20,80];
+  
+  constructor() {
+
+  }
+}
+ 

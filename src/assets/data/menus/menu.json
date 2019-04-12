@@ -406,6 +406,11 @@
                     "link": "forms-Input/slider-demo"
                 },
                 {
+                    "text": "Range Slider",
+                    "icon": "fa fa-sliders  ",
+                    "link": "forms-Input/value-range"
+                },
+                {
                     "text": "Type Ahead",
                     "icon": "fa fa-search-minus  ",
                     "link": "forms-Input/typeahead-demo"

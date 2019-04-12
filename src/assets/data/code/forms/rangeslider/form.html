@@ -1,0 +1,22 @@
+<!--Slider with no range but with max-range and range -->
+<amexio-value-range 
+                [maxRange]="500"
+                [range]="true">
+</amexio-value-range>
+
+<!--Slider with model binding  -->
+
+<amexio-value-range
+                 [(ngModel)]="rangeValues" 
+                 orientation="vertical" 
+                 [maxRange]="100" 
+                 [range]="true">
+</amexio-value-range>
+
+<!--Slider with step range -->
+
+<amexio-value-range 
+                    [step-value]="0.5" 
+                    [maxRange]="5" 
+                    [range]="true">
+</amexio-value-range>

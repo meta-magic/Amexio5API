@@ -30,6 +30,7 @@ import { TextareaDemo } from "./textarea/textarea.demo";
 import { ToggleDemo } from "./toggle/toggle.demo";
 import { TypeAheadDemo } from "./typeahead/typeahead.demo";
 import {BadgeDemo} from './badge/badge.demo';
+import { RangeSliderDemo } from './rangeslider/rangeslider.demo';
 
 
 
@@ -118,6 +119,9 @@ export const FORMSINPUT_ROUTE: Routes = [
     },
     {
         path: 'badge-demo', component: BadgeDemo,
+    },
+    {
+        path: 'value-range', component: RangeSliderDemo,
     },
     
 ]
