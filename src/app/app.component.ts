@@ -96,6 +96,10 @@ export class AppComponent {
               {
                 "text": "Version 5.8",
                 "link": "../v5.8/index.html"
+              },
+              {
+                "text": "Version 5.9",
+                "link": "../v5.9/index.html"
               }   
             ]
           },

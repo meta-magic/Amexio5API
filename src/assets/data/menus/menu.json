@@ -230,6 +230,12 @@
                     "text": "Window",
                     "icon": "fa fa-window-maximize  ",
                     "link": "panes/window-demo"
+                },
+                {
+                    "text": "Viewport",
+                    "badge": "NEW",
+                    "icon": "fa fa-indent  ",
+                    "link": "creative/viewport-demo"
                 }
             ]
         },
@@ -408,6 +414,7 @@
                 {
                     "text": "Range Slider",
                     "icon": "fa fa-sliders  ",
+                    "badge":"NEW",
                     "link": "forms-Input/value-range"
                 },
                 {

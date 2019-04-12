@@ -1,0 +1,33 @@
+<amexio-api-structure [url]="'assets/componentjson/creative/viewport.json'">
+   
+    <amexio-api-demo>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-image class="homepage-cursor" [path]="'assets/images/viewport/demo1.png'" tooltip="Home Page 1">
+                </amexio-image>
+                <amexio-button [label]="'Demo'" [type]="'theme-backgroundcolor'" [tooltip]="'Home Page 1'" (onClick)="onDemoFirstClick()">
+                </amexio-button>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-image class="homepage-cursor" [path]="'assets/images/viewport/demo2.png'" tooltip="Home Page 2">
+                </amexio-image>
+                <amexio-button [label]="'Demo'" [type]="'theme-backgroundcolor'" [tooltip]="'Home Page 2'" (onClick)="onDemoSecondClick()">
+                </amexio-button>
+            </amexio-column>
+        </amexio-row>
+
+    </amexio-api-demo>
+    <amexio-api-reference>
+        <amexio-box border-color="brown" border="right-left"  padding="true" background-color="brown">
+          <amexio-label><b> amexio-viewport-content can contain amexio-viewport-background and amexio-viewport-content-body.</b></amexio-label>
+        </amexio-box>
+
+        <amexio-box border-color="brown" border="right-left"  padding="true" background-color="brown">
+            <amexio-label><b> amexio-viewport-background can contain amexio-image which gets set as background image</b></amexio-label>
+          </amexio-box>
+
+          <amexio-box border-color="brown" border="right-left"  padding="true" background-color="brown">
+            <amexio-label><b> amexio-viewport-content-body can contain any amexio component which will be on fore ground.</b></amexio-label>
+          </amexio-box>
+      </amexio-api-reference>
+</amexio-api-structure>
