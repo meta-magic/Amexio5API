@@ -3,32 +3,38 @@
         {
             "Component": "Checkbox",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/singlecheckbox-demo"
         },
         {
             "Component": "Checkbox Group",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/checkboxgroup-demo"
         },
         {
             "Component": "Chips",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/chips-demo"
         },
         {
             "Component": "Credit-Card",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/credit-card-demo"
         },
         {
             "Component": "Date & Time Picker",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/date-picker-demo"
         },
         {
             "Component": "Dropdown",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/dropdownbasic"
         }
         
     ]

@@ -3,27 +3,32 @@
         {
             "Component": "Item Selector",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "data/itemselector-demo"
         },
         {
             "Component": "Grid",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "data/simplegrid-demo"
         },
         {
             "Component": "Tree",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "data/simple-tree-demo"
         },
         {
             "Component": "Timeline",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "data/timeline-demo"
         },
         {
             "Component": "ListBox",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "data/listbox-demo"
         }
     ]
 }

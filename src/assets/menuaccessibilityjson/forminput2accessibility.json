@@ -3,32 +3,38 @@
         {
             "Component": "Email Field",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/email-demo"
         },
         {
             "Component": "File Upload",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/fileupload-demo"
         },
         {
             "Component": "Label",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/label-demo"
         },
         {
             "Component": "Number Field",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/number-demo"
         },
         {
             "Component": "Password Field",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/password-demo"
         },
         {
             "Component": "Radio Group",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/radiogroup-demo"
         }
     ]
 }

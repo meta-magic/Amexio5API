@@ -3,42 +3,50 @@
         {
             "Component": "Rating",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/rating-demo"
         },
         {
             "Component": "Search Box",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/searchbox-demo"
         },
         {
             "Component": "Slider",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/slider-demo"
         },
         {
             "Component": "Type Ahead",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/typeahead-demo"
         },
         {
             "Component": "Tag Field",
             "Keyboard": "Yes",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/taginput-demo"
         },
         {
             "Component": "Text Field",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/textinput"
         },
         {
             "Component": "TextArea Field",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/textarea-demo"
         },
         {
             "Component": "Toggle",
             "Keyboard": "No",
-            "Screen-Reader": "Yes"
+            "Screen-Reader": "Yes",
+            "link": "forms-Input/toggle-demo"
         }
         
     ]

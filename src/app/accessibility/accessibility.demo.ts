@@ -4,6 +4,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Router } from "@angular/router";
 
 @Component({
     selector: 'accesibility-page',
@@ -17,11 +18,14 @@ export class AccessibilityDemo implements OnInit {
     sourceData: any;
     copyMsgArray: any[];
 
-    constructor(private http: HttpClient) {
+    constructor(private http: HttpClient,public router: Router) {
 
     }
     ngOnInit() {
 
+    }
+    onRowSelect(data:any){
+        this.router.navigate([data.link]);
     }
 }
 

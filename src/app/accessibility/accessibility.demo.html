@@ -140,7 +140,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/panelaccessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -164,7 +164,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/appnavigationaccesibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -188,7 +188,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/forminputaccessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -215,7 +215,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/layoutaccessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -224,6 +224,7 @@
                         [text]="'Screen-Reader'">
                     </amexio-data-table-column>
                 </amexio-datagrid>
+                
             </amexio-body>
             <amexio-action>
                 footer
@@ -239,7 +240,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/formactionaccessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -263,7 +264,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/forminput2accessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -291,7 +292,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/enterpriseaccessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -315,7 +316,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/dataaccessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
@@ -339,7 +340,7 @@
             </amexio-header>
             <amexio-body>
                 <amexio-datagrid [data-reader]="'data'" [height]="'200'" [http-url]="'../assets/menuaccessibilityjson/forminput3accessibility.json'"
-                    [http-method]="'get'" (selectedRowData)="onRowSelect($event)">
+                    [http-method]="'get'" (rowSelect)="onRowSelect($event)">
                     <amexio-data-table-column [data-index]="'Component'" [data-type]="'string'" [hidden]="false" [text]="'Component'">
                     </amexio-data-table-column>
                     <amexio-data-table-column [data-index]="'Keyboard'" [data-type]="'string'" [hidden]="false" [text]="'Keyboard'">
