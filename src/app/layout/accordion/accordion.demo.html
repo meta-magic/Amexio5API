@@ -1,11 +1,22 @@
 <amexio-api-structure [url]="'assets/componentjson/layouts/accordion.json'">
-  <amexio-api-reference>
-    <amexio-box border-color="brown" border="right-left"  padding="true" background-color="brown">
-      <amexio-label><b> amexio-accordion-header can contain any amexio component, which will get displayed at Header of Accordion.</b></amexio-label>
-    </amexio-box>
-  </amexio-api-reference>
+    <amexio-api-reference>
+        <amexio-box border-color="brown" border="right-left" padding="true" background-color="brown">
+            <amexio-label><b> amexio-accordion-header can contain any amexio component, which will get displayed at
+                    Header of Accordion.</b></amexio-label>
+        </amexio-box>
+    </amexio-api-reference>
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Accordion is WAI ARIA-accessible through the Tab key. The Accordion also implements the keyboard navigation for its
+                component role and is tested against the popular screen readers.</p>
+            <p>Role:Button-The role button defines accordion header as its type.</p> 
+            <p>Role:Img-The role img defines its type.</p>  
+            <p>Role:Region-The role region define area for particular accordion header.</p>     
+            
+        </amexio-box>
+    </amexio-api-accessible>
     <amexio-api-demo>
-       <amexio-accordion>
+        <amexio-accordion>
             <amexio-accordion-tab header="Page One" active="true">
                 <amexio-accordion-header>
                     <amexio-label>
@@ -271,9 +282,9 @@
             </amexio-accordion-tab>
         </amexio-accordion>
 
-<br>
+        <br>
         <span style="font-weight: bolder"> Accordion Panes with custom header color</span>
-<br>
+        <br>
         <amexio-accordion [background]="'orange'" [color]="'black'">
             <amexio-accordion-tab header="Page One" active="true">
 
@@ -297,7 +308,7 @@
 
             </amexio-accordion-tab>
             <amexio-accordion-tab header="Page three">
-        
+
                 Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis
                 dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Sed viverra libero vel
                 massa accumsan aliquet. Mauris a dui nec sapien pretium euismod. Sed lobortis quis sapien a

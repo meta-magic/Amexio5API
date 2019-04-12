@@ -1,16 +1,22 @@
-    
-     <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/data/filtertree.json'">
-      <amexio-api-demo>
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/data/filtertree.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Tree is WAI ARIA-accessible through the Tab key.
+      </p>
+      <p>Role:Treeitem-The treeitem role defines items in tree as its type.It consist of aria-label,aria-expanded and
+        aria-hidden</p>
+    </amexio-box>
+  </amexio-api-accessible>
+  <amexio-api-demo>
     <amexio-row>
       <amexio-column size="6">
         <amexio-card [header]="true">
           <amexio-header>
-             Filter Tree
+            Filter Tree
           </amexio-header>
           <amexio-body>
-            <amexio-tree-filter-view [data-reader]="'data'"
-                                     [http-method]="'get'" (nodeClick)="getNodeData($event)"
-                                     [http-url]="'assets/data/componentdata/sidenav.json'">
+            <amexio-tree-filter-view [data-reader]="'data'" [http-method]="'get'" (nodeClick)="getNodeData($event)"
+              [http-url]="'assets/data/componentdata/sidenav.json'">
             </amexio-tree-filter-view>
           </amexio-body>
         </amexio-card>
@@ -18,7 +24,7 @@
       <amexio-column size="6">
         <amexio-card [header]="true">
           <amexio-header>
-             Selected Data
+            Selected Data
           </amexio-header>
           <amexio-body>
             <pre><code>{{selectedData | json}}</code></pre>

@@ -1,7 +1,18 @@
 <amexio-api-structure [url]="'assets/componentjson/calendar/calendar.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Calendar is WAI ARIA-accessible through the Tab key.
+            </p>
+            <p>Role:Button-The button role defines its type.It consist of aria-pressed aria-hidden and aria-label.
+            </p>
+    </amexio-box>
+    </amexio-api-accessible>
     <amexio-api-demo>
         <div style="height:2000px;">
-            <amexio-calendar [event-color-grouping]="true"  [calendar-date]="calendardate" (onEventClicked)="onEventClicked($event)" [events]="events">
+            <amexio-calendar [event-color-grouping]="true"  
+            [calendar-date]="calendardate" 
+            (onEventClicked)="onEventClicked($event)" 
+            [events]="events">
             </amexio-calendar>            
         </div>
     </amexio-api-demo>

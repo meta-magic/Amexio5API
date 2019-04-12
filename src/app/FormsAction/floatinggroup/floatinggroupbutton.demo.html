@@ -1,4 +1,13 @@
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/formactions/floatinggroup.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The FLoating-button is WAI ARIA-accessible through the Tab key.And the best practices for implementing the
+        keyboard navigation for its component role and is tested against the popular screen readers.</p>
+      <p>Role:Menu-The menu role defines its type.It consist of aria-pressed and aria-expanded.</p>
+      <p>Role:Button-The tooltip role defines its type.</p>
+      <p>Role:Tooltip-The tooltip role defines message as its type.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
       <amexio-column [size]="12">
@@ -10,33 +19,28 @@
             <amexio-row>
               <amexio-column size=12>
 
-                <b>Demo focus on showcasing three demos</b><br/>
-                1 - Relative with floating group poisitioned bottom right<br/>
-                2 - Relative with floating  group poisitioned top right<br/>
-                3 - Floating group poisitioned bottom right<br/>
+                <b>Demo focus on showcasing three demos</b><br />
+                1 - Relative with floating group poisitioned bottom right<br />
+                2 - Relative with floating group poisitioned top right<br />
+                3 - Floating group poisitioned bottom right<br />
 
               </amexio-column>
             </amexio-row>
             <amexio-row>
               <amexio-column size=6>
-                <amexio-floating-group-button [relative]="true" [size]="'small'"
-                                              (onClick)="onFloatingClick($event)" [data]="floatingbuttongroupOne" [floating-group-position]="'top'"
-                                              [icon]="'fa fa-ellipsis-v'" [type]="'theme-color'">
+                <amexio-floating-group-button [relative]="true" [size]="'small'" (onClick)="onFloatingClick($event)"
+                  [data]="floatingbuttongroupOne" [floating-group-position]="'top'" [icon]="'fa fa-ellipsis-v'" [type]="'theme-color'">
                 </amexio-floating-group-button>
               </amexio-column>
               <amexio-column size=6>
-                <amexio-floating-group-button [relative]="true"
-                                              (onClick)="onFloatingClick($event)" [data]="floatingbuttongroupTwo" [floating-group-position]="'bottom'"
-                                              [icon]="'fa fa-ellipsis-v'" [type]="'green'">
+                <amexio-floating-group-button [relative]="true" (onClick)="onFloatingClick($event)" [data]="floatingbuttongroupTwo"
+                  [floating-group-position]="'bottom'" [icon]="'fa fa-ellipsis-v'" [type]="'green'">
                 </amexio-floating-group-button>
               </amexio-column>
 
-              <amexio-floating-group-button  [size]="'large'"
-                                            (onClick)="onFloatingClick($event)" 
-                                            [data]="floatingbuttongroupThree" 
-                                            [floating-group-position]="'top'"
-                                            [position-bottom]="'5%'" [position-right]="'5%'"
-                                            [icon]="'fa fa-ellipsis-v'" [type]="'red'">
+              <amexio-floating-group-button [size]="'large'" (onClick)="onFloatingClick($event)" [data]="floatingbuttongroupThree"
+                [floating-group-position]="'top'" [position-bottom]="'5%'" [position-right]="'5%'" [icon]="'fa fa-ellipsis-v'"
+                [type]="'red'">
               </amexio-floating-group-button>
 
             </amexio-row>

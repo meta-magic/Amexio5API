@@ -26,7 +26,7 @@ export class StepBoxDemoComponent implements OnInit{
   constructor(private http: HttpClient) {
     this.customSourceData = new ComponentDataStructure();
 
-    
+      
     this.user=false;
     this.shop=true;
     this.payment=false;

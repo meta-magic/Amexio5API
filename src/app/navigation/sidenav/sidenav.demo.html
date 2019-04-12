@@ -1,14 +1,19 @@
-<amexio-api-structure  [custom-com-data]="customSourceData" [url]="'assets/componentjson/appnavigation/sidenav.json'">
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/appnavigation/sidenav.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The SideNav Bar is WAI ARIA-accessible through the Tab key.
+            </p>
+            <p>Role:Option-The option role defines listitem as its type.</p>
+        </amexio-box>
+    </amexio-api-accessible>
     <amexio-api-demo>
         <amexio-row>
             <amexio-column [size]="6" [fit]=true>
                 <amexio-card [header]="true" [body-height]="80">
                     <amexio-header> Side Nav </amexio-header>
                     <amexio-body>
-                        <amexio-side-nav  [http-url]="'assets/data/componentdata/sidenav.json'"
-                        
-                         [http-method]="'get'" [data-reader]="'data'" [width]="'275px'"
-                            [position]="'relative'">
+                        <amexio-side-nav [http-url]="'assets/data/componentdata/sidenav.json'" [http-method]="'get'"
+                            [data-reader]="'data'" [width]="'275px'" [position]="'relative'">
                         </amexio-side-nav>
                     </amexio-body>
                 </amexio-card>
@@ -21,7 +26,8 @@
                             <amexio-sidenav-node>
                                 <amexio-row>
                                     <amexio-column size="5">
-                                        <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'" path="assets/images/profile/ketan.jpg">
+                                        <amexio-image [height]="'89.75px'" [width]="'89.75px'" [c-class]="'image-round'"
+                                            path="assets/images/profile/ketan.jpg">
                                         </amexio-image>
                                     </amexio-column>
                                     <amexio-column size="7">
@@ -36,29 +42,35 @@
 
                             </amexio-sidenav-node>
 
-                            <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-cog'" [label]="'Settings'">
+                            <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-cog'"
+                                [label]="'Settings'">
                                 <amexio-row>
                                     <amexio-column [size]=6>
-                                        <amexio-button [block]="true" [size]="'small'" [label]="'Notification'" [type]="'theme-color'" [icon]="'fa fa-envelope'">
+                                        <amexio-button [block]="true" [size]="'small'" [label]="'Notification'" [type]="'theme-color'"
+                                            [icon]="'fa fa-envelope'">
                                         </amexio-button>
                                     </amexio-column>
                                     <amexio-column [size]=6>
-                                        <amexio-button [block]="true" [size]="'small'" [label]="'Profile'" [type]="'theme-backgroundcolor'" [icon]="'fa fa-user'">
+                                        <amexio-button [block]="true" [size]="'small'" [label]="'Profile'" [type]="'theme-backgroundcolor'"
+                                            [icon]="'fa fa-user'">
                                         </amexio-button>
                                     </amexio-column>
                                 </amexio-row>
                                 <amexio-row>
                                     <amexio-column [size]=6>
-                                        <amexio-button [block]="true" [size]="'small'" [label]="'Revenue'" [type]="'green'" [icon]="'fa fa-money'">
+                                        <amexio-button [block]="true" [size]="'small'" [label]="'Revenue'" [type]="'green'"
+                                            [icon]="'fa fa-money'">
                                         </amexio-button>
                                     </amexio-column>
                                     <amexio-column [size]=6>
-                                        <amexio-button [block]="true" [size]="'small'" [label]="'My Feeds'" [type]="'yellow'" [icon]="'fa fa-rss'">
+                                        <amexio-button [block]="true" [size]="'small'" [label]="'My Feeds'" [type]="'yellow'"
+                                            [icon]="'fa fa-rss'">
                                         </amexio-button>
                                     </amexio-column>
                                 </amexio-row>
                             </amexio-sidenav-node>
-                            <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-calendar'" [badge]="'4'" [label]="'Upcoming Event'">
+                            <amexio-sidenav-node [collapsable]="true" [enable-border]="true" [icon]="'fa fa-calendar'"
+                                [badge]="'4'" [label]="'Upcoming Event'">
                                 <amexio-timeline [content-alignment]="'left'">
                                     <amexio-timeline-event [label]="'Dec 4'" [icon]="'fa fa-calendar'">
                                         <amexio-label> Amexio Meetup</amexio-label>
@@ -75,18 +87,21 @@
                                 </amexio-timeline>
                             </amexio-sidenav-node>
 
-                            <amexio-sidenav-node [enable-border]="true" [collapsable]="true" [label]="'Contacts'" [icon]="'fa fa-address-book-o'">
+                            <amexio-sidenav-node [enable-border]="true" [collapsable]="true" [label]="'Contacts'"
+                                [icon]="'fa fa-address-book-o'">
 
                                 <amexio-tab-view [closable]="false">
                                     <amexio-tab [active]="true" [icon]="'fa fa-users'">
 
 
-                                        <amexio-listbox [enable-header]="false" [header]="'Projects'" [search-placeholder]="'Search'" [data]="contactList" [filter]="true"
+                                        <amexio-listbox [enable-header]="false" [header]="'Projects'"
+                                            [search-placeholder]="'Search'" [data]="contactList" [filter]="true"
                                             [data-reader]="'response.data'" [display-field]="'name'" [border]="'none'">
                                             <ng-template #amexioBodyTmpl let-row="row">
                                                 <amexio-row>
                                                     <amexio-column [size]="3">
-                                                        <amexio-image [c-class]="'around-image'" height="50px" width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
+                                                        <amexio-image [c-class]="'around-image'" height="50px" width="50px"
+                                                            path="assets/images/profile/{{row.profile}}"></amexio-image>
                                                     </amexio-column>
                                                     <amexio-column [size]="9">
                                                         {{row.name}}
@@ -98,7 +113,8 @@
                                     </amexio-tab>
 
                                     <amexio-tab [icon]="'fa fa-star-o'">
-                                        <amexio-listbox [enable-header]="false" [header]="'Projects'" [search-placeholder]="'Search'" [data]="contactList" [filter]="true"
+                                        <amexio-listbox [enable-header]="false" [header]="'Projects'"
+                                            [search-placeholder]="'Search'" [data]="contactList" [filter]="true"
                                             [data-reader]="'response.data'" [display-field]="'name'" [border]="'none'">
                                         </amexio-listbox>
                                     </amexio-tab>
@@ -111,11 +127,5 @@
             </amexio-column>
 
         </amexio-row>
-        </amexio-api-demo>
-        </amexio-api-structure>
-
-
-
-
-
-   
+    </amexio-api-demo>
+</amexio-api-structure>

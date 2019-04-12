@@ -1,5 +1,14 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/checkbox.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Checkbox is WAI ARIA-accessible through the Tab key.</p>
+      <p>Role: Checkbox - Indicates that the element serves as checkbox.
+        The aria-checked attribute is goverend by dynamic value of checkbox.It consist of id and for which allows
+        screen reader to loud the checkbox enabled or disabled when focus comes to input.
+      </p>
+    </amexio-box>
+  </amexio-api-accessible>
+
   <amexio-api-demo>
     <amexio-row>
       <amexio-column size="6">
@@ -8,8 +17,7 @@
             Single Checkbox
           </amexio-header>
           <amexio-body>
-            <amexio-checkbox [field-label]="'I Agree terms and conditions'" [(ngModel)]="check"
-                             (onSelection)="onCheckClick($event)"></amexio-checkbox>
+            <amexio-checkbox [field-label]="'I Agree terms and conditions'" [(ngModel)]="check" (onSelection)="onCheckClick($event)"></amexio-checkbox>
             <p>Selected Value : {{check}}</p>
           </amexio-body>
         </amexio-card>

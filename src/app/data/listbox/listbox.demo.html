@@ -1,18 +1,25 @@
-<amexio-api-structure  [url]="'assets/componentjson/data/listbox.json'">
+<amexio-api-structure [url]="'assets/componentjson/data/listbox.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Listbox is WAI ARIA-accessible through the Tab key.And for implementing the keyboard
+        navigation for its component role and is tested against the popular screen readers.
+      </p>
+      <p>Role:Checkbox-The Checkbox role defines menu as its type.</p>
+      <p>Role:Listbox-The listbox role defines list as its type.It consist of aria-selected and aria-label</p>
+      <p>Role:Option-The option role defines listitem as its type.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
-    
     <amexio-row>
       <amexio-column size="12">
         <amexio-card [header]="true">
           <amexio-header>
-             Simple List Box
+            Simple List Box
           </amexio-header>
           <amexio-body>
-            <amexio-listbox [enable-checkbox]="true" [height]="400"
-                            [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
-                            [data]="localData" [filter]="true"
-                            [data-reader]="'response.data'"
-                            [display-field]="'name_official'" (selectedRows)="getSelectedData($event)">
+            <amexio-listbox [enable-checkbox]="true" [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
+              [data]="localData" [filter]="true" [data-reader]="'response.data'" [display-field]="'name_official'"
+              (selectedRows)="getSelectedData($event)">
             </amexio-listbox>
             <p>
               <b>selected data</b> : {{selectedData | json}}
@@ -25,17 +32,15 @@
       <amexio-column size="12">
         <amexio-card [header]="true">
           <amexio-header>
-             List Box with Template
+            List Box with Template
           </amexio-header>
           <amexio-body>
-            <amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
-                            [data]="localData" [filter]="false"
-                            [data-reader]="'response.data'"
-                            [display-field]="'name'" (onRowClick)="onRowClick($event)">
+            <amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'" [data]="localData"
+              [filter]="false" [data-reader]="'response.data'" [display-field]="'name'" (onRowClick)="onRowClick($event)">
               <ng-template #amexioBodyTmpl let-row="row">
                 <amexio-row>
                   <amexio-column [size]="1">
-                      <amexio-image [c-class]="'around-image'" height="50px" width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
+                    <amexio-image [c-class]="'around-image'" height="50px" width="50px" path="assets/images/profile/{{row.profile}}"></amexio-image>
                   </amexio-column>
                   <amexio-column [size]="11">
                     {{row.name}}
@@ -43,64 +48,64 @@
                 </amexio-row>
               </ng-template>
             </amexio-listbox>
-           <!-- <p>
+            <!-- <p>
               <b>clicked record data</b> : {{onRowClickData | json}}
             </p>-->
 
             <amexio-row>
-            <amexio-column [size]="5">
-              <amexio-listbox [height]="360" [data]="projectData" [filter]="false" [header]="'Project'" [enable-checkbox]="false" [data-reader]="'response.data'"
-                [display-field]="'name'">
-                <ng-template #amexioBodyTmpl let-row="row">
-                  <amexio-row>
-                    <amexio-column [size]="5">
-                      <amexio-label size="small">
-                        {{row.name}}
-                      </amexio-label>
-                    </amexio-column>
-                    <amexio-column [size]="3">
-  
-                    </amexio-column>
-                    <amexio-column [size]="4">
-  
-                      <a [ngClass]="{'listbox-StatusYellow': row.status == 'Pending', 'listbox-StatusGreen' : row.status == 'Finished','listbox-StatusRed'  : row.status == 'Rejected'}">
-                        {{row.status}}
-                      </a>
-                    </amexio-column>
-                  </amexio-row>
-                </ng-template>
-              </amexio-listbox>
-            </amexio-column>
-            <amexio-column [size]="7">
-              <amexio-listbox [height]="400" [data]="browserData" [filter]="false" [header]="'Browser Stats'" [enable-checkbox]="false"
-                [data-reader]="'response.data'" [display-field]="'name'">
-                <ng-template #amexioBodyTmpl let-row="row">
-                  <amexio-row>
-                    <amexio-column [size]="4">
-                      <span>
-  
-                        <amexio-image [path]="'assets/images/'+row.icon" [c-class]="'image-round'">
-                        </amexio-image>
-  
-                      </span>
-  
-                    </amexio-column>
-                    <amexio-column [size]="6">
-                      <amexio-label size="small">
-                        {{row.name}}
-                      </amexio-label>
-                    </amexio-column>
-                    <amexio-column [size]="2">
-                      <amexio-label size="small" font-color="grey">
-                        {{row.usage}}
-                      </amexio-label>
-  
-                    </amexio-column>
-                  </amexio-row>
-                </ng-template>
-              </amexio-listbox>
-            </amexio-column>
-          </amexio-row>
+              <amexio-column [size]="5">
+                <amexio-listbox [height]="360" [data]="projectData" [filter]="false" [header]="'Project'"
+                  [enable-checkbox]="false" [data-reader]="'response.data'" [display-field]="'name'">
+                  <ng-template #amexioBodyTmpl let-row="row">
+                    <amexio-row>
+                      <amexio-column [size]="5">
+                        <amexio-label size="small">
+                          {{row.name}}
+                        </amexio-label>
+                      </amexio-column>
+                      <amexio-column [size]="3">
+
+                      </amexio-column>
+                      <amexio-column [size]="4">
+
+                        <a [ngClass]="{'listbox-StatusYellow': row.status == 'Pending', 'listbox-StatusGreen' : row.status == 'Finished','listbox-StatusRed'  : row.status == 'Rejected'}">
+                          {{row.status}}
+                        </a>
+                      </amexio-column>
+                    </amexio-row>
+                  </ng-template>
+                </amexio-listbox>
+              </amexio-column>
+              <amexio-column [size]="7">
+                <amexio-listbox [height]="400" [data]="browserData" [filter]="false" [header]="'Browser Stats'"
+                  [enable-checkbox]="false" [data-reader]="'response.data'" [display-field]="'name'">
+                  <ng-template #amexioBodyTmpl let-row="row">
+                    <amexio-row>
+                      <amexio-column [size]="4">
+                        <span>
+
+                          <amexio-image [path]="'assets/images/'+row.icon" [c-class]="'image-round'">
+                          </amexio-image>
+
+                        </span>
+
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-label size="small">
+                          {{row.name}}
+                        </amexio-label>
+                      </amexio-column>
+                      <amexio-column [size]="2">
+                        <amexio-label size="small" font-color="grey">
+                          {{row.usage}}
+                        </amexio-label>
+
+                      </amexio-column>
+                    </amexio-row>
+                  </ng-template>
+                </amexio-listbox>
+              </amexio-column>
+            </amexio-row>
 
 
           </amexio-body>
@@ -110,23 +115,21 @@
     </amexio-row>
 
     <amexio-row>
-    <amexio-column size="12">
-      <amexio-card [header]="true">
-        <amexio-header>
-           List Box With Context Menu
-        </amexio-header>
-        <amexio-body>
-          <amexio-listbox [enable-checkbox]="true" [height]="400"
-                          [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
-                          [data]="localData" [filter]="true"
-                          [data-reader]="'response.data'" [context-menu]="contextMenuData"
-                          [display-field]="'name_official'" (selectedRows)="getSelectedData($event)">
-          </amexio-listbox>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-  </amexio-row>
+      <amexio-column size="12">
+        <amexio-card [header]="true">
+          <amexio-header>
+            List Box With Context Menu
+          </amexio-header>
+          <amexio-body>
+            <amexio-listbox [enable-checkbox]="true" [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
+              [data]="localData" [filter]="true" [data-reader]="'response.data'" [context-menu]="contextMenuData"
+              [display-field]="'name_official'" (selectedRows)="getSelectedData($event)">
+            </amexio-listbox>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
 
-     
+
   </amexio-api-demo>
-  </amexio-api-structure>
+</amexio-api-structure>

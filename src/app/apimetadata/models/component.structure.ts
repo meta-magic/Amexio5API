@@ -8,6 +8,7 @@ export class ComponentDataStructure {
   sourceMetadata = new SourceMetadata();
   liveMetadata = new LiveMetadata();
   apiRefMetadata: ApiMetadata[] = [];
+  apiaccessibledata: Accessible[] =[];
 }
 
 export class  SourceMetadata {
@@ -33,4 +34,9 @@ export class LiveMetadata {
   stackblitzUrl1: string;
   stackblitzUrl2: string;
 
+}
+export class Accessible {
+  gridTitle: string;
+  columnDefinition: any[];
+  gridData: any[];
 }

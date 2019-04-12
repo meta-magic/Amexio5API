@@ -50,6 +50,9 @@ export class AmexioStructureComponent implements OnInit {
     if (this.customComData.liveMetadata) {
       response.liveMetadata = this.customComData.liveMetadata;
     }
+    if (this.customComData.apiaccessibledata && this.customComData.apiaccessibledata.length > 0) {
+      response.apiaccessibledata = this.customComData.apiaccessibledata;
+    }
     this.comData = response;
   }
 }

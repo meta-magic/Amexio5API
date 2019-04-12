@@ -1,5 +1,10 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/radiogroup.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Radiogroup is WAI ARIA-accessible through the Tab key.And the best practices for implementing the keyboard navigation for its component role and is tested against the popular screen readers.</p>
+      <p>Role:Radiogroup-The radiogroup role defines radio as its type.It consist aria-labelledby, aria-disabled, aria-required and aria-checked is set dynamically.</p>
+      </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
       <amexio-column size="6">
@@ -8,15 +13,9 @@
             Horizontal Radio Group
           </amexio-header>
           <amexio-body>
-            <amexio-radio-group [field-label]="'Horizontal Radio Group'"
-                                name ="gender"
-                                [data-reader]="'response.data'"
-                                [display-field]="'gender'"
-                                [value-field]="'genderId'"
-                                [horizontal]="true"
-                                [data]="radioGroupData"
-                                [(ngModel)]="model1"
-                                (onSelection)="setSelectedGender($event)">
+            <amexio-radio-group [field-label]="'Horizontal Radio Group'" name="gender" [data-reader]="'response.data'"
+              [display-field]="'gender'" [value-field]="'genderId'" [horizontal]="true" [data]="radioGroupData"
+              [(ngModel)]="model1" (onSelection)="setSelectedGender($event)">
             </amexio-radio-group>
           </amexio-body>
         </amexio-card>
@@ -27,14 +26,9 @@
             Vertical Radio Group With Http Url
           </amexio-header>
           <amexio-body>
-            <amexio-radio-group [field-label]="'Vertical Radio Group'" name ="gender1"
-                                [data-reader]="'data'"
-                                [display-field]="'gender'"
-                                [value-field]="'genderId'"
-                                [http-method]="'get'"
-                                [(ngModel)]="model2"
-                                [http-url]="'assets/data/componentdata/radiogroup.json'"
-                                (onSelection)="setSelectedGender($event)">
+            <amexio-radio-group [field-label]="'Vertical Radio Group'" name="gender1" [data-reader]="'data'"
+              [display-field]="'gender'" [value-field]="'genderId'" [http-method]="'get'" [(ngModel)]="model2"
+              [http-url]="'assets/data/componentdata/radiogroup.json'" (onSelection)="setSelectedGender($event)">
             </amexio-radio-group>
           </amexio-body>
         </amexio-card>
@@ -48,15 +42,9 @@
             Horizontal Radio Group Disabled
           </amexio-header>
           <amexio-body>
-            <amexio-radio-group [field-label]="'Horizontal Radio Group'" name ="gendery"
-                                [data-reader]="'radiodata'"
-                                [display-field]="'gender'"
-                                [value-field]="'genderId'"
-                                [http-method]="'get'"
-                                horizontal="true"
-                                [(ngModel)]="model3"
-                                [http-url]="'assets/data/componentdata/radiogroup.json'"
-                                disabled="true">
+            <amexio-radio-group [field-label]="'Horizontal Radio Group'" name="gendery" [data-reader]="'radiodata'"
+              [display-field]="'gender'" [value-field]="'genderId'" [http-method]="'get'" horizontal="true" [(ngModel)]="model3"
+              [http-url]="'assets/data/componentdata/radiogroup.json'" disabled="true">
             </amexio-radio-group>
 
 
@@ -70,15 +58,9 @@
           </amexio-header>
           <amexio-body>
 
-            <amexio-radio-group [field-label]="'Horizontal Radio Group '" name ="genderx"
-                                [data-reader]="'data'"
-                                [(ngModel)]="model4"
-                                [display-field]="'gender'"
-                                [value-field]="'genderId'"
-                                [http-method]="'get'"
-                                horizontal="true"
-                                [http-url]="'assets/data/componentdata/radiogroup_disable.json'"
-            >
+            <amexio-radio-group [field-label]="'Horizontal Radio Group '" name="genderx" [data-reader]="'data'"
+              [(ngModel)]="model4" [display-field]="'gender'" [value-field]="'genderId'" [http-method]="'get'"
+              horizontal="true" [http-url]="'assets/data/componentdata/radiogroup_disable.json'">
             </amexio-radio-group>
             <h2>Radio Group model Binding value </h2>
             {{model4 | json}}

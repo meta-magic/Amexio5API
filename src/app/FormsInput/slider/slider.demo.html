@@ -1,5 +1,12 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/slider.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Slider is WAI ARIA-accessible through the Tab key.And the best practices for implementing the keyboard
+        navigation for its component role and is tested against the popular screen readers.</p>
+      <p>Role:Slider-The slider role defines slider as its type.It consist of aria-valuenow,aria-valuemin,aria-valuemax
+        and aria-labelledby.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
       <amexio-column size="6">
@@ -14,7 +21,7 @@
                 {{stepVal1}}
               </amexio-column>
               <amexio-column [size]="6">
-                <amexio-slider disabled = "true" min-value="0" max-value="50" [step-value]="2" [(ngModel)]="stepVal2"></amexio-slider>
+                <amexio-slider disabled="true" min-value="0" max-value="50" [step-value]="2" [(ngModel)]="stepVal2"></amexio-slider>
                 {{stepVal2}}
               </amexio-column>
             </amexio-row>

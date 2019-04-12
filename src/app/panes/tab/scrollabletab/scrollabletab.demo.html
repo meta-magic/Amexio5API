@@ -2,6 +2,22 @@
 
 
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/panels/tab.json'">
+    <amexio-api-accessible>
+            <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+              <p>The Tab is WAI ARIA-accessible through the Tab key.This also follows the best practices for implementing the
+                keyboard navigation for its
+                component role and is tested against the popular screen readers.</p>
+              <p>Role: Tablist - Indicates that the element serves as a container for a set of tabs.
+                The aria-labelledby attribute is goverend by dynamic label of step.
+              </p>
+              <p>
+                Role: Tab (Button): Indicates the element serves as a tab control.When focused, is automatically activated,
+                causing its associated tabpanel to be displayed.
+              </p>
+              <p>
+              </p>
+            </amexio-box>
+          </amexio-api-accessible>
     <amexio-api-demo>
 
 <amexio-tab-view [closable]="true">

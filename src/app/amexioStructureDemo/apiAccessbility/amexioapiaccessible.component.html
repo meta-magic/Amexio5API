@@ -1,0 +1,20 @@
+<ng-content></ng-content>
+<br>
+<ng-container *ngFor="let apiaccData of data"> 
+    <amexio-datagrid [title]="apiaccData.gridTitle" [data]="apiaccData.gridData">
+        <amexio-data-table-column *ngFor="let col of apiaccData.columnDefinition" [data-index]="col.dataindex"
+            [data-type]="'string'" [text]="col.text" [hidden]="false" [width]="col.width">
+            <ng-container *ngIf="col.dataindex == 'name'">
+                <ng-template #amexioBodyTmpl let-column let-row="row">
+                    <ng-container *ngIf="row.deprecated">
+                        <div style="text-decoration: line-through red;">{{row.name}}</div>
+                    </ng-container>
+                    <ng-container *ngIf="!row.deprecated">
+                        {{row.name}}
+                    </ng-container>
+                </ng-template>
+            </ng-container>
+        </amexio-data-table-column>
+    </amexio-datagrid>
+    <br><br>
+</ng-container>

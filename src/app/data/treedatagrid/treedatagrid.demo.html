@@ -1,7 +1,18 @@
-
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/data/treedatagrid.json'">
+    <amexio-api-accessible>
+            <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+                <p>The Tree Data Grid is WAI ARIA-accessible through the Tab key.And the best practices for implementing the keyboard
+                    navigation for its component role and is tested against the popular screen readers.
+                </p>
+                <p>Role:Listbox-The Listbox role defines list as its type.</p>
+                <p>Role:Option-The option role defines listitem as its type.</p>
+                <p>Role:Checkbox-The checkbox role defines its type.It consist of aria-hidden,aria-checked and
+                    aria-labelledby.</p>
+                <p>Role:Grid-The grid role defines datatable as its type.</p>
+            </amexio-box>
+        </amexio-api-accessible> 
     <amexio-api-demo>
-<amexio-row>
+        <amexio-row>
             <amexio-column size="12">
                 <amexio-card [footer]="false" [header]="true">
                     <amexio-header> Tree Data Grid </amexio-header>
@@ -22,6 +33,5 @@
         </amexio-row>
 
 
-        </amexio-api-demo>
-        </amexio-api-structure>
-        
+    </amexio-api-demo>
+</amexio-api-structure>

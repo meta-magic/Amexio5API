@@ -1,30 +1,38 @@
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/data/tree.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Tree is WAI ARIA-accessible through the Tab key.
+            </p>
+            <p>Role:Treeitem-The treeitem role defines items in tree as its type.It consist of aria-label,aria-expanded
+                and aria-hidden</p>
+        </amexio-box>
+    </amexio-api-accessible>
     <amexio-api-demo>
-    
-       
-       <amexio-row>
+
+
+        <amexio-row>
             <amexio-column size="6">
                 <amexio-card [header]="true" [footer]="true" [footer-align]="'right'">
                     <amexio-header style="width:100%">
-                    <amexio-toolbar>
-                    <amexio-toolbar-item position-left >
-                    <amexio-image [ngClass]="text" (click)="expandAlldata(id)">
-                         </amexio-image>
-                    </amexio-toolbar-item>
-                    <amexio-toolbar-item position-left >
-                     <label style="margin-top: 0px; font-size: 18px">
-                     &nbsp;  &nbsp; Expand all and collapse all function
-                     </label>
-                    </amexio-toolbar-item>
-                    </amexio-toolbar>
-                        
+                        <amexio-toolbar>
+                            <amexio-toolbar-item position-left>
+                                <amexio-image [ngClass]="text" (click)="expandAlldata(id)">
+                                </amexio-image>
+                            </amexio-toolbar-item>
+                            <amexio-toolbar-item position-left>
+                                <label style="margin-top: 0px; font-size: 18px">
+                                    &nbsp; &nbsp; Expand all and collapse all function
+                                </label>
+                            </amexio-toolbar-item>
+                        </amexio-toolbar>
+
                     </amexio-header>
                     <amexio-body>
                         <amexio-treeview #id [data-reader]="'item'" [data]="treeLocalExpandData" (nodeClick)="getNodeDataClick($event)">
                         </amexio-treeview>
                     </amexio-body>
                     <amexio-action>
-                        </amexio-action>
+                    </amexio-action>
                 </amexio-card>
             </amexio-column>
             <amexio-column size="6" [fit]='true'>
@@ -39,5 +47,5 @@
             </amexio-column>
         </amexio-row>
 
-        </amexio-api-demo>
-        </amexio-api-structure>
+    </amexio-api-demo>
+</amexio-api-structure>

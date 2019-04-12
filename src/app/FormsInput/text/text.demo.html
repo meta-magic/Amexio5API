@@ -1,5 +1,12 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/textinput.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Textinput is WAI ARIA-accessible through the Tab key.</p>
+      <p>Role:Input-The input role defines its type.</p>
+      <p>Role:Text-The text role defines its type.It consist of aria-labelledby and aria-describedby.</p>
+      <p>Role:Tooltip-The tooltip role defines as its msg type.It consist of dynamic id.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
       <amexio-column size="6">
@@ -30,8 +37,10 @@
             Min/Max Validations
           </amexio-header>
           <amexio-body>
-            <amexio-text-input enable-popover="true" [enable-popover]="true" field-label="Name" name="name" place-holder="Enter name" [allow-blank]="false" error-msg="Please Enter Name" [min-length]="1" min-error-msg="Minimum 1 Char Required" [max-length]="10"
-                               max-error-msg="Maximum 10 Char Allowed" [icon-feedback]="true"></amexio-text-input>
+            <amexio-text-input enable-popover="true" [enable-popover]="true" field-label="Name" name="name"
+              place-holder="Enter name" [allow-blank]="false" error-msg="Please Enter Name" [min-length]="1"
+              min-error-msg="Minimum 1 Char Required" [max-length]="10" max-error-msg="Maximum 10 Char Allowed"
+              [icon-feedback]="true"></amexio-text-input>
           </amexio-body>
         </amexio-card>
       </amexio-column>
@@ -63,7 +72,8 @@
             Font Size & Family Styling
           </amexio-header>
           <amexio-body>
-            <amexio-text-input [field-label]="'Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="false" [font-size]="'large'"></amexio-text-input>
+            <amexio-text-input [field-label]="'Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="false"
+              [font-size]="'large'"></amexio-text-input>
           </amexio-body>
         </amexio-card>
       </amexio-column>
@@ -75,7 +85,8 @@
             Input with Pattern
           </amexio-header>
           <amexio-body>
-            <amexio-text-input name="name" [field-label]="'Name'" [place-holder]="'Enter name'" [pattern]="'[a-z]'" [icon-feedback]="true"></amexio-text-input>
+            <amexio-text-input name="name" [field-label]="'Name'" [place-holder]="'Enter name'" [pattern]="'[a-z]'"
+              [icon-feedback]="true"></amexio-text-input>
           </amexio-body>
         </amexio-card>
       </amexio-column>

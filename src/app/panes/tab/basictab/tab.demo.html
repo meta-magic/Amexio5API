@@ -1,27 +1,47 @@
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/panels/tab.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Tab is WAI ARIA-accessible through the Tab key.This also follows the best practices for implementing the
+        keyboard navigation for its
+        component role and is tested against the popular screen readers.</p>
+      <p>Role: Tablist - Indicates that the element serves as a container for a set of tabs.
+        The aria-labelledby attribute is goverend by dynamic label of step.
+      </p>
+      <p>
+        Role: Tab (Button): Indicates the element serves as a tab control.When focused, is automatically activated,
+        causing its associated tabpanel to be displayed.
+      </p>
+      <p>
+      </p>
+
+    </amexio-box>
+  </amexio-api-accessible>
+
   <amexio-api-demo>
-    
-    <amexio-tab-view  [closable]="false">
+
+    <amexio-tab-view [closable]="false">
       <amexio-tab title="Personal" [active]="true">
-         Personal 
+        Personal
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
       </amexio-tab>
       <amexio-tab title="Work">
-         Work 
+        Work
         Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi.
         Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque.
         In non eleifend nisi. Phasellus tempor hendrerit posuere.
         Praesent ornare rutrum mi et condimentum.
       </amexio-tab>
       <amexio-tab title="Notes">
-         Notes 
-        Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes,
-        nascetur ridiculus mus. Aliquam erat volutpat.Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec sapien
+        Notes
+        Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient
+        montes,
+        nascetur ridiculus mus. Aliquam erat volutpat.Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec
+        sapien
         pretium euismod.
       </amexio-tab>
     </amexio-tab-view>
 
-    </amexio-api-demo>
-    </amexio-api-structure>
+  </amexio-api-demo>
+</amexio-api-structure>

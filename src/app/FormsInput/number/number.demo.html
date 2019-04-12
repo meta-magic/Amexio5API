@@ -1,6 +1,12 @@
-
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/number.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Number Input is WAI ARIA-accessible through the Tab key.</p>
+      <p>Role:Number-The number role defines Number as its type.It consist aria-labelledby,aria-required and
+        aria-describedby is set dynamically.</p>
+      <p>Role:Tooltip-The tooltip role defines the tooltip msg in a particular number field.
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
       <amexio-column size="6">
@@ -9,8 +15,7 @@
             Basic Number Input
           </amexio-header>
           <amexio-body>
-            <amexio-number-input [field-label]="'Number Input'"
-                                 [place-holder]="'Enter Age'">
+            <amexio-number-input [field-label]="'Number Input'" [place-holder]="'Enter Age'">
             </amexio-number-input>
           </amexio-body>
         </amexio-card>
@@ -21,10 +26,7 @@
             Number Input With Disable
           </amexio-header>
           <amexio-body>
-            <amexio-number-input
-              [place-holder]="'Enter age'"
-              [icon-feedback]="false"
-              [has-label]="false" [disabled]="true">
+            <amexio-number-input [place-holder]="'Enter age'" [icon-feedback]="false" [has-label]="false" [disabled]="true">
             </amexio-number-input>
           </amexio-body>
         </amexio-card>
@@ -37,9 +39,7 @@
             Number Input Font Style
           </amexio-header>
           <amexio-body>
-            <amexio-number-input [field-label]="'Age'"
-                                 [place-holder]="'Enter Age'"
-                                 [font-style]="'italic'">
+            <amexio-number-input [field-label]="'Age'" [place-holder]="'Enter Age'" [font-style]="'italic'">
             </amexio-number-input>
           </amexio-body>
         </amexio-card>
@@ -50,14 +50,9 @@
             Number Input With Min/Max Validation
           </amexio-header>
           <amexio-body>
-            <amexio-number-input  [enable-popover]="true" [field-label]="'Age'"
-                                  [place-holder]="'Enter age'"
-                                  [allow-blank]="false" [error-msg] ="'Please enter age'"
-                                  [min-value]="1"
-                                  [min-error-msg]="'age can not be less than 1'"
-                                  [max-value]="100"  [max-error-msg]="'age can not be greater than 100'"
-                                  [icon-feedback]="true"
-            >
+            <amexio-number-input [enable-popover]="true" [field-label]="'Age'" [place-holder]="'Enter age'"
+              [allow-blank]="false" [error-msg]="'Please enter age'" [min-value]="1" [min-error-msg]="'age can not be less than 1'"
+              [max-value]="100" [max-error-msg]="'age can not be greater than 100'" [icon-feedback]="true">
             </amexio-number-input>
           </amexio-body>
         </amexio-card>

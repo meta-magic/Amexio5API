@@ -1,4 +1,11 @@
 <amexio-api-structure [url]="'assets/componentjson/panels/panel.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Panel is WAI ARIA-accessible through the Tab key.The aria-expanded attribute used for toggling of
+                panel an the basis of flag.The aria-labelledby attribute is goverend by dynamic id.
+            </p>
+        </amexio-box>
+    </amexio-api-accessible>
     <amexio-api-demo>
 
 
@@ -96,8 +103,9 @@
         <br>
         <amexio-row>
             <amexio-column [size]="12">
-                <amexio-panel [color]="'black'" [background]="'orange'" [fit]="false" [border]="true" [header]="true" title="Panel with Custom Color" [expanded]="true">
-       
+                <amexio-panel [color]="'black'" [background]="'orange'" [fit]="false" [border]="true" [header]="true"
+                    title="Panel with Custom Color" [expanded]="true">
+
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                     been the industry's standard dummy
                     text ever since the 1500s, when an unknown printer took a galley of type and scrambled it

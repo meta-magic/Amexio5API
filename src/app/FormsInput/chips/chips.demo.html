@@ -1,4 +1,16 @@
 <amexio-api-structure [url]="'assets/componentjson/forminputs/chip.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Chips is WAI ARIA-accessible through the Tab key.</p>
+      <p>Role:Listbox-The role listbox for list of chips and option for individual chip component.
+        And in the role as listbox have focus navigation.</p>
+      <p>Role:Option-And in role as option id of paticular chip is set and passes
+        to the chip component</p>
+      <p>
+      </p>
+
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
 
@@ -18,13 +30,16 @@
           </amexio-header>
           <amexio-body>
             <amexio-chips (selectedchipsData)="onChipsLabelClick($event)" (onCloseClick)="onCloseClick($event)">
-              <amexio-chip [icon]="'fa fa-linkedin-square'" [label]="'Linkedin'" [color]="'red'" [badge]="4" [closable]="true" [font-color]="'white'">
+              <amexio-chip [icon]="'fa fa-linkedin-square'" [label]="'Linkedin'" [color]="'red'" [badge]="4" [closable]="true"
+                [font-color]="'white'">
               </amexio-chip>
 
-              <amexio-chip [icon]="'fa fa-internet-explorer'" [label]="'Internet-Explorer'" [color]="'blue'" [badge]="2" [closable]="false" [font-color]="'white'">
+              <amexio-chip [icon]="'fa fa-internet-explorer'" [label]="'Internet-Explorer'" [color]="'blue'" [badge]="2"
+                [closable]="false" [font-color]="'white'">
               </amexio-chip>
 
-              <amexio-chip [icon]="'fa fa-github'" [label]="'Github'" [color]="'green'" [badge]="3" [closable]="true" [font-color]="'white'">
+              <amexio-chip [icon]="'fa fa-github'" [label]="'Github'" [color]="'green'" [badge]="3" [closable]="true"
+                [font-color]="'white'">
               </amexio-chip>
 
             </amexio-chips>

@@ -1,5 +1,16 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/rating.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Rating is WAI ARIA-accessible through the Tab key.And the best practices for implementing the keyboard
+        navigation for its component role and is tested against the popular screen readers.</p>
+      <p>Role:Radiogroup-The radiogroup role defines radio as its type.It consist aria-labelledby which changes
+        according to the dynamic id.</p>
+      <p>Role:Radio-The radiogroup role defines radio as its type.It consist aria-checked which toogles by flag.</p>
+      <p>Role:Tooltip-The radiogroup role defines radio as its type.It consist aria-labelledby, and aria-required
+        aria-checked is set dynamically.</p>
+    </amexio-box>
+  </amexio-api-accessible>
+
   <amexio-api-demo>
     <amexio-row>
       <amexio-column [size]="6">
@@ -8,9 +19,8 @@
             Sample Rating With Label
           </amexio-header>
           <amexio-body>
-            <amexio-rating-input [(ngModel)]="rate" [field-label]="'Film Rating'"
-                                 [max]="max" name="rate" [float]="true"
-                                 [read-only]="isReadonly">
+            <amexio-rating-input [(ngModel)]="rate" [field-label]="'Film Rating'" [max]="max" name="rate" [float]="true"
+              [read-only]="isReadonly">
             </amexio-rating-input>
           </amexio-body>
           <amexio-action>
@@ -19,15 +29,13 @@
         </amexio-card>
       </amexio-column>
       <amexio-column [size]="6">
-        <amexio-card [header]="true" [footer]="true"  [footer-align]="'center'">
+        <amexio-card [header]="true" [footer]="true" [footer-align]="'center'">
           <amexio-header>
             Rating With Rate Titles
           </amexio-header>
           <amexio-body>
-            <amexio-rating-input [(ngModel)]="profileRate"
-                                 [max]="profileMaxRate" name="profileRate"
-                                 [titles]="titles"
-                                 [read-only]="isReadonly">
+            <amexio-rating-input [(ngModel)]="profileRate" [max]="profileMaxRate" name="profileRate" [titles]="titles"
+              [read-only]="isReadonly">
             </amexio-rating-input>
           </amexio-body>
           <amexio-action>
@@ -43,9 +51,8 @@
             Custom Rating Icons
           </amexio-header>
           <amexio-body>
-            <amexio-rating-input [(ngModel)]="customRate" [full-icon]="'☑'" [empty-icon]="'☐'"
-                                 [max]="customIconRate" name="customRate" [float]="true"
-                                 [read-only]="isReadonly">
+            <amexio-rating-input [(ngModel)]="customRate" [full-icon]="'☑'" [empty-icon]="'☐'" [max]="customIconRate"
+              name="customRate" [float]="true" [read-only]="isReadonly">
             </amexio-rating-input>
           </amexio-body>
           <amexio-action>
@@ -60,10 +67,8 @@
           </amexio-header>
           <amexio-body>
             <!--Read only Rating-->
-            <amexio-rating-input [field-label]="'Profile Rating'"
-                                 [(ngModel)]="disableProfileRate"
-                                 [max]="disableProfileMaxRate"
-                                 [read-only]="true">
+            <amexio-rating-input [field-label]="'Profile Rating'" [(ngModel)]="disableProfileRate" [max]="disableProfileMaxRate"
+              [read-only]="true">
             </amexio-rating-input>
           </amexio-body>
         </amexio-card>

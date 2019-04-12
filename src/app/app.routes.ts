@@ -25,6 +25,11 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
     path: 'd3-charts', loadChildren: './chartd3/chartd3.demo.module#ChartD3DemoModule'
   },
 
+  {
+    path: 'amexio-accessibility', loadChildren: './accessibility/accessibility.demo.module#AccessibilityDemoModule'
+  },
+
+
   /** Forms Input */
   {
     path: 'forms-Input', loadChildren: './FormsInput/FormsInput.module#FormsInputModule'

@@ -1,5 +1,11 @@
 
 <amexio-api-structure  [url]="'assets/componentjson/enterprise/appointment.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Appointment is WAI ARIA-accessible through the Tab key.
+            </p>
+    </amexio-box>
+    </amexio-api-accessible>
     <amexio-api-demo>
         <amexio-card header="true">
             <amexio-header> Appointment Demo: Single Select Date </amexio-header>
@@ -30,6 +36,5 @@
                 <pre><code>{{multiSelectedData | json}}</code></pre>
             </amexio-body>
         </amexio-card>
-
         </amexio-api-demo>
         </amexio-api-structure>

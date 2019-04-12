@@ -1,5 +1,11 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/typeahead.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The typeahead is WAI ARIA-accessible through the Tab key.And the best practices for implementing the keyboard
+        navigation for its component role and is tested against the popular screen readers.</p>
+      <p>Role:Combobox-The combobox role defines its type.It consist of aria-autocomplete and aria-expanded.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
       <amexio-column size="6">
@@ -8,14 +14,9 @@
             Simple Type Ahead Field
           </amexio-header>
           <amexio-body>
-            <amexio-typeahead [data-reader]="'data'"
-                              [key]="'countryCode1'"
-                              [display-field]="'countryName'"
-                              [place-holder]="'Search'"
-                              [(ngModel)]="country"
-                              [http-url]="'assets/data/componentdata/country.json'"
-                              [http-method]="'get'"
-                              [field-label]="'Country Name'">
+            <amexio-typeahead [data-reader]="'data'" [key]="'countryCode1'" [display-field]="'countryName'"
+              [place-holder]="'Search'" [(ngModel)]="country" [http-url]="'assets/data/componentdata/country.json'"
+              [http-method]="'get'" [field-label]="'Country Name'">
             </amexio-typeahead>
           </amexio-body>
         </amexio-card>

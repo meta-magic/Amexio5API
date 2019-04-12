@@ -1,4 +1,11 @@
 <amexio-api-structure [url]="'assets/componentjson/panels/carousel.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Carousel is WAI ARIA-accessible through the Tab key.
+                 The attribute aria-label is used in Carousel.
+            </p>
+         </amexio-box>
+</amexio-api-accessible>
     <amexio-api-demo>
         <amexio-carousel [header]="'Gallery'" [data]="[1,2,3,4,5,6,7,8,9,10,11,12]" mode="multiple">
             <ng-template let-img amexioTemplate="item">

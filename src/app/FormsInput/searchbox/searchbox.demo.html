@@ -1,51 +1,38 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/searchbox.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The SearchBox is WAI ARIA-accessible through the Tab key.And the best practices for implementing the keyboard
+        navigation for its component role and is tested against the popular screen readers.</p>
+      <p>Role:Menu-The menu role defines menu as its type.</p>
+      <p>Role:MenuItem-The menuitem role defines item as its type.It has dynamic index for focus navigation.</p>
+      <p>Role:Button-The button role defines button as its type.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
       <amexio-column [size]=12>
-        <amexio-card [header]="true" [footer]="false" >
+        <amexio-card [header]="true" [footer]="false">
           <amexio-header>
             Search Box
           </amexio-header>
           <amexio-body>
 
-            <amexio-searchbox
-              [place-holder]="'Search'"
-              [display-field]="'subject'"
-              [data]="bindData"
-              [width]="250"
-            >
+            <amexio-searchbox [place-holder]="'Search'" [display-field]="'subject'" [data]="bindData" [width]="250">
               <amexio-searchbox-options #search [title]="'Advance search'">
 
-                <amexio-text-input field-label="Subject:"
-                                   name="subject"
-                                   place-holder="Enter subject"
-                                   icon-feedback="true"
-                                   [(ngModel)]="subject"
-                >
+                <amexio-text-input field-label="Subject:" name="subject" place-holder="Enter subject" icon-feedback="true"
+                  [(ngModel)]="subject">
                 </amexio-text-input>
-                <amexio-text-input field-label="From:"
-                                   name="from"
-                                   place-holder="Emailid"
-                                   icon-feedback="true"
-                                   [(ngModel)]="from"
-                >
+                <amexio-text-input field-label="From:" name="from" place-holder="Emailid" icon-feedback="true"
+                  [(ngModel)]="from">
                 </amexio-text-input>
-                <amexio-text-input field-label="To:"
-                                   name="To"
-                                   place-holder="Emailid"
-                                   icon-feedback="true"
-                                   [(ngModel)]="to"
-                >
+                <amexio-text-input field-label="To:" name="To" place-holder="Emailid" icon-feedback="true" [(ngModel)]="to">
                 </amexio-text-input>
-                <amexio-row><amexio-column [size]="'12'"></amexio-column></amexio-row>
-                <amexio-button
-                  [label]="'Filter'"
-                  [type]="'theme-color'"
-                  [tooltip]="'toolTip'"
-                  [size]="'medium'"
-                  (onClick)="filter(search)"
-                >
+                <amexio-row>
+                  <amexio-column [size]="'12'"></amexio-column>
+                </amexio-row>
+                <amexio-button [label]="'Filter'" [type]="'theme-color'" [tooltip]="'toolTip'" [size]="'medium'"
+                  (onClick)="filter(search)">
                 </amexio-button>
               </amexio-searchbox-options>
 

@@ -1,21 +1,28 @@
-<amexio-api-structure [custom-com-data]="customSourceData"  [url]="'assets/componentjson/data/item-selector.json'">
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/data/item-selector.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Item Selector is WAI ARIA-accessible through the Tab key.And the best practices for implementing the
+        keyboard navigation for its component role and is tested against the popular screen readers.
+      </p>
+      <p>Role:Listbox-The Listbox role defines its type.</p>
+      <p>Role:Option-The option role defines listitem as its type.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
-   
-   <amexio-row>
+
+    <amexio-row>
       <amexio-column [size]="12">
-        <amexio-card >
+        <amexio-card>
           <amexio-body>
             <amexio-row>
               <amexio-column [size]="12">
-                <amexio-item-selector  [height]="250" [display-field]="'countryName'"
-                                      [value-field]="'countryId'"  (selectedRecords)="getSelectedData($event)"
-                                      [http-url]="'assets/data/componentdata/selectordata.json'"
-                                      [http-method]="'get'" [data-reader]="'data'" 
-                                        >
+                <amexio-item-selector [height]="250" [display-field]="'countryName'" [value-field]="'countryId'"
+                  (selectedRecords)="getSelectedData($event)" [http-url]="'assets/data/componentdata/selectordata.json'"
+                  [http-method]="'get'" [data-reader]="'data'">
                 </amexio-item-selector>
               </amexio-column>
             </amexio-row>
-            
+
             <amexio-row>
               <amexio-column [size]="12">
                 <amexio-card [header]="true">
@@ -31,5 +38,5 @@
       </amexio-column>
     </amexio-row>
 
-    </amexio-api-demo>
-    </amexio-api-structure>
+  </amexio-api-demo>
+</amexio-api-structure>

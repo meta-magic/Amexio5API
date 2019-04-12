@@ -1,137 +1,117 @@
-  
-  
-<amexio-api-structure  [custom-com-data]="customSourceData" [url]="'assets/componentjson/forminputs/dropdown.json'">
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/forminputs/dropdown.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Dropdown is WAI ARIA-accessible through the Tab key.</p>
+      <p> Role:Combobox-The Combobox role is defined for Input when first tabs over input.This consist of attribute
+        consist of aria-complete,aria-expanded,and aria-activedescendant.</p>
+      <p> Role:Listbox-The Listbox role for list in a dropdown which has attribute aria-expanded</p>
+      <p> Role:Option- The Option role for individual element in list which has attribute aria-labelleby and dynamic id
+        is set which accordingily moves the focus.</p>
+    </amexio-box>
+  </amexio-api-accessible>
   <amexio-api-demo>
 
-  <amexio-row>
-    <amexio-column size="6">
-      <amexio-card header="true">
-        <amexio-header>
-           Dropdown Component 
-        </amexio-header>
-        <amexio-body>
-          <amexio-row>
-            <amexio-column size="12">
-              <amexio-dropdown [(ngModel)]="countryCode1"
-                               [place-holder]="'Choose'"
-                               name="countryCode1"
-                               [data-reader]="'data'"
-                               [field-label]="'Choose Country'"
-                               [http-url]="'assets/data/componentdata/country.json'"
-                               [http-method]="'get'"
-                               [display-field]="'countryName'"
-                               [value-field]="'countryCode1'"
-                               [enable-sort]="true"
-                               [sort]="'asc'"
-              ><amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Dropdown Component
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-dropdown [(ngModel)]="countryCode1" [place-holder]="'Choose'" name="countryCode1" [data-reader]="'data'"
+                  [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/country.json'" [http-method]="'get'"
+                  [display-field]="'countryName'" [value-field]="'countryCode1'" [enable-sort]="true" [sort]="'asc'">
+                  <amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
 
-              </amexio-dropdown>
-            </amexio-column>
-          </amexio-row>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-    <amexio-column [size]="6">
-      <amexio-card header="true">
-        <amexio-header>
-          Selected Record Data
-        </amexio-header>
-        <amexio-body>
-        <ng-container *ngIf="countryCode1">
-          {{countryCode1}}
-        </ng-container>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-  </amexio-row>
+                </amexio-dropdown>
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Selected Record Data
+          </amexio-header>
+          <amexio-body>
+            <ng-container *ngIf="countryCode1">
+              {{countryCode1}}
+            </ng-container>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
 
 
-  <amexio-row>
-    <amexio-column size="6">
-      <amexio-card header="true">
-        <amexio-header>
-           Dropdown Component with Inner Structure
-        </amexio-header>
-        <amexio-body>
-          <amexio-row>
-            <amexio-column size="12">
-              <amexio-dropdown [(ngModel)]="personName"
-                               [place-holder]="'Choose'"
-                               name="countryCode1"
-                               [data-reader]="'data'"
-                               [field-label]="'Address'"
-                               [http-url]="'assets/data/componentdata/personProfile.json'"
-                               [http-method]="'get'"
-                               [display-field]="'address.addressLabel'"
-                               [value-field]="'personName'"
-                               [enable-sort]="true"
-                               [sort]="'asc'"
-              >
-              </amexio-dropdown>
-            </amexio-column>
-          </amexio-row>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-    <amexio-column [size]="6">
-      <amexio-card header="true">
-        <amexio-header>
-          Owner
-        </amexio-header>
-        <amexio-body>
-        <ng-container *ngIf="personName">
-          {{personName}}
-        </ng-container>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-  </amexio-row>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Dropdown Component with Inner Structure
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-dropdown [(ngModel)]="personName" [place-holder]="'Choose'" name="countryCode1" [data-reader]="'data'"
+                  [field-label]="'Address'" [http-url]="'assets/data/componentdata/personProfile.json'" [http-method]="'get'"
+                  [display-field]="'address.addressLabel'" [value-field]="'personName'" [enable-sort]="true" [sort]="'asc'">
+                </amexio-dropdown>
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Owner
+          </amexio-header>
+          <amexio-body>
+            <ng-container *ngIf="personName">
+              {{personName}}
+            </ng-container>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
 
 
-  <amexio-row>
-    <amexio-column size="6">
-      <amexio-card header="true">
-        <amexio-header>
-           Dropdown Component with ng-content
-        </amexio-header>
-        <amexio-body>
-          <amexio-row>
-            <amexio-column size="12">
-              <amexio-dropdown [(ngModel)]="fruitName"
-              [place-holder]="'Choose'"
-              name="fruitName"
-              [data-reader]="'data'"
-              [field-label]="'Fruit'"
-              [http-url]="'assets/data/componentdata/fruits.json'"
-              [http-method]="'get'"
-              [display-field]="'fruitName'"
-              [value-field]="'fruitName'"
-              [enable-sort]="true"
-              [sort]="'asc'">
-<amexio-button [color]="'green'"
-            [label]="'Add More Fruits'" 
-            [type]="'transparent'"
-            [block]="true" 
-            [tooltip]="'Add More'">
-</amexio-button>
-</amexio-dropdown>
-            </amexio-column>
-          </amexio-row>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-    <amexio-column [size]="6">
-      <amexio-card header="true">
-        <amexio-header>
-          Fruit Selected
-        </amexio-header>
-        <amexio-body>
-        <ng-container *ngIf="fruitName">
-          {{fruitName}}
-        </ng-container>
-        </amexio-body>
-      </amexio-card>
-    </amexio-column>
-  </amexio-row>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Dropdown Component with ng-content
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-dropdown [(ngModel)]="fruitName" [place-holder]="'Choose'" name="fruitName" [data-reader]="'data'"
+                  [field-label]="'Fruit'" [http-url]="'assets/data/componentdata/fruits.json'" [http-method]="'get'"
+                  [display-field]="'fruitName'" [value-field]="'fruitName'" [enable-sort]="true" [sort]="'asc'">
+                  <amexio-button [color]="'green'" [label]="'Add More Fruits'" [type]="'transparent'" [block]="true"
+                    [tooltip]="'Add More'">
+                  </amexio-button>
+                </amexio-dropdown>
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Fruit Selected
+          </amexio-header>
+          <amexio-body>
+            <ng-container *ngIf="fruitName">
+              {{fruitName}}
+            </ng-container>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
   </amexio-api-demo>
-  </amexio-api-structure>
+</amexio-api-structure>

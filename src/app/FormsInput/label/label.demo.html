@@ -1,5 +1,11 @@
 
 <amexio-api-structure [url]="'assets/componentjson/forminputs/label.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+          <p>The Label is WAI ARIA-accessible through the Tab key.</p>
+          <p>Role:text-The text role defines text aria to be read on tab navigation.</p>
+        </amexio-box>
+      </amexio-api-accessible>
     <amexio-api-demo>
         <h2>Label Component</h2>
         <amexio-row>
@@ -7,7 +13,7 @@
                 <amexio-label size="large">This is large amexio label</amexio-label>
             </amexio-column>
             <amexio-column [size]="4">
-                <amexio-label size="large-bold">This is large-bold amexio label </amexio-label>
+                <amexio-label  size="large-bold">This is large-bold amexio label </amexio-label>
             </amexio-column>
             <amexio-column [size]="4">
                 <amexio-label size="medium-bold">This is medium-bold amexio label</amexio-label>
