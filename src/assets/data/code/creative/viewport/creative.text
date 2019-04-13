@@ -1,5 +1,16 @@
 export class CreativeViewportComponent {
-  constructor() {
+   gridDesktop: GridConfig;
 
+  constructor(private _gridlayoutService : AmexioGridLayoutService) { 
+    this.createLayouts();
+    
+    // Create the Layouts
+    this._gridlayoutService.createLayout(this.gridDesktop);
+  }
+
+  createLayouts() {
+    this.gridDesktop = new GridConfig('LayoutSample1', GridConstants.Desktop)
+    .addlayout(["gridmenu1", "gridmenu2", "gridlogin", "gridlogin"])
+    .addlayout(["gridmenu3", "gridmenu4", "gridlogin", "gridlogin"])
   }
 }

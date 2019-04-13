@@ -16,8 +16,8 @@ export class ViewportDemoComponent{
   copyMsgArray: any[];
   asyncFlag : boolean;
 
-  DEMO_FIRST_URL = 'https://meta-magic.github.io/viewport/#/scrollable-viewport';
-  DEMO_SEC_URL = 'https://meta-magic.github.io/viewport/#/viewport';
+  DEMO_FIRST_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/scrollable-viewport';
+  DEMO_SEC_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/viewport';
   constructor(private http: HttpClient) {
   }
   onDemoFirstClick() {
