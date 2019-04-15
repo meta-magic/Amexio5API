@@ -49,7 +49,6 @@
             "type": "boolean",
             "default": "false"
           },
-          
           {
             "name": "orientation",
             "description": "Vertical or Horizontal Orientation of slider",
@@ -73,7 +72,7 @@
           },
           {
             "name": "range",
-            "description": "range is compulsory for range slider(range='true'). Range is given in array[].",
+            "description": "Particular range is provided to the range slider in array[] format.",
             "version": "5.9 onwards",
             "type": "boolean",
             "default": "true"

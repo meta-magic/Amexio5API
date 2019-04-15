@@ -413,7 +413,7 @@
                 },
                 {
                     "text": "Range Slider",
-                    "icon": "fa fa-sliders  ",
+                    "icon": "fa fa-arrows-h  ",
                     "badge":"NEW",
                     "link": "forms-Input/value-range"
                 },
