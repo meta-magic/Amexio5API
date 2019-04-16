@@ -6025,7 +6025,7 @@ amexio-layout-columns amexio-layout-item {
   text-decoration: none;
   width: 100%;
   background-color: #D33134;
-  color: #ffe578; }
+  color: white; }
 
 .nav-dropdown-content-subnode > .innersubmenunodes {
   display: none;
