@@ -48,6 +48,13 @@
             "version": "5.3.1 onwards",
             "type": "any",
             "default": "Local data for chips."
+          },
+          {
+            "name": "display-field",
+            "description": "It displays name of key inside response data to display on ui.",
+            "version": "5.10.0 onwards",
+            "type": "any",
+            "default": ""
           }
         ]
       },

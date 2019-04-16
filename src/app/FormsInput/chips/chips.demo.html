@@ -20,7 +20,7 @@
             Chips with Data Input
           </amexio-header>
           <amexio-body>
-            <amexio-chips [data]="sampledatachips" (selectedchipsData)="onChipDataLabelClick($event)" (onCloseClick)="onChipDataCloseClick($event)"></amexio-chips>
+            <amexio-chips [data]="sampledatachips" (selectedchipsData)="onChipDataLabelClick($event)" (onCloseClick)="onChipDataCloseClick($event)" [display-field]="'label'"></amexio-chips>
             <pre><code>{{emitdatachips | json}}</code></pre>
           </amexio-body>
         </amexio-card>
@@ -29,7 +29,7 @@
             Chip with multiple Inputs
           </amexio-header>
           <amexio-body>
-            <amexio-chips (selectedchipsData)="onChipsLabelClick($event)" (onCloseClick)="onCloseClick($event)">
+            <amexio-chips (selectedchipsData)="onChipsLabelClick($event)" (onCloseClick)="onCloseClick($event)" [display-field]="'label'">
               <amexio-chip [icon]="'fa fa-linkedin-square'" [label]="'Linkedin'" [color]="'red'" [badge]="4" [closable]="true"
                 [font-color]="'white'">
               </amexio-chip>
