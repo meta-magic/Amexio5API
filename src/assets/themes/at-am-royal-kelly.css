@@ -4136,6 +4136,19 @@ input:checked + .toggle-slider:before {
 .amexio-slider .amexio-slider-handle.amexio-slider-handle-active {
   z-index: 2; }
 
+.rectangle-css {
+  right: -1.2em !important;
+  border-radius: 0px !important;
+  line-height: 35px !important;
+  width: 45px !important; }
+
+.square-css {
+  border-radius: 0px !important;
+  line-height: 35px !important; }
+
+.circle-css {
+  line-height: 35px !important; }
+
 .amexio-slider-horizontal {
   height: 15px; }
 
@@ -4162,7 +4175,7 @@ input:checked + .toggle-slider:before {
   left: -.55em;
   margin-left: 0;
   margin-bottom: -.6em;
-  right: -.7em; }
+  right: -.8em; }
 
 .amexio-slider-vertical .amexio-slider-range {
   left: 0;
@@ -4208,12 +4221,13 @@ input:checked + .toggle-slider:before {
 
 .amexio-slider .amexio-slider-handle {
   position: absolute;
-  width: 32px !important;
-  height: 32px !important;
+  z-index: 0;
+  width: 32px;
+  height: 32px;
   cursor: default;
   outline: none;
   border-radius: 2em;
-  line-height: 31px;
+  line-height: 32px;
   text-align: center;
   border: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset; }
