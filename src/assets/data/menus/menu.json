@@ -168,7 +168,6 @@
                 {
                     "text": "Tab",
                     "icon": "fa fa-folder  ",
-                    "badge":"U",
                     "children": [{
                             "text": "Horizontal",
                             "icon": "fa fa-indent  ",

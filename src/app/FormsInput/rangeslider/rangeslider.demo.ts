@@ -13,6 +13,7 @@ export class RangeSliderDemo {
   
 
   rangeValues: number[] = [20,80];
+  rangeValues1: number[] = [25,75];
 
   constructor() {}
 

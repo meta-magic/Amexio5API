@@ -1,55 +1,100 @@
 <amexio-api-structure [url]="'assets/componentjson/forminputs/rangeslider.json'">
   <amexio-api-reference>
     <amexio-box border-color="brown" border="right-left" padding="true" background-color="brown">
-        <amexio-label><b> Amexio Range value slider attribute (range = true) and (max-range) is mandatory.</b></amexio-label>
+      <amexio-label><b> Amexio Range value slider attribute (range = true) and (max-range) is mandatory.</b></amexio-label>
     </amexio-box>
-</amexio-api-reference>
+  </amexio-api-reference>
   <amexio-api-demo>
+
     <amexio-row>
       <amexio-column size="12">
-        <amexio-card [header]="true">
+        <amexio-card header="true">
           <amexio-header>
-            Range Slider
+            Horizontal Range Slider
           </amexio-header>
           <amexio-body>
+
             <amexio-row>
-             
-              
               <amexio-column [size]="3">
-                  <amexio-label>
-                    Range Slider Without Step Value 
-                    </amexio-label><br /><br />
-                <amexio-value-range [max-range]="500" [range]="true">
+                <amexio-label>
+                  Square type Range Slider With Max range.
+                </amexio-label><br /><br />
+                <amexio-value-range [max-range]="500" [type]="'square'" [range]="true">
                 </amexio-value-range>
               </amexio-column>
-             
-              <amexio-column [size]="3">
+
+              <amexio-column [size]="1">
               </amexio-column>
-            
+
               <amexio-column [size]="3">
-                  <amexio-label>
-                      Vertical Range Slider
-                    </amexio-label><br /><br />
-                <amexio-value-range [(ngModel)]="rangeValues" orientation="vertical" [max-range]="100" [range]="true">
+                <amexio-label>
+                    Circle type Step Range Slider with max range.
+                </amexio-label><br /><br />
+                <amexio-value-range [step-value]="0.5" [type]="'circle'" [max-range]="5" [range]="true">
+                </amexio-value-range>
+              </amexio-column>
+
+              <amexio-column [size]="1">
+              </amexio-column>
+
+              <amexio-column [size]="3">
+                <amexio-label>
+                  Rectangle type Range Slider with model binding & max range.
+                </amexio-label><br /><br />
+                <amexio-value-range [type]="'rectangle'" [(ngModel)]="rangeValues" [max-range]="100" [range]="true">
                 </amexio-value-range>
               </amexio-column>
             </amexio-row>
+            <br />
+            
+          </amexio-body>
+        
+        </amexio-card>
+        
+      </amexio-column>
+      
+    </amexio-row>
+  
 
-
+    <amexio-row>
+      <amexio-column size="12">
+        <amexio-card header="true">
+          <amexio-header>
+            Vertical Range Slider
+          </amexio-header>
+          <amexio-body>
             <amexio-row>
-              
-              <amexio-column [size]="3">
-                  <amexio-label>
-                      Step Range Slider
-                    </amexio-label><br /><br />
-                <amexio-value-range [step-value]="0.5" [max-range]="5" [range]="true">
+
+              <amexio-column [size]="4">
+                <amexio-label>
+                  Square type Vertical Range Slider with Max Range.
+                </amexio-label><br /><br />
+                <amexio-value-range orientation="vertical" [type]="'square'" [max-range]="100" [range]="true">
+                </amexio-value-range>
+              </amexio-column>
+
+              <amexio-column [size]="4">
+                <amexio-label>
+                 Circle type Step & model binding to Vertical Range Slider with max range..
+                </amexio-label><br /><br />
+                <amexio-value-range [step-value]="10" [(ngModel)]="rangeValues" [type]="'circle'" orientation="vertical"
+                  [max-range]="100" [range]="true">
+                </amexio-value-range>
+              </amexio-column>
+
+              <amexio-column [size]="4">
+                <amexio-label>
+                 Rectangle type Range Slider with max range & model binding.
+                </amexio-label><br /><br />
+                <amexio-value-range [(ngModel)]="rangeValues1" [type]="'rectangle'" orientation="vertical" [max-range]="100"
+                  [range]="true">
                 </amexio-value-range>
               </amexio-column>
             </amexio-row>
           </amexio-body>
         </amexio-card>
       </amexio-column>
-
     </amexio-row>
+
   </amexio-api-demo>
 </amexio-api-structure>

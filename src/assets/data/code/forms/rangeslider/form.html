@@ -1,22 +1,29 @@
-<!--Slider with no range but with max-range and range -->
-<amexio-value-range 
-                [maxRange]="500"
-                [range]="true">
+<!--Demo:- 1)  Horizontal Range Slider -->
+
+<!-- Square type Range Slider With Max range. -->
+<amexio-value-range [max-range]="500" [type]="'square'" [range]="true">
 </amexio-value-range>
 
-<!--Slider with model binding  -->
-
-<amexio-value-range
-                 [(ngModel)]="rangeValues" 
-                 orientation="vertical" 
-                 [maxRange]="100" 
-                 [range]="true">
+<!-- Circle type Step Range Slider -->
+<amexio-value-range [step-value]="0.5" [type]="'circle'" [max-range]="5" [range]="true">
 </amexio-value-range>
 
-<!--Slider with step range -->
+<!-- Rectangle type Range Slider with Max Range, model binding. -->
+<amexio-value-range [type]="'rectangle'" [(ngModel)]="rangeValues" [max-range]="100" [range]="true">
+</amexio-value-range>
 
-<amexio-value-range 
-                    [step-value]="0.5" 
-                    [maxRange]="5" 
-                    [range]="true">
+
+
+<!-- Demo:- 2) Vertical Range Slider -->
+
+<!-- Square type Vertical Range Slider with Max Range. -->
+<amexio-value-range orientation="vertical" [type]="'square'" [max-range]="100" [range]="true">
+</amexio-value-range>
+
+<!-- Circle type Step & model binding to Vertical Range Slider with Max Range.. -->
+<amexio-value-range [step-value]="10" [(ngModel)]="rangeValues" [type]="'circle'" orientation="vertical" [max-range]="100" [range]="true">
+</amexio-value-range>
+
+<!-- Rectangle type Range Slider with  Max Range & model binding. -->
+<amexio-value-range [(ngModel)]="rangeValues1" [type]="'rectangle'" orientation="vertical" [max-range]="100" [range]="true">
 </amexio-value-range>

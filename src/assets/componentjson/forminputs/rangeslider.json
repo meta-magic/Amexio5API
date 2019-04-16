@@ -64,6 +64,13 @@
             "default": "default"
           },
           {
+            "name": "type",
+            "description": "Types of range slider:- circle/ rectangle/ square ",
+            "version": "5.10.2 onwards",
+            "type": "string",
+            "default": "circle"
+          },
+          {
             "name": "max-range",
             "description": "Range set to the slider",
             "version": "5.9 onwards",
@@ -113,7 +120,7 @@
       "datasourceUrl": ""
     },
     "liveMetadata": {
-      "disabled": false,
+      "disabled": "true",
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-slider?embed=1&file=app/forms/slider/slider.demo.html"
     }
   }
