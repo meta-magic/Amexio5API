@@ -2240,6 +2240,9 @@ input:checked + .toggle-slider:before {
   color: #523400;
   background-color: #ffe5b8; }
 
+.box-transparent {
+  background-color: transparent; }
+
 /** box - Structure CSS **/
 .border-topbar {
   border-top: 6px solid !important; }
@@ -2299,6 +2302,9 @@ input:checked + .toggle-slider:before {
 
 .border-theme-color {
   border-color: #ffe4b5; }
+
+.box-transparent {
+  border-color: transparent; }
 
 /****************************************************************************
     Component Name : Image
@@ -3886,7 +3892,6 @@ input:checked + .toggle-slider:before {
 
 .amexio-slider .amexio-slider-handle {
   position: absolute;
-  z-index: 0;
   width: 32px !important;
   height: 32px !important;
   cursor: default;
@@ -5570,6 +5575,9 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   background-color: #bdb76b;
   color: #19180b; }
 
+.topnavmainbarinneritems .nav-dropdown-content-transparent {
+  background-color: transparent !important; }
+
 .topnavmainbarinneritems-mobile .nav-dropdown-content {
   background-color: #bdb76b;
   color: #19180b; }
@@ -5792,9 +5800,9 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   margin-top: -10px; }
 
 .nav-dropdown-content a:hover .submenunodes {
-  display: block; }
+  display: inline-table; }
 .nav-dropdown-content a:hover .submenunodesright {
-  display: block; }
+  display: inline-table; }
 
 .topnavmainbarinneritems-mobile .top-nav-input-control {
   width: 100%; }
@@ -6727,7 +6735,7 @@ fieldset {
 *****************************************************************************/
 /** tab - Visual CSS **/
 .verticalnavtab .defaultnode {
-  background-color: #ffc96b;
+  background-color: #fff;
   color: #1f1300; }
 
 .verticalnavtab .leftactivetab {
