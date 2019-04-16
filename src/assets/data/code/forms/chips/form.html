@@ -1,36 +1,23 @@
 <!-- Chips Component with Json Data  -->
-<amexio-chips [data]="sampledatachips"
-             (selectedchipsData)="onChipDataLabelClick($event)"
-             (onCloseClick)="onChipDataCloseClick($event)">
-</amexio-chips>
+<amexio-chips [data]="sampledatachips" 
+              [display-field]="'label'"
+              (selectedchipsData)="onChipDataLabelClick($event)" 
+              (onCloseClick)="onChipDataCloseClick($event)"></amexio-chips>
 <pre><code>{{emitdatachips | json}}</code></pre>
 
 <!-- Chips Component with multiple Inputs -->
 
-<amexio-chips (selectedchipsData)="onChipsLabelClick($event)"
-              (onCloseClick)="onCloseClick($event)">
-    <amexio-chip [icon]="'fa fa-linkedin-square'"
-                 [label]="'Linkedin'"
-                 [color]="'red'"
-                 [badge]="4" 
-                 [closable]="true"
-                 [font-color]="'white'">
+<amexio-chips [display-field]="'label'" (selectedchipsData)="onChipsLabelClick($event)" (onCloseClick)="onCloseClick($event)">
+    <amexio-chip [icon]="'fa fa-linkedin-square'" [label]="'Linkedin'" [color]="'red'" [badge]="4" [closable]="true"
+        [font-color]="'white'">
     </amexio-chip>
 
-    <amexio-chip [icon]="'fa fa-internet-explorer'" 
-                 [label]="'Internet-Explorer'"
-                 [color]="'blue'"
-                 [badge]="2"
-                 [closable]="false"
-                 [font-color]="'white'">
+    <amexio-chip [icon]="'fa fa-internet-explorer'" [label]="'Internet-Explorer'" [color]="'blue'" [badge]="2"
+        [closable]="false" [font-color]="'white'">
     </amexio-chip>
 
-    <amexio-chip [icon]="'fa fa-github'" 
-                 [label]="'Github'"
-                 [color]="'green'"
-                 [badge]="3" 
-                 [closable]="true"
-                 [font-color]="'white'">
+    <amexio-chip [icon]="'fa fa-github'" [label]="'Github'" [color]="'green'" [badge]="3" [closable]="true"
+        [font-color]="'white'">
     </amexio-chip>
 </amexio-chips>
-  <pre><code>{{multipleemitchips | json}}</code></pre>
+<pre><code>{{multipleemitchips | json}}</code></pre>
