@@ -53,7 +53,18 @@ export class EnhancedTabDemo {
   }
 
   //Method to close tabs and keep open some of the required tabs.
+
   closeOtherTabs(tab: any){
    tab.closeTabs(this.tabarray);
   }
+  //Method to show tab on the basis of title.("work" is the tab title)
+
+   showClickTab(tab: any) {
+    tab.showTab("work");
+    }
+  //Method to hide tab on the basis of title.("work" is the tab title)
+
+    hideClickTab(tab: any) {
+    tab.hideTab(2);
+    }
 }

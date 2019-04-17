@@ -1,5 +1,6 @@
 export class CreativeCardComponent {
   contactList:any[];
+  samplecreativecardchipdata: any;
   constructor() {
       this.contactList = [
         {
@@ -39,5 +40,22 @@ export class CreativeCardComponent {
         'bgcolor': 'linear-gradient(40deg,#40E0D0, #FF0080)'
       }
       ];
+      this.samplecreativecardchipdata = [{
+      "label": "7:00",
+      "closable": false,
+    },
+    {
+      "label": "8:00",
+      "closable": false,
+    },
+    {
+      "label": "9:00",
+      "closable": false,
+    },
+    {
+      "label": "11:00",
+      "closable": false,
+    }
+    ]
   }
 }
