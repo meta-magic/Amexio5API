@@ -299,7 +299,7 @@
           "description": "Method to close all tabs altogether (only if the closable property is true)."
         },
         {
-          "name": "setActivetab(number: number)",
+          "name": "setActiveTab(number: number)",
           "version": "4.2 onwards",
           "description": "Method to set tab active on the basis of tab sequence.(If tab index matches with input, method sets that tab active and returns true, else returns false)"
         },
@@ -317,7 +317,27 @@
           "name": "closeAll()",
           "version": "5.6.1 onwards",
           "description": "Method to close all tabs(even if closable flag is true)"
-        }
+        },
+        {
+      "name": "showTab(title: string)",
+      "version": "5.10 onwards",
+      "description": "Method to show tab, If tab title matches with input, method will show that tab active and other tabs are hidden"
+    },
+    {
+      "name": "showTab(index: number)",
+      "version": "5.10 onwards",
+      "description": "Method to show tab, If tab index matches with input, method will show that tab active and other tabs are hidden"
+    },
+    {
+      "name": "hideTabs(title: string)",
+      "version": "5.10 onwards",
+      "description": "Method to hide tab, If tab title matches with input, method will hide that tab."
+    },
+    {
+      "name": "hideTabs(index: number)",
+      "version": "5.10 onwards",
+      "description": "Method to hide tab,If tab index matches with input, method will hide that tab."
+    }
       ]
     }
   ],
