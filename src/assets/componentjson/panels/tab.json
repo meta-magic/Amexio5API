@@ -320,22 +320,22 @@
         },
         {
       "name": "showTab(title: string)",
-      "version": "5.10 onwards",
+      "version": "5.10.3 onwards",
       "description": "Method to show tab, If tab title matches with input, method will show that tab active and other tabs are hidden"
     },
     {
       "name": "showTab(index: number)",
-      "version": "5.10 onwards",
+      "version": "5.10.3 onwards",
       "description": "Method to show tab, If tab index matches with input, method will show that tab active and other tabs are hidden"
     },
     {
       "name": "hideTabs(title: string)",
-      "version": "5.10 onwards",
+      "version": "5.10.3 onwards",
       "description": "Method to hide tab, If tab title matches with input, method will hide that tab."
     },
     {
       "name": "hideTabs(index: number)",
-      "version": "5.10 onwards",
+      "version": "5.10.3 onwards",
       "description": "Method to hide tab,If tab index matches with input, method will hide that tab."
     }
       ]
