@@ -162,6 +162,12 @@
                 <amexio-button [label]="'Close Other Tabs'" [type]="'theme-color'" (onClick)="closeOtherTabs(tab)"
                     [tooltip]="'Close Tab'">
                 </amexio-button>
+                <amexio-button [label]="'Show Tabs'" [type]="'theme-color'" (onClick)="showClickTab(tab)"
+                    [tooltip]="'Show Tab'">
+                </amexio-button>
+                <amexio-button [label]="'Hide Tabs'" [type]="'theme-color'" (onClick)="hideClickTab(tab)"
+                    [tooltip]="'Hide Tab'">
+                </amexio-button>
             </amexio-action>
         </amexio-card>
         <br>
