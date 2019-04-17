@@ -52,6 +52,13 @@
             "version": "5.10 onwards",
             "type": "boolean",
             "default": "true"
+        },
+        {
+            "name": "page-color",
+            "description": "Sets background color for page",
+            "version": "5.10.3 onwards",
+            "type": "string",
+            "default": "black"
         }]
     }],
     "sourceMetadata": {
