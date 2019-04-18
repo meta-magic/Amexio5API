@@ -1,16 +1,99 @@
 export class CreativeViewportComponent {
-   gridDesktop: GridConfig;
+  
+  categories: any;
+  navmenus: any;
+  sampledatachips: any;
+  sampledatachips1: any;
+  constructor() { 
+       this.sampledatachips = [{
+      "icon": "fa fa-check-circle",
+      "label": "Vitrified Balcony ",
+      "color":"#bc8b20",
+      "closable": false,
+    },
+    {
+      "icon": "fa fa-check-circle",
+      "label": "24*7 Security",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Parking",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Close to Mall",
+      "closable": false,
+      "color":"#bc8b20"
+    }]
+    this.sampledatachips1 = [{
+      "icon": "fa fa-check-circle",
+      "label": "Vitrified Balcony ",
+      "color":"#bc8b20",
+      "closable": false,
+    },
+    {
+      "icon": "fa fa-check-circle",
+      "label": "24*7 Security",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Parking",
+      "closable": false,
+      "color":"#bc8b20"
+    }, 
+    {
+      "icon": "fa fa-check-circle",
+      "label": "Close to Mall",
+      "closable": false,
+      "color":"#bc8b20"
+    }]
+    this.categories = [{
+      id: 'tv',
+      name: 'TV'
+    },
+    {
+      id: 'apartment',
+      name: 'Apartment'
+    }];
 
-  constructor(private _gridlayoutService : AmexioGridLayoutService) { 
-    this.createLayouts();
-    
-    // Create the Layouts
-    this._gridlayoutService.createLayout(this.gridDesktop);
+    this.navmenus =     this.navmenus = [{
+      "text": "Buy",
+      "icon": "fa fa-shopping-cart",
+      "submenus": [{
+        "text": "Home Buying Guide",
+      }, {
+        "text": "Post your Requirement",
+      }, {
+        "text": "Home Loan",
+      }]
+    },
+    {
+      "text": "Sell",
+      "icon": "fa fa-check",
+      "submenus": [{
+        "text": "Post Your Property"
+      }, {
+        "text": "Propworth Calculator"
+      }, {
+        "text": "Find an Agent"
+      }]
+    },
+    {
+      "text": "About Us",
+      "icon": "fa fa-address-book-o fa-fw",
+      "submenus": [{
+        "text": "Contact"
+      }, {
+        "text": "Help"
+      }]
+    }
+    ]
   }
 
-  createLayouts() {
-    this.gridDesktop = new GridConfig('LayoutSample1', GridConstants.Desktop)
-    .addlayout(["gridmenu1", "gridmenu2", "gridlogin", "gridlogin"])
-    .addlayout(["gridmenu3", "gridmenu4", "gridlogin", "gridlogin"])
-  }
 }

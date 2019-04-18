@@ -340,17 +340,17 @@
     },
     {
       "name": "getCurrentTab()",
-      "version": "5.10.3 onwards",
+      "version": "5.10.4 onwards",
       "description": "Method to get current tab index."
     },
     {
       "name": "disableTab(index: any)",
-      "version": "5.10.3 onwards",
+      "version": "5.10.4 onwards",
       "description": "Method to disable tab,If tab index matches with input or array of inputs, method will disable those tabs."
     },
     {
       "name": "disableTab(title: any)",
-      "version": "5.10.3 onwards",
+      "version": "5.10.4 onwards",
       "description": "Method to disable tab,If tab title matches with input or array of inputs, method will disable those tab."
     }
       ]

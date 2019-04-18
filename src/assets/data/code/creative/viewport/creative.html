@@ -1,227 +1,380 @@
-<!-- DEMO 1- with viewport scrollable  -->
+<!-- DEMO 1 -->
 
 <amexio-viewport [type]="'2'" [scrollable]="true">
     <amexio-viewport-content [scrollable]="false">
-      <amexio-viewport-background>
-        <amexio-image [path]="'assets/bg12.jpg'"></amexio-image>
-      </amexio-viewport-background>
-      <amexio-viewport-content-body>
-        <amexio-nav [enable-side-nav-position]="false" [title]="'Aerofit Fun and Fitness Classes'" [logo]="'assets/logo1.png'">
   
+      <amexio-viewport-background>
+        <amexio-image [path]="'assets/dance.jpeg'"></amexio-image>
+      </amexio-viewport-background>
+  
+      <amexio-viewport-content-body>
+        <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'Aerofit Fun and Fitness Classes'" [logo]="'assets/logo1.png'">
           <amexio-nav-item position-right [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
           </amexio-nav-item>
-          <amexio-nav-item position-right [title]="'About'" [icon]="'fa fa-address-book-o fa-fw'" [type]="'button'" style="cursor: pointer;">
-          </amexio-nav-item>
-          <amexio-nav-item position-right [title]="'Classes'" [icon]="'fa fa-television fa-fw'" [type]="'button'" style="cursor: pointer;">
-          </amexio-nav-item>
-          <amexio-nav-item position-right [title]="'Gallery'" [icon]="'fa fa-picture-o'" [type]="'button'" style="cursor: pointer;">
-          </amexio-nav-item>
-          <amexio-nav-item position-right [title]="'Contact'" [icon]="'fa fa-envelope fa-fw'" [type]="'button'" style="cursor: pointer;">
+          <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus">
           </amexio-nav-item>
           <amexio-nav-item position-right [icon]="'fa fa-bell fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
           </amexio-nav-item>
         </amexio-nav>
   
+        <div class="rowClass">
+          <amexio-row>
+            <amexio-column size="1" [fit]="false">
+            </amexio-column>
+            <amexio-column size="3" [fit]="false">
+                <amexio-label [font-color]="'white'" [size]="'large'">
+                  Life is better when you Dance
+                  <p>Because Dance is the hidden language of the soul.</p>
+                  <p>Hand in hand, on the edge of the sand,</p>
+                  <p>Let's dance by the light of the moon!</p>
+                </amexio-label>
+            </amexio-column>
+          </amexio-row>
+        </div>
   
-  
-        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'">
-          <amexio-layout-item [fit]="true">
-            <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'vertical'" [alignment]="'center'">
-              <amexio-layout-item>
-                <amexio-box border-color="blue" [padding]="true" align="'center'">
-                  <amexio-label [size]="'large-bold'">
-                    LIFE IS BETTER WHEN YOU DANCE....
-                  </amexio-label>
-                </amexio-box>
-              </amexio-layout-item>
-            </amexio-layout-columns>
-          </amexio-layout-item>
-        </amexio-layout-columns>
       </amexio-viewport-content-body>
     </amexio-viewport-content>
+  
     <amexio-viewport-content>
-      <amexio-viewport-background>
-        <amexio-image [path]="'assets/bg5.jpeg'"></amexio-image>
-      </amexio-viewport-background>
-  
-      <amexio-viewport-content-body [scrollable]="true">
-          
-  <amexio-row>
-    <amexio-column size ="6"
-            [fit]="false">
+        <amexio-viewport-background>
+          <amexio-image [path]="'assets/bg5.jpeg'"></amexio-image>
+        </amexio-viewport-background>
+    
+        <amexio-viewport-content-body [scrollable]="true">
+    
+          <amexio-row>
+          <div class="rowClass">
+          <amexio-row>
+            <amexio-column size="1" [fit]="false">
+            </amexio-column>
+            <amexio-column size="10" [fit]="false">
             <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
               <amexio-header-ce [align]="'space-between'">
-                  <amexio-label size="medium-bold">About Us
-                  </amexio-label>
-                  <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
-                      <amexio-layout-item>
-                          <amexio-image [icon-class]="'fa fa-share-alt'" [tooltip]="'Fontawesome apple'"></amexio-image>
-                      </amexio-layout-item>
-                      <amexio-layout-item>
-                          <amexio-image [icon-class]="'fa fa-heart-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
-                      </amexio-layout-item>
-                      <amexio-layout-item>
-                          <amexio-image [icon-class]="'fa fa-bookmark-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
-                      </amexio-layout-item>
-                  </amexio-layout-columns>
+                <amexio-label size="medium-bold">About Us
+                </amexio-label>
+                <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
+                  <amexio-layout-item>
+                    <amexio-image [icon-class]="'fa fa-share-alt'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                  </amexio-layout-item>
+                  <amexio-layout-item>
+                    <amexio-image [icon-class]="'fa fa-heart-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                  </amexio-layout-item>
+                  <amexio-layout-item>
+                    <amexio-image [icon-class]="'fa fa-bookmark-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                  </amexio-layout-item>
+                </amexio-layout-columns>
               </amexio-header-ce>
               <amexio-body-ce>
-                  <p>
-                      We, Moves dance and fitness are leading brand near magarpatta city and amanora township,hadapsar,pune.We provide various dance training such as dance fitness,kids fitness,yoga,salsa,bollywood,hiphop etc.                </p>
-                      <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
-                          <amexio-layout-item>
-                              <amexio-image [icon-class]="'fa fa-facebook fa-2x '" ></amexio-image>
-                          </amexio-layout-item>
-                          <amexio-layout-item>
-                              <amexio-image [icon-class]="'fa fa-twitter fa-2x'" ></amexio-image>
-                          </amexio-layout-item>
-                          <amexio-layout-item>
-                              <amexio-image [icon-class]="'fa fa-google-plus fa-2x'"></amexio-image>
-                          </amexio-layout-item>
-                          <amexio-layout-item>
-                              <amexio-image [icon-class]="'fa fa-linkedin fa-2x'"></amexio-image>
-                          </amexio-layout-item>
-                      </amexio-layout-columns>
-                    </amexio-body-ce>
-          </amexio-card-ce>
-    </amexio-column>
-    <amexio-column size ="6"
-            [fit]="false">
-            <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
-              <amexio-header-ce [align]="'space-between'">
-                  <amexio-label size="medium-bold">Get In Touch
-                  </amexio-label>
-                  <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
-                      <amexio-layout-item>
-                          <amexio-image [icon-class]="'fa fa-map-marker'" [tooltip]="'Fontawesome apple'"></amexio-image>
-                      </amexio-layout-item>
-                  </amexio-layout-columns>
-              </amexio-header-ce>
-              <amexio-body-ce>
-                  <p>
-                      AEROFIT FUN & FITNESS 
-                      1st floor Nirvana, Green Field Rd, Near Amanora Township Magarpatta, Hadapsar, Pune, Maharashtra - 411028
-                      +91 9623169755 / +91 9623472876
-                      contact@movesdancefitness.org           
-                     </amexio-body-ce>
-          </amexio-card-ce>
-    </amexio-column>
-  </amexio-row>
-            <amexio-carousel [header]="'Gallery'" [data]="[1,2,3,4,5,6,7]" shuffle-interval="2000">
-                      <ng-template let-img amexioTemplate="item">
-                        <amexio-image [height]="'200px'" path="assets/carousel/{{img}}.jpg">
-                        </amexio-image>
-                      </ng-template>
-                    </amexio-carousel>
+                <p>
+                    With an aim to provide quality dance training and making dance available to all, Aerofit dance classes run throughout the year at multiple locations for students from ages four to eighty four providing them with training in various dance styles by expert faculty. The classes give them an opportunity to learn dance, express themselves creatively and perform on stage. Classes are available for children (4 to 6 years), juniors (7 to 11 years) and adults (12 years onwards). </p>
+                <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
+                  <amexio-layout-item>
+                    <amexio-login-social [style-type]="'circle'" [api-key]="'320512778592240'" [type]="'facebook'" (onLogin)="onLoginClick($event)">
+                    </amexio-login-social>
+                  </amexio-layout-item>
+                  <amexio-layout-item>
+                    <amexio-login-social [style-type]="'circle'" [api-key]="'743009515877-3rfp9u0b2iq95m2o2921kc3hecaamc3e.apps.googleusercontent.com'"
+                      [type]="'google'" (onLogin)="onLoginClick($event)">
+                    </amexio-login-social>
+                  </amexio-layout-item>
+                  <amexio-layout-item>
+                    <amexio-login-social [style-type]="'circle'" [api-key]="'81wzvqnx8wtvmg'" [type]="'linkedin'" (onLogin)="onLoginClick($event)">
+                    </amexio-login-social>
+                  </amexio-layout-item>
+                </amexio-layout-columns>
+              </amexio-body-ce>
+            </amexio-card-ce>
+          </amexio-column>
+          <amexio-column size ="1"
+                  [fit]="false">
+          </amexio-column>
+          </amexio-row>
+        </div>
+          </amexio-row>
+        <amexio-row>
+          <amexio-column size ="1"
+                  [fit]="false"> 
+          </amexio-column>
   
-      </amexio-viewport-content-body>
-    </amexio-viewport-content>
+          <amexio-column size ="10"
+          [fit]="false"> 
+          <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
+            <amexio-header-ce [align]="'space-between'">
+              <amexio-label size="medium-bold">Get In Touch
+              </amexio-label>
+              <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
+                <amexio-layout-item>
+                  <amexio-image [icon-class]="'fa fa-map-marker'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                </amexio-layout-item>
+              </amexio-layout-columns>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              <p>
+                AEROFIT FUN & FITNESS 1st floor Nirvana, Green Field Rd, Near Amanora Township Magarpatta, Hadapsar, Pune, Maharashtra -
+                411028 </p>
+                <p>+91 9674125890 / +91 9674522001</p> 
+                <p>contact@aerofitdancefitness.org</p>
+            </amexio-body-ce>
+          </amexio-card-ce>
+  </amexio-column>
+  
+  <amexio-column size ="1"
+  [fit]="false"> 
+  </amexio-column>
+        </amexio-row>
+    
+        </amexio-viewport-content-body>
+      </amexio-viewport-content>
   </amexio-viewport>
-  
-<!-- DEMO 1- with viewport No scrollable  -->
 
-<amexio-viewport [type]="'1'" [scrollable]="false">
+  <!-- DEMO 2 -->
+
+  <amexio-viewport [type]="'2'" [scrollable]="true">
     <amexio-viewport-content [scrollable]="false">
         <amexio-viewport-background>
-            <amexio-image [path]="'assets/pets.jpg'"></amexio-image>
+            <amexio-image [path]="'assets/living1.jpg'"></amexio-image>
         </amexio-viewport-background>
         <amexio-viewport-content-body>
-            <amexio-box border-color="blue" align="right">
-                <amexio-label [enable-click]="true">
-                    IMAGES BY MARK SEBASTIAN
-                </amexio-label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                <amexio-label [enable-click]="true">
-                    BACK TO CODROPS ARTICLE
-                </amexio-label>
-            </amexio-box>
-            <amexio-nav [enable-side-nav-position]="true">
 
-                <amexio-nav-item position-left [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
+            <amexio-nav [transparent]="true" [enable-side-nav-position]="true" [title]="'EyePropertyRecord.com'" [logo]="'assets/1.png'">
+                <amexio-nav-item position-right [title]="'Home'" [icon]="'fa fa-home fa-fw fa-lg'" [type]="'button'" style="cursor: pointer;">
                 </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'About'" [icon]="'fa fa-address-book-o fa-fw'" [type]="'button'" style="cursor: pointer;">
+                <amexio-nav-item position-right *ngFor="let menus of navmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus">
                 </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'Classes'" [icon]="'fa fa-television fa-fw'" [type]="'button'" style="cursor: pointer;">
+                <amexio-nav-item position-right [type]="'link'" [icon]="'fa fa-user'" [title]="'Login'">
                 </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'Gallery'" [icon]="'fa fa-picture-o'" [type]="'button'" style="cursor: pointer;">
-                </amexio-nav-item>
-                <amexio-nav-item position-left [title]="'Contact'" [icon]="'fa fa-envelope fa-fw'" [type]="'button'" style="cursor: pointer;">
-                </amexio-nav-item>
-
             </amexio-nav>
-            <amexio-layout-grid [layout]="'LayoutSample1'">
-                <amexio-grid-item [name]="'gridmenu1'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'175px'" [color]="'white'" [bg-image]="'assets/pets3.jpg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                Money can buy you a fine dog, but only love can make him wag his tail </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
-                <amexio-grid-item [name]="'gridmenu2'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'175px'" [color]="'white'" [bg-image]="'assets/pets6.jpg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                An animal's eyes have the power to speak a great language
-                            </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
-                <amexio-grid-item [name]="'gridmenu3'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'200px'" [color]="'white'" [bg-image]="'assets/pets5.jpg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                Like all pure creatures, cats are pactical 
-                            </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
-                <amexio-grid-item [name]="'gridmenu4'">
-                    <amexio-card-ce>
-                        <amexio-header-ce [height]="'200px'" [color]="'white'" [bg-image]="'assets/pets1.jpeg'">
-                        </amexio-header-ce>
-                        <amexio-body-ce>
-                            <p>
-                                Pets have more love and compassion in them. </p>
-                        </amexio-body-ce>
-                    </amexio-card-ce>
-                </amexio-grid-item>
+            <div>
+                <amexio-row>
+                    <amexio-column size="12" style="padding-top:14%">
+                    </amexio-column>
+                </amexio-row>
+                <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                    <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+                        <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
+                            <amexio-layout-item>
+                                <amexio-label size="large-bold" font-color="white">
+                                    What do you wanna buy today?
+                                </amexio-label>
+                            </amexio-layout-item>
 
-                <amexio-grid-item [name]="'gridlogin'">
-                    <amexio-card-ce [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
-                        <amexio-header-ce [align]="'space-between'">
-                            <amexio-label size="medium-bold">Connect To Us
+                        </amexio-layout-columns>
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+                <amexio-layout-columns [orientation]="'vertical'" [border]="false" [alignment]="'center'">
+                    <amexio-layout-item [fit]="true">
+                        <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="'center'">
+                            <amexio-layout-item>
+                                <amexio-button [label]="'Buy'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false" class="localsearch">
+                                </amexio-button>
+                                <amexio-button [label]="'Sell'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false" class="localsearch">
+                                </amexio-button>
+                                <div class="localsearch">
+                                    <amexio-row>
+                                        <div class="inputClass">
+                                            <amexio-dropdown style="width:400px" [place-holder]="'Choose'" name="category" [field-label]="''" [data]="categories" [display-field]="'name'"
+                                                [value-field]="'id'" [enable-sort]="true" [sort]="'asc'">
+                                            </amexio-dropdown>
+                                        </div>
+                                        <div class="inputClass">
+                                            <amexio-text-input style="width:650px" [field-label]="'label'" name="name" [has-label]="false" [place-holder]="'Search'"
+                                                [icon-feedback]="true" class="localsearchtext">
+                                            </amexio-text-input>
+                                        </div>
+                                        <amexio-button [label]="'Search'" [size]="'large'" [type]="'theme-color'" [tooltip]="'toolTip'" [icon]="'icon'" [disabled]="false"
+                                            [size]="'default'" [loading]="false" [block]="false" [bg-color]="'red'">
+                                        </amexio-button>
+                                    </amexio-row>
+                                </div>
+                            </amexio-layout-item>
+                        </amexio-layout-columns>
+                    </amexio-layout-item>
+                </amexio-layout-columns>
+            </div>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/living2.jpg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="2" [fit]="false">
+                </amexio-column>
+                <amexio-column size="6" [fit]="false">
+                    <amexio-label [font-color]="'white'" [size]="'large-bold'">
+                        Top Projects
+                    </amexio-label>
+                    <br>
+                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                        Best developers in Wagholi to explore. </amexio-label>
+                </amexio-column>
+            </amexio-row>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="1" [fit]="false">
+                </amexio-column>
+                <amexio-column size="3" [fit]="false">
+                    <amexio-card-ce [align]="'start'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
+                        <amexio-header-ce [background]="'linear-gradient(40deg,#ff9e20,#ff6a20)'" [height]="'75px'" align="center">
+                            <amexio-label [size]="'medium-bold'">
+                                Shapoorji Paloni Residency
                             </amexio-label>
-                            <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
-                            </amexio-layout-columns>
+
                         </amexio-header-ce>
                         <amexio-body-ce>
-                            <amexio-text-input place-holder="Enter loginId" icon-feedback="true">
-                            </amexio-text-input>
-                            <br>
-                            <amexio-text-input place-holder="Enter Password" icon-feedback="true">
-                            </amexio-text-input>
-                            <amexio-label size="small-bold" font-color="red">
-                                forgot password??
-                            </amexio-label>
+                            <amexio-row>
+                                <amexio-column size="12" [fit]="false">
+                                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                                        Special Highlights
+                                    </amexio-label>
+                                </amexio-column>
+                                <amexio-column size="12" [fit]="false">
+                                    <amexio-chips [data]="sampledatachips" [display-field]="'label'"></amexio-chips>
+                                </amexio-column>
+                            </amexio-row>
+                            <amexio-row>
+                                <amexio-column size="6" [fit]="false">
+
+                                </amexio-column>
+                            </amexio-row>
                         </amexio-body-ce>
-                        <amexio-action-ce>
-                            <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
-                            </amexio-floating-button>
-                            <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
-                            </amexio-floating-button>
-                            <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
-                            </amexio-floating-button>
+                        <amexio-action-ce [align]="'left'">
+                            <amexio-label [size]="'small-bold'" [enable-click]="true">
+                                SNBP School Road, Wagholi
+                            </amexio-label>
                         </amexio-action-ce>
                     </amexio-card-ce>
-                </amexio-grid-item>
-            </amexio-layout-grid>
 
+                </amexio-column>
+            </amexio-row>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/living3.jpg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="2" [fit]="false">
+                </amexio-column>
+                <amexio-column size="6" [fit]="false">
+                    <amexio-label [font-color]="'white'" [size]="'large-bold'">
+                        Top Projects
+                    </amexio-label>
+                    <br>
+                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                        Best developers in Hadapsar to explore. </amexio-label>
+                </amexio-column>
+            </amexio-row>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="1" [fit]="false">
+                </amexio-column>
+                <amexio-column size="3" [fit]="false">
+                    <amexio-card-ce [align]="'start'" [color]="'white'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
+                        <amexio-header-ce [background]="'linear-gradient(40deg,#ff9e20,#ff6a20)'" [height]="'75px'" align="center">
+                            <amexio-label [size]="'medium-bold'">
+                                Daffodils Residency
+                            </amexio-label>
+
+                        </amexio-header-ce>
+                        <amexio-body-ce>
+                            <amexio-row>
+                                <amexio-column size="12" [fit]="false">
+                                    <amexio-label [font-color]="'white'" [size]="'medium-bold'">
+                                        Special Highlights
+                                    </amexio-label>
+                                </amexio-column>
+                                <amexio-column size="12" [fit]="false">
+                                    <amexio-chips [data]="sampledatachips1" [display-field]="'label'"></amexio-chips>
+                                </amexio-column>
+                            </amexio-row>
+                            <amexio-row>
+                                <amexio-column size="6" [fit]="false">
+
+                                </amexio-column>
+                            </amexio-row>
+                        </amexio-body-ce>
+                        <amexio-action-ce [align]="'left'">
+                            <amexio-label [font-color]="'white'" [size]="'small-bold'" [enable-click]="true">
+                                Magarpatta City, Hadapsar
+                            </amexio-label>
+                        </amexio-action-ce>
+                    </amexio-card-ce>
+
+                </amexio-column>
+            </amexio-row>
+        </amexio-viewport-content-body>
+    </amexio-viewport-content>
+
+    <amexio-viewport-content [scrollable]="false">
+        <amexio-viewport-background>
+            <amexio-image [path]="'assets/living4.jpg'"></amexio-image>
+        </amexio-viewport-background>
+        <amexio-viewport-content-body>
+            <br>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="2" [fit]="false">
+                </amexio-column>
+                <amexio-column size="6" [fit]="false">
+                    <amexio-label [font-color]="'black'" [size]="'large-bold'">
+                        Top Projects
+                    </amexio-label>
+                    <br>
+                    <amexio-label [font-color]="'black'" [size]="'medium-bold'">
+                        Best developers in Mundhwa to explore. </amexio-label>
+                </amexio-column>
+            </amexio-row>
+            <br>
+            <br>
+            <amexio-row>
+                <amexio-column size="1" [fit]="false">
+
+                </amexio-column>
+                <amexio-column size="3" [fit]="false">
+                    <amexio-card-ce [align]="'start'" [color]="'black'" [bg-image]="'assets/images/cardce/children-cycle.jpg'">
+                        <amexio-header-ce [background]="'linear-gradient(40deg,#ff9e20,#ff6a20)'" [height]="'75px'" align="center">
+                            <amexio-label [size]="'medium-bold'">
+                                Sudarshan Heritage
+                            </amexio-label>
+
+                        </amexio-header-ce>
+                        <amexio-body-ce>
+                            <amexio-row>
+                                <amexio-column size="12" [fit]="false">
+                                    <amexio-label [font-color]="'black'" [size]="'medium-bold'">
+                                        Special Highlights
+                                    </amexio-label>
+                                </amexio-column>
+                                <amexio-column size="12" [fit]="false">
+                                    <amexio-chips [data]="sampledatachips1" [display-field]="'label'"></amexio-chips>
+                                </amexio-column>
+                            </amexio-row>
+                            <amexio-row>
+                                <amexio-column size="6" [fit]="false">
+
+                                </amexio-column>
+                            </amexio-row>
+                        </amexio-body-ce>
+                        <amexio-action-ce [align]="'left'">
+                            <amexio-label [font-color]="'black'" [size]="'small-bold'" [enable-click]="true">
+                                SMP School Road, Mundhwa
+                            </amexio-label>
+                        </amexio-action-ce>
+                    </amexio-card-ce>
+                </amexio-column>
+            </amexio-row>
         </amexio-viewport-content-body>
     </amexio-viewport-content>
 </amexio-viewport>
