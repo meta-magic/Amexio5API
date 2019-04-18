@@ -339,6 +339,11 @@
       "description": "Method to hide tab,If tab index matches with input, method will hide that tab."
     },
     {
+      "name": "getCurrentTab()",
+      "version": "5.10.3 onwards",
+      "description": "Method to get current tab index."
+    },
+    {
       "name": "disableTab(index: any)",
       "version": "5.10.3 onwards",
       "description": "Method to disable tab,If tab index matches with input or array of inputs, method will disable those tabs."
