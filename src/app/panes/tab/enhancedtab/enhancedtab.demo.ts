@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
 
+
 @Component({
     selector: 'enhanced-tab-demo',
     templateUrl: './enhancedtab.demo.html',
@@ -103,8 +104,13 @@ export class EnhancedTabDemo implements OnInit {
     }
     hideClickTab(tab: any) {
         tab.hideTab(2);
-
     }
+    disabledClickTab(tab: any){
+         tab.disableTab(["work","education"]);
+    };
+    disabledClickTab2(tab: any){
+        tab.disableTab(2);
+   }
 }
 
 

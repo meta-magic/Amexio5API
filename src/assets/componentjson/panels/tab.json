@@ -329,14 +329,24 @@
       "description": "Method to show tab, If tab index matches with input, method will show that tab active and other tabs are hidden"
     },
     {
-      "name": "hideTabs(title: string)",
+      "name": "hideTab(title: string)",
       "version": "5.10.3 onwards",
       "description": "Method to hide tab, If tab title matches with input, method will hide that tab."
     },
     {
-      "name": "hideTabs(index: number)",
+      "name": "hideTab(index: number)",
       "version": "5.10.3 onwards",
       "description": "Method to hide tab,If tab index matches with input, method will hide that tab."
+    },
+    {
+      "name": "disableTab(index: any)",
+      "version": "5.10.3 onwards",
+      "description": "Method to disable tab,If tab index matches with input or array of inputs, method will disable those tabs."
+    },
+    {
+      "name": "disableTab(title: any)",
+      "version": "5.10.3 onwards",
+      "description": "Method to disable tab,If tab title matches with input or array of inputs, method will disable those tab."
     }
       ]
     }

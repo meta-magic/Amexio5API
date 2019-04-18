@@ -70,4 +70,15 @@ export class EnhancedTabDemo {
     hideClickTab(tab: any) {
     tab.hideTab(2);
     }
+
+  //Method to disable tab on the basis of tab title. (Can be possible if tab title is passed)
+     
+    disabledClickTab(tab: any){
+    tab.disableTab(["work","education"]);
+    };
+  //Method to hide tab on the basis of tab index. (Can be possible if tab index is passed)
+
+    disabledClickTab2(tab: any){
+        tab.disableTab(2);
+   }
 }
