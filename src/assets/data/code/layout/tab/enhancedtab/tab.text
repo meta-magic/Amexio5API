@@ -81,4 +81,18 @@ export class EnhancedTabDemo {
     disabledClickTab2(tab: any){
         tab.disableTab(2);
    }
+   //Method to delete tab on the basis of tab title. (Can be possible if tab title is passed)
+
+   deleteTabClick(tab) {
+        tab.deleteTab(["work", "education"]);
+    }
+  //Method to delete tab on the basis of tab index. (Can be possible if tab index is passed)
+   
+    deleteTabClick2(tab) {
+        tab.deleteTab(2);
+    }
+  //Method to replace tab on the basis of tab index. (Can be possible if tab index is passed)
+    replaceTabClick(tab) {
+        tab.replaceTab(2,"Demo");
+    }
 }

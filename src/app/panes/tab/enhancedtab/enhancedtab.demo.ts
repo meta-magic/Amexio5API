@@ -105,12 +105,22 @@ export class EnhancedTabDemo implements OnInit {
     hideClickTab(tab: any) {
         tab.hideTab(2);
     }
-    disabledClickTab(tab: any){
-         tab.disableTab(["work","education"]);
+    disabledClickTab(tab: any) {
+        tab.disableTab(["work", "education"]);
     };
-    disabledClickTab2(tab: any){
+    disabledClickTab2(tab: any) {
         tab.disableTab(2);
-   }
+    }
+    deleteTabClick(tab) {
+        tab.deleteTab(["work", "education"]);
+    }
+    deleteTabClick2(tab) {
+        tab.deleteTab(2);
+    }
+    replaceTabClick(tab) {
+        tab.replaceTab(2,"Demo");
+    }
+
 }
 
 

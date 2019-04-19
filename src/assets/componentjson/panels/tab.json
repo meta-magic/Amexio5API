@@ -352,6 +352,21 @@
       "name": "disableTab(title: any)",
       "version": "5.10.4 onwards",
       "description": "Method to disable tab,If tab title matches with input or array of inputs, method will disable those tab."
+    },
+    {
+      "name": "deleteTab(title: any)",
+      "version": "5.10.5 onwards",
+      "description": "Method to delete tab,If tab title matches with input or array of inputs, method will delete those tabs."
+    },
+    {
+      "name": "deleteTab(index: any)",
+      "version": "5.10.5 onwards",
+      "description": "Method to delete tab,If tab title matches with input or array of inputs, method will delete those tab."
+    },
+    {
+      "name": "replaceTab(index: number,replacetab:string)",
+      "version": "5.10.5 onwards",
+      "description": "Method to replace tab,If input index with tab matches, method will replace that tab with replaced value."
     }
       ]
     }

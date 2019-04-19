@@ -169,7 +169,69 @@
                 <amexio-button [label]="'Hide Tabs'" [type]="'theme-color'" (onClick)="hideClickTab(tab)" [tooltip]="'Hide Tab'">
                 </amexio-button>
                 <br>
-                <amexio-button [label]="'Disable Tabs'" [type]="'theme-color'" (onClick)="disabledClickTab(tab)" [tooltip]="'Disabled Tab'">
+            </amexio-action>
+        </amexio-card>
+        <br>
+        <amexio-card [header]="true" [footer]="true" [footer-align]="'left'">
+            <amexio-header>
+                Tab layout with action component(button) and tabs left aligned
+            </amexio-header>
+            <amexio-body>
+
+                <amexio-tab-view #tab [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'left'">
+                    <amexio-tab-action>
+                        <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
+                        </amexio-button>
+                    </amexio-tab-action>
+                    <amexio-tab title="Person" [active]="true" [amexio-color]="'red'" [closable]="true">
+                        Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                        has
+                        been the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+                        to
+                        make a
+                        type specimen book.
+                    </amexio-tab>
+                    <amexio-tab title="Work" [amexio-color]="'red'">
+                        Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc
+                        sit
+                        amet aliquet risus. Aenean
+                        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi.
+                        Phasellus
+                        tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+                    </amexio-tab>
+                    <amexio-tab title="Profile" [amexio-color]="'red'">
+                        Profile Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi.
+                        Nunc
+                        sit amet aliquet risus. Aenean
+                        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi.
+                        Phasellus
+                        tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+                    </amexio-tab>
+                    <amexio-tab title="Education" [amexio-color]="'red'" [closable]="true">
+                        Education Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi.
+                        Nunc
+                        sit amet aliquet risus. Aenean
+                        placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi.
+                        Phasellus
+                        tempor hendrerit posuere. Praesent ornare rutrum mi et condimentum.
+                    </amexio-tab>
+                </amexio-tab-view>
+            </amexio-body>
+            <amexio-action>
+                <amexio-button [label]="'Disable Tabs(String)'" [type]="'theme-color'" (onClick)="disabledClickTab(tab)"
+                    [tooltip]="'Disabled Tab'">
+                </amexio-button>
+                <amexio-button [label]="'Disable Tabs(Number)'" [type]="'theme-color'" (onClick)="disabledClickTab2(tab)"
+                    [tooltip]="'Disabled Tab'">
+                </amexio-button>
+                <amexio-button [label]="'Delete Tabs(String)'" [type]="'theme-color'" (onClick)="deleteTabClick(tab)" [tooltip]="'Delete Tab'">
+                </amexio-button>
+                <amexio-button [label]="'Delete Tabs(Number)'" [type]="'theme-color'" (onClick)="deleteTabClick2(tab)"
+                    [tooltip]="'Delete Tab'">
+                </amexio-button>
+                <amexio-button [label]="'Replace Tab Name'" [type]="'theme-color'" (onClick)="replaceTabClick(tab)"
+                    [tooltip]="'Replace Tab'">
                 </amexio-button>
             </amexio-action>
 
