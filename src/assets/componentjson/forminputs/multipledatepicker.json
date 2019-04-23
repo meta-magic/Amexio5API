@@ -1,0 +1,131 @@
+{
+    "title": "Amexio Multiple Date Time Picker",
+    "description": "This component is used to show multiple months in Date picker with all required configurations in Style.",
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-multiple-date-picker>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "place-holder",
+                    "description": "place-holder of field",
+                    "type": " string",
+                    "default": ""
+                },
+                {
+                    "name": " date-format",
+                    "description": "The label of this field",
+                    "type": "string",
+                    "default": ""
+                },
+                 
+                {
+                    "name": "field-label ",
+                    "description": "The label of this field",
+                    "type": " string",
+                    "default": ""
+                },
+                 
+                {
+                    "name": "number-of-months",
+                    "description": "specifies number of months to be displayed in date picker",
+                    "type": "number",
+                    "default": "1"
+                }
+                 
+            ]
+        },
+        {
+            "gridTitle": "Events <amexio-multiple-date-picker>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "change",
+                    "description": "On click of date changed date is emitted"
+                }
+            ]
+        }
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "forms/multipledatepicker/form.html",
+        "tsUrl": "forms/multipledatepicker/form.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-datepicker?ctl=1&embed=1&file=app/forms/datepicker/datepicker.demo.html"
+    },
+    "apiaccessibledata": [
+        {
+            "gridTitle": "Properties <amexio-multiple-date-picker>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Key",
+                    "width": 30
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Function",
+                    "width": 70
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "Right/Left Arrow",
+                    "description": " Moves focus one cell to the right/left.If focus is on the right-most/left-most cell in the row, focus does not move."
+                },
+                {
+                    "name": "Down Arrow",
+                    "description": " Moves focus one cell down.If focus is on the bottom cell in the column, focus does not move."
+                },
+                {
+                    "name": "Up Arrow",
+                    "description": "Moves focus one cell Up.If focus is on the top cell in the column, focus does not move."
+                }
+            ]
+        }
+    ]
+}

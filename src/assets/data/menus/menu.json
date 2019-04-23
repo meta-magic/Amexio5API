@@ -320,6 +320,14 @@
 
                 },
                 {
+                    "text": "Multiple Date Picker",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "NEW",
+                    "link": "forms-Input/multidatepicker-demo"
+
+                },
+
+                {
                     "text": "DropDown",
                     "icon": "fa fa-caret-square-o-down  ",
                     "children": [{
