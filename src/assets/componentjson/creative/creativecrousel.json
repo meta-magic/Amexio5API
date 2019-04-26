@@ -48,7 +48,7 @@
                     "type": "string",
                     "default": "",
                     "description": "REST url for fetching data.",
-                    "version": "5.10.4 onwards"
+                    "version": "5.11 onwards"
                 },
                 {
                     "deprecated": false,
@@ -56,7 +56,7 @@
                     "type": "string",
                     "default": "",
                     "description": "Type of HTTP call, POST,GET etc.",
-                    "version": "5.10.4 onwards"
+                    "version": "5.11 onwards"
                 },
                 {
                     "deprecated": false,
@@ -64,7 +64,7 @@
                     "type": "any",
                     "default": "",
                     "description": "Local Data binding.",
-                    "version": "5.10.4 onwards"
+                    "version": "5.11 onwards"
                 },
                 {
                     "deprecated": false,
@@ -72,7 +72,7 @@
                     "type": "string",
                     "default": "",
                     "description": "Key in JSON Datasource for records.",
-                    "version": "5.10.4 onwards"
+                    "version": "5.11 onwards"
                 },
                 {
                     "deprecated": false,
@@ -80,7 +80,7 @@
                     "type": "left/center/right",
                     "default": "",
                     "description": "Set position to template.For Templates Its Mandetory",
-                    "version": "5.10.4 onwards"
+                    "version": "5.11 onwards"
                 },
                 {
                     "deprecated": false,
@@ -88,7 +88,7 @@
                     "type": "number",
                     "default": "",
                     "description": "Set template-width with position is Mandetory(left/right/center) in number to template .",
-                    "version": "5.10.4 onwards"
+                    "version": "5.11 onwards"
                 }
             ]
         }

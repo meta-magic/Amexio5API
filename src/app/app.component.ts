@@ -66,6 +66,10 @@ export class AppComponent {
             "link": "../v5.0/index.html",
             "submenus": [
               {
+                "text": "Version 5.10",
+                "link": "../v5.10/index.html"
+              },
+              {
                 "text": "Version 5.9",
                 "link": "../v5.9/index.html"
               },

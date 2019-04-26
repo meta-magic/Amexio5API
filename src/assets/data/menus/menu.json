@@ -21,7 +21,7 @@
         },
         {
             "text": "Layouts",
-            "badge": "3",
+            "badge": "2",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
@@ -64,12 +64,7 @@
                     "badge": "NEW",
                     "link": "creative/card-ce-demo"
                 },
-                {
-                    "text": "Creative Carousel",
-                    "icon": "fa fa-cc  ",
-                    "badge": "NEW",
-                    "link": "creative/carousel-ce-demo"
-                },
+                
                 {
                     "text": "Creative Home Page",
                     "icon": "fa fa-home",
@@ -122,12 +117,18 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "4",
+            "badge": "6",
             "children": [{
                     "text": "Carousel",
                     "badge": "U",
                     "icon": "fa fa-indent  ",
                     "link": "panes/carousel-demo"
+                },
+                {
+                    "text": "Creative Carousel",
+                    "icon": "fa fa-cc  ",
+                    "badge": "NEW",
+                    "link": "creative/carousel-ce-demo"
                 },
                 {
                     "text": "Creative Window",
@@ -173,6 +174,7 @@
                 },
                 {
                     "text": "Tab",
+                    "badge": "U",
                     "icon": "fa fa-folder  ",
                     "children": [{
                             "text": "Horizontal",
@@ -289,7 +291,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "4",
+            "badge": "3",
             "children": [{
                     "text": "Badge",
                     "icon": "fa fa-id-badge  ",
@@ -323,13 +325,6 @@
                     "icon": "fa fa-calendar  ",
                     "badge": "U",
                     "link": "forms-Input/date-picker-demo"
-
-                },
-                {
-                    "text": "Multiple Date Picker",
-                    "icon": "fa fa-calendar  ",
-                    "badge": "NEW",
-                    "link": "forms-Input/multidatepicker-demo"
 
                 },
 
