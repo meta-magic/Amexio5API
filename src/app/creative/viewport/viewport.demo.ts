@@ -18,7 +18,7 @@ export class ViewportDemoComponent{
 
   DEMO_FIRST_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/scrollable-viewport';
   DEMO_SEC_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/viewport';
-  DEMO_THIRD_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/viewport-video';
+  DEMO_THIRD_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/video-viewport';
 
   constructor(private http: HttpClient) {
   }
