@@ -21,7 +21,7 @@
         },
         {
             "text": "Layouts",
-            "badge": "2",
+            "badge": "3",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
@@ -63,6 +63,12 @@
                     "icon": "fa fa-creative-commons  ",
                     "badge": "NEW",
                     "link": "creative/card-ce-demo"
+                },
+                {
+                    "text": "Creative Carousel",
+                    "icon": "fa fa-cc  ",
+                    "badge": "NEW",
+                    "link": "creative/carousel-ce-demo"
                 },
                 {
                     "text": "Creative Home Page",
@@ -319,6 +325,14 @@
                     "link": "forms-Input/date-picker-demo"
 
                 },
+                {
+                    "text": "Multiple Date Picker",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "NEW",
+                    "link": "forms-Input/multidatepicker-demo"
+
+                },
+
                 {
                     "text": "DropDown",
                     "icon": "fa fa-caret-square-o-down  ",

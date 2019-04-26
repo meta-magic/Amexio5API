@@ -1,0 +1,37 @@
+<!-- Demo 1: -    Creative Carousel without Template -->
+
+<amexio-carousel-ce 
+                    [http-url]="'assets/data/componentdata/creativecarousel1.json'"
+                    [http-method]="'get'" 
+                    [data-reader]="'data'">
+</amexio-carousel-ce>
+
+<!-- Demo 2: -    Creative Carousel with Template -->
+
+<amexio-carousel-ce 
+                    [http-url]="'assets/data/componentdata/creativecarousel2.json'" 
+                    [http-method]="'get'" 
+                    [data-reader]="'data'"
+                    [template-width]="80"
+                    position="right">
+
+    <ng-template let-i amexioTemplate="item">
+        <amexio-row>
+            <amexio-column size="12" fit="false">
+                <amexio-box background-color='red' padding="true">
+                    <amexio-label>{{i.title}}</amexio-label>
+                    <amexio-label style="float:right;">
+                        {{i.star}}
+                    </amexio-label>
+                    <amexio-image style="float:right;" [icon-class]="'fa fa-star-o'">
+                    </amexio-image>
+                    <amexio-label style="float:right;">
+                        {{i.comment}}
+                    </amexio-label>
+                    <amexio-image style="float:right;" [icon-class]="'fa fa-comment-o'"></amexio-image>
+                </amexio-box>
+            </amexio-column>
+        </amexio-row>
+    </ng-template>
+    
+</amexio-carousel-ce>

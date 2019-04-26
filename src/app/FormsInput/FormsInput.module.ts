@@ -14,6 +14,7 @@ import { CheckBoxGroupDemo} from './checkboxgroup/checkboxgroup.demo';
 import { ChipsDemo } from "./chips/chips.demo";
 import { CreditCardDemo } from "./creditcard/creditcard.demo";
 import { DateTimePickerDemo } from "./datepicker/datepicker.demo";
+import { MultipleDateTimePickerDemo } from "./multipledatepicker/multipledatepicker.demo"
 import { DropDownDemo } from "./dropdown/dropdown.demo";
 import { DropDownFilterDemo } from "./dropdownfilter/dropdownfilter.demo";
 import { DropDownMultiDemo } from "./dropdownmulti/dropdownmulti.demo";
@@ -48,7 +49,7 @@ import { RangeSliderDemo } from "./rangeslider/rangeslider.demo";
         FileuploadDemo,LabelDemo,NumberDemo,PasswordDemo,RadioGroupDemo,RatingDemo,
         RecaptchaDemo,SearchBox,SliderDemo,FacebookLoginDemo,GoogleLoginDemo,LinkedinLoginDemo,
         TagInputDemo,TextDemo, TextareaDemo, ToggleDemo, TypeAheadDemo,BadgeDemo,
-        RangeSliderDemo
+        RangeSliderDemo, MultipleDateTimePickerDemo
     
     ],
     imports: [

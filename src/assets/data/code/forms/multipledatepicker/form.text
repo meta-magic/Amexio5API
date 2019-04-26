@@ -1,0 +1,9 @@
+export class MultipleDatePickerDemo {
+ 
+ currentDate: any;
+ 
+
+  constructor( ) {
+        }
+  
+}

@@ -1,0 +1,78 @@
+<amexio-api-structure [url]="'assets/componentjson/creative/creativecrousel.json'">
+
+    <amexio-api-demo>
+        <amexio-row>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+            <amexio-column size="8" fit="false">
+
+                <amexio-card [header]="true" [header-align]="'left'">
+                    <amexio-header>
+                        Creative Carousel without Template
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-carousel-ce [http-url]="'assets/data/componentdata/creativecarousel1.json'"
+                            [http-method]="'get'" [data-reader]="'data'">
+
+
+                        </amexio-carousel-ce>
+                    </amexio-body>
+
+                </amexio-card>
+
+
+            </amexio-column>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+        </amexio-row>
+
+
+        <!-- Demo 1 -->
+        <amexio-row>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+            <amexio-column size="8" fit="false">
+
+                <amexio-card [header]="true" [header-align]="'left'">
+                    <amexio-header>
+                        Creative Carousel with Template
+                    </amexio-header>
+                    <amexio-body>
+
+                        <amexio-carousel-ce [http-url]="'assets/data/componentdata/creativecarousel2.json'"
+                            [http-method]="'get'" [data-reader]="'data'" [template-width]="100" position="right">
+
+
+                            <ng-template let-i amexioTemplate="item">
+
+                                <amexio-row>
+                                    <amexio-column size="12" fit="false">
+                                        <amexio-box background-color='red' padding="true">
+                                            <amexio-label>{{i.title}}</amexio-label>
+                                            <amexio-label style="float:right; font-size: 10px; padding: 2px ; ">
+                                                {{i.star}}
+                                            </amexio-label>
+                                            <amexio-image style="float:right; padding-left: 10px; padding-top:6px;"
+                                                [icon-class]="'fa fa-star-o'">
+                                            </amexio-image>
+                                            <amexio-label style="float:right; font-size: 10px;padding: 2px; ">
+                                                {{i.comment}}
+                                            </amexio-label>
+                                            <amexio-image style="float:right;  padding-top:5px;" [icon-class]="'fa fa-comment-o'"></amexio-image>
+                                        </amexio-box>
+                                    </amexio-column>
+                                </amexio-row>
+                            </ng-template>
+
+                        </amexio-carousel-ce>
+                    </amexio-body>
+
+                </amexio-card>
+
+
+            </amexio-column>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+        </amexio-row>
+    </amexio-api-demo>
+</amexio-api-structure>

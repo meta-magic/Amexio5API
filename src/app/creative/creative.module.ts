@@ -13,13 +13,15 @@ import { CreativeWindowDemo } from "./windowce/window.demo";
 import { CreativeFormDemo } from "./formce/form.demo";
 import { CreativeCircularProgressBarDemo } from './progressce/progressce.component';
 import { HomePageDemo } from './homepage/homepage.demo';
-import {ViewportDemoComponent} from './viewport/viewport.demo';
+import { ViewportDemoComponent } from './viewport/viewport.demo';
+import { CreativeCarouselComponent } from "./carousel/carouselce.demo";
 
 /**
  * Created by kedar on 6/2/19.
  */
 @NgModule({
-    declarations: [CreativeCardDemo, ViewportDemoComponent, CreativeWindowDemo, CreativeFormDemo, CreativeCircularProgressBarDemo, HomePageDemo],
+    declarations: [CreativeCardDemo, ViewportDemoComponent, CreativeWindowDemo, CreativeFormDemo, CreativeCircularProgressBarDemo, HomePageDemo,
+        CreativeCarouselComponent],
     imports: [
         CommonModule,
         FormsModule,

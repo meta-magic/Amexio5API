@@ -31,7 +31,7 @@ import { ToggleDemo } from "./toggle/toggle.demo";
 import { TypeAheadDemo } from "./typeahead/typeahead.demo";
 import {BadgeDemo} from './badge/badge.demo';
 import { RangeSliderDemo } from './rangeslider/rangeslider.demo';
-
+import { MultipleDateTimePickerDemo } from './multipledatepicker/multipledatepicker.demo'
 
 
 export const FORMSINPUT_ROUTE: Routes = [
@@ -123,5 +123,8 @@ export const FORMSINPUT_ROUTE: Routes = [
     {
         path: 'value-range', component: RangeSliderDemo,
     },
+    {
+        path: 'multidatepicker-demo', component: MultipleDateTimePickerDemo,
+    }
     
 ]
