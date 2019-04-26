@@ -3686,7 +3686,8 @@ input:checked + .toggle-slider:before {
 .amexio-badge {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 900; }
 
 .amexio-badge-color {
   background: #ffffff;
@@ -8321,16 +8322,15 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: 100%;
+  position: relative;
   height: 100%;
-  opacity: 1;
-  visibility: inherit; }
+  width: 100%; }
 
 .viewportBody {
   position: absolute;
+  top: 0;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden; }
+  height: 100%; }
 
 video {
   position: fixed;
@@ -8359,32 +8359,44 @@ video {
 /** creative carousel - Visual CSS **/
 .ce-carousel-textdata {
   color: #f7f9f1;
-  background: transparent url(https://i.ibb.co/Px4vFwF/bar.png) repeat top left; }
+  background: transparent; }
+
+.ce-carousel-textdata-right {
+  background: transparent;
+  color: #f7f9f1; }
+
+.ce-carousel-textdata-left {
+  background: transparent;
+  color: #f7f9f1; }
+
+.ce-carousel-textdata-center {
+  background: transparent;
+  color: #f7f9f1; }
 
 .ce-caroueslbar {
-  background: transparent url(https://i.ibb.co/Px4vFwF/bar.png) repeat top left;
-  color: #f7f9f1; }
+  background: #edffb8 repeat top left;
+  color: #4b5320; }
 
 .ce-caroueslnav-content div {
-  color: #f7f9f1; }
+  color: #4b5320; }
 
 .ce-caroueslnav-content span {
-  color: #f7f9f1; }
+  color: #4b5320; }
 
 .ce-caroueslnav-content-current span {
-  color: #121212; }
+  color: #4b5320; }
 
 .ce-caroueslnav-content div.ce-caroueslnav-content-prev {
-  color: #f7f9f1; }
+  color: #4b5320; }
 
 .ce-caroueslnav-content div.ce-caroueslnav-content-next {
-  color: #f7f9f1; }
+  color: #4b5320; }
 
 .ce-caroueslnav a.ce-caroueslnav-prev span {
-  background: #edffb8 url(https://i.ibb.co/wgJFSLh/prev.png) no-repeat center center; }
+  background: #4b5320 url("prev.png") no-repeat center center; }
 
 .ce-caroueslnav a.ce-caroueslnav-next span {
-  background: #edffb8 url(https://i.ibb.co/bsGQGBs/next.png) no-repeat center center; }
+  background: #4b5320 url("next.png") no-repeat center center; }
 
 .ce-caroueslnav a:hover span {
   background-color: #708238; }
@@ -8392,16 +8404,10 @@ video {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /** creative carousel - Structure CSS **/
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-.ce-carousel-textdata {
-  position: absolute;
-  left: 0%;
-  height: 410px;
-  float: left; }
-
 .ce-caroueslslideshow {
-  width: 820px;
-  height: 410px;
-  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
   position: relative;
   margin: 0 auto; }
 
@@ -8413,7 +8419,7 @@ video {
 .ce-caroueslbar {
   height: 74px;
   position: absolute;
-  bottom: 0px;
+  bottom: 6px !important;
   right: 50px;
   left: 50px;
   z-index: 999; }
@@ -8422,6 +8428,7 @@ video {
   position: absolute;
   top: 0px;
   height: 100%;
+  width: auto;
   right: 70px;
   left: 70px;
   overflow: hidden;
@@ -8433,26 +8440,24 @@ video {
 
 .ce-caroueslnav-content div.ce-caroueslnav-content-current {
   text-align: center;
-  width: 280px;
+  width: 140px;
   position: absolute;
-  top: 0px;
-  left: 50%;
-  margin-left: -140px; }
+  left: 35%;
+  font-size: 15px !important; }
 
 .ce-caroueslnav-content div.ce-caroueslnav-content-prev {
-  margin-left: 20px; }
+  margin-left: 20px;
+  width: 120px; }
 
 .ce-caroueslnav-content div.ce-caroueslnav-content-next {
   text-align: right;
   margin-right: 20px;
-  float: right; }
+  float: right;
+  width: 120px; }
 
 .ce-caroueslnav-content div span {
   display: block;
-  padding-top: 18px;
-  text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 2px; }
+  padding-top: 18px; }
 
 .ce-caroueslnav > a {
   position: absolute;
