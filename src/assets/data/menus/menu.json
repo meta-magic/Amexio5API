@@ -21,7 +21,7 @@
         },
         {
             "text": "Layouts",
-            "badge": "2",
+            "badge": "3",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
