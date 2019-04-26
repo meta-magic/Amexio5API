@@ -79,7 +79,7 @@
                     "name": "position",
                     "type": "left/center/right",
                     "default": "",
-                    "description": "Set position to template.Its Mandetory",
+                    "description": "Set position to template.For Templates Its Mandetory",
                     "version": "5.10.4 onwards"
                 },
                 {
