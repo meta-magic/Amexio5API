@@ -1,0 +1,105 @@
+{
+    "title": "Amexio Creative Carousel",
+    "description": "The Creative CarouselView displays a collection of images or other content in a horizontal layout with image of next and preious button.",
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-carousel-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "deprecated": false,
+                    "name": "http-url",
+                    "type": "string",
+                    "default": "",
+                    "description": "REST url for fetching data.",
+                    "version": "5.10.4 onwards"
+                },
+                {
+                    "deprecated": false,
+                    "name": "http-method",
+                    "type": "string",
+                    "default": "",
+                    "description": "Type of HTTP call, POST,GET etc.",
+                    "version": "5.10.4 onwards"
+                },
+                {
+                    "deprecated": false,
+                    "name": "data",
+                    "type": "any",
+                    "default": "",
+                    "description": "Local Data binding.",
+                    "version": "5.10.4 onwards"
+                },
+                {
+                    "deprecated": false,
+                    "name": "data-reader",
+                    "type": "string",
+                    "default": "",
+                    "description": "Key in JSON Datasource for records.",
+                    "version": "5.10.4 onwards"
+                },
+                {
+                    "deprecated": false,
+                    "name": "position",
+                    "type": "left/center/right",
+                    "default": "",
+                    "description": "Set position to template.",
+                    "version": "5.10.4 onwards"
+                },
+                {
+                    "deprecated": false,
+                    "name": "template-width",
+                    "type": "number",
+                    "default": "",
+                    "description": "Set template-width with position is mandetory(left/right/center) in number to template .",
+                    "version": "5.10.4 onwards"
+                }
+            ]
+        }
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "creative/carouselce/creative.html",
+        "tsUrl": "creative/carouselce/creative.text",
+        "datasourceUrl": "assets/data/componentdata/creativecarousel2.json"
+    },
+    "liveMetadata": {
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-panel-carousel?embed=1&file=app/panels/carousel/carousel.demo.html"
+    }
+}

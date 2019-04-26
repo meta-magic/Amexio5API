@@ -65,6 +65,12 @@
                     "link": "creative/card-ce-demo"
                 },
                 {
+                    "text": "Creative Carousel",
+                    "icon": "fa fa-cc  ",
+                    "badge": "NEW",
+                    "link": "creative/carousel-ce-demo"
+                },
+                {
                     "text": "Creative Home Page",
                     "icon": "fa fa-home",
                     "badge": "NEW",

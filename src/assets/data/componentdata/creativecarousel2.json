@@ -1,0 +1,137 @@
+{
+    "data": [
+        {
+            "title": "Thoughts by Vlad Belkin",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/1.jpg",
+            "star": 520,
+            "comment": 60,
+            "active": true
+        },
+        {
+            "title": "That old Tree ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/2.jpg",
+            "active": false,
+            "star": 220,
+            "comment": 40
+        },
+        {
+            "title": "Air Live on  ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/3.jpg",
+            "active": false,
+            "star": 620,
+            "comment": 80
+        },
+        {
+            "title": "Fly with courage",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/4.jpg",
+            "active": false,
+            "star": 560,
+            "comment": 40
+        },
+        {
+            "title": "Ready For Fight ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/5.jpg",
+            "active": false,
+            "star": 500,
+            "comment": 90
+        },
+        {
+            "title": "Mall of Berlin: Cocoon // Cut-up No. VIII",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/6.jpg",
+            "active": false,
+            "star": 690,
+            "comment": 30
+        },
+        {
+            "title": "Creative Mall",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/7.jpg",
+            "active": false,
+            "star": 820,
+            "comment": 69
+        },
+        {
+            "title": "little reporter",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/8.jpg",
+            "active": false,
+            "star": 920,
+            "comment": 55
+        },
+        {
+            "title": "Slippery hill",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/9.jpg",
+            "active": false,
+            "star": 430,
+            "comment": 39
+        },
+        {
+            "title": "Amsterdam",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/10.jpg",
+            "active": false,
+            "star": 340,
+            "comment": 24
+        },
+        {
+            "title": "Photography",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/11.jpg",
+            "active": false,
+            "star": 425,
+            "comment": 34
+        },
+        {
+            "title": "Late night at New york",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/12.jpg",
+            "active": false,
+            "star": 610,
+            "comment": 90
+        },
+        {
+            "title": "king Of water",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/13.jpg",
+            "active": false,
+            "star": 520,
+            "comment": 60
+        },
+        {
+            "title": "Way to End ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/14.jpg",
+            "active": false,
+            "star": 120,
+            "comment": 33
+        },
+        {
+            "title": "Amsterdam Canal Mirrors [On Explore]",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/15.jpg",
+            "active": false,
+            "star": 660,
+            "comment": 20
+        },
+        {
+            "title": "Dubllin by mark",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/16.jpg",
+            "active": false,
+            "star": 920,
+            "comment": 44
+        },
+        {
+            "title": "Paris, France - the lamppost that wanted to be a periscope",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/17.jpg",
+            "active": false,
+            "star": 980,
+            "comment": 89
+        },
+        {
+            "title": "Wintertime Happiness  ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/18.jpg",
+            "active": false,
+            "star": 890,
+            "comment": 79
+        },
+        {
+            "title": "Comfortably click by SkyeWeasel",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-2/19.jpg",
+            "active": false,
+            "star": 887,
+            "comment": 70
+        }
+    ]
+}
