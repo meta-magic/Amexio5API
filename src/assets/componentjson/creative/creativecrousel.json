@@ -1,6 +1,6 @@
 {
     "title": "Amexio Creative Carousel",
-    "description": "The Creative CarouselView displays a collection of images or other content in a horizontal layout with image of next and preious button.",
+    "description": "The Creative Carousel View displays a collection of images or any other content in a horizontal layout with image of next and previous button.",
     "apiRefMetadata": [
         {
             "gridTitle": "Properties <amexio-carousel-ce>",
@@ -79,7 +79,7 @@
                     "name": "position",
                     "type": "left/center/right",
                     "default": "",
-                    "description": "Set position to template.",
+                    "description": "Set position to template.Its Mandetory",
                     "version": "5.10.4 onwards"
                 },
                 {
@@ -87,7 +87,7 @@
                     "name": "template-width",
                     "type": "number",
                     "default": "",
-                    "description": "Set template-width with position is mandetory(left/right/center) in number to template .",
+                    "description": "Set template-width with position is Mandetory(left/right/center) in number to template .",
                     "version": "5.10.4 onwards"
                 }
             ]
@@ -99,7 +99,7 @@
         "datasourceUrl": "assets/data/componentdata/creativecarousel2.json"
     },
     "liveMetadata": {
-        "disabled": false,
-        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-panel-carousel?embed=1&file=app/panels/carousel/carousel.demo.html"
+        "disabled": true,
+        "stackblitzUrl": ""
     }
 }
