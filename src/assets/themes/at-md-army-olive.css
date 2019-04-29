@@ -3638,7 +3638,8 @@ input:checked + .toggle-slider:before {
   font-size: 16px;
   border-radius: 25px;
   background-color: #f1f1f1;
-  margin: 3px; }
+  margin: 3px;
+  color: black; }
 
 .chips:hover {
   background: #edffb8; }
@@ -6756,7 +6757,7 @@ fieldset {
 *****************************************************************************/
 /** tab - Visual CSS **/
 .verticalnavtab .defaultnode {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #171f00; }
 
 .verticalnavtab .leftactivetab {
@@ -8040,7 +8041,8 @@ amexio-layout-columns amexio-layout-item {
   background-color: #fff; }
 
 .card-container-ce-color {
-  color: #121212; }
+  color: #121212;
+  background: #ffffff; }
 
 .card-container-ce-theme-color {
   color: #f7f9f1;
@@ -8422,7 +8424,7 @@ video {
   position: relative; }
 
 .ce-caroueslbar {
-  height: 74px;
+  height: 19%;
   position: absolute;
   bottom: 6px !important;
   right: 50px;
@@ -8464,12 +8466,12 @@ video {
 
 .ce-caroueslnav-content div span {
   display: block;
-  padding-top: 18px; }
+  padding-top: 16%; }
 
 .ce-caroueslnav > a {
   position: absolute;
   top: 0px;
-  height: 80px;
+  height: 100%;
   width: 70px; }
 
 a.ce-caroueslnav-prev {
@@ -8569,6 +8571,9 @@ a.ce-caroueslnav-next {
 
   .ce-caroueslbar {
     background: transparent; } }
+@media (min-width: 1024px) and (max-width: 1100px) {
+  .ce-caroueslnav-content {
+    top: 0%; } }
 /** Initialze Responsive Design variables ------------ */
 /****************************************************************************
                     Media Query for width - 375
