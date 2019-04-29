@@ -120,7 +120,7 @@
       "datasourceUrl": ""
     },
     "liveMetadata": {
-      "disabled": "true",
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-slider?embed=1&file=app/forms/slider/slider.demo.html"
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-range-slider?embed=1&file=app/formsInput/rangeSlider/rangeSlider.demo.html&view=editor"
     }
   }

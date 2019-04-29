@@ -67,7 +67,7 @@
         "datasourceUrl": ""
     },
     "liveMetadata": {
-        "disabled": true,
-        "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-homepage?embed=1&file=app/layout/homepage/homepage.demo.html&view=editor"
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-viewport?embed=1&file=app/panel/viewport/viewport.demo.html&view=editor"
     }
 }
