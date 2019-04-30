@@ -84,21 +84,6 @@
         }
       ],
       "gridData": [
-        {
-          "gridTitle": "Properties  <amexio-darkmode>",
-          "columnDefinition": [
-            {
-              "dataindex": "name",
-              "text": "Key",
-              "width": 30
-            },
-            {
-              "dataindex": "description",
-              "text": "Function",
-              "width": 70
-            }
-          ],
-          "gridData": [
             {
               "name": "Space",
               "description": "Toggles the toogle box checked and unchecked."
@@ -106,6 +91,4 @@
           ]
         }
       ]
-    }
-  ]
 }
