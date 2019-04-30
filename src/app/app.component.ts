@@ -104,7 +104,7 @@ export class AppComponent {
               {
                 "text": "Version 5.1",
                 "link": "../v5.1/index.html"
-              }   
+              }
             ]
           },
           {
@@ -212,38 +212,46 @@ export class AppComponent {
         ]
       },
       {
-        "text": "Engage",
-        "icon": "fa fa-envelope fa-fw",
-        "submenus": [{
-          "text": "Events",
-          "link": "https://metamagicglobal.com/events"
-        }, {
-          "text": "Forums",
-          "link": "http://forum.metamagicglobal.com/"
-        }, {
-          "text": "Blogs",
-          "link": "http://blog.metamagicglobal.com/"
-        }, {
-          "text": "Node Package Manager",
-          "link": "https://www.npmjs.com/package/amexio-ng-extensions"
-        }, {
-          "text": "GitHub - Source Code",
-          "link": "https://github.com/meta-magic/amexio.github.io"
-        }]
-      },
-      {
-        "text": "About Us",
-        "icon": "fa fa-address-book-o fa-fw",
-        "submenus": [{
-          "text": "Contact",
-          "link": "https://metamagicglobal.com/contact"
-        }, {
-          "text": "Company",
-          "link": "http://www.metamagicglobal.com/company"
-        }, {
-          "text": "MetaMagic",
-          "link": "https://www.metamagicglobal.com/"
-        }]
+        "text": "More",
+       
+        "submenus": [
+          {
+            "text": "Engage",
+            "submenus": [
+              {
+                "text": "Events",
+                "link": "https://metamagicglobal.com/events"
+              }, {
+                "text": "Forums",
+                "link": "http://forum.metamagicglobal.com/"
+              }, {
+                "text": "Blogs",
+                "link": "http://blog.metamagicglobal.com/"
+              }, {
+                "text": "Node Package Manager",
+                "link": "https://www.npmjs.com/package/amexio-ng-extensions"
+              }, {
+                "text": "GitHub - Source Code",
+                "link": "https://github.com/meta-magic/amexio.github.io"
+              }
+            ]
+          },
+          {
+            "text": "About Us",
+            "submenus": [
+              {
+                "text": "Contact",
+                "link": "https://metamagicglobal.com/contact"
+              }, {
+                "text": "Company",
+                "link": "http://www.metamagicglobal.com/company"
+              }, {
+                "text": "MetaMagic",
+                "link": "https://www.metamagicglobal.com/"
+              }
+            ]
+          }
+        ]
       }];
   }
 

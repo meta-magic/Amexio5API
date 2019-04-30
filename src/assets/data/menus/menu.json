@@ -117,7 +117,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "6",
+            "badge": "7",
             "children": [{
                     "text": "Carousel",
                     "badge": "U",
@@ -135,6 +135,12 @@
                     "icon": "fa fa-window-maximize",
                     "badge": "NEW",
                     "link": "creative/window-ce-demo"
+                },
+                {
+                    "text": "Darkmode",
+                    "icon": "fa fa-toggle-on",
+                    "badge": "NEW",
+                    "link": "panes/darkmode-demo"
                 },
                 {
                     "text": "Dialogue",

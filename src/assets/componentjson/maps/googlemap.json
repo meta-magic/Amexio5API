@@ -110,6 +110,14 @@
       "default": "",
       "description":"Sets key for google map",
       "version": "5.5.4 onwards"
+    },
+    {
+      "deprecated":false,
+      "name": "co-ordinates",
+      "type": "any",
+      "default": "",
+      "description":"Sets the coordinates for highlighted region",
+      "version": "5.11 onwards"
     }
       ]
     },

@@ -26,12 +26,13 @@ import { DyanmicTabComponent } from "./tab/enhancedtab/dynamictabdemo.component"
 import { DyanmicVerticalTabComponent } from "./tab/enhancedverticaltab/dynamicverticaltabdemo.component";
 import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
 import { ArcDemoComponent } from "./arc/arc.demo.component";
+import {DarkmodeDemoComponent} from "./darkmode/darkmode.demo.component";
 
 /**
  * Created by kedar on 1/2/19.
  */
 @NgModule({
-    declarations: [WindowDemoComponent, StepBoxIconComponent, StepBoxDemoComponent,
+    declarations: [WindowDemoComponent, DarkmodeDemoComponent, StepBoxIconComponent, StepBoxDemoComponent,
         ClosableTabDemo, PanelDemoComponent, FieldSetDemoComponent,DialogueDemoComponent,
         CarouselDemoComponent, EnhancedTabDemo,EnhancedVerticalTabDemo,ScrollableTabDemo,
         IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo, DyanmicTabComponent,

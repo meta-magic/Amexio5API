@@ -16,6 +16,7 @@ import { VerticalTabDemo } from './tab/verticaltab/verticaltab.demo';
 import { TabDemo } from './tab/basictab/tab.demo';
 import { OverlayDemoComponent } from './overlaycontainer/overlay.demo.component';
 import { ArcDemoComponent } from './arc/arc.demo.component';
+import { DarkmodeDemoComponent} from './darkmode/darkmode.demo.component';
 
 
 /**
@@ -43,6 +44,9 @@ export const PANES_ROUTE: Routes = [
     },
     {
         path: 'dialogue-demo', component: DialogueDemoComponent,
+    },
+    {
+        path: 'darkmode-demo', component: DarkmodeDemoComponent,
     },
     {
         path: 'carousel-demo', component: CarouselDemoComponent,
