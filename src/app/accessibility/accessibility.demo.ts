@@ -35,7 +35,7 @@ export class AccessibilityDemo implements OnInit {
     }
 
     createLayouts() {
-        this.gridDesktop = new GridConfig('LayoutSample1', GridConstants.Desktop)
+        this.gridDesktop = new GridConfig('LayoutSample', GridConstants.Desktop)
         .addlayout(["gridtable1", "gridtable2", "gridtable7"])
         .addlayout(["gridtable3", "gridtable4", "gridtable7"])
         .addlayout(["gridtable5", "gridtable6", "gridtable7"]);

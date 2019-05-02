@@ -73,20 +73,20 @@ export class GridLayoutDemo  implements OnInit{
       .addlayout(["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
 
       this.gridDesktop1 = new GridConfig('LayoutSample2', GridConstants.Desktop)
-      .addlayout(["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"])
-    .addlayout(["gridmenu", "gridmenu", "gridmain", "gridmain", "gridright", "gridright"])
-    .addlayout(["gridmenu", "gridmenu", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
+      .addlayout(["gridmenu2", "gridmenu2", "gridheader2", "gridheader2", "gridheader2", "gridheader2"])
+    .addlayout(["gridmenu2", "gridmenu2", "gridmain2", "gridmain2", "gridright2", "gridright2"])
+    .addlayout(["gridmenu2", "gridmenu2", "gridfooter2", "gridfooter2", "gridfooter2", "gridfooter2"]);
       this.gridTablet1 = new GridConfig('LayoutSample2', GridConstants.Tablet)
-      .addlayout(["gridmenu", "gridmenu", "gridheader", "gridheader", "gridheader", "gridheader"])
-      .addlayout(["gridmenu", "gridmenu", "gridmain", "gridmain", "gridmain", "gridmain"])
-      .addlayout(["gridmenu", "gridmenu", "gridright", "gridright", "gridright", "gridright"])
-      .addlayout(["gridmenu", "gridmenu", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
+      .addlayout(["gridmenu2", "gridmenu2", "gridheader2", "gridheader2", "gridheader2", "gridheader2"])
+      .addlayout(["gridmenu2", "gridmenu2", "gridmain2", "gridmain2", "gridmain2", "gridmain2"])
+      .addlayout(["gridmenu2", "gridmenu2", "gridright2", "gridright2", "gridright2", "gridright2"])
+      .addlayout(["gridmenu2", "gridmenu2", "gridfooter2", "gridfooter2", "gridfooter2", "gridfooter2"]);
       this.gridMobile1 = new GridConfig('LayoutSample2', GridConstants.Mobile)
-      .addlayout(["gridheader", "gridheader", "gridheader", "gridheader", "gridheader", "gridheader"])
-      .addlayout(["gridmenu", "gridmenu", "gridmenu", "gridmenu", "gridmenu", "gridmenu"])
-      .addlayout(["gridmain", "gridmain", "gridmain", "gridmain", "gridmain", "gridmain"])
-      .addlayout(["gridright", "gridright", "gridright", "gridright", "gridright", "gridright"])
-      .addlayout(["gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter", "gridfooter"]);
+      .addlayout(["gridheader2", "gridheader2", "gridheader2", "gridheader2", "gridheader2", "gridheader2"])
+      .addlayout(["gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2", "gridmenu2"])
+      .addlayout(["gridmain2", "gridmain2", "gridmain2", "gridmain2", "gridmain2", "gridmain2"])
+      .addlayout(["gridright2", "gridright2", "gridright2", "gridright2", "gridright2", "gridright2"])
+      .addlayout(["gridfooter2", "gridfooter2", "gridfooter2", "gridfooter2", "gridfooter2", "gridfooter2"]);
   }
  
 
