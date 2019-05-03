@@ -97,7 +97,14 @@
             "type": "string",
             "default": "none",
             "description": "Sets title to advance search form"
-          }
+          },
+          {
+            "name": "enable-global-filter",
+            "version": "5.12 onwards",
+            "type": "boolean",
+            "default": "false",
+            "description":"Sets searchbox for global filter"
+          }  
         ]
       },
       {

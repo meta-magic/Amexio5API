@@ -11,15 +11,13 @@
   <amexio-api-demo>
     <amexio-row>
       <amexio-column [size]=12>
-        <amexio-card [header]="true" [footer]="false">
+        <amexio-card [header]="true"  [footer]="false">
           <amexio-header>
             Search Box
           </amexio-header>
           <amexio-body>
-
             <amexio-searchbox [place-holder]="'Search'" [display-field]="'subject'" [data]="bindData" [width]="250">
               <amexio-searchbox-options #search [title]="'Advance search'">
-
                 <amexio-text-input field-label="Subject:" name="subject" place-holder="Enter subject" icon-feedback="true"
                   [(ngModel)]="subject">
                 </amexio-text-input>
@@ -35,12 +33,32 @@
                   (onClick)="filter(search)">
                 </amexio-button>
               </amexio-searchbox-options>
-
-
-
             </amexio-searchbox>
-
-
+          </amexio-body>
+        </amexio-card>
+        <amexio-card [header]="true"  [footer]="false">
+          <amexio-header>
+            Search Box With Global Filter
+          </amexio-header>
+          <amexio-body>
+            <amexio-searchbox [place-holder]="'Search'" [enable-global-filter]="true" [display-field]="'subject'" [data]="bindData" [width]="250">
+              <amexio-searchbox-options #search2 [title]="'Advance search'">
+                <amexio-text-input field-label="Subject:" name="subject" place-holder="Enter subject" icon-feedback="true"
+                  [(ngModel)]="subject">
+                </amexio-text-input>
+                <amexio-text-input field-label="From:" name="from" place-holder="Emailid" icon-feedback="true"
+                  [(ngModel)]="from">
+                </amexio-text-input>
+                <amexio-text-input field-label="To:" name="To" place-holder="Emailid" icon-feedback="true" [(ngModel)]="to">
+                </amexio-text-input>
+                <amexio-row>
+                  <amexio-column [size]="'12'"></amexio-column>
+                </amexio-row>
+                <amexio-button [label]="'Filter'" [type]="'theme-color'" [tooltip]="'toolTip'" [size]="'medium'"
+                  (onClick)="filter(search2)">
+                </amexio-button>
+              </amexio-searchbox-options>
+            </amexio-searchbox>
           </amexio-body>
         </amexio-card>
 
