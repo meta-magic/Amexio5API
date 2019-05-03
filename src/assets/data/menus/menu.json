@@ -297,7 +297,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "3",
+            "badge": "5",
             "children": [{
                     "text": "Badge",
                     "icon": "fa fa-id-badge  ",
@@ -418,6 +418,7 @@
                 {
                     "text": "Search Box",
                     "icon": "fa fa-search  ",
+                    "badge": "U",
                     "link": "forms-Input/searchbox-demo"
                 },
                 {
@@ -454,6 +455,7 @@
                 {
                     "text": "Toggle",
                     "icon": "fa fa-toggle-on  ",
+                    "badge": "U",
                     "link": "forms-Input/toggle-demo"
                 }
             ]

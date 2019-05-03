@@ -7,7 +7,7 @@
   </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
-      <amexio-column [size]="6">
+      <amexio-column [size]="6" [fit]="true">
         <amexio-card [header]="true" [header-align]="'left'">
           <amexio-header>
             Toggle Button Eith Type 1
@@ -53,8 +53,52 @@
 
         </amexio-card>
       </amexio-column>
-      <amexio-column [size]="6">
-        <amexio-card [header]="true" [header-align]="'left'">
+      <amexio-column [size]="6" [fit]="true">
+          <amexio-card [header]="true" [header-align]="'left'">
+              <amexio-header>
+                Toggle Button Eith Type 2
+              </amexio-header>
+              <amexio-body>
+                <amexio-row>
+                  <amexio-column size="4" fit="false">
+                    <amexio-label>
+                      Small Toggle Button with shape
+                    </amexio-label><br><br>
+                    <amexio-toggle [size]="'small'" [type]="2" shape="square">
+                    </amexio-toggle>
+                    <br><br>
+                    <amexio-toggle [size]="'small'" [type]="2">
+                    </amexio-toggle>
+    
+                  </amexio-column>
+                  <amexio-column size="4" fit="false">
+                    <amexio-label>
+                      Medium Toggle Button with shape
+                    </amexio-label><br><br>
+                    <amexio-toggle [size]="'medium'" [type]="2" shape="square">
+                    </amexio-toggle>
+                    <br><br>
+                    <amexio-toggle [size]="'medium'" [type]="2">
+                    </amexio-toggle>
+    
+                  </amexio-column>
+                  <amexio-column size="4" fit="false">
+                    <amexio-label>
+                      Large Toggle Button with shape
+                    </amexio-label><br><br>
+                    <amexio-toggle [size]="'large'" [type]="2" shape="square">
+                    </amexio-toggle>
+                    <br><br>
+                    <amexio-toggle [size]="'large'" [type]="2">
+                    </amexio-toggle>
+                    <br>
+    
+                  </amexio-column>
+                </amexio-row>
+              </amexio-body>
+    
+            </amexio-card>
+        <!-- <amexio-card [header]="true" [header-align]="'left'">
           <amexio-header>
               Toggle Button Eith Type 2
           </amexio-header>
@@ -64,28 +108,31 @@
                       <amexio-label>
                           Small Toggle Button with shape
                       </amexio-label>
+                      <br>
                       <amexio-toggle [size]="'small'" [type]="2" shape="square">
                       </amexio-toggle>
                       <br>
                       <amexio-toggle [size]="'small'" [type]="2">
                       </amexio-toggle>
-      
+                      <br>
                   </amexio-column>
                   <amexio-column size="4" fit="false">
                       <amexio-label>
                           Medium Toggle Button with shape
                       </amexio-label>
+                      <br>
                       <amexio-toggle [size]="'medium'" [type]="2" shape="square">
                       </amexio-toggle>
                       <br>
                       <amexio-toggle [size]="'medium'" [type]="2">
                       </amexio-toggle>
-      
+                      <br>
                   </amexio-column>
                   <amexio-column size="4" fit="false">
                       <amexio-label>
                           Large Toggle Button with shape
                       </amexio-label>
+                      <br>
                       <amexio-toggle [size]="'large'" [type]="2" shape="square">
                       </amexio-toggle>
                       <br>
@@ -97,7 +144,7 @@
               </amexio-row>
           </amexio-body>
       
-      </amexio-card>
+      </amexio-card> -->
       </amexio-column>
     </amexio-row>
   </amexio-api-demo>
