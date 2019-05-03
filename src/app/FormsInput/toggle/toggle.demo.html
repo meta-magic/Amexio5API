@@ -1,4 +1,3 @@
-
 <amexio-api-structure [url]="'assets/componentjson/forminputs/toggle.json'">
   <amexio-api-accessible>
     <amexio-box border-color="blue" border="left" [padding]="true" align="left">
@@ -9,26 +8,97 @@
   <amexio-api-demo>
     <amexio-row>
       <amexio-column [size]="6">
-        <amexio-card [header]="true">
+        <amexio-card [header]="true" [header-align]="'left'">
           <amexio-header>
-            Round Toggle
+            Toggle Button Eith Type 1
           </amexio-header>
           <amexio-body>
-            <amexio-toggle [field-label]="'Round'"></amexio-toggle>
+            <amexio-row>
+              <amexio-column size="4" fit="false">
+                <amexio-label>
+                  Small Toggle Button with shape
+                </amexio-label>
+                <amexio-toggle [size]="'small'" [type]="1" shape="square">
+                </amexio-toggle>
+                <br>
+                <amexio-toggle [size]="'small'" [type]="1">
+                </amexio-toggle>
+
+              </amexio-column>
+              <amexio-column size="4" fit="false">
+                <amexio-label>
+                  Medium Toggle Button with shape
+                </amexio-label>
+                <amexio-toggle [size]="'medium'" [type]="1" shape="square">
+                </amexio-toggle>
+                <br>
+                <amexio-toggle [size]="'medium'" [type]="1">
+                </amexio-toggle>
+
+              </amexio-column>
+              <amexio-column size="4" fit="false">
+                <amexio-label>
+                  Large Toggle Button with shape
+                </amexio-label>
+                <amexio-toggle [size]="'large'" shape="square">
+                </amexio-toggle>
+                <br>
+                <amexio-toggle [size]="'large'">
+                </amexio-toggle>
+                <br>
+
+              </amexio-column>
+            </amexio-row>
           </amexio-body>
+
         </amexio-card>
       </amexio-column>
       <amexio-column [size]="6">
-        <amexio-card [header]="true">
+        <amexio-card [header]="true" [header-align]="'left'">
           <amexio-header>
-            Square Toggle
+              Toggle Button Eith Type 2
           </amexio-header>
           <amexio-body>
-            <amexio-toggle [field-label]="'Square'" shape="square" (onChange)="onSquareToggleClick($event)"></amexio-toggle>
+              <amexio-row>
+                  <amexio-column size="4" fit="false">
+                      <amexio-label>
+                          Small Toggle Button with shape
+                      </amexio-label>
+                      <amexio-toggle [size]="'small'" [type]="2" shape="square">
+                      </amexio-toggle>
+                      <br>
+                      <amexio-toggle [size]="'small'" [type]="2">
+                      </amexio-toggle>
+      
+                  </amexio-column>
+                  <amexio-column size="4" fit="false">
+                      <amexio-label>
+                          Medium Toggle Button with shape
+                      </amexio-label>
+                      <amexio-toggle [size]="'medium'" [type]="2" shape="square">
+                      </amexio-toggle>
+                      <br>
+                      <amexio-toggle [size]="'medium'" [type]="2">
+                      </amexio-toggle>
+      
+                  </amexio-column>
+                  <amexio-column size="4" fit="false">
+                      <amexio-label>
+                          Large Toggle Button with shape
+                      </amexio-label>
+                      <amexio-toggle [size]="'large'" [type]="2" shape="square">
+                      </amexio-toggle>
+                      <br>
+                      <amexio-toggle [size]="'large'" [type]="2">
+                      </amexio-toggle>
+                      <br>
+      
+                  </amexio-column>
+              </amexio-row>
           </amexio-body>
-        </amexio-card>
+      
+      </amexio-card>
       </amexio-column>
-
     </amexio-row>
   </amexio-api-demo>
 </amexio-api-structure>
