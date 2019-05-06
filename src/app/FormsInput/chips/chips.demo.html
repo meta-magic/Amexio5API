@@ -22,6 +22,7 @@
           <amexio-body>
             <amexio-chips [data]="sampledatachips" (selectedchipsData)="onChipDataLabelClick($event)" (closeClick)="onChipDataCloseClick($event)" [display-field]="'label'"></amexio-chips>
             <pre><code>{{emitdatachips | json}}</code></pre>
+
           </amexio-body>
         </amexio-card>
         <amexio-card header="true">

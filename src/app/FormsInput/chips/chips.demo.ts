@@ -92,13 +92,13 @@ export class ChipsDemo {
     }
    
     onChipDataCloseClick(event: any){
-      this.emitdatachip = event;
+      this.emitdatachips = event;
     }
     onChipsLabelClick(event: any){
       this.multipleemitchips  = event;
     }
     onCloseClick(event: any){
-      this.multipleemitchip = event;
+      this.multipleemitchips = event;
     }
 
     //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
