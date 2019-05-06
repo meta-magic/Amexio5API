@@ -2,12 +2,12 @@
 <amexio-chips [data]="sampledatachips" 
               [display-field]="'label'"
               (selectedchipsData)="onChipDataLabelClick($event)" 
-              (onCloseClick)="onChipDataCloseClick($event)"></amexio-chips>
+              (closeClick)="onChipDataCloseClick($event)"></amexio-chips>
 <pre><code>{{emitdatachips | json}}</code></pre>
 
 <!-- Chips Component with multiple Inputs -->
 
-<amexio-chips [display-field]="'label'" (selectedchipsData)="onChipsLabelClick($event)" (onCloseClick)="onCloseClick($event)">
+<amexio-chips [display-field]="'label'" (selectedchipsData)="onChipsLabelClick($event)" (closeClick)="onCloseClick($event)">
     <amexio-chip [icon]="'fa fa-linkedin-square'" [label]="'Linkedin'" [color]="'red'" [badge]="4" [closable]="true"
         [font-color]="'white'">
     </amexio-chip>

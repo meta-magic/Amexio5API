@@ -10,7 +10,7 @@
   </amexio-api-accessible>
   <amexio-api-demo>
     <amexio-row>
-      <amexio-column [size]=12>
+      <amexio-column [size]=6>
         <amexio-card [header]="true"  [footer]="false">
           <amexio-header>
             Search Box
@@ -36,6 +36,7 @@
             </amexio-searchbox>
           </amexio-body>
         </amexio-card>
+        <br>
         <amexio-card [header]="true"  [footer]="false">
           <amexio-header>
             Search Box With Global Filter
@@ -61,7 +62,19 @@
             </amexio-searchbox>
           </amexio-body>
         </amexio-card>
+      </amexio-column>
 
+      <amexio-column size ="6">
+        <amexio-card
+          [header]="true"
+          [header-align]="'left'">
+            <amexio-header>
+              Data 
+            </amexio-header>
+            <amexio-body>
+          <pre><code>{{localData|json}}</code></pre> 
+            </amexio-body>
+        </amexio-card>
       </amexio-column>
     </amexio-row>
   </amexio-api-demo>

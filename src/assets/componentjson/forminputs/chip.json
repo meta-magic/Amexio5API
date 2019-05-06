@@ -170,6 +170,11 @@
             "name": "selectedchipsData",
             "description": "emits particular chip data on click of chip",
             "version": "5.3 onwards"
+          },
+          {
+            "name": "closeClick",
+            "description": "emits particular chip data when chip is closed",
+            "version": "5.11.1 onwards"
           }
         ]
       },
