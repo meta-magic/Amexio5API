@@ -100,7 +100,7 @@
           },
           {
             "name": "enable-global-filter",
-            "version": "5.12 onwards",
+            "version": "5.11.1 onwards",
             "type": "boolean",
             "default": "false",
             "description":"Sets searchbox for global filter"

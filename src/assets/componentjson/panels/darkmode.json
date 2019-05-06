@@ -55,7 +55,21 @@
           "version": "5.11 onwards",
           "type": "string",
           "default": "round"
-      }
+        },
+        {
+          "name": "size",
+          "description": "size to the toggle button(small/medium/large).",
+          "version": "5.11.1 onwards",
+          "type": "string",
+          "default": "medium"
+        },
+        {
+          "name": "type",
+          "description": "Two types of the toogle button (type= 1, type =2)",
+          "version": "5.11.1 onwards",
+          "type": "string",
+          "default": "1"
+        }
       ]
     }
   ],
@@ -84,11 +98,11 @@
         }
       ],
       "gridData": [
-            {
-              "name": "Space",
-              "description": "Toggles the toogle box checked and unchecked."
-            }
-          ]
+        {
+          "name": "Space",
+          "description": "Toggles the toogle box checked and unchecked."
         }
       ]
+    }
+  ]
 }

@@ -1968,6 +1968,15 @@ input:focus + .largeToggleSlider {
 .smallType2ToggleSlider:before {
   background-color: var(--componentActiveBGColor); }
 
+input:checked + .smallType2ToggleSlider {
+  background-color: var(--componentHoverBGColor); }
+
+input:checked + .mediumType2ToggleSlider {
+  background-color: var(--componentHoverBGColor); }
+
+input:checked + .largeType2ToggleSlider {
+  background-color: var(--componentHoverBGColor); }
+
 /** toggle - Structure CSS **/
 /* Rounded sliders */
 .round {
