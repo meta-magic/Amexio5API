@@ -2,7 +2,7 @@
     "title": "Amexio Creative Menu ",
     "description": "This component shows diffrent type of viewports ",
     "apiRefMetadata": [{
-        "gridTitle": "Properties <amexio-viewport>",
+        "gridTitle": "Properties <amexio-menu-ce>",
         "columnDefinition": [{
                 "dataindex": "name",
                 "text": "Name",
@@ -41,40 +41,40 @@
         ],
         "gridData": [{
             "name": "animation-type",
-            "description": "type of home page like 1,2,3. If nav bar used: (1: with transparent navbar, 2: tranparent and on scroll get obaque(theme color), 3: theme color navbar)",
+            "description": "animation-type of creative menu page like 1,2,3.",
             "version": "5.10 onwards",
             "type": "string",
             "default": "1"
         },
         {
             "name": "font",
-            "description": "If true gets the scroll to the viewport",
+            "description": "change the font of label",
             "version": "5.10 onwards",
             "type": "boolean",
             "default": "true"
         },
         {
             "name": "data",
-            "description": "If true gets the scroll to the viewport",
-            "version": "5.10 onwards",
+            "description": "get data from local",
+            "version": "5.11 onwards",
             "type": "boolean",
             "default": "true"
         },
         {
             "name": "size",
-            "description": "Sets background color for page",
-            "version": "5.10.3 onwards",
+            "description": "Sets size to the label",
+            "version": "5.11.3 onwards",
             "type": "string",
             "default": "black"
         }]
     }],
     "sourceMetadata": {
-        "htmlUrl": "creative/viewport/creative.html",
-        "tsUrl": "creative/viewport/creative.text",
+        "htmlUrl": "creative/ce-menu/creative.html",
+        "tsUrl": "creative/ce-menu/creative.text",
         "datasourceUrl": ""
     },
     "liveMetadata": {
-        "disabled": false,
+        "disabled": true,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-viewport?embed=1&file=app/panel/viewport/viewport.demo.html&view=editor"
     }
 }

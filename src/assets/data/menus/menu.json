@@ -774,6 +774,11 @@
                     "link": "navigation/dropdownmenu-demo"
                 },
                 {
+                    "text": "Creative Menu",
+                    "icon": "fa fa-chevron-circle-down  ",
+                    "link": "creative/menu-ce-demo"
+                },
+                {
                     "text": "Menu Bar",
                     "icon": "fa fa-bars  ",
                     "badge": "U",

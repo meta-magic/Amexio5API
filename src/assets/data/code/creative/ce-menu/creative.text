@@ -1,0 +1,35 @@
+export class CreativeMenuComponent {
+  
+  tempData: any;
+
+  constructor() { 
+        this.tempData = [
+      {
+        label: "About"
+
+      },
+      {
+        label: "Illustration"
+
+      },
+      {
+        label: "Photography"
+
+      },
+      {
+        label: "Web Design"
+
+      },
+      {
+        label: "Personal Project"
+
+      },
+      {
+        label: "Contact"
+
+      }
+
+    ]
+  }
+
+}
