@@ -103,6 +103,11 @@
                             "text": "gridlayout-Ex3",
                             "icon": "fa fa-indent  ",
                             "link": "layout/gridlayout-demo-exp3"
+                        },
+                        {
+                            "text": "Collapsible Grid",
+                            "icon": "fa fa-compress  ",
+                            "link": "layout/cgd"
                         }
                     ]
                 },

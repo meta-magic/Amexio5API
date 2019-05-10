@@ -13,6 +13,7 @@ import { GridLayoutDemoTwo } from './gridlayout/gridlayouttwo/gridlayout.demo';
 import { GridLayoutDemoThree } from './gridlayout/gridlayoutthree/gridlayout.demo';
 import { GridLayoutDemoOne } from './gridlayout/gridlayoutone/gridlayout.demo';
 import { GridLayoutDemo } from './gridlayout/gridlayoutbasic/gridlayout.demo';
+import { CollapsibleGridLayoutDemo } from './gridlayout/collapsiblegridlayout/collapsiblegridlayout.demo';
 
 export const LAYOUT_ROUTE: Routes = [
     {
@@ -54,5 +55,8 @@ export const LAYOUT_ROUTE: Routes = [
     {
         path: 'gridlayout-demo-exp3', component: GridLayoutDemoThree,
     },
+    {
+        path: 'cgd', component: CollapsibleGridLayoutDemo,
+    }
     
 ]

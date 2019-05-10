@@ -22,6 +22,7 @@ import { GridLayoutDemoTwo } from "./gridlayout/gridlayouttwo/gridlayout.demo";
 import { GridLayoutDemoThree } from "./gridlayout/gridlayoutthree/gridlayout.demo";
 import { GridLayoutDemoOne } from "./gridlayout/gridlayoutone/gridlayout.demo";
 import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
+import { CollapsibleGridLayoutDemo } from "./gridlayout/collapsiblegridlayout/collapsiblegridlayout.demo";
 
 
 /**
@@ -32,7 +33,7 @@ import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
          horizontalLayoutDemo, CardImageDemo,
           CardFormDemo,ColumnDemo,BorderDemoComponent,AccordionDemoComponent,
           GridLayoutDemo,GridLayoutDemoOne,GridLayoutDemoTwo,GridLayoutDemoThree,
-
+          CollapsibleGridLayoutDemo
         ],
     imports: [
         CommonModule,
