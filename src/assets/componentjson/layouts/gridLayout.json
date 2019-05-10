@@ -42,14 +42,13 @@
         }
       ],
       "gridData": [
-       {
-      "name": "layout",
-      "type": "string",
-      "default": "desktop",
-      "description":"It is name of layout to be plotted",
-      "version": "5.4 onwards"
-    }
-       
+        {
+          "name": "layout",
+          "type": "string",
+          "default": "desktop",
+          "description": "It is name of layout to be plotted",
+          "version": "5.4 onwards"
+        }
       ]
     },
     {
@@ -92,13 +91,46 @@
         }
       ],
       "gridData": [
-      {
-      "name": "name",
-      "type": "string",
-      "default": "",
-      "description":"It is type which given according to the pattern of data input",
-      "version": "5.4 onwards"
-    }
+        {
+          "name": "name",
+          "type": "string",
+          "default": "",
+          "description": "It is type which given according to the pattern of data input",
+          "version": "5.4 onwards"
+        },{
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "Title for grid item",
+          "version": "5.4 onwards"
+        },
+        {
+          "name": "hc-enabled",
+          "type": "boolean",
+          "default": "false",
+          "description": "Enables horizontal collapsible feature to grid-item. Position of collapsible button will be based on hc-direction attribute",
+          "version": "5.11 onwards"
+        },
+        {
+          "name": "hc-direction",
+          "type": "string",
+          "default": "left or right",
+          "description": "Collapsible grid-item horizontally towards left or right.",
+          "version": "5.11 onwards"
+        },{
+          "name": "vc-enabled",
+          "type": "boolean",
+          "default": "false",
+          "description": "Enables vertical collapsible feature to grid-item. Position of collapsible button will be based on vc-direction attribute",
+          "version": "5.11 onwards"
+        },
+        {
+          "name": "vc-direction",
+          "type": "string",
+          "default": "top or bottom",
+          "description": "Collapsible grid-item vertically towards top or bottom.",
+          "version": "5.11 onwards"
+        }
       ]
     }
   ],
