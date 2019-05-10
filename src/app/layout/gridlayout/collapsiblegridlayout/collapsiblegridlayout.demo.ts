@@ -18,14 +18,16 @@ export class CollapsibleGridLayoutDemo implements OnInit {
   copyMsgArray: any[];
   selectedData: any;
   data: any[];
-  gridDesktop: GridConfig;
+  gridDesktop1: GridConfig;
+  gridDesktop2: GridConfig;
+  gridDesktop3: GridConfig;
 
   customSourceData: ComponentDataStructure;
 
   constructor(private http: HttpClient, private _gridlayoutService: AmexioGridLayoutService) {
     this.customSourceData = new ComponentDataStructure();
     this.createLayouts();
-    this._gridlayoutService.createLayout(this.gridDesktop);
+
   }
 
 
@@ -41,10 +43,26 @@ export class CollapsibleGridLayoutDemo implements OnInit {
   }
 
   createLayouts() {
-    this.gridDesktop = new GridConfig('collapsiblegridlayoutdemo', GridConstants.Desktop)
+
+    this.gridDesktop1 = new GridConfig('collapsiblegridlayoutdemo1', GridConstants.Desktop)
+      .addlayout(["eastblock", "centertopblock", "centertopblock", "centertopblock", "centertopblock", "westblock"])
+      .addlayout(["eastblock", "centerbottomblock", "centerbottomblock", "centerbottomblock", "centerbottomblock", "westblock"]);
+     
+
+    this.gridDesktop2 = new GridConfig('collapsiblegridlayoutdemo2', GridConstants.Desktop)
       .addlayout(["west", "north", "north", "north", "north", "east"])
       .addlayout(["west", "center", "center", "center", "center", "east"])
       .addlayout(["west", "south", "south", "south", "south", "east"]);
+
+
+    this.gridDesktop3 = new GridConfig('collapsiblegridlayoutdemo3', GridConstants.Desktop)
+      .addlayout(["north", "north", "north", "north", "north", "north"])
+      .addlayout(["west", "center", "center", "center", "center", "east"])
+      .addlayout(["south", "south", "south", "south", "south", "south"]);
+
+    this._gridlayoutService.createLayout(this.gridDesktop1);
+    this._gridlayoutService.createLayout(this.gridDesktop2);
+    this._gridlayoutService.createLayout(this.gridDesktop3);
   }
 
 
