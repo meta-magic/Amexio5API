@@ -11,10 +11,19 @@ import {RestCallService} from "../../apimetadata/services/restcall.service";
 export class BoxDemo implements OnInit{
   copyMsgArray: any[];
   comData: any;
+  tempData: any;
   constructor(private _rCService: RestCallService) {}
 
   ngOnInit(): void {
    this.getComponentData();
+   this.tempData = [{
+    label: "Label1",
+    link: ""
+  },
+  {
+    label: "Label1",
+    link: ""
+  }]
   }
 
   getComponentData() {

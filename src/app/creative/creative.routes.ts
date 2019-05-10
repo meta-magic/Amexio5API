@@ -6,6 +6,7 @@ import { CreativeCircularProgressBarDemo } from './progressce/progressce.compone
 import { HomePageDemo } from './homepage/homepage.demo';
 import { ViewportDemoComponent } from './viewport/viewport.demo';
 import { CreativeCarouselComponent } from './carousel/carouselce.demo';
+import { MenuDemoComponent } from './menu/menu.demo';
 
 /**
  * Created by kedar on 6/2/19.
@@ -32,5 +33,8 @@ export const CREATIVE_ROUTE: Routes = [
     },
     {
         path: 'carousel-ce-demo', component: CreativeCarouselComponent 
+    },
+    {
+        path: 'menu-ce-demo', component: MenuDemoComponent, 
     }
 ];

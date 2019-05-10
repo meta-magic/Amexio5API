@@ -178,7 +178,30 @@
       ]
     },
     {
-      "gridTitle": "Events",
+      "gridTitle": "Events <amexio-drop-down-menu>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+      "name": "onClick",
+      "description": "Fire when menu item is clicked. "
+    }
+      ]
+    },
+    {
+      "gridTitle": "Events <amexio-drop-down-menu-item>",
       "columnDefinition": [
         {
           "dataindex": "name",
