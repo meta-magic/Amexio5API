@@ -1,0 +1,55 @@
+<amexio-row>
+  <amexio-column size="12">
+    <amexio-card [header]="true">
+      <amexio-header>
+        Color Palette Directive
+      </amexio-header>
+      <amexio-body>
+        <amexio-tab-view [closable]="false">
+          <amexio-tab title="Introduction" [active]="true">
+            <amexio-card [header]="true">
+              <amexio-header>
+                Directive: amexioColorPalette
+              </amexio-header>
+              <amexio-body>
+                <amexio-datagrid [enable-column-fiter]="false" [data]="inputData">
+                  <amexio-data-table-column [data-index]="'input'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Input'">
+                  </amexio-data-table-column>
+                  <amexio-data-table-column [data-index]="'data'" [data-type]="'string'" [hidden]="false" [text]="'Information'">
+                  </amexio-data-table-column>
+                </amexio-datagrid>
+
+                <amexio-box amexioColorPalette [color-palette]="'random'" [gradient]="false" [amexio-color]="'amexio-theme-color2'" [border-dotted]="false"
+                  [padding]="true" [closable]="false" align="left">
+                  <b>Classic: </b>
+                  Current State of Two colors: theme color1 and theme color2
+                  <br>
+                  <b>Vibrant: </b>
+                  <br> NavBar = Theme Color 1
+                  <br> Panel Header = Theme Color 2
+                  <br> Accordion / Tabs = Theme Color 3
+                  <br> Card Header = Theme Color 4
+                  <br> Grid Header = Theme Color 5
+                  <br> Window / Dialog / box= Theme Color 6
+                  <br>
+                  <b>Random:</b>
+                  <br>
+                  Except for the NavBar, all other components can pick up a random color for the Header. panel, Accordion,
+                    Tabs, Card, Grid, Window, Dialog, box
+                </amexio-box>
+              </amexio-body>
+            </amexio-card>
+          </amexio-tab>
+          <amexio-tab title="Color-palette">
+              <amexio-datagrid [enable-column-fiter]="false" [data]="componentData">
+                  <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Input'">
+                  </amexio-data-table-column>
+                  <amexio-data-table-column [data-index]="'colorpalette'" [data-type]="'string'" [hidden]="false" [text]="'Input'">
+                    </amexio-data-table-column>
+                </amexio-datagrid>
+          </amexio-tab>
+        </amexio-tab-view>
+      </amexio-body>
+    </amexio-card>
+  </amexio-column>
+</amexio-row>

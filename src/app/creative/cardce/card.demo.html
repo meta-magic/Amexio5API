@@ -1,8 +1,6 @@
 <amexio-api-structure [url]="'assets/componentjson/creative/creativecard.json'">
     <amexio-api-demo>
 
-
-
         <amexio-row>
             <amexio-column [size]="12">
                 <amexio-card [header]="true">
@@ -14,7 +12,7 @@
                             <amexio-column size="4" [fit]="true">
                                 <h4>Card Demo 1</h4>
                                 <amexio-card-ce align="center">
-                                    <amexio-header-ce [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'75px'"
+                                    <amexio-header-ce amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [background]="'linear-gradient(40deg,#2096ff,#05ffa3)'" [height]="'75px'"
                                         align="center">
                                         <amexio-image width="100px" [c-class]="'card-img-center'" height="100px"
                                             [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>

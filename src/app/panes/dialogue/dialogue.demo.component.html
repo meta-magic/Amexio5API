@@ -22,7 +22,7 @@
 
               <amexio-button type="success" (onClick)="toggleConfirm('material')" label="Confirm"></amexio-button>
 
-              <amexio-dialogue [(show)]="confirmdialoguematerial" [button-size]="'medium'" [material-design]="true"
+              <amexio-dialogue  [(show)]="confirmdialoguematerial" [button-size]="'medium'" [material-design]="true"
                 [title]="'Confirm'" [message]="'Are you sure ?'" [message-type]="'confirm'">
               </amexio-dialogue>
 
@@ -96,7 +96,7 @@
             <amexio-column [size]="6">
 
               <amexio-button type="success" (onClick)="toggleConfirm('nonmaterial')" label="Confirm"></amexio-button>
-              <amexio-dialogue [(show)]="confirmdialoguenonmaterial" [button-size]="'medium'" [material-design]="false"
+              <amexio-dialogue amexioColorPalette [color-palette]="'random'" [gradient]="true" [amexio-color]="'amexio-theme-color4'" [(show)]="confirmdialoguenonmaterial" [button-size]="'medium'" [material-design]="false"
                 [title]="'Confirm'" [message]="'Are you sure ?'" [message-type]="'confirm'">
               </amexio-dialogue>
 

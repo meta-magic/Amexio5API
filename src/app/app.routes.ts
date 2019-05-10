@@ -63,6 +63,10 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'media-demo', loadChildren: './media/media.module#MediaModule'
   },
+    /** Directive Routes*/
+    {
+      path: 'directive-demo', loadChildren: './directive/directive.module#DirectiveModule'
+    },
   /**Layout Routes*/
   {
     path: 'layout', loadChildren: './layout/layout.module#LayoutModule'
