@@ -12,6 +12,7 @@ export class SliderDemo {
   copyMsgArray: any[];
   stepVal1:number = 10;
   stepVal2:number = 20;
+  stepVal3:number =20;
   constructor() {}
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

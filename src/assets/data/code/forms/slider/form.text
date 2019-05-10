@@ -2,6 +2,7 @@ export class SliderDemo {
 
   stepVal1:number = 10;
   stepVal2:number = 20;
+  stepVal3:number = 20;
   constructor() {
 
   }

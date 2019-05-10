@@ -57,6 +57,13 @@
             "default": "false"
           },
           {
+            "name": "type",
+            "description": "Type to the slider",
+            "version": "5.12 onwards",
+            "type": "number",
+            "default": "1"
+          },
+          {
             "name": "min-value",
             "description": "Min slider value",
             "version": "4.0 onwards",
