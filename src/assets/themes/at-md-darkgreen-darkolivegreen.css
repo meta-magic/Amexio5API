@@ -2377,7 +2377,7 @@ input:checked + .largeType2ToggleSlider:before {
 .ui-corner-all {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3em; }
 
 .ui-widget-content {
   border: 1px solid #D5D5D5; }
@@ -2427,26 +2427,13 @@ input:checked + .largeType2ToggleSlider:before {
   outline: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
-  border-radius: 3em;
+  border-radius: 3em !important;
   border: none; }
 
 .ui-slider-horizontal2 {
   height: 15px;
   top: 10px; }
 
-.ui-slider-handle2 {
-  position: absolute;
-  z-index: 0;
-  width: 42px !important;
-  height: 42px !important;
-  cursor: default;
-  outline: none;
-  border-radius: 3em;
-  border: none;
-  background: #2196f3;
-  color: #f0f8fe;
-  bottom: -15px; }
-
 .ui-slider-horizontal2 {
   height: 15px;
   top: 10px; }
@@ -2458,11 +2445,11 @@ input:checked + .largeType2ToggleSlider:before {
   height: 42px !important;
   cursor: default;
   outline: none;
-  border-radius: 3em;
+  border-radius: 3em !important;
   border: none;
-  background: #2196f3;
-  color: #f0f8fe;
-  bottom: -15px; }
+  background: var(--componentHeaderBGColor);
+  bottom: -15px;
+  margin-left: -.9em; }
 
 .ui-slider-vertical2 {
   width: 1em;
@@ -2478,7 +2465,9 @@ input:checked + .largeType2ToggleSlider:before {
   outline: none;
   border-radius: 3em;
   border: none;
-  background: var(--componentHeaderBGColor); }
+  background: var(--componentHeaderBGColor);
+  margin-bottom: -2em;
+  margin-top: -2em; }
 
 .ui-slider-handle1 {
   margin-left: -6px;
