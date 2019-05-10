@@ -1,6 +1,6 @@
 {
     "title": "Amexio Creative Menu ",
-    "description": "This component shows diffrent type of viewports ",
+    "description": "This component shows diffrent type of Creative Menu ",
     "apiRefMetadata": [{
         "gridTitle": "Properties <amexio-menu-ce>",
         "columnDefinition": [{
@@ -41,29 +41,29 @@
         ],
         "gridData": [{
             "name": "animation-type",
-            "description": "animation-type of creative menu page like 1,2,3.",
-            "version": "5.10 onwards",
+            "description": "The animation-type of creative menu page like 1,2,3.",
+            "version": "5.12 onwards",
             "type": "string",
             "default": "1"
         },
         {
             "name": "font",
-            "description": "change the font of label",
-            "version": "5.10 onwards",
+            "description": "Change the font of label",
+            "version": "5.12 onwards",
             "type": "boolean",
             "default": "true"
         },
         {
             "name": "data",
-            "description": "get data from local",
-            "version": "5.11 onwards",
+            "description": "Get data from local",
+            "version": "5.12 onwards",
             "type": "boolean",
             "default": "true"
         },
         {
             "name": "size",
             "description": "Sets size to the label",
-            "version": "5.11.3 onwards",
+            "version": "5.12 onwards",
             "type": "string",
             "default": "black"
         }]
