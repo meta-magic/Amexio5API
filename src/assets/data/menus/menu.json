@@ -333,6 +333,13 @@
                     "link": "forms-Input/date-picker-demo"
 
                 },
+                {
+                    "text": "Multi DatePicker",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "N",
+                    "link": "forms-Input/multidatepicker-demo"
+
+                },
 
                 {
                     "text": "DropDown",

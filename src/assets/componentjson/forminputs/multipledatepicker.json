@@ -36,31 +36,46 @@
             ],
             "gridData": [
                 {
-                    "name": "place-holder",
-                    "description": "place-holder of field",
+                    "name": "fromlabel",
+                    "description": "label of from card field",
                     "type": " string",
                     "default": ""
                 },
                 {
-                    "name": " date-format",
-                    "description": "The label of this field",
+                    "name": "tolabel",
+                    "description": "The label of to card field",
                     "type": "string",
                     "default": ""
                 },
                  
                 {
-                    "name": "field-label ",
-                    "description": "The label of this field",
-                    "type": " string",
-                    "default": ""
+                    "name": "number-of-months",
+                    "description": "specifies number of months to be displayed on date picker",
+                    "type": "number",
+                    "default": "1"
                 },
                  
                 {
-                    "name": "number-of-months",
-                    "description": "specifies number of months to be displayed in date picker",
-                    "type": "number",
-                    "default": "1"
+                    "name": "disabled-date",
+                    "description": "specifies range of disabled dates",
+                    "type": "any[]",
+                    "default": ""
+                },
+
+                {
+                    "name": "min-date",
+                    "description": "specifies minimum date of date picker",
+                    "type": "string",
+                    "default": ""
+                },
+
+                {
+                    "name": "max-date",
+                    "description": "specifies maximum date of date picker",
+                    "type": "string",
+                    "default": ""
                 }
+
                  
             ]
         },

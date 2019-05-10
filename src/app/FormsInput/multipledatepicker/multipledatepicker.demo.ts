@@ -5,7 +5,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'multiple-date-picker-demo',
+  selector: 'multidatepicker-demo',
   templateUrl: './multipledatepicker.demo.html',
 })
 export class MultipleDateTimePickerDemo {

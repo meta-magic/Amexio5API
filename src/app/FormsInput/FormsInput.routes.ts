@@ -123,7 +123,7 @@ export const FORMSINPUT_ROUTE: Routes = [
     {
         path: 'value-range', component: RangeSliderDemo,
     },
-    {
+    { 
         path: 'multidatepicker-demo', component: MultipleDateTimePickerDemo,
     }
     
