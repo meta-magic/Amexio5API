@@ -2,28 +2,28 @@
     <amexio-api-demo>
         Collapsible Grid Layout : Demo 1
         <hr />
+
         <amexio-layout-grid [layout]="'collapsiblegridlayoutdemo1'">
-            <amexio-grid-item  [title]="'EAST'" [hc-enabled]="true" [hc-direction]="'left'"
-                [name]="'eastblock'">
+            <amexio-grid-item [title]="'EAST'" [hc-enabled]="true" [hc-direction]="'left'" [name]="'eastblock'">
                 <amexio-panel [header]="false" [height]="'100%'" [expanded]="false">
-                        NORTH Panel
-                    </amexio-panel>
+                    EAST Panel
+                </amexio-panel>
             </amexio-grid-item>
-            <amexio-grid-item style="padding:0px 5px;" [vc-enabled]="true" [vc-direction]="'top'" [title]="'CENTERTOP'" [name]="'centertopblock'">
-                    <amexio-panel [header]="false" [height]="'100%'" [expanded]="false">
-                            NORTH Panel
-                        </amexio-panel>
-            </amexio-grid-item>
-            <amexio-grid-item  [title]="'CENTERBOTTOM'" [name]="'centerbottomblock'">
-                    <amexio-panel [header]="false" [height]="'100%'" [expanded]="false">
-                            NORTH Panel
-                        </amexio-panel>
-            </amexio-grid-item>
-            <amexio-grid-item [title]="'WEST'" [hc-enabled]="true" [hc-direction]="'right'"
-                [name]="'westblock'">
+            <amexio-grid-item style="padding:0px 5px;" [vc-enabled]="true" [vc-direction]="'top'" [title]="'CENTER TOP'"
+                [name]="'centertopblock'">
                 <amexio-panel [header]="false" [height]="'100%'" [expanded]="false">
-                        NORTH Panel
-                    </amexio-panel>
+                    CENTER TOP Panel
+                </amexio-panel>
+            </amexio-grid-item>
+            <amexio-grid-item [title]="'CENTER BOTTOM'" [name]="'centerbottomblock'">
+                <amexio-panel [header]="false" [height]="'100%'" [expanded]="false">
+                    CENTER BOTTOM Panel
+                </amexio-panel>
+            </amexio-grid-item>
+            <amexio-grid-item [title]="'WEST'" [hc-enabled]="true" [hc-direction]="'right'" [name]="'westblock'">
+                <amexio-panel [header]="false" [height]="'100%'" [expanded]="false">
+                    WEST Panel
+                </amexio-panel>
             </amexio-grid-item>
 
         </amexio-layout-grid>

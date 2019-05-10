@@ -37,8 +37,8 @@ export class CollapsibleGridLayoutDemo implements OnInit {
   createCustomSourceData() {
     this.customSourceData.title = 'Grid Layout';
     this.customSourceData.description = 'CSS Grid Layout is the most powerful layout system available in CSS. It is a 2-dimensional system, meaning it can handle both columns and rows. Grid Layout can be used by applying CSS rules both to a parent element (which becomes the Grid Container) and to that elements children (which become Grid Items).';
-    this.customSourceData.sourceMetadata.htmlUrl = 'data/gridlayout/gridlayout.html';
-    this.customSourceData.sourceMetadata.tsUrl = 'data/gridlayout/gridlayout.text';
+    this.customSourceData.sourceMetadata.htmlUrl = 'data/gridlayout/collapsiblegridlayout.html';
+    this.customSourceData.sourceMetadata.tsUrl = 'data/gridlayout/collapsiblegridlayout.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-gridlayoutbasic?embed=1&file=app/layouts/gridlayout/gridlayoutbasic/gridlayout.demo.html&view=editor';
   }
 
