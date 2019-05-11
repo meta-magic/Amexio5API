@@ -8,8 +8,8 @@
                         <amexio-row>
                             <amexio-column [size]="4">
                                 <amexio-button type="success" (onClick)=" onSideModalClick()" label="Side Modal"></amexio-button>
-                                <amexio-window-ce position-top="100px" [horizontal-position]="'left'" [vertical-position]="'top'" [(show)]="showSideModal" width="400px">
-                                    <amexio-header-ce [background]="'green'" height="45px" align="center" vertical-align="top">
+                                <amexio-window-ce   position-top="100px" [horizontal-position]="'left'" [vertical-position]="'top'" [(show)]="showSideModal" width="400px">
+                                    <amexio-header-ce amexioColorPalette [color-palette]="'random'" [amexio-color]="'amexio-theme-color6'" [gradient]="true" height="45px" align="center" vertical-align="top">
                                         <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
                                     </amexio-header-ce>
                                     <amexio-body-ce>

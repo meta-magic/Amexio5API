@@ -41,7 +41,7 @@
             </amexio-card>
           </amexio-tab>
           <amexio-tab title="Color-palette">
-              <amexio-datagrid [enable-column-fiter]="false" [data]="componentData">
+              <amexio-datagrid [enable-column-fiter]="false" [data]="componentData" (rowSelect)="onRowSelect($event)">
                   <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Input'">
                   </amexio-data-table-column>
                   <amexio-data-table-column [data-index]="'colorpalette'" [data-type]="'string'" [hidden]="false" [text]="'Input'">
