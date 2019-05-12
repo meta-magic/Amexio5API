@@ -13,6 +13,13 @@
                     "datatype": "string"
                 },
                 {
+                "dataindex": "version",
+                "text": "Version",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+                {
                     "dataindex": "type",
                     "text": "Type",
                     "width": 15,
@@ -39,12 +46,14 @@
                     "name": "fromlabel",
                     "description": "label of from card field",
                     "type": " string",
+                    "version": "5.12 onwards",
                     "default": ""
                 },
                 {
                     "name": "tolabel",
                     "description": "The label of to card field",
                     "type": "string",
+                    "version": "5.12 onwards",
                     "default": ""
                 },
                  
@@ -52,6 +61,7 @@
                     "name": "number-of-months",
                     "description": "specifies number of months to be displayed on date picker",
                     "type": "number",
+                    "version": "5.12 onwards",
                     "default": "1"
                 },
                  
@@ -59,6 +69,7 @@
                     "name": "disabled-date",
                     "description": "specifies range of disabled dates",
                     "type": "any[]",
+                    "version": "5.12 onwards",
                     "default": ""
                 },
 
@@ -66,6 +77,7 @@
                     "name": "min-date",
                     "description": "specifies minimum date of date picker",
                     "type": "string",
+                    "version": "5.12 onwards",
                     "default": ""
                 },
 
@@ -73,6 +85,7 @@
                     "name": "max-date",
                     "description": "specifies maximum date of date picker",
                     "type": "string",
+                    "version": "5.12 onwards",
                     "default": ""
                 }
 
@@ -89,6 +102,12 @@
                     "hidden": false
                 },
                 {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
                     "dataindex": "description",
                     "text": "Description",
                     "width": 60,
@@ -98,6 +117,7 @@
             "gridData": [
                 {
                     "name": "change",
+                    "version": "5.12 onwards",
                     "description": "On click of date changed date is emitted"
                 }
             ]

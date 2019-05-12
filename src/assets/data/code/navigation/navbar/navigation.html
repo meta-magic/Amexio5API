@@ -1,4 +1,4 @@
-<amexio-nav [enable-side-nav-position]="false" 
+<amexio-nav amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [enable-side-nav-position]="false" 
             [title]="'Amexio'" 
             [logo]="'assets/images/logos/amexio-logo.png'">
 
@@ -54,7 +54,7 @@
 </amexio-nav>
 <!-- nav bar with submenus -->
 
-<amexio-nav [enable-side-nav-position]="false">
+<amexio-nav amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [enable-side-nav-position]="false">
  
     <amexio-nav-item position-left *ngFor="let menus of navBarData" [type]="'menu'"
         [title]="menus.text" [data]="menus.submenus" (onNavItemClick)="externalLink($event)">

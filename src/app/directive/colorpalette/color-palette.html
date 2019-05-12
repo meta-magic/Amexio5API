@@ -19,7 +19,7 @@
                   </amexio-data-table-column>
                 </amexio-datagrid>
 
-                <amexio-box amexioColorPalette [color-palette]="'random'" [gradient]="false" [amexio-color]="'amexio-theme-color2'" [border-dotted]="false"
+                <amexio-box amexioColorPalette [color-palette]="'amexio-theme-color1'" [gradient]="false" [amexio-color]="'amexio-theme-color2'" [border-dotted]="false"
                   [padding]="true" [closable]="false" align="left">
                   <b>Classic: </b>
                   Current State of Two colors: theme color1 and theme color2
@@ -41,10 +41,20 @@
             </amexio-card>
           </amexio-tab>
           <amexio-tab title="Color-palette">
-              <amexio-datagrid [enable-column-fiter]="false" [data]="componentData" (rowSelect)="onRowSelect($event)">
-                  <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Input'">
+              <amexio-datagrid  *ngIf="componentData" [enable-column-fiter]="false" [data]="componentData" (rowSelect)="onRowSelect($event)">
+                  <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Component'">
                   </amexio-data-table-column>
-                  <amexio-data-table-column [data-index]="'colorpalette'" [data-type]="'string'" [hidden]="false" [text]="'Input'">
+                  <amexio-data-table-column [data-index]="'colorpalette'" [data-type]="'string'" [hidden]="false" [text]="'Default Color'">
+                    </amexio-data-table-column>
+                    <amexio-data-table-column [data-index]="'actualColor.bgColor'" [data-type]="'string'" [hidden]="false" [text]="'Actual Color'">
+                        <ng-template #amexioBodyTmpl let-column let-row="row">
+                            <amexio-label class="fa fa-square" [ngStyle]="{'color': row.actualColor.bgColor}"></amexio-label>
+                            &nbsp;{{row.actualColor.bgColor}}
+                          &nbsp; &nbsp;
+                              <amexio-label class="fa fa-square" [ngStyle]="{'color': row.actualColor.fgcolor}" style="border: 1px solid black"></amexio-label>
+                              &nbsp;{{row.actualColor.fgcolor}}
+                            </ng-template> 
+
                     </amexio-data-table-column>
                 </amexio-datagrid>
           </amexio-tab>

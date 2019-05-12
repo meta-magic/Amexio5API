@@ -310,6 +310,48 @@
           "description": "It is fired when server side pagination is enable. It will gives you pageNumber, current and next state of pagination."
         }
       ]
+    },
+    {
+      "gridTitle": "Color-Palette Directive: amexioColorPalette <amexio-datagrid>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },{
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false
+        },{
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "color-palette",
+          "type": "string",
+          "version":"5.12 onwards",
+          "description": "classic/ vibrant/ random/ specific (vibrant: amexio-theme-color5)"
+        },
+        {
+          "name": "gradient",
+          "type": "boolean",
+          "version":"5.12 onwards",
+          "description": "If true"
+        }
+
+      ]
     }
   ],
   "sourceMetadata": {

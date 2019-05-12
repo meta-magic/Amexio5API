@@ -25,9 +25,10 @@ export class AppComponent {
   type = "2";
   @ViewChild(AmexioNavBarComponent) amexioNav;
 
+
   constructor(public router: Router, @Inject(DOCUMENT) private document: any,
-    private _httpClient: HttpClient,
-    private _cookieService: CookieService) {
+  private _httpClient: HttpClient,
+  private _cookieService: CookieService) {
     this.topMenuData = JSON.parse(`[
     {
       "label" : "Features",
@@ -266,8 +267,8 @@ export class AppComponent {
     });
   }
 
-
   changeTheme() {
+    debugger;
     this._httpClient.get('assets/data/theme/material-themes.json').subscribe((res: any) => {
       this.mdThemeData = res.bestThemes;
     },
@@ -285,6 +286,7 @@ export class AppComponent {
           themeId = 0;
           themeRef = this.mdThemeData[0];
         }
+        console.log("themeRef", themeRef)
         this._cookieService.set('theme-info', JSON.stringify({ id: themeId, themeName: themeRef.themeCssFile }));
         this.themeChange(themeRef);
       });

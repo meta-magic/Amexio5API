@@ -66,6 +66,13 @@
             "version": "5.12 onwards",
             "type": "string",
             "default": "black"
+        },
+        {
+            "name": "menu-alignment",
+            "description": "Sets the text alignment (left/ center/ right)",
+            "version": "5.12 onwards",
+            "type": "string",
+            "default": "left"
         }]
     }],
     "sourceMetadata": {

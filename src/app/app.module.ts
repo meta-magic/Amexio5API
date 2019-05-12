@@ -15,6 +15,8 @@ import { AmexioChartD3Module } from 'amexio-chart-d3';
 import { HttpClientModule } from '@angular/common/http';
 import {CookieService} from "ngx-cookie-service";
 
+import { HTTPService } from './service/http.service';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -27,7 +29,7 @@ import {CookieService} from "ngx-cookie-service";
     AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
-  providers: [CommonDataService, DeviceQueryService, IconLoaderService, CookieService],
+  providers: [CommonDataService, HTTPService, DeviceQueryService, IconLoaderService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

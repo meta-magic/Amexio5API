@@ -1,0 +1,92 @@
+[
+    {
+      "componentName": "amexio-navbar",
+      "colorpalette": "amexio-theme-color1",
+      "link": "navigation/navbar-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-panel",
+      "colorpalette": "amexio-theme-color2",
+      "link": "panes/panel-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-accordion",
+      "colorpalette": "amexio-theme-color3",
+      "link": "layout/accordion-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-card",
+      "colorpalette": "amexio-theme-color4",
+      "link": "layout/card-form-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-grid",
+      "colorpalette": "amexio-theme-color5",
+      "link": "data/simplegrid-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-dialogue",
+      "colorpalette": "amexio-theme-color6",
+      "link": "panes/dialogue-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-box",
+      "colorpalette": "amexio-theme-color6",
+      "link": "layout/box-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-tab",
+      "colorpalette": "amexio-theme-color3",
+      "link": "panes/basic-tab-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-ce-card",
+      "colorpalette": "amexio-theme-color4",
+      "link": "/creative/card-ce-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
+      "componentName": "amexio-ce-window",
+      "colorpalette": "amexio-theme-color6",
+      "link": "creative/window-ce-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    }
+  ]
