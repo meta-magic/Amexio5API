@@ -21,11 +21,12 @@
         },
         {
             "text": "Layouts",
-            "badge": "2",
+            "badge": "6",
             "icon": "fa fa-desktop  ",
             "children": [{
                     "text": "Accordion",
                     "icon": "fa fa-bars  ",
+                    "badge": "U",
                     "link": "layout/accordion-demo"
                 },
                 {
@@ -36,7 +37,9 @@
                 {
                     "text": "Box",
                     "link": "layout/box-demo",
-                    "icon": "fa fa-square  "
+                    "icon": "fa fa-square  ",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Column",
@@ -45,11 +48,14 @@
                 },
                 {
                     "text": "Card",
+                    "badge": "1",
                     "icon": "fa fa-id-card-o  ",
                     "children": [{
                             "text": "Form",
                             "link": "layout/card-form-demo",
-                            "icon": "fa fa-leaf  "
+                            "icon": "fa fa-leaf  ",
+                            "badge": "U"
+
                         },
                         {
                             "text": "Image",
@@ -84,6 +90,7 @@
                 {
                     "text": "Grid Layout",
                     "icon": "fa fa-th  ",
+                    "badge": "U",
                     "children": [{
                             "text": "Grid Layout Basic",
                             "icon": "fa fa-indent  ",
@@ -107,6 +114,7 @@
                         {
                             "text": "Collapsible Grid",
                             "icon": "fa fa-compress  ",
+                            "badge": "New",
                             "link": "layout/cgd"
                         }
                     ]
@@ -122,7 +130,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "7",
+            "badge": "9",
             "children": [{
                     "text": "Carousel",
                     "badge": "U",
@@ -150,7 +158,9 @@
                 {
                     "text": "Dialogue",
                     "icon": "fa fa-window-maximize  ",
-                    "link": "panes/dialogue-demo"
+                    "link": "panes/dialogue-demo",
+                    "badge": "U"
+
                 },
                 {
                     "text": "Fieldset",
@@ -160,6 +170,7 @@
                 {
                     "text": "Panel",
                     "icon": "fa fa-bars  ",
+                    "badge": "U",
                     "link": "panes/panel-demo"
                 },
                 {
@@ -302,7 +313,7 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "5",
+            "badge": "8",
             "children": [{
                     "text": "Badge",
                     "icon": "fa fa-id-badge  ",
@@ -328,7 +339,6 @@
                 {
                     "text": "Credit-Card",
                     "icon": "fa fa-credit-card",
-                    "badge": "U",
                     "link": "forms-Input/credit-card-demo"
                 },
                 {
@@ -341,7 +351,7 @@
                 {
                     "text": "Multi DatePicker",
                     "icon": "fa fa-calendar  ",
-                    "badge": "N",
+                    "badge": "New",
                     "link": "forms-Input/multidatepicker-demo"
 
                 },
@@ -436,6 +446,7 @@
                 {
                     "text": "Slider",
                     "icon": "fa fa-sliders  ",
+                    "badge": "U",
                     "link": "forms-Input/slider-demo"
                 },
                 {
@@ -694,6 +705,7 @@
             "children": [{
                     "text": "Color Palette",
                     "icon": "fa fa-globe  ",
+                    "badge": "New",
                     "link": "directive-demo/color-palette"
                 }
             ]
@@ -766,7 +778,7 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars  ",
-            "badge": "5",
+            "badge": "6",
             "children": [{
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right  ",
@@ -787,11 +799,13 @@
                 {
                     "text": "Creative Menu",
                     "icon": "fa fa-chevron-circle-down  ",
+                    "badge": "New",
                     "link": "creative/menu-ce-demo"
                 },
                 {
                     "text": "Menu Bar",
                     "icon": "fa fa-bars  ",
+         
                     "badge": "U",
                     "link": "navigation/menubar-demo"
                 },
@@ -852,8 +866,10 @@
         {
             "text": "Charts",
             "icon": "fa fa-keyboard-o  ",
+            "badge": "1",
             "children": [{
                     "text": "D3 Charts",
+                    "badge": "U",
                     "icon": "fa fa-openid  ",
                     "children": [{
                             "text": "Bar Chart",

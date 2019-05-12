@@ -268,8 +268,7 @@ export class AppComponent {
   }
 
   changeTheme() {
-    debugger;
-    this._httpClient.get('assets/data/theme/material-themes.json').subscribe((res: any) => {
+        this._httpClient.get('assets/data/theme/material-themes.json').subscribe((res: any) => {
       this.mdThemeData = res.bestThemes;
     },
       (error: any) => {
