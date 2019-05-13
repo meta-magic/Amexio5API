@@ -54,6 +54,15 @@
       }
     },
     {
+      "componentName": "amexio-window",
+      "colorpalette": "amexio-theme-color6",
+      "link": "panes/window-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
+    },
+    {
       "componentName": "amexio-box",
       "colorpalette": "amexio-theme-color6",
       "link": "layout/box-demo",

@@ -15,7 +15,7 @@
         <amexio-button type="success"
                        (onClick)="toggleBasicWindow('material')"
                        label="Basic Window"></amexio-button>
-        <amexio-window
+        <amexio-window amexioColorPalette [color-palette]="'vibrant'" [gradient]="true"
           [body-height]="40"
           [(show)]="showBasicWindowMaterial"
           [close-on-escape]="true"

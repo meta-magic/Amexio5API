@@ -57,7 +57,6 @@ export class ColorPaletteDemo implements OnInit {
                   response = data;
                 }, error => {
                 }, () => {
-                        console.log("RESPONSDE", response.themeColor);
                   let themeColor = response.themeColor;
                         data.forEach(element => {
                          if (  element.colorpalette === 'amexio-theme-color1') {
@@ -86,9 +85,7 @@ export class ColorPaletteDemo implements OnInit {
                               }
                         });
              
-                    this.componentData=data
-                    console.log("this.componentData",this.componentData)
-            
+                    this.componentData=data            
                 });
         }
 
