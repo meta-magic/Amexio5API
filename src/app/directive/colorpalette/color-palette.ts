@@ -92,7 +92,7 @@ export class ColorPaletteDemo implements OnInit {
 
         fetchJsonData() {
                 let response: any;
-                this.httpService.fetch('/assets/theme.json').subscribe(data => {
+                this.httpService.fetch('assets/theme.json').subscribe(data => {
                         response = data;
                 }, error => {
                 }, () => {

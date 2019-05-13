@@ -285,7 +285,6 @@ export class AppComponent {
           themeId = 0;
           themeRef = this.mdThemeData[0];
         }
-        console.log("themeRef", themeRef)
         this._cookieService.set('theme-info', JSON.stringify({ id: themeId, themeName: themeRef.themeCssFile }));
         this.themeChange(themeRef);
       });
