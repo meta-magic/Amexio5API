@@ -1,8 +1,15 @@
+<!-- Round Toggle Darkmode -->
 
-<!-- Round Shape -->
+<amexio-darkmode [field-label]="'Day'"></amexio-darkmode>
 
-<amexio-darkmode [field-label]="'Round'"></amexio-darkmode>
+<!-- Square Toggle Darkmode -->
 
-<!-- Square Shape -->
+<amexio-darkmode [field-label]="'Day'" shape="square"></amexio-darkmode>
 
-<amexio-darkmode [field-label]="'Square'" shape="square"></amexio-darkmode>
+<!-- Sepia Mode -->
+
+<amexio-darkmode [mode]="'sepia'" [size]="'small'"></amexio-darkmode>
+
+<!-- Custom Mode -->
+
+<amexio-darkmode [mode]="'custom'" [data]="colorData" [size]="'small'"></amexio-darkmode>

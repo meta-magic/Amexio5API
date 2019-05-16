@@ -64,11 +64,25 @@
           "default": "medium"
         },
         {
-          "name": "type",
-          "description": "Two types of the toogle button (type= 1, type =2)",
-          "version": "5.11.1 onwards",
+          "name": "mode",
+          "description": "Three types mode for darkmode (day-night, sepia, custom)",
+          "version": "5.12 onwards",
           "type": "string",
-          "default": "1"
+          "default": "day-night"
+        },
+        {
+          "name": "data",
+          "description": "If mode is custom. Data of bgColor and fgColor can be provided",
+          "version": "5.12 onwards",
+          "type": "any",
+          "default": ""
+        },
+        {
+          "name": "type",
+          "description": "Two types for the slider mode (type= 1, type= 2)",
+          "version": "5.12 onwards",
+          "type": "string",
+          "default": "2"
         }
       ]
     }

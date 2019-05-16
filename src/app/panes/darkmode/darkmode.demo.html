@@ -1,34 +1,68 @@
 <amexio-api-structure [url]="'assets/componentjson/panels/darkmode.json'">
-    <amexio-api-accessible>
-        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
-                <p>The Darkmode Toogle is WAI ARIA-accessible through the Tab key.</p>
-                <p>Role:Switch-The swtich role defines its type.It consist of aria-labelledby and aria-checked</p>
-        </amexio-box>
-    </amexio-api-accessible>
-    <amexio-api-demo>
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Darkmode Toogle is WAI ARIA-accessible through the Tab key.</p>
+      <p>Role:Switch-The swtich role defines its type.It consist of aria-labelledby and aria-checked</p>
+    </amexio-box>
+  </amexio-api-accessible>
+  <amexio-api-demo>
 
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Round Toggle Darkmode
+          </amexio-header>
+          <amexio-body>
+            <amexio-darkmode [field-label]="'Day'"></amexio-darkmode>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Square Toggle Darkmode
+          </amexio-header>
+          <amexio-body>
+            <amexio-darkmode [field-label]="'Day'" shape="Square"></amexio-darkmode>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+
+    </amexio-row>
+    <amexio-row>
+      <amexio-column [size]="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Sepia Mode
+          </amexio-header>
+          <amexio-body>
             <amexio-row>
-                    <amexio-column [size]="6">
-                      <amexio-card [header]="true">
-                        <amexio-header>
-                          Round Toggle Darkmode
-                        </amexio-header>
-                        <amexio-body>
-                          <amexio-darkmode [field-label]="'Day'"></amexio-darkmode>
-                        </amexio-body>
-                      </amexio-card>
-                    </amexio-column>
-                    <amexio-column [size]="6">
-                      <amexio-card [header]="true">
-                        <amexio-header>
-                          Square Toggle Darkmode
-                        </amexio-header>
-                        <amexio-body>
-                          <amexio-darkmode [field-label]="'Square'" shape="Day"></amexio-darkmode>
-                        </amexio-body>
-                      </amexio-card>
-                    </amexio-column>
-              
-                  </amexio-row>
-                </amexio-api-demo>
+              <amexio-column size="4" [fit]="false">
+                <amexio-darkmode [mode]="'sepia'" [size]="'small'"></amexio-darkmode>
+                <br>
+
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column [size]="6">
+        <amexio-card [header]="true">
+          <amexio-header>
+            Custom Mode
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="6" [fit]="false">
+                <amexio-darkmode [mode]="'custom'" [data]="colorData" [size]="'small'"></amexio-darkmode>
+             <br>
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+
+    </amexio-row>
+  </amexio-api-demo>
 </amexio-api-structure>
