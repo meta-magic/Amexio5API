@@ -68,6 +68,13 @@
             "default": "black"
         },
         {
+            "name": "menu-positioning",
+            "description": "Sets the text position (left/ center/ right)",
+            "version": "5.12 onwards",
+            "type": "string",
+            "default": "left"
+        },
+        {
             "name": "menu-alignment",
             "description": "Sets the text alignment (left/ center/ right)",
             "version": "5.12 onwards",

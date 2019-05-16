@@ -1,11 +1,13 @@
-<amexio-card [header]="true" [header-align]="'left'">
+<amexio-card amexioColorPalette [color-palette]="'classic'" [gradient]="true" [header]="true" [header-align]="'left'">
   <amexio-header>
     <ng-container *ngIf="(comData && comData.title)">{{comData.title}}</ng-container>
-  </amexio-header>
-  <amexio-body>
-    <span>
+    <br>
+    <span style="font-size: 15px;">
       <ng-container *ngIf="(comData && comData.description)">{{comData.description}}</ng-container>
     </span>
+  </amexio-header>
+  <amexio-body>
+
     <amexio-tab-view [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
         <ng-content select="amexio-api-demo"></ng-content>
