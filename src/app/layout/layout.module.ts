@@ -23,7 +23,7 @@ import { GridLayoutDemoThree } from "./gridlayout/gridlayoutthree/gridlayout.dem
 import { GridLayoutDemoOne } from "./gridlayout/gridlayoutone/gridlayout.demo";
 import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
 import { CollapsibleGridLayoutDemo } from "./gridlayout/collapsiblegridlayout/collapsiblegridlayout.demo";
-
+import {PolaroidCardDemo} from "./polaroidcard/polaroidcard.demo.component";
 
 /**
  * Created by kedar on 31/1/19.
@@ -33,7 +33,7 @@ import { CollapsibleGridLayoutDemo } from "./gridlayout/collapsiblegridlayout/co
          horizontalLayoutDemo, CardImageDemo,
           CardFormDemo,ColumnDemo,BorderDemoComponent,AccordionDemoComponent,
           GridLayoutDemo,GridLayoutDemoOne,GridLayoutDemoTwo,GridLayoutDemoThree,
-          CollapsibleGridLayoutDemo
+          CollapsibleGridLayoutDemo,PolaroidCardDemo
         ],
     imports: [
         CommonModule,

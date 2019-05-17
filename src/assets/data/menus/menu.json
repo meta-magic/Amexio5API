@@ -70,7 +70,13 @@
                     "badge": "NEW",
                     "link": "creative/card-ce-demo"
                 },
-                
+                {
+                    "text": "Polaroid Card",
+                    "badge": "1",
+                    "icon": "fa fa-camera",
+                    "link":"layout/polaroid-card-demo"
+                    
+                },
                 {
                     "text": "Creative Home Page",
                     "icon": "fa fa-home",
