@@ -2,7 +2,7 @@
     "data": [
         {
             "text": "Layouts",
-            "badge": "6",
+            "badge": "1",
             "icon": "fa fa-desktop  ",
             "children": [
                 {
@@ -16,7 +16,7 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "9",
+            "badge": "2",
             "children": [
                 {
                     "text": "Amexio Runtime (ARC)",
@@ -33,28 +33,9 @@
             ]
         },
         {
-            "text": "Data",
-            "badge": "4",
-            "icon": "fa fa-database  ",
-            "children": [
-                {
-                    "text": "Appointment",
-                    "icon": "fa fa-calendar  ",
-                    "badge": "U",
-                    "link": "enterprise/ee-appointment-demo"
-                },
-                {
-                    "text": "Calendar",
-                    "icon": "fa fa-calendar  ",
-                    "badge": "NEW",
-                    "link": "enterprise/ee-calendar-demo"
-                }
-            ]
-        },
-        {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "8",
+            "badge": "1",
             "children": [
                 {
                     "text": "Credit-Card",
@@ -88,7 +69,25 @@
                     "link": "forms-Input/recaptcha-demo"
                 }
             ]
+        },
+        {
+            "text": "Data",
+            "badge": "2",
+            "icon": "fa fa-database  ",
+            "children": [
+                {
+                    "text": "Appointment",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "U",
+                    "link": "enterprise/ee-appointment-demo"
+                },
+                {
+                    "text": "Calendar",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "NEW",
+                    "link": "enterprise/ee-calendar-demo"
+                }
+            ]
         }
-     
     ]
 }

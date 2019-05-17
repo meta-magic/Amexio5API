@@ -2,9 +2,10 @@
     "data": [
         {
             "text": "Layouts",
-            "badge": "6",
+            "badge": "4",
             "icon": "fa fa-desktop  ",
-            "children": [{
+            "children": [
+                {
                     "text": "Accordion",
                     "icon": "fa fa-bars  ",
                     "badge": "U",
@@ -20,7 +21,6 @@
                     "link": "layout/box-demo",
                     "icon": "fa fa-square  ",
                     "badge": "U"
-
                 },
                 {
                     "text": "Column",
@@ -31,12 +31,12 @@
                     "text": "Card",
                     "badge": "1",
                     "icon": "fa fa-id-card-o  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Form",
                             "link": "layout/card-form-demo",
                             "icon": "fa fa-leaf  ",
                             "badge": "U"
-
                         },
                         {
                             "text": "Image",
@@ -45,7 +45,6 @@
                         }
                     ]
                 },
-              
                 {
                     "text": "Column Vertical",
                     "icon": "fa fa-pause  ",
@@ -60,7 +59,8 @@
                     "text": "Grid Layout",
                     "icon": "fa fa-th  ",
                     "badge": "U",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Grid Layout Basic",
                             "icon": "fa fa-indent  ",
                             "link": "layout/gridlayout-demo"
@@ -88,7 +88,6 @@
                         }
                     ]
                 },
-
                 {
                     "text": "Row",
                     "link": "layout/row-demo",
@@ -99,8 +98,9 @@
         {
             "text": "Panels",
             "icon": "fa fa-bars  ",
-            "badge": "9",
-            "children": [{
+            "badge": "5",
+            "children": [
+                {
                     "text": "Carousel",
                     "badge": "U",
                     "icon": "fa fa-indent  ",
@@ -117,7 +117,6 @@
                     "icon": "fa fa-window-maximize  ",
                     "link": "panes/dialogue-demo",
                     "badge": "U"
-
                 },
                 {
                     "text": "Fieldset",
@@ -133,7 +132,8 @@
                 {
                     "text": "Steps",
                     "icon": "fa fa-step-forward  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Step Box",
                             "link": "panes/step-box-demo",
                             "icon": "fa fa-leaf  "
@@ -149,10 +149,12 @@
                     "text": "Tab",
                     "badge": "U",
                     "icon": "fa fa-folder  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Horizontal",
                             "icon": "fa fa-indent  ",
-                            "children": [{
+                            "children": [
+                                {
                                     "text": "Basic",
                                     "link": "panes/basic-tab-demo",
                                     "icon": "fa fa-leaf  "
@@ -187,7 +189,8 @@
                         {
                             "text": "Vertical",
                             "icon": "fa fa-outdent  ",
-                            "children": [{
+                            "children": [
+                                {
                                     "text": "Left Aligned",
                                     "link": "panes/vertical-tab-demo",
                                     "icon": "fa fa-leaf  "
@@ -215,12 +218,13 @@
         },
         {
             "text": "Forms",
-            "badge": "1",
             "icon": "fa fa-clone  ",
-            "children": [{
+            "children": [
+                {
                     "text": "Form (HTML)",
                     "icon": "fa fa-window-maximize  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize  ",
                             "link": "forms/html-form-demo"
@@ -235,7 +239,8 @@
                 {
                     "text": "Amexio Forms",
                     "icon": "fa fa-window-maximize  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Template Driven",
                             "icon": "fa fa-window-maximize  ",
                             "link": "forms/form-demo"
@@ -252,8 +257,9 @@
         {
             "text": "Form Inputs",
             "icon": "fa fa-clone  ",
-            "badge": "8",
-            "children": [{
+            "badge": "7",
+            "children": [
+                {
                     "text": "Badge",
                     "icon": "fa fa-id-badge  ",
                     "link": "forms-Input/badge-demo",
@@ -275,19 +281,17 @@
                     "icon": "fa fa-chevron-circle-down  ",
                     "link": "forms-Input/chips-demo"
                 },
-             
                 {
                     "text": "Date & Time Picker",
                     "icon": "fa fa-calendar  ",
                     "badge": "U",
                     "link": "forms-Input/date-picker-demo"
-
                 },
-            
                 {
                     "text": "DropDown",
                     "icon": "fa fa-caret-square-o-down  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Basic",
                             "icon": "fa fa-caret-down  ",
                             "link": "forms-Input/dropdownbasic"
@@ -313,7 +317,6 @@
                     "text": "Email Field",
                     "icon": "fa fa-envelope-o  ",
                     "link": "forms-Input/email-demo"
-
                 },
                 {
                     "text": "File Upload",
@@ -365,7 +368,7 @@
                 {
                     "text": "Range Slider",
                     "icon": "fa fa-arrows-h  ",
-                    "badge":"NEW",
+                    "badge": "NEW",
                     "link": "forms-Input/value-range"
                 },
                 {
@@ -398,12 +401,14 @@
         },
         {
             "text": "Form Actions",
-            "badge": "3",
+            "badge": "2",
             "icon": "fa fa-keyboard-o  ",
-            "children": [{
+            "children": [
+                {
                     "text": "Buttons",
                     "icon": "fa fa-keyboard-o  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Button",
                             "icon": "fa fa-building-o  ",
                             "link": "forms-Action/button-demo"
@@ -453,8 +458,8 @@
             "text": "Data",
             "badge": "4",
             "icon": "fa fa-database  ",
-
-            "children": [{
+            "children": [
+                {
                     "text": "Data Loading Indicator",
                     "icon": "fa fa-spinner",
                     "link": "data/amexio-spinner-demo"
@@ -469,7 +474,8 @@
                     "text": "Grid",
                     "icon": "fa fa-database  ",
                     "badge": "U",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Simple",
                             "icon": "fa fa-database  ",
                             "link": "data/simplegrid-demo"
@@ -539,8 +545,9 @@
                 {
                     "text": "Tree",
                     "icon": "fa fa-tree  ",
-                    "badge":"U",
-                    "children": [{
+                    "badge": "U",
+                    "children": [
+                        {
                             "text": "Simple",
                             "icon": "fa fa-tree  ",
                             "link": "data/simple-tree-demo"
@@ -597,19 +604,20 @@
                     "icon": "fa fa-list  ",
                     "link": "data/listbox-demo"
                 },
-              {
-                "text": "Property Grid",
-                "badge": "NEW",
-                "icon": "fa fa-database",
-                "link": "data/propertygrid-demo"
-              }
+                {
+                    "text": "Property Grid",
+                    "badge": "NEW",
+                    "icon": "fa fa-database",
+                    "link": "data/propertygrid-demo"
+                }
             ]
         },
         {
             "text": "Directive",
             "badge": "1",
             "icon": "fa fa-globe",
-            "children": [{
+            "children": [
+                {
                     "text": "Color Palette",
                     "icon": "fa fa-globe  ",
                     "badge": "New",
@@ -620,7 +628,8 @@
         {
             "text": "Drag and Drop",
             "icon": "fa fa-arrows-alt",
-            "children": [{
+            "children": [
+                {
                     "text": "Within Tree",
                     "icon": "fa fa-tree  ",
                     "link": "dragdrop/within-tree-demo"
@@ -645,7 +654,8 @@
         {
             "text": "Contextual Menus",
             "icon": "fa fa-bars",
-            "children": [{
+            "children": [
+                {
                     "text": "Card",
                     "icon": "fa fa-id-card-o  ",
                     "link": "contextualmenu/contextmenu-card-form-demo"
@@ -685,8 +695,9 @@
         {
             "text": "App Navigation",
             "icon": "fa fa-bars  ",
-            "badge": "6",
-            "children": [{
+            "badge": "4",
+            "children": [
+                {
                     "text": "Breadcrumb",
                     "icon": "fa fa-arrow-right  ",
                     "badge": "U",
@@ -702,12 +713,6 @@
                     "text": "Dropdown Menu",
                     "icon": "fa fa-chevron-circle-down  ",
                     "link": "navigation/dropdownmenu-demo"
-                },
-                {
-                    "text": "Creative Menu",
-                    "icon": "fa fa-chevron-circle-down  ",
-                    "badge": "New",
-                    "link": "creative/menu-ce-demo"
                 },
                 {
                     "text": "Nav Bar",
@@ -736,7 +741,8 @@
         {
             "text": "Media",
             "icon": "fa fa-keyboard-o  ",
-            "children": [{
+            "children": [
+                {
                     "text": "Image",
                     "icon": "fa fa-picture-o  ",
                     "link": "media-demo/image"
@@ -751,7 +757,8 @@
         {
             "text": "Drillable Charts",
             "icon": "fa fa-bar-chart  ",
-            "children": [{
+            "children": [
+                {
                     "text": "Single Target",
                     "icon": "fa fa-bar-chart  ",
                     "link": "drillableD3Chart/drillable-with-single-target-demo"
@@ -767,14 +774,17 @@
             "text": "Charts",
             "icon": "fa fa-keyboard-o  ",
             "badge": "1",
-            "children": [{
+            "children": [
+                {
                     "text": "D3 Charts",
                     "badge": "U",
                     "icon": "fa fa-openid  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Bar Chart",
                             "icon": "fa fa-bar-chart  ",
-                            "children": [{
+                            "children": [
+                                {
                                     "text": "Bar chart-vertical",
                                     "icon": "fa fa-bar-chart  ",
                                     "link": "D3chart/amexio-d3-chart-bar"
@@ -790,7 +800,6 @@
                             "text": "Bubble Chart ",
                             "icon": "fa fa-dot-circle-o  ",
                             "link": "D3chart/amexio-d3-chart-bubble"
-
                         },
                         {
                             "text": "Combo Chart",
@@ -852,7 +861,8 @@
                 {
                     "text": "Google Charts",
                     "icon": "fa fa-google  ",
-                    "children": [{
+                    "children": [
+                        {
                             "text": "Area Chart",
                             "icon": "fa fa-area-chart  ",
                             "link": "google-chart/area-chart-demo"
@@ -929,7 +939,8 @@
         {
             "text": "Dashboard",
             "icon": "fa fa-dashcube  ",
-            "children": [{
+            "children": [
+                {
                     "text": "Gauge Chart",
                     "icon": "fa fa-tachometer  ",
                     "link": "dashboard/gauge-dashboard-demo"
@@ -945,7 +956,8 @@
             "text": "Maps",
             "badge": "1",
             "icon": "fa fa-globe  ",
-            "children": [{
+            "children": [
+                {
                     "text": "Geo Chart",
                     "icon": "fa fa-globe  ",
                     "link": "map/geo-chart-demo"

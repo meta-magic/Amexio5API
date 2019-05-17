@@ -10,22 +10,25 @@
         </amexio-homepage-northpanel>
         <amexio-homepage-westpanel>
             <amexio-side-nav [http-url]="'assets/data/menus/submenus.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
+                <amexio-side-nav>
                 <amexio-sidenav-node >
                   <amexio-tab-view [divide-header-equally]=true [closable]="false">
                     <amexio-tab [active]="true" [title]="'SE'">
                         <amexio-side-nav [http-url]="'assets/data/menus/semenus.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
                         </amexio-side-nav>
                     </amexio-tab>
-                    <amexio-tab [title]="'CE'">
-                        <amexio-side-nav [http-url]="'assets/data/menus/cemenus.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
-                        </amexio-side-nav>
-                    </amexio-tab>
+                   
                     <amexio-tab [title]="'EE'">
                         <amexio-side-nav [http-url]="'assets/data/menus/eemenus.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
                         </amexio-side-nav>
                     </amexio-tab>
+                    <amexio-tab [title]="'CE'">
+                            <amexio-side-nav [http-url]="'assets/data/menus/cemenus.json'" [http-method]="'get'" [data-reader]="'data'" [height]="'92%'" (nodeClick)="onNodeClick($event)">
+                            </amexio-side-nav>
+                        </amexio-tab>
                   </amexio-tab-view>
                 </amexio-sidenav-node>
+                </amexio-side-nav>
             </amexio-side-nav>
 
         </amexio-homepage-westpanel>
