@@ -150,7 +150,7 @@
                     "link": "creative/window-ce-demo"
                 },
                 {
-                    "text": "Darkmode",
+                    "text": "Dark-Mode",
                     "icon": "fa fa-toggle-on",
                     "badge": "NEW",
                     "link": "panes/darkmode-demo"
