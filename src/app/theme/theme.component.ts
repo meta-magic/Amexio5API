@@ -175,7 +175,6 @@ export class ThemeComponent implements OnInit {
     }
 
     themeChange(theme: any) {
-        console.log("Theme", theme)
         // this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
         let response: any;
         this.httpService.fetch('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(data => {
