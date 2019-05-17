@@ -9,10 +9,12 @@
 <amexio-card style="display: block; padding-top:30px;" >
 
   <amexio-body>
+      <ng-container *ngIf="comData.componentDescription">
     <amexio-box  [padding]="true" align="left">
         <ng-container>{{comData.componentDescription}}</ng-container><br>
         <br>
-        <amexio-label [size]="'medium-bold'">Key Features:</amexio-label><br>
+        <amexio-label [size]="'medium-bold'">Key Features:</amexio-label>
+        <br>
         <br>
         <ng-container *ngFor="let item of comData.KeyFeatures"> 
             <li>
@@ -20,6 +22,7 @@
             </li>
         </ng-container>
     </amexio-box>
+  </ng-container>
   
     <amexio-tab-view [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
