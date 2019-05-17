@@ -6383,7 +6383,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   align-items: unset; }
 
 .topnavmainbarinneritems {
-  display: inline-block;
+  display: contents;
   padding: 0px 8px; }
 
 .topnavmainbarinneritems-mobile {
@@ -8859,7 +8859,7 @@ amexio-layout-columns amexio-layout-item {
 
 .textRightPosition {
   width: max-content;
-  padding-right: 3%;
+  padding-right: 4%;
   float: right;
   position: relative; }
 
