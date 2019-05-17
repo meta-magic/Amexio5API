@@ -1,4 +1,4 @@
-<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/layouts/card.json'">
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/layouts/polaroid.json'">
   <amexio-api-demo>
     <amexio-row>
       <amexio-column size="12">
@@ -11,12 +11,12 @@
             <amexio-row>
               <amexio-column size="3">
                 <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                  height="height" [style-type]="'tilted-2-degree'">
+                  height="height" [polaroid-type]="'tilted-2-degree'">
                   <amexio-header>
                     Taj Mahal
                   </amexio-header>
                   <amexio-body>
-                    <amexio-image [path]="'assets/images/polaroid/p1.jpeg'">
+                    <amexio-image [path]="'assets/images/polaroid/p1_card.jpeg'">
                     </amexio-image>
                   </amexio-body>
                   <amexio-action>
@@ -26,12 +26,12 @@
               </amexio-column>
               <amexio-column size="3">
                 <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                  height="height" [style-type]="'tilted-minus-2-degree'">
+                  height="height" [polaroid-type]="'tilted-minus-2-degree'">
                   <amexio-header>
                     Tower Of Pisa
                   </amexio-header>
                   <amexio-body>
-                    <amexio-image [path]="'assets/images/polaroid/p2.jpg'">
+                    <amexio-image [path]="'assets/images/polaroid/p2_card.jpg'">
                     </amexio-image>
                   </amexio-body>
                   <amexio-action>
@@ -41,12 +41,12 @@
               </amexio-column>
               <amexio-column size="3">
                 <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                  height="height" [style-type]="'tilted-minus-4-degree'">
+                  height="height" [polaroid-type]="'tilted-minus-4-degree'">
                   <amexio-header>
                     Pyramid Of Giza
                   </amexio-header>
                   <amexio-body>
-                    <amexio-image [path]="'assets/images/polaroid/p_img3.jpeg'">
+                    <amexio-image [path]="'assets/images/polaroid/p3_card.jpeg'">
                     </amexio-image>
                   </amexio-body>
                   <amexio-action>
@@ -56,12 +56,12 @@
               </amexio-column>
               <amexio-column size="3">
                 <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
-                  height="height" [style-type]="'tilted-4-degree'">
+                  height="height" [polaroid-type]="'tilted-4-degree'">
                   <amexio-header>
                     Statue Of Liberty
                   </amexio-header>
                   <amexio-body>
-                    <amexio-image [path]="'assets/images/polaroid/p5.jpeg'">
+                    <amexio-image [path]="'assets/images/polaroid/p4_card.jpeg'">
                     </amexio-image>
                   </amexio-body>
                   <amexio-action>
@@ -85,56 +85,69 @@
           <amexio-body>
             <amexio-row>
               <amexio-column size="3">
-                <amexio-card-ce [style-type]="'narrower-header'" [align]="'center'" [transform-type]="'tilted-minus-4-degree'">
+                <amexio-card-ce [style-type]="'narrower-header'" [align]="'center'" [polaroid-type]="'tilted-minus-4-degree'">
                   <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                    Kitten
+                    Dolphin
                   </amexio-header-ce>
                   <amexio-body-ce [align]="'center'">
-                    <amexio-image
-                      [path]="'assets/images/polaroid/pet7.jpg'"></amexio-image>
+                    <amexio-image [path]="'assets/images/polaroid/p5_card.jpg'"></amexio-image>
                   </amexio-body-ce>
 
                 </amexio-card-ce>
               </amexio-column>
-                <amexio-column size="3">
-                  
-                  <amexio-card-ce [style-type]="'narrower-header'" [transform-type]="'tilted-minus-2-degree'">
-                      <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                          Tiger
-                        </amexio-header-ce>
-                    <amexio-body-ce [align]="'center'">
-                      <amexio-image [path]="'assets/images/polaroid/pet9.jpg'">
-                      </amexio-image>
-                    </amexio-body-ce>
-                  </amexio-card-ce>
-                </amexio-column>
-                <amexio-column size="3">
-                  <amexio-card-ce [style-type]="'narrower-header'" [transform-type]="'tilted-4-degree'">
-                      <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                          Rabbit
-                        </amexio-header-ce>
-                    <amexio-body-ce [align]="'center'">
-                      <amexio-image [path]="'assets/images/polaroid/pet10.jpg'">
-                      </amexio-image>
-                    </amexio-body-ce>
-                  </amexio-card-ce>
-                </amexio-column>
-                <amexio-column size="3">
-                
-                  <amexio-card-ce [style-type]="'narrower-header'" [transform-type]="'tilted-4-degree'">
-                      <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'">
-                          Tiger
-                        </amexio-header-ce>
-                    <amexio-body-ce [align]="'center'">
-                      <amexio-image [path]="'assets/images/polaroid/pet6.jpg'">
-                      </amexio-image>
-                    </amexio-body-ce>
-                  </amexio-card-ce>
-                </amexio-column>
+              <amexio-column size="3">
+
+                <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-minus-2-degree'">
+                  <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
+                    Kitten
+                  </amexio-header-ce>
+                  <amexio-body-ce [align]="'center'">
+                    <amexio-image [path]="'assets/images/polaroid/p6_card.jpg'">
+                    </amexio-image>
+                  </amexio-body-ce>
+                </amexio-card-ce>
+              </amexio-column>
+              <amexio-column size="3">
+                <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-4-degree'">
+                  <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
+                    Rabbit
+                  </amexio-header-ce>
+                  <amexio-body-ce [align]="'center'">
+                    <amexio-image [path]="'assets/images/polaroid/p7_card.jpg'">
+                    </amexio-image>
+                  </amexio-body-ce>
+                </amexio-card-ce>
+              </amexio-column>
+              <amexio-column size="3">
+                <amexio-card-ce [style-type]="'narrower-header'" [polaroid-type]="'tilted-4-degree'">
+                  <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'">
+                    Husky
+                  </amexio-header-ce>
+                  <amexio-body-ce [align]="'center'">
+                    <amexio-image [path]="'assets/images/polaroid/p8_card.jpg'">
+                    </amexio-image>
+                  </amexio-body-ce>
+                </amexio-card-ce>
+              </amexio-column>
             </amexio-row>
           </amexio-body>
         </amexio-card>
       </amexio-column>
     </amexio-row>
   </amexio-api-demo>
+  <amexio-api-reference>
+      <amexio-box border-color="brown" border="right-left" padding="true" background-color="brown">
+        For Other Inputs Refer to
+        <li>
+          <amexio-label [enable-click]=true (onClick)="onclick()">
+            <u>Cards</u>
+          </amexio-label>
+        </li>
+        <li>
+          <amexio-label [enable-click]=true (onClick)="onclick1()">
+            <u>Creative-Cards</u>
+          </amexio-label>
+        </li>
+      </amexio-box>
+    </amexio-api-reference>
 </amexio-api-structure>

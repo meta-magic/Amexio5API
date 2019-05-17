@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core'
 import { HttpClient } from '@angular/common/http';
 
 import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
-
+import { Router } from "@angular/router";
 @Component({
   selector: 'polaroid-card-demo',
   templateUrl: './polaroidcard.demo.component.html'
@@ -19,7 +19,7 @@ export class PolaroidCardDemo implements OnInit{
   customSourceData: ComponentDataStructure;
 
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient,public router: Router) {
     this.customSourceData = new ComponentDataStructure();
 
     this.flag = true;
@@ -35,7 +35,7 @@ export class PolaroidCardDemo implements OnInit{
     this.customSourceData.description = 'A Simple Card which renders card based on title, body and actions user has configured.';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/polaroidcard/polaroid.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/polaroidcard/polaroid.text';
-    this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-cardimage?embed=1&file=app/layouts/cardimage/cardimage.demo.html&view=editor';
+    this.customSourceData.liveMetadata.disabled = true;
   }
 
 
@@ -48,6 +48,12 @@ export class PolaroidCardDemo implements OnInit{
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
+  }
+  onclick() {
+    this.router.navigate(['layout/card-form-demo']);
+  }
+  onclick1() {
+    this.router.navigate(['creative/card-ce-demo']);
   }
 }
 

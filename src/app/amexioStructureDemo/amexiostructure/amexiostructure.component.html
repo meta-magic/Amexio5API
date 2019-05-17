@@ -13,8 +13,9 @@
     <amexio-box  [padding]="true" align="left">
         <ng-container>{{comData.componentDescription}}</ng-container><br>
         <br>
-        <amexio-label [size]="'medium-bold'">Key Features:</amexio-label>
-        <br>
+        <ng-container>
+          <amexio-label [size]="'medium-bold'">{{comData.compFeaturesTitle}}</amexio-label><br>
+        </ng-container>
         <br>
         <ng-container *ngFor="let item of comData.KeyFeatures"> 
             <li>
