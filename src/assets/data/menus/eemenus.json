@@ -1,0 +1,94 @@
+{
+    "data": [
+        {
+            "text": "Layouts",
+            "badge": "6",
+            "icon": "fa fa-desktop  ",
+            "children": [
+                {
+                    "text": "Home Page",
+                    "icon": "fa fa-home",
+                    "badge": "NEW",
+                    "link": "creative/homepage-ce-demo"
+                }
+            ]
+        },
+        {
+            "text": "Panels",
+            "icon": "fa fa-bars  ",
+            "badge": "9",
+            "children": [
+                {
+                    "text": "Amexio Runtime (ARC)",
+                    "icon": "fa fa-th",
+                    "badge": "NEW",
+                    "link": "panes/arc-demo"
+                },
+                {
+                    "text": "Steps Wizard",
+                    "icon": "fa fa-step-forward",
+                    "badge": "NEW",
+                    "link": "enterprise/step-wizard-demo"
+                }
+            ]
+        },
+        {
+            "text": "Data",
+            "badge": "4",
+            "icon": "fa fa-database  ",
+            "children": [
+                {
+                    "text": "Appointment",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "U",
+                    "link": "enterprise/ee-appointment-demo"
+                },
+                {
+                    "text": "Calendar",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "NEW",
+                    "link": "enterprise/ee-calendar-demo"
+                }
+            ]
+        },
+        {
+            "text": "Form Inputs",
+            "icon": "fa fa-clone  ",
+            "badge": "8",
+            "children": [
+                {
+                    "text": "Credit-Card",
+                    "icon": "fa fa-credit-card",
+                    "link": "forms-Input/credit-card-demo"
+                },
+                {
+                    "text": "Multi DatePicker",
+                    "icon": "fa fa-calendar  ",
+                    "badge": "New",
+                    "link": "forms-Input/multidatepicker-demo"
+                },
+                {
+                    "text": "Facebook Login",
+                    "icon": "fa fa-facebook  ",
+                    "link": "forms-Input/facebook-login-demo"
+                },
+                {
+                    "text": "Google Login",
+                    "icon": "fa fa-google  ",
+                    "link": "forms-Input/google-login-demo"
+                },
+                {
+                    "text": "LinkedIn Login",
+                    "icon": "fa fa-linkedin-square  ",
+                    "link": "forms-Input/linkedin-login-demo"
+                },
+                {
+                    "text": "Recaptcha",
+                    "icon": "fa fa-recycle  ",
+                    "link": "forms-Input/recaptcha-demo"
+                }
+            ]
+        }
+     
+    ]
+}
