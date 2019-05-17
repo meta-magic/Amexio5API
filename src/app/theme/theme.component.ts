@@ -1,12 +1,14 @@
 /**
  * Created by sagar on 11/1/18.
  */
-import {Component, OnInit} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { Component, OnInit } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
 import { CookieService } from 'ngx-cookie-service';
+import { HTTPService } from '../service/http.service';
+
 @Component({
-  selector: 'theme-page',
-  template: `
+    selector: 'theme-page',
+    template: `
 
     <amexio-image [path]="'assets/images/logos/amexio_colors.jpeg'"[tooltip]="'Image'"></amexio-image>
 
@@ -19,7 +21,7 @@ import { CookieService } from 'ngx-cookie-service';
                             <amexio-label>{{col.themeName}}</amexio-label>
                         </header>
                         <div class="card-body cardbody">
-                            <amexio-image [path]="'assets/images/theme-icons/'+col.link"></amexio-image> <br/>
+                            <amexio-image [path]="'assets/images/theme-icons/'+col.themeImageFile"></amexio-image> <br/>
                             <amexio-label [size]="'small'">Version: {{col.version}}</amexio-label> <br/>
                             <amexio-label>Style: {{col.style}}</amexio-label> <br/>
                         </div> 
@@ -117,73 +119,101 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class ThemeComponent implements OnInit {
 
-  mdThemeData : any;
-  amexioThemeData : any;
-  hasThemeInit : boolean = false;
-  newThemePath : string;
+    mdThemeData: any;
+    amexioThemeData: any;
+    hasThemeInit: boolean = false;
+    newThemePath: string;
 
-  constructor(private http: HttpClient, private cookieService: CookieService) {
-  }
-
-
-  ngOnInit() {
-
-    let response:any;
-
-    this.http.get('assets/data/theme/theme-api-showcase.json',{responseType: 'json'}).subscribe(data => {
-        response = data;
-      }, error => {
-      }, () => {
-        this.mdThemeData = response;
-
-      });
-
-      this.http.get('assets/data/theme/theme-api-showcase-amexio.json',{responseType: 'json'}).subscribe(data => {
-        response = data;
-      }, error => {
-      }, () => {
-        this.amexioThemeData = response;
-
-      });
-  }
-
-
-  addNewTheme(newTheme: any,existingTheme : any) {
-    let linkEl = document.createElement('link');
-    linkEl.onload = ()=>{
-      this.removeExistingTheme(existingTheme);
-
-    };
-    linkEl.setAttribute('rel', 'stylesheet');
-    linkEl.id = 'themeid';
-    linkEl.href = newTheme;
-    document.head.appendChild(linkEl);
-  }
-
-  //removed old theme css
-  removeExistingTheme(keyList: any) {
-    if (keyList != null && keyList && keyList.length != 0) {
-      for (let i=0; i<keyList.length; i++) {
-        let key = keyList[i];
-        if (key.id == 'themeid') {
-          document.head.removeChild(key);
-        }
-      }
+    constructor(private http: HttpClient, private httpService: HTTPService, private cookieService: CookieService) {
     }
-  }
 
-  themeChange(theme: any) {
-    this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
-    let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
-    // this.removeExistingTheme(currentTheme);
-    this.addNewTheme(this.newThemePath,currentTheme);
-    const themeObj = {
-      id: Math.floor(Math.random() * 9) + 1  ,
-      themeName: theme.themeCssFile
-    };
-    this.cookieService.set('theme-info', JSON.stringify(themeObj));
-  }
 
+    ngOnInit() {
+
+        let response: any;
+
+        this.http.get('assets/data/theme/themes-api-showcase.json', { responseType: 'json' }).subscribe(data => {
+            response = data;
+        }, error => {
+        }, () => {
+            this.mdThemeData = response;
+
+        });
+
+        this.http.get('assets/data/theme/theme-api-showcase-amexio.json', { responseType: 'json' }).subscribe(data => {
+            response = data;
+        }, error => {
+        }, () => {
+            this.amexioThemeData = response;
+
+        });
+    }
+
+
+    addNewTheme(newTheme: any, existingTheme: any) {
+        let linkEl = document.createElement('link');
+        linkEl.onload = () => {
+            this.removeExistingTheme(existingTheme);
+
+        };
+        linkEl.setAttribute('rel', 'stylesheet');
+        linkEl.id = 'themeid';
+        linkEl.href = newTheme;
+        document.head.appendChild(linkEl);
+    }
+
+    //removed old theme css
+    removeExistingTheme(keyList: any) {
+        if (keyList != null && keyList && keyList.length != 0) {
+            for (let i = 0; i < keyList.length; i++) {
+                let key = keyList[i];
+                if (key.id == 'themeid') {
+                    document.head.removeChild(key);
+                }
+            }
+        }
+    }
+
+    themeChange(theme: any) {
+        console.log("Theme", theme)
+        // this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
+        let response: any;
+        this.httpService.fetch('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(data => {
+            response = data;
+        }, error => {
+        }, () => {
+            let themeColor = response.themeColor;
+            let appColor = response.appColor;
+            let compColor = response.compColor;
+            themeColor.forEach((style: any) => {
+                let value = style.value.replace(';', '');
+                document.documentElement.style.setProperty(style.key, value);
+
+            });
+
+            appColor.forEach((style: any) => {
+                let value = style.value.replace(';', '');
+                document.documentElement.style.setProperty(style.key, value);
+
+            });
+
+            compColor.forEach((style: any) => {
+                document.documentElement.style.setProperty(style.key, style.value);
+
+            });
+
+
+        });
+
+        let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
+        // this.removeExistingTheme(currentTheme);
+        this.addNewTheme(this.newThemePath, currentTheme);
+        const themeObj = {
+            id: Math.floor(Math.random() * 9) + 1,
+            themeName: theme.themeCssFile
+        };
+        this.cookieService.set('theme-info', JSON.stringify(themeObj));
+    }
 
 }
 
