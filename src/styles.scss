@@ -252,3 +252,15 @@ fill: #17bf3c;
  .card-img-center {     position: absolute;
     right: 40%;
   }
+
+  .side-nav-with-tab{
+    display: block;
+  }
+  
+  .side-nav-with-tab > li{
+    padding-left: 0px !important;
+  }
+  
+  .side-nav-with-tab > li > div{
+    padding-right: 0px !important;
+  }
