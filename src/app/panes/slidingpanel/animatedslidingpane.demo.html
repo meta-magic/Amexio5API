@@ -1,0 +1,79 @@
+<amexio-api-structure [url]="'assets/componentjson/panels/slidingpanel.json'">
+    <amexio-api-accessible>
+        <!-- <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Date/Time Picker is WAI ARIA-accessible through the tab key and implementation of keyboard navigation for its
+                component and is tested against the popular screen readers</p>
+            <p> Role:button-The button role is defined for button used in Date/Time picker and correspondingly have
+                aria-pressed attribute.</p>
+            <p> The attributes used in this are aria-label static and dynamic,dynamic for navigation of focus.</p>
+        </amexio-box> -->
+    </amexio-api-accessible>
+    <amexio-api-demo>
+        <amexio-row>
+            <amexio-column [size]="12">
+                <amexio-card [header]="true" [footer]="false" [footer-align]="'center'">
+                    <amexio-header>
+                        Sliding Panel
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-row>
+                            <amexio-column [size]="4">
+                                <!-- ---1--- -->
+                                <amexio-sliding-panel [header]="'Settings'" >
+                                    <amexio-panel-item [icon]="'fa fa-plane'" [title]="'Airplane Mode'">
+                                     </amexio-panel-item>
+                                    <amexio-panel-item  [icon]="'fa fa-wifi'" [title]="'WiFi'">
+                                       </amexio-panel-item>
+                                      <amexio-panel-item [icon]="'fa fa-bluetooth'" [title]="'Bluetooth'">
+                                       </amexio-panel-item>
+                                      <amexio-panel-item [icon]="'fa fa-volume-off'" [title]="'Volume'">
+                                         <amexio-sliding-panel>
+                                                <amexio-panel-item [icon]="'fa fa-volume-up'" [title]="'Volume up'">
+                                                    </amexio-panel-item>
+                                                    <amexio-panel-item [icon]="'fa fa-volume-down'" [title]="'Volume up'">
+                                                        </amexio-panel-item>
+                                                        <amexio-panel-item [icon]="'fa fa-bell-slash'" [title]="'Mute'">
+                                                            </amexio-panel-item>
+                                         </amexio-sliding-panel>                                 
+                                        </amexio-panel-item>
+                                        <amexio-panel-item [icon]="'fa fa-phone'" [title]="'Call settings'">                                
+                                        </amexio-panel-item>
+                                        <amexio-panel-item [icon]="'fa fa-user'" [title]="'Users and accounts'">                                
+                                          <amexio-sliding-panel>
+                                            <amexio-panel-item [icon]="'fa fa-google'" [title]="'Google'">
+
+                                            </amexio-panel-item>
+                                            <amexio-panel-item [icon]="'fa fa-linkedin'" [title]="'Linkedin'">
+
+                                            </amexio-panel-item>
+                                            <amexio-panel-item [icon]="'fa fa-facebook'" [title]="'Facebook'">
+                                                </amexio-panel-item>
+                                                <amexio-panel-item [icon]="'fa fa-twitter'" [title]="'Twitter'">
+                                                    </amexio-panel-item>
+                                                    <amexio-panel-item [icon]="'fa fa-pinterest'" [title]="'pinterest'">
+                                                        </amexio-panel-item>
+                                          </amexio-sliding-panel>
+                                        </amexio-panel-item>
+
+
+                                     
+                                </amexio-sliding-panel> 
+                            </amexio-column>
+                            <amexio-column [size] ="3">
+                                
+                            </amexio-column>
+                            <amexio-column [size] ="5">
+                                
+                            </amexio-column>
+                        </amexio-row>
+
+                    </amexio-body>
+                    
+                </amexio-card>
+
+            </amexio-column>
+ 
+        </amexio-row>
+      
+    </amexio-api-demo>
+</amexio-api-structure>

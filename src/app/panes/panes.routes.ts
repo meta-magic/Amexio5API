@@ -17,7 +17,7 @@ import { TabDemo } from './tab/basictab/tab.demo';
 import { OverlayDemoComponent } from './overlaycontainer/overlay.demo.component';
 import { ArcDemoComponent } from './arc/arc.demo.component';
 import { DarkmodeDemoComponent} from './darkmode/darkmode.demo.component';
-
+import { SlidingPanelDemo} from './slidingpanel/animatedslidingpane.demo';
 
 /**
  * Created by kedar on 1/2/19.
@@ -78,7 +78,8 @@ export const PANES_ROUTE: Routes = [
     {
         path: 'arc-demo', component: ArcDemoComponent,
     },
-
-
-
+    {
+        path: 'slidingpanel-demo', component: SlidingPanelDemo,
+    },
+     
 ];

@@ -27,6 +27,7 @@ import { DyanmicVerticalTabComponent } from "./tab/enhancedverticaltab/dynamicve
 import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
 import { ArcDemoComponent } from "./arc/arc.demo.component";
 import {DarkmodeDemoComponent} from "./darkmode/darkmode.demo.component";
+import {SlidingPanelDemo} from "./slidingpanel/animatedslidingpane.demo";
 
 /**
  * Created by kedar on 1/2/19.
@@ -36,7 +37,7 @@ import {DarkmodeDemoComponent} from "./darkmode/darkmode.demo.component";
         ClosableTabDemo, PanelDemoComponent, FieldSetDemoComponent,DialogueDemoComponent,
         CarouselDemoComponent, EnhancedTabDemo,EnhancedVerticalTabDemo,ScrollableTabDemo,
         IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo, DyanmicTabComponent,
-        DyanmicVerticalTabComponent, OverlayDemoComponent, ArcDemoComponent
+        DyanmicVerticalTabComponent, OverlayDemoComponent, ArcDemoComponent, SlidingPanelDemo
 
 
     ],

@@ -1,0 +1,121 @@
+{
+    "title": "Amexio Sliding Panel",
+    "description": "Sliding panel provides an easy way to organize big forms by grouping the fields in panel with sliding animation effect.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-sliding-panel>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "header",
+            "version": "5.13 onwards",
+            "type": "string",
+            "default": "none",
+            "description": "Sets sliding panel header"
+          }
+             
+        ]
+      },
+      {
+        "gridTitle": "Properties <amexio-panel-item>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "icon",
+            "type": "string",
+            "default": "",
+            "description": "Sets icon to panel item",
+            "version": "5.13 onwards"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "default": "",
+            "description": "Sets title to panel item",
+            "version": "5.13 onwards"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "pane/slidingpanel/form.html",
+      "tsUrl": "pane/slidingpanel/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": true,
+      "stackblitzUrl": ""
+    }
+  }
