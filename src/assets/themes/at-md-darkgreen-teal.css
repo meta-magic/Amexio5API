@@ -1750,7 +1750,7 @@ textarea:required {
 /** notification - Structure CSS **/
 .notification-content {
   position: fixed;
-  z-index: 3; }
+  z-index: 9900; }
 
 .notification-vertical-top {
   top: 0%; }
@@ -6676,7 +6676,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 .sidenav-mobile-bar-left {
   top: 10px;
   position: fixed;
-  z-index: 3;
+  z-index: 9900;
   left: 0; }
 
 .sidenav-submenu-details .tablink {
@@ -8544,6 +8544,49 @@ amexio-layout amexio-layout-item {
 
 .dailogue-header-ce .dialogue-table {
   display: flex; }
+
+/*****************************************************************************
+ Component Name : Amexio slidingpanel container 
+  Version : Amexio v5.12 onwards
+****************************************************************************/
+/** Amexio slidingpanel Vars CSS **/
+/** Amexio slidingpanel Visual CSS **/
+.parentpanel {
+  color: var(--componentActiveFontColor);
+  background-color: var(--componentActiveBGColor); }
+
+.parentpanel:hover {
+  color: var(--componentHoverFontColor);
+  background-color: var(--componentHoverBGColor); }
+
+.panelitemrow {
+  color: var(--componentActiveFontColor);
+  background-color: var(--componentActiveBGColor); }
+
+.panelitemrow:hover {
+  color: var(--componentHoverFontColor);
+  background-color: var(--componentHoverBGColor); }
+
+.panelheader {
+  background-color: var(--componentHeaderBGColor);
+  color: var(--componentHeaderFontColor); }
+
+/** Amexio slidingpanel Structure CSS **/
+.parentpanel {
+  width: 100%;
+  height: 4%; }
+
+.panelitemrow {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1%;
+  border: 1px solid var(--themeSecondaryColor); }
+
+.panelheader {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1%;
+  border: 1px solid var(--themeSecondaryColor); }
 
 /****************************************************************************
     Component Name : Border Layout
