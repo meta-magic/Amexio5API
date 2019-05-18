@@ -253,8 +253,21 @@ fill: #17bf3c;
     right: 40%;
   }
 
+  // .side-nav-with-tab{
+  //   display: block;
+  // }
+  
+  // .side-nav-with-tab > li{
+  //   padding-left: 0px !important;
+  // }
+  
+  // .side-nav-with-tab > li > div{
+  //   padding-right: 0px !important;
+  // }
+
   .side-nav-with-tab{
     display: block;
+    padding-top: 10px;
   }
   
   .side-nav-with-tab > li{
@@ -264,3 +277,34 @@ fill: #17bf3c;
   .side-nav-with-tab > li > div{
     padding-right: 0px !important;
   }
+  
+  .api-header-style .box-content{
+    margin: -20px -100%;
+    padding: 20px 100%;
+  }
+  
+  
+  
+  @media only screen and (max-width: 500px) {
+  
+    .flex-col-2pt5, .flex-col-9pt5 {
+      max-width: 100%;
+    }
+  
+    .datagrid-template span{
+      display: block;
+    }
+  
+  
+  .api-header-style .box-content{
+    margin: unset;
+    padding: unset;
+  }
+  
+  .sidenav{
+    overflow: hidden!important;
+  }
+  
+  
+  }
+  

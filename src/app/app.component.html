@@ -1,60 +1,57 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
-        <amexio-homepage-ce [type]="'1'">
-            <amexio-homepage-northpanel>
-                <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'"
-                    [logo]="'assets/images/logos/amexio-logo.png'">
-                    <amexio-nav-item style="padding-left:10px" position-left [type]="'slider'">
-                    </amexio-nav-item>
-                    <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'"
-                        [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus"
-                        (onNavItemClick)="externalLink($event)">
-                    </amexio-nav-item>
-                </amexio-nav>
-            </amexio-homepage-northpanel>
-            <amexio-homepage-westpanel>
+    <amexio-homepage-ce [type]="'1'">
+        <amexio-homepage-northpanel>
+            <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'"
+                [logo]="'assets/images/logos/amexio-logo.png'">
+                <amexio-nav-item style="padding-left:10px" position-left [type]="'slider'">
+                </amexio-nav-item>
+                <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'"
+                    [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus"
+                    (onNavItemClick)="externalLink($event)">
+                </amexio-nav-item>
+            </amexio-nav>
+        </amexio-homepage-northpanel>
+        <amexio-homepage-westpanel>
                 <amexio-side-nav [http-url]="'assets/data/menus/submenus.json'" [http-method]="'get'" [data-reader]="'data'"
-                    (nodeClick)="onNodeClick($event)">
-                    <amexio-sidenav-node class="side-nav-with-tab">
-                        <amexio-tab-view [divide-header-equally]=true [closable]="false">
-                            <amexio-tab [active]="true" [title]="'SE'">
-                                <amexio-side-nav [width]="'100%'" [position]="'relative'" [http-url]="'assets/data/menus/semenus.json'"
-                                    [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)">
-                                </amexio-side-nav>
-                            </amexio-tab>
-    
-                            <amexio-tab [title]="'EE'">
-                                <amexio-side-nav [width]="'100%'" [position]="'relative'" [http-url]="'assets/data/menus/eemenus.json'"
-                                    [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)">
-                                </amexio-side-nav>
-                            </amexio-tab>
-                            <amexio-tab [title]="'CE'">
-                                <amexio-side-nav [width]="'100%'" [position]="'relative'" [http-url]="'assets/data/menus/cemenus.json'"
-                                    [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)">
-                                </amexio-side-nav>
-                            </amexio-tab>
-                        </amexio-tab-view>
-                    </amexio-sidenav-node>
-                    <amexio-sidenav-node style="display: block; visibility: hidden;">
-                        <amexio-label>
-Testing Content
-                        </amexio-label>
-                    </amexio-sidenav-node>
-                    <amexio-sidenav-node style="display: block; visibility: hidden;">
-                        <amexio-label>
-Testing Content
-                        </amexio-label>
-                    </amexio-sidenav-node>
-                </amexio-side-nav>
-    
-            </amexio-homepage-westpanel>
-            <amexio-homepage-centerpanel>
-                <div *ngIf="isRouteLoading">
-                    <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'"
-                        [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
-                    </amexio-spinner>
-                </div>
-                <router-outlet></router-outlet>
-    
-            </amexio-homepage-centerpanel>
-        </amexio-homepage-ce>
-    </div>
+                (nodeClick)="onNodeClick($event)">
+                 
+                <amexio-sidenav-node class="side-nav-with-tab"> 
+                                       
+                    <amexio-tab-view [body-height]="90" [divide-header-equally]=true [closable]="false">
+                        
+                        <!-- <amexio-tab [active]="true" [title]="'Home'" [icon]="'fa fa-home'"> -->
+                            <!-- <amexio-sidenav-node (nodeClick)="onNodeClick(item)" *ngFor="let item of homemenus" [enable-border]="true" [label]="item.text"
+                             [icon]="item.icon">
+                            </amexio-sidenav-node> -->
+                        <!-- </amexio-tab> -->
+                        <amexio-tab [active]="true" [title]="'SE'" [icon]="'fa fa-user'">
+                            <amexio-sidenav-node (nodeClick)="onNodeClick($event)" *ngFor="let item of semenus" [enable-border]="true" [label]="item.text"
+                                [icon]="item.icon" [collapsable]="true" [data]='item.children'>
+                            </amexio-sidenav-node>
+                        </amexio-tab>
+                        <amexio-tab [active]="false" [title]="'EE'" [icon]="'fa fa-building'">
+                            <amexio-sidenav-node (nodeClick)="onNodeClick($event)" *ngFor="let item of eemenus" [enable-border]="true" [label]="item.text"
+                                [icon]="item.icon" [collapsable]="true" [data]='item.children'>
+                            </amexio-sidenav-node>
+                        </amexio-tab>
+                        <amexio-tab [active]="false" [title]="'CE'" [icon]="'fa fa-paint-brush'">
+                            <amexio-sidenav-node (nodeClick)="onNodeClick($event)" *ngFor="let item of cemenus" [enable-border]="true" [label]="item.text"
+                                [icon]="item.icon" [collapsable]="true" [data]='item.children'>
+                            </amexio-sidenav-node>
+                        </amexio-tab>
+                    </amexio-tab-view>
+                </amexio-sidenav-node>
+            </amexio-side-nav>
+
+        </amexio-homepage-westpanel>
+        <amexio-homepage-centerpanel>
+            <div *ngIf="isRouteLoading">
+                <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'"
+                    [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
+                </amexio-spinner>
+            </div>
+            <router-outlet></router-outlet>
+
+        </amexio-homepage-centerpanel>
+    </amexio-homepage-ce>
+</div>
