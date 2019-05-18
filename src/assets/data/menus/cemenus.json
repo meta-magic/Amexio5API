@@ -55,8 +55,7 @@
                     "text": "Sliding-Panel",
                     "badge": "NEW",
                     "icon": "fa fa-bars  ",
-                    "link": "panes/animatedsliding-demo"
-                    
+                    "link": "panes/animatedsliding-demo" 
                 }
             ]
         },
