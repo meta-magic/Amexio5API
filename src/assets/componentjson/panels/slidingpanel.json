@@ -44,7 +44,7 @@
         "gridData": [
           {
             "name": "header",
-            "version": "5.13 onwards",
+            "version": "5.12 onwards",
             "type": "string",
             "default": "none",
             "description": "Sets sliding panel header"
@@ -97,14 +97,14 @@
             "type": "string",
             "default": "",
             "description": "Sets icon to panel item",
-            "version": "5.13 onwards"
+            "version": "5.12 onwards"
           },
           {
             "name": "title",
             "type": "string",
             "default": "",
             "description": "Sets title to panel item",
-            "version": "5.13 onwards"
+            "version": "5.12 onwards"
           }
         ]
       }

@@ -79,7 +79,7 @@ export const PANES_ROUTE: Routes = [
         path: 'arc-demo', component: ArcDemoComponent,
     },
     {
-        path: 'slidingpanel-demo', component: SlidingPanelDemo,
+        path: 'animatedsliding-demo', component: SlidingPanelDemo,
     },
      
 ];

@@ -49,6 +49,14 @@
                     "badge": "NEW",
                     "icon": "fa fa-indent  ",
                     "link": "creative/viewport-demo"
+
+                },
+                {
+                    "text": "Sliding-Panel",
+                    "badge": "NEW",
+                    "icon": "fa fa-bars  ",
+                    "link": "panes/animatedsliding-demo"
+                    
                 }
             ]
         },

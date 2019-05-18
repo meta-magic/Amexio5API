@@ -45,7 +45,7 @@
           {
             "name": "polaroid-type",
             "description": "It provides orientation to the card,creative-card.",
-            "version": "5.13 onwards",
+            "version": "5.12 onwards",
             "type": "string",
             "default": ""
           }
