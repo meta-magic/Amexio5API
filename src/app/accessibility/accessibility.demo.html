@@ -1,10 +1,14 @@
+<amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="true"   [padding]="true" align="left">
+          <amexio-label size="large">
+            Introduction
+          </amexio-label>
+         <!-- <br/><br> -->
+    </amexio-box>
 <amexio-row>
     <amexio-column size="12">
-        <amexio-card [show]="'false'" height="height">
+        <amexio-card>
+             
             <amexio-body>
-                <amexio-label [badge]="badge" size="large" [font-color]="'fontColor'">
-                    Introduction
-                </amexio-label>
                 <p>
                     Accessibility of web content requires semantic information about widgets, structures, and
                     behaviors, in order to allow assistive technologies to convey appropriate information to persons
@@ -109,10 +113,10 @@
         </amexio-card>
     </amexio-column>
 
-<amexio-row>
+<!-- <amexio-row>
 <amexio-column size ="12"
-                [fit]="false">
-                <amexio-card>
+                [fit]="false"> -->
+                <amexio-card style="display: block; padding-top:50px">
                         <amexio-body>
                                 <amexio-layout-grid [layout]="'LayoutSample'">
                                         <amexio-grid-item  [name]="'gridtable1'"> <amexio-card [header]="true" [header-align]="'left'" [footer]="false" [footer-align]="'left'" [show]="'showVariable'"
@@ -257,8 +261,8 @@
                         </amexio-body>
                 </amexio-card>
             
-</amexio-column>
-</amexio-row>
+<!-- </amexio-column>
+</amexio-row> -->
 
 
 
