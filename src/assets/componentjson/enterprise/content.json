@@ -176,6 +176,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "enterprise/content/ee.html",
     "tsUrl": "enterprise/content/ee.text",
