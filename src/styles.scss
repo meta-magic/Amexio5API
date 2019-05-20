@@ -267,7 +267,11 @@ fill: #17bf3c;
 
   .side-nav-with-tab{
     display: block;
-    padding-top: 10px;
+  }
+
+  .side-nav-with-tab .panel {
+    padding: 10px 0px !important;
+    overflow-y: hidden!important; 
   }
   
   .side-nav-with-tab > li{
@@ -284,27 +288,4 @@ fill: #17bf3c;
   }
   
   
-  
-  @media only screen and (max-width: 500px) {
-  
-    .flex-col-2pt5, .flex-col-9pt5 {
-      max-width: 100%;
-    }
-  
-    .datagrid-template span{
-      display: block;
-    }
-  
-  
-  .api-header-style .box-content{
-    margin: unset;
-    padding: unset;
-  }
-  
-  .sidenav{
-    overflow: hidden!important;
-  }
-  
-  
-  }
   
