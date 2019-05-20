@@ -31,7 +31,6 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   }
 
   ngOnInit() {
-    debugger;
     if (this.htmlUrl) {
       this.loadHtmlUrl();
     }
@@ -56,7 +55,6 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   }
   // LOADING HTML URL
   loadHtmlUrl() {
-    debugger;
     this._httpClient.get(CODE_BASE_PATH + this.htmlUrl, { responseType: 'text' }).subscribe(data => {
       this.htmlCode = data;
     });

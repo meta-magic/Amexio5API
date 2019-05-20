@@ -20,7 +20,7 @@
                         
                             <amexio-side-nav [http-url]="'assets/data/menus/submenus.json'"
                             [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
-                             [width]="'242px'" [position]="'relative'">
+                              [position]="'relative'">
                            </amexio-side-nav>
 
                         </amexio-accordion-tab>
@@ -29,13 +29,13 @@
                                 <amexio-tab [active]="true" [title]="'SE'">
                                     <amexio-side-nav [http-url]="'assets/data/menus/semenus.json'"
                                     [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
-                                     [width]="'242px'" [position]="'relative'">
+                                     [width]="'100%'" [position]="'relative'">
                                    </amexio-side-nav>
                                 
                                 </amexio-tab>
                                 <amexio-tab [active]="false" [title]="'EE'">
                                         <amexio-side-nav [http-url]="'assets/data/menus/eemenus.json'"
-                                        [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                                        [width]="'100%'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
                                          [width]="'242px'" [position]="'relative'">
                                        </amexio-side-nav>
                                   
@@ -43,7 +43,7 @@
                                 <amexio-tab [active]="false" [title]="'CE'">
                                         <amexio-side-nav [http-url]="'assets/data/menus/cemenus.json'"
                                         [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
-                                         [width]="'242px'" [position]="'relative'">
+                                        [width]="'100%'" [position]="'relative'">
                                        </amexio-side-nav>
                                 
                                 </amexio-tab>
