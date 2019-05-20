@@ -23,19 +23,19 @@
                         </amexio-accordion-tab>
                         <amexio-accordion-tab [active]="true" header="Components SE/EE/CE">
                             <amexio-tab-view class="side-nav-with-tab" [divide-header-equally]=true [closable]="false">
-                                <amexio-tab [active]="true" [title]="'SE'">
+                                <amexio-tab [active]="true" [icon]="'fa fa-user'" [title]="'SE'">
                                     <amexio-side-nav [http-url]="'assets/data/menus/semenus.json'" [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
 
                                 </amexio-tab>
-                                <amexio-tab [active]="false" [title]="'EE'">
+                                <amexio-tab [active]="false" [icon]="'fa fa-building'" [title]="'EE'" >
                                     <amexio-side-nav [http-url]="'assets/data/menus/eemenus.json'" [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
                                     [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
 
                                 </amexio-tab>
-                                <amexio-tab [active]="false" [title]="'CE'">
+                                <amexio-tab [active]="false" [icon]="'fa fa-paint-brush'" [title]="'CE'">
                                     <amexio-side-nav [http-url]="'assets/data/menus/cemenus.json'" [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
