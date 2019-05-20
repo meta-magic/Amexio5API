@@ -95,6 +95,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "data/spinner/spinner.html",
     "tsUrl": "data/spinner/spinner.text",

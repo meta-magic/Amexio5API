@@ -248,6 +248,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "navigation/navbar/navigation.html",
     "tsUrl": "navigation/navbar/navigation.text",

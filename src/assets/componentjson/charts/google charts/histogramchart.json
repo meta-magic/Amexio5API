@@ -117,6 +117,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/histogramchart/chart.html",
     "tsUrl": "charts/histogramchart/chart.text",

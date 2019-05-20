@@ -267,6 +267,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/candlestickwaterfallchart/chart.html",
     "tsUrl": "charts/candlestickwaterfallchart/chart.text",

@@ -96,6 +96,8 @@
         ]
       }
     ],
+  "isAccessibility": true,
+
     "sourceMetadata": {
       "htmlUrl": "forms/googlelogin/form.html",
       "tsUrl": "forms/googlelogin/form.text",

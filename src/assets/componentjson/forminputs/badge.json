@@ -115,6 +115,8 @@
         ]
       }
     ],
+  "isAccessibility": true,
+
     "sourceMetadata": {
       "htmlUrl": "forms/badge/form.html",
       "tsUrl": "forms/badge/form.text",

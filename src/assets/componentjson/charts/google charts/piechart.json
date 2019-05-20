@@ -250,6 +250,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/piechart/chart.html",
     "tsUrl": "charts/piechart/chart.text",

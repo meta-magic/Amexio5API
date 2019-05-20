@@ -154,6 +154,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/linechart/chart.html",
     "tsUrl": "charts/linechart/chart.text",

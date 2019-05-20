@@ -233,6 +233,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/donutchart/chart.html",
     "tsUrl": "charts/donutchart/chart.text",

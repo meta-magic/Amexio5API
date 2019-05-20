@@ -219,6 +219,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/D3Charts/d3barstackchart/d3chart.html",
     "tsUrl": "charts/D3Charts/d3barstackchart/d3chart.text",

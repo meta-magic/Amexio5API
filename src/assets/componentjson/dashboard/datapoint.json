@@ -157,6 +157,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "dashboard/datapoint/datapoint.html",
     "tsUrl": "dashboard/datapoint/datapoint.text",

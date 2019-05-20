@@ -134,6 +134,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "",
     "tsUrl": "",
