@@ -26,9 +26,10 @@
           </li>
         </ng-container>
       </amexio-box>
+ 
+      
     </ng-container>
-
-    <amexio-tab-view [closable]="true">
+    <amexio-tab-view *ngIf="comData" [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
         <ng-content select="amexio-api-demo"></ng-content>
       </amexio-tab>
@@ -41,7 +42,8 @@
       </amexio-tab>
 
 
-      <amexio-tab title="Accessible" [active]="false" [closable]="false" [disabled]="comData?.isAccessibility? true: false">
+      <amexio-tab title="Accessible" [active]="false" [closable]="false" [disabled]="!isAccessibilityEnabled()">
+       
         <ng-container *ngIf="(comData && comData.apiaccessibledata )">
           <ng-content select="amexio-api-accessible"></ng-content>
           <amexio-api-accessible [disabled]="false" [data]="comData.apiaccessibledata"></amexio-api-accessible>

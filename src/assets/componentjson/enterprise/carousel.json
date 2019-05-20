@@ -87,7 +87,7 @@
       ]
     }
   ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
   "sourceMetadata": {
     "htmlUrl": "enterprise/multicarusel/ee.html",

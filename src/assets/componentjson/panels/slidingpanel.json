@@ -109,7 +109,7 @@
         ]
       }
     ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "sourceMetadata": {
       "htmlUrl": "pane/slidingpanel/form.html",

@@ -219,7 +219,7 @@
       ]
     }
   ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
   "sourceMetadata": {
     "htmlUrl": "charts/D3Charts/d3multiareachart/d3chart.html",

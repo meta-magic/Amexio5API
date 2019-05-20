@@ -254,7 +254,7 @@
       ]
     }
   ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
   "sourceMetadata": {
     "htmlUrl": "charts/D3Charts/d3combochart/d3chart.html",

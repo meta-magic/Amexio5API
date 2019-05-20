@@ -58,7 +58,7 @@
       "tsUrl": "",
       "datasourceUrl": ""
     },
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "liveMetadata": {
       "disabled": true,

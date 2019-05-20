@@ -339,7 +339,7 @@
       ]
     }
   ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
   "sourceMetadata": {
     "htmlUrl": "charts/bubblechart/chart.html",

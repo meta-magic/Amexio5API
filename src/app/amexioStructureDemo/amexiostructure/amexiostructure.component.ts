@@ -31,6 +31,7 @@ export class AmexioStructureComponent implements OnInit {
   getComponentData() {
     this._rCService.getCall(this.url).subscribe(
       (res: ComponentDataStructure) => {
+        debugger;
         if (this.customComData) {
           this.addCustomData(res);
         } else {
@@ -66,6 +67,13 @@ export class AmexioStructureComponent implements OnInit {
     }
 
     this.comData = response;
+  }
+
+  isAccessibilityEnabled(){
+    if(this.comData.isAccessibility === undefined){
+      return true;
+    }
+    return this.comData.isAccessibility;
   }
 }
 

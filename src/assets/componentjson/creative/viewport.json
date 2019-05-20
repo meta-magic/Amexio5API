@@ -61,7 +61,7 @@
             "default": "black"
         }]
     }],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "sourceMetadata": {
         "htmlUrl": "creative/viewport/creative.html",

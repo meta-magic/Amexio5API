@@ -82,7 +82,7 @@
             "default": "left"
         }]
     }],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "sourceMetadata": {
         "htmlUrl": "creative/ce-menu/creative.html",

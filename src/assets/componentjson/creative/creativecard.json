@@ -456,7 +456,7 @@
         "tsUrl": "creative/cardce/creative.text",
         "datasourceUrl": ""
     },
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "liveMetadata": {
         "disabled": false,

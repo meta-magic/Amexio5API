@@ -115,7 +115,7 @@
         ]
       }
     ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "sourceMetadata": {
       "htmlUrl": "forms/badge/form.html",

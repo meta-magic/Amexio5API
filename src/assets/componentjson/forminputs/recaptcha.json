@@ -79,7 +79,7 @@
         ]
       }
     ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "sourceMetadata": {
       "htmlUrl": "forms/recaptcha/recaptcha.html",

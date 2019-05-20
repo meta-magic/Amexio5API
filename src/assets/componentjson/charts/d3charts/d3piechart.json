@@ -205,7 +205,7 @@
       ]
     }
   ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
   "sourceMetadata": {
     "htmlUrl": "charts/D3Charts/d3piechart/d3chart.html",

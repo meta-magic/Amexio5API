@@ -71,7 +71,7 @@
     "tsUrl": "arc/arc.txt",
     "datasourceUrl": ""
   },
-  "isAccessibility": true,
+  "isAccessibility": false,
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-arc-component?embed=1&file=app/panel/ARC/ARC.demo.html&view=editor"

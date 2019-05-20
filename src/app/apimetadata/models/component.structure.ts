@@ -12,6 +12,7 @@ export class ComponentDataStructure {
   componentDescription = '';
   compFeaturesTitle = '';
   keyFeatures = '';
+  isAccessibility = true;
 }
 
 export class SourceMetadata {
@@ -41,7 +42,6 @@ export class LiveMetadata {
 }
 export class Accessible {
   gridTitle: string;
-  isAccessibility: boolean;
   disabled: boolean;
   columnDefinition: any[];
   gridData: any[];

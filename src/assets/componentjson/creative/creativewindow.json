@@ -485,7 +485,7 @@
       ]
     }
     ],
-    "isAccessibility": true,
+    "isAccessibility": false,
     "sourceMetadata": {
         "htmlUrl": "creative/windowce/windowce.html",
         "tsUrl": "creative/windowce/windowce.text",

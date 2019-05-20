@@ -3,7 +3,7 @@
   "description": "Amexio uses a series of rows and columns to layout and align content and is fully responsive.",
   "apiRefMetadata": [
   ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
   "sourceMetadata": {
     "htmlUrl": "layout/row/layout.html",

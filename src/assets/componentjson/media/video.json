@@ -67,7 +67,7 @@
         ]
     }
   ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
   "sourceMetadata": {
     "htmlUrl": "media/video/media.html",

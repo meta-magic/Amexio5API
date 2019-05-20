@@ -96,7 +96,7 @@
         ]
       }
     ],
-  "isAccessibility": true,
+  "isAccessibility": false,
 
     "sourceMetadata": {
       "htmlUrl": "forms/googlelogin/form.html",
