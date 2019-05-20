@@ -36,10 +36,10 @@ after_success:
   - git commit -m "[skip travis]  themes-updated"
   - git push  "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.5
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
-  - rm -rf amexio-api-website-test/api/v5.12/*
-  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.12/
+  - rm -rf amexio-api-website-test/api/pre-beta/*
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/pre-beta/
   - cd amexio-api-website-test/
-  - git add api/v5.12/
+  - git add api/pre-beta/
   - git commit -m "${COMMIT}"
   - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git push "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master; fi
 cache:
