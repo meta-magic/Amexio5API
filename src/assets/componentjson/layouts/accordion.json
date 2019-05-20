@@ -3,7 +3,7 @@
   "description": "Accordion Provides An Easy Way To Organize Big Forms By Grouping The Fields In Accordion Panels.",
   "componentDescription":"Accordion Layout provides Expandable and Collapsible Panels to group components based on a business context. It supports both Single Accordion pane expansion and collapses and applies to Multiple Accordion panes also. You can add (Accordion) Title on the left side of the Accordion (header) and more data or actionable buttons on the right side of the Accordion header. Multiple styles are available for Accordion and the Developer can give custom color for the Accordion Header. You can programmatically disable an accordion as per the business requirements. Like other Amexio Components Accordion is also Accessibility enabled.",
   "compFeaturesTitle":"Key-Features",
-  "KeyFeatures": [
+  "keyFeatures": [
     " Accordion Styling (includes Custom Header styling)",
     " Additional Content on Header (other than title)",
     " Actionable buttons on Header",

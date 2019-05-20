@@ -349,11 +349,6 @@
                     "link": "forms-Input/rating-demo"
                 },
                 {
-                    "text": "Recaptcha",
-                    "icon": "fa fa-recycle  ",
-                    "link": "forms-Input/recaptcha-demo"
-                },
-                {
                     "text": "Search Box",
                     "icon": "fa fa-search  ",
                     "badge": "U",
