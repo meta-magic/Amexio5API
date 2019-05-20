@@ -1,6 +1,6 @@
 {
-    "title": "Amexio Recptcha",
-    "description": "Amexio google recaptcha used for google security check..",
+    "title": "Amexio reCAPTCHA",
+    "description": "Amexio reCAPTCHA is a free security service that protects your websites from spam and abuse.",
     "apiRefMetadata": [
       {
         "gridTitle": "Properties <amexio-google-recaptcha>",
