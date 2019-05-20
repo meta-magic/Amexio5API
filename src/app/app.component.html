@@ -17,27 +17,35 @@
                 <amexio-sidenav-node class="side-nav-with-tab">
                     <amexio-accordion  angle-icon=true>
                         <amexio-accordion-tab header="Home">
-                            <amexio-sidenav-node (nodeClick)="onNodeClick(item)" *ngFor="let item of homemenus"
-                                [enable-border]="true" [label]="item.text" [icon]="item.icon">
-                            </amexio-sidenav-node>
+                        
+                            <amexio-side-nav [http-url]="'assets/data/menus/submenus.json'"
+                            [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                             [width]="'242px'" [position]="'relative'">
+                           </amexio-side-nav>
 
                         </amexio-accordion-tab>
                         <amexio-accordion-tab [active]="true" header="Components SE/EE/CE">
                             <amexio-tab-view class="side-nav-with-tab" [divide-header-equally]=true [closable]="false">
                                 <amexio-tab [active]="true" [title]="'SE'">
-                                    <amexio-sidenav-node (nodeClick)="onNodeClick($event)" *ngFor="let item of semenus" [enable-border]="true" [label]="item.text"
-                                        [icon]="item.icon" [collapsable]="true" [data]='item.children'>
-                                    </amexio-sidenav-node>
+                                    <amexio-side-nav [http-url]="'assets/data/menus/semenus.json'"
+                                    [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                                     [width]="'242px'" [position]="'relative'">
+                                   </amexio-side-nav>
+                                
                                 </amexio-tab>
                                 <amexio-tab [active]="false" [title]="'EE'">
-                                    <amexio-sidenav-node (nodeClick)="onNodeClick($event)" *ngFor="let item of eemenus" [enable-border]="true" [label]="item.text"
-                                        [icon]="item.icon" [collapsable]="true" [data]='item.children'>
-                                    </amexio-sidenav-node>
+                                        <amexio-side-nav [http-url]="'assets/data/menus/eemenus.json'"
+                                        [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                                         [width]="'242px'" [position]="'relative'">
+                                       </amexio-side-nav>
+                                  
                                 </amexio-tab>
                                 <amexio-tab [active]="false" [title]="'CE'">
-                                    <amexio-sidenav-node (nodeClick)="onNodeClick($event)" *ngFor="let item of cemenus" [enable-border]="true" [label]="item.text"
-                                        [icon]="item.icon" [collapsable]="true" [data]='item.children'>
-                                    </amexio-sidenav-node>
+                                        <amexio-side-nav [http-url]="'assets/data/menus/cemenus.json'"
+                                        [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                                         [width]="'242px'" [position]="'relative'">
+                                       </amexio-side-nav>
+                                
                                 </amexio-tab>
                             </amexio-tab-view>
                             

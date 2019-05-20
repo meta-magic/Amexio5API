@@ -1,30 +1,24 @@
 {
     "data": [
         {
-            "text": "Home",
-            "icon": "fa fa-home",
-            "children": [{
-                    "text": "Quick Start",
-                    "icon": "fa fa-bars  ",
-                    "link": "getting-started"
-                },
-                {
-                    "text": "Themes",
-                    "icon": "fa fa-snowflake-o",
-                    "link": "amexio-colors"
-                },
-                {
-                    "text": "D3 Charts",
-                    "link": "d3-charts",
-                    "icon": "fa fa-openid"
-                },
-                {
-                    "text": "Accessibility",
-                    "link": "amexio-accessibility",
-                    "icon": "fa fa-universal-access"
-                }
-            ]
+            "text": "Quick Start",
+            "icon": "fa fa-bars  ",
+            "link": "getting-started"
+        },
+        {
+            "text": "Themes",
+            "icon": "fa fa-snowflake-o",
+            "link": "amexio-colors"
+        },
+        {
+            "text": "D3 Charts",
+            "link": "d3-charts",
+            "icon": "fa fa-openid"
+        },
+        {
+            "text": "Accessibility",
+            "link": "amexio-accessibility",
+            "icon": "fa fa-universal-access"
         }
-
     ]
 }
