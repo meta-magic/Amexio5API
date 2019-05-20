@@ -181,6 +181,10 @@ export class SearchBox implements OnInit {
           if (this.contains(element.subject, sub1) && this.contains(element.to, to1)) {
             this.bindData.push(element);
           }
+        }if ((sub1.length > 0 && frm1.length  > 0)) {
+          if (this.contains(element.subject, sub1) && this.contains(element.from, frm1)) {
+            this.bindData.push(element);
+          }
         }
         else if ((sub1.length > 0) && (this.contains(element.subject, sub1))) {
           this.bindData.push(element);
@@ -193,9 +197,11 @@ export class SearchBox implements OnInit {
           if (this.contains(element.from, frm1) && this.contains(element.to, to1)) {
             this.bindData.push(element);
           }
-        }
-
-        else if ((sub1.length > 0 && frm1.length > 0 && to1.length > 0)) {
+        } else if (frm1.length > 0){
+          if (this.contains(element.from, frm1)) {
+            this.bindData.push(element);
+          }
+        }else if ((sub1.length > 0 && frm1.length > 0 && to1.length > 0)) {
           if (this.contains(element.from, frm1) && this.contains(element.to, to1) && this.contains(element.subject, sub1)) {
             this.bindData.push(element);
           }

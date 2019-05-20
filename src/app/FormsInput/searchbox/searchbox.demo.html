@@ -72,7 +72,31 @@
               Data 
             </amexio-header>
             <amexio-body>
-          <pre><code>{{localData|json}}</code></pre> 
+                <amexio-datagrid amexioColorPalette [height]="200" [color-palette]="'amexio-theme-color1'"  [gradient]="false" 
+                [enable-checkbox]="false" 
+                [data]="bindData" 
+                >
+   <amexio-data-table-column 
+       [data-index]="'from'" 
+       [data-type]="'string'" 
+       [hidden]="false" 
+       [text]="'From'">
+   </amexio-data-table-column>
+   <amexio-data-table-column 
+       [data-index]="'to'" 
+       [data-type]="'string'" 
+       [hidden]="false"
+       [text]="'To'">
+   </amexio-data-table-column>
+   <amexio-data-table-column
+       [data-index]="'subject'" 
+       [data-type]="'string'" 
+       [hidden]="false" 
+       [text]="'Subject'">
+   </amexio-data-table-column>
+</amexio-datagrid>
+
+          <!-- <pre><code>{{localData|json}}</code></pre>  -->
             </amexio-body>
         </amexio-card>
       </amexio-column>
