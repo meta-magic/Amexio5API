@@ -13,7 +13,7 @@
             <amexio-side-nav>
 
                 <amexio-sidenav-node class="side-nav-with-tab">
-                    <amexio-accordion angle-icon=true>
+                    <amexio-accordion [expand-all]="true" angle-icon=true>
                         <amexio-accordion-tab header="Home">
 
                             <amexio-side-nav [http-url]="'assets/data/menus/submenus.json'" [http-method]="'get'" [width]="'100%'" [data-reader]="'data'"
