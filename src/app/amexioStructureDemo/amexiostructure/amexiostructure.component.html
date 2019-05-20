@@ -1,30 +1,33 @@
-<amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="true" class="api-header-style "  [padding]="true" align="left">
-    <ng-container *ngIf="(comData && comData.title)">
-      <amexio-label size="large">
-          {{comData.title}}
-      </amexio-label>
-    </ng-container> <br/><br>
-    <ng-container *ngIf="(comData && comData.description)">{{comData.description}}</ng-container>
+<amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="true" class="api-header-style " [padding]="true"
+  align="left">
+  <ng-container *ngIf="(comData && comData?.title)">
+    <amexio-label size="large">
+      {{comData?.title}}
+    </amexio-label>
+  </ng-container> <br /><br>
+  <ng-container *ngIf="(comData && comData?.description)">
+    {{comData?.description}}
+  </ng-container>
 </amexio-box>
-<amexio-card style="display: block; padding-top:30px;" >
+<amexio-card style="display: block; padding-top:30px;">
 
   <amexio-body>
-      <ng-container *ngIf="comData.componentDescription">
-    <amexio-box  [padding]="true" align="left">
-        <ng-container>{{comData.componentDescription}}</ng-container><br>
+    <ng-container *ngIf="comData?.componentDescription">
+      <amexio-box [padding]="true" align="left">
+        <ng-container>{{comData?.componentDescription}}</ng-container><br>
         <br>
         <ng-container>
-          <amexio-label [size]="'medium-bold'">{{comData.compFeaturesTitle}}</amexio-label><br>
+          <amexio-label [size]="'medium-bold'">{{comData?.compFeaturesTitle}}</amexio-label><br>
         </ng-container>
         <br>
-        <ng-container *ngFor="let item of comData.KeyFeatures"> 
-            <li>
-              {{item}}
-            </li>
+        <ng-container *ngFor="let item of comData.keyFeatures">
+          <li>
+            {{item}}
+          </li>
         </ng-container>
-    </amexio-box>
-  </ng-container>
-  
+      </amexio-box>
+    </ng-container>
+
     <amexio-tab-view [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
         <ng-content select="amexio-api-demo"></ng-content>
@@ -37,15 +40,17 @@
         </ng-container>
       </amexio-tab>
 
-      <amexio-tab title="Accessible" [active]="false" [closable]="false" [disabled]="false">
-        <ng-container *ngIf="comData && comData.apiaccessibledata">
+
+      <amexio-tab title="Accessible" [active]="false" [closable]="false" [disabled]="comData?.isAccessibility? true: false">
+        <ng-container *ngIf="(comData && comData.apiaccessibledata )">
           <ng-content select="amexio-api-accessible"></ng-content>
-          <amexio-api-accessible [data]="comData.apiaccessibledata"></amexio-api-accessible>
+          <amexio-api-accessible [disabled]="false" [data]="comData.apiaccessibledata"></amexio-api-accessible>
         </ng-container>
       </amexio-tab>
 
       <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
         <ng-container *ngIf="comData && comData.sourceMetadata">
+
           <amexio-api-sourcecode [html-url]="comData.sourceMetadata.htmlUrl" [ts-url]="comData.sourceMetadata.tsUrl"
             [dynamic-url]="comData.sourceMetadata.dynamicUrl" [module-url]="comData.sourceMetadata.moduleUrl"
             [data-source-url]="comData.sourceMetadata.datasourceUrl" [data-source-url1]="comData.sourceMetadata.datasourceUrl1"

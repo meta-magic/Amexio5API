@@ -150,6 +150,8 @@
             ]
         }
     ],
+  "isAccessibility": true,
+
     "sourceMetadata": {
         "htmlUrl": "creative/progressce/progressce.html",
         "tsUrl": "creative/progressce/progressce.text",

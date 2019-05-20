@@ -456,6 +456,8 @@
         "tsUrl": "creative/cardce/creative.text",
         "datasourceUrl": ""
     },
+  "isAccessibility": true,
+
     "liveMetadata": {
         "disabled": false,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-card?embed=1&file=app/layout/Creativecard/creativecard.demo.html&view=editor"

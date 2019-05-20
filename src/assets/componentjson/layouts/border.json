@@ -1,6 +1,15 @@
 {
-  "title": "Amexio BorderLayout",
-  "description": "A border layout lays out a container, arranging and resizing its components to fit in five regions: north, south, east, west, and center.",
+  "title": "Border-Layout",
+  "description": "Border Layout is the traditional layout based on directions (North, South, East, Center, West).",
+  "componentDescription":"Border Layout provides Expandable and Collapsible Panels to group components based on a business context. It is a traditional layout structure based on directions North, South, East, Center, and West. Under the hood, this layout is based on CSS3 Grid. Panels (North, South, East, Center, and West) can be expanded and collapsed. Directions (Vertical and Horizontal) of Collapse is available as part of the Grid Layout. ",
+  "compFeaturesTitle":"Key-Features",
+  "keyFeatures": [
+    " Direction based Layout",
+    " Expand or Collapse any panels",
+    " Color Palette and Gradient feature for Header",
+    " Keyboard Navigation enabled",
+    " Component Life Cycle Events (Initiated, Ready, Destroyed)"
+  ],
   "apiaccessibledata":[
     {
       "gridTitle": "Properties <amexio-borderlayout-item>",

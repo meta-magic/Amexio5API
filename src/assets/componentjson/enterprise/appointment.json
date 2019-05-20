@@ -1,6 +1,17 @@
 {
-  "title": "Amexio Enterprise Appointment",
-  "description": "An appointment component used to schedule appointment with available dates and time.",
+  "title": "Appointment Scheduler",
+  "description": "Component to take appointment based on Time ",
+  "componentDescription": "Using Appointment Scheduler you can take the appointment time from the end-user. The component displays a week of data (day wise - Monday to Sunday) and the time available for the appointment.  The component supports taking multiple time for the appointment by enabling the attribute multi-select. ",
+  "compFeaturesTitle": "Key-Features",
+  "keyFeatures": [
+    " Multi-Select (Allows multiple sections of Appointment Time)",
+    " Number of Days to be shown in the Component (Default is 7 Days)",
+    " Start Time ",
+    " End Time",
+    " Keyboard Navigation enabled",
+    " Component Life Cycle Events (Initiated, Ready, Destroyed)"
+  ],
+ 
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-ee-appointment>",

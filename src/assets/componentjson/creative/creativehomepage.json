@@ -1,57 +1,72 @@
 {
-    "title": "Amexio Creative Home Page ",
-    "description": "This component shows diffrent type of home pages ",
-    "apiRefMetadata": [{
-        "gridTitle": "Properties <amexio-homepage-ce>",
-        "columnDefinition": [{
-                "dataindex": "name",
-                "text": "Name",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "version",
-                "text": "Version",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "type",
-                "text": "Type",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "default",
-                "text": "Default",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "description",
-                "text": "Description",
-                "width": 60,
-                "hidden": false,
-                "datatype": "string"
-            }
-        ],
-        "gridData": [{
-            "name": "type",
-            "description": "type of home page like 1,2",
-            "version": "5.8 onwards",
-            "type": "string",
-            "default": "1"
-        }]
-    }],
+    "title": "Home Page ",
+    "description": "Provides built-in Home Page Layouts",
+    "componentDescription": "Home Page Layouts provides built-in layouts to have a quick start on Home Pages for your enterprise Apps. It supports collapsible Side Navigation Panels and Responsive design of the Layout is enabled by default.  ",
+    "compFeaturesTitle": "Key-Features",
+    "keyFeatures": [
+        " Navigation Panel at the top",
+        " Collapsible Side Navigation Panel",
+        " Responsive Design Enabled ",
+        " Keyboard Navigation enabled",
+        " Component Life Cycle Events (Initiated, Ready, Destroyed)"
+    ],
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-homepage-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "type",
+                    "description": "type of home page like 1,2",
+                    "version": "5.8 onwards",
+                    "type": "string",
+                    "default": "1"
+                }
+            ]
+        }
+    ],
     "sourceMetadata": {
         "htmlUrl": "creative/homepage/creative.html",
         "tsUrl": "creative/homepage/creative.text",
         "datasourceUrl": ""
     },
+  "isAccessibility": true,
     "liveMetadata": {
         "disabled": false,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-homepage?embed=1&file=app/layout/homepage/homepage.demo.html&view=editor"

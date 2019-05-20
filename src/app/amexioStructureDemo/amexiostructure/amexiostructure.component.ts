@@ -1,7 +1,7 @@
 
-import { Component, OnInit, Input} from '@angular/core';
-import {RestCallService} from '../../apimetadata/services/restcall.service';
-import {ComponentDataStructure} from '../../apimetadata/models/component.structure';
+import { Component, OnInit, Input } from '@angular/core';
+import { RestCallService } from '../../apimetadata/services/restcall.service';
+import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
 @Component({
   selector: 'amexio-api-structure',
   templateUrl: 'amexiostructure.component.html',
@@ -16,7 +16,9 @@ export class AmexioStructureComponent implements OnInit {
   comData: ComponentDataStructure;
 
 
-  constructor(private _rCService: RestCallService) {}
+  constructor(private _rCService: RestCallService) {
+ 
+  }
 
   ngOnInit() {
     if (this.url) {
@@ -53,6 +55,16 @@ export class AmexioStructureComponent implements OnInit {
     if (this.customComData.apiaccessibledata && this.customComData.apiaccessibledata.length > 0) {
       response.apiaccessibledata = this.customComData.apiaccessibledata;
     }
+    if (this.customComData.componentDescription) {
+      response.componentDescription = this.customComData.componentDescription;
+    }
+    if (this.customComData.compFeaturesTitle) {
+      response.compFeaturesTitle = this.customComData.compFeaturesTitle;
+    }
+    if (this.customComData.keyFeatures) {
+      response.keyFeatures = this.customComData.keyFeatures;
+    }
+
     this.comData = response;
   }
 }

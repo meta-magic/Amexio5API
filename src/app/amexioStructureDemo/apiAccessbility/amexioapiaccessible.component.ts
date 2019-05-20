@@ -9,6 +9,8 @@ import {Component,Input} from '@angular/core';
 export class AmexioApiAccessibleComponent {
 
   @Input('disabled') disabled: boolean;
+
+  @Input('isAccessibility') isAccessibility: boolean;
   
   @Input('http-url') httpUrl: string;
 

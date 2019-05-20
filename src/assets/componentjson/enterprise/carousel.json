@@ -87,6 +87,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "enterprise/multicarusel/ee.html",
     "tsUrl": "enterprise/multicarusel/ee.text",

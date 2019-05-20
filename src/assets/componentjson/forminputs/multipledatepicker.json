@@ -1,6 +1,14 @@
 {
-    "title": "Amexio Multiple Date Time Picker",
-    "description": "This component is used to show multiple months in Date picker with all required configurations in Style.",
+    "title": "Multi Date Picker",
+    "description": "Date Picker with 2 Inputs - From and To date.",
+    "componentDescription": "Multi-Date Picker is an Enterprise Component which can be used for picking a range of dates like for Flight / Train / Bus Ticket booking - Departure Date and Return Date or for search any data based on Date Ranges - From Date and To Date. This component shows multiple months also for ease of use. The number of months can be a configurable option. ",
+    "compFeaturesTitle": "Key-Features",
+    "keyFeatures": [
+        " Number of Months (Default = 2 months)",
+        " Minimum Date (Dates below this will be disabled)",
+        " Maximum Date (Dates after this will be disabled) ",
+        " Keyboard Navigation enabled"
+    ],
     "apiRefMetadata": [
         {
             "gridTitle": "Properties <amexio-multiple-date-picker>",
@@ -13,12 +21,12 @@
                     "datatype": "string"
                 },
                 {
-                "dataindex": "version",
-                "text": "Version",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
                 {
                     "dataindex": "type",
                     "text": "Type",
@@ -56,7 +64,6 @@
                     "version": "5.12 onwards",
                     "default": ""
                 },
-                 
                 {
                     "name": "number-of-months",
                     "description": "specifies number of months to be displayed on date picker",
@@ -64,7 +71,6 @@
                     "version": "5.12 onwards",
                     "default": "1"
                 },
-                 
                 {
                     "name": "disabled-date",
                     "description": "specifies range of disabled dates",
@@ -72,7 +78,6 @@
                     "version": "5.12 onwards",
                     "default": ""
                 },
-
                 {
                     "name": "min-date",
                     "description": "specifies minimum date of date picker",
@@ -80,7 +85,6 @@
                     "version": "5.12 onwards",
                     "default": ""
                 },
-
                 {
                     "name": "max-date",
                     "description": "specifies maximum date of date picker",
@@ -88,8 +92,6 @@
                     "version": "5.12 onwards",
                     "default": ""
                 }
-
-                 
             ]
         },
         {

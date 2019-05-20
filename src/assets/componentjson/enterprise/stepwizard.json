@@ -1,6 +1,16 @@
 {
-    "title": "Amexio Step-Wizard",
-    "description": "Step Wizard is a sequence of dialog boxes that lead the user through a series of well-defined steps. ",
+    "title": "Step Wizard",
+    "description": "A Workflow Container with a set of user-defined steps.",
+    "componentDescription": "Step Wizard is a workflow container that helps the developer to create a Workflow style UI or Wizard like UI. Step Wizard will automatically link the UI's in various stages (steps) with Next and Previous buttons. The developer will be able to control the forward and backward movement of the workflow. ",
+    "compFeaturesTitle": "Key-Features",
+    "keyFeatures": [
+        " Workflow Container",
+        " Link UI Components",
+        " Raise Event in the final stage.",
+        " Keyboard Navigation enabled"
+    ],
+    
+    
     "apiRefMetadata": [{
             "gridTitle": "Properties <amexio-step-wizard>",
             "columnDefinition": [{

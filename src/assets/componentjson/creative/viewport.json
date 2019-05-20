@@ -61,6 +61,8 @@
             "default": "black"
         }]
     }],
+  "isAccessibility": true,
+
     "sourceMetadata": {
         "htmlUrl": "creative/viewport/creative.html",
         "tsUrl": "creative/viewport/creative.text",

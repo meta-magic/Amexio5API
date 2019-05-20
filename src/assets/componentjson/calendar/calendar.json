@@ -1,6 +1,13 @@
 {
-  "title": "Amexio Calendar Component",
-  "description": "Amexio Calendar is way of showing your daily, weekly, month and yearly appointments or meetings",
+  "title": "Calendar ",
+  "description": "Calendar component to show data Day, Week and Month wise.",
+  "componentDescription": "Calendar component helps the developers to add time series data in a Calendar Interface and the data can be shown in day wise, week wise and monthly basis.  ",
+  "compFeaturesTitle": "Key-Features",
+  "keyFeatures": [
+    " Calendar Modes: Day, Week, Month and Year",
+    " Keyboard Navigation enabled",
+    " Component Life Cycle Events (Initiated, Ready, Destroyed)"
+  ],
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-calendar>",
@@ -112,7 +119,10 @@
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-calendar-component?embed=1&file=app/enterprise/calendar/calendar.demo.html&view=editor"
   },
-  "apiaccessibledata":[
+  "isAccessibility": false,
+  "apiaccessibledata": 
+  [
+  
     {
       "gridTitle": "Properties <amexio-calendar>",
       "columnDefinition": [
@@ -120,19 +130,17 @@
           "dataindex": "name",
           "text": "Key",
           "width": 30
-          
         },
         {
           "dataindex": "description",
           "text": "Function",
           "width": 70
-       
         }
       ],
       "gridData": [
         {
           "name": "Tab",
-          "description":"Navigates on Tab click to the next element."
+          "description": "Navigates on Tab click to the next element."
         },
         {
           "name": "Shift+Tab",
@@ -150,11 +158,11 @@
           "name": "Right Arrow",
           "description": "Navigates focus from current active element to the previous active element."
         },
-        { 
+        {
           "name": "Up Arrow",
           "description": "Navigates focus from current active element to the next active element."
         },
-        { 
+        {
           "name": "Enter",
           "description": "On Enter click selects the focuses data"
         }

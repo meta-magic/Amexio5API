@@ -416,6 +416,8 @@
       ]
     }
     ],
+  "isAccessibility": true,
+
     "sourceMetadata": {
         "htmlUrl": "/creative/formce/form.html",
         "tsUrl": "creative/formce/form.text",

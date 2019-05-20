@@ -98,6 +98,8 @@
         "tsUrl": "creative/carouselce/creative.text",
         "datasourceUrl": "assets/data/componentdata/creativecarousel2.json"
     },
+  "isAccessibility": true,
+
     "liveMetadata": {
         "disabled": true,
         "stackblitzUrl": ""

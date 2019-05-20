@@ -1,6 +1,14 @@
 {
   "title": "Amexio Runtime Component (ARC)",
-  "description": "Amexio runtime component is container which takes valid HTML template and valid Typescript Class to generate and load component at runtime",
+  "description": "Loads dynamic UI content from the Database using Web Service.",
+    "componentDescription": "Amexio runtime component is a container which takes a valid HTML template and valid Typescript Class to generate and load component at runtime. This is helpful for Enterprise Apps which requires the part of the UI to be stored in the DB and load the UI dynamically in the Angular App. The example demonstrates a 'Registration UI' stored in the Database and loaded dynamically using a RESTFul service. ",
+    "compFeaturesTitle": "Key-Features",
+    "keyFeatures": [
+        " Load UI (HTML) Code Dynamically",
+        " Load TypeScript Code Dynamically",
+        " Component Life Cycle Events (Initiated, Ready, Destroyed)"
+    ],
+  
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-runtime>",
@@ -63,6 +71,7 @@
     "tsUrl": "arc/arc.txt",
     "datasourceUrl": ""
   },
+  "isAccessibility": true,
   "liveMetadata": {
     "disabled": false,
     "stackblitzUrl": "https://stackblitz.com/edit/amexio-arc-component?embed=1&file=app/panel/ARC/ARC.demo.html&view=editor"

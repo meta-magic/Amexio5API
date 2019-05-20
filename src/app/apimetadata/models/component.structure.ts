@@ -8,10 +8,13 @@ export class ComponentDataStructure {
   sourceMetadata = new SourceMetadata();
   liveMetadata = new LiveMetadata();
   apiRefMetadata: ApiMetadata[] = [];
-  apiaccessibledata: Accessible[] =[];
+  apiaccessibledata: Accessible[] = [];
+  componentDescription = '';
+  compFeaturesTitle = '';
+  keyFeatures = '';
 }
 
-export class  SourceMetadata {
+export class SourceMetadata {
   htmlUrl: string;
   tsUrl: string;
   dynamicUrl: string;
@@ -19,6 +22,7 @@ export class  SourceMetadata {
   datasourceUrl: string;
   datasourceUrl1: string;
   datasourceUrl2: string;
+
 }
 
 
@@ -37,6 +41,8 @@ export class LiveMetadata {
 }
 export class Accessible {
   gridTitle: string;
+  isAccessibility: boolean;
+  disabled: boolean;
   columnDefinition: any[];
   gridData: any[];
 }
