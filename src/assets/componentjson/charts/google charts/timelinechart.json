@@ -57,6 +57,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/timelinechart/chart.html",
     "tsUrl": "charts/timelinechart/chart.text",

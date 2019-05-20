@@ -111,6 +111,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "data/propertygrid/propertygrid.html",
     "tsUrl": "data/propertygrid/propertygrid.text",

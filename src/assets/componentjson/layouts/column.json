@@ -59,6 +59,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "layout/column/layout.html",
     "tsUrl": "layout/column/layout.text",

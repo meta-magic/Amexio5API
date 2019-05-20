@@ -248,6 +248,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/areachart/chart.html",
     "tsUrl": "charts/areachart/chart.text",

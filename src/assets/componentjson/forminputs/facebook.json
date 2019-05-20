@@ -96,6 +96,8 @@
         ]
       }
     ],
+  "isAccessibility": true,
+
     "sourceMetadata": {
       "htmlUrl": "forms/facebooklogin/form.html",
       "tsUrl": "forms/facebooklogin/form.text",

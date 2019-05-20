@@ -276,6 +276,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "charts/barchart/chart.html",
     "tsUrl": "charts/barchart/chart.text",

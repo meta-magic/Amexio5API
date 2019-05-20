@@ -112,6 +112,7 @@
             "type": "string",
             "default": ""
           }
+          
       ]
     },
     {
@@ -203,6 +204,8 @@
       ]
     }
   ],
+  "isAccessibility": true,
+
   "sourceMetadata": {
     "htmlUrl": "",
     "tsUrl": "",
