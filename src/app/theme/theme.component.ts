@@ -15,7 +15,7 @@ import { HTTPService } from '../service/http.service';
     <amexio-tab-view  [closable]="false">
         <amexio-tab title="Material Design" [active]="true">
             <amexio-row *ngFor="let row of mdThemeData">
-                <amexio-column [size]="(12/row.length)" *ngFor="let col of row">
+                <amexio-column [fit]="true" [size]="(12/row.length)" *ngFor="let col of row">
                     <div class="card-container">
                         <header class="card-header flex-start" [ngStyle]="{'background-color':col.navBarBGColor, 'color':col.navBarFontColor}" >
                             <amexio-label>{{col.themeName}}</amexio-label>
@@ -34,7 +34,7 @@ import { HTTPService } from '../service/http.service';
         </amexio-tab>
         <amexio-tab title="Amexio">
             <amexio-row *ngFor="let row of amexioThemeData">
-                <amexio-column [size]="(12/row.length)" *ngFor="let col of row">
+                <amexio-column [fit]="true" [size]="(12/row.length)" *ngFor="let col of row">
                     <div class="card-container">
                         <header class="card-header flex-start" [ngStyle]="{'background-color':col.navBarBGColor, 'color':col.navBarFontColor}" >
                             <amexio-label>{{col.themeName}}</amexio-label>
