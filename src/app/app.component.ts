@@ -1425,7 +1425,7 @@ export class AppComponent {
           { "text": "Insurance Portal", "link": "https://demo.amexio.org/se/insuranceportal/#/home" },
           { "text": "Movie Portal", "link": "https://demo.amexio.org/ee/" },
           { "text": "NpmStats", "link": "https://www.npmstats.com/" },
-          { "text": "Creative Demo", "link": "https://meta-magic.github.io/amexio-ce-demo/#/home/dashboard" }
+          { "text": "Creative Demo", "link": "https://cedemo.amexio.org/#/login" }
         ]
       },
       {
