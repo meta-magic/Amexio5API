@@ -1,6 +1,18 @@
 {
-    "title": "Amexio Creative Card",
-    "description": "Amexio creative card different styles",
+    "title": "Creative Card",
+    "description": "The creative card is a powerful Panel with simple to use layouts and features",
+    "componentDescription": "Amexio Creative Card can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows  1. Header 2. Body 3. Action",
+    "compFeaturesTitle": "Key-Features",
+    "keyFeatures": [
+        "  Layout Structure (Header, Body, Action)",
+        "  Add Components to Card Container, Header, and Body",
+        "  Add Actionable Buttons to Card Action Panel ",
+        "  Supports Background Images",
+        "  Supports Transparency for Header and Action Panel",
+        "  Attach a Badge to the Card ",
+        " Keyboard Navigation enabled",
+        " Component Life Cycle Events (Initiated, Ready, Destroyed)"
+    ],
     "apiRefMetadata": [
         {
             "gridTitle": "Properties <amexio-card-ce>",
@@ -366,98 +378,97 @@
                 }
             ]
         },
-          {
-      "gridTitle": "Events <amexio-card-ce>",
-      "columnDefinition": [
         {
-          "dataindex": "name",
-          "text": "Name",
-          "width": 20,
-          "hidden": false
-        },
-       {
-            "dataindex": "version",
-            "text": "Version",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-        {
-          "dataindex": "description",
-          "text": "Description",
-          "width": 60,
-          "hidden": false
-        }
-      ],
-      "gridData": [
-        {
-            "name": "initiated",
-            "version":"5.7 onwards",
-            "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
-          },
-          {
-            "name": "ready",
-            "version":"5.7 onwards",
-            "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
-          },
-          {
-            "name": "destroy",
-            "version":"5.7 onwards",
-            "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
-          }
-
-      ]
-    },
-    {
-      "gridTitle": "Color-Palette Directive: amexioColorPalette <amexio-header-ce>",
-      "columnDefinition": [
-        {
-          "dataindex": "name",
-          "text": "Name",
-          "width": 15,
-          "hidden": false
-        },{
-          "dataindex": "type",
-          "text": "Type",
-          "width": 15,
-          "hidden": false
-        },{
-          "dataindex": "version",
-          "text": "Version",
-          "width": 15,
-          "hidden": false
+            "gridTitle": "Events <amexio-card-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 20,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "initiated",
+                    "version": "5.7 onwards",
+                    "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+                },
+                {
+                    "name": "ready",
+                    "version": "5.7 onwards",
+                    "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+                },
+                {
+                    "name": "destroy",
+                    "version": "5.7 onwards",
+                    "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+                }
+            ]
         },
         {
-          "dataindex": "description",
-          "text": "Description",
-          "width": 60,
-          "hidden": false
+            "gridTitle": "Color-Palette Directive: amexioColorPalette <amexio-header-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "color-palette",
+                    "type": "string",
+                    "version": "5.12 onwards",
+                    "description": "classic/ vibrant/ random/ specific (vibrant: amexio-theme-color4)"
+                },
+                {
+                    "name": "gradient",
+                    "type": "boolean",
+                    "version": "5.12 onwards",
+                    "description": "If true"
+                }
+            ]
         }
-      ],
-      "gridData": [
-        {
-          "name": "color-palette",
-          "type": "string",
-          "version":"5.12 onwards",
-          "description": "classic/ vibrant/ random/ specific (vibrant: amexio-theme-color4)"
-        },
-        {
-          "name": "gradient",
-          "type": "boolean",
-          "version":"5.12 onwards",
-          "description": "If true"
-        }
-
-      ]
-    }
     ],
     "sourceMetadata": {
         "htmlUrl": "creative/cardce/creative.html",
         "tsUrl": "creative/cardce/creative.text",
         "datasourceUrl": ""
     },
-  "isAccessibility": false,
-
+    "isAccessibility": false,
     "liveMetadata": {
         "disabled": false,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-card?embed=1&file=app/layout/Creativecard/creativecard.demo.html&view=editor"
