@@ -1,5 +1,5 @@
 <!--Accordian with one expanded pane-->
-<amexio-accordion>
+<amexio-accordion [multi-open]="true">
   <amexio-accordion-tab amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="Page One" [active]="true">
     <amexio-accordion-header>
       <amexio-label>
@@ -17,7 +17,7 @@
     Lorem Ipsum.
 
   </amexio-accordion-tab>
-  <amexio-accordion-tab amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="Page two">
+  <amexio-accordion-tab amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" header="Page two" [active]="true">
     <amexio-accordion-header>
       <amexio-label size="small">
         Completed : 90%

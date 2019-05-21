@@ -10583,7 +10583,7 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
   bottom: 6px !important;
   right: 50px;
   left: 50px;
-  z-index: 999; }
+  z-index: 99; }
 
 .ce-caroueslnav-content {
   position: absolute;
