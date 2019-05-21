@@ -107,7 +107,37 @@
             "version": "5.12 onwards"
           }
         ]
-      }
+      },
+      {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false
+          },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onPanelItemClick",
+          "description": "Fires on pane item click."
+        }
+        
+      ]
+    }
     ],
   "isAccessibility": false,
 

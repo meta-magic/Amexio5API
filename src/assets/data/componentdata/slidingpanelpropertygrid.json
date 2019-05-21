@@ -1,0 +1,16 @@
+{
+  "profileDetails": {
+    "personName": "John Doe",
+    "email": "john.doe@gmail.com",
+    "softwareversion": 12.2,
+    "modelname": "iPhone 7",
+    "modelnumber": "MN905HB/A",
+    "serialnumber": "DNPTN1KLGD7H",
+    "network": "Jio 4G",
+    "videos": 28,
+    "photos": 1528,
+    "Applications": 63,
+    "Capacity": "32 GB",
+    "Available": "11.42 GB"
+  }
+}

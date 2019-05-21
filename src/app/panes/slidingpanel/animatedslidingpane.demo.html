@@ -20,60 +20,232 @@
                             <amexio-column [size]="4">
                                 <!-- ---1--- -->
                                 <amexio-sliding-panel [header]="'Settings'" >
-                                    <amexio-panel-item [icon]="'fa fa-plane'" [title]="'Airplane Mode'">
-                                     </amexio-panel-item>
-                                    <amexio-panel-item  [icon]="'fa fa-wifi'" [title]="'WiFi'">
-                                       </amexio-panel-item>
-                                      <amexio-panel-item [icon]="'fa fa-bluetooth'" [title]="'Bluetooth'">
-                                       </amexio-panel-item>
-                                      <amexio-panel-item [icon]="'fa fa-volume-off'" [title]="'Volume'">
-                                         <amexio-sliding-panel>
-                                                <amexio-panel-item [icon]="'fa fa-volume-up'" [title]="'Volume up'">
-                                                    </amexio-panel-item>
-                                                    <amexio-panel-item [icon]="'fa fa-volume-down'" [title]="'Volume up'">
-                                                        </amexio-panel-item>
-                                                        <amexio-panel-item [icon]="'fa fa-bell-slash'" [title]="'Mute'">
-                                                            </amexio-panel-item>
-                                         </amexio-sliding-panel>                                 
-                                        </amexio-panel-item>
-                                        <amexio-panel-item [icon]="'fa fa-phone'" [title]="'Call settings'">                                
-                                        </amexio-panel-item>
-                                        <amexio-panel-item [icon]="'fa fa-user'" [title]="'Users and accounts'">                                
-                                          <amexio-sliding-panel>
-                                            <amexio-panel-item [icon]="'fa fa-google'" [title]="'Google'">
+                                    <amexio-panel-item [icon]="'fa fa-user'" [title]="'John Doe'">
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'" [border]="false">
+                                            <amexio-layout-item>
+                                                <amexio-image [height]="'79.75px'" [width]="'79.75px'" [c-class]="'image-round'" path="assets/images/profile/mark.jpg">
+                                                </amexio-image>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
 
-                                            </amexio-panel-item>
-                                            <amexio-panel-item [icon]="'fa fa-linkedin'" [title]="'Linkedin'">
-
-                                            </amexio-panel-item>
-                                            <amexio-panel-item [icon]="'fa fa-facebook'" [title]="'Facebook'">
-                                                </amexio-panel-item>
-                                                <amexio-panel-item [icon]="'fa fa-twitter'" [title]="'Twitter'">
-                                                    </amexio-panel-item>
-                                                    <amexio-panel-item [icon]="'fa fa-pinterest'" [title]="'pinterest'">
-                                                        </amexio-panel-item>
-                                          </amexio-sliding-panel>
-                                        </amexio-panel-item>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'" [border]="false">
+                                            <amexio-layout-item>
+                                                <amexio-label>John Doe</amexio-label>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
 
 
-                                     
-                                </amexio-sliding-panel> 
+                                        <amexio-property-grid [key-value-data]="profileKeyValueData"></amexio-property-grid>
+                                    </amexio-panel-item>
+                                    <amexio-panel-item [icon]="'fa fa-wifi'" [title]="'WiFi'">
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-label>Wi-Fi</amexio-label>
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-toggle [size]="'small'" [type]="1">
+                                                </amexio-toggle>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Betamagic
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-image [icon-class]="'fa fa-wifi'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-image [icon-class]="'fa fa-info'"></amexio-image>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Beta-Guest
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-image [icon-class]="'fa fa-lock'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-image [icon-class]="'fa fa-wifi'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-image [icon-class]="'fa fa-info'"></amexio-image>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Qualcomm
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-image [icon-class]="'fa fa-wifi'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-image [icon-class]="'fa fa-info'"></amexio-image>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Smartlink
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-image [icon-class]="'fa fa-lock'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-image [icon-class]="'fa fa-wifi'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-image [icon-class]="'fa fa-info'"></amexio-image>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Others...
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                    </amexio-panel-item>
+                                    <amexio-panel-item [icon]="'fa fa-bluetooth'" [title]="'Bluetooth'">
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-label>Bluetooth</amexio-label>
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-toggle [size]="'small'" [type]="1">
+                                                </amexio-toggle>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'vertical'" [alignment]="'space-between'" [border]="true">
+                                                <amexio-layout-item [fit]="true">
+                                                    <amexio-label [size]="small">
+                                                     Paired devices
+                                                    </amexio-label>
+                                                </amexio-layout-item>
+                                                <amexio-layout-item [fit]="true">
+                                                  Moto G (5S) plus
+                                                </amexio-layout-item>
+                                                <amexio-layout-item [fit]="true">
+                                                        Card_BT
+                                                      </amexio-layout-item>
+                                                      <amexio-layout-item [fit]="true">
+                                                            L-HP14
+                                                          </amexio-layout-item>
+                                                          
+                                        </amexio-layout-columns>
+                                    </amexio-panel-item>
+                                    <amexio-panel-item [icon]="'fa fa-image'" [title]="'Wallpapers'">
+                                        <amexio-layout-columns [orientation]="'horizontal'" [border]="true">
+                                            <amexio-layout-item>
+                                                <amexio-image width="140px" height="200px" path="assets/images/slidingpanel/slidingimg1.jpg">
+                                                </amexio-image>
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-image width="140px" height="200px" path="assets/images/slidingpanel/slidingimg2.jpg">
+                                                </amexio-image>
+                                            </amexio-layout-item>
+
+                                        </amexio-layout-columns>
+                                      
+                                    </amexio-panel-item>
+                                    <amexio-panel-item [icon]="'fa fa-user'" [title]="'Users and accounts'">
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-image [icon-class]="'fa fa-google'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-label>Google</amexio-label>
+                                            </amexio-layout-item>
+
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-image [icon-class]="'fa fa-linkedin'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-label>Linkedin</amexio-label>
+                                            </amexio-layout-item>
+
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-image [icon-class]="'fa fa-facebook'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-label>Facebook</amexio-label>
+                                            </amexio-layout-item>
+
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-image [icon-class]="'fa fa-twitter'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-label>Twitter</amexio-label>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-image [icon-class]="'fa fa-pinterest'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                &nbsp;
+                                                <amexio-label>Pinterest</amexio-label>
+                                            </amexio-layout-item>
+
+                                        </amexio-layout-columns>
+                                    </amexio-panel-item>
+                                    <amexio-panel-item [icon]="'fa fa-envelope'" [title]="'Messages'">
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                iMessage
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-toggle [size]="'small'" [type]="1">
+                                                </amexio-toggle>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Show Contact Photos
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-toggle [size]="'small'" [type]="1">
+                                                </amexio-toggle>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                <amexio-label size="small-bold">
+                                                    Text Message Forwarding
+                                                </amexio-label>
+
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Send Read Recepients
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-toggle [size]="'small'" [type]="1">
+                                                </amexio-toggle>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'space-between'" [border]="true">
+                                            <amexio-layout-item [fit]="true">
+                                                Send an SMS
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-toggle [size]="'small'" [type]="1">
+                                                </amexio-toggle>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                    </amexio-panel-item>
+
+
+
+                                </amexio-sliding-panel>
                             </amexio-column>
-                            <amexio-column [size] ="3">
-                                
+                            <amexio-column [size]="3">
+
                             </amexio-column>
-                            <amexio-column [size] ="5">
-                                
+                            <amexio-column [size]="5">
+
                             </amexio-column>
                         </amexio-row>
 
                     </amexio-body>
-                    
+
                 </amexio-card>
 
             </amexio-column>
- 
+
         </amexio-row>
-      
+
     </amexio-api-demo>
 </amexio-api-structure>
