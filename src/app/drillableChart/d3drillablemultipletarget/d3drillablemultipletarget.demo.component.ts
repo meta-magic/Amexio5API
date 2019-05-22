@@ -32,7 +32,7 @@ export class AmexioD3DrillableMultipleTargetDemoComponent implements OnInit {
  
   createCustomSourceData() {
     this.customSourceData.title = 'D3-Drillable Chart With Multiple Target.';
-    this.customSourceData.description = 'An D3 Drill down charts allow users to focus in on the "data within the data" or allow user to navigate through a number of charts having multiple targets';
+    this.customSourceData.description = 'D3 Drill down charts allow users to focus in on the "data within the data" or allow user to navigate through a number of charts having multiple targets';
     this.customSourceData.sourceMetadata.htmlUrl = 'charts/D3Charts/d3multipledrillable/d3chart.html';
     this.customSourceData.sourceMetadata.tsUrl = 'charts/D3Charts/d3multipledrillable/d3chart.text';
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-d3-chart-multiple-drillable?embed=1&file=src/app/d3chart/d3drillablechart/d3drillablechart.demo.component.html&view=editor';

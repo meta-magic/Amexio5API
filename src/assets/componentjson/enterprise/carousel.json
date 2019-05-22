@@ -1,6 +1,6 @@
 {
   "title": "Amexio Multi EE Carousel",
-  "description": "A Awesome Multi Item Media Carousel, which comes preloaded with video playing and a full blown detailing page embedded in the component itself.",
+  "description": "Awesome Multi Item Media Carousel, which comes preloaded with video playing and a full blown detailing page embedded in the component itself.",
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-media-ee-carousel>",

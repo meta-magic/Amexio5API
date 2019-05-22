@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import {CookieService} from "ngx-cookie-service";
 
 import { HTTPService } from './service/http.service';
+import {AppPreloadingStrategy} from './preloading.service';
 
 @NgModule({
   declarations: [
@@ -27,9 +28,10 @@ import { HTTPService } from './service/http.service';
     FormsModule, HttpClientModule,
     AmexioChartD3Module, AmexioChartD3Module,
     AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,
-    RouterModule.forRoot(APP_ROUTE, { useHash: true }),
+    RouterModule.forRoot(APP_ROUTE, { useHash: true, preloadingStrategy: AppPreloadingStrategy
+    } ),
   ],
-  providers: [CommonDataService, HTTPService, DeviceQueryService, IconLoaderService, CookieService],
+  providers: [CommonDataService, AppPreloadingStrategy, HTTPService, DeviceQueryService, IconLoaderService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

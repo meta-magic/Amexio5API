@@ -1,6 +1,6 @@
 {
   "title": "amexio-chart-d3 donut",
-  "description": "An d3 donut chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+  "description": "D3 donut chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
   "apiRefMetadata": [
     {
       "gridTitle": "Chart Properties <amexio-chart-d3 donut>",
