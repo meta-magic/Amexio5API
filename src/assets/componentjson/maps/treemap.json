@@ -182,6 +182,7 @@
       ]
     }
   ],
+  "isAccessibility": false,
   "sourceMetadata": {
     "htmlUrl": "map/treemap/chart.html",
     "tsUrl": "map/treemap/chart.text",

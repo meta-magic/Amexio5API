@@ -151,6 +151,7 @@
       ]
     }
   ],
+  "isAccessibility": false,
   "sourceMetadata": {
     "htmlUrl": "data/googlemap/googlemap.html",
     "tsUrl": "data/googlemap/googlemap.text",
