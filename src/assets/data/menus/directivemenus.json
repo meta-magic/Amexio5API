@@ -5,11 +5,6 @@
             "icon": "fa fa-globe  ",
             "badge": "New",
             "link": "directive-demo/color-palette"
-        },
-        {
-            "text": "Bubble Chart ",
-            "icon": "fa fa-dot-circle-o  ",
-            "link": "D3chart/amexio-d3-chart-bubble"
         }
     ]
 }
