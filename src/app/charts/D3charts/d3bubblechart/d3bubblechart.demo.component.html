@@ -1,41 +1,35 @@
 <amexio-api-structure [url]="'assets/componentjson/charts/d3charts/d3bubblechart.json'">
-    <amexio-api-demo> 
-            <amexio-row>
-                    <amexio-column [size]="12">
-                            <amexio-row>
-                                    <amexio-column [size]="8" [fit]="true">
-                                        <amexio-card [header]="true" [show]="'true'">
-                                            <amexio-header>
-                                                D3-Bubble Chart
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <amexio-d3-chart-bubble
-                                                [title]="'Correlation between life expectancy, fertility rate
-                                                '" 
-                                                [data]="bubblechart"
-                                                [label]="true"
-                                                [zoom-enable]="true"
-                                                (onChartClick)="onDefaultChartClick($event)"
-                                                (onLegendClick)="onLegendClick($event)"
-                                                >
-                                              </amexio-d3-chart-bubble>
-                                            </amexio-body>
-                                        </amexio-card>
-                                    </amexio-column>
-                                    <amexio-column [size]="4" [fit]="true">
-                                        <amexio-card header="true" >
-                                            <amexio-header>
-                                                Click On Legend/ Click on Chart
-                                            </amexio-header>
-                                            <amexio-body>
-                                                <pre><code>{{userDataSource |json }}</code></pre>
+    <amexio-api-demo>
+        <amexio-row>
+            <amexio-column [size]="12">
+                <amexio-row>
+                    <amexio-column [size]="8" [fit]="true">
+                        <amexio-card [header]="true" [show]="'true'">
+                            <amexio-header>
+                                D3-Bubble Chart
+                            </amexio-header>
+                            <amexio-body>
+                                <amexio-d3-chart-bubble [title]="'Correlation between life expectancy, fertility rate
+                                                '" [data]="bubblechart" [label]="true" [zoom-enable]="true" (onChartClick)="onDefaultChartClick($event)"
+                                    (onLegendClick)="onLegendClick($event)">
+                                </amexio-d3-chart-bubble>
+                            </amexio-body>
+                        </amexio-card>
+                    </amexio-column>
+                    <amexio-column [size]="4" [fit]="true">
+                        <amexio-card header="true">
+                            <amexio-header>
+                                Click On Legend/ Click on Chart
+                            </amexio-header>
+                            <amexio-body>
+                                <pre><code>{{userDataSource |json }}</code></pre>
 
-                                            </amexio-body>
-                                        </amexio-card>
+                            </amexio-body>
+                        </amexio-card>
 
-                                    </amexio-column>
-                                </amexio-row>  
                     </amexio-column>
                 </amexio-row>
-     </amexio-api-demo>    
+            </amexio-column>
+        </amexio-row>
+    </amexio-api-demo>
 </amexio-api-structure>

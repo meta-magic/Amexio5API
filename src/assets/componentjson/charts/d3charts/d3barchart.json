@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Amexio D3-bar chart ",
+  "description": "D3 bar chart that is rendered within the browser using SVG .Displays tips when hovering over bars",
   "apiRefMetadata": [
     {
       "gridTitle": "Chart Properties <amexio-d3-chart-bar>",
