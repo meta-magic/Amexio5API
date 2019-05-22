@@ -3230,12 +3230,13 @@ input:checked + .largeType2ToggleSlider:before {
 /** floatingbuttongroup - Structure CSS **/
 .floatinggroup {
   position: fixed;
-  padding-bottom: 20px;
-  z-index: 3; }
+  z-index: 3;
+  outline: none; }
 
 .floatinggroup .floatinggroupitems {
   list-style: none;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  outline: none; }
 
 .floatingbutton-circle {
   text-align: center;
