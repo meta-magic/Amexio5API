@@ -1,0 +1,16 @@
+{
+  "title": "",
+  "description": "",
+ 
+  "isAccessibility": false,
+
+  "sourceMetadata": {
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": ""
+  }
+}
