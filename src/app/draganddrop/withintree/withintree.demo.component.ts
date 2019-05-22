@@ -111,7 +111,7 @@ export class WithinTreeDemo implements OnInit{
       }
       
       createCustomSourceData() {
-        this.customSourceData.title = 'within tree Drag Drop Functionality';
+        this.customSourceData.title = 'Within Tree Drag Drop Functionality';
         this.customSourceData.description = 'A within Tree component which create Tree View based on standard datasource attached and having functionality of drag and drop: within Tree.';
         this.customSourceData.sourceMetadata.htmlUrl = 'draganddrop/withintree/tree.html';
         this.customSourceData.sourceMetadata.tsUrl = 'draganddrop/withintree/tree.text';

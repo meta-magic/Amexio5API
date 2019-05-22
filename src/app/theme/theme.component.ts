@@ -5,6 +5,7 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { CookieService } from 'ngx-cookie-service';
 import { HTTPService } from '../service/http.service';
+import {ThemeServiceService} from '../theme-service.service';
 
 @Component({
     selector: 'theme-page',
@@ -124,7 +125,7 @@ export class ThemeComponent implements OnInit {
     hasThemeInit: boolean = false;
     newThemePath: string;
 
-    constructor(private http: HttpClient, private httpService: HTTPService, private cookieService: CookieService) {
+    constructor(private http: HttpClient, private httpService: HTTPService, private cookieService: CookieService, private themeServiceService: ThemeServiceService) {
     }
 
 
@@ -175,43 +176,7 @@ export class ThemeComponent implements OnInit {
     }
 
     themeChange(theme: any) {
-        // this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
-        let response: any;
-        this.httpService.fetch('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(data => {
-            response = data;
-        }, error => {
-        }, () => {
-            let themeColor = response.themeColor;
-            let appColor = response.appColor;
-            let compColor = response.compColor;
-            themeColor.forEach((style: any) => {
-                let value = style.value.replace(';', '');
-                document.documentElement.style.setProperty(style.key, value);
-
-            });
-
-            appColor.forEach((style: any) => {
-                let value = style.value.replace(';', '');
-                document.documentElement.style.setProperty(style.key, value);
-
-            });
-
-            compColor.forEach((style: any) => {
-                document.documentElement.style.setProperty(style.key, style.value);
-
-            });
-
-
-        });
-
-        let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
-        // this.removeExistingTheme(currentTheme);
-        this.addNewTheme(this.newThemePath, currentTheme);
-        const themeObj = {
-            id: Math.floor(Math.random() * 9) + 1,
-            themeName: theme.themeCssFile
-        };
-        this.cookieService.set('theme-info', JSON.stringify(themeObj));
+    this.themeServiceService.getTheme(theme);
     }
 
 }

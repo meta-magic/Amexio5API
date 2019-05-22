@@ -5,6 +5,7 @@ import { DOCUMENT } from '@angular/platform-browser';
 import { CookieService } from "ngx-cookie-service";
 import { HttpClient } from "@angular/common/http";
 import { MENUCONSTANT } from './menuconstant';
+import {ThemeServiceService} from './theme-service.service';
 
 @Component({
   selector: 'app-root',
@@ -46,6 +47,7 @@ export class AppComponent {
 
   constructor(public router: Router, @Inject(DOCUMENT) private document: any,
     private _httpClient: HttpClient,
+    private themeServiceService: ThemeServiceService,
     private _cookieService: CookieService) {
     
     this.homemenus = MENUCONSTANT.HOMEMENUS;
@@ -311,8 +313,7 @@ export class AppComponent {
           themeRef = this.mdThemeData[0];
         }
         this._cookieService.set('theme-info', JSON.stringify({ id: themeId, themeName: themeRef.themeCssFile }));
-        this.themeChange(themeRef);
-      });
+        this.themeServiceService.getTheme(themeRef);      });
   }
 
   addNewTheme(newTheme: any, existingTheme: any) {
@@ -337,18 +338,6 @@ export class AppComponent {
         }
       }
     }
-  }
-
-  themeChange(theme: any) {
-    this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
-    let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
-    // this.removeExistingTheme(currentTheme);
-    this.addNewTheme(this.newThemePath, currentTheme);
-    const themeObj = {
-      id: Math.floor(Math.random() * 9) + 1,
-      themeName: theme.themeCssFile
-    };
-    // this._cookieService.set('theme-info', JSON.stringify(themeObj));
   }
 
   externalLink(event: any) {
