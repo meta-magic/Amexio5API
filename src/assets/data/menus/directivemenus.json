@@ -1,0 +1,10 @@
+{
+    "data": [
+        {
+            "text": "Color Palette",
+            "icon": "fa fa-globe  ",
+            "badge": "New",
+            "link": "directive-demo/color-palette"
+        }
+    ]
+}

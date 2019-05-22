@@ -19,6 +19,16 @@
                             <amexio-side-nav [http-url]="'assets/data/menus/submenus.json'" [http-method]="'get'" [width]="'100%'" [data-reader]="'data'"
                                 (nodeClick)="onNodeClick($event)" [position]="'relative'">
                             </amexio-side-nav>
+                           
+
+                        </amexio-accordion-tab>
+
+                        <amexio-accordion-tab header="Directives">
+
+                            <amexio-side-nav [http-url]="'assets/data/menus/directivemenus.json'" [http-method]="'get'" [width]="'100%'" [data-reader]="'data'"
+                                (nodeClick)="onNodeClick($event)" [position]="'relative'">
+                            </amexio-side-nav>
+                           
 
                         </amexio-accordion-tab>
                         <amexio-accordion-tab [active]="true" header="Components SE/EE/CE">

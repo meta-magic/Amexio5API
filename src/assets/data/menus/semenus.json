@@ -608,19 +608,6 @@
             ]
         },
         {
-            "text": "Directive",
-            "badge": "1",
-            "icon": "fa fa-globe",
-            "children": [
-                {
-                    "text": "Color Palette",
-                    "icon": "fa fa-globe  ",
-                    "badge": "New",
-                    "link": "directive-demo/color-palette"
-                }
-            ]
-        },
-        {
             "text": "Drag and Drop",
             "icon": "fa fa-arrows-alt",
             "children": [
