@@ -2,9 +2,32 @@
 import { Component } from '@angular/core';
  
 export class SlidingPanelDemo {
-    
+  
+  profileKeyValueData: any[] = []
+
   constructor() {
    
+  }
+  
+  ngOnInit() {
+    this.getData();
+  }
+
+  getData() {
+    this._httpClient.get('assets/data/componentdata/slidingpanelpropertygrid.json').subscribe(
+      (res: any) => {
+         this.createProfileGrid(res.profileDetails);
+      });
+  }
+
+  createProfileGrid(profile: any) {
+    this.profileKeyValueData = [];
+     
+    this.profileKeyValueData.push(new PropertyGridModel('Email id',"john.doe@gmail.com", '', false));
+    this.profileKeyValueData.push(new PropertyGridModel('Birth date', '28-Feb-1950 ', '', false));
+    this.profileKeyValueData.push(new PropertyGridModel('Mobile Number', '+91-1234567890', '', false));
+    this.profileKeyValueData.push(new PropertyGridModel('Country', 'INDIA', '', false));
+
   }
  
 }

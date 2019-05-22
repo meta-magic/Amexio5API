@@ -514,6 +514,9 @@ image using the content attribute.
   background-image: var(--theme6thColorGradient) !important;
   color: var(--theme6thFontColor); }
 
+.tabwapper .tab .tablistitems .tablink .table {
+  padding: 0px !important; }
+
 /** Initialze Component variables ------------ */
 /****************************************************************************
     Component Name : Button
@@ -4470,7 +4473,7 @@ input:checked + .largeType2ToggleSlider:before {
 .fromdiv {
   padding: 5px;
   background-color: white;
-  border: #e6e6e6 1px;
+  border: #e6e6e6 0px;
   cursor: pointer;
   width: max-content;
   border-style: outset; }
@@ -4502,7 +4505,9 @@ input:checked + .largeType2ToggleSlider:before {
   /* margin:1em; */ }
 
 .mainspan {
-  display: flex; }
+  display: flex;
+  margin-bottom: 1px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
 .datePickerContaier {
   width: 625px;
@@ -4585,6 +4590,7 @@ fsw .widgetSprite.icCalendar {
 
 /* .activecolortab class replica from tab */
 .activecolordatetab {
+  padding-left: 8px;
   border-bottom: 2px solid var(--componentActiveBGColor) !important; }
 
 .datesrange {
@@ -4598,8 +4604,11 @@ fsw .widgetSprite.icCalendar {
   overflow-y: scroll; }
 
 .datetabs {
-  background-color: white;
-  padding-left: 5px; }
+  padding: 0px !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.datetabs .datetimepicker {
+  box-shadow: unset; }
 
 /****************************************************************************
     Component Name : Enterprise Content
@@ -6156,8 +6165,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   background-color: var(--componentActiveBGColor); }
 
 .menubar .menuheader .menulink a {
-  color: var(--componentHoverFontColor);
-  background-color: var(--componentActiveBGColor); }
+  color: var(--componentHoverFontColor); }
 
 /** menubar - Structure CSS **/
 .menu-right {
@@ -6676,6 +6684,13 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   position: relative;
   z-index: 3; }
 
+.sideInnerNodeCss {
+  display: inline-flex;
+  width: 100%; }
+
+.sideInnerNodeFlex {
+  flex-grow: 1; }
+
 .sidenav-mobile-bar-left {
   top: 10px;
   position: fixed;
@@ -6731,7 +6746,9 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   cursor: pointer;
   padding: 13px 0px 13px 17px;
   padding-left: 100%;
-  margin-left: -100%; }
+  margin-left: -100%;
+  display: inline-flex;
+  width: 100%; }
 
 .sidenav .headernodeSeparator {
   cursor: pointer;
@@ -7041,7 +7058,8 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 /** Transparent Styling **/
 .accordion-transparent {
-  background: var(--componentBGColor); }
+  background: var(--componentBGColor);
+  color: var(--componentFontColor); }
 
 .accordion .amexio-accordion-header {
   color: var(--componentHeaderFontColor); }
@@ -8561,10 +8579,6 @@ amexio-layout amexio-layout-item {
 .parentpanel:hover {
   color: var(--componentHoverFontColor);
   background-color: var(--componentHoverBGColor); }
-
-.panelitemrow {
-  color: var(--componentActiveFontColor);
-  background-color: var(--componentActiveBGColor); }
 
 .panelitemrow:hover {
   color: var(--componentHoverFontColor);
