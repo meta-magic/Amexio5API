@@ -26,18 +26,7 @@ export class PolaroidCardDemo implements OnInit{
   }
 
   ngOnInit(): void {
-    this.createCustomSourceData();
   }
-
-
-  createCustomSourceData() {
-    this.customSourceData.title = 'Polaroid-Card';
-    this.customSourceData.description = 'A Simple Card which renders card based on title, body and actions user has configured.';
-    this.customSourceData.sourceMetadata.htmlUrl = 'layout/polaroidcard/polaroid.html';
-    this.customSourceData.sourceMetadata.tsUrl = 'layout/polaroidcard/polaroid.text';
-    this.customSourceData.liveMetadata.disabled = true;
-  }
-
 
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE

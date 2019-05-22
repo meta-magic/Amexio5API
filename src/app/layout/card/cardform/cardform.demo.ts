@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core'
 import { HttpClient } from '@angular/common/http';
 import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
 
- 
+
 @Component({
   selector: 'card-form-demo',
   templateUrl: './cardform.demo.html'
 })
-export class CardFormDemo implements OnInit{
- 
+export class CardFormDemo implements OnInit {
+
   copyMsgArray: any[];
   flag: boolean;
   rightclickdata: any;
@@ -36,6 +36,7 @@ export class CardFormDemo implements OnInit{
     this.customSourceData.description = 'A Simple Card which renders card based on title, body and actions user has configured.';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/card/carddemo/layout.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/card/carddemo/layout.text';
+    this.customSourceData.isAccessibility = false;
     this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-v4-card-form?embed=1&file=app/layouts/cardform/cardform.demo.html&view=editor';
   }
 
@@ -46,7 +47,7 @@ export class CardFormDemo implements OnInit{
   toggle() {
     this.flag = !this.flag;
   }
- 
+
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
