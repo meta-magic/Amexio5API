@@ -7,9 +7,9 @@
             "link": "directive-demo/color-palette"
         },
         {
-            "text": "Bubble Chart",
-            "icon": "fa fa-circle  ",
-            "link": "google-chart/bubble-chart-demo"
+            "text": "Bubble Chart ",
+            "icon": "fa fa-dot-circle-o  ",
+            "link": "D3chart/amexio-d3-chart-bubble"
         }
     ]
 }
