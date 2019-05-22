@@ -1,0 +1,12 @@
+{
+    "bardata": [
+      ["city", "population"],
+      ["Mumbai", 94423],
+      ["Kochi", 69932],
+      ["Delhi", 91345],
+      ["Chennai", 46467],
+      ["Pune", 31244],
+      ["Jaipur", 30461],
+      ["Ranchi", 84436]
+    ]
+}

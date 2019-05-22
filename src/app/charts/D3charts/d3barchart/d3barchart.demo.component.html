@@ -11,9 +11,14 @@
                             D3-bar chart with UserDefine Color
                         </amexio-header>
                         <amexio-body>
+                                <!-- [data]="userDefineColorData" -->
                             <amexio-d3-chart-bar [title]="'Population of Cities in India'" [label-color]="'white'"
                                 [label]="true" (onChartClick)="onDefaultChartClick($event)" (onLegendClick)="onUserDefineLegendClick($event)"
-                                [color]="userDefineColors" [data]="userDefineColorData">
+                                [color]="userDefineColors" 
+                                [http-method]="'get'" 
+                                [data-reader]="'bardata'" 
+                                [http-url]="'assets/data/componentdata/d3bardemo.json'"
+                                >
                             </amexio-d3-chart-bar>
                         </amexio-body>
                     </amexio-card>
