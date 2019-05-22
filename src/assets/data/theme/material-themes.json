@@ -631,315 +631,160 @@
   "bestThemes": [
     {
       "themeName": "Blue",
-      "style": "Material Design",
-      "releaseDate": "Jan 31, 2018",
-      "version": 4,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-blue",
       "rgb": 1402304,
       "hue": 212,
-      "themes": [
-        "#1565C0",
-        "#2196f3",
-        "#7115c1",
-        "#c115bb",
-        "#c11565",
-        "#c11b15"
-      ],
+      "version": 4,
+      "style": "Material Design",
       "navBarBGColor": "#1565c0",
       "navBarFontColor": "#f1f7fd",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-blue.scss",
-      "themeJSONFile": "at-md-blue.json",
-      "themeCSS3File": "at-md-blue.scss",
-      "themeImageFile": "AT-MD-Blue.jpg"
+      "link": "AT-MD-Blue.jpg",
+      "themeJSONFile": "at-md-blue.json"
     },
-    {
+     {
       "themeName": "Cerise Magenta",
-      "style": "Material Design",
-      "releaseDate": "Jan 31, 2018",
-      "version": 4,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-cerise-magenta",
       "rgb": 14561635,
       "hue": 343,
-      "themes": [
-        "#DE3163",
-        "#ff0090",
-        "#ddad31",
-        "#b8dd31",
-        "#62dd31",
-        "#31dd56"
-      ],
+      "version": 4,
+      "style": "Material Design",
       "navBarBGColor": "#de3163",
       "navBarFontColor": "#fefbfc",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-cerise-magenta.scss",
       "themeJSONFile": "at-md-cerise-magenta.json",
-      "themeCSS3File": "at-md-cerise-magenta.scss",
-      "themeImageFile": "AT-MD-Cerise-Magenta.jpg"
+      "link": "AT-MD-Cerise-Magenta.jpg"
     },
-    {
+     {
       "themeName": "Chocolate Russet",
-      "style": "Material Design",
-      "releaseDate": "Jan 31, 2018",
-      "version": 4,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-chocolate-russet",
       "rgb": 8341019,
       "hue": 26,
-      "themes": [
-        "#7F461B",
-        "#2b1700",
-        "#537e1b",
-        "#217e1b",
-        "#1b7e46",
-        "#1b7e78"
-      ],
+      "version": 4,
+      "style": "Material Design",
       "navBarBGColor": "#7f461b",
       "navBarFontColor": "#fbf4ee",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-chocolate-russet.scss",
       "themeJSONFile": "at-md-chocolate-russet.json",
-      "themeCSS3File": "at-md-chocolate-russet.scss",
-      "themeImageFile": "AT-MD-Chocolate-Russet.jpg"
+      "link": "AT-MD-Chocolate-Russet.jpg"
     },
-    {
+   {
       "themeName": "Darkgreen Darkolivegreen",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-darkgreen-darkolivegreen",
       "rgb": 25600,
       "hue": 120,
-      "themes": [
-        "#006400",
-        "#556b2f",
-        "#006666",
-        "#003366",
-        "#000066",
-        "#330066"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#006400",
       "navBarFontColor": "#ebffeb",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-darkgreen-darkolivegreen.scss",
       "themeJSONFile": "at-md-darkgreen-darkolivegreen.json",
-      "themeCSS3File": "at-md-darkgreen-darkolivegreen.scss",
-      "themeImageFile": "AT-MD-Darkgreen-Darkolivegreen.jpg"
+      "link": "AT-MD-Darkgreen-Darkolivegreen.jpg"
     },
-    {
+      {
       "themeName": "Darkmagenta Darkorchid",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-darkmagenta-darkorchid",
       "rgb": 9109643,
       "hue": 300,
-      "themes": [
-        "#8B008B",
-        "#9932cc",
-        "#8a0000",
-        "#8a4500",
-        "#8a8a00",
-        "#458a00"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#8b008b",
-      "navBarFontColor": "#fffaff",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-darkmagenta-darkorchid.scss",
       "themeJSONFile": "at-md-darkmagenta-darkorchid.json",
-      "themeCSS3File": "at-md-darkmagenta-darkorchid.scss",
-      "themeImageFile": "AT-MD-Darkmagenta-Darkorchid.jpg"
+      "navBarFontColor": "#fffaff",
+      "link": "AT-MD-Darkmagenta-Darkorchid.jpg"
     },
     {
       "themeName": "Firebrick Crimson",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-firebrick-crimson",
       "rgb": 11674146,
       "hue": 0,
-      "themes": [
-        "#B22222",
-        "#dc143c",
-        "#b4b422",
-        "#6bb422",
-        "#22b422",
-        "#22b46b"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#b22222",
       "navBarFontColor": "#fceeee",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-firebrick-crimson.scss",
       "themeJSONFile": "at-md-firebrick-crimson.json",
-      "themeCSS3File": "at-md-firebrick-crimson.scss",
-      "themeImageFile": "AT-MD-Firebrick-Crimson.jpg"
+      "link": "AT-MD-Firebrick-Crimson.jpg"
     },
-    {
+     {
       "themeName": "Gold Amber",
-      "style": "Material Design",
-      "releaseDate": "Jan 31, 2018",
-      "version": 4,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-gold-amber",
       "rgb": 16752640,
       "hue": 38,
-      "themes": [
-        "#FFA000",
-        "#ffc107",
-        "#5eff00",
-        "#00ff22",
-        "#00ffa1",
-        "#00ddff"
-      ],
+      "version": 4,
+      "style": "Material Design",
       "navBarBGColor": "#ffa000",
       "navBarFontColor": "#241700",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-gold-amber.scss",
       "themeJSONFile": "at-md-gold-amber.json",
-      "themeCSS3File": "at-md-gold-amber.scss",
-      "themeImageFile": "AT-MD-Gold-Amber.jpg"
+      "link": "AT-MD-Gold-Amber.jpg"
     },
-    {
+   {
       "themeName": "Grape Violet",
-      "style": "Material Design",
-      "releaseDate": "Jan 31, 2018",
-      "version": 4,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-grape-violet",
       "rgb": 7286184,
       "hue": 272,
-      "themes": [
-        "#6F2DA8",
-        "#b200ed",
-        "#a92d67",
-        "#a9312d",
-        "#a96f2d",
-        "#a5a92d"
-      ],
+      "version": 4,
+      "style": "Material Design",
       "navBarBGColor": "#6f2da8",
       "navBarFontColor": "#faf7fd",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-grape-violet.scss",
       "themeJSONFile": "at-md-grape-violet.json",
-      "themeCSS3File": "at-md-grape-violet.scss",
-      "themeImageFile": "AT-MD-Grape-Violet.jpg"
+      "link": "AT-MD-Grape-Violet.jpg"
     },
-    {
+   {
       "themeName": "Mediumblue Deepskyblue",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-mediumblue-deepskyblue",
       "rgb": 205,
       "hue": 240,
-      "themes": [
-        "#0000CD",
-        "#38cdff",
-        "#cc00cc",
-        "#cc0066",
-        "#cc0000",
-        "#cc6600"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#0000cd",
       "navBarFontColor": "#f5f5ff",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-mediumblue-deepskyblue.scss",
       "themeJSONFile": "at-md-mediumblue-deepskyblue.json",
-      "themeCSS3File": "at-md-mediumblue-deepskyblue.scss",
-      "themeImageFile": "AT-MD-Mediumblue-Deepskyblue.jpg"
+      "link": "AT-MD-Mediumblue-Deepskyblue.jpg"
     },
     {
       "themeName": "Germany",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-z-flag-germany",
       "rgb": 14685739,
       "hue": 354,
-      "themes": [
-        "#E0162B",
-        "#ffff00",
-        "#dfcb16",
-        "#8edf16",
-        "#2adf16",
-        "#16df66"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#e0162b",
       "navBarFontColor": "#fffafb",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-z-flag-germany.scss",
       "themeJSONFile": "at-md-z-flag-germany.json",
-      "themeCSS3File": "at-md-z-flag-germany.scss",
-      "themeImageFile": "AT-MD-Z-Flag-Germany.jpg"
+      "link": "AT-MD-Z-Flag-Germany.jpg"
     },
-    {
+     {
       "themeName": "India",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-z-flag-india",
       "rgb": 16744448,
       "hue": 30,
-      "themes": [
-        "#ff8000",
-        "#008000",
-        "#7fff00",
-        "#00ff00",
-        "#00ff7f",
-        "#00ffff"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#ff8000",
       "navBarFontColor": "#241200",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-z-flag-india.scss",
       "themeJSONFile": "at-md-z-flag-india.json",
-      "themeCSS3File": "at-md-z-flag-india.scss",
-      "themeImageFile": "AT-MD-Z-Flag-India.jpg"
+
+      "link": "AT-MD-Z-Flag-India.jpg"
     },
-    {
+      {
       "themeName": "USA",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-z-flag-usa",
       "rgb": 14685739,
       "hue": 354,
-      "themes": [
-        "#E0162B",
-        "#0052a5",
-        "#dfcb16",
-        "#8edf16",
-        "#2adf16",
-        "#16df66"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#e0162b",
       "navBarFontColor": "#fffafb",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-z-flag-usa.scss",
       "themeJSONFile": "at-md-z-flag-usa.json",
-      "themeCSS3File": "at-md-z-flag-usa.scss",
-      "themeImageFile": "AT-MD-Z-Flag-USA.jpg"
+      "link": "AT-MD-Z-Flag-USA.jpg"
     },
     {
       "themeName": "Japan",
-      "style": "Material Design",
-      "releaseDate": "Feb 28, 2018",
-      "version": 4.1,
-      "algorithmName": "Classic Dual Color",
-      "algorithmID": 0,
+      "themeCssFile": "at-md-z-flag-japan",
       "rgb": 16777215,
       "hue": 0,
-      "themes": [
-        "#FFFFFF",
-        "#dc143c",
-        "#dbb414",
-        "#a0db14",
-        "#3cdb14",
-        "#14db50"
-      ],
+      "version": 4.1,
+      "style": "Material Design",
       "navBarBGColor": "#ffffff",
       "navBarFontColor": "#121212",
-      "themeFilePath": "../node_modules/amexio-ng-extensions/styles/mda/at-md-z-flag-japan.scss",
       "themeJSONFile": "at-md-z-flag-japan.json",
-      "themeCSS3File": "at-md-z-flag-japan.scss",
-      "themeImageFile": "AT-MD-Z-Flag-Japan.jpg"
+      "link": "AT-MD-Z-Flag-Japan.jpg"
     }
    
   ]

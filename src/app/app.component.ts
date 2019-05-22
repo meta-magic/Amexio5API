@@ -354,7 +354,6 @@ export class AppComponent {
     this.amexioNav.close();
   }
   onNodeClick(node: any, index: number) {
-    debugger;
     if (node.hasOwnProperty('link')) {
       this.router.navigate([node.link]);
     }
