@@ -1,6 +1,6 @@
 {
-    "title": "Amexio card",
-    "description": "A Polaroid Card which renders card based on orientation",
+    "title": "Polaroid-Card",
+    "description": "A Simple Card which renders card based on title, body and actions user has configured.",
     "apiRefMetadata": [
       {
         "gridTitle": "Properties",
@@ -53,12 +53,13 @@
         ]
       }
     ],
+    "isAccessibility": false,
     "sourceMetadata": {
-      "htmlUrl": "",
-      "tsUrl": "",
+      "htmlUrl": "layout/polaroidcard/polaroid.html",
+      "tsUrl": "layout/polaroidcard/polaroid.text",
       "datasourceUrl": ""
     },
-  "isAccessibility": false,
+  
 
     "liveMetadata": {
       "disabled": true,

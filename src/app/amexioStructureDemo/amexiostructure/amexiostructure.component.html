@@ -26,10 +26,10 @@
           </li>
         </ng-container>
       </amexio-box>
- 
-      
+
+
     </ng-container>
-    <amexio-tab-view [closable]="true">
+    <amexio-tab-view #tab [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
         <ng-content select="amexio-api-demo"></ng-content>
       </amexio-tab>
@@ -42,8 +42,7 @@
       </amexio-tab>
 
 
-      <amexio-tab title="Accessible" [active]="false" [closable]="false" [disabled]="!isAccessibilityEnabled()">
-       
+      <amexio-tab title="Accessible" [active]="false" [closable]="false" [disabled]="false">
         <ng-container *ngIf="(comData && comData.apiaccessibledata )">
           <ng-content select="amexio-api-accessible"></ng-content>
           <amexio-api-accessible [disabled]="false" [data]="comData.apiaccessibledata"></amexio-api-accessible>
@@ -61,7 +60,7 @@
         </ng-container>
       </amexio-tab>
 
-      <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="comData?.liveMetadata?.disabled">
+      <amexio-tab title="Live" [active]="false" [closable]="false" [disabled]="false">
         <p align="center">AmexioSandbox</p>
         <ng-container *ngIf="comData && comData.liveMetadata">
           <amexio-api-livedemo [disabled]="false" [stackblitz-url]="comData.liveMetadata.stackblitzUrl"

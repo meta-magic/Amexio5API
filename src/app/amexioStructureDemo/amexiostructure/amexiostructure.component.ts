@@ -1,5 +1,5 @@
 
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import { RestCallService } from '../../apimetadata/services/restcall.service';
 import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
 @Component({
@@ -15,9 +15,12 @@ export class AmexioStructureComponent implements OnInit {
 
   comData: ComponentDataStructure;
 
+  disabledFlag: boolean;
+
+  @ViewChild('tab') tabRef: any;
 
   constructor(private _rCService: RestCallService) {
- 
+
   }
 
   ngOnInit() {
@@ -35,6 +38,7 @@ export class AmexioStructureComponent implements OnInit {
           this.addCustomData(res);
         } else {
           this.comData = res;
+          this.accessibilityCheck(this.comData);
         }
       });
   }
@@ -66,13 +70,16 @@ export class AmexioStructureComponent implements OnInit {
     }
 
     this.comData = response;
+    this.accessibilityCheck(this.comData);
   }
 
-  isAccessibilityEnabled(){
-    if(this.comData.isAccessibility === undefined){
-      return true;
+  accessibilityCheck(data: any) {
+    if (data && data.hasOwnProperty('isAccessibility') && data.isAccessibility === false) {
+      this.tabRef.disableTab(2);
     }
-    return this.comData.isAccessibility;
+    if (data && data.liveMetadata.disabled && data.liveMetadata.disabled === true) {
+      this.tabRef.disableTab(4);
+    }
   }
 }
 
