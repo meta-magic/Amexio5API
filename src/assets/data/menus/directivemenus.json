@@ -5,6 +5,11 @@
             "icon": "fa fa-globe  ",
             "badge": "New",
             "link": "directive-demo/color-palette"
+        },
+        {
+            "text": "Bubble Chart",
+            "icon": "fa fa-circle  ",
+            "link": "google-chart/bubble-chart-demo"
         }
     ]
 }
