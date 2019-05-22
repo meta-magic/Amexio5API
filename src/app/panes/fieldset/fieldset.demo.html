@@ -1,53 +1,41 @@
-
-<amexio-api-structure  [url]="'assets/componentjson/panels/fieldset.json'">
+<amexio-api-structure [url]="'assets/componentjson/panels/fieldset.json'">
   <amexio-api-accessible>
     <amexio-box border-color="blue" border="left" [padding]="true" align="left">
-        <p>The Fieldset is WAI ARIA-accessible through the Tab key.  </p>
-          <p>Role:Heading-The heading as a role define fieldset heading.The attribute aria-expanded used for toggling of fieldset an the basis of flag.
-          </p>
-      
-     </amexio-box>
-</amexio-api-accessible>
-  <amexio-api-demo>  
+      <p>The Fieldset is WAI ARIA-accessible through the Tab key. </p>
+      <p>Role:Heading-The heading as a role define fieldset heading.The attribute aria-expanded used for toggling of
+        fieldset an the basis of flag.
+      </p>
+
+    </amexio-box>
+  </amexio-api-accessible>
+  <amexio-api-demo>
     <amexio-row>
       <amexio-column [size]="12">
         <amexio-fieldset [collapsible]="true" title="Employee Registration">
           <amexio-row>
             <amexio-column [size]="6">
-              <amexio-text-input [field-label]="'Name'" name="country"
-                                 [place-holder]="'Enter name'"
-                                 [enable-popover]="true"
-                                 [icon-feedback]="true"
-                                 [allow-blank]="false" [error-msg]="'Please enter name'"
-                                 [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
-                                 [max-error-msg]="'Name should be less than 15 characters'"
-              >
+              <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'" [enable-popover]="true"
+                [icon-feedback]="true" [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3"
+                [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'" [max-error-msg]="'Name should be less than 15 characters'">
               </amexio-text-input>
             </amexio-column>
             <amexio-column [size]="6">
-              <amexio-dropdown [(ngModel)]="countryCode1"
-                               [place-holder]="'Choose'"
-                               name="countryCode1"
-                               [data-reader]="'data'"
-                               [field-label]="'Choose Country'"
-                               [http-url]="'assets/data/componentdata/country.json'"
-                               [http-method]="'get'"
-                               [display-field]="'countryName'"
-                               [value-field]="'countryCode1'"
-                               [enable-sort]="true"
-                               [sort]="'asc'"
-              ><amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
+              <amexio-dropdown [(ngModel)]="countryCode1" [place-holder]="'Choose'" name="countryCode1" [data-reader]="'data'"
+                [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/country.json'" [http-method]="'get'"
+                [display-field]="'countryName'" [value-field]="'countryCode1'" [enable-sort]="true" [sort]="'asc'">
+
+                <amexio-button [color]="'green'" [label]="'Add More Country'" [type]="'transparent'" [block]="true"
+                  [tooltip]="'Add More Country'">
+                </amexio-button>
 
               </amexio-dropdown>
-              
+
             </amexio-column>
           </amexio-row>
-        
+
 
         </amexio-fieldset>
       </amexio-column>
     </amexio-row>
-</amexio-api-demo>
+  </amexio-api-demo>
 </amexio-api-structure>
-
-
