@@ -1366,7 +1366,7 @@ export class AppComponent {
           },
           {
             "text": "Amexio Demo Apps",
-            "link": " https://demo.amexio.org/se/v5.1/index.html"
+            "link": "http://demo.amexio.tech/"
           }
         ]
       },
