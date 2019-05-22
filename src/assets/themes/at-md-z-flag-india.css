@@ -7005,7 +7005,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   height: 120%;
   padding-top: 12px;
   padding-bottom: 8px;
-  color: var(--appHeaderMenuFontColor);
+  color: var(--componentFontColor);
   border-left: 1px solid #f7f3f3; }
 
 .label-icon-css {
