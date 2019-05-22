@@ -58,12 +58,12 @@
   --themePrimaryColorShade5: #ffeed1;
   --themePrimaryColorShade6: #fffbf5;
   /** Theme Color Gradients -------------------------- */
-  --themePrimaryColorGradient: linear-gradient(to right, #6b4400, #ffa305, #ffe5b8);
-  --themeSecondaryColorGradient: linear-gradient(to right, #6b5000, #ffc105, #ffedb8);
-  --theme3rdColorGradient: linear-gradient(to right, #276b00, #61ff05, #d2ffb8);
-  --theme4thColorGradient: linear-gradient(to right, #006b0e, #05ff26, #b8ffc1);
-  --theme5thColorGradient: linear-gradient(to right, #006b44, #05ffa3, #b8ffe5);
-  --theme6thColorGradient: linear-gradient(to right, #005d6b, #05deff, #b8f5ff);
+  --themePrimaryColorGradient: linear-gradient(to right, #523400, #ffa305, #ffd285);
+  --themeSecondaryColorGradient: linear-gradient(to right, #523d00, #ffc105, #ffe085);
+  --theme3rdColorGradient: linear-gradient(to right, #1e5200, #61ff05, #b1ff85);
+  --theme4thColorGradient: linear-gradient(to right, #00520b, #05ff26, #85ff95);
+  --theme5thColorGradient: linear-gradient(to right, #005234, #05ffa3, #85ffd2);
+  --theme6thColorGradient: linear-gradient(to right, #004752, #05deff, #85efff);
   /** Theme Font Family -------------------------- */
   --themeFontColor: #1f1300;
   --themeFontFamily: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
@@ -1121,7 +1121,7 @@ button {
   display: block;
   position: absolute;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  z-index: 3;
+  z-index: 700;
   width: 290px; }
   .datetimepicker .datetimepickertopbar {
     padding: 10px 25px;
@@ -4472,8 +4472,9 @@ input:checked + .largeType2ToggleSlider:before {
 
 .fromdiv {
   padding: 5px;
-  background-color: white;
-  border: #e6e6e6 0px;
+  background-color: var(--componentBGColor);
+  border: var(--componentBGColor) 0px;
+  color: var(--componentFontColor);
   cursor: pointer;
   width: max-content;
   border-style: outset; }
@@ -4616,23 +4617,23 @@ fsw .widgetSprite.icCalendar {
 *****************************************************************************/
 /** enterprise-content - Visual CSS **/
 .content-title {
-  color: var(--componentActiveFontColor); }
+  color: var(--componentHoverBGColor); }
 
 .content-area {
-  color: var(--componentActiveFontColor); }
+  color: var(--componentHoverBGColor); }
 
 /* Button Related CSS */
 .content-button {
-  color: var(--componentActiveFontColor); }
+  color: var(--componentHoverBGColor); }
 
 header .billboard .content-button {
-  color: var(--componentActiveFontColor); }
+  color: var(--componentHoverBGColor); }
 
 .content-button i {
-  color: var(--componentActiveFontColor); }
+  color: var(--componentHoverBGColor); }
 
 .content-button-small i {
-  color: var(--componentActiveFontColor); }
+  color: var(--componentHoverBGColor); }
 
 .close-button {
   color: gray; }
@@ -7904,7 +7905,7 @@ fieldset {
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 300;
+  z-index: 700;
   display: flex;
   flex-direction: row;
   justify-content: center;
