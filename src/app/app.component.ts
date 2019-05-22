@@ -35,25 +35,25 @@ export class AppComponent {
     private _cookieService: CookieService) {
     this.homemenus = [
       {
-          "text": "Quick Start",
-          "icon": "fa fa-bars  ",
-          "link": "getting-started"
-        },
-        {
-          "text": "Themes",
-          "icon": "fa fa-snowflake-o",
-          "link": "amexio-colors"
-        },
-        {
-          "text": "D3 Charts",
-          "link": "d3-charts",
-          "icon": "fa fa-openid"
-        },
-        {
-          "text": "Accessibility",
-          "link": "amexio-accessibility",
-          "icon": "fa fa-universal-access"
-        }
+        "text": "Quick Start",
+        "icon": "fa fa-bars  ",
+        "link": "getting-started"
+      },
+      {
+        "text": "Themes",
+        "icon": "fa fa-snowflake-o",
+        "link": "amexio-colors"
+      },
+      {
+        "text": "D3 Charts",
+        "link": "d3-charts",
+        "icon": "fa fa-openid"
+      },
+      {
+        "text": "Accessibility",
+        "link": "amexio-accessibility",
+        "icon": "fa fa-universal-access"
+      }
 
     ]
 
@@ -1183,8 +1183,8 @@ export class AppComponent {
             "badge": "NEW",
             "icon": "fa fa-bars  ",
             "link": "panes/animatedsliding-demo"
-            
-        }
+
+          }
         ]
       },
       {
@@ -1556,7 +1556,7 @@ export class AppComponent {
     this.amexioNav.close();
   }
   onNodeClick(node: any) {
-    if(node.hasOwnProperty('link')) {
+    if (node.hasOwnProperty('link')) {
       this.router.navigate([node.link]);
     }
   }

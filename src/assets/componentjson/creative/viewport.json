@@ -1,6 +1,6 @@
 {
     "title": "Amexio Viewport ",
-    "description": "This component shows diffrent type of viewports ",
+    "description": "This component shows different type of viewports ",
     "apiRefMetadata": [{
         "gridTitle": "Properties <amexio-viewport>",
         "columnDefinition": [{
