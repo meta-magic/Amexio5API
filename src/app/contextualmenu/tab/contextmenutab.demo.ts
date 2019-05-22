@@ -46,7 +46,7 @@ export class ContextMenuTabDemo {
     this.createCustomSourceData();
   }
   createCustomSourceData() {
-    this.customSourceData.title = 'context menu Tab ';
+    this.customSourceData.title = 'Tab with Context Menu ';
     this.customSourceData.description = 'Tab component for Angular Apps with multiple configurations such as Tab, Icon support, Scrollable tabs, Closable tab, Vertical Tabs and with custom context menu (right click operation) and default context menu(close all and close others).';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/tab/contextmenutab/tab.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/tab/contextmenutab/tab.text';

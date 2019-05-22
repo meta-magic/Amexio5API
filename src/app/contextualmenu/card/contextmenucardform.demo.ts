@@ -33,7 +33,7 @@ export class ContextMenuCardFormDemo {
 
 
   createCustomSourceData() {
-    this.customSourceData.title = 'Card contextmenu';
+    this.customSourceData.title = 'Card with Context Menu';
     this.customSourceData.description = 'A Simple Card which renders card based on title, body and actions that user configures with context menu option. (Right Click functionality).';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/card/carddemo/layout.html';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/card/carddemo/layout.text';

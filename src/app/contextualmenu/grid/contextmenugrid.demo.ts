@@ -37,7 +37,7 @@ export class GridWithContextMenuDemo {
   }
 
   createCustomSourceData() {
-    this.customSourceData.title = 'Data Grid With context menu';
+    this.customSourceData.title = 'Data Grid with Context Menu';
     this.customSourceData.description = 'Data grid component to render large amount of data-set with various options like sorting in ascending or descending order, client-side pagination, column hide/unhide, single/multi selection, user define template for rendering for column header and column data, displaying summation of numeric column and with context menu(right-click mouse operation).';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/contextmenugrid/contextmenugrid.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/contextmenugrid/contextmenugrid.text';

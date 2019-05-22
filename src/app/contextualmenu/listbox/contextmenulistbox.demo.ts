@@ -197,7 +197,7 @@ export class ContextMenuListBoxDemo {
   }
 
   createCustomSourceData() {
-    this.customSourceData.title = 'listbox With context menu';
+    this.customSourceData.title = 'Listbox with Context Menu';
     this.customSourceData.description = 'Simple list box which allows user to select one of more items from list based on configuration. User can provide custom template to change look and feel and with context menu (right-click mouse operation)';
     this.customSourceData.sourceMetadata.htmlUrl = 'data/contextmenulistbox/listbox.html';
     this.customSourceData.sourceMetadata.tsUrl = 'data/contextmenulistbox/listbox.text';

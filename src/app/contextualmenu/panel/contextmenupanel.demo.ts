@@ -39,7 +39,7 @@ export class ContextMenuPanelDemoComponent {
   }
  
   createCustomSourceData() {
-    this.customSourceData.title = 'panel contextmenu';
+    this.customSourceData.title = 'Panel with Context Menu';
     this.customSourceData.description = 'Panel provides an easy way to organize big forms by grouping the fields in panel and with context menu functionality (right click option).';
     this.customSourceData.sourceMetadata.htmlUrl = 'layout/panel/panelcontextmenu/panel.html    ';
     this.customSourceData.sourceMetadata.tsUrl = 'layout/panel/panelcontextmenu/panel.text    ';

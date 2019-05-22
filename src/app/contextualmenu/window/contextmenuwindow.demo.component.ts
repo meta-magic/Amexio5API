@@ -47,7 +47,7 @@ export class ContextMenuWindowDemoComponent {
     this.createCustomSourceData();
   }
   createCustomSourceData() {
-    this.customSourceData.title = 'context menu window ';
+    this.customSourceData.title = 'Window with Context Menu ';
     this.customSourceData.description = 'Window Pane component is a customizable Modal Pane in which user can enter custom content';
     this.customSourceData.sourceMetadata.htmlUrl = 'pane/contextmenuwindow/window.html';
     this.customSourceData.sourceMetadata.tsUrl = 'pane/contextmenuwindow/window.text';
