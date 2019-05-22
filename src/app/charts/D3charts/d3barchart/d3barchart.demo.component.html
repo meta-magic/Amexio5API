@@ -43,9 +43,12 @@
                             D3-bar with Legend Default Color
                         </amexio-header>
                         <amexio-body>
-                            <amexio-d3-chart-bar [title]="'Company Performance Details'" [label]="true" (onChartClick)="onDefaultChartClick1($event)"
-                                (onLegendClick)="onDefaultLegendClick($event)" [data]="defultColorData">
-                            </amexio-d3-chart-bar>
+                            <ng-container *ngIf="defultColorData">
+                                    <amexio-d3-chart-bar [title]="'Company Performance Details'" [label]="true" (onChartClick)="onDefaultChartClick1($event)"
+                                    (onLegendClick)="onDefaultLegendClick($event)" [data]="defultColorData">
+                                </amexio-d3-chart-bar>
+                            </ng-container>
+                            
                         </amexio-body>
                     </amexio-card>
                 </amexio-column>
