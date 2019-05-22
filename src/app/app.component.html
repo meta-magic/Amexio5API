@@ -15,41 +15,31 @@
                 <amexio-sidenav-node class="side-nav-with-tab">
                     <amexio-accordion [multi-open]="true" [transparent]="true" expand-all="true" angle-icon=true>
                         <amexio-accordion-tab header="Home">
-
-                            <amexio-side-nav [http-url]="'assets/data/menus/submenus.json'" [http-method]="'get'" [width]="'100%'" [data-reader]="'data'"
-                                (nodeClick)="onNodeClick($event)" [position]="'relative'">
+                            <amexio-side-nav #sidenav1  [width]="'100%'" [data]="homemenus"
+                                (nodeClick)="onNodeClick($event,1)" [position]="'relative'">
                             </amexio-side-nav>
-                           
-
                         </amexio-accordion-tab>
-
                         <amexio-accordion-tab header="Directives">
-
-                            <amexio-side-nav [http-url]="'assets/data/menus/directivemenus.json'" [http-method]="'get'" [width]="'100%'" [data-reader]="'data'"
-                                (nodeClick)="onNodeClick($event)" [position]="'relative'">
+                            <amexio-side-nav #sidenav2 [width]="'100%'" [data]="directives"
+                                (nodeClick)="onNodeClick($event,2)" [position]="'relative'">
                             </amexio-side-nav>
-                           
-
                         </amexio-accordion-tab>
                         <amexio-accordion-tab [active]="true" header="Components">
                             <amexio-tab-view class="side-nav-with-tab" [divide-header-equally]=true [closable]="false">
                                 <amexio-tab [active]="true" [icon]="'fa fa-user'" [title]="'SE'">
-                                    <amexio-side-nav [http-url]="'assets/data/menus/semenus.json'" [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                                    <amexio-side-nav #sidenav3 [data]="semenus" (nodeClick)="onNodeClick($event,3)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
-
                                 </amexio-tab>
                                 <amexio-tab [active]="false" [icon]="'fa fa-building'" [title]="'EE'" >
-                                    <amexio-side-nav [http-url]="'assets/data/menus/eemenus.json'" [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                                    <amexio-side-nav #sidenav4  [data]="eemenus"  (nodeClick)="onNodeClick($event,4)"
                                     [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
-
                                 </amexio-tab>
                                 <amexio-tab [active]="false" [icon]="'fa fa-paint-brush'" [title]="'CE'">
-                                    <amexio-side-nav [http-url]="'assets/data/menus/cemenus.json'" [http-method]="'get'" [data-reader]="'data'" (nodeClick)="onNodeClick($event)"
+                                    <amexio-side-nav #sidenav5 [data]="cemenus"   (nodeClick)="onNodeClick($event,5)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
-
                                 </amexio-tab>
                             </amexio-tab-view>
 
