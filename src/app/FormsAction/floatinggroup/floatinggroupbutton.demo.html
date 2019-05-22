@@ -17,7 +17,7 @@
           </amexio-header>
           <amexio-body>
             <amexio-row>
-              <amexio-column size=12>
+              <amexio-column size=6>
 
                 <b>Demo focus on showcasing three demos</b><br />
                 1 - Relative with floating group poisitioned bottom right<br />
@@ -25,6 +25,12 @@
                 3 - Floating group poisitioned bottom right<br />
 
               </amexio-column>
+              <amexio-column size=6>
+                <amexio-floating-group-button [relative]="true" (onClick)="onFloatingClick($event)" [data]="floatingbuttongroupTwo"
+                  [floating-group-position]="'bottom'"   [icon]="'fa fa-ellipsis-v'" [type]="'green'">
+                </amexio-floating-group-button>
+              </amexio-column>
+
             </amexio-row>
             <amexio-row>
               <amexio-column size=6>
@@ -32,12 +38,7 @@
                   [data]="floatingbuttongroupOne" [floating-group-position]="'top'" [icon]="'fa fa-ellipsis-v'" [type]="'theme-color'">
                 </amexio-floating-group-button>
               </amexio-column>
-              <amexio-column size=6>
-                <amexio-floating-group-button [relative]="true" (onClick)="onFloatingClick($event)" [data]="floatingbuttongroupTwo"
-                  [floating-group-position]="'bottom'" [icon]="'fa fa-ellipsis-v'" [type]="'green'">
-                </amexio-floating-group-button>
-              </amexio-column>
-
+             
               <amexio-floating-group-button [size]="'large'" (onClick)="onFloatingClick($event)" [data]="floatingbuttongroupThree"
                 [floating-group-position]="'top'" [position-bottom]="'5%'" [position-right]="'5%'" [icon]="'fa fa-ellipsis-v'"
                 [type]="'red'">
