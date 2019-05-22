@@ -1,24 +1,17 @@
-
-<amexio-api-structure  [custom-com-data]="customSourceData"[url]="'assets/componentjson/charts/d3charts/d3barchart.json'">
-<amexio-api-demo>  
-  <amexio-row>
+<amexio-row>
         <amexio-column [size]="12">
 
             <amexio-row>
                 <amexio-column [size]="8" [fit]="true">
-                    <amexio-card [header]="true" [show]="'true'">
+                    <amexio-card [body-height] [header]="true" [show]="'true'">
                         <amexio-header>
                             D3-bar chart with UserDefine Color
                         </amexio-header>
                         <amexio-body>
-                                <!-- [data]="userDefineColorData" -->
-                            <amexio-d3-chart-bar [title]="'Population of Cities in India'" [label-color]="'white'"
-                                [label]="true" (onChartClick)="onDefaultChartClick($event)" (onLegendClick)="onUserDefineLegendClick($event)"
-                                [color]="userDefineColors" 
-                                [http-method]="'get'" 
-                                [data-reader]="'bardata'" 
-                                [http-url]="'assets/data/componentdata/d3bardemo.json'"
-                                >
+                            <!-- [data]="userDefineColorData" -->
+                            <amexio-d3-chart-bar [title]="'Population of Cities in India'" [label-color]="'white'" [label]="true" (onChartClick)="onDefaultChartClick($event)"
+                                (onLegendClick)="onUserDefineLegendClick($event)" [color]="userDefineColors" [http-method]="'get'"
+                                [data-reader]="'bardata'" [http-url]="'assets/data/componentdata/d3bardemo.json'">
                             </amexio-d3-chart-bar>
                         </amexio-body>
                     </amexio-card>
@@ -44,11 +37,11 @@
                         </amexio-header>
                         <amexio-body>
                             <ng-container *ngIf="defultColorData && defultColorData.length > 0">
-                                    <amexio-d3-chart-bar [title]="'Company Performance Details'" [label]="true" (onChartClick)="onDefaultChartClick1($event)"
+                                <amexio-d3-chart-bar [title]="'Company Performance Details'" [label]="true" (onChartClick)="onDefaultChartClick1($event)"
                                     (onLegendClick)="onDefaultLegendClick($event)" [data]="defultColorData">
                                 </amexio-d3-chart-bar>
                             </ng-container>
-                            
+
                         </amexio-body>
                     </amexio-card>
                 </amexio-column>
@@ -68,6 +61,3 @@
 
         </amexio-column>
     </amexio-row>
-    </amexio-api-demo>
-    </amexio-api-structure>
-
