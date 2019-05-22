@@ -109,7 +109,8 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   /* D3-Charts */
 
   {
-    path: 'D3chart', loadChildren: './charts/D3charts/D3charts.module#D3ChartModule'
+    path: 'D3chart', loadChildren: './charts/D3charts/D3charts.module#D3ChartModule',
+    data: { preload: true, delay: false },
   },
 
 

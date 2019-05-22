@@ -1,6 +1,6 @@
 {
   "title": "Amexio D3-chart  line",
-  "description": "An D3 line chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
+  "description": "D3 line chart that is rendered within the browser using SVG .Displays tips when hovering over points.",
   "apiRefMetadata": [
     {
       "gridTitle": "Chart Properties <amexio-d3-chart-line>",

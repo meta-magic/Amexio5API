@@ -11,13 +11,13 @@
                         <amexio-row>
                             <amexio-column size="4" [fit]="true">
                                 <h4>Card Demo 1</h4>
-                                <amexio-card-ce align="center">
+                                <amexio-card-ce [align]="'center'">
                                     <amexio-header-ce amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true"  [height]="'75px'"
-                                        align="center">
+                                        [align]="'center'" >
                                         <amexio-image width="100px" [c-class]="'card-img-center'" height="100px"
                                             [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
                                     </amexio-header-ce>
-                                    <amexio-body-ce [align]="'start'">
+                                    <amexio-body-ce align="center">
                                         <br /><br />
                                         <br />
                                         <amexio-label [size]="'large'">
@@ -55,7 +55,7 @@
                                         </amexio-label>
                                     </amexio-header-ce>
                                     <amexio-image width="100%" path="assets/images/cardce/Trimuph_2019.jpg"></amexio-image>
-                                    <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'6%'"
+                                    <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'8%'"
                                         [right]="'5%'">
                                         <amexio-label size="large">2019</amexio-label>
                                         <amexio-label>Jan</amexio-label>

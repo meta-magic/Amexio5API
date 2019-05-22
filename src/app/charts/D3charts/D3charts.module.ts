@@ -8,9 +8,6 @@ import { D3CHART_ROUTE } from "./D3charts.routes";
 
 import { AmexioChartD3Module } from "amexio-chart-d3";
 
-
-
-
 import { RouterModule } from "@angular/router";
 
 import { AmexioD3BarChartDemoComponent } from "./d3barchart/d3barchart.demo.component";

@@ -50,7 +50,7 @@ export class AmexioD3HorizontalBarChartComponent implements OnInit {
 
   createCustomSourceData() {
     this.customSourceData.title = 'D3 Horizontal  Bar Chart';
-    this.customSourceData.description = 'An D3 Horizontal bar chart that is rendered within the browser using SVG .Displays tips when hovering over points.';
+    this.customSourceData.description = 'D3 Horizontal bar chart that is rendered within the browser using SVG .Displays tips when hovering over points.';
     this.customSourceData.sourceMetadata.htmlUrl = 'charts/D3Charts/d3horizontalbarchart/d3chart.html';
     this.customSourceData.sourceMetadata.tsUrl = 'charts/D3Charts/d3horizontalbarchart/d3chart.text';
     this.customSourceData.sourceMetadata.datasourceUrl = 'assets/data/code/charts/D3Charts/d3horizontalbarchart/datasource.json';
