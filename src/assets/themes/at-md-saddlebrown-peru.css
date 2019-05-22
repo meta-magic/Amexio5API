@@ -8599,6 +8599,15 @@ amexio-layout amexio-layout-item {
   padding: 1%;
   border: 1px solid var(--themeSecondaryColor); }
 
+.panelborder {
+  border: 1px solid var(--themeSecondaryColor); }
+
+.panelchild {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1%;
+  border: 1px solid var(--themeSecondaryColor); }
+
 .panelheader {
   width: 100%;
   margin: 0 auto;
