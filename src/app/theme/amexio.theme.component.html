@@ -1,27 +1,35 @@
-<amexio-row>
-    <amexio-column [size]=12>
+<div class="flex-row">
+    <div class="flex-col flex-col-12">
         <div style="display: flex;" class="flex-start">
-            
-            <amexio-label [size]="'medium-bold'">
+            <label role="text" style="outline: none; cursor: text;" class="label-content medium-bold">
                 More Details: &nbsp;
-            </amexio-label>
+            </label>
             <amexio-toggle (onChange)="onChange($event)" [size]="'small'" [type]="1" shape="square"> </amexio-toggle>
         </div>
-    </amexio-column>
-</amexio-row>
-
-<amexio-row *ngFor="let row of data">
-    <amexio-column [fit]="true" [size]="(12/row.length)" *ngFor="let col of row">
+    </div>
+</div>
+<div class="flex-row" *ngFor="let row of data">
+    <div [class]="'flex-col  flex-col-'+(12/row.length)" *ngFor="let col of row">
         <div class="card-container">
             <header class="card-header flex-start" style="justify-content: space-between;"
                 [ngStyle]="{'background-color':col.navBarBGColor, 'color':col.navBarFontColor}">
-                <amexio-label>{{col.themeName}}</amexio-label>
+                <label role="text" style="outline: none; cursor: text;" class="label-content medium-bold">
+                    {{col.themeName}}
+                </label>
                 <amexio-button [label]="'Test'" [type]="'default'" (onClick)="themeChange(col)"></amexio-button>
             </header>
             <div *ngIf="isMoreDetails" class="card-body cardbody">
-                <amexio-image [path]="'assets/images/theme-icons/'+col.themeImageFile"></amexio-image> <br />
-                <amexio-label [size]="'small'">Version: {{col.version}}</amexio-label> <br />
-                <amexio-label>Style: {{col.style}}</amexio-label> <br />
+                <img [attr.alt]="col.themeName" [attr.src]="'assets/images/theme-icons/'+col.themeImageFile"
+                    class="img-fluid" />
+                <br />
+                <label role="text" style="outline: none; cursor: text;" class="label-content small-bold">
+                    Version: {{col.version}}
+                </label>
+                <br />
+                <label role="text" style="outline: none; cursor: text;" class="label-content small-bold">
+                    Style: {{col.style}}
+                </label>
+
             </div>
             <footer class="card-footer flex-center">
                 <div *ngFor="let color of col.themes"
@@ -29,5 +37,5 @@
                     [ngStyle]="{'background-color': color}"></div>
             </footer>
         </div>
-    </amexio-column>
-</amexio-row>
+    </div>
+    <div>
