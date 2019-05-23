@@ -1346,7 +1346,7 @@ button {
 /** dropdown - Structure CSS **/
 .dropdown {
   display: block;
-  z-index: 1003;
+  z-index: 1;
   opacity: 1;
   overflow: auto;
   position: absolute;
@@ -1488,12 +1488,12 @@ button {
 *****************************************************************************/
 /** fileupload - Visual CSS **/
 .upload-drop-zone {
-  color: var(--componentHeaderFontColor);
-  border-color: var(--componentHeaderFontColor); }
+  color: var(--appHeaderMenuBGColor);
+  border-color: var(--appHeaderMenuBGColor); }
 
 .upload-drop-zone.drop {
-  color: var(--themeFontColor);
-  border-color: var(--themeFontColor); }
+  color: var(--appHeaderMenuBGColor);
+  border-color: var(--appHeaderMenuBGColor); }
 
 /** fileupload - Structure CSS **/
 .upload-drop-zone {
