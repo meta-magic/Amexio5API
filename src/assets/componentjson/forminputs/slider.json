@@ -142,8 +142,8 @@
     },
     "liveMetadata": {
       "disabled": false,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-slider?embed=1&file=app/forms/slider/slider.demo.html"
-    },
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-slider?embed=1&file=src/app/formsinput/slider/slider.component.html&view=editor"
+    }, 
     "apiaccessibledata": [
       {
         "gridTitle": "Properties <amexio-slider>",

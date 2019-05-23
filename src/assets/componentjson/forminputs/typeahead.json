@@ -203,7 +203,7 @@
     },
     "liveMetadata": {
         "disabled": false,
-        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-typeahead?embed=1&file=app/forms/typeahead/typeahead.demo.html"
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-typeahead?embed=1&file=src/app/formsinput/typeahead/typeahead.component.html&view=editor"
     },
     "apiaccessibledata": [
         {
