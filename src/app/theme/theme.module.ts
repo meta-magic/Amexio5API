@@ -9,6 +9,7 @@ import {FormsModule} from "@angular/forms";
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {HttpClientModule} from "@angular/common/http";
 import { ThemeComponent } from './theme.component';
+import { AmexioThemeComponent } from './amexio.theme.component';
 
 const routes: Routes = [
   { path: '', component: ThemeComponent },
@@ -17,7 +18,7 @@ const routes: Routes = [
 @NgModule({
   imports: [CommonModule,HttpClientModule,FormsModule,AmexioWidgetModule,RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations : [ThemeComponent],
+  declarations : [ThemeComponent, AmexioThemeComponent],
   providers : [CookieService]
 })
 export class ThemeModule { }

@@ -1,0 +1,33 @@
+<amexio-row>
+    <amexio-column [size]=12>
+        <div style="display: flex;" class="flex-start">
+            
+            <amexio-label [size]="'medium-bold'">
+                More Details: &nbsp;
+            </amexio-label>
+            <amexio-toggle (onChange)="onChange($event)" [size]="'small'" [type]="1" shape="square"> </amexio-toggle>
+        </div>
+    </amexio-column>
+</amexio-row>
+
+<amexio-row *ngFor="let row of data">
+    <amexio-column [fit]="true" [size]="(12/row.length)" *ngFor="let col of row">
+        <div class="card-container">
+            <header class="card-header flex-start" style="justify-content: space-between;"
+                [ngStyle]="{'background-color':col.navBarBGColor, 'color':col.navBarFontColor}">
+                <amexio-label>{{col.themeName}}</amexio-label>
+                <amexio-button [label]="'Test'" [type]="'default'" (onClick)="themeChange(col)"></amexio-button>
+            </header>
+            <div *ngIf="isMoreDetails" class="card-body cardbody">
+                <amexio-image [path]="'assets/images/theme-icons/'+col.themeImageFile"></amexio-image> <br />
+                <amexio-label [size]="'small'">Version: {{col.version}}</amexio-label> <br />
+                <amexio-label>Style: {{col.style}}</amexio-label> <br />
+            </div>
+            <footer class="card-footer flex-center">
+                <div *ngFor="let color of col.themes"
+                    style="display: block; height: 20px; width:20px; padding: 5px; margin: 0px 5px;"
+                    [ngStyle]="{'background-color': color}"></div>
+            </footer>
+        </div>
+    </amexio-column>
+</amexio-row>
