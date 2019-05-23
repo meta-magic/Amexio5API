@@ -26,7 +26,6 @@ import {ThemeServiceService} from './theme-service.service';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    ThemeModule,
     FormsModule, HttpClientModule,
     AmexioChartD3Module, AmexioChartD3Module,
     AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,
