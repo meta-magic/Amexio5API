@@ -3119,7 +3119,7 @@ input:checked + .largeType2ToggleSlider:before {
 
 /** floatingbutton - Structure CSS **/
 .floatingbutton {
-  z-index: 1;
+  z-index: 501;
   text-align: center;
   border-color: #ced4da;
   cursor: pointer;
