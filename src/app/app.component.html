@@ -1,11 +1,13 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
     <amexio-homepage-ce [type]="'1'">
         <amexio-homepage-northpanel>
-            <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'" [logo]="'assets/images/logos/amexio-logo.png'">
+            <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'"
+                [logo]="'assets/images/logos/amexio-logo.png'">
                 <amexio-nav-item style="padding-left:10px" position-left [type]="'slider'">
                 </amexio-nav-item>
-                <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'" [title]="menus.text" [icon]="menus.icon"
-                    [data]="menus.submenus" (onNavItemClick)="externalLink($event)">
+                <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'"
+                    [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus"
+                    (onNavItemClick)="externalLink($event)">
                 </amexio-nav-item>
             </amexio-nav>
         </amexio-homepage-northpanel>
@@ -13,13 +15,13 @@
             <amexio-side-nav>
 
                 <amexio-sidenav-node class="side-nav-with-tab">
-                    <amexio-accordion  [multi-open]="true" [transparent]="true" expand-all="true" angle-icon=true>
+                    <amexio-accordion [multi-open]="true" [transparent]="true" expand-all="true" angle-icon=true>
                         <amexio-accordion-tab [left-icon]="'fas fa-home'" header="Home">
-                            <amexio-side-nav #sidenav1  [width]="'100%'" [data]="homemenus"
+                            <amexio-side-nav #sidenav1 [width]="'100%'" [data]="homemenus"
                                 (nodeClick)="onNodeClick($event,1)" [position]="'relative'">
                             </amexio-side-nav>
                         </amexio-accordion-tab>
-                        <amexio-accordion-tab  [left-icon]="'fas fa-map-signs'" header="Directives">
+                        <amexio-accordion-tab [left-icon]="'fas fa-map-signs'" header="Directives">
                             <amexio-side-nav #sidenav2 [width]="'100%'" [data]="directives"
                                 (nodeClick)="onNodeClick($event,2)" [position]="'relative'">
                             </amexio-side-nav>
@@ -31,13 +33,13 @@
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
                                 </amexio-tab>
-                                <amexio-tab [active]="false" [icon]="'fas fa-layer-group'" [title]="'EE'" >
-                                    <amexio-side-nav #sidenav4  [data]="eemenus"  (nodeClick)="onNodeClick($event,4)"
-                                    [width]="'100%'" [position]="'relative'">
+                                <amexio-tab [active]="false" [icon]="'fas fa-layer-group'" [title]="'EE'">
+                                    <amexio-side-nav #sidenav4 [data]="eemenus" (nodeClick)="onNodeClick($event,4)"
+                                        [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
                                 </amexio-tab>
                                 <amexio-tab [active]="false" [icon]="'fas fa-palette'" [title]="'CE'">
-                                    <amexio-side-nav #sidenav5 [data]="cemenus"   (nodeClick)="onNodeClick($event,5)"
+                                    <amexio-side-nav #sidenav5 [data]="cemenus" (nodeClick)="onNodeClick($event,5)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
                                 </amexio-tab>
@@ -60,11 +62,13 @@ Testing Content
         </amexio-homepage-westpanel>
         <amexio-homepage-centerpanel>
             <div *ngIf="isRouteLoading">
-                <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'" [horizontal-position]="'center'" [color]="'black'"
-                    [size]="'7px'">
+                <amexio-spinner [type]="'rectanglebounce'" [vertical-position]="'center'"
+                    [horizontal-position]="'center'" [color]="'black'" [size]="'7px'">
                 </amexio-spinner>
             </div>
             <router-outlet></router-outlet>
+            <br/>
+            <copy-right style="display: block; text-align: center;"></copy-right>
 
         </amexio-homepage-centerpanel>
     </amexio-homepage-ce>

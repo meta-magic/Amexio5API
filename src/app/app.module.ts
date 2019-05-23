@@ -18,10 +18,12 @@ import {CookieService} from "ngx-cookie-service";
 import { HTTPService } from './service/http.service';
 import {AppPreloadingStrategy} from './preloading.service';
 import {ThemeServiceService} from './theme-service.service';
+import { CopyRightComponent } from './copyright/copyright.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CopyRightComponent
   ],
   imports: [
     BrowserModule,
