@@ -28,17 +28,17 @@
                         </amexio-accordion-tab>
                         <amexio-accordion-tab [left-icon]="'fas fa-cubes'" [active]="true" header="Components">
                             <amexio-tab-view class="side-nav-with-tab" [divide-header-equally]=true [closable]="false">
-                                <amexio-tab [active]="true" [icon]="'fas fa-pencil-ruler'" [title]="'SE'">
+                                <amexio-tab [amexio-color]="'red'" [active]="true" [icon]="'fas fa-pencil-ruler'" [title]="'SE'">
                                     <amexio-side-nav #sidenav3 [data]="semenus" (nodeClick)="onNodeClick($event,3)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
                                 </amexio-tab>
-                                <amexio-tab [active]="false" [icon]="'fas fa-layer-group'" [title]="'EE'">
+                                <amexio-tab [amexio-color]="'green'" [active]="false" [icon]="'fas fa-layer-group'" [title]="'EE'">
                                     <amexio-side-nav #sidenav4 [data]="eemenus" (nodeClick)="onNodeClick($event,4)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
                                 </amexio-tab>
-                                <amexio-tab [active]="false" [icon]="'fas fa-palette'" [title]="'CE'">
+                                <amexio-tab [amexio-color]="'blue'" [active]="false" [icon]="'fas fa-palette'" [title]="'CE'">
                                     <amexio-side-nav #sidenav5 [data]="cemenus" (nodeClick)="onNodeClick($event,5)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
@@ -77,7 +77,7 @@ Testing Content
 <amexio-floating-panel>
     <amexio-card [header]="false" [body-height]="50">
         <amexio-body>
-            <amexio-theme-switcher [col-size]="12"></amexio-theme-switcher>
+            <amexio-theme-switcher [col-size]="1"></amexio-theme-switcher>
         </amexio-body>
     </amexio-card>
 </amexio-floating-panel>

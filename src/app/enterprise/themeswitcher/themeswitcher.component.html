@@ -1,8 +1,13 @@
 <amexio-api-structure [url]="'assets/componentjson/themeswitcher/themeswitcher.json'">
     <amexio-api-demo>
-        <amexio-button [label]="(toggle) ? 'Hide Theme Switcher' : 'Show Theme Switcher' " [type]="'theme-color'" [tooltip]="'toolTip'"
-            (onClick)="switchTheme()">
+        <amexio-button [label]="(toggle) ? 'Hide Theme Switcher' : 'Show Theme Switcher' " [type]="'theme-color'"
+            [tooltip]="'toolTip'" (onClick)="switchTheme()">
         </amexio-button>
-        <amexio-theme-switcher *ngIf="toggle"></amexio-theme-switcher>
+        <amexio-window-ce [(show)]="toggle" [horizontal-position]="'center'" [vertical-position]="'center'">
+            <amexio-header-ce>
+                Amexio Material Design Themes
+            </amexio-header-ce>
+            <amexio-theme-switcher style="display: block; max-height: 500px; overflow: auto;"></amexio-theme-switcher>
+        </amexio-window-ce>
     </amexio-api-demo>
 </amexio-api-structure>
