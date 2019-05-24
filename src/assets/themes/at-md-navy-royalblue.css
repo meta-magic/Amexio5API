@@ -172,6 +172,14 @@ body {
 .float-left {
   float: left; }
 
+.flex-inline {
+  display: flex;
+  flex-direction: row; }
+
+.flex-col {
+  display: flex;
+  flex-direction: column; }
+
 .flex-center {
   justify-content: center; }
 
@@ -180,6 +188,9 @@ body {
 
 .flex-end {
   justify-content: flex-end; }
+
+.flex-spacebetween {
+  justify-content: space-between; }
 
 .border-bottom {
   border-bottom: 1px solid #cccccc; }
@@ -5295,6 +5306,16 @@ header .billboard .content-button {
 .calendar-year-month-today {
   height: 100%;
   width: 100%; }
+
+/****************************************************************************
+    Component Name : Enterprise Calendar
+    Version : Amexio v5.12.1 onwards
+*****************************************************************************/
+.themecolorpalette {
+  display: block;
+  height: 50px;
+  width: 100%;
+  margin: 0px 5px; }
 
 /****************************************************************************
     Component Name : Enterprise Step Wizard
