@@ -1,3 +1,16 @@
+<amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="true" class="api-header-style " [padding]="true"
+  align="left">
+    <amexio-label size="large">
+        Amexio
+    </amexio-label>
+  <br />
+  <amexio-label size="medium">
+        Angular MetaMagic EXtensions for Inputs and Outputs
+  </amexio-label>
+</amexio-box>
+
+<br/><br/>
+
 <amexio-card-ce>
     <amexio-body-ce>
         <amexio-layout-columns [border]="false" [fit]="true" [alignment]="'center'" [orientation]="'vertical'">
@@ -70,5 +83,8 @@
        
         </amexio-layout-columns>
     </amexio-body-ce>
-
+    <amexio-action-ce [align]="'end'">
+        <amexio-button [label]="'Next'" [type]="'theme-color'" [tooltip]="'toolTip'"  (onClick)="next()">
+        </amexio-button>
+    </amexio-action-ce>
 </amexio-card-ce>

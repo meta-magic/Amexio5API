@@ -26,6 +26,14 @@ export class GettingStatedDemo {
     this.getHtmlAndTypeScriptCode();
   }
 
+  previous(){
+    this.route.navigate(['concept-page']);
+  }
+
+  next(){
+      this.route.navigate(['amexio-colors']);
+  }
+
   onLinkClick(link:string)
   {
     window.open(link,'_blank');

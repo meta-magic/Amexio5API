@@ -218,3 +218,11 @@
         </amexio-card>
     </amexio-column>
 </amexio-row>
+
+
+<amexio-action-ce [align]="'space-between'">
+        <amexio-button [label]="'Previous'" [type]="'theme-color'" (onClick)="previous()">
+        </amexio-button>
+        <amexio-button [label]="'Next'" [type]="'theme-color'" [tooltip]="'toolTip'"  (onClick)="next()">
+        </amexio-button>
+</amexio-action-ce>

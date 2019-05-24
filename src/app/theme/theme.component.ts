@@ -6,6 +6,7 @@ import { HttpClient } from "@angular/common/http";
 import { CookieService } from 'ngx-cookie-service';
 import { HTTPService } from '../service/http.service';
 import {ThemeServiceService} from '../theme-service.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'theme-page',
@@ -17,7 +18,7 @@ export class ThemeComponent implements OnInit {
     hasThemeInit: boolean = false;
     newThemePath: string;
 
-    constructor(private http: HttpClient, private httpService: HTTPService, private cookieService: CookieService, private themeServiceService: ThemeServiceService) {
+    constructor( private route:Router,private http: HttpClient, private httpService: HTTPService, private cookieService: CookieService, private themeServiceService: ThemeServiceService) {
     }
 
 
@@ -32,6 +33,14 @@ export class ThemeComponent implements OnInit {
         });
     }
 
+    previous(){
+        this.route.navigate(['getting-started']);
+      }
+    
+      next(){
+        this.route.navigate(['d3-charts']);
+      }
+    
 
     addNewTheme(newTheme: any, existingTheme: any) {
         let linkEl = document.createElement('link');

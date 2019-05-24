@@ -4,10 +4,11 @@
 
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
+import { Router } from '@angular/router';
 
 @Component({
         selector: 'chart-d3-page',
-       templateUrl: './chartd3.demo.html',
+        templateUrl: './chartd3.demo.html',
 })
 export class ChartD3Demo implements OnInit {
         htmlCode: string;
@@ -28,14 +29,14 @@ export class ChartD3Demo implements OnInit {
         scatterChartData: any;
         histogramdata: any;
         waterfallChartData: any;
-        bubblechart:any;
+        bubblechart: any;
         userDataSource: any;
         barData: any[];
         lineArray: any[];
         lineArray2: any[];
         barArray: any[];
 
-        constructor(private http: HttpClient) {
+        constructor(private http: HttpClient, private router: Router) {
 
                 this.multiAreaData = [
                         ["date", "index", "open", "close", "high"],
@@ -66,20 +67,20 @@ export class ChartD3Demo implements OnInit {
                         ['Tamil Nadu', 400, 300, 250, 50, 95],
                         ['Assam', 250, 150, 75, 150, 195],
                         ['Maharshtra', 300, 200, 250, 50, 95]
-                      ];
-                      this.lineArray = [
+                ];
+                this.lineArray = [
                         { column: "Rice Export", label: true, color: "yellow" },
                         { column: "Jowar Export" },
                         { column: "Wheat Export" }
-                      ];
-                      this.lineArray2 = [
+                ];
+                this.lineArray2 = [
                         { column: "Jowar Export" },
                         { column: "Wheat Export", label: true }
-                      ];
-                      this.barArray = [
+                ];
+                this.barArray = [
                         { column: "Corn Export", label: true },
-                        { column: "Bajra Export", label: true }];     
-                    
+                        { column: "Bajra Export", label: true }];
+
 
                 this.horizontalBarData = [
                         ['year', 'production'],
@@ -92,7 +93,7 @@ export class ChartD3Demo implements OnInit {
                         ['2017', 200]
                 ];
 
-                this.userDefineColors = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00","#b9936c"];
+                this.userDefineColors = ["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#b9936c"];
 
                 this.userDefineColorData =
                         [
@@ -106,19 +107,19 @@ export class ChartD3Demo implements OnInit {
                                 ['Ranchi', 84436]
                         ]
 
-                this.bubblechart=   [
-                        ['ID', 'Life Expectancy', 'Fertility Rate', 'Region',     'Population'],
-                        ['CAN',    80.66,              1.67,      'North America',  33739900],
-                        ['DEU',    79.84,              1.36,      'Europe',         81902307],
-                        ['DNK',    78.6,               1.84,      'Europe',         5523095],
-                        ['EGY',    72.73,              2.78,      'Middle East',    79716203],
-                        ['GBR',    80.05,              2,         'Europe',         61801570],
-                        ['IRN',    72.49,              1.7,       'Middle East',    73137148],
-                        ['IRQ',    68.09,              4.77,      'Middle East',    31090763],
-                        ['ISR',    81.55,              2.96,      'Middle East',    7485600],
-                        ['RUS',    68.6,               1.54,      'Europe',         141850000],
-                        ['USA',    78.09,              2.05,      'North America',  307007000]
-                      ];        
+                this.bubblechart = [
+                        ['ID', 'Life Expectancy', 'Fertility Rate', 'Region', 'Population'],
+                        ['CAN', 80.66, 1.67, 'North America', 33739900],
+                        ['DEU', 79.84, 1.36, 'Europe', 81902307],
+                        ['DNK', 78.6, 1.84, 'Europe', 5523095],
+                        ['EGY', 72.73, 2.78, 'Middle East', 79716203],
+                        ['GBR', 80.05, 2, 'Europe', 61801570],
+                        ['IRN', 72.49, 1.7, 'Middle East', 73137148],
+                        ['IRQ', 68.09, 4.77, 'Middle East', 31090763],
+                        ['ISR', 81.55, 2.96, 'Middle East', 7485600],
+                        ['RUS', 68.6, 1.54, 'Europe', 141850000],
+                        ['USA', 78.09, 2.05, 'North America', 307007000]
+                ];
         }
         ngOnInit() {
 
@@ -223,7 +224,16 @@ export class ChartD3Demo implements OnInit {
                         ["Services Revenue", 210000],
                         ["Fixed Costs", -170000],
                         ["letiable Costs", -140000]
-                      ];
+                ];
+        }
+
+
+        previous() {
+                this.router.navigate(['amexio-colors']);
+        }
+
+        next() {
+                this.router.navigate(['amexio-accessibility']);
         }
 
 

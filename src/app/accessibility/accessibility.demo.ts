@@ -40,6 +40,11 @@ export class AccessibilityDemo implements OnInit {
         .addlayout(["gridtable3", "gridtable4", "gridtable7"])
         .addlayout(["gridtable5", "gridtable6", "gridtable7"]);
     }
+
+
+    previous() {
+        this.router.navigate(['d3-charts']);
+}
 }
 
 

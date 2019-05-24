@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
     selector : 'concept-page',
@@ -6,4 +7,15 @@ import { Component } from "@angular/core";
 })
 export class ConceptPage {
 
+    constructor(public router: Router){
+        
+    }
+
+    previous(){
+
+    }
+
+    next(){
+        this.router.navigate(['getting-started']);
+    }
 }
