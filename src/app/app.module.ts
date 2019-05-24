@@ -5,7 +5,7 @@ import { RouterModule } from "@angular/router";
 import { APP_ROUTE } from "./app.routes";
 import {
   AmexioWidgetModule, DeviceQueryService, CommonDataService, AmexioMapModule, AmexioChartsModule, ChartLoaderService,
-  MapLoaderService, AmexioDashBoardModule, DashboardLoaderService, AmexioPaneModule, IconLoaderService
+  MapLoaderService, AmexioDashBoardModule, DashboardLoaderService, AmexioPaneModule, IconLoaderService, AmexioEnterpriseModule
 } from "amexio-ng-extensions";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,12 +20,14 @@ import {AppPreloadingStrategy} from './preloading.service';
 import {ThemeServiceService} from './theme-service.service';
 import { CopyRightComponent } from './copyright/copyright.component';
 import { ConceptPage } from './concept/concept.component';
+import { AmexioFloatingPanelComponent } from './floatingpanel/floatingpanel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CopyRightComponent,
-    ConceptPage
+    ConceptPage,
+    AmexioFloatingPanelComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +35,7 @@ import { ConceptPage } from './concept/concept.component';
     FormsModule, HttpClientModule,
     AmexioChartD3Module, AmexioChartD3Module,
     AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,
+    AmexioEnterpriseModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true, preloadingStrategy: AppPreloadingStrategy
     } ),
   ],
