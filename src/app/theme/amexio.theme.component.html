@@ -11,7 +11,7 @@
 <div class="flex-row" *ngFor="let row of data">
     <div [class]="'flex-col  flex-col-'+(12/row.length)" *ngFor="let col of row">
         <div class="card-container">
-            <header class="card-header flex-start" style="justify-content: space-between;"
+            <header class="card-header flex-start" style="justify-content: space-between; padding: 10px;"
                 [ngStyle]="{'background-color':col.navBarBGColor, 'color':col.navBarFontColor}">
                 <label role="text" style="outline: none; cursor: text;" class="label-content medium-bold">
                     {{col.themeName}}

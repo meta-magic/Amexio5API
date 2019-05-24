@@ -69,7 +69,7 @@ export class ThemeComponent implements OnInit {
     }
 
     themeChange(theme: any) {
-    this.themeServiceService.getTheme(theme);
+    this.themeServiceService.switchTheme(theme);
     }
 
 }

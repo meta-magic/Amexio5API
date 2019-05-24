@@ -317,7 +317,7 @@ export class AppComponent {
           themeRef = this.mdThemeData[0];
         }
         this._cookieService.set('theme-info', JSON.stringify({ id: themeId, themeName: themeRef.themeCssFile }));
-        this.themeServiceService.getTheme(themeRef);      });
+        this.themeServiceService.switchTheme(themeRef);      });
   }
 
   addNewTheme(newTheme: any, existingTheme: any) {

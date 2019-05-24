@@ -1,20 +1,24 @@
 import { Injectable } from '@angular/core';
 import { HTTPService } from './service/http.service';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeServiceService {
 
-  rashmi = 'rashmi1';
-  constructor(private httpService: HTTPService) {
+  constructor(private _http: HttpClient) {
 
   }
 
-  getTheme(theme: any) {
+  loadThemes(url: string){
+    return this._http.get(url);
+  }
+  
+  switchTheme(theme: any) {
     // this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
     let response: any;
-    this.httpService.fetch('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(data => {
+    this._http.get('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(data => {
       response = data;
     }, error => {
     }, () => {
@@ -42,13 +46,8 @@ export class ThemeServiceService {
     });
 
     let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
-    // this.removeExistingTheme(currentTheme);
-    // this.addNewTheme(this.newThemePath, currentTheme);
-    // const themeObj = {
-    //     id: Math.floor(Math.random() * 9) + 1,
-    //     themeName: theme.themeCssFile
-    // };
-    // this.cookieService.set('theme-info', JSON.stringify(themeObj));
+    
   }
+
 
 }

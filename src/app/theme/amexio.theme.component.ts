@@ -10,21 +10,28 @@ export class AmexioThemeComponent implements OnInit {
 
     @Input('data') data: any[];
 
-    @Input('more-details') isMoreDetails : boolean;
+    @Input('more-details') isMoreDetails: boolean;
 
-    @Input('test-mode') testmode : boolean = true;
+    @Input('test-mode') testmode: boolean = true;
 
-    constructor(private themeServiceService: ThemeServiceService) {
+    constructor(private service: ThemeServiceService) {
 
     }
 
     ngOnInit() {
-
+        let responseData: any;
+        this.service.loadThemes("https://raw.githubusercontent.com/meta-magic/amexio-api-website/master/api/amexio-mda.json")
+            .subscribe((data) => {
+                responseData = data;
+            }, (error) => {
+                console.log("Unable to make http call");
+            }, () => {
+                this.data = responseData;
+            });
     }
 
     themeChange(theme: any) {
-        debugger;
-        this.themeServiceService.getTheme(theme);
+        this.service.switchTheme(theme);
     }
 
     onChange(value: boolean) {
