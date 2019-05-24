@@ -13,7 +13,6 @@ import {ThemeServiceService} from '../theme-service.service';
 })
 export class ThemeComponent implements OnInit {
 
-    mdThemeData: any;
     amexioThemeData: any;
     hasThemeInit: boolean = false;
     newThemePath: string;
@@ -23,18 +22,8 @@ export class ThemeComponent implements OnInit {
 
 
     ngOnInit() {
-
         let response: any;
-
-        this.http.get('assets/data/theme/themes-api-showcase.json', { responseType: 'json' }).subscribe(data => {
-            response = data;
-        }, error => {
-        }, () => {
-            this.mdThemeData = response;
-
-        });
-
-        this.http.get('assets/data/theme/theme-api-showcase-amexio.json', { responseType: 'json' }).subscribe(data => {
+        this.http.get('https://raw.githubusercontent.com/meta-magic/amexio-api-website/master/api/json/amexio-am.json', { responseType: 'json' }).subscribe(data => {
             response = data;
         }, error => {
         }, () => {

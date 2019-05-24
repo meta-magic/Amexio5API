@@ -6,19 +6,20 @@ import { Routes, RouterModule } from '@angular/router';
 import {CookieService} from 'ngx-cookie-service';
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {AmexioWidgetModule} from "amexio-ng-extensions";
+import {AmexioWidgetModule, AmexioEnterpriseModule} from "amexio-ng-extensions";
 import {HttpClientModule} from "@angular/common/http";
 import { ThemeComponent } from './theme.component';
-import { AmexioThemeComponent } from './amexio.theme.component';
 
 const routes: Routes = [
   { path: '', component: ThemeComponent },
 ];
 
 @NgModule({
-  imports: [CommonModule,HttpClientModule,FormsModule,AmexioWidgetModule,RouterModule.forChild(routes)],
+  imports: [CommonModule,HttpClientModule,FormsModule,AmexioWidgetModule, 
+    AmexioEnterpriseModule,  
+    RouterModule.forChild(routes)],
   exports: [RouterModule],
-  declarations : [ThemeComponent, AmexioThemeComponent],
+  declarations : [ThemeComponent],
   providers : [CookieService]
 })
 export class ThemeModule { }

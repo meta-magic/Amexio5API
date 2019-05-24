@@ -14,9 +14,8 @@ export class ThemeServiceService {
   loadThemes(url: string){
     return this._http.get(url);
   }
-  
+
   switchTheme(theme: any) {
-    // this.newThemePath = 'assets/themes/' + theme.themeCssFile + '.css';
     let response: any;
     this._http.get('https://api.amexio.org/api/mda/' + theme.themeJSONFile).subscribe(data => {
       response = data;
