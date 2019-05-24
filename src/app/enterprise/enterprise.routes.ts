@@ -7,6 +7,7 @@ import { EEContentDemoComponent } from "./content/content.compnent";
 import { EEAppointmentDemoComponent } from "./appointment/appointment.component";
 import { CalendarDemoComponent } from './calendar/calendar.demo.component';
 import { StepWizardDemoComponent } from 'src/app/enterprise/steps-wizard/step-wizard.component';
+import { ThemeSwitcherDemo } from './themeswitcher/themeswitcher.component';
 
 export const ENTERPRISE_ROUTE: Routes = [
 
@@ -28,4 +29,7 @@ export const ENTERPRISE_ROUTE: Routes = [
     {
         path: 'step-wizard-demo', component: StepWizardDemoComponent,
     },
+    {
+        path: 'theme-switcher-demo', component: ThemeSwitcherDemo,
+    }
 ] 

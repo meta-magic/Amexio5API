@@ -1,0 +1,114 @@
+{
+    "title": "Amexio Theme Switcher",
+    "description": "Theme Switcher component shows out of box 80+ material design themes",
+    "componentDescription": "Theme switcher component shows out of box 80+ material design themes. It also allows user to select the theme and check it",
+    
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties  <amexio-theme-switcher>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "test-mode",
+            "description": "This will disable theme test button",
+            "type": "boolean",
+            "default": "false",
+            "version":"5.12.1"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "themeswitcher/themeswitcher.html",
+      "tsUrl": "themeswitcher/themeswitcher.txt",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": true,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-calendar-component?embed=1&file=app/enterprise/calendar/calendar.demo.html&view=editor"
+    },
+    "isAccessibility": false,
+    "apiaccessibledata": [
+      {
+        "gridTitle": "Properties <amexio-calendar>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Key",
+            "width": 30
+          },
+          {
+            "dataindex": "description",
+            "text": "Function",
+            "width": 70
+          }
+        ],
+        "gridData": [
+          {
+            "name": "Tab",
+            "description": "Navigates on Tab click to the next element."
+          },
+          {
+            "name": "Shift+Tab",
+            "description": "Navigates on Shift+Tab click to the previous element."
+          },
+          {
+            "name": "Left Arrow",
+            "description": "Navigates focus from current active element to the previous active element."
+          },
+          {
+            "name": "Down Arrow",
+            "description": "Navigates focus from current active element to the previous active element."
+          },
+          {
+            "name": "Right Arrow",
+            "description": "Navigates focus from current active element to the previous active element."
+          },
+          {
+            "name": "Up Arrow",
+            "description": "Navigates focus from current active element to the next active element."
+          },
+          {
+            "name": "Enter",
+            "description": "On Enter click selects the focuses data"
+          }
+        ]
+      }
+    ]
+  }

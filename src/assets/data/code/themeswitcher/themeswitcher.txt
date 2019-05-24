@@ -1,0 +1,17 @@
+import { Component, OnInit } from "@angular/core";
+
+@Component({
+    selector: 'themeswitcher-demo',
+    templateUrl: './themeswitcher.demo.component.html'
+})
+export class ThemeSwitcherDemoComponent implements OnInit {
+ 
+    constructor() {
+         
+    }
+
+    ngOnInit() {        
+    }
+
+     
+}
