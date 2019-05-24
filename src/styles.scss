@@ -8,6 +8,7 @@
 .floatingpanel{
   position : fixed;
   z-index: 100;
+  
 }
 
 .floatingpanelbutton{
@@ -24,7 +25,7 @@
   z-index: 100;
   bottom: 12.5%;
   right: 20px;
-  
+  max-width: 300px;
 }
 
 .floatingpanelbutton:hover .floatingcontent {
@@ -34,7 +35,7 @@
 
 
 amexio-theme-switcher  .card-container{
-  max-width: 333.33px !important;
+  margin: 5px 5px !important;  
 }
 
 

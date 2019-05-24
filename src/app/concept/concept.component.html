@@ -81,10 +81,21 @@
                 </amexio-image>
             </amexio-layout-item>
        
+            <amexio-layout-item>
+                    <amexio-property-grid [key-value-data]="linksData" (onValueClick)="navigate($event)"></amexio-property-grid>
+            </amexio-layout-item>
         </amexio-layout-columns>
+
+        
+
     </amexio-body-ce>
     <amexio-action-ce [align]="'end'">
         <amexio-button [label]="'Next'" [type]="'theme-color'" [tooltip]="'toolTip'"  (onClick)="next()">
         </amexio-button>
     </amexio-action-ce>
+
+    
+
 </amexio-card-ce>
+
+

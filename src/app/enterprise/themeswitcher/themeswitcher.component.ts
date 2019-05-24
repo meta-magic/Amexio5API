@@ -6,11 +6,17 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ThemeSwitcherDemo implements OnInit{
 
+    toggle = false;
+    
     constructor(){
 
     }
 
     ngOnInit(){
         
+    }
+
+    switchTheme(){
+        this.toggle = !this.toggle;
     }
 }

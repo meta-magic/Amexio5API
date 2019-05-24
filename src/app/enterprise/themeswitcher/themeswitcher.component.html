@@ -1,5 +1,8 @@
-<amexio-api-structure [url]="'assets/componentjson/themeswitcher/themeswitcher.json'">    
+<amexio-api-structure [url]="'assets/componentjson/themeswitcher/themeswitcher.json'">
     <amexio-api-demo>
-        <amexio-theme-switcher></amexio-theme-switcher>
+        <amexio-button [label]="(toggle) ? 'Hide Theme Switcher' : 'Show Theme Switcher' " [type]="'theme-color'" [tooltip]="'toolTip'"
+            (onClick)="switchTheme()">
+        </amexio-button>
+        <amexio-theme-switcher *ngIf="toggle"></amexio-theme-switcher>
     </amexio-api-demo>
 </amexio-api-structure>
