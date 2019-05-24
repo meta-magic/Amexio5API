@@ -19,7 +19,7 @@
               Simple Data Grid
             </amexio-header>
             <amexio-body>
-              <amexio-datagrid amexioColorPalette [color-palette]="'vibrant'"  [gradient]="true" [enable-column-fiter]="true" title="Simple Data Grid " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'"
+              <amexio-datagrid amexioColorPalette [color-palette]="'vibrant'"  [enable-column-filter]="false" title="Simple Data Grid " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'"
                                [data-reader]="'data'" [page-size]="10">
 
                 <amexio-data-table-column [data-index]="'countryName'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
