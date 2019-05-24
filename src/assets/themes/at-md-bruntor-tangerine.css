@@ -2505,7 +2505,7 @@ input:checked + .largeType2ToggleSlider:before {
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 15px;
+  height: 10px;
   border-radius: 5px;
   background: var(--componentBGColor);
   color: var(--themeFontColor);
@@ -2513,9 +2513,7 @@ input:checked + .largeType2ToggleSlider:before {
   outline: none;
   opacity: 0.7;
   -webkit-transition: .2s;
-  transition: opacity .2s; }
-
-.slider:hover {
+  transition: opacity .2s;
   opacity: 1; }
 
 .slider::-webkit-slider-thumb {
