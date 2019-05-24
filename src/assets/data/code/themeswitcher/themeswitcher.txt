@@ -5,7 +5,7 @@ import { Component, OnInit } from "@angular/core";
     templateUrl: './themeswitcher.demo.component.html'
 })
 export class ThemeSwitcherDemoComponent implements OnInit {
- 
+    
     constructor() {
          
     }
