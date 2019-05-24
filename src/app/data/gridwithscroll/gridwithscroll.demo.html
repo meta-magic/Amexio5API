@@ -23,7 +23,7 @@
           </amexio-header>
           <amexio-body>
             <amexio-datagrid
-              [enable-column-fiter]="true" [height]="200" title="Country Grid" [enable-checkbox]="false"  [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'" [data-reader]="'data'"  [page-size] = "10">
+              [enable-column-filter]="true" [height]="200" title="Country Grid" [enable-checkbox]="false"  [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'" [data-reader]="'data'"  [page-size] = "10">
               <amexio-data-table-column [data-index]="'countryName'" 
                                         [data-type]="'string'" 
                                         [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">

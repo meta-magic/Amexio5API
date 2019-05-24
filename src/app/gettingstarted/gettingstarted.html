@@ -134,12 +134,17 @@
                         </amexio-row>
                         <amexio-row>
                             <amexio-column size="12">
-                                <span style="cursor: pointer;">3. Install Amexio D3 Chart</span>
+                                <span style="cursor: pointer;">3. Dependencies</span>
                             </amexio-column>
                         </amexio-row>
                         <amexio-row>
                             <amexio-column size="12">
-                                <span style="cursor: pointer;">4. Amexio License</span>
+                                <span style="cursor: pointer;">4. Install Amexio D3 Chart</span>
+                            </amexio-column>
+                        </amexio-row>
+                        <amexio-row>
+                            <amexio-column size="12">
+                                <span style="cursor: pointer;">5. Amexio License</span>
                             </amexio-column>
                         </amexio-row>
                     </div>
@@ -254,7 +259,7 @@
                                     <amexio-tab title="Modules">
                                         <p>Amexio Library Consist of the following modules</p>
                                         <ng-container *ngIf="modulesData">
-                                            <amexio-datagrid title="" [enable-column-fiter]="false" [data]="modulesData"
+                                            <amexio-datagrid title="" [enable-column-filter]="false" [data]="modulesData"
                                                 [height]="300" [enable-data-filter]="false">
                                                 <amexio-data-table-column [width]="25" [data-index]="'name'"
                                                     [data-type]="'string'" [hidden]="false" [text]="'Module Name'">
@@ -325,7 +330,7 @@
                                     <amexio-tab title="Modules">
                                         <p>Amexio Library Consist of the following modules</p>
                                         <ng-container *ngIf="modulesData">
-                                            <amexio-datagrid title="" [enable-column-fiter]="false" [data]="modulesData"
+                                            <amexio-datagrid title="" [enable-column-filter]="false" [data]="modulesData"
                                                 [height]="300" [enable-data-filter]="false">
                                                 <amexio-data-table-column [width]="25" [data-index]="'name'"
                                                     [data-type]="'string'" [hidden]="false" [text]="'Module Name'">
@@ -464,7 +469,7 @@
 
                 <amexio-row>
                     <amexio-column size="12">
-                        <amexio-datagrid title="Amexio Material Themes" [enable-column-fiter]="false" [height]="300"
+                        <amexio-datagrid title="Amexio Material Themes" [enable-column-filter]="false" [height]="300"
                             [http-method]="'get'" [http-url]="'assets/apireference/modules/themes.json'"
                             [data-reader]="'properties'" [enable-data-filter]="false">
                             <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'"
@@ -483,7 +488,7 @@
                 <amexio-row>
                     <amexio-column size="12">
                         <amexio-datagrid title="Amexio Themes (Deprecated from version v5.12) "
-                            [enable-column-fiter]="false" [height]="300" [http-method]="'get'"
+                            [enable-column-filter]="false" [height]="300" [http-method]="'get'"
                             [http-url]="'assets/apireference/modules/amx_themes.json'" [data-reader]="'properties'"
                             [enable-data-filter]="false">
                             <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'"
@@ -501,7 +506,7 @@
     <br>
     <amexio-row>
         <amexio-column size="12">
-            <amexio-panel [header]="true" [title]="'Peer Dependencies'" [expanded]="true">
+            <amexio-panel [header]="true" [title]="'3. Dependencies'" [expanded]="true">
                 <p style="color: darkred"></p>
                 <b>Add : </b>
                 <code style="font-weight: bold;color:  #c0392b">node_modules/font-awesome/scss/font-awesome.scss</code>
@@ -514,7 +519,7 @@
     <br>
     <amexio-row>
         <amexio-column size="12">
-            <amexio-panel [header]="true" [title]="'3. Install Amexio Chart D3'" [expanded]="true">
+            <amexio-panel [header]="true" [title]="'4. Install Amexio Chart D3'" [expanded]="true">
                 <amexio-row>
                     <amexio-column size="12">
                         <amexio-tab title="Installation" active="true">
@@ -568,7 +573,7 @@
 
     <amexio-row>
         <amexio-column size="12">
-            <amexio-panel [header]="true" [title]="'4. Amexio License'" [expanded]="true">
+            <amexio-panel [header]="true" [title]="'5. Amexio License'" [expanded]="true">
                 <br>
                 <b>Amexio API License for Standard & Enterprise Edition</b>
                 <p>

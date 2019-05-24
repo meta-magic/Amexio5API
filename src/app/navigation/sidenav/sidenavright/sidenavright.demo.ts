@@ -41,7 +41,7 @@ import {HttpClient} from "@angular/common/http";
           
           </amexio-tab>
           <amexio-tab title="API Reference">
-            <amexio-datagrid title="Properties" [enable-column-fiter]="false"
+            <amexio-datagrid title="Properties" [enable-column-filter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/navigation/sidenav.json'"
                              [data-reader]="'properties'"
@@ -56,7 +56,7 @@ import {HttpClient} from "@angular/common/http";
                                         [text]="'Description'"></amexio-data-table-column>
             </amexio-datagrid>
             <br>
-            <amexio-datagrid title="Events" [enable-column-fiter]="false"
+            <amexio-datagrid title="Events" [enable-column-filter]="false"
                              [http-method]="'get'"
                              [http-url]="'assets/apireference/navigation/sidenav.json'"
                              [data-reader]="'events'"
