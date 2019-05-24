@@ -6558,6 +6558,25 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   background-color: transparent !important;
   opacity: 0.9 !important; }
 
+.more-content {
+  position: absolute;
+  min-width: 160px;
+  z-index: 3;
+  padding: 10px 0px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  color: var(--appHeaderFontColor);
+  background-color: var(--appHeaderBGColor); }
+
+.more-content .dropdownicon {
+  float: right;
+  padding: 10px 10px !important; }
+
+.more-content .topnavmainbarinneritems .nav-dropdown-content {
+  position: unset; }
+
+.more-content .topnavmainbarinneritems .nav-dropdown {
+  float: none; }
+
 /****************************************************************************
     Component Name : Paginator
     Version : Amexio v4.0 onwards
