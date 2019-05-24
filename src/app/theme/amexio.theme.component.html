@@ -16,7 +16,7 @@
                 <label role="text" style="outline: none; cursor: text;" class="label-content medium-bold">
                     {{col.themeName}}
                 </label>
-                <amexio-button [icon]="'fa fa-check'" [type]="'transparent'" (onClick)="themeChange(col)"></amexio-button>
+                <amexio-button *ngIf="testmode" [icon]="'fa fa-check'" [type]="'transparent'" (onClick)="themeChange(col)"></amexio-button>
             </header>
             <div *ngIf="isMoreDetails" class="card-body cardbody">
                 <img [attr.alt]="col.themeName" [attr.src]="'assets/images/theme-icons/'+col.themeImageFile"

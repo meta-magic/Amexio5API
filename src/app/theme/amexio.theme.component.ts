@@ -12,6 +12,8 @@ export class AmexioThemeComponent implements OnInit {
 
     @Input('more-details') isMoreDetails : boolean;
 
+    @Input('test-mode') testmode : boolean = true;
+
     constructor(private themeServiceService: ThemeServiceService) {
 
     }
