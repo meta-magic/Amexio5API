@@ -143,6 +143,14 @@
           "name": "enable-column-fiter",
           "type": "boolean",
           "default": "true",
+          "description": "Set false to hide Column toggle functionality. (This attribute has been deprecated, please use 'enable-column-filter'.",
+          "version": "4.0.0 onwards"
+        },
+        {
+          "deprecated": false,
+          "name": "enable-column-filter",
+          "type": "boolean",
+          "default": "true",
           "description": "Set false to hide Column toggle functionality.",
           "version": "4.0.0 onwards"
         },
