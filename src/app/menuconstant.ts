@@ -1,7 +1,7 @@
 export const MENUCONSTANT = 
 {
 
-    HOMEMENUS: [{"text":"Quick Start","icon":"fa fa-bars  ","link":"getting-started"},{"text":"Themes","icon":"fa fa-snowflake-o","link":"amexio-colors"},{"text":"D3 Charts","link":"d3-charts","icon":"fa fa-openid"},{"text":"Accessibility","link":"amexio-accessibility","icon":"fa fa-universal-access"}],
+    HOMEMENUS: [{"text":"Concept","icon":"fab fa-leanpub","link":"concept-page"},{"text":"Quick Start","icon":"fa fa-bars  ","link":"getting-started"},{"text":"Themes","icon":"fa fa-snowflake-o","link":"amexio-colors"},{"text":"D3 Charts","link":"d3-charts","icon":"fa fa-openid"},{"text":"Accessibility","link":"amexio-accessibility","icon":"fa fa-universal-access"}],
 
     DIRECTIVES: [{"text":"Color Palette","icon":"fa fa-globe  ","badge":"New","link":"directive-demo/color-palette"}],
     

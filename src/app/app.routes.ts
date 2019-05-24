@@ -2,13 +2,16 @@
  * Created by pratik on 11/12/17.
  */
 import { Routes } from '@angular/router';
+import { ConceptPage } from './concept/concept.component';
 
 export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: '', redirectTo: 'getting-started', pathMatch: 'full'
   },
 
-  
+  {
+    path: 'concept-page', component: ConceptPage
+  },
 
   /** Getting Started  Page */
   {

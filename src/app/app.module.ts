@@ -19,11 +19,13 @@ import { HTTPService } from './service/http.service';
 import {AppPreloadingStrategy} from './preloading.service';
 import {ThemeServiceService} from './theme-service.service';
 import { CopyRightComponent } from './copyright/copyright.component';
+import { ConceptPage } from './concept/concept.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CopyRightComponent
+    CopyRightComponent,
+    ConceptPage
   ],
   imports: [
     BrowserModule,
