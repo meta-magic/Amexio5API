@@ -6,7 +6,7 @@ import { ConceptPage } from './concept/concept.component';
 
 export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
-    path: '', redirectTo: 'getting-started', pathMatch: 'full'
+    path: '', redirectTo: 'concept-page', pathMatch: 'full'
   },
 
   {
