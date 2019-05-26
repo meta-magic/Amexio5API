@@ -190,6 +190,14 @@ export class AppComponent {
         "icon": "fa fa-television fa-fw",
         "submenus": [
           {
+            "text": "Roadmap",
+            "link": "https://amexio.tech/roadmap"
+          },
+          {
+            "text": "Support",
+            "link": "https://amexio.tech/support"
+          },
+          {
             "text": "Pricing",
             "link": "https://amexio.tech/pricing"
           },
@@ -200,24 +208,20 @@ export class AppComponent {
           {
             "text": "Downloads",
             "link": "https://amexio.tech/download"
-          }, {
-            "text": "Subscribe ",
-            "link": "https://canvas.amexio.org/#/user/signup"
           },
           {
-            "text": "Support",
-            "link": "https://amexio.tech/support"
-          }, {
-            "text": "Canvas Login (Beta)",
-            "link": "https://canvas.amexio.org/"
-          }, {
             "text": "License and Other Docs",
             "link": "https://amexio.tech/license-and-other-docs-1"
           },
           {
-            "text": "Roadmap",
-            "link": "https://amexio.tech/roadmap"
-          }]
+            "text": "Canvas Login (Beta)",
+            "link": "https://canvas.amexio.org/"
+          },
+          {
+            "text": "Subscribe ",
+            "link": "https://canvas.amexio.org/#/user/signup"
+          }
+        ]
       },
       {
         "text": "Training",

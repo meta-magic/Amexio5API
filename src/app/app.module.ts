@@ -21,13 +21,15 @@ import {ThemeServiceService} from './theme-service.service';
 import { CopyRightComponent } from './copyright/copyright.component';
 import { ConceptPage } from './concept/concept.component';
 import { AmexioFloatingPanelComponent } from './floatingpanel/floatingpanel.component';
+import { KeyFeaturesComponent } from './concept/keyfeatures.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CopyRightComponent,
     ConceptPage,
-    AmexioFloatingPanelComponent
+    AmexioFloatingPanelComponent,
+    KeyFeaturesComponent
   ],
   imports: [
     BrowserModule,
