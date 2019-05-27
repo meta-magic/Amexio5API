@@ -7,9 +7,13 @@ import { Component, OnInit } from "@angular/core";
 export class ThemeSwitcherDemo implements OnInit{
 
     toggle = false;
-    
+    colsize = 3;
+    colsizedata : any[];
     constructor(){
-
+        this.colsizedata = [];
+        this.colsizedata.push({"colsize":3});
+        this.colsizedata.push({"colsize":2});
+        this.colsizedata.push({"colsize":1});
     }
 
     ngOnInit(){
@@ -18,5 +22,9 @@ export class ThemeSwitcherDemo implements OnInit{
 
     switchTheme(){
         this.toggle = !this.toggle;
+    }
+
+    onColSizeSelected(event:any){
+
     }
 }
