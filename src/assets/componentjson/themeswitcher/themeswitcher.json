@@ -64,6 +64,20 @@
             "type": "number",
             "default": "3",
             "version":"5.12.2"
+          },
+          {
+            "name": "horizontal-position",
+            "description": "Horizontal position of theme selector panel (left/right)",
+            "type": "string",
+            "default": "right",
+            "version":"5.12.2"
+          },
+          {
+            "name": "vertical-position",
+            "description": "Vertical position of theme selector panel (top/bottom)",
+            "type": "string",
+            "default": "bottom",
+            "version":"5.12.2"
           }
         ]
       }

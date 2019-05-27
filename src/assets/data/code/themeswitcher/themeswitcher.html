@@ -1,7 +1,34 @@
-<amexio-radio-group [field-label]="'Select Col Size'" name="colsize" [display-field]="'colsize'"
-    [value-field]="'colsize'" [horizontal]="true" [data]="colsizedata" [(ngModel)]="colsize">
-</amexio-radio-group>
-
-
-<amexio-theme-switcher [relative]="true" [col-size]="colsize">
-</amexio-theme-switcher>
+<amexio-row>
+        <amexio-column [size]=1>
+            <amexio-checkbox [field-label]="'Relative'" [(ngModel)]="relative">
+            </amexio-checkbox>
+        </amexio-column>
+        <amexio-column [size]=3>
+            <amexio-radio-group [field-label]="'Select Col Size'" name="colsize" [display-field]="'colsize'"
+                [value-field]="'colsize'" [horizontal]="true" [data]="colsizedata" [(ngModel)]="colsize">
+            </amexio-radio-group>
+        </amexio-column>
+        <amexio-column [size]=3 *ngIf="!relative" >
+            <amexio-radio-group [field-label]="'Horizontal Position'" name="hpos"
+                [display-field]="'display'" [value-field]="'value'" [horizontal]="true" [data]="hposdata"
+                [(ngModel)]="hpos">
+            </amexio-radio-group>
+        </amexio-column>
+        <amexio-column [size]=3 *ngIf="!relative" >
+            <amexio-radio-group [field-label]="'Vertical Position'" name="vpos"
+                [display-field]="'display'" [value-field]="'value'" [horizontal]="true" [data]="vposdata"
+                [(ngModel)]="vpos">
+            </amexio-radio-group>
+        </amexio-column>
+        <amexio-column [size]=2>
+            <amexio-button [label]="'Show'" [type]="'theme-color'" [tooltip]="'toolTip'" (onClick)="showTS($event)">
+            </amexio-button>
+        </amexio-column>
+    </amexio-row>
+    <amexio-row>
+        <amexio-column [size]=12>
+            <amexio-theme-switcher (onClose)="onClose($event)" [show]="toggle" [relative]="relative"
+                [horizontal-position]="hpos" [vertical-position]="vpos" [col-size]="colsize">
+            </amexio-theme-switcher>
+        </amexio-column>
+    </amexio-row>

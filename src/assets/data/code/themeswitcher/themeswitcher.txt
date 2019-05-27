@@ -1,19 +1,47 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: 'themeswitcher-demo',
-    templateUrl: './themeswitcher.demo.component.html'
+    selector : 'theme-switcher',
+    templateUrl : './themeswitcher.component.html'
 })
-export class ThemeSwitcherDemoComponent implements OnInit {
-    
+export class ThemeSwitcherDemo implements OnInit{
+
+    toggle = true;
+    relative = true;
+
+    vpos = 'top';
+    hpos = 'left';
     colsize = 3;
 
-    constructor() {
-         
+    vposdata = [];
+    hposdata = [];
+    colsizedata = [];
+
+    constructor(){        
+        this.colsizedata.push({"colsize":3});
+        this.colsizedata.push({"colsize":2});
+        this.colsizedata.push({"colsize":1});
+        
+        this.hposdata.push({'display':'Right','value':'right'});
+        this.hposdata.push({'display':'Left','value':'left'});
+        
+        this.vposdata.push({'display':'Top','value':'top'});
+        this.vposdata.push({'display':'Bottom','value':'bottom'});
+        
     }
 
-    ngOnInit() {        
+    ngOnInit(){
+        
     }
 
-     
+    switchTheme(){
+        this.toggle = !this.toggle;
+    }
+
+    onClose(event:any){
+        this.toggle = false;
+    }
+    showTS(event:any){
+        this.toggle = true;
+    }
 }
