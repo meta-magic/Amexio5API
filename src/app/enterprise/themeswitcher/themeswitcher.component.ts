@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ThemeSwitcherDemo implements OnInit{
 
-    toggle = true;
+    toggle = false;
     relative = true;
 
     vpos = 'top';

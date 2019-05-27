@@ -13,7 +13,7 @@
             <amexio-column [size]=3 *ngIf="!relative" >
                 <amexio-radio-group [field-label]="'Horizontal Position'" name="hpos"
                     [display-field]="'display'" [value-field]="'value'" [horizontal]="true" [data]="hposdata"
-                    [(ngModel)]="hpos">
+                    [(ngModel)]="hpos" >
                 </amexio-radio-group>
             </amexio-column>
             <amexio-column [size]=3 *ngIf="!relative" >
@@ -27,7 +27,8 @@
                 </amexio-button>
             </amexio-column>
         </amexio-row>
-        <amexio-row>
+        <amexio-row *ngIf="toggle" [ngStyle]="{'margin-top': (relative) ? '-45px':null, 
+                                               'position':(relative) ? 'absolute':'relative'}" >
             <amexio-column [size]=12>
                 <amexio-theme-switcher (onClose)="onClose($event)" [show]="toggle" [relative]="relative"
                     [horizontal-position]="hpos" [vertical-position]="vpos" [col-size]="colsize">

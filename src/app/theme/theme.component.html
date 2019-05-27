@@ -2,10 +2,10 @@
 
 <amexio-tab-view [closable]="false">
     <amexio-tab title="Material Design" [active]="true">
-        <amexio-theme-switcher [relative]="true" [mda]="true" ></amexio-theme-switcher>
+        <amexio-theme-switcher [closeable]="false" [relative]="true" [mda]="true" ></amexio-theme-switcher>
     </amexio-tab>
     <amexio-tab title="Amexio">
-        <amexio-theme-switcher  [relative]="true"  [mda]="false" [test-mode]="false" [data]="amexioThemeData"></amexio-theme-switcher>
+        <amexio-theme-switcher  [closeable]="false" [relative]="true"  [mda]="false" [test-mode]="false" [data]="amexioThemeData"></amexio-theme-switcher>
     </amexio-tab>
     <amexio-tab title="Colors">
         Eventually we can apply this attribute [amexio-color] to all components, currently we can apply to progress bar
