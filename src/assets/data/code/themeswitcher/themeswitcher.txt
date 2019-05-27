@@ -6,6 +6,8 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ThemeSwitcherDemoComponent implements OnInit {
     
+    colsize = 3;
+
     constructor() {
          
     }

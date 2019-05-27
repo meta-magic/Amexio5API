@@ -1,1 +1,7 @@
-<amexio-theme-switcher></amexio-theme-switcher>
+<amexio-radio-group [field-label]="'Select Col Size'" name="colsize" [display-field]="'colsize'"
+    [value-field]="'colsize'" [horizontal]="true" [data]="colsizedata" [(ngModel)]="colsize">
+</amexio-radio-group>
+
+
+<amexio-theme-switcher [relative]="true" [col-size]="colsize">
+</amexio-theme-switcher>

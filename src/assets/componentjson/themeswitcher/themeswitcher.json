@@ -50,6 +50,20 @@
             "type": "boolean",
             "default": "false",
             "version":"5.12.1"
+          },
+          {
+            "name": "relative",
+            "description": "Place amexio theme switcher to relative position",
+            "type": "boolean",
+            "default": "false",
+            "version":"5.12.2"
+          },
+          {
+            "name": "col-size",
+            "description": "No of column per rows",
+            "type": "number",
+            "default": "3",
+            "version":"5.12.2"
           }
         ]
       }
