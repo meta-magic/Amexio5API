@@ -6614,6 +6614,14 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   background-color: transparent !important;
   opacity: 0.9 !important; }
 
+.navBannerCss {
+  background-color: var(--appHeaderBGColor);
+  color: var(--appHeaderFontColor);
+  width: 100%;
+  display: flex;
+  height: auto;
+  padding: 10px; }
+
 /****************************************************************************
     Component Name : Paginator
     Version : Amexio v4.0 onwards
@@ -8569,7 +8577,8 @@ amexio-layout amexio-layout-item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: relative; }
+  position: relative;
+  z-index: 2; }
 
 .creative-header .creative-header-div {
   height: auto; }
@@ -8961,7 +8970,8 @@ amexio-layout-columns amexio-layout-item {
 
 .card-container-wider-header amexio-header-ce {
   margin: 0px -10px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  z-index: 2; }
 
 .card-container-narrower-header {
   margin: 10px 10px; }
@@ -8969,6 +8979,22 @@ amexio-layout-columns amexio-layout-item {
 .card-container-narrower-header amexio-header-ce {
   margin: -10px 10px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
+.ce-header-ribbon-l {
+  border-color: transparent var(--componentHeaderBGColor) transparent transparent;
+  left: -20px; }
+
+.ce-header-ribbon-r {
+  border-color: transparent transparent transparent var(--componentHeaderBGColor);
+  right: -20px; }
+
+.ce-header-ribbon {
+  border-style: solid;
+  border-width: 10px;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: -10px; }
 
 /** creative card - Structure CSS **/
 /****************************************************************************
