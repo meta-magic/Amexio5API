@@ -470,7 +470,7 @@
     },
     "isAccessibility": false,
     "liveMetadata": {
-        "disabled": false,
+        "disabled": true,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-card?embed=1&file=app/layout/Creativecard/creativecard.demo.html&view=editor"
     }
 }
