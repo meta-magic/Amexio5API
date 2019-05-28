@@ -41,7 +41,9 @@ import {HttpClient} from "@angular/common/http";
 export class ListBoxDemo {
   
   copyMsgArray: any[];
-  localData: any;
+  localData1: any;
+  localData2: any;
+  localData3: any;
   onRowClickData: any;
   selectedData: any;
   progressType: string;
@@ -55,7 +57,7 @@ export class ListBoxDemo {
     { "text": "Edit", "icon": "", "seperator": true }
         , { "text": "Send data in email", "icon": "" }];
 
-    this.localData = {"response": {
+    this.localData1 = {"response": {
       "success": true,
         "message": "Fetching  Data  Request Succeeded: Profile",
         "data": [
@@ -111,7 +113,118 @@ export class ListBoxDemo {
         }
       ]
     }};
+    this.localData2 = {"response": {
+      "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+        {
+          "name": "Buck Kulkarni",
+          "name_official": "Buck Kulkarni",
+          "profile": "buck.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Araf Karsh Hamid",
+          "name_official": "Araf Karsh Hamid",
+          "profile": "karsh.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "ketan Gote",
+          "name_official": "Ketan Gote",
+          "profile": "ketan.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
 
+        {
+          "name": "Dattaram Gawas",
+          "name_official": "Dattaram Gawas",
+          "profile": "dats.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Sagar Jadhav",
+          "name_official": "Sagar Jadhav",
+          "profile": "sagar.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+      
+        {
+          "name": "Rashmi Thakkar",
+          "name_official": "Rashmi Thakkar",
+          "profile": "rashmi.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Deepali Arvind",
+          "name_official": "Deepali Arvind",
+          "profile": "dipali.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Ashwini Agre",
+          "name_official": "Ashwini Agre",
+          "profile": "ashwini.jpg",
+          "email" : "XYZ@metamagic.in"
+        }
+      ]
+    }};
+    this.localData3 = {"response": {
+      "success": true,
+        "message": "Fetching  Data  Request Succeeded: Profile",
+        "data": [
+        {
+          "name": "Buck Kulkarni",
+          "name_official": "Buck Kulkarni",
+          "profile": "buck.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Araf Karsh Hamid",
+          "name_official": "Araf Karsh Hamid",
+          "profile": "karsh.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "ketan Gote",
+          "name_official": "Ketan Gote",
+          "profile": "ketan.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+
+        {
+          "name": "Dattaram Gawas",
+          "name_official": "Dattaram Gawas",
+          "profile": "dats.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Sagar Jadhav",
+          "name_official": "Sagar Jadhav",
+          "profile": "sagar.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+      
+        {
+          "name": "Rashmi Thakkar",
+          "name_official": "Rashmi Thakkar",
+          "profile": "rashmi.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Deepali Arvind",
+          "name_official": "Deepali Arvind",
+          "profile": "dipali.jpg",
+          "email" : "XYZ@metamagic.in"
+        },
+        {
+          "name": "Ashwini Agre",
+          "name_official": "Ashwini Agre",
+          "profile": "ashwini.jpg",
+          "email" : "XYZ@metamagic.in"
+        }
+      ]
+    }};
     this.projectData = {
       "response": {
         "success": true,

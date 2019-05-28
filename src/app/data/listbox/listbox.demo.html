@@ -18,7 +18,7 @@
           </amexio-header>
           <amexio-body>
             <amexio-listbox [enable-checkbox]="true" [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
-              [data]="localData" [filter]="true" [data-reader]="'response.data'" [display-field]="'name_official'"
+              [data]="localData1" [filter]="true" [data-reader]="'response.data'" [display-field]="'name_official'"
               (selectedRows)="getSelectedData($event)">
             </amexio-listbox>
             <p>
@@ -35,7 +35,7 @@
             List Box with Template
           </amexio-header>
           <amexio-body>
-            <amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'" [data]="localData"
+            <amexio-listbox [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'" [data]="localData2"
               [filter]="false" [data-reader]="'response.data'" [display-field]="'name'" (onRowClick)="onRowClick($event)">
               <ng-template #amexioBodyTmpl let-row="row">
                 <amexio-row>
@@ -53,7 +53,7 @@
             </p>-->
 
             <amexio-row>
-              <amexio-column [size]="5">
+              <amexio-column [fit]="true" [size]="5">
                 <amexio-listbox [height]="360" [data]="projectData" [filter]="false" [header]="'Project'"
                   [enable-checkbox]="false" [data-reader]="'response.data'" [display-field]="'name'">
                   <ng-template #amexioBodyTmpl let-row="row">
@@ -76,7 +76,7 @@
                   </ng-template>
                 </amexio-listbox>
               </amexio-column>
-              <amexio-column [size]="7">
+              <amexio-column [fit]="true" [size]="7">
                 <amexio-listbox [height]="400" [data]="browserData" [filter]="false" [header]="'Browser Stats'"
                   [enable-checkbox]="false" [data-reader]="'response.data'" [display-field]="'name'">
                   <ng-template #amexioBodyTmpl let-row="row">
@@ -122,7 +122,7 @@
           </amexio-header>
           <amexio-body>
             <amexio-listbox [enable-checkbox]="true" [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
-              [data]="localData" [filter]="true" [data-reader]="'response.data'" [context-menu]="contextMenuData"
+              [data]="localData3" [filter]="true" [data-reader]="'response.data'" [context-menu]="contextMenuData"
               [display-field]="'name_official'" (selectedRows)="getSelectedData($event)">
             </amexio-listbox>
           </amexio-body>
