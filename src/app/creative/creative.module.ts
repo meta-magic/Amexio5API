@@ -16,13 +16,14 @@ import { HomePageDemo } from './homepage/homepage.demo';
 import { ViewportDemoComponent } from './viewport/viewport.demo';
 import { CreativeCarouselComponent } from "./carousel/carouselce.demo";
 import { MenuDemoComponent } from "./menu/menu.demo";
+import { RibbonCardDemo } from "./ribbonce/ribbon.demo";
 
 /**
  * Created by kedar on 6/2/19.
  */
 @NgModule({
     declarations: [CreativeCardDemo, ViewportDemoComponent, CreativeWindowDemo, CreativeFormDemo, CreativeCircularProgressBarDemo, HomePageDemo,
-        CreativeCarouselComponent, MenuDemoComponent],
+        CreativeCarouselComponent, MenuDemoComponent, RibbonCardDemo],
     imports: [
         CommonModule,
         FormsModule,

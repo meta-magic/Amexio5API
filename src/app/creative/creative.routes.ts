@@ -7,6 +7,7 @@ import { HomePageDemo } from './homepage/homepage.demo';
 import { ViewportDemoComponent } from './viewport/viewport.demo';
 import { CreativeCarouselComponent } from './carousel/carouselce.demo';
 import { MenuDemoComponent } from './menu/menu.demo';
+import { RibbonCardDemo } from './ribbonce/ribbon.demo';
 
 /**
  * Created by kedar on 6/2/19.
@@ -36,5 +37,8 @@ export const CREATIVE_ROUTE: Routes = [
     },
     {
         path: 'menu-ce-demo', component: MenuDemoComponent, 
+    },
+    {
+        path: 'ribbon-card-demo', component: RibbonCardDemo,
     }
 ];
