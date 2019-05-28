@@ -1,7 +1,12 @@
 {
     "title": "Creative Card",
     "description": "The creative card is a powerful Panel with simple to use layouts and features",
-    "componentDescription": "Amexio Creative Card can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows  1. Header 2. Body 3. Action",
+    "componentDescription": "Amexio Creative Card can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows",
+    "descriptionDetail": [
+        "Header",
+        "Body",
+        "Action"
+    ],
     "compFeaturesTitle": "Key-Features",
     "keyFeatures": [
         "  Layout Structure (Header, Body, Action)",

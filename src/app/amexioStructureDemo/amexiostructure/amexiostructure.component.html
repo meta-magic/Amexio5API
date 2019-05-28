@@ -15,8 +15,15 @@
     <ng-container *ngIf="comData?.componentDescription">
       <amexio-box [padding]="true" align="left">
         <ng-container>{{comData?.componentDescription}}</ng-container><br>
-        <br>
         <ng-container>
+            <ol>
+            <ng-container *ngFor="let item of comData.descriptionDetail">
+                <li>
+                  {{item}}
+                </li>
+              </ng-container>
+            </ol>
+              <!-- <br> -->
           <amexio-label [size]="'medium-bold'">{{comData?.compFeaturesTitle}}</amexio-label><br>
         </ng-container>
         <br>
