@@ -15,12 +15,16 @@ import { EEAppointmentDemoComponent } from "./appointment/appointment.component"
 import { CalendarDemoComponent } from "./calendar/calendar.demo.component";
 import {StepWizardDemoComponent} from './steps-wizard/step-wizard.component';
 import { ThemeSwitcherDemo } from "./themeswitcher/themeswitcher.component";
+import {TreeTabDemoComponent} from './tree-tab/tree-tab.component';
+
+import { RouteComponent } from './tree-tab/router-component';
+
 /**
  * Created by kedar on 4/2/19.
  */
 @NgModule({
-    declarations: [ThemeSwitcherDemo,YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-        EEAppointmentDemoComponent, CalendarDemoComponent ,StepWizardDemoComponent],
+    declarations: [RouteComponent, ThemeSwitcherDemo,YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
+        EEAppointmentDemoComponent, CalendarDemoComponent ,StepWizardDemoComponent, TreeTabDemoComponent],
     imports: [
         CommonModule, 
         AmexioEnterpriseModule,
@@ -30,6 +34,7 @@ import { ThemeSwitcherDemo } from "./themeswitcher/themeswitcher.component";
         AmexioWidgetModule,
         RouterModule.forChild(ENTERPRISE_ROUTE),
     ],
+    entryComponents: [RouteComponent],
     providers: []
 })
 export class EnterpriseModule {

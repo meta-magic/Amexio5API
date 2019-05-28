@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 
-
 import { YoutubePlayerDemoComponent } from "./youtube-player/youtube.demo.component";
 import { EECarouselDemoComponent } from "./multi-item-carousel/multi.item.carousel.demo";
 import { EEContentDemoComponent } from "./content/content.compnent";
@@ -8,6 +7,7 @@ import { EEAppointmentDemoComponent } from "./appointment/appointment.component"
 import { CalendarDemoComponent } from './calendar/calendar.demo.component';
 import { StepWizardDemoComponent } from 'src/app/enterprise/steps-wizard/step-wizard.component';
 import { ThemeSwitcherDemo } from './themeswitcher/themeswitcher.component';
+import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
 
 export const ENTERPRISE_ROUTE: Routes = [
 
@@ -22,6 +22,9 @@ export const ENTERPRISE_ROUTE: Routes = [
     },
     {
         path: 'ee-appointment-demo', component: EEAppointmentDemoComponent,
+    },
+    {
+        path: 'tree-tab-demo', component: TreeTabDemoComponent,
     },
     {
         path: 'ee-calendar-demo', component: CalendarDemoComponent,

@@ -1,0 +1,108 @@
+{
+  "title": "",
+  "description": "Using Appointment Scheduler you can take the appointment time from the end-user. The component displays a week of data (day wise - Monday to Sunday) and the time available for the appointment.  The component supports taking multiple time for the appointment by enabling the attribute multi-select.",
+ 
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-ee-appointment>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+            "name": "data",
+            "version": "5.13 Onwards",
+            "description": "Provides data for side nav",
+            "type": "any",
+            "default": ""
+        },
+        {
+            "name": "data-reader",
+            "description": "Key in JSON Datasource for records.",
+            "version": "5.13 Onwards",
+            "type": "string",
+            "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+         {
+            "name": "onNodeClick()",
+            "version": "5.13 Onwards",
+            "description": "It will fire on selection of single node."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "enterprise/tree-tab/ee.html",
+    "tsUrl": "enterprise/tree-tab/ee.text",
+
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-appointment1?embed=1&file=app/enterprise/appointment/appointment.demo.html&view=editor"
+  },
+  "isAccessibility": false
+
+}

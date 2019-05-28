@@ -134,6 +134,7 @@ export class NavbarDemo {
 
   externalLink(event:any){
   }
+
 }
 
 

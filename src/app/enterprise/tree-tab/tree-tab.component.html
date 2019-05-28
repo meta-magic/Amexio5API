@@ -1,0 +1,17 @@
+<amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/enterprise/tree-tab.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>Amexio Tree Tab enterprise component provides builtin feature to render Menus on left hand side and Dynamic tabs
+                on Right hand side.
+            </p>
+        </amexio-box>
+    </amexio-api-accessible>
+    <amexio-api-demo>
+        <amexio-card header="true">
+            <amexio-header> Tree Tab Demo </amexio-header>
+            <amexio-body>
+                <amexio-tree-tab [data]="responseData" (nodeClick)="onNodeClick($event)"></amexio-tree-tab>
+            </amexio-body>
+        </amexio-card>
+    </amexio-api-demo>
+</amexio-api-structure>
