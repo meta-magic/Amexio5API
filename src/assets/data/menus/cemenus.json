@@ -14,6 +14,12 @@
                     "link": "creative/card-ce-demo"
                 },
                 {
+                    "text": "Creative Card With Overlay Effects",
+                    "icon": "fa fa-creative-commons  ",
+                    "badge": "NEW",
+                    "link": "creative/card-ce-demo-overlayeffect"
+                },
+                {
                     "text": "Polaroid Card",
                     "badge": "NEW",
                     "icon": "fa fa-camera",

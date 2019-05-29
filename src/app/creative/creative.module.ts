@@ -17,12 +17,13 @@ import { ViewportDemoComponent } from './viewport/viewport.demo';
 import { CreativeCarouselComponent } from "./carousel/carouselce.demo";
 import { MenuDemoComponent } from "./menu/menu.demo";
 import { RibbonCardDemo } from "./ribbonce/ribbon.demo";
+import { CreativeCardDemoOverlayEffect } from "./cardcewithoverlayeffects/card.demo"
 
 /**
  * Created by kedar on 6/2/19.
  */
 @NgModule({
-    declarations: [CreativeCardDemo, ViewportDemoComponent, CreativeWindowDemo, CreativeFormDemo, CreativeCircularProgressBarDemo, HomePageDemo,
+    declarations: [CreativeCardDemo, CreativeCardDemoOverlayEffect, ViewportDemoComponent, CreativeWindowDemo, CreativeFormDemo, CreativeCircularProgressBarDemo, HomePageDemo,
         CreativeCarouselComponent, MenuDemoComponent, RibbonCardDemo],
     imports: [
         CommonModule,

@@ -13,7 +13,14 @@ export const MENUCONSTANT =
 
 
     CEMENUS: [{
-        "text": "Layouts", "badge": "3", "icon": "fa fa-desktop  ", "children": [{ "text": "Creative Card", "icon": "fa fa-creative-commons  ", "badge": "NEW", "link": "creative/card-ce-demo" }, { "text": "Polaroid Card", "badge": "NEW", "icon": "fa fa-camera", "link": "layout/polaroid-card-demo" },
+        "text": "Layouts", "badge": "4", "icon": "fa fa-desktop  ", "children": [{ "text": "Creative Card", "icon": "fa fa-creative-commons  ", "badge": "NEW", "link": "creative/card-ce-demo" }, 
+        {
+            "text": "Creative Card With Overlay Effects",
+            "icon": "fa fa-creative-commons  ",
+            "badge": "NEW",
+            "link": "creative/card-ce-demo-overlayeffect"
+        },
+        { "text": "Polaroid Card", "badge": "NEW", "icon": "fa fa-camera", "link": "layout/polaroid-card-demo" },
         {
             "text": "Ribbon Card",
             "badge": "NEW",
