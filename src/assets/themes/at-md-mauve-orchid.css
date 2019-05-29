@@ -7592,6 +7592,11 @@ fieldset {
   font-weight: bold;
   color: var(--componentActiveFontColor); }
 
+.verticalnavtab .leftactiverotatetab {
+  background-color: var(--componentActiveBGColor);
+  font-weight: bold;
+  color: var(--componentActiveFontColor); }
+
 .verticalnavtab .rightactivetab {
   background-color: var(--componentActiveBGColor);
   color: var(--componentActiveFontColor); }
@@ -7807,7 +7812,7 @@ fieldset {
 .tabcontent {
   width: inherit;
   position: relative;
-  padding: 10px 0px;
+  padding: 10px 5px;
   color: var(--componentFontColor); }
 
 .tabcontent::-webkit-scrollbar-track {
@@ -7943,6 +7948,25 @@ fieldset {
 .tabposition-right-bottom {
   display: table-cell;
   vertical-align: bottom; }
+
+#tabclass {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform-origin: top left;
+  transform: rotate(-90deg);
+  left: 0px; }
+
+#tabclass li {
+  float: right;
+  width: auto;
+  padding: 1px;
+  display: block; }
+
+.verticalnavtab .leftactiverotatetab {
+  font-weight: bold;
+  border-bottom: 3px solid var(--themePrimaryColor); }
 
 /****************************************************************************
     Component Name : Window
@@ -9018,6 +9042,37 @@ amexio-layout-columns amexio-layout-item {
   top: -10px; }
 
 /** creative card - Structure CSS **/
+.container {
+  position: relative;
+  /* opacity: 1; */ }
+
+.overlay:hover {
+  opacity: 1;
+  transition: all 2s ease-in-out; }
+
+/* fading effect */
+.overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  transition-duration: 3s; }
+
+/* sliding effect  */
+.overlayslider {
+  transform: translateX(-300%);
+  transition: all 0.3s ease-in-out; }
+
+.overlaysliderhover {
+  transform: translateX(0%);
+  transition-delay: 500ms;
+  background-color: var(--componentHoverBGColor);
+  color: var(--componentHoverFontColor); }
+
+.maincecard {
+  height: 100%;
+  overflow: hidden; }
+
 /****************************************************************************
     Component Name : Creative Menus
     Version : Amexio v5.12 onwards
