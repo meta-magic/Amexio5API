@@ -89,6 +89,14 @@
                     "default": "",
                     "description": "Set template-width with position is Mandetory(left/right/center) in number to template .",
                     "version": "5.11 onwards"
+                },
+                {
+                    "deprecated": false,
+                    "name": "type",
+                    "type": "any",
+                    "default": "1",
+                    "description": "type give to carousel as per animatioin effect.",
+                    "version": "5.11 onwards"
                 }
             ]
         }
