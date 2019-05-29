@@ -14,7 +14,7 @@ export class TreeTabDemoComponent implements OnInit {
   customSourceData: ComponentDataStructure;
 
   constructor() {
-    
+
     this.customSourceData = new ComponentDataStructure();
 
     this.menus = [
@@ -22,7 +22,7 @@ export class TreeTabDemoComponent implements OnInit {
         "text": "Home",
         "icon": "fa fa-home fa-fw",
         "mdaIcon": "home",
-        "link": "/home/dashboard",
+        "link": "enterprise/tree-tab-demo/home",
         "selected": true,
         "badge": "12",
         "tabData": {
@@ -33,23 +33,23 @@ export class TreeTabDemoComponent implements OnInit {
       {
         "text": "Email",
         "icon": "fa fa-envelope fa-fw",
-        "mdaIcon": "email",
-        "link": "/home/email",
+        "mdaIcon": "home",
+        "link": "enterprise/tree-tab-demo/home",
         "badge": "21",
         "tabData": {
           "closable": true,
-          "color": "red"
+          "color": "green"
         }
       },
       {
         "text": "Profile",
         "icon": "fa fa-user fa-fw",
         "mdaIcon": "account_box",
-        "link": "/home/profile",
+        "link": "enterprise/tree-tab-demo/home",
         "badge": "32",
         "tabData": {
           "closable": true,
-          "color": "red"
+          "color": "yellow"
         }
       },
       {
@@ -63,7 +63,7 @@ export class TreeTabDemoComponent implements OnInit {
             "text": "Sample Form",
             "icon": "fa fa-laptop fa-fw",
             "mdaIcon": "create",
-            "link": "/home/sample",
+            "link": "enterprise/tree-tab-demo/home",
             "badge": "46",
             "tabData": {
               "closable": true,
@@ -74,31 +74,31 @@ export class TreeTabDemoComponent implements OnInit {
             "text": "Login",
             "mdaIcon": "open_in_browser",
             "icon": "fa fa-sign-in fa-fw",
-            "link": "/home/login",
+            "link": "enterprise/tree-tab-demo/home",
             "badge": "47",
             "tabData": {
               "closable": true,
-              "color": "red"
+              "color": "blue"
             }
           },
           {
             "text": "Register Employee",
             "icon": "fa fa-address-book-o fa-fw",
             "mdaIcon": "perm_contact_calendar",
-            "link": "/home/employee-registration",
+            "link": "enterprise/tree-tab-demo/home",
             "tabData": {
               "closable": true,
-              "color": "red"
+              "color": "yellow"
             }
           },
           {
             "text": "Issue Status",
             "icon": "fa fa-exclamation fa-fw",
             "mdaIcon": "playlist_add_check",
-            "link": "/home/issue-status",
+            "link": "enterprise/tree-tab-demo/home",
             "tabData": {
               "closable": true,
-              "color": "red"
+              "color": "green"
             }
           }
         ]
@@ -113,7 +113,7 @@ export class TreeTabDemoComponent implements OnInit {
             "text": "Issue",
             "icon": "fa fa-ticket fa-fw",
             "mdaIcon": "bug_report",
-            "link": "/home/issue",
+            "link": "enterprise/tree-tab-demo/home",
             "tabData": {
               "closable": true,
               "color": "red"
@@ -123,10 +123,10 @@ export class TreeTabDemoComponent implements OnInit {
             "text": "Group By Issue",
             "icon": "fa fa-ticket fa-fw",
             "mdaIcon": "link",
-            "link": "/home/group-by-issue",
+            "link": "enterprise/tree-tab-demo/home",
             "tabData": {
               "closable": true,
-              "color": "red"
+              "color": "yellow"
             }
           }
         ]
@@ -135,18 +135,18 @@ export class TreeTabDemoComponent implements OnInit {
         "text": "Charts",
         "icon": "fa fa-bar-chart fa-fw",
         "mdaIcon": "insert_chart",
-        "link": "/home/charts"
+        "link": "enterprise/tree-tab-demo/home"
       },
       {
         "text": "Maps",
         "icon": "fa fa-map-marker fa-fw",
         "mdaIcon": "location_on",
-        "link": "/home/maps"
+        "link": "enterprise/tree-tab-demo/home"
       }, {
         "text": "Dashboard",
         "icon": "fa fa-television fa-fw",
         "mdaIcon": "dashboard",
-        "link": "/home/dashboard-template"
+        "link": "enterprise/tree-tab-demo/home"
       }
     ]
   }
@@ -158,13 +158,19 @@ export class TreeTabDemoComponent implements OnInit {
     this.customSourceData.description = 'Amexio Tree Tab enterprise component provides builtin feature to render Menus on left hand side and Dynamic tabs on Right hand side.';
     this.customSourceData.sourceMetadata.htmlUrl = 'enterprise/tree-tab/ee.html';
     this.customSourceData.sourceMetadata.tsUrl = 'enterprise/tree-tab/ee.text';
-    this.customSourceData.sourceMetadata.dynamicUrl = 'enterprise/tree-tab/router.text';
-}
+    // this.customSourceData.sourceMetadata.dynamicUrl = 'enterprise/tree-tab/router.text';
+  }
 
   onNodeClick(event: any) {
     if (event.data.link) {
       const cmp = event.tabData.addDynamicTab(event.data.text, event.data.tabData.color, event.data.tabData.closable, RouteComponent);
-      cmp.navigate(event.data.link);
+      cmp.navigate(event.data);
     }
+  }
+
+  onPageLoad(event: any) {
+    let linkData = {link: 'home', text: 'HOME'}
+    const cmp = event.addDynamicTab('HOME','black', false, RouteComponent);
+    cmp.navigate(linkData);
   }
 }

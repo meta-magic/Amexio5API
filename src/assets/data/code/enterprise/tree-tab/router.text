@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, Routes } from "@angular/router";
+
+import {HomePageComponent} from '../app/home-page/home-page.component';
+import {HomePage2Component} from '../app/home-page2/home-page2.component';
 
 @Component({
     selector: 'route-component',
@@ -17,4 +20,13 @@ export class RouteComponent {
         this._router.navigate([path]);
     }
 }
+
+
+export const APP_ROUTE: Routes = [
+      path: 'home1', component: HomePageComponent
+    },
+    {
+        path: 'home2', component: HomePage2Component
+      }
+]
 

@@ -19,12 +19,15 @@ import {TreeTabDemoComponent} from './tree-tab/tree-tab.component';
 
 import { RouteComponent } from './tree-tab/router-component';
 
+import { HomePageComponent } from './tree-tab/home-page/home-page.component';
+// import {APP_ROUTE} from '../../app/enterprise/tree-tab/router-component';
+
 /**
  * Created by kedar on 4/2/19.
  */
 @NgModule({
     declarations: [RouteComponent, ThemeSwitcherDemo,YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-        EEAppointmentDemoComponent, CalendarDemoComponent ,StepWizardDemoComponent, TreeTabDemoComponent],
+        EEAppointmentDemoComponent, CalendarDemoComponent ,StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
     imports: [
         CommonModule, 
         AmexioEnterpriseModule,
@@ -33,6 +36,7 @@ import { RouteComponent } from './tree-tab/router-component';
         SharedModule.forRoot(), 
         AmexioWidgetModule,
         RouterModule.forChild(ENTERPRISE_ROUTE),
+        // RouterModule.forChild(APP_ROUTE, { useHash: true})
     ],
     entryComponents: [RouteComponent],
     providers: []

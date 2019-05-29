@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { Router, Event } from "@angular/router";
-
+import { Router, Routes } from "@angular/router";
+import {HomePageComponent} from './home-page/home-page.component';
 @Component({
     selector: 'route-component',
     template: `
@@ -11,14 +11,22 @@ import { Router, Event } from "@angular/router";
     `
 })
 export class RouteComponent {
-   
+
     constructor(public _router: Router) {
 
     }
 
-    navigate(path: string) {
-        debugger
-        this._router.navigate([path]);
+    navigate(data: any) { 
+        if (data) {
+        this._router.navigate(['enterprise/tree-tab-demo/home'], { queryParams: { page: data.text } });
     }
 }
+}
 
+// export const APP_ROUTE: Routes = [/**Forms Routes*/
+//     {
+//         path: 'home1', component: HomePageComponent
+//     },
+//     {
+//         path: 'home2', component: HomePage2Component
+//     }]

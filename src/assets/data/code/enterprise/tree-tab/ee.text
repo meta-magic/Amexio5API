@@ -4,145 +4,103 @@ export class TreeTabDemoComponent {
 
 menus: any;
     constructor() {
-        this.menus = [
-      {
-        "text": "Home",
-        "icon": "fa fa-home fa-fw",
-        "mdaIcon": "home",
-        "link": "/home/dashboard",
-        "selected": true,
-        "badge": "12",
-        "tabData": {
-          "closable": true,
-          "color": "red"
-        }
-      },
-      {
-        "text": "Email",
-        "icon": "fa fa-envelope fa-fw",
-        "mdaIcon": "email",
-        "link": "/home/email",
-        "badge": "21",
-        "tabData": {
-          "closable": true,
-          "color": "red"
-        }
-      },
-      {
-        "text": "Profile",
-        "icon": "fa fa-user fa-fw",
-        "mdaIcon": "account_box",
-        "link": "/home/profile",
-        "badge": "32",
-        "tabData": {
-          "closable": true,
-          "color": "red"
-        }
-      },
-      {
-        "text": "Pages",
-        "icon": "fa fa-id-card-o fa-fw",
-        "mdaIcon": "pages",
-        "expand": false,
-        "badge": "45",
-        "children": [
-          {
-            "text": "Sample Form",
-            "icon": "fa fa-laptop fa-fw",
-            "mdaIcon": "create",
-            "link": "/home/sample",
-            "badge": "46",
-            "tabData": {
-              "closable": true,
-              "color": "red"
-            }
-          },
-          {
-            "text": "Login",
-            "mdaIcon": "open_in_browser",
-            "icon": "fa fa-sign-in fa-fw",
-            "link": "/home/login",
-            "badge": "47",
-            "tabData": {
-              "closable": true,
-              "color": "red"
-            }
-          },
-          {
-            "text": "Register Employee",
-            "icon": "fa fa-address-book-o fa-fw",
-            "mdaIcon": "perm_contact_calendar",
-            "link": "/home/employee-registration",
-            "tabData": {
-              "closable": true,
-              "color": "red"
-            }
-          },
-          {
-            "text": "Issue Status",
-            "icon": "fa fa-exclamation fa-fw",
-            "mdaIcon": "playlist_add_check",
-            "link": "/home/issue-status",
-            "tabData": {
-              "closable": true,
-              "color": "red"
-            }
-          }
-        ]
-      },
-      {
-        "text": "Reports",
-        "icon": "fa fa-picture-o fa-fw",
-        "mdaIcon": "assignment",
-        "expand": false,
-        "children": [
-          {
-            "text": "Issue",
-            "icon": "fa fa-ticket fa-fw",
-            "mdaIcon": "bug_report",
-            "link": "/home/issue",
-            "tabData": {
-              "closable": true,
-              "color": "red"
-            }
-          },
-          {
-            "text": "Group By Issue",
-            "icon": "fa fa-ticket fa-fw",
-            "mdaIcon": "link",
-            "link": "/home/group-by-issue",
-            "tabData": {
-              "closable": true,
-              "color": "red"
-            }
-          }
-        ]
-      },
-      {
-        "text": "Charts",
-        "icon": "fa fa-bar-chart fa-fw",
-        "mdaIcon": "insert_chart",
-        "link": "/home/charts"
-      },
-      {
-        "text": "Maps",
-        "icon": "fa fa-map-marker fa-fw",
-        "mdaIcon": "location_on",
-        "link": "/home/maps"
-      }, {
-        "text": "Dashboard",
-        "icon": "fa fa-television fa-fw",
-        "mdaIcon": "dashboard",
-        "link": "/home/dashboard-template"
-      }
-    ]
-  }
+    this.menus = [
+     [{"text":"Home","icon":"fa fa-home fa-fw","mdaIcon":"home","link":"home","selected":true,"badge":"12","tabData":{"closable":true,"color":"red"}},{"text":"Email","icon":"fa fa-envelope fa-fw","mdaIcon":"home","link":"home","badge":"21","tabData":{"closable":true,"color":"green"}},{"text":"Profile","icon":"fa fa-user fa-fw","mdaIcon":"account_box","link":"home","badge":"32","tabData":{"closable":true,"color":"yellow"}},{"text":"Pages","icon":"fa fa-id-card-o fa-fw","mdaIcon":"pages","expand":false,"badge":"45","children":[{"text":"Sample Form","icon":"fa fa-laptop fa-fw","mdaIcon":"create","link":"home","badge":"46","tabData":{"closable":true,"color":"red"}},{"text":"Login","mdaIcon":"open_in_browser","icon":"fa fa-sign-in fa-fw","link":"home","badge":"47","tabData":{"closable":true,"color":"blue"}},{"text":"Register Employee","icon":"fa fa-address-book-o fa-fw","mdaIcon":"perm_contact_calendar","link":"home","tabData":{"closable":true,"color":"yellow"}},{"text":"Issue Status","icon":"fa fa-exclamation fa-fw","mdaIcon":"playlist_add_check","link":"home","tabData":{"closable":true,"color":"green"}}]},{"text":"Reports","icon":"fa fa-picture-o fa-fw","mdaIcon":"assignment","expand":false,"children":[{"text":"Issue","icon":"fa fa-ticket fa-fw","mdaIcon":"bug_report","link":"home","tabData":{"closable":true,"color":"red"}},{"text":"Group By Issue","icon":"fa fa-ticket fa-fw","mdaIcon":"link","link":"home","tabData":{"closable":true,"color":"yellow"}}]},{"text":"Charts","icon":"fa fa-bar-chart fa-fw","mdaIcon":"insert_chart","link":"home"},{"text":"Maps","icon":"fa fa-map-marker fa-fw","mdaIcon":"location_on","link":"home"},{"text":"Dashboard","icon":"fa fa-television fa-fw","mdaIcon":"dashboard","link":"home"}]
+    }
 
     onNodeClick(event: any) {
     if (event.data.link) {
       const cmp = event.tabData.addDynamicTab(event.data.text, event.data.tabData.color, 
       event.data.tabData.closable, RouteComponent);
-      cmp.navigate(event.data.link);
+      cmp.navigate(event.data);
+    }
+  }
+
+    onPageLoad(event: any) {
+        let linkData = {link: 'home', text: 'HOME'}
+        const cmp = event.addDynamicTab('HOME','black', false, RouteComponent);
+       cmp.navigate(linkData);
+  }
+}
+
+
+// Route Component
+
+import { Component } from "@angular/core";
+import { Router, Routes } from "@angular/router";
+
+import {HomePageComponent} from '../app/home-page/home-page.component';
+
+@Component({
+    selector: 'route-component',
+    template: `
+    <div>
+    <router-outlet></router-outlet>
+    </div>
+    `
+})
+export class RouteComponent {
+    constructor(public _router: Router) {
+    }
+
+    navigate(data: any) { 
+        if (data) {
+        this._router.navigate(['home'], { queryParams: { page: data.text } });
     }
   }
 }
+
+
+export const APP_ROUTE: Routes = [
+      path: 'home', component: HomePageComponent
+    }
+]
+
+// Route Module
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { RouteComponent } from './router-component';
+import { RouterModule } from '@angular/router';
+import { APP_ROUTE } from '../app/router-component';
+import { HomePageComponent } from './home-page/home-page.component';
+
+@NgModule({
+  declarations: [
+    AppComponent,RouteComponent, HomePageComponent
+  ],
+  entryComponents: [RouteComponent],
+
+  imports: [RouterModule.forRoot([]),
+    BrowserModule,FormsModule,
+    RouterModule.forRoot(APP_ROUTE, { useHash: true})
+  ],
+  bootstrap: [AppComponent],
+})
+export class AppModule { }
+
+
+// Home Page Component
+
+import { Component, OnInit } from '@angular/core';
+import {Route, ActivatedRoute} from '@angular/router'; 
+
+@Component({
+  selector: 'app-home-page',
+  templateUrl: './home-page.component.html',
+  styleUrls: ['./home-page.component.css']
+})
+export class HomePageComponent implements OnInit {
+
+  link: string;
+
+  constructor(private route: ActivatedRoute) { }
+
+  ngOnInit() {
+    this.route.queryParams.subscribe(params => {
+      this.link = params.page;
+    });
+  }
+
+}
+

@@ -8,7 +8,7 @@ import { CalendarDemoComponent } from './calendar/calendar.demo.component';
 import { StepWizardDemoComponent } from 'src/app/enterprise/steps-wizard/step-wizard.component';
 import { ThemeSwitcherDemo } from './themeswitcher/themeswitcher.component';
 import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
-
+import { HomePageComponent } from './tree-tab/home-page/home-page.component';
 export const ENTERPRISE_ROUTE: Routes = [
 
     {
@@ -25,6 +25,11 @@ export const ENTERPRISE_ROUTE: Routes = [
     },
     {
         path: 'tree-tab-demo', component: TreeTabDemoComponent,
+        children: [
+            {
+                path: 'home', component: HomePageComponent
+            }
+        ]
     },
     {
         path: 'ee-calendar-demo', component: CalendarDemoComponent,
@@ -34,5 +39,7 @@ export const ENTERPRISE_ROUTE: Routes = [
     },
     {
         path: 'theme-switcher-demo', component: ThemeSwitcherDemo,
-    }
+    }, 
+      
+
 ] 

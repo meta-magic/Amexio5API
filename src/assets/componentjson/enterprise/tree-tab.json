@@ -1,7 +1,6 @@
 {
   "title": "",
   "description": "",
- 
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-tree-tab>",
@@ -44,18 +43,39 @@
       ],
       "gridData": [
         {
-            "name": "data",
-            "version": "5.13 Onwards",
-            "description": "Provides data for side nav",
-            "type": "any",
-            "default": ""
+          "name": "data",
+          "version": "5.13 Onwards",
+          "description": "Provides data for side nav",
+          "type": "any",
+          "default": ""
         },
         {
-            "name": "data-reader",
-            "description": "Key in JSON Datasource for records.",
-            "version": "5.13 Onwards",
-            "type": "string",
-            "default": ""
+          "name": "data-reader",
+          "description": "Key in JSON Datasource for records.",
+          "version": "5.13 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "width",
+          "description": "Provides width for the side Nav",
+          "version": "5.13 Onwards",
+          "type": "string",
+          "default": "200px"
+        },
+        {
+          "name": "http-url",
+          "version": "5.13 onwards",
+          "type": "string",
+          "default": "",
+          "description": "REST url for fetching data."
+        },
+        {
+          "name": "http-method",
+          "version": "5.13 onwards",
+          "type": "string",
+          "default": "",
+          "description": "Type of HTTP call, POST,GET etc."
         }
       ]
     },
@@ -85,10 +105,15 @@
         }
       ],
       "gridData": [
-         {
-            "name": "onNodeClick()",
-            "version": "5.13 Onwards",
-            "description": "It will fire on selection of single node."
+        {
+          "name": "onNodeClick()",
+          "version": "5.13 Onwards",
+          "description": "It will fire on selection of single node."
+        },
+        {
+          "name": "onLoad()",
+          "version": "5.13 Onwards",
+          "description": "It will fire on page load."
         }
       ]
     }
@@ -96,13 +121,10 @@
   "sourceMetadata": {
     "htmlUrl": "enterprise/tree-tab/ee.html",
     "tsUrl": "enterprise/tree-tab/ee.text",
-
     "datasourceUrl": ""
   },
   "liveMetadata": {
-    "disabled": true,
-    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-appointment1?embed=1&file=app/enterprise/appointment/appointment.demo.html&view=editor"
+    "disabled": true
   },
   "isAccessibility": false
-
 }

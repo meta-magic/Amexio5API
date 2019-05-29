@@ -42,7 +42,6 @@ export class ThemeSwitcherDemo implements OnInit{
         this.toggle = false;
     }
     showTS(event:any){
-        debugger;
         this.toggle = true;
     }
 }
