@@ -2,16 +2,18 @@
 
 <amexio-carousel-ce 
                     [http-url]="'assets/data/componentdata/creativecarousel1.json'"
-                    [http-method]="'get'" 
+                    [http-method]="'get'"
+                    [type]="1" 
                     [data-reader]="'data'">
 </amexio-carousel-ce>
 
-<!-- Demo 2: -    Creative Carousel with Template -->
+<!-- Demo 2: -     Creative Carousel With Parallax Effect Demo 1-->
 
 <amexio-carousel-ce 
                     [http-url]="'assets/data/componentdata/creativecarousel2.json'" 
                     [http-method]="'get'" 
                     [data-reader]="'data'"
+                    [type]="2" 
                     [template-width]="80"
                     position="right">
 
@@ -34,4 +36,13 @@
         </amexio-row>
     </ng-template>
     
+</amexio-carousel-ce>
+
+<!-- Demo 3: -     Creative Carousel With Parallax Effect Demo 2-->
+
+<amexio-carousel-ce 
+                    [http-url]="'assets/data/componentdata/creativecarousel3.json'"
+                    [http-method]="'get'"
+                    [type]="3" 
+                    [data-reader]="'data'">
 </amexio-carousel-ce>

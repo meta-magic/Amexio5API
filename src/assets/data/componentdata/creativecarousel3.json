@@ -1,0 +1,59 @@
+{
+    "data": [
+        {
+            "title": "Painting",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/1.jpg",
+            "active": true
+        },
+        {
+            "title": "Casino Royale",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/2.jpg",
+            "active": false
+        },
+        {
+            "title": " Colors ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/3.jpg",
+            "active": false
+        },
+        {
+            "title": "Flower Sun",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/4.jpg",
+            "active": false
+        },
+        {
+            "title": "Snow Eye ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/5.jpg",
+            "active": false
+        },
+        {
+            "title": "Beauty of Color ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/6.jpg",
+            "active": false
+        },
+        {
+            "title": "Amazon Box",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/7.jpg",
+            "active": false
+        },
+        {
+            "title": "Playing Baby",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/8.jpg",
+            "active": false
+        },
+        {
+            "title": "Cat Walk",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/9.jpg",
+            "active": false
+        },
+        {
+            "title": " Festival ",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/10.jpg",
+            "active": false
+        },
+        {
+            "title": "Love",
+            "imagepath": "assets/images/creative-carousel/ce-carousel-3/11.jpg",
+            "active": false
+        }
+    ]
+}
