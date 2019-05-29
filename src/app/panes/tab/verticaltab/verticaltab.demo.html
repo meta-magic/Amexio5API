@@ -1,7 +1,14 @@
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/panels/verticaltableft.json'">
   <amexio-api-demo>
- 
- <amexio-vertical-tab-view >
+    <amexio-card
+      [header]="true"
+      [footer]="false">
+       <amexio-header>
+        Left Aligned Vertical Tab without Rotation
+      </amexio-header>
+        <amexio-body>
+         
+         <amexio-vertical-tab-view >
     <amexio-tab title="Personal" [active]="true"  [icon]="'fa fa-user-circle'">
        Personal 
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.</amexio-tab>
@@ -21,5 +28,40 @@
    dis parturient montes,nascetur ridiculus mus. 
  </amexio-tab>
   </amexio-vertical-tab-view>
-  </amexio-api-demo>
+ 
+        </amexio-body>
+    </amexio-card>
+      <br>
+       <amexio-card
+      [header]="true"
+      [footer]="false">
+      <amexio-header>
+        Left Aligned Vertical Tab with Rotation
+      </amexio-header>
+        <amexio-body>
+         <amexio-vertical-tab-view [rotate]="true">
+    <amexio-tab title="Personal" [active]="true"  [icon]="'fa fa-user-circle'">
+       Personal 
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.</amexio-tab>
+    <amexio-tab title="Work" [icon]="'fa fa-building'">
+       Work 
+      Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. 
+      Nunc sit amet aliquet risus.
+    </amexio-tab>
+    <amexio-tab title="Team" [icon]="'fa fa-users'">
+       Team 
+      Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis 
+      dis parturient montes,nascetur ridiculus mus. 
+    </amexio-tab>
+    <amexio-tab title="Disabled" [disabled]= true [icon]="'fa fa-snowflake'">
+    Team 
+   Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis 
+   dis parturient montes,nascetur ridiculus mus. 
+ </amexio-tab>
+  </amexio-vertical-tab-view>
+ 
+        </amexio-body>
+    </amexio-card>
+
+   </amexio-api-demo>
   </amexio-api-structure>
