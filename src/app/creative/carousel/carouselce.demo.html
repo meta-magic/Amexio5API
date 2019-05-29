@@ -1,6 +1,7 @@
 <amexio-api-structure [url]="'assets/componentjson/creative/creativecrousel.json'">
 
     <amexio-api-demo>
+        <!-- Demo 1 -->
         <amexio-row>
             <amexio-column size="2" fit="false">
             </amexio-column>
@@ -11,23 +12,19 @@
                         Creative Carousel without Template
                     </amexio-header>
                     <amexio-body>
-                        <amexio-carousel-ce [http-url]="'assets/data/componentdata/creativecarousel1.json'"
+                        <amexio-carousel-ce [type]="1" [http-url]="'assets/data/componentdata/creativecarousel1.json'"
                             [http-method]="'get'" [data-reader]="'data'">
-
 
                         </amexio-carousel-ce>
                     </amexio-body>
 
                 </amexio-card>
 
-
             </amexio-column>
             <amexio-column size="2" fit="false">
             </amexio-column>
         </amexio-row>
-
-
-        <!-- Demo 1 -->
+        <!-- Demo 2 -->
         <amexio-row>
             <amexio-column size="2" fit="false">
             </amexio-column>
@@ -35,11 +32,11 @@
 
                 <amexio-card [header]="true" [header-align]="'left'">
                     <amexio-header>
-                        Creative Carousel with Template
+                        Creative Carousel With Parallax Effect Demo 1
                     </amexio-header>
                     <amexio-body>
 
-                        <amexio-carousel-ce [http-url]="'assets/data/componentdata/creativecarousel2.json'"
+                        <amexio-carousel-ce [type]="3" [http-url]="'assets/data/componentdata/creativecarousel2.json'"
                             [http-method]="'get'" [data-reader]="'data'" [template-width]="100" position="right">
 
 
@@ -71,5 +68,33 @@
             <amexio-column size="2" fit="false">
             </amexio-column>
         </amexio-row>
+        <!-- Demo 3 -->
+        <amexio-row>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+            <amexio-column size="8" fit="false">
+
+                <amexio-card [header]="true" [header-align]="'left'">
+                    <amexio-header>
+                            Creative Carousel With Parallax Effect Demo 2
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-carousel-ce [type]="2" [http-url]="'assets/data/componentdata/creativecarousel3.json'"
+                            [http-method]="'get'" [data-reader]="'data'">
+
+
+                        </amexio-carousel-ce>
+                    </amexio-body>
+
+                </amexio-card>
+
+            </amexio-column>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+        </amexio-row>
+
+
+
+
     </amexio-api-demo>
 </amexio-api-structure>
