@@ -2684,6 +2684,11 @@ input:checked + .largeType2ToggleSlider:before {
   font-weight: bold;
   line-height: 1; }
 
+.eclipse {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 /****************************************************************************
     Component Name : Box
     Version : Amexio v4.0 onwards
