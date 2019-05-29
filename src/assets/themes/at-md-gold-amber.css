@@ -6198,6 +6198,15 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   padding-left: 5px; }
 
 /****************************************************************************
+    Component Name : Virtual Scroller
+    Version : Amexio v5.12.3 onwards
+*****************************************************************************/
+/** propertygrid - Visual CSS **/
+/** propertygrid - Structure CSS **/
+.virtual-row-even {
+  background: var(--componentBGColor); }
+
+/****************************************************************************
     Component Name : Menubar
     Version : Amexio v4.0 onwards
 *****************************************************************************/
