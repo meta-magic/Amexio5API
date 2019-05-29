@@ -2,9 +2,9 @@ import { RouteComponent } from './router-component';
 
 export class TreeTabDemoComponent {
 
-responseData: any;
+menus: any;
     constructor() {
-        this.responseData = [
+        this.menus = [
       {
         "text": "Home",
         "icon": "fa fa-home fa-fw",

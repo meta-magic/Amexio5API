@@ -1,10 +1,10 @@
 {
   "title": "",
-  "description": "Using Appointment Scheduler you can take the appointment time from the end-user. The component displays a week of data (day wise - Monday to Sunday) and the time available for the appointment.  The component supports taking multiple time for the appointment by enabling the attribute multi-select.",
+  "description": "",
  
   "apiRefMetadata": [
     {
-      "gridTitle": "Properties <amexio-ee-appointment>",
+      "gridTitle": "Properties <amexio-tree-tab>",
       "columnDefinition": [
         {
           "dataindex": "name",

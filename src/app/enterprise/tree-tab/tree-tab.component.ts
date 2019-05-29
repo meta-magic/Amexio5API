@@ -10,14 +10,14 @@ import { ComponentDataStructure } from '../../apimetadata/models/component.struc
 })
 
 export class TreeTabDemoComponent implements OnInit {
-  responseData: any;
+  menus: any;
   customSourceData: ComponentDataStructure;
 
   constructor() {
     
     this.customSourceData = new ComponentDataStructure();
 
-    this.responseData = [
+    this.menus = [
       {
         "text": "Home",
         "icon": "fa fa-home fa-fw",
@@ -155,7 +155,7 @@ export class TreeTabDemoComponent implements OnInit {
   }
   createCustomSourceData() {
     this.customSourceData.title = 'Tree Tab ';
-    this.customSourceData.description = 'Using Appointment Scheduler you can take the appointment time from the end-user. The component displays a week of data (day wise - Monday to Sunday) and the time available for the appointment.  The component supports taking multiple time for the appointment by enabling the attribute multi-select.';
+    this.customSourceData.description = 'Amexio Tree Tab enterprise component provides builtin feature to render Menus on left hand side and Dynamic tabs on Right hand side.';
     this.customSourceData.sourceMetadata.htmlUrl = 'enterprise/tree-tab/ee.html';
     this.customSourceData.sourceMetadata.tsUrl = 'enterprise/tree-tab/ee.text';
     this.customSourceData.sourceMetadata.dynamicUrl = 'enterprise/tree-tab/router.text';
