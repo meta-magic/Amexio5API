@@ -5639,6 +5639,13 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   cursor: pointer; }
 
 /****************************************************************************
+    Component Name : Tree Tab Calendar
+    Version : Amexio v5.13 onwards
+*****************************************************************************/
+.sideNavBorder .sidenav {
+  border-right: 1px solid #ced4da; }
+
+/****************************************************************************
     Component Name : Datapoints
     Version : Amexio v4.0 onwards
 *****************************************************************************/
