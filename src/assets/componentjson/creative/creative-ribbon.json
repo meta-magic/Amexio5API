@@ -464,8 +464,8 @@
         }
     ],
     "sourceMetadata": {
-        "htmlUrl": "creative/cardce/creative.html",
-        "tsUrl": "creative/cardce/creative.text",
+        "htmlUrl": "creative/ribbon/ribbon.html",
+        "tsUrl": "creative/ribbon/ribbon.text",
         "datasourceUrl": ""
     },
     "isAccessibility": false,
