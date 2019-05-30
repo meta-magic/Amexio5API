@@ -49,7 +49,7 @@ export class AppComponent {
     private _httpClient: HttpClient,
     private themeServiceService: ThemeServiceService,
     private _cookieService: CookieService) {
-    
+
     this.homemenus = MENUCONSTANT.HOMEMENUS;
     this.directives = MENUCONSTANT.DIRECTIVES;
     this.semenus = MENUCONSTANT.SEMENUS;
@@ -82,7 +82,7 @@ export class AppComponent {
         "link": "http://www.metamagicglobal.com"
       }
     ];
-    
+
     this.amexiotechmenus = [
       {
         "text": "Home",
@@ -244,47 +244,42 @@ export class AppComponent {
         ]
       },
       {
-        "text": "More",
-
+        "text": "Engage",
         "submenus": [
           {
-            "text": "Engage",
-            "submenus": [
-              {
-                "text": "Events",
-                "link": "https://metamagicglobal.com/events"
-              }, {
-                "text": "Forums",
-                "link": "http://forum.metamagicglobal.com/"
-              }, {
-                "text": "Blogs",
-                "link": "http://blog.metamagicglobal.com/"
-              }, {
-                "text": "Node Package Manager",
-                "link": "https://www.npmjs.com/package/amexio-ng-extensions"
-              }, {
-                "text": "GitHub - Source Code",
-                "link": "https://github.com/meta-magic/amexio.github.io"
-              }
-            ]
-          },
-          {
-            "text": "About Us",
-            "submenus": [
-              {
-                "text": "Contact",
-                "link": "https://metamagicglobal.com/contact"
-              }, {
-                "text": "Company",
-                "link": "http://www.metamagicglobal.com/company"
-              }, {
-                "text": "MetaMagic",
-                "link": "https://www.metamagicglobal.com/"
-              }
-            ]
+            "text": "Events",
+            "link": "https://metamagicglobal.com/events"
+          }, {
+            "text": "Forums",
+            "link": "http://forum.metamagicglobal.com/"
+          }, {
+            "text": "Blogs",
+            "link": "http://blog.metamagicglobal.com/"
+          }, {
+            "text": "Node Package Manager",
+            "link": "https://www.npmjs.com/package/amexio-ng-extensions"
+          }, {
+            "text": "GitHub - Source Code",
+            "link": "https://github.com/meta-magic/amexio.github.io"
           }
         ]
-      }];
+      },
+      {
+        "text": "About Us",
+        "submenus": [
+          {
+            "text": "Contact",
+            "link": "https://metamagicglobal.com/contact"
+          }, {
+            "text": "Company",
+            "link": "http://www.metamagicglobal.com/company"
+          }, {
+            "text": "MetaMagic",
+            "link": "https://www.metamagicglobal.com/"
+          }
+        ]
+      }
+      ];
   }
 
   ngOnInit() {
@@ -345,6 +340,7 @@ export class AppComponent {
   }
 
   externalLink(event: any) {
+    debugger;
     if (event.data.node.link)
       //this.document.location.href=event.data.node.link;
       window.open(event.data.node.link, '_blank');

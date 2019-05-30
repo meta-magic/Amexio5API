@@ -1,9 +1,13 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
     <amexio-homepage-ce [type]="'1'">
         <amexio-homepage-northpanel>
-            <amexio-nav [enable-side-nav-position]="true" [title]="'Amexio'"
+            <amexio-nav [enable-more-mode]="true" [enable-side-nav-position]="true" [title]="'Amexio'"
                 [logo]="'assets/images/logos/amexio-logo.png'">
-                <amexio-nav-item style="padding-left:10px" position-left [type]="'slider'">
+                <amexio-banner amexioColorPalette [color-palette]="'amexio-theme-color5'"
+                               [gradient]="true"
+                               [title]="'AMEXIO New version 6.0 coming soon.......'"
+                               [closable]="false">dssdfsf sfdd</amexio-banner>
+              <amexio-nav-item style="padding-left:10px" position-left [type]="'slider'">
                 </amexio-nav-item>
                 <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'"
                     [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus"
