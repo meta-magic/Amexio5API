@@ -93,7 +93,7 @@
                     "name": "style-type",
                     "type": "string",
                     "default": "",
-                    "version": "5.12.2 onwards",
+                    "version": "5.13 onwards",
                     "description": "card wider or narrower style or ribbon-style. examples wider-header,wider-action,narrower-header,narrower-action,wider-all,narrower-all,ribbon-style"
                 },
                 {

@@ -56,28 +56,28 @@
             "description": "Place amexio theme switcher to relative position",
             "type": "boolean",
             "default": "false",
-            "version":"5.12.2"
+            "version":"5.13"
           },
           {
             "name": "col-size",
             "description": "No of column per rows",
             "type": "number",
             "default": "3",
-            "version":"5.12.2"
+            "version":"5.13"
           },
           {
             "name": "horizontal-position",
             "description": "Horizontal position of theme selector panel (left/right)",
             "type": "string",
             "default": "right",
-            "version":"5.12.2"
+            "version":"5.13"
           },
           {
             "name": "vertical-position",
             "description": "Vertical position of theme selector panel (top/bottom)",
             "type": "string",
             "default": "bottom",
-            "version":"5.12.2"
+            "version":"5.13"
           }
         ]
       }
