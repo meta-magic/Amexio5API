@@ -1,7 +1,7 @@
 {
-    "title": "Creative Card",
+    "title": "Creative Card with Overlay Effects",
     "description": "The creative card is a powerful Panel with simple to use layouts, features and overlay effects",
-    "componentDescription": "Amexio Creative Card can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows",
+    "componentDescription": "Amexio Creative Card with overlay effects can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows",
     "descriptionDetail": [
         "Header",
         "Body",
@@ -110,7 +110,7 @@
                 },
                 {
                     "name": "overlay-type",
-                    "description": "Enables overlay effects",
+                    "description": "Enables overlay effects (fade-effect or slider-effect)",
                     "version": "5.13 onwards",
                     "type": "string",
                     "default": ""

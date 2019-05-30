@@ -3,7 +3,7 @@
 
         <amexio-row>
             <amexio-column [size]="12">
-                <amexio-card [header]="true">
+                <amexio-card [header]="true" [body-height]="70">
                     <amexio-header>
                         Creative Card Demo with Overlay Effects
                     </amexio-header>
@@ -14,8 +14,11 @@
                             </amexio-column>
                             <amexio-column size="4">
                                 
-                                <h4>Card Demo 1</h4>
-                                <amexio-card-ce  [overlay-type]="'slider-effect'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle1.jpg'">
+                                <h4>Card Demo of slider-effect</h4>
+                                <amexio-card-ce  [overlay-type]="'slider-effect'" 
+                                [height]="500"
+                                [align]="'center'" [color]="'white'" 
+                                [bg-image]="'assets/images/cardce/cycle1.jpg'">
                                     <amexio-header-ce [align]="'space-between'">
 
                                     </amexio-header-ce>
@@ -42,7 +45,7 @@
                             </amexio-column>
                             <amexio-column [size] ="4">
 
-                                <h4>Card Demo 2</h4>
+                                <h4>Card Demo of fade-effect</h4>
                                 <amexio-card-ce [height]="800" [overlay-type]="'fade-effect'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle2.jpg'">
                                     <amexio-header-ce [align]="'space-between'">
 
