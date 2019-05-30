@@ -9070,16 +9070,19 @@ amexio-layout-columns amexio-layout-item {
   top: -10px; }
 
 /** creative card - Structure CSS **/
-.container {
+.card-container-ce-main {
   position: relative;
-  /* opacity: 1; */ }
+  height: 100%; }
 
-.overlay:hover {
+.card-ce-overflowhidden {
+  overflow: hidden; }
+
+.card-ce-overlay-fadeeffect:hover {
   opacity: 1;
   transition: all 2s ease-in-out; }
 
 /* fading effect */
-.overlay {
+.card-ce-overlay-fadeeffect {
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -9087,19 +9090,15 @@ amexio-layout-columns amexio-layout-item {
   transition-duration: 3s; }
 
 /* sliding effect  */
-.overlayslider {
+.card-ce-overlay-slideeffect {
   transform: translateX(-300%);
   transition: all 0.3s ease-in-out; }
 
-.overlaysliderhover {
+.card-ce-overlay-slideeffect-hover {
   transform: translateX(0%);
   transition-delay: 500ms;
   background-color: var(--componentHoverBGColor);
   color: var(--componentHoverFontColor); }
-
-.maincecard {
-  height: 100%;
-  overflow: hidden; }
 
 /****************************************************************************
     Component Name : Creative Menus
