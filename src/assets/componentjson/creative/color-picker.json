@@ -1,0 +1,99 @@
+{
+    "title": "Amexio ColorPicker ",
+    "description": "Amexio ColorPicker is an input component to select a color with inline and overlay properties.",
+    "apiRefMetadata": [{
+        "gridTitle": "Properties <amexio-color-picker>",
+        "columnDefinition": [{
+                "dataindex": "name",
+                "text": "Name",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "version",
+                "text": "Version",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "type",
+                "text": "Type",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "default",
+                "text": "Default",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "description",
+                "text": "Description",
+                "width": 60,
+                "hidden": false,
+                "datatype": "string"
+            }
+        ],
+        "gridData": [{
+            "name": "inline-color-picker",
+            "description": "set inline property of colorpicker",
+            "version": "5.51 onwards",
+            "type": "boolean",
+            "default": "false"
+        },
+        {
+            "name": "field-label",
+            "description": "The label of this field",
+            "version": "5.51 onwards",
+            "type": "string",
+            "default": ""
+        }]
+    },
+    {
+      "gridTitle": "Events <amexio-color-picker>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "selectedColor()",
+          "version": "0.0.2 Onwards",
+          "description": "It will fire only on click on color palette ."
+        }
+      ]
+    }],
+  "isAccessibility": false,
+
+    "sourceMetadata": {
+        "htmlUrl": "creative/colorpicker/creative.html",
+        "tsUrl": "creative/colorpicker/creative.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": false,
+        "stackblitzUrl": ""
+    }
+}

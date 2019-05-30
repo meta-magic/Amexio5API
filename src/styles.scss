@@ -39,10 +39,6 @@ amexio-theme-switcher  .card-container{
 }
 
 
-.api-header-style .box-content{
-  margin: -20px -100%;
-  padding: 20px 100%;
-}
 
 
 .button-dropdown{
@@ -85,6 +81,12 @@ amexio-theme-switcher  .card-container{
   .datagrid-template span{
     display: block;
   }
+
+  .api-header-style .box-content{
+    margin: unset;
+    padding: unset;
+  }
+  
 }
 
 

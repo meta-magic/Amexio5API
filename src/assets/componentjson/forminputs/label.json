@@ -69,6 +69,13 @@
             "version": "4.0 onwards",
             "type": "string",
             "default": "small"
+          },
+          {
+            "name": "word-wrap",
+            "description": "Word wrap wraps word in ... from ",
+            "version": "5.12 onwards",
+            "type": "boolean",
+            "default": "true"
           }
         ]
       },
