@@ -3,7 +3,7 @@
         <amexio-homepage-northpanel>
             <amexio-nav [enable-more-mode]="true" [enable-side-nav-position]="true" [title]="'Amexio'"
                 [logo]="'assets/images/logos/amexio-logo.png'">
-                <amexio-banner amexioColorPalette [color-palette]="'vibrant'"
+                <amexio-banner amexioColorPalette [color-palette]="'amexio-theme-color4'"
                                [title]="'Amexio API v5.12 ViewPort,Social Logins, Calendar, Step Wizard, Creative Cards & Pro'"
                                [closable]="false">
 
@@ -53,7 +53,7 @@
                         </amexio-accordion-tab>
                     </amexio-accordion>
                 </amexio-sidenav-node>
-                <amexio-sidenav-node style="display: block; visibility: hidden;">
+                <amexio-sidenav-node *ngFor="let item of [1,2,3,4,5]" style="display: block; visibility: hidden;">
                     <amexio-label>
                         Testing Content
                     </amexio-label>
