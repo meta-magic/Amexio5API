@@ -24,7 +24,6 @@ export class TreeTabDemoComponent implements OnInit {
         "mdaIcon": "home",
         "link": "enterprise/tree-tab-demo/home",
         "selected": true,
-        "badge": "12",
         "tabData": {
           "closable": true,
           "color": "red"
@@ -35,7 +34,6 @@ export class TreeTabDemoComponent implements OnInit {
         "icon": "fa fa-envelope fa-fw",
         "mdaIcon": "home",
         "link": "enterprise/tree-tab-demo/home",
-        "badge": "21",
         "tabData": {
           "closable": true,
           "color": "green"
@@ -46,7 +44,6 @@ export class TreeTabDemoComponent implements OnInit {
         "icon": "fa fa-user fa-fw",
         "mdaIcon": "account_box",
         "link": "enterprise/tree-tab-demo/home",
-        "badge": "32",
         "tabData": {
           "closable": true,
           "color": "yellow"
@@ -57,14 +54,12 @@ export class TreeTabDemoComponent implements OnInit {
         "icon": "fa fa-id-card-o fa-fw",
         "mdaIcon": "pages",
         "expand": false,
-        "badge": "45",
         "children": [
           {
             "text": "Sample Form",
             "icon": "fa fa-laptop fa-fw",
             "mdaIcon": "create",
             "link": "enterprise/tree-tab-demo/home",
-            "badge": "46",
             "tabData": {
               "closable": true,
               "color": "red"
@@ -75,7 +70,6 @@ export class TreeTabDemoComponent implements OnInit {
             "mdaIcon": "open_in_browser",
             "icon": "fa fa-sign-in fa-fw",
             "link": "enterprise/tree-tab-demo/home",
-            "badge": "47",
             "tabData": {
               "closable": true,
               "color": "blue"

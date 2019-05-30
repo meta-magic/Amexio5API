@@ -30,7 +30,6 @@ import { TreeDataGridDemo } from './treedatagrid/treedatagrid.demo';
 import { TreeDataTemplateDemo } from './treedatatemplate/treedatatemplate.demo';
 import { ServerSidePaginationDemo } from './serversidepagination/serversidepagination.demo';
 import { PropertyGridDemoComponent } from "./propertygrid/propertygrid.demo";
-import { AmexioVirtualScrollDemo } from "./virtualscroll/virtualscroll.demo";
 
 
 
@@ -120,8 +119,5 @@ export const DATA_ROUTE: Routes = [
     },
     {
         path: 'propertygrid-demo', component: PropertyGridDemoComponent,
-    },
-    {
-        path: 'virtualscroll-demo', component: AmexioVirtualScrollDemo,
     }
 ];
