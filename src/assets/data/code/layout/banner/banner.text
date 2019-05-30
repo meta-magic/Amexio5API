@@ -1,0 +1,10 @@
+import {Component, OnInit} from '@angular/core';
+
+@Component({
+  selector : 'banner-demo',
+  templateUrl : 'banner.demo.html'
+})
+export class bannerDemo {
+constructor() {
+}
+}

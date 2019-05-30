@@ -15,6 +15,7 @@ import { GridLayoutDemoOne } from './gridlayout/gridlayoutone/gridlayout.demo';
 import { GridLayoutDemo } from './gridlayout/gridlayoutbasic/gridlayout.demo';
 import { CollapsibleGridLayoutDemo } from './gridlayout/collapsiblegridlayout/collapsiblegridlayout.demo';
 import {PolaroidCardDemo} from './polaroidcard/polaroidcard.demo.component';
+import { bannerDemo } from './banner/banner.demo';
 
 export const LAYOUT_ROUTE: Routes = [
     {
@@ -61,6 +62,10 @@ export const LAYOUT_ROUTE: Routes = [
     },
     {
         path: 'polaroid-card-demo', component: PolaroidCardDemo,
+    }
+    ,
+    {
+        path: 'banner-demo', component: bannerDemo,
     }
     
 ]

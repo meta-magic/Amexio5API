@@ -1,0 +1,136 @@
+{
+  "title": "Amexio Banner",
+  "description": "Amexio Banner can be easily use in navbar with auto diss-miss and closeble functionality.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-banner>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "description": "Title to the banner.",
+          "version": "5.15.1 onwards",
+          "type": "string",
+          "default": "none"
+        },
+        {
+          "name": "icon",
+          "description": "Icon before the title we can use.",
+          "version": "5.15.1 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "color-palette",
+          "description": "color palette to the banner.",
+          "version": "5.15.1 onwards",
+          "type": "string",
+          "default": "theme's background color"
+        },
+        {
+          "name": "closable",
+          "description": "closable functionlity to the banner",
+          "version": "5.15.1 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "interval",
+          "description": "interval to the banner which is diss-miss after some interval in sec.",
+          "version": "5.15.1 onwards",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "gridTitle": "Color-Palette Directive: amexioColorPalette <amexio-banner>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "color-palette",
+          "type": "string",
+          "version": "5.12 onwards",
+          "description": "classic/ vibrant/ random/ specific (vibrant: amexio-theme-color6)"
+        },
+        {
+          "name": "gradient",
+          "type": "boolean",
+          "version": "5.12 onwards",
+          "description": "If true"
+        }
+      ]
+    }
+  ],
+  "isAccessibility": false,
+  "sourceMetadata": {
+    "htmlUrl": "layout/banner/banner.html",
+    "tsUrl": "layout/banner/banner.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v41-box?embed=1&file=app/forms/box/box.demo.html"
+  }
+}

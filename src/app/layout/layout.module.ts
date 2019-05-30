@@ -24,6 +24,7 @@ import { GridLayoutDemoOne } from "./gridlayout/gridlayoutone/gridlayout.demo";
 import { GridLayoutDemo } from "./gridlayout/gridlayoutbasic/gridlayout.demo";
 import { CollapsibleGridLayoutDemo } from "./gridlayout/collapsiblegridlayout/collapsiblegridlayout.demo";
 import {PolaroidCardDemo} from "./polaroidcard/polaroidcard.demo.component";
+import {bannerDemo} from './banner/banner.demo';
 
 /**
  * Created by kedar on 31/1/19.
@@ -33,7 +34,8 @@ import {PolaroidCardDemo} from "./polaroidcard/polaroidcard.demo.component";
          horizontalLayoutDemo, CardImageDemo,
           CardFormDemo,ColumnDemo,BorderDemoComponent,AccordionDemoComponent,
           GridLayoutDemo,GridLayoutDemoOne,GridLayoutDemoTwo,GridLayoutDemoThree,
-          CollapsibleGridLayoutDemo,PolaroidCardDemo
+          CollapsibleGridLayoutDemo,PolaroidCardDemo,
+          bannerDemo,
         ],
     imports: [
         CommonModule,
