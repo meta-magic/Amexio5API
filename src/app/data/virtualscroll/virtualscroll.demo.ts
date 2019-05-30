@@ -10,11 +10,15 @@ import { HttpClient } from '@angular/common/http';
 export class AmexioVirtualScrollDemo {
     copyMsgArray: any[];
     numbers: number[] = [];
-   
+    localData: any[] = [];
+
     constructor(private http: HttpClient) {
-        for (let index = 0; index < 10000; index++) {
-            this.numbers.push(index);
-          }
+        debugger
+        http.get('assets/data/componentdata/virtualscroller.json')
+            .subscribe((response: any) => {
+                debugger
+                this.localData = response;
+            });
     }
 
 
