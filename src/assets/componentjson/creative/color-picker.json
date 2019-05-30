@@ -42,14 +42,14 @@
         "gridData": [{
             "name": "inline-color-picker",
             "description": "set inline property of colorpicker",
-            "version": "5.51 onwards",
+            "version": "5.13 onwards",
             "type": "boolean",
             "default": "false"
         },
         {
             "name": "field-label",
             "description": "The label of this field",
-            "version": "5.51 onwards",
+            "version": "5.13onwards",
             "type": "string",
             "default": ""
         }]
@@ -80,7 +80,7 @@
       "gridData": [
         {
           "name": "selectedColor()",
-          "version": "0.0.2 Onwards",
+          "version": "5.13 Onwards",
           "description": "It will fire only on click on color palette ."
         }
       ]
