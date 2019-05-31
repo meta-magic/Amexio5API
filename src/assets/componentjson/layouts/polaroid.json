@@ -74,7 +74,7 @@
   
 
     "liveMetadata": {
-      "disabled": true,
-      "stackblitzUrl": ""
+      "disabled": false,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-polarid-card?embed=1&file=src/app/CE/polarid/polarid.component.html&view=editor"
     }
   }

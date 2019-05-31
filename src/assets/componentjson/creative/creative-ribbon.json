@@ -471,6 +471,6 @@
     "isAccessibility": false,
     "liveMetadata": {
         "disabled": true,
-        "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-card?embed=1&file=app/layout/Creativecard/creativecard.demo.html&view=editor"
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-ribbon-card?embed=1&file=src/app/CE/ribbon/ribbon.component.html&view=editor"
     }
 }

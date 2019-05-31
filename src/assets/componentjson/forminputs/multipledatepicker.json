@@ -132,7 +132,7 @@
     },
     "liveMetadata": {
         "disabled": false,
-        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-datepicker?ctl=1&embed=1&file=app/forms/datepicker/datepicker.demo.html"
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-multi-date-picker?embed=1&file=src/app/CE/multidatepicker/multidatepicker.component.html&view=editor"
     },
     "apiaccessibledata": [
         {

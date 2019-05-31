@@ -93,7 +93,7 @@
         "datasourceUrl": ""
     },
     "liveMetadata": {
-        "disabled": false,
-        "stackblitzUrl": ""
+        "disabled": true,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-color-picker?embed=1&file=src/app/CE/colorpicker/colorpicker.component.html&view=editor"
     }
 }

@@ -89,7 +89,7 @@
     },
     "liveMetadata": {
       "disabled": true,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-calendar-component?embed=1&file=app/enterprise/calendar/calendar.demo.html&view=editor"
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-theme-switcher?embed=1&file=src/app/CE/themeswitcher/themeswitcher.component.html&view=editor"
     },
     "isAccessibility": false,
     "apiaccessibledata": [

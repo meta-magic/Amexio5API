@@ -152,6 +152,9 @@ export class TreeTabDemoComponent implements OnInit {
     this.customSourceData.description = 'Amexio Tree Tab enterprise component provides builtin feature to render Menus on left hand side and Dynamic tabs on Right hand side.';
     this.customSourceData.sourceMetadata.htmlUrl = 'enterprise/tree-tab/ee.html';
     this.customSourceData.sourceMetadata.tsUrl = 'enterprise/tree-tab/ee.text';
+    this.customSourceData.liveMetadata.disabled = true;
+    // this.customSourceData.liveMetadata.stackblitzUrl = 'https://stackblitz.com/edit/amexio-treetab?embed=1&file=src/app/EE/treetab/home-page/home-page.component.html&view=editor';
+
     // this.customSourceData.sourceMetadata.dynamicUrl = 'enterprise/tree-tab/router.text';
   }
 
