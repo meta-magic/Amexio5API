@@ -4640,7 +4640,6 @@ fsw .widgetSprite.icCalendar {
 
 /* .activecolortab class replica from tab */
 .activecolordatetab {
-  padding-left: 8px;
   border-bottom: 2px solid var(--componentActiveBGColor) !important; }
 
 .datesrange {
