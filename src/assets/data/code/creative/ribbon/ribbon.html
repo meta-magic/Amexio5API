@@ -1,120 +1,40 @@
-<!-- Ribbon Card Demo 1 -->
-
-<amexio-card-ce>
-  <amexio-header-ce>
-    <amexio-label size="medium-bold">
-      Free Plan
-    </amexio-label>
-  </amexio-header-ce>
-  <amexio-body-ce [align]="'center'">
-    <amexio-layout-columns [alignment]="'center'" [orientation]="'vertical'" [border]="false" [responsive-mode]="true">
-      <amexio-layout-item>
-        <amexio-image path="assets/images/logos/Amexio.webp"></amexio-image>
-      </amexio-layout-item>
-      <amexio-layout-item style="text-align: center">
-        <amexio-label size="medium">
-          <a style="color: blue;cursor: pointer;"><b>Contact</b></a>
-        </amexio-label>
-      </amexio-layout-item>
-      <amexio-layout-item style="text-align: center">
-        <amexio-label size="medium">
-          Free
-        </amexio-label>
+<!-- Ribbon Demo -->
+<amexio-layout-columns [orientation]="'vertical'" [border]="false">
+  <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
+    <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
+      <amexio-layout-item *ngFor="let item of  cardData">
+        <amexio-card-ce [style-type]="item.styletype">
+          <amexio-header-ce amexioColorPalette [color-palette]="item.colorpalette" [gradient]="true">
+            <amexio-label size="medium-bold">
+              {{item.cardheader}}
+            </amexio-label>
+          </amexio-header-ce>
+          <amexio-body-ce style="text-align: center">
+            <amexio-layout-item>
+              <amexio-label size="medium-bold">
+                {{item.popularity}}
+              </amexio-label>
+            </amexio-layout-item>
+            <amexio-layout-columns [alignment]="'center'" [orientation]="'vertical'" [border]="false" [responsive-mode]="true">
+              <amexio-layout-item>
+                <amexio-image path={{item.path}}></amexio-image>
+              </amexio-layout-item>
+              <amexio-layout-item style="text-align: center">
+                <amexio-label size="medium">
+                  <a style="color: blue;cursor: pointer;"><b>{{item.contact}}</b></a>
+                </amexio-label>
+              </amexio-layout-item>
+              <amexio-layout-item style="text-align: center">
+                <amexio-label size="medium">
+                  {{item.price}}
+                </amexio-label>
+              </amexio-layout-item>
+            </amexio-layout-columns>
+          </amexio-body-ce>
+          <amexio-button [label]="item.buttonlabel" [type]="'theme-color'" [block]="true">
+          </amexio-button>
+        </amexio-card-ce>
       </amexio-layout-item>
     </amexio-layout-columns>
-  </amexio-body-ce>
-  <amexio-button [label]="'Buy'" [type]="'theme-color'" [block]="true">
-  </amexio-button>
-</amexio-card-ce>
-<!-- Ribbon Card Demo 2 -->
-
-<amexio-card-ce>
-    <amexio-header-ce>
-      <amexio-label size="medium-bold">
-        Bronze Package
-      </amexio-label>
-    </amexio-header-ce>
-    <amexio-body-ce [align]="'center'">
-      <amexio-layout-columns [alignment]="'center'" [orientation]="'vertical'" [border]="false"
-        [responsive-mode]="true">
-        <amexio-layout-item>
-          <amexio-image path="assets/images/logos/Amexio.webp"></amexio-image>
-        </amexio-layout-item>
-        <amexio-layout-item style="text-align: center">
-          <amexio-label size="medium">
-            <a style="color: blue;cursor: pointer;"><b>Contact</b></a>
-          </amexio-label>
-        </amexio-layout-item>
-        <amexio-layout-item style="text-align: center">
-          <amexio-label size="medium">
-            $3000
-          </amexio-label>
-        </amexio-layout-item>
-      </amexio-layout-columns>
-    </amexio-body-ce>
-    <amexio-button [label]="'Buy'" [type]="'theme-color'" [block]="true">
-    </amexio-button>
-</amexio-card-ce>
-<!-- Ribbon Card Demo 3 -->
-
-<amexio-card-ce [style-type]="'ribbon-style'">
-    <amexio-header-ce amexioColorPalette [gradient]="true" [color-palette]="'classic'">
-      <amexio-label size="medium-bold">
-        Silver Package
-      </amexio-label>
-    </amexio-header-ce>
-    <amexio-body-ce [align]="'center'">
-      <amexio-layout-columns [alignment]="'center'" [orientation]="'vertical'" [border]="false"
-        [responsive-mode]="true">
-        <amexio-layout-item style="text-align: center">
-          <amexio-label size="medium-bold">
-            Most Popular
-          </amexio-label>
-        </amexio-layout-item>
-        <amexio-layout-item>
-          <amexio-image path="assets/images/logos/Amexio.webp"></amexio-image>
-        </amexio-layout-item>
-        <amexio-layout-item style="text-align: center">
-          <amexio-label size="medium">
-            <a style="color: blue;cursor: pointer;"><b>Contact</b></a>
-          </amexio-label>
-        </amexio-layout-item>
-        <amexio-layout-item style="text-align: center">
-          <amexio-label size="medium">
-            $6000
-          </amexio-label>
-        </amexio-layout-item>
-      </amexio-layout-columns>
-    </amexio-body-ce>
-    <amexio-button [label]="'Buy'" [type]="'theme-color'" [block]="true">
-    </amexio-button>
-</amexio-card-ce>
-<!-- Ribbon Card Demo 4 -->
-
-<amexio-card-ce>
-    <amexio-header-ce>
-      <amexio-label size="medium-bold">
-        Gold Package
-      </amexio-label>
-    </amexio-header-ce>
-    <amexio-body-ce [align]="'center'">
-      <amexio-layout-columns [alignment]="'center'" [orientation]="'vertical'" [border]="false"
-        [responsive-mode]="true">
-        <amexio-layout-item>
-          <amexio-image path="assets/images/logos/Amexio.webp"></amexio-image>
-        </amexio-layout-item>
-        <amexio-layout-item style="text-align: center">
-          <amexio-label size="medium">
-            <a style="color: blue;cursor: pointer;"><b>Contact</b></a>
-          </amexio-label>
-        </amexio-layout-item>
-        <amexio-layout-item style="text-align: center">
-          <amexio-label size="medium">
-            $8500
-          </amexio-label>
-        </amexio-layout-item>
-      </amexio-layout-columns>
-    </amexio-body-ce>
-    <amexio-button [label]="'Buy'" [type]="'theme-color'" [block]="true">
-    </amexio-button>
-  </amexio-card-ce>
+  </amexio-layout-item>
+</amexio-layout-columns>
