@@ -479,51 +479,51 @@ image using the content attribute.
 /* You can add global styles to this file, and also import other style files */
 .amexio-theme-color1 {
   background-color: var(--themePrimaryColor) !important;
-  color: var(--themePrimaryFontColor); }
+  color: var(--themePrimaryFontColor) !important; }
 
 .amexio-theme-color2 {
   background-color: var(--themeSecondaryColor) !important;
-  color: var(--themeSecondaryFontColor); }
+  color: var(--themeSecondaryFontColor) !important; }
 
 .amexio-theme-color3 {
   background-color: var(--theme3rdColor) !important;
-  color: var(--theme3rdFontColor); }
+  color: var(--theme3rdFontColor) !important; }
 
 .amexio-theme-color4 {
   background-color: var(--theme4thColor) !important;
-  color: var(--theme4thFontColor); }
+  color: var(--theme4thFontColor) !important; }
 
 .amexio-theme-color5 {
   background-color: var(--theme5thColor) !important;
-  color: var(--theme5thFontColor); }
+  color: var(--theme5thFontColor) !important; }
 
 .amexio-theme-color6 {
   background-color: var(--theme6thColor) !important;
-  color: var(--theme6thFontColor); }
+  color: var(--theme6thFontColor) !important; }
 
 .amexio-theme-color1-Gradient {
   background-image: var(--themePrimaryColorGradient) !important;
-  color: var(--themePrimaryFontColor); }
+  color: white !important; }
 
 .amexio-theme-color2-Gradient {
   background-image: var(--themeSecondaryColorGradient) !important;
-  color: var(--themeSecondaryFontColor); }
+  color: white !important; }
 
 .amexio-theme-color3-Gradient {
   background-image: var(--theme3rdColorGradient) !important;
-  color: var(--theme3rdFontColor); }
+  color: white !important; }
 
 .amexio-theme-color4-Gradient {
   background-image: var(--theme4thColorGradient) !important;
-  color: var(--theme4thFontColor); }
+  color: white !important; }
 
 .amexio-theme-color5-Gradient {
   background-image: var(--theme5thColorGradient) !important;
-  color: var(--theme5thFontColor); }
+  color: white !important; }
 
 .amexio-theme-color6-Gradient {
   background-image: var(--theme6thColorGradient) !important;
-  color: var(--theme6thFontColor); }
+  color: white !important; }
 
 .tabwapper .tab .tablistitems .tablink .table {
   padding: 0px !important; }
