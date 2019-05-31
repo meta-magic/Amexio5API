@@ -6366,7 +6366,8 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   color: var(--appHeaderFontColor); }
 
 .topnavmainbarinneritems .nav-dropdown-content a:hover {
-  color: var(--appHeaderHoverBGColor) !important; }
+  background-color: var(--appHeaderHoverBGColor);
+  color: var(--appHeaderHoverFontColor) !important; }
 
 .nav-dropdown:active {
   background-color: var(--appHeaderMenuBGColor);
@@ -6503,9 +6504,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   padding: 10px 0px;
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease;
-  transform-origin: 0 0;
-  max-height: 500px;
-  overflow: auto; }
+  transform-origin: 0 0; }
 
 .topnavmainbarinneritems-mobile .nav-dropdown-content {
   display: none;
@@ -6625,42 +6624,6 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6) !important;
   background-color: transparent !important;
   opacity: 0.9 !important; }
-
-.navBannerCss {
-  background-color: var(--appHeaderBGColor);
-  color: var(--appHeaderFontColor);
-  width: 100%;
-  display: flex;
-  height: auto;
-  padding: 10px; }
-
-.testClass .nav-dropdown-content {
-  max-height: 500px;
-  right: 10px;
-  overflow: auto; }
-
-.topnavmainbarinneritems .nav-dropdown-content {
-  width: 250px;
-  max-width: 1000px;
-  display: none;
-  position: absolute;
-  z-index: 3;
-  padding: 10px 0px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-  transition: all 0.3s ease;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0; }
-
-.topnavmainbarinneritems .nav-dropdown-content-mobile {
-  width: 94%;
-  display: none;
-  position: absolute;
-  z-index: 3;
-  padding: 10px 0px;
-  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
-  transition: all 0.3s ease;
-  -webkit-transform-origin: 0 0;
-  transform-origin: 0 0; }
 
 /****************************************************************************
     Component Name : Paginator
