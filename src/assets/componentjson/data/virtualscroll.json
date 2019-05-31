@@ -1,6 +1,6 @@
 {
     "title": "Amexio Virtual Scroll",
-    "description": "",
+    "description": "Virtual scroll increases the performance of web applications that handles large data.",
     "apiRefMetadata": [
       {
         "gridTitle": "Properties <amexio-virtualscroller>",
@@ -65,7 +65,7 @@
       },
       {
         "name": "amexioBodyTmpl",
-        "description": "its a template element used by virtual scroll",
+        "description": "It is a template element used by virtual scroll",
         "version": "5.71 onwards",
         "type": "any",
         "default": ""
