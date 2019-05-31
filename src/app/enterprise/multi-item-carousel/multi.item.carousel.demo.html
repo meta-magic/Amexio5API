@@ -1,41 +1,30 @@
-
-<amexio-api-structure  [url]="'assets/componentjson/enterprise/carousel.json'">
+<amexio-api-structure [url]="'assets/componentjson/enterprise/carousel.json'">
   <amexio-api-demo>
-    <amexio-row>
-      <amexio-column [size]="12">
-        <amexio-card [header]="true">
-          <amexio-header>
-             Horizontal Carousel 
-          </amexio-header>
-          <amexio-body>
-            <br><br>
-            <div style="background-color: black">
-              <amexio-media-ee-carousel title="Top Movies" [data]="newreleases"></amexio-media-ee-carousel>
-            </div>
-          </amexio-body>
-        </amexio-card>
-      </amexio-column>
-    </amexio-row>
+    <br><br>
+    <amexio-card [header]="true">
+      <amexio-header>
+        Horizontal Carousel
+      </amexio-header>
+      <amexio-body>
 
-    <amexio-row>
-      <amexio-column [size]="12">
-        <amexio-card [header]="true">
-          <amexio-header>
-             Vertical Carousel 
-          </amexio-header>
-          <amexio-body>
-            <br><br>
-            <div style="background-color: black">
-              <amexio-media-ee-carousel title="Trending" [data]="topRateContent"
-                                        carousel-type="vertical"
-              >
-              </amexio-media-ee-carousel>
-            </div>
-          </amexio-body>
-        </amexio-card>
-      </amexio-column>
-    </amexio-row>
-    </amexio-api-demo>
-  </amexio-api-structure>
+        <div style="background-color: black">
+          <amexio-media-ee-carousel title="Top Movies" [data]="newreleases"></amexio-media-ee-carousel>
+        </div>
+      </amexio-body>
+    </amexio-card>
+    <br><br>
+    <amexio-card [header]="true">
+      <amexio-header>
+        Vertical Carousel
+      </amexio-header>
+      <amexio-body>
 
+        <div style="background-color: black">
+          <amexio-media-ee-carousel title="Trending" [data]="topRateContent" carousel-type="vertical">
+          </amexio-media-ee-carousel>
+        </div>
+      </amexio-body>
+    </amexio-card>
 
+  </amexio-api-demo>
+</amexio-api-structure>
