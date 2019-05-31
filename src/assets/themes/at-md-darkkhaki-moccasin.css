@@ -9061,6 +9061,9 @@ amexio-layout-columns amexio-layout-item {
   position: absolute;
   top: -10px; }
 
+.card-container-ribbon-style amexio-header-ce {
+  box-shadow: none; }
+
 /** creative card - Structure CSS **/
 .card-container-ce-main {
   position: relative;
@@ -9090,7 +9093,7 @@ amexio-layout-columns amexio-layout-item {
   transform: translateX(0%);
   transition-delay: 500ms;
   background-color: var(--componentHoverBGColor);
-  color: var(--componentHoverFontColor); }
+  color: var(--componentFontColor); }
 
 /****************************************************************************
     Component Name : Creative Menus
@@ -10940,6 +10943,7 @@ a.ce-caroueslnav-next {
 
 .color-wrapper {
   display: flex;
+  padding-bottom: 0px;
   z-index: 1010; }
 
 .color-inline-picker {
