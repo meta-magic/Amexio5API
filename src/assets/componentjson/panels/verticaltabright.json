@@ -55,7 +55,14 @@
                     "version": "5.4 onwards",
                     "type": "string",
                     "default": "top"
-                }
+                },
+                 {
+            "name": "rotate",
+            "description": "This flag will make tab header rotate around a fixed point",
+            "version": "5.13.0 onwards",
+            "type": "boolean",
+            "default": "false"
+        }
             ]
         },
         {
