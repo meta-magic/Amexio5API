@@ -5349,9 +5349,7 @@ header .billboard .content-button {
 *****************************************************************************/
 .themecolorpalette {
   display: block;
-  height: 50px;
-  width: 100%;
-  margin: 0px 5px; }
+  flex-grow: 1; }
 
 /****************************************************************************
     Component Name : Enterprise Step Wizard
