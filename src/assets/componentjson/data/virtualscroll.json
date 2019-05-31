@@ -43,53 +43,31 @@
         ],
         "gridData": [
           {
-        "name": "show",
-        "description": "Shows / Hides the spinner .",
-        "version": "5.2.2 onwards",
-        "type": "boolean",
-        "default": "true"
+        "name": "height",
+        "description": "Sets height of virtual scroll",
+        "version": "5.71 onwards",
+        "type": "string",
+        "default": ""
       },
       {
-        "name": "relative",
-        "description": " set spinner position as relative. ",
-        "version": "5.2.2 onwards",
-        "type": "boolean",
-        "default": "false"
+        "name": "data",
+        "description": "Sets data of virtual scroll",
+        "version": "5.71 onwards",
+        "type": "any[]",
+        "default": ""
       },
       {
-        "name": "type",
-        "description": "Types of spinner:- fadingcircle/ ballspin/ firespin/ threebounce/ spinnerround/ ring/ halfcircle/ rectanglebounce ",
-        "version": "5.2.2 onwards",
+        "name": "itemsize",
+        "description": "Sets item size of virtual scroll",
+        "version": "5.71 onwards",
+        "type": "number",
+        "default": ""
+      },
+      {
+        "name": "amexioBodyTmpl",
+        "description": "its a template element used by virtual scroll",
+        "version": "5.71 onwards",
         "type": "any",
-        "default": ""
-      },
-      
-      {
-        "name": "vertical-position",
-        "type": "string",
-        "version": "5.2.2 onwards",
-        "default": "",
-        "description": "Vertical position of Spinner.  Example:- (top,center,bottom)."
-      },
-      {
-        "name": "horizontal-position",
-        "type": "string",
-        "version": "5.2.2 onwards",
-        "default": "",
-        "description": "Horizontal position of SPinner. Example:- (right,center,left)."
-      }, 
-      {
-        "name": "color",
-        "description": "Use different colors for spinner ",
-        "version": "5.2.2 onwards",
-        "type": "string",
-        "default": ""
-      },
-      {
-        "name": "size",
-        "description": "size for spinner(size in  px or % ) ",
-        "version": "5.2.2 onwards",
-        "type": "string",
         "default": ""
       }
         ]
@@ -98,8 +76,8 @@
     "isAccessibility": false,
   
     "sourceMetadata": {
-      "htmlUrl": "data/spinner/spinner.html",
-      "tsUrl": "data/spinner/spinner.text",
+      "htmlUrl": "data/virtualscroll/virtualscroll.html",
+      "tsUrl": "data/virtualscroll/virtualscroll.text",
       "datasourceUrl": ""
     },
     "liveMetadata": {

@@ -94,6 +94,10 @@ export class AppComponent {
             "link": "../v5.0/index.html",
             "submenus": [
               {
+                "text": "Version 5.13",
+                "link": "../v5.13/index.html"
+              },
+              {
                 "text": "Version 5.12",
                 "link": "../v5.12/index.html"
               },

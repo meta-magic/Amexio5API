@@ -15,7 +15,7 @@
         <amexio-column size="12">
             <div align="center">
                 <amexio-label [blackLabel]="true" size="'large-bold'">
-                    <h1> Amexio Angular EXtensions v5.13 </h1>
+                    <h1> Amexio Angular EXtensions v5.71 </h1>
                 </amexio-label>
                 <br>
 
@@ -191,6 +191,80 @@
                 <amexio-row>
                     <amexio-column size="12">
                         <amexio-accordion>
+                                <amexio-accordion-tab header="Amexio 5.71 - Angular 7" active="true">
+                                        <amexio-tab-view>
+                                            <amexio-tab title="Installation" active="true">
+                                                <amexio-row>
+                                                    <amexio-column size="12">
+                                                        <b>To install this Amexio 5.x follow the steps given below:</b>
+                                                        <br>
+                                                        <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre> Please make sure you have the latest version of
+                                                        <span style="font-weight: bold;color:  #c0392b">NodeJS & npm Angular CLI
+                                                        </span> installed.
+                                                        <br>
+                                                        <b>NodeJS</b> version should be above
+                                                        <span style="font-weight: bold;color:  #c0392b">8.9.0</span>
+                                                        <br>
+                                                        <b>Angular CLI</b> version should be above
+                                                        <span style="font-weight: bold;color:  #c0392b">6.0.0</span>
+                                                        <br>
+        
+        
+                                                        <b>and then from your Angular AppModule:</b>
+                                                    </amexio-column>
+                                                </amexio-row>
+                                                <br>
+                                                <amexio-row>
+                                                    <amexio-column size="12">
+                                                        <div style="height: 400px">
+                                                            <ng-container *ngIf="tsCode">
+                                                                <prism-block [code]="tsCode" [language]="'typescript'">
+                                                                </prism-block>
+                                                            </ng-container>
+                                                        </div>
+        
+                                                    </amexio-column>
+                                                </amexio-row>
+                                            </amexio-tab>
+                                            <amexio-tab title="Modules">
+                                                <p>Amexio Library Consist of the following modules</p>
+                                                <ng-container *ngIf="modulesData">
+                                                    <amexio-datagrid title="" [enable-column-filter]="false" [data]="modulesData" [height]="300" [enable-data-filter]="false">
+                                                        <amexio-data-table-column [width]="25" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Module Name'">
+                                                        </amexio-data-table-column>
+                                                        <amexio-data-table-column [width]="65" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'">
+                                                        </amexio-data-table-column>
+                                                    </amexio-datagrid>
+                                                </ng-container>
+                                                <br>
+        
+                                            </amexio-tab>
+                                            <amexio-tab title="Services">
+                                                <div style="height: 500px;overflow-x: auto;">
+        
+        
+                                                    <p>Amexio Provides the below services :</p>
+        
+                                                    <h3>IconService</h3>
+                                                    <span style="font-weight: bolder">Change all amexio icons from font-awesome to material and vice versa in a single
+                                                        line of code by injecting the
+                                                        <code>IconLoaderService</code>
+                                                    </span>
+                                                    <ng-container *ngIf="iconCode">
+                                                        <prism-block [code]="iconCode" [language]="'typescript'"></prism-block>
+                                                    </ng-container>
+                                                    <br>
+                                                    <h3>CommonDataService</h3>
+                                                    <span style="font-weight: bolder">By injecting
+                                                        <code>CommonDataService</code> into to module, you could easly fetch data from Rest</span>
+                                                    <ng-container *ngIf="dataCode">
+                                                        <prism-block [code]="dataCode" [language]="'typescript'"></prism-block>
+                                                    </ng-container>
+                                                </div>
+                                            </amexio-tab>
+                                        </amexio-tab-view>
+                                    </amexio-accordion-tab>
+
                             <amexio-accordion-tab header="Amexio 5.x - Angular 6" active="true">
                                 <amexio-tab-view>
                                     <amexio-tab title="Installation" active="true">
@@ -198,7 +272,7 @@
                                             <amexio-column size="12">
                                                 <b>To install this Amexio 5.x follow the steps given below:</b>
                                                 <br>
-                                                <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@latest --save</code></pre> Please make sure you have the latest version of
+                                                <pre style="font-weight: bold;color: #c0392b"><code>npm install amexio-ng-extensions@v5.13</code></pre> Please make sure you have the latest version of
                                                 <span style="font-weight: bold;color:  #c0392b">NodeJS & npm Angular CLI
                                                 </span> installed.
                                                 <br>
