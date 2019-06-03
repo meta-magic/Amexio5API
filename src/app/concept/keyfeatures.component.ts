@@ -25,6 +25,12 @@ export class KeyFeaturesComponent {
                 "title": " Amexio UI Components",
                 "desc": "160+ UI Components with powerful Responsive Layouts & additional 70+ features to enhance the UI. Components are available in 3 Editions – Standard, Enterprise and Creative Editions."
             },
+            {   
+                "image": "https://img1.wsimg.com/isteam/stock/8402/:/cr=t:0%25,l:27.37%25,w:64.23%25,h:100%25/rs=w:365,h:365,cg:true",
+                "title": "Forms",
+                "desc": "Amexio supports both Template Driven and Reactive Forms with 1 way and 2-way data bindings. With 5.9 release we introduced Creative Forms."
+
+            },
             {
                 "image": "https://img1.wsimg.com/isteam/stock/2445/:/cr=t:0%25,l:19.13%25,w:66.67%25,h:100%25/rs=w:730,h:730,cg:true",
                 "title": " Amexio Dashboard",
@@ -53,11 +59,6 @@ export class KeyFeaturesComponent {
 
             },
         
-            {   
-                "image": "https://img1.wsimg.com/isteam/stock/8402/:/cr=t:0%25,l:27.37%25,w:64.23%25,h:100%25/rs=w:365,h:365,cg:true",
-                "title": "Forms",
-                "desc": "Amexio supports both Template Driven and Reactive Forms with 1 way and 2-way data bindings. With 5.9 release we introduced Creative Forms."
-
-            }];
+          ];
     }
 }
