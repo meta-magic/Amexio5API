@@ -13,22 +13,23 @@
                 <amexio-layout-item [fit]="true" *ngFor="let alignment of ['center']">
                   <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="alignment">
                     <amexio-layout-item *ngFor="let item of  cardData">
-                      <amexio-card-ce [style-type]="item.styletype">
+                      <amexio-card-ce [height]="200" [style-type]="item.styletype">
                         <amexio-header-ce amexioColorPalette [color-palette]="item.colorpalette" [gradient]="true">
                           <amexio-label size="medium-bold">
                             {{item.cardheader}}
                           </amexio-label>
                         </amexio-header-ce>
                         <amexio-body-ce style="text-align: center">
-                          <amexio-layout-item >
-                            <amexio-label  size="medium-bold">
+                          <amexio-layout-item>
+                            <amexio-label size="medium-bold">
                               {{item.popularity}}
                             </amexio-label>
                           </amexio-layout-item>
                           <amexio-layout-columns [alignment]="'center'" [orientation]="'vertical'" [border]="false"
                             [responsive-mode]="true">
                             <amexio-layout-item>
-                              <amexio-image path={{item.path}}></amexio-image>
+                              <amexio-image style="display:block" [ngStyle]="{'margin-top': item.styletype =='ribbon-style' ? '-24px':'0px'}"
+                                path={{item.path}}></amexio-image>
                             </amexio-layout-item>
                             <amexio-layout-item style="text-align: center">
                               <amexio-label size="medium">
