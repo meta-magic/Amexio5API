@@ -13,7 +13,7 @@ export class KeyFeaturesComponent {
             {
                 "image": "https://img1.wsimg.com/isteam/stock/d4YwmOa/:/cr=t:0%25,l:11.32%25,w:81.34%25,h:100%25/rs=w:730,h:730,cg:true",
                 "title": " Responsive Design",
-                "desc": "Angular 7 UI Components are powered by HTML5 and CSS3 with Responsive Design for Layouts and Component Structures enabled by default."
+                "desc": "Responsive Design for Layouts and Component Structures enabled by default."
             },
             {
                 "image": "https://img1.wsimg.com/isteam/stock/5zw4Aq8/:/cr=t:0%25,l:4.06%25,w:66.67%25,h:100%25/rs=w:730,h:730,cg:true",
@@ -23,7 +23,7 @@ export class KeyFeaturesComponent {
             {
                 "image": "https://img1.wsimg.com/isteam/stock/378/:/cr=t:0%25,l:12.67%25,w:69.36%25,h:100%25/rs=w:730,h:730,cg:true",
                 "title": " Amexio UI Components",
-                "desc": "Amexio Varanasi v1.0 is our first release (june 2017) with 30 UI components. With v5.5 release in Dec 2018, we touched 160+ UI Components with powerful Responsive Layouts & additional 70+ features to enhance the UI. Components are available in 3 Editions – Standard, Enterprise and Creative Editions"
+                "desc": "160+ UI Components with powerful Responsive Layouts & additional 70+ features to enhance the UI. Components are available in 3 Editions – Standard, Enterprise and Creative Editions."
             },
             {
                 "image": "https://img1.wsimg.com/isteam/stock/2445/:/cr=t:0%25,l:19.13%25,w:66.67%25,h:100%25/rs=w:730,h:730,cg:true",
@@ -38,7 +38,7 @@ export class KeyFeaturesComponent {
             {
                 "image": "https://img1.wsimg.com/isteam/stock/93676/:/cr=t:0%25,l:0%25,w:66.67%25,h:100%25/rs=w:730,h:730,cg:true",
                 "title": "Amexio Maps & Social",
-                "desc": " Maps will help you plot your enterprise data on Google Maps. Social Logins enable you to authenticate using FB, Google, LinkedIn, etc."
+                "desc": " Maps will help you plot your enterprise data on Google Maps. Social Logins enable you to authenticate using FB, Google, LinkedIn, etc"
             },
             {   
                 "image": "https://img1.wsimg.com/isteam/stock/WVeNQYA/:/cr=t:0%25,l:0%25,w:65.85%25,h:100%25/rs=w:365,h:365,cg:true",
