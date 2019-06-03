@@ -23,16 +23,9 @@
                 </amexio-radio-group>
             </amexio-column>
             <amexio-column [size]=2>
-                <amexio-button [label]="'Theme Selector'" [type]="'theme-color'" [tooltip]="'toolTip'" (onClick)="showTS($event)">
-                </amexio-button>
-            </amexio-column>
-        </amexio-row>
-        <amexio-row *ngIf="toggle" [ngStyle]="{'margin-top': (relative) ? '-45px':null, 
-                                               'position':(relative) ? 'absolute':'relative'}" >
-            <amexio-column [size]=12>
-                <amexio-theme-switcher (onClose)="onClose($event)" [show]="toggle" [relative]="relative"
-                    [horizontal-position]="hpos" [vertical-position]="vpos" [col-size]="colsize">
-                </amexio-theme-switcher>
+                <amexio-theme-switcher (onClose)="onClose($event)"  [relative]="relative"
+                [horizontal-position]="hpos" [vertical-position]="vpos" [col-size]="colsize">
+            </amexio-theme-switcher>
             </amexio-column>
         </amexio-row>
     </amexio-api-demo>
