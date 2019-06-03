@@ -7115,6 +7115,10 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   background-color: var(--componentActiveBGColor);
   color: var(--componentActiveFontColor); }
 
+.accordion-transparent:focus, .accordion-transparent:hover {
+  background-color: var(--componentHoverBGColor);
+  color: var(--componentActiveFontColor); }
+
 .accordion:after {
   color: #dc143c; }
 
