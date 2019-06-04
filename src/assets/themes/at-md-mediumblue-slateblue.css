@@ -303,7 +303,6 @@ Spin animation for .loading-mask::after
     transform: rotate(359deg); } }
 label {
   display: inline-block;
-  margin-top: 5px;
   max-width: 100%;
   font-size: 14px;
   font-weight: 500; }
