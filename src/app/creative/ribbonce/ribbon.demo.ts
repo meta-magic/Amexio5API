@@ -53,7 +53,7 @@ export class RibbonCardDemo implements OnInit {
         "colorpalette":"classic",
         "styletype": "ribbon-style",
         "buttonlabel": "buy",
-        "popularity": "Most Popular"
+        "popularity": "Silver Package"
       },
       {
         "cardheader": "Gold Package",
