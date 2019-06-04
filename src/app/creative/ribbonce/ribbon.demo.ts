@@ -46,7 +46,7 @@ export class RibbonCardDemo implements OnInit {
         "popularity": ""
       },
       {
-        "cardheader": "Silver Package",
+        "cardheader": "Most Popular",
         "path": "assets/images/logos/Amexio.webp",
         "contact": "Contact",
         "price": "6000",
