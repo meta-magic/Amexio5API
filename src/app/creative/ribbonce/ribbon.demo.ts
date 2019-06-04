@@ -28,41 +28,41 @@ export class RibbonCardDemo implements OnInit {
       {
         "cardheader": "Free Plan",
         "path": "assets/images/logos/Amexio.webp",
-        "contact": "Contact",
+        "contact": "Contact Us",
         "price": "Free",
         "colorpalette":"",
         "styletype": "",
-        "buttonlabel": "buy",
+        "buttonlabel": "Buy",
         "popularity": ""
       },
       {
         "cardheader": " Bronze Package",
         "path": "assets/images/logos/Amexio.webp",
-        "contact": "Contact",
+        "contact": "Contact Us",
         "price": "$3000",
         "colorpalette":"",
         "styletype": "",
-        "buttonlabel": "buy",
+        "buttonlabel": "Buy",
         "popularity": ""
       },
       {
-        "cardheader": "Most Popular",
+        "cardheader": "Silver Package",
         "path": "assets/images/logos/Amexio.webp",
-        "contact": "Contact",
+        "contact": "Contact Us",
         "price": "$6000",
         "colorpalette":"classic",
         "styletype": "ribbon-style",
-        "buttonlabel": "buy",
-        "popularity": "Silver Package"
+        "buttonlabel": "Buy",
+        "popularity": "Most Popular"
       },
       {
         "cardheader": "Gold Package",
         "path": "assets/images/logos/Amexio.webp",
-        "contact": "Contact",
+        "contact": "Contact Us",
         "price": "$8500",
         "colorpalette":"",
         "styletype": "",
-        "buttonlabel": "buy",
+        "buttonlabel": "Buy",
         "popularity": ""
       }
 
