@@ -45,36 +45,36 @@
         {
           "name": "title",
           "description": "Title to the banner.",
-          "version": "5.15.1 onwards",
+          "version": "5.13 onwards",
           "type": "string",
           "default": "none"
         },
         {
           "name": "icon",
           "description": "Icon before the title we can use.",
-          "version": "5.15.1 onwards",
+          "version": "5.13 onwards",
           "type": "string",
           "default": ""
         },
         {
-          "name": "color-palette",
-          "description": "color palette to the banner.",
-          "version": "5.15.1 onwards",
-          "type": "string",
-          "default": "theme's background color"
-        },
-        {
           "name": "closable",
           "description": "closable functionlity to the banner",
-          "version": "5.15.1 onwards",
+          "version": "5.13 onwards",
           "type": "boolean",
           "default": "false"
         },
         {
           "name": "interval",
           "description": "interval to the banner which is diss-miss after some interval in sec.",
-          "version": "5.15.1 onwards",
+          "version": "5.13 onwards",
           "type": "string",
+          "default": ""
+        },
+        {
+          "name": "close-on-scroll",
+          "description": "closes on scroll",
+          "version": "5.13.2 onwards",
+          "type": "boolean",
           "default": ""
         }
       ]
