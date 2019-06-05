@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class WindowDemoComponent {
 
   showBasicWindowMaterial: boolean;
+  showBasicDraggableWindowMaterial: boolean;
   showBasicWindowNonMaterial: boolean;
   showBasicWindowNonMateialToolbar: boolean;
 
@@ -41,6 +42,7 @@ export class WindowDemoComponent {
   toggleBasicWindow(data: any) {
     if (data == 'material') {
       this.showBasicWindowMaterial = !this.showBasicWindowMaterial;
+      
     }
     else if (data == 'nonmaterial') {
       this.showBasicWindowNonMaterial = !this.showBasicWindowNonMaterial;
@@ -63,10 +65,17 @@ export class WindowDemoComponent {
   toggleClosable(data: any) {
     if (data == 'material') {
       this.showClosableMaterial = !this.showClosableMaterial;
+      this.showBasicDraggableWindowMaterial = !this.showBasicDraggableWindowMaterial;
     }
     else {
       this.showClosableNonMaterial = !this.showClosableNonMaterial;
     }
+  }
+  toggleClosable1(data: any) {
+    if (data == 'material') {
+      this.showBasicDraggableWindowMaterial = !this.showBasicDraggableWindowMaterial;
+    }
+    
   }
 
 
