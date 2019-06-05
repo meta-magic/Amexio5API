@@ -9,13 +9,17 @@ import {Component} from '@angular/core';
 })
 export class CreativeWindowDemo {
    showSideModal: boolean;
+   showSideModal1: boolean;
    showCenterModal:boolean;
    showLoginWindow:boolean;
    showInfoModal:boolean;
    showFrameWindow:boolean;
-  constructor() {
+   constructor() {
      
-}
+ }
+ onDragWindowClick(){
+  this.showSideModal1 = !this.showSideModal1;
+ }
   onSideModalClick(){
    this.showSideModal = !this.showSideModal;
   }

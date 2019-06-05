@@ -7,10 +7,13 @@
                     <amexio-body>
                         <amexio-row>
                             <amexio-column [size]="4">
-                                <amexio-button type="success" (onClick)=" onSideModalClick()" label="Side Modal"></amexio-button>
-                                <amexio-window-ce   position-top="100px" [horizontal-position]="'left'" [vertical-position]="'top'" [(show)]="showSideModal" width="400px">
-                                    <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'" [gradient]="true" height="45px" align="center" vertical-align="top">
-                                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
+                                <amexio-button type="success" (onClick)="onSideModalClick()" label="Side Modal"></amexio-button>
+                                <amexio-window-ce position-top="100px" [horizontal-position]="'left'"
+                                    [vertical-position]="'top'" [(show)]="showSideModal" width="400px">
+                                    <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'"
+                                        [gradient]="true" height="45px" align="center" vertical-align="top">
+                                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px"
+                                            [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
                                     </amexio-header-ce>
                                     <amexio-body-ce align="center">
                                         <br><br><br>
@@ -18,12 +21,16 @@
                                             Araf Karsh
                                         </amexio-label>
                                         <p>
-                                            Entrepreneur | Author | Speaker | Architect : UI/UX, Containers, Kubernetes, Microservices (DDD, ES / CQRS), Blockchain
+                                            Entrepreneur | Author | Speaker | Architect : UI/UX, Containers,
+                                            Kubernetes, Microservices (DDD, ES / CQRS), Blockchain
                                         </p>
                                         <p>
-                                            Araf Karsh has with over 27 years of experience leading the design and development of mission-critical, object-oriented and
-                                            web-based applications for premier organizations including Bank of America, CIBC,
-                                            Johnson & Johnson, Kaiser Permanente, the U.S. Department of State, and the U.S
+                                            Araf Karsh has with over 27 years of experience leading the design and
+                                            development of mission-critical, object-oriented and
+                                            web-based applications for premier organizations including Bank of America,
+                                            CIBC,
+                                            Johnson & Johnson, Kaiser Permanente, the U.S. Department of State, and the
+                                            U.S
                                         </p>
 
                                     </amexio-body-ce>
@@ -46,8 +53,8 @@
                             </amexio-column>
                             <amexio-column size="4">
                                 <amexio-button type="success" (onClick)="onCenterModalClick()" label="Center Modal"></amexio-button>
-                                <amexio-window-ce [(show)]="showCenterModal" [horizontal-position]="'center'" [vertical-position]="'center'" width="400px"
-                                    align="start">
+                                <amexio-window-ce [(show)]="showCenterModal" [horizontal-position]="'center'"
+                                    [vertical-position]="'center'" width="400px" align="start">
                                     <amexio-header-ce align="left" vertical-align="top">
                                         <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
                                             <amexio-layout-item>
@@ -60,12 +67,15 @@
                                     </amexio-header-ce>
                                     <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg"></amexio-image>
                                     <amexio-body-ce>
-                                        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'-44px'" [left]="'0px'">
+                                        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'"
+                                            [top]="'-44px'" [left]="'0px'">
                                             <amexio-label>Photos</amexio-label>
                                         </amexio-badge>
                                         <p>
-                                            The G 310 R and G 310 GS are the two small-capacity motorcycles that were supposed to help BMW Motorrad garner the figures
-                                            for growth that it projected.The 310 twins will not be about numbers, but about
+                                            The G 310 R and G 310 GS are the two small-capacity motorcycles that were
+                                            supposed to help BMW Motorrad garner the figures
+                                            for growth that it projected.The 310 twins will not be about numbers, but
+                                            about
                                             quality – something that BMW Motorrad is known for in markets globally.
                                         </p>
                                     </amexio-body-ce>
@@ -83,9 +93,12 @@
                             </amexio-column>
                             <amexio-column [size]="'4'">
                                 <amexio-button type="success" (onClick)="onloginWindowClick()" label="Login Modal"></amexio-button>
-                                <amexio-window-ce [(show)]="showLoginWindow" [horizontal-position]="'right'" [vertical-position]="'top'" width="350px" align="center">
-                                    <amexio-header-ce [background]="'linear-gradient(40deg,#40E0D0, #FF0080)'" [height]="'50px'" align="center" vertical-align="top">
-                                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/dipali.jpg"></amexio-image>
+                                <amexio-window-ce [(show)]="showLoginWindow" [horizontal-position]="'right'"
+                                    [vertical-position]="'top'" width="350px" align="center">
+                                    <amexio-header-ce [background]="'linear-gradient(40deg,#40E0D0, #FF0080)'" [height]="'50px'"
+                                        align="center" vertical-align="top">
+                                        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px"
+                                            [filter]="'round'" path="assets/images/profile/dipali.jpg"></amexio-image>
 
                                     </amexio-header-ce>
 
@@ -95,10 +108,12 @@
                                             Deepali Arvind
                                         </amexio-label>
                                         <br><br>
-                                        <amexio-password-input [place-holder]="'Please enter password'" [allow-blank]="false"> </amexio-password-input>
+                                        <amexio-password-input [place-holder]="'Please enter password'" [allow-blank]="false">
+                                        </amexio-password-input>
                                     </amexio-body-ce>
                                     <amexio-action-ce [align]="'center'" [border-top]="true">
-                                        <amexio-button icon="fa fa-sign-in" [label]="'Login'" [type]="'green'" [tooltip]="'Login'">
+                                        <amexio-button icon="fa fa-sign-in" [label]="'Login'" [type]="'green'"
+                                            [tooltip]="'Login'">
                                         </amexio-button>
                                     </amexio-action-ce>
                                 </amexio-window-ce>
@@ -114,9 +129,10 @@
                         <amexio-row>
                             <amexio-column size="4">
                                 <amexio-button type="success" (onClick)="showInfoModalClick()" label="Info Modal"></amexio-button>
-                                <amexio-window-ce [(show)]="showInfoModal" color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'" [horizontal-position]="'left'"
-                                    [vertical-position]="'bottom'" [align]="'center'" width="400px">
-                                    <amexio-header-ce  [align]="'space-between'" icon-valign="top">
+                                <amexio-window-ce [(show)]="showInfoModal" color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'"
+                                    [horizontal-position]="'left'" [vertical-position]="'bottom'" [align]="'center'"
+                                    width="400px">
+                                    <amexio-header-ce [align]="'space-between'" icon-valign="top">
                                         <amexio-label [size]="'medium-bold'">
                                             John Doe
                                         </amexio-label>
@@ -134,13 +150,20 @@
                                     </amexio-header-ce>
                                     <amexio-body-ce>
                                         <p>
-                                            One of the most incredible places in India, Kashmir is known for its enthralling beauty and is rightly nicknamed as the ‘Heaven
-                                            on Earth’. With its Picturesque lakes, striking fruit orchards, verdant meadows
-                                            surrounded with thick woods of pines and deodars, lush green gardens teeming
-                                            with vibrant flowers and captivating valleys enclosed with snow-covered peaks
-                                            of Himalayan and Pir-Panjal ranges – Kashmir seems to have directly made its
-                                            way out from a picture postcard. Revelling in the adventure of world’s highest
-                                            Gondola ride at Gulmarg – the magic of Kashmir with its breath-taking vistas
+                                            One of the most incredible places in India, Kashmir is known for its
+                                            enthralling beauty and is rightly nicknamed as the ‘Heaven
+                                            on Earth’. With its Picturesque lakes, striking fruit orchards, verdant
+                                            meadows
+                                            surrounded with thick woods of pines and deodars, lush green gardens
+                                            teeming
+                                            with vibrant flowers and captivating valleys enclosed with snow-covered
+                                            peaks
+                                            of Himalayan and Pir-Panjal ranges – Kashmir seems to have directly made
+                                            its
+                                            way out from a picture postcard. Revelling in the adventure of world’s
+                                            highest
+                                            Gondola ride at Gulmarg – the magic of Kashmir with its breath-taking
+                                            vistas
                                             is sure to captivate your heart and soul forever.
                                         </p>
                                     </amexio-body-ce>
@@ -161,15 +184,18 @@
                             </amexio-column>
                             <amexio-column [size]="'4'">
                                 <amexio-button type="success" (onClick)="onFrameModalClick()" label="Frame Modal"></amexio-button>
-                                <amexio-window-ce [(show)]="showFrameWindow" [vertical-position]="'bottom'" width="auto" maximize="true">
+                                <amexio-window-ce [(show)]="showFrameWindow" [vertical-position]="'bottom'" width="auto"
+                                    maximize="true">
                                     <amexio-header-ce height="10px" vertical-align="top">
                                     </amexio-header-ce>
                                     <amexio-body-ce>
                                         <div style="border:none;">
-                                            <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="'space-between'">
+                                            <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'"
+                                                [alignment]="'space-between'">
                                                 <amexio-layout-item>
                                                     <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit nostrum quos.
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Impedit nisi quo provident fugiat reprehenderit nostrum quos.
                                                     </p>
                                                 </amexio-layout-item>
                                                 <amexio-layout-item>
@@ -189,6 +215,44 @@
                                         </amexio-label>
                                     </amexio-column>
                                 </amexio-row>
+                            </amexio-column>
+                            <amexio-column [size]="'4'">
+                                <amexio-button type="success" (onClick)="onDragWindowClick()" label="Drag Window"></amexio-button>
+                                <amexio-window-ce [draggable]="true" position-top="100px" [horizontal-position]="'left'"
+                                [vertical-position]="'top'" [(show)]="showSideModal1" width="400px">
+                                <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'"
+                                    [gradient]="true" height="45px" align="center" vertical-align="top">
+                                    <amexio-image width="100px" [c-class]="'card-img-center'" height="100px"
+                                        [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
+                                </amexio-header-ce>
+                                <amexio-body-ce align="center">
+                                    <br><br><br>
+                                    <amexio-label [size]="'large'">
+                                        Araf Karsh
+                                    </amexio-label>
+                                    <p>
+                                        Entrepreneur | Author | Speaker | Architect : UI/UX, Containers,
+                                        Kubernetes, Microservices (DDD, ES / CQRS), Blockchain
+                                    </p>
+                                    <p>
+                                        Araf Karsh has with over 27 years of experience leading the design and
+                                        development of mission-critical, object-oriented and
+                                        web-based applications for premier organizations including Bank of America,
+                                        CIBC,
+                                        Johnson & Johnson, Kaiser Permanente, the U.S. Department of State, and the
+                                        U.S
+                                    </p>
+
+                                </amexio-body-ce>
+                                <amexio-action-ce [align]="'center'" [border-top]="true">
+                                    <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
+                                    </amexio-floating-button>
+                                    <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
+                                    </amexio-floating-button>
+                                    <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
+                                    </amexio-floating-button>
+                                </amexio-action-ce>
+                            </amexio-window-ce>
                             </amexio-column>
                         </amexio-row>
                     </amexio-body>
