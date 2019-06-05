@@ -10,6 +10,7 @@ import { MenuDemoComponent } from './menu/menu.demo';
 import { RibbonCardDemo } from './ribbonce/ribbon.demo';
 import { CreativeCardDemoOverlayEffect } from './cardcewithoverlayeffects/card.demo'
 import {ColorPickerDemoComponent} from './forminputs/colorpicker/colorpicker.demo';
+import {CreativeCardDemoFlipEffect} from './cardwithflipeffect/card.demo';
 /**
  * Created by kedar on 6/2/19.
  */
@@ -47,5 +48,8 @@ export const CREATIVE_ROUTE: Routes = [
     },
     {
         path: 'colorpicker-demo', component: ColorPickerDemoComponent,
+    },
+    {
+        path: 'card-ce-demo-flipeffect', component: CreativeCardDemoFlipEffect,
     }
 ];

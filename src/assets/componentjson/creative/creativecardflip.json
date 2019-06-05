@@ -1,0 +1,495 @@
+{
+    "title": "Creative Card with Flip Effects",
+    "description": "The creative card is a powerful Panel with simple to use layouts, features and flip effect",
+    "componentDescription": "Amexio Creative Card with flip effect can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows",
+    "descriptionDetail": [
+        "Header",
+        "Body",
+        "Action"
+    ],
+    "compFeaturesTitle": "Key-Features",
+    "keyFeatures": [
+        "  Layout Structure (Header, Body, Action)",
+        "  Add Components to Card Container, Header, and Body",
+        "  Add Actionable Buttons to Card Action Panel ",
+        "  Supports Background Images",
+        "  Supports Transparency for Header and Action Panel",
+        "  Attach a Badge to the Card ",
+        " Keyboard Navigation enabled",
+        " Component Life Cycle Events (Initiated, Ready, Destroyed)"
+    ],
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-card-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 20,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "start",
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card example start,center,end"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "card content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "height of card"
+                },
+                {
+                    "name": "style-type",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "card wider or narrower style. examples wider-header,wider-action,narrower-header,narrower-action,wider-all,narrower-all"
+                },
+                {
+                    "name": "enable-lifecycle-events",
+                    "description": "Enable lifecycle events example [all/init/ready/destroy].",
+                    "version": "5.7 onwards",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": "overlay-type",
+                    "description": "Enables overlay effects (fade-effect or slider-effect)",
+                    "version": "5.13 onwards",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": "flip-effect",
+                    "description": "Enables flip effects on creative card",
+                    "version": "5.13 onwards",
+                    "type": "boolean",
+                    "default": "false"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Properties of <amexio-header-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "start",
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card header example start,center,end"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card header"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "card header content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "height of card header"
+                },
+                {
+                    "name": "border-bottom",
+                    "type": "boolean",
+                    "default": "false",
+                    "version": "5.5.5 onwards",
+                    "description": "set true border will enable for header bottom"
+                },
+                {
+                    "name": "direction",
+                    "type": "string",
+                    "default": "row",
+                    "version": "5.5.5 onwards",
+                    "description": "set direction of card header"
+                },
+                {
+                    "name": "icon-align",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "sets icon alignment"
+                },
+                {
+                    "name": "apply-theme-color",
+                    "type": "boolean",
+                    "default": "false",
+                    "version": "5.9.3 onwards",
+                    "description": "Card header backgound color and color can be set to theme color if apply-theme-color flag is true."
+                }
+            ]
+        },
+        {
+            "gridTitle": "Properties of <amexio-body-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "end",
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card body example start,center,end"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card body"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "card body content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card body"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "height of card body"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Properties of <amexio-action-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "align",
+                    "type": "string",
+                    "default": "end",
+                    "version": "5.5.5 onwards",
+                    "description": "alignement of card action example start,center,end"
+                },
+                {
+                    "name": "bg-image",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background image of card action"
+                },
+                {
+                    "name": "color",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "card action content color"
+                },
+                {
+                    "name": "background",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "background color or gradient of card"
+                },
+                {
+                    "name": "height",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.5.5 onwards",
+                    "description": "height of card action"
+                },
+                {
+                    "name": "border-top",
+                    "type": "boolean",
+                    "default": "false",
+                    "version": "5.5.5 onwards",
+                    "description": "set true border will enable for action top"
+                },
+                {
+                    "name": "direction",
+                    "type": "string",
+                    "default": "row",
+                    "version": "5.5.5 onwards",
+                    "description": "set direction of card action"
+                }
+            ]
+        },
+        {
+            "gridTitle": "Events <amexio-card-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 20,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "initiated",
+                    "version": "5.7 onwards",
+                    "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+                },
+                {
+                    "name": "ready",
+                    "version": "5.7 onwards",
+                    "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+                },
+                {
+                    "name": "destroy",
+                    "version": "5.7 onwards",
+                    "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+                }
+            ]
+        },
+        {
+            "gridTitle": "Color-Palette Directive: amexioColorPalette <amexio-header-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "color-palette",
+                    "type": "string",
+                    "version": "5.12 onwards",
+                    "description": "classic/ vibrant/ random/ specific (vibrant: amexio-theme-color4)"
+                },
+                {
+                    "name": "gradient",
+                    "type": "boolean",
+                    "version": "5.12 onwards",
+                    "description": "If true"
+                }
+            ]
+        }
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "creative/cardceflip/creative.html",
+        "tsUrl": "creative/cardceflip/creative.text",
+        "datasourceUrl": ""
+    },
+    "isAccessibility": false,
+    "liveMetadata": {
+        "disabled": true,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-card?embed=1&file=app/layout/Creativecard/creativecard.demo.html&view=editor"
+    }
+}

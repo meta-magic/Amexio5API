@@ -1041,6 +1041,12 @@ export const MENUCONSTANT = {
           link: "creative/card-ce-demo-overlayeffect"
         },
         {
+          text: "Creative Card With Flip Effect",
+          icon: "fa fa-map",
+          badge: "NEW",
+          link: "creative/card-ce-demo-flipeffect"
+      },
+        {
           text: "Polaroid Card",
           icon: "fa fa-image",
           link: "layout/polaroid-card-demo"

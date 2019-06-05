@@ -19,12 +19,13 @@ import { MenuDemoComponent } from "./menu/menu.demo";
 import { RibbonCardDemo } from "./ribbonce/ribbon.demo";
 import { CreativeCardDemoOverlayEffect } from "./cardcewithoverlayeffects/card.demo"
 import {ColorPickerDemoComponent} from "./forminputs/colorpicker/colorpicker.demo";
+import {CreativeCardDemoFlipEffect} from "./cardwithflipeffect/card.demo";
 /**
  * Created by kedar on 6/2/19.
  */
 @NgModule({
     declarations: [CreativeCardDemo,ColorPickerDemoComponent, CreativeCardDemoOverlayEffect, ViewportDemoComponent, CreativeWindowDemo, CreativeFormDemo, CreativeCircularProgressBarDemo, HomePageDemo,
-        CreativeCarouselComponent, MenuDemoComponent, RibbonCardDemo],
+        CreativeCarouselComponent, MenuDemoComponent, RibbonCardDemo, CreativeCardDemoFlipEffect],
     imports: [
         CommonModule,
         FormsModule,
