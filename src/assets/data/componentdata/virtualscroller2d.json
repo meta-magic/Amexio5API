@@ -1,0 +1,98 @@
+{
+    "body": {
+        "results": {
+            "uri": "https://api.hotstar.eeeecom/o/v1/language/detail?id=9&avsCategoryId=5631&contentId=5710&offset=0&size=20&pageNo=1&perPage=40&ct=200",
+            "pageType": "TRAY_DETAIL_PAGE",
+            "responseType": "LANG_ASSET_LIST",
+            "assets": {
+                "items": [{
+                        "data": [{
+                                "name": "sagar1"
+                            },
+                            {
+                                "name": "sagar2"
+                            },
+                            {
+                                "name": "sagar3"
+                            }
+                        ]
+                    }, {
+                        "data": [{
+                                "name": "sagar4"
+                            },
+                            {
+                                "name": "sagar5"
+                            },
+                            {
+                                "name": "sagar6s"
+                            }
+                        ]
+                    },
+                    {
+                        "data": [{
+                                "name": "sagar7"
+                            },
+                            {
+                                "name": "sagar8"
+                            },
+                            {
+                                "name": "sagar9"
+                            }
+                        ]
+                    }, {
+                        "data": [{
+                                "name": "sagar10"
+                            },
+                            {
+                                "name": "sagar11"
+                            },
+                            {
+                                "name": "sagar12"
+                            }
+                        ]
+                    }, {
+                        "data": [{
+                                "name": "sagar13"
+                            },
+                            {
+                                "name": "sagar14"
+                            },
+                            {
+                                "name": "sagar15"
+                            }
+                        ]
+                    }, {
+                        "data": [{
+                                "name": "sagar16"
+                            },
+                            {
+                                "name": "sagar17"
+                            },
+                            {
+                                "name": "sagar18"
+                            }
+                        ]
+                    }, {
+                        "data": [{
+                            "name": "sagar19"
+                        }]
+                    }
+                ],
+                "totalResults": 701,
+                "offset": 0,
+                "size": 20,
+                "nextOffsetURL": "https://api.hotstar.com/o/v1/language/f_cr/asset?id=9&avsCategoryId=5631&offset=20&size=20&pageNo=1&perPage=20&ct=200",
+                "totalPages": 36,
+                "totalPageResults": 20
+            },
+            "language": {
+                "id": 9,
+                "name": "Hindi",
+                "noOfShows": 309,
+                "noOfMovies": 600
+            }
+        }
+    },
+    "statusCode": "OK",
+    "statusCodeValue": 200
+}

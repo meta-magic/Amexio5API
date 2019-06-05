@@ -1,0 +1,82 @@
+{
+    "title": "Amexio Virtual Scroller",
+    "description": "",
+    "apiRefMetadata": [{
+        "gridTitle": "Properties <amexio-virtual-scroller>",
+        "columnDefinition": [{
+                "dataindex": "name",
+                "text": "Name",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "version",
+                "text": "Version",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "type",
+                "text": "Type",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "default",
+                "text": "Default",
+                "width": 15,
+                "hidden": false,
+                "datatype": "string"
+            },
+            {
+                "dataindex": "description",
+                "text": "Description",
+                "width": 60,
+                "hidden": false,
+                "datatype": "string"
+            }
+        ],
+        "gridData": [{
+                "name": "height",
+                "description": "Sets height of virtual scroll",
+                "version": "5.71 onwards",
+                "type": "number",
+                "default": ""
+            },
+            {
+                "name": "data",
+                "description": "Sets data of virtual scroll",
+                "version": "5.71 onwards",
+                "type": "any[]",
+                "default": ""
+            }, {
+                "name": "item-size",
+                "description": "Sets item size of virtual scroll",
+                "version": "5.71 onwards",
+                "type": "number",
+                "default": ""
+            },
+            {
+                "name": "amexioBodyTmpl",
+                "description": "It is a template element used by virtual scroll",
+                "version": "5.71 onwards",
+                "type": "any",
+                "default": ""
+            }
+        ]
+    }],
+    "isAccessibility": false,
+
+    "sourceMetadata": {
+        "htmlUrl": "data/virtualscroller/virtualscroller.html",
+        "tsUrl": "data/virtualscroller/virtualscroller.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": true,
+        "stackblitzUrl": ""
+    }
+}
