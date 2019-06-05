@@ -8665,6 +8665,9 @@ amexio-layout amexio-layout-item {
   left: 0; }
 
 .amexio-root-window-content-ce {
+  position: relative; }
+
+.amexio-root-window-content-ce {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9147,23 +9150,55 @@ amexio-layout-columns amexio-layout-item {
 *****************************************************************************/
 /** creative card - var CSS **/
 /** creative card - Visual CSS **/
+.bmenu1 a {
+  color: transparent;
+  text-shadow: 0px 0px 5px black; }
+
+.bmenu1 a:hover {
+  text-shadow: 0px 0px 1px var(--componentHeaderBGColor); }
+
+.bmenu2 a {
+  color: transparent;
+  text-shadow: 0px 0px 6px black; }
+
+.bmenu2 a:hover {
+  text-shadow: 0px 0px 1px var(--componentHeaderBGColor); }
+
+.bmenu3 a {
+  text-shadow: 0px 0px 4px black; }
+
+.bmenu3 a:hover {
+  color: var(--componentHoverFontColor);
+  text-shadow: 0px 0px 1px black; }
+
+.bmenu4 a {
+  color: transparent;
+  text-shadow: 0px 0px 3px black; }
+
+.bmenu4 a:hover {
+  color: var(--componentHoverFontColor);
+  background: var(--componentHoverBGColor); }
+
+.bmenu4 a:hover {
+  text-shadow: none; }
+
+/** creative card - Structure CSS **/
 .textLeftPosition {
   width: max-content;
-  padding-left: 3%;
-  float: left;
+  display: grid;
+  justify-content: center;
   position: relative; }
 
 .textRightPosition {
   width: max-content;
-  padding-right: 7%;
+  text-align: right;
   float: right;
   position: relative; }
 
 .textCenterPosition {
   text-align: center;
   position: relative;
-  padding-left: 30%;
-  width: max-content; }
+  width: 100%; }
 
 .bmenu {
   padding: 0px;
@@ -9171,10 +9206,8 @@ amexio-layout-columns amexio-layout-item {
   position: relative; }
 
 .bmenu1 a {
-  color: transparent;
   display: block;
   text-transform: uppercase;
-  text-shadow: 0px 0px 5px black;
   letter-spacing: 1px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -9184,16 +9217,12 @@ amexio-layout-columns amexio-layout-item {
   text-decoration: none; }
 
 .bmenu1 a:hover {
-  /* color: black; */
-  text-shadow: 0px 0px 1px var(--componentHeaderBGColor);
   padding-left: 10px; }
 
 .bmenu2 a {
   white-space: nowrap;
-  color: transparent;
   display: block;
   text-transform: uppercase;
-  text-shadow: 0px 0px 6px black;
   letter-spacing: 1px;
   -moz-transform: scale(0.5);
   -ms-transform: scale(0.5);
@@ -9207,7 +9236,6 @@ amexio-layout-columns amexio-layout-item {
   transition: all 0.6s linear; }
 
 .bmenu2 a:hover {
-  text-shadow: 0px 0px 1px var(--componentHeaderBGColor);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
@@ -9215,10 +9243,8 @@ amexio-layout-columns amexio-layout-item {
   transform: scale(1); }
 
 .bmenu3 a {
-  color: transparent;
   display: block;
   text-transform: uppercase;
-  text-shadow: 0px 0px 4px black;
   letter-spacing: 1px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -9227,16 +9253,12 @@ amexio-layout-columns amexio-layout-item {
   transition: all 0.2s ease-in-out; }
 
 .bmenu3 a:hover {
-  color: var(--componentHoverFontColor);
-  text-shadow: 0px 0px 1px black;
   padding-left: 10px; }
 
 .bmenu4 a {
   white-space: nowrap;
-  color: transparent;
   display: block;
   text-transform: uppercase;
-  text-shadow: 0px 0px 3px black;
   letter-spacing: 1px;
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
@@ -9250,16 +9272,12 @@ amexio-layout-columns amexio-layout-item {
   transition: all 0.4s linear; }
 
 .bmenu4 a:hover {
-  text-shadow: none;
-  color: var(--componentHoverFontColor);
-  background: var(--componentHoverBGColor);
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -o-transform: scale(1);
   -webkit-transform: scale(1);
   transform: scale(1); }
 
-/** creative card - Structure CSS **/
 /** Initialze Animation variables ------------ */
 /****************************************************************************
                 Animation CSS for Checkbox 
