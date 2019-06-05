@@ -8,7 +8,7 @@
                             Amexio Virtual Scroller
                         </amexio-label>
                     </amexio-header-ce>
-                    <amexio-body-ce [height]="'50vh'">
+                    <amexio-body-ce>
                         <amexio-virtual-scroller [height]="360" [item-size]="210" [data]="localData.body.results.assets.items">
                             <ng-template #amexioBodyTmpl let-row="row">
                                 <amexio-card [header]="false" [footer]="false" [show]="true">
@@ -16,7 +16,7 @@
                                     <amexio-body>
                                         <amexio-row>
                                             <amexio-column [size]="4">
-                                                <amexio-image [path]="row.imagepath" [height]="'180px'">
+                                                <amexio-image [path]="row.imagepath" [height]="'150px'">
                                                 </amexio-image>
                                             </amexio-column>
                                             <amexio-column [size]="8">
