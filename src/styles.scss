@@ -8,7 +8,7 @@
 .floatingpanel{
   position : fixed;
   z-index: 100;
-  
+
 }
 
 .floatingpanelbutton{
@@ -35,7 +35,7 @@
 
 
 amexio-theme-switcher  .card-container{
-  margin: 5px 5px !important;  
+  margin: 5px 5px !important;
 }
 
 
@@ -86,7 +86,7 @@ amexio-theme-switcher  .card-container{
     margin: unset;
     padding: unset;
   }
-  
+
 }
 
 
@@ -262,7 +262,7 @@ amexio-theme-switcher  .card-container{
 }
 
 
-// D3 chart css 
+// D3 chart css
 
 /* You can add global styles to this file, and also import other style files */
 .bar:hover
@@ -282,7 +282,7 @@ fill: #17bf3c;
     text-align: center;
   }
 
- 
+
 }
 
  .card-img-center {     position: absolute;
@@ -292,11 +292,11 @@ fill: #17bf3c;
   // .side-nav-with-tab{
   //   display: block;
   // }
-  
+
   // .side-nav-with-tab > li{
   //   padding-left: 0px !important;
   // }
-  
+
   // .side-nav-with-tab > li > div{
   //   padding-right: 0px !important;
   // }
@@ -307,21 +307,26 @@ fill: #17bf3c;
 
   .side-nav-with-tab .panel {
     padding: 10px 0px !important;
-    overflow-y: hidden!important; 
+    overflow-y: hidden!important;
   }
-  
+
   .side-nav-with-tab > li{
     padding-left: 0px !important;
   }
-  
+
   .side-nav-with-tab > li > div{
     padding-right: 0px !important;
   }
-  
+
   .api-header-style .box-content{
     margin: -20px -100%;
     padding: 20px 100%;
   }
-  
-  
-  
+
+
+@media only screen and (max-width: 500px){
+  .api-header-style .box-content{
+    margin: unset!important;
+    padding: unset !important;
+  }
+}
