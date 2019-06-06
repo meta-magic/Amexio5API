@@ -7,8 +7,9 @@
     ],
     "compFeaturesTitle": "Key-Features",
     "keyFeatures": [
-        "Simple virtual scroller",
-        "Mutli column virtual scroller"
+        "Mutli column virtual scroller",
+        "Carousel with virtual scroller",
+        "Simple virtual scroller"
     ],
     "apiRefMetadata": [{
         "gridTitle": "Properties <amexio-virtual-scroller>",
