@@ -6650,8 +6650,9 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   transform-origin: 0 0; }
 
 .mobileModeNav {
-  position: relative !important;
-  width: 100% !important; }
+  position: relative;
+  width: 100%;
+  box-shadow: none; }
 
 /****************************************************************************
     Component Name : Paginator
