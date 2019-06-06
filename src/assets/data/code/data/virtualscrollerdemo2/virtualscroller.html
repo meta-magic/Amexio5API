@@ -1,0 +1,15 @@
+<!-- CAROUSEL WITH VIRTUAL SCROLLER -->
+<amexio-virtual-scroller *ngIf="carouselData " [height]="560 " [item-size]="180 " [data]="carouselData.items ">
+    <ng-template #amexioBodyTmpl let-row="row ">
+        <amexio-row>
+            <amexio-column size="12 ">
+                <amexio-carousel *ngIf="row.data " [data]="row.data ">
+                    <ng-template let-img amexioTemplate="item ">
+                        <amexio-image [height]=" '180px' " [path]="img.imagepath ">
+                        </amexio-image>
+                    </ng-template>
+                </amexio-carousel>
+            </amexio-column>
+        </amexio-row>
+    </ng-template>
+</amexio-virtual-scroller>

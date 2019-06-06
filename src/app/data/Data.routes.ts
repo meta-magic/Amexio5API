@@ -1,3 +1,4 @@
+import { AmexioVirtualScrollDemo2 } from './virtualscroll/demo2/virtualscroll.demo';
 import { Routes } from '@angular/router';
 
 import { ItemSelectorDemo } from './itemselector/itemselector.demo';
@@ -122,4 +123,7 @@ export const DATA_ROUTE: Routes = [
     },  {
         path: 'virtual-scroller-demo', component: AmexioVirtualScrollDemo,
     },
+    {
+      path: 'virtual-scroller-demo-2', component: AmexioVirtualScrollDemo2,
+  },
 ];

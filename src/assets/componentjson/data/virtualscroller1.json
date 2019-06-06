@@ -7,8 +7,7 @@
     ],
     "compFeaturesTitle": "Key-Features",
     "keyFeatures": [
-        "Mutli column virtual scroller",
-        "Simple virtual scroller"
+        "Carousel with virtual scroller"
     ],
     "apiRefMetadata": [{
         "gridTitle": "Properties <amexio-virtual-scroller>",
@@ -80,8 +79,8 @@
     "isAccessibility": false,
 
     "sourceMetadata": {
-        "htmlUrl": "data/virtualscroller/virtualscroller.html",
-        "tsUrl": "data/virtualscroller/virtualscroller.text",
+        "htmlUrl": "data/virtualscrollerdemo2/virtualscroller.html",
+        "tsUrl": "data/virtualscrollerdemo2/virtualscroller.text",
         "datasourceUrl": ""
     },
     "liveMetadata": {

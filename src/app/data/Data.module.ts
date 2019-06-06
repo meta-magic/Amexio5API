@@ -1,3 +1,4 @@
+import { AmexioVirtualScrollDemo2 } from './virtualscroll/demo2/virtualscroll.demo';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
@@ -51,7 +52,7 @@ import {AmexioVirtualScrollDemo} from "./virtualscroll/virtualscroll.demo";
         SimpleGridDemo, CustomColSizeDemo, FilterGridDemo, GlobalFilterDemo, GridWithTemplateDemo,
         GridWithContextMenuDemo, GridWithScrollDemo, GridWithToolBarDemo , GroupByGridDemo, HeaderTemplateDemo,
         TreeDataGridDemo, TreeDataTemplateDemo, ServerSidePaginationDemo,
-        PropertyGridDemoComponent,AmexioVirtualScrollDemo
+        PropertyGridDemoComponent,AmexioVirtualScrollDemo,AmexioVirtualScrollDemo2
 
     ],
     imports: [

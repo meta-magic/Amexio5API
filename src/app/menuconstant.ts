@@ -685,10 +685,21 @@ export const MENUCONSTANT = {
           icon: "fa fa-database",
           link: "data/propertygrid-demo"
         },  {
-          "text": "Virtual Scroller",
-          "badge": "NEW",
-          "icon": "fa fa-database",
-          "link": "data/virtual-scroller-demo"
+          text: "Virtual Scroller",
+          badge: "NEW",
+          icon: "fa fa-database",
+          children:[
+            {
+              text: "Demo 1",
+              icon: "fa fa-database",
+              link: "data/virtual-scroller-demo"
+            },
+            {
+              text: "Demo 2",
+              icon: "fa fa-database",
+              link: "data/virtual-scroller-demo-2"
+            }
+          ]
       }
       ]
     },
