@@ -13,14 +13,12 @@
                         <amexio-virtual-scroller *ngIf="localData2d" [height]="540" [item-size]="180" [data]="localData2d.items">
                             <ng-template #amexioBodyTmpl let-row="row">
                                 <amexio-row>
-                                    <amexio-column *ngFor="let item of row.data" size="4">
-                                        <amexio-card-ce>
+                                    <amexio-column *ngFor="let item of row.data" size="3" [fit]="true">
+                                        <amexio-card-ce style="margin:5px">
                                             <amexio-body-ce>
-                                                <amexio-image [path]="item.imagepath" [height]="'180px'">
+                                                <amexio-image [path]="item.imagepath">
                                                 </amexio-image>
-
                                             </amexio-body-ce>
-
                                         </amexio-card-ce>
                                     </amexio-column>
                                 </amexio-row>
@@ -29,20 +27,20 @@
                     </amexio-body-ce>
                 </amexio-card-ce>
                 <br><br>
-                <amexio-card-ce>
-                    <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                        <amexio-label size="medium">
+                <!-- <amexio-card-ce>
+                    <amexio-header-ce [border-bottom]="true " amexioColorPalette [gradient]="true " [color-palette]=" 'classic' " [color]=" 'white' ">
+                        <amexio-label size="medium ">
                             Carousel with Virtual Scroller
                         </amexio-label>
                     </amexio-header-ce>
                     <amexio-body-ce>
-                        <amexio-virtual-scroller *ngIf="localData2d" [height]="560" [item-size]="180" [data]="carouselData.items">
-                            <ng-template #amexioBodyTmpl let-row="row">
+                        <amexio-virtual-scroller *ngIf="localData2d " [height]="560 " [item-size]="180 " [data]="carouselData.items ">
+                            <ng-template #amexioBodyTmpl let-row="row ">
                                 <amexio-row>
-                                    <amexio-column size="12">
-                                        <amexio-carousel *ngIf="row.data" [data]="row.data">
-                                            <ng-template let-img amexioTemplate="item">
-                                                <amexio-image [height]="'180px'" [path]="img.imagepath">
+                                    <amexio-column size="12 ">
+                                        <amexio-carousel *ngIf="row.data " [data]="row.data ">
+                                            <ng-template let-img amexioTemplate="item ">
+                                                <amexio-image [height]=" '180px' " [path]="img.imagepath ">
                                                 </amexio-image>
                                             </ng-template>
                                         </amexio-carousel>
@@ -51,37 +49,37 @@
                             </ng-template>
                         </amexio-virtual-scroller>
                     </amexio-body-ce>
-                </amexio-card-ce>
+                </amexio-card-ce> -->
                 <br><br>
                 <amexio-card-ce>
-                    <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                        <amexio-label size="medium">
+                    <amexio-header-ce [border-bottom]="true " amexioColorPalette [gradient]="true " [color-palette]=" 'classic' " [color]=" 'white' ">
+                        <amexio-label size="medium ">
                             Amexio Virtual Scroller
                         </amexio-label>
                     </amexio-header-ce>
                     <amexio-body-ce>
-                        <amexio-virtual-scroller *ngIf="localData" [height]="360" [item-size]="180" [data]="localData.items">
-                            <ng-template #amexioBodyTmpl let-row="row">
-                                <amexio-card [header]="false" [footer]="false" [show]="true">
+                        <amexio-virtual-scroller *ngIf="localData " [height]="360 " [item-size]="180 " [data]="localData.items ">
+                            <ng-template #amexioBodyTmpl let-row="row ">
+                                <amexio-card [header]="false " [footer]="false " [show]="true ">
 
                                     <amexio-body>
                                         <amexio-row>
-                                            <amexio-column [size]="4">
-                                                <amexio-image [path]="row.imagepath" [height]="'160px'">
+                                            <amexio-column [size]="4 ">
+                                                <amexio-image [path]="row.imagepath " [height]=" '160px' ">
                                                 </amexio-image>
                                             </amexio-column>
-                                            <amexio-column [size]="8">
-                                                <amexio-label size="small-bold">
+                                            <amexio-column [size]="8 ">
+                                                <amexio-label size="small-bold ">
                                                     {{row.title}}
                                                 </amexio-label>
 
-                                                <amexio-image style="padding: 5px" [icon-class]="'fas fa-caret-square-right fa-2x'"></amexio-image>
-                                                <amexio-image style="padding: 5px" [icon-class]="'fa fa-share-alt fa-2x'"></amexio-image>
+                                                <amexio-image style="padding: 5px " [icon-class]=" 'fas fa-caret-square-right fa-2x' "></amexio-image>
+                                                <amexio-image style="padding: 5px " [icon-class]=" 'fa fa-share-alt fa-2x' "></amexio-image>
 
-                                                <amexio-label size="small">
+                                                <amexio-label size="small ">
                                                     {{row.description}}
                                                 </amexio-label>
-                                                <amexio-label size="small-bold">
+                                                <amexio-label size="small-bold ">
                                                     {{row.duration}} secs
                                                 </amexio-label>
                                             </amexio-column>
