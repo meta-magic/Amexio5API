@@ -14,9 +14,9 @@
                             <ng-template #amexioBodyTmpl let-row="row">
                                 <amexio-row>
                                     <amexio-column *ngFor="let item of row.data" size="3" [fit]="true">
-                                        <amexio-card-ce>
+                                        <amexio-card-ce [align]="'center'">
                                             <amexio-body-ce>
-                                                <amexio-image [path]="item.imagepath">
+                                                <amexio-image [path]="item.imagepath" [overlay-effect]="'slide-left'" [overlay-text]="item.title">
                                                 </amexio-image>
                                             </amexio-body-ce>
                                         </amexio-card-ce>
