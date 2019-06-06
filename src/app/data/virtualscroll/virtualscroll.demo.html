@@ -2,6 +2,33 @@
     <amexio-api-demo>
         <amexio-row>
             <amexio-column [size]="12">
+
+                <amexio-card-ce [background]="'white'">
+                    <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
+                        <amexio-label size="medium">
+                            Amexio Virtual Scroller With Multi Column
+                        </amexio-label>
+                    </amexio-header-ce>
+                    <amexio-body-ce>
+                        <amexio-virtual-scroller *ngIf="localData2d" [height]="540" [item-size]="180" [data]="localData2d.items">
+                            <ng-template #amexioBodyTmpl let-row="row">
+                                <amexio-row>
+                                    <amexio-column *ngFor="let item of row.data" size="3">
+                                        <amexio-card-ce>
+                                            <amexio-body-ce>
+                                                <amexio-image [path]="item.imagepath" [height]="'180px'">
+                                                </amexio-image>
+
+                                            </amexio-body-ce>
+
+                                        </amexio-card-ce>
+                                    </amexio-column>
+                                </amexio-row>
+                            </ng-template>
+                        </amexio-virtual-scroller>
+                    </amexio-body-ce>
+                </amexio-card-ce>
+                <br><br>
                 <amexio-card-ce>
                     <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
                         <amexio-label size="medium">
@@ -9,14 +36,14 @@
                         </amexio-label>
                     </amexio-header-ce>
                     <amexio-body-ce>
-                        <amexio-virtual-scroller [height]="360" [item-size]="210" [data]="localData.body.results.assets.items">
+                        <amexio-virtual-scroller *ngIf="localData" [height]="360" [item-size]="210" [data]="localData.items">
                             <ng-template #amexioBodyTmpl let-row="row">
                                 <amexio-card [header]="false" [footer]="false" [show]="true">
 
                                     <amexio-body>
                                         <amexio-row>
                                             <amexio-column [size]="4">
-                                                <amexio-image [path]="row.imagepath" [height]="'150px'">
+                                                <amexio-image [path]="row.imagepath" [height]="'180px'">
                                                 </amexio-image>
                                             </amexio-column>
                                             <amexio-column [size]="8">
@@ -46,32 +73,6 @@
                     </amexio-body-ce>
                 </amexio-card-ce>
 
-                <!-- <amexio-card-ce>
-                    <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
-                        <amexio-label size="medium">
-                            Amexio Virtual Scroller With Multi Column
-                        </amexio-label>
-                    </amexio-header-ce>
-                    <amexio-body-ce [height]="'50vh'">
-                        <amexio-virtual-scroller [height]="450" [item-size]="250" [data]="localData2d.body.results.assets.items">
-                            <ng-template #amexioBodyTmpl let-row="row">
-                                <amexio-row>
-                                    <amexio-column *ngFor="let item of row.data" size="4">
-                                        <amexio-card [header]="false" [footer]="true" [footer-align]="'right'">
-                                            <amexio-body>
-                                                {{item.name}}
-                                            </amexio-body>
-                                            <amexio-action>
-                                                <amexio-button [label]="'Button'" [type]="'primary'">
-                                                </amexio-button>
-                                            </amexio-action>
-                                        </amexio-card>
-                                    </amexio-column>
-                                </amexio-row>
-                            </ng-template>
-                        </amexio-virtual-scroller>
-                    </amexio-body-ce>
-                </amexio-card-ce> -->
             </amexio-column>
         </amexio-row>
     </amexio-api-demo>

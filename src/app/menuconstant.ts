@@ -540,6 +540,7 @@ export const MENUCONSTANT = {
     {
       text: "Data",
       icon: "fa fa-database  ",
+      badge: "1",
       children: [
         {
           text: "Data Loading Indicator",

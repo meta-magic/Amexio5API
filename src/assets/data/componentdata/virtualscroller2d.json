@@ -1,98 +1,2226 @@
 {
-    "body": {
-        "results": {
-            "uri": "https://api.hotstar.eeeecom/o/v1/language/detail?id=9&avsCategoryId=5631&contentId=5710&offset=0&size=20&pageNo=1&perPage=40&ct=200",
-            "pageType": "TRAY_DETAIL_PAGE",
-            "responseType": "LANG_ASSET_LIST",
-            "assets": {
-                "items": [{
-                        "data": [{
-                                "name": "sagar1"
-                            },
-                            {
-                                "name": "sagar2"
-                            },
-                            {
-                                "name": "sagar3"
-                            }
-                        ]
-                    }, {
-                        "data": [{
-                                "name": "sagar4"
-                            },
-                            {
-                                "name": "sagar5"
-                            },
-                            {
-                                "name": "sagar6s"
-                            }
-                        ]
+    "items": [{
+            "data": [{
+                    "title": "The Return of Abhimanyu",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5453/305453-h",
+                    "contentId": 1000230994,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=525728&offset=0&size=20&tao=0&tas=5",
+                    "description": "When money goes missing from Major Kathiravan's account, resulting in a personal tragedy, he decides to track down the calculative hacker behind this.",
+                    "duration": 8589,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Action"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1551632400,
+                    "endDate": 1860690599,
+                    "year": 2018,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000230994",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5455/305455-v",
+                        "h": "sources/r1/cms/prod/5453/305453-h",
+                        "m": "sources/r1/cms/prod/5456/305456-m"
                     },
-                    {
-                        "data": [{
-                                "name": "sagar7"
-                            },
-                            {
-                                "name": "sagar8"
-                            },
-                            {
-                                "name": "sagar9"
-                            }
-                        ]
-                    }, {
-                        "data": [{
-                                "name": "sagar10"
-                            },
-                            {
-                                "name": "sagar11"
-                            },
-                            {
-                                "name": "sagar12"
-                            }
-                        ]
-                    }, {
-                        "data": [{
-                                "name": "sagar13"
-                            },
-                            {
-                                "name": "sagar14"
-                            },
-                            {
-                                "name": "sagar15"
-                            }
-                        ]
-                    }, {
-                        "data": [{
-                                "name": "sagar16"
-                            },
-                            {
-                                "name": "sagar17"
-                            },
-                            {
-                                "name": "sagar18"
-                            }
-                        ]
-                    }, {
-                        "data": [{
-                            "name": "sagar19"
-                        }]
-                    }
-                ],
-                "totalResults": 701,
-                "offset": 0,
-                "size": 20,
-                "nextOffsetURL": "https://api.hotstar.com/o/v1/language/f_cr/asset?id=9&avsCategoryId=5631&offset=20&size=20&pageNo=1&perPage=20&ct=200",
-                "totalPages": 36,
-                "totalPageResults": 20
-            },
-            "language": {
-                "id": 9,
-                "name": "Hindi",
-                "noOfShows": 309,
-                "noOfMovies": 600
-            }
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5453/305453-h"
+                },
+                {
+                    "title": "Baadshaho",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/96/1000194296/PCTV-1000194296-hcdl.jpg",
+                    "contentId": 1000194296,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=3240&offset=0&size=20&tao=0&tas=5",
+                    "description": "A heist action period film about an Indian queen, who seeks her bodyguard's help to seize the gold, which the government had raided from her palace during the Emergency in 1975.",
+                    "duration": 7784,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series",
+                    "cpDisplayName": "T-Series",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Drama"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1513211400,
+                    "endDate": 1823538540,
+                    "year": 2017,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000194296",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 3,
+                        "name": "Drama",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=3&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language, Violence",
+                    "detail": "Moderate Sexual references, Moderate Language , Moderate Violence, Some Drug references",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/96/1000194296/PCTV-1000194296-hcdl.jpg"
+                },
+                {
+                    "title": "RX100",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6147/386147-h",
+                    "contentId": 1000233906,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=545432&offset=0&size=20&tao=0&tas=5",
+                    "description": "Shiva falls in love with Indu, the daughter of a local politician. When circumstances separate the lovers, Shiva discovers that Indu had an ulterior motive, what was it?",
+                    "duration": 7124,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Action"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1555920000,
+                    "endDate": 1865442599,
+                    "year": 2018,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000233906",
+                    "images": {
+                        "v": "sources/r1/cms/prod/6148/386148-v",
+                        "h": "sources/r1/cms/prod/6147/386147-h",
+                        "m": "sources/r1/cms/prod/6149/386149-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/6147/386147-h"
+                },
+                {
+                    "title": "Jaguar",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/8032/158032-h",
+                    "contentId": 1000224772,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=491757&offset=0&size=20&tao=0&tas=5",
+                    "description": "To avenge his father's death, a young medical student, Krishna takes law into his own hands. On the road to justice, he falls in love with his classmate.",
+                    "duration": 6707,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Channambika Films",
+                    "cpDisplayName": "Channambika Films",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Action"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1543862100,
+                    "endDate": 1844274599,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000224772",
+                    "images": {
+                        "v": "sources/r1/cms/prod/8038/158038-v",
+                        "h": "sources/r1/cms/prod/8032/158032-h",
+                        "m": "sources/r1/cms/prod/8579/158579-m"
+                    },
+                    "contentDownloadable": true,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Moderate Violence",
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/8032/158032-h"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Dishoom",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/29/1000152229/PCTV-1000152229-hcdl.jpg",
+                    "contentId": 1000152229,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=2670&offset=0&size=20&tao=0&tas=5",
+                    "description": "Two cops (one; a no-nonsense cop and the other; a rookie) on a 36-hour manhunt for a missing Indian cricketer, who has been kidnapped under mysterious circumstances.",
+                    "duration": 6972,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Nadiadwala Grandson Entertainment",
+                    "cpDisplayName": "Nadiadwala Grandson Entertainment",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Action"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1474849800,
+                    "endDate": 1790274540,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000152229",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Moderate Violence, Some Drug references",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/29/1000152229/PCTV-1000152229-hcdl.jpg"
+                },
+                {
+                    "title": "Taqdeer",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/4739/14739-h",
+                    "contentId": 1000213010,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=413732&offset=0&size=20&tao=0&tas=5",
+                    "description": "Avinash gets separated from his childhood love Priya. Will fate play its part and bring the two estranged lovers together as grown-ups?",
+                    "duration": 7256,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Annapurna Studios",
+                    "cpDisplayName": "Annapurna Studios",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Action"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1527640200,
+                    "endDate": 1841509740,
+                    "year": 2017,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000213010",
+                    "images": {
+                        "v": "sources/r1/cms/prod/4740/14740-v",
+                        "h": "sources/r1/cms/prod/4739/14739-h",
+                        "m": "sources/r1/cms/prod/4742/14742-m"
+                    },
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/4739/14739-h"
+                },
+                {
+                    "title": "MCA Middle Class Abbayi",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/738/270738-h",
+                    "contentId": 1000229599,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=518155&offset=0&size=20&tao=0&tas=5",
+                    "description": "Young, middle-class boy Nani has to protect his sister-in-law, a transport official from a gangster, who runs an illegal transport business.",
+                    "duration": 6728,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Action"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1549798200,
+                    "endDate": 1845916199,
+                    "year": 2017,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000229599",
+                    "images": {
+                        "v": "sources/r1/cms/prod/739/270739-v",
+                        "h": "sources/r1/cms/prod/738/270738-h",
+                        "m": "sources/r1/cms/prod/740/270740-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 15,
+                        "name": "Action",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=15&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/738/270738-h"
+                },
+                {
+                    "title": "Hate Story 3",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/93/1000087393/PCTV-1000087393-hcdl.jpg",
+                    "contentId": 1000087393,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1529&offset=0&size=20&tao=0&tas=5",
+                    "description": "Climbing up the success ladder, Aditya, a businessman makes many enemies. Now, one of them is back to seek revenge.",
+                    "duration": 6813,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series",
+                    "cpDisplayName": "T-Series",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1458347400,
+                    "endDate": 1767378540,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000087393",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Nudity",
+                    "detail": "Mild Sexual references, Nudity",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/93/1000087393/PCTV-1000087393-hcdl.jpg"
+                }
+            ]
+        },
+        {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
+        }, {
+            "data": [{
+                    "title": "Bhaag Milkha Bhaag",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg",
+                    "contentId": 1000001354,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=45&offset=0&size=20&tao=0&tas=5",
+                    "description": "A biopic on Milkha Singh aka 'The Flying Sikh,' the film chronicles his incredible struggle; from being an orphan to becoming one of India’s greatest athletes.",
+                    "duration": 10689,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Viacom 18 Motion Pictures",
+                    "cpDisplayName": "Viacom 18 Motion Pictures",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Biopic"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1406660880,
+                    "endDate": 1694284140,
+                    "year": 2013,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000001354",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 22,
+                        "name": "Biopic",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=22&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_1x/r1/thumbs/PCTV/54/1000001354/PCTV-1000001354-hcdl.jpg"
+                },
+                {
+                    "title": "Sanam Re",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg",
+                    "contentId": 1000093421,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1577&offset=0&size=20&tao=0&tas=5",
+                    "description": "When a much-in-love couple gets separated owing circumstances, the boy's grandfather predicts that the two are destined to be together. Will his prediction come true?",
+                    "duration": 6786,
+                    "contentType": "MOVIE",
+                    "contentProvider": "T-Series Films",
+                    "cpDisplayName": "T-Series Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1462581000,
+                    "endDate": 1773340140,
+                    "year": 2016,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000093421",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "PG",
+                    "crisp": "Violence ",
+                    "detail": "Mild Violence ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/21/1000093421/PCTV-1000093421-hcdl.jpg"
+                },
+                {
+                    "title": "Black Water",
+                    "imagepath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_3x/sources/r1/cms/prod/5281/335281-h",
+                    "contentId": 1000232180,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=533405&offset=0&size=20&tao=0&tas=5",
+                    "description": "A normal fishing trip turns into a nightmare for Grace, Adam and Lee when their tour guide is devoured by a crocodile. Alone in the swamps, with no sign of rescue and a croc they have nothing but each other.",
+                    "duration": 5112,
+                    "contentType": "MOVIE",
+                    "contentProvider": "SIPL",
+                    "cpDisplayName": "SIPL",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Thriller"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1553128200,
+                    "endDate": 1649528999,
+                    "year": 2007,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000232180",
+                    "images": {
+                        "v": "sources/r1/cms/prod/5284/335284-v",
+                        "h": "sources/r1/cms/prod/5281/335281-h",
+                        "m": "sources/r1/cms/prod/5344/335344-m"
+                    },
+                    "studioId": 17,
+                    "studioName": "Star Gold",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 18,
+                        "name": "Thriller",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=18&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "parentalRating": 1,
+                    "imagePath": "https://img1.hotstarext.com/image/upload/f_auto,t_web_hs_1x/sources/r1/cms/prod/5281/335281-h"
+                },
+                {
+                    "title": "Hero",
+                    "imagepath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg",
+                    "contentId": 1000074190,
+                    "uri": "https://api.hotstar.com/o/v1/movie/detail?id=1362&offset=0&size=20&tao=0&tas=5",
+                    "description": "A gangster's son kidnaps the daughter of the Chief of Police, as her father has some crucial evidence. While the police chase the two, love blooms between them.",
+                    "duration": 7416,
+                    "contentType": "MOVIE",
+                    "contentProvider": "Salman Khan Films",
+                    "cpDisplayName": "Salman Khan Films",
+                    "cpLogoUrl": "https://secure-media.hotstar.com/static/NewsV2/PartnerLogos/hotstar.png",
+                    "assetType": "MOVIE",
+                    "genre": [
+                        "Romance"
+                    ],
+                    "lang": [
+                        "Hindi"
+                    ],
+                    "premium": false,
+                    "live": false,
+                    "hboContent": false,
+                    "vip": false,
+                    "encrypted": false,
+                    "startDate": 1446987600,
+                    "endDate": 1760120940,
+                    "year": 2015,
+                    "playbackUri": "https://api.hotstar.com/h/v1/play?contentId=1000074190",
+                    "contentDownloadable": false,
+                    "playbackType": "INTERNAL",
+                    "monetisable": true,
+                    "langObjs": [{
+                        "id": 9,
+                        "name": "Hindi",
+                        "iso3code": "hin",
+                        "detailUrl": "https://api.hotstar.com/o/v1/language/detail?id=9&offset=0&size=20"
+                    }],
+                    "genreObjs": [{
+                        "id": 4,
+                        "name": "Romance",
+                        "detailUrl": "https://api.hotstar.com/o/v1/genre/detail?id=4&offset=0&size=20"
+                    }],
+                    "languageSelector": 1,
+                    "drmClass": "BEST_EFFORT",
+                    "contentStartPointSeconds": 0,
+                    "badges": [
+                        "NP"
+                    ],
+                    "clipType": "VOD",
+                    "parentalRating": 2,
+                    "parentalRatingName": "12+",
+                    "crisp": "Sex, Language",
+                    "detail": "Mild Sexual references, Mild Language ",
+                    "imagePath": "https://secure-media1.hotstarext.com/t_web_hs_3x/r1/thumbs/PCTV/90/1000074190/PCTV-1000074190-hcdl.jpg"
+                }
+            ]
         }
-    },
-    "statusCode": "OK",
-    "statusCodeValue": 200
+    ]
 }

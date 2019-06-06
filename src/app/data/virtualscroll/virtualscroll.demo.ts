@@ -10,9 +10,10 @@ import { HttpClient } from '@angular/common/http';
 export class AmexioVirtualScrollDemo {
     copyMsgArray: any[];
     numbers: number[] = [];
-    localData: any[] = [];
-    localData2d: any[] = [];
+    localData: any;
+    localData2d: any;
     constructor(private http: HttpClient) {
+
          http.get('assets/data/componentdata/virtualscroller.json')
             .subscribe((response: any) => {
                  this.localData = response;
@@ -24,7 +25,7 @@ export class AmexioVirtualScrollDemo {
     }
 
 
-    //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
+    // THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
     onCopyClick() {
         if (this.copyMsgArray.length >= 1) {
             this.copyMsgArray = [];
