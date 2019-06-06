@@ -5,9 +5,7 @@ import { CommonModule } from "@angular/common";
 import { HttpClientModule } from "@angular/common/http";
 import { SharedModule } from "../shared.module";
 import { DIRECTIVE_ROUTE } from "./directive.routes";
-
-
-
+import { InputMaskDemo } from './inputmask/input-mask.demo';
 import { ColorPaletteDemo } from './colorpalette/color-palette';
 import { RouterModule } from "@angular/router";
 
@@ -15,7 +13,7 @@ import { RouterModule } from "@angular/router";
  * Created by kedar on 31/1/19.
  */
 @NgModule({
-    declarations: [ColorPaletteDemo],
+    declarations: [ColorPaletteDemo, InputMaskDemo],
     imports: [
         CommonModule, 
         FormsModule, 

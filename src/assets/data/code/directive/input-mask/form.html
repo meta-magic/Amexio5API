@@ -1,0 +1,60 @@
+<!--Mask On Text Field. Example: 1-->
+ 
+<amexio-text-input 
+[pattern]="'\d{5}'"  
+[place-holder]="'XXXXX'"  
+[amexio-mask-pattern]="'XXXXX'" 
+[field-label]="'Zip'"
+[(ngModel)]="zip">
+</amexio-text-input>
+
+<!--Mask On Text Field. Example: 2-->
+
+<amexio-text-input 
+[pattern]="'\d{3}\s\d{3}'"  
+[place-holder]="'XXX XXX'"  
+[amexio-mask-pattern]="'XXX XXX'" 
+[field-label]="'Canadian Zip Code '"
+[(ngModel)]="canadianZipCode ">
+</amexio-text-input>
+
+<!--Mask On Text Field. Example: 3-->
+
+<amexio-text-input 
+[pattern]="'\(\d{3}\)\s\d{3}-\d{4}'"  
+[place-holder]="'(XXX) XXX-XXXX'"  
+[amexio-mask-pattern]="'(XXX) XXX-XXXX'" 
+[field-label]="'Telephone'"
+[(ngModel)]="telephone">
+</amexio-text-input>
+
+<!--Mask On Text Field. Example: 4-->
+
+<amexio-text-input
+[pattern]="'\d{4}\s\d{4}\s\d{4}\s\d{4}'"  
+[place-holder]="'XXXX XXXX XXXX XXXX'"  
+[amexio-mask-pattern]="'XXXX XXXX XXXX XXXX'" 
+[field-label]="'Credit Card number'"
+[(ngModel)]="ccNumber"></amexio-text-input>
+
+<!--Mask On Number Field. Example: 5-->
+
+<amexio-number-input 
+[pattern]="'\d{2}\.\d{2}'"  
+[place-holder]="'HH.MM'"  
+[amexio-mask-pattern]="'XX.XX'" 
+[field-label]="'Time'"
+[(ngModel)]="time">
+</amexio-number-input>
+
+<!--Mask On Number Field. Example: 6-->
+
+<amexio-number-input 
+[pattern]="'\d{4}\.\d{2}'"  
+[place-holder]="'0000.00'"  
+[amexio-mask-pattern]="'XXXX.XX'" 
+[field-label]="'Amount'"
+[(ngModel)]="amount">
+</amexio-number-input>
+
+

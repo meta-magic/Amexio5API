@@ -14,9 +14,13 @@ export const MENUCONSTANT = {
   DIRECTIVES: [
     {
       text: "Color Palette",
-      icon: "fa fa-globe  ",
+      icon: "fas fa-palette",
       link: "directive-demo/color-palette"
-    }
+    },
+    {text:"Input Mask",
+    icon:"fa fa-file-text-o",
+    badge: "NEW",
+    link:"directive-demo/input-mask"}
   ],
 
   EEMENUS: [

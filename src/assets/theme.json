@@ -82,7 +82,7 @@
       }
     },
     {
-      "componentName": "amexio-ce-card",
+      "componentName": "amexio-card-ce",
       "colorpalette": "amexio-theme-color4",
       "link": "/creative/card-ce-demo",
       "actualColor": {
