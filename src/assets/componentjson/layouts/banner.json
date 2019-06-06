@@ -75,7 +75,7 @@
           "description": "closes on scroll",
           "version": "5.13.2 onwards",
           "type": "boolean",
-          "default": ""
+          "default": "false"
         }
       ]
     },
