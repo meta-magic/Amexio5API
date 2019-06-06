@@ -12,6 +12,7 @@ export class AmexioVirtualScrollDemo {
     numbers: number[] = [];
     localData: any;
     localData2d: any;
+    carouselData:any;
     constructor(private http: HttpClient) {
 
          http.get('assets/data/componentdata/virtualscroller.json')
@@ -21,6 +22,10 @@ export class AmexioVirtualScrollDemo {
             http.get('assets/data/componentdata/virtualscroller2d.json')
             .subscribe((response: any) => {
                  this.localData2d = response;
+            });
+            http.get('assets/data/componentdata/virtualscrollercarousel.json')
+            .subscribe((response: any) => {
+                 this.carouselData = response;
             });
     }
 

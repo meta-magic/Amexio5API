@@ -3,8 +3,8 @@
         <amexio-row>
             <amexio-column [size]="12">
 
-                <amexio-card-ce [background]="'white'">
-                    <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
+                <!-- <amexio-card-ce>
+                    <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'">
                         <amexio-label size="medium">
                             Amexio Virtual Scroller With Multi Column
                         </amexio-label>
@@ -27,16 +27,16 @@
                             </ng-template>
                         </amexio-virtual-scroller>
                     </amexio-body-ce>
-                </amexio-card-ce>
+                </amexio-card-ce> -->
                 <br><br>
-                <!-- <amexio-card-ce>
+                <amexio-card-ce>
                     <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
                         <amexio-label size="medium">
                             Carousel with Virtual Scroller
                         </amexio-label>
                     </amexio-header-ce>
                     <amexio-body-ce>
-                        <amexio-virtual-scroller *ngIf="localData2d" [height]="560" [item-size]="210" [data]="localData2d.items">
+                        <amexio-virtual-scroller *ngIf="localData2d" [height]="560" [item-size]="180" [data]="carouselData.items">
                             <ng-template #amexioBodyTmpl let-row="row">
                                 <amexio-row>
                                     <amexio-column size="12">
@@ -51,16 +51,16 @@
                             </ng-template>
                         </amexio-virtual-scroller>
                     </amexio-body-ce>
-                </amexio-card-ce> -->
+                </amexio-card-ce>
                 <br><br>
-                <amexio-card-ce>
+                <!-- <amexio-card-ce>
                     <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'" [color]="'white'">
                         <amexio-label size="medium">
                             Amexio Virtual Scroller
                         </amexio-label>
                     </amexio-header-ce>
                     <amexio-body-ce>
-                        <amexio-virtual-scroller *ngIf="localData" [height]="360" [item-size]="210" [data]="localData.items">
+                        <amexio-virtual-scroller *ngIf="localData" [height]="360" [item-size]="180" [data]="localData.items">
                             <ng-template #amexioBodyTmpl let-row="row">
                                 <amexio-card [header]="false" [footer]="false" [show]="true">
 
@@ -95,7 +95,7 @@
 
                         </amexio-virtual-scroller>
                     </amexio-body-ce>
-                </amexio-card-ce>
+                </amexio-card-ce> -->
 
             </amexio-column>
         </amexio-row>
