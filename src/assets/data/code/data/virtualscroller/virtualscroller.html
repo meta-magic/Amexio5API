@@ -14,21 +14,6 @@
     </ng-template>
 </amexio-virtual-scroller>
 
-<!-- Carousel with virtual scroller -->
-<amexio-virtual-scroller *ngIf="localData2d " [height]="560 " [item-size]="180 " [data]="carouselData.items ">
-    <ng-template #amexioBodyTmpl let-row="row ">
-        <amexio-row>
-            <amexio-column size="12 ">
-                <amexio-carousel *ngIf="row.data " [data]="row.data ">
-                    <ng-template let-img amexioTemplate="item ">
-                        <amexio-image [height]=" '180px' " [path]="img.imagepath ">
-                        </amexio-image>
-                    </ng-template>
-                </amexio-carousel>
-            </amexio-column>
-        </amexio-row>
-    </ng-template>
-</amexio-virtual-scroller>
 <!-- Simple Virtual Scroller -->
 <amexio-virtual-scroller *ngIf="localData" [height]="360" [item-size]="180" [data]="localData.items">
     <ng-template #amexioBodyTmpl let-row="row">
