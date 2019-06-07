@@ -8698,7 +8698,7 @@ amexio-layout amexio-layout-item {
   flex-direction: row;
   align-items: center;
   position: relative;
-  z-index: 2; }
+  z-index: 0; }
 
 .creative-header .creative-header-div {
   height: auto; }
