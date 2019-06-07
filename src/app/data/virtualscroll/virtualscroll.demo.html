@@ -3,78 +3,31 @@
         Amexio virtual scroller displays a small subset of records just enough to fill the viewport and uses the same DOM elements as the user scroll
     </amexio-box>
     <amexio-api-demo>
+            <amexio-row>
+                    <amexio-column [size]="12">
+                            <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo3.jpg'">
+                            </amexio-image>
+                            <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 2'" (onClick)="onDemoThreeClick()">
+                            </amexio-button>
+                        </amexio-column>
+                
+            </amexio-row>
         <amexio-row>
-            <amexio-column [size]="12">
-
-                <amexio-card-ce>
-                    <amexio-header-ce [border-bottom]="true" amexioColorPalette [gradient]="true" [color-palette]="'classic'">
-                        <amexio-label size="medium">
-                            Amexio Virtual Scroller With Multi Column
-                        </amexio-label>
-                    </amexio-header-ce>
-                    <amexio-body-ce>
-                        <amexio-virtual-scroller *ngIf="localData2d" [height]="450" [item-size]="150" [data]="localData2d.items">
-                            <ng-template #amexioBodyTmpl let-row="row">
-                                <amexio-row>
-                                    <amexio-column *ngFor="let item of row.data" size="3" [fit]="true">
-                                        <amexio-card-ce [align]="'center'">
-                                            <amexio-body-ce>
-                                                <amexio-image [path]="item.imagepath" [overlay-effect]="'slide-left'" [overlay-text]="item.title">
-                                                </amexio-image>
-                                            </amexio-body-ce>
-                                        </amexio-card-ce>
-                                    </amexio-column>
-                                </amexio-row>
-                            </ng-template>
-                        </amexio-virtual-scroller>
-                    </amexio-body-ce>
-                </amexio-card-ce>
-
-                <amexio-card-ce>
-                    <amexio-header-ce [border-bottom]="true " amexioColorPalette [gradient]="true " [color-palette]=" 'classic' " [color]=" 'white' ">
-                        <amexio-label size="medium ">
-                            Simple Amexio Virtual Scroller
-                        </amexio-label>
-                    </amexio-header-ce>
-                    <amexio-body-ce>
-                        <amexio-virtual-scroller *ngIf="localData " [height]="360 " [item-size]="180 " [data]="localData.items ">
-                            <ng-template #amexioBodyTmpl let-row="row ">
-                                <amexio-card [header]="false " [footer]="false " [show]="true ">
-
-                                    <amexio-body>
-                                        <amexio-row>
-                                            <amexio-column [size]="4 ">
-                                                <amexio-image [path]="row.imagepath " [height]=" '160px' ">
-                                                </amexio-image>
-                                            </amexio-column>
-                                            <amexio-column [size]="8 ">
-                                                <amexio-label size="small-bold ">
-                                                    {{row.title}}
-                                                </amexio-label>
-
-                                                <amexio-image style="padding: 5px " [icon-class]=" 'fas fa-caret-square-right fa-2x' "></amexio-image>
-                                                <amexio-image style="padding: 5px " [icon-class]=" 'fa fa-share-alt fa-2x' "></amexio-image>
-
-                                                <amexio-label size="small ">
-                                                    {{row.description}}
-                                                </amexio-label>
-                                                <amexio-label size="small-bold ">
-                                                    {{row.duration}} secs
-                                                </amexio-label>
-                                            </amexio-column>
-                                        </amexio-row>
-
-                                    </amexio-body>
-
-                                </amexio-card>
-
-                            </ng-template>
-
-                        </amexio-virtual-scroller>
-                    </amexio-body-ce>
-                </amexio-card-ce>
-
+            <amexio-column [size]="6">
+                <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo1.jpg'" tooltip="virtual Scroll Page 1">
+                </amexio-image>
+                <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 1'" (onClick)="onDemoFirstClick()">
+                </amexio-button>
             </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo2.jpg'" tooltip="virtual Scroll Page 2">
+                </amexio-image>
+                <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 2'" (onClick)="onDemoSecondClick()">
+                </amexio-button>
+            </amexio-column>
+    
+
         </amexio-row>
+   
     </amexio-api-demo>
 </amexio-api-structure>

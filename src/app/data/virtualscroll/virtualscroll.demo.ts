@@ -9,24 +9,11 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AmexioVirtualScrollDemo {
     copyMsgArray: any[];
-    numbers: number[] = [];
-    localData: any;
-    localData2d: any;
-    carouselData:any;
-    constructor(private http: HttpClient) {
 
-         http.get('assets/data/componentdata/virtualscroller.json')
-            .subscribe((response: any) => {
-                 this.localData = response;
-            });
-            http.get('assets/data/componentdata/virtualscroller2d.json')
-            .subscribe((response: any) => {
-                 this.localData2d = response;
-            });
-            http.get('assets/data/componentdata/virtualscrollercarousel.json')
-            .subscribe((response: any) => {
-                 this.carouselData = response;
-            });
+    DEMO_FIRST_URL = 'https://meta-magic.github.io/amexio-virtualscroll-demo/#/sc/';
+    DEMO_SEC_URL = 'https://meta-magic.github.io/amexio-virtualscroll-demo/#/mvs/';
+    DEMO_THREE_URL = 'https://meta-magic.github.io/amexio-virtualscroll-demo/#/svs/';
+    constructor(private http: HttpClient) {
     }
 
 
@@ -41,6 +28,17 @@ export class AmexioVirtualScrollDemo {
     }
 
 
+    onDemoFirstClick() {
+        window.open(this.DEMO_FIRST_URL);
+    }
+    onDemoSecondClick() {
+        window.open(this.DEMO_SEC_URL);
+
+    }
+    onDemoThreeClick() {
+        window.open(this.DEMO_THREE_URL);
+
+    }
 }
 
 
