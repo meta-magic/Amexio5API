@@ -46,7 +46,7 @@
                                 <amexio-button type="success" (onClick)="showBottomRightPanel()" label="Bottom Right"></amexio-button>
                                 <amexio-floating-panel [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'" [right-position]="'20px'"
                                     [width]="'250'" [height]="300" [title]="'Theme Switcher'" (onClose)="onCloseBottomRightPanel($event)">
-                                    <amexio-theme-switcher [closeable]="false" [relative]="true" [mda]="true"  [col-size]="1"></amexio-theme-switcher>
+                                    <amexio-theme-switcher style="display: block;margin: -20px -10px;" [closeable]="false" [relative]="true" [mda]="true"  [col-size]="1"></amexio-theme-switcher>
                                 </amexio-floating-panel>
                             </amexio-column>
                             <amexio-column [size]="2">
