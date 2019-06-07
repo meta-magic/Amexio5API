@@ -1,0 +1,77 @@
+<amexio-api-structure [url]="'assets/componentjson/panels/floatingpanel.json'">
+    <amexio-api-demo>
+        <amexio-row>
+            <amexio-column [size]="12">
+                <amexio-card [header]="true">
+                    <amexio-header> Floating Panel</amexio-header>
+                    <amexio-body>
+                        <amexio-row>
+                                <amexio-column [size]="2">
+                                        <amexio-button type="theme-color" (onClick)="onshowRelativePanel()" label="Relative"></amexio-button>
+                                        <amexio-floating-panel [show-panel]="showRelativePanel" [relative]="true" [closeable]="true"
+                                            [width]="'330'" [height]="200" [title]="'Company Info'" (onClose)="onCloseRelativePanel($event)">
+                                            <amexio-row>
+                                                <amexio-column size="12" fit="true">
+                                                        <amexio-property-grid  [has-border]="true" [key-value-data]="companyKeyValueData"></amexio-property-grid>
+                                                </amexio-column>
+                                            </amexio-row>
+        
+                                        </amexio-floating-panel>
+                                    </amexio-column>
+                            <amexio-column [size]="2">
+                                <amexio-button type="red" (onClick)="showTopLeftPanel()" label="Top Left"></amexio-button>
+                                <amexio-floating-panel [show-panel]="topLeftPanel" [relative]="false" [closeable]="true" [top-position]="'30px'" [left-position]="'50px'" [width]="'330'"
+                                    [height]="200" [title]="'Video Player'" (onClose)="onCloseTopLeftPanel($event)">
+                                    <amexio-row>
+                                        <amexio-column size="12" fit="true">
+                                            <amexio-video-player [width]="'300'" path="assets/videos/sample_bunny.mp4">
+                                            </amexio-video-player>
+                                        </amexio-column>
+                                    </amexio-row>
+
+
+                                </amexio-floating-panel>
+                            </amexio-column>
+                            <amexio-column [size]="2">
+                                <amexio-button type="theme-color" (onClick)="showTopRightPanel()" label="Top Right"></amexio-button>
+                                <amexio-floating-panel [show-panel]="topRightPanel" [relative]="false" [closeable]="true" [top-position]="'30px'" [right-position]="'40px'"
+                                    [width]="'400'" [height]="300" [title]="'Google Map'" (onClose)="onCloseTopRightPanel($event)">
+                                    <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
+                                        [data]="data" (onMarkerClick)="onMarkerClick1($event)">
+                                    </amexio-google-map>
+
+                                </amexio-floating-panel>
+                            </amexio-column>
+                            <amexio-column [size]="2">
+                                <amexio-button type="success" (onClick)="showBottomRightPanel()" label="Bottom Right"></amexio-button>
+                                <amexio-floating-panel [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'" [right-position]="'20px'"
+                                    [width]="'400'" [height]="300" [title]="'Google Map'" (onClose)="onCloseBottomRightPanel($event)">
+                                    <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
+                                        [data]="data" (onMarkerClick)="onMarkerClick2($event)">
+                                    </amexio-google-map>
+
+                                </amexio-floating-panel>
+                            </amexio-column>
+                            <amexio-column [size]="2">
+                                <amexio-button type="theme-backgroundcolor" (onClick)="showBottomLeftPanel()" label="Bottom Left"></amexio-button>
+                                <amexio-floating-panel [show-panel]="bottomLeftPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'" [left-position]="'20px'"
+                                    [width]="'330'" [height]="200" [title]="'Video Player'" (onClose)="onCloseBottomLeftPanel($event)">
+                                    <amexio-row>
+                                        <amexio-column size="12" fit="true">
+                                            <amexio-video-player [width]="'300'" path="assets/videos/nature.mp4"> 
+                                            </amexio-video-player>
+                                        </amexio-column>
+                                    </amexio-row>
+
+                                </amexio-floating-panel>
+                            </amexio-column>
+                        </amexio-row>
+                    </amexio-body>
+                </amexio-card>
+            </amexio-column>
+        </amexio-row>
+    </amexio-api-demo>
+</amexio-api-structure>
+
+
+ 

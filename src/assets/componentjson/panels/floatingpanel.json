@@ -1,0 +1,151 @@
+{
+  "title": "Amexio Floating Panel",
+  "description": "Floating Panel provides an easy way to organize maps,videos,grid in panel.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-floating-panel>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 20,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "description": "Title for floating panel.",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "relative",
+          "description": "Enable/Disabled realtive position",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "closeable",
+          "description": "show closeable icon",
+          "version": "4.0 onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "height",
+          "description": "Height for  floating panel",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": "200px"
+        },
+        {
+          "name": "width",
+          "description": "Width for  floating panel",
+          "version": "5.4 onwards",
+          "type": "string",
+          "default": "400px"
+        },
+        {
+          "name": "top-position",
+          "description": "panel top position in 'px' ",
+          "version": "4.0 onwards",
+          "type": "string",
+          "default": "none"
+        },
+        {
+          "name": "bottom-position",
+          "description": "panel bottom position in 'px' ",
+          "version": "5.1.6 onwards",
+          "type": "string",
+          "default": "none"
+        },
+        {
+          "name": "right-position",
+          "description": "panel right position in 'px'",
+          "version": "5.1.6 onwards",
+          "type": "string",
+          "default": "none"
+        },
+        {
+          "name": "left-position",
+          "description": "panel left position in 'px'",
+          "version": " 5.6.1 onwards",
+          "type": " string",
+          "default": "none"
+          }
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false
+          },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onClose",
+          "description": "Fires  on panel close."
+        }
+
+      ]
+    }
+  ],
+  "isAccessibility": false,
+  "sourceMetadata": {
+    "htmlUrl": "pane/floatingpanel/floatingpanel.html",
+    "tsUrl": "pane/floatingpanel/floatingpanel.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": ""
+  }
+}

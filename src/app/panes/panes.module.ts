@@ -28,13 +28,13 @@ import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
 import { ArcDemoComponent } from "./arc/arc.demo.component";
 import {DarkmodeDemoComponent} from "./darkmode/darkmode.demo.component";
 import {SlidingPanelDemo} from "./slidingpanel/animatedslidingpane.demo";
-
+import {FloatingPanelDemoComponent} from "./floatingpanel/floatingpanel.demo"
 /**
  * Created by kedar on 1/2/19.
  */
 @NgModule({
     declarations: [WindowDemoComponent, DarkmodeDemoComponent, StepBoxIconComponent, StepBoxDemoComponent,
-        ClosableTabDemo, PanelDemoComponent, FieldSetDemoComponent,DialogueDemoComponent,
+        ClosableTabDemo, PanelDemoComponent, FloatingPanelDemoComponent,FieldSetDemoComponent,DialogueDemoComponent,
         CarouselDemoComponent, EnhancedTabDemo,EnhancedVerticalTabDemo,ScrollableTabDemo,
         IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo, DyanmicTabComponent,
         DyanmicVerticalTabComponent, OverlayDemoComponent, ArcDemoComponent, SlidingPanelDemo

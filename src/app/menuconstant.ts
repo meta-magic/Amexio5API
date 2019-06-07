@@ -204,8 +204,14 @@ export const MENUCONSTANT = {
     {
       text: "Panels",
       icon: "fa fa-bars  ",
-      badge: "2",
+      badge: "3",
       children: [
+        {
+          text: "Floating Panel",
+          icon: "fa fa-bars",
+          link: "panes/floatingpanel-demo",
+          badge: "New"
+        },
         {
           text: "Carousel",
           icon: "fa fa-indent  ",
