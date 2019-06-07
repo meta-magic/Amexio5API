@@ -9,11 +9,14 @@
             Araf Karsh
         </amexio-label>
         <p>
-            Entrepreneur | Author | Speaker | Architect : UI/UX, Containers, Kubernetes, Microservices (DDD, ES / CQRS), Blockchain
+            Entrepreneur | Author | Speaker | Architect : UI/UX, Containers, Kubernetes, Microservices (DDD, ES /
+            CQRS), Blockchain
         </p>
         <p>
-            Araf Karsh has with over 27 years of experience leading the design and development of mission-critical, object-oriented and
-            web-based applications for premier organizations including Bank of America, CIBC, Johnson & Johnson, Kaiser Permanente,
+            Araf Karsh has with over 27 years of experience leading the design and development of mission-critical,
+            object-oriented and
+            web-based applications for premier organizations including Bank of America, CIBC, Johnson & Johnson, Kaiser
+            Permanente,
             the U.S. Department of State, and the U.S
         </p>
     </amexio-body-ce>
@@ -46,8 +49,10 @@
             <amexio-label>Photos</amexio-label>
         </amexio-badge>
         <p>
-            The G 310 R and G 310 GS are the two small-capacity motorcycles that were supposed to help BMW Motorrad garner the figures
-            for growth that it projected.The 310 twins will not be about numbers, but about quality – something that BMW
+            The G 310 R and G 310 GS are the two small-capacity motorcycles that were supposed to help BMW Motorrad
+            garner the figures
+            for growth that it projected.The 310 twins will not be about numbers, but about quality – something that
+            BMW
             Motorrad is known for in markets globally.
         </p>
     </amexio-body-ce>
@@ -57,8 +62,10 @@
 </amexio-window-ce>
 
 <!-- Login Modal Demo -->
-<amexio-window-ce [(show)]="showLoginWindow" [horizontal-position]="'right'" [vertical-position]="'top'" width="350px" align="center">
-    <amexio-header-ce [background]="'linear-gradient(40deg,#40E0D0, #FF0080)'" [height]="'50px'" align="center" vertical-align="top">
+<amexio-window-ce [(show)]="showLoginWindow" [horizontal-position]="'right'" [vertical-position]="'top'" width="350px"
+    align="center">
+    <amexio-header-ce [background]="'linear-gradient(40deg,#40E0D0, #FF0080)'" [height]="'50px'" align="center"
+        vertical-align="top">
         <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/dipali.jpg"></amexio-image>
     </amexio-header-ce>
     <amexio-body-ce height="150px">
@@ -74,8 +81,8 @@
 </amexio-window-ce>
 
 <!-- Info Modal Demo -->
-<amexio-window-ce [(show)]="showInfoModal" color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'" [horizontal-position]="'left'"
-    [vertical-position]="'bottom'" [align]="'center'" width="400px">
+<amexio-window-ce [(show)]="showInfoModal" color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'"
+    [horizontal-position]="'left'" [vertical-position]="'bottom'" [align]="'center'" width="400px">
     <amexio-header-ce [align]="'space-between'" vertical-align="top">
         <amexio-label [size]="'medium-bold'">
             John Doe
@@ -94,11 +101,16 @@
     </amexio-header-ce>
     <amexio-body-ce>
         <p>
-            One of the most incredible places in India, Kashmir is known for its enthralling beauty and is rightly nicknamed as the ‘Heaven
-            on Earth’. With its Picturesque lakes, striking fruit orchards, verdant meadows surrounded with thick woods of
-            pines and deodars, lush green gardens teeming with vibrant flowers and captivating valleys enclosed with snow-covered
-            peaks of Himalayan and Pir-Panjal ranges – Kashmir seems to have directly made its way out from a picture postcard.
-            Revelling in the adventure of world’s highest Gondola ride at Gulmarg – the magic of Kashmir with its breath-taking
+            One of the most incredible places in India, Kashmir is known for its enthralling beauty and is rightly
+            nicknamed as the ‘Heaven
+            on Earth’. With its Picturesque lakes, striking fruit orchards, verdant meadows surrounded with thick woods
+            of
+            pines and deodars, lush green gardens teeming with vibrant flowers and captivating valleys enclosed with
+            snow-covered
+            peaks of Himalayan and Pir-Panjal ranges – Kashmir seems to have directly made its way out from a picture
+            postcard.
+            Revelling in the adventure of world’s highest Gondola ride at Gulmarg – the magic of Kashmir with its
+            breath-taking
             vistas is sure to captivate your heart and soul forever.
         </p>
     </amexio-body-ce>
@@ -119,7 +131,8 @@
             <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'" [alignment]="'space-between'">
                 <amexio-layout-item>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat reprehenderit nostrum quos.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit nisi quo provident fugiat
+                        reprehenderit nostrum quos.
                     </p>
                 </amexio-layout-item>
                 <amexio-layout-item>
@@ -131,4 +144,41 @@
             </amexio-layout-columns>
         </div>
     </amexio-body-ce>
+</amexio-window-ce>
+
+<!-- Drag-Resize Window Demo -->
+
+<amexio-window-ce [draggable]="true" [resizable]="true" [remember-window-position]="true" position-top="100px" [horizontal-position]="'left'"
+    [vertical-position]="'top'" [(show)]="showSideModal1" width="400px">
+    <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'" [gradient]="true" height="45px" align="center"
+        vertical-align="top">
+        <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
+    </amexio-header-ce>
+    <amexio-body-ce align="center">
+        <br><br><br>
+        <amexio-label [size]="'large'">
+            Araf Karsh
+        </amexio-label>
+        <p>
+            Entrepreneur | Author | Speaker | Architect : UI/UX, Containers,
+            Kubernetes, Microservices (DDD, ES / CQRS), Blockchain
+        </p>
+        <p>
+            Araf Karsh has with over 27 years of experience leading the design and
+            development of mission-critical, object-oriented and
+            web-based applications for premier organizations including Bank of America,
+            CIBC,
+            Johnson & Johnson, Kaiser Permanente, the U.S. Department of State, and the
+            U.S
+        </p>
+
+    </amexio-body-ce>
+    <amexio-action-ce [align]="'center'" [border-top]="true">
+        <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
+        </amexio-floating-button>
+        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
+        </amexio-floating-button>
+        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
+        </amexio-floating-button>
+    </amexio-action-ce>
 </amexio-window-ce>

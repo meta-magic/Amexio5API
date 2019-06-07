@@ -132,6 +132,27 @@
                     "version": "5.8 onwards",
                     "type": "string",
                     "default": ""
+                },
+                {
+                    "name": "draggable",
+                    "description": "Provides dragging of the window",
+                    "version": "5.14 onwards",
+                    "type": "boolean",
+                    "default": ""
+                },
+                {
+                    "name": "resizable",
+                    "description": "Provides resizing of the window",
+                    "version": "5.14 onwards",
+                    "type": "boolean",
+                    "default": ""
+                },
+                {
+                    "name": "windowposition",
+                    "description": "Provides pervious position of the window",
+                    "version": "5.14 onwards",
+                    "type": "boolean",
+                    "default": ""
                 }
             ]
         },

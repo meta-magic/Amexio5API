@@ -146,7 +146,21 @@
           "version": "5.6 onwards",
           "type": "string",
           "default": ""
-        }
+        },
+        {
+          "name": "draggable",
+          "description": "Provides dragging of the window",
+          "version": "5.14 onwards",
+          "type": "boolean",
+          "default": ""
+      },
+      {
+          "name": "windowposition",
+          "description": "Provides pervious position of the window",
+          "version": "5.14 onwards",
+          "type": "boolean",
+          "default": ""
+      }
       ]
     },
     {

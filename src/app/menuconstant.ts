@@ -204,7 +204,7 @@ export const MENUCONSTANT = {
     {
       text: "Panels",
       icon: "fa fa-bars  ",
-      badge: "3",
+      badge: "4",
       children: [
         {
           text: "Floating Panel",
@@ -319,7 +319,8 @@ export const MENUCONSTANT = {
         {
           text: "Window",
           icon: "fa fa-window-maximize  ",
-          link: "panes/window-demo"
+          link: "panes/window-demo",
+          badge: "U",
         }
       ]
     },
@@ -1073,7 +1074,7 @@ export const MENUCONSTANT = {
     {
       text: "Panels",
       icon: "fa fa-bars  ",
-      badge: "1",
+      badge: "2",
       children: [
         {
           text: "Creative Carousel",
@@ -1089,7 +1090,8 @@ export const MENUCONSTANT = {
         {
           text: "Creative Window",
           icon: "fa fa-window-maximize",
-          link: "creative/window-ce-demo"
+          link: "creative/window-ce-demo",
+          badge: "U",
         },
         {
           text: "Viewport",

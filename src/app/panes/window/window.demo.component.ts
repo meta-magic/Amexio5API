@@ -20,12 +20,44 @@ export class WindowDemoComponent {
 
   showClosableMaterial: boolean;
   showClosableNonMaterial: boolean;
+  showDraggableNonMaterial: boolean;
+
 
   htmlCode: string;
   typeScriptCode: string;
   copyMsgArray: any[];
   asyncFlag: boolean;
+  radioGroupData: any;
+  checkboxGroupdata: any;
   constructor() {
+    this.radioGroupData = {
+      response:{
+        data:[{
+          gender:'Male',
+          genderId:'male'
+        },{
+          gender:'Female',
+          genderId:'female',
+        },
+        ]
+      }
+    };
+    this.checkboxGroupdata = {
+      response:{
+        data:[{
+          hobbieName:'Learning',
+          checked: false,
+          disabled : false
+        },{
+          hobbieName:'Shopping',
+          checked: false,
+          disabled : false
+        },{
+          hobbieName:'Fishing',
+          checked: false,
+          disabled : false
+        }
+        ]}};
     
   }
  
@@ -70,6 +102,10 @@ export class WindowDemoComponent {
     if (data == 'material') {
       this.showBasicDraggableWindowMaterial = !this.showBasicDraggableWindowMaterial;
     }
+    else if(data == 'nonmaterial') {
+      this.showDraggableNonMaterial =! this.showDraggableNonMaterial;
+    }
     
   }
+ 
 }
