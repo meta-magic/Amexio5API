@@ -50,6 +50,67 @@
             "description": "Provides mask pattern for input field."
           }
         ]
+      },
+      
+      {
+        "gridTitle": "Patterns Supported",
+        "columnDefinition": [
+          {
+            "dataindex": "regex",
+            "text": "Regex",
+            "width": 30,
+            "hidden": false
+          },
+          {
+            "dataindex": "maskpattern",
+            "text": "Mask pattern",
+            "width":20 ,
+            "hidden": false
+          },
+          {
+            "dataindex": "example",
+            "text": "Example",
+            "width":50 ,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+            "regex": "\\d{6}",
+            "maskpattern":"XXXXXX",
+            "example":"411028, 420009"
+          },
+          {
+            "regex": "\\d{3}\\s\\d{3}",
+            "maskpattern":"XXX XXX",
+            "example":"456 241, 110 007"
+          },
+          {
+            "regex": "\\(\\d{3}\\)\\s\\d{3}-\\d{4}",
+            "maskpattern":"(XXX) XXX-XXXX",
+            "example":"(814) 221-4562, (212) 851-4512"
+          },
+          {
+            "regex": "\\d{2}\\:\\d{2}:\\d{4}",
+            "maskpattern":"XX:XX:XXXX",
+            "example":"11:05:1992, 02:12:1998"
+          },
+          {
+            "regex": "\\d{2}\\:\\d{2}:\\d{2}",
+            "maskpattern":"XX:XX:XX",
+            "example":"06:02:30, 05:14:50"
+          },
+          {
+            "regex": "\\d{4}\\s\\d{4}\\s\\d{4}\\s\\d{4}",
+            "maskpattern":"XXXX XXXX XXXX XXXX",
+            "example":"4511 8728 6524 9022."
+          },
+          {
+            "regex": "\\d{3}\\s\\d{3}-\\d{2}-\\d{4}",
+            "maskpattern":"XXX XXX-XX-XXXX",
+            "example":"145 845-22-9623"
+          }
+        ]
       }
     ],
     "sourceMetadata": {
