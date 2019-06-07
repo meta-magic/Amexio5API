@@ -109,6 +109,11 @@
             "regex": "\\d{3}\\s\\d{3}-\\d{2}-\\d{4}",
             "maskpattern":"XXX XXX-XX-XXXX",
             "example":"145 845-22-9623"
+          },
+          {
+            "regex": "\\d{4}.\\d{0}",
+            "maskpattern":"XXXX.XX",
+            "example":"5000.00, 8510.00"
           }
         ]
       }
