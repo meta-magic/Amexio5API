@@ -45,42 +45,42 @@
         {
           "name": "title",
           "description": "Title for floating panel.",
-          "version": "4.0 onwards",
+          "version": "5.14 onwards",
           "type": "string",
           "default": ""
         },
         {
           "name": "relative",
           "description": "Enable/Disabled realtive position",
-          "version": "4.0 onwards",
+          "version": "5.14  onwards",
           "type": "boolean",
           "default": "false"
         },
         {
           "name": "closeable",
           "description": "show closeable icon",
-          "version": "4.0 onwards",
+          "version": "5.14  onwards",
           "type": "boolean",
           "default": "false"
         },
         {
           "name": "height",
           "description": "Height for  floating panel",
-          "version": "4.0 onwards",
+          "version": "5.14  onwards",
           "type": "string",
           "default": "200px"
         },
         {
           "name": "width",
           "description": "Width for  floating panel",
-          "version": "5.4 onwards",
+          "version": "5.14  onwards",
           "type": "string",
           "default": "400px"
         },
         {
           "name": "top-position",
           "description": "panel top position in 'px' ",
-          "version": "4.0 onwards",
+          "version": "5.14  onwards",
           "type": "string",
           "default": "none"
         },
@@ -94,14 +94,14 @@
         {
           "name": "right-position",
           "description": "panel right position in 'px'",
-          "version": "5.1.6 onwards",
+          "version": "5.14  onwards",
           "type": "string",
           "default": "none"
         },
         {
           "name": "left-position",
           "description": "panel left position in 'px'",
-          "version": " 5.6.1 onwards",
+          "version": " 5.14  onwards",
           "type": " string",
           "default": "none"
           }
