@@ -178,8 +178,8 @@
             </amexio-row>
           </amexio-column>
           <amexio-column [size]="3">
-            <amexio-button type="red" (onClick)="toggleClosable1('material')" label="Draggable Window"></amexio-button>
-            <amexio-window [draggable]="true" [(show)]="showBasicDraggableWindowMaterial" [close-on-escape]="false" [material-design]="true"
+            <amexio-button type="red" (onClick)="toggleDraggableWindow('material')" label="Draggable Window"></amexio-button>
+            <amexio-window [draggable]="true" [resizable]="true" [windowposition]="true" [(show)]="showBasicDraggableWindowMaterial" [close-on-escape]="false" [material-design]="true"
               [closable]="true">
               <amexio-header>
                 Employee Form

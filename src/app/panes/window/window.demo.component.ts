@@ -42,11 +42,9 @@ export class WindowDemoComponent {
   toggleBasicWindow(data: any) {
     if (data == 'material') {
       this.showBasicWindowMaterial = !this.showBasicWindowMaterial;
-      
     }
     else if (data == 'nonmaterial') {
       this.showBasicWindowNonMaterial = !this.showBasicWindowNonMaterial;
-
     }
     else {
       this.showBasicWindowNonMateialToolbar = !this.showBasicWindowNonMateialToolbar;
@@ -60,23 +58,18 @@ export class WindowDemoComponent {
       this.showMaxWindowNonMaterial = !this.showMaxWindowNonMaterial;
     }
   }
-
-
   toggleClosable(data: any) {
     if (data == 'material') {
       this.showClosableMaterial = !this.showClosableMaterial;
-      this.showBasicDraggableWindowMaterial = !this.showBasicDraggableWindowMaterial;
     }
     else {
       this.showClosableNonMaterial = !this.showClosableNonMaterial;
     }
   }
-  toggleClosable1(data: any) {
+  toggleDraggableWindow(data: any) {
     if (data == 'material') {
       this.showBasicDraggableWindowMaterial = !this.showBasicDraggableWindowMaterial;
     }
     
   }
-
-
 }
