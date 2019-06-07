@@ -38,11 +38,8 @@
     <amexio-column [size]="2">
         <amexio-button type="success" (onClick)="showBottomRightPanel()" label="Bottom Right"></amexio-button>
         <amexio-floating-panel [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'" [right-position]="'20px'"
-            [width]="'400'" [height]="300" [title]="'Google Map'" (onClose)="onCloseBottomRightPanel($event)">
-            <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
-                [data]="data" (onMarkerClick)="onMarkerClick2($event)">
-            </amexio-google-map>
-
+            [width]="'250'" [height]="300" [title]="'Theme Switcher'" (onClose)="onCloseBottomRightPanel($event)">
+            <amexio-theme-switcher [closeable]="false" [relative]="true" [mda]="true"  [col-size]="1"></amexio-theme-switcher>
         </amexio-floating-panel>
     </amexio-column>
     <amexio-column [size]="2">
@@ -55,7 +52,6 @@
                     </amexio-video-player>
                 </amexio-column>
             </amexio-row>
-
         </amexio-floating-panel>
     </amexio-column>
 </amexio-row>

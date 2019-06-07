@@ -28,7 +28,8 @@ import {OverlayDemoComponent} from "./overlaycontainer/overlay.demo.component";
 import { ArcDemoComponent } from "./arc/arc.demo.component";
 import {DarkmodeDemoComponent} from "./darkmode/darkmode.demo.component";
 import {SlidingPanelDemo} from "./slidingpanel/animatedslidingpane.demo";
-import {FloatingPanelDemoComponent} from "./floatingpanel/floatingpanel.demo"
+import {FloatingPanelDemoComponent} from "./floatingpanel/floatingpanel.demo";
+import { AmexioEnterpriseModule } from 'amexio-ng-extensions';
 /**
  * Created by kedar on 1/2/19.
  */
@@ -47,6 +48,7 @@ import {FloatingPanelDemoComponent} from "./floatingpanel/floatingpanel.demo"
         HttpClientModule,
         SharedModule.forRoot(),
         AmexioWidgetModule,
+        AmexioEnterpriseModule,
         RouterModule.forChild(PANES_ROUTE),
     ],
     providers: [],
