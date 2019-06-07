@@ -87,7 +87,7 @@
         {
           "name": "bottom-position",
           "description": "panel bottom position in 'px' ",
-          "version": "5.1.6 onwards",
+          "version": "5.14  onwards",
           "type": "string",
           "default": "none"
         },
