@@ -169,42 +169,12 @@
                       [icon-feedback]="true">
                     </amexio-password-input>
                   </amexio-column>
-                </amexio-row>
+                </amexio-row><br>
                 <amexio-checkbox [field-label]="'Agree'" name="agree" [required]="true">
                 </amexio-checkbox>
-
-                <!-- <amexio-row>
-                  <amexio-column [size]="6">
-                    <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
-                      [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false" [error-msg]="'Please enter name'"
-                      [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
-                      [max-error-msg]="'Name should be less than 15 characters'">
-                    </amexio-text-input>
-                  </amexio-column>
-                  <amexio-column [size]="6">
-                    <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
-                      [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false" [error-msg]="'Please enter Surname'"
-                      [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
-                      [max-error-msg]="'Surname should be less than 15 characters'">
-                    </amexio-text-input>
-                  </amexio-column>
-                </amexio-row>
-                <amexio-row>
-                  <amexio-column [size]="6">
-
-                    <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
-                      [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
-                      [allow-blank]="false" [enable-popover]="true">
-                    </amexio-textarea-input>
-
-
-                  </amexio-column>
-
-                </amexio-row> -->
               </amexio-body>
               <amexio-action>
-                <amexio-button (onClick)="showMaxWindowMaterial = false" label="Close"></amexio-button>
-                <amexio-button (onClick)="showMaxWindowMaterial = false" [disabled]="false" [label]="'Close'">
+                <amexio-button (onClick)="showMaxWindowMaterial = false" [disabled]="false" [label]="'Save'">
                 </amexio-button>
                 <amexio-button (onClick)="showMaxWindowMaterial = false" [label]="'Cancel'">
                 </amexio-button>
@@ -256,8 +226,8 @@
           </amexio-column>
           <amexio-column [size]="3">
             <amexio-button type="red" (onClick)="toggleDraggableWindow('material')" label="Draggable Window"></amexio-button>
-            <amexio-window [draggable]="true" [remember-window-position]="true" [(show)]="showBasicDraggableWindowMaterial" [close-on-escape]="false"
-              [material-design]="true" [closable]="true">
+            <amexio-window [draggable]="true" [remember-window-position]="true" [(show)]="showBasicDraggableWindowMaterial"
+              [close-on-escape]="false" [material-design]="true" [closable]="true">
               <amexio-header>
                 Employee Form
               </amexio-header>
@@ -293,7 +263,6 @@
         </amexio-row>
       </amexio-body>
     </amexio-card>
-
     <amexio-card [header]="true">
       <amexio-header>Non Material Pattern </amexio-header>
       <amexio-body>
@@ -516,7 +485,7 @@
           </amexio-column>
           <amexio-column [size]="3">
             <amexio-button type="red" (onClick)="toggleDraggableWindow('nonmaterial')" label="Draggable Window"></amexio-button>
-            <amexio-window [width]="'35%'" [draggable]="true" [remember-window-position]="true" [(show)]="showDraggableNonMaterial"
+            <amexio-window  [footer]="true" [width]="'35%'" [draggable]="true" [remember-window-position]="true" [(show)]="showDraggableNonMaterial"
               [close-on-escape]="false" [material-design]="false" [closable]="true">
               <amexio-header>
                 <div>
@@ -562,6 +531,10 @@
                   </amexio-column>
                 </amexio-row>
               </amexio-body>
+              <amexio-action>
+                <amexio-button (onClick)="showDraggableNonMaterial = false" label="Cancel"></amexio-button>
+                <amexio-button (onClick)="showDraggableNonMaterial = false" label="Rename"></amexio-button>
+              </amexio-action>
             </amexio-window>
           </amexio-column>
 

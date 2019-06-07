@@ -4,9 +4,14 @@ export class CreativeWindowComponent {
    showLoginWindow:boolean;
    showInfoModal:boolean;
    showFrameWindow:boolean;
-  constructor() {
+   showSideModal1: boolean;
+   showSideModal2: boolean;
+   constructor() {
      
-}
+ }
+ onDragWindowClick(){
+  this.showSideModal1 = !this.showSideModal1;
+ }
   onSideModalClick(){
    this.showSideModal = !this.showSideModal;
   }
@@ -22,4 +27,7 @@ export class CreativeWindowComponent {
   onFrameModalClick(){
    this.showFrameWindow =! this.showFrameWindow;
   }
-}
+  onResizeWindowClick() {
+    this.showSideModal2 =! this.showSideModal2;
+  }
+} 

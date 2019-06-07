@@ -146,10 +146,10 @@
     </amexio-body-ce>
 </amexio-window-ce>
 
-<!-- Drag-Resize Window Demo -->
+<!-- Drag-Window Demo -->
 
-<amexio-window-ce [draggable]="true" [resizable]="true" [remember-window-position]="true" position-top="100px" [horizontal-position]="'left'"
-    [vertical-position]="'top'" [(show)]="showSideModal1" width="400px">
+<amexio-window-ce [draggable]="true"  [remember-window-position]="true" position-top="100px"
+    [horizontal-position]="'left'" [vertical-position]="'top'" [(show)]="showSideModal1" width="400px">
     <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'" [gradient]="true" height="45px" align="center"
         vertical-align="top">
         <amexio-image width="100px" [c-class]="'card-img-center'" height="100px" [filter]="'round'" path="assets/images/profile/karsh.jpg"></amexio-image>
@@ -180,5 +180,37 @@
         </amexio-floating-button>
         <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
         </amexio-floating-button>
+    </amexio-action-ce>
+</amexio-window-ce>
+
+<!-- Resize-Window Demo -->
+
+<amexio-window-ce [resizable]="true" [remember-window-position]="true" [(show)]="showSideModal2" [horizontal-position]="'center'"
+    [vertical-position]="'center'" width="400px" align="start">
+    <amexio-header-ce align="left" vertical-align="top">
+        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+            <amexio-layout-item>
+                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
+            </amexio-layout-item>
+            <amexio-layout-item>
+                <amexio-label size="medium-bold">BMW G 310 R</amexio-label>
+            </amexio-layout-item>
+        </amexio-layout-columns>
+    </amexio-header-ce>
+    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg"></amexio-image>
+    <amexio-body-ce>
+        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'-44px'" [left]="'0px'">
+            <amexio-label>Photos</amexio-label>
+        </amexio-badge>
+        <p>
+            The G 310 R and G 310 GS are the two small-capacity motorcycles that were
+            supposed to help BMW Motorrad garner the figures
+            for growth that it projected.The 310 twins will not be about numbers, but
+            about
+            quality – something that BMW Motorrad is known for in markets globally.
+        </p>
+    </amexio-body-ce>
+    <amexio-action-ce>
+        <amexio-button type="success" label="More Details"></amexio-button>
     </amexio-action-ce>
 </amexio-window-ce>

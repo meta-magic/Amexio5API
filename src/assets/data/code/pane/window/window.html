@@ -334,7 +334,7 @@
 
 <!-- Without Material Design :Draggable Window -->
 
-<amexio-window [width]="'35%'" [draggable]="true" [remember-window-position]="true" [(show)]="showDraggableNonMaterial"
+<amexio-window [footer]="true" [width]="'35%'" [draggable]="true" [remember-window-position]="true" [(show)]="showDraggableNonMaterial"
   [close-on-escape]="false" [material-design]="false" [closable]="true">
   <amexio-header>
     <div>
@@ -377,6 +377,10 @@
       </amexio-column>
     </amexio-row>
   </amexio-body>
+  <amexio-action>
+    <amexio-button (onClick)="showDraggableNonMaterial = false" label="Cancel"></amexio-button>
+    <amexio-button (onClick)="showDraggableNonMaterial = false" label="Rename"></amexio-button>
+  </amexio-action>
 </amexio-window>
 
 
