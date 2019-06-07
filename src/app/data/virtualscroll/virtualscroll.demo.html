@@ -1,33 +1,39 @@
 <amexio-api-structure [url]="'assets/componentjson/data/virtualscroller.json'">
     <amexio-box>
-        Amexio virtual scroller displays a small subset of records just enough to fill the viewport and uses the same DOM elements as the user scroll
+        Amexio virtual scroller displays a small subset of records just enough to fill the viewport and uses the same
+        DOM elements as the user scroll
     </amexio-box>
     <amexio-api-demo>
-            <amexio-row>
-                    <amexio-column [size]="12">
-                            <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo3.jpg'">
-                            </amexio-image>
-                            <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 2'" (onClick)="onDemoThreeClick()">
-                            </amexio-button>
-                        </amexio-column>
-                
-            </amexio-row>
         <amexio-row>
-            <amexio-column [size]="6">
-                <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo1.jpg'" tooltip="virtual Scroll Page 1">
+            <amexio-column [size]="12">
+                <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo3.jpg'">
                 </amexio-image>
-                <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 1'" (onClick)="onDemoFirstClick()">
+                <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 2'"
+                    (onClick)="onDemoFirstClick()">
                 </amexio-button>
             </amexio-column>
-            <amexio-column [size]="6">
-                <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo2.jpg'" tooltip="virtual Scroll Page 2">
-                </amexio-image>
-                <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 2'" (onClick)="onDemoSecondClick()">
-                </amexio-button>
-            </amexio-column>
-    
 
         </amexio-row>
-   
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo1.jpg'"
+                    tooltip="virtual Scroll Page 1">
+                </amexio-image>
+                <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 1'"
+                    (onClick)="onDemoSecondClick()">
+                </amexio-button>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-image class="virtualScroll-cursor" [path]="'assets/images/virtualScroll/demo2.jpg'"
+                    tooltip="virtual Scroll Page 2">
+                </amexio-image>
+                <amexio-button [label]="'Demo'" [type]="'green'" [tooltip]="'virtual Scroll Page 2'"
+                    (onClick)="onDemoThreeClick()">
+                </amexio-button>
+            </amexio-column>
+
+
+        </amexio-row>
+
     </amexio-api-demo>
 </amexio-api-structure>
