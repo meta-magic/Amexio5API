@@ -1,5 +1,5 @@
 {
-    "title": "Amexio Mask Input",
+    "title": "Input Mask",
     "description": "The input mask option is used to prompt users for data input using a mask pattern. Provided input field should have pattern input.",
     "apiRefMetadata": [
       {
@@ -48,12 +48,19 @@
             "default": "",
             "version": "v5.14",
             "description": "Provides mask pattern for input field."
+          },{
+            "name": "pattern",
+            "type": "string",
+            "default": "",
+            "version": "v4.0",
+            "description": "Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
           }
+
         ]
       },
       
       {
-        "gridTitle": "Patterns Supported",
+        "gridTitle": "Demo Patterns",
         "columnDefinition": [
           {
             "dataindex": "regex",
