@@ -69,6 +69,13 @@
                 "default": ""
             },
             {
+                "name": "window-scroll",
+                "description": "Enable window scroll",
+                "version": "5.71 onwards",
+                "type": "boolean",
+                "default": "true"
+            },
+            {
                 "name": "amexioBodyTmpl",
                 "description": "It is a template element used by virtual scroll",
                 "version": "5.71 onwards",
