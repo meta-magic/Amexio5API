@@ -28,12 +28,19 @@ export class ColorPaletteDemo implements OnInit {
         constructor(private _cookieService: CookieService, private httpService: HTTPService, private http: HttpClient, public router: Router) {
                 this.inputData =
                         [{
-                                input: 'color-palette',
-                                data: 'values are classic, vibrant, random, specific. Default: classic'
-                        }, {
-                                input: 'gradient',
-                                data: 'If set true, provides linear gradient effect for particular theme applied.'
-                        }
+                                "name": "color-palette",
+                                "description": "Color Palette can be classic/ vibrant/ random or any of the 6 defined theme colors (amexio-theme-color1, 2...).",
+                                "version": "5.12 onwards",
+                                "type": "string",
+                                "default": ""
+                              },
+                              {
+                                "name": "gradient",
+                                "description": "If true provides linear gradient shade",
+                                "version": "5.12 onwards",
+                                "type": "boolean",
+                                "default": "true"
+                              }
                         ],
                         this.componentData = [];
 
