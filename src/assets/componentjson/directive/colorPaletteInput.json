@@ -1,0 +1,15 @@
+
+    [{
+        "name": "color-palette",
+        "description": "Color Palette can be classic/ vibrant/ random or any of the 6 defined theme colors (amexio-theme-color1, 2...).",
+        "version": "5.12 onwards",
+        "type": "string",
+        "default": ""
+      },
+      {
+        "name": "gradient",
+        "description": "If true provide gradient shade",
+        "version": "5.12 onwards",
+        "type": "boolean",
+        "default": "true"
+      }]

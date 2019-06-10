@@ -1,0 +1,119 @@
+<!-- Creative Card -->
+<amexio-card-ce [style-type]="'narrower-header'" [align]="'center'">
+    <amexio-header-ce [align]="'center'" amexioColorPalette [color-palette]="'vibrant'" [gradient]="true">
+        <amexio-label [size]="'large'">
+            John Doe
+        </amexio-label>
+    </amexio-header-ce>
+    <amexio-body-ce [align]="'center'">
+        <p>
+            "John Doe" and "Jane Doe" are multiple-use names that are used when the true name of a person is unknown or is being intentionally
+            concealed. In the context of law enforcement in the United States, such names are often used to refer to a corpse
+            whose identity is unknown or unconfirmed.
+        </p>
+    </amexio-body-ce>
+    <amexio-action-ce [align]="'space-between'" [background]="'black'" [color]="'white'">
+        <amexio-image [icon-class]="'fa fa-heart fa-2x'"></amexio-image>
+        <amexio-image [icon-class]="'fa fa-comments fa-2x'"></amexio-image>
+        <amexio-image [icon-class]="'fa fa-share-alt fa-2x'"></amexio-image>
+    </amexio-action-ce>
+</amexio-card-ce>
+
+<!-- Panel -->
+<amexio-panel amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [fit]="false" [border]="true" [header]="true"
+    title="Custom Header" [expanded]="true">
+    <amexio-panel-header>
+        <amexio-label size="small">
+            My Drive
+        </amexio-label>
+        <amexio-text-input name="name" place-holder="Enter name" icon-feedback="true">
+        </amexio-text-input>
+        <amexio-image style="margin-top : auto;" [icon-class]="'fa fa-info-circle'" [tooltip]="'Fontawesome apple'">
+        </amexio-image>
+
+    </amexio-panel-header>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</amexio-panel>
+
+<!-- Accordion -->
+<amexio-accordion [multi-open]="false">
+    <amexio-accordion-tab amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" active="true" header="Page One" [gradient]="true">
+        <amexio-accordion-header>
+            <amexio-label>
+                Completed : 100%
+            </amexio-label>&nbsp;
+            <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'">
+            </amexio-image>
+        </amexio-accordion-header>
+
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+    </amexio-accordion-tab>
+    <amexio-accordion-tab amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" header="Page two">
+        <amexio-accordion-header>
+            <amexio-label size="small">
+                Completed : 90%
+            </amexio-label>&nbsp;
+            <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'">
+            </amexio-image>
+        </amexio-accordion-header>
+
+        Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean placerat
+        suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+        posuere. Praesent ornare rutrum mi et condimentum. Vestibulum tempus, urna non ultrices aliquam, ex ex blandit lacus,
+        at porttitor odio ligula sed lacus. Praesent in luctus odio, at sodales orci. Vivamus vitae ullamcorper lectus.
+
+    </amexio-accordion-tab>
+    <amexio-accordion-tab amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" header="Page three">
+        <amexio-accordion-header>
+            <amexio-label size="small">
+                Completed : 80%
+            </amexio-label>&nbsp;
+            <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
+        </amexio-accordion-header>
+
+        Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Aliquam erat volutpat. Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec sapien pretium
+        euismod. Sed lobortis quis sapien a mollis. Nullam ex nibh, malesuada eget rutrum eu, dapibus quis ante. Proin non
+        convallis augue, at tincidunt nisi. Cras et metus blandit, sollicitudin mi ac, fringilla libero.
+
+    </amexio-accordion-tab>
+    <amexio-accordion-tab amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" header="Page four">Etiam mattis fermentum arcu eu feugiat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+        himenaeos. Aliquam porttitor, erat sit amet pharetra aliquam, ex leo tincidunt erat, in commodo leo magna quis mauris.
+        <amexio-accordion-header>
+            <amexio-label size="small">
+                Completed : 70%
+            </amexio-label>&nbsp;
+            <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
+        </amexio-accordion-header>
+    </amexio-accordion-tab>
+</amexio-accordion>
+
+<!-- Grid -->
+<amexio-datagrid amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [enable-column-filter]="false" title="Simple Data Grid "
+    [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'" [data-reader]="'data'"
+    [page-size]="10">
+    <amexio-data-table-column [data-index]="'countryName'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
+    </amexio-data-table-column>
+    <amexio-data-table-column [sort]="false" [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
+    <amexio-data-table-column [data-index]="'currencyName'" [data-type]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+</amexio-datagrid>
+
+<!-- Box -->
+<amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="false" [padding]="true" align="left">
+    <amexio-label>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+        text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but al so the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </amexio-label>
+</amexio-box>
