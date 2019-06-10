@@ -207,12 +207,6 @@ export const MENUCONSTANT = {
       badge: "4",
       children: [
         {
-          text: "Floating Panel",
-          icon: "fa fa-bars",
-          link: "panes/floatingpanel-demo",
-          badge: "New"
-        },
-        {
           text: "Carousel",
           icon: "fa fa-indent  ",
           link: "panes/carousel-demo"
@@ -231,6 +225,12 @@ export const MENUCONSTANT = {
           text: "Fieldset",
           icon: "fa fa-id-card-o  ",
           link: "panes/fieldset-demo"
+        },
+        {
+          text: "Floating Panel",
+          icon: "fa fa-bars",
+          link: "panes/floatingpanel-demo",
+          badge: "New"
         },
         { text: "Panel", icon: "fa fa-bars  ", link: "panes/panel-demo" },
         {
