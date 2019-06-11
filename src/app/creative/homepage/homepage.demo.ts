@@ -18,8 +18,8 @@ import {HttpClient} from '@angular/common/http';
 })
 export class HomePageDemo {
  
-  DEMO_FIRST_URL = 'https://meta-magic.github.io/amexio-ce-demo/#/home/dashboard?type=1';
-  DEMO_SEC_URL = 'https://meta-magic.github.io/amexio-ce-demo/#/home/dashboardtwo?type=2';
+  DEMO_FIRST_URL = 'https://eedemo.amexio.org/#/home/dashboard';
+  DEMO_SEC_URL = 'https://eedemo.amexio.org/#/home/dashboardtwo';
   constructor(private http: HttpClient) {
   }
   onDemoFirstClick() {

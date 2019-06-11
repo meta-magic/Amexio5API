@@ -13,7 +13,8 @@
                 <amexio-nav-item style="padding-left:10px" position-left [type]="'slider'">
                 </amexio-nav-item>
                 <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'"
-                    [title]="menus.text" [icon]="menus.icon" [data]="menus.submenus"
+                    [title]="menus.text" [sub-menu-height-padding]="'5px'"
+                    [icon]="menus.icon" [data]="menus.submenus"
                     (onNavItemClick)="externalLink($event)">
                 </amexio-nav-item>
             </amexio-nav>
@@ -81,7 +82,7 @@ Testing Content
     </amexio-homepage-ce>
 </div>
 
-<amexio-theme-switcher (onThemeClick)="themeClick($event)" [col-size]="1"></amexio-theme-switcher>
+<amexio-theme-switcher [col-size]="1"></amexio-theme-switcher>
 
 <!--
 <amexio-floating-panel>

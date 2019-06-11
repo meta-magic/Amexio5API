@@ -247,12 +247,52 @@ export class AppComponent {
         "text": "Case Studies",
         "icon": "fa fa-clone fa-fw",
         "submenus": [
-          { "text": "Shopping Portal", "link": "https://demo.amexio.org/se/shoppingportal/#/home" },
-          { "text": "US Election Results", "link": "https://demo.amexio.org/se/us-election/ " },
-          { "text": "Insurance Portal", "link": "https://demo.amexio.org/se/insuranceportal/#/home" },
-          { "text": "Movie Portal", "link": "https://demo.amexio.org/ee/" },
-          { "text": "NpmStats", "link": "https://www.npmstats.com/" },
-          { "text": "Creative Demo", "link": "https://cedemo.amexio.org/#/login" }
+          {
+            "text": "Showcase",
+            "link": "https://showcase.amexio.org/#/landingPage-app"
+          },
+          {
+            "text": "Traffic Analysis",
+            "link": "https://eedemo.amexio.org/#/home/dashboard",
+            "separator": true,
+            "separatorHeader": "EE Demo"
+          },
+          {
+            "text": "City Analysis",
+            "link": "https://eedemo.amexio.org/#/home/dashboardtwo"
+          },
+          {
+            "text": "Virtual Scroll",
+            "link": "https://meta-magic.github.io/amexio-virtualscroll-demo/#/sc",
+            "separator": true,
+            "separatorHeader": "CE Demo"
+          },
+          {
+            "text": "TecMFlix",
+            "link": "https://demo.amexio.org/ee/tecmflix/index.html#/app"
+          },
+          {
+            "text": "More...",
+            "link": "https://meta-magic.github.io/amexio-ce-demo-app/amexio-ce-demo-app/index.html#/ce-demo-app"
+          },
+          {
+            "text": "Insurance Portal",
+            "link": "https://sedemo.amexio.org/se/insuranceportal/#/home",
+            "separator": true,
+            "separatorHeader": "SE Demo"
+          },
+          {
+            "text": "Shopping Portal",
+            "link": "https://sedemo.amexio.org/se/shoppingportal/#/home"
+          },
+          {
+            "text": "US Election Results",
+            "link": "https://sedemo.amexio.org/se/us-election/ "
+          },
+          {
+            "text": "NpmStats",
+            "link": "https://www.npmstats.com/"
+          }
         ]
       },
       {
@@ -373,9 +413,5 @@ export class AppComponent {
     this.sidenav3.activateNode(this.semenus,(index === 3)?node:null);
     this.sidenav4.activateNode(this.eemenus,(index === 4)?node:null);
     this.sidenav5.activateNode(this.cemenus,(index === 5)?node:null);
-  }
-
-  themeClick(event: any) {
-    this.themeServiceService.getColorCode(event);
   }
 }
