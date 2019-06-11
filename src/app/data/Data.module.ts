@@ -39,7 +39,6 @@ import {ServerSidePaginationDemo} from './serversidepagination/serversidepaginat
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {PropertyGridDemoComponent} from "./propertygrid/propertygrid.demo";
 import {AmexioVirtualScrollDemo} from "./virtualscroll/virtualscroll.demo";
-
 /**
  * Created by kedar on 4/2/19.
  */
