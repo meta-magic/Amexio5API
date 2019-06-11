@@ -4,8 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'virtualscroll-demo',
-    templateUrl: './virtualscroll.demo.html',
-
+    templateUrl: './virtualscroll.demo.html'
 })
 export class AmexioVirtualScrollDemo {
     copyMsgArray: any[];
