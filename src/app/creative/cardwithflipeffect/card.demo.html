@@ -1,97 +1,82 @@
 <amexio-api-structure [url]="'assets/componentjson/creative/creativecardflip.json'">
     <amexio-api-demo>
-
         <amexio-row>
-            <amexio-column [size]="12">
-                <amexio-card [header]="true" [body-height]="60">
-                    <amexio-header>
-                        Creative Card Demo with Flip Effects
-                    </amexio-header>
-                    <amexio-body>
-                        <amexio-row>
                 
-                            <amexio-column size="6">
+            <amexio-column size="6">
 
-                                <!-- <h4>Card Demo of Flip-effect</h4> -->
-                                <amexio-card-ce [flip-effect]="true" [overlay-type]="'slider-effect'"   [align]="'center'"
-                                    [bg-image]="'assets/images/cardce/trip1.jpg'">
-                                    <amexio-header-ce [align]="'space-between'">
-                                   
-                                    </amexio-header-ce>
-                                    <amexio-body-ce>
-                                            <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
-                                            [border]="false">
-                                            <amexio-layout-item>
-                                                <amexio-label
-                                                    [size]="'medium-bold'">
-                                                    Visit Yetiland
-                                                </amexio-label>
-                                                
-                                            </amexio-layout-item>
-                                            </amexio-layout-columns>
+                <!-- <h4>Card Demo of Flip-effect</h4> -->
+                <amexio-card-ce [align]="'center'" [flip]="true" style="display: block; height: 500px;"
+                    [cover-image]="'assets/images/cardce/children-cycle.jpg'">
+                    <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
+                        <amexio-label size="medium-bold">John Doe
+                        </amexio-label>
+                        <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
+                            <amexio-layout-item>
+                                <amexio-image [icon-class]="'fa fa-share-alt'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                            </amexio-layout-item>
+                            <amexio-layout-item>
+                                <amexio-image [icon-class]="'fa fa-heart-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                            </amexio-layout-item>
+                            <amexio-layout-item>
+                                <amexio-image [icon-class]="'fa fa-bookmark-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                            </amexio-layout-item>
+                        </amexio-layout-columns>
+                    </amexio-header-ce>
+                    <amexio-body-ce>
+                        <p>
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds
+                            of dog from Japan. A small, agile dog that copes very well with mountainous
+                            terrain, the Shiba Inu was originally bred for hunting.
+                        </p>
+                    </amexio-body-ce>
+                    <amexio-action-ce  [border-top]="true">
+                        <amexio-button [label]="'LIKE'" [type]="'transparent'" [tooltip]="'LIKE'">
+                        </amexio-button>
+                        <amexio-button [label]="'SHARE'" [type]="'transparent'" [tooltip]="'SHARE'">
+                        </amexio-button>
+                    </amexio-action-ce>
+                </amexio-card-ce>
 
-                                        <p>
-                                           Lorem ipsum dolor sit amet.
-                                        </p>
-                                        <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
-                                            [border]="false">
-                                            <amexio-layout-item>
-                                                <amexio-button [label]="'Book Now'" [bg-color]="'black'" [color]="'white'"
-                                                    [size]="'xsmall'">
-                                                </amexio-button>
-                                            </amexio-layout-item>
-                                        </amexio-layout-columns>
-                                    </amexio-body-ce>
-                                    <amexio-action-ce>
-
-                                    </amexio-action-ce>
-                                </amexio-card-ce>
-
-                            </amexio-column>
-                            <amexio-column [size]="6">
-                                    <!-- <h4>Card Demo of Flip-effect</h4> -->
-                                    <amexio-card-ce [flip-effect]="true" [overlay-type]="'slider-effect'"   [align]="'center'"
-                                        [bg-image]="'assets/images/cardce/trip2.jpg'">
-                                        <amexio-header-ce [align]="'space-between'">
-                                       
-                                        </amexio-header-ce>
-                                        <amexio-body-ce>
-                                                <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
-                                                [border]="false">
-                                                <amexio-layout-item>
-                                                    <amexio-label
-                                                        [size]="'medium-bold'">
-                                                        Visit Phillipines
-                                                    </amexio-label>
-                                                    
-                                                </amexio-layout-item>
-                                                </amexio-layout-columns>
-    
-                                            <p>
-                                               Explore marine life with enchanting aqualife
-                                            </p>
-                                            <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
-                                                [border]="false">
-                                                <amexio-layout-item>
-                                                    <amexio-button [label]="'Book Now'" [bg-color]="'black'" [color]="'white'"
-                                                        [size]="'xsmall'">
-                                                    </amexio-button>
-                                                </amexio-layout-item>
-                                            </amexio-layout-columns>
-                                        </amexio-body-ce>
-                                        <amexio-action-ce>
-    
-                                        </amexio-action-ce>
-                                    </amexio-card-ce>
-                            </amexio-column>
-                            
-                        </amexio-row>
-
-                    
-                    </amexio-body>
-                </amexio-card>
             </amexio-column>
+            <amexio-column [size]="6">
+                    <!-- <h4>Card Demo of Flip-effect</h4> -->
+                    <amexio-card-ce [flip]="true" [align]="'center'" style="display: block; height: 500px;"
+                        [cover-image]="'assets/images/cardce/trip2.jpg'">
+                        <amexio-header-ce [align]="'space-between'">
+                            Demo 1
+                        </amexio-header-ce>
+                        <amexio-body-ce>
+                                <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
+                                [border]="false">
+                                <amexio-layout-item>
+                                    <amexio-label
+                                        [size]="'medium-bold'">
+                                        Visit Phillipines
+                                    </amexio-label>
+                                    
+                                </amexio-layout-item>
+                                </amexio-layout-columns>
+
+                            <p>
+                               Explore marine life with enchanting aqualife
+                            </p>
+                            <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
+                                [border]="false">
+                                <amexio-layout-item>
+                                    <amexio-button [label]="'Book Now'" [bg-color]="'black'" [color]="'white'"
+                                        [size]="'xsmall'">
+                                    </amexio-button>
+                                </amexio-layout-item>
+                            </amexio-layout-columns>
+                        </amexio-body-ce>
+                        <amexio-action-ce>
+
+                        </amexio-action-ce>
+                    </amexio-card-ce>
+            </amexio-column>
+            
         </amexio-row>
+
 
     </amexio-api-demo>
 </amexio-api-structure>

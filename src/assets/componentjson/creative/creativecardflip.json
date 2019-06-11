@@ -116,7 +116,7 @@
                     "default": ""
                 },
                 {
-                    "name": "flip-effect",
+                    "name": "flip",
                     "description": "Enables flip effects on creative card",
                     "version": "5.13 onwards",
                     "type": "boolean",
