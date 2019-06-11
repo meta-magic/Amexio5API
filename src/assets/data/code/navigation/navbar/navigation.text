@@ -2,17 +2,49 @@ export class NavBarDemo {
   topMenuData:any;
   navBarData: any;
   constructor() {
-  this.topMenuData = JSON.parse(`[{
-        "text": "Products",
-        "submenus": [{
-          "text": "Amexio Canvas",
-          "link": "https://amexio.tech/amexio-canvas"
-        }, {
-          "text": "Amexio Themes",
-          "link": "https://amexio.tech/amexio-themes"
-        }]
+  this.topMenuData = JSON.parse(`[
+      {
+      "text": "About Us",
+      "submenus": [{
+        "text": "Amexio Canvas",
+        "link": "https://amexio.tech/amexio-canvas"
+         
+      }, {
+        "text": "Amexio Themes",
+        "link": "https://amexio.tech/amexio-themes"
       }]
-    `);
+    },  {
+      "text": "Case Studies",
+      "icon": "fa fa-clone fa-fw",
+      "submenus": [
+        {
+          "text": "Showcase",
+          "link": "https://showcase.amexio.org/#/landingPage-app"
+        },
+        {
+          "text": "Traffic Analysis",
+          "link": "https://eedemo.amexio.org/#/home/dashboard",
+          "separator": true,
+          "separatorHeader": "EE Demo"
+        },
+        {
+          "text": "City Analysis",
+          "link": "https://eedemo.amexio.org/#/home/dashboardtwo"
+        },
+        {
+          "text": "Virtual Scroll",
+          "link": "https://meta-magic.github.io/amexio-virtualscroll-demo/#/sc",
+          "separator": true,
+          "separatorHeader": "CE Demo"
+        },
+        {
+          "text": "TecMFlix",
+          "link": "https://demo.amexio.org/ee/tecmflix/index.html#/app"
+        }
+      ]
+    }
+  ]`
+  );
 
     this.navBarData = JSON.parse(`[{
     "text": "File",

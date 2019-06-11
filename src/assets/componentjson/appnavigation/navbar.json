@@ -87,25 +87,31 @@
           "width": 15,
           "hidden": false,
           "datatype": "string"
+        },      {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 10,
+          "hidden": false,
+          "datatype": "string"
         },
         {
           "dataindex": "type",
           "text": "Type",
-          "width": 15,
+          "width": 10,
           "hidden": false,
           "datatype": "string"
         },
         {
           "dataindex": "default",
           "text": "Default",
-          "width": 15,
+          "width": 10,
           "hidden": false,
           "datatype": "string"
         },
         {
           "dataindex": "description",
           "text": "Description",
-          "width": 60,
+          "width": 55,
           "hidden": false,
           "datatype": "string"
         }
@@ -152,6 +158,19 @@
           "type": "array",
           "default": "",
           "description": "Standard JSON format array data which is used for rendering menus. This is used when type=menu is defined."
+        },
+        {
+          "name": "data",
+          "type": "array",
+          "default": "",
+          "description": "Standard JSON format array data which is used for rendering menus. This is used when type=menu is defined."
+        },
+        {
+          "name": "sub-menu-height-padding",
+          "type": "string",
+          "version":"5.14.1 onwards",
+          "default": "10px",
+          "description": "provides padding for the sub node of navbar"
         }
       ]
     },
