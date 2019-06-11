@@ -2,12 +2,12 @@
  * Created by kedar on 21/9/18.
  */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { Router } from "@angular/router";
 import { CookieService } from "ngx-cookie-service";
 import { HTTPService } from '../../service/http.service';
-import { forEach } from '@angular/router/src/utils/collection';
+import { ThemeServiceService } from '../../theme-service.service';
 
 
 @Component({
@@ -25,7 +25,9 @@ export class ColorPaletteDemo implements OnInit {
         inputData: any;
         componentData: any;
         themeData: any
-        constructor(private _cookieService: CookieService, private httpService: HTTPService, private http: HttpClient, public router: Router) {
+
+        constructor(private themeServiceService: ThemeServiceService,
+                private _cookieService: CookieService, private httpService: HTTPService, private http: HttpClient, public router: Router) {
                 this.inputData =
                         [{
                                 "name": "color-palette",
@@ -33,14 +35,14 @@ export class ColorPaletteDemo implements OnInit {
                                 "version": "5.12 onwards",
                                 "type": "string",
                                 "default": ""
-                              },
-                              {
+                        },
+                        {
                                 "name": "gradient",
                                 "description": "If true provides linear gradient shade",
                                 "version": "5.12 onwards",
                                 "type": "boolean",
                                 "default": "true"
-                              }
+                        }
                         ],
                         this.componentData = [];
 
@@ -50,6 +52,7 @@ export class ColorPaletteDemo implements OnInit {
         ngOnInit() {
 
                 this.fetchJsonData();
+
         }
 
         onRowSelect(data: any) {
@@ -65,30 +68,63 @@ export class ColorPaletteDemo implements OnInit {
                 }, () => {
                         let themeColor = response.themeColor;
                         data.forEach(element => {
-                                if (element.colorpalette === 'amexio-theme-color1') {
-                                        element.actualColor.bgColor = themeColor[1].value;
-                                        element.actualColor.fgcolor = themeColor[28].value;
-                                }
-                                if (element.colorpalette === 'amexio-theme-color2') {
-                                        element.actualColor.bgColor = themeColor[2].value;
-                                        element.actualColor.fgcolor = themeColor[29].value;
-                                }
-                                if (element.colorpalette === 'amexio-theme-color3') {
-                                        element.actualColor.bgColor = themeColor[3].value;
-                                        element.actualColor.fgcolor = themeColor[30].value;
-                                }
-                                if (element.colorpalette === 'amexio-theme-color4') {
-                                        element.actualColor.bgColor = themeColor[4].value;
-                                        element.actualColor.fgcolor = themeColor[31].value;
-                                }
-                                if (element.colorpalette === 'amexio-theme-color5') {
-                                        element.actualColor.bgColor = themeColor[5].value;
-                                        element.actualColor.fgcolor = themeColor[32].value;
-                                }
-                                if (element.colorpalette === 'amexio-theme-color6') {
-                                        element.actualColor.bgColor = themeColor[6].value;
-                                        element.actualColor.fgcolor = themeColor[33].value;
-                                }
+                                this.themeServiceService.themeColorData.subscribe((theme: any) => {
+                                        if (theme && theme.length > 0) {
+                                                if (element.colorpalette === 'amexio-theme-color1') {
+                                                        element.actualColor.bgColor = theme[1].value;
+                                                        element.actualColor.fgcolor = theme[28].value;
+                                                       
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color2') {
+                                                        element.actualColor.bgColor = theme[2].value;
+                                                        element.actualColor.fgcolor = theme[29].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color3') {
+                                                        element.actualColor.bgColor = theme[3].value;
+                                                        element.actualColor.fgcolor = theme[30].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color4') {
+                                                        element.actualColor.bgColor = theme[4].value;
+                                                        element.actualColor.fgcolor = theme[31].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color5') {
+                                                        element.actualColor.bgColor = theme[5].value;
+                                                        element.actualColor.fgcolor = theme[32].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color6') {
+                                                        element.actualColor.bgColor = theme[6].value;
+                                                        element.actualColor.fgcolor = theme[33].value;
+                                                }
+                                        } else {
+                                                if (element.colorpalette === 'amexio-theme-color1') {
+                                                        element.actualColor.bgColor = themeColor[1].value;
+                                                        element.actualColor.fgcolor = themeColor[28].value;
+                                                        //                                         
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color2') {
+                                                        element.actualColor.bgColor = themeColor[2].value;
+                                                        element.actualColor.fgcolor = themeColor[29].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color3') {
+                                                        element.actualColor.bgColor = themeColor[3].value;
+                                                        element.actualColor.fgcolor = themeColor[30].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color4') {
+                                                        element.actualColor.bgColor = themeColor[4].value;
+                                                        element.actualColor.fgcolor = themeColor[31].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color5') {
+                                                        element.actualColor.bgColor = themeColor[5].value;
+                                                        element.actualColor.fgcolor = themeColor[32].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-theme-color6') {
+                                                        element.actualColor.bgColor = themeColor[6].value;
+                                                        element.actualColor.fgcolor = themeColor[33].value;
+                                                }
+
+                                        }
+
+                                })
                         });
 
                         this.componentData = data
@@ -107,7 +143,6 @@ export class ColorPaletteDemo implements OnInit {
                 });
 
         }
-
 }
 
 

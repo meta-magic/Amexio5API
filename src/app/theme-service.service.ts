@@ -1,11 +1,14 @@
 import { Injectable } from '@angular/core';
 import { HTTPService } from './service/http.service';
 import { HttpClient } from '@angular/common/http';
+import * as Rx from "rxjs";
+import { forEach } from '@angular/router/src/utils/collection';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ThemeServiceService {
+  themeColorData = new Rx.BehaviorSubject(null);
 
   constructor(private _http: HttpClient) {
 
@@ -46,6 +49,10 @@ export class ThemeServiceService {
 
     let currentTheme = document.head.querySelectorAll(`link[rel="stylesheet"]`);
     
+  }
+
+  getColorCode(themeData: any) {
+  this.themeColorData.next(themeData.themeColor);
   }
 
 

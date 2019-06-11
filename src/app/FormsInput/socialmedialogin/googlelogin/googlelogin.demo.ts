@@ -16,9 +16,7 @@ export class GoogleLoginDemo {
  
   }
 
-  onLoginClick(data: any) {
-    console.log('aaaaaaa',data);
-    
+  onLoginClick(data: any) {    
     this.googleLoginData = data;
   }
 
