@@ -255,31 +255,35 @@ export class AppComponent {
             "text": "Traffic Analysis",
             "link": "https://eedemo.amexio.org/#/home/dashboard",
             "separator": true,
-            "separatorHeader": "EE Demo"
+            "separatorHeader": "Enterprise Edition Apps"
           },
           {
             "text": "City Analysis",
             "link": "https://eedemo.amexio.org/#/home/dashboardtwo"
           },
           {
-            "text": "Virtual Scroll",
+            "text": "Movie Portal",
             "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc",
             "separator": true,
-            "separatorHeader": "CE Demo"
+            "separatorHeader": "Creative Edition Apps"
           },
           {
             "text": "TecMFlix",
             "link": "https://cedemo.amexio.org/tecmflix/"
           },
           {
-            "text": "More...",
+            "text": "Creative Home Page",
             "link": "https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/ce-demo-app"
           },
           {
-            "text": "Insurance Portal",
-            "link": "https://sedemo.amexio.org/se/insuranceportal/#/home",
+            "text": "Components App",
+            "link": "https://demo.amexio.org/se/v5.12/index.html#/home",
             "separator": true,
-            "separatorHeader": "SE Demo"
+            "separatorHeader": "Standard Edition Apps"
+          },
+          {
+            "text": "Insurance Portal",
+            "link": "https://sedemo.amexio.org/se/insuranceportal/#/home"
           },
           {
             "text": "Shopping Portal",
