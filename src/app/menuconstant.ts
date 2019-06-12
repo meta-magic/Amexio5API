@@ -53,6 +53,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
+      badge: "1",
       icon: "fa fa-clone  ",
       children: [
         {
@@ -73,6 +74,7 @@ export const MENUCONSTANT = {
         {
           text: "GitHub Login",
           icon: "fa fa-github  ",
+          badge: "NEW",
           link: "forms-Input/github-login-demo"
         },
         {
