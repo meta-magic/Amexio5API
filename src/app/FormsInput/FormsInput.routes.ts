@@ -22,6 +22,7 @@ import { RecaptchaDemo } from "./recaptcha/recaptcha.demo";
 import { SearchBox } from "./searchbox/searchbox.demo";
 import { SliderDemo } from "./slider/slider.demo";
 import { FacebookLoginDemo } from "./socialmedialogin/facebooklogin/facebooklogin.demo";
+import {GitHubLoginDemo} from "./socialmedialogin/githublogin/githublogin.demo";
 import { GoogleLoginDemo } from "./socialmedialogin/googlelogin/googlelogin.demo";
 import { LinkedinLoginDemo } from "./socialmedialogin/linkedinlogin/linkedinlogin.demo";
 import { TagInputDemo } from "./taginput/taginput.demo";
@@ -95,6 +96,9 @@ export const FORMSINPUT_ROUTE: Routes = [
     },
     {
         path: 'facebook-login-demo', component: FacebookLoginDemo,
+    },
+    {
+        path: 'github-login-demo', component: GitHubLoginDemo,
     },
     {
         path: 'google-login-demo', component: GoogleLoginDemo,

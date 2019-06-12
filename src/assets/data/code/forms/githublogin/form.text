@@ -1,0 +1,8 @@
+export class GithubLoginDemo {
+
+  constructor(){
+  }
+  onLoginClick(event:any){
+    console.log(event);
+  }
+}

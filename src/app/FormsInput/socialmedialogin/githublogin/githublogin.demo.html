@@ -1,0 +1,58 @@
+
+
+<amexio-api-structure [url]="'assets/componentjson/forminputs/github.json'">
+    <amexio-api-reference><amexio-box border-color="brown" border="left" padding="true" background-color="brown">
+            <amexio-label>
+              Make sure api-key is created before use this component refer github developer website to create key <a href="https://developer.github.com/v3/" target="_blank">GitHub Sign-In</a>
+              <br/><br/>
+            </amexio-label>
+          </amexio-box>
+    </amexio-api-reference>
+    <amexio-api-demo>
+  
+  <amexio-row>
+      <amexio-column size="4">
+        <amexio-card header="true" [body-height]="50">
+          <amexio-header>
+            Demo
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-login-social [api-key]="'TbH8xzvcUUXSn1c7F9r39vkHFLc'" [label]="'Sign up with Github'" [type]="'github'" (onLogin)="onLoginClick($event)">
+                </amexio-login-social>
+              </amexio-column>
+            </amexio-row>
+            <amexio-row>
+              <amexio-column size="12">
+                    <amexio-login-social [api-key]="'TbH8xzvcUUXSn1c7F9r39vkHFLc'" [style-type]="'square'"  [type]="'github'" (onLogin)="onLoginClick($event)">
+                        </amexio-login-social>
+              </amexio-column>
+            </amexio-row>
+            <amexio-row>
+              <amexio-column size="12">
+                    <amexio-login-social [api-key]="'TbH8xzvcUUXSn1c7F9r39vkHFLc'" [style-type]="'circle'"  [type]="'github'" (onLogin)="onLoginClick($event)">
+                        </amexio-login-social>
+              </amexio-column>
+            </amexio-row>
+  
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+      <amexio-column size="8">
+        <amexio-card header="true" [body-height]="50">
+          <amexio-header>
+            User Info After Login
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="12" [fit]="true">
+                {{githubLoginData|json}}
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
+    </amexio-api-demo>
+    </amexio-api-structure>

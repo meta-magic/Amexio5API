@@ -1,0 +1,110 @@
+{
+    "title": "Amexio Github Login",
+    "description": "Amexio Github Sign-In component manages the OAuth 2.0 flow and token lifecycle, simplifying your integration with Github APIs using amexio component.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-login-social>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+              {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+              "name": "api-key",
+              "description": "user api key which is generate on github developer website",
+              "version": "5.15 onwards",
+              "type": "string",
+              "default": "none"
+          },
+          {
+              "name": "type",
+              "description": "type attribute have multiple option like google,linkedin,facebook,github support",
+              "version": "5.15 onwards",
+              "type": "string",
+              "default": "none"
+          },
+          {
+              "name": "label",
+              "description": "set the label",
+              "version": "5.15 onwards",
+              "type": "string",
+              "default": "none"
+          },
+          {
+              "name": "style-type",
+              "description": "set the style type like circle,square",
+              "version": "5.15 onwards",
+              "type": "string",
+              "default": "square"
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+           {
+          "name": "onLogin",
+          "description": "event is fired when user loggedin successfully."
+      }
+        ]
+      }
+    ],
+  "isAccessibility": false,
+
+    "sourceMetadata": {
+      "htmlUrl": "forms/githublogin/form.html",
+      "tsUrl": "forms/githublogin/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": true,
+      "stackblitzUrl": ""
+    }
+  }

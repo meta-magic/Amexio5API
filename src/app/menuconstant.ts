@@ -71,6 +71,11 @@ export const MENUCONSTANT = {
           link: "forms-Input/facebook-login-demo"
         },
         {
+          text: "GitHub Login",
+          icon: "fa fa-github  ",
+          link: "forms-Input/github-login-demo"
+        },
+        {
           text: "Google Login",
           icon: "fa fa-google  ",
           link: "forms-Input/google-login-demo"

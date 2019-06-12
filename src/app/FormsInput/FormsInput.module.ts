@@ -30,6 +30,7 @@ import { RecaptchaDemo } from "./recaptcha/recaptcha.demo";
 import { SearchBox } from "./searchbox/searchbox.demo";
 import { SliderDemo } from "./slider/slider.demo";
 import { FacebookLoginDemo } from "./socialmedialogin/facebooklogin/facebooklogin.demo";
+import {GitHubLoginDemo} from "./socialmedialogin/githublogin/githublogin.demo";
 import { GoogleLoginDemo } from "./socialmedialogin/googlelogin/googlelogin.demo";
 import { LinkedinLoginDemo } from "./socialmedialogin/linkedinlogin/linkedinlogin.demo";
 import { TagInputDemo } from "./taginput/taginput.demo";
@@ -47,7 +48,7 @@ import { RangeSliderDemo } from "./rangeslider/rangeslider.demo";
          CreditCardDemo, DateTimePickerDemo,
         DropDownDemo,DropDownFilterDemo, DropDownMultiDemo, DropDownTemplateDemo, EmailDemo,
         FileuploadDemo,LabelDemo,NumberDemo,PasswordDemo,RadioGroupDemo,RatingDemo,
-        RecaptchaDemo,SearchBox,SliderDemo,FacebookLoginDemo,GoogleLoginDemo,LinkedinLoginDemo,
+        RecaptchaDemo,SearchBox,SliderDemo,FacebookLoginDemo,GitHubLoginDemo,GoogleLoginDemo,LinkedinLoginDemo,
         TagInputDemo,TextDemo, TextareaDemo, ToggleDemo, TypeAheadDemo,BadgeDemo,
         RangeSliderDemo, MultipleDateTimePickerDemo
     
