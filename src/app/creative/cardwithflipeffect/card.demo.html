@@ -5,7 +5,7 @@
             <amexio-column size="6">
 
                 <!-- <h4>Card Demo of Flip-effect</h4> -->
-                <amexio-card-ce [align]="'center'" [flip]="true" style="display: block; height: 500px;"
+                <amexio-card-ce [align]="'center'" [flip]="true" style="display: block; height: 300px;"
                     [cover-image]="'assets/images/cardce/children-cycle.jpg'">
                     <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
                         <amexio-label size="medium-bold">John Doe
@@ -40,10 +40,10 @@
             </amexio-column>
             <amexio-column [size]="6">
                     <!-- <h4>Card Demo of Flip-effect</h4> -->
-                    <amexio-card-ce [flip]="true" [align]="'center'" style="display: block; height: 500px;"
+                    <amexio-card-ce [flip]="true" [align]="'center'" style="display: block; height: 300px;"
                         [cover-image]="'assets/images/cardce/trip2.jpg'">
                         <amexio-header-ce [align]="'space-between'">
-                            Demo 1
+                            <!-- Demo 1 -->
                         </amexio-header-ce>
                         <amexio-body-ce>
                                 <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
@@ -57,9 +57,16 @@
                                 </amexio-layout-item>
                                 </amexio-layout-columns>
 
-                            <p>
-                               Explore marine life with enchanting aqualife
-                            </p>
+                                <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
+                                [border]="false">
+                                <amexio-layout-item>
+                                    <amexio-label
+                                    [size]="'medium'">
+                                    Explore marine life with enchanting aqualife
+                                </amexio-label>
+                                </amexio-layout-item>
+                            </amexio-layout-columns>
+                           
                             <amexio-layout-columns [orientation]="'horizontal'" [alignment]="'center'"
                                 [border]="false">
                                 <amexio-layout-item>
