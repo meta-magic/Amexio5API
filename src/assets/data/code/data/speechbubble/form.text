@@ -1,0 +1,25 @@
+export class SpeechBubbleDemo {
+
+    menuoption:any;
+
+    constructor() {
+        this.menuoption = [{
+            label: "Reply",
+            link: "",
+            icon: "fa fa-reply"
+          }, {
+            label: "Forward Msg",
+            link: "",
+            icon:"fa fa-forward"
+          }, {
+            label: "Star Msg",
+            link: "",
+            icon:"fa fa-star"
+          }, {
+            label: "Delete Msg",
+            link: "",
+            icon:"fa fa-trash"
+          }]
+    }
+  }
+  

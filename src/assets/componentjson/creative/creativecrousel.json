@@ -96,7 +96,7 @@
                     "type": "boolean",
                     "default": "false",
                     "description": "when true provide opacity (0.7) to carousel bar.",
-                    "version": "5.13 onwards"
+                    "version": "5.15 onwards"
                 },
                 {
                     "deprecated": false,

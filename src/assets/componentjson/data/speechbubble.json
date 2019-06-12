@@ -1,0 +1,103 @@
+{
+    "title": "Amexio Speech Bubble",
+    "description": "This component can be used inside a Chat window.The bubble can be used on a web page also for showing recommendations from a customer.Inside the chat window, Bubble can be extended with a drop-down menu from the top right corner to have other features like forwarding the message, delete the bubble, etc",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-speech-bubble>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+            {
+            "name": "position",
+            "version": "5.15 onwards",
+            "type": "string",
+            "default": "",
+            "description": "Position will decide the arrow position of the speech bubble"
+            },
+            {
+            "name": "menu-option",
+            "version": "5.15 onwards",
+            "type": "any",
+            "default": "",
+            "description": "It will decide the list of menu on click of down arrow"
+            }
+            ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+            {
+                "name": "onClick",
+                "version": "5.15",
+                "description": "It will fire only on selection of menu options."
+                }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "data/speechbubble/form.html",
+      "tsUrl": "data/speechbubble/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": true,
+      "stackblitzUrl": ""
+    },
+    "isAccessibility": false
+
+  }

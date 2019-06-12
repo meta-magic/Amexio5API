@@ -32,11 +32,13 @@ import { TreeDataTemplateDemo } from './treedatatemplate/treedatatemplate.demo';
 import { ServerSidePaginationDemo } from './serversidepagination/serversidepagination.demo';
 import { PropertyGridDemoComponent } from "./propertygrid/propertygrid.demo";
 import { AmexioVirtualScrollDemo } from "./virtualscroll/virtualscroll.demo";
-
+import { SpeechBubbleDemo } from "./speechbubble/speechbubble.demo";
 
 
 export const DATA_ROUTE: Routes = [
-
+    {
+        path:'speechbubble-demo' , component:SpeechBubbleDemo,
+        },
     {
         path: 'itemselector-demo', component: ItemSelectorDemo,
     },

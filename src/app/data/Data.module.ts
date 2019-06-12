@@ -39,11 +39,12 @@ import {ServerSidePaginationDemo} from './serversidepagination/serversidepaginat
 import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {PropertyGridDemoComponent} from "./propertygrid/propertygrid.demo";
 import {AmexioVirtualScrollDemo} from "./virtualscroll/virtualscroll.demo";
+import {SpeechBubbleDemo} from "./speechbubble/speechbubble.demo";
 /**
  * Created by kedar on 4/2/19.
  */
 @NgModule({
-    declarations: [ ItemSelectorDemo , ListBoxDemo, TimelineDemoComponent , AmexioSpinnerDemo,
+    declarations: [ SpeechBubbleDemo, ItemSelectorDemo , ListBoxDemo, TimelineDemoComponent , AmexioSpinnerDemo,
 
         SimpleTreeDemo, CheckboxTreeDemo, CollapseTreeDemo, ContextMenuTreeDemo, FilterTreeDemo,
         HorizontalTreeDemo, TreeWithBadgeDemo, DragDropTreeDemo, TreeWithTemplateDemo,
