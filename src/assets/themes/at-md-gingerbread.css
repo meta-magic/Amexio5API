@@ -6194,6 +6194,59 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   padding-left: 5px; }
 
 /****************************************************************************
+    Component Name : Speech Bubble
+    Version : Amexio v5.14.1onwards
+*****************************************************************************/
+/** speechbubble - Visual CSS **/
+.bubble {
+  background: var(--componentActiveBGColor); }
+
+.speecharrowleft:after {
+  border-color: transparent var(--componentActiveBGColor); }
+
+.speecharrowright:after {
+  border-color: transparent var(--componentActiveBGColor); }
+
+/** speechbubble - Structure CSS **/
+.bubble {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  border-radius: .4em; }
+
+.speecharrowleft {
+  margin-left: 50%; }
+
+.speecharrowright {
+  margin-right: 50%; }
+
+.speecharrowleft:after {
+  /* z-index: -1; */
+  content: "";
+  border-style: solid;
+  position: absolute !important;
+  left: -50px;
+  border-width: 10px 50px 10px 0; }
+
+.speecharrowright:after {
+  /* z-index: -1; */
+  content: "";
+  border-style: solid;
+  /* display: block; */
+  position: absolute !important;
+  /* top: 38px; */
+  right: -50px;
+  /* bottom: auto; */
+  left: auto;
+  border-width: 10px 0 10px 50px; }
+
+.sidedivclass {
+  float: right; }
+
+.speecharrowleftposition {
+  margin-right: 170px; }
+
+/****************************************************************************
     Component Name : Menubar
     Version : Amexio v4.0 onwards
 *****************************************************************************/
