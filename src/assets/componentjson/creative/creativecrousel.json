@@ -92,6 +92,14 @@
                 },
                 {
                     "deprecated": false,
+                    "name": "translucent",
+                    "type": "boolean",
+                    "default": "false",
+                    "description": "when true provide opacity (0.7) to carousel bar.",
+                    "version": "5.13 onwards"
+                },
+                {
+                    "deprecated": false,
                     "name": "type",
                     "type": "any",
                     "default": "1",
