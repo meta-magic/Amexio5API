@@ -414,4 +414,8 @@ export class AppComponent {
     this.sidenav4.activateNode(this.eemenus,(index === 4)?node:null);
     this.sidenav5.activateNode(this.cemenus,(index === 5)?node:null);
   }
+
+  themeClick(event: any) {
+    this.themeServiceService.getColorCode(event);
+  }
 }
