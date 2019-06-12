@@ -262,18 +262,19 @@ export class AppComponent {
             "link": "https://eedemo.amexio.org/#/home/dashboardtwo"
           },
           {
-            "text": "Movie Portal",
-            "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc",
+            "text": "Creative Home Page",
+            "link": "https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/ce-demo-app",
             "separator": true,
             "separatorHeader": "Creative Edition Apps"
           },
           {
-            "text": "TecMFlix",
-            "link": "https://cedemo.amexio.org/tecmflix/"
+            "text": "Movie Portal",
+            "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc"
+           
           },
           {
-            "text": "Creative Home Page",
-            "link": "https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/ce-demo-app"
+            "text": "TecMFlix",
+            "link": "https://cedemo.amexio.org/tecmflix/"
           },
           {
             "text": "Components App",
