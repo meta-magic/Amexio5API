@@ -118,7 +118,7 @@
                 {
                     "name": "flip",
                     "description": "Enables flip effects on creative card",
-                    "version": "5.13 onwards",
+                    "version": "5.15 onwards",
                     "type": "boolean",
                     "default": "false"
                 }
