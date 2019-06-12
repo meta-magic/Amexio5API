@@ -16,9 +16,9 @@ export class ViewportDemoComponent{
   copyMsgArray: any[];
   asyncFlag : boolean;
 
-  DEMO_FIRST_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/scrollable-viewport';
-  DEMO_SEC_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/viewport';
-  DEMO_THIRD_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/video-viewport';
+  DEMO_FIRST_URL = ' https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/viewport/viewport-one';
+  DEMO_SEC_URL = ' https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/viewport/viewport-two';
+  DEMO_THIRD_URL = ' https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/viewport/viewport-three';
 
   constructor(private http: HttpClient) {
   }

@@ -44,13 +44,13 @@ export class NavbarDemo {
         },
         {
           "text": "Virtual Scroll",
-          "link": "https://meta-magic.github.io/amexio-virtualscroll-demo/#/sc",
+          "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc",
           "separator": true,
           "separatorHeader": "CE Demo"
         },
         {
           "text": "TecMFlix",
-          "link": "https://demo.amexio.org/ee/tecmflix/index.html#/app"
+          "link": "https://cedemo.amexio.org/tecmflix/"
         }
       ]
     }

@@ -16,9 +16,9 @@ export class MenuDemoComponent{
   copyMsgArray: any[];
   asyncFlag : boolean;
 
-  DEMO_FIRST_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/menu-one';
-  DEMO_SEC_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/menu-two';
-  DEMO_THIRD_URL = 'https://meta-magic.github.io/viewport-Demo/#/home/menu-three';
+  DEMO_FIRST_URL = ' https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/menu/menu-one';
+  DEMO_SEC_URL = 'https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/menu/menu-two';
+  DEMO_THIRD_URL = ' https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/menu/menu-three';
 
   constructor(private http: HttpClient) {
   }

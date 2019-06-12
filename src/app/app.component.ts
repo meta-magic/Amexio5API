@@ -263,17 +263,17 @@ export class AppComponent {
           },
           {
             "text": "Virtual Scroll",
-            "link": "https://meta-magic.github.io/amexio-virtualscroll-demo/#/sc",
+            "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc",
             "separator": true,
             "separatorHeader": "CE Demo"
           },
           {
             "text": "TecMFlix",
-            "link": "https://demo.amexio.org/ee/tecmflix/index.html#/app"
+            "link": "https://cedemo.amexio.org/tecmflix/"
           },
           {
             "text": "More...",
-            "link": "https://meta-magic.github.io/amexio-ce-demo-app/amexio-ce-demo-app/index.html#/ce-demo-app"
+            "link": "https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/ce-demo-app"
           },
           {
             "text": "Insurance Portal",
