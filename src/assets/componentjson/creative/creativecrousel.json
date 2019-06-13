@@ -100,6 +100,14 @@
                 },
                 {
                     "deprecated": false,
+                    "name": "bar-bg-color",
+                    "type": "hexa (#ff00ff90) ",
+                    "default": "false",
+                    "description": "It provides the transparent behaviour to the carousel bar by adding two digits to the bar-bg-color likewise(#112233aa) and setting translucent to false.",
+                    "version": "5.15 onwards"
+                },
+                {
+                    "deprecated": false,
                     "name": "type",
                     "type": "any",
                     "default": "1",

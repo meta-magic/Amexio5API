@@ -53,7 +53,6 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
-      badge: "1",
       icon: "fa fa-clone  ",
       children: [
         {
@@ -71,12 +70,7 @@ export const MENUCONSTANT = {
           icon: "fa fa-facebook  ",
           link: "forms-Input/facebook-login-demo"
         },
-        {
-          text: "GitHub Login",
-          icon: "fa fa-github  ",
-          badge: "NEW",
-          link: "forms-Input/github-login-demo"
-        },
+       
         {
           text: "Google Login",
           icon: "fa fa-google  ",
@@ -96,7 +90,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Data",
-      badge: "4",
+      badge: "3",
       icon: "fa fa-database  ",
       children: [
         {
@@ -115,12 +109,7 @@ export const MENUCONSTANT = {
           icon: "fa fa-calendar  ",
           link: "enterprise/ee-calendar-demo"
         },
-        {
-          text: "Speech-Bubble",
-          icon: "fa fa-comment",
-          badge: "NEW",
-          link: "data/speechbubble-demo"
-          },
+       
         {
           text: "Theme Switcher",
           icon: "fas fa-palette  ",
@@ -1051,7 +1040,7 @@ export const MENUCONSTANT = {
   CEMENUS: [
     {
       text: "Layouts",
-      badge: "3",
+      badge: "2",
       icon: "fa fa-desktop  ",
       children: [
         {
@@ -1065,12 +1054,6 @@ export const MENUCONSTANT = {
           badge: "NEW",
           link: "creative/card-ce-demo-overlayeffect"
         },
-        {
-          text: "Creative Card With Flip Effect",
-          icon: "fa fa-map",
-          badge: "NEW",
-          link: "creative/card-ce-demo-flipeffect"
-      },
         {
           text: "Polaroid Card",
           icon: "fa fa-image",

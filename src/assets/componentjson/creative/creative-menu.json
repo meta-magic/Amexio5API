@@ -1,90 +1,93 @@
 {
     "title": "Amexio Creative Menu ",
     "description": "This component shows different type of Creative Menu ",
-    "apiRefMetadata": [{
-        "gridTitle": "Properties <amexio-menu-ce>",
-        "columnDefinition": [{
-                "dataindex": "name",
-                "text": "Name",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "version",
-                "text": "Version",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "type",
-                "text": "Type",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "default",
-                "text": "Default",
-                "width": 15,
-                "hidden": false,
-                "datatype": "string"
-            },
-            {
-                "dataindex": "description",
-                "text": "Description",
-                "width": 60,
-                "hidden": false,
-                "datatype": "string"
-            }
-        ],
-        "gridData": [{
-            "name": "animation-type",
-            "description": "The animation-type of creative menu page like 1,2,3.",
-            "version": "5.12 onwards",
-            "type": "string",
-            "default": "1"
-        },
+    "apiRefMetadata": [
         {
-            "name": "font",
-            "description": "Change the font of label",
-            "version": "5.12 onwards",
-            "type": "boolean",
-            "default": "true"
-        },
-        {
-            "name": "font-color",
-            "description": "Color to label",
-            "version": "5.13 onwards",
-            "type": "boolean",
-            "default": "true"
-        },
-        {
-            "name": "data",
-            "description": "Get data from local",
-            "version": "5.12 onwards",
-            "type": "boolean",
-            "default": "true"
-        },
-        {
-            "name": "size",
-            "description": "Sets size to the label",
-            "version": "5.12 onwards",
-            "type": "string",
-            "default": "black"
-        },
-        {
-            "name": "menu-positioning",
-            "description": "Sets the text position (left/ center/ right)",
-            "version": "5.12 onwards",
-            "type": "string",
-            "default": "left"
+            "gridTitle": "Properties <amexio-menu-ce>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "animation-type",
+                    "description": "The animation-type of creative menu page like 1,2,3.",
+                    "version": "5.12 onwards",
+                    "type": "string",
+                    "default": "1"
+                },
+                {
+                    "name": "font",
+                    "description": "Change the font of label",
+                    "version": "5.12 onwards",
+                    "type": "boolean",
+                    "default": "true"
+                },
+                {
+                    "name": "font-color",
+                    "description": "Color to label",
+                    "version": "5.13 onwards",
+                    "type": "boolean",
+                    "default": "true"
+                },
+                {
+                    "name": "data",
+                    "description": "Get data from local",
+                    "version": "5.12 onwards",
+                    "type": "boolean",
+                    "default": "true"
+                },
+                {
+                    "name": "size",
+                    "description": "Sets size to the label",
+                    "version": "5.12 onwards",
+                    "type": "string",
+                    "default": "black"
+                },
+                {
+                    "name": "menu-positioning",
+                    "description": "Sets the text position (left/ center/ right)",
+                    "version": "5.12 onwards",
+                    "type": "string",
+                    "default": "left"
+                }
+            ]
         }
-        ]
-    }],
-  "isAccessibility": false,
-
+    ],
+    "isAccessibility": false,
     "sourceMetadata": {
         "htmlUrl": "creative/ce-menu/creative.html",
         "tsUrl": "creative/ce-menu/creative.text",

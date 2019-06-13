@@ -5,7 +5,7 @@ import { DOCUMENT } from '@angular/platform-browser';
 import { CookieService } from "ngx-cookie-service";
 import { HttpClient } from "@angular/common/http";
 import { MENUCONSTANT } from './menuconstant';
-import {ThemeServiceService} from './theme-service.service';
+import { ThemeServiceService } from './theme-service.service';
 
 @Component({
   selector: 'app-root',
@@ -23,7 +23,7 @@ export class AppComponent {
   eemenus: any;
   cemenus: any;
   homemenus: any;
-  directives:any;
+  directives: any;
 
   amexiotechmenus: any[];
   isRouteLoading: boolean = false;
@@ -90,8 +90,13 @@ export class AppComponent {
         "link": 'http://api.amexio.org',
         "submenus": [
           {
+            "text": "Beta Version",
+            "link": "http://beta.amexio.org/"
+          },
+          {
             "text": "Version 5.0",
             "link": "../v5.0/index.html",
+            "separator": true,
             "submenus": [
               {
                 "text": "Version 5.13",
@@ -150,10 +155,13 @@ export class AppComponent {
           {
             "text": "Version 4.0",
             "link": "../v4/index.html"
+            
           },
+
           {
             "text": "Version 3.0",
-            "link": "../v3/index.html"
+            "link": "../v3/index.html",
+            "separator": true
           },
           {
             "text": "Version 2.0",
@@ -270,7 +278,7 @@ export class AppComponent {
           {
             "text": "Movie Portal",
             "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc"
-           
+
           },
           {
             "text": "TecMFlix",
@@ -336,7 +344,7 @@ export class AppComponent {
           }
         ]
       }
-   ];
+    ];
   }
 
   ngOnInit() {
@@ -369,7 +377,8 @@ export class AppComponent {
           themeRef = this.mdThemeData[0];
         }
         this._cookieService.set('theme-info', JSON.stringify({ id: themeId, themeName: themeRef.themeCssFile }));
-        this.themeServiceService.switchTheme(themeRef);      });
+        this.themeServiceService.switchTheme(themeRef);
+      });
   }
 
   addNewTheme(newTheme: any, existingTheme: any) {
@@ -413,11 +422,11 @@ export class AppComponent {
     if (node.hasOwnProperty('link')) {
       this.router.navigate([node.link]);
     }
-    this.sidenav1.activateNode(this.homemenus,(index === 1)?node:null);
-    this.sidenav2.activateNode(this.directives,(index === 2)?node:null);
-    this.sidenav3.activateNode(this.semenus,(index === 3)?node:null);
-    this.sidenav4.activateNode(this.eemenus,(index === 4)?node:null);
-    this.sidenav5.activateNode(this.cemenus,(index === 5)?node:null);
+    this.sidenav1.activateNode(this.homemenus, (index === 1) ? node : null);
+    this.sidenav2.activateNode(this.directives, (index === 2) ? node : null);
+    this.sidenav3.activateNode(this.semenus, (index === 3) ? node : null);
+    this.sidenav4.activateNode(this.eemenus, (index === 4) ? node : null);
+    this.sidenav5.activateNode(this.cemenus, (index === 5) ? node : null);
   }
 
   themeClick(event: any) {
