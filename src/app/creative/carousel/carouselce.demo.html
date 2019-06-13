@@ -9,10 +9,35 @@
 
                 <amexio-card [header]="true" [header-align]="'left'">
                     <amexio-header>
-                        Creative Carousel without Template
+                        Creative Carousel with user define BG and Font Color to bar
                     </amexio-header>
                     <amexio-body>
-                        <amexio-carousel-ce [bar-bg-color]="'#FFF93390'" [translucent]="false" [type]="1"
+                        <amexio-carousel-ce [bar-bg-color]="'#FFD29BD0'" [bar-font-color]="'#ff0000'"
+                            [translucent]="false" [type]="1"
+                            [http-url]="'assets/data/componentdata/creativecarousel3.json'" [http-method]="'get'"
+                            [data-reader]="'data'">
+                        </amexio-carousel-ce>
+                    </amexio-body>
+
+                </amexio-card>
+
+            </amexio-column>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+        </amexio-row>
+
+        <!-- Demo 2 -->
+        <amexio-row>
+            <amexio-column size="2" fit="false">
+            </amexio-column>
+            <amexio-column size="8" fit="false">
+
+                <amexio-card [header]="true" [header-align]="'left'">
+                    <amexio-header>
+                        Creative Carousel With Parallax Effect and translucent effect
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-carousel-ce [type]="1" [translucent]="true"
                             [http-url]="'assets/data/componentdata/creativecarousel1.json'" [http-method]="'get'"
                             [data-reader]="'data'">
                         </amexio-carousel-ce>
@@ -24,7 +49,7 @@
             <amexio-column size="2" fit="false">
             </amexio-column>
         </amexio-row>
-        <!-- Demo 2 -->
+        <!-- Demo 3 -->
         <amexio-row>
             <amexio-column size="2" fit="false">
             </amexio-column>
@@ -32,11 +57,12 @@
 
                 <amexio-card [header]="true" [header-align]="'left'">
                     <amexio-header>
+
                         Creative Carousel With Parallax Effect Demo
                     </amexio-header>
                     <amexio-body>
 
-                        <amexio-carousel-ce [type]="2" [translucent]="true" [http-url]="'assets/data/componentdata/creativecarousel2.json'"
+                        <amexio-carousel-ce [type]="2" [http-url]="'assets/data/componentdata/creativecarousel2.json'"
                             [http-method]="'get'" [data-reader]="'data'" [template-width]="100" position="right">
 
 
@@ -69,7 +95,8 @@
             <amexio-column size="2" fit="false">
             </amexio-column>
         </amexio-row>
-        <!-- Demo 3 -->
+
+
 
 
     </amexio-api-demo>

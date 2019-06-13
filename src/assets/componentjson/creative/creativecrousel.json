@@ -102,8 +102,16 @@
                     "deprecated": false,
                     "name": "bar-bg-color",
                     "type": "hexa (#ff00ff90) ",
-                    "default": "false",
+                    "default": "",
                     "description": "It provides the transparent behaviour to the carousel bar by adding two digits to the bar-bg-color likewise(#112233aa) and setting translucent to false.",
+                    "version": "5.15 onwards"
+                },
+                {
+                    "deprecated": false,
+                    "name": "bar-font-color",
+                    "type": "hexa (#ff0000) ",
+                    "default": "",
+                    "description": "User define font color to the text of bar.",
                     "version": "5.15 onwards"
                 },
                 {
@@ -122,8 +130,7 @@
         "tsUrl": "creative/carouselce/creative.text",
         "datasourceUrl": "assets/data/componentdata/creativecarousel2.json"
     },
-  "isAccessibility": false,
-
+    "isAccessibility": false,
     "liveMetadata": {
         "disabled": true,
         "stackblitzUrl": "https://stackblitz.com/edit/amexio-creative-carousel?embed=1&file=src/app/CE/creativeCarosuel/creativeCarosuel.component.html&view=editor"
