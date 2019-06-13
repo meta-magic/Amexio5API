@@ -18,7 +18,7 @@
                     </amexio-header>
                     <amexio-body>
 
-                        <amexio-speech-bubble [position]="'left'">
+                        <amexio-speech-bubble [arrow-direction]="'left'">
                             <amexio-label size="medium-bold">
                                 John Deo
                             </amexio-label><br>
@@ -26,7 +26,7 @@
                                 Hello, I'd like to order two boxes of signature pack produce for tomorrow.
                             </amexio-label>
                         </amexio-speech-bubble>
-                        <amexio-speech-bubble [position]="'right'">
+                        <amexio-speech-bubble [arrow-direction]="'right'">
                             <amexio-label size="medium-bold">
                                 Jane Deo
                             </amexio-label><br>
@@ -40,7 +40,7 @@
                                 </p>
                             </amexio-label>
                         </amexio-speech-bubble>
-                        <amexio-speech-bubble [position]="'left'">
+                        <amexio-speech-bubble [arrow-direction]="'left'">
                             <amexio-label size="medium-bold">
                                 John Deo
                             </amexio-label><br>
@@ -48,7 +48,7 @@
                                 1 Main Street,Pay at the delivery.
                             </amexio-label>
                         </amexio-speech-bubble>
-                        <amexio-speech-bubble [position]="'right'">
+                        <amexio-speech-bubble [arrow-direction]="'right'">
                             <amexio-label size="medium-bold">
                                 Jane Deo
                             </amexio-label><br>
@@ -57,7 +57,7 @@
                                 once its shipped.
                             </amexio-label>
                         </amexio-speech-bubble>
-                        <amexio-speech-bubble [position]="'left'">
+                        <amexio-speech-bubble [arrow-direction]="'left'">
                             <amexio-label size="medium-bold">
                                 John Deo
                             </amexio-label><br>
@@ -79,7 +79,7 @@
                             </amexio-header>
                             <amexio-body>
         
-                                <amexio-speech-bubble [position]="'left'" [menu-option]="menuoption">
+                                <amexio-speech-bubble [arrow-direction]="'left'" [menu-option]="menuoption">
                                     <amexio-label size="medium-bold">
                                         John Deo
                                     </amexio-label><br>
@@ -87,7 +87,7 @@
                                         Hello, I'd like to order two boxes of signature pack produce for tomorrow.
                                     </amexio-label>
                                 </amexio-speech-bubble>
-                                <amexio-speech-bubble [position]="'right'"[menu-option]="menuoption">
+                                <amexio-speech-bubble [arrow-direction]="'right'"[menu-option]="menuoption">
                                     <amexio-label size="medium-bold">
                                         Jane Deo
                                     </amexio-label><br>
@@ -101,7 +101,7 @@
                                         </p>
                                     </amexio-label>
                                 </amexio-speech-bubble>
-                                <amexio-speech-bubble [position]="'left'" [menu-option]="menuoption">
+                                <amexio-speech-bubble [arrow-direction]="'left'" [menu-option]="menuoption">
                                     <amexio-label size="medium-bold">
                                         John Deo
                                     </amexio-label><br>
@@ -109,7 +109,7 @@
                                         1 Main Street,Pay at the delivery.
                                     </amexio-label>
                                 </amexio-speech-bubble>
-                                <amexio-speech-bubble [position]="'right'" [menu-option]="menuoption">
+                                <amexio-speech-bubble [arrow-direction]="'right'" [menu-option]="menuoption">
                                     <amexio-label size="medium-bold">
                                         Jane Deo
                                     </amexio-label><br>
@@ -118,7 +118,7 @@
                                         once its shipped.
                                     </amexio-label>
                                 </amexio-speech-bubble>
-                                <amexio-speech-bubble [position]="'left'" [menu-option]="menuoption">
+                                <amexio-speech-bubble [arrow-direction]="'left'" [menu-option]="menuoption">
                                     <amexio-label size="medium-bold">
                                         John Deo
                                     </amexio-label><br>
@@ -131,10 +131,130 @@
                                 footer
                             </amexio-action>
                         </amexio-card>
-        
             </amexio-column>
         </amexio-row>
+        <amexio-row>
+            <amexio-column size="6" fit="true">
+                <amexio-card [header]="true" [header-align]="'left'">
+                    <amexio-header>
+                        Speech bubble With Top-left and Top-Right
+                    </amexio-header>
+                    <amexio-body>
 
+                        <amexio-speech-bubble [arrow-direction]="'top-right'">
+                            <amexio-label size="medium-bold">
+                                John Deo
+                            </amexio-label><br>
+                            <amexio-label size="medium">
+                                Hello, I'd like to order two boxes of signature pack produce for tomorrow.
+                            </amexio-label>
+                        </amexio-speech-bubble>
+                        <amexio-speech-bubble [arrow-direction]="'top-left'">
+                            <amexio-label size="medium-bold">
+                                Jane Deo
+                            </amexio-label><br>
+                            <amexio-label size="medium">
+                                <p style="margin-top:2px">
+                                    Welcome to Fresh Produce!
+                                </p>
+                                <p style="margin-top: -21px;margin-bottom: 1px;">
+                                    Great! What is the delivery address ?Would you like to pay now or at the time of
+                                    delivery?
+                                </p>
+                            </amexio-label>
+                        </amexio-speech-bubble>
+                        <amexio-speech-bubble [arrow-direction]="'top-right'">
+                            <amexio-label size="medium-bold">
+                                John Deo
+                            </amexio-label><br>
+                            <amexio-label size="medium">
+                                1 Main Street,Pay at the delivery.
+                            </amexio-label>
+                        </amexio-speech-bubble>
+                        <amexio-speech-bubble [arrow-direction]="'top-left'">
+                            <amexio-label size="medium-bold">
+                                Jane Deo
+                            </amexio-label><br>
+                            <amexio-label size="medium">
+                                Your order has been processed .W'll send you a notification on whatsapp
+                                once its shipped.
+                            </amexio-label>
+                        </amexio-speech-bubble>
+                        <amexio-speech-bubble [arrow-direction]="'top-right'">
+                            <amexio-label size="medium-bold">
+                                John Deo
+                            </amexio-label><br>
+                            <amexio-label size="medium">
+                                Thanks!
+                            </amexio-label>
+                        </amexio-speech-bubble>
+                    </amexio-body>
+                    <amexio-action>
+                        footer
+                    </amexio-action>
+                </amexio-card>
 
+            </amexio-column>
+            <amexio-column size="6" fit="true">
+                    <amexio-card [header]="true" [header-align]="'left'">
+                            <amexio-header>
+                                Speech bubble with Bottom-left and Bottom-Right
+                            </amexio-header>
+                            <amexio-body>
+        
+                                <amexio-speech-bubble [arrow-direction]="'bottom-left'" [menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        John Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        Hello, I'd like to order two boxes of signature pack produce for tomorrow.
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                                <amexio-speech-bubble [arrow-direction]="'bottom-right'"[menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        Jane Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        <p style="margin-top:2px">
+                                            Welcome to Fresh Produce!
+                                        </p>
+                                        <p style="margin-top: -21px;margin-bottom: 1px;">
+                                            Great! What is the delivery address ?Would you like to pay now or at the time of
+                                            delivery?
+                                        </p>
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                                <amexio-speech-bubble [arrow-direction]="'bottom-left'" [menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        John Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        1 Main Street,Pay at the delivery.
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                                <amexio-speech-bubble [arrow-direction]="'bottom-right'" [menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        Jane Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        Your order has been processed .W'll send you a notification on whatsapp
+                                        once its shipped.
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                                <amexio-speech-bubble [arrow-direction]="'bottom-left'" [menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        John Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        Thanks!
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                            </amexio-body>
+                            <amexio-action>
+                                footer
+                            </amexio-action>
+                        </amexio-card>
+            </amexio-column>
+        </amexio-row>
     </amexio-api-demo>
 </amexio-api-structure>

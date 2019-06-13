@@ -43,11 +43,11 @@
         ],
         "gridData": [
             {
-            "name": "position",
+            "name": "arrow-direction",
             "version": "5.15 onwards",
             "type": "string",
             "default": "",
-            "description": "Position will decide the arrow position of the speech bubble"
+            "description": "Position will decide the arrow position of the speech bubble i.e Left,Right,Top-Left,Top-Right,Bottom-Left,Bottom-Right"
             },
             {
             "name": "menu-option",

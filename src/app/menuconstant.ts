@@ -17,10 +17,12 @@ export const MENUCONSTANT = {
       icon: "fas fa-palette",
       link: "directive-demo/color-palette"
     },
-    {text:"Input Mask",
-    icon:"fa fa-file-text-o",
-    badge: "NEW",
-    link:"directive-demo/input-mask"}
+    {
+      text: "Input Mask",
+      icon: "fa fa-file-text-o",
+      badge: "NEW",
+      link: "directive-demo/input-mask"
+    }
   ],
 
   EEMENUS: [
@@ -70,7 +72,7 @@ export const MENUCONSTANT = {
           icon: "fa fa-facebook  ",
           link: "forms-Input/facebook-login-demo"
         },
-       
+
         {
           text: "Google Login",
           icon: "fa fa-google  ",
@@ -90,7 +92,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Data",
-      badge: "3",
+      badge: "4",
       icon: "fa fa-database  ",
       children: [
         {
@@ -109,7 +111,13 @@ export const MENUCONSTANT = {
           icon: "fa fa-calendar  ",
           link: "enterprise/ee-calendar-demo"
         },
-       
+        {
+          text: "Speech-Bubble",
+          icon: "fa fa-comment",
+          badge: "NEW",
+          link: "data/speechbubble-demo"
+        },
+
         {
           text: "Theme Switcher",
           icon: "fas fa-palette  ",
@@ -693,7 +701,7 @@ export const MENUCONSTANT = {
           text: "Property Grid",
           icon: "fa fa-database",
           link: "data/propertygrid-demo"
-        },  {
+        }, {
           text: "Virtual Scroller",
           badge: "NEW",
           icon: "fa fa-database",
