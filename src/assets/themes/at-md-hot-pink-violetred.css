@@ -6207,6 +6207,18 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 .speecharrowright:after {
   border-color: transparent var(--componentActiveBGColor); }
 
+.speecharrowbottomleft:after {
+  border-color: transparent var(--componentActiveBGColor); }
+
+.speecharrowbottomright:after {
+  border-color: transparent var(--componentActiveBGColor); }
+
+.speecharrowtopleft:after {
+  border-color: transparent var(--componentActiveBGColor); }
+
+.speecharrowtopright:after {
+  border-color: transparent var(--componentActiveBGColor); }
+
 /** speechbubble - Structure CSS **/
 .bubble {
   position: relative;
@@ -6215,14 +6227,27 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   border-radius: .4em; }
 
 .speecharrowleft {
-  margin-left: 50%; }
+  margin-left: 7%;
+  float: left; }
 
 .speecharrowright {
-  margin-right: 50%; }
+  margin-right: 7%;
+  float: right; }
+
+.speecharrowtopleft {
+  float: left; }
+
+.speecharrowtopright {
+  float: right; }
+
+.speecharrowbottomleft {
+  float: left; }
+
+.speecharrowbottomright {
+  float: right; }
 
 .speecharrowleft:after {
   bottom: 12px;
-  /* z-index: -1; */
   content: "";
   border-style: solid;
   position: absolute;
@@ -6231,22 +6256,46 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 .speecharrowright:after {
   bottom: 12px;
-  /* z-index: -1; */
   content: "";
   border-style: solid;
-  /* display: block; */
   position: absolute;
-  /* top: 38px; */
   right: -50px;
-  /* bottom: auto; */
   left: auto;
   border-width: 10px 0 10px 50px; }
 
-.sidedivclass {
-  float: right; }
+.speecharrowbottomleft:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 34px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  width: 0; }
 
-.speecharrowleftposition {
-  margin-right: 170px; }
+.speecharrowbottomright:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 34px;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  width: 0; }
+
+.speecharrowtopleft:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  border-style: solid;
+  border-width: 0 15px 15px; }
+
+.speecharrowtopright:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  right: 34px;
+  border-style: solid;
+  border-width: 0 15px 15px; }
 
 /****************************************************************************
     Component Name : Menubar
