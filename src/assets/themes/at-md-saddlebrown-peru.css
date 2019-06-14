@@ -6251,17 +6251,17 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   content: "";
   border-style: solid;
   position: absolute;
-  left: -50px;
-  border-width: 10px 50px 10px 0; }
+  left: -26px;
+  border-width: 15px 26px 10px 0; }
 
 .speecharrowright:after {
-  bottom: 12px;
+  bottom: 5px;
   content: "";
   border-style: solid;
   position: absolute;
-  right: -50px;
+  right: -24px;
   left: auto;
-  border-width: 10px 0 10px 50px; }
+  border-width: 19px 0 20px 33px; }
 
 .speecharrowbottomleft:after {
   content: "";
@@ -8809,7 +8809,7 @@ amexio-layout amexio-layout-item {
   flex-direction: row;
   align-items: center;
   position: relative;
-  z-index: 0; }
+  z-index: 1; }
 
 .creative-header .creative-header-div {
   height: auto; }
@@ -8910,6 +8910,24 @@ amexio-layout amexio-layout-item {
   margin: 0 auto;
   padding: 1%;
   border: 1px solid var(--themeSecondaryColor); }
+
+/*****************************************************************************
+ Component Name : Amexio floating panel container 
+  Version : Amexio v5.14 onwards
+****************************************************************************/
+/** Amexio slidingpanel Vars CSS **/
+/** Amexio slidingpanel Visual CSS **/
+.floatarrow:after {
+  border-color: var(--componentActiveBGColor) transparent; }
+
+/** Amexio slidingpanel Structure CSS **/
+.floatarrow:after {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  border-style: solid;
+  border-width: 0 15px 15px; }
 
 /****************************************************************************
     Component Name : Border Layout
@@ -9160,7 +9178,8 @@ amexio-layout-columns amexio-layout-item {
   font-weight: 400;
   flex-grow: 1;
   position: relative;
-  display: block; }
+  display: block;
+  overflow: auto; }
 
 .creative-footer {
   padding: 10px;
@@ -9275,6 +9294,8 @@ amexio-layout-columns amexio-layout-item {
 
 .card-container-ce-main-flip:hover .card-container-ce-flip {
   transform: rotateY(180deg); }
+.card-container-ce-main-flip:hover .ce-flip-card-back {
+  overflow: auto; }
 
 .card-container-ce-flip {
   transition: transform 0.6s;
