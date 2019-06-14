@@ -95,6 +95,13 @@
                     "description": "height of card"
                 },
                 {
+                    "name": "width",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.15.0 onwards",
+                    "description": "width of card"
+                },
+                {
                     "name": "style-type",
                     "type": "string",
                     "default": "",
