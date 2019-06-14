@@ -104,7 +104,14 @@
           "version": " 5.14  onwards",
           "type": " string",
           "default": "none"
-          }
+        },
+        {
+          "name": "arrow",
+          "description": "It shows the arrow in the relative floating panel",
+          "version": " 5.15  onwards",
+          "type": "boolean",
+          "default": "false"
+        }
       ]
     },
     {
@@ -117,11 +124,11 @@
           "hidden": false
         },
         {
-            "dataindex": "version",
-            "text": "Version",
-            "width": 15,
-            "hidden": false
-          },
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false
+        },
         {
           "dataindex": "description",
           "text": "Description",
@@ -134,7 +141,6 @@
           "name": "onClose",
           "description": "Fires  on panel close."
         }
-
       ]
     }
   ],

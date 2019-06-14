@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
 import { GoogleMapOverlays } from 'amexio-ng-extensions';
-import { HttpClient } from "@angular/common/http";
 import {PropertyGridModel} from 'amexio-ng-extensions';
 
 @Component({
@@ -23,6 +21,7 @@ export class FloatingPanelDemoComponent {
   data : GoogleMapOverlays[];
   markerdata : GoogleMapOverlays;
   companyKeyValueData: any[] = [];
+  this.showRelativePanel1: boolean = false;
   constructor(private http: HttpClient) {
     this.data = [];
     this.data.push(new GoogleMapOverlays(43.653225,-79.383186,'Toronto, Canada',true,null,{country:'Canada', capital:'', population:'20, Million'}));
@@ -33,17 +32,10 @@ export class FloatingPanelDemoComponent {
     this.createCompanyGrid();
    
   }
- 
-  
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    } else {
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    }
+  onshowRelativePanelWithToolTip() {
+    this.showRelativePanel1 = !this.showRelativePanel1;
   }
+ 
   showTopLeftPanel() {
     this.topLeftPanel = !this.topLeftPanel;
   }

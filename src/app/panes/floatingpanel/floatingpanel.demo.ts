@@ -23,6 +23,7 @@ export class FloatingPanelDemoComponent {
   bottomLeftPanel: boolean  =false;
   showFloatingButton : boolean = false;
   showRelativePanel : boolean = false;
+  showRelativePanel1 : boolean = false;
   data : GoogleMapOverlays[];
   markerdata1 : GoogleMapOverlays;
   markerdata2 : GoogleMapOverlays;
@@ -83,6 +84,9 @@ export class FloatingPanelDemoComponent {
   }
   onshowRelativePanel() {
     this.showRelativePanel = !this.showRelativePanel;
+  }
+  onshowRelativePanelWithToolTip() {
+    this.showRelativePanel1 = !this.showRelativePanel1;
   }
   onCloseRelativePanel(event: any) {
     this.showRelativePanel = event.showRelativePanel;
