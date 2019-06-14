@@ -6208,16 +6208,16 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   border-color: transparent var(--componentActiveBGColor); }
 
 .speecharrowbottomleft:after {
-  border-color: transparent var(--componentActiveBGColor); }
+  border-color: var(--componentActiveBGColor) transparent; }
 
 .speecharrowbottomright:after {
-  border-color: transparent var(--componentActiveBGColor); }
+  border-color: var(--componentActiveBGColor) transparent; }
 
 .speecharrowtopleft:after {
-  border-color: transparent var(--componentActiveBGColor); }
+  border-color: var(--componentActiveBGColor) transparent; }
 
 .speecharrowtopright:after {
-  border-color: transparent var(--componentActiveBGColor); }
+  border-color: var(--componentActiveBGColor) transparent; }
 
 /** speechbubble - Structure CSS **/
 .bubble {
