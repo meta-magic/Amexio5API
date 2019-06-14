@@ -17,12 +17,10 @@ export const MENUCONSTANT = {
       icon: "fas fa-palette",
       link: "directive-demo/color-palette"
     },
-    {
-      text: "Input Mask",
-      icon: "fa fa-file-text-o",
-      badge: "NEW",
-      link: "directive-demo/input-mask"
-    }
+    {text:"Input Mask",
+    icon:"fa fa-file-text-o",
+    badge: "NEW",
+    link:"directive-demo/input-mask"}
   ],
 
   EEMENUS: [
@@ -55,6 +53,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
+      badge: "1",
       icon: "fa fa-clone  ",
       children: [
         {
@@ -72,7 +71,12 @@ export const MENUCONSTANT = {
           icon: "fa fa-facebook  ",
           link: "forms-Input/facebook-login-demo"
         },
-
+        {
+          text: "GitHub Login",
+          icon: "fa fa-github  ",
+          badge: "NEW",
+          link: "forms-Input/github-login-demo"
+        },
         {
           text: "Google Login",
           icon: "fa fa-google  ",
@@ -116,8 +120,7 @@ export const MENUCONSTANT = {
           icon: "fa fa-comment",
           badge: "NEW",
           link: "data/speechbubble-demo"
-        },
-
+          },
         {
           text: "Theme Switcher",
           icon: "fas fa-palette  ",
@@ -701,7 +704,7 @@ export const MENUCONSTANT = {
           text: "Property Grid",
           icon: "fa fa-database",
           link: "data/propertygrid-demo"
-        }, {
+        },  {
           text: "Virtual Scroller",
           badge: "NEW",
           icon: "fa fa-database",
@@ -1048,7 +1051,7 @@ export const MENUCONSTANT = {
   CEMENUS: [
     {
       text: "Layouts",
-      badge: "2",
+      badge: "3",
       icon: "fa fa-desktop  ",
       children: [
         {
@@ -1062,6 +1065,12 @@ export const MENUCONSTANT = {
           badge: "NEW",
           link: "creative/card-ce-demo-overlayeffect"
         },
+        {
+          text: "Creative Card With Flip Effect",
+          icon: "fa fa-map",
+          badge: "NEW",
+          link: "creative/card-ce-demo-flipeffect"
+      },
         {
           text: "Polaroid Card",
           icon: "fa fa-image",
