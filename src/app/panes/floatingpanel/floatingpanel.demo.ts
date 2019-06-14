@@ -88,6 +88,9 @@ export class FloatingPanelDemoComponent {
   onshowRelativePanelWithToolTip() {
     this.showRelativePanel1 = !this.showRelativePanel1;
   }
+  onCloseRelativePanel1(event: any) {
+    this.showRelativePanel1 = event.showRelativePanel1
+  }
   onCloseRelativePanel(event: any) {
     this.showRelativePanel = event.showRelativePanel;
   }
