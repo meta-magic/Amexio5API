@@ -8918,7 +8918,7 @@ amexio-layout amexio-layout-item {
 /** Amexio slidingpanel Vars CSS **/
 /** Amexio slidingpanel Visual CSS **/
 .floatarrow:after {
-  border-color: var(--componentActiveBGColor) transparent; }
+  border-color: var(--theme6thColor) transparent; }
 
 /** Amexio slidingpanel Structure CSS **/
 .floatarrow:after {
