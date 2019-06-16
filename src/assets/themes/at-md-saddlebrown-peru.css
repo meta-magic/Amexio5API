@@ -6610,18 +6610,33 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   transition: all 0.3s ease;
   transform-origin: 0 0; }
 
+.topnavmainbarinneritems .nav-dropdown-content a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
+  text-align: left; }
+
+.topnavmainbarinneritems .nav-dropdown-content-mobile {
+  position: absolute;
+  min-width: 160px;
+  z-index: 3;
+  padding: 10px 0px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  transform-origin: 0 0; }
+
+.topnavmainbarinneritems .nav-dropdown-content-mobile a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 10px;
+  text-align: left; }
+
 .topnavmainbarinneritems-mobile .nav-dropdown-content {
   display: none;
   margin: 0px 5px;
   padding: 0px 5px;
   position: relative;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6); }
-
-.topnavmainbarinneritems .nav-dropdown-content a {
-  text-decoration: none;
-  display: block;
-  padding: 5px 5px 10px 10px !important;
-  text-align: left; }
 
 .nodehover {
   display: none; }
@@ -6767,7 +6782,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   display: inline-flex;
   justify-content: space-between;
   text-decoration: none;
-  width: 91%;
+  width: 100%;
   color: var(--appHeaderFontColor);
   font-weight: 600; }
 
