@@ -11,6 +11,7 @@ import { RibbonCardDemo } from './ribbonce/ribbon.demo';
 import { CreativeCardDemoOverlayEffect } from './cardcewithoverlayeffects/card.demo'
 import {ColorPickerDemoComponent} from './forminputs/colorpicker/colorpicker.demo';
 import {CreativeCardDemoFlipEffect} from './cardwithflipeffect/card.demo';
+import {CreativeCardDemoZoomEffect} from './cardwithzoomeffect/card.demo';
 /**
  * Created by kedar on 6/2/19.
  */
@@ -51,5 +52,8 @@ export const CREATIVE_ROUTE: Routes = [
     },
     {
         path: 'card-ce-demo-flipeffect', component: CreativeCardDemoFlipEffect,
+    },
+    {
+        path: 'card-ce-demo-zoomeffect', component: CreativeCardDemoZoomEffect,
     }
 ];

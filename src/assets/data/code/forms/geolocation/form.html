@@ -1,0 +1,16 @@
+<amexio-geolocation (onSuccess)="getCurrentPosition($event)">
+
+</amexio-geolocation>
+<amexio-button [label]="'Current Location'" [type]="'theme-color'" [icon]="'fa fa-map-marker'" [size]="'small'" (onClick)="onClick()">
+</amexio-button>
+<ng-container *ngIf="flag && myLocation.coords.latitude && myLocation.coords.longitude">
+    <br>
+    <br>
+    <amexio-label [size]="'small-bold'">
+        Latitude :
+    </amexio-label> {{myLocation.coords.latitude}}
+    <br>
+    <amexio-label [size]="'small-bold'">
+        Longitude :
+    </amexio-label> {{myLocation.coords.longitude}}
+</ng-container>

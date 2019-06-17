@@ -1,0 +1,75 @@
+{
+    "title": "Amexio Geo Location",
+    "description": "This component retrives current geo location coordinates",
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Events <amexio-geolocation>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "onSuccess",
+                    "description": "it emits the current geo position coordinates"
+                },
+                {
+                    "name": "onFailure",
+                    "description": "it emits -1 on geo coordinates retrival failure"
+                }
+            ]
+        }
+    ],
+    "isAccessibility": false,
+
+    "sourceMetadata": {
+        "htmlUrl": "forms/geolocation/form.html",
+        "tsUrl": "forms/geolocation/form.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": true,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-datepicker?ctl=1&embed=1&file=app/forms/datepicker/datepicker.demo.html"
+    },
+    "apiaccessibledata": [
+        {
+            "gridTitle": "Properties <amexio-date-time-picker>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Key",
+                    "width": 30
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Function",
+                    "width": 70
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "Right/Left Arrow",
+                    "description": " Moves focus one cell to the right/left.If focus is on the right-most/left-most cell in the row, focus does not move."
+                },
+                {
+                    "name": "Down Arrow",
+                    "description": " Moves focus one cell down.If focus is on the bottom cell in the column, focus does not move."
+                },
+                {
+                    "name": "Up Arrow",
+                    "description": "Moves focus one cell Up.If focus is on the top cell in the column, focus does not move."
+                }
+            ]
+        }
+    ]
+}

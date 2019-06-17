@@ -1,0 +1,17 @@
+import {Component} from '@angular/core';
+
+export class GeoLocationDemo {
+  myLocation: any ;
+  flag = false;
+  
+  getCurrentPosition(location: any) {
+   this.myLocation = location; 
+   }
+
+  onClick() {
+ this.flag = true;;
+  }
+  
+}
+
+

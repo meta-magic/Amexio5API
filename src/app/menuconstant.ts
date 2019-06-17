@@ -91,6 +91,11 @@ export const MENUCONSTANT = {
           text: "Recaptcha",
           icon: "fa fa-recycle  ",
           link: "forms-Input/recaptcha-demo"
+        },
+        {
+          text: "Geo location",
+          icon: "fa fa-map-marker",
+          link: "forms-Input/geolocation-demo"
         }
       ]
     },
@@ -1070,7 +1075,13 @@ export const MENUCONSTANT = {
           icon: "fa fa-map",
           badge: "NEW",
           link: "creative/card-ce-demo-flipeffect"
-      },
+        },
+        {
+          text: "Creative Card With Zoom Effect",
+          icon: "fa fa-search-plus",
+          badge: "NEW",
+          link: "creative/card-ce-demo-zoomeffect"
+        },
         {
           text: "Polaroid Card",
           icon: "fa fa-image",

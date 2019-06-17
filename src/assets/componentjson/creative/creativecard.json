@@ -114,6 +114,34 @@
                     "version": "5.7 onwards",
                     "type": "string",
                     "default": ""
+                },
+                {
+                    "name": "overlay-type",
+                    "description": "Enables overlay effects (fade-effect or slider-effect)",
+                    "version": "5.13 onwards",
+                    "type": "string",
+                    "default": ""
+                },
+                {
+                    "name": "flip",
+                    "description": "Enables flip effects on creative card",
+                    "version": "5.15 onwards",
+                    "type": "boolean",
+                    "default": "false"
+                },
+                {
+                    "name": "zoom-type",
+                    "description": "Enables zoom effects",
+                    "version": "6.0 onwards",
+                    "type": "boolean",
+                    "default": ""
+                },
+                {
+                    "name": "cover-image",
+                    "description": "sets background image",
+                    "version": "6.0 onwards",
+                    "type": "string",
+                    "default": ""
                 }
             ]
         },

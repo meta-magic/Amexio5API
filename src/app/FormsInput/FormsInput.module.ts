@@ -40,12 +40,13 @@ import { ToggleDemo } from "./toggle/toggle.demo";
 import { TypeAheadDemo } from "./typeahead/typeahead.demo";
 import {BadgeDemo} from './badge/badge.demo';
 import { RangeSliderDemo } from "./rangeslider/rangeslider.demo";
+import { GeoLocationDemo } from "./geolocation/geolocation.demo";
 /**
  * Created by kedar on 1/2/19.
  */
 @NgModule({
     declarations: [ SinglecheckboxDemo, CheckBoxGroupDemo, ChipsDemo,
-         CreditCardDemo, DateTimePickerDemo,
+         CreditCardDemo, DateTimePickerDemo, GeoLocationDemo,
         DropDownDemo,DropDownFilterDemo, DropDownMultiDemo, DropDownTemplateDemo, EmailDemo,
         FileuploadDemo,LabelDemo,NumberDemo,PasswordDemo,RadioGroupDemo,RatingDemo,
         RecaptchaDemo,SearchBox,SliderDemo,FacebookLoginDemo,GitHubLoginDemo,GoogleLoginDemo,LinkedinLoginDemo,

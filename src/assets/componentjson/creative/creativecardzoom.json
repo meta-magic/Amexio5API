@@ -1,7 +1,7 @@
 {
-    "title": "Creative Card with Overlay Effects",
-    "description": "The creative card is a powerful Panel with simple to use layouts, features and overlay effects",
-    "componentDescription": "Amexio Creative Card with overlay effects can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows",
+    "title": "Creative Card with Zoom Effects",
+    "description": "The creative card is a powerful Panel with simple to use layouts, features and zoom effect",
+    "componentDescription": "Amexio Creative Card with zoom effects can be used to display Customer Products with beautiful layouts and highlight product features. The examples in this section show the power of Creative Cards. The Creative Card Container has 3 sections as follows",
     "descriptionDetail": [
         "Header",
         "Body",
@@ -135,9 +135,16 @@
                     "version": "6.0 onwards",
                     "type": "string",
                     "default": ""
+                },
+                {
+                    "name": "zoom-transition-origin",
+                    "description": "sets zoom transition orientation (center center, left center, right center)",
+                    "version": "6.0 onwards",
+                    "type": "string",
+                    "default": ""
                 }
             ]
-        },
+        }, 
         {
             "gridTitle": "Properties of <amexio-header-ce>",
             "columnDefinition": [
@@ -497,8 +504,8 @@
         }
     ],
     "sourceMetadata": {
-        "htmlUrl": "creative/cardceoverlay/creative.html",
-        "tsUrl": "creative/cardceoverlay/creative.text",
+        "htmlUrl": "creative/cardcezoom/creative.html",
+        "tsUrl": "creative/cardcezoom/creative.text",
         "datasourceUrl": ""
     },
     "isAccessibility": false,

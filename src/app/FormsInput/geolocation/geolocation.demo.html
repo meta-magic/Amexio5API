@@ -1,0 +1,56 @@
+<amexio-api-structure [url]="'assets/componentjson/forminputs/geolocation.json'">
+    <amexio-api-accessible>
+          
+    </amexio-api-accessible>
+    <amexio-api-demo>
+        <amexio-row>
+            <amexio-column [size]="12" >
+                <amexio-card [height]="'200'" [header]="true" [footer]="false" [footer-align]="'center'">
+                    <amexio-header>
+                        Amexio GeoLocation
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-row>
+                            <amexio-column [size]="12">
+                                <!-- ---1--- -->
+                                <amexio-geolocation (onSuccess)="getCurrentPosition($event)">
+
+                                </amexio-geolocation>
+                                <amexio-button
+                                    [label]="'Current Location'"
+                                    [type]="'theme-color'"
+                                    
+                                    [icon]="'fa fa-map-marker'"
+                                   
+                                    [size]="'small'"
+                                     (onClick)="onClick()">
+                                </amexio-button>
+                                <ng-container *ngIf="flag && myLocation.coords.latitude && myLocation.coords.longitude">
+                                    <br> <br>
+                               <amexio-label
+                                    [size]="'small-bold'">
+                                    Latitude : 
+                                </amexio-label>     {{myLocation.coords.latitude}}
+                                 <br>
+                                 <amexio-label
+                                 [size]="'small-bold'">
+                                 Longitude : 
+                             </amexio-label>     {{myLocation.coords.longitude}}
+                            </ng-container>
+                                
+
+                            </amexio-column>
+                        </amexio-row>
+
+                    </amexio-body>
+                    <!-- <amexio-action >
+                        {{myLocation.coords | json}}
+                    </amexio-action> -->
+                </amexio-card>
+
+            </amexio-column>
+ 
+        </amexio-row>
+      
+    </amexio-api-demo>
+</amexio-api-structure>

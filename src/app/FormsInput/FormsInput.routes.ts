@@ -33,7 +33,7 @@ import { TypeAheadDemo } from "./typeahead/typeahead.demo";
 import {BadgeDemo} from './badge/badge.demo';
 import { RangeSliderDemo } from './rangeslider/rangeslider.demo';
 import { MultipleDateTimePickerDemo } from './multipledatepicker/multipledatepicker.demo'
-
+import { GeoLocationDemo } from './geolocation/geolocation.demo';
 
 export const FORMSINPUT_ROUTE: Routes = [
 
@@ -129,6 +129,9 @@ export const FORMSINPUT_ROUTE: Routes = [
     },
     { 
         path: 'multidatepicker-demo', component: MultipleDateTimePickerDemo,
+    },
+    { 
+        path: 'geolocation-demo', component: GeoLocationDemo,
     }
     
 ]
