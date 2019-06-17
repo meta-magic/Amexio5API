@@ -148,7 +148,7 @@
                     "default": ""
                 },
                 {
-                    "name": "windowposition",
+                    "name": "remember-window-position",
                     "description": "Provides pervious position of the window",
                     "version": "5.14 onwards",
                     "type": "boolean",
