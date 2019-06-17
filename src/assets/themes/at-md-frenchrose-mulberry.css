@@ -9264,6 +9264,9 @@ amexio-layout-columns amexio-layout-item {
 .card-container-ribbon-style amexio-header-ce {
   box-shadow: none; }
 
+.card-container-ribbon-style .card-container-body {
+  overflow: unset; }
+
 /** creative card - Structure CSS **/
 .card-ce-overflowhidden {
   overflow: hidden; }
