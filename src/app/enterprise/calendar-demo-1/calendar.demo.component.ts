@@ -108,11 +108,6 @@ title: string;
       },
       {
         "title": "Technology Conference",
-        "start": "2019-06-02T09:15:00",
-        "end": "2019-06-02T11:15:00"
-      },
-      {
-        "title": "Technology Conference",
         "start": "2019-03-05"
       },
       {
