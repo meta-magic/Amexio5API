@@ -1,15 +1,24 @@
-<!-- Round Toggle Darkmode -->
+<!-- Day & Night Mode (Toggle Switch, Round Slider, Square Slider) -->
 
 <amexio-darkmode [field-label]="'Day'"></amexio-darkmode>
 
-<!-- Square Toggle Darkmode -->
+<amexio-darkmode [field-label]="'Day'" shape="Square"></amexio-darkmode>
 
-<amexio-darkmode [field-label]="'Day'" shape="square"></amexio-darkmode>
+<amexio-darkmode [type]="1" [field-label]="'Day'"></amexio-darkmode>
 
-<!-- Sepia Mode -->
+<amexio-darkmode [type]="1" [field-label]="'Day'" shape="Square"></amexio-darkmode>
 
-<amexio-darkmode [mode]="'sepia'" [size]="'small'"></amexio-darkmode>
 
-<!-- Custom Mode -->
+<!-- Day, Sepia, & Night (Round Slider, Square Slider) -->
+
+<amexio-darkmode [mode]="'sepia'" [shape]="'circle'" [size]="'small'"></amexio-darkmode>
+
+<amexio-darkmode [mode]="'sepia'" [shape]="'square'" [size]="'small'"></amexio-darkmode>
+
+
+<!-- Custom Colors (Slider) -->
 
 <amexio-darkmode [mode]="'custom'" [data]="colorData" [size]="'small'"></amexio-darkmode>
+
+<amexio-darkmode [mode]="'custom'" [shape]="'square'" [data]="colorData" [size]="'small'"></amexio-darkmode>
+

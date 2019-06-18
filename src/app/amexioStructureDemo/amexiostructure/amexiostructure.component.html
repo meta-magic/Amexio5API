@@ -36,6 +36,8 @@
 
 
     </ng-container>
+    <ng-content select="amexio-api-info"></ng-content>
+
     <amexio-tab-view #tab [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
         <ng-content select="amexio-api-demo"></ng-content>

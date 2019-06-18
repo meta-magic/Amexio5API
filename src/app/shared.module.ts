@@ -9,6 +9,7 @@ import 'prismjs/components/prism-typescript';
 import { AmexioApiReferenceComponent } from './amexioStructureDemo/apiReference/amexioapireference.component';
 import { AmexioStructureComponent } from "./amexioStructureDemo/amexiostructure/amexiostructure.component";
 import { AmexioApiDemoComponent } from "./amexioStructureDemo/apiDemo/amexioapidemo.component";
+import { AmexioApiInfoComponent } from "./amexioStructureDemo/apiInfo/amexioapiinfo.component";
 import { AmexioApiSourceCodeComponent } from "./amexioStructureDemo/apiSourceCode/apisourcecode.component";
 import { AmexioApiLiveDemoComponent } from "./amexioStructureDemo/apiLiveDemo/apilivedemo.component";
 import { AmexioApiAccessibleComponent} from "./amexioStructureDemo/apiAccessbility/amexioapiaccessible.component"
@@ -44,8 +45,8 @@ export class PrismComponent implements AfterViewInit {
 
 @NgModule({
   imports: [CommonModule , AmexioWidgetModule, HttpClientModule],
-  exports: [PrismComponent, AmexioApiAccessibleComponent, AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
-  declarations: [PrismComponent, AmexioApiAccessibleComponent, AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
+  exports: [PrismComponent, AmexioApiInfoComponent, AmexioApiAccessibleComponent, AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
+  declarations: [PrismComponent, AmexioApiInfoComponent, AmexioApiAccessibleComponent, AmexioApiReferenceComponent, AmexioApiLiveDemoComponent, AmexioApiSourceCodeComponent, AmexioStructureComponent, AmexioApiDemoComponent],
 
 })
 export class SharedModule {
