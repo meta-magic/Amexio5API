@@ -118,7 +118,20 @@ export const MENUCONSTANT = {
         {
           text: "Calendar",
           icon: "fa fa-calendar  ",
-          link: "enterprise/ee-calendar-demo"
+          children: [
+            {
+              
+                text: "Demo-1",
+                icon: "fa fa-calendar  ",
+                link: "enterprise/ee-calendar-demo"
+              },
+              {
+                text: "Demo-2",
+                icon: "fa fa-calendar  ",
+                link: "enterprise/ee-calendar-demo1"
+              
+            }
+          ]
         },
         {
           text: "Speech-Bubble",

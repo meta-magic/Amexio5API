@@ -5,6 +5,8 @@ import { EECarouselDemoComponent } from "./multi-item-carousel/multi.item.carous
 import { EEContentDemoComponent } from "./content/content.compnent";
 import { EEAppointmentDemoComponent } from "./appointment/appointment.component";
 import { CalendarDemoComponent } from './calendar/calendar.demo.component';
+import { CalendarDemoComponent1 } from './calendar-demo-1/calendar.demo.component';
+
 import { StepWizardDemoComponent } from 'src/app/enterprise/steps-wizard/step-wizard.component';
 import { ThemeSwitcherDemo } from './themeswitcher/themeswitcher.component';
 import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
@@ -33,6 +35,9 @@ export const ENTERPRISE_ROUTE: Routes = [
     },
     {
         path: 'ee-calendar-demo', component: CalendarDemoComponent,
+    },
+    {
+        path: 'ee-calendar-demo1', component: CalendarDemoComponent1,
     },
     {
         path: 'step-wizard-demo', component: StepWizardDemoComponent,

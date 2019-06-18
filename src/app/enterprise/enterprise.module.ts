@@ -13,6 +13,8 @@ import { EECarouselDemoComponent } from "./multi-item-carousel/multi.item.carous
 import { EEContentDemoComponent } from "./content/content.compnent";
 import { EEAppointmentDemoComponent } from "./appointment/appointment.component";
 import { CalendarDemoComponent } from "./calendar/calendar.demo.component";
+import { CalendarDemoComponent1 } from "./calendar-demo-1/calendar.demo.component";
+
 import {StepWizardDemoComponent} from './steps-wizard/step-wizard.component';
 import { ThemeSwitcherDemo } from "./themeswitcher/themeswitcher.component";
 import {TreeTabDemoComponent} from './tree-tab/tree-tab.component';
@@ -27,7 +29,7 @@ import { HomePageComponent } from './tree-tab/home-page/home-page.component';
  */
 @NgModule({
     declarations: [RouteComponent, ThemeSwitcherDemo,YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-        EEAppointmentDemoComponent, CalendarDemoComponent ,StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
+        EEAppointmentDemoComponent, CalendarDemoComponent1, CalendarDemoComponent ,StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
     imports: [
         CommonModule, 
         AmexioEnterpriseModule,
