@@ -121,6 +121,13 @@
                     "version": "5.15 onwards",
                     "type": "boolean",
                     "default": "false"
+                },
+                {
+                    "name": "zoom-flip",
+                    "description": "Enables zoom and flip transition",
+                    "version": "6.0 onwards",
+                    "type": "boolean",
+                    "default": "false"
                 }
             ]
         },

@@ -15,9 +15,45 @@
                 <ng-template #amexioBodyTmpl let-row="row">
                     <amexio-row>
                         <amexio-column *ngFor="let item of row.data" size="3" [fit]="true">
-                            <amexio-card-ce *ngIf="item.imagepath" [align]="'center'">
-                                <amexio-image [path]="item.imagepath" [overlay-effect]="'slide-left'" [overlay-text]="item.title">
-                                </amexio-image>
+                            <amexio-card-ce *ngIf="item.imagepath" [align]="'center'" 
+                            [zoom-transition-origin] = "'left center'"    
+                            [cover-image]="item.imagepath"
+                             [zoom]="true"
+                             [height]="75"
+                               >
+                              <amexio-body-ce [color]="'white'" style="background: rgba(0,0,0,.7);">
+                                <div>
+                                      <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                                            <amexio-layout-item>
+                                              <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="'center'">
+                                                <amexio-layout-item>
+                                                  
+                                                        <amexio-label
+                                                             [size]="'small-bold'"
+                                                            >
+                                                            {{item.title}}                                                         </amexio-label>
+                                                 
+                                                </amexio-layout-item>
+                                              </amexio-layout-columns>
+                                            </amexio-layout-item>
+                                          </amexio-layout-columns>  
+                                          <amexio-layout-columns [orientation]="'vertical'" [border]="false">
+                                                <amexio-layout-item>
+                                                  <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="'center'">
+                                                    <amexio-layout-item>
+                                                  
+        
+                                                                <amexio-image [icon-class]="'fas fa-caret-square-right fa-2x'" ></amexio-image>
+                                                      
+                                                    </amexio-layout-item>
+                                                  </amexio-layout-columns>
+                                                </amexio-layout-item>
+                                              </amexio-layout-columns>     
+                                   
+                                 </div>
+         
+                              </amexio-body-ce>
+ 
                             </amexio-card-ce>
                         </amexio-column>
                     </amexio-row>

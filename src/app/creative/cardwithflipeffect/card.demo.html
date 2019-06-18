@@ -11,13 +11,14 @@
         <amexio-row>
             <!-- Demo 1 -->
             <amexio-column size="4" fit="false">
-                <amexio-card-ce [align]="'center'" [width]="'200px'" [height]="'300px'" [flip]="true"
-                    [cover-image]="'assets/images/flip1.png'">
+                <amexio-card-ce [align]="'center'" [width]="'200px'" [height]="'300px'" [flip]="true" [cover-image]="'assets/images/flip1.png'"
+                    >
                     <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
                         <div>
                             <amexio-label size="small-bold">
                                 Travellers
-                            </amexio-label><br>
+                            </amexio-label>
+                            <br>
                             <amexio-label size="small">
                                 Aditya Karsh
                             </amexio-label>
@@ -26,12 +27,15 @@
                     </amexio-header-ce>
                     <amexio-body-ce>
 
-                        PNQ-BLR (Wed,13 Mar 2019) <br>
-                        GoAir G8 293 <br>
-                        01.35-03.00 (1h 35m)<br> <br>
+                        PNQ-BLR (Wed,13 Mar 2019)
+                        <br> GoAir G8 293
+                        <br> 01.35-03.00 (1h 35m)
+                        <br>
+                        <br>
                         <amexio-label size="small-bold">
                             PNR: XYFF2Q
-                        </amexio-label> <br>
+                        </amexio-label>
+                        <br>
                         <amexio-label size="small-bold">
                             Trip ID: 190312341298
                         </amexio-label>
@@ -48,13 +52,13 @@
             <!-- Demo 2 -->
             <amexio-column size="4" fit="false">
 
-                <amexio-card-ce [flip]="true" [align]="'center'" [width]="'200px'" [height]="'300px'"
-                    [cover-image]="'assets/images/tvshows/ozark/Ozark_main_img.jpg'">
+                <amexio-card-ce [flip]="true" [align]="'center'" [width]="'200px'" [height]="'300px'" [cover-image]="'assets/images/tvshows/ozark/Ozark_main_img.jpg'">
                     <amexio-header-ce [border-bottom]="true">
                         <div>
                             <amexio-label size="small-bold">
                                 Ozark
-                            </amexio-label><br>
+                            </amexio-label>
+                            <br>
                             <amexio-label size="small">
                                 19 March, 2017
                             </amexio-label>
@@ -62,8 +66,8 @@
 
                     </amexio-header-ce>
                     <amexio-body-ce>
-                        A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must
-                        launder $500 million in five years to appease a drug boss.
+                        A financial adviser drags his family from Chicago to the Missouri Ozarks, where he must launder $500 million in five years
+                        to appease a drug boss.
                     </amexio-body-ce>
                     <amexio-action-ce [align]="'center'" [border-top]="true">
                         <amexio-button [label]="'PLAY'" [icon]="'fa fa-play'" [type]="'transparent'" [tooltip]="'PLAY'">
@@ -75,21 +79,21 @@
             <!-- Demo 3 -->
             <amexio-column size="4" fit="false">
 
-                <amexio-card-ce [flip]="true" [align]="'center'" [width]="'200px'" [height]="'300px'"
-                    [cover-image]="'assets/images/tvshows/shows/orange_black.jpg'">
+                <amexio-card-ce [flip]="true" [align]="'center'" [width]="'200px'" [height]="'300px'" [cover-image]="'assets/images/tvshows/shows/orange_black.jpg'">
                     <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
                         <div>
                             <amexio-label size="small-bold">
                                 Orange Black
-                            </amexio-label><br>
+                            </amexio-label>
+                            <br>
                             <amexio-label size="small">
                                 9 May, 2018
                             </amexio-label>
                         </div>
                     </amexio-header-ce>
                     <amexio-body-ce>
-                        A privileged New Yorker ends up in a women's prison when a past crime catches up with her in
-                        this Emmy-winning series from the creator of Weeds.
+                        A privileged New Yorker ends up in a women's prison when a past crime catches up with her in this Emmy-winning series from
+                        the creator of Weeds.
 
                     </amexio-body-ce>
                     <amexio-action-ce [align]="'center'" [border-top]="true">
@@ -101,8 +105,44 @@
             </amexio-column>
 
         </amexio-row>
+<!-- zoom-flip example -->
+<br>
+<br>
+        <amexio-row>
+            <amexio-column [size]="3">
+                  
+                   <amexio-box border-color="blue" border="left" padding="true">
+                        <amexio-label size="medium-bold">
+                               Card with Zoom-Flip effect
+                                                    </amexio-label>
+                    </amexio-box>
+                   <br>
 
-
+                   <amexio-card-ce [zoom-flip]="true" [align]="'center'" [width]="'200px'" [height]="'300px'"
+                
+                   [cover-image]="'assets/images/tvshows/holidaycalendar/the-holiday-calendar.jpg'">
+                       <amexio-header-ce [border-bottom]="true">
+                           <div>
+                               <amexio-label size="small-bold">
+                                   Holiday Calendar
+                               </amexio-label><br>
+                               <amexio-label size="small">
+                                   19 April, 2015
+                               </amexio-label>
+                           </div>
+   
+                       </amexio-header-ce>
+                       <amexio-body-ce>
+                               Designated Survivor is an American political thriller drama television series created by David Guggenheim that aired on ABC for two seasons.
+                       </amexio-body-ce>
+                       <amexio-action-ce [align]="'center'" [border-top]="true">
+                           <amexio-button [label]="'PLAY'" [icon]="'fa fa-play'" [type]="'transparent'" [tooltip]="'PLAY'">
+                           </amexio-button>
+   
+                       </amexio-action-ce>
+                   </amexio-card-ce>
+            </amexio-column>
+        </amexio-row>
 
 
 
