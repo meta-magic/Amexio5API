@@ -147,7 +147,7 @@ export class CalendarDemoComponent1 implements OnInit {
   setSelectedOption(event: any) {
     this.eventobject = event.this;
     debugger;
-    this.floattop = event.event.clientY + 'px';
+    this.floattop = '250px';
 
     if (this.floatright + 330 > event.event.screenX) {
       this.floatright = '455px';
