@@ -19,7 +19,7 @@ export class CalendarDemoComponent1 implements OnInit {
   rowRecord: string;
 
   calendarDate = new Date();
-
+title: string;
   eventobject: any;
   childPanel: boolean;
   constructor(private http: HttpClient) {
@@ -102,6 +102,16 @@ export class CalendarDemoComponent1 implements OnInit {
         "end": "2019-05-31T09:15:00"
       },
       {
+        "title": "Angular Workshop",
+        "start": "2019-06-03T13:15:00",
+        "end": "2019-06-03T15:15:00"
+      },
+      {
+        "title": "Technology Conference",
+        "start": "2019-06-02T09:15:00",
+        "end": "2019-06-02T11:15:00"
+      },
+      {
         "title": "Technology Conference",
         "start": "2019-03-05"
       },
@@ -128,31 +138,33 @@ export class CalendarDemoComponent1 implements OnInit {
 
   floattop: any;
   floatright: any;
+  floatleft: any;
   showRelativePanel: boolean;
 
   onEventClicked(event: any) {
-    console.log(event);
-    debugger;
-
+    this.title = event.this.title;
     this.eventobject = event.this;
-    this.floattop = '200px';
-    if (this.floatright + 330 > event.event.screenX) {
-      this.floatright = '330px';
+    this.floattop = event.event.y + 'px';
+    if (event.event.clientX + 330 > screen.width) {
+      this.floatright = (event.event.offsetX) + 'px';
+      this.floatleft = null;
     } else {
-      this.floatright = '10px';
+      this.floatleft = (event.event.offsetX + 150) + 'px';
+      this.floatright = null;
     }
     this.parentPanel = true;
   }
 
   setSelectedOption(event: any) {
     this.eventobject = event.this;
-    debugger;
-    this.floattop = '250px';
+    this.floattop = event.event.y + 'px';
 
-    if (this.floatright + 330 > event.event.screenX) {
-      this.floatright = '455px';
+    if (event.event.clientX + 780 > screen.width) {
+      this.floatright = (event.event.offsetX) + 'px';
+      this.floatleft = null;
     } else {
-      this.floatright = '200px';
+      this.floatleft = (event.event.offsetX) + 'px';
+      this.floatright = null;
     }
     this.rowRecord = event.row.meeting;
     this.childPanel = true;

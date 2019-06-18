@@ -15,8 +15,8 @@
 
 
 
-        <amexio-floating-panel [absolute]="true" [show-panel]="parentPanel" [right-position]="floatright" [top-position]="floattop" [closeable]="true"
-            [width]="'330'" [height]="200" [title]="'31 June 2019'" (onClose)="onParentClose($event)">
+        <amexio-floating-panel [absolute]="true" [show-panel]="parentPanel" [left-position]="floatleft" [right-position]="floatright" [top-position]="floattop" [closeable]="true"
+            [width]="'330'" [height]="200" [title]="title" (onClose)="onParentClose($event)">
             <amexio-radio-group #id name="floating" [data-reader]="'data'" [display-field]="'meeting'" [value-field]="'id'" [http-method]="'get'"
                 [http-url]="'assets/data/componentdata/calendarfloating.json'" (onSelect)="setSelectedOption($event)">
             </amexio-radio-group>
@@ -24,7 +24,7 @@
 
 
 
-        <amexio-floating-panel  [absolute]="true" [show-panel]="childPanel" [left-position]="floatright" [top-position]="floattop" [closeable]="true"
+        <amexio-floating-panel  [absolute]="true" [show-panel]="childPanel" [left-position]="floatleft"  [right-position]="floatright" [top-position]="floattop" [closeable]="true"
         [width]="'455'" [height]="300" [title]="rowRecord" (onClose)="onChildClose($event)">
         <amexio-label>
             Wednesday, July 12 9.30 - 10.30

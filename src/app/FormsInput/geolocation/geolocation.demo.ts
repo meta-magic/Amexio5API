@@ -17,9 +17,7 @@ export class GeoLocationDemo {
        
   }
 
-  getCurrentPosition(location: any) {
-      debugger;
- 
+  getCurrentPosition(location: any) { 
    this.myLocation = location;
  
    console.log(this.myLocation);

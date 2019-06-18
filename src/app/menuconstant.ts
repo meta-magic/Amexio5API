@@ -127,6 +127,7 @@ export const MENUCONSTANT = {
               },
               {
                 text: "Demo-2",
+                badge: "NEW",
                 icon: "fa fa-calendar  ",
                 link: "enterprise/ee-calendar-demo1"
               
