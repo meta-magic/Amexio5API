@@ -135,7 +135,7 @@ export class CalendarDemoComponent1 implements OnInit {
     debugger;
 
     this.eventobject = event.this;
-    this.floattop = event.event.clientY + 'px';
+    this.floattop = '200px';
     if (this.floatright + 330 > event.event.screenX) {
       this.floatright = '330px';
     } else {
