@@ -83,7 +83,8 @@ export class AppComponent {
       }
     ];
 
-    this.amexiotechmenus = [
+    this.amexiotechmenus = 
+    [
       {
         "text": "Home",
         "icon": "fa fa-home fa-fw fa-lg",
@@ -218,39 +219,79 @@ export class AppComponent {
             "link": "https://amexio.tech/pricing"
           },
           {
-            "text": "Quality-Assurance",
-            "link": "https://amexio.tech/quality-assurance"
-          },
-          {
             "text": "Downloads",
             "link": "https://amexio.tech/download"
+         
+          },
+          {
+            "text": "Video Tutorials",
+            "link": "https://youtu.be/zpfpfnOV6Y0?list=PLi505KVOMPrGRUgJF4C3QoXbrhFGEOI4j",
+               "separator": true,
+            "separatorHeader": "Amexio Training"
+          },
+          {
+            "text": "Component Example",
+            "link": "http://demo.amexio.tech/"
+           
+          },
+          {
+            "text": "Quality-Assurance",
+            "link": "https://amexio.tech/quality-assurance",
+            "separator": true
+           
+          },
+          {
+            "text": "Download Amexio",
+            "link": "https://www.npmjs.com/package/amexio-ng-extensions"
           },
           {
             "text": "License and Other Docs",
             "link": "https://amexio.tech/license-and-other-docs-1"
+           
           },
           {
-            "text": "Canvas Login (Beta)",
-            "link": "https://canvas.amexio.org/"
+            "text": "Amexio Canvas",
+            "link": "https://amexio.tech/quality-assurance",
+            "separator": true,
+            "submenus": [
+              {
+                "text": " Subscribe Canvas ",
+                "link": "https://canvas.amexio.org/#/user/signup"
+              },
+              {
+                "text": " Canvas Login ",
+                "link": "https://canvas.amexio.org/#/login"
+              }
+            ]
           },
           {
-            "text": "Subscribe ",
-            "link": "https://canvas.amexio.org/#/user/signup"
+            "text": "Engage",
+            "submenus": [
+              {
+                "text": "Events",
+                "link": "https://metamagicglobal.com/events"
+              },
+              {
+                "text": "Forums",
+                "link": "http://forum.metamagicglobal.com/"
+              },
+              {
+                "text": "Blogs",
+                "link": "http://blog.metamagicglobal.com/"
+              },
+              {
+                "text": "Node Package Manager",
+                "link": "https://www.npmjs.com/package/amexio-ng-extensions"
+              },
+              {
+                "text": "GitHub - Source Code",
+                "link": "https://github.com/meta-magic/amexio.github.io"
+              }
+            ]
           }
         ]
       },
-      {
-        "text": "Training",
-        "icon": "fa fa-user fa-fw",
-        "submenus": [
-          {
-            "text": "Component Example",
-            "link": "http://demo.amexio.tech/"
-          }, {
-            "text": "Amexio Training",
-            "link": "http://metaarivu.com/amexio-training"
-          }]
-      },
+      
       {
         "text": "Case Studies",
         "icon": "fa fa-clone fa-fw",
@@ -308,27 +349,7 @@ export class AppComponent {
           }
         ]
       },
-      {
-        "text": "Engage",
-        "submenus": [
-          {
-            "text": "Events",
-            "link": "https://metamagicglobal.com/events"
-          }, {
-            "text": "Forums",
-            "link": "http://forum.metamagicglobal.com/"
-          }, {
-            "text": "Blogs",
-            "link": "http://blog.metamagicglobal.com/"
-          }, {
-            "text": "Node Package Manager",
-            "link": "https://www.npmjs.com/package/amexio-ng-extensions"
-          }, {
-            "text": "GitHub - Source Code",
-            "link": "https://github.com/meta-magic/amexio.github.io"
-          }
-        ]
-      },
+
       {
         "text": "About Us",
         "submenus": [
