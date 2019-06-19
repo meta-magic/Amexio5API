@@ -9361,7 +9361,7 @@ amexio-layout-columns amexio-layout-item {
   -webkit-transform: scale(1.2);
   /* Safari 3-8 */
   transform: scale(1.2);
-  z-index: 700 !important; }
+  z-index: 300 !important; }
   .card-container-ce-main-zoom:hover .ce-zoom-card-front {
     display: block; }
   .card-container-ce-main-zoom:hover .ce-zoom-card-back {
