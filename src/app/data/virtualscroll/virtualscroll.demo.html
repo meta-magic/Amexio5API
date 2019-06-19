@@ -14,15 +14,16 @@
             <amexio-virtual-scroller *ngIf="localData2d" [item-size]="150" [data]="localData2d.items">
                 <ng-template #amexioBodyTmpl let-row="row">
                     <amexio-row>
-                        <amexio-column *ngFor="let item of row.data" size="3" [fit]="true">
+                        <amexio-column *ngFor="let item of row.data; let i = index" size="3" [fit]="true">
                             <amexio-card-ce *ngIf="item.imagepath" [align]="'center'" 
-                            [zoom-transition-origin] = "'left center'"    
+
+                            [zoom-transition-origin] = "getTransitionOrigin(i)"    
                             [cover-image]="item.imagepath"
                              [zoom]="true"
                              [height]="75"
                                >
                               <amexio-body-ce [color]="'white'" style="background: rgba(0,0,0,.7);">
-                                <div>
+                                 <div>
                                       <amexio-layout-columns [orientation]="'vertical'" [border]="false">
                                             <amexio-layout-item>
                                               <amexio-layout-columns [border]="false" [orientation]="'horizontal'" [alignment]="'center'">
