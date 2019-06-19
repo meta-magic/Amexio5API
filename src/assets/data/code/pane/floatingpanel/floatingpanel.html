@@ -1,69 +1,200 @@
+<!-- Floating Panel With Relative Positioning -->
 
-<!-- Demo 1 Relative Floating Panel -->
+<amexio-row>
+    <amexio-column size="3" fit="false">
+        <amexio-button type="theme-color" (onClick)="onshowRelativePanel()" label="Relative">
+        </amexio-button>
+        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
+            [show-panel]="showRelativePanel" [relative]="true" [closeable]="true" [width]="'330'" [height]="200"
+            [title]="'Company Info'" (onClose)="onCloseRelativePanel($event)">
+            <amexio-row>
+                <amexio-column size="12" fit="true">
+                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
+                    </amexio-property-grid>
+                </amexio-column>
+            </amexio-row>
 
-<amexio-button type="theme-color" (onClick)="onshowRelativePanel()" label="Relative"></amexio-button>
-<amexio-floating-panel [show-panel]="showRelativePanel" [relative]="true" [closeable]="true" [width]="'330'" [height]="200"
-    [title]="'Company Info'" (onClose)="onCloseRelativePanel($event)">
+        </amexio-floating-panel>
+    </amexio-column>
+
+
+    <amexio-column size="3" fit="false">
+        <amexio-button type="theme-color" (mouseleave)=" onshowRelativePanelWithToolTip()"
+            (mouseenter)="onshowRelativePanelWithToolTip()" label="Relative with Tooltip">
+        </amexio-button>
+        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [arrow]="true"
+            [show-panel]="showRelativePanel1" [relative]="true" [closeable]="true" [width]="'330'" [height]="200"
+            [title]="'Company Info'" (onClose)="onCloseRelativePanel1($event)">
+            <amexio-row>
+                <amexio-column size="12" fit="true">
+                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
+                    </amexio-property-grid>
+                </amexio-column>
+            </amexio-row>
+
+        </amexio-floating-panel>
+    </amexio-column>
+
+</amexio-row>
+
+<!-- Floating Panel With Absolute Positioning -->
+
+<amexio-row>
+
+    <amexio-column [size]="2">
+        <amexio-button type="red" (onClick)="showTopLeftPanel()" label="Top Left">
+        </amexio-button>
+        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
+            [show-panel]="topLeftPanel" [relative]="false" [closeable]="true" [top-position]="'30px'"
+            [left-position]="'50px'" [width]="'330'" [height]="200" [title]="'Video Player'"
+            (onClose)="onCloseTopLeftPanel($event)">
+            <amexio-row>
+                <amexio-column size="12" fit="true">
+                    <amexio-video-player [width]="'300'" path="assets/videos/sample_bunny.mp4">
+                    </amexio-video-player>
+                </amexio-column>
+            </amexio-row>
+
+
+        </amexio-floating-panel>
+    </amexio-column>
+    <amexio-column [size]="2">
+        <amexio-button type="theme-color" (onClick)="showTopRightPanel()" label="Top Right">
+        </amexio-button>
+        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
+            [show-panel]="topRightPanel" [relative]="false" [closeable]="true" [top-position]="'30px'"
+            [right-position]="'40px'" [width]="'400'" [height]="300" [title]="'Google Map'"
+            (onClose)="onCloseTopRightPanel($event)">
+            <amexio-google-map [initial-zoom-level]="2" [height]="'295px'"
+                [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'" [data]="data"
+                (onMarkerClick)="onMarkerClick1($event)">
+            </amexio-google-map>
+
+        </amexio-floating-panel>
+    </amexio-column>
+    <amexio-column [size]="2">
+        <amexio-button type="success" (onClick)="showBottomRightPanel()" label="Bottom Right">
+        </amexio-button>
+        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
+            [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'"
+            [right-position]="'20px'" [width]="'250'" [height]="300" [title]="'Theme Switcher'"
+            (onClose)="onCloseBottomRightPanel($event)">
+            <amexio-theme-switcher style="display: block;margin: -20px -10px;" [closeable]="false" [relative]="true"
+                [mda]="true" [col-size]="1">
+            </amexio-theme-switcher>
+        </amexio-floating-panel>
+    </amexio-column>
+    <amexio-column [size]="2">
+        <amexio-button type="theme-backgroundcolor" (onClick)="showBottomLeftPanel()" label="Bottom Left">
+        </amexio-button>
+        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
+            [show-panel]="bottomLeftPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'"
+            [left-position]="'20px'" [width]="'330'" [height]="200" [title]="'Video Player'"
+            (onClose)="onCloseBottomLeftPanel($event)">
+            <amexio-row>
+                <amexio-column size="12" fit="true">
+                    <amexio-video-player [width]="'300'" path="assets/videos/nature.mp4">
+                    </amexio-video-player>
+                </amexio-column>
+            </amexio-row>
+
+        </amexio-floating-panel>
+    </amexio-column>
+</amexio-row>
+
+
+
+
+<!-- calendar with floating panel -->
+
+<amexio-calendar [event-color-grouping]="true" [calendar-date]="calendardate" (onEventClicked)="onEventClicked($event)"
+    [events]="events">
+</amexio-calendar>
+
+
+
+<amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [absolute]="true"
+    [show-panel]="parentPanel" [left-position]="floatleft" [right-position]="floatright" [top-position]="floattop"
+    [closeable]="true" [width]="'330'" [height]="200" [title]="title" (onClose)="onParentClose($event)">
+    <amexio-radio-group #id name="floating" [data-reader]="'data'" [display-field]="'meeting'" [value-field]="'id'"
+        [http-method]="'get'" [http-url]="'assets/data/componentdata/calendarfloating.json'"
+        (onSelect)="setSelectedOption($event)">
+    </amexio-radio-group>
+</amexio-floating-panel>
+
+
+
+<amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [absolute]="true"
+    [show-panel]="childPanel" [left-position]="floatleft" [right-position]="floatright" [top-position]="floattop"
+    [closeable]="true" [width]="'455'" [height]="300" [title]="rowRecord" (onClose)="onChildClose($event)">
+    <amexio-label>
+        Wednesday, July 12 9.30 - 10.30
+    </amexio-label>
+    <br>
+    <br>
     <amexio-row>
-        <amexio-column size="12" fit="true">
-            <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData"></amexio-property-grid>
+        <amexio-column size="1" [fit]="false">
+
+        </amexio-column>
+        <amexio-column size="2" [fit]="false">
+            <amexio-image [icon-class]="'fa fa-video-camera fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+        </amexio-column>
+        <amexio-column size="9" [fit]="false">
+            <amexio-label [font-color]="'blue'">
+                Join Hangouts meet
+            </amexio-label>
+            <br>
+            <amexio-label>
+                meet.google.com/izm-imal-gns
+            </amexio-label>
         </amexio-column>
     </amexio-row>
-</amexio-floating-panel>
-
-
-<!-- Demo 2 Top Left Floating Panel -->
-
-<amexio-button type="red" (onClick)="showTopLeftPanel()" label="Top Left"></amexio-button>
-<amexio-floating-panel [show-panel]="topLeftPanel" [relative]="false" [closeable]="true" [top-position]="'30px'"
-    [left-position]="'50px'" [width]="'330'" [height]="200" [title]="'Video Player'" (onClose)="onCloseTopLeftPanel($event)">
     <amexio-row>
-        <amexio-column size="12" fit="true">
-            <amexio-video-player [width]="'300'" path="assets/videos/sample_bunny.mp4">
-            </amexio-video-player>
+        <amexio-column size="1" [fit]="false">
+
+        </amexio-column>
+        <amexio-column size="2" [fit]="false">
+            <amexio-image [icon-class]="'fa fa-phone fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+        </amexio-column>
+        <amexio-column size="9" [fit]="false">
+            <amexio-label [font-color]="'blue'">
+                Join By phone
+            </amexio-label>
+            <br>
+            <amexio-label>
+                +1 513-212-9632 PIN: 745 521#
+            </amexio-label>
         </amexio-column>
     </amexio-row>
-</amexio-floating-panel>
-
-<!-- Demo 3 Top Right Floating Panel -->
-
-<amexio-button type="theme-color" (onClick)="showTopRightPanel()" label="Top Right"></amexio-button>
-<amexio-floating-panel [show-panel]="topRightPanel" [relative]="false" [closeable]="true" [top-position]="'30px'"
-    [right-position]="'40px'" [width]="'400'" [height]="300" [title]="'Google Map'" (onClose)="onCloseTopRightPanel($event)">
-    <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
-        [data]="data" (onMarkerClick)="onMarkerClick1($event)">
-    </amexio-google-map>
-</amexio-floating-panel>
-
-<!-- Demo 4 Bottom Right Floating Panel -->
-
-<amexio-button type="success" (onClick)="showBottomRightPanel()" label="Bottom Right"></amexio-button>
-<amexio-floating-panel [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'"
-    [right-position]="'20px'" [width]="'250'" [height]="300" [title]="'Theme Switcher'" (onClose)="onCloseBottomRightPanel($event)">
-    <amexio-theme-switcher [closeable]="false" [relative]="true" [mda]="true" [col-size]="1"></amexio-theme-switcher>
-</amexio-floating-panel>
-
-<!-- Demo 5 Bottom Left Floating Panel -->
-
-<amexio-button type="theme-backgroundcolor" (onClick)="showBottomLeftPanel()" label="Bottom Left"></amexio-button>
-<amexio-floating-panel [show-panel]="bottomLeftPanel" [relative]="false" [closeable]="true" [bottom-position]="'30px'"
-    [left-position]="'20px'" [width]="'330'" [height]="200" [title]="'Video Player'" (onClose)="onCloseBottomLeftPanel($event)">
     <amexio-row>
-        <amexio-column size="12" fit="true">
-            <amexio-video-player [width]="'300'" path="assets/videos/nature.mp4">
-            </amexio-video-player>
+        <amexio-column size="1" [fit]="false">
+
+        </amexio-column>
+        <amexio-column size="2" [fit]="false">
+            <amexio-image [icon-class]="'fa fa-users fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+        </amexio-column>
+        <amexio-column size="9" [fit]="false">
+            <amexio-label [font-color]="'blue'">
+                2 Guests
+            </amexio-label>
+            <br>
+            <amexio-label>
+                1 yes, 1 awaiting
+            </amexio-label>
+            <br>
+            <amexio-image [icon-class]="'fa fa-user'"></amexio-image>
+            &nbsp;
+            <amexio-label>
+                Ketan Gote
+            </amexio-label>
+            <br>
+            <amexio-image [icon-class]="'fa fa-user-times'"></amexio-image>
+            &nbsp;
+            <amexio-label>
+                Rashmi Thakkar
+            </amexio-label>
         </amexio-column>
     </amexio-row>
-</amexio-floating-panel>
 
-<!-- Demo 6 Relative Floating Panel With ToolTip -->
 
-<amexio-button type="theme-color" (onClick)=" onshowRelativePanelWithToolTip()" label="Relative with Tooltip"></amexio-button>
-<amexio-floating-panel [arrow]="true" [show-panel]="showRelativePanel1" [relative]="true" [closeable]="true" [width]="'330'"
-    [height]="200" [title]="'Company Info'" (onClose)="onCloseRelativePanel($event)">
-    <amexio-row>
-        <amexio-column size="12" fit="true">
-            <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData"></amexio-property-grid>
-        </amexio-column>
-    </amexio-row>
 </amexio-floating-panel>

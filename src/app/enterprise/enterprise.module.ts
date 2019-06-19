@@ -15,9 +15,9 @@ import { EEAppointmentDemoComponent } from "./appointment/appointment.component"
 import { CalendarDemoComponent } from "./calendar/calendar.demo.component";
 import { CalendarDemoComponent1 } from "./calendar-demo-1/calendar.demo.component";
 
-import {StepWizardDemoComponent} from './steps-wizard/step-wizard.component';
+import { StepWizardDemoComponent } from './steps-wizard/step-wizard.component';
 import { ThemeSwitcherDemo } from "./themeswitcher/themeswitcher.component";
-import {TreeTabDemoComponent} from './tree-tab/tree-tab.component';
+import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
 
 import { RouteComponent } from './tree-tab/router-component';
 
@@ -28,18 +28,19 @@ import { HomePageComponent } from './tree-tab/home-page/home-page.component';
  * Created by kedar on 4/2/19.
  */
 @NgModule({
-    declarations: [RouteComponent, ThemeSwitcherDemo,YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-        EEAppointmentDemoComponent, CalendarDemoComponent1, CalendarDemoComponent ,StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
+    declarations: [RouteComponent, ThemeSwitcherDemo, YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
+        EEAppointmentDemoComponent, CalendarDemoComponent,CalendarDemoComponent1 , StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
     imports: [
-        CommonModule, 
+        CommonModule,
         AmexioEnterpriseModule,
-        FormsModule, 
-        HttpClientModule, 
-        SharedModule.forRoot(), 
+        FormsModule,
+        HttpClientModule,
+        SharedModule.forRoot(),
         AmexioWidgetModule,
         RouterModule.forChild(ENTERPRISE_ROUTE),
         // RouterModule.forChild(APP_ROUTE, { useHash: true})
     ],
+
     entryComponents: [RouteComponent],
     providers: []
 })

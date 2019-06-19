@@ -3,10 +3,10 @@ import { HttpClient } from "@angular/common/http";
 import { debug } from "util";
 
 @Component({
-  selector: 'calendar-demo1',
-  templateUrl: './calendar.demo.component.html'
+  selector: 'floating-panel-calendar',
+  templateUrl: './floatingpanelcalendar.component.html'
 })
-export class CalendarDemoComponent1 implements OnInit {
+export class floatingPanelCalendarComponent implements OnInit {
 
   htmltemplate: string;
 
