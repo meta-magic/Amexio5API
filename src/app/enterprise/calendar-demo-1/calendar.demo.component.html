@@ -15,7 +15,7 @@
 
 
 
-        <amexio-floating-panel [absolute]="true" [show-panel]="parentPanel" [left-position]="floatleft" [right-position]="floatright" [top-position]="floattop" [closeable]="true"
+        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [absolute]="true" [show-panel]="parentPanel" [left-position]="floatleft" [right-position]="floatright" [top-position]="floattop" [closeable]="true"
             [width]="'330'" [height]="200" [title]="title" (onClose)="onParentClose($event)">
             <amexio-radio-group #id name="floating" [data-reader]="'data'" [display-field]="'meeting'" [value-field]="'id'" [http-method]="'get'"
                 [http-url]="'assets/data/componentdata/calendarfloating.json'" (onSelect)="setSelectedOption($event)">

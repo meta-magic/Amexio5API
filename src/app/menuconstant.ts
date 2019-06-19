@@ -117,16 +117,17 @@ export const MENUCONSTANT = {
         },
         {
           text: "Calendar",
+          badge: "1",
           icon: "fa fa-calendar  ",
           children: [
             {
               
-                text: "Demo-1",
+                text: "Standard",
                 icon: "fa fa-calendar  ",
                 link: "enterprise/ee-calendar-demo"
               },
               {
-                text: "Demo-2",
+                text: "With Appointments Details",
                 badge: "NEW",
                 icon: "fa fa-calendar  ",
                 link: "enterprise/ee-calendar-demo1"

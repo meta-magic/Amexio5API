@@ -8,7 +8,7 @@
                         <amexio-row>
                             <amexio-column [size]="2">
                                 <amexio-button type="theme-color" (onClick)="onshowRelativePanel()" label="Relative"></amexio-button>
-                                <amexio-floating-panel [show-panel]="showRelativePanel" [relative]="true" [closeable]="true"
+                                <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="showRelativePanel" [relative]="true" [closeable]="true"
                                     [width]="'330'" [height]="200" [title]="'Company Info'" (onClose)="onCloseRelativePanel($event)">
                                     <amexio-row>
                                         <amexio-column size="12" fit="true">
@@ -20,7 +20,7 @@
                             </amexio-column>
                             <amexio-column [size]="2">
                                 <amexio-button type="red" (onClick)="showTopLeftPanel()" label="Top Left"></amexio-button>
-                                <amexio-floating-panel [show-panel]="topLeftPanel" [relative]="false" [closeable]="true"
+                                <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="topLeftPanel" [relative]="false" [closeable]="true"
                                     [top-position]="'30px'" [left-position]="'50px'" [width]="'330'" [height]="200"
                                     [title]="'Video Player'" (onClose)="onCloseTopLeftPanel($event)">
                                     <amexio-row>
@@ -35,7 +35,7 @@
                             </amexio-column>
                             <amexio-column [size]="2">
                                 <amexio-button type="theme-color" (onClick)="showTopRightPanel()" label="Top Right"></amexio-button>
-                                <amexio-floating-panel [show-panel]="topRightPanel" [relative]="false" [closeable]="true"
+                                <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="topRightPanel" [relative]="false" [closeable]="true"
                                     [top-position]="'30px'" [right-position]="'40px'" [width]="'400'" [height]="300"
                                     [title]="'Google Map'" (onClose)="onCloseTopRightPanel($event)">
                                     <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
@@ -46,7 +46,7 @@
                             </amexio-column>
                             <amexio-column [size]="2">
                                 <amexio-button type="success" (onClick)="showBottomRightPanel()" label="Bottom Right"></amexio-button>
-                                <amexio-floating-panel [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true"
+                                <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true"
                                     [bottom-position]="'30px'" [right-position]="'20px'" [width]="'250'" [height]="300"
                                     [title]="'Theme Switcher'" (onClose)="onCloseBottomRightPanel($event)">
                                     <amexio-theme-switcher style="display: block;margin: -20px -10px;" [closeable]="false"
@@ -55,7 +55,7 @@
                             </amexio-column>
                             <amexio-column [size]="2">
                                 <amexio-button type="theme-backgroundcolor" (onClick)="showBottomLeftPanel()" label="Bottom Left"></amexio-button>
-                                <amexio-floating-panel [show-panel]="bottomLeftPanel" [relative]="false" [closeable]="true"
+                                <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="bottomLeftPanel" [relative]="false" [closeable]="true"
                                     [bottom-position]="'30px'" [left-position]="'20px'" [width]="'330'" [height]="200"
                                     [title]="'Video Player'" (onClose)="onCloseBottomLeftPanel($event)">
                                     <amexio-row>
@@ -71,7 +71,7 @@
                          <amexio-row>
                              <amexio-column [size]="2">
                                     <amexio-button type="theme-color" (onClick)=" onshowRelativePanelWithToolTip()" label="Relative with Tooltip"></amexio-button>
-                                    <amexio-floating-panel [arrow]="true" [show-panel]="showRelativePanel1" [relative]="true"
+                                    <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [arrow]="true" [show-panel]="showRelativePanel1" [relative]="true"
                                         [closeable]="true" [width]="'330'" [height]="200" [title]="'Company Info'"
                                         (onClose)="onCloseRelativePanel1($event)">
                                         <amexio-row>
