@@ -8960,6 +8960,10 @@ amexio-layout amexio-layout-item {
 .floatarrow:after {
   border-color: var(--theme6thColor) transparent; }
 
+.floatingpanel-header {
+  background: var(--componentHeaderBGColor);
+  color: var(--componentHeaderFontColor); }
+
 /** Amexio slidingpanel Structure CSS **/
 .floatarrow:after {
   content: "";
@@ -8968,6 +8972,26 @@ amexio-layout amexio-layout-item {
   left: 30px;
   border-style: solid;
   border-width: 0 15px 15px; }
+
+.floatingpanel-header {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  z-index: 1; }
+
+.floatingpanel-header .floatingpanel-header-div {
+  height: auto; }
+
+.floatingpanel-header > * {
+  padding-right: 10px;
+  margin-top: 0px; }
+
+.floatingpanel-header-icon-div {
+  position: absolute;
+  right: 0%;
+  padding: 5px 10px; }
 
 /****************************************************************************
     Component Name : Border Layout
