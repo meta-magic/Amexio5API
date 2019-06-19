@@ -1,20 +1,20 @@
 <div style="font-family: 'Titillium Web', sans-serif;">
     <amexio-homepage-ce [type]="'1'">
         <amexio-homepage-northpanel>
-            <amexio-nav  [title]="'Amexio'"
-                         [enable-more-mode]="true"
-                         [enable-side-nav-position]="true"
+            <amexio-nav [title]="'Amexio'" [enable-more-mode]="true" [enable-side-nav-position]="true"
                 [logo]="'assets/images/logos/amexio-logo.png'">
-                <amexio-banner amexioColorPalette [color-palette]="'amexio-theme-color4'"
-                              [close-on-scroll]="true" [title]="'Amexio API v5.14 Virtual Scroller, Floating Panel, Input Mask, Window Resize and Draggable etc.. '"
-                               [closable]="true">
+                <amexio-banner amexioColorPalette [color-palette]="'amexio-theme-color4'" [close-on-scroll]="true"
+                    [title]="'Amexio API v5.14 Virtual Scroller, Floating Panel, Input Mask, Window Resize and Draggable etc.. '"
+                    [closable]="true">
 
                 </amexio-banner>
                 <amexio-nav-item style="padding-left:10px" position-left [type]="'slider'">
                 </amexio-nav-item>
+                <amexio-nav-item position-right (onNavItemClick)="onHomeIconClick()" [icon]="'fa fa-home fa-fw fa-lg'"
+                    [type]="'link'" style="cursor: pointer;">
+                </amexio-nav-item>
                 <amexio-nav-item position-right *ngFor="let menus of amexiotechmenus" [type]="'menu'"
-                    [title]="menus.text" [sub-menu-height-padding]="'5px'"
-                    [icon]="menus.icon" [data]="menus.submenus"
+                    [title]="menus.text" [sub-menu-height-padding]="'5px'" [icon]="menus.icon" [data]="menus.submenus"
                     (onNavItemClick)="externalLink($event)">
                 </amexio-nav-item>
             </amexio-nav>
@@ -36,17 +36,20 @@
                         </amexio-accordion-tab>
                         <amexio-accordion-tab [left-icon]="'fas fa-cubes'" [active]="true" header="Components">
                             <amexio-tab-view class="side-nav-with-tab" [divide-header-equally]=true [closable]="false">
-                                <amexio-tab [amexio-color]="'red'" [active]="true" [icon]="'fas fa-pencil-ruler'" [title]="'SE'">
+                                <amexio-tab [amexio-color]="'red'" [active]="true" [icon]="'fas fa-pencil-ruler'"
+                                    [title]="'SE'">
                                     <amexio-side-nav #sidenav3 [data]="semenus" (nodeClick)="onNodeClick($event,3)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
                                 </amexio-tab>
-                                <amexio-tab [amexio-color]="'green'" [active]="false" [icon]="'fas fa-layer-group'" [title]="'EE'">
+                                <amexio-tab [amexio-color]="'green'" [active]="false" [icon]="'fas fa-layer-group'"
+                                    [title]="'EE'">
                                     <amexio-side-nav #sidenav4 [data]="eemenus" (nodeClick)="onNodeClick($event,4)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>
                                 </amexio-tab>
-                                <amexio-tab [amexio-color]="'blue'" [active]="false" [icon]="'fas fa-palette'" [title]="'CE'">
+                                <amexio-tab [amexio-color]="'blue'" [active]="false" [icon]="'fas fa-palette'"
+                                    [title]="'CE'">
                                     <amexio-side-nav #sidenav5 [data]="cemenus" (nodeClick)="onNodeClick($event,5)"
                                         [width]="'100%'" [position]="'relative'">
                                     </amexio-side-nav>

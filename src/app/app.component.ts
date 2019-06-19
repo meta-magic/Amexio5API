@@ -83,283 +83,283 @@ export class AppComponent {
       }
     ];
 
-    this.amexiotechmenus = 
-    [
-      {
-        "text": "Versions",
-        "icon": "fa fa-code-fork fa-fw fa-lg",
-        "link": 'http://api.amexio.org',
-        "submenus": [
-          {
-            "text": "Beta Version",
-            "link": "http://beta.amexio.org/"
-          },
-          {
-            "text": "Version 5.0",
-            "link": "../v5.0/index.html",
-            "separator": true,
-            "submenus": [
-              {
-                "text": "Version 5.13",
-                "link": "../v5.13/index.html"
-              },
-              {
-                "text": "Version 5.12",
-                "link": "../v5.12/index.html"
-              },
-              {
-                "text": "Version 5.11",
-                "link": "../v5.11/index.html"
-              },
-              {
-                "text": "Version 5.10",
-                "link": "../v5.10/index.html"
-              },
-              {
-                "text": "Version 5.9",
-                "link": "../v5.9/index.html"
-              },
-              {
-                "text": "Version 5.8",
-                "link": "../v5.8/index.html"
-              },
-              {
-                "text": "Version 5.7",
-                "link": "../v5.7/index.html"
-              },
-              {
-                "text": "Version 5.6",
-                "link": "../v5.6/index.html"
-              },
-              {
-                "text": "Version 5.5",
-                "link": "../v5.5/index.html"
-              },
-              {
-                "text": "Version 5.4",
-                "link": "../v5.4/index.html"
-              },
-              {
-                "text": "Version 5.3",
-                "link": "../v5.3/index.html"
-              },
-              {
-                "text": "Version 5.2",
-                "link": "../v5.2/index.html"
-              },
-              {
-                "text": "Version 5.1",
-                "link": "../v5.1/index.html"
-              }
-            ]
-          },
-          {
-            "text": "Version 4.0",
-            "link": "../v4/index.html"
-            
-          },
+    this.amexiotechmenus =
+      [
+        {
+          "text": "Versions",
+          "icon": "fa fa-code-fork fa-fw fa-lg",
+          "link": 'http://api.amexio.org',
+          "submenus": [
+            {
+              "text": "Beta Version",
+              "link": "http://beta.amexio.org/"
+            },
+            {
+              "text": "Version 5.0",
+              "link": "../v5.0/index.html",
+              "separator": true,
+              "submenus": [
+                {
+                  "text": "Version 5.13",
+                  "link": "../v5.13/index.html"
+                },
+                {
+                  "text": "Version 5.12",
+                  "link": "../v5.12/index.html"
+                },
+                {
+                  "text": "Version 5.11",
+                  "link": "../v5.11/index.html"
+                },
+                {
+                  "text": "Version 5.10",
+                  "link": "../v5.10/index.html"
+                },
+                {
+                  "text": "Version 5.9",
+                  "link": "../v5.9/index.html"
+                },
+                {
+                  "text": "Version 5.8",
+                  "link": "../v5.8/index.html"
+                },
+                {
+                  "text": "Version 5.7",
+                  "link": "../v5.7/index.html"
+                },
+                {
+                  "text": "Version 5.6",
+                  "link": "../v5.6/index.html"
+                },
+                {
+                  "text": "Version 5.5",
+                  "link": "../v5.5/index.html"
+                },
+                {
+                  "text": "Version 5.4",
+                  "link": "../v5.4/index.html"
+                },
+                {
+                  "text": "Version 5.3",
+                  "link": "../v5.3/index.html"
+                },
+                {
+                  "text": "Version 5.2",
+                  "link": "../v5.2/index.html"
+                },
+                {
+                  "text": "Version 5.1",
+                  "link": "../v5.1/index.html"
+                }
+              ]
+            },
+            {
+              "text": "Version 4.0",
+              "link": "../v4/index.html"
 
-          {
-            "text": "Version 3.0",
-            "link": "../v3/index.html",
-            "separator": true
-          },
-          {
-            "text": "Version 2.0",
-            "link": "../v2/index.html"
-          },
-          {
-            "text": "Version 1.0",
-            "link": "../v1/index.html"
-          }
-        ]
-      },
-      {
-        "text": "Products",
-        "icon": "fa fa-snowflake-o fa-fw",
-        "submenus": [
-          {
-            "text": "Amexio API",
-            "link": "https://amexio.tech/amexio-api"
-          },
-          {
-            "text": "Amexio D3 Charts",
-            "link": " https://amexio.tech/amexio-d3-charts"
-          },
-          {
-            "text": "Amexio Colors",
-            "link": "https://amexio.tech/amexio-colors"
-          }, 
-          
-          {
-            "text": "Amexio Plugins",
-            "link": "https://amexio.tech/amexio-plugins-1"
-            
-          },
-          {
-            "text": "Amexio Canvas",
-            "link": "https://amexio.tech/amexio-canvas",
-            "separator": true
-          }
-        ]
-      },
-      {
-        "text": "Start Using",
-        "icon": "fa fa-television fa-fw",
-        "submenus": [
-          {
-            "text": "Roadmap",
-            "link": "https://amexio.tech/roadmap"
-          },
-          {
-            "text": "Support",
-            "link": "https://amexio.tech/support"
-          },
-          {
-            "text": "Pricing",
-            "link": "https://amexio.tech/pricing"
-          },
-          {
-            "text": "Downloads",
-            "link": "https://amexio.tech/download"
-         
-          },
-          {
-            "text": "Video Tutorials",
-            "link": "https://youtu.be/zpfpfnOV6Y0?list=PLi505KVOMPrGRUgJF4C3QoXbrhFGEOI4j",
-               "separator": true,
-            "separatorHeader": "Amexio Training"
-          },
-          {
-            "text": "Component Example",
-            "link": "http://demo.amexio.tech/"
-           
-          },
-          {
-            "text": "Quality-Assurance",
-            "link": "https://amexio.tech/quality-assurance",
-            "separator": true
-           
-          },
-          {
-            "text": "License and Other Docs",
-            "link": "https://amexio.tech/license-and-other-docs-1"
-           
-          },
-          {
-            "text": "Amexio Canvas",
-            "link": "https://amexio.tech/quality-assurance",
-            "separator": true,
-            "submenus": [
-              {
-                "text": " Subscribe Canvas ",
-                "link": "https://canvas.amexio.org/#/user/signup"
-              },
-              {
-                "text": " Canvas Login ",
-                "link": "https://canvas.amexio.org/#/login"
-              }
-            ]
-          },
-          {
-            "text": "Engage",
-            "submenus": [
-              {
-                "text": "Events",
-                "link": "https://metamagicglobal.com/events"
-              },
-              
-              {
-                "text": "Blogs",
-                "link": "http://blog.metamagicglobal.com/"
-              },
-              {
-                "text": "Node Package Manager",
-                "link": "https://www.npmjs.com/package/amexio-ng-extensions"
-              },
-              {
-                "text": "GitHub - Source Code",
-                "link": "https://github.com/meta-magic/amexio.github.io"
-              }
-            ]
-          }
-        ]
-      },
-      
-      {
-        "text": "Case Studies",
-        "icon": "fa fa-clone fa-fw",
-        "submenus": [
-          {
-            "text": "Showcase",
-            "link": "https://showcase.amexio.org/#/landingPage-app"
-          },
-          {
-            "text": "Traffic Analysis",
-            "link": "https://eedemo.amexio.org/#/home/dashboard",
-            "separator": true,
-            "separatorHeader": "Enterprise Edition Apps"
-          },
-          {
-            "text": "City Analysis",
-            "link": "https://eedemo.amexio.org/#/home/dashboardtwo"
-          },
-          {
-            "text": "Creative Home Page",
-            "link": "https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/ce-demo-app",
-            "separator": true,
-            "separatorHeader": "Creative Edition Apps"
-          },
-          {
-            "text": "Movie Portal",
-            "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc"
+            },
 
-          },
-          {
-            "text": "TecMFlix",
-            "link": "https://cedemo.amexio.org/tecmflix/"
-          },
-          {
-            "text": "Components App",
-            "link": "https://demo.amexio.org/se/v5.12/index.html#/home",
-            "separator": true,
-            "separatorHeader": "Standard Edition Apps"
-          },
-          {
-            "text": "Insurance Portal",
-            "link": "https://sedemo.amexio.org/se/insuranceportal/#/home"
-          },
-          {
-            "text": "Shopping Portal",
-            "link": "https://sedemo.amexio.org/se/shoppingportal/#/home"
-          },
-          {
-            "text": "US Election Results",
-            "link": "https://sedemo.amexio.org/se/us-election/ "
-          },
-          {
-            "text": "NpmStats",
-            "link": "https://www.npmstats.com/"
-          }
-        ]
-      },
+            {
+              "text": "Version 3.0",
+              "link": "../v3/index.html",
+              "separator": true
+            },
+            {
+              "text": "Version 2.0",
+              "link": "../v2/index.html"
+            },
+            {
+              "text": "Version 1.0",
+              "link": "../v1/index.html"
+            }
+          ]
+        },
+        {
+          "text": "Products",
+          "icon": "fa fa-snowflake-o fa-fw",
+          "submenus": [
+            {
+              "text": "Amexio API",
+              "link": "https://amexio.tech/amexio-api"
+            },
+            {
+              "text": "Amexio D3 Charts",
+              "link": " https://amexio.tech/amexio-d3-charts"
+            },
+            {
+              "text": "Amexio Colors",
+              "link": "https://amexio.tech/amexio-colors"
+            },
 
-      {
-        "text": "About Us",
-        "submenus": [
-          {
-            "text": "Contact",
-            "link": "https://metamagicglobal.com/contact"
-          }, {
-            "text": "Company",
-            "link": "http://www.metamagicglobal.com/company"
-          }, {
-            "text": "MetaMagic",
-            "link": "https://www.metamagicglobal.com/"
-          }
-        ]
-      }
-    ];
+            {
+              "text": "Amexio Plugins",
+              "link": "https://amexio.tech/amexio-plugins-1"
+
+            },
+            {
+              "text": "Amexio Canvas",
+              "link": "https://amexio.tech/amexio-canvas",
+              "separator": true
+            }
+          ]
+        },
+        {
+          "text": "Start Using",
+          "icon": "fa fa-television fa-fw",
+          "submenus": [
+            {
+              "text": "Roadmap",
+              "link": "https://amexio.tech/roadmap"
+            },
+            {
+              "text": "Support",
+              "link": "https://amexio.tech/support"
+            },
+            {
+              "text": "Pricing",
+              "link": "https://amexio.tech/pricing"
+            },
+            {
+              "text": "Downloads",
+              "link": "https://amexio.tech/download"
+
+            },
+            {
+              "text": "Video Tutorials",
+              "link": "https://youtu.be/zpfpfnOV6Y0?list=PLi505KVOMPrGRUgJF4C3QoXbrhFGEOI4j",
+              "separator": true,
+              "separatorHeader": "Amexio Training"
+            },
+            {
+              "text": "Component Example",
+              "link": "http://demo.amexio.tech/"
+
+            },
+            {
+              "text": "Quality-Assurance",
+              "link": "https://amexio.tech/quality-assurance",
+              "separator": true
+
+            },
+            {
+              "text": "License and Other Docs",
+              "link": "https://amexio.tech/license-and-other-docs-1"
+
+            },
+            {
+              "text": "Amexio Canvas",
+              "link": "https://amexio.tech/quality-assurance",
+              "separator": true,
+              "submenus": [
+                {
+                  "text": " Subscribe Canvas ",
+                  "link": "https://canvas.amexio.org/#/user/signup"
+                },
+                {
+                  "text": " Canvas Login ",
+                  "link": "https://canvas.amexio.org/#/login"
+                }
+              ]
+            },
+            {
+              "text": "Engage",
+              "submenus": [
+                {
+                  "text": "Events",
+                  "link": "https://metamagicglobal.com/events"
+                },
+
+                {
+                  "text": "Blogs",
+                  "link": "http://blog.metamagicglobal.com/"
+                },
+                {
+                  "text": "Node Package Manager",
+                  "link": "https://www.npmjs.com/package/amexio-ng-extensions"
+                },
+                {
+                  "text": "GitHub - Source Code",
+                  "link": "https://github.com/meta-magic/amexio.github.io"
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "text": "Case Studies",
+          "icon": "fa fa-clone fa-fw",
+          "submenus": [
+            {
+              "text": "Showcase",
+              "link": "https://showcase.amexio.org/#/landingPage-app"
+            },
+            {
+              "text": "Traffic Analysis",
+              "link": "https://eedemo.amexio.org/#/home/dashboard",
+              "separator": true,
+              "separatorHeader": "Enterprise Edition Apps"
+            },
+            {
+              "text": "City Analysis",
+              "link": "https://eedemo.amexio.org/#/home/dashboardtwo"
+            },
+            {
+              "text": "Creative Home Page",
+              "link": "https://cedemo.amexio.org/amexio-ce-demo-app/index.html#/ce-demo-app",
+              "separator": true,
+              "separatorHeader": "Creative Edition Apps"
+            },
+            {
+              "text": "Movie Portal",
+              "link": "https://cedemo.amexio.org/Virtual-Scroller/#/sc"
+
+            },
+            {
+              "text": "TecMFlix",
+              "link": "https://cedemo.amexio.org/tecmflix/"
+            },
+            {
+              "text": "Components App",
+              "link": "https://demo.amexio.org/se/v5.12/index.html#/home",
+              "separator": true,
+              "separatorHeader": "Standard Edition Apps"
+            },
+            {
+              "text": "Insurance Portal",
+              "link": "https://sedemo.amexio.org/se/insuranceportal/#/home"
+            },
+            {
+              "text": "Shopping Portal",
+              "link": "https://sedemo.amexio.org/se/shoppingportal/#/home"
+            },
+            {
+              "text": "US Election Results",
+              "link": "https://sedemo.amexio.org/se/us-election/ "
+            },
+            {
+              "text": "NpmStats",
+              "link": "https://www.npmstats.com/"
+            }
+          ]
+        },
+
+        {
+          "text": "About Us",
+          "submenus": [
+            {
+              "text": "Contact",
+              "link": "https://metamagicglobal.com/contact"
+            }, {
+              "text": "Company",
+              "link": "http://www.metamagicglobal.com/company"
+            }, {
+              "text": "MetaMagic",
+              "link": "https://www.metamagicglobal.com/"
+            }
+          ]
+        }
+      ];
   }
 
   ngOnInit() {
@@ -447,4 +447,9 @@ export class AppComponent {
   themeClick(event: any) {
     this.themeServiceService.getColorCode(event);
   }
+
+  onHomeIconClick(event: any) {
+    window.open("https://amexio.tech/", "_blank");
+  }
 }
+
