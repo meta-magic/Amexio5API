@@ -120,14 +120,14 @@
                 {
                     "name": "zoom-type",
                     "description": "Enables zoom effects",
-                    "version": "6.0 onwards",
+                    "version": "5.15 onwards",
                     "type": "boolean",
                     "default": ""
                 },
                 {
                     "name": "cover-image",
                     "description": "sets background image",
-                    "version": "6.0 onwards",
+                    "version": "5.15 onwards",
                     "type": "string",
                     "default": ""
                 }
