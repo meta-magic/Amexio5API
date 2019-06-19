@@ -86,8 +86,8 @@ export class AppComponent {
     this.amexiotechmenus = 
     [
       {
-        "text": "Home",
-        "icon": "fa fa-home fa-fw fa-lg",
+        "text": "Versions",
+        "icon": "fa fa-code-fork fa-fw fa-lg",
         "link": 'http://api.amexio.org',
         "submenus": [
           {
@@ -187,18 +187,19 @@ export class AppComponent {
             "link": " https://amexio.tech/amexio-d3-charts"
           },
           {
-            "text": "Amexio Canvas",
-            "link": "https://amexio.tech/amexio-canvas"
-          }, {
             "text": "Amexio Colors",
             "link": "https://amexio.tech/amexio-colors"
-          }, {
+          }, 
+          
+          {
             "text": "Amexio Plugins",
             "link": "https://amexio.tech/amexio-plugins-1"
+            
           },
           {
-            "text": "Amexio Demo Apps",
-            "link": "http://demo.amexio.tech/"
+            "text": "Amexio Canvas",
+            "link": "https://amexio.tech/amexio-canvas",
+            "separator": true
           }
         ]
       },
@@ -241,10 +242,6 @@ export class AppComponent {
            
           },
           {
-            "text": "Download Amexio",
-            "link": "https://www.npmjs.com/package/amexio-ng-extensions"
-          },
-          {
             "text": "License and Other Docs",
             "link": "https://amexio.tech/license-and-other-docs-1"
            
@@ -271,10 +268,7 @@ export class AppComponent {
                 "text": "Events",
                 "link": "https://metamagicglobal.com/events"
               },
-              {
-                "text": "Forums",
-                "link": "http://forum.metamagicglobal.com/"
-              },
+              
               {
                 "text": "Blogs",
                 "link": "http://blog.metamagicglobal.com/"
