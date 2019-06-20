@@ -2,7 +2,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-
+.dummycls amexio-card .card-container{
+height: 0%!important;
+}
+.coltempclass amexio-card-ce .card-container-ce-main{
+  height: 0%!important;
+}
 
 .floatingpanel{
   position : fixed;

@@ -1,4 +1,3 @@
-
 <amexio-api-structure [custom-com-data]="customSourceData" [url]="'assets/componentjson/layouts/gridLayout.json'">
     <amexio-api-demo>
 
@@ -13,7 +12,8 @@
                         <amexio-layout-grid [layout]="'LayoutSample1'">
                             <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader'">Header</amexio-grid-item>
                             <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu'">Menu</amexio-grid-item>
-                            <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main </amexio-grid-item>
+                            <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain'">Main
+                            </amexio-grid-item>
                             <amexio-grid-item style="border: 1px dashed black" [name]="'gridright'">Right</amexio-grid-item>
                             <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter'">Footer</amexio-grid-item>
                         </amexio-layout-grid>
@@ -22,42 +22,57 @@
                         <amexio-box border-color="red" border="left" padding="true">
                             <ul>
                                 <li>
-                                    Firstly you need to import AmexioGridLayoutService, GridConfig and GridConstants from amexio-ng-extensions.
+                                    Firstly you need to import AmexioGridLayoutService, GridConfig and GridConstants
+                                    from amexio-ng-extensions.
                                 </li>
                                 <li>
-                                    To create grid-template-areas, need to create a method creating GridConfig model where first attribute will be the name of
-                                    the Ui and second will be the layout type(desktop, tab or mobile) then call addlayout
+                                    To create grid-template-areas, need to create a method creating GridConfig model
+                                    where first attribute will be the name of
+                                    the Ui and second will be the layout type(desktop, tab or mobile) then call
+                                    addlayout
                                     method to design grid-template-areas. (Refer source tab - typescript code)
                                 </li>
                                 <li>
-                                    Call above created method in constructor and createLayout from the service to generate Uis for individual layout type. (Refer
+                                    Call above created method in constructor and createLayout from the service to
+                                    generate Uis for individual layout type. (Refer
                                     source tab - typescript code).
                                 </li>
                                 <li>
-                                    grid-area: Gives an item a name so that it can be referenced by a template created with the grid-template-areas property.
+                                    grid-area: Gives an item a name so that it can be referenced by a template created
+                                    with the grid-template-areas property.
                                     It can contain any amexio component withih it. (Refer source tab- html code)
                                 </li>
                             </ul>
                         </amexio-box>
+                        <br>
+                        <div class="dummycls">
+                            <amexio-card [header]="true">
+                                <amexio-header>
+                                    Grid Layout : Sample Example2
+                                </amexio-header>
+                                <amexio-body>
+                                    <amexio-layout-grid [layout]="'LayoutSample2'">
+                                        <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader2'">GRID
+                                            LAYOUT HEADER</amexio-grid-item>
+                                        <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu2'">GRID LAYOUT
+                                            MENU</amexio-grid-item>
+                                        <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain2'">GRID LAYOUT
+                                            MAIN </amexio-grid-item>
+                                        <amexio-grid-item style="border: 1px dashed black" [name]="'gridright2'">GRID
+                                            LAYOUT RIGHT</amexio-grid-item>
+                                        <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter2'">GRID
+                                            LAYOUT FOOTER</amexio-grid-item>
+                                    </amexio-layout-grid>
+                                </amexio-body>
+                            </amexio-card>
+                        </div>                        
+                      
                     </amexio-body>
                 </amexio-card>
                 <br>
-                <amexio-card [header]="true">
-                    <amexio-header>
-                        Grid Layout : Sample Example2
-                    </amexio-header>
-                    <amexio-body>
-                        <amexio-layout-grid [layout]="'LayoutSample2'">
-                            <amexio-grid-item style="border: 1px dashed black; " [name]="'gridheader2'">GRID LAYOUT HEADER</amexio-grid-item>
-                            <amexio-grid-item style="border: 1px dashed black" [name]="'gridmenu2'">GRID LAYOUT MENU</amexio-grid-item>
-                            <amexio-grid-item style="border: 1px dashed black" [name]="'gridmain2'">GRID LAYOUT MAIN </amexio-grid-item>
-                            <amexio-grid-item style="border: 1px dashed black" [name]="'gridright2'">GRID LAYOUT RIGHT</amexio-grid-item>
-                            <amexio-grid-item style="border: 1px dashed black" [name]="'gridfooter2'">GRID LAYOUT FOOTER</amexio-grid-item>
-                        </amexio-layout-grid>
-                    </amexio-body>
-                </amexio-card>
+
             </amexio-column>
         </amexio-row>
 
-        </amexio-api-demo>
-        </amexio-api-structure>
+    </amexio-api-demo>
+</amexio-api-structure>
