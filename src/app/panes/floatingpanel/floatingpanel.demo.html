@@ -3,16 +3,50 @@
 
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
-                Floating Panel With Relative Positioning
+                Floating Panel With Resize , Drag Drop and  Relative Positioning
             </amexio-header>
             <amexio-body>
                 <amexio-row>
                     <amexio-column size="3" fit="false">
+                        <amexio-button type="theme-color" (onClick)="onshowDragPanel()" label="Drag Panel">
+                        </amexio-button>
+                        <amexio-floating-panel [left-position]="'40px'" [bottom-position]="'40px'" [resizable]="false"
+                            [remember-panel-position]="true" [draggable]="true" amexioColorPalette
+                            [color-palette]="'random'" [gradient]="true" [show-panel]="showDragPanel" [relative]="false"
+                            [closeable]="true" [width]="'330'" [height]="200" [title]="'Company Info'"
+                            (onClose)="onCloseRelativePanel($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
+                                    </amexio-property-grid>
+                                </amexio-column>
+                            </amexio-row>
+
+                        </amexio-floating-panel>
+                    </amexio-column>
+                    <amexio-column size="3" fit="false">
+                        <amexio-button type="theme-color" (onClick)="onshowResizePanel()" label="Resize Panel">
+                        </amexio-button>
+                        <amexio-floating-panel [resizable]="true" [draggable]="false" amexioColorPalette
+                            [color-palette]="'random'" [gradient]="true" [show-panel]="showResizePanel"
+                            [relative]="true" [closeable]="true" [width]="'330'" [height]="200" [title]="'Company Info'"
+                            (onClose)="onCloseRelativePanel($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
+                                    </amexio-property-grid>
+                                </amexio-column>
+                            </amexio-row>
+
+                        </amexio-floating-panel>
+                    </amexio-column>
+                    <amexio-column size="3" fit="false">
                         <amexio-button type="theme-color" (onClick)="onshowRelativePanel()" label="Relative">
                         </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
-                            [show-panel]="showRelativePanel" [relative]="true" [closeable]="true" [width]="'330'"
-                            [height]="200" [title]="'Company Info'" (onClose)="onCloseRelativePanel($event)">
+                        <amexio-floating-panel [resizable]="true" [draggable]="true" amexioColorPalette
+                            [color-palette]="'random'" [gradient]="true" [show-panel]="showRelativePanel"
+                            [relative]="true" [closeable]="true" [width]="'330'" [height]="200" [title]="'Company Info'"
+                            (onClose)="onCloseRelativePanel($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
                                     <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
@@ -23,10 +57,10 @@
                         </amexio-floating-panel>
                     </amexio-column>
 
-
+                    <!--    (mouseenter)=" onshowRelativePanelWithToolTip()"
+                        (mouseleave)=" onshowRelativePanelWithToolTip()" -->
                     <amexio-column size="3" fit="false">
-                        <amexio-button type="theme-color" (mouseenter)=" onshowRelativePanelWithToolTip()"
-                        (mouseleave)=" onshowRelativePanelWithToolTip()"
+                        <amexio-button type="theme-color" (onClick)="onshowRelativePanelWithToolTip()"
                             label="Relative with Tooltip"></amexio-button>
                         <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
                             [arrow]="true" [show-panel]="showRelativePanel1" [relative]="true" [closeable]="true"
@@ -41,6 +75,7 @@
 
                         </amexio-floating-panel>
                     </amexio-column>
+
 
                 </amexio-row>
             </amexio-body>
