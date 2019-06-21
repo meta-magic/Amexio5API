@@ -111,6 +111,20 @@
           "version": " 5.15  onwards",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "resizable",
+          "description": "Resize the floating panel.",
+          "version": " 5.15  onwards",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "draggable",
+          "description": "draggable the floating panel.",
+          "version": " 5.15  onwards",
+          "type": "boolean",
+          "default": "false"
         }
       ]
     },
