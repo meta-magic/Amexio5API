@@ -6276,7 +6276,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   content: "";
   border-style: solid;
   position: absolute;
-  left: -26px;
+  left: -25px;
   border-width: 15px 26px 10px 0; }
 
 .speecharrowright:after {
@@ -6321,6 +6321,17 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   right: 34px;
   border-style: solid;
   border-width: 0 15px 15px; }
+
+.time {
+  opacity: 0.5;
+  position: absolute;
+  padding-top: 17px; }
+
+.timeclass {
+  right: 20px; }
+
+.timeleftright {
+  padding-top: 27px; }
 
 /****************************************************************************
     Component Name : Menubar
