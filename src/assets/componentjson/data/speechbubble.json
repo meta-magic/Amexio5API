@@ -55,7 +55,14 @@
             "type": "any",
             "default": "",
             "description": "It will decide the list of menu on click of down arrow"
-            }
+            },
+            {
+              "name": "enable-time",
+              "version": "5.15 onwards",
+              "type": "string",
+              "default": "",
+              "description": "It will display the date and time."
+              }
             ]
       },
       {
