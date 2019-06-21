@@ -9372,7 +9372,9 @@ amexio-layout-columns amexio-layout-item {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d; }
 
 .ce-flip-card-back {
   transform: rotateY(180deg);

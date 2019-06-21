@@ -24,6 +24,8 @@ export class FloatingPanelDemoComponent {
   showFloatingButton : boolean = false;
   showRelativePanel : boolean = false;
   showRelativePanel1 : boolean = false;
+  showDragPanel = false;
+  showResizePanel= false;
   data : GoogleMapOverlays[];
   markerdata1 : GoogleMapOverlays;
   markerdata2 : GoogleMapOverlays;
@@ -93,6 +95,15 @@ export class FloatingPanelDemoComponent {
   }
   onCloseRelativePanel(event: any) {
     this.showRelativePanel = event.showRelativePanel;
+  }
+
+
+  onshowDragPanel() {
+    this.showDragPanel = !this.showDragPanel;
+  }
+  onshowResizePanel() {
+    this.showResizePanel = !this.showResizePanel;
+
   }
   createCompanyGrid() {
     this.companyKeyValueData = [];
