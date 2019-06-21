@@ -17,6 +17,9 @@ export const APP_ROUTE: Routes = [/**Forms Routes*/
   {
     path: 'getting-started', loadChildren: './gettingstarted/gettingstarted#GettingStatedModule'
   },
+  {
+    path: 'getting-started-beta', loadChildren: './gettingstartedbeta/gettingstartedbeta#GettingStartedBetaModule'
+  },
 
   /** Amexio Color  Page */
   {
