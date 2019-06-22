@@ -78,6 +78,13 @@
             "type": "string",
             "default": "bottom",
             "version":"5.13"
+          },
+          {
+            "name": "button-type",
+            "description": "button type for theme selector panel(floatingbutton/button)",
+            "type": "string",
+            "default": "floatingbutton",
+            "version":"5.14.3"
           }
         ]
       }

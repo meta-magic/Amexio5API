@@ -14,13 +14,16 @@
                         <amexio-floating-panel amexioColorPalette 
                             
                             [color-palette]="'random'" [gradient]=" true" [show-panel]="showRelativePanel"
-                            [relative]="true" [closeable]="true" [width]="'330'" [height]="200" [title]="'Company Info'"
+                            [relative]="true" [closeable]="true" [width]="'330'" [height]="230" [title]="'Verify Phone Number'"
                             (onClose)="onCloseRelativePanel($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
-                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
-                                    </amexio-property-grid>
-                                </amexio-column>
+                                    <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false">
+                                    </amexio-email-input>
+                                    <amexio-number-input [field-label]="'Phone Number'" [place-holder]="'Enter Phone Number'">
+                                    </amexio-number-input><br>
+                                <amexio-button [label]="'Submit'" [type]="'theme-color'" [tooltip]="'Primary Button'">
+                                </amexio-button>              </amexio-column>
                             </amexio-row>
 
                         </amexio-floating-panel>
@@ -69,13 +72,13 @@
                         <amexio-button type="theme-color" (onClick)="onshowResizePanel()" label="Resize Panel">
                         </amexio-button>
                         <amexio-floating-panel amexioColorPalette [resizable]="true" [color-palette]="'random'"
-                            [gradient]="true" [show-panel]="showResizePanel" [relative]="false" [closeable]="true"
-                            [width]="'330'" [height]="200" [title]="'Company Info'"
+                            [gradient]="true" [show-panel]="showResizePanel" [relative]="true" [closeable]="true"
+                            [width]="'330'"  [title]="'Video Player'"
                             (onClose)="onCloseResizePanel1($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
-                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
-                                    </amexio-property-grid>
+                                    <amexio-video-player  path="assets/videos/sample_bunny.mp4">
+                                    </amexio-video-player>
                                 </amexio-column>
                             </amexio-row>
 
@@ -85,13 +88,15 @@
                         <amexio-button type="theme-color" (onClick)="onshowDragPanel()" label="Drag Panel">
                         </amexio-button>
                         <amexio-floating-panel amexioColorPalette [draggable]="true" [color-palette]="'random'"
-                            [gradient]="true" [show-panel]="showDragPanel" [relative]="false" [closeable]="true"
-                            [width]="'330'" [height]="200" [title]="'Company Info'"
+                            [gradient]="true" [show-panel]="showDragPanel" [relative]="true" [closeable]="true"
+                            [width]="'330'" [height]="330" [title]="'Company Info'"
                             (onClose)="onCloseDraggablePanel1($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
-                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
-                                    </amexio-property-grid>
+                                        <amexio-google-map [initial-zoom-level]="2" [height]="'295px'"
+                                        [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'" [data]="data"
+                                        (onMarkerClick)="onMarkerClick1($event)">
+                                    </amexio-google-map>
                                 </amexio-column>
                             </amexio-row>
 
