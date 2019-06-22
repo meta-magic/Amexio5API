@@ -137,94 +137,76 @@
 
 <!-- calendar with floating panel -->
 
-<amexio-calendar [event-color-grouping]="true" [calendar-date]="calendardate" (onEventClicked)="onEventClicked($event)"
-    [events]="events">
-</amexio-calendar>
-
-
-
-<amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [absolute]="true"
-    [show-panel]="parentPanel" [left-position]="floatleft" [right-position]="floatright" [top-position]="floattop"
-    [closeable]="true" [width]="'330'" [height]="200" [title]="title" (onClose)="onParentClose($event)">
-    <amexio-radio-group #id name="floating" [data-reader]="'data'" [display-field]="'meeting'" [value-field]="'id'"
-        [http-method]="'get'" [http-url]="'assets/data/componentdata/calendarfloating.json'"
-        (onSelect)="setSelectedOption($event)">
-    </amexio-radio-group>
-</amexio-floating-panel>
-
-
-
-<amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [absolute]="true"
-    [show-panel]="childPanel" [left-position]="floatleft" [right-position]="floatright" [top-position]="floattop"
-    [closeable]="true" [width]="'455'" [height]="300" [title]="rowRecord" (onClose)="onChildClose($event)">
-    <amexio-label>
-        Wednesday, July 12 9.30 - 10.30
-    </amexio-label>
-    <br>
-    <br>
-    <amexio-row>
-        <amexio-column size="1" [fit]="false">
-
-        </amexio-column>
-        <amexio-column size="2" [fit]="false">
-            <amexio-image [icon-class]="'fa fa-video-camera fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
-        </amexio-column>
-        <amexio-column size="9" [fit]="false">
-            <amexio-label [font-color]="'blue'">
-                Join Hangouts meet
-            </amexio-label>
-            <br>
-            <amexio-label>
-                meet.google.com/izm-imal-gns
-            </amexio-label>
-        </amexio-column>
-    </amexio-row>
-    <amexio-row>
-        <amexio-column size="1" [fit]="false">
-
-        </amexio-column>
-        <amexio-column size="2" [fit]="false">
-            <amexio-image [icon-class]="'fa fa-phone fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
-        </amexio-column>
-        <amexio-column size="9" [fit]="false">
-            <amexio-label [font-color]="'blue'">
-                Join By phone
-            </amexio-label>
-            <br>
-            <amexio-label>
-                +1 513-212-9632 PIN: 745 521#
-            </amexio-label>
-        </amexio-column>
-    </amexio-row>
-    <amexio-row>
-        <amexio-column size="1" [fit]="false">
-
-        </amexio-column>
-        <amexio-column size="2" [fit]="false">
-            <amexio-image [icon-class]="'fa fa-users fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
-        </amexio-column>
-        <amexio-column size="9" [fit]="false">
-            <amexio-label [font-color]="'blue'">
-                2 Guests
-            </amexio-label>
-            <br>
-            <amexio-label>
-                1 yes, 1 awaiting
-            </amexio-label>
-            <br>
-            <amexio-image [icon-class]="'fa fa-user'"></amexio-image>
-            &nbsp;
-            <amexio-label>
-                Ketan Gote
-            </amexio-label>
-            <br>
-            <amexio-image [icon-class]="'fa fa-user-times'"></amexio-image>
-            &nbsp;
-            <amexio-label>
-                Rashmi Thakkar
-            </amexio-label>
-        </amexio-column>
-    </amexio-row>
-
-
-</amexio-floating-panel>
+<div style="height:1100px;">
+        <amexio-calendar [event-color-grouping]="true" [calendar-date]="calendardate" (onEventClicked)="onEventClicked($event)" (onMoreEventClick)="onMoreEventsClicked($event)"
+            (onMorePanelClose)="onEventPanelClose($event)" [events]="events">
+        </amexio-calendar>
+    </div>
+    
+    <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [absolute]="true" [(show-panel)]="showEventPanel"
+        [closeable]="true" [top-position]="floattop" [right-position]="floatright" [left-position]="floatleft" [width]="'455'" [title]="eventTitle"
+        (onClose)="onPanelClose($event)">
+    
+        <amexio-row>
+            <amexio-column size="1" [fit]="false">
+            </amexio-column>
+            <amexio-column size="2" [fit]="false">
+                <amexio-image [icon-class]="'fa fa-video-camera fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+            </amexio-column>
+            <amexio-column size="9" [fit]="false">
+                <amexio-label [font-color]="'blue'">
+                    Join Hangouts meet
+                </amexio-label>
+                <br>
+                <amexio-label>
+                    meet.google.com/izm-imal-gns
+                </amexio-label>
+            </amexio-column>
+        </amexio-row>
+        <amexio-row>
+            <amexio-column size="1" [fit]="false">
+    
+            </amexio-column>
+            <amexio-column size="2" [fit]="false">
+                <amexio-image [icon-class]="'fa fa-phone fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+            </amexio-column>
+            <amexio-column size="9" [fit]="false">
+                <amexio-label [font-color]="'blue'">
+                    Join By phone
+                </amexio-label>
+                <br>
+                <amexio-label>
+                    +1 513-212-9632 PIN: 745 521#
+                </amexio-label>
+            </amexio-column>
+        </amexio-row>
+        <amexio-row>
+            <amexio-column size="1" [fit]="false">
+    
+            </amexio-column>
+            <amexio-column size="2" [fit]="false">
+                <amexio-image [icon-class]="'fa fa-users fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+            </amexio-column>
+            <amexio-column size="9" [fit]="false">
+                <amexio-label [font-color]="'blue'">
+                    2 Guests
+                </amexio-label>
+                <br>
+                <amexio-label>
+                    &nbsp; &nbsp; 1 yes, 1 awaiting
+                </amexio-label>
+                <br>
+                <amexio-image [icon-class]="'fa fa-user'"></amexio-image>
+                &nbsp;
+                <amexio-label>
+                    Ketan Gote
+                </amexio-label>
+                <br>
+                <amexio-image [icon-class]="'fa fa-user'"></amexio-image>
+                &nbsp;
+                <amexio-label>
+                    Rashmi Thakkar
+                </amexio-label>
+            </amexio-column>
+        </amexio-row>
+    </amexio-floating-panel>

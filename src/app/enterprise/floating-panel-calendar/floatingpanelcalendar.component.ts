@@ -117,18 +117,18 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Angular Workshop",
-        "start": "2019-06-13",
-        "end": "2019-06-13"
+        "start": "2019-06-13T13:15:00",
+        "end": "2019-06-13T15:15:00"
       },
       {
         "title": "Conference",
-        "start": "2019-06-13",
-        "end": "2019-06-13"
+        "start": "2019-06-13T11:15:00",
+        "end": "2019-06-13T11:55:00"
       },
       {
         "title": "All Hands Meeting",
-        "start": "2019-06-13T09:15:00",
-        "end": "2019-06-13T10:15:00"
+        "start": "2019-06-13T19:15:00",
+        "end": "2019-06-13T20:15:00"
       },
       {
         "title": "Amexio Meetup",
@@ -142,22 +142,22 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Java Conference",
-        "start": "2019-06-22",
-        "end": "2019-06-22"
+        "start": "2019-06-22T13:00:00",
+        "end": "2019-06-22T13:50:00"
       },
       {
         "title": "Sass Conference",
-        "start": "2019-06-22",
-        "end": "2019-06-22"
+        "start": "2019-06-22T14:15:00",
+        "end": "2019-06-22T14:30:00"
       }, {
         "title": "Angular Meetup",
-        "start": "2019-06-22",
-        "end": "2019-06-22"
+        "start": "2019-06-22T17:30:00",
+        "end": "2019-06-22T17:45:00"
       },
       {
         "title": "JavaScript Conference",
-        "start": "2019-06-22",
-        "end": "2019-06-22"
+        "start": "2019-06-22T19:15:00",
+        "end": "2019-06-22T19:30:00"
       }
     ];
 
