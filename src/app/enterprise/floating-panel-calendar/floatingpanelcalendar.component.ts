@@ -114,6 +114,50 @@ export class floatingPanelCalendarComponent implements OnInit {
         "title": "All Hands Meeting",
         "start": "2019-03-22T09:15:00",
         "end": "2019-03-22T10:15:00"
+      },
+      {
+        "title": "Angular Workshop",
+        "start": "2019-06-13",
+        "end": "2019-06-13"
+      },
+      {
+        "title": "Conference",
+        "start": "2019-06-13",
+        "end": "2019-06-13"
+      },
+      {
+        "title": "All Hands Meeting",
+        "start": "2019-06-13T09:15:00",
+        "end": "2019-06-13T10:15:00"
+      },
+      {
+        "title": "Amexio Meetup",
+        "start": "2019-03-13T11:00:00",
+        "end": "2019-03-14T12:30:00"
+      },
+      {
+        "title": "Amexio Meetup ",
+        "start": "2019-03-13T18:25:00",
+        "end": "2019-03-13T21:25:00"
+      },
+      {
+        "title": "Java Conference",
+        "start": "2019-06-22",
+        "end": "2019-06-22"
+      },
+      {
+        "title": "Sass Conference",
+        "start": "2019-06-22",
+        "end": "2019-06-22"
+      }, {
+        "title": "Angular Meetup",
+        "start": "2019-06-22",
+        "end": "2019-06-22"
+      },
+      {
+        "title": "JavaScript Conference",
+        "start": "2019-06-22",
+        "end": "2019-06-22"
       }
     ];
 
@@ -135,22 +179,32 @@ export class floatingPanelCalendarComponent implements OnInit {
   floatright: any;
   floatleft: any;
   showRelativePanel: boolean;
-
+  showEventPanel: boolean;
+  eventTitle: string;
   onEventClicked(event: any) {
-    this.title = event.this.title;
-    this.eventobject = event.this;
-    this.floattop = event.event.y + 'px';
-    if (event.event.clientX + 330 > screen.width) {
-      this.floatright = (event.event.offsetX) + 'px';
-      this.floatleft = null;
-    } else {
-      this.floatleft = (event.event.offsetX + 150) + 'px';
-      this.floatright = null;
-    }
-    this.parentPanel = true;
+    this.showEventPanel = true;
+    this.eventTitle = event.this.title;
+    this.getFPPosition(event);
   }
 
-  setSelectedOption(event: any) {
+  onMoreEventsClicked(event: any) {
+
+    debugger;
+    console.log("EVENT", event);
+    this.showEventPanel = true;
+
+
+  }
+
+  onEventPanelClose(event: any) {
+    this.showEventPanel = false;
+  }
+
+  onPanelClose() {
+    this.showEventPanel = false;
+  }
+
+  getFPPosition(event: any) {
     this.eventobject = event.this;
     this.floattop = event.event.y + 'px';
 
@@ -161,23 +215,9 @@ export class floatingPanelCalendarComponent implements OnInit {
       this.floatleft = (event.event.offsetX) + 'px';
       this.floatright = null;
     }
-    this.rowRecord = event.row.meeting;
-    this.childPanel = true;
-
-  }
-
-  onParentClose(event: any) {
-    this.parentPanel = false;
-    this.onChildClose(event);
-  }
-
-  onChildClose(event: any) {
-    this.childPanel = false;
-
   }
 
   setCalendarDate() {
-
     this.calendarDate = new Date(this.calendarDate.setMonth(this.calendarDate.getMonth() + 1));
   }
 }

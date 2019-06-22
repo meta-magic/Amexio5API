@@ -83,6 +83,13 @@
           "version": "5.7 onwards",
           "type": "string",
           "default": ""
+        },
+        {
+          "name": "no-of-events",
+          "description": "Number of events to be shown for a day",
+          "version": "5.15 onwards",
+          "type": "number",
+          "default": "2"
         }
       ]
     },
