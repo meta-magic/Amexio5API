@@ -143,12 +143,43 @@
                         </amexio-button>
                         <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
                             [show-panel]="topRightPanel" [relative]="false" [closeable]="true" [top-position]="'30px'"
-                            [right-position]="'40px'" [width]="'400'" [height]="300" [title]="'Google Map'"
+                            [right-position]="'40px'" [width]="'400'" [height]="300" [title]="'Chat Window'"
                             (onClose)="onCloseTopRightPanel($event)">
-                            <amexio-google-map [initial-zoom-level]="2" [height]="'295px'"
-                                [google-map-key]="'AIzaSyAoZQjgc1Tbs_hzSuLhTEgOr8nSMj8dvlM'" [data]="data"
-                                (onMarkerClick)="onMarkerClick1($event)">
-                            </amexio-google-map>
+                            <amexio-speech-bubble [arrow-direction]="'left'"  [enable-time]="'21-Jun-2019 12:02'" [menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        John Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        Hello, I'd like to order desserts.
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                                <amexio-speech-bubble [arrow-direction]="'right'" [enable-time]="'21-Jun-2019 12:03'"[menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        Jane Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        <p style="margin-top:2px">
+                                            Welcome to Fresh Produce!Would you like to pay now or at the time of
+                                            delivery?
+                                        </p>
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                                <amexio-speech-bubble [arrow-direction]="'left'" [enable-time]="'21-Jun-2019 12:04'"[menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        John Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        1 Main Street,Pay at the delivery.
+                                    </amexio-label>
+                                </amexio-speech-bubble>
+                                <amexio-speech-bubble [arrow-direction]="'right'" [enable-time]="'21-Jun-2019 12:06'"[menu-option]="menuoption">
+                                    <amexio-label size="medium-bold">
+                                        Jane Deo
+                                    </amexio-label><br>
+                                    <amexio-label size="medium">
+                                        Your order has been processed.
+                                    </amexio-label>
+                                </amexio-speech-bubble>
 
                         </amexio-floating-panel>
                     </amexio-column>
