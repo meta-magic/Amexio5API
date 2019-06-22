@@ -1,31 +1,18 @@
 import { Component, OnInit } from "@angular/core";
-import { HttpClient } from "@angular/common/http";
-import { debug } from "util";
 
 @Component({
-  selector: 'floating-panel-calendar',
-  templateUrl: './floatingpanelcalendar.component.html'
+    selector: 'calendar-demo',
+    templateUrl: './calendar.demo.component.html'
 })
-export class floatingPanelCalendarComponent implements OnInit {
+export class CalendarDemoComponent implements OnInit {
 
-  htmltemplate: string;
+    events: any[];
 
-  tscode: any;
+    calendarDate = new Date();
 
-  parentPanel: boolean;
-
-  events: any[];
-
-  rowRecord: string;
-
-  calendarDate = new Date();
-  title: string;
-  eventobject: any;
-  childPanel: boolean;
-  constructor(private http: HttpClient) {
-    this.parentPanel = false;
-    this.calendarDate = new Date(1551697131284);
-    this.events = [
+    constructor(private http: HttpClient) {
+        
+      this.events = [
       {
         "title": "Kubernetes Workshop",
         "start": "2019-02-25T11:00:00",
@@ -160,27 +147,8 @@ export class floatingPanelCalendarComponent implements OnInit {
         "end": "2019-06-22"
       }
     ];
+    }
 
-
-
-  }
-
-
-
-  ngOnInit() {
-    this.http.get("assets/arc.json")
-      .subscribe((resp: any) => {
-        this.htmltemplate = resp.html;
-        this.tscode = "";
-      });
-  }
-
-  floattop: any;
-  floatright: any;
-  floatleft: any;
-  showRelativePanel: boolean;
-  showEventPanel: boolean;
-  eventTitle: string;
   onEventClicked(event: any) {
     this.showEventPanel = true;
     this.eventTitle = event.this.title;
@@ -200,8 +168,8 @@ export class floatingPanelCalendarComponent implements OnInit {
   }
 
   getFPPosition(event: any) {
-    this.eventobject = event.this;
-    this.floattop = event.event.y + 'px';
+      this.eventobject = event.this;
+      this.floattop = event.event.y + 'px';
 
     if (event.event.clientX + 780 > screen.width) {
       this.floatright = (event.event.offsetX) + 'px';
@@ -212,7 +180,7 @@ export class floatingPanelCalendarComponent implements OnInit {
     }
   }
 
-  setCalendarDate() {
-    this.calendarDate = new Date(this.calendarDate.setMonth(this.calendarDate.getMonth() + 1));
-  }
+    setCalendarDate() {
+        this.calendarDate = new Date(this.calendarDate.setMonth(this.calendarDate.getMonth() + 1));
+    }
 }

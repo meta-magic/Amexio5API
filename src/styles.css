@@ -120,6 +120,10 @@ amexio-theme-switcher  .card-container{
     padding-left: 3px;
 }
 
+.sidenavTemp > div > div{
+  margin: 0px -20px
+}
+
 /*
 
 @media (min-width: 1280px)

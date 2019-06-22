@@ -5,7 +5,8 @@
 </div>
 
 <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [absolute]="true" [(show-panel)]="showEventPanel"
-    [closeable]="true" [top-position]="floattop" [right-position]="floatright" [left-position]="floatleft" [width]="'455'" [title]="eventTitle" (onClose)="onPanelClose($event)">
+    [closeable]="true" [top-position]="floattop" [right-position]="floatright" [left-position]="floatleft" [width]="'455'" [title]="eventTitle"
+    (onClose)="onPanelClose($event)">
 
     <amexio-row>
         <amexio-column size="1" [fit]="false">
@@ -69,6 +70,4 @@
             </amexio-label>
         </amexio-column>
     </amexio-row>
-
-
 </amexio-floating-panel>
