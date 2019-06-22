@@ -8,7 +8,7 @@
             <amexio-body>
                 <amexio-row>
 
-                    <amexio-column size="2" fit="false">
+                    <amexio-column size="3" fit="false">
                         <amexio-button type="theme-color" (onClick)="onshowRelativePanel()" label="Relative">
                         </amexio-button>
                         <amexio-floating-panel amexioColorPalette 
@@ -45,36 +45,11 @@
                     </amexio-column>
 
                     <amexio-column size="3" fit="false">
-                        <amexio-button type="theme-color" (onClick)="onshowResizePanel()" label="Resize Panel">
-                        </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [resizable]="true" [color-palette]="'random'"
-                            [gradient]="true" [show-panel]="showResizePanel" [relative]="false" [closeable]="true"
-                            [width]="'330'" [height]="200" [title]="'Company Info'"
-                            (onClose)="onCloseRelativePanel1($event)">
-                            <amexio-row>
-                                <amexio-column size="12" fit="true">
-                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
-                                    </amexio-property-grid>
-                                </amexio-column>
-                            </amexio-row>
-
-                        </amexio-floating-panel>
+                      
                     </amexio-column>
-                    <amexio-column size="2" fit="false">
-                        <amexio-button type="theme-color" (onClick)="onshowDragPanel()" label="Drag Panel">
-                        </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [draggable]="true" [color-palette]="'random'"
-                            [gradient]="true" [show-panel]="showDragPanel" [relative]="false" [closeable]="true"
-                            [width]="'330'" [height]="200" [title]="'Company Info'"
-                            (onClose)="onCloseRelativePanel1($event)">
-                            <amexio-row>
-                                <amexio-column size="12" fit="true">
-                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
-                                    </amexio-property-grid>
-                                </amexio-column>
-                            </amexio-row>
 
-                        </amexio-floating-panel>
+                    <amexio-column size="3" fit="false">
+                      
                     </amexio-column>
 
                 </amexio-row>
@@ -82,8 +57,58 @@
 
         </amexio-card>
 
+        <br/>
+        <amexio-card [header]="true" [header-align]="'left'">
+            <amexio-header>
+                Floating Panel With Draggable and Resizeable Feature
+            </amexio-header>
+            <amexio-body>
+                <amexio-row>
+                    <amexio-column size="3" fit="false">
+                        <amexio-button type="theme-color" (onClick)="onshowResizePanel()" label="Resize Panel">
+                        </amexio-button>
+                        <amexio-floating-panel amexioColorPalette [resizable]="true" [color-palette]="'random'"
+                            [gradient]="true" [show-panel]="showResizePanel" [relative]="false" [closeable]="true"
+                            [width]="'330'" [height]="200" [title]="'Company Info'"
+                            (onClose)="onCloseResizePanel1($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
+                                    </amexio-property-grid>
+                                </amexio-column>
+                            </amexio-row>
 
+                        </amexio-floating-panel>
+                    </amexio-column>
+                    <amexio-column size="3" fit="false">
+                        <amexio-button type="theme-color" (onClick)="onshowDragPanel()" label="Drag Panel">
+                        </amexio-button>
+                        <amexio-floating-panel amexioColorPalette [draggable]="true" [color-palette]="'random'"
+                            [gradient]="true" [show-panel]="showDragPanel" [relative]="false" [closeable]="true"
+                            [width]="'330'" [height]="200" [title]="'Company Info'"
+                            (onClose)="onCloseDraggablePanel1($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
+                                    </amexio-property-grid>
+                                </amexio-column>
+                            </amexio-row>
 
+                        </amexio-floating-panel>
+                    </amexio-column>
+                    <amexio-column size="3" fit="false">
+                        
+                    </amexio-column>
+
+                    <amexio-column size="3" fit="false">
+                       
+                    </amexio-column>
+
+                </amexio-row>
+            </amexio-body>
+
+        </amexio-card>
+        <br/>
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
                 Floating Panel With Absolute Positioning
@@ -152,7 +177,7 @@
             </amexio-body>
 
         </amexio-card>
-
+        <br/>
 
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>

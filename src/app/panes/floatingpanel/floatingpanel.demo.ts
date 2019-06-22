@@ -105,6 +105,15 @@ export class FloatingPanelDemoComponent {
     this.showResizePanel = !this.showResizePanel;
 
   }
+
+  onCloseResizePanel1(event:any){
+    this.showResizePanel = false;
+  }
+
+  onCloseDraggablePanel1(event:any){
+    this.showDragPanel = false;
+  }
+  
   createCompanyGrid() {
     this.companyKeyValueData = [];
     this.companyKeyValueData.push(new PropertyGridModel('Company Name', 'MetaMagic global' , '', false));
