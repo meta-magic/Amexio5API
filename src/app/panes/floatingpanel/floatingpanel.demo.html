@@ -32,12 +32,13 @@
                         </amexio-button>
                         <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
                             [arrow]="true" [show-panel]="showRelativePanel1" [relative]="true" [closeable]="true"
-                            [width]="'330'" [height]="200" [title]="'Company Info'"
+                            [width]="'330'" [height]="200" [title]="'Computer Info'"
                             (onClose)="onCloseRelativePanel1($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
-                                    <amexio-property-grid [has-border]="true" [key-value-data]="companyKeyValueData">
-                                    </amexio-property-grid>
+                                    <p>
+                                        A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming. Modern computers have the ability to follow generalized sets of operations, called programs. These programs enable computers to perform an extremely wide range of tasks.
+                                    </p>
                                 </amexio-column>
                             </amexio-row>
 
@@ -57,7 +58,7 @@
 
         </amexio-card>
 
-        <br/>
+        
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
                 Floating Panel With Draggable and Resizeable Feature
@@ -108,7 +109,7 @@
             </amexio-body>
 
         </amexio-card>
-        <br/>
+        
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
                 Floating Panel With Absolute Positioning
@@ -177,7 +178,7 @@
             </amexio-body>
 
         </amexio-card>
-        <br/>
+        
 
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
