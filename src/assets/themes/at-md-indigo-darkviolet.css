@@ -5682,6 +5682,12 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   right: 0px;
   z-index: 300 !important; }
 
+.fpClass amexio-floating-panel div .card-container-body {
+  height: 100% !important; }
+
+.fpRightClass amexio-floating-panel div .card-container-body {
+  height: 100% !important; }
+
 /****************************************************************************
     Component Name : Datapoints
     Version : Amexio v4.0 onwards
