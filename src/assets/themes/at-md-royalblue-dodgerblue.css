@@ -43,12 +43,14 @@
   --theme4thColor: #e141b9;
   --theme5thColor: #e14169;
   --theme6thColor: #e16941;
+  --themePrimaryDarker: #1d44b9;
   --themePrimaryColorHSLA: hsla(225,73%,57%,0.0);
   --themeSecondaryColorHSLA: hsla(210,100%,56%,0.0);
   --theme3rdColorHSLA: hsla(285,73%,57%,0.0);
   --theme4thColorHSLA: hsla(315,73%,57%,0.0);
   --theme5thColorHSLA: hsla(345,73%,57%,0.0);
   --theme6thColorHSLA: hsla(15,73%,57%,0.0);
+  --themePrimaryDarkerHSLA: hsla(225,73%,42%,0.0);
   /** Primary Color shades -------------------------- */
   --themePrimaryColorShade0: #000105;
   --themePrimaryColorShade1: #000e38;
@@ -64,6 +66,7 @@
   --theme4thColorGradient: linear-gradient(to right, #38002a, #e000a8, #ff5cd6);
   --theme5thColorGradient: linear-gradient(to right, #38000e, #e00038, #ff5c85);
   --theme6thColorGradient: linear-gradient(to right, #380e00, #e03800, #ff855c);
+  --themePrimaryDarkerGradient: linear-gradient(to right, #000e38, #0038e0, #5c85ff);
   /** Theme Font Family -------------------------- */
   --themeFontColor: #00081f;
   --themeFontFamily: Roboto,Trebuchet MS,Arial,Helvetica,sans-serif;
@@ -73,6 +76,7 @@
   --theme4thFontColor: #fefbfd;
   --theme5thFontColor: #fefbfc;
   --theme6thFontColor: #1f0b05;
+  --themePrimaryDarkerFontColor: #f6f8fe;
   /** Theme Additional Std CSS Colors : Light and Dark shades --- */
   --amexioColorRedLight: #ff7f50;
   --amexioColorRedDark: #dc143c;
@@ -476,6 +480,10 @@ image using the content attribute.
   color: #000000; }
 
 /* You can add global styles to this file, and also import other style files */
+.amexio-primary-darker-color {
+  background-color: var(--themePrimaryDarker) !important;
+  color: var(--themePrimaryDarkerFontColor) !important; }
+
 .amexio-theme-color1 {
   background-color: var(--themePrimaryColor) !important;
   color: var(--themePrimaryFontColor) !important; }
@@ -499,6 +507,10 @@ image using the content attribute.
 .amexio-theme-color6 {
   background-color: var(--theme6thColor) !important;
   color: var(--theme6thFontColor) !important; }
+
+.amexio-primary-darker-color-Gradient {
+  background-image: var(--themePrimaryDarkerGradient) !important;
+  color: white !important; }
 
 .amexio-theme-color1-Gradient {
   background-image: var(--themePrimaryColorGradient) !important;
