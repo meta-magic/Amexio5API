@@ -6361,8 +6361,13 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 .timeclass {
   right: 20px; }
 
-.timeleftright {
-  padding-top: 27px; }
+.timeright {
+  padding-top: 27px;
+  padding-right: 30px; }
+
+.timeleft {
+  padding-top: 27px;
+  padding-left: 30px; }
 
 /****************************************************************************
     Component Name : Menubar
