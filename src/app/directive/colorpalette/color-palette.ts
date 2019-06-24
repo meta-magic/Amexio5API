@@ -69,57 +69,66 @@ export class ColorPaletteDemo implements OnInit {
                         let themeColor = response.themeColor;
                         data.forEach(element => {
                                 this.themeServiceService.themeColorData.subscribe((theme: any) => {
+                                        console.log("theme", theme)
                                         if (theme && theme.length > 0) {
                                                 if (element.colorpalette === 'amexio-theme-color1') {
                                                         element.actualColor.bgColor = theme[1].value;
-                                                        element.actualColor.fgcolor = theme[28].value;
+                                                        element.actualColor.fgcolor = theme[31].value;
                                                        
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color2') {
                                                         element.actualColor.bgColor = theme[2].value;
-                                                        element.actualColor.fgcolor = theme[29].value;
+                                                        element.actualColor.fgcolor = theme[32].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color3') {
                                                         element.actualColor.bgColor = theme[3].value;
-                                                        element.actualColor.fgcolor = theme[30].value;
+                                                        element.actualColor.fgcolor = theme[33].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color4') {
                                                         element.actualColor.bgColor = theme[4].value;
-                                                        element.actualColor.fgcolor = theme[31].value;
+                                                        element.actualColor.fgcolor = theme[34].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color5') {
                                                         element.actualColor.bgColor = theme[5].value;
-                                                        element.actualColor.fgcolor = theme[32].value;
+                                                        element.actualColor.fgcolor = theme[35].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color6') {
                                                         element.actualColor.bgColor = theme[6].value;
-                                                        element.actualColor.fgcolor = theme[33].value;
+                                                        element.actualColor.fgcolor = theme[36].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-primary-darker-color') {
+                                                        element.actualColor.bgColor = theme[7].value;
+                                                        element.actualColor.fgcolor = theme[37].value;
                                                 }
                                         } else {
                                                 if (element.colorpalette === 'amexio-theme-color1') {
                                                         element.actualColor.bgColor = themeColor[1].value;
-                                                        element.actualColor.fgcolor = themeColor[28].value;
+                                                        element.actualColor.fgcolor = themeColor[31].value;
                                                         //                                         
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color2') {
                                                         element.actualColor.bgColor = themeColor[2].value;
-                                                        element.actualColor.fgcolor = themeColor[29].value;
+                                                        element.actualColor.fgcolor = themeColor[32].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color3') {
                                                         element.actualColor.bgColor = themeColor[3].value;
-                                                        element.actualColor.fgcolor = themeColor[30].value;
+                                                        element.actualColor.fgcolor = themeColor[33].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color4') {
                                                         element.actualColor.bgColor = themeColor[4].value;
-                                                        element.actualColor.fgcolor = themeColor[31].value;
+                                                        element.actualColor.fgcolor = themeColor[34].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color5') {
                                                         element.actualColor.bgColor = themeColor[5].value;
-                                                        element.actualColor.fgcolor = themeColor[32].value;
+                                                        element.actualColor.fgcolor = themeColor[35].value;
                                                 }
                                                 if (element.colorpalette === 'amexio-theme-color6') {
                                                         element.actualColor.bgColor = themeColor[6].value;
-                                                        element.actualColor.fgcolor = themeColor[33].value;
+                                                        element.actualColor.fgcolor = themeColor[36].value;
+                                                }
+                                                if (element.colorpalette === 'amexio-primary-darker-color') {
+                                                        element.actualColor.bgColor = themeColor[7].value;
+                                                        element.actualColor.fgcolor = themeColor[37].value;
                                                 }
 
                                         }

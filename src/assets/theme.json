@@ -98,5 +98,14 @@
         "bgColor": "",
         "fgcolor": ""
       }
+    }, {
+      "componentName": "amexio-banner",
+      "colorpalette": "amexio-primary-darker-color",
+      "link": "layout/banner-demo",
+      "actualColor": {
+        "bgColor": "",
+        "fgcolor": ""
+      }
     }
+    
   ]
