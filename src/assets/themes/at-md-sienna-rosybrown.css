@@ -6200,7 +6200,12 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   white-space: nowrap;
   display: inline-block;
   vertical-align: middle;
-  cursor: pointer; }
+  cursor: pointer;
+  max-width: 100%;
+  overflow: hidden; }
+
+.a {
+  text-overflow: ellipsis; }
 
 .tree-node-label-hover {
   width: 95%; }
