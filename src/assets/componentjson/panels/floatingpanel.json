@@ -124,7 +124,7 @@
           "description": "draggable the floating panel.",
           "version": " 5.15  onwards",
           "type": "boolean",
-          "default": "false"
+          "default": "true"
         }
       ]
     },
