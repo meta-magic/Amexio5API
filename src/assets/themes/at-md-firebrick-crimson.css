@@ -9114,6 +9114,25 @@ amexio-layout amexio-layout-item {
   right: 0%;
   padding: 5px 10px; }
 
+.floatingPanelIndex amexio-floating-panel div {
+  z-index: 2 !important; }
+
+.floatingPanelIndex {
+  margin-top: 15px; }
+
+.leftPositionPanel {
+  display: block;
+  position: absolute;
+  left: 50px;
+  right: 0px;
+  margin-top: 70px; }
+
+.rightPositionPanel {
+  display: block;
+  position: absolute;
+  right: 50px;
+  margin-top: 70px; }
+
 /****************************************************************************
     Component Name : Border Layout
     Version : Amexio v4.0 onwards
