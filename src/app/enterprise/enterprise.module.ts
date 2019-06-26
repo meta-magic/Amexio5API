@@ -22,6 +22,7 @@ import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
 import { RouteComponent } from './tree-tab/router-component';
 
 import { HomePageComponent } from './tree-tab/home-page/home-page.component';
+import { EventsPanelComponent } from './floating-panel-calendar/events-panel/events-panel.component';
 // import {APP_ROUTE} from '../../app/enterprise/tree-tab/router-component';
 
 /**
@@ -29,7 +30,7 @@ import { HomePageComponent } from './tree-tab/home-page/home-page.component';
  */
 @NgModule({
     declarations: [RouteComponent, ThemeSwitcherDemo, YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-        EEAppointmentDemoComponent, CalendarDemoComponent,CalendarDemoComponent1 , StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
+        EEAppointmentDemoComponent, CalendarDemoComponent,CalendarDemoComponent1 , StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent, EventsPanelComponent],
     imports: [
         CommonModule,
         AmexioEnterpriseModule,
@@ -41,8 +42,8 @@ import { HomePageComponent } from './tree-tab/home-page/home-page.component';
         // RouterModule.forChild(APP_ROUTE, { useHash: true})
     ],
 
-    entryComponents: [RouteComponent],
-    providers: []
+    entryComponents: [RouteComponent, EventsPanelComponent],
+    providers: [],
 })
 export class EnterpriseModule {
 

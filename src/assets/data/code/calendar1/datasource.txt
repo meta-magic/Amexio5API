@@ -1,18 +1,4 @@
-import { Component, OnInit } from "@angular/core";
-
-@Component({
-    selector: 'calendar-demo',
-    templateUrl: './calendar.demo.component.html'
-})
-export class CalendarDemoComponent implements OnInit {
-
-    events: any[];
-
-    calendarDate = new Date();
-
-    constructor(private http: HttpClient) {
-        
-      this.events = [
+[
       {
         "title": "Kubernetes Workshop",
         "start": "2019-02-25T11:00:00",
@@ -380,30 +366,4 @@ export class CalendarDemoComponent implements OnInit {
             "personName": "Tejas Mathur"
         }]
       }
-    ];
-    }
-
- showEventPanel: boolean;
-  onEventClicked(event: any) {
-    let moreData = event.this.addEventDetails(EventsPanelComponent, event);
-    moreData.instance.eventData = event.item;
-  }
-
-  moreData: any;
-
-  onMoreEventsClicked(event: any) {
-    this.moreData = event.this.addComponent(EventsPanelComponent, event);
-    this.moreData.instance.eventData = event.item;
-  }
-
-  onMoreClose(event: any){
-    this.showEventPanel = false;
-    this.moreData.instance.showPanel = false;
-
-  }
- 
-
-    setCalendarDate() {
-        this.calendarDate = new Date(this.calendarDate.setMonth(this.calendarDate.getMonth() + 1));
-    }
-}
+    ]

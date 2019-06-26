@@ -113,6 +113,14 @@
         {
           "name": "onEventClicked",
           "description": "Emits event data when clicked on event."
+        },
+        {
+          "name": "onMoreEventClick",
+          "description": "Emits event data when clicked on more."
+        },
+        {
+          "name": "onCloseClick",
+          "description": "Emits on click of close of panel."
         }
       ]
     }
@@ -120,7 +128,7 @@
   "sourceMetadata": {
     "htmlUrl": "calendar1/calendar.html",
     "tsUrl": "calendar1/calendar.txt",
-    "datasourceUrl": ""
+    "datasourceUrl": "calendar1/datasource.txt"
   },
   "liveMetadata": {
     "disabled": false,

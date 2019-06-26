@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { debug } from "util";
 
+import {EventsPanelComponent} from '../floating-panel-calendar/events-panel/events-panel.component';
 @Component({
   selector: 'floating-panel-calendar',
   templateUrl: './floatingpanelcalendar.component.html'
@@ -22,89 +22,234 @@ export class floatingPanelCalendarComponent implements OnInit {
   title: string;
   eventobject: any;
   childPanel: boolean;
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private viewContainerRef: ViewContainerRef,
+    private componentFactoryResolver: ComponentFactoryResolver) {
     this.parentPanel = false;
     this.calendarDate = new Date(1551697131284);
     this.events = [
       {
         "title": "Kubernetes Workshop",
         "start": "2019-02-25T11:00:00",
-        "end": "2019-03-02T14:00:00"
+        "end": "2019-03-02T14:00:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "020-78542123",
+        "people": [
+          {
+          "personName": "Priyanka Gayakwad"
+        },
+          {
+            "personName": "Nitish jain"
+        }]
       },
       {
         "title": "Microservice Workshop",
         "start": "2019-02-25T03:00:00",
-        "end": "2019-03-03T06:00:00"
+        "end": "2019-03-03T06:00:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "020-78542123",
+        "people": [
+          {
+          "personName": "Harish Sharma"
+        },
+          {
+            "personName": "Prasoon Sharma"
+        }]
       },
       {
         "title": "Docker Workshop",
         "start": "2019-03-07",
-        "end": "2019-03-09"
+        "end": "2019-03-09",
+        "url": "meet.google.com/izm-ppaa-gns",
+        "phone": "020-41025896",
+        "people": [
+          {
+          "personName": "Deepali Arvind"
+        },
+          {
+            "personName": "Dattaram Gawas"
+        }]
       },
       {
         "title": "Kubernetes Workshop",
         "start": "2019-03-11",
-        "end": "2019-03-12"
+        "end": "2019-03-12",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "020-78542123",
+        "people": [
+          {
+          "personName": "Hardik Bhardwaj"
+        },
+          {
+            "personName": "Sakshi Tanna"
+        }]
       },
       {
         "title": "Microservice Workshop",
         "start": "2019-03-13",
-        "end": "2019-03-14"
+        "end": "2019-03-14",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "+91 9852367410",
+        "people": [
+          {
+          "personName": "Poonam Jadhav"
+        },
+          {
+            "personName": "Abhiruchi Patil"
+        }]
       },
       {
         "title": "Docker Workshop",
         "start": "2019-03-17",
-        "end": "2019-03-18"
+        "end": "2019-03-18",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "9718542123",
+        "people": [
+          {
+          "personName": "Vivek Mane"
+        },
+          {
+            "personName": "Aboli Suryavanshi"
+        }]
       },
       {
         "title": "Amexio Meetup",
         "start": "2019-03-25T18:00:00",
-        "end": "2019-03-25T20:00:00"
+        "end": "2019-03-25T20:00:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "022-852369220",
+        "people": [
+          {
+          "personName": "Jignesh Bhandari"
+        },
+          {
+            "personName": "Meena Gupta"
+        }]
       },
       {
         "title": "Angular Event",
         "start": "2019-03-27T11:25:00",
-        "end": "2019-03-27T12:25:00"
+        "end": "2019-03-27T12:25:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "9822772686",
+        "people": [
+          {
+          "personName": "Prattema Jadhav"
+        },
+          {
+            "personName": "Ketan Gote"
+        }]
       },
       {
         "title": "Amexio Meetup",
         "start": "2019-03-16T11:00:00",
-        "end": "2019-03-16T12:30:00"
+        "end": "2019-03-16T12:30:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "9953225562",
+        "people": [
+          {
+          "personName": "Amruta Mulik"
+        },
+          {
+            "personName": "Manjusha Shrimandil"
+        }]
       },
       {
         "title": "Amexio Meetup ",
         "start": "2019-02-22T18:25:00",
-        "end": "2019-02-22T21:25:00"
+        "end": "2019-02-22T21:25:00",
+        "url": "meet.google.com/izm-ass-gns",
+        "phone": "07896325000",
+        "people": [
+          {
+          "personName": "Ganesh Kadam"
+        },
+          {
+            "personName": "Vallabh Achutlla"
+        }]
       },
       {
         "title": "121 Conference",
         "start": "2019-04-12",
-        "end": "2019-04-13"
+        "end": "2019-04-13",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "020-78521400",
+        "people": [
+          {
+          "personName": "Toral Gattha"
+        },
+          {
+            "personName": "Priyank Sharma"
+        }]
       },
       {
         "title": "122 Conference",
         "start": "2019-05-22",
-        "end": "2019-05-24"
+        "end": "2019-05-24",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "020-78542123",
+        "people": [
+          {
+          "personName": "Roshni Gupta"
+        },
+          {
+            "personName": "Varun Varia"
+        }]
       },
       {
         "title": "All Hands Meeting",
         "start": "2019-02-28T09:15:00",
-        "end": "2019-02-28T10:15:00"
+        "end": "2019-02-28T10:15:00",
+        "url": "meet.google.com/izm-uwnb-gns",
+        "phone": "020-78542123",
+        "people": [
+          {
+          "personName": "Elesh Lakhani"
+        },
+          {
+            "personName": "Kojashree Jain"
+        }]
       },
       {
         "title": "All Hands Meeting",
         "start": "2019-04-30T09:15:00",
-        "end": "2019-04-30T10:15:00"
+        "end": "2019-04-30T10:15:00",
+        "url": "meet.google.com/ium-imal-gns",
+        "phone": "8521470032",
+        "people": [
+          {
+          "personName": "Vijay Shinde"
+        },
+          {
+            "personName": "Mangesh Ratnalikar"
+        }]
       },
       {
         "title": "All Hands Meeting",
         "start": "2019-05-31T09:15:00",
-        "end": "2019-05-31T09:15:00"
+        "end": "2019-05-31T09:15:00",
+        "url": "meet.google.com/izm-imal-ios",
+        "phone": "9888526235",
+        "people": [
+          {
+          "personName": "Sagar Jadhav"
+        },
+          {
+            "personName": "Kedar Kokil"
+        }]
       },
       {
         "title": "Angular Workshop",
         "start": "2019-06-03T13:15:00",
-        "end": "2019-06-03T15:15:00"
+        "end": "2019-06-03T15:15:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "020-78542123",
+        "people": [
+          {
+          "personName": "Rashmi Thakkar"
+        },
+          {
+            "personName": "Anu Chandan"
+        }]
       },
       {
         "title": "Technology Conference",
@@ -113,51 +258,141 @@ export class floatingPanelCalendarComponent implements OnInit {
       {
         "title": "All Hands Meeting",
         "start": "2019-03-22T09:15:00",
-        "end": "2019-03-22T10:15:00"
+        "end": "2019-03-22T10:15:00",
+        "url": "meet.google.com/izm-yusl-gns",
+        "phone": "020-711442123",
+        "people": [
+          {
+          "personName": "Kalyani Bardiya"
+        },
+          {
+            "personName": "Anuradha Chawan"
+        }]
       },
       {
         "title": "Angular Workshop",
-        "start": "2019-06-13T13:15:00",
-        "end": "2019-06-13T15:15:00"
+        "start": "2019-06-12T13:15:00",
+        "end": "2019-06-12T15:15:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "020-78542123",
+        "people": [
+          {
+          "personName": "Rashmi Thakkar"
+        },
+          {
+            "personName": "Anu Chandan"
+        }]
       },
       {
         "title": "Conference",
-        "start": "2019-06-13T11:15:00",
-        "end": "2019-06-13T11:55:00"
+        "start": "2019-06-12T11:15:00",
+        "end": "2019-06-12T11:55:00",
+        "url": "meet.google.com/852-ilao-gns",
+        "phone": "780-963251112",
+        "people": [
+          {
+          "personName": "Payal Barsoni"
+        },
+          {
+            "personName": "Kashish Visarani"
+        }]
       },
       {
         "title": "All Hands Meeting",
-        "start": "2019-06-13T19:15:00",
-        "end": "2019-06-13T20:15:00"
+        "start": "2019-06-12T19:15:00",
+        "end": "2019-06-12T20:15:00",
+        "url": "meet.google.com/izm-imal-opa",
+        "phone": "+1 05615115551",
+        "people": [
+          {
+          "personName": "Jayesh Kadam"
+        },
+          {
+            "personName": "Kajal Bhatewara"
+        }]
       },
       {
         "title": "Amexio Meetup",
         "start": "2019-03-13T11:00:00",
-        "end": "2019-03-14T12:30:00"
+        "end": "2019-03-14T12:30:00",
+        "url": "meet.yahoo.com/izm-imal-gns",
+        "phone": "852-1284511541",
+        "people": [
+          {
+          "personName": "Priyanka Aher"
+        },
+          {
+            "personName": "Ganesh Parakh"
+        }]
       },
       {
         "title": "Amexio Meetup ",
         "start": "2019-03-13T18:25:00",
-        "end": "2019-03-13T21:25:00"
+        "end": "2019-03-13T21:25:00",
+        "url": "meet.google.com/poa-imal-gns",
+        "phone": "022-78542123",
+        "people": [
+          {
+          "personName": "Lovish Sethi"
+        },
+          {
+            "personName": "Avika Bhatt"
+        }]
       },
       {
         "title": "Java Conference",
-        "start": "2019-06-22T13:00:00",
-        "end": "2019-06-22T13:50:00"
+        "start": "2019-06-23T13:00:00",
+        "end": "2019-06-23T13:50:00",
+        "url": "meet.google.com/izm-pooa-gns",
+        "phone": "020-85663521",
+        "people": [
+          {
+          "personName": "Suraj Sukale"
+        },
+          {
+            "personName": "Ganesh Chandan"
+        }]
       },
       {
         "title": "Sass Conference",
-        "start": "2019-06-22T14:15:00",
-        "end": "2019-06-22T14:30:00"
+        "start": "2019-06-23T14:15:00",
+        "end": "2019-06-23T14:30:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "+1 7412589330",
+        "people": [
+          {
+          "personName": "Medha Jadhav"
+        },
+          {
+            "personName": "Monish Gatha"
+        }]
       }, {
         "title": "Angular Meetup",
-        "start": "2019-06-22T17:30:00",
-        "end": "2019-06-22T17:45:00"
+        "start": "2019-06-23T17:30:00",
+        "end": "2019-06-23T17:45:00",
+        "url": "meet.google.com/ias-imal-gns",
+        "phone": "896523017",
+        "people": [
+          {
+          "personName": "Kiran Momin"
+        },
+          {
+            "personName": "Azmeena Zari"
+        }]
       },
       {
         "title": "JavaScript Conference",
-        "start": "2019-06-22T19:15:00",
-        "end": "2019-06-22T19:30:00"
+        "start": "2019-06-23T19:15:00",
+        "end": "2019-06-23T19:30:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "022-8522131466",
+        "people": [
+          {
+          "personName": "Navin Thakkar"
+        },
+          {
+            "personName": "Tejas Mathur"
+        }]
       }
     ];
 
@@ -175,41 +410,24 @@ export class floatingPanelCalendarComponent implements OnInit {
       });
   }
 
-  floattop: any;
-  floatright: any;
-  floatleft: any;
-  showRelativePanel: boolean;
   showEventPanel: boolean;
-  eventTitle: string;
   onEventClicked(event: any) {
-    this.showEventPanel = true;
-    this.eventTitle = event.this.title;
-    this.getFPPosition(event);
+    let moreData = event.this.addEventDetails(EventsPanelComponent, event);
+    moreData.instance.eventData = event.item;
   }
+
+  moreData: any;
 
   onMoreEventsClicked(event: any) {
-    this.showEventPanel = true;
+    this.moreData = event.this.addComponent(EventsPanelComponent, event);
+    this.moreData.instance.showPanel = true;
+    this.moreData.instance.eventData = event.item;
   }
 
-  onEventPanelClose(event: any) {
+  onMoreClose(event: any){
     this.showEventPanel = false;
-  }
+    this.moreData.instance.showPanel = false;
 
-  onPanelClose() {
-    this.showEventPanel = false;
-  }
-
-  getFPPosition(event: any) {
-    this.eventobject = event.this;
-    this.floattop = event.event.y + 'px';
-
-    if (event.event.clientX + 780 > screen.width) {
-      this.floatright = (event.event.offsetX) + 'px';
-      this.floatleft = null;
-    } else {
-      this.floatleft = (event.event.offsetX) + 'px';
-      this.floatright = null;
-    }
   }
 
   setCalendarDate() {
