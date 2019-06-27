@@ -296,8 +296,8 @@ export class AppComponent {
             {
               "text": "Traffic Analysis",
               "link": "https://eedemo.amexio.org/#/home/dashboard",
-              "separator": true,
-              "separatorHeader": "Enterprise Edition Apps"
+              "separatorHeader": "Enterprise Edition Apps",
+              "separator": true
             },
             {
               "text": "City Analysis",
