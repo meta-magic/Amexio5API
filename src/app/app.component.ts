@@ -285,7 +285,6 @@ export class AppComponent {
             }
           ]
         },
-
         {
           "text": "Case Studies",
           "icon": "fa fa-clone fa-fw",
