@@ -270,11 +270,10 @@
         }]
       },
       {
-        "title": "All Hands Meeting",
-        "start": "2019-06-12T19:15:00",
-        "end": "2019-06-12T20:15:00",
-        "url": "meet.google.com/izm-imal-opa",
-        "phone": "+1 05615115551",
+        "title": "Cisco Meeting",
+        "start": "2019-06-12T12:30:00",
+        "url": "meet.google.com/izm-uias-wie",
+        "phone": "8149022501",
         "people": [
           {
           "personName": "Jayesh Kadam"
@@ -284,31 +283,29 @@
         }]
       },
       {
-        "title": "Amexio Meetup",
-        "start": "2019-03-13T11:00:00",
-        "end": "2019-03-14T12:30:00",
-        "url": "meet.yahoo.com/izm-imal-gns",
-        "phone": "852-1284511541",
+        "title": "Juniper Meeting",
+        "start": "2019-06-12T14:15:00",
+        "url": "meet.google.com/izm-uioa-daa",
+        "phone": "+91 8912009128",
         "people": [
           {
-          "personName": "Priyanka Aher"
+          "personName": "Dhanashree Kabade"
         },
           {
-            "personName": "Ganesh Parakh"
+            "personName": "Puja Sharma"
         }]
       },
       {
-        "title": "Amexio Meetup ",
-        "start": "2019-03-13T18:25:00",
-        "end": "2019-03-13T21:25:00",
-        "url": "meet.google.com/poa-imal-gns",
-        "phone": "022-78542123",
+        "title": "Status Meeting",
+        "start": "2019-06-12T16:30:00",
+        "url": "meet.google.com/pas-imal-opa",
+        "phone": "9145100644",
         "people": [
           {
-          "personName": "Lovish Sethi"
+          "personName": "Nihar Kadam"
         },
           {
-            "personName": "Avika Bhatt"
+            "personName": "Neeti Bhatewara"
         }]
       },
       {

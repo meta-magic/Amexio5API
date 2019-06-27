@@ -312,6 +312,32 @@ export class floatingPanelCalendarComponent implements OnInit {
         }]
       },
       {
+        "title": "Juniper Meeting",
+        "start": "2019-06-12T14:15:00",
+        "url": "meet.google.com/izm-uioa-daa",
+        "phone": "+91 8912009128",
+        "people": [
+          {
+          "personName": "Dhanashree Kabade"
+        },
+          {
+            "personName": "Puja Sharma"
+        }]
+      },
+      {
+        "title": "Status Meeting",
+        "start": "2019-06-12T16:30:00",
+        "url": "meet.google.com/pas-imal-opa",
+        "phone": "9145100644",
+        "people": [
+          {
+          "personName": "Nihar Kadam"
+        },
+          {
+            "personName": "Neeti Bhatewara"
+        }]
+      },
+      {
         "title": "Amexio Meetup",
         "start": "2019-03-13T11:00:00",
         "end": "2019-03-14T12:30:00",
