@@ -1,0 +1,64 @@
+<amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [relative]="true"  [show-panel]="showPanel"
+[closeable]="true"  [width]="'455'" [title]="eventData.details.title">
+
+<amexio-row>
+    <amexio-column size="1" [fit]="false">
+    </amexio-column>
+    <amexio-column size="2" [fit]="false">
+        <amexio-image [icon-class]="'fa fa-video-camera fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+    </amexio-column>
+    <amexio-column size="9" [fit]="false">
+        <amexio-label [font-color]="'blue'">
+            Join Hangouts meet
+        </amexio-label>
+        <br>
+        <amexio-label>
+                {{eventData.details.url}}
+        </amexio-label>
+    </amexio-column>
+</amexio-row>
+<amexio-row>
+    <amexio-column size="1" [fit]="false">
+
+    </amexio-column>
+    <amexio-column size="2" [fit]="false">
+        <amexio-image [icon-class]="'fa fa-phone fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+    </amexio-column>
+    <amexio-column size="9" [fit]="false">
+        <amexio-label [font-color]="'blue'">
+            Join By phone
+        </amexio-label>
+        <br>
+        <amexio-label>
+                {{eventData.details.phone}}
+        </amexio-label>
+    </amexio-column>
+</amexio-row>
+<amexio-row>
+    <amexio-column size="1" [fit]="false">
+
+    </amexio-column>
+    <amexio-column size="2" [fit]="false">
+        <amexio-image [icon-class]="'fa fa-users fa-2x'" [tooltip]="'Fontawesome bitcoin'"></amexio-image>
+    </amexio-column>
+    <amexio-column size="9" [fit]="false">
+        <amexio-label [font-color]="'blue'">
+            2 Guests
+        </amexio-label>
+        <br>
+        <amexio-label>
+            &nbsp; &nbsp; 1 yes, 1 awaiting
+        </amexio-label>
+        <br>
+        <div *ngFor="let item of eventData.details.people">
+        <amexio-image [icon-class]="'fa fa-user'"></amexio-image>
+        &nbsp;
+        <amexio-label>
+                {{item.personName}}
+        </amexio-label>
+        <br>
+    </div>
+
+    </amexio-column>
+</amexio-row>
+</amexio-floating-panel>

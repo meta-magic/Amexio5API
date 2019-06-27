@@ -60,8 +60,10 @@
 
       <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
         <ng-container *ngIf="comData && comData.sourceMetadata">
-
-          <amexio-api-sourcecode [html-url]="comData.sourceMetadata.htmlUrl" [ts-url]="comData.sourceMetadata.tsUrl"
+          <amexio-api-sourcecode 
+          [component-html-url]="comData.sourceMetadata.componentHtmlUrl"
+           [component-ts-url]="comData.sourceMetadata.componentTsUrl"
+          [html-url]="comData.sourceMetadata.htmlUrl" [ts-url]="comData.sourceMetadata.tsUrl"
             [dynamic-url]="comData.sourceMetadata.dynamicUrl" [module-url]="comData.sourceMetadata.moduleUrl"
             [data-source-url]="comData.sourceMetadata.datasourceUrl" [data-source-url1]="comData.sourceMetadata.datasourceUrl1"
             [data-source-url2]="comData.sourceMetadata.datasourceUrl2">

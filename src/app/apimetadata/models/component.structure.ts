@@ -16,8 +16,11 @@ export class ComponentDataStructure {
 }
 
 export class SourceMetadata {
+  // 
   htmlUrl: string;
   tsUrl: string;
+  componentHtmlUrl: string;
+  componentTsUrl: string;
   dynamicUrl: string;
   moduleUrl: string;
   datasourceUrl: string;

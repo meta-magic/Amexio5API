@@ -393,6 +393,62 @@ export class floatingPanelCalendarComponent implements OnInit {
           {
             "personName": "Tejas Mathur"
         }]
+      },
+
+      {
+        "title": "Java Conference",
+        "start": "2019-07-23T13:00:00",
+        "end": "2019-07-23T13:50:00",
+        "url": "meet.google.com/izm-pooa-gns",
+        "phone": "020-85663521",
+        "people": [
+          {
+          "personName": "Suraj Sukale"
+        },
+          {
+            "personName": "Ganesh Chandan"
+        }]
+      },
+      {
+        "title": "Sass Conference",
+        "start": "2019-07-23T14:15:00",
+        "end": "2019-07-23T14:30:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "+1 7412589330",
+        "people": [
+          {
+          "personName": "Medha Jadhav"
+        },
+          {
+            "personName": "Monish Gatha"
+        }]
+      }, {
+        "title": "Angular Meetup",
+        "start": "2019-07-23T17:30:00",
+        "end": "2019-07-23T17:45:00",
+        "url": "meet.google.com/ias-imal-gns",
+        "phone": "896523017",
+        "people": [
+          {
+          "personName": "Kiran Momin"
+        },
+          {
+            "personName": "Azmeena Zari"
+        }]
+      },
+      {
+        "title": "JavaScript Conference",
+        "start": "2019-07-23T19:15:00",
+        "end": "2019-07-23T19:30:00",
+        "url": "meet.google.com/izm-imal-gns",
+        "phone": "022-8522131466",
+        "people": [
+          {
+          "personName": "Navin Thakkar"
+        },
+          {
+            "personName": "Tejas Mathur"
+        }]
       }
     ];
 

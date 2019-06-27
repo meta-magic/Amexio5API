@@ -25,6 +25,22 @@
       </amexio-tab>
     </ng-container>
 
+    <ng-container *ngIf="componentHtmlUrl">
+      <amexio-tab title="Component HTML">
+        <ng-container *ngIf=" componentHtmlCode">
+          <prism-block [code]="componentHtmlCode" [language]="'html'"></prism-block>
+        </ng-container>
+      </amexio-tab>
+    </ng-container>
+
+    <ng-container *ngIf="componentTsUrl">
+      <amexio-tab title="Component TS">
+        <ng-container *ngIf="componentTypeScriptCode">
+          <prism-block [code]="componentTypeScriptCode" [language]="'typescript'"></prism-block>
+        </ng-container>
+      </amexio-tab>
+    </ng-container>
+
     <ng-container *ngIf="dataSourceUrl1">
         <amexio-tab title="Second Data Source">
           <ng-container *ngIf=" dataSource1">

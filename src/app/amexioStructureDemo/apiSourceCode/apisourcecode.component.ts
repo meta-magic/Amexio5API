@@ -9,7 +9,9 @@ import {CODE_BASE_PATH, DATASOURCE_BASE_PATH} from '../../apimetadata/constants/
 })
 
 export class AmexioApiSourceCodeComponent implements OnInit {
-
+// 
+@Input('component-ts-url') componentTsUrl: string;
+@Input('component-html-url') componentHtmlUrl: string;
   @Input('ts-url') tsUrl: string;
   @Input('html-url') htmlUrl: string;
   @Input('data-source-url') dataSourceUrl: string;
@@ -20,6 +22,8 @@ export class AmexioApiSourceCodeComponent implements OnInit {
   
   htmlCode: any;
   typeScriptCode: any;
+  componentHtmlCode: any;
+  componentTypeScriptCode: any;
   dataSource: any;
   dataSource1: any;
   dataSource2: any;
@@ -36,6 +40,12 @@ export class AmexioApiSourceCodeComponent implements OnInit {
     }
     if (this.tsUrl) {
       this.loadTsUrl();
+    }
+    if (this.componentHtmlUrl) {
+      this.loadComponentHtmlUrl();
+    }
+    if (this.componentTsUrl) {
+      this.loadComponentTsUrl();
     }
     if (this.dataSourceUrl) {
       this.loadDataSourceUrl();
@@ -65,6 +75,18 @@ export class AmexioApiSourceCodeComponent implements OnInit {
       this.typeScriptCode = data;
     });
   }
+    // LOADING HTML URL
+    loadComponentHtmlUrl() {
+      this._httpClient.get(CODE_BASE_PATH + this.componentHtmlUrl, { responseType: 'text' }).subscribe(data => {
+        this.componentHtmlCode = data;
+      });
+    }
+    // LOADING TYPESCRIPT URL
+    loadComponentTsUrl() {
+      this._httpClient.get(CODE_BASE_PATH + this.componentTsUrl, { responseType: 'text' }).subscribe(data => {
+        this.componentTypeScriptCode = data;
+      });
+    }
 // LOADING DATA SOURCE URL
   loadDataSourceUrl() {
     this._httpClient.get(DATASOURCE_BASE_PATH + this.dataSourceUrl, { responseType: 'text' }).subscribe(data => {

@@ -1,6 +1,6 @@
 {
-  "title": "Calendar ",
-  "description": "Calendar component to show data Day, Week and Month wise.",
+  "title": "",
+  "description": "",
   "componentDescription": "Calendar component helps the developers to add time series data in a Calendar Interface and the data can be shown in day wise, week wise and monthly basis.  ",
   "compFeaturesTitle": "Key-Features",
   "keyFeatures": [
@@ -103,6 +103,12 @@
           "hidden": false
         },
         {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false
+        },
+        {
           "dataindex": "description",
           "text": "Description",
           "width": 60,
@@ -112,27 +118,30 @@
       "gridData": [
         {
           "name": "onEventClicked",
+          "version": "5.7 onwards",
           "description": "Emits event data when clicked on event."
         },
         {
           "name": "onMoreEventClick",
+          "version":"5.15 onwards",
           "description": "Emits event data when clicked on more."
         },
         {
           "name": "onCloseClick",
+          "version":"5.15 onwards",
           "description": "Emits on click of close of panel."
         }
       ]
     }
   ],
   "sourceMetadata": {
-    "htmlUrl": "calendar1/calendar.html",
-    "tsUrl": "calendar1/calendar.txt",
-    "datasourceUrl": "calendar1/datasource.txt"
+    "htmlUrl": "",
+    "tsUrl": "",
+    "datasourceUrl": ""
   },
   "liveMetadata": {
     "disabled": false,
-    "stackblitzUrl": "https://stackblitz.com/edit/amexio-calendar-component?embed=1&file=app/enterprise/calendar/calendar.demo.html&view=editor"
+    "stackblitzUrl": ""
   },
   "isAccessibility": false,
   "apiaccessibledata": 
