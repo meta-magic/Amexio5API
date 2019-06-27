@@ -20,15 +20,15 @@ import { AppPreloadingStrategy } from './preloading.service';
 import { ThemeServiceService } from './theme-service.service';
 import { CopyRightComponent } from './copyright/copyright.component';
 import { ConceptPage } from './concept/concept.component';
-import { AmexioFloatingPanelComponent } from './floatingpanel/floatingpanel.component';
 import { KeyFeaturesComponent } from './concept/keyfeatures.component';
+import { EventsPanelComponent } from '../app/enterprise/floating-panel-calendar/events-panel/events-panel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CopyRightComponent,
     ConceptPage,
-    AmexioFloatingPanelComponent,
+    EventsPanelComponent,
     KeyFeaturesComponent
   ],
   imports: [
@@ -42,6 +42,8 @@ import { KeyFeaturesComponent } from './concept/keyfeatures.component';
       useHash: true, preloadingStrategy: AppPreloadingStrategy
     }),
   ],
+  entryComponents: [EventsPanelComponent],
+
   providers: [CommonDataService, AppPreloadingStrategy, ThemeServiceService, HTTPService, DeviceQueryService, IconLoaderService, CookieService],
   bootstrap: [AppComponent]
 })
