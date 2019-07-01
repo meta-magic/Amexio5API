@@ -423,10 +423,10 @@ export class AppComponent {
     }
   }
 
-  externalLink(event: any) {
-    if (event.data.node.link)
+  externalLink(event: any, node: any) {
+    if (event.data.link)
       //this.document.location.href=event.data.node.link;
-      window.open(event.data.node.link, '_blank');
+      window.open(event.data.link, '_blank');
   }
 
   homeLink(link: any) {
