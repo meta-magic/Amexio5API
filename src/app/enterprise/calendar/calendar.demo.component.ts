@@ -22,53 +22,53 @@ export class CalendarDemoComponent implements OnInit {
         this.events = [
             {
               "title": "Kubernetes Workshop",
-              "start": "2019-02-25T11:00:00",
-              "end": "2019-03-02T14:00:00"
+              "start": "2019-06-25T11:00:00",
+              "end": "2019-07-02T14:00:00"
             },
             {
               "title": "Microservice Workshop",
-              "start": "2019-02-25T03:00:00",
-              "end": "2019-03-03T06:00:00"
+              "start": "2019-06-25T03:00:00",
+              "end": "2019-07-03T06:00:00"
             },
             {
               "title": "Docker Workshop",
-              "start": "2019-03-07",
-              "end": "2019-03-09"
+              "start": "2019-07-07",
+              "end": "2019-07-09"
             },
             {
               "title": "Kubernetes Workshop",
-              "start": "2019-03-11",
-              "end": "2019-03-12"
+              "start": "2019-07-11",
+              "end": "2019-07-12"
             },
             {
               "title": "Microservice Workshop",
-              "start": "2019-03-13",
-              "end": "2019-03-14"
+              "start": "2019-07-13",
+              "end": "2019-07-14"
             },
             {
               "title": "Docker Workshop",
-              "start": "2019-03-17",
-              "end": "2019-03-18"
+              "start": "2019-07-17",
+              "end": "2019-07-18"
             },
             {
               "title": "Amexio Meetup",
-              "start": "2019-03-25T18:00:00",
-              "end": "2019-03-25T20:00:00"
+              "start": "2019-07-25T18:00:00",
+              "end": "2019-07-25T20:00:00"
             },
             {
               "title": "Angular Event",
-              "start": "2019-03-27T11:25:00",
-              "end": "2019-03-27T12:25:00"
+              "start": "2019-07-27T11:25:00",
+              "end": "2019-07-27T12:25:00"
             },
             {
               "title": "Amexio Meetup",
-              "start": "2019-03-16T11:00:00",
-              "end": "2019-03-16T12:30:00"
+              "start": "2019-07-16T11:00:00",
+              "end": "2019-07-16T12:30:00"
             },
             {
               "title": "Amexio Meetup ",
-              "start": "2019-02-22T18:25:00",
-              "end": "2019-02-22T21:25:00"
+              "start": "2019-06-22T18:25:00",
+              "end": "2019-06-22T21:25:00"
             },
             {
               "title": "121 Conference",
@@ -82,8 +82,8 @@ export class CalendarDemoComponent implements OnInit {
             },
             {
               "title": "All Hands Meeting",
-              "start": "2019-02-28T09:15:00",
-              "end": "2019-02-28T10:15:00"
+              "start": "2019-06-28T09:15:00",
+              "end": "2019-06-28T10:15:00"
             },
             {
               "title": "All Hands Meeting",
@@ -97,12 +97,12 @@ export class CalendarDemoComponent implements OnInit {
             },
             {
               "title": "Technology Conference",
-              "start": "2019-03-05"
+              "start": "2019-07-05"
             },
             {
               "title": "All Hands Meeting",
-              "start": "2019-03-22T09:15:00",
-              "end": "2019-03-22T10:15:00"
+              "start": "2019-07-22T09:15:00",
+              "end": "2019-07-22T10:15:00"
             }
           ];
 

@@ -1071,43 +1071,49 @@ export const MENUCONSTANT = {
 
   CEMENUS: [
     {
-      text: "Layouts",
-      badge: "3",
-      icon: "fa fa-desktop  ",
-      children: [
+      "text": "Layouts",
+      "badge": "3",
+      "icon": "fa fa-desktop  ",
+      "children": [
         {
-          text: "Creative Card",
-          icon: "fa fa-credit-card",
-          link: "creative/card-ce-demo"
-        },
-        {
-          text: "Creative Card With Overlay Effects",
-          icon: "fa fa-id-card",
-          badge: "NEW",
-          link: "creative/card-ce-demo-overlayeffect"
-        },
-        {
-          text: "Creative Card With Flip Effect",
-          icon: "fa fa-map",
-          badge: "NEW",
-          link: "creative/card-ce-demo-flipeffect"
-        },
-        {
-          text: "Creative Card With Zoom Effect",
-          icon: "fa fa-search-plus",
-          badge: "NEW",
-          link: "creative/card-ce-demo-zoomeffect"
-        },
-        {
-          text: "Polaroid Card",
-          icon: "fa fa-image",
-          link: "layout/polaroid-card-demo"
-        },
-        {
-          text: "Ribbon Card",
-          badge: "NEW",
-          icon: "fa fa-camera",
-          link: "creative/ribbon-card-demo"
+          "text": "Cards",
+          "icon": "fa fa-credit-card",
+          "children": [
+            {
+              "text": " Creative Cards",
+              "icon": "fa fa-credit-card",
+              "link": "creative/card-ce-demo"
+            },
+            {
+              "text": "Overlay Effects",
+              "icon": "fa fa-id-card",
+              "badge": "NEW",
+              "link": "creative/card-ce-demo-overlayeffect"
+            },
+            {
+              "text": "Flip Effect",
+              "icon": "fa fa-map",
+              "badge": "NEW",
+              "link": "creative/card-ce-demo-flipeffect"
+            },
+            {
+              "text": "Zoom Effect",
+              "icon": "fa fa-search-plus",
+              "badge": "NEW",
+              "link": "creative/card-ce-demo-zoomeffect"
+            },
+            {
+              "text": "Polaroid Card",
+              "icon": "fa fa-image",
+              "link": "layout/polaroid-card-demo"
+            },
+            {
+              "text": "Ribbon Card",
+              "badge": "NEW",
+              "icon": "fa fa-camera",
+              "link": "creative/ribbon-card-demo"
+            }
+          ]
         }
       ]
     },

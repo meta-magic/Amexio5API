@@ -29,8 +29,8 @@ export class floatingPanelCalendarComponent implements OnInit {
     this.events = [
       {
         "title": "Kubernetes Workshop",
-        "start": "2019-02-25T11:00:00",
-        "end": "2019-03-02T14:00:00",
+        "start": "2019-06-25T11:00:00",
+        "end": "2019-07-02T14:00:00",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "020-78542123",
         "people": [
@@ -43,8 +43,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Microservice Workshop",
-        "start": "2019-02-25T03:00:00",
-        "end": "2019-03-03T06:00:00",
+        "start": "2019-06-25T03:00:00",
+        "end": "2019-07-03T06:00:00",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "020-78542123",
         "people": [
@@ -57,8 +57,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Docker Workshop",
-        "start": "2019-03-07",
-        "end": "2019-03-09",
+        "start": "2019-07-03",
+        "end": "2019-07-05",
         "url": "meet.google.com/izm-ppaa-gns",
         "phone": "020-41025896",
         "people": [
@@ -71,8 +71,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Kubernetes Workshop",
-        "start": "2019-03-11",
-        "end": "2019-03-12",
+        "start": "2019-07-11",
+        "end": "2019-07-12",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "020-78542123",
         "people": [
@@ -85,8 +85,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Microservice Workshop",
-        "start": "2019-03-13",
-        "end": "2019-03-14",
+        "start": "2019-07-13",
+        "end": "2019-07-14",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "+91 9852367410",
         "people": [
@@ -99,8 +99,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Docker Workshop",
-        "start": "2019-03-17",
-        "end": "2019-03-18",
+        "start": "2019-07-17",
+        "end": "2019-07-18",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "9718542123",
         "people": [
@@ -113,8 +113,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Amexio Meetup",
-        "start": "2019-03-25T18:00:00",
-        "end": "2019-03-25T20:00:00",
+        "start": "2019-07-25T18:00:00",
+        "end": "2019-07-25T20:00:00",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "022-852369220",
         "people": [
@@ -127,8 +127,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Angular Event",
-        "start": "2019-03-27T11:25:00",
-        "end": "2019-03-27T12:25:00",
+        "start": "2019-07-27T11:25:00",
+        "end": "2019-07-27T12:25:00",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "9822772686",
         "people": [
@@ -141,8 +141,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Amexio Meetup",
-        "start": "2019-03-16T11:00:00",
-        "end": "2019-03-16T12:30:00",
+        "start": "2019-07-16T11:00:00",
+        "end": "2019-07-16T12:30:00",
         "url": "meet.google.com/izm-imal-gns",
         "phone": "9953225562",
         "people": [
@@ -155,8 +155,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Amexio Meetup ",
-        "start": "2019-02-22T18:25:00",
-        "end": "2019-02-22T21:25:00",
+        "start": "2019-06-22T18:25:00",
+        "end": "2019-06-22T21:25:00",
         "url": "meet.google.com/izm-ass-gns",
         "phone": "07896325000",
         "people": [
@@ -197,8 +197,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "All Hands Meeting",
-        "start": "2019-02-28T09:15:00",
-        "end": "2019-02-28T10:15:00",
+        "start": "2019-06-28T09:15:00",
+        "end": "2019-06-28T10:15:00",
         "url": "meet.google.com/izm-uwnb-gns",
         "phone": "020-78542123",
         "people": [
@@ -253,12 +253,12 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Technology Conference",
-        "start": "2019-03-05"
+        "start": "2019-07-05"
       },
       {
         "title": "All Hands Meeting",
-        "start": "2019-03-22T09:15:00",
-        "end": "2019-03-22T10:15:00",
+        "start": "2019-07-22T09:15:00",
+        "end": "2019-07-22T10:15:00",
         "url": "meet.google.com/izm-yusl-gns",
         "phone": "020-711442123",
         "people": [
@@ -339,8 +339,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Amexio Meetup",
-        "start": "2019-03-13T11:00:00",
-        "end": "2019-03-14T12:30:00",
+        "start": "2019-07-13T11:00:00",
+        "end": "2019-07-14T12:30:00",
         "url": "meet.yahoo.com/izm-imal-gns",
         "phone": "852-1284511541",
         "people": [
@@ -353,8 +353,8 @@ export class floatingPanelCalendarComponent implements OnInit {
       },
       {
         "title": "Amexio Meetup ",
-        "start": "2019-03-13T18:25:00",
-        "end": "2019-03-13T21:25:00",
+        "start": "2019-07-13T18:25:00",
+        "end": "2019-07-13T21:25:00",
         "url": "meet.google.com/poa-imal-gns",
         "phone": "022-78542123",
         "people": [
