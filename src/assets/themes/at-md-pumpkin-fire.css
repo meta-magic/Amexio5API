@@ -1365,6 +1365,15 @@ button {
   background-color: var(--componentHoverBGColor);
   color: var(--componentHoverFontColor); }
 
+.dropdown-list::-webkit-scrollbar-track {
+  background-color: var(--componentDisabledBGColor); }
+
+.dropdown-list::-webkit-scrollbar {
+  background-color: var(--componentDisabledBGColor); }
+
+.dropdown-list::-webkit-scrollbar-thumb {
+  background-color: var(--componentHeaderBGColor); }
+
 /** dropdown - Structure CSS **/
 .dropdown {
   display: block;
@@ -3379,6 +3388,9 @@ input:checked + .largeType2ToggleSlider:before {
 
 .menu-right {
   right: 10px; }
+
+.dropdown-list::-webkit-scrollbar {
+  width: 6px; }
 
 /*****************************************************************************
  Component Name : Toolbar
