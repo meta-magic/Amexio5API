@@ -24,7 +24,7 @@ before_script:
 script: 
   - npm install
   - npm i https://github.com/meta-magic/d3-charts-tar/blob/v1.1/amexio-chart-d3.tgz?raw=true
-  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.15/amexio-ng-extensions.tgz?raw=true
+  - npm i https://github.com/meta-magic/amexio-ios/blob/v5.16/amexio-ng-extensions.tgz?raw=true
   - rm -rf src/assets/themes/*
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.css src/assets/themes/
   - cp -rf node_modules/amexio-ng-extensions/styles/css/*.png src/assets/themes/
@@ -33,12 +33,12 @@ after_success:
   - codecov
   - git add src/assets/themes
   - git commit -m "[skip travis]  themes-updated"
-  - git push  "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.15
+  - git push  "https://deepali-arvind:${TOKEN_REPO}@github.com/${REPO}.git" HEAD:v5.16
   - git clone https://github.com/meta-magic/amexio-api-website-test.git
-  - rm -rf amexio-api-website-test/api/v5.15/*
-  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.15/
+  - rm -rf amexio-api-website-test/api/v5.16/*
+  - cp -rf /home/travis/build/meta-magic/Amexio5API/dist/* amexio-api-website-test/api/v5.16/
   - cd amexio-api-website-test/
-  - git add api/v5.15/
+  - git add api/v5.16/
   - git commit -m "${COMMIT}"
   - if [ "$TRAVIS_PULL_REQUEST" = "false" ]; then git push "https://deepali-arvind:${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master; fi
 cache:
