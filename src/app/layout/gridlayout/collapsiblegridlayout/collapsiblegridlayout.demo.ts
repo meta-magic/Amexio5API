@@ -45,9 +45,9 @@ export class CollapsibleGridLayoutDemo implements OnInit {
   createLayouts() {
 
     this.gridDesktop1 = new GridConfig('collapsiblegridlayoutdemo1', GridConstants.Desktop)
-      .addlayout(["eastblock", "centertopblock", "centertopblock", "centertopblock", "centertopblock", "westblock"])
-      .addlayout(["eastblock", "centerbottomblock", "centerbottomblock", "centerbottomblock", "centerbottomblock", "westblock"]);
-     
+      .addlayout(["west", "centertopblock", "centertopblock", "centertopblock", "centertopblock", "east"])
+      .addlayout(["west", "centerbottomblock", "centerbottomblock", "centerbottomblock", "centerbottomblock", "east"]);
+
 
     this.gridDesktop2 = new GridConfig('collapsiblegridlayoutdemo2', GridConstants.Desktop)
       .addlayout(["west", "north", "north", "north", "north", "east"])
