@@ -11,8 +11,24 @@ import {RestCallService} from "../../apimetadata/services/restcall.service";
 export class bannerDemo implements OnInit{
   copyMsgArray: any[];
   comData: any;
+  topMenuData: any;
   tempData: any;
-  constructor(private _rCService: RestCallService) {}
+  constructor(private _rCService: RestCallService) {
+    this.topMenuData = JSON.parse(`[
+      {
+      "text": "About Us",
+      "submenus": [{
+        "text": "Amexio Canvas",
+        "link": "https://amexio.tech/amexio-canvas"
+         
+      }, {
+        "text": "Amexio Themes",
+        "link": "https://amexio.tech/amexio-themes"
+      }]
+    }
+  ]
+  `);
+  }
 
   ngOnInit(): void {
    this.getComponentData();
@@ -41,6 +57,10 @@ export class bannerDemo implements OnInit{
     } else {
       this.copyMsgArray.push({'msg': 'Code Copied', 'type': 'info'});
     }
+  }
+
+  onClick(event: any) {
+
   }
 }
 

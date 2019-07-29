@@ -16,6 +16,7 @@ export class CardFormDemo implements OnInit {
 
   copyMsgArray: any[];
   flag: boolean;
+  countryCode1: any;
   rightclickdata: any;
   customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {

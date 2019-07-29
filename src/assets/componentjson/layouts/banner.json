@@ -1,6 +1,6 @@
 {
   "title": "Amexio Banner",
-  "description": "Amexio Banner can be easily use in navbar with auto diss-miss and closeble functionality.",
+  "description": "Amexio Banner can be easily use in navbar with auto dismiss and closeble functionality.",
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-banner>",
@@ -65,7 +65,7 @@
         },
         {
           "name": "interval",
-          "description": "interval to the banner which is diss-miss after some interval in sec.",
+          "description": "interval to the banner which is dismiss after some interval in sec.",
           "version": "5.13 onwards",
           "type": "string",
           "default": ""

@@ -1,4 +1,3 @@
-import { ColorPaletteDemo } from "./color-palette";
 import { NgModule } from "@angular/core";
 import { RouterModule } from "@angular/router";
 import { AmexioWidgetModule } from "amexio-ng-extensions";
@@ -14,9 +13,9 @@ import * as d3 from 'd3';
  * Created by kedar on 21/09/18.
  */
 @NgModule({
-  declarations: [ColorPaletteDemo],
+  declarations: [],
   imports: [CommonModule, FormsModule, HttpClientModule, SharedModule, AmexioWidgetModule, RouterModule.forChild([{
-    path: '', component: ColorPaletteDemo, pathMatch: 'full'
+    path: ''
   }]), AmexioChartD3Module],
   providers: []
 })

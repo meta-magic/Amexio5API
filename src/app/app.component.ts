@@ -455,7 +455,7 @@ export class AppComponent {
     this.themeServiceService.getColorCode(event);
   }
 
-  onHomeIconClick(event: any) {
+  onHomeIconClick() {
     window.open("https://amexio.tech/", "_blank");
   }
 }

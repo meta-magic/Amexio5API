@@ -14,6 +14,7 @@ export class DropDownDemo implements OnInit {
   copyMsgArray: any[];
   countryCode1:string;
   personName:string;
+  fruitName: string;
 
   customSourceData: ComponentDataStructure;
   constructor() {

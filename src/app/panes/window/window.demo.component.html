@@ -202,7 +202,7 @@
           </amexio-column>
           <amexio-column [size]="3">
             <amexio-button type="red" (onClick)="toggleClosable('material')" label="Closable Window"></amexio-button>
-            <amexio-window [footer]="true" [(show)]="showClosableMaterial" [close-on-escape]="false" [material-design]="true" [width]="auto"
+            <amexio-window [footer]="true" [(show)]="showClosableMaterial" [close-on-escape]="false" [material-design]="true" [width]="'auto'"
               [closable]="true">
               <amexio-header>
                 Employee Form
@@ -297,7 +297,7 @@
           <amexio-column [size]="3">
             <amexio-button type="red" (onClick)="toggleDraggableWindow('material')" label="Draggable Window">
             </amexio-button>
-            <amexio-window [footer]="true" [draggable]="true" [remember-window-position]="true" [width]="auto"
+            <amexio-window [footer]="true" [draggable]="true" [remember-window-position]="true" [width]="'auto'"
               [(show)]="showBasicDraggableWindowMaterial" [close-on-escape]="false" [material-design]="true"
               [closable]="true">
               <amexio-header>
@@ -594,7 +594,7 @@
           <amexio-column [size]="3">
             <amexio-button type="red" (onClick)="toggleClosable('nonmaterial')" label="Closable Window"></amexio-button>
             <amexio-window [(show)]="showClosableNonMaterial" [footer]="true" [close-on-escape]="false" [material-design]="false"
-              [closable]="true" [width]="auto">
+              [closable]="true" [width]="'auto'">
               <amexio-header>
                   <div>
                     <amexio-label size="small">
@@ -710,10 +710,10 @@
               </amexio-header>
               <amexio-body>
                 <amexio-box background-color="blue" [padding]="true">
-                  <amexio-label [badge]="badge" size="small">
+                  <amexio-label size="small">
                     Renaming a user is a system-wide change that can take up to 10 minutes.
                   </amexio-label><br><br>
-                  <amexio-label [badge]="badge" size="small">
+                  <amexio-label size="small">
                     Araf Karsh doesnt need to take action and wont see any account profile or Google+ profile changes.
                   </amexio-label>
                 </amexio-box>

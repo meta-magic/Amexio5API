@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
 export class FieldSetDemoComponent  {
  
   copyMsgArray: any[];
+  countryCode1: any;
   constructor() {
   }
  
