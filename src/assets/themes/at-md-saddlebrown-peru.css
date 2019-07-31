@@ -8120,7 +8120,6 @@ fieldset {
 .tabcontent {
   width: inherit;
   position: relative;
-  padding: 10px 5px;
   color: var(--componentFontColor); }
 
 .tabcontent::-webkit-scrollbar-track {
@@ -8167,11 +8166,11 @@ fieldset {
 
 .verticalnavtab-left {
   font-weight: bold;
-  width: auto; }
+  width: max-content; }
 
 .verticalnavtab-right {
   font-weight: bold;
-  width: auto; }
+  width: max-content; }
 
 .verticalalign-tableft {
   border-right: 1px solid #ced4da !important; }
