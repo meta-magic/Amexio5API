@@ -22,6 +22,8 @@ export class WindowDemoComponent {
   showClosableNonMaterial: boolean;
   showDraggableNonMaterial: boolean;
 
+  showBasicMinimizeWindowMaterial: boolean;
+
 
   htmlCode: string;
   typeScriptCode: string;
@@ -106,6 +108,11 @@ export class WindowDemoComponent {
       this.showDraggableNonMaterial =! this.showDraggableNonMaterial;
     }
     
+  }
+  toggleMinimizeWindow(data: any) {
+    if (data == 'material') {
+      this.showBasicMinimizeWindowMaterial = !this.showBasicMinimizeWindowMaterial;
+    }
   }
  
 }

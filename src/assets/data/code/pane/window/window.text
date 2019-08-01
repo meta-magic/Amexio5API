@@ -10,6 +10,8 @@ export class WindowDemoComponent {
   showClosableMaterial: boolean;
   showClosableNonMaterial: boolean;
 
+  showBasicMinimizeWindowMaterial: boolean;
+
   rightclickdata: any;
   constructor() {
      this.rightclickdata = [
@@ -56,6 +58,11 @@ toggleBasicWindow(data: any) {
     }
     else {
       this.showClosableNonMaterial = !this.showClosableNonMaterial;
+    }
+  }
+    toggleMinimizeWindow(data: any) {
+    if (data == 'material') {
+      this.showBasicMinimizeWindowMaterial = !this.showBasicMinimizeWindowMaterial;
     }
   }
 
