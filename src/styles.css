@@ -287,25 +287,27 @@ fill: #17bf3c;
  .card-img-center {     position: absolute;
     right: 35%;
   }
-
-
-
-  .side-nav-with-tab{
-    display: block;
+  .sidenavTemp > div > div{
+    margin: 0px -20px;
+    width: 108%;
   }
+
+  /* .side-nav-with-tab{
+    display: block;
+  } */
 
   .side-nav-with-tab .panel {
     padding: 0px;
     overflow-y: hidden!important;
   }
 
-  .side-nav-with-tab > li{
+  /* .side-nav-with-tab > li{
     padding-left: 0px !important;
   }
 
   .side-nav-with-tab > li > div{
     padding-right: 0px !important;
-  }
+  } */
 
   .api-header-style .box-content{
     margin: -20px -100%;
