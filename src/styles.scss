@@ -300,27 +300,28 @@ amexio-theme-switcher .card-container {
 // .side-nav-with-tab > li > div{
 //   padding-right: 0px !important;
 // }
-.side-nav-with-tab {
-    display: block;
-}
+// .side-nav-with-tab {
+//     display: block;
+// }
 
 .side-nav-with-tab .panel {
     padding: 0px;
     overflow-y: hidden!important;
 }
 
-.side-nav-with-tab>li {
-    padding-left: 0px !important;
-}
+// .side-nav-with-tab>li {
+//     padding-left: 0px !important;
+// }
 
-.side-nav-with-tab>li>div {
-    padding-right: 0px !important;
-}
+// .side-nav-with-tab>li>div {
+//     padding-right: 0px !important;
+// }
 
 .sidenavTemp > div > div{
-    margin: 0px -20px
+    margin: 0px -20px;
+    width: 108%;
   }
-  
+
 .api-header-style .box-content {
     margin: -20px -100%;
     padding: 20px 100%;
