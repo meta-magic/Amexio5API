@@ -7377,7 +7377,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   margin-top: 0px !important;
   height: 120%;
   padding-left: 8px;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 8px;
   border-left: 1px solid #797575; }
 
@@ -7387,7 +7387,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   margin-top: 0px;
   padding-left: 8px;
   height: 120%;
-  padding-top: 12px;
+  padding-top: 8px;
   padding-bottom: 8px;
   border-left: 1px solid #f7f3f3; }
 
@@ -7413,7 +7413,6 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   outline: none; }
 
 .arrow-group-css:focus {
-  background: var(--componentHoverBGColor);
   outline: none; }
 
 .label-icon-css:focus {
