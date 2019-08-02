@@ -8197,7 +8197,6 @@ fieldset {
   align-content: center; }
 
 .activecolortab {
-  background: var(--componentHoverBGColor);
   border-bottom: 3px solid var(--componentActiveBGColor) !important; }
 
 .activebgcolortab {
