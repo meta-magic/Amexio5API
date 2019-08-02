@@ -100,6 +100,10 @@ export class AppComponent {
               "separator": true,
               "submenus": [
                 {
+                  "text": "Version 5.16",
+                  "link": "../v5.16/index.html"
+                },
+                {
                   "text": "Version 5.15",
                   "link": "../v5.15/index.html"
                 },
