@@ -156,7 +156,7 @@
                 },
                 {
                     "name": "minimize",
-                    "description": "User can minimize the window to full screen.",
+                    "description": "User can minimize the window screen.",
                     "version": "5.18 onwards",
                     "type": "boolean",
                     "default": "false"
