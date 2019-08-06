@@ -153,6 +153,13 @@
                     "version": "5.14 onwards",
                     "type": "boolean",
                     "default": ""
+                },
+                {
+                    "name": "minimize",
+                    "description": "User can minimize the window to full screen.",
+                    "version": "5.18 onwards",
+                    "type": "boolean",
+                    "default": "false"
                 }
             ]
         },

@@ -214,3 +214,35 @@
         <amexio-button type="success" label="More Details"></amexio-button>
     </amexio-action-ce>
 </amexio-window-ce>
+
+<!-- Minimize-Window Demo -->
+
+<amexio-window-ce [minimize]="true" [remember-window-position]="true" [(show)]="showSideModal2" [horizontal-position]="'center'"
+    [vertical-position]="'center'" width="400px" align="start">
+    <amexio-header-ce align="left" vertical-align="top">
+        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+            <amexio-layout-item>
+                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
+            </amexio-layout-item>
+            <amexio-layout-item>
+                <amexio-label size="medium-bold">BMW G 310 R</amexio-label>
+            </amexio-layout-item>
+        </amexio-layout-columns>
+    </amexio-header-ce>
+    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg"></amexio-image>
+    <amexio-body-ce>
+        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'-44px'" [left]="'0px'">
+            <amexio-label>Photos</amexio-label>
+        </amexio-badge>
+        <p>
+            The G 310 R and G 310 GS are the two small-capacity motorcycles that were
+            supposed to help BMW Motorrad garner the figures
+            for growth that it projected.The 310 twins will not be about numbers, but
+            about
+            quality – something that BMW Motorrad is known for in markets globally.
+        </p>
+    </amexio-body-ce>
+    <amexio-action-ce>
+        <amexio-button type="success" label="More Details"></amexio-button>
+    </amexio-action-ce>
+</amexio-window-ce>

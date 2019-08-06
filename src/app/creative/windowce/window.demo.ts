@@ -15,6 +15,7 @@ export class CreativeWindowDemo {
    showInfoModal:boolean;
    showFrameWindow:boolean;
    showSideModal2: boolean;
+   minimizeWindow: boolean;
    constructor() {
      
  }
@@ -38,6 +39,9 @@ export class CreativeWindowDemo {
   }
   onResizeWindowClick() {
     this.showSideModal2 =! this.showSideModal2;
+  }
+  onMinimizeWindowClick() {
+    this.minimizeWindow = !this.minimizeWindow;
   }
 } 
 
