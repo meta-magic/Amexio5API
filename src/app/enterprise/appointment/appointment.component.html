@@ -25,7 +25,7 @@
         <amexio-card header="true">
             <amexio-header> Appointment Demo: Multi Select Date </amexio-header>
             <amexio-body>
-                <amexio-ee-appointment [height]="'200px'" [date]="date" [multi-select]="true" (onMultiSelect)="onMultiSelect($event)" [start-time]="12"
+                <amexio-ee-appointment amexioThemeStyle [theme-style]="'round-edge'"  [height]="'200px'" [date]="date" [multi-select]="true" (onMultiSelect)="onMultiSelect($event)" [start-time]="12"
                     [end-time]="17" [available-slots]="multipleAvailableslots">
                 </amexio-ee-appointment>
             </amexio-body>

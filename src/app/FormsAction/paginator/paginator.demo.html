@@ -15,7 +15,7 @@
             Paginator with page size 10
           </amexio-header>
           <amexio-body>
-            <amexio-paginator [pages]="50"
+            <amexio-paginator amexioThemeStyle [theme-style]="'round-edge'" [pages]="50"
                               [rows]="10"
                               (onPageChange)="loadPageData($event)">
             </amexio-paginator>

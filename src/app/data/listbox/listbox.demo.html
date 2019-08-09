@@ -17,7 +17,7 @@
             Simple List Box
           </amexio-header>
           <amexio-body>
-            <amexio-listbox [enable-checkbox]="true" [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
+            <amexio-listbox amexioThemeStyle [theme-style]="'round-edge'" [enable-checkbox]="true" [height]="400" [header]="'Contacts'" [search-placeholder]="'Search Contacts'"
               [data]="localData1" [filter]="true" [data-reader]="'response.data'" [display-field]="'name_official'"
               (selectedRows)="getSelectedData($event)">
             </amexio-listbox>

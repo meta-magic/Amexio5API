@@ -121,7 +121,6 @@ export class CalendarDemoComponent implements OnInit {
     
     onEventClicked(event: any) {
         this.eventobject = event.this;
-        console.log(event);
     }
 
     setCalendarDate() {

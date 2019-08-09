@@ -69,7 +69,6 @@ export class ColorPaletteDemo implements OnInit {
                         let themeColor = response.themeColor;
                         data.forEach(element => {
                                 this.themeServiceService.themeColorData.subscribe((theme: any) => {
-                                        console.log("theme", theme)
                                         if (theme && theme.length > 0) {
                                                 if (element.colorpalette === 'amexio-theme-color1') {
                                                         element.actualColor.bgColor = theme[1].value;

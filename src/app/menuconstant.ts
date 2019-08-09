@@ -22,7 +22,12 @@ export const MENUCONSTANT = {
     {text:"Input Mask",
     icon:"fa fa-file-text-o",
     badge: "NEW",
-    link:"directive-demo/input-mask"}
+    link:"directive-demo/input-mask"},
+
+    {text:"Round Edge",
+    icon:"fa fa-square-o",
+    badge: "NEW",
+    link:"directive-demo/round-edge"}
   ],
 
   EEMENUS: [
