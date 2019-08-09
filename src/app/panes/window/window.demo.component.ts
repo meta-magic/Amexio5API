@@ -23,6 +23,8 @@ export class WindowDemoComponent {
   showDraggableNonMaterial: boolean;
 
   showBasicMinimizeWindowMaterial: boolean;
+  showBasicMinimizeSecondWindowMaterial: boolean;
+
 
 
   htmlCode: string;
@@ -112,6 +114,11 @@ export class WindowDemoComponent {
   toggleMinimizeWindow(data: any) {
     if (data == 'material') {
       this.showBasicMinimizeWindowMaterial = !this.showBasicMinimizeWindowMaterial;
+    }
+  }
+  toggleMinimizeSecondWindow(data: any) {
+    if (data == 'material') {
+      this.showBasicMinimizeSecondWindowMaterial = !this.showBasicMinimizeSecondWindowMaterial;
     }
   }
  
