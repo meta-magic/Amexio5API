@@ -323,6 +323,38 @@
                                     </amexio-action-ce>
                                 </amexio-window-ce>
                             </amexio-column>
+                            <amexio-column size="4">
+                                <amexio-button type="theme-color" (onClick)="onMinimizeCEClick()" label="Minimize window demo"></amexio-button>
+                                <amexio-window-ce [minimize]="true" [remember-window-position]="true" [(show)]="minimizeCeDemo"
+                                    [horizontal-position]="'center'" [vertical-position]="'center'" width="400px" align="start">
+                                    <amexio-header-ce align="left" vertical-align="top">
+                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+                                            <amexio-layout-item>
+                                                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/ferrari-logo.jpg"></amexio-image>
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-label size="medium-bold">Ferrari Bike</amexio-label>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                    </amexio-header-ce>
+                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/ferrari.jpg"></amexio-image>
+                                    <amexio-body-ce>
+                                        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'"
+                                            [top]="'-44px'" [left]="'0px'">
+                                            <amexio-label>Photos</amexio-label>
+                                        </amexio-badge>
+                                        <p>
+                                            For the past 17 years, a British collector has been keeping the world's only Ferrari motorbike,
+                                            a Ferrari 900, on display "as a work of art" in his home, the bike, constructed form scratch, has a 900cc engine.
+                                             It can go from 0 to 60 mph in less than three seconds. And if you wanted to, you could do 160 mph.
+                                            
+                                        </p>
+                                    </amexio-body-ce>
+                                    <amexio-action-ce>
+                                        <amexio-button type="success" label="More Details"></amexio-button>
+                                    </amexio-action-ce>
+                                </amexio-window-ce>
+                            </amexio-column>
                         </amexio-row>
                     </amexio-body>
                 </amexio-card>
