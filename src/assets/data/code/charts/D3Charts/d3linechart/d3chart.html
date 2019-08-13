@@ -43,3 +43,11 @@
                       [data]="dailystatData" 
                       [label]="true">
 </amexio-d3-chart-line>
+
+<!-- D3-line without xaxis interval -->
+<amexio-d3-chart-line (onChartClick)="onLineChart6Click($event)" 
+                      (onLegendClick)="onLineLegend6Click($event)" 
+                      [title]="'S&P Corp'"
+                      [data]="stockData"
+                      [color]="stockLineColor">
+</amexio-d3-chart-line>

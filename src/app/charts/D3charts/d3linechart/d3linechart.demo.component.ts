@@ -13,13 +13,16 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
   userDataSource3: any;
   userDataSource4: any;
   userDataSource5: any;
+  userDataSource6: any;
 
   singlelinedata: any;
   lineData: any;
   climateData: any;
   dailystatData: any;
+  stockData: any;
   dailyStatLinecolor = ["#004d4d"];
   climateDataLineColor = ["#b30059"]; 
+  stockLineColor = ["#004080"];
   constructor() {
     this.singlelinedata = [[{"datatype":"number","label":"Day"},{"datatype":"number","label":"CNX Resources Corp"}],[0,0],[1,10],[2,23],[3,17],[4,18],[5,9],[6,11],[7,27],[8,33],[9,40],[10,32],[11,35],[12,30],[13,40],[14,42],[15,47],[16,44],[17,48],[18,52],[19,54],[20,42],[21,55],[22,56],[23,57],[24,60],[25,50],[26,52],[27,51],[28,49]]
   
@@ -50,6 +53,15 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
  
 ];
 
+this.stockData  =  [[{"datatype":"number","label":"Day"},{"datatype":"number","label":"S&P Corp"}],
+  [0,0],[1,10],[2,23],[3,17],[4,18],[5,9],[6,11],[7,27],[8,33],
+  [9,40],[10,32],[11,35],[12,30],[13,40],[14,42],[15,47],[16,44],[17,48],[18,52],
+  [19,54],[20,42],[21,55],[22,56],[23,57],[24,60],[25,50],[26,52],[27,51],[28,49],
+
+  [29,50],[30,20],[31,23],[32,17],[33,18],[34,9],[35,11],[36,27],[37,33],
+  [38,40],[39,32],[40,35],[41,30],[42,40],[43,42],[44,47],[45,44],[46,48],[47,52],
+  [48,54],[49,42],[50,55],[51,56],[52,57],[53,60],[54,50],[55,52],[56,51],[57,49]
+   ];
 
   }
 
@@ -91,11 +103,19 @@ export class AmexioD3LineChartDemoComponent implements OnInit {
     this.userDataSource5 = event;
   }
 
+  onLineChart6Click(event: any) {
+    this.userDataSource6 = event;
+  }
+
   onLineLegend4Click(event: any) {
     this.userDataSource4 = event;
   }
 
   onLineLegend5Click(event: any) {
     this.userDataSource5 = event;
+  }
+
+  onLineLegend6Click(event: any) {
+    this.userDataSource6 = event;
   }
 }
