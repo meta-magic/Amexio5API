@@ -7,6 +7,10 @@ export class AmexioD3LineChartDemoComponent
   sourceData: any;
   userDataSource: any;
   userDataSource3: any;
+  userDataSource4: any;
+  userDataSource5: any;
+  dailyStatLinecolor = ["#004d4d"];
+  climateDataLineColor = ["#b30059"];
 
   constructor() { 
     this.singlelinedata = [
@@ -81,6 +85,86 @@ export class AmexioD3LineChartDemoComponent
                      [3,17,9],
                      [4,18,10]
                     ];  
+
+    this.climateData = [
+                        [
+                          {"datatype":"number","label":"Day"},
+                          {"datatype":"number","label":"Temperature"}
+                        ],
+                        [0,0],
+                        [1,10],
+                        [2,23],
+                        [3,17],
+                        [4,18],
+                        [5,9],
+                        [6,11],
+                        [7,27],
+                        [8,33],
+                        [9,40],
+                        [10,32],
+                        [11,35],
+                        [12,30],
+                        [13,40],
+                        [14,42],
+                        [15,47],
+                        [16,44],
+                        [17,48],
+                        [18,52],
+                        [19,54],
+                        [20,42],
+                        [21,55],
+                        [22,56],
+                        [23,57],
+                        [24,60],
+                        [25,50],
+                        [26,52],
+                        [27,51],
+                        [28,49],
+                        [29,10],
+                        [30,16],
+                        [31,20],
+                        [32,15],
+                        [33,28],
+                        [34,9],
+                        [35,19],
+                        [36,20],
+                        [37,22],
+                        [38,23],
+                        [39,24],
+                        [40,25],
+                        [41,20],
+                        [42,30],
+                        [43,32],
+                        [44,22],
+                        [45,34],
+                        [46,28],
+                        [47,36],
+                        [48,38],
+                        [49,42],
+                        [50,40],
+                        [51,44],
+                        [52,46],
+                        [53,44],
+                        [54,48],
+                        [55,52],
+                        [56,55],
+                        [57,59]
+                 ];
+
+  this.dailystatData = [
+                        [
+                          {"datatype":"number","label":"Day"},
+                          {"datatype":"number","label":"Working Hours"},
+                          {"datatype": "string", "label": "Weekday"}
+                        ],
+                        [0 ,0, 'Sun'],
+                        [1 ,9, 'Mon'],
+                        [2 ,10,'Tue'],
+                        [3 ,7,'Wed'],
+                        [4,12, 'Thu'],
+                        [5,10, 'Fri'],
+                        [6,14, 'Sat']
+                      ];
 }
 
 onDefaultLegendClick(event: any) {
@@ -105,5 +189,21 @@ onDefaultLegendClick(event: any) {
 
   onLineChartClick(event: any) {
     this.userDataSource3 = event;
+  }
+
+   onLineChart4Click(event: any) {
+    this.userDataSource4 = event;
+  }
+
+  onLineChart5Click(event: any) {
+    this.userDataSource5 = event;
+  }
+
+  onLineLegend4Click(event: any) {
+    this.userDataSource4 = event;
+  }
+
+  onLineLegend5Click(event: any) {
+    this.userDataSource5 = event;
   }
 }

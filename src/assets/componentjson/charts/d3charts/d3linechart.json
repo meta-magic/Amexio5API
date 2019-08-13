@@ -160,6 +160,27 @@
           "version": "0.1.2 Onwards",
           "type": "number",
           "default": ""
+        },
+        {
+          "name": "xaxis-interval",
+          "description": "Sets number of intervals on X-axis",
+          "version": "0.1.9 Onwards",
+          "type": "number",
+          "default": ""
+        },
+        {
+          "name": "display-field",
+          "description": "Sets specific column as display field on x axis",
+          "version": "0.1.9 Onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "rotate",
+          "description": "Rotates x axis labels",
+          "version": "0.1.9 Onwards",
+          "type": "boolean",
+          "default": "false"
         }
       ]
     },

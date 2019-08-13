@@ -24,3 +24,22 @@
                       [label-color] = "'brown'"
                       [yaxis-interval] = "5">
 </amexio-d3-chart-line>
+<!-- D3-line with Xaxis interval -->
+<amexio-d3-chart-line (onChartClick)="onLineChart4Click($event)" 
+                      (onLegendClick)="onLineLegend4Click($event)"
+                      [title]="'Climate Teperature Report'" 
+                      [color] = "climateDataLineColor" 
+                      [data]="climateData" 
+                      [xaxis-interval]="3">
+</amexio-d3-chart-line>
+
+<!-- D3-line with rotate and display field -->
+<amexio-d3-chart-line (onChartClick)="onLineChart5Click($event)" 
+                      (onLegendClick)="onLineLegend5Click($event)"
+                      [title]="'Daily Statistics'" 
+                      [color]="dailyStatLinecolor" 
+                      [display-field]="'Weekday'" 
+                      [rotate]="true" 
+                      [data]="dailystatData" 
+                      [label]="true">
+</amexio-d3-chart-line>
