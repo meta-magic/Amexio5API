@@ -327,7 +327,7 @@
                                 <amexio-button type="theme-color" (onClick)="onMinimizeCEClick()" label="Minimize window demo"></amexio-button>
                                 <amexio-window-ce [minimize]="true" [remember-window-position]="true" [(show)]="minimizeCeDemo"
                                     [horizontal-position]="'center'" [vertical-position]="'center'" width="400px" align="start">
-                                    <amexio-header-ce align="left" vertical-align="top">
+                                    <amexio-header-ce [minimized-icon]="'fa fa-motorcycle'" align="left" vertical-align="top">
                                         <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
                                             <amexio-layout-item>
                                                 <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/ferrari-logo.jpg"></amexio-image>

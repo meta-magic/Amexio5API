@@ -386,7 +386,7 @@
             <amexio-window amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [body-height]="40"
               [(show)]="showBasicMinimizeWindowMaterial" [minimize]='true' [close-on-escape]="true"
               [material-design]="true" [width]="'auto'" [footer]="true">
-              <amexio-header>
+              <amexio-header  >
                 Employee Form
               </amexio-header>
               <amexio-body>
@@ -475,8 +475,8 @@
             <amexio-window amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [body-height]="40"
               [(show)]="showBasicMinimizeSecondWindowMaterial" [minimize]='true' [close-on-escape]="true"
               [material-design]="true" [width]="'auto'" [footer]="true">
-              <amexio-header>
-                Employee Form 1
+              <amexio-header [minimized-icon]="'fa fa-file'">
+                Employee Form 1 
               </amexio-header>
               <amexio-body>
                 <amexio-row>

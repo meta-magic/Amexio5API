@@ -258,6 +258,13 @@
                     "default": "",
                     "version": "5.8 onwards",
                     "description": "sets icon alignment"
+                },
+                {
+                    "name": "minimized-icon",
+                    "type": "string",
+                    "default": "",
+                    "version": "5.18 onwards",
+                    "description": "sets icon to the minimize button"
                 }
             ]
         },
