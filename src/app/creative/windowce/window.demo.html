@@ -7,7 +7,8 @@
                     <amexio-body>
                         <amexio-row>
                             <amexio-column [size]="4">
-                                <amexio-button type="success" (onClick)="onSideModalClick()" label="Side Modal"></amexio-button>
+                                <amexio-button type="success" (onClick)="onSideModalClick()" label="Side Modal">
+                                </amexio-button>
                                 <amexio-window-ce position-top="100px" [horizontal-position]="'left'"
                                     [vertical-position]="'top'" [(show)]="showSideModal" width="400px">
                                     <amexio-header-ce amexioColorPalette [color-palette]="'amexio-theme-color6'"
@@ -35,11 +36,14 @@
 
                                     </amexio-body-ce>
                                     <amexio-action-ce [align]="'center'" [border-top]="true">
-                                        <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
+                                        <amexio-floating-button [relative]="true" [type]="'red'"
+                                            [icon]="'fa fa-google-plus'">
                                         </amexio-floating-button>
-                                        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
+                                        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'"
+                                            [icon]="'fa fa-facebook'">
                                         </amexio-floating-button>
-                                        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
+                                        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'"
+                                            [icon]="'fa fa-linkedin'">
                                         </amexio-floating-button>
                                     </amexio-action-ce>
                                 </amexio-window-ce>
@@ -52,20 +56,24 @@
                                 </amexio-row>
                             </amexio-column>
                             <amexio-column size="4">
-                                <amexio-button type="success" (onClick)="onCenterModalClick()" label="Center Modal"></amexio-button>
+                                <amexio-button type="success" (onClick)="onCenterModalClick()" label="Center Modal">
+                                </amexio-button>
                                 <amexio-window-ce [(show)]="showCenterModal" [horizontal-position]="'center'"
                                     [vertical-position]="'center'" width="400px" align="start">
                                     <amexio-header-ce align="left" vertical-align="top">
-                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'"
+                                            [border]="false">
                                             <amexio-layout-item>
-                                                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
+                                                <amexio-image width="40px" height="40px" [filter]="'round'"
+                                                    path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
                                             </amexio-layout-item>
                                             <amexio-layout-item>
                                                 <amexio-label size="medium-bold">BMW G 310 R</amexio-label>
                                             </amexio-layout-item>
                                         </amexio-layout-columns>
                                     </amexio-header-ce>
-                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg"></amexio-image>
+                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg">
+                                    </amexio-image>
                                     <amexio-body-ce>
                                         <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'"
                                             [top]="'-44px'" [left]="'0px'">
@@ -92,11 +100,12 @@
                                 </amexio-row>
                             </amexio-column>
                             <amexio-column [size]="'4'">
-                                <amexio-button type="success" (onClick)="onloginWindowClick()" label="Login Modal"></amexio-button>
+                                <amexio-button type="success" (onClick)="onloginWindowClick()" label="Login Modal">
+                                </amexio-button>
                                 <amexio-window-ce [(show)]="showLoginWindow" [horizontal-position]="'right'"
                                     [vertical-position]="'top'" width="350px" align="center">
-                                    <amexio-header-ce [background]="'linear-gradient(40deg,#40E0D0, #FF0080)'" [height]="'50px'"
-                                        align="center" vertical-align="top">
+                                    <amexio-header-ce [background]="'linear-gradient(40deg,#40E0D0, #FF0080)'"
+                                        [height]="'50px'" align="center" vertical-align="top">
                                         <amexio-image width="100px" [c-class]="'card-img-center'" height="100px"
                                             [filter]="'round'" path="assets/images/profile/dipali.jpg"></amexio-image>
 
@@ -108,7 +117,8 @@
                                             Deepali Arvind
                                         </amexio-label>
                                         <br><br>
-                                        <amexio-password-input [place-holder]="'Please enter password'" [allow-blank]="false">
+                                        <amexio-password-input [place-holder]="'Please enter password'"
+                                            [allow-blank]="false">
                                         </amexio-password-input>
                                     </amexio-body-ce>
                                     <amexio-action-ce [align]="'center'" [border-top]="true">
@@ -128,23 +138,27 @@
                         </amexio-row>
                         <amexio-row>
                             <amexio-column size="4">
-                                <amexio-button type="success" (onClick)="showInfoModalClick()" label="Info Modal"></amexio-button>
-                                <amexio-window-ce [(show)]="showInfoModal" color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'"
-                                    [horizontal-position]="'left'" [vertical-position]="'bottom'" [align]="'center'"
-                                    width="400px">
+                                <amexio-button type="success" (onClick)="showInfoModalClick()" label="Info Modal">
+                                </amexio-button>
+                                <amexio-window-ce [(show)]="showInfoModal" color="white"
+                                    [bg-image]="'assets/images/windowce/kashmir.jpeg'" [horizontal-position]="'left'"
+                                    [vertical-position]="'bottom'" [align]="'center'" width="400px">
                                     <amexio-header-ce [align]="'space-between'" icon-valign="top">
                                         <amexio-label [size]="'medium-bold'">
                                             John Doe
                                         </amexio-label>
                                         <amexio-layout-columns [orientation]="'horizontal'" [border]="false">
                                             <amexio-layout-item>
-                                                <amexio-image [icon-class]="'fa fa-share-alt'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                <amexio-image [icon-class]="'fa fa-share-alt'"
+                                                    [tooltip]="'Fontawesome apple'"></amexio-image>
                                             </amexio-layout-item>
                                             <amexio-layout-item>
-                                                <amexio-image [icon-class]="'fa fa-heart-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                <amexio-image [icon-class]="'fa fa-heart-o'"
+                                                    [tooltip]="'Fontawesome apple'"></amexio-image>
                                             </amexio-layout-item>
                                             <amexio-layout-item>
-                                                <amexio-image [icon-class]="'fa fa-bookmark-o'" [tooltip]="'Fontawesome apple'"></amexio-image>
+                                                <amexio-image [icon-class]="'fa fa-bookmark-o'"
+                                                    [tooltip]="'Fontawesome apple'"></amexio-image>
                                             </amexio-layout-item>
                                         </amexio-layout-columns>
                                     </amexio-header-ce>
@@ -183,15 +197,16 @@
                                 </amexio-row>
                             </amexio-column>
                             <amexio-column [size]="'4'">
-                                <amexio-button type="success" (onClick)="onFrameModalClick()" label="Frame Modal"></amexio-button>
+                                <amexio-button type="success" (onClick)="onFrameModalClick()" label="Frame Modal">
+                                </amexio-button>
                                 <amexio-window-ce [(show)]="showFrameWindow" [vertical-position]="'bottom'" width="auto"
                                     maximize="true">
                                     <amexio-header-ce height="10px" vertical-align="top">
                                     </amexio-header-ce>
                                     <amexio-body-ce>
                                         <div style="border:none;">
-                                            <amexio-layout-columns [fit]="true" [border]="false" [orientation]="'horizontal'"
-                                                [alignment]="'space-between'">
+                                            <amexio-layout-columns [fit]="true" [border]="false"
+                                                [orientation]="'horizontal'" [alignment]="'space-between'">
                                                 <amexio-layout-item>
                                                     <p>
                                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -199,9 +214,11 @@
                                                     </p>
                                                 </amexio-layout-item>
                                                 <amexio-layout-item>
-                                                    <amexio-button [label]="'Got It Now'" [type]="'primary'" [tooltip]="'Ok'">
+                                                    <amexio-button [label]="'Got It Now'" [type]="'primary'"
+                                                        [tooltip]="'Ok'">
                                                     </amexio-button>
-                                                    <amexio-button [label]="'No,Thanks'" [type]="'secondary'" [tooltip]="'Ok'">
+                                                    <amexio-button [label]="'No,Thanks'" [type]="'secondary'"
+                                                        [tooltip]="'Ok'">
                                                     </amexio-button>
                                                 </amexio-layout-item>
                                             </amexio-layout-columns>
@@ -217,7 +234,8 @@
                                 </amexio-row>
                             </amexio-column>
                             <amexio-column [size]="'4'">
-                                <amexio-button type="success" (onClick)="onDragWindowClick()" label="Drag Window"></amexio-button>
+                                <amexio-button type="success" (onClick)="onDragWindowClick()" label="Drag Window">
+                                </amexio-button>
                                 <amexio-window-ce [draggable]="true" [remember-window-position]="true"
                                     position-top="100px" [horizontal-position]="'left'" [vertical-position]="'top'"
                                     [(show)]="showSideModal1" width="400px">
@@ -246,11 +264,14 @@
 
                                     </amexio-body-ce>
                                     <amexio-action-ce [align]="'center'" [border-top]="true">
-                                        <amexio-floating-button [relative]="true" [type]="'red'" [icon]="'fa fa-google-plus'">
+                                        <amexio-floating-button [relative]="true" [type]="'red'"
+                                            [icon]="'fa fa-google-plus'">
                                         </amexio-floating-button>
-                                        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'" [icon]="'fa fa-facebook'">
+                                        <amexio-floating-button [relative]="true" [bg-color]="'#4267b2'"
+                                            [icon]="'fa fa-facebook'">
                                         </amexio-floating-button>
-                                        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'" [icon]="'fa fa-linkedin'">
+                                        <amexio-floating-button [relative]="true" [bg-color]="'#0077B5'"
+                                            [icon]="'fa fa-linkedin'">
                                         </amexio-floating-button>
                                     </amexio-action-ce>
                                 </amexio-window-ce>
@@ -258,20 +279,25 @@
                         </amexio-row>
                         <amexio-row>
                             <amexio-column size="4">
-                                <amexio-button type="success" (onClick)="onResizeWindowClick()" label="Resize Window"></amexio-button>
-                                <amexio-window-ce [resizable]="true" [remember-window-position]="true" [(show)]="showSideModal2"
-                                    [horizontal-position]="'center'" [vertical-position]="'center'" width="400px" align="start">
+                                <amexio-button type="success" (onClick)="onResizeWindowClick()" label="Resize Window">
+                                </amexio-button>
+                                <amexio-window-ce [resizable]="true" [remember-window-position]="true"
+                                    [(show)]="showSideModal2" [horizontal-position]="'center'"
+                                    [vertical-position]="'center'" width="400px" align="start">
                                     <amexio-header-ce align="left" vertical-align="top">
-                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'"
+                                            [border]="false">
                                             <amexio-layout-item>
-                                                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
+                                                <amexio-image width="40px" height="40px" [filter]="'round'"
+                                                    path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
                                             </amexio-layout-item>
                                             <amexio-layout-item>
                                                 <amexio-label size="medium-bold">BMW G 310 R</amexio-label>
                                             </amexio-layout-item>
                                         </amexio-layout-columns>
                                     </amexio-header-ce>
-                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg"></amexio-image>
+                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg">
+                                    </amexio-image>
                                     <amexio-body-ce>
                                         <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'"
                                             [top]="'-44px'" [left]="'0px'">
@@ -291,20 +317,25 @@
                                 </amexio-window-ce>
                             </amexio-column>
                             <amexio-column size="4">
-                                <amexio-button type="theme-color" (onClick)="onMinimizeWindowClick()" label="Minimize Window"></amexio-button>
-                                <amexio-window-ce [minimize]="true" [remember-window-position]="true" [(show)]="minimizeWindow"
-                                    [horizontal-position]="'center'" [vertical-position]="'center'" width="400px" align="start">
+                                <amexio-button type="theme-color" (onClick)="onMinimizeWindowClick()"
+                                    label="Minimize Window"></amexio-button>
+                                <amexio-window-ce [minimize]="true" [remember-window-position]="true"
+                                    [(show)]="minimizeWindow" [horizontal-position]="'center'"
+                                    [vertical-position]="'center'" width="400px" align="start">
                                     <amexio-header-ce align="left" vertical-align="top">
-                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'"
+                                            [border]="false">
                                             <amexio-layout-item>
-                                                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
+                                                <amexio-image width="40px" height="40px" [filter]="'round'"
+                                                    path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
                                             </amexio-layout-item>
                                             <amexio-layout-item>
                                                 <amexio-label size="medium-bold">BMW G 310 R</amexio-label>
                                             </amexio-layout-item>
                                         </amexio-layout-columns>
                                     </amexio-header-ce>
-                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg"></amexio-image>
+                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg">
+                                    </amexio-image>
                                     <amexio-body-ce>
                                         <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'"
                                             [top]="'-44px'" [left]="'0px'">
@@ -324,30 +355,39 @@
                                 </amexio-window-ce>
                             </amexio-column>
                             <amexio-column size="4">
-                                <amexio-button type="theme-color" (onClick)="onMinimizeCEClick()" label="Minimize window demo"></amexio-button>
-                                <amexio-window-ce [minimize]="true" [remember-window-position]="true" [(show)]="minimizeCeDemo"
-                                    [horizontal-position]="'center'" [vertical-position]="'center'" width="400px" align="start">
-                                    <amexio-header-ce [minimized-icon]="'fa fa-motorcycle'" align="left" vertical-align="top">
-                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+                                <amexio-button type="theme-color" (onClick)="onMinimizeCEClick()"
+                                    label="Minimize window demo"></amexio-button>
+                                <amexio-window-ce [minimize]="true" [remember-window-position]="true"
+                                    [(show)]="minimizeCeDemo" [horizontal-position]="'center'"
+                                    [vertical-position]="'center'" width="400px" align="start">
+                                    <amexio-header-ce [minimized-icon]="'fa fa-motorcycle'" align="left"
+                                        vertical-align="top">
+                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'"
+                                            [border]="false">
                                             <amexio-layout-item>
-                                                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/ferrari-logo.jpg"></amexio-image>
+                                                <amexio-image width="40px" height="40px" [filter]="'round'"
+                                                    path="assets/images/windowce/ferrari-logo.jpg"></amexio-image>
                                             </amexio-layout-item>
                                             <amexio-layout-item>
                                                 <amexio-label size="medium-bold">Ferrari Bike</amexio-label>
                                             </amexio-layout-item>
                                         </amexio-layout-columns>
                                     </amexio-header-ce>
-                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/ferrari.jpg"></amexio-image>
+                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/ferrari.jpg">
+                                    </amexio-image>
                                     <amexio-body-ce>
                                         <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'"
                                             [top]="'-44px'" [left]="'0px'">
                                             <amexio-label>Photos</amexio-label>
                                         </amexio-badge>
                                         <p>
-                                            For the past 17 years, a British collector has been keeping the world's only Ferrari motorbike,
-                                            a Ferrari 900, on display "as a work of art" in his home, the bike, constructed form scratch, has a 900cc engine.
-                                             It can go from 0 to 60 mph in less than three seconds. And if you wanted to, you could do 160 mph.
-                                            
+                                            For the past 17 years, a British collector has been keeping the world's only
+                                            Ferrari motorbike,
+                                            a Ferrari 900, on display "as a work of art" in his home, the bike,
+                                            constructed form scratch, has a 900cc engine.
+                                            It can go from 0 to 60 mph in less than three seconds. And if you wanted to,
+                                            you could do 160 mph.
+
                                         </p>
                                     </amexio-body-ce>
                                     <amexio-action-ce>
