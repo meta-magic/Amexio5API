@@ -8370,6 +8370,9 @@ fieldset {
   background: var(--componentBGColor);
   color: var(--componentFontColor); }
 
+.minimize-window-bg {
+  background: var(--componentHoverBGColor); }
+
 /** window - Structure CSS **/
 /* WINDOW */
 .amexio-root-window {
