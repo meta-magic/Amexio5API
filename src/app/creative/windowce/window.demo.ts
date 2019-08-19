@@ -17,6 +17,7 @@ export class CreativeWindowDemo {
    showSideModal2: boolean;
    minimizeWindow: boolean;
    minimizeCeDemo: boolean;
+   maximizeWindow: boolean;
 
    constructor() {
      
@@ -47,6 +48,10 @@ export class CreativeWindowDemo {
   }
   onMinimizeCEClick() {
     this.minimizeCeDemo = !this.minimizeCeDemo;
+  }
+
+  onMaximizeWindowClick() {
+    this.maximizeWindow = true;
   }
 } 
 
