@@ -148,7 +148,7 @@
             </amexio-box>
             <br>
             <amexio-label [size]="'medium-bold'">
-              Box
+              Card
             </amexio-label>
             <br>
             <amexio-card amexioThemeStyle [theme-style]="'round-edge'" [header]="true" [footer]="true" [show]="true" [footer-align]="'right'"
@@ -232,13 +232,22 @@
         </amexio-card>
       </amexio-tab>
 
-      <!-- <amexio-tab title="Round Edge" [active]="false" [closable]="false" [disabled]="false">
+      <amexio-tab title="Round Edge" [active]="false" [closable]="false" [disabled]="false">
         <amexio-datagrid [enable-column-filter]="false" [data-reader]="'data'" [http-url]="'assets/data/componentdata/roundedge.json'"  [http-method]="'get'" (rowSelect)="onRowSelect($event)">
           <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Component'">
           </amexio-data-table-column>
+          <amexio-data-table-column [width]="5" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="'Demos'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <!-- <amexio-label size="small" font-color="blue">
+               Demo Link
+              </amexio-label> -->
+              <a style="color: blue"><u>Demo link</u></a>
+
+            </ng-template>
+          </amexio-data-table-column>
           
         </amexio-datagrid>
-      </amexio-tab> -->
+      </amexio-tab>
 
       <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
         <amexio-api-sourcecode [html-url]="'/directive/round-edge/form.html'">

@@ -18,30 +18,75 @@
   </amexio-api-accessible>
 
   <amexio-api-demo>
+<amexio-card
+  [header]="true"
+  [header-align]="'left'">
+    <amexio-header>
+      Simple Tab
+    </amexio-header>
+    <amexio-body>
+        <amexio-tab-view [closable]="false">
+            <amexio-tab title="Personal" [active]="true">
+              Personal
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            </amexio-tab>
+            <amexio-tab title="Work">
+              Work
+              Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi.
+              Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque.
+              In non eleifend nisi. Phasellus tempor hendrerit posuere.
+              Praesent ornare rutrum mi et condimentum.
+            </amexio-tab>
+            <amexio-tab title="Notes">
+              Notes
+              Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient
+              montes,
+              nascetur ridiculus mus. Aliquam erat volutpat.Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec
+              sapien
+              pretium euismod.
+            </amexio-tab>
+          </amexio-tab-view>
+    </amexio-body>
+</amexio-card>
+<br>
+<amexio-card
+  [header]="true"
+  [header-align]="'left'">
+    <amexio-header>
+      Round Edge Tabs
+    </amexio-header>
+    <amexio-body>
+        <amexio-tab-view amexioThemeStyle [theme-style]="'round-edge'" [active-bg-color]="true" [divide-header-equally]=true>
+            <amexio-tab title="Person" [active]="true" [amexio-color]="'red'">
+              Personal Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book.
+            </amexio-tab>
+            <amexio-tab title="Work" [amexio-color]="'blue'">
+              Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+              placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+              posuere. Praesent ornare rutrum mi et condimentum.
+            </amexio-tab>
+            <amexio-tab title="Address" [amexio-color]="'green'">
+              Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+              placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+              posuere. Praesent ornare rutrum mi et condimentum.
+            </amexio-tab>
+            <amexio-tab title="Profile" [amexio-color]="'red'">
+              Work Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi. Nunc sit amet aliquet risus. Aenean
+              placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque. In non eleifend nisi. Phasellus tempor hendrerit
+              posuere. Praesent ornare rutrum mi et condimentum.
+            </amexio-tab>
+          </amexio-tab-view>
+    </amexio-body>
 
-    <amexio-tab-view [closable]="false">
-      <amexio-tab title="Personal" [active]="true">
-        Personal
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-      </amexio-tab>
-      <amexio-tab title="Work">
-        Work
-        Nullam nec dolor lobortis, dictum dolor ac, suscipit massa. Donec id suscipit nisi.
-        Nunc sit amet aliquet risus. Aenean placerat suscipit risus at mollis. Quisque eleifend gravida scelerisque.
-        In non eleifend nisi. Phasellus tempor hendrerit posuere.
-        Praesent ornare rutrum mi et condimentum.
-      </amexio-tab>
-      <amexio-tab title="Notes">
-        Notes
-        Phasellus in condimentum elit. In et vestibulum sem. Orci varius natoque penatibus et magnis dis parturient
-        montes,
-        nascetur ridiculus mus. Aliquam erat volutpat.Sed viverra libero vel massa accumsan aliquet. Mauris a dui nec
-        sapien
-        pretium euismod.
-      </amexio-tab>
-    </amexio-tab-view>
+</amexio-card>
+
+   
+
+
 
   </amexio-api-demo>
 </amexio-api-structure>

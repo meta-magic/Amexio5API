@@ -181,5 +181,27 @@
       </amexio-column>
     </amexio-row>
     <!-- custom color buttons end here-->
+    <amexio-row>
+        <amexio-column [size]="12">
+          <amexio-card [header]="true">
+            <amexio-header>
+              Button with Round Edge
+            </amexio-header>
+            <amexio-body>
+              <amexio-row>
+                <amexio-column [size]="4">
+                  <amexio-button amexioThemeStyle [theme-style]="'round-edge'" [label]="'Next'" [type]="'theme-color'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"></amexio-button>
+                </amexio-column>
+                <amexio-column [size]="4">
+                  <amexio-button amexioThemeStyle [theme-style]="'round-edge'" [label]="'Download'" [type]="'green'" [tooltip]="'Download'" [icon]="'fa fa-save'"></amexio-button>
+                </amexio-column>
+                <amexio-column [size]="4">
+                  <amexio-button  amexioThemeStyle [theme-style]="'round-edge'" [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'"></amexio-button>
+                </amexio-column>
+              </amexio-row>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
+      </amexio-row>
   </amexio-api-demo>
 </amexio-api-structure>

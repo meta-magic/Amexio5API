@@ -63,15 +63,16 @@
 </amexio-button>
 </amexio-action>
 </amexio-dialogue>
-<amexio-row>
-<amexio-column size="12">
-<amexio-label
-size="small">
-(Escape functionality is disabled)
-</amexio-label>
-</amexio-column>
-</amexio-row>
 
+<!-- Dialogue with Round Edge -->
+<amexio-dialogue amexioThemeStyle [theme-style]="'round-edge'" 
+[(show)]="confirmdialoguematerial" 
+[button-size]="'medium'"
+[material-design]="true" 
+[title]="'Confirm'" 
+[message]="'Are you sure ?'" 
+[message-type]="'confirm'">
+</amexio-dialogue>
 
 <!--Non Material Design Pattern-->
 
@@ -136,4 +137,14 @@ size="small">
 label="save">
 </amexio-button>
 </amexio-action>
+</amexio-dialogue>
+
+<!-- Dialogue with Round Edge -->
+<amexio-dialogue amexioThemeStyle [theme-style]="'round-edge'" 
+[(show)]="confirmdialoguenonmaterial" 
+[button-size]="'medium'"
+[material-design]="false" 
+[title]="'Confirm'" 
+[message]="'Are you sure ?'" 
+[message-type]="'confirm'">
 </amexio-dialogue>

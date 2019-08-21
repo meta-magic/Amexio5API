@@ -30,7 +30,7 @@ export class RoundEdgeDemo implements OnInit {
                 this.inputData =
                         [{
                                 "name": "theme-style",
-                                "description": "supports round-edge theme as of now",
+                                "description": "supports round-edge theme (corners are rounded) and classic",
                                 "version": "5.19 onwards",
                                 "type": "string",
                                 "default": ""

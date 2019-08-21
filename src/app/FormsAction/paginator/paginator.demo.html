@@ -15,7 +15,7 @@
             Paginator with page size 10
           </amexio-header>
           <amexio-body>
-            <amexio-paginator amexioThemeStyle [theme-style]="'round-edge'" [pages]="50"
+            <amexio-paginator [pages]="50"
                               [rows]="10"
                               (onPageChange)="loadPageData($event)">
             </amexio-paginator>
@@ -40,5 +40,20 @@
 
       </amexio-column>
     </amexio-row>
+    <amexio-row>
+        <amexio-column size="12">
+          <amexio-card [header]="true">
+            <amexio-header>
+              Paginator with page size 10 and Round Edge
+            </amexio-header>
+            <amexio-body>
+              <amexio-paginator amexioThemeStyle [theme-style]="'round-edge'" [pages]="50"
+                                [rows]="10">
+              </amexio-paginator>
+            </amexio-body>
+          </amexio-card>
+  
+        </amexio-column>
+      </amexio-row>
   </amexio-api-demo>
 </amexio-api-structure>

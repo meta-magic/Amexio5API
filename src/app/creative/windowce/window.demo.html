@@ -124,7 +124,7 @@
                             </amexio-column>
                         </amexio-row>
                         <amexio-row>
-                            <amexio-column size="3">
+                            <amexio-column size="4">
                                 <amexio-button type="success" (onClick)="showInfoModalClick()" label="Info Modal">
                                 </amexio-button>
                                 <amexio-window-ce [(show)]="showInfoModal" color="white" [bg-image]="'assets/images/windowce/kashmir.jpeg'" [horizontal-position]="'left'"
@@ -172,7 +172,7 @@
                                     </amexio-column>
                                 </amexio-row>
                             </amexio-column>
-                            <amexio-column [size]="3">
+                            <amexio-column [size]="4">
                                 <amexio-button type="success" (onClick)="onFrameModalClick()" label="Frame Modal">
                                 </amexio-button>
                                 <amexio-window-ce [(show)]="showFrameWindow" [vertical-position]="'bottom'" width="auto" maximize="true">
@@ -204,7 +204,7 @@
                                     </amexio-column>
                                 </amexio-row>
                             </amexio-column>
-                            <amexio-column [size]="3">
+                            <amexio-column [size]="4">
                                 <amexio-button type="success" (onClick)="onDragWindowClick()" label="Drag Window">
                                 </amexio-button>
                                 <amexio-window-ce [draggable]="true" [remember-window-position]="true" position-top="100px" [horizontal-position]="'left'"
@@ -240,7 +240,10 @@
                                     </amexio-action-ce>
                                 </amexio-window-ce>
                             </amexio-column>
-                            <amexio-column [size]="3">
+                           
+                        </amexio-row>
+                        <amexio-row>
+                            <amexio-column [size]="6">
                                 <amexio-button type="success" (onClick)="onResizeWindowClick()" label="Resize Window">
                                 </amexio-button>
                                 <amexio-window-ce [resizable]="true" [remember-window-position]="true" [(show)]="showSideModal2" [horizontal-position]="'center'"
@@ -272,7 +275,40 @@
                                     </amexio-action-ce>
                                 </amexio-window-ce>
                             </amexio-column>
+                            <amexio-column [size]="6">
+                                <amexio-button type="success" (onClick)="onCenterModalClick()" label="Round Edge">
+                                </amexio-button>
+                                <amexio-window-ce amexioThemeStyle [theme-style]="'round-edge'" [(show)]="showCenterModal" [horizontal-position]="'center'" [vertical-position]="'center'" width="400px"
+                                    align="start">
+                                    <amexio-header-ce align="left" vertical-align="top">
+                                        <amexio-layout-columns alignment="start" [orientation]="'horizontal'" [border]="false">
+                                            <amexio-layout-item>
+                                                <amexio-image width="40px" height="40px" [filter]="'round'" path="assets/images/windowce/bmw-logo.jpeg"></amexio-image>
+                                            </amexio-layout-item>
+                                            <amexio-layout-item>
+                                                <amexio-label size="medium-bold">BMW G 310 R</amexio-label>
+                                            </amexio-layout-item>
+                                        </amexio-layout-columns>
+                                    </amexio-header-ce>
+                                    <amexio-image height="180px" width="100%" path="assets/images/windowce/bmw.jpg">
+                                    </amexio-image>
+                                    <amexio-body-ce>
+                                        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'-44px'" [left]="'0px'">
+                                            <amexio-label>Photos</amexio-label>
+                                        </amexio-badge>
+                                        <p>
+                                            The G 310 R and G 310 GS are the two small-capacity motorcycles that were supposed to help BMW Motorrad garner the figures
+                                            for growth that it projected.The 310 twins will not be about numbers, but about
+                                            quality – something that BMW Motorrad is known for in markets globally.
+                                        </p>
+                                    </amexio-body-ce>
+                                    <amexio-action-ce>
+                                        <amexio-button type="success" label="More Details"></amexio-button>
+                                    </amexio-action-ce>
+                                </amexio-window-ce>
+                            </amexio-column>
                         </amexio-row>
+                        <br>
                         <amexio-row>
 
                             <amexio-column [size]="4">

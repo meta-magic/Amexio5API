@@ -3,7 +3,7 @@
 
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
-                Floating Panel Relative Positioning
+                Floating Panel Relative Positioning and Round Edge
             </amexio-header>
             <amexio-body>
                 <amexio-row>
@@ -11,9 +11,7 @@
                     <amexio-column size="3" fit="false">
                         <amexio-button type="theme-color" (onClick)="onshowRelativePanel()" label="Relative">
                         </amexio-button>
-                        <amexio-floating-panel amexioColorPalette 
-                            
-                            [color-palette]="'random'" [gradient]=" true" [show-panel]="showRelativePanel"
+                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]=" true" [show-panel]="showRelativePanel"
                             [relative]="true" [closeable]="true" [width]="'330'" [height]="230" [title]="'Verify Phone Number'"
                             (onClose)="onCloseRelativePanel($event)">
                             <amexio-row>
@@ -21,27 +19,10 @@
                                     <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false">
                                     </amexio-email-input>
                                     <amexio-number-input [field-label]="'Phone Number'" [place-holder]="'Enter Phone Number'">
-                                    </amexio-number-input><br>
-                                <amexio-button [label]="'Submit'" [type]="'theme-color'" [tooltip]="'Primary Button'">
-                                </amexio-button>              </amexio-column>
-                            </amexio-row>
-
-                        </amexio-floating-panel>
-                    </amexio-column>
-
-                    <amexio-column size="3" fit="false">
-                        <amexio-button type="theme-color" (mouseenter)="onshowRelativePanelWithToolTip()"
-                            (mouseleave)="onshowRelativePanelWithToolTip()" label="Relative with Tooltip">
-                        </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
-                            [arrow]="true" [show-panel]="showRelativePanel1" [relative]="true" [closeable]="true"
-                            [width]="'330'" [height]="200" [title]="'Computer Info'"
-                            (onClose)="onCloseRelativePanel1($event)">
-                            <amexio-row>
-                                <amexio-column size="12" fit="true">
-                                    <p>
-                                        A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via computer programming. Modern computers have the ability to follow generalized sets of operations, called programs. These programs enable computers to perform an extremely wide range of tasks.
-                                    </p>
+                                    </amexio-number-input>
+                                    <br>
+                                    <amexio-button [label]="'Submit'" [type]="'theme-color'" [tooltip]="'Primary Button'">
+                                    </amexio-button>
                                 </amexio-column>
                             </amexio-row>
 
@@ -49,11 +30,68 @@
                     </amexio-column>
 
                     <amexio-column size="3" fit="false">
-                      
+                        <amexio-button type="theme-color" (mouseenter)="onshowRelativePanelWithToolTip()" (mouseleave)="onshowRelativePanelWithToolTip()"
+                            label="Relative with Tooltip">
+                        </amexio-button>
+                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [arrow]="true" [show-panel]="showRelativePanel1"
+                            [relative]="true" [closeable]="true" [width]="'330'" [height]="200" [title]="'Computer Info'" (onClose)="onCloseRelativePanel1($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <p>
+                                        A computer is a machine that can be instructed to carry out sequences of arithmetic or logical operations automatically via
+                                        computer programming. Modern computers have the ability to follow generalized sets
+                                        of operations, called programs. These programs enable computers to perform an extremely
+                                        wide range of tasks.
+                                    </p>
+                                </amexio-column>
+                            </amexio-row>
+
+                        </amexio-floating-panel>
+                    </amexio-column>
+
+                    <!-- <amexio-column size="3" fit="false">
+                        <amexio-button type="theme-color" (onClick)="onshowRoundEdgePanel()" label="Round Edge">
+                        </amexio-button>
+                        <amexio-floating-panel amexioThemeStyle [theme-style]="'round-edge'" [show-panel]="showRoundEdgePanel" [relative]="true"
+                            [closeable]="true" [width]="'330'" [height]="230" [title]="'Verify Phone Number'" (onClose)="onCloseRoundEdgePanel($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false">
+                                    </amexio-email-input>
+                                    <amexio-number-input [field-label]="'Phone Number'" [place-holder]="'Enter Phone Number'">
+                                    </amexio-number-input>
+                                    <br>
+                                    <amexio-button [label]="'Submit'" [type]="'theme-color'" [tooltip]="'Primary Button'">
+                                    </amexio-button>
+                                </amexio-column>
+                            </amexio-row>
+
+                        </amexio-floating-panel>
+                    </amexio-column> -->
+                    <amexio-column size="3" fit="false">
+                            <amexio-button type="theme-color" (onClick)="onshowRoundEdgePanel()" label="Relative">
+                            </amexio-button>
+                            <amexio-floating-panel amexioThemeStyle [theme-style]="'round-edge'" [show-panel]="showRoundEdgePanel"
+                                [relative]="true" [closeable]="true" [width]="'330'" [height]="230" [title]="'Verify Phone Number'"
+                                (onClose)="onCloseRoundEdgePanel($event)">
+                                <amexio-row>
+                                    <amexio-column size="12" fit="true">
+                                        <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false">
+                                        </amexio-email-input>
+                                        <amexio-number-input [field-label]="'Phone Number'" [place-holder]="'Enter Phone Number'">
+                                        </amexio-number-input><br>
+                                    <amexio-button [label]="'Submit'" [type]="'theme-color'" [tooltip]="'Primary Button'">
+                                    </amexio-button>              </amexio-column>
+                                </amexio-row>
+    
+                            </amexio-floating-panel>
+                        </amexio-column>
+                    <amexio-column size="3" fit="false">
+
                     </amexio-column>
 
                     <amexio-column size="3" fit="false">
-                      
+
                     </amexio-column>
 
                 </amexio-row>
@@ -61,7 +99,7 @@
 
         </amexio-card>
 
-        
+
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
                 Floating Panel With Draggable and Resizeable Feature
@@ -71,13 +109,11 @@
                     <amexio-column size="3" fit="false">
                         <amexio-button type="theme-color" (onClick)="onshowResizePanel()" label="Resize Panel">
                         </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [resizable]="true" [color-palette]="'random'"
-                            [gradient]="true" [show-panel]="showResizePanel" [relative]="true" [closeable]="true"
-                            [width]="'330'"  [title]="'Video Player'"
-                            (onClose)="onCloseResizePanel1($event)">
+                        <amexio-floating-panel amexioColorPalette [resizable]="true" [color-palette]="'random'" [gradient]="true" [show-panel]="showResizePanel"
+                            [relative]="true" [closeable]="true" [width]="'330'" [title]="'Video Player'" (onClose)="onCloseResizePanel1($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
-                                    <amexio-video-player  path="assets/videos/sample_bunny.mp4">
+                                    <amexio-video-player path="assets/videos/sample_bunny.mp4">
                                     </amexio-video-player>
                                 </amexio-column>
                             </amexio-row>
@@ -87,15 +123,12 @@
                     <amexio-column size="3" fit="false">
                         <amexio-button type="theme-color" (onClick)="onshowDragPanel()" label="Drag Panel">
                         </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [draggable]="true" [color-palette]="'random'"
-                            [gradient]="true" [show-panel]="showDragPanel" [relative]="true" [closeable]="true"
-                            [width]="'330'" [height]="330" [title]="'Google Map'"
-                            (onClose)="onCloseDraggablePanel1($event)">
+                        <amexio-floating-panel amexioColorPalette [draggable]="true" [color-palette]="'random'" [gradient]="true" [show-panel]="showDragPanel"
+                            [relative]="true" [closeable]="true" [width]="'330'" [height]="330" [title]="'Google Map'" (onClose)="onCloseDraggablePanel1($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
-                                        <amexio-google-map [initial-zoom-level]="2" [height]="'295px'"
-                                        [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'" [data]="data"
-                                        (onMarkerClick)="onMarkerClick1($event)">
+                                    <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
+                                        [data]="data" (onMarkerClick)="onMarkerClick1($event)">
                                     </amexio-google-map>
                                 </amexio-column>
                             </amexio-row>
@@ -103,18 +136,18 @@
                         </amexio-floating-panel>
                     </amexio-column>
                     <amexio-column size="3" fit="false">
-                        
+
                     </amexio-column>
 
                     <amexio-column size="3" fit="false">
-                       
+
                     </amexio-column>
 
                 </amexio-row>
             </amexio-body>
 
         </amexio-card>
-        
+
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
                 Floating Panel With Absolute Positioning
@@ -124,10 +157,9 @@
 
                     <amexio-column [size]="2">
                         <amexio-button type="red" (onClick)="showTopLeftPanel()" label="Top Left"></amexio-button>
-                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
-                            [show-panel]="topLeftPanel" [relative]="false" [closeable]="true" [top-position]="'30px'"
-                            [left-position]="'50px'" [width]="'330'" [height]="200" [title]="'Video Player'"
-                            (onClose)="onCloseTopLeftPanel($event)">
+                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="topLeftPanel" [relative]="false"
+                            [closeable]="true" [top-position]="'30px'" [left-position]="'50px'" [width]="'330'" [height]="200"
+                            [title]="'Video Player'" (onClose)="onCloseTopLeftPanel($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
                                     <amexio-video-player [width]="'300'" path="assets/videos/sample_bunny.mp4">
@@ -141,65 +173,63 @@
                     <amexio-column [size]="2">
                         <amexio-button type="theme-color" (onClick)="showTopRightPanel()" label="Top Right">
                         </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
-                            [show-panel]="topRightPanel" [relative]="false" [closeable]="true" [top-position]="'30px'"
-                            [right-position]="'40px'" [width]="'400'" [height]="300" [title]="'Chat Window'"
-                            (onClose)="onCloseTopRightPanel($event)">
-                            <amexio-speech-bubble [arrow-direction]="'left'"  [enable-time]="'21-Jun-2019 12:02'">
-                                    <amexio-label size="medium-bold">
-                                        John Deo
-                                    </amexio-label><br>
-                                    <amexio-label size="medium">
-                                        Hello, I'd like to order desserts.
-                                    </amexio-label>
-                                </amexio-speech-bubble>
-                                <amexio-speech-bubble [arrow-direction]="'right'" [enable-time]="'21-Jun-2019 12:03'">
-                                    <amexio-label size="medium-bold">
-                                        Jane Deo
-                                    </amexio-label><br>
-                                    <amexio-label size="medium">
-                                        <p style="margin-top:2px">
-                                            Welcome to Fresh Produce!Would you like to pay now or at the time of
-                                            delivery?
-                                        </p>
-                                    </amexio-label>
-                                </amexio-speech-bubble>
-                                <amexio-speech-bubble [arrow-direction]="'left'" [enable-time]="'21-Jun-2019 12:04'">
-                                    <amexio-label size="medium-bold">
-                                        John Deo
-                                    </amexio-label><br>
-                                    <amexio-label size="medium">
-                                        1 Main Street,Pay at the delivery.
-                                    </amexio-label>
-                                </amexio-speech-bubble>
-                                <amexio-speech-bubble [arrow-direction]="'right'" [enable-time]="'21-Jun-2019 12:06'">
-                                    <amexio-label size="medium-bold">
-                                        Jane Deo
-                                    </amexio-label><br>
-                                    <amexio-label size="medium">
-                                        Your order has been processed.
-                                    </amexio-label>
-                                </amexio-speech-bubble>
+                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="topRightPanel" [relative]="false"
+                            [closeable]="true" [top-position]="'30px'" [right-position]="'40px'" [width]="'400'" [height]="300"
+                            [title]="'Chat Window'" (onClose)="onCloseTopRightPanel($event)">
+                            <amexio-speech-bubble [arrow-direction]="'left'" [enable-time]="'21-Jun-2019 12:02'">
+                                <amexio-label size="medium-bold">
+                                    John Deo
+                                </amexio-label>
+                                <br>
+                                <amexio-label size="medium">
+                                    Hello, I'd like to order desserts.
+                                </amexio-label>
+                            </amexio-speech-bubble>
+                            <amexio-speech-bubble [arrow-direction]="'right'" [enable-time]="'21-Jun-2019 12:03'">
+                                <amexio-label size="medium-bold">
+                                    Jane Deo
+                                </amexio-label>
+                                <br>
+                                <amexio-label size="medium">
+                                    <p style="margin-top:2px">
+                                        Welcome to Fresh Produce!Would you like to pay now or at the time of delivery?
+                                    </p>
+                                </amexio-label>
+                            </amexio-speech-bubble>
+                            <amexio-speech-bubble [arrow-direction]="'left'" [enable-time]="'21-Jun-2019 12:04'">
+                                <amexio-label size="medium-bold">
+                                    John Deo
+                                </amexio-label>
+                                <br>
+                                <amexio-label size="medium">
+                                    1 Main Street,Pay at the delivery.
+                                </amexio-label>
+                            </amexio-speech-bubble>
+                            <amexio-speech-bubble [arrow-direction]="'right'" [enable-time]="'21-Jun-2019 12:06'">
+                                <amexio-label size="medium-bold">
+                                    Jane Deo
+                                </amexio-label>
+                                <br>
+                                <amexio-label size="medium">
+                                    Your order has been processed.
+                                </amexio-label>
+                            </amexio-speech-bubble>
 
                         </amexio-floating-panel>
                     </amexio-column>
                     <amexio-column [size]="2">
                         <amexio-button type="success" (onClick)="showBottomRightPanel()" label="Bottom Right">
                         </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
-                            [show-panel]="bottomRightPanel" [relative]="false" [closeable]="true"
-                            [bottom-position]="'30px'" [right-position]="'20px'" [width]="'250'" [height]="300"
+                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="bottomRightPanel" [relative]="false"
+                            [closeable]="true" [bottom-position]="'30px'" [right-position]="'20px'" [width]="'250'" [height]="300"
                             [title]="'Theme Switcher'" (onClose)="onCloseBottomRightPanel($event)">
-                            <amexio-theme-switcher style="display: block;margin: -20px -10px;" [closeable]="false"
-                                [relative]="true" [mda]="true" [col-size]="1"></amexio-theme-switcher>
+                            <amexio-theme-switcher style="display: block;margin: -20px -10px;" [closeable]="false" [relative]="true" [mda]="true" [col-size]="1"></amexio-theme-switcher>
                         </amexio-floating-panel>
                     </amexio-column>
                     <amexio-column [size]="2">
-                        <amexio-button type="theme-backgroundcolor" (onClick)="showBottomLeftPanel()"
-                            label="Bottom Left"></amexio-button>
-                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true"
-                            [show-panel]="bottomLeftPanel" [relative]="false" [closeable]="true"
-                            [bottom-position]="'30px'" [left-position]="'20px'" [width]="'330'" [height]="200"
+                        <amexio-button type="theme-backgroundcolor" (onClick)="showBottomLeftPanel()" label="Bottom Left"></amexio-button>
+                        <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" [show-panel]="bottomLeftPanel" [relative]="false"
+                            [closeable]="true" [bottom-position]="'30px'" [left-position]="'20px'" [width]="'330'" [height]="200"
                             [title]="'Video Player'" (onClose)="onCloseBottomLeftPanel($event)">
                             <amexio-row>
                                 <amexio-column size="12" fit="true">
@@ -214,7 +244,7 @@
             </amexio-body>
 
         </amexio-card>
-        
+
 
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>

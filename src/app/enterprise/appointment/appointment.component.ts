@@ -13,6 +13,7 @@ export class EEAppointmentDemoComponent implements OnInit {
   availableslots: AvailableSlotsModel[];
   multipleAvailableslots: AvailableSlotsModel[];
   singleSelectedData: any;
+  singleSelectedData1: any;
   multiSelectedData: any;
 
   constructor() {
@@ -35,6 +36,9 @@ export class EEAppointmentDemoComponent implements OnInit {
 
   onSingleSelect(event: any) {
     this.singleSelectedData = event;
+  }
+  onSingleSelect1(event: any) {
+    this.singleSelectedData1 = event;
   }
 
   onMultiSelect(event: any) {

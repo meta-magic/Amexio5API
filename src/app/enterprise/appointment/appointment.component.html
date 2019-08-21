@@ -25,7 +25,7 @@
         <amexio-card header="true">
             <amexio-header> Appointment Demo: Multi Select Date </amexio-header>
             <amexio-body>
-                <amexio-ee-appointment amexioThemeStyle [theme-style]="'round-edge'"  [height]="'200px'" [date]="date" [multi-select]="true" (onMultiSelect)="onMultiSelect($event)" [start-time]="12"
+                <amexio-ee-appointment [height]="'200px'" [date]="date" [multi-select]="true" (onMultiSelect)="onMultiSelect($event)" [start-time]="12"
                     [end-time]="17" [available-slots]="multipleAvailableslots">
                 </amexio-ee-appointment>
             </amexio-body>
@@ -36,5 +36,20 @@
                 <pre><code>{{multiSelectedData | json}}</code></pre>
             </amexio-body>
         </amexio-card>
+        <br>
+        <amexio-card header="true">
+                <amexio-header> Appointment Demo: With Round Edges </amexio-header>
+                <amexio-body>
+                    <amexio-ee-appointment amexioThemeStyle [theme-style]="'round-edge'" [height]="'200px'" [date]="date" (onSingleSelect)="onSingleSelect1($event)" [start-time]="10" [end-time]="15"
+                        [available-slots]="availableslots">
+                    </amexio-ee-appointment>
+                </amexio-body>
+            </amexio-card>
+            <amexio-card header="true">
+                <amexio-header> Selected Date-Time </amexio-header>
+                <amexio-body>
+                    <pre><code>{{singleSelectedData1 | json}}</code></pre>
+                </amexio-body>
+            </amexio-card>
         </amexio-api-demo>
         </amexio-api-structure>

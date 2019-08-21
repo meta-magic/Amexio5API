@@ -24,6 +24,7 @@ export class FloatingPanelDemoComponent {
   showFloatingButton : boolean = false;
   showRelativePanel : boolean = false;
   showRelativePanel1 : boolean = false;
+  showRoundEdgePanel: boolean = false;
   showDragPanel = false;
   showResizePanel= false;
   data : GoogleMapOverlays[];
@@ -87,16 +88,21 @@ export class FloatingPanelDemoComponent {
   onshowRelativePanel() {
     this.showRelativePanel = !this.showRelativePanel;
   }
+  onshowRoundEdgePanel() {
+    this.showRoundEdgePanel = !this.showRoundEdgePanel;
+  }
   onshowRelativePanelWithToolTip() {
     this.showRelativePanel1 = !this.showRelativePanel1;
   }
   onCloseRelativePanel1(event: any) {
-    this.showRelativePanel1 = event.showRelativePanel1
+    this.showRelativePanel1 = event.showRelativePanel1;
+  }
+  onCloseRoundEdgePanel(event: any) {
+    this.showRoundEdgePanel = event.showRoundEdgePanel;
   }
   onCloseRelativePanel(event: any) {
     this.showRelativePanel = event.showRelativePanel;
   }
-
 
   onshowDragPanel() {
     this.showDragPanel = !this.showDragPanel;

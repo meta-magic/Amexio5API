@@ -1,7 +1,94 @@
 {
     "data": [
         {
-            "componentName": "amexio creative card"
+            "componentName": "Amexio Creative Card",
+            "link": "/creative/card-ce-demo"
+        },
+        {
+            "componentName": "Amexio Creative Window",
+            "link": "creative/window-ce-demo"
+        },
+        {
+            "componentName": "Amexio Panel",
+            "link": "panes/panel-demo"
+        },
+        {
+            "componentName": "Amexio Accordion",
+            "link": "layout/accordion-demo"
+        },
+        {
+            "componentName": "Amexio Box",
+            "link": "layout/box-demo"
+        },
+        {
+            "componentName": "Amexio Card",
+            "link": "layout/card-form-demo"
+        },
+        {
+            "componentName": "Amexio Dialogue",
+            "link": "panes/dialogue-demo"
+        },
+        {
+            "componentName": "Amexio Fieldset",
+            "link": "panes/fieldset-demo"
+        },
+        {
+            "componentName": "Amexio Floating Panel",
+            "link": "panes/floatingpanel-demo"
+        },
+        {
+            "componentName": "Amexio Tab",
+            "link": "panes/basic-tab-demo"
+        },
+        {
+            "componentName": "Amexio Window",
+            "link": "panes/window-demo"
+        },
+        {
+            "componentName": "Amexio Badge",
+            "link": "forms-Input/badge-demo"
+        },
+  
+        {
+            "componentName": "Amexio Button",
+            "link": "forms-Action/button-demo"
+        },
+        {
+            "componentName": "Amexio Notification",
+            "link": "forms-Action/notification-demo"
+        },
+        {
+            "componentName": "Amexio Paginator",
+            "link": "forms-Action/paginator-demo"
+        },
+        {
+            "componentName": "Amexio Progress Bar",
+            "link": "forms-Action/progressbar-demo"
+        },
+        {
+            "componentName": "Amexio Timeline",
+            "link": "data/timeline-demo"
+        },
+        {
+            "componentName": "Amexio Listbox",
+            "link": "data/listbox-demo"
+        },
+        {
+            "componentName": "Amexio Dockbar",
+            "link": "navigation/dockbar-demo"
+        },
+        {
+            "componentName": "Amexio Dropdown Menu",
+            "link": "navigation/dropdownmenu-demo"
+        },{
+            "componentName": "Amexio Datapoints",
+            "link": "dashboard/datapoint-demo"
+        },{
+            "componentName": "Amexio Appointment",
+            "link": "enterprise/ee-appointment-demo"
+        },{
+            "componentName": "Amexio Color Picker",
+            "link": "creative/colorpicker-demo"
         }
     ]
 }
