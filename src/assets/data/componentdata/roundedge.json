@@ -48,7 +48,6 @@
             "componentName": "Amexio Badge",
             "link": "forms-Input/badge-demo"
         },
-  
         {
             "componentName": "Amexio Button",
             "link": "forms-Action/button-demo"
@@ -80,15 +79,22 @@
         {
             "componentName": "Amexio Dropdown Menu",
             "link": "navigation/dropdownmenu-demo"
-        },{
+        },
+        {
             "componentName": "Amexio Datapoints",
             "link": "dashboard/datapoint-demo"
-        },{
+        },
+        {
             "componentName": "Amexio Appointment",
             "link": "enterprise/ee-appointment-demo"
-        },{
+        },
+        {
             "componentName": "Amexio Color Picker",
             "link": "creative/colorpicker-demo"
+        },
+        {
+            "componentName": "Amexio Viewport",
+            "link": "creative/viewport-demo"
         }
     ]
 }
