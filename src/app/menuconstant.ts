@@ -290,6 +290,12 @@ export const MENUCONSTANT = {
           ]
         },
         {
+          text: "Stackable Panel",
+          icon: "fa fa-bars",
+          link: "panes/stackablepanel-demo",
+          badge: "New"
+        },
+        {
           text: "Tab",
           icon: "fa fa-folder  ",
           badge: "2",

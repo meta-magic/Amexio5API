@@ -30,6 +30,7 @@ import {DarkmodeDemoComponent} from "./darkmode/darkmode.demo.component";
 import {SlidingPanelDemo} from "./slidingpanel/animatedslidingpane.demo";
 import {FloatingPanelDemoComponent} from "./floatingpanel/floatingpanel.demo";
 import { AmexioEnterpriseModule } from 'amexio-ng-extensions';
+import { StackablePanelComponent } from "./stackablePanel/stackablePanel.demo";
 /**
  * Created by kedar on 1/2/19.
  */
@@ -38,7 +39,7 @@ import { AmexioEnterpriseModule } from 'amexio-ng-extensions';
         ClosableTabDemo, PanelDemoComponent, FloatingPanelDemoComponent,FieldSetDemoComponent,DialogueDemoComponent,
         CarouselDemoComponent, EnhancedTabDemo,EnhancedVerticalTabDemo,ScrollableTabDemo,
         IconWithTabDemo, VerticalRightTabDemo,VerticalTabDemo, TabDemo, DyanmicTabComponent,
-        DyanmicVerticalTabComponent, OverlayDemoComponent, ArcDemoComponent, SlidingPanelDemo
+        DyanmicVerticalTabComponent, OverlayDemoComponent, ArcDemoComponent, SlidingPanelDemo,StackablePanelComponent
 
 
     ],

@@ -1,0 +1,114 @@
+{
+  "title": "Amexio Stackable Panel",
+  "description": "Stackable Pane component is a customizable Modal Pane in which user can enter custom content.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-stackable-panel>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "panel-name",
+          "description": "Count of total number of items are present.",
+          "version": "5.18 onwards",
+          "type": "string",
+          "default": "Comments"
+        }
+      ]
+    },
+    {
+      "gridTitle": "Stackable Panel Item Properties <amexio-stackablepanel-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+       
+        {
+          "name": "title",
+          "description": "Title for the body of stackable panel item.",
+          "version": "5.18 onwards",
+          "type": "string",
+          "default": ""
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "pane/stackablepanel/form.html",
+    "tsUrl": "pane/stackablepanel/form.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-window?embed=1&file=app/panels/window/window.demo.html"
+  }
+}

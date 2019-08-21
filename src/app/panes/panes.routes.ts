@@ -19,6 +19,7 @@ import { ArcDemoComponent } from './arc/arc.demo.component';
 import { DarkmodeDemoComponent} from './darkmode/darkmode.demo.component';
 import { SlidingPanelDemo} from './slidingpanel/animatedslidingpane.demo';
 import {FloatingPanelDemoComponent} from './floatingpanel/floatingpanel.demo';
+import { StackablePanelComponent } from './stackablePanel/stackablePanel.demo';
 /**
  * Created by kedar on 1/2/19.
  */
@@ -83,6 +84,9 @@ export const PANES_ROUTE: Routes = [
     },
     {
         path: 'floatingpanel-demo', component: FloatingPanelDemoComponent,
+    },
+    {
+        path: 'stackablepanel-demo', component: StackablePanelComponent,
     }
      
 ];
