@@ -244,7 +244,7 @@ export const MENUCONSTANT = {
     {
       text: "Panels",
       icon: "fa fa-bars  ",
-      badge: "4",
+      badge: "5",
       children: [
         {
           text: "Carousel",

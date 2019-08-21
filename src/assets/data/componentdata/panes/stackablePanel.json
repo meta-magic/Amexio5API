@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "title": "Post One",
+            "imagePath": "assets/images/profile/mark.jpg",
+            "icon": "fa fa-linkedin-square",
+            "label": "Linkedin",
+            "color": "burlywood",
+            "badge": 3,
+            "font-color": "black",
+            "personName": "Frankenstein",
+            "dateAndTime": "24 May, 2018 15:40:14",
+            "description": "Success in life could be defined as the continued expansion of happiness and the progressive realization of worthy goals."
+        },
+        {
+            "title": "Post Two",
+            "imagePath": "assets/images/timeline/ataturk_1.jpg",
+            "icon": "fa fa-facebook-square",
+            "label": "Facebook",
+            "color": "cadetblue",
+            "badge": 8,
+            "font-color": "black",
+            "personName": "John",
+            "dateAndTime": "13 Aug, 1945 11:20:19",
+            "description": "Success means having the courage, the determination, and the will to become the person you believe you were meant to be."
+        },
+        {
+            "title": "Post Third",
+            "imagePath": "assets/images/timeline/atatürk-ün-inanılmaz-karizmatik.jpg",
+            "icon": "fa fa-twitter-square",
+            "label": "Twitter",
+            "color": "yellow",
+            "badge": 5,
+            "font-color": "black",
+            "personName": "Martin",
+            "dateAndTime": "3 Nov, 1932 1:26:13",
+            "description": "It is the satisfaction of doing it for yourself and motivating others to work with you in bringing it about. It is about the fun, innovation, creativity with the rewards being far greater than purely financial."
+        }
+    ]
+}

@@ -7,124 +7,45 @@
                         stackable-panel
                     </amexio-header>
                     <amexio-body>
+
                         <amexio-stackable-panel [panel-name]="'Posts'">
-                            <amexio-stackablepanel-item title="Post One">
+                            <amexio-stackablepanel-item *ngFor="let item of stackableData.data" [title]="item.title">
                                 <amexio-row>
                                     <amexio-column size="2" fit="false" style="text-align: center">
                                         <amexio-image [height]="'99.75px'" [width]="'99.75px'" [c-class]="'image-round'"
-                                            path="assets/images/profile/mark.jpg">
+                                            [path]="item.imagePath">
                                         </amexio-image>
                                     </amexio-column>
                                     <amexio-column size="10" fit="false">
                                         <span style="float: right">
                                             <amexio-chips [display-field]="'label'">
-                                                <amexio-chip [icon]="'fa fa-linkedin-square'" [label]="'Linkedin'"
-                                                    [color]="'burlywood'" [badge]="4" [closable]="false"
-                                                    [font-color]="'black'">
+                                                <amexio-chip [icon]="item.icon" [label]="item.label"
+                                                    [color]="item.color" [badge]="item.badge" [closable]="false"
+                                                    [font-color]="item.font-color">
                                                 </amexio-chip>
                                             </amexio-chips>
                                         </span>
                                         <span>
                                             <amexio-label size="small-bold">
-                                                Frankenstein
+                                                {{item.personName}}
                                             </amexio-label><br>
                                             <amexio-label font-color="#FF5733" size="small">
-                                                24 May, 2018 15:40:14
+                                                {{item.dateAndTime}}
                                             </amexio-label>
                                         </span>
                                         <div style="padding-top:10px;">
                                             <amexio-label size="small" [font-color]="'black'">
-                                                “Success in life could be defined as the continued expansion of
-                                                happiness
-                                                and
-                                                the progressive realization of worthy goals.”
-
+                                                {{item.description}}
                                             </amexio-label>
                                         </div>
                                     </amexio-column>
 
                                 </amexio-row>
 
-
-                            </amexio-stackablepanel-item>
-                            <amexio-stackablepanel-item title=" Post Second ">
-                                <amexio-row>
-                                    <amexio-column size="2" fit="false" style="text-align: center">
-                                        <amexio-image [height]="'99.75px'" [width]="'99.75px'" [c-class]="'image-round'"
-                                            path="assets/images/timeline/ataturk_1.jpg">
-                                        </amexio-image>
-                                    </amexio-column>
-                                    <amexio-column size="10" fit="false">
-                                        <span style="float: right">
-                                            <amexio-chips [display-field]="'label'">
-                                                <amexio-chip [icon]="'fa fa-facebook-square'" [label]="'Facebook'"
-                                                    [color]="'cadetblue'" [badge]="2" [closable]="false"
-                                                    [font-color]="'black'">
-                                                </amexio-chip>
-                                            </amexio-chips>
-                                        </span>
-                                        <span>
-                                            <amexio-label size="small-bold">
-                                                John
-                                            </amexio-label><br>
-                                            <amexio-label font-color="#FF5733" size="small">
-                                                13 Aug, 1945 11:20:19
-                                            </amexio-label>
-                                        </span>
-                                        <div style="padding-top:10px;">
-                                            <amexio-label size="small" [font-color]="'black'">
-                                                “Success means having the courage, the determination, and the will to
-                                                become the
-                                                person you believe you were meant to be.”
-
-                                            </amexio-label>
-                                        </div>
-                                    </amexio-column>
-
-                                </amexio-row>
-
-
-                            </amexio-stackablepanel-item>
-                            <amexio-stackablepanel-item title=" Post Third  ">
-                                <amexio-row>
-                                    <amexio-column size="2" fit="false" style="text-align: center">
-                                        <amexio-image [height]="'99.75px'" [width]="'99.75px'" [c-class]="'image-round'"
-                                            path="assets/images/timeline/atatürk-ün-inanılmaz-karizmatik.jpg">
-                                        </amexio-image>
-                                    </amexio-column>
-                                    <amexio-column size="10" fit="false">
-                                        <span style="float: right">
-                                            <amexio-chips [display-field]="'label'">
-                                                <amexio-chip [icon]="'fa fa-twitter'" [label]="'Twitter'"
-                                                    [color]="'yellow'" [badge]="8" [closable]="false"
-                                                    [font-color]="'black'">
-                                                </amexio-chip>
-                                            </amexio-chips>
-                                        </span>
-                                        <span>
-                                            <amexio-label size="small-bold">
-                                                Martin
-                                            </amexio-label><br>
-                                            <amexio-label font-color="#FF5733" size="small">
-                                                3 Nov, 1932 1:26:13
-                                            </amexio-label>
-                                        </span>
-                                        <div style="padding-top:10px;">
-                                            <amexio-label size="small" [font-color]="'black'">
-                                                “It is the satisfaction of doing it for yourself and motivating others
-                                                to work
-                                                with you in bringing it about. It is about the fun, innovation,
-                                                creativity with
-                                                the rewards being far greater than purely financial.”
-
-                                            </amexio-label>
-                                        </div>
-                                    </amexio-column>
-
-                                </amexio-row>
 
                             </amexio-stackablepanel-item>
                         </amexio-stackable-panel>
+
                     </amexio-body>
                 </amexio-card>
             </amexio-column>

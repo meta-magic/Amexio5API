@@ -44,7 +44,7 @@
       "gridData": [
         {
           "name": "panel-name",
-          "description": "Count of total number of items are present.",
+          "description": "Name of the panel with Count of total number of items are present.",
           "version": "5.18 onwards",
           "type": "string",
           "default": "Comments"
@@ -105,7 +105,7 @@
   "sourceMetadata": {
     "htmlUrl": "pane/stackablepanel/form.html",
     "tsUrl": "pane/stackablepanel/form.text",
-    "datasourceUrl": ""
+    "datasourceUrl": "assets/data/componentdata/panes/stackablePanel.json"
   },
   "liveMetadata": {
     "disabled": true,
