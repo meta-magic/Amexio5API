@@ -597,7 +597,7 @@ export const MENUCONSTANT = {
     {
       text: "Data",
       icon: "fa fa-database  ",
-      badge: "1",
+      badge: "2",
       children: [
         {
           text: "Data Loading Indicator",
@@ -611,6 +611,7 @@ export const MENUCONSTANT = {
         },
         {
           text: "Grid",
+          badge: '1',
           icon: "fa fa-database  ",
           children: [
             {
@@ -636,6 +637,7 @@ export const MENUCONSTANT = {
             {
               text: "Filter",
               icon: "fa fa-database  ",
+              badge: "U",
               link: "data/filter-grid-demo"
             },
             {
