@@ -1,9 +1,9 @@
 export const MENUCONSTANT = {
   HOMEMENUS: [
     { text: "Concept", icon: "fab fa-leanpub", link: "concept-page" },
-    { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started" },
+    // { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started" },
     
-    // { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started-beta" },
+    { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started-beta" },
     { text: "Themes", icon: "fa fa-snowflake-o", link: "amexio-colors" },
     { text: "D3 Charts", link: "d3-charts", icon: "fa fa-openid" },
     {
@@ -27,7 +27,12 @@ export const MENUCONSTANT = {
     {text:"Round Edge",
     icon:"fa fa-square-o",
     badge: "NEW",
-    link:"directive-demo/round-edge"}
+    link:"directive-demo/round-edge"},
+
+    // {text:"Full Screen",
+    // icon:"fa fa-arrows-alt",
+    // badge: "NEW",
+    // link:"directive-demo/full-screen"}
   ],
 
   EEMENUS: [
