@@ -1,0 +1,85 @@
+<!-- Creative Card -->
+<amexio-card-ce amexioFullScreen [full-screen-type]="'browser'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle3.jpg'">
+    <amexio-header-ce [align]="'space-between'">
+        <amexio-label [font-color]="'white'" size="large-bold">Cycling
+        </amexio-label>
+
+    </amexio-header-ce>
+    <amexio-body-ce>
+        <amexio-label [font-color]="'white'">
+            To be fit and healthy you need to be physically active. Regular physical activity can help protect you from serious diseases
+            such as obesity, heart disease, cancer, mental illness, diabetes and arthritis. Riding your bicycle regularly
+            is one of the best ways to reduce your risk of health problems associated with a sedentary lifestyle.
+        </amexio-label>
+        <br>
+        <amexio-label [font-color]="'white'">
+            Cycling is a healthy, low-impact exercise that can be enjoyed by people of all ages, from young children to older adults.
+            It is also fun, cheap and good for the environment.
+        </amexio-label>
+        <br>
+        <amexio-label [font-color]="'white'">
+            Riding to work or the shops is one of the most time-efficient ways to combine regular exercise with your everyday routine.
+            An estimated one billion people ride bicycles every day – for transport, recreation and sport.
+        </amexio-label>
+    </amexio-body-ce>
+</amexio-card-ce>
+
+<!-- Card -->
+<amexio-card amexioFullScreen [full-screen-type]="'browser'" amexioThemeStyle [theme-style]="'round-edge'" [header]="true"
+    [footer]="true" [show]="true" [footer-align]="'right'" height="250">
+    <amexio-header>
+        Employee Registration
+
+    </amexio-header>
+    <amexio-body>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-text-input [field-label]="'Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="true">
+                </amexio-text-input>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-dropdown [place-holder]="'Choose'" name="countryCode1" [data-reader]="'data'" [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/country.json'"
+                    [http-method]="'get'" [display-field]="'countryName'" [value-field]="'countryCode1'" [enable-sort]="true"
+                    [sort]="'asc'">
+                    <amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
+
+                </amexio-dropdown>
+            </amexio-column>
+        </amexio-row>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-number-input [field-label]="'Number Input'" [place-holder]="'Enter Age'">
+                </amexio-number-input>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'"
+                    [enable-popover]="true" [icon-feedback]="true">
+                </amexio-email-input>
+            </amexio-column>
+        </amexio-row>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-text-input [field-label]="'Father Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="true">
+                </amexio-text-input>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-text-input [field-label]="'Present Address'" name="address" [place-holder]="'Enter address'" [icon-feedback]="true">
+                </amexio-text-input>
+            </amexio-column>
+        </amexio-row>
+        <amexio-row>
+            <amexio-column [size]="6">
+                <amexio-number-input [field-label]="'Number Input'" [place-holder]="'Enter Age'">
+                </amexio-number-input>
+            </amexio-column>
+            <amexio-column [size]="6">
+                <amexio-email-input [field-label]="'Father Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false"
+                    [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
+                </amexio-email-input>
+            </amexio-column>
+        </amexio-row>
+    </amexio-body>
+    <amexio-action>
+        <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
+    </amexio-action>
+</amexio-card>

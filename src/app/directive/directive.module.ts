@@ -8,13 +8,14 @@ import { DIRECTIVE_ROUTE } from "./directive.routes";
 import { InputMaskDemo } from './inputmask/input-mask.demo';
 import { ColorPaletteDemo } from './colorpalette/color-palette';
 import { RoundEdgeDemo } from './roundedge/round-edge';
+import { FullScreenDemo } from  './fullscreen/full-screen';
 import { RouterModule } from "@angular/router";
 
 /**
  * Created by kedar on 31/1/19.
  */
 @NgModule({
-    declarations: [ColorPaletteDemo, InputMaskDemo, RoundEdgeDemo],
+    declarations: [ColorPaletteDemo, InputMaskDemo, RoundEdgeDemo, FullScreenDemo],
     imports: [
         CommonModule, 
         FormsModule, 

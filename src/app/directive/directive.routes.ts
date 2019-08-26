@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { ColorPaletteDemo } from './colorpalette/color-palette';
 import { InputMaskDemo } from './inputmask/input-mask.demo';
 import { RoundEdgeDemo } from './roundedge/round-edge'; 
+import { FullScreenDemo } from './fullscreen/full-screen';
 
 export const DIRECTIVE_ROUTE: Routes = [
 
@@ -13,6 +14,9 @@ export const DIRECTIVE_ROUTE: Routes = [
     },
     {
         path: 'round-edge', component: RoundEdgeDemo,
+    },
+    {
+        path: 'full-screen', component: FullScreenDemo,
     }
 
 ]

@@ -33,7 +33,7 @@ export class RoundEdgeDemo implements OnInit {
                                 "description": "supports round-edge theme (corners are rounded) and classic",
                                 "version": "5.18 onwards",
                                 "type": "string",
-                                "default": ""
+                                "default": "classic"
                         }
                         ]
                         

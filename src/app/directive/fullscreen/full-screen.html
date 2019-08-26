@@ -1,0 +1,203 @@
+<amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="true" class="api-header-style " [padding]="true" align="left">
+  <amexio-label size="large">
+    Amexio Full Screen Directive
+  </amexio-label>
+  <br />
+  <br> Developer can provide full screen directive so the components get the functionality of maximize.
+</amexio-box>
+
+<amexio-card style="display: block; padding-top:30px;">
+  <amexio-body>
+    <amexio-tab-view #tab [closable]="true">
+      <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
+        <amexio-row>
+          <amexio-column size="12" [fit]="false">
+            <amexio-label [size]="'medium-bold'">
+              Creative Card
+            </amexio-label>
+            <br>
+            <div class="coltempclass">
+              <amexio-card-ce amexioFullScreen [full-screen-type]="'browser'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle3.jpg'">
+                <amexio-header-ce [align]="'space-between'">
+                  <amexio-label [font-color]="'white'" size="large-bold">Cycling
+                  </amexio-label>
+
+                </amexio-header-ce>
+                <amexio-body-ce>
+                  <p style="color:white">
+                    To be fit and healthy you need to be physically active. Regular physical activity can help protect you from serious diseases
+                    such as obesity, heart disease, cancer, mental illness, diabetes and arthritis. Riding your bicycle regularly
+                    is one of the best ways to reduce your risk of health problems associated with a sedentary lifestyle.
+                  </p>
+                  <br>
+                  <p style="color:white">
+                    Cycling is a healthy, low-impact exercise that can be enjoyed by people of all ages, from young children to older adults.
+                    It is also fun, cheap and good for the environment.
+                  </p>
+                  <br>
+                  <p style="color:white">
+                    Riding to work or the shops is one of the most time-efficient ways to combine regular exercise with your everyday routine.
+                    An estimated one billion people ride bicycles every day – for transport, recreation and sport.
+                  </p>
+                </amexio-body-ce>
+              </amexio-card-ce>
+
+            </div>
+
+            <br>
+            <amexio-label [size]="'medium-bold'">
+              Panel
+            </amexio-label>
+            <br>
+            <amexio-panel amexioFullScreen amexioThemeStyle [theme-style]="'round-edge'" [fit]="false" [border]="true" [header]="true" title="Custom Header"
+              [expanded]="true">
+              <amexio-panel-header>
+                <amexio-label size="small">
+                  My Drive
+                </amexio-label>
+                <amexio-text-input name="name" place-holder="Enter name" icon-feedback="true">
+                </amexio-text-input>
+                <amexio-image style="margin-top : auto;" [icon-class]="'fa fa-info-circle'" [tooltip]="'Fontawesome apple'">
+                </amexio-image>
+
+
+              </amexio-panel-header>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+              text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+              unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+              and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </amexio-panel>
+            <br>
+
+            <amexio-label [size]="'medium-bold'">
+              Card
+            </amexio-label>
+            <br>
+            <amexio-card amexioFullScreen [full-screen-type]="'browser'" amexioThemeStyle [theme-style]="'round-edge'" [header]="true"
+              [footer]="true" [show]="true" [footer-align]="'right'" height="250">
+              <amexio-header>
+                Employee Registration
+
+              </amexio-header>
+              <amexio-body>
+                <amexio-row>
+                  <amexio-column [size]="6">
+                    <amexio-text-input [field-label]="'Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="true">
+                    </amexio-text-input>
+                  </amexio-column>
+                  <amexio-column [size]="6">
+                    <amexio-dropdown [place-holder]="'Choose'" name="countryCode1" [data-reader]="'data'" [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/country.json'"
+                      [http-method]="'get'" [display-field]="'countryName'" [value-field]="'countryCode1'" [enable-sort]="true"
+                      >
+                      <amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
+
+                    </amexio-dropdown>
+                  </amexio-column>
+                </amexio-row>
+                <amexio-row>
+                  <amexio-column [size]="6">
+                    <amexio-number-input [field-label]="'Number Input'" [place-holder]="'Enter Age'">
+                    </amexio-number-input>
+                  </amexio-column>
+                  <amexio-column [size]="6">
+                    <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'"
+                      [enable-popover]="true" [icon-feedback]="true">
+                    </amexio-email-input>
+                  </amexio-column>
+                </amexio-row>
+                <amexio-row>
+                  <amexio-column [size]="6">
+                    <amexio-text-input [field-label]="'Father Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="true">
+                    </amexio-text-input>
+                  </amexio-column>
+                  <amexio-column [size]="6">
+                    <amexio-text-input [field-label]="'Present Address'" name="address" [place-holder]="'Enter address'" [icon-feedback]="true">
+                    </amexio-text-input>
+                  </amexio-column>
+                </amexio-row>
+                <amexio-row>
+                  <amexio-column [size]="6">
+                    <amexio-number-input [field-label]="'Number Input'" [place-holder]="'Enter Age'">
+                    </amexio-number-input>
+                  </amexio-column>
+                  <amexio-column [size]="6">
+                    <amexio-email-input [field-label]="'Father Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false"
+                      [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
+                    </amexio-email-input>
+                  </amexio-column>
+                </amexio-row>
+              </amexio-body>
+              <amexio-action>
+                <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
+              </amexio-action>
+            </amexio-card>
+          </amexio-column>
+<br>
+DataGrid
+<br>
+          <amexio-column size ="12"
+                  [fit]="false">
+                  <amexio-datagrid amexioFullScreen 
+                  [title]="'Employee Data'"
+                  [page-size] = "10"
+                  [data-reader]="'data'"
+                  [http-method]="'get'" 
+                  [http-url]="'assets/data/componentdata/datagridgroupby.json'"
+                  [enable-column-filter]="true"
+                                (rowSelect)="onRowSelect($event)">
+                  <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false" [text]="'Full Name'"></amexio-data-table-column>
+                  <amexio-data-table-column [data-index]="'jobTitle'" [data-type]="'string'" [hidden]="false" [text]="'Job Title'">
+                  </amexio-data-table-column>
+                  <amexio-data-table-column [data-index]="'salary'" [data-type]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
+                  </amexio-datagrid> 
+          </amexio-column>
+        </amexio-row>
+      </amexio-tab>
+
+      <amexio-tab title="API Reference" [active]="false" [closable]="false" [disabled]="false">
+        <br>
+        <amexio-card [header]="true">
+          <amexio-header>
+            Directive: amexioFullScreen
+          </amexio-header>
+          <amexio-body>
+            <amexio-datagrid [enable-column-filter]="false" [data]="inputData">
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+              </amexio-data-table-column>
+              <amexio-data-table-column [width]="15" [sort]="false" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Data Type'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="50" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+          </amexio-body>
+        </amexio-card>
+      </amexio-tab>
+
+      <amexio-tab title="Full Screen" [active]="false" [closable]="false" [disabled]="false">
+        <amexio-datagrid [enable-column-filter]="false" [data-reader]="'data'" [http-url]="'assets/data/componentdata/roundedge.json'"
+          [http-method]="'get'" (rowSelect)="onRowSelect($event)">
+          <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Component'">
+          </amexio-data-table-column>
+          <amexio-data-table-column [width]="5" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="'Demos'">
+            <ng-template #amexioBodyTmpl let-column let-row="row">
+              <!-- <amexio-label size="small" font-color="blue">
+               Demo Link
+              </amexio-label> -->
+              <a style="color: blue">
+                <u>Demo link</u>
+              </a>
+
+            </ng-template>
+          </amexio-data-table-column>
+
+        </amexio-datagrid>
+      </amexio-tab>
+
+      <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
+        <amexio-api-sourcecode [html-url]="'/directive/full-screen/form.html'">
+        </amexio-api-sourcecode>
+      </amexio-tab>
+    </amexio-tab-view>
+  </amexio-body>
+</amexio-card>

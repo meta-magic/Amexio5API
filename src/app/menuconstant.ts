@@ -29,10 +29,10 @@ export const MENUCONSTANT = {
     badge: "NEW",
     link:"directive-demo/round-edge"},
 
-    // {text:"Full Screen",
-    // icon:"fa fa-arrows-alt",
-    // badge: "NEW",
-    // link:"directive-demo/full-screen"}
+    {text:"Full Screen",
+    icon:"fa fa-arrows-alt",
+    badge: "NEW",
+    link:"directive-demo/full-screen"}
   ],
 
   EEMENUS: [
