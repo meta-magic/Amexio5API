@@ -22,8 +22,8 @@
               <amexio-column size="12">
                 <amexio-dropdown [(ngModel)]="id" [place-holder]="'Choose'" name="id" [data-reader]="'data'"
                   [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/gridtemplate.json'"
-                  [http-method]="'get'" [search]="true" [display-field]="'name'" [value-field]="'id'" [enable-sort]="true"
-                  [sort]="'asc'" (onSingleSelect)="getRowData($event)">
+                  [http-method]="'get'" [search]="true" [display-field]="'name'" [value-field]="'id'"
+                  [enable-sort]="true" [sort]="'asc'" (onSingleSelect)="getRowData($event)">
                   <ng-template #amexioBodyTmpl let-column let-row="row">
                     <amexio-label>
                       <amexio-image [width]="100" [path]="'assets/images/flags/flags/'+row.flag_32"></amexio-image>
