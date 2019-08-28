@@ -5809,10 +5809,14 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   color: var(--componentHoverFontColor);
   outline: none; }
 
+.datatable-row:nth-child(even) {
+  background-color: white; }
+
 /** Datatable - Visual CSS **/
 .datatabletitle {
   font-size: 1.5em;
-  margin: .1em 0 .35em; }
+  margin: .1em 0 .35em;
+  background: white; }
 
 .datatable {
   display: table;
@@ -5884,6 +5888,15 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 .iconPaddingStyle {
   padding-right: 5px; }
+
+.datagrid-full-screen {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2000;
+  background: white; }
 
 /****************************************************************************
     Component Name : Horizontaltreeview
@@ -9042,6 +9055,12 @@ amexio-layout amexio-layout-item {
   right: 0%;
   padding: 5px 10px; }
 
+.creative-header-icon-div-full-screen {
+  position: absolute;
+  right: 0;
+  padding-right: 5px !important;
+  top: 0; }
+
 .header-ce {
   padding: 10px;
   position: relative;
@@ -10109,6 +10128,135 @@ amexio-layout-columns amexio-layout-item {
   border-radius: 10px; }
 
 /** Round Edge card - Structure CSS **/
+/****************************************************************************
+    Component Name : Directive Router animation
+    Version : Amexio v5.19 onwards
+*****************************************************************************/
+/** Router animation card - Structure CSS **/
+.myanislideleft {
+  position: relative;
+  display: block;
+  animation-name: slideleft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes slideleft {
+  0% {
+    left: -1000px; }
+  100% {
+    left: 0; } }
+.myanislideright {
+  position: relative;
+  display: block;
+  animation-name: slideright;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes slideright {
+  0% {
+    right: -1000px; }
+  100% {
+    right: 0; } }
+.myanifadingeffect {
+  position: relative;
+  display: block;
+  animation-name: fadeeffect;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0; }
+
+@keyframes fadeeffect {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.myanislidetop {
+  position: relative;
+  display: block;
+  animation-name: slidetop;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes slidetop {
+  0% {
+    top: -1000px; }
+  100% {
+    top: 0; } }
+.myanislidebottom {
+  position: relative;
+  display: block;
+  animation-name: slidebottom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes slidebottom {
+  0% {
+    bottom: -1000px; }
+  100% {
+    bottom: 0; } }
+.myanislidetopleft {
+  position: relative;
+  display: block;
+  animation-name: lefttop;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes lefttop {
+  0% {
+    left: -1000px;
+    top: -1000px; }
+  100% {
+    left: 0;
+    top: 0; } }
+.myanislidebottomleft {
+  position: relative;
+  display: block;
+  animation-name: leftbottom;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes leftbottom {
+  0% {
+    left: -1000px;
+    bottom: -1000px; }
+  100% {
+    left: 0;
+    bottom: 0; } }
+.myanislidetopright {
+  position: relative;
+  display: block;
+  animation-name: topright;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+
+@keyframes topright {
+  0% {
+    top: -1000px;
+    right: -1000px; }
+  100% {
+    top: 0;
+    right: 0; } }
+.myanislidebottomright {
+  position: relative;
+  display: block;
+  animation-name: bottomright;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-fill-mode: forwards; }
+
+@keyframes bottomright {
+  0%, 20%, 50%, 80% {
+    bottom: -1000px;
+    right: -1000px;
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); }
+  100% {
+    bottom: 0;
+    right: 0;
+    transform: translateY(0); } }
 /** Initialze Animation variables ------------ */
 /****************************************************************************
                 Animation CSS for Checkbox 
