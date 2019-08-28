@@ -48,6 +48,24 @@
             </amexio-body>
           </amexio-card>
         </amexio-column>
+        <amexio-column size="12">
+          <amexio-card [header]="true">
+            <amexio-header>
+              Simple Data Grid with Round Edges
+            </amexio-header>
+            <amexio-body>
+              <amexio-datagrid amexioThemeStyle [theme-style]="'round-edge'"  [enable-column-filter]="false" title="Simple Data Grid " [enable-checkbox]="false" [http-method]="'get'" [http-url]="'assets/data/componentdata/country.json'"
+                               [data-reader]="'data'" [page-size]="10">
+
+                <amexio-data-table-column [data-index]="'countryName'" [data-type]="'string'" [hidden]="false" [text]="'Name'" (selectedRowData)="getSelectedData($event)">
+                </amexio-data-table-column>
+                <amexio-data-table-column [sort]="false" [data-index]="'countryCode1'" [data-type]="'string'" [hidden]="false" [text]="'Code'"></amexio-data-table-column>
+                <amexio-data-table-column [data-index]="'currencyName'" [data-type]="'string'" [hidden]="false" [text]="'Currency'"></amexio-data-table-column>
+              </amexio-datagrid>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
+        <br>
       </amexio-row>
     </amexio-api-demo>
 

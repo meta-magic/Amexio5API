@@ -1,85 +1,55 @@
 <!-- Creative Card -->
-<amexio-card-ce amexioFullScreen [full-screen-type]="'browser'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle3.jpg'">
+<amexio-card-ce amexioFullScreen [full-screen-type]="'desktop'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle3.jpg'">
     <amexio-header-ce [align]="'space-between'">
         <amexio-label [font-color]="'white'" size="large-bold">Cycling
         </amexio-label>
 
     </amexio-header-ce>
     <amexio-body-ce>
-        <amexio-label [font-color]="'white'">
+        <p style="color:white">
             To be fit and healthy you need to be physically active. Regular physical activity can help protect you from serious diseases
             such as obesity, heart disease, cancer, mental illness, diabetes and arthritis. Riding your bicycle regularly
             is one of the best ways to reduce your risk of health problems associated with a sedentary lifestyle.
-        </amexio-label>
+        </p>
         <br>
-        <amexio-label [font-color]="'white'">
+        <p style="color:white">
             Cycling is a healthy, low-impact exercise that can be enjoyed by people of all ages, from young children to older adults.
             It is also fun, cheap and good for the environment.
-        </amexio-label>
+        </p>
         <br>
-        <amexio-label [font-color]="'white'">
+        <p style="color:white">
             Riding to work or the shops is one of the most time-efficient ways to combine regular exercise with your everyday routine.
             An estimated one billion people ride bicycles every day – for transport, recreation and sport.
-        </amexio-label>
+        </p>
     </amexio-body-ce>
 </amexio-card-ce>
 
-<!-- Card -->
-<amexio-card amexioFullScreen [full-screen-type]="'browser'" amexioThemeStyle [theme-style]="'round-edge'" [header]="true"
-    [footer]="true" [show]="true" [footer-align]="'right'" height="250">
-    <amexio-header>
-        Employee Registration
+<!-- Panel -->
+<amexio-panel amexioFullScreen [full-screen-type]="'desktop'" [fit]="false" [border]="true" [header]="true" title="Custom Header"
+    [expanded]="true">
+    <amexio-panel-header>
+        <amexio-label size="small">
+            My Drive
+        </amexio-label>
+        <amexio-text-input name="name" place-holder="Enter name" icon-feedback="true">
+        </amexio-text-input>
+        <amexio-image style="margin-top : auto;" [icon-class]="'fa fa-info-circle'" [tooltip]="'Fontawesome apple'">
+        </amexio-image>
 
-    </amexio-header>
-    <amexio-body>
-        <amexio-row>
-            <amexio-column [size]="6">
-                <amexio-text-input [field-label]="'Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="true">
-                </amexio-text-input>
-            </amexio-column>
-            <amexio-column [size]="6">
-                <amexio-dropdown [place-holder]="'Choose'" name="countryCode1" [data-reader]="'data'" [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/country.json'"
-                    [http-method]="'get'" [display-field]="'countryName'" [value-field]="'countryCode1'" [enable-sort]="true"
-                    [sort]="'asc'">
-                    <amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
+    </amexio-panel-header>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+    with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+</amexio-panel>
 
-                </amexio-dropdown>
-            </amexio-column>
-        </amexio-row>
-        <amexio-row>
-            <amexio-column [size]="6">
-                <amexio-number-input [field-label]="'Number Input'" [place-holder]="'Enter Age'">
-                </amexio-number-input>
-            </amexio-column>
-            <amexio-column [size]="6">
-                <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false" [error-msg]="'Please Enter Email Id'"
-                    [enable-popover]="true" [icon-feedback]="true">
-                </amexio-email-input>
-            </amexio-column>
-        </amexio-row>
-        <amexio-row>
-            <amexio-column [size]="6">
-                <amexio-text-input [field-label]="'Father Name'" name="name" [place-holder]="'Enter name'" [icon-feedback]="true">
-                </amexio-text-input>
-            </amexio-column>
-            <amexio-column [size]="6">
-                <amexio-text-input [field-label]="'Present Address'" name="address" [place-holder]="'Enter address'" [icon-feedback]="true">
-                </amexio-text-input>
-            </amexio-column>
-        </amexio-row>
-        <amexio-row>
-            <amexio-column [size]="6">
-                <amexio-number-input [field-label]="'Number Input'" [place-holder]="'Enter Age'">
-                </amexio-number-input>
-            </amexio-column>
-            <amexio-column [size]="6">
-                <amexio-email-input [field-label]="'Father Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false"
-                    [error-msg]="'Please Enter Email Id'" [enable-popover]="true" [icon-feedback]="true">
-                </amexio-email-input>
-            </amexio-column>
-        </amexio-row>
-    </amexio-body>
-    <amexio-action>
-        <amexio-button [label]="'Save'" [type]="'primary'"></amexio-button>
-    </amexio-action>
-</amexio-card>
+<!-- Grid -->
+<amexio-datagrid [enable-column-filter]="false" [data]="inputData">
+    <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+    </amexio-data-table-column>
+    <amexio-data-table-column [width]="15" [sort]="false" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+    <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Data Type'"></amexio-data-table-column>
+    <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+    <amexio-data-table-column [width]="50" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+  </amexio-datagrid>

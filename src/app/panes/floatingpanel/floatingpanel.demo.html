@@ -49,29 +49,11 @@
                         </amexio-floating-panel>
                     </amexio-column>
 
-                    <!-- <amexio-column size="3" fit="false">
-                        <amexio-button type="theme-color" (onClick)="onshowRoundEdgePanel()" label="Round Edge">
-                        </amexio-button>
-                        <amexio-floating-panel amexioThemeStyle [theme-style]="'round-edge'" [show-panel]="showRoundEdgePanel" [relative]="true"
-                            [closeable]="true" [width]="'330'" [height]="230" [title]="'Verify Phone Number'" (onClose)="onCloseRoundEdgePanel($event)">
-                            <amexio-row>
-                                <amexio-column size="12" fit="true">
-                                    <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'" [allow-blank]="false">
-                                    </amexio-email-input>
-                                    <amexio-number-input [field-label]="'Phone Number'" [place-holder]="'Enter Phone Number'">
-                                    </amexio-number-input>
-                                    <br>
-                                    <amexio-button [label]="'Submit'" [type]="'theme-color'" [tooltip]="'Primary Button'">
-                                    </amexio-button>
-                                </amexio-column>
-                            </amexio-row>
-
-                        </amexio-floating-panel>
-                    </amexio-column> -->
+                   
                     <amexio-column size="3" fit="false">
-                            <amexio-button type="theme-color" (onClick)="onshowRoundEdgePanel()" label="Relative">
+                            <amexio-button type="theme-color" (onClick)="onshowRoundEdgePanel()" label="Round Edge">
                             </amexio-button>
-                            <amexio-floating-panel amexioThemeStyle [theme-style]="'round-edge'" [show-panel]="showRoundEdgePanel"
+                            <amexio-floating-panel amexioColorPalette [color-palette]="'random'" [gradient]="true" amexioThemeStyle [theme-style]="'round-edge'" [show-panel]="showRoundEdgePanel"
                                 [relative]="true" [closeable]="true" [width]="'330'" [height]="230" [title]="'Verify Phone Number'"
                                 (onClose)="onCloseRoundEdgePanel($event)">
                                 <amexio-row>

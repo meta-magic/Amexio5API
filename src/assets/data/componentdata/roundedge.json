@@ -45,6 +45,10 @@
             "link": "panes/window-demo"
         },
         {
+            "componentName": "Amexio Datagrid",
+            "link": "data/simplegrid-demo"
+        },
+        {
             "componentName": "Amexio Badge",
             "link": "forms-Input/badge-demo"
         },

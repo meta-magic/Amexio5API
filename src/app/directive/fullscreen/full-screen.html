@@ -17,7 +17,7 @@
             </amexio-label>
             <br>
             <div class="coltempclass">
-              <amexio-card-ce amexioFullScreen [full-screen-type]="'browser'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle3.jpg'">
+              <amexio-card-ce amexioFullScreen [full-screen-type]="'desktop'" [align]="'center'" [color]="'white'" [bg-image]="'assets/images/cardce/cycle3.jpg'">
                 <amexio-header-ce [align]="'space-between'">
                   <amexio-label [font-color]="'white'" size="large-bold">Cycling
                   </amexio-label>
@@ -49,8 +49,8 @@
               Panel
             </amexio-label>
             <br>
-            <amexio-panel amexioFullScreen amexioThemeStyle [theme-style]="'round-edge'" [fit]="false" [border]="true" [header]="true" title="Custom Header"
-              [expanded]="true">
+            <amexio-panel amexioFullScreen [full-screen-type]="'desktop'" [fit]="false" [border]="true" [header]="true"
+              title="Custom Header" [expanded]="true">
               <amexio-panel-header>
                 <amexio-label size="small">
                   My Drive
@@ -74,7 +74,7 @@
               Card
             </amexio-label>
             <br>
-            <amexio-card amexioFullScreen [full-screen-type]="'browser'" amexioThemeStyle [theme-style]="'round-edge'" [header]="true"
+            <amexio-card amexioFullScreen [full-screen-type]="'desktop'" [header]="true"
               [footer]="true" [show]="true" [footer-align]="'right'" height="250">
               <amexio-header>
                 Employee Registration
@@ -88,8 +88,7 @@
                   </amexio-column>
                   <amexio-column [size]="6">
                     <amexio-dropdown [place-holder]="'Choose'" name="countryCode1" [data-reader]="'data'" [field-label]="'Choose Country'" [http-url]="'assets/data/componentdata/country.json'"
-                      [http-method]="'get'" [display-field]="'countryName'" [value-field]="'countryCode1'" [enable-sort]="true"
-                      >
+                      [http-method]="'get'" [display-field]="'countryName'" [value-field]="'countryCode1'" [enable-sort]="true">
                       <amexio-label size="large" [badge]=12>This is large amexio label</amexio-label>
 
                     </amexio-dropdown>
@@ -133,24 +132,17 @@
               </amexio-action>
             </amexio-card>
           </amexio-column>
-<br>
-DataGrid
-<br>
-          <amexio-column size ="12"
-                  [fit]="false">
-                  <amexio-datagrid amexioFullScreen 
-                  [title]="'Employee Data'"
-                  [page-size] = "10"
-                  [data-reader]="'data'"
-                  [http-method]="'get'" 
-                  [http-url]="'assets/data/componentdata/datagridgroupby.json'"
-                  [enable-column-filter]="true"
-                                (rowSelect)="onRowSelect($event)">
-                  <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false" [text]="'Full Name'"></amexio-data-table-column>
-                  <amexio-data-table-column [data-index]="'jobTitle'" [data-type]="'string'" [hidden]="false" [text]="'Job Title'">
-                  </amexio-data-table-column>
-                  <amexio-data-table-column [data-index]="'salary'" [data-type]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
-                  </amexio-datagrid> 
+          <br> DataGrid
+          <br>
+          <amexio-column size="12" [fit]="false">
+            <amexio-datagrid amexioFullScreen [full-screen-type]="'desktop'" [title]="'Employee Data'" [page-size]="10" [data-reader]="'data'"
+              [http-method]="'get'" [http-url]="'assets/data/componentdata/datagridgroupby.json'" [enable-column-filter]="true"
+              (rowSelect)="onRowSelect($event)">
+              <amexio-data-table-column [data-index]="'preferredFullName'" [data-type]="'string'" [hidden]="false" [text]="'Full Name'"></amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'jobTitle'" [data-type]="'string'" [hidden]="false" [text]="'Job Title'">
+              </amexio-data-table-column>
+              <amexio-data-table-column [data-index]="'salary'" [data-type]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
+            </amexio-datagrid>
           </amexio-column>
         </amexio-row>
       </amexio-tab>
