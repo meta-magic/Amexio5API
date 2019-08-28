@@ -32,7 +32,12 @@ export const MENUCONSTANT = {
     {text:"Full Screen",
     icon:"fa fa-arrows-alt",
     badge: "NEW",
-    link:"directive-demo/full-screen"}
+    link:"directive-demo/full-screen"},
+
+    // {text:"Routing Animation",
+    // icon:"fa fa-square-o",
+    // badge: "NEW",
+    // link:"directive-demo/router-animation"}
   ],
 
   EEMENUS: [

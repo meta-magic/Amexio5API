@@ -22,7 +22,7 @@ import { CopyRightComponent } from './copyright/copyright.component';
 import { ConceptPage } from './concept/concept.component';
 import { KeyFeaturesComponent } from './concept/keyfeatures.component';
 import { EventsPanelComponent } from '../app/enterprise/floating-panel-calendar/events-panel/events-panel.component';
-
+import {RouterService} from 'amexio-ng-extensions';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +44,7 @@ import { EventsPanelComponent } from '../app/enterprise/floating-panel-calendar/
   ],
   entryComponents: [EventsPanelComponent],
 
-  providers: [CommonDataService, AppPreloadingStrategy, ThemeServiceService, HTTPService, DeviceQueryService, IconLoaderService, CookieService],
+  providers: [CommonDataService, AppPreloadingStrategy, ThemeServiceService, HTTPService, RouterService, DeviceQueryService, IconLoaderService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -10,12 +10,14 @@ import { ColorPaletteDemo } from './colorpalette/color-palette';
 import { RoundEdgeDemo } from './roundedge/round-edge';
 import { FullScreenDemo } from  './fullscreen/full-screen';
 import { RouterModule } from "@angular/router";
-
+import { RouterAnimationDemo } from './routinganimation/router-animation';
+import { ChildRouteDemo } from './routinganimation/childroute'
+import {RouterService} from 'amexio-ng-extensions';
 /**
  * Created by kedar on 31/1/19.
  */
 @NgModule({
-    declarations: [ColorPaletteDemo, InputMaskDemo, RoundEdgeDemo, FullScreenDemo],
+    declarations: [ColorPaletteDemo, InputMaskDemo, RoundEdgeDemo, FullScreenDemo, RouterAnimationDemo, ChildRouteDemo],
     imports: [
         CommonModule, 
         FormsModule, 
@@ -24,7 +26,7 @@ import { RouterModule } from "@angular/router";
         AmexioWidgetModule,
         RouterModule.forChild(DIRECTIVE_ROUTE),
     ],
-    providers: []
+    providers: [RouterService]
 })
 export class DirectiveModule {
 
