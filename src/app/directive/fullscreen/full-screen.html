@@ -49,8 +49,8 @@
               Panel
             </amexio-label>
             <br>
-            <amexio-panel amexioFullScreen [full-screen-type]="'desktop'" [fit]="false" [border]="true" [header]="true"
-              title="Custom Header" [expanded]="true">
+            <amexio-panel amexioFullScreen [full-screen-type]="'desktop'" [fit]="false" [border]="true" [header]="true" title="Custom Header"
+              [expanded]="true">
               <amexio-panel-header>
                 <amexio-label size="small">
                   My Drive
@@ -74,8 +74,8 @@
               Card
             </amexio-label>
             <br>
-            <amexio-card amexioFullScreen [full-screen-type]="'desktop'" [header]="true"
-              [footer]="true" [show]="true" [footer-align]="'right'" height="250">
+            <amexio-card amexioFullScreen [full-screen-type]="'desktop'" [header]="true" [footer]="true" [show]="true" [footer-align]="'right'"
+              height="250">
               <amexio-header>
                 Employee Registration
 
@@ -144,6 +144,14 @@
               <amexio-data-table-column [data-index]="'salary'" [data-type]="'number'" [hidden]="false" [text]="'Salary'"></amexio-data-table-column>
             </amexio-datagrid>
           </amexio-column>
+          <br> Tree Grid
+          <br>
+          <amexio-tree-data-table amexioFullScreen [full-screen-type]="'desktop'" [http-method]="'get'" [http-url]="'assets/data/componentdata/treedatatable.json'"
+            [data-reader]="'data'" (selectedRecord)="getSelectedData($event)">
+            <amexio-data-table-column [data-index]="'task'" [data-type]="'string'" [hidden]="false" [text]="'Task'"></amexio-data-table-column>
+            <amexio-data-table-column [data-index]="'user'" [data-type]="'string'" [hidden]="false" [text]="'User'"></amexio-data-table-column>
+            <amexio-data-table-column [data-index]="'duration'" [data-type]="'number'" [hidden]="false" [text]="'Duration'"></amexio-data-table-column>
+          </amexio-tree-data-table>
         </amexio-row>
       </amexio-tab>
 
@@ -166,16 +174,13 @@
         </amexio-card>
       </amexio-tab>
 
-      <amexio-tab title="Full Screen" [active]="false" [closable]="false" [disabled]="false">
+      <!-- <amexio-tab title="Full Screen" [active]="false" [closable]="false" [disabled]="false">
         <amexio-datagrid [enable-column-filter]="false" [data-reader]="'data'" [http-url]="'assets/data/componentdata/roundedge.json'"
           [http-method]="'get'" (rowSelect)="onRowSelect($event)">
           <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Component'">
           </amexio-data-table-column>
           <amexio-data-table-column [width]="5" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="'Demos'">
             <ng-template #amexioBodyTmpl let-column let-row="row">
-              <!-- <amexio-label size="small" font-color="blue">
-               Demo Link
-              </amexio-label> -->
               <a style="color: blue">
                 <u>Demo link</u>
               </a>
@@ -184,7 +189,7 @@
           </amexio-data-table-column>
 
         </amexio-datagrid>
-      </amexio-tab>
+      </amexio-tab> -->
 
       <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
         <amexio-api-sourcecode [html-url]="'/directive/full-screen/form.html'">
