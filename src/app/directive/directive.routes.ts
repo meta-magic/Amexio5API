@@ -23,7 +23,12 @@ export const DIRECTIVE_ROUTE: Routes = [
     {
         path: 'router-animation', component: RouterAnimationDemo,
         children: [
-            { path: 'child-route', component: ChildRouteDemo }
+            { path: '', redirectTo: 'child-route-right', pathMatch: 'full' },
+
+            { path: 'child-route-left', component: ChildRouteDemo },
+            { path: 'child-route-right', component: ChildRouteDemo },
+            { path: 'child-route-top', component: ChildRouteDemo },
+            { path: 'child-route-bottom', component: ChildRouteDemo }
         ]
     },
 

@@ -34,10 +34,10 @@ export const MENUCONSTANT = {
     badge: "NEW",
     link:"directive-demo/full-screen"},
 
-    // {text:"Routing Animation",
-    // icon:"fa fa-square-o",
-    // badge: "NEW",
-    // link:"directive-demo/router-animation"}
+    {text:"Routing Animation",
+    icon:"fa fa-square-o",
+    badge: "NEW",
+    link:"directive-demo/router-animation"}
   ],
 
   EEMENUS: [
