@@ -1,0 +1,32 @@
+ export class RouterAnimationDemo {
+  radioGroupData: any;
+  styleType: string = '';
+
+  constructor(public router: Router,
+    public acR: ActivatedRoute, private rs: RouterService) {
+    rs.initializeRouter(router);
+    this.radioGroupData = {
+      data: [{
+        "routertype": "slide-left",
+        "route":"child-route-left"
+      },
+      {
+        "routertype": "slide-right",
+        "route":"child-route-right"
+      },
+      {
+        "routertype": "slide-top",
+        "route":"child-route-top"
+      },
+      {
+        "routertype": "slide-bottom",
+        "route":"child-route-bottom"
+      }]
+    }
+  }
+  setSelectedType(event: any) {
+   this.styleType = event.routertype;
+  this.router.navigate([event.route],{relativeTo: this.acR}); 
+  }
+ 
+}

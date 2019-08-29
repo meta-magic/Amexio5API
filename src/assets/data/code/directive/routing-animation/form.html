@@ -1,0 +1,7 @@
+<amexio-radio-group [field-label]="''" name="routes"  [(ngModel)]="styleType" [data-reader]="'data'" [display-field]="'routertype'" [value-field]="'routertype'"
+[horizontal]="true" [data]="radioGroupData"  (onSelection)="setSelectedType($event)">
+</amexio-radio-group>
+<div>
+<router-outlet amexio-route-animation [style-type]="styleType">
+</router-outlet>
+</div>

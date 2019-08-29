@@ -10,11 +10,26 @@ export class RouterAnimationDemo {
   title = 'routinglink';
   alterflag: boolean = false;
   radioGroupData: any;
-  styleType: string = 'slide-right';
+  styleType: string = '';
 
+  typeScriptCode: string;
+  htmlCode: string;
+  sourceData: any;
+  stackData: any;
+  copyMsgArray: any[];
+  inputData: any;
   constructor(public router: Router,
     public acR: ActivatedRoute,
      private rs: RouterService) {
+      this.inputData =
+      [{
+              "name": "style-type",
+              "description": "adds animation [slide-left / slide-right / slide-top / slide-bottom] to route",
+              "version": "5.19 onwards",
+              "type": "any",
+              "default": ""
+      }
+      ]
     rs.initializeRouter(router);
     this.radioGroupData = {
       data: [{
@@ -36,9 +51,11 @@ export class RouterAnimationDemo {
     }
   }
   setSelectedType(event: any) {
-
-   this.styleType = event.routertype;
-    this.router.navigate([event.route],{relativeTo: this.acR});
+setTimeout(() => {
+  this.styleType = event.routertype;
+  this.router.navigate([event.route],{relativeTo: this.acR});
+}, 0);
+ 
   }
   alter() {
     // this.router.navigate(['router-animation/input-mask']);

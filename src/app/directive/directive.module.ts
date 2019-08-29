@@ -13,11 +13,16 @@ import { RouterModule } from "@angular/router";
 import { RouterAnimationDemo } from './routinganimation/router-animation';
 import { ChildRouteDemo } from './routinganimation/childroute'
 import {RouterService} from 'amexio-ng-extensions';
+import {ChildRoute2Demo} from './routinganimation/childroute2';
+import {ChildRoute3Demo} from './routinganimation/childroute3';
+import {ChildRoute4Demo} from './routinganimation/childroute4';
+
+
 /**
  * Created by kedar on 31/1/19.
  */
 @NgModule({
-    declarations: [ColorPaletteDemo, InputMaskDemo, RoundEdgeDemo, FullScreenDemo, RouterAnimationDemo, ChildRouteDemo],
+    declarations: [ColorPaletteDemo, InputMaskDemo, RoundEdgeDemo, FullScreenDemo, RouterAnimationDemo, ChildRouteDemo, ChildRoute2Demo, ChildRoute3Demo, ChildRoute4Demo],
     imports: [
         CommonModule, 
         FormsModule, 

@@ -1,28 +1,19 @@
 <amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="true" class="api-header-style " [padding]="true" align="left">
   <amexio-label size="large">
-    Amexio Theme Style Directive
-  </amexio-label>
+    Amexio Routing Animation Directive  </amexio-label>
   <br />
-  <br> Developer can give theme style as round edge so the components are styled as rounded corners.
+  <br> Developer can give animation styles to router-outlet.
 </amexio-box>
 
-<amexio-card style="display: block; padding-top:30px; height: 1300px;">
+<amexio-card style="display: block; padding-top:30px; height: 700px;">
   <amexio-body>
     <amexio-tab-view #tab [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
-
-
-        <!-- (click)="alter()" -->
-        <!-- <button routerLink="child-route"  style=" cursor: pointer; border-radius: 20px; background-color: burlywood">
-            click to animate 
-          </button> -->
-        <amexio-radio-group [field-label]="''" name="routes" [data-reader]="'data'" [display-field]="'routertype'" [value-field]="'routertype'"
-          [horizontal]="true" [data]="radioGroupData" [(ngModel)]="styleType" (onSelection)="setSelectedType($event)">
+        <amexio-radio-group [field-label]="''" name="routes"  [(ngModel)]="styleType" [data-reader]="'data'" [display-field]="'routertype'" [value-field]="'routertype'"
+          [horizontal]="true" [data]="radioGroupData"  (onSelection)="setSelectedType($event)">
         </amexio-radio-group>
-{{styleType}}
-
         <div>
-          <router-outlet amexio-route-animation style-type="slide-right">
+          <router-outlet amexio-route-animation [style-type]="styleType">
           </router-outlet>
 
 
@@ -33,7 +24,7 @@
         <br>
         <amexio-card [header]="true">
           <amexio-header>
-            Directive: amexioThemeStyle
+            Directive:  amexio-route-animation
           </amexio-header>
           <amexio-body>
             <amexio-datagrid [enable-column-filter]="false" [data]="inputData">
@@ -48,28 +39,12 @@
         </amexio-card>
       </amexio-tab>
 
-      <amexio-tab title="Round Edge" [active]="false" [closable]="false" [disabled]="false">
-        <amexio-datagrid [enable-column-filter]="false" [data-reader]="'data'" [http-url]="'assets/data/componentdata/roundedge.json'"
-          [http-method]="'get'" (rowSelect)="onRowSelect($event)">
-          <amexio-data-table-column [data-index]="'componentName'" [data-type]="'string'" [width]="30" [hidden]="false" [text]="'Component'">
-          </amexio-data-table-column>
-          <amexio-data-table-column [width]="5" [data-index]="''" [data-type]="'string'" [hidden]="false" [text]="'Demos'">
-            <ng-template #amexioBodyTmpl let-column let-row="row">
-              <!-- <amexio-label size="small" font-color="blue">
-                 Demo Link
-                </amexio-label> -->
-              <!-- <a style="color: blue"><u>Demo link</u></a> -->
-
-            </ng-template>
-          </amexio-data-table-column>
-
-        </amexio-datagrid>
-      </amexio-tab>
-
       <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
-        <amexio-api-sourcecode [html-url]="'/directive/round-edge/form.html'">
+        <amexio-api-sourcecode [html-url]="'/directive/routing-animation/form.html'">
         </amexio-api-sourcecode>
+        
       </amexio-tab>
+      
     </amexio-tab-view>
   </amexio-body>
 </amexio-card>
