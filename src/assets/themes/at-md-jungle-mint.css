@@ -9210,6 +9210,32 @@ amexio-layout amexio-layout-item {
   right: 50px;
   margin-top: 70px; }
 
+/*****************************************************************************
+ Component Name : Amexio Stackable panel container 
+  Version : Amexio v5.19 onwards
+****************************************************************************/
+/** Amexio StackablePanel Vars CSS **/
+/** Amexio StackablePanel Visual CSS **/
+/** Amexio StackablePanel Structure CSS **/
+.stackablepanel {
+  background-color: var(--componentBGColor);
+  size: 10px;
+  color: var(--componentFontColor); }
+
+.stackablepanel .title {
+  /* background-color: #ccc; */
+  width: 100%;
+  padding: 3.5px;
+  cursor: pointer;
+  border-bottom: 1.5px solid #e2d5d5;
+  /* border-bottom: 0.4px solid #666; */ }
+
+.stackablepanel .body {
+  padding: 0px 10px 10px 10px; }
+
+.stackablepanel .body.hidden {
+  display: none; }
+
 /****************************************************************************
     Component Name : Border Layout
     Version : Amexio v4.0 onwards
