@@ -860,6 +860,11 @@ export const MENUCONSTANT = {
           link: "navigation/sidenav-page-demo"
         },
         {
+          text: "Task Bar",
+          icon: "fa fa-tasks  ",
+          link: "navigation/taskbar-demo"
+        },
+        {
           text: "Tool Bar",
           icon: "fa fa-bars  ",
           link: "navigation/toolbar-demo"

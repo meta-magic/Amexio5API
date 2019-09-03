@@ -1,0 +1,50 @@
+<amexio-task-bar [align]="'end'">
+  <amexio-task-bar-item [title]="'Messaging'" [relative]="true" [width]="250" [height]="350">
+
+    <table>
+      <tr>
+        <th>Contacts</th>
+      </tr>
+      <tr *ngFor="let bar of taskBarName">
+        <td>
+          <amexio-image [height]="'39.75px'" [width]="'39.75px'" [c-class]="'image-round'" [path]="bar.path">
+          </amexio-image>
+        </td>
+        <td style="font-size: 16px; cursor: pointer;
+            width: auto;
+            border-bottom: 1px solid rgb(211, 208, 208);" (click)="onNameClick(bar)">
+          {{bar.personName}}
+        </td>
+        <br><br>
+      </tr>
+    </table>
+  </amexio-task-bar-item>
+     
+  <ng-container *ngFor="let item of items">
+    <amexio-task-bar-item style="margin-left: 140px;" [title]="item.personName" [relative]="true" [width]="250" [close]="true" 
+    (onCloseEvent)="onItemRemove(item)"
+      [height]="350">
+      <amexio-speech-bubble [arrow-direction]="'right'">
+        <amexio-label size="small">
+            Congrats on your work anniversary!
+          </amexio-label>
+      </amexio-speech-bubble>
+      <amexio-speech-bubble [arrow-direction]="'left'">
+        <amexio-label size="small">
+          <p style="margin-top: -21px;margin-bottom: 1px;">
+           Thank you.
+          </p>
+        </amexio-label>
+      </amexio-speech-bubble>
+      <amexio-speech-bubble [arrow-direction]="'right'">
+        <amexio-label size="small">
+          How are you ?
+        </amexio-label>
+      </amexio-speech-bubble><amexio-speech-bubble [arrow-direction]="'left'">
+          <amexio-label size="small">
+            I am Fine, Thank you.
+          </amexio-label>
+        </amexio-speech-bubble>
+    </amexio-task-bar-item>
+  </ng-container>
+</amexio-task-bar>

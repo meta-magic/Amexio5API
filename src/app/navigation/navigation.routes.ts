@@ -8,6 +8,7 @@ import { NavbarDemo } from './navbar/navbar.demo';
 import { DropDownMenuDemo } from './dropdownmenu/dropdownmenu.demo';
 import { DockbarDemo } from './dockbar/dockbar.demo';
 import { BreadcrumbDemo } from './breadcrumb/breadcrumb.demo';
+import { TaskbarDemo } from './taskbar/taskbar.demo';
 
 
 export const NAVIGATION_ROUTE: Routes = [
@@ -36,5 +37,9 @@ export const NAVIGATION_ROUTE: Routes = [
     {
         path: 'toolbar-demo', component: ToolbarDemo,
     },
+    {
+        path: 'taskbar-demo', component: TaskbarDemo,
+    },
+
 
 ]

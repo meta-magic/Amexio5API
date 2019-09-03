@@ -1,0 +1,147 @@
+{
+  "title": "Amexio Tool Bar",
+  "description": "The Tool Bar Component is a familiar Tool Bar pattern for users. Tool Bar has Label Component left align, than Label, button,and Drop Down Components on right side.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-taskbar>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "align",
+          "type": "string",
+          "default": "",
+          "description": "alignment to the task bar(start/end/space-between/space-around)"
+        }
+        ]
+    },
+    {
+      "gridTitle": "Properties <amexio-taskbar-item>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "title",
+          "type": "string",
+          "default": "",
+          "description": "title to the taskbar item."
+        },
+        {
+          "name": "relative",
+          "type": "string",
+          "default": "",
+          "description": "position relative true to the taskbar item."
+        },
+        {
+          "name": "close",
+          "type": "boolen",
+          "default": "false",
+          "description": "close icon true to the taskbar item then close the taskbar."
+        },
+        {
+          "name": "height",
+          "type": "any",
+          "default": "200",
+          "description": "height to the taskbar."
+        },
+        {
+          "name": "width",
+          "type": "any",
+          "default": "100",
+          "description": "width to the taskbar."
+        }
+        ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+        "name": "onCloseEvent",
+        "description": "Event is fired on taskbar item component"
+      }
+      ]
+    }
+   
+  ],
+ 
+  "sourceMetadata": {
+    "htmlUrl": "navigation/taskbar/form.html",
+    "tsUrl": "navigation/taskbar/form.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-toolbar?embed=1&file=src/app/navigation/toolbar/toolbar.demo.html"
+  }
+ 
+}
