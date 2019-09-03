@@ -125,6 +125,13 @@
             "version": "4.0 onwards",
             "type": "boolean",
             "default": ""
+          },
+          {
+            "name": "right-icon",
+            "description": "icon is right side to label of button.",
+            "version": "5.18 onwards",
+            "type": "boolean",
+            "default": ""
           }
         ]
       },
@@ -148,6 +155,10 @@
           {
             "name": "onClick",
             "description": "Fire when button click"
+          },
+          {
+            "name": "onIconClick",
+            "description": "Fire when click on icon."
           }
         ]
       }

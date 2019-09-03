@@ -43,16 +43,29 @@
                [tooltip]="'Next'" 
                [icon]="'fa fa-chevron-right'">
 </amexio-button>
-<amexio-button [label]="'Download'" 
-               [type]="'green'" 
-               [tooltip]="'Save'" 
-               [icon]="'fa fa-save'">
-</amexio-button>
+
 <amexio-button [label]="'Delete'" 
                [type]="'red'" 
                [tooltip]="'delete'" 
                [icon]="'fa fa-trash'">
 </amexio-button>
+
+
+<amexio-button [label]="'Download'" 
+               [type]="'green'" 
+               [tooltip]="'Save'" 
+               [icon]="'fa fa-save'">
+</amexio-button>
+
+<!-- icon on right side to the label of button -->
+<amexio-button  
+                [label]="'Google'"
+                [type]="'red'" 
+                [tooltip]="'Google'" 
+                [right-icon]="'fa fa-close'" 
+                [icon]="'fa fa-google'">
+</amexio-button>
+             
 
 <!--Button Sizes-->
 <amexio-button [label]="'Large Button'" 

@@ -34,7 +34,8 @@ export class ButtonDemo implements OnInit{
   }
 
 
-
+  iconClick(data: any) {
+  }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {

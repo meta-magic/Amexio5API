@@ -15,7 +15,8 @@
           <amexio-body>
             <amexio-row>
               <amexio-column size="2">
-                <amexio-button [label]="'Theme Color'" [type]="'theme-color'" [tooltip]="'Primary Button'"></amexio-button>
+                <amexio-button [label]="'Theme Color'" [type]="'theme-color'" 
+                 [tooltip]="'Primary Button'"></amexio-button>
               </amexio-column>
               <amexio-column size="1"></amexio-column>
               <amexio-column size="2">
@@ -69,14 +70,18 @@
           </amexio-header>
           <amexio-body>
             <amexio-row>
-              <amexio-column [size]="4">
-                <amexio-button [label]="'Next'" [type]="'theme-color'" [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"></amexio-button>
+              <amexio-column [size]="3">
+                <amexio-button [label]="'Next'" [type]="'theme-color'"
+                 [tooltip]="'Next'" [icon]="'fa fa-chevron-right'"></amexio-button>
               </amexio-column>
-              <amexio-column [size]="4">
+              <amexio-column [size]="3">
+                <amexio-button [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'"></amexio-button>
+              </amexio-column>
+              <amexio-column [size]="3">
                 <amexio-button [label]="'Download'" [type]="'green'" [tooltip]="'Download'" [icon]="'fa fa-save'"></amexio-button>
               </amexio-column>
-              <amexio-column [size]="4">
-                <amexio-button [label]="'Delete'" [type]="'red'" [tooltip]="'delete'" [icon]="'fa fa-trash'"></amexio-button>
+              <amexio-column [size]="3">
+                <amexio-button [label]="'Google'" [type]="'red'"  [tooltip]="'Google'" [right-icon]="'fa fa-close'" [icon]="'fa fa-google'"></amexio-button>
               </amexio-column>
             </amexio-row>
           </amexio-body>
