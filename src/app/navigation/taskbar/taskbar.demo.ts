@@ -64,7 +64,6 @@ export class TaskbarDemo {
     ]
   }
 
-
   onNameClick(data: any) {
     if (this.items && this.items.length === 0) {
       this.items.push(data);
@@ -81,9 +80,9 @@ export class TaskbarDemo {
     }
   }
   onItemRemove(node: any) {
-    this.items.forEach((element: any) => {
+    this.items.forEach((element: any, index) => {
       if (element.personName === node.personName) {
-        this.items.splice(element, 1);
+        this.items.splice(index, 1);
       }
     });
   }
