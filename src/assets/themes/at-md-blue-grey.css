@@ -5801,6 +5801,11 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   color: var(--componentHoverFontColor);
   outline: none; }
 
+.datatable-filter-icon1:focus {
+  background-color: var(--componentHoverBGColor);
+  color: var(--componentHoverFontColor);
+  outline: none; }
+
 .float-right-datagridlist {
   float: right; }
 
@@ -5880,6 +5885,15 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   position: absolute;
   top: 10px;
   right: 0;
+  display: block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center; }
+
+.datatable-filter-icon1 {
+  position: absolute;
+  top: 10px;
   display: block;
   width: 38px;
   height: 38px;
