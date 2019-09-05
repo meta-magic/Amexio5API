@@ -1050,10 +1050,10 @@
 
           </amexio-column>
           <amexio-column [size]="4">
-              <amexio-button type="success" (onClick)="toggleBasicWindow('nonmaterial')"
+              <amexio-button type="success" (onClick)="toggleBasicWindow('nonmaterialround')"
               label="Round Edge Window">
             </amexio-button>
-            <amexio-window amexioThemeStyle [theme-style]="'round-edge'" [body-height]="40" [(show)]="showBasicWindowNonMaterial" [close-on-escape]="true"
+            <amexio-window amexioThemeStyle [theme-style]="'round-edge'" [body-height]="40" [(show)]="showBasicWindowNonMaterialRound" [close-on-escape]="true"
               [material-design]="false" [footer]="true" [width]="'auto'">
               <amexio-header>
   
@@ -1120,9 +1120,9 @@
             
               </amexio-body>
               <amexio-action>
-                <amexio-button [type]="'default'" (onClick)="showBasicWindowNonMaterial = false" label="Cancel">
+                <amexio-button [type]="'default'" (onClick)="showBasicWindowNonMaterialRound = false" label="Cancel">
                 </amexio-button>
-                <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save">
+                <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterialRound = false" label="Save">
                 </amexio-button>
               </amexio-action>
             

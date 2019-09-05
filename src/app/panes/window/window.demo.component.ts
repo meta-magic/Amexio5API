@@ -13,6 +13,8 @@ export class WindowDemoComponent {
   showBasicWindowMaterial: boolean;
   showBasicDraggableWindowMaterial: boolean;
   showBasicWindowNonMaterial: boolean;
+  showBasicWindowNonMaterialRound: boolean;
+
   showBasicWindowNonMateialToolbar: boolean;
 
   showMaxWindowMaterial: boolean;
@@ -81,6 +83,9 @@ export class WindowDemoComponent {
     }
     else if (data == 'nonmaterial') {
       this.showBasicWindowNonMaterial = !this.showBasicWindowNonMaterial;
+    }
+    else if (data == 'nonmaterialround') {
+      this.showBasicWindowNonMaterialRound = !this.showBasicWindowNonMaterialRound;
     }
     else {
       this.showBasicWindowNonMateialToolbar = !this.showBasicWindowNonMateialToolbar;
