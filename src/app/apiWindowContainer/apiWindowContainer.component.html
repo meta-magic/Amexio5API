@@ -1,0 +1,1113 @@
+
+                
+        
+                  <amexio-window amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [body-height]="40"
+                      [(show)]="windowService.showBasicWindowMaterial" [close-on-escape]="true" [material-design]="true" [width]="'auto'"
+                     [footer]="true">
+                    <amexio-header>
+                      Employee Form
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button [type]="'default'" (onClick)="showBasicWindowMaterial = false" label="Cancel">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+                 
+                  <amexio-window   [(show)]="windowService.showMaxWindowMaterial" [footer]="true" [material-design]="true" [maximize]="true">
+                    <amexio-header>
+                      Employee Form
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [min-length]="3" [max-length]="5" [allow-blank]="false" field-label="First Name"
+                            name="firstName" place-holder="Enter first name" icon-feedback="true">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input field-label="Last Name" name="lastName"
+                            place-holder="Enter last name(not mandatory)" allow-blank="true"
+                            error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required"
+                            [max-length]="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                        [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                        [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-radio-group [name]="'genderList'" [field-label]="'Gender'" [horizontal]="true"
+                            [allow-blank]="false" [data-reader]="'response.data'" [display-field]="'gender'"
+                            [value-field]="'genderId'" [data]="radioGroupData">
+                          </amexio-radio-group>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-checkbox-group [field-label]="'Hobbies'" name="hobbies" [horizontal]="true"
+                            [required]="true" [data-reader]="'response.data'" [display-field]="'hobbieName'"
+                            [value-field]="'checked'" [data]="checkboxGroupdata">
+                          </amexio-checkbox-group>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-tag-input [data-reader]="'response.data'"
+                            [http-url]="'assets/data/componentdata/countryy.json'" [has-label]="true" [http-method]="'get'"
+                            [key]="'countryName'" [allow-blank]="false" [display-field]="'countryName'"
+                            [field-label]="'Having visa'">
+                          </amexio-tag-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-dropdown [place-holder]="'Choose City'" name="city" [allow-blank]="false"
+                            [data-reader]="'response.data'" [field-label]="'City'"
+                            [http-url]="'assets/data/componentdata/cities.json'" [http-method]="'get'" [search]="'true'"
+                            [display-field]="'cityName'" [value-field]="'cityName'">
+                          </amexio-dropdown>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column size="6">
+                          <amexio-number-input [name]="'age'" [enable-popover]="true" [field-label]="'Age'"
+                            [place-holder]="'Enter age'" [allow-blank]="false" [error-msg]="'Please enter age'"
+                            [min-value]="18" [min-error-msg]="'age can not be less than 18'" [max-value]="100"
+                            [max-error-msg]="'age can not be greater than 100'" [icon-feedback]="true">
+                          </amexio-number-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-date-time-picker name="dateOfBirth" [field-label]="'Date Of Birth'" [time-picker]="false"
+                            [date-picker]="true" [required]="true">
+                          </amexio-date-time-picker>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'"
+                            [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true"
+                            [icon-feedback]="true">
+                          </amexio-email-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-password-input [enable-popover]="true" [field-label]="'Password Input'" name="password"
+                            [place-holder]="'Enter Password'" [allow-blank]="false" [error-msg]="'Please enter password'"
+                            [min-length]="6" [min-error-msg]="'Minimum 6 char required'" [max-length]="32"
+                            [max-error-msg]="'Maximum 32 char allowed'" [icon-feedback]="true">
+                          </amexio-password-input>
+                        </amexio-column>
+                      </amexio-row><br>
+                      <amexio-checkbox [field-label]="'Agree'" name="agree" [required]="true">
+                      </amexio-checkbox>
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button (onClick)="showMaxWindowMaterial = false" [label]="'Cancel'">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showMaxWindowMaterial = false" [disabled]="false"
+                        [label]="'Save'">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+                 <amexio-window [footer]="true"   [(show)]="windowService.showClosableMaterial" [close-on-escape]="false"
+                    [material-design]="true" [width]="'auto'" [closable]="true">
+                    <amexio-header>
+                      Employee Form
+      
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button [type]="'default'" (onClick)="showClosableMaterial = false" label="Cancel">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showClosableMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+                  </amexio-window>
+                
+                  <amexio-window [footer]="true" [draggable]="true" [remember-window-position]="true" [width]="'auto'"
+                      [(show)]="windowService.showBasicDraggableWindowMaterial" [close-on-escape]="false" [material-design]="true"
+                    [closable]="true">
+                    <amexio-header>
+                      Employee Form
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button [type]="'default'" (onClick)="showBasicDraggableWindowMaterial = false" label="Cancel">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showBasicDraggableWindowMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+                  </amexio-window>
+               
+                  <amexio-window amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [body-height]="40"
+                  [window-model]="false" [(show)]="windowService.showBasicMinimizeWindowMaterial" [minimize]='true' [close-on-escape]="true"
+                    [material-design]="true" [width]="'auto'" [footer]="true">
+                    <amexio-header  >
+                      Employee Form
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button [type]="'default'" (onClick)="showBasicWindowMaterial = false" label="Cancel">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+      
+                  <amexio-window amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [body-height]="40"
+                      [(show)]="windowService.showBasicMinimizeSecondWindowMaterial" [minimize]='true' [close-on-escape]="true"
+                    [material-design]="true" [width]="'auto'" [footer]="true">
+                    <amexio-header [minimized-icon]="'fa fa-file'">
+                      Employee Form 1 
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button [type]="'default'" (onClick)="showBasicWindowMaterial = false" label="Cancel">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+      
+                  <amexio-window [body-height]="40"   [(show)]="windowService.showBasicWindowNonMaterial" [close-on-escape]="true"
+                    [material-design]="false" [footer]="true" [width]="'auto'">
+                    <amexio-header>
+                      <div>
+                        <amexio-label size="small">
+                          Add User
+                        </amexio-label> <br>
+                        <amexio-label size="small-bold">
+                          Employee Form
+                        </amexio-label>
+                      </div>
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+      
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+      
+      
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button [type]="'default'" (onClick)="showBasicWindowNonMaterial = false" label="Cancel">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+                  
+                  <amexio-window   [(show)]="windowService.showMaxWindowNonMaterial" [footer]="true" [material-design]="false"
+                    [maximize]="true">
+                    <amexio-header>
+                      Employee Form
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [min-length]="3" [max-length]="5" [allow-blank]="false" field-label="First Name"
+                            name="firstName" place-holder="Enter first name" icon-feedback="true">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input field-label="Last Name" name="lastName"
+                            place-holder="Enter last name(not mandatory)" allow-blank="true"
+                            error-msg="Please enter last name" [min-length]="3" min-error-msg="Minimum 3 char required"
+                            [max-length]="10" max-error-msg="Maximum 10 char allowed" icon-feedback="true">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                        [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                        [allow-blank]="false" [enable-popover]="true"></amexio-textarea-input>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-radio-group [name]="'genderList'" [field-label]="'Gender'" [horizontal]="true"
+                            [allow-blank]="false" [data-reader]="'response.data'" [display-field]="'gender'"
+                            [value-field]="'genderId'" [data]="radioGroupData">
+                          </amexio-radio-group>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-checkbox-group [field-label]="'Hobbies'" name="hobbies" [horizontal]="true"
+                            [required]="true" [data-reader]="'response.data'" [display-field]="'hobbieName'"
+                            [value-field]="'checked'" [data]="checkboxGroupdata">
+                          </amexio-checkbox-group>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-tag-input [data-reader]="'response.data'"
+                            [http-url]="'assets/data/componentdata/countryy.json'" [has-label]="true" [http-method]="'get'"
+                            [key]="'countryName'" [allow-blank]="false" [display-field]="'countryName'"
+                            [field-label]="'Having visa'">
+                          </amexio-tag-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-dropdown [place-holder]="'Choose City'" name="city" [allow-blank]="false"
+                            [data-reader]="'response.data'" [field-label]="'City'"
+                            [http-url]="'assets/data/componentdata/cities.json'" [http-method]="'get'" [search]="'true'"
+                            [display-field]="'cityName'" [value-field]="'cityName'">
+                          </amexio-dropdown>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column size="6">
+                          <amexio-number-input [name]="'age'" [enable-popover]="true" [field-label]="'Age'"
+                            [place-holder]="'Enter age'" [allow-blank]="false" [error-msg]="'Please enter age'"
+                            [min-value]="18" [min-error-msg]="'age can not be less than 18'" [max-value]="100"
+                            [max-error-msg]="'age can not be greater than 100'" [icon-feedback]="true">
+                          </amexio-number-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-date-time-picker name="dateOfBirth" [field-label]="'Date Of Birth'" [time-picker]="false"
+                            [date-picker]="true" [required]="true">
+                          </amexio-date-time-picker>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-email-input [field-label]="'Email Id'" name="email" [place-holder]="'Enter Email Id'"
+                            [allow-blank]="false" [error-msg]="'Please Enter Email Id'" [enable-popover]="true"
+                            [icon-feedback]="true">
+                          </amexio-email-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-password-input [enable-popover]="true" [field-label]="'Password Input'" name="password"
+                            [place-holder]="'Enter Password'" [allow-blank]="false" [error-msg]="'Please enter password'"
+                            [min-length]="6" [min-error-msg]="'Minimum 6 char required'" [max-length]="32"
+                            [max-error-msg]="'Maximum 32 char allowed'" [icon-feedback]="true">
+                          </amexio-password-input>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-checkbox [field-label]="'Agree'" name="agree" [required]="true">
+                      </amexio-checkbox>
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button (onClick)="showMaxWindowNonMaterial = false" label="Cancel"></amexio-button>
+      
+                      <amexio-button [type]="'theme-color'" (onClick)="showMaxWindowNonMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+                <amexio-window   [(show)]="windowService.showClosableNonMaterial" [footer]="true" [close-on-escape]="false"
+                    [material-design]="false" [closable]="true" [width]="'auto'">
+                    <amexio-header>
+                      <div>
+                        <amexio-label size="small">
+                          Add User
+                        </amexio-label> <br>
+                        <amexio-label size="small-bold">
+                          Employee Form
+                        </amexio-label>
+                      </div>
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+      
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+      
+      
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button (onClick)="showClosableNonMaterial = false" label="Cancel"></amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showClosableNonMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+                
+                  <amexio-window [footer]="true" [width]="'35%'" [draggable]="true" [remember-window-position]="true"
+                      [(show)]="windowService.showDraggableNonMaterial" [close-on-escape]="false" [material-design]="false" [closable]="true">
+                    <amexio-header>
+                      <div>
+                        <amexio-label size="small">
+                          Rename User
+                        </amexio-label> <br>
+                        <amexio-label size="small-bold">
+                          Araf Karsh Hamid
+                        </amexio-label>
+                      </div>
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-box background-color="blue" [padding]="true">
+                        <amexio-label size="small">
+                          Renaming a user is a system-wide change that can take up to 10 minutes.
+                        </amexio-label><br><br>
+                        <amexio-label size="small">
+                          Araf Karsh doesnt need to take action and wont see any account profile or Google+ profile changes.
+                        </amexio-label>
+                      </amexio-box>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+                        </amexio-column>
+                      </amexio-row>
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button (onClick)="showDraggableNonMaterial = false" label="Cancel"></amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showDraggableNonMaterial = false" label="Rename">
+                      </amexio-button>
+                    </amexio-action>
+                  </amexio-window>
+              
+                  <amexio-window [body-height]="40"   [(show)]="windowService.showBasicWindowNonMateialToolbar" [close-on-escape]="true"
+                    [material-design]="false" [footer]="true" [width]="'auto'">
+                    <amexio-header>
+                      <amexio-window-header>
+                        <amexio-toolbar>
+                          <amexio-toolbar-item position-left>
+                            <amexio-label size="small">
+                              Registration
+                            </amexio-label>
+                          </amexio-toolbar-item>
+      
+                          <amexio-toolbar-item position-right [seperator-position]="'left'">
+                            <amexio-image aria-hidden="true" [icon-class]="'fa fa-th'"> </amexio-image>
+                          </amexio-toolbar-item>
+                          <amexio-toolbar-item position-right [seperator-position]="'left'">
+                            <amexio-image aria-hidden="true" [icon-class]="'fa fa-info-circle'"> </amexio-image>
+                          </amexio-toolbar-item>
+                          <amexio-toolbar-item position-right [seperator-position]="'left'">
+                            <amexio-image aria-hidden="true" [icon-class]="'fa fa-question-circle'"> </amexio-image>
+                          </amexio-toolbar-item>
+                          <amexio-toolbar-item position-right [seperator-position]="'left'">
+                            <amexio-image aria-hidden="true" [icon-class]="'fa fa-cog'"> </amexio-image>
+                          </amexio-toolbar-item>
+                        </amexio-toolbar>
+                      </amexio-window-header>
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+      
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'"
+                            [error-msg]="'Please enter address'" [icon-feedback]="true" [rows]="'1'" [columns]="'2'"
+                            [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+      
+      
+                        </amexio-column>
+      
+                      </amexio-row>
+      
+      
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'"
+                            [enable-popover]="true" [icon-feedback]="true" [allow-blank]="false"
+                            [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15"
+                            [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+      
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button (onClick)="showBasicWindowNonMaterial = false" label="Cancel"></amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+      
+                  </amexio-window>
+      
+                 
+                  <amexio-window amexioThemeStyle [theme-style]="'round-edge'" [body-height]="40"   [(show)]="windowService.showBasicWindowNonMaterialRound" [close-on-escape]="true"
+                    [material-design]="false" [footer]="true" [width]="'auto'">
+                    <amexio-header>
+        
+                        <amexio-label size="small-bold">
+                          Employee Form
+                        </amexio-label>
+                    </amexio-header>
+                    <amexio-body>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'" [enable-popover]="true" [icon-feedback]="true"
+                            [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'" [enable-popover]="true" [icon-feedback]="true"
+                            [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+                  
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'" [enable-popover]="true" [icon-feedback]="true"
+                            [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'" [enable-popover]="true" [icon-feedback]="true"
+                            [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+                  
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                  
+                          <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'"
+                            [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true">
+                          </amexio-textarea-input>
+                  
+                  
+                        </amexio-column>
+                  
+                      </amexio-row>
+                      <amexio-row>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'" [enable-popover]="true" [icon-feedback]="true"
+                            [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                            [max-error-msg]="'Name should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                        <amexio-column [size]="6">
+                          <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'" [enable-popover]="true" [icon-feedback]="true"
+                            [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                            [max-error-msg]="'Surname should be less than 15 characters'">
+                          </amexio-text-input>
+                        </amexio-column>
+                      </amexio-row>
+                  
+                    </amexio-body>
+                    <amexio-action>
+                      <amexio-button [type]="'default'" (onClick)="showBasicWindowNonMaterial = false" label="Cancel">
+                      </amexio-button>
+                      <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save">
+                      </amexio-button>
+                    </amexio-action>
+                  
+                  </amexio-window>
+               
+
+
+                  <amexio-window  [body-height]="40"    [(show)]="windowService.showMinimizeModelWindow" [close-on-escape]="true"
+                  [window-model]="false"    [minimize]='true' [material-design]="false" [footer]="true" [width]="'auto'">
+                  <amexio-header>
+      
+                      <amexio-label size="small-bold">
+                        Employee Form
+                      </amexio-label>
+                  </amexio-header>
+                  <amexio-body>
+                    <amexio-row>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [field-label]="'Name'" name="country" [place-holder]="'Enter name'" [enable-popover]="true" [icon-feedback]="true"
+                          [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                          [max-error-msg]="'Name should be less than 15 characters'">
+                        </amexio-text-input>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [field-label]="'Surname'" name="name" [place-holder]="'Enter surname'" [enable-popover]="true" [icon-feedback]="true"
+                          [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                          [max-error-msg]="'Surname should be less than 15 characters'">
+                        </amexio-text-input>
+                      </amexio-column>
+                    </amexio-row>
+                
+                    <amexio-row>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [field-label]="'Description'" name="country" [place-holder]="'Description'" [enable-popover]="true" [icon-feedback]="true"
+                          [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                          [max-error-msg]="'Name should be less than 15 characters'">
+                        </amexio-text-input>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [field-label]="'Hobbies'" name="name" [place-holder]="'Hobbies'" [enable-popover]="true" [icon-feedback]="true"
+                          [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                          [max-error-msg]="'Surname should be less than 15 characters'">
+                        </amexio-text-input>
+                      </amexio-column>
+                    </amexio-row>
+                
+                    <amexio-row>
+                      <amexio-column [size]="6">
+                
+                        <amexio-textarea-input [field-label]="'Address'" name="Address" [place-holder]="'Enter address'" [error-msg]="'Please enter address'"
+                          [icon-feedback]="true" [rows]="'1'" [columns]="'2'" [allow-blank]="false" [enable-popover]="true">
+                        </amexio-textarea-input>
+                
+                
+                      </amexio-column>
+                
+                    </amexio-row>
+                    <amexio-row>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [field-label]="'Phone'" name="country" [place-holder]="'Phone'" [enable-popover]="true" [icon-feedback]="true"
+                          [allow-blank]="false" [error-msg]="'Please enter name'" [min-length]="3" [max-length]="15" [min-error-msg]="'Name should be minimum 3 characters'"
+                          [max-error-msg]="'Name should be less than 15 characters'">
+                        </amexio-text-input>
+                      </amexio-column>
+                      <amexio-column [size]="6">
+                        <amexio-text-input [field-label]="'Email'" name="name" [place-holder]="'Email'" [enable-popover]="true" [icon-feedback]="true"
+                          [allow-blank]="false" [error-msg]="'Please enter Surname'" [min-length]="3" [max-length]="15" [min-error-msg]="'Surname should be minimum 3 characters'"
+                          [max-error-msg]="'Surname should be less than 15 characters'">
+                        </amexio-text-input>
+                      </amexio-column>
+                    </amexio-row>
+                
+                  </amexio-body>
+                  <amexio-action>
+                    <amexio-button [type]="'default'" (onClick)="showBasicWindowNonMaterial = false" label="Cancel">
+                    </amexio-button>
+                    <amexio-button [type]="'theme-color'" (onClick)="showBasicWindowNonMaterial = false" label="Save">
+                    </amexio-button>
+                  </amexio-action>
+                
+                </amexio-window>
+             

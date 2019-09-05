@@ -9,6 +9,7 @@ export class CreativeWindowComponent {
 
    minimizeWindow: boolean;
    minimizeCeDemo: boolean;
+   modelCeDemo: boolean;
    constructor() {
      
  }
@@ -38,6 +39,9 @@ export class CreativeWindowComponent {
   }
   onMinimizeCEClick() {
     this.minimizeCeDemo = !this.minimizeCeDemo;
+  }
+    onMinimizeModelWindowClick() {
+    this.modelCeDemo = !this. _windowService.modelCeDemo;
   }
 } 
 

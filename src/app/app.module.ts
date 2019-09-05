@@ -23,13 +23,20 @@ import { ConceptPage } from './concept/concept.component';
 import { KeyFeaturesComponent } from './concept/keyfeatures.component';
 import { EventsPanelComponent } from '../app/enterprise/floating-panel-calendar/events-panel/events-panel.component';
 import {RouterService} from 'amexio-ng-extensions';
+
+import {ApiWindowContainerComponent} from './apiWindowContainer/apiWindowContainer.component';
+import { windowContainerService } from './service/windowContainerService.service';
+
+import {CreativeApiWindowContainerComponent} from './ceapiWindowContainer/ceapiWindowContainer.component';
 @NgModule({
   declarations: [
     AppComponent,
     CopyRightComponent,
     ConceptPage,
     EventsPanelComponent,
-    KeyFeaturesComponent
+    KeyFeaturesComponent,
+    ApiWindowContainerComponent,
+    CreativeApiWindowContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,8 @@ import {RouterService} from 'amexio-ng-extensions';
   ],
   entryComponents: [EventsPanelComponent],
 
-  providers: [CommonDataService, AppPreloadingStrategy, ThemeServiceService, HTTPService, RouterService, DeviceQueryService, IconLoaderService, CookieService],
+  providers: [CommonDataService, AppPreloadingStrategy, windowContainerService,
+    ThemeServiceService, HTTPService, RouterService, DeviceQueryService, IconLoaderService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -11,6 +11,7 @@ export class WindowDemoComponent {
   showClosableNonMaterial: boolean;
 
   showBasicMinimizeWindowMaterial: boolean;
+  showMinimizeModelWindow: boolean;
 
   rightclickdata: any;
   constructor() {
@@ -50,6 +51,12 @@ toggleBasicWindow(data: any) {
       this.showMaxWindowNonMaterial = !this.showMaxWindowNonMaterial;
     }
   }
+   toggleModelWindow(data: any) {
+    if(data === 'model') {
+      this.showMinimizeModelWindow = !this.showMinimizeModelWindow;
+
+    }
+   }
 
 
   toggleClosable(data: any) {

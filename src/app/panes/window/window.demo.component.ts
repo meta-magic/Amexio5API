@@ -1,7 +1,9 @@
 /**
- * Created by pratik on 16/1/18.
+ * Created by Kedar on 5/09/2019.
  */
 import { Component, OnInit } from '@angular/core';
+
+import { windowContainerService } from 'src/app/service/windowContainerService.service';
 
 @Component({
   selector: 'window-demo',
@@ -10,121 +12,63 @@ import { Component, OnInit } from '@angular/core';
 
 export class WindowDemoComponent {
 
-  showBasicWindowMaterial: boolean;
-  showBasicDraggableWindowMaterial: boolean;
-  showBasicWindowNonMaterial: boolean;
-  showBasicWindowNonMaterialRound: boolean;
-
-  showBasicWindowNonMateialToolbar: boolean;
-
-  showMaxWindowMaterial: boolean;
-  showMaxWindowNonMaterial: boolean;
-
-  showClosableMaterial: boolean;
-  showClosableNonMaterial: boolean;
-  showDraggableNonMaterial: boolean;
-
-  showBasicMinimizeWindowMaterial: boolean;
-  showBasicMinimizeSecondWindowMaterial: boolean;
-
-
-
-  htmlCode: string;
-  typeScriptCode: string;
-  copyMsgArray: any[];
-  asyncFlag: boolean;
-  radioGroupData: any;
-  checkboxGroupdata: any;
-  constructor() {
-    this.radioGroupData = {
-      response:{
-        data:[{
-          gender:'Male',
-          genderId:'male'
-        },{
-          gender:'Female',
-          genderId:'female',
-        },
-        ]
-      }
-    };
-    this.checkboxGroupdata = {
-      response:{
-        data:[{
-          hobbieName:'Learning',
-          checked: false,
-          disabled : false
-        },{
-          hobbieName:'Shopping',
-          checked: false,
-          disabled : false
-        },{
-          hobbieName:'Fishing',
-          checked: false,
-          disabled : false
-        }
-        ]}};
-    
-  }
- 
-  //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
-  onCopyClick() {
-    if (this.copyMsgArray.length >= 1) {
-      this.copyMsgArray = [];
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    } else {
-      this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
-    }
-  }
+  constructor(private _windowService: windowContainerService) {}
 
   toggleBasicWindow(data: any) {
     if (data == 'material') {
-      this.showBasicWindowMaterial = !this.showBasicWindowMaterial;
+      this._windowService.showBasicWindowMaterial = !this._windowService.showBasicWindowMaterial;
     }
     else if (data == 'nonmaterial') {
-      this.showBasicWindowNonMaterial = !this.showBasicWindowNonMaterial;
+      this._windowService.showBasicWindowNonMaterial = !this._windowService.showBasicWindowNonMaterial;
     }
     else if (data == 'nonmaterialround') {
-      this.showBasicWindowNonMaterialRound = !this.showBasicWindowNonMaterialRound;
+      this._windowService.showBasicWindowNonMaterialRound = !this._windowService.showBasicWindowNonMaterialRound;
     }
     else {
-      this.showBasicWindowNonMateialToolbar = !this.showBasicWindowNonMateialToolbar;
+      this._windowService.showBasicWindowNonMateialToolbar = !this._windowService.showBasicWindowNonMateialToolbar;
     }
   }
   toggleMaxWindow(data: any) {
     if (data == 'material') {
-      this.showMaxWindowMaterial = !this.showMaxWindowMaterial;
+      this._windowService.showMaxWindowMaterial = !this._windowService.showMaxWindowMaterial;
     }
     else {
-      this.showMaxWindowNonMaterial = !this.showMaxWindowNonMaterial;
+      this._windowService.showMaxWindowNonMaterial = !this._windowService.showMaxWindowNonMaterial;
     }
   }
   toggleClosable(data: any) {
     if (data == 'material') {
-      this.showClosableMaterial = !this.showClosableMaterial;
+      this._windowService.showClosableMaterial = !this._windowService.showClosableMaterial;
     }
     else {
-      this.showClosableNonMaterial = !this.showClosableNonMaterial;
+      this._windowService.showClosableNonMaterial = !this._windowService.showClosableNonMaterial;
     }
   }
   toggleDraggableWindow(data: any) {
     if (data == 'material') {
-      this.showBasicDraggableWindowMaterial = !this.showBasicDraggableWindowMaterial;
+      this._windowService.showBasicDraggableWindowMaterial = !this._windowService.showBasicDraggableWindowMaterial;
     }
     else if(data == 'nonmaterial') {
-      this.showDraggableNonMaterial =! this.showDraggableNonMaterial;
+      this._windowService.showDraggableNonMaterial =! this._windowService.showDraggableNonMaterial;
     }
     
   }
   toggleMinimizeWindow(data: any) {
     if (data == 'material') {
-      this.showBasicMinimizeWindowMaterial = !this.showBasicMinimizeWindowMaterial;
+      this._windowService.showBasicMinimizeWindowMaterial = !this._windowService.showBasicMinimizeWindowMaterial;
     }
   }
   toggleMinimizeSecondWindow(data: any) {
     if (data == 'material') {
-      this.showBasicMinimizeSecondWindowMaterial = !this.showBasicMinimizeSecondWindowMaterial;
+      this._windowService.showBasicMinimizeSecondWindowMaterial = !this._windowService.showBasicMinimizeSecondWindowMaterial;
     }
+  }
+  toggleModelWindow(data: any) {
+    if(data === 'model') {
+      this._windowService.showMinimizeModelWindow = !this._windowService.showMinimizeModelWindow;
+
+    }
+
   }
  
 }

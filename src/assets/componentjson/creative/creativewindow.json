@@ -160,7 +160,14 @@
                     "version": "5.18 onwards",
                     "type": "boolean",
                     "default": "false"
-                }
+                },
+                {
+                    "name": "window-model",
+                    "description": "Window-model for the background shadow remove and background funcationlity work.",
+                    "version": "5.18 onwards",
+                    "type": "boolean",
+                    "default": "true"
+                  }
             ]
         },
         {

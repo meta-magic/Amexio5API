@@ -3,55 +3,51 @@
  */
 
 import {Component} from '@angular/core';
+import { windowContainerService } from 'src/app/service/windowContainerService.service';
+
 
 @Component({
   selector: 'window-ce-demo', templateUrl: './window.demo.html'
 })
 export class CreativeWindowDemo {
-   showSideModal: boolean;
-   showSideModal1: boolean;
-   showCenterModal:boolean;
-   showLoginWindow:boolean;
-   showInfoModal:boolean;
-   showFrameWindow:boolean;
-   showSideModal2: boolean;
-   minimizeWindow: boolean;
-   minimizeCeDemo: boolean;
-   maximizeWindow: boolean;
+   
 
-   constructor() {
+   constructor(private _windowService: windowContainerService) {
      
  }
  onDragWindowClick(){
-  this.showSideModal1 = !this.showSideModal1;
+  this. _windowService.showSideModal1 = !this. _windowService.showSideModal1;
  }
   onSideModalClick(){
-   this.showSideModal = !this.showSideModal;
+   this. _windowService.showSideModal = !this. _windowService.showSideModal;
   }
   showInfoModalClick(){
-   this.showInfoModal = !this.showInfoModal;
+   this. _windowService.showInfoModal = !this. _windowService.showInfoModal;
   } 
   onloginWindowClick(){
-   this.showLoginWindow = ! this.showLoginWindow;
+   this. _windowService.showLoginWindow = ! this. _windowService.showLoginWindow;
   }
   onCenterModalClick(){
-    this.showCenterModal = ! this.showCenterModal;
+    this. _windowService.showCenterModal = ! this. _windowService.showCenterModal;
   }
   onFrameModalClick(){
-   this.showFrameWindow =! this.showFrameWindow;
+   this. _windowService.showFrameWindow =! this. _windowService.showFrameWindow;
   }
   onResizeWindowClick() {
-    this.showSideModal2 =! this.showSideModal2;
+    this. _windowService.showSideModal2 =! this. _windowService.showSideModal2;
   }
   onMinimizeWindowClick() {
-    this.minimizeWindow = !this.minimizeWindow;
+    this. _windowService.minimizeWindow = !this. _windowService.minimizeWindow;
   }
   onMinimizeCEClick() {
-    this.minimizeCeDemo = !this.minimizeCeDemo;
+    this. _windowService.minimizeCeDemo = !this. _windowService.minimizeCeDemo;
   }
 
   onMaximizeWindowClick() {
-    this.maximizeWindow = true;
+    this. _windowService.maximizeWindow = true;
+  }
+  onMinimizeModelWindowClick() {
+    this. _windowService.modelCeDemo = !this. _windowService.modelCeDemo;
   }
 } 
 
