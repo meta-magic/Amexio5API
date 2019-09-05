@@ -196,7 +196,7 @@ export class AppComponent {
           "submenus": [
             {
               "text": "Amexio API",
-              "link": "https://amexio.tech/amexio-api"
+              "link": "https://api.amexio.org/"
             },
             {
               "text": "Amexio D3 Charts",
