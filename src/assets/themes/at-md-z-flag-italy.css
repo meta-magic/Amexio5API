@@ -9123,7 +9123,6 @@ amexio-layout amexio-layout-item {
   width: 100%; }
 
 .amexio-root-window-ce-windowModel {
-  height: 100%;
   width: 100%;
   position: fixed;
   z-index: 700;
