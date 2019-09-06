@@ -12,18 +12,18 @@ import { windowContainerService } from 'src/app/service/windowContainerService.s
 export class TaskbarDemo {
 
   display = false;
- constructor(public _taskBarService: windowContainerService) {
+  constructor(public _taskBarService: windowContainerService) {
 
- }
+  }
 
- showName() {
+  showName() {
 
-  this._taskBarService.displayTaskbar = true;
- }
- hideName() {
-  this._taskBarService.displayTaskbar = false;
-   
- }
+    this._taskBarService.displayTaskbar = true;
+  }
+  hideName() {
+    this._taskBarService.displayTaskbar = false;
+
+  }
 
 
 }
