@@ -106,26 +106,26 @@
           "description": "If true add two context menus i.e close All and close Others tabs"
         },
         {
-            "name": "action-type-align",
-            "description": "specify position of action type(left/right).",
-            "version": "5.0.3 onwards",
-            "type": "string",
-            "default": "left"
-          },
-         {
-            "name": "enable-lifecycle-events",
-            "description": "Enable lifecycle events example [all/init/ready/destroy].",
-            "version": "5.7 onwards",
-            "type": "string",
-            "default": ""
-          },
-          {
-            "name": "active-bg-color",
-            "description": "sets background color for active tab.",
-            "version": "5.9.3 onwards",
-            "type": "boolean",
-            "default": "false"
-          }
+          "name": "action-type-align",
+          "description": "specify position of action type(left/right).",
+          "version": "5.0.3 onwards",
+          "type": "string",
+          "default": "left"
+        },
+        {
+          "name": "enable-lifecycle-events",
+          "description": "Enable lifecycle events example [all/init/ready/destroy].",
+          "version": "5.7 onwards",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "active-bg-color",
+          "description": "sets background color for active tab.",
+          "version": "5.9.3 onwards",
+          "type": "boolean",
+          "default": "false"
+        }
       ]
     },
     {
@@ -246,22 +246,26 @@
           "version": "5.0.3 onwards",
           "description": "It is fired when clicked on context menu, providing tree node data and selected context menu data."
         },
-         {
-            "name": "initiated",
-            "version":"5.7 onwards",
-            "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
-          },
-          {
-            "name": "ready",
-            "version":"5.7 onwards",
-            "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
-          },
-          {
-            "name": "destroy",
-            "version":"5.7 onwards",
-            "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
-          }
-
+        {
+          "name": "initiated",
+          "version": "5.7 onwards",
+          "description": "Event fired if 'all' or 'init' is set as input to enable-lifecycle-events."
+        },
+        {
+          "name": "ready",
+          "version": "5.7 onwards",
+          "description": "Event fired if 'all' or 'ready' is set as input to enable-lifecycle-events."
+        },
+        {
+          "name": "destroy",
+          "version": "5.7 onwards",
+          "description": "Event fired if 'all' or 'destroy' is set as input to enable-lifecycle-events."
+        },
+        {
+          "name": "onCloseClick",
+          "version": "5.19",
+          "description": "Fire on the close click."
+        }
       ]
     },
     {
@@ -319,59 +323,58 @@
           "description": "Method to close all tabs(even if closable flag is true)"
         },
         {
-      "name": "showTab(title: string)",
-      "version": "5.10.3 onwards",
-      "description": "Method to show tab, If tab title matches with input, method will show that tab active and other tabs are hidden"
-    },
-    {
-      "name": "showTab(index: number)",
-      "version": "5.10.3 onwards",
-      "description": "Method to show tab, If tab index matches with input, method will show that tab active and other tabs are hidden"
-    },
-    {
-      "name": "hideTab(title: string)",
-      "version": "5.10.3 onwards",
-      "description": "Method to hide tab, If tab title matches with input, method will hide that tab."
-    },
-    {
-      "name": "hideTab(index: number)",
-      "version": "5.10.3 onwards",
-      "description": "Method to hide tab,If tab index matches with input, method will hide that tab."
-    },
-    {
-      "name": "getCurrentTab()",
-      "version": "5.10.4 onwards",
-      "description": "Method to get current tab index."
-    },
-    {
-      "name": "disableTab(index: any)",
-      "version": "5.10.4 onwards",
-      "description": "Method to disable tab,If tab index matches with input or array of inputs, method will disable those tabs."
-    },
-    {
-      "name": "disableTab(title: any)",
-      "version": "5.10.4 onwards",
-      "description": "Method to disable tab,If tab title matches with input or array of inputs, method will disable those tab."
-    },
-    {
-      "name": "deleteTab(title: any)",
-      "version": "5.10.5 onwards",
-      "description": "Method to delete tab,If tab title matches with input or array of inputs, method will delete those tabs."
-    },
-    {
-      "name": "deleteTab(index: any)",
-      "version": "5.10.5 onwards",
-      "description": "Method to delete tab,If tab title matches with input or array of inputs, method will delete those tab."
-    },
-    {
-      "name": "replaceTab(index: number,replacetab:string)",
-      "version": "5.10.5 onwards",
-      "description": "Method to replace tab,If input index with tab matches, method will replace that tab with replaced value."
-    }
+          "name": "showTab(title: string)",
+          "version": "5.10.3 onwards",
+          "description": "Method to show tab, If tab title matches with input, method will show that tab active and other tabs are hidden"
+        },
+        {
+          "name": "showTab(index: number)",
+          "version": "5.10.3 onwards",
+          "description": "Method to show tab, If tab index matches with input, method will show that tab active and other tabs are hidden"
+        },
+        {
+          "name": "hideTab(title: string)",
+          "version": "5.10.3 onwards",
+          "description": "Method to hide tab, If tab title matches with input, method will hide that tab."
+        },
+        {
+          "name": "hideTab(index: number)",
+          "version": "5.10.3 onwards",
+          "description": "Method to hide tab,If tab index matches with input, method will hide that tab."
+        },
+        {
+          "name": "getCurrentTab()",
+          "version": "5.10.4 onwards",
+          "description": "Method to get current tab index."
+        },
+        {
+          "name": "disableTab(index: any)",
+          "version": "5.10.4 onwards",
+          "description": "Method to disable tab,If tab index matches with input or array of inputs, method will disable those tabs."
+        },
+        {
+          "name": "disableTab(title: any)",
+          "version": "5.10.4 onwards",
+          "description": "Method to disable tab,If tab title matches with input or array of inputs, method will disable those tab."
+        },
+        {
+          "name": "deleteTab(title: any)",
+          "version": "5.10.5 onwards",
+          "description": "Method to delete tab,If tab title matches with input or array of inputs, method will delete those tabs."
+        },
+        {
+          "name": "deleteTab(index: any)",
+          "version": "5.10.5 onwards",
+          "description": "Method to delete tab,If tab title matches with input or array of inputs, method will delete those tab."
+        },
+        {
+          "name": "replaceTab(index: number,replacetab:string)",
+          "version": "5.10.5 onwards",
+          "description": "Method to replace tab,If input index with tab matches, method will replace that tab with replaced value."
+        }
       ]
     }
   ],
-  
   "sourceMetadata": {
     "htmlUrl": "",
     "tsUrl": "",
@@ -381,7 +384,7 @@
     "disabled": false,
     "stackblitzUrl": ""
   },
-  "apiaccessibledata":[
+  "apiaccessibledata": [
     {
       "gridTitle": "Properties  <amexio-tab>",
       "columnDefinition": [
@@ -389,13 +392,11 @@
           "dataindex": "name",
           "text": "Key",
           "width": 30
-          
         },
         {
           "dataindex": "description",
           "text": "Function",
           "width": 70
-       
         }
       ],
       "gridData": [
@@ -421,5 +422,5 @@
         }
       ]
     }
-  ] 
+  ]
 }
