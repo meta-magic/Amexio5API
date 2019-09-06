@@ -10,7 +10,7 @@ export class RouterAnimationDemo {
   title = 'routinglink';
   alterflag: boolean = false;
   radioGroupData: any;
-  styleType: string = '';
+  styleType: string = 'slide-right';
 
   typeScriptCode: string;
   htmlCode: string;

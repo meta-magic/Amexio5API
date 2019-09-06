@@ -81,55 +81,6 @@
 
         </amexio-card>
 
-
-        <amexio-card [header]="true" [header-align]="'left'">
-            <amexio-header>
-                Floating Panel With Draggable and Resizeable Feature
-            </amexio-header>
-            <amexio-body>
-                <amexio-row>
-                    <amexio-column size="3" fit="false">
-                        <amexio-button type="theme-color" (onClick)="onshowResizePanel()" label="Resize Panel">
-                        </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [resizable]="true" [color-palette]="'random'" [gradient]="true" [show-panel]="showResizePanel"
-                            [relative]="true" [closeable]="true" [width]="'330'" [title]="'Video Player'" (onClose)="onCloseResizePanel1($event)">
-                            <amexio-row>
-                                <amexio-column size="12" fit="true">
-                                    <amexio-video-player path="assets/videos/sample_bunny.mp4">
-                                    </amexio-video-player>
-                                </amexio-column>
-                            </amexio-row>
-
-                        </amexio-floating-panel>
-                    </amexio-column>
-                    <amexio-column size="3" fit="false">
-                        <amexio-button type="theme-color" (onClick)="onshowDragPanel()" label="Drag Panel">
-                        </amexio-button>
-                        <amexio-floating-panel amexioColorPalette [draggable]="true" [color-palette]="'random'" [gradient]="true" [show-panel]="showDragPanel"
-                            [relative]="true" [closeable]="true" [width]="'330'" [height]="330" [title]="'Google Map'" (onClose)="onCloseDraggablePanel1($event)">
-                            <amexio-row>
-                                <amexio-column size="12" fit="true">
-                                    <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
-                                        [data]="data" (onMarkerClick)="onMarkerClick1($event)">
-                                    </amexio-google-map>
-                                </amexio-column>
-                            </amexio-row>
-
-                        </amexio-floating-panel>
-                    </amexio-column>
-                    <amexio-column size="3" fit="false">
-
-                    </amexio-column>
-
-                    <amexio-column size="3" fit="false">
-
-                    </amexio-column>
-
-                </amexio-row>
-            </amexio-body>
-
-        </amexio-card>
-
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
                 Floating Panel With Absolute Positioning
@@ -226,7 +177,53 @@
             </amexio-body>
 
         </amexio-card>
+        <amexio-card [header]="true" [header-align]="'left'">
+            <amexio-header>
+                Floating Panel With Draggable and Resizeable Feature
+            </amexio-header>
+            <amexio-body>
+                <amexio-row>
+                    <amexio-column size="3" fit="false">
+                        <amexio-button type="theme-color" (onClick)="onshowResizePanel()" label="Resize Panel">
+                        </amexio-button>
+                        <amexio-floating-panel amexioColorPalette [resizable]="true" [color-palette]="'random'" [gradient]="true" [show-panel]="showResizePanel"
+                            [relative]="true" [closeable]="true" [width]="'330'" [title]="'Video Player'" (onClose)="onCloseResizePanel1($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <amexio-video-player path="assets/videos/sample_bunny.mp4">
+                                    </amexio-video-player>
+                                </amexio-column>
+                            </amexio-row>
 
+                        </amexio-floating-panel>
+                    </amexio-column>
+                    <amexio-column size="3" fit="false">
+                        <amexio-button type="theme-color" (onClick)="onshowDragPanel()" label="Drag Panel">
+                        </amexio-button>
+                        <amexio-floating-panel amexioColorPalette [draggable]="true" [color-palette]="'random'" [gradient]="true" [show-panel]="showDragPanel"
+                            [relative]="true" [closeable]="true" [width]="'330'" [height]="330" [title]="'Google Map'" (onClose)="onCloseDraggablePanel1($event)">
+                            <amexio-row>
+                                <amexio-column size="12" fit="true">
+                                    <amexio-google-map [initial-zoom-level]="2" [height]="'295px'" [google-map-key]="'AIzaSyDKSPX97z-ndeh_Mgq3xkaML2Kp9AwHA9s'"
+                                        [data]="data" (onMarkerClick)="onMarkerClick1($event)">
+                                    </amexio-google-map>
+                                </amexio-column>
+                            </amexio-row>
+
+                        </amexio-floating-panel>
+                    </amexio-column>
+                    <amexio-column size="3" fit="false">
+
+                    </amexio-column>
+
+                    <amexio-column size="3" fit="false">
+
+                    </amexio-column>
+
+                </amexio-row>
+            </amexio-body>
+
+        </amexio-card>
 
         <amexio-card [header]="true" [header-align]="'left'">
             <amexio-header>
