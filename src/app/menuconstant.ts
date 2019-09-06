@@ -827,6 +827,7 @@ export const MENUCONSTANT = {
     {
       text: "App Navigation",
       icon: "fa fa-bars  ",
+      badge: "1",
       children: [
         {
           text: "Breadcrumb",
@@ -862,6 +863,7 @@ export const MENUCONSTANT = {
         {
           text: "Task Bar",
           icon: "fa fa-tasks  ",
+          badge: "New",
           link: "navigation/taskbar-demo"
         },
         {

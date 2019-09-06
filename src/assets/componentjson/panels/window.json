@@ -201,6 +201,18 @@
         {
           "name": "rightClick",
           "description": "It is fired when clicked on context menu providing Window node data and selected context menu data."
+        },
+        {
+          "name": "onMinimize",
+          "description": "It is fired on click of minimize."
+        },
+        {
+          "name": "onMaximize",
+          "description": "It is fired on click of maximize."
+        },
+        {
+          "name": "onFullScreen",
+          "description": "It is fired on click of full screen."
         }
       ]
     }
