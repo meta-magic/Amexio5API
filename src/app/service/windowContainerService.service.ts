@@ -32,6 +32,8 @@ export class windowContainerService {
    minimizeCeDemo: boolean;
    maximizeWindow: boolean;
    modelCeDemo: boolean;
+
+   displayTaskbar: boolean;
     constructor() { }
 
 

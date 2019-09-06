@@ -1,0 +1,128 @@
+{{taskBarService.displayTaskbar | json}}
+<ng-container *ngIf="taskBarService.displayTaskbar">
+
+  <amexio-task-bar [align]="'start'">
+
+    <amexio-task-bar-item [title]="'Messaging'" [relative]="true" [width]="210" [height]="250"
+      [taskbar-Icon]="'fa fa-cog'">
+      <table>
+        <tr>
+          <th>Contacts</th>
+        </tr>
+        <tr *ngFor="let bar of taskBarName">
+          <td>
+            <amexio-image [height]="'39.75px'" [width]="'39.75px'" [c-class]="'image-round'" [path]="bar.path">
+            </amexio-image>
+          </td>
+          <td style="font-size: 16px; cursor: pointer;
+                        width: auto;
+                        border-bottom: 1px solid rgb(211, 208, 208);" (click)="onNameClick(bar)">
+            {{bar.personName}}
+          </td>
+          <br><br>
+        </tr>
+      </table>
+    </amexio-task-bar-item>
+
+    <ng-container *ngFor="let item of items" style="width:90%">
+      <ng-container *ngIf="item.type == 'type1'">
+        <amexio-task-bar-item style="margin-left: 120px;" [title]="item.personName" [relative]="true" [width]="250"
+          [close]="true" (onCloseEvent)="onitemremove(item)" [height]="250">
+
+          <amexio-speech-bubble [arrow-direction]="'right'">
+            <amexio-label size="small">
+              "Hi, It is a pleasure & an honour to connect."
+            </amexio-label>
+          </amexio-speech-bubble>
+          <amexio-speech-bubble [arrow-direction]="'left'">
+            <amexio-label size="small">
+              <p style="margin-top: -21px;margin-bottom: 1px;">
+                "Same here",
+              </p>
+            </amexio-label>
+          </amexio-speech-bubble>
+          <amexio-speech-bubble [arrow-direction]="'right'">
+            <amexio-label size="small">
+              "Happy birthday!",
+            </amexio-label>
+          </amexio-speech-bubble>
+          <amexio-speech-bubble [arrow-direction]="'left'">
+            <amexio-label size="small">
+              "Thank You dude!!!"
+            </amexio-label>
+          </amexio-speech-bubble>
+        </amexio-task-bar-item>
+      </ng-container>
+
+      <ng-container *ngIf="item.type == 'type2'">
+
+        <amexio-task-bar-item style="margin-left: 120px;" [title]="item.personName" [relative]="true" [width]="250"
+          [close]="true" (onCloseEvent)="onitemremove(item)" [height]="250">
+
+          <amexio-card-ce>
+            <amexio-header-ce [height]="'250px'" [color]="'white'" [bg-image]="item.imagePath">
+            </amexio-header-ce>
+            Angelina Jolie is an American actress, filmmaker, and humanitarian. The recipient of such accolades as an
+            Academy Award and three Golden Globe Awards, she has been named Hollywood's highest-paid actress multiple
+            times.
+          </amexio-card-ce>
+
+        </amexio-task-bar-item>
+
+      </ng-container>
+
+      <ng-container *ngIf="item.type == 'type3'">
+
+        <amexio-task-bar-item style="margin-left: 120px;" [title]="item.personName" [relative]="true" [width]="250"
+          [close]="true" (onCloseEvent)="onitemremove(item)" [height]="250">
+
+          <amexio-video-player [path]="item.videoPath">
+          </amexio-video-player>
+
+        </amexio-task-bar-item>
+      </ng-container>
+
+
+      <ng-container *ngIf="item.type == 'type4'">
+
+        <amexio-task-bar-item style="margin-left: 120px;" [title]="item.personName" [relative]="true" [width]="250"
+          [close]="true" (onCloseEvent)="onitemremove(item)" [height]="250">
+
+
+          <amexio-card-ce [flip]="true" [align]="'center'" [width]="'200px'" [height]="'300px'"
+            [cover-image]="'assets/images/tvshows/shows/orange_black.jpg'">
+            <amexio-header-ce [align]="'space-between'" [border-bottom]="true">
+              <div>
+                <amexio-label size="small-bold">
+                  Orange Black
+                </amexio-label>
+                <br>
+                <amexio-label size="small">
+                  9 May, 2018
+                </amexio-label>
+              </div>
+            </amexio-header-ce>
+            <amexio-body-ce>
+              A privileged New Yorker ends up in a women's prison when a past crime catches up with her in this
+              Emmy-winning series from
+              the creator of Weeds.
+
+            </amexio-body-ce>
+            <amexio-action-ce [align]="'center'" [border-top]="true">
+              <amexio-button [label]="'PLAY'" [type]="'transparent'" [icon]="'fa fa-play'" [tooltip]="'PLAY'">
+              </amexio-button>
+
+            </amexio-action-ce>
+          </amexio-card-ce>
+
+        </amexio-task-bar-item>
+      </ng-container>
+
+
+    </ng-container>
+
+
+
+  </amexio-task-bar>
+
+</ng-container>

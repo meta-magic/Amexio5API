@@ -22,12 +22,13 @@ import { CopyRightComponent } from './copyright/copyright.component';
 import { ConceptPage } from './concept/concept.component';
 import { KeyFeaturesComponent } from './concept/keyfeatures.component';
 import { EventsPanelComponent } from '../app/enterprise/floating-panel-calendar/events-panel/events-panel.component';
-import {RouterService} from 'amexio-ng-extensions';
+import { RouterService } from 'amexio-ng-extensions';
 
-import {ApiWindowContainerComponent} from './apiWindowContainer/apiWindowContainer.component';
+import { ApiWindowContainerComponent } from './apiWindowContainer/apiWindowContainer.component';
 import { windowContainerService } from './service/windowContainerService.service';
 
-import {CreativeApiWindowContainerComponent} from './ceapiWindowContainer/ceapiWindowContainer.component';
+import { CreativeApiWindowContainerComponent } from './ceapiWindowContainer/ceapiWindowContainer.component';
+import { ApiTaskbarContainerComponent } from './apiTaskbarContainer/apiTaskbarContainer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +37,8 @@ import {CreativeApiWindowContainerComponent} from './ceapiWindowContainer/ceapiW
     EventsPanelComponent,
     KeyFeaturesComponent,
     ApiWindowContainerComponent,
-    CreativeApiWindowContainerComponent
+    CreativeApiWindowContainerComponent,
+    ApiTaskbarContainerComponent
   ],
   imports: [
     BrowserModule,
