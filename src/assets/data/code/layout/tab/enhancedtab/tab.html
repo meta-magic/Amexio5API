@@ -57,7 +57,7 @@
 
 <!-- Tab Layout with Action Component(Button)-->
 
-<amexio-tab-view #tab [action]="true" [tab-position]="'top'">
+<amexio-tab-view #tab [action]="true" [tab-position]="'top'" [enable-confirm-box]="true">
     <amexio-tab-action>
         <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab)" [tooltip]="'Add Tab'">
         </amexio-button>

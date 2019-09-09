@@ -120,11 +120,25 @@
           "default": ""
         },
         {
-          "name": "active-bg-color",
-          "description": "sets background color for active tab.",
-          "version": "5.9.3 onwards",
+          "name": "enable-confirm-box",
+          "description": "Gets dialogue box on the cancel of tab",
+          "version": "5.18.2 onwards",
           "type": "boolean",
           "default": "false"
+        },
+        {
+          "name": "message-title",
+          "description": "sets title for confirm box.",
+          "version": "5.18.2 onwards",
+          "type": "string",
+          "default": "confirm"
+        },
+        {
+          "name": "message",
+          "description": "sets message for dialogue body.",
+          "version": "5.18.2 onwards",
+          "type": "string",
+          "default": "Are You Sure?"
         }
       ]
     },

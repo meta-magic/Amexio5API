@@ -105,11 +105,10 @@
 
         <amexio-card [header]="true" [footer]="true" [footer-align]="'left'">
             <amexio-header>
-                Tab layout with action component(button) and tabs left aligned
+                Tab layout with action component(button) and tabs left aligned and inbuilt dialogue box on close
             </amexio-header>
             <amexio-body>
-
-                <amexio-tab-view #tab1 [closable]="false" [action]="true" [tab-position]="'top'" [header-align]="'left'">
+                <amexio-tab-view #tab1 [closable]="false" [enable-confirm-box]="true" [action]="true" [tab-position]="'top'" [header-align]="'left'">
                     <amexio-tab-action>
                         <amexio-button [label]="'Add Tab'" [type]="'theme-color'" (onClick)="addtab(tab1)" [tooltip]="'Add Tab'">
                         </amexio-button>
@@ -481,3 +480,6 @@
 
     </amexio-api-demo>
 </amexio-api-structure>
+
+
+

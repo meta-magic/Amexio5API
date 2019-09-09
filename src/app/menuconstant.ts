@@ -336,6 +336,7 @@ export const MENUCONSTANT = {
                 },
                 {
                   text: "Enhanced",
+                  badge: "U",
                   link: "panes/enhanced-tab-demo",
                   icon: "fa fa-leaf  "
                 },

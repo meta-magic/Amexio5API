@@ -120,7 +120,6 @@ export class EnhancedTabDemo implements OnInit {
     replaceTabClick(tab) {
         tab.replaceTab(2,"Demo");
     }
-
 }
 
 
