@@ -41,6 +41,9 @@ import { TypeAheadDemo } from "./typeahead/typeahead.demo";
 import {BadgeDemo} from './badge/badge.demo';
 import { RangeSliderDemo } from "./rangeslider/rangeslider.demo";
 import { GeoLocationDemo } from "./geolocation/geolocation.demo";
+// import { MultipleRangeDateTimePickerDemo } from "./multirangedatepicker/multirangedatepicker.demo";
+import { DialpadDemo } from "./dialpad/dialpad.demo";
+
 /**
  * Created by kedar on 1/2/19.
  */
@@ -51,7 +54,7 @@ import { GeoLocationDemo } from "./geolocation/geolocation.demo";
         FileuploadDemo,LabelDemo,NumberDemo,PasswordDemo,RadioGroupDemo,RatingDemo,
         RecaptchaDemo,SearchBox,SliderDemo,FacebookLoginDemo,GitHubLoginDemo,GoogleLoginDemo,LinkedinLoginDemo,
         TagInputDemo,TextDemo, TextareaDemo, ToggleDemo, TypeAheadDemo,BadgeDemo,
-        RangeSliderDemo, MultipleDateTimePickerDemo
+        RangeSliderDemo, MultipleDateTimePickerDemo, DialpadDemo
     
     ],
     imports: [

@@ -1,0 +1,114 @@
+{
+    "title": "Amexio Dialpad",
+    "description": "Dialpad component provides a numeric keypad with display label.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-dialpad>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+         
+          {
+            "deprecated": false,
+            "name": "value",
+            "description": "Binds resultant value of numeric pad.",
+            "version": "5.19 onwards",
+            "type": "string",
+            "default": ""
+          }
+        ]
+      },
+      {
+        "gridTitle": "Events",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false
+          }
+        ],
+        "gridData": [
+          {
+            "name": "onClick",
+            "description": "Fired on click of numeric buttons"
+          } 
+        ]
+      }
+    ],
+    "isAccessibility": false,
+    "sourceMetadata": {
+      "htmlUrl": "forms/dialpad/form.html",
+      "tsUrl": "forms/dialpad/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": true,
+      "stackblitzUrl": ""
+    },
+    "apiaccessibledata": [
+      {
+          "gridTitle": "Properties  <amexio-dropdown>",
+          "columnDefinition": [
+              {
+                  "dataindex": "name",
+                  "text": "Key",
+                  "width": 30
+              },
+              {
+                  "dataindex": "description",
+                  "text": "Function",
+                  "width": 70
+              }
+          ],
+          "gridData": [
+              {
+                  "name": "Enter",
+                  "description": "On enter click selects particular element from dropdown and displays."
+              },
+              {
+                  "name": "Down Arrow",
+                  "description": " Moves focus one cell down.If focus is on the bottom cell in the column, focus moves to the first elememt."
+              },
+              {
+                  "name": "Up Arrow",
+                  "description": "Moves focus one cell Up.If focus is on the top cell in the column, focus moves to the last elememt."
+              }
+          ]
+      }
+  ]
+  }

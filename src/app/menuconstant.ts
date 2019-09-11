@@ -83,6 +83,12 @@ export const MENUCONSTANT = {
           icon: "fa fa-calendar  ",
           link: "forms-Input/multidatepicker-demo"
         },
+        // {
+        //  text: "Multi Range DatePicker",
+        //  icon: "fa fa-calendar  ",
+        //  badge: "New",
+        //  link: "forms-Input/multirangedatepicker-demo"
+        // },
         {
           text: "Facebook Login",
           icon: "fa fa-facebook  ",
@@ -550,6 +556,11 @@ export const MENUCONSTANT = {
           text: "Toggle",
           icon: "fa fa-toggle-on  ",
           link: "forms-Input/toggle-demo"
+        },
+        {
+          text: "Amexio Dialpad",
+          icon: "fa fa-phone",
+          link: "forms-Input/dialpad-demo"
         }
       ]
     },
