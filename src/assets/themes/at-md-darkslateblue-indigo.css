@@ -4711,6 +4711,29 @@ fsw .widgetSprite.icCalendar {
   box-shadow: unset; }
 
 /****************************************************************************
+    Component Name : Dialpad
+    Version : Amexio v5.19 onwards
+*****************************************************************************/
+/** dialpad - Visual CSS **/
+.btncolor {
+  background-color: var(--componentActiveBGColor);
+  color: var(--componentActiveFontColor); }
+
+.btncolor:hover {
+  background-color: var(--componentHoverBGColor);
+  color: var(--componentHoverFontColor); }
+
+/** dialpad - Structure CSS **/
+.btnspan {
+  display: inline-block; }
+
+.btn {
+  margin: 3px; }
+
+.pointer {
+  cursor: pointer; }
+
+/****************************************************************************
     Component Name : Enterprise Content
     Version : Amexio v4.0 onwards
 *****************************************************************************/
