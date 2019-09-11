@@ -428,7 +428,7 @@ export const MENUCONSTANT = {
     {
       text: "Form Inputs",
       icon: "fa fa-clone  ",
-      badge: "1",
+      badge: "2",
       children: [
         {
           text: "Badge",
@@ -560,7 +560,8 @@ export const MENUCONSTANT = {
         {
           text: "Amexio Dialpad",
           icon: "fa fa-phone",
-          link: "forms-Input/dialpad-demo"
+          link: "forms-Input/dialpad-demo",
+          badge: "NEW",
         }
       ]
     },
