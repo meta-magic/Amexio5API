@@ -10,8 +10,12 @@ import { Component } from '@angular/core';
 })
 export class DialpadDemo {
   copyMsgArray: any[];   
-  dialpadValue = '';
-  
+  dialpadValue1 = '';
+  dialpadValue2 = '';
+  dialpadValue3 = '';
+  dialpadValue4 = '';
+  dialpadValue5 = '';
+
   constructor() {
    
   }
@@ -26,5 +30,3 @@ export class DialpadDemo {
     }
   }
 }
-
-

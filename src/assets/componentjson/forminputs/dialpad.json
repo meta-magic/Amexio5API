@@ -3,7 +3,7 @@
     "description": "Dialpad component provides a numeric keypad with display label.",
     "apiRefMetadata": [
       {
-        "gridTitle": "Properties <amexio-dialpad>",
+        "gridTitle": "Properties <amexio-dial-pad>",
         "columnDefinition": [
           {
             "dataindex": "name",
@@ -40,6 +40,62 @@
             "deprecated": false,
             "name": "value",
             "description": "Binds resultant value of numeric pad.",
+            "version": "5.19 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "deprecated": false,
+            "name": "field-label",
+            "description": "Adds label to Amexio Dial pad",
+            "version": "5.19 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "deprecated": false,
+            "name": "type",
+            "description": "sets dialpad type as '2-rows / classic / calculator'",
+            "version": "5.19 onwards",
+            "type": "string",
+            "default": ""
+          },
+          {
+            "deprecated": false,
+            "name": "random",
+            "description": "displays dialpad numbers in random manner",
+            "version": "5.19 onwards",
+            "type": "boolean",
+            "default": ""
+          },
+          {
+            "deprecated": false,
+            "name": "password",
+            "description": "Sets password charater on display label of dialpad",
+            "version": "5.19 onwards",
+            "type": "boolean",
+            "default": ""
+          },
+          {
+            "deprecated": false,
+            "name": "min-length",
+            "description": "Sets minimum length of display label",
+            "version": "5.19 onwards",
+            "type": "number",
+            "default": ""
+          },
+          {
+            "deprecated": false,
+            "name": "max-length",
+            "description": "Sets maximum length of display label",
+            "version": "5.19 onwards",
+            "type": "number",
+            "default": ""
+          },
+          {
+            "deprecated": false,
+            "name": "button-type",
+            "description": "'round' sets round buttons on dialpad'",
             "version": "5.19 onwards",
             "type": "string",
             "default": ""
