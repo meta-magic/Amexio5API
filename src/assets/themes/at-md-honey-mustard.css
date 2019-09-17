@@ -4719,19 +4719,36 @@ fsw .widgetSprite.icCalendar {
   background-color: var(--componentActiveBGColor);
   color: var(--componentActiveFontColor); }
 
+.labcolor {
+  color: var(--componentActiveFontColor); }
+
 .btncolor:hover {
   background-color: var(--componentHoverBGColor);
   color: var(--componentHoverFontColor); }
 
+.nonecls {
+  border-color: black !important; }
+
+.redcls {
+  border-color: red !important; }
+
+.greencls {
+  border-color: green !important; }
+
 /** dialpad - Structure CSS **/
 .btnspan {
-  display: inline-block; }
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
 
 .btn {
   margin: 3px; }
 
 .pointer {
   cursor: pointer; }
+
+.rounded {
+  border-radius: 50%; }
 
 /****************************************************************************
     Component Name : Enterprise Content
@@ -5837,14 +5854,10 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   color: var(--componentHoverFontColor);
   outline: none; }
 
-.datatable-row:nth-child(even) {
-  background-color: white; }
-
 /** Datatable - Visual CSS **/
 .datatabletitle {
   font-size: 1.5em;
-  margin: .1em 0 .35em;
-  background: white; }
+  margin: .1em 0 .35em; }
 
 .datatable {
   display: table;
@@ -5916,7 +5929,7 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 .datatable-filter-icon1 {
   position: absolute;
-  top: 10px;
+  top: 1px;
   display: block;
   width: 38px;
   height: 38px;
@@ -6637,6 +6650,9 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   background-color: var(--componentBGColor);
   color: var(--componentFontColor); }
 
+.nav-dropdown:hover .dropdownData {
+  background-color: white; }
+
 .nav-dropdown:hover .nav-dropdown-content .nav-menu-container a {
   color: var(--componentFontColor); }
 
@@ -6865,6 +6881,16 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   transform: rotate(180deg); }
 .nav-dropdown:hover .nav-dropdown-content {
   display: block; }
+
+.nav-dropdown:hover .dropdownData {
+  display: block;
+  position: absolute;
+  min-width: auto;
+  z-index: 3;
+  padding: 10px 0px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  transform-origin: 0 0; }
 
 .nav-dropdown-content-subnode {
   display: inline-flex;
