@@ -4720,14 +4720,14 @@ fsw .widgetSprite.icCalendar {
   color: var(--componentActiveFontColor); }
 
 .labcolor {
-  color: var(--componentActiveFontColor); }
+  color: var(--componentFontColor); }
 
 .btncolor:hover {
   background-color: var(--componentHoverBGColor);
   color: var(--componentHoverFontColor); }
 
 .nonecls {
-  border-color: black !important; }
+  border-color: var(--componentFontColor) !important; }
 
 .redcls {
   border-color: red !important; }
