@@ -34,7 +34,7 @@ import {BadgeDemo} from './badge/badge.demo';
 import { RangeSliderDemo } from './rangeslider/rangeslider.demo';
 import { MultipleDateTimePickerDemo } from './multipledatepicker/multipledatepicker.demo'
 import { GeoLocationDemo } from './geolocation/geolocation.demo';
-// import { MultipleRangeDateTimePickerDemo } from './multirangedatepicker/multirangedatepicker.demo';
+import { MultipleRangeDateTimePickerDemo } from './multirangedatepicker/multirangedatepicker.demo';
 import { DialpadDemo } from "./dialpad/dialpad.demo";
 
 export const FORMSINPUT_ROUTE: Routes = [
@@ -135,9 +135,9 @@ export const FORMSINPUT_ROUTE: Routes = [
     { 
         path: 'geolocation-demo', component: GeoLocationDemo,
     },
-    // { 
-    //     path: 'multirangedatepicker-demo', component: MultipleRangeDateTimePickerDemo,
-    // },
+    { 
+        path: 'multirangedatepicker-demo', component: MultipleRangeDateTimePickerDemo,
+     },
     {
         path: 'dialpad-demo', component: DialpadDemo,
     },

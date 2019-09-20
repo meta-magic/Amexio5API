@@ -1,0 +1,36 @@
+<amexio-api-structure [url]="'assets/componentjson/forminputs/multiplerangedatepicker.json'">
+    <amexio-api-accessible>
+        <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+            <p>The Date/Time Picker is WAI ARIA-accessible through the tab key and implementation of keyboard navigation for its
+                component and is tested against the popular screen readers</p>
+            <p> Role:button-The button role is defined for button used in Date/Time picker and correspondingly have
+                aria-pressed attribute.</p>
+            <p> The attributes used in this are aria-label static and dynamic,dynamic for navigation of focus.</p>
+        </amexio-box>
+    </amexio-api-accessible>
+    <amexio-api-demo>
+        <amexio-row>
+            <amexio-column [size]="12" >
+                <amexio-card [height]="'800'" [header]="true" [footer]="false" [footer-align]="'center'">
+                    <amexio-header>
+                        Multiple Date picker
+                    </amexio-header>
+                    <amexio-body>
+                        <amexio-row>
+                            <amexio-column [size]="4">
+                               
+                                 <amexio-date-range-picker></amexio-date-range-picker>
+                                 
+                                </amexio-column>
+                        </amexio-row>
+
+                    </amexio-body>
+                     
+                </amexio-card>
+
+            </amexio-column>
+ 
+        </amexio-row>
+      
+    </amexio-api-demo>
+</amexio-api-structure>

@@ -1,0 +1,168 @@
+{
+    "title": "Multi Range Date Picker",
+    "description": "Date Picker with 2 Inputs - From and To date.",
+    "componentDescription": "Multi-Date Picker is an Enterprise Component which can be used for picking a range of dates like for Flight / Train / Bus Ticket booking - Departure Date and Return Date or for search any data based on Date Ranges - From Date and To Date. This component shows multiple months also for ease of use. The number of months can be a configurable option. ",
+    "compFeaturesTitle": "Key-Features",
+    "keyFeatures": [
+        " Number of Months (Default = 2 months)",
+        " Minimum Date (Dates below this will be disabled)",
+        " Maximum Date (Dates after this will be disabled) ",
+        " Keyboard Navigation enabled"
+    ],
+    "apiRefMetadata": [
+        {
+            "gridTitle": "Properties <amexio-multiple-date-picker>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "type",
+                    "text": "Type",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "default",
+                    "text": "Default",
+                    "width": 15,
+                    "hidden": false,
+                    "datatype": "string"
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false,
+                    "datatype": "string"
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "fromlabel",
+                    "description": "label of from card field",
+                    "type": " string",
+                    "version": "5.12 onwards",
+                    "default": ""
+                },
+                {
+                    "name": "tolabel",
+                    "description": "The label of to card field",
+                    "type": "string",
+                    "version": "5.12 onwards",
+                    "default": ""
+                },
+                {
+                    "name": "number-of-months",
+                    "description": "specifies number of months to be displayed on date picker",
+                    "type": "number",
+                    "version": "5.12 onwards",
+                    "default": "1"
+                },
+                {
+                    "name": "disabled-date",
+                    "description": "specifies range of disabled dates",
+                    "type": "any[]",
+                    "version": "5.12 onwards",
+                    "default": ""
+                },
+                {
+                    "name": "min-date",
+                    "description": "specifies minimum date of date picker",
+                    "type": "string",
+                    "version": "5.12 onwards",
+                    "default": ""
+                },
+                {
+                    "name": "max-date",
+                    "description": "specifies maximum date of date picker",
+                    "type": "string",
+                    "version": "5.12 onwards",
+                    "default": ""
+                }
+            ]
+        },
+        {
+            "gridTitle": "Events <amexio-multiple-date-picker>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Name",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "version",
+                    "text": "Version",
+                    "width": 15,
+                    "hidden": false
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Description",
+                    "width": 60,
+                    "hidden": false
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "change",
+                    "version": "5.12 onwards",
+                    "description": "On click of date changed date is emitted"
+                }
+            ]
+        }
+    ],
+    "sourceMetadata": {
+        "htmlUrl": "forms/multiplerangedatepicker/form.html",
+        "tsUrl": "forms/multiplerangedatepicker/form.text",
+        "datasourceUrl": ""
+    },
+    "liveMetadata": {
+        "disabled": false,
+        "stackblitzUrl": "https://stackblitz.com/edit/amexio-multi-date-picker?embed=1&file=src/app/CE/multidatepicker/multidatepicker.component.html&view=editor"
+    },
+    "apiaccessibledata": [
+        {
+            "gridTitle": "Properties <amexio-multiple-date-picker>",
+            "columnDefinition": [
+                {
+                    "dataindex": "name",
+                    "text": "Key",
+                    "width": 30
+                },
+                {
+                    "dataindex": "description",
+                    "text": "Function",
+                    "width": 70
+                }
+            ],
+            "gridData": [
+                {
+                    "name": "Right/Left Arrow",
+                    "description": " Moves focus one cell to the right/left.If focus is on the right-most/left-most cell in the row, focus does not move."
+                },
+                {
+                    "name": "Down Arrow",
+                    "description": " Moves focus one cell down.If focus is on the bottom cell in the column, focus does not move."
+                },
+                {
+                    "name": "Up Arrow",
+                    "description": "Moves focus one cell Up.If focus is on the top cell in the column, focus does not move."
+                }
+            ]
+        }
+    ]
+}

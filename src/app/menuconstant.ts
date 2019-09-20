@@ -558,7 +558,7 @@ export const MENUCONSTANT = {
           link: "forms-Input/toggle-demo"
         },
         {
-          text: "Amexio Dialpad",
+          text: "Dial pad",
           icon: "fa fa-phone",
           link: "forms-Input/dialpad-demo",
           badge: "NEW",
