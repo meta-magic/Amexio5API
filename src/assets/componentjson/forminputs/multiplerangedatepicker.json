@@ -1,0 +1,65 @@
+{
+    "title": "Amexio Multiple Date Range Picker",
+    "description": "Amexio multiple date range picker can be easily used to set the date ranges.",
+    "apiRefMetadata": [
+      {
+        "gridTitle": "Properties <amexio-date-range-picker>",
+        "columnDefinition": [
+          {
+            "dataindex": "name",
+            "text": "Name",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "version",
+            "text": "Version",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "type",
+            "text": "Type",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "default",
+            "text": "Default",
+            "width": 15,
+            "hidden": false,
+            "datatype": "string"
+          },
+          {
+            "dataindex": "description",
+            "text": "Description",
+            "width": 60,
+            "hidden": false,
+            "datatype": "string"
+          }
+        ],
+        "gridData": [
+          {
+            "name": "disabled-date",
+            "description": "Want to disable the date then this attribute is used. ",
+            "version": "5.20 onwards",
+            "type": "any[]",
+            "default": "[]"
+          }
+        ]
+      }
+    ],
+    "sourceMetadata": {
+      "htmlUrl": "forms/multipleRangedatepicker/form.html",
+      "tsUrl": "forms/multipleRangedatepicker/form.text",
+      "datasourceUrl": ""
+    },
+    "liveMetadata": {
+      "disabled": true,
+      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-label?embed=1&file=app/forms/label/label.demo.html"
+    }
+   
+  }

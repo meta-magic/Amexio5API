@@ -83,12 +83,12 @@ export const MENUCONSTANT = {
           icon: "fa fa-calendar  ",
           link: "forms-Input/multidatepicker-demo"
         },
-        // {
-        //  text: "Multi Range DatePicker",
-        //  icon: "fa fa-calendar  ",
-        //  badge: "New",
-        //  link: "forms-Input/multirangedatepicker-demo"
-        // },
+        {
+         text: "Multi Range DatePicker",
+         icon: "fa fa-calendar  ",
+         badge: "New",
+         link: "forms-Input/multirangedatepicker-demo"
+        },
         {
           text: "Facebook Login",
           icon: "fa fa-facebook  ",
