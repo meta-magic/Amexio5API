@@ -1143,7 +1143,7 @@ button {
   display: block;
   position: absolute;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-  z-index: 700;
+  z-index: 300;
   width: 290px; }
   .datetimepicker .datetimepickertopbar {
     padding: 10px 25px;
@@ -1341,6 +1341,45 @@ button {
 
 .notclickable {
   pointer-events: none; }
+
+.customrangepanel {
+  cursor: pointer;
+  /* border-bottom: 1px solid black; */
+  /* border-top: 1px solid black; */
+  padding: 15px;
+  background-color: white; }
+
+.custom {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 3px solid var(--themePrimaryColor); }
+
+.tooltip {
+  position: relative;
+  display: inline-block; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1000;
+  top: -5px;
+  left: 110%; }
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  border-color: #ced4da; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible; }
 
 /****************************************************************************
     Component Name : Dropdown
@@ -4751,6 +4790,61 @@ fsw .widgetSprite.icCalendar {
   border-radius: 50%; }
 
 /****************************************************************************
+    Component Name : Multi Date Range Time
+    Version : Amexio v5.19 onwards
+*****************************************************************************/
+/** multidaterangepicker - Visual CSS **/
+.customRangePanel {
+  cursor: pointer;
+  padding: 15px;
+  background-color: white; }
+
+.customRangePanel:hover {
+  color: var(--appHeaderHoverFontColor);
+  background: var(--componentHoverBGColor); }
+
+.customRange {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 3px solid var(--componentHoverBGColor); }
+
+/** multidaterangepicker - Structure CSS **/
+.customRangePanel {
+  cursor: pointer;
+  padding: 15px; }
+
+.customRange {
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+.tooltipRange {
+  position: relative;
+  display: inline-block; }
+
+.tooltipRange .tooltiptextRange {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1000;
+  top: -5px;
+  left: 110%; }
+
+.tooltipRange .tooltiptextRange::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  border-color: black; }
+
+.tooltipRange:hover .tooltiptextRange {
+  visibility: visible; }
+
+/****************************************************************************
     Component Name : Enterprise Content
     Version : Amexio v4.0 onwards
 *****************************************************************************/
@@ -5749,6 +5843,18 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 .fpRightClass amexio-floating-panel div .card-container-body {
   height: 100% !important; }
+
+/****************************************************************************
+    Component Name : Availability
+    Version : Amexio v5.19 onwards
+*****************************************************************************/
+.datespan {
+  background-color: #DCDCDC;
+  height: 5px;
+  line-height: 20px; }
+
+.maindiv {
+  border: 1px solid black; }
 
 /****************************************************************************
     Component Name : Datapoints
