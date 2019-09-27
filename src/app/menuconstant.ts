@@ -70,7 +70,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
-      badge: "1",
+      badge: "2",
       icon: "fa fa-clone  ",
       children: [
         {
@@ -89,6 +89,12 @@ export const MENUCONSTANT = {
          badge: "New",
          link: "forms-Input/multirangedatepicker-demo"
         },
+        {
+          text: "Rich Editable Text Area",
+          icon: "fa fa-square-o",
+          badge: "NEW",
+          link: "enterprise/rich-editable-demo"
+          },
         {
           text: "Facebook Login",
           icon: "fa fa-facebook  ",
@@ -164,12 +170,6 @@ export const MENUCONSTANT = {
           badge: "NEW",
           link: "data/speechbubble-demo"
           },
-          {
-            text: "Rich Editable Text Area",
-            icon: "fa fa-square-o",
-            badge: "NEW",
-            link: "enterprise/rich-editable-demo"
-            },
         {
           text: "Theme Switcher",
           icon: "fas fa-palette  ",
