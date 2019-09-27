@@ -55,6 +55,13 @@
           "version": "4.0 onwards",
           "type": "string",
           "default": ""
+        },
+        {
+          "name": "expanded",
+          "description": "fieldset is expanded",
+          "version": "5.19 onwards",
+          "type": "boolean",
+          "default": "false"
         }
       ]
     }

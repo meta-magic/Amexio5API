@@ -266,7 +266,7 @@ export const MENUCONSTANT = {
     {
       text: "Panels",
       icon: "fa fa-bars  ",
-      badge: "5",
+      badge: "6",
       children: [
         {
           text: "Carousel",
@@ -285,6 +285,7 @@ export const MENUCONSTANT = {
         },
         {
           text: "Fieldset",
+          badge: "U",
           icon: "fa fa-id-card-o  ",
           link: "panes/fieldset-demo"
         },
@@ -434,7 +435,7 @@ export const MENUCONSTANT = {
     {
       text: "Form Inputs",
       icon: "fa fa-clone  ",
-      badge: "2",
+      badge: "3",
       children: [
         {
           text: "Badge",
@@ -510,6 +511,7 @@ export const MENUCONSTANT = {
         },
         {
           text: "Password Field",
+          badge: "U",
           icon: "fa fa-text-width  ",
           link: "forms-Input/password-demo"
         },
