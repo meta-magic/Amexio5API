@@ -133,6 +133,12 @@ export const MENUCONSTANT = {
       badge: "5",
       icon: "fa fa-database  ",
       children: [
+        
+        {
+          text: "Availability",
+          icon: "fa fa-delicious  ",
+          link: "enterprise/ee-availability-demo"
+        },
         {
           text: "Appointment",
           icon: "fa fa-calendar  ",

@@ -23,6 +23,7 @@ import { RouteComponent } from './tree-tab/router-component';
 
 import { HomePageComponent } from './tree-tab/home-page/home-page.component';
 import { RichEditableDemoComponent } from "./rich-editable-textarea/rich-editable.demo.component";
+import { AvailabilityDemoComponent } from "./availability/availability.component";
 // import {APP_ROUTE} from '../../app/enterprise/tree-tab/router-component';
 
 /**
@@ -30,7 +31,7 @@ import { RichEditableDemoComponent } from "./rich-editable-textarea/rich-editabl
  */
 @NgModule({
     declarations: [RouteComponent, ThemeSwitcherDemo, YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-RichEditableDemoComponent,
+RichEditableDemoComponent,AvailabilityDemoComponent,
         EEAppointmentDemoComponent, CalendarDemoComponent,CalendarDemoComponent1 , StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
     imports: [
         CommonModule,

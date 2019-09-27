@@ -12,6 +12,7 @@ import { ThemeSwitcherDemo } from './themeswitcher/themeswitcher.component';
 import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
 import { HomePageComponent } from './tree-tab/home-page/home-page.component';
 import { RichEditableDemoComponent } from './rich-editable-textarea/rich-editable.demo.component';
+import { AvailabilityDemoComponent } from './availability/availability.component';
 export const ENTERPRISE_ROUTE: Routes = [
 
     {
@@ -49,6 +50,9 @@ export const ENTERPRISE_ROUTE: Routes = [
     {
         path: 'rich-editable-demo', component: RichEditableDemoComponent,
     }, 
+    {
+        path: 'ee-availability-demo', component: AvailabilityDemoComponent,
+    }
     
       
 
