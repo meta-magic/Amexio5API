@@ -1,0 +1,88 @@
+{
+  "title": "Amexio Rich Text Area",
+  "description": "A simple configurable of Rich Editable Text Area.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-rich-textarea>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+    {
+      "name": "height",
+      "type": "number",
+      "default": "200",
+      "description": "Height should be in Px Ex.500"
+    },
+    {
+      "name": "width",
+      "type": "number",
+      "default": "600",
+      "description": "Width should be in percentage Ex.50"
+    }
+
+      ]
+    },
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onCloseVideoPlayer",
+          "description": "Emits when video is closed."
+        }
+      ]
+    }
+  ],
+  "isAccessibility": false,
+
+  "sourceMetadata": {
+    "htmlUrl": "enterprise/richEditable/ee.html",
+    "tsUrl": "enterprise/richEditable/ee.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-youtube-player?embed=1&file=app/enterprise/youtube-player/youtube.demo.html&view=editor"
+  }
+}

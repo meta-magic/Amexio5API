@@ -60,6 +60,7 @@
     "liveMetadata": {
       "disabled": true,
       "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-label?embed=1&file=app/forms/label/label.demo.html"
-    }
+    },
+    "isAccessibility": false
    
   }

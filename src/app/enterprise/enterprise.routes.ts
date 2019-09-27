@@ -11,6 +11,7 @@ import { StepWizardDemoComponent } from 'src/app/enterprise/steps-wizard/step-wi
 import { ThemeSwitcherDemo } from './themeswitcher/themeswitcher.component';
 import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
 import { HomePageComponent } from './tree-tab/home-page/home-page.component';
+import { RichEditableDemoComponent } from './rich-editable-textarea/rich-editable.demo.component';
 export const ENTERPRISE_ROUTE: Routes = [
 
     {
@@ -45,6 +46,10 @@ export const ENTERPRISE_ROUTE: Routes = [
     {
         path: 'theme-switcher-demo', component: ThemeSwitcherDemo,
     }, 
+    {
+        path: 'rich-editable-demo', component: RichEditableDemoComponent,
+    }, 
+    
       
 
 ] 

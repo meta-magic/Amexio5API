@@ -164,6 +164,12 @@ export const MENUCONSTANT = {
           badge: "NEW",
           link: "data/speechbubble-demo"
           },
+          {
+            text: "Rich Editable Text Area",
+            icon: "fa fa-square-o",
+            badge: "NEW",
+            link: "enterprise/rich-editable-demo"
+            },
         {
           text: "Theme Switcher",
           icon: "fas fa-palette  ",
