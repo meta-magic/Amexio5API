@@ -1546,6 +1546,16 @@ button {
   text-align: center;
   pointer-events: none; }
 
+.input-control-eye {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  display: block;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center; }
+
 .inputgroup .tooltiptext {
   border: 1px solid #ced4da;
   position: absolute;
@@ -4795,27 +4805,23 @@ fsw .widgetSprite.icCalendar {
 *****************************************************************************/
 /** multidaterangepicker - Visual CSS **/
 .customRangePanel {
-  cursor: pointer;
-  padding: 15px;
   background-color: white; }
 
 .customRangePanel:hover {
-  color: var(--appHeaderHoverFontColor);
+  color: black;
   background: var(--componentHoverBGColor); }
 
 .customRange {
-  padding-bottom: 20px;
-  padding-top: 20px;
   border-bottom: 3px solid var(--componentHoverBGColor); }
 
 /** multidaterangepicker - Structure CSS **/
 .customRangePanel {
   cursor: pointer;
-  padding: 15px; }
+  padding: 14px; }
 
 .customRange {
-  padding-bottom: 20px;
-  padding-top: 20px; }
+  padding-bottom: 10px;
+  padding-top: 21px; }
 
 .tooltipRange {
   position: relative;
@@ -5845,6 +5851,43 @@ amexio-homepage-centerpanel .homepage-centerpanel {
   height: 100% !important; }
 
 /****************************************************************************
+    Component Name : Rich Editable Text
+    Version : Amexio v5.20 onwards
+*****************************************************************************/
+.RichFirstDiv {
+  border: 1px solid var(--componentHoverFontColor); }
+
+.richButton:hover {
+  background-color: var(--componentHoverBGColor); }
+
+.Richeditor {
+  border-radius: 5px;
+  margin: 2px;
+  background-color: antiquewhite;
+  overflow-x: hidden;
+  padding: 1px; }
+
+.Richbuttons {
+  width: 100%;
+  text-align: end;
+  background: #eff0f1;
+  padding-top: 5px;
+  border-top: 2px solid #c4bcbc; }
+
+.RichFirstDiv {
+  resize: both;
+  border-radius: 5px;
+  overflow-x: hidden; }
+
+.richButton {
+  width: auto;
+  cursor: pointer;
+  text-align: center;
+  padding: 1px 3px;
+  box-shadow: none;
+  background: #eff0f1; }
+
+/****************************************************************************
     Component Name : Availability
     Version : Amexio v5.19 onwards
 *****************************************************************************/
@@ -5855,6 +5898,35 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 
 .maindiv {
   border: 1px solid black; }
+
+.availability-row {
+  margin-bottom: 3px;
+  text-align: left;
+  padding-left: 5px; }
+
+.availability-row:nth-child(odd) {
+  background-color: var(--appBackground); }
+
+.mainAvailabilityDiv {
+  width: 100%;
+  height: 100%; }
+
+.availability-right-row {
+  text-align: center;
+  display: inline-block;
+  width: 46px;
+  line-height: 20px;
+  margin-bottom: 3px;
+  border-left: 3px solid #F6F6F6; }
+
+.availability-right-row-ul:nth-child(even) .availability-right-row {
+  background-color: var(--appBackground); }
+
+.availability-right-row-ul {
+  padding: 0px 0px 0px 0px !important;
+  margin: 0;
+  display: flex;
+  list-style: none; }
 
 /****************************************************************************
     Component Name : Datapoints
