@@ -124,7 +124,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Data",
-      badge: "4",
+      badge: "5",
       icon: "fa fa-database  ",
       children: [
         {
