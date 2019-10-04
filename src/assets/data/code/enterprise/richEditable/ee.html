@@ -1,3 +1,21 @@
 
-<amexio-rich-textarea>
-</amexio-rich-textarea>
+
+        <amexio-card [body-height]="60" [header]="true" [show]="'true'">
+            <amexio-header>
+                Amexio Rich Text Area
+            </amexio-header>
+            <amexio-body>
+                <amexio-rich-textarea (onCodeClick)="onHTMLCodeDisplay($event)" [toolbar-position]="'bottom'">
+                </amexio-rich-textarea>
+            </amexio-body>
+        </amexio-card>
+    
+        <amexio-card header="true">
+            <amexio-header>
+                Display HTML Code
+            </amexio-header>
+            <amexio-body>
+                <pre><code>{{HTMLCodeDisplay |json }}</code></pre>
+            </amexio-body>
+        </amexio-card>
+   

@@ -1,0 +1,53 @@
+
+export class AvailabilityDemoComponent {
+
+
+constructor ( ) {
+  tzonedata = 
+[
+    {"timezone": "New South Wales"
+    },
+    {"timezone": "Greenwich Mean Time"
+    },
+    {"timezone": "Central European"
+    },
+    {"timezone": "Vladivostok Standard"
+    },
+    {"timezone": "Omsk"
+    }
+],
+
+labelData = [
+    {
+        "label": "Inbound",
+        "colorcode": "red",
+        "available": [
+            {
+                "date": "01-Sep-2019",
+                "time": [
+                    {
+                        "starttime": 5,
+                        "endtime": 6.30
+                    }
+                ]
+            },
+        ]
+    },
+    {
+        "label": "Outbound",
+        "colorcode": "blue",
+        "available": [
+            {
+                "date": "01-Sep-2019",
+                "time": [
+                    {
+                        "starttime": 6.30,
+                        "endtime": 7
+                    }
+                ]
+            }
+        ]
+    },
+];
+}
+}

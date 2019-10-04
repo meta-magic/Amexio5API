@@ -83,7 +83,7 @@
         },
         {
             "name": "date",
-            "description": "Sets color to D3 Bar chart",
+            "description": "Sets date to available.",
             "version": "5.5.2 Onwards",
             "type": "date",
             "default": ""

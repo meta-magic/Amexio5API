@@ -9,8 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class RichEditableDemoComponent implements OnInit {
+  HTMLCodeDisplay: any;
   constructor() {
   
   }
  ngOnInit() { }
+
+ onHTMLCodeDisplay(data: any) {
+   this.HTMLCodeDisplay = data;
+ }
 }

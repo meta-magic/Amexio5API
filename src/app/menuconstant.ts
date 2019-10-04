@@ -70,7 +70,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
-      badge: "2",
+      badge: "3",
       icon: "fa fa-clone  ",
       children: [
         {

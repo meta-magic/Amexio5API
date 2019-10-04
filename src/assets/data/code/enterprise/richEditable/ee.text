@@ -1,5 +1,11 @@
 export class RichEditableDemoComponent  {
+   HTMLCodeDisplay: any;
   constructor() {
   
   }
+
+  onHTMLCodeDisplay(data: any) {
+   this.HTMLCodeDisplay = data;
+ }
+
 }

@@ -35,19 +35,24 @@
         }
       ],
       "gridData": [
-    {
-      "name": "height",
-      "type": "number",
-      "default": "200",
-      "description": "Height should be in Px Ex.500"
-    },
-    {
-      "name": "width",
-      "type": "number",
-      "default": "600",
-      "description": "Width should be in percentage Ex.50"
-    }
-
+        {
+          "name": "toolbar-position",
+          "type": "string",
+          "default": "top",
+          "description": "It display position top or bottom."
+        },
+        {
+          "name": "height",
+          "type": "number",
+          "default": "100%",
+          "description": "Height should be in percentage."
+        },
+        {
+          "name": "width",
+          "type": "number",
+          "default": "100%",
+          "description": "Width should be in percentage."
+        }
       ]
     },
     {
@@ -68,14 +73,13 @@
       ],
       "gridData": [
         {
-          "name": "onCloseVideoPlayer",
-          "description": "Emits when video is closed."
+          "name": "onCodeClick",
+          "description": "Emits DOM HTML source code on click on button </>."
         }
       ]
     }
   ],
   "isAccessibility": false,
-
   "sourceMetadata": {
     "htmlUrl": "enterprise/richEditable/ee.html",
     "tsUrl": "enterprise/richEditable/ee.text",
