@@ -1,6 +1,6 @@
 {
   "title": "Availability",
-  "description": "Component to take availability based on Dates. ",
+  "description": "The Amexio availability component can be used to show and modify availability of resources in accordance to specidic time.",
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-availability>",
@@ -43,53 +43,46 @@
       ],
       "gridData": [
         {
-          "name": "height",
-          "version": "5.20 Onwards",
-          "description": "Sets height to availability.",
-          "type": "string",
-          "default": "auto"
+            "name": "start-date",
+            "version": "5.19 Onwards",
+            "description": "Sets start date in availability component.",
+            "type": "string",
+            "default": " "
         },
         {
-          "name": "start-time",
-          "description": "Sets the start time",
-          "version": "5.20 Onwards",
-          "type": "number",
-          "default": ""
+            "name": "end-date",
+            "version": "5.19 Onwards",
+            "description": "Sets end date in availability component.",
+            "type": "string",
+            "default": " "
         },
         {
-          "name": "end-time",
-          "description": "Sets the end time",
-          "version": "5.20 Onwards",
-          "type": "number",
-          "default": ""
+            "name": "start-time",
+            "version": "5.19 Onwards",
+            "description": "Sets start time in availability component in 24 hours pattern.",
+            "type": "number",
+            "default": " "
         },
         {
-          "name": "time-zone-data",
-          "description": "Sets the time zone data.",
-          "version": "5.20 Onwards",
-          "type": "",
-          "default": ""
+            "name": "end-date",
+            "version": "5.19 Onwards",
+            "description": "Sets end date in availability component.",
+            "type": "number",
+            "default": " "
         },
         {
-          "name": "label-data",
-          "description": "Sets the label data.",
-          "version": "5.20 Onwards",
-          "type": "",
-          "default": ""
+            "name": "label-data",
+            "version": "5.19 Onwards",
+            "description": "Sets data to availability component.",
+            "type": "any[]",
+            "default": " "
         },
         {
-          "name": "end-date",
-          "description": "End date to available date.",
-          "version": "5.20 Onwards",
-          "type": "",
-          "default": ""
-        },
-        {
-          "name": "start-date",
-          "description": "Start date to the available.",
-          "version": "5.20 Onwards",
-          "type": "date",
-          "default": ""
+            "name": "time-zone-data",
+            "version": "5.19 Onwards",
+            "description": "Sets time zone data to dropdown in availability component.",
+            "type": "any[]",
+            "default": " "
         }
       ]
     },
@@ -120,9 +113,9 @@
       ],
       "gridData": [
         {
-          "name": "onClick()",
-          "version": "5.20 Onwards",
-          "description": "It will fire click of the time block."
+            "name": "onClick()",
+            "version": "5.19 Onwards",
+            "description": "It will fired on click of time block cells"
         }
       ]
     }

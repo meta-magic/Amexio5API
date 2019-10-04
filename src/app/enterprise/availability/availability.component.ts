@@ -16,10 +16,11 @@ export class AvailabilityDemoComponent implements OnInit {
     { timezone: 'Omsk' }
     ];
 
-  labelData = [
+  classData = [
     {
-      "label": "Inbound",
+      "label": "Physics",
       "colorcode": "red",
+      "textcolor": "white",
       "available": [
         {
           "date": "01-Sep-2019",
@@ -35,19 +36,33 @@ export class AvailabilityDemoComponent implements OnInit {
             // }
           ]
         },
-
+        {
+          "date": "02-Sep-2019",
+          "time": [
+            {
+              "starttime": 7.30,
+              "endtime": 8
+            },
+            // ,
+            // {
+            //   "starttime": 10,
+            //   "endtime": 1
+            // }
+          ]
+        },
       ]
     },
     {
-      "label": "Outbound",
+      "label": "Maths",
       "colorcode": "blue",
+      "textcolor": "white",
       "available": [
         {
           "date": "01-Sep-2019",
           "time": [
             {
-              "starttime": 6.30,
-              "endtime": 7
+              "starttime": 9.30,
+              "endtime": 10
             },
             // {
             //   "starttime": 11,
@@ -57,6 +72,52 @@ export class AvailabilityDemoComponent implements OnInit {
         },
         {
           "date": "04-Sep-2019",
+          "time": [
+            {
+              "starttime": 10.30,
+              "endtime": 11
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
+          "date": "07-Sep-2019",
+          "time": [
+            {
+              "starttime": 12.30,
+              "endtime": 13
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Biology",
+      "colorcode": "green",
+      "textcolor": "white",
+      "available": [
+        {
+          "date": "01-Sep-2019",
+          "time": [
+            {
+              "starttime": 12,
+              "endtime": 13
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
+          "date": "08-Sep-2019",
           "time": [
             {
               "starttime": 9.30,
@@ -69,7 +130,181 @@ export class AvailabilityDemoComponent implements OnInit {
           ]
         },
         {
+          "date": "10-Sep-2019",
+          "time": [
+            {
+              "starttime": 11,
+              "endtime": 12
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        }
+      ]
+    },
+  ];
+
+
+  doctorData = [
+    {
+      "label": "Apollo",
+      "colorcode": "#ff9900",
+      "available": [
+        {
+          "date": "01-Sep-2019",
+          "time": [
+            {
+              "starttime": 5,
+              "endtime": 6.30
+            },
+            // ,
+            // {
+            //   "starttime": 10,
+            //   "endtime": 1
+            // }
+          ]
+        },
+        {
+          "date": "02-Sep-2019",
+          "time": [
+            {
+              "starttime": 7.30,
+              "endtime": 8
+            },
+            // ,
+            // {
+            //   "starttime": 10,
+            //   "endtime": 1
+            // }
+          ]
+        },
+      ]
+    },
+    {
+      "label": "AIIMS",
+      "colorcode": "#ac00e6",
+      "available": [
+        {
+          "date": "01-Sep-2019",
+          "time": [
+            {
+              "starttime": 9.30,
+              "endtime": 10
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
+          "date": "04-Sep-2019",
+          "time": [
+            {
+              "starttime": 10.30,
+              "endtime": 11
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
           "date": "07-Sep-2019",
+          "time": [
+            {
+              "starttime": 12.30,
+              "endtime": 13
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "NIHHANS",
+      "colorcode": "#0000b3",
+      "textcolor": "white",
+      "available": [
+        {
+          "date": "01-Sep-2019",
+          "time": [
+            {
+              "starttime": 12,
+              "endtime": 13
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
+          "date": "08-Sep-2019",
+          "time": [
+            {
+              "starttime": 9.30,
+              "endtime": 11
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
+          "date": "10-Sep-2019",
+          "time": [
+            {
+              "starttime": 11,
+              "endtime": 12
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "CMC",
+      "colorcode": "#00cca3",
+      "available": [
+        {
+          "date": "05-Sep-2019",
+          "time": [
+            {
+              "starttime": 12,
+              "endtime": 13
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
+          "date": "06-Sep-2019",
+          "time": [
+            {
+              "starttime": 9.30,
+              "endtime": 11
+            },
+            // {
+            //   "starttime": 11,
+            //   "endtime": 14
+            // }
+          ]
+        },
+        {
+          "date": "09-Sep-2019",
           "time": [
             {
               "starttime": 11,
