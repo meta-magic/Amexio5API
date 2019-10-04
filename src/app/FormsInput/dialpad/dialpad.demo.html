@@ -11,10 +11,10 @@
                             <amexio-column [size]="6">
                                 <amexio-card [height]="'200'" [header]="true" [footer]="true" [footer-align]="'left'">
                                     <amexio-header>
-                                        2-rows type
+                                        2-rows type with show/hide pin functionality
                                     </amexio-header>
                                     <amexio-body>
-                                        <amexio-dial-pad  [(value)]="dialpadValue1" [field-label]="'Enter Pin'" [min-length]="1" [max-length]="2">
+                                        <amexio-dial-pad [show-password]="true" [password]="true" [(value)]="dialpadValue1" [field-label]="'Enter Pin'" [min-length]="1" [max-length]="2">
                                         </amexio-dial-pad>
                                     </amexio-body>
                                     <amexio-action>

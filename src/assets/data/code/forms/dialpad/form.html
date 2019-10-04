@@ -1,2 +1,22 @@
-<amexio-dialpad [(value)]="dialpadValue">
-</amexio-dialpad>
+                <!-- 2-rows type with show/hide pin functionality -->
+               
+                <amexio-dial-pad [show-password]="true" [(value)]="dialpadValue1" [field-label]="'Enter Pin'" [min-length]="1" [max-length]="2">
+                </amexio-dial-pad>
+
+                <!-- 2-rows type with random number -->
+                <amexio-dial-pad [(value)]="dialpadValue2" [random]="true" [field-label]="'Enter Pin'" [min-length]="1" [max-length]="2">
+                </amexio-dial-pad>
+
+                <!-- Classic type -->
+                <amexio-dial-pad [type]="'classic'" [(value)]="dialpadValue3" [field-label]="'Enter Pin'" [min-length]="1" [max-length]="2">
+                </amexio-dial-pad>
+                
+                <!-- Classic type with random number -->
+                <amexio-dial-pad [type]="'classic'" [random]="true" [(value)]="dialpadValue4" [random]="true" [field-label]="'Enter Pin'"
+                    [min-length]="1" [max-length]="2">
+                </amexio-dial-pad>
+
+                <!-- Calculator type -->
+                <amexio-dial-pad [type]="'calculator'" [button-type]="'round'" [(value)]="dialpadValue5" [field-label]="'Enter Pin'" [min-length]="1"
+                    [max-length]="2">
+                </amexio-dial-pad>
