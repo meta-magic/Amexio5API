@@ -1,21 +1,31 @@
+<!-- Demo 1: Normal Form -->
+<amexio-card [body-height]="60" [header]="true" [show]="'true'">
+    <amexio-header>
+        Amexio Rich Text Area
+    </amexio-header>
+    <amexio-body>
+        <amexio-rich-textarea 
+                (onCodeClick)="onSourceCodeDisplay($event)"
+                [toolbar-position]="'bottom'">
+        </amexio-rich-textarea>
+    </amexio-body>
+</amexio-card>
+
+<amexio-card header="true">
+    <amexio-header>
+        Display HTML Code
+    </amexio-header>
+    <amexio-body>
+        <pre><code>{{HTMLCodeDisplay |json }}</code></pre>
+    </amexio-body>
+</amexio-card>
+
+<!-- Demo 2: In tab form.-->
 
 
-        <amexio-card [body-height]="60" [header]="true" [show]="'true'">
-            <amexio-header>
-                Amexio Rich Text Area
-            </amexio-header>
-            <amexio-body>
-                <amexio-rich-textarea (onCodeClick)="onHTMLCodeDisplay($event)" [toolbar-position]="'bottom'">
-                </amexio-rich-textarea>
-            </amexio-body>
-        </amexio-card>
-    
-        <amexio-card header="true">
-            <amexio-header>
-                Display HTML Code
-            </amexio-header>
-            <amexio-body>
-                <pre><code>{{HTMLCodeDisplay |json }}</code></pre>
-            </amexio-body>
-        </amexio-card>
-   
+<amexio-rich-textarea 
+            [toolbar-position]="'bottom'"
+            [rich-height]="300"
+            [enable-source-code]="false"
+            [toolbar-position]="'top'">
+</amexio-rich-textarea>

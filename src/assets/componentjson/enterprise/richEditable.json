@@ -41,17 +41,18 @@
           "default": "top",
           "description": "It display position top or bottom."
         },
+        
+        {
+          "name": "enable-source-code",
+          "type": "boolean",
+          "default": "true",
+          "description": "If true source code is visible in tab."
+        },
         {
           "name": "height",
           "type": "number",
-          "default": "100%",
-          "description": "Height should be in percentage."
-        },
-        {
-          "name": "width",
-          "type": "number",
-          "default": "100%",
-          "description": "Width should be in percentage."
+          "default": "",
+          "description": "Height to the tab formRich only if enable source code falg is true."
         }
       ]
     },

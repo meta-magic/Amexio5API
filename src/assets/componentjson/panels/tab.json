@@ -218,6 +218,14 @@
           "default": "black"
         },
         {
+          "name": "height",
+          "description": "Height to the body of tab.",
+          "version": "5.19 onwards",
+          "type": "number",
+          "default": ""
+        },
+        
+        {
           "name": "closable",
           "description": "This flag will make tab closable, applicable for particular tab pills.",
           "version": "4.2 onwards",
