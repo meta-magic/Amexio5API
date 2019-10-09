@@ -5891,10 +5891,13 @@ amexio-homepage-centerpanel .homepage-centerpanel {
     Version : Amexio v5.20 onwards
 *****************************************************************************/
 .rich-first-div {
-  border: 1px solid var(--componentHoverFontColor); }
+  border: 1px solid #ced4da; }
 
 .rich-editor-buttons {
   background: var(--componentHeaderBGColor); }
+
+.rich-text-editor {
+  background-color: var(--componentBGColor); }
 
 .rich-text-editor::-webkit-scrollbar-track {
   background-color: var(--componentDisabledBGColor); }
@@ -5908,7 +5911,6 @@ amexio-homepage-centerpanel .homepage-centerpanel {
 .rich-text-editor {
   border-radius: 5px;
   margin: 2px;
-  background-color: antiquewhite;
   overflow-x: hidden;
   padding: 1px; }
 
