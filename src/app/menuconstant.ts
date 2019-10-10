@@ -89,7 +89,12 @@ export const MENUCONSTANT = {
          badge: "New",
          link: "forms-Input/multirangedatepicker-demo"
         },
-       
+        {
+          text: "Rich Editable Text Area",
+          icon: "fa fa-square-o",
+          badge: "NEW",
+          link: "enterprise/rich-editable-demo"
+          },
         {
           text: "Facebook Login",
           icon: "fa fa-facebook  ",

@@ -22,7 +22,7 @@ import { TreeTabDemoComponent } from './tree-tab/tree-tab.component';
 import { RouteComponent } from './tree-tab/router-component';
 
 import { HomePageComponent } from './tree-tab/home-page/home-page.component';
-// import { RichEditableDemoComponent } from "./rich-editable-textarea/rich-editable.demo.component";
+import { RichEditableDemoComponent } from "./rich-editable-textarea/rich-editable.demo.component";
 import { AvailabilityDemoComponent } from "./availability/availability.component";
 // import {APP_ROUTE} from '../../app/enterprise/tree-tab/router-component';
 
@@ -31,7 +31,7 @@ import { AvailabilityDemoComponent } from "./availability/availability.component
  */
 @NgModule({
     declarations: [RouteComponent, ThemeSwitcherDemo, YoutubePlayerDemoComponent, EECarouselDemoComponent, EEContentDemoComponent,
-AvailabilityDemoComponent,
+AvailabilityDemoComponent,RichEditableDemoComponent,
         EEAppointmentDemoComponent, CalendarDemoComponent,CalendarDemoComponent1 , StepWizardDemoComponent, TreeTabDemoComponent, HomePageComponent],
     imports: [
         CommonModule,
@@ -41,7 +41,6 @@ AvailabilityDemoComponent,
         SharedModule.forRoot(),
         AmexioWidgetModule,
         RouterModule.forChild(ENTERPRISE_ROUTE),
-        // RouterModule.forChild(APP_ROUTE, { useHash: true})
     ],
 
     entryComponents: [RouteComponent],
