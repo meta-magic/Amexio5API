@@ -1,7 +1,7 @@
 export const MENUCONSTANT = {
   HOMEMENUS: [
     { text: "Concept", icon: "fab fa-leanpub", link: "concept-page" },
-    // { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started" },
+    { text: "Quick Start Beta", icon: "fa fa-bars  ", link: "getting-started" },
 
     { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started-beta" },
     { text: "Themes", icon: "fa fa-snowflake-o", link: "amexio-colors" },
@@ -78,7 +78,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
-      badge: "3",
+      badge: "2",
       icon: "fa fa-clone  ",
       children: [
         {
@@ -96,12 +96,6 @@ export const MENUCONSTANT = {
           icon: "fa fa-calendar  ",
           badge: "New",
           link: "forms-Input/multirangedatepicker-demo"
-        },
-        {
-          text: "Rich Editable Text Area",
-          icon: "fa fa-square-o",
-          badge: "NEW",
-          link: "enterprise/rich-editable-demo"
         },
         {
           text: "Facebook Login",
@@ -144,7 +138,6 @@ export const MENUCONSTANT = {
 
         {
           text: "Availability",
-          badge: "NEW",
           icon: "fa fa-delicious  ",
           link: "enterprise/ee-availability-demo"
         },

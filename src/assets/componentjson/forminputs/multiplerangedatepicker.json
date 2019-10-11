@@ -45,7 +45,7 @@
           {
             "name": "disabled-date",
             "description": "Want to disable the date then this attribute is used. ",
-            "version": "5.20 onwards",
+            "version": "5.19 onwards",
             "type": "any[]",
             "default": "[]"
           }

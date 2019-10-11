@@ -1,6 +1,6 @@
 {
   "title": "Availability",
-  "description": "The Amexio availability component can be used to show and modify availability of resources in accordance to specidic time.",
+  "description": "The Amexio availability component can be used to show and modify availability of resources in accordance to specific time.",
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-availability>",
