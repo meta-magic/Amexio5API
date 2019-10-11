@@ -1,7 +1,7 @@
 export const MENUCONSTANT = {
   HOMEMENUS: [
     { text: "Concept", icon: "fab fa-leanpub", link: "concept-page" },
-    { text: "Quick Start Beta", icon: "fa fa-bars  ", link: "getting-started" },
+    // { text: "Quick Start Beta", icon: "fa fa-bars  ", link: "getting-started" },
 
     { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started-beta" },
     { text: "Themes", icon: "fa fa-snowflake-o", link: "amexio-colors" },
@@ -329,10 +329,11 @@ export const MENUCONSTANT = {
         {
           text: "Tab",
           icon: "fa fa-folder  ",
-          badge: "2",
+          badge: "1",
           children: [
             {
               text: "Horizontal",
+              badge: "U",
               icon: "fa fa-indent  ",
               children: [
                 {
@@ -370,20 +371,17 @@ export const MENUCONSTANT = {
             },
             {
               text: "Vertical",
-              badge: "2",
               icon: "fa fa-outdent  ",
               children: [
                 {
                   text: "Left Aligned",
                   link: "panes/vertical-tab-demo",
                   icon: "fa fa-leaf",
-                  badge: "U"
                 },
                 {
                   text: "Right Aligned",
                   link: "panes/verticalright-tab-demo",
                   icon: "fa fa-leaf  ",
-                  badge: "U"
                 },
                 {
                   text: "Enhanced",
@@ -443,7 +441,7 @@ export const MENUCONSTANT = {
     {
       text: "Form Inputs",
       icon: "fa fa-clone  ",
-      badge: "3",
+      badge: "2",
       children: [
         {
           text: "Badge",
@@ -510,7 +508,6 @@ export const MENUCONSTANT = {
           text: "Label",
           icon: "fa fa-terminal  ",
           link: "forms-Input/label-demo",
-          badge: "U"
         },
         {
           text: "Number Field",
@@ -1132,11 +1129,12 @@ export const MENUCONSTANT = {
   CEMENUS: [
     {
       "text": "Layouts",
-      "badge": "3",
+      "badge": "4",
       "icon": "fa fa-desktop  ",
       "children": [
         {
           "text": "Cards",
+          "badge":"4",
           "icon": "fa fa-credit-card",
           "children": [
             {
