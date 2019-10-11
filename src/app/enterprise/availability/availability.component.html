@@ -1,21 +1,3 @@
-<!-- <amexio-api-structure [url]="'assets/componentjson/enterprise/availability.json'">
-
-    <amexio-api-demo>
-
-        <amexio-availability [start-date]="'01-Sep-2019'" 
-        [end-date]="'10-Sep-2019'"
-        [time-zone-data] ="tzonedata"
-
-       [start-time]="5" [end-time]="13" [label-data]="labelData"
-       ></amexio-availability> 
-
-    </amexio-api-demo>
-</amexio-api-structure> -->
-
-<!--  -->
-<!--  -->
-
-
 <amexio-api-structure [url]="'assets/componentjson/enterprise/availability.json'">
     <amexio-api-accessible>
         <amexio-box border-color="blue" border="left" [padding]="true" align="left">
@@ -28,49 +10,23 @@
         <amexio-card header="true">
             <amexio-header> Class Time Table Demo</amexio-header>
             <amexio-body>
-                <!-- <amexio-ee-appointment [height]="'200px'" [date]="date" (onSingleSelect)="onSingleSelect($event)" [start-time]="10" [end-time]="15"
-                    [available-slots]="availableslots">
-                </amexio-ee-appointment> -->
 
-        <amexio-availability [start-date]="'01-Sep-2019'" 
-        [end-date]="'10-Sep-2019'"
-        [time-zone-data] ="tzonedata"
-
-       [start-time]="5" [end-time]="13" [label-data]="classData"
-       ></amexio-availability> 
+                <amexio-availability [start-date]="'01-Sep-2019'" [end-date]="'10-Sep-2019'" [time-zone-data]="tzonedata" [start-time]="5"
+                    [end-time]="13" [label-data]="classData"></amexio-availability>
 
             </amexio-body>
         </amexio-card>
-        <!-- <amexio-card header="true">
-            <amexio-header> Selected Date-Time </amexio-header>
-            <amexio-body>
-                <pre><code>{{singleSelectedData | json}}</code></pre>
-            </amexio-body>
-        </amexio-card> -->
+
         <br>
         <amexio-card header="true">
             <amexio-header> Doctors Availability Demo </amexio-header>
             <amexio-body>
-                <!-- <amexio-ee-appointment [height]="'200px'" [date]="date" [multi-select]="true" (onMultiSelect)="onMultiSelect($event)" [start-time]="12"
-                    [end-time]="17" [available-slots]="multipleAvailableslots">
-                </amexio-ee-appointment> -->
-
-
-        <amexio-availability [start-date]="'01-Sep-2019'" 
-        [end-date]="'10-Sep-2019'"
-        [time-zone-data] ="tzonedata"
-
-       [start-time]="5" [end-time]="13" [label-data]="doctorData"
-       ></amexio-availability> 
+                <amexio-availability [start-date]="'01-Sep-2019'" [end-date]="'10-Sep-2019'" [time-zone-data]="tzonedata" [start-time]="5"
+                    [end-time]="13" [label-data]="doctorData"></amexio-availability>
             </amexio-body>
         </amexio-card>
-        <!-- <amexio-card header="true">
-            <amexio-header> Selected Date-Time </amexio-header>
-            <amexio-body>
-                <pre><code>{{multiSelectedData | json}}</code></pre>
-            </amexio-body>
-        </amexio-card> -->
+
         <br>
- 
+
     </amexio-api-demo>
 </amexio-api-structure>

@@ -144,6 +144,7 @@ export const MENUCONSTANT = {
 
         {
           text: "Availability",
+          badge: "NEW",
           icon: "fa fa-delicious  ",
           link: "enterprise/ee-availability-demo"
         },

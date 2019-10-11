@@ -37,7 +37,7 @@ export class StackablePanelComponent implements OnInit {
                 "description": "Success means having the courage, the determination, and the will to become the person you believe you were meant to be."
               },
               {
-                "title": "Post Third",
+                "title": "Post Three",
                 "imagePath": "assets/images/timeline/atatürk-ün-inanılmaz-karizmatik.jpg",
                 "icon": "fa fa-twitter-square",
                 "label": "Twitter",
