@@ -1,31 +1,18 @@
 <!-- Demo 1: Amexio Rich Editable TextArea -->
-<amexio-card [body-height]="60" [header]="true" [show]="'true'">
-    <amexio-header>
-        Amexio Rich Text Area
-    </amexio-header>
-    <amexio-body>
+
         <amexio-rich-textarea 
-                (onCodeClick)="onSourceCodeDisplay($event)"
-                [toolbar-position]="'top'">
+                    (onCodeClick)="onSourceCodeDisplay($event)"
+                    [toolbar-position]="'top'">
         </amexio-rich-textarea>
-    </amexio-body>
-</amexio-card>
-
-<amexio-card header="true">
-    <amexio-header>
-        Display HTML Code
-    </amexio-header>
-    <amexio-body>
+   
         <pre><code>{{HTMLCodeDisplay |json }}</code></pre>
-    </amexio-body>
-</amexio-card>
-
+   
 <!-- Demo 2:  Amexio Rich Editable TextArea With Source Code.-->
 
 
-<amexio-rich-textarea 
-            [toolbar-position]="'top'"
-            [rich-height]="300"
-            [enable-source-code]="false"
-            >
-</amexio-rich-textarea>
+        <amexio-rich-textarea 
+                    [toolbar-position]="'top'"
+                    [rich-height]="300"
+                    [enable-source-code]="true"
+                    >
+        </amexio-rich-textarea>

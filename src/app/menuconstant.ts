@@ -2,7 +2,7 @@ export const MENUCONSTANT = {
   HOMEMENUS: [
     { text: "Concept", icon: "fab fa-leanpub", link: "concept-page" },
     // { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started" },
-    
+
     { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started-beta" },
     { text: "Themes", icon: "fa fa-snowflake-o", link: "amexio-colors" },
     { text: "D3 Charts", link: "d3-charts", icon: "fa fa-openid" },
@@ -19,25 +19,33 @@ export const MENUCONSTANT = {
       icon: "fas fa-palette",
       link: "directive-demo/color-palette"
     },
-    {text:"Input Mask",
-    icon:"fa fa-file-text-o",
-    badge: "NEW",
-    link:"directive-demo/input-mask"},
+    {
+      text: "Input Mask",
+      icon: "fa fa-file-text-o",
+      badge: "NEW",
+      link: "directive-demo/input-mask"
+    },
 
-    {text:"Round Edge",
-    icon:"fa fa-square-o",
-    badge: "NEW",
-    link:"directive-demo/round-edge"},
+    {
+      text: "Round Edge",
+      icon: "fa fa-square-o",
+      badge: "NEW",
+      link: "directive-demo/round-edge"
+    },
 
-    {text:"Full Screen",
-    icon:"fa fa-arrows-alt",
-    badge: "NEW",
-    link:"directive-demo/full-screen"},
+    {
+      text: "Full Screen",
+      icon: "fa fa-arrows-alt",
+      badge: "NEW",
+      link: "directive-demo/full-screen"
+    },
 
-    {text:"Routing Animation",
-    icon:"fa fa-square-o",
-    badge: "NEW",
-    link:"directive-demo/router-animation"}
+    {
+      text: "Routing Animation",
+      icon: "fa fa-square-o",
+      badge: "NEW",
+      link: "directive-demo/router-animation"
+    }
   ],
 
   EEMENUS: [
@@ -84,17 +92,17 @@ export const MENUCONSTANT = {
           link: "forms-Input/multidatepicker-demo"
         },
         {
-         text: "Multi Range DatePicker",
-         icon: "fa fa-calendar  ",
-         badge: "New",
-         link: "forms-Input/multirangedatepicker-demo"
+          text: "Multi Range DatePicker",
+          icon: "fa fa-calendar  ",
+          badge: "New",
+          link: "forms-Input/multirangedatepicker-demo"
         },
         {
           text: "Rich Editable Text Area",
           icon: "fa fa-square-o",
           badge: "NEW",
           link: "enterprise/rich-editable-demo"
-          },
+        },
         {
           text: "Facebook Login",
           icon: "fa fa-facebook  ",
@@ -133,7 +141,7 @@ export const MENUCONSTANT = {
       badge: "5",
       icon: "fa fa-database  ",
       children: [
-        
+
         {
           text: "Availability",
           icon: "fa fa-delicious  ",
@@ -156,17 +164,17 @@ export const MENUCONSTANT = {
           icon: "fa fa-calendar  ",
           children: [
             {
-              
-                text: "Standard",
-                icon: "fa fa-calendar  ",
-                link: "enterprise/ee-calendar-demo"
-              },
-              {
-                text: "With Appointments Details",
-                badge: "NEW",
-                icon: "fa fa-calendar  ",
-                link: "enterprise/ee-calendar-demo1"
-              
+
+              text: "Standard",
+              icon: "fa fa-calendar  ",
+              link: "enterprise/ee-calendar-demo"
+            },
+            {
+              text: "With Appointments Details",
+              badge: "NEW",
+              icon: "fa fa-calendar  ",
+              link: "enterprise/ee-calendar-demo1"
+
             }
           ]
         },
@@ -175,7 +183,7 @@ export const MENUCONSTANT = {
           icon: "fa fa-comment",
           badge: "NEW",
           link: "data/speechbubble-demo"
-          },
+        },
         {
           text: "Theme Switcher",
           icon: "fas fa-palette  ",
@@ -776,7 +784,7 @@ export const MENUCONSTANT = {
           text: "Property Grid",
           icon: "fa fa-database",
           link: "data/propertygrid-demo"
-        },  {
+        }, {
           text: "Virtual Scroller",
           badge: "NEW",
           icon: "fa fa-database",
