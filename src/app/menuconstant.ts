@@ -1,9 +1,9 @@
 export const MENUCONSTANT = {
   HOMEMENUS: [
     { text: "Concept", icon: "fab fa-leanpub", link: "concept-page" },
-    // { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started" },
+    { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started" },
 
-    { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started-beta" },
+    // { text: "Quick Start", icon: "fa fa-bars  ", link: "getting-started-beta" },
     { text: "Themes", icon: "fa fa-snowflake-o", link: "amexio-colors" },
     { text: "D3 Charts", link: "d3-charts", icon: "fa fa-openid" },
     {
@@ -20,17 +20,15 @@ export const MENUCONSTANT = {
       link: "directive-demo/color-palette"
     },
     {
-      text: "Input Mask",
-      icon: "fa fa-file-text-o",
-      badge: "NEW",
-      link: "directive-demo/input-mask"
-    },
-
-    {
-      text: "Round Edge",
+      text: "Dynamic Text",
       icon: "fa fa-square-o",
       badge: "NEW",
-      link: "directive-demo/round-edge"
+      link: "directive-demo/dynamic-text"
+    },
+    {
+      text: "Input Mask",
+      icon: "fa fa-file-text-o",
+      link: "directive-demo/input-mask"
     },
 
     {
@@ -39,7 +37,12 @@ export const MENUCONSTANT = {
       badge: "NEW",
       link: "directive-demo/full-screen"
     },
-
+    {
+      text: "Round Edge",
+      icon: "fa fa-square-o",
+      badge: "NEW",
+      link: "directive-demo/round-edge"
+    },
     {
       text: "Routing Animation",
       icon: "fa fa-square-o",
@@ -78,7 +81,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
-      badge: "2",
+      badge: "1",
       icon: "fa fa-clone  ",
       children: [
         {
@@ -94,7 +97,7 @@ export const MENUCONSTANT = {
         {
           text: "Multi Range DatePicker",
           icon: "fa fa-calendar  ",
-          badge: "New",
+          badge: "NEW",
           link: "forms-Input/multirangedatepicker-demo"
         },
         {
@@ -105,7 +108,6 @@ export const MENUCONSTANT = {
         {
           text: "GitHub Login",
           icon: "fa fa-github  ",
-          badge: "NEW",
           link: "forms-Input/github-login-demo"
         },
         {
@@ -132,13 +134,14 @@ export const MENUCONSTANT = {
     },
     {
       text: "Data",
-      badge: "5",
+      badge: "1",
       icon: "fa fa-database  ",
       children: [
 
         {
           text: "Availability",
-          icon: "fa fa-delicious  ",
+          icon: "fa fa-delicious",
+          badge: "NEW",
           link: "enterprise/ee-availability-demo"
         },
         {
@@ -149,12 +152,10 @@ export const MENUCONSTANT = {
         {
           text: "Banner",
           icon: "fa fa-id-card-o  ",
-          badge: "NEW",
           link: "layout/banner-demo"
         },
         {
           text: "Calendar",
-          badge: "1",
           icon: "fa fa-calendar  ",
           children: [
             {
@@ -165,7 +166,6 @@ export const MENUCONSTANT = {
             },
             {
               text: "With Appointments Details",
-              badge: "NEW",
               icon: "fa fa-calendar  ",
               link: "enterprise/ee-calendar-demo1"
 
@@ -175,19 +175,16 @@ export const MENUCONSTANT = {
         {
           text: "Speech-Bubble",
           icon: "fa fa-comment",
-          badge: "NEW",
           link: "data/speechbubble-demo"
         },
         {
           text: "Theme Switcher",
           icon: "fas fa-palette  ",
-          badge: "NEW",
           link: "enterprise/theme-switcher-demo"
         },
         {
           text: "Tree Tab",
           icon: "fa fa-tree",
-          badge: "New",
           link: "enterprise/tree-tab-demo"
         }
       ]
@@ -274,7 +271,7 @@ export const MENUCONSTANT = {
     {
       text: "Panels",
       icon: "fa fa-bars  ",
-      badge: "6",
+      badge: "4",
       children: [
         {
           text: "Carousel",
@@ -301,7 +298,6 @@ export const MENUCONSTANT = {
           text: "Floating Panel",
           icon: "fa fa-bars",
           link: "panes/floatingpanel-demo",
-          badge: "New"
         },
         { text: "Panel", icon: "fa fa-bars  ", link: "panes/panel-demo" },
         {
@@ -324,7 +320,7 @@ export const MENUCONSTANT = {
           text: "Stackable Panel",
           icon: "fa fa-bars",
           link: "panes/stackablepanel-demo",
-          badge: "New"
+          badge: "NEW"
         },
         {
           text: "Tab",
@@ -633,7 +629,7 @@ export const MENUCONSTANT = {
     {
       text: "Data",
       icon: "fa fa-database  ",
-      badge: "2",
+      badge: "1",
       children: [
         {
           text: "Data Loading Indicator",
@@ -777,7 +773,6 @@ export const MENUCONSTANT = {
           link: "data/propertygrid-demo"
         }, {
           text: "Virtual Scroller",
-          badge: "NEW",
           icon: "fa fa-database",
           link: "data/virtual-scroller-demo"
         }
@@ -853,7 +848,7 @@ export const MENUCONSTANT = {
     {
       text: "App Navigation",
       icon: "fa fa-bars  ",
-      badge: "1",
+      badge: "2",
       children: [
         {
           text: "Breadcrumb",
@@ -875,7 +870,7 @@ export const MENUCONSTANT = {
           icon: "fa fa-bars",
           link: "navigation/menubar-demo"
         },
-        { text: "Nav Bar", icon: "fa fa-bars", link: "navigation/navbar-demo" },
+        { text: "Nav Bar", icon: "fa fa-bars", badge: "U", link: "navigation/navbar-demo" },
         {
           text: "Side Nav Bar",
           icon: "fa fa-bars  ",
@@ -889,7 +884,7 @@ export const MENUCONSTANT = {
         {
           text: "Task Bar",
           icon: "fa fa-tasks  ",
-          badge: "New",
+          badge: "NEW",
           link: "navigation/taskbar-demo"
         },
         {
@@ -929,10 +924,12 @@ export const MENUCONSTANT = {
     },
     {
       text: "Charts",
+      badge: "1",
       icon: "fa fa-keyboard-o  ",
       children: [
         {
           text: "D3 Charts",
+          badge: "1",
           icon: "fa fa-openid  ",
           children: [
             {
@@ -974,6 +971,7 @@ export const MENUCONSTANT = {
             {
               text: "Line Chart",
               icon: "fa fa-line-chart  ",
+              badge: "U",
               link: "D3chart/amexio-d3-chart-line"
             },
             {
@@ -1096,14 +1094,14 @@ export const MENUCONSTANT = {
       icon: "fa fa-dashcube  ",
       children: [
         {
-          text: "Gauge Chart",
-          icon: "fa fa-tachometer  ",
-          link: "dashboard/gauge-dashboard-demo"
-        },
-        {
           text: "Data Points",
           icon: "fa fa-address-card-o  ",
           link: "dashboard/datapoint-demo"
+        },
+        {
+          text: "Gauge Chart",
+          icon: "fa fa-tachometer  ",
+          link: "dashboard/gauge-dashboard-demo"
         }
       ]
     },
@@ -1116,12 +1114,11 @@ export const MENUCONSTANT = {
           icon: "fa fa-globe  ",
           link: "map/geo-chart-demo"
         },
-        { text: "Tree Map", icon: "fa fa-trello  ", link: "map/tree-map-demo" },
         {
           text: "Google Map",
           icon: "fa fa-map-marker",
           link: "map/googlemap-demo"
-        }
+        },  { text: "Tree Map", icon: "fa fa-trello  ", link: "map/tree-map-demo" },
       ]
     }
   ],
@@ -1129,12 +1126,10 @@ export const MENUCONSTANT = {
   CEMENUS: [
     {
       "text": "Layouts",
-      "badge": "4",
       "icon": "fa fa-desktop  ",
       "children": [
         {
           "text": "Cards",
-          "badge":"4",
           "icon": "fa fa-credit-card",
           "children": [
             {
@@ -1142,23 +1137,16 @@ export const MENUCONSTANT = {
               "icon": "fa fa-credit-card",
               "link": "creative/card-ce-demo"
             },
-            {
-              "text": "Overlay Effects",
-              "icon": "fa fa-id-card",
-              "badge": "NEW",
-              "link": "creative/card-ce-demo-overlayeffect"
-            },
+          
             {
               "text": "Flip Effect",
               "icon": "fa fa-map",
-              "badge": "NEW",
               "link": "creative/card-ce-demo-flipeffect"
             },
             {
-              "text": "Zoom Effect",
-              "icon": "fa fa-search-plus",
-              "badge": "NEW",
-              "link": "creative/card-ce-demo-zoomeffect"
+              "text": "Overlay Effects",
+              "icon": "fa fa-id-card",
+              "link": "creative/card-ce-demo-overlayeffect"
             },
             {
               "text": "Polaroid Card",
@@ -1167,9 +1155,13 @@ export const MENUCONSTANT = {
             },
             {
               "text": "Ribbon Card",
-              "badge": "NEW",
               "icon": "fa fa-camera",
               "link": "creative/ribbon-card-demo"
+            },
+            {
+              "text": "Zoom Effect",
+              "icon": "fa fa-search-plus",
+              "link": "creative/card-ce-demo-zoomeffect"
             }
           ]
         }
@@ -1178,18 +1170,12 @@ export const MENUCONSTANT = {
     {
       text: "Panels",
       icon: "fa fa-bars  ",
-      badge: "2",
+      badge: "1",
       children: [
         {
           text: "Creative Carousel",
           icon: "fa fa-cc  ",
-          badge: "NEW",
           link: "creative/carousel-ce-demo"
-        },
-        {
-          text: "Multi-item Carousel",
-          icon: "fa fa-calendar  ",
-          link: "enterprise/multi-item-carousel-demo"
         },
         {
           text: "Creative Window",
@@ -1198,14 +1184,18 @@ export const MENUCONSTANT = {
           badge: "U",
         },
         {
-          text: "Viewport",
-          icon: "fa fa-indent  ",
-          link: "creative/viewport-demo"
-        },
-        {
+          text: "Multi-item Carousel",
+          icon: "fa fa-calendar  ",
+          link: "enterprise/multi-item-carousel-demo"
+        },        {
           text: "Sliding-Panel",
           icon: "fa fa-bars  ",
           link: "panes/animatedsliding-demo"
+        },
+        {
+          text: "Viewport",
+          icon: "fa fa-indent  ",
+          link: "creative/viewport-demo"
         }
       ]
     },
@@ -1222,13 +1212,11 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
-      badge: "1",
       icon: "fa fa-clone  ",
       children: [
         {
           text: "Color Picker",
           icon: "fas fa-palette  ",
-          badge: "NEW",
           link: "creative/colorpicker-demo"
         }
       ]

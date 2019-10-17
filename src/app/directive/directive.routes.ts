@@ -5,9 +5,10 @@ import { RoundEdgeDemo } from './roundedge/round-edge';
 import { FullScreenDemo } from './fullscreen/full-screen';
 import { RouterAnimationDemo } from './routinganimation/router-animation';
 import { ChildRouteDemo } from './routinganimation/childroute';
-import { ChildRoute2Demo } from './routinganimation/childroute2'
-import { ChildRoute3Demo } from './routinganimation/childroute3'
-import { ChildRoute4Demo } from './routinganimation/childroute4'
+import { ChildRoute2Demo } from './routinganimation/childroute2';
+import { ChildRoute3Demo } from './routinganimation/childroute3';
+import { ChildRoute4Demo } from './routinganimation/childroute4';
+import {DynamicTextDemo} from './dynamic-text/dynamic-text';
 
 export const DIRECTIVE_ROUTE: Routes = [
 
@@ -22,6 +23,9 @@ export const DIRECTIVE_ROUTE: Routes = [
     },
     {
         path: 'full-screen', component: FullScreenDemo,
+    },
+    {
+        path: 'dynamic-text', component: DynamicTextDemo,
     },
     {
         path: 'router-animation', component: RouterAnimationDemo,

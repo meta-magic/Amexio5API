@@ -1,0 +1,56 @@
+<amexio-box amexioColorPalette [color-palette]="'classic'" [gradient]="true" class="api-header-style " [padding]="true" align="left">
+  <amexio-label size="large">
+    Amexio Dynamic Text Directive </amexio-label>
+  <br />
+  <br> Developer can give dynamic text on any component.
+</amexio-box>
+
+<amexio-card style="display: block; padding-top:30px; height: 700px;">
+  <amexio-body>
+    <amexio-tab-view #tab [closable]="true">
+      <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
+          <amexio-box amexio-dynamic-text [placeholder]="placeholderData" border-color="blue" border="bottom" padding="true">
+            <amexio-label>
+              Dear customer,
+              <br>
+              <br> Rs.rs has been debited from account accountNo to VPA <b>id</b> on date. Your UPI transaction reference number is
+              refNo.
+              <br>
+              <br> Please call on custcare to report if this transaction was not authorized by you.
+              <br>
+              <br> Warm Regards,
+              <br> regardsBy
+            </amexio-label>
+          </amexio-box>
+      </amexio-tab>
+
+      <amexio-tab title="API Reference" [active]="false" [closable]="false" [disabled]="false">
+        <br>
+        <amexio-card [header]="true">
+          <amexio-header>
+            Directive: amexio-dynamic-text
+          </amexio-header>
+          <amexio-body>
+            <amexio-datagrid [enable-column-filter]="false" [data]="inputData">
+              <amexio-data-table-column [width]="15" [data-index]="'name'" [data-type]="'string'" [hidden]="false" [text]="'Name'">
+              </amexio-data-table-column>
+              <amexio-data-table-column [width]="15" [sort]="false" [data-index]="'version'" [data-type]="'string'" [hidden]="false" [text]="'Version'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="15" [data-index]="'type'" [data-type]="'string'" [hidden]="false" [text]="'Data Type'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="15" [data-index]="'default'" [data-type]="'string'" [hidden]="false" [text]="'Default'"></amexio-data-table-column>
+              <amexio-data-table-column [width]="50" [data-index]="'description'" [data-type]="'string'" [hidden]="false" [text]="'Description'"></amexio-data-table-column>
+            </amexio-datagrid>
+          </amexio-body>
+        </amexio-card>
+      </amexio-tab>
+
+      <amexio-tab title="Source Code" [active]="false" [closable]="false" [disabled]="false">
+        <amexio-api-sourcecode [ts-url]="'/directive/dynamic-text/ts.text'" [html-url]="'/directive/dynamic-text/form.html'">
+        </amexio-api-sourcecode>
+        <amexio-api-sourcecode >
+        </amexio-api-sourcecode>
+
+      </amexio-tab>
+
+    </amexio-tab-view>
+  </amexio-body>
+</amexio-card>

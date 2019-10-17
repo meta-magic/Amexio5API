@@ -1,0 +1,16 @@
+
+export class ComponentDemo {
+    placeholderData: any
+  constructor() {
+         this.placeholderData = {
+        "customer": "John Doe",
+        "rs": "877.00",
+        "accountNo": "**** 7854",
+        "id": "pa78sjhak190",
+        "refNo": "7854122896",
+        "custcare": "1800 4521 1012 2566",
+        "regardsBy" : "HDFC Manager",
+        "date": "12-10-2019"
+    }
+  }
+}
