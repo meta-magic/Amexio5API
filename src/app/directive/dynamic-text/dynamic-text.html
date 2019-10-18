@@ -2,15 +2,16 @@
   <amexio-label size="large">
     Amexio Dynamic Text Directive </amexio-label>
   <br />
-  <br> Developer can give dynamic text on any component.
+  <br> Developer can give dynamic text on any component, where the placeholder data will get replaced by dynamic data provided.
+  Eg. Welcome UI with user name or report with natural language template where the placeholder data can be replaced by each.
 </amexio-box>
 
 <amexio-card style="display: block; padding-top:30px; height: 700px;">
   <amexio-body>
     <amexio-tab-view #tab [closable]="true">
       <amexio-tab title="Demo" [active]="true" [closable]="false" [disabled]="false">
-          <amexio-box amexio-dynamic-text [placeholder]="placeholderData" border-color="blue" border="bottom" padding="true">
-            <amexio-label>
+          <amexio-box border-color="blue" border="bottom" padding="true">
+            <amexio-label amexio-dynamic-text [placeholder]="placeholderData" >
               Dear customer,
               <br>
               <br> Rs.rs has been debited from account accountNo to VPA <b>id</b> on date. Your UPI transaction reference number is
