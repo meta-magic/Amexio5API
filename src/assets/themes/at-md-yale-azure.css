@@ -154,7 +154,7 @@ html {
   width: 100%; }
 
 body {
-  font-family: Roboto,Helvetica,sans-serif,Arial,Trebuchet MS;
+  font-family: Roboto,Verdana,sans-serif, Helvetica,Arial,Trebuchet MS;
   background-image: var(--appBackgroundImage); }
 
 .helperHidden {
