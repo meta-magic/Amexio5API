@@ -81,7 +81,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Form Inputs",
-      badge: "1",
+      badge: "2",
       icon: "fa fa-clone  ",
       children: [
         {
@@ -99,6 +99,12 @@ export const MENUCONSTANT = {
           icon: "fa fa-calendar  ",
           badge: "NEW",
           link: "forms-Input/multirangedatepicker-demo"
+        },
+        {
+          text: "Rich Editable Text Area",
+          icon: "fa fa-square-o",
+          badge: "NEW",
+          link: "enterprise/rich-editable-demo"
         },
         {
           text: "Facebook Login",

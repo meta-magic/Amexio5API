@@ -1,18 +1,20 @@
-<!-- Demo 1: Amexio Rich Editable TextArea -->
+<!-- Demo 1: Amexio Rich Editable TextArea  With Source Code.-->
 
         <amexio-rich-textarea 
+                    [rich-height]="300"
+                    [enable-source-code]="true"
                     (onCodeClick)="onSourceCodeDisplay($event)"
                     [toolbar-position]="'top'">
         </amexio-rich-textarea>
    
         <pre><code>{{HTMLCodeDisplay |json }}</code></pre>
    
-<!-- Demo 2:  Amexio Rich Editable TextArea With Source Code.-->
+<!-- Demo 2:  Amexio Rich Editable TextArea-->
 
 
         <amexio-rich-textarea 
-                    [toolbar-position]="'top'"
-                    [rich-height]="300"
+                    [toolbar-position]="'bottom'"
                     [enable-source-code]="true"
+                    (onCodeClick)="onSourceCodeDisplay($event)"
                     >
         </amexio-rich-textarea>

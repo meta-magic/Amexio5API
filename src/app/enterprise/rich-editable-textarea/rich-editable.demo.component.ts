@@ -15,7 +15,7 @@ export class RichEditableDemoComponent implements OnInit {
   }
   ngOnInit() { }
 
-  // onSourceCodeDisplay(data: any) {
-  //   this.HTMLCodeDisplay = data;
-  // }
+  onSourceCodeDisplay(data: any) {
+    this.HTMLCodeDisplay = data;
+  }
 }

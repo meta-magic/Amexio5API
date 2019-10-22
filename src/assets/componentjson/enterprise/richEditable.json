@@ -52,7 +52,7 @@
           "name": "height",
           "type": "number",
           "default": "",
-          "description": "Height to the tab formRich only if enable source code falg is true."
+          "description": "Height to the tab form only if enable source code flag is true."
         }
       ]
     },
@@ -75,7 +75,7 @@
       "gridData": [
         {
           "name": "onCodeClick",
-          "description": "Emits DOM HTML source code on click on button </>."
+          "description": "Emits data in the HTML source code format on click on button (</>) i.e.(HTML Code)."
         }
       ]
     }

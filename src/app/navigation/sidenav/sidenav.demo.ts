@@ -92,6 +92,11 @@ export class SideNavDemo implements OnInit {
   sideNodeClick(data: any) {
     this.nodeData = data;
   }
+  dataD(data: any) {
+
+    console.log('kedar', data);
+    
+  }
 }
 
 
