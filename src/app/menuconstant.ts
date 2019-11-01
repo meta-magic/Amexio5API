@@ -140,7 +140,7 @@ export const MENUCONSTANT = {
     },
     {
       text: "Data",
-      badge: "1",
+      badge: "2",
       icon: "fa fa-database  ",
       children: [
 
@@ -159,6 +159,13 @@ export const MENUCONSTANT = {
           text: "Banner",
           icon: "fa fa-id-card-o  ",
           link: "layout/banner-demo"
+        },
+        
+        {
+          text: "Browser Panel",
+          icon: "fa fa-id-card-o  ",
+          badge: "NEW",
+          link: "data/browserpanel-demo"
         },
         {
           text: "Calendar",
@@ -443,7 +450,7 @@ export const MENUCONSTANT = {
     {
       text: "Form Inputs",
       icon: "fa fa-clone  ",
-      badge: "2",
+      badge: "6",
       children: [
         {
           text: "Badge",
@@ -468,11 +475,13 @@ export const MENUCONSTANT = {
         {
           text: "Date & Time Picker",
           icon: "fa fa-calendar  ",
+          badge: "U",
           link: "forms-Input/date-picker-demo"
         },
         {
           text: "DropDown",
           icon: "fa fa-caret-square-o-down  ",
+          badge: "U",
           children: [
             {
               text: "Basic",
@@ -525,6 +534,7 @@ export const MENUCONSTANT = {
         {
           text: "Radio Group",
           icon: "fa fa-stop-circle-o  ",
+          badge: "U",
           link: "forms-Input/radiogroup-demo"
         },
         {
@@ -560,6 +570,7 @@ export const MENUCONSTANT = {
         {
           text: "Text Field",
           link: "forms-Input/textinput",
+          badge: "U",
           icon: "fa fa-file-text-o  "
         },
         {

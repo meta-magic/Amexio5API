@@ -125,6 +125,13 @@
           "version": "4.0 onwards",
           "type": "boolean",
           "default": ""
+        },
+        {
+          "name": "has-label",
+          "type": "boolean",
+          "version": "5.21 onwards",
+          "default": "false",
+          "description": "hide/unhide field label"
         }
       ]
     },

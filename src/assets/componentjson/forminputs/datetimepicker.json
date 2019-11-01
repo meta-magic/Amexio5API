@@ -112,6 +112,13 @@
                     "description": "sets year dropdown in datepicker",
                     "type": "boolean",
                     "default": "false"
+                },
+                {
+                    "name": "has-label",
+                    "type": "boolean",
+                    "version": "5.21 onwards",
+                    "default": "false",
+                    "description": "hide/unhide field label"
                 }
             ]
         },
