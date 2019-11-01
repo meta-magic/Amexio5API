@@ -1,193 +1,200 @@
 {
-    "title": "Amexio Text Input",
-    "description": "Text input component has been created with different configurable attributes for validation (min/max length, allow blank, custom regex), custom error message, help, custom styles.",
-    "apiRefMetadata": [
-      {
-        "gridTitle": "Properties <amexio-text-input>",
-        "columnDefinition": [
-          {
-            "dataindex": "name",
-            "text": "Name",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "version",
-            "text": "Version",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "type",
-            "text": "Type",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "default",
-            "text": "Default",
-            "width": 15,
-            "hidden": false,
-            "datatype": "string"
-          },
-          {
-            "dataindex": "description",
-            "text": "Description",
-            "width": 60,
-            "hidden": false,
-            "datatype": "string"
-          }
-        ],
-        "gridData": [
-          {
-            "name": "field-label",
-            "type": "string",
-            "default": "",
-            "description": "The label of this field"
-          },
-          {
-            "name": "pattern",
-            "type": "string",
-            "default": "",
-            "description": "Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
-          },
-          {
-            "name": "allow-blank",
-            "type": "boolean",
-            "default": "false",
-            "description": "true to make this field required (true or false)."
-          },
-          {
-            "name": "place-holder",
-            "type": "string",
-            "default": "",
-            "description": "A string value displayed in the input (if supported) when the control is empty."
-          },
-          {
-            "name": "disabled",
-            "type": "boolean",
-            "default": "false",
-            "description": "true to disable the field."
-          },
-          {
-            "name": "error-msg",
-            "type": "string",
-            "default": "",
-            "description": "Error Message required to displayed after validation"
-          },
-          {
-            "name": "icon-feedback",
-            "type": "boolean",
-            "default": "false",
-            "description": "Enable/Disabled validation icon"
-          },
-          {
-            "name": "name",
-            "description": "name can be provided or it can also be generated using field label",
-            "type": "string",
-            "default": ""
-          },
-          {
-            "name": "font-style",
-            "type": "string",
-            "default": "",
-            "description": "Set font-style to field"
-          },
-          {
-            "name": "font-family",
-            "type": "string",
-            "default": "",
-            "description": "Set font family to field"
-          },
-          {
-            "name": "font-size",
-            "type": "string",
-            "default": "",
-            "description": "Set font size to field"
-          },
-          {
-            "name": "has-label",
-            "type": "boolean",
-            "default": "false",
-            "description": "hide/unhide field label"
-          },
-          {
-            "name": "enable-popover",
-            "type": "boolean",
-            "default": "false",
-            "description": "Set enable / disable popover."
-          }
-        ]
-      },
-      {
-        "gridTitle": "Events",
-        "columnDefinition": [
-          {
-            "dataindex": "name",
-            "text": "Name",
-            "width": 15,
-            "hidden": false
-          },
-          {
-            "dataindex": "description",
-            "text": "Description",
-            "width": 60,
-            "hidden": false
-          }
-        ],
-        "gridData": [
-          {
-            "name": "onBlur",
-            "description": "On blur event"
-          },
-          {
-            "name": "input",
-            "description": "On input event field."
-          },
-          {
-            "name": "focus",
-            "description": "On field focus event"
-          },
-          {
-            "name": "change",
-            "description": "On field value change event"
-          }
-        ]
-      }
-    ],
-    "sourceMetadata": {
-      "htmlUrl": "forms/textinput/form.html",
-      "tsUrl": "forms/textinput/form.text",
-      "datasourceUrl": ""
+  "title": "Amexio Text Input",
+  "description": "Text input component has been created with different configurable attributes for validation (min/max length, allow blank, custom regex), custom error message, help, custom styles.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-text-input>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "field-label",
+          "type": "string",
+          "default": "",
+          "description": "The label of this field"
+        },
+        {
+          "name": "pattern",
+          "type": "string",
+          "default": "",
+          "description": "Accept RegEx patterns for text fields.example pattern=[a-z0-9]"
+        },
+        {
+          "name": "allow-blank",
+          "type": "boolean",
+          "default": "false",
+          "description": "true to make this field required (true or false)."
+        },
+        {
+          "name": "place-holder",
+          "type": "string",
+          "default": "",
+          "description": "A string value displayed in the input (if supported) when the control is empty."
+        },
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false",
+          "description": "true to disable the field."
+        },
+        {
+          "name": "error-msg",
+          "type": "string",
+          "default": "",
+          "description": "Error Message required to displayed after validation"
+        },
+        {
+          "name": "icon-feedback",
+          "type": "boolean",
+          "default": "false",
+          "description": "Enable/Disabled validation icon"
+        },
+        {
+          "name": "name",
+          "description": "name can be provided or it can also be generated using field label",
+          "type": "string",
+          "default": ""
+        },
+        {
+          "name": "font-style",
+          "type": "string",
+          "default": "",
+          "description": "Set font-style to field"
+        },
+        {
+          "name": "font-family",
+          "type": "string",
+          "default": "",
+          "description": "Set font family to field"
+        },
+        {
+          "name": "font-size",
+          "type": "string",
+          "default": "",
+          "description": "Set font size to field"
+        },
+        {
+          "name": "has-label",
+          "type": "boolean",
+          "default": "false",
+          "description": "hide/unhide field label"
+        },
+        {
+          "name": "enable-popover",
+          "type": "boolean",
+          "default": "false",
+          "description": "Set enable / disable popover."
+        },
+        {
+          "name": "readonly",
+          "type": "boolean",
+          "version": "5.21 onwards",
+          "default": "false",
+          "description": " Readonly field label"
+        }
+      ]
     },
-    "liveMetadata": {
-      "disabled": false,
-      "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-textinput?embed=1&file=app/forms/text/text.demo.html&view=editor"
-    },
-    "apiaccessibledata": [
-      {
-          "gridTitle": "Properties <amexio-text-input>",
-          "columnDefinition": [
-              {
-                  "dataindex": "name",
-                  "text": "Key",
-                  "width": 30
-              },
-              {
-                  "dataindex": "description",
-                  "text": "Function",
-                  "width": 70
-              }
-          ],
-          "gridData": [
-              {
-                  "name": "Tab",
-                  "description": "Navigates over the textarea"
-              }
-          ]
-      }
+    {
+      "gridTitle": "Events",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false
+        }
+      ],
+      "gridData": [
+        {
+          "name": "onBlur",
+          "description": "On blur event"
+        },
+        {
+          "name": "input",
+          "description": "On input event field."
+        },
+        {
+          "name": "focus",
+          "description": "On field focus event"
+        },
+        {
+          "name": "change",
+          "description": "On field value change event"
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "forms/textinput/form.html",
+    "tsUrl": "forms/textinput/form.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": false,
+    "stackblitzUrl": "https://stackblitz.com/edit/amexio-v4-textinput?embed=1&file=app/forms/text/text.demo.html&view=editor"
+  },
+  "apiaccessibledata": [
+    {
+      "gridTitle": "Properties <amexio-text-input>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Key",
+          "width": 30
+        },
+        {
+          "dataindex": "description",
+          "text": "Function",
+          "width": 70
+        }
+      ],
+      "gridData": [
+        {
+          "name": "Tab",
+          "description": "Navigates over the textarea"
+        }
+      ]
+    }
   ]
-  }
+}
