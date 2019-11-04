@@ -22,7 +22,7 @@ import { HorizontalTreeDemo } from './tree/horizontaltree/horizontaltree.demo';
 import { TreeWithBadgeDemo } from './tree/treewithbadge/treewithbadge.demo.component';
 import { DragDropTreeDemo } from './tree/treedragdrop/treedragdrop.demo';
 import { TreeWithTemplateDemo } from './tree/treewithtemplate/treewithtemplate.demo';
- // Grid
+// Grid
 import { SimpleGridDemo } from './simplegrid/simplegrid.demo';
 import { CustomColSizeDemo } from './customcolsize/customcolsizegrid.demo';
 import { FilterGridDemo } from './filtergrid/filtergrid.demo';
@@ -35,24 +35,26 @@ import { GroupByGridDemo } from './groupby/groupbygrid.demo';
 import { HeaderTemplateDemo } from './headertemplate/headertemplate.demo';
 import { TreeDataGridDemo } from './treedatagrid/treedatagrid.demo';
 import { TreeDataTemplateDemo } from './treedatatemplate/treedatatemplate.demo';
-import {ServerSidePaginationDemo} from './serversidepagination/serversidepagination.demo';
-import {AmexioWidgetModule} from "amexio-ng-extensions";
-import {PropertyGridDemoComponent} from "./propertygrid/propertygrid.demo";
-import {AmexioVirtualScrollDemo} from "./virtualscroll/virtualscroll.demo";
-import {SpeechBubbleDemo} from "./speechbubble/speechbubble.demo";
+import { ServerSidePaginationDemo } from './serversidepagination/serversidepagination.demo';
+import { AmexioWidgetModule } from "amexio-ng-extensions";
+import { PropertyGridDemoComponent } from "./propertygrid/propertygrid.demo";
+import { AmexioVirtualScrollDemo } from "./virtualscroll/virtualscroll.demo";
+import { SpeechBubbleDemo } from "./speechbubble/speechbubble.demo";
+import { BrowserPanelDemoComponent } from './browserpanel/browser-panel.demo';
 /**
  * Created by kedar on 4/2/19.
  */
 @NgModule({
-    declarations: [ SpeechBubbleDemo, ItemSelectorDemo , ListBoxDemo, TimelineDemoComponent , AmexioSpinnerDemo,
+    declarations: [SpeechBubbleDemo, ItemSelectorDemo, ListBoxDemo, TimelineDemoComponent, AmexioSpinnerDemo,
 
         SimpleTreeDemo, CheckboxTreeDemo, CollapseTreeDemo, ContextMenuTreeDemo, FilterTreeDemo,
         HorizontalTreeDemo, TreeWithBadgeDemo, DragDropTreeDemo, TreeWithTemplateDemo,
 
         SimpleGridDemo, CustomColSizeDemo, FilterGridDemo, GlobalFilterDemo, GridWithTemplateDemo,
-        GridWithContextMenuDemo, GridWithScrollDemo, GridWithToolBarDemo , GroupByGridDemo, HeaderTemplateDemo,
+        GridWithContextMenuDemo, GridWithScrollDemo, GridWithToolBarDemo, GroupByGridDemo, HeaderTemplateDemo,
         TreeDataGridDemo, TreeDataTemplateDemo, ServerSidePaginationDemo,
-        PropertyGridDemoComponent,AmexioVirtualScrollDemo,AmexioVirtualScrollDemo2
+        PropertyGridDemoComponent, AmexioVirtualScrollDemo, AmexioVirtualScrollDemo2,
+        BrowserPanelDemoComponent
 
     ],
     imports: [

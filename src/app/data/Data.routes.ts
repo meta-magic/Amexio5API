@@ -33,12 +33,13 @@ import { ServerSidePaginationDemo } from './serversidepagination/serversidepagin
 import { PropertyGridDemoComponent } from "./propertygrid/propertygrid.demo";
 import { AmexioVirtualScrollDemo } from "./virtualscroll/virtualscroll.demo";
 import { SpeechBubbleDemo } from "./speechbubble/speechbubble.demo";
+import { BrowserPanelDemoComponent } from './browserpanel/browser-panel.demo';
 
 
 export const DATA_ROUTE: Routes = [
     {
-        path:'speechbubble-demo' , component:SpeechBubbleDemo,
-        },
+        path: 'speechbubble-demo', component: SpeechBubbleDemo,
+    },
     {
         path: 'itemselector-demo', component: ItemSelectorDemo,
     },
@@ -122,10 +123,14 @@ export const DATA_ROUTE: Routes = [
     },
     {
         path: 'propertygrid-demo', component: PropertyGridDemoComponent,
-    },  {
+    }, {
         path: 'virtual-scroller-demo', component: AmexioVirtualScrollDemo,
     },
     {
-      path: 'virtual-scroller-demo-2', component: AmexioVirtualScrollDemo2,
-  },
+        path: 'virtual-scroller-demo-2', component: AmexioVirtualScrollDemo2,
+    },
+    {
+        path: 'browserpanel-demo', component: BrowserPanelDemoComponent,
+    },
+
 ];

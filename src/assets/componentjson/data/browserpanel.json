@@ -1,0 +1,86 @@
+{
+  "title": "Amexio Browser Panel",
+  "description": "This component can be display window inside new window.",
+  "apiRefMetadata": [
+    {
+      "gridTitle": "Properties <amexio-browser-panel>",
+      "columnDefinition": [
+        {
+          "dataindex": "name",
+          "text": "Name",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "version",
+          "text": "Version",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "type",
+          "text": "Type",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "default",
+          "text": "Default",
+          "width": 15,
+          "hidden": false,
+          "datatype": "string"
+        },
+        {
+          "dataindex": "description",
+          "text": "Description",
+          "width": 60,
+          "hidden": false,
+          "datatype": "string"
+        }
+      ],
+      "gridData": [
+        {
+          "name": "url",
+          "version": "5.21 onwards",
+          "type": "string",
+          "default": "",
+          "description": "Add url to display the site inside browser."
+        },
+        {
+          "name": "url-field-editable",
+          "version": "5.21 onwards",
+          "type": "boolean",
+          "default": "false",
+          "description": "Edit url if its true."
+        },
+        {
+          "name": "browser-in-window",
+          "version": "5.21 onwards",
+          "type": "boolean",
+          "default": "false",
+          "description": "If true then browser show in window look. "
+        },
+        {
+          "name": "reload-button",
+          "version": "5.21 onwards",
+          "type": "boolean",
+          "default": "false",
+          "description": "Reload the site."
+        }
+      ]
+    }
+  ],
+  "sourceMetadata": {
+    "htmlUrl": "data/browserpanel/browserpanel.html",
+    "tsUrl": "data/browserpanel/browserpanel.text",
+    "datasourceUrl": ""
+  },
+  "liveMetadata": {
+    "disabled": true,
+    "stackblitzUrl": ""
+  },
+  "isAccessibility": false
+}
