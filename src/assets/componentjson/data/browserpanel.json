@@ -1,6 +1,6 @@
 {
   "title": "Amexio Browser Panel",
-  "description": "This component can be display window inside new window.",
+  "description": "This component can be display Browser window.",
   "apiRefMetadata": [
     {
       "gridTitle": "Properties <amexio-browser-panel>",
