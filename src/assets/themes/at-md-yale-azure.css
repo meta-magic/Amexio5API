@@ -6844,6 +6844,7 @@ option {
   flex-grow: 1;
   border: none;
   border-radius: 5px;
+  max-width: 100%;
   padding-bottom: 4px;
   padding-left: 6px; }
 
@@ -6896,6 +6897,14 @@ option {
   border-radius: 50%;
   text-align: center;
   display: inline-block; }
+
+.url-with-dots {
+  display: inline-block;
+  max-width: 87%;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  padding-left: 8px; }
 
 /****************************************************************************
     Component Name : Menubar
