@@ -105,7 +105,36 @@
             "default": "",
             "description": "Sets title to panel item",
             "version": "5.12 onwards"
+          },
+          {
+            "name": "image-height",
+            "type": "any",
+            "default": "",
+            "description": "Sets image height",
+            "version": "5.21 onwards"
+          },
+          {
+            "name": "image-width",
+            "type": "any",
+            "default": "",
+            "description": "Sets image width",
+            "version": "5.21 onwards"
+          },
+          {
+            "name": "image-class",
+            "type": "any",
+            "default": "",
+            "description": "Sets custom class to image",
+            "version": "5.21 onwards"
+          },
+          {
+            "name": "image-path",
+            "type": "any",
+            "default": "",
+            "description": "Sets image path / url",
+            "version": "5.21 onwards"
           }
+
         ]
       },
       {

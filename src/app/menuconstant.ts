@@ -1207,7 +1207,8 @@ export const MENUCONSTANT = {
         },        {
           text: "Sliding-Panel",
           icon: "fa fa-bars  ",
-          link: "panes/animatedsliding-demo"
+          link: "panes/animatedsliding-demo",
+          badge: "U",
         },
         {
           text: "Viewport",
