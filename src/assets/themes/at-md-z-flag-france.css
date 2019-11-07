@@ -6794,20 +6794,17 @@ option {
 .browser-iframe {
   border: 1px solid #ced4da; }
 
-.browserpanel-header-url {
-  background-color: var(--componentHoverBGColor); }
+.btn-green {
+  background: #00ca56;
+  border: 1px solid #14ae46; }
 
-.close {
+.btn-red {
   background: #ff5c5c;
   border: 1px solid #e33e41; }
 
-.minimize {
+.btn-yellow {
   background: #ffbd4c;
   border: 1px solid #e09e3e; }
-
-.zoom {
-  background: #00ca56;
-  border: 1px solid #14ae46; }
 
 /** speechbubble - Structure CSS **/
 :host {
@@ -6841,12 +6838,12 @@ option {
   opacity: 1; }
 
 .browserpanel-header-url {
-  flex-grow: 1;
   border: none;
   border-radius: 5px;
-  max-width: 100%;
-  padding-bottom: 4px;
-  padding-left: 6px; }
+  justify-content: space-between;
+  display: inline-flex;
+  overflow: hidden;
+  height: 24px; }
 
 .browserpanel-url-window {
   background: rgba(128, 127, 127, 0.6);
@@ -6866,45 +6863,33 @@ option {
   padding-bottom: 4px;
   padding-left: 6px; }
 
-.close {
-  font-size: 8pt;
+.browser-button {
+  font-size: 12pt;
+  width: 15px;
   cursor: pointer;
-  text-align: center;
-  width: 11px;
-  line-height: 10px;
-  height: 11px;
+  height: 15px;
+  line-height: 15px;
   border-radius: 50%;
+  text-align: center;
   display: inline-block; }
 
-.minimize {
-  font-size: 9pt;
-  cursor: pointer;
-  line-height: 10px;
-  margin: 5px 5px;
-  width: 11px;
-  height: 11px;
-  text-align: center;
-  border-radius: 50%;
-  display: inline-block; }
-
-.zoom {
-  font-size: 9pt;
-  width: 11px;
-  cursor: pointer;
-  height: 11px;
-  line-height: 10px;
-  margin-right: 9px;
-  border-radius: 50%;
-  text-align: center;
-  display: inline-block; }
+.card-body-scroll {
+  overflow: hidden !important; }
 
 .url-with-dots {
-  display: inline-block;
-  max-width: 87%;
+  background: lightgrey;
+  flex-grow: 1;
+  border-radius: 0px 5px 5px 0px;
   white-space: nowrap;
   overflow: hidden !important;
-  text-overflow: ellipsis;
-  padding-left: 8px; }
+  text-overflow: ellipsis; }
+
+.span-with-button {
+  padding: 0px 5px; }
+
+.lock-button {
+  background: lightgray;
+  border-radius: 5px 0px 0px 5px; }
 
 /****************************************************************************
     Component Name : Menubar
