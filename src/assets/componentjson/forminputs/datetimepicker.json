@@ -51,7 +51,7 @@
                     "name": " date-picker",
                     "description": " Enable/Disable Date Picker",
                     "type": " boolean",
-                    "default": " false"
+                    "default": " true"
                 },
                 {
                     "name": " time-picker ",

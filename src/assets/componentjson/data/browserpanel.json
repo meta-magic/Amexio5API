@@ -69,6 +69,13 @@
           "type": "boolean",
           "default": "false",
           "description": "Reload the site."
+        },
+        {
+          "name": "show",
+          "version": "5.21 onwards",
+          "type": "boolean",
+          "default": "false",
+          "description": "Show/Hide the window."
         }
       ]
     }

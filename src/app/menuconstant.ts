@@ -257,17 +257,17 @@ export const MENUCONSTANT = {
               link: "layout/gridlayout-demo"
             },
             {
-              text: "gridlayout-Ex1",
+              text: "Grid Layout-Ex1",
               icon: "fa fa-indent  ",
               link: "layout/gridlayout-demo-exp1"
             },
             {
-              text: "gridlayout-Ex2",
+              text: "Grid Layout-Ex2",
               icon: "fa fa-indent  ",
               link: "layout/gridlayout-demo-exp2"
             },
             {
-              text: "gridlayout-Ex3",
+              text: " Grid Layout-Ex3",
               icon: "fa fa-indent  ",
               link: "layout/gridlayout-demo-exp3"
             },
