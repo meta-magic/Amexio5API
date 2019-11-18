@@ -8,7 +8,7 @@ env:
   global:
 language: node_js
 node_js:
-  - "8"
+  - "10"
 before_install:
   - composer config --global github-oauth.github.com "$GITHUB_TOKEN"
   
