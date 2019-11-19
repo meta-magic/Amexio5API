@@ -17,7 +17,7 @@ export class AmexioStructureComponent implements OnInit {
 
   disabledFlag: boolean;
 
-  @ViewChild('tab') tabRef: any;
+  @ViewChild('tab',{ static: true}) tabRef: any;
 
   constructor(private _rCService: RestCallService) {
 

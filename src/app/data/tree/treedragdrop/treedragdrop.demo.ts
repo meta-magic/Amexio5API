@@ -14,8 +14,8 @@ import {ComponentDataStructure} from "../../../apimetadata/models/component.stru
 })
 export class DragDropTreeDemo implements OnInit{
 
-  @ViewChild('tree') treeRef: any;
-  @ViewChild('tree1') treeRef1: any;
+  @ViewChild('tree',{ static: false}) treeRef: any;
+  @ViewChild('tree1',{ static: false}) treeRef1: any;
 
  
   

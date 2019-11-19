@@ -1,7 +1,7 @@
 import { Component, ViewChild, Inject, ViewContainerRef } from '@angular/core';
 import { RouteConfigLoadEnd, RouteConfigLoadStart, Router } from "@angular/router";
 import { AmexioNavBarComponent, AmexioSideNavComponent } from "amexio-ng-extensions";
-import { DOCUMENT } from '@angular/platform-browser';
+import { DOCUMENT } from "@angular/common";
 import { CookieService } from "ngx-cookie-service";
 import { HttpClient } from "@angular/common/http";
 import { MENUCONSTANT } from './menuconstant';
@@ -32,17 +32,17 @@ export class AppComponent {
 
   newThemePath = '';
   type = "2";
-  @ViewChild(AmexioNavBarComponent) amexioNav;
+  @ViewChild(AmexioNavBarComponent ,{ static: true}) amexioNav;
 
-  @ViewChild('sidenav1') sidenav1: AmexioSideNavComponent;
+  @ViewChild('sidenav1',{ static: true}) sidenav1: AmexioSideNavComponent;
 
-  @ViewChild('sidenav2') sidenav2: AmexioSideNavComponent;
+  @ViewChild('sidenav2',{ static: true}) sidenav2: AmexioSideNavComponent;
 
-  @ViewChild('sidenav3') sidenav3: AmexioSideNavComponent;
+  @ViewChild('sidenav3',{ static: true}) sidenav3: AmexioSideNavComponent;
 
-  @ViewChild('sidenav4') sidenav4: AmexioSideNavComponent;
+  @ViewChild('sidenav4',{ static: true}) sidenav4: AmexioSideNavComponent;
 
-  @ViewChild('sidenav5') sidenav5: AmexioSideNavComponent;
+  @ViewChild('sidenav5',{ static: true}) sidenav5: AmexioSideNavComponent;
 
 
   constructor(public router: Router, @Inject(DOCUMENT) private document: any,

@@ -11,8 +11,8 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   templateUrl :'./acrosstree.demo.component.html',
 })
 export class AcrossTreeDemo implements OnInit{
-  @ViewChild('tree') treeRef: any;
-  @ViewChild('tree1') treeRef1: any;
+  @ViewChild('tree',{ static: false}) treeRef: any;
+  @ViewChild('tree1',{ static: false}) treeRef1: any;
   selectedData: any;
   treeLocalData: any;
   treeLocalData1: any;

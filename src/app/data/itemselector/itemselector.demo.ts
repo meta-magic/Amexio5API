@@ -13,7 +13,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   templateUrl : './itemselector.demo.html',
 })
 export class ItemSelectorDemo implements OnInit{
-  @ViewChild('item') itemRef: any;
+  @ViewChild('item',{ static: false}) itemRef: any;
 
  
   copyMsgArray: any[];

@@ -12,7 +12,7 @@ import {ComponentDataStructure} from "../../apimetadata/models/component.structu
   templateUrl: './itemselectordragdrop.demo.html',
 })
 export class ItemSelectorDragdropDemo implements OnInit{
-  @ViewChild('item') itemRef: any;
+  @ViewChild('item',{ static: false}) itemRef: any;
 
  
   copyMsgArray: any[];
