@@ -7,14 +7,20 @@
                     [toolbar-position]="'top'">
         </amexio-rich-textarea>
    
-        <pre><code>{{HTMLCodeDisplay |json }}</code></pre>
+        <pre><code>{{HTMLCodeDisplay }}</code></pre>
    
 <!-- Demo 2:  Amexio Rich Editable TextArea-->
 
 
+
         <amexio-rich-textarea 
+                    [initial-input]="bindingData"
                     [toolbar-position]="'bottom'"
                     [enable-source-code]="true"
                     (onCodeClick)="onSourceCodeDisplay($event)"
                     >
         </amexio-rich-textarea>
+
+        <pre><code>{{HTMLCodeDisplay }}</code></pre>
+        <br/>
+        <pre><code>{{bindingData }}</code></pre>

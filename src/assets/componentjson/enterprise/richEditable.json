@@ -53,6 +53,12 @@
           "type": "number",
           "default": "",
           "description": "Height to the tab form only if enable source code flag is true."
+        },
+        {
+          "name": "initial-input",
+          "type": "string",
+          "default": "",
+          "description": "Initially display msg in editor block."
         }
       ]
     },

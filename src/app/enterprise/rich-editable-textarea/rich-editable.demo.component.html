@@ -22,7 +22,7 @@
             Amexio Rich Editable TextArea .
           </amexio-header>
           <amexio-body>
-            <amexio-rich-textarea (onCodeClick)="onSourceCodeDisplay($event)" 
+            <amexio-rich-textarea [initial-input]="binding" (onCodeClick)="onSourceCodeDisplay($event)" 
               [toolbar-position]="'bottom'">
             </amexio-rich-textarea>
           </amexio-body>
@@ -34,7 +34,9 @@
             Display HTML Code
           </amexio-header>
           <amexio-body style="display: block;" >
-            {{HTMLCodeDisplay | json }}
+            {{HTMLCodeDisplay}}
+            <br>
+            {{binding}}
           </amexio-body>
         </amexio-card>
       </amexio-column>
