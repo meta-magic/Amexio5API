@@ -104,8 +104,9 @@
                                 
                                 [dropdown-datepicker]="true" 
                                 [field-label]="'Date Of Birth'"
-                                    [time-picker]="true" [date-picker]="true" 
+                                    [time-picker]="false" [date-picker]="true" 
                                     [disabled-date]="disabledDate"
+                                    (change)="onChangeTime4($event)"
                                     [(ngModel)]="currentDate2">
                                 </amexio-date-time-picker>
                             </amexio-column>
@@ -113,7 +114,7 @@
 
                     </amexio-body>
                     <amexio-action>
-                        {{currentDate2}}
+                        {{currentDate45}}
                     </amexio-action>
                 </amexio-card>
             </amexio-column>
