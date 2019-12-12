@@ -8626,6 +8626,12 @@ fieldset {
   padding-left: 5px;
   vertical-align: middle; }
 
+.table1 .tablerow .tablecoltitle {
+  display: table-cell;
+  padding-right: 5px;
+  padding-left: 5px;
+  vertical-align: middle; }
+
 .table1:focus {
   background-color: var(--componentHoverBGColor);
   color: var(--componentHoverFontColor);
@@ -10923,6 +10929,12 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
   .rich-first-div-reverse {
     width: auto !important;
     height: auto !important; } }
+/************************************************************************/
+/*        Tab Media-Q COMPONENT         */
+/************************************************************************/
+@media only screen and (max-width: 375px) {
+  .table1 .tablerow .tablecoltitle {
+    display: none; } }
 /****************************************************************************
                     Media Query for width - 450
 *****************************************************************************/
@@ -11123,6 +11135,12 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
   .rich-first-div-reverse {
     width: auto !important;
     height: auto !important; } }
+/************************************************************************/
+/*        Tab Media-Q COMPONENT         */
+/************************************************************************/
+@media only screen and (max-width: 568px) {
+  .table1 .tablerow .tablecoltitle {
+    display: none; } }
 /****************************************************************************
                     Media Query for width - 767
 *****************************************************************************/
@@ -11364,6 +11382,12 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
   .rich-first-div-reverse {
     width: auto !important;
     height: auto !important; } }
+/************************************************************************/
+/*        Tab Media-Q COMPONENT         */
+/************************************************************************/
+@media only screen and (max-width: 767px) {
+  .table1 .tablerow .tablecoltitle {
+    display: none; } }
 /****************************************************************************
                     Media Query for width - 1024
 *****************************************************************************/
