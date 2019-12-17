@@ -380,8 +380,8 @@ image using the content attribute.
    fffafb: #fffafb rgb(255,250,251,0.0);
 */
 .amexio-red {
-  background-color: #dc143c;
-  color: #fffafb; }
+  background-color: #dc143c !important;
+  color: #fffafb !important; }
 
 /** Amexio Colors --- 
    Lime: #00ff00 rgb(0,255,0,0.0);
@@ -396,8 +396,8 @@ image using the content attribute.
    f0faf4: #f0faf4 rgb(240,250,244,0.0);
 */
 .amexio-green {
-  background-color: #2e8b57;
-  color: #f0faf4; }
+  background-color: #2e8b57 !important;
+  color: #f0faf4 !important; }
 
 /** Amexio Colors --- 
    Magenta: #ff00ff rgb(255,0,255,0.0);
@@ -460,8 +460,8 @@ image using the content attribute.
    241500: #241500 rgb(36,21,0,0.0);
 */
 .amexio-yellow {
-  background-color: #ff9900;
-  color: #241500; }
+  background-color: #ff9900 !important;
+  color: #241500 !important; }
 
 /** Amexio Colors --- 
    Black: #000000 rgb(0,0,0,0.0);
@@ -1058,8 +1058,7 @@ button {
     color: var(--componentDisabledFontColor); }
   .datedropdown li:hover {
     color: var(--appHeaderHoverFontColor);
-    background: var(--appHeaderHoverBGColor);
-    width: 30px; }
+    background: var(--appHeaderHoverBGColor); }
   .datedropdown .active {
     background: var(--componentActiveBGColor);
     color: var(--themePrimaryColor); }
@@ -1272,12 +1271,17 @@ button {
   box-shadow: 0 1px 3px 0 #ced4da;
   z-index: 3; }
   .datedropdown li {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: 23px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     border-radius: 5px;
     cursor: pointer; }
+  .datedropdown li:hover {
+    width: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
 
 .dropdiv1 {
   width: 100%; }
@@ -1304,8 +1308,7 @@ button {
   -webkit-padding-start: 15px; }
 
 .dropiconpadding {
-  cursor: pointer;
-  -webkit-padding-start: 20px; }
+  cursor: pointer; }
 
 .btndiv1 {
   position: relative;
@@ -1827,8 +1830,8 @@ textarea:required {
 *****************************************************************************/
 /** notification - Visual CSS **/
 .notification {
-  background-color: var(--componentBGColor);
-  color: var(--componentFontColor); }
+  background-color: var(--componentHoverBGColor);
+  color: var(--componentHoverFontColor); }
 
 /** notification - Structure CSS **/
 .notification-content {
@@ -4266,7 +4269,7 @@ input:checked + .largeType2ToggleSlider:before {
 /** Grid Layout- Visual CSS **/
 /** Grid Layout- Structure CSS **/
 .griditemcontainer {
-  height: 100%;
+  height: 100% !important;
   width: 100%;
   position: relative;
   flex-grow: 1;
