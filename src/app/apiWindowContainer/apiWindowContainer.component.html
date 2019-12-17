@@ -349,7 +349,7 @@
                   <amexio-window amexioColorPalette [color-palette]="'vibrant'" [gradient]="true" [body-height]="40"
                   [window-model]="false" [(show)]="windowService.showBasicMinimizeWindowMaterial" [minimize]='true' [close-on-escape]="true"
                     [material-design]="true" [width]="'auto'" [footer]="true">
-                    <amexio-header  >
+                    <amexio-header [minimized-icon]="'fa fa-file'" >
                       Employee Form
                     </amexio-header>
                     <amexio-body>
@@ -796,7 +796,7 @@
       
                   </amexio-window>
                 
-                  <amexio-window [footer]="true" [width]="'35%'" [draggable]="true" [remember-window-position]="true"
+                  <amexio-window [footer]="true"  [resizable]="true" [width]="'35%'" [draggable]="true" [remember-window-position]="true"
                       [(show)]="windowService.showDraggableNonMaterial" [close-on-escape]="false" [material-design]="false" [closable]="true">
                     <amexio-header>
                       <div>
@@ -1038,7 +1038,7 @@
 
                   <amexio-window  [body-height]="40"    [(show)]="windowService.showMinimizeModelWindow" [close-on-escape]="true"
                   [window-model]="false"    [minimize]='true' [material-design]="false" [footer]="true" [width]="'auto'">
-                  <amexio-header>
+                  <amexio-header [minimized-icon]="'fa fa-file'">
       
                       <amexio-label size="small-bold">
                         Employee Form
