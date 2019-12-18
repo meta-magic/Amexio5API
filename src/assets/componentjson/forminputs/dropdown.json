@@ -201,7 +201,14 @@
           "version": "5.21 onwards",
           "default": "false",
           "description": " Readonly dropdown display field."
-        }
+        },
+        {
+          "name": "enable-checkbox",
+          "description": "enable multiselect checkbox dropdown",
+          "version": "5.21 onwards",
+          "type": "none",
+          "default": "false"
+       }
       ]
     },
     {

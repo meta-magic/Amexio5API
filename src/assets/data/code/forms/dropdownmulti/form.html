@@ -10,3 +10,22 @@
   [enable-sort]="true"
   [sort]="'asc'">
 </amexio-dropdown>
+<!--Simple dropdown multi select with checkbox-->
+<amexio-dropdown
+[place-holder]="'Choose'"
+[field-label]="'Choose Fruit'"
+[http-method]="'get'" 
+[http-url]="'assets/data/componentdata/fruits.json'"
+[display-field]="'fruitName'"
+[value-field]="'fruitName'"
+[data-reader]="'data'"
+[multi-select]="true"
+[enable-checkbox]="true"
+(onMultiSelect)="onMultiSelectValueData($event)"
+[enable-sort]="true"
+[sort]="'asc'"
+[(ngModel)]="multiSelectModel.modelData"
+>
+</amexio-dropdown>
+
+

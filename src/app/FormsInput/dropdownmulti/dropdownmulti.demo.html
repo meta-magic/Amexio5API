@@ -50,6 +50,48 @@
       </amexio-card>
     </amexio-column>
   </amexio-row>
-
+  <amexio-row>
+    <amexio-column size="6">
+      <amexio-card header="true">
+        <amexio-header>
+           Dropdown Multi Select With CheckBox 
+        </amexio-header>
+        <amexio-body>
+          <amexio-row>
+            <amexio-column size="12">
+              <amexio-dropdown
+                [place-holder]="'Choose'"
+                [field-label]="'Choose Fruit'"
+                [http-method]="'get'" 
+                [http-url]="'assets/data/componentdata/fruits.json'"
+                [display-field]="'fruitName'"
+                [value-field]="'fruitName'"
+                [data-reader]="'data'"
+                [multi-select]="true"
+                [enable-checkbox]="true"
+                (onMultiSelect)="onMultiSelectValueData($event)"
+                [enable-sort]="true"
+                [sort]="'asc'"
+                [(ngModel)]="multiSelectModel.modelData"
+              >
+              </amexio-dropdown>
+            </amexio-column>
+          </amexio-row>
+        </amexio-body>
+      </amexio-card>
+    </amexio-column>
+    <amexio-column [size]="6">
+      <amexio-card header="true">
+        <amexio-header>
+          Selected Record Data
+        </amexio-header>
+        <amexio-body>
+          <ng-container *ngIf="listOfFruits">
+            {{listOfFruits|json}}
+          </ng-container>
+        </amexio-body>
+      </amexio-card>
+    </amexio-column>
+  </amexio-row>
   </amexio-api-demo>
   </amexio-api-structure>

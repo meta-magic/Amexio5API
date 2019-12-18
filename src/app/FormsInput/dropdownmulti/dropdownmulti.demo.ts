@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 
 import { ComponentDataStructure } from '../../apimetadata/models/component.structure';
-
+import {MultiselectDataModel} from '../../models/multiselect.checkbox.model';
 
 @Component({
   selector: 'dropdownmulti',
@@ -16,12 +16,12 @@ export class DropDownMultiDemo implements OnInit{
   
   copyMsgArray: any[];
   listOfFriut: any = [];
-
-  
+  listOfFruits:any =[]
+  multiSelectModel:MultiselectDataModel;
   customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
     this.customSourceData = new ComponentDataStructure();
-
+    this.multiSelectModel = new MultiselectDataModel();
   }
   ngOnInit(): void {
     this.createCustomSourceData();
@@ -41,7 +41,12 @@ export class DropDownMultiDemo implements OnInit{
       this.listOfFriut.push(obj);
     });
   }
-
+  onMultiSelectValueData(data:any) {
+    this.listOfFruits=[];
+    data.forEach((obj) => {
+      this.listOfFruits.push(obj);
+    });
+  }
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
   onCopyClick() {
     if (this.copyMsgArray.length >= 1) {

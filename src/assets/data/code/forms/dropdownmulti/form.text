@@ -1,5 +1,7 @@
+import {MultiselectDataModel} from 'multiselect.checkbox.model';
 export class DropDownMultiDemo {
 constructor() {
+ this.multiSelectModel = new MultiselectDataModel();
 }
 
 }
