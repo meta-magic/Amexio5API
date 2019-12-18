@@ -1460,6 +1460,14 @@ button {
   line-height: 38px;
   text-align: center; }
 
+.checkbox {
+  width: 1.125em;
+  height: 1.125em;
+  border: 1px solid #ced4da;
+  line-height: 1em;
+  text-align: center;
+  border-radius: 2px; }
+
 .dropdown-right {
   right: 0;
   margin-right: 10px; }
