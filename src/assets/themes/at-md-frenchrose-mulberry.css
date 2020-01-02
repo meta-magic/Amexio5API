@@ -2823,6 +2823,10 @@ input:checked + .largeType2ToggleSlider:before {
   color: var(--themeFontColor);
   background-color: #ffccff; }
 
+.bg-black {
+  color: white;
+  background-color: black; }
+
 .bg-brown {
   color: var(--themeFontColor);
   background-color: #fbdbbf; }
@@ -8939,6 +8943,12 @@ fieldset {
   justify-content: center;
   top: 0;
   left: 0; }
+
+.draggable-header {
+  display: contents; }
+
+.draggable-header amexio-header {
+  padding: 10px !important; }
 
 .amexio-root-window-content {
   display: flex;
