@@ -4,8 +4,19 @@ import { AppComponent } from './app.component';
 import { RouterModule } from "@angular/router";
 import { APP_ROUTE } from "./app.routes";
 import {
-  AmexioWidgetModule, DeviceQueryService, CommonDataService, AmexioMapModule, AmexioChartsModule, ChartLoaderService,
-  MapLoaderService, AmexioDashBoardModule, DashboardLoaderService, AmexioPaneModule, IconLoaderService, AmexioEnterpriseModule
+  AmexioWidgetModule, 
+  //DeviceQueryService, 
+  CommonDataService, 
+  AmexioMapModule, 
+  AmexioChartsModule, 
+  ChartLoaderService,
+  MapLoaderService, 
+  AmexioDashBoardModule, 
+  DashboardLoaderService, 
+  AmexioPaneModule, 
+  IconLoaderService, 
+  AmexioEnterpriseModule,
+  RouterService
 } from "amexio-ng-extensions";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,7 +33,7 @@ import { CopyRightComponent } from './copyright/copyright.component';
 import { ConceptPage } from './concept/concept.component';
 import { KeyFeaturesComponent } from './concept/keyfeatures.component';
 import { EventsPanelComponent } from '../app/enterprise/floating-panel-calendar/events-panel/events-panel.component';
-import { RouterService } from 'amexio-ng-extensions';
+
 
 import { ApiWindowContainerComponent } from './apiWindowContainer/apiWindowContainer.component';
 import { windowContainerService } from './service/windowContainerService.service';
@@ -43,9 +54,15 @@ import { ApiTaskbarContainerComponent } from './apiTaskbarContainer/apiTaskbarCo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    FormsModule, HttpClientModule,
-    AmexioChartD3Module, AmexioChartD3Module,
-    AmexioWidgetModule, AmexioChartsModule, AmexioMapModule, AmexioDashBoardModule, AmexioPaneModule,
+    FormsModule, 
+    HttpClientModule,
+    AmexioChartD3Module, 
+    AmexioChartD3Module,
+    AmexioWidgetModule, 
+    AmexioChartsModule, 
+    AmexioMapModule, 
+    AmexioDashBoardModule, 
+    AmexioPaneModule,
     AmexioEnterpriseModule,
     RouterModule.forRoot(APP_ROUTE, {
       useHash: true, preloadingStrategy: AppPreloadingStrategy
@@ -53,8 +70,15 @@ import { ApiTaskbarContainerComponent } from './apiTaskbarContainer/apiTaskbarCo
   ],
   entryComponents: [EventsPanelComponent],
 
-  providers: [CommonDataService, AppPreloadingStrategy, windowContainerService,
-    ThemeServiceService, HTTPService, RouterService, DeviceQueryService, IconLoaderService, CookieService],
+  providers: [CommonDataService, 
+    AppPreloadingStrategy, 
+    windowContainerService,
+    ThemeServiceService, 
+    HTTPService, 
+    RouterService, 
+    //DeviceQueryService, 
+    IconLoaderService, 
+    CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

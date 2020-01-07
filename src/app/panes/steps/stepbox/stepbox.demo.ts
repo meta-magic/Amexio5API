@@ -3,7 +3,6 @@
  */
 
 import {Component, OnInit} from '@angular/core'
-import {Http} from "@angular/http";
 import { HttpClient } from '@angular/common/http';
 
 import { ComponentDataStructure } from '../../../apimetadata/models/component.structure';
