@@ -1,5 +1,5 @@
 /** 
-  Amexio Colors v2.0. Copyright (c) 2018-2020 MetaMagic Global Inc, NJ, USA 
+  Amexio Colors v2.0. Copyright (c) 2018-19 MetaMagic Global Inc, NJ, USA 
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@
 */
 /** Initialze Theme variables ------------ */
 /** 
-  Amexio Colors v2.0. Copyright (c) 2018-2020 MetaMagic Global Inc, NJ, USA 
+  Amexio Colors v2.0. Copyright (c) 2018-19 MetaMagic Global Inc, NJ, USA 
 */
 /**
   Theme Details -------------------------------------------------------- 
@@ -7082,7 +7082,11 @@ option {
   color: var(--componentFontColor); }
 
 .nav-dropdown:hover .dropdownData {
-  background-color: white; }
+  background-color: var(--componentBGColor);
+  color: var(--componentFontColor); }
+.nav-dropdown:hover .dropdownData:hover {
+  background-color: var(--appHeaderHoverBGColor);
+  color: var(--appHeaderHoverFontColor) !important; }
 
 .nav-dropdown:hover .nav-dropdown-content .nav-menu-container a {
   color: var(--componentFontColor); }
@@ -12103,6 +12107,10 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 
 .stopfade {
   opacity: .5; }
+
+.viewportbody {
+  height: 100%;
+  width: 100%; }
 
 /** menubar - Vars CSS **/
 /** menubar - Visual CSS **/
