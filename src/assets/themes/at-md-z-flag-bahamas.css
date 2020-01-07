@@ -1,5 +1,5 @@
 /** 
-  Amexio Colors v2.0. Copyright (c) 2018-2020 MetaMagic Global Inc, NJ, USA 
+  Amexio Colors v2.0. Copyright (c) 2018-19 MetaMagic Global Inc, NJ, USA 
 
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
@@ -22,7 +22,7 @@
 */
 /** Initialze Theme variables ------------ */
 /** 
-  Amexio Colors v2.0. Copyright (c) 2018-2020 MetaMagic Global Inc, NJ, USA 
+  Amexio Colors v2.0. Copyright (c) 2018-19 MetaMagic Global Inc, NJ, USA 
 */
 /**
   Theme Details -------------------------------------------------------- 
@@ -11194,6 +11194,17 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 @media only screen and (max-width: 375px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.2; } }
+/************************************************************************/
+/*        amexio-rich-textarea Media-Q COMPONENT         */
+/************************************************************************/
+@media only screen and (max-width: 375px) {
+  .rich-first-div {
+    width: auto !important;
+    height: auto !important; }
+
+  .rich-first-div-reverse {
+    width: auto !important;
+    height: auto !important; } }
 /****************************************************************************
                     Media Query for width - 450
 *****************************************************************************/
@@ -11383,6 +11394,17 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 @media only screen and (max-width: 568px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.2; } }
+/************************************************************************/
+/*        amexio-rich-textarea Media-Q COMPONENT         */
+/************************************************************************/
+@media only screen and (max-width: 568px) {
+  .rich-first-div {
+    width: auto !important;
+    height: auto !important; }
+
+  .rich-first-div-reverse {
+    width: auto !important;
+    height: auto !important; } }
 /****************************************************************************
                     Media Query for width - 767
 *****************************************************************************/
@@ -11613,6 +11635,17 @@ input:focus ~ .inputfieldbar:before, input:focus ~ .inputfieldbar:after {
 @media only screen and (min-width: 568px) and (max-width: 768px) {
   amexio-homepage-northpanel .topnav-lhs-mobile .mobilebar {
     flex-grow: 0.1; } }
+/************************************************************************/
+/*        amexio-rich-textarea Media-Q COMPONENT         */
+/************************************************************************/
+@media only screen and (max-width: 767px) {
+  .rich-first-div {
+    width: auto !important;
+    height: auto !important; }
+
+  .rich-first-div-reverse {
+    width: auto !important;
+    height: auto !important; } }
 /****************************************************************************
                     Media Query for width - 1024
 *****************************************************************************/
