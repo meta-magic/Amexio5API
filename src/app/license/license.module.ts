@@ -227,7 +227,7 @@ import {HttpClientModule} from "@angular/common/http";
             identification within third-party archives.
           </p>
           <p>
-            Copyright 2017 MetaMagic Global Inc, NJ, USA
+            Copyright 2017-2020 MetaMagic Global Inc, NJ, USA
           </p>
           <p>
 
