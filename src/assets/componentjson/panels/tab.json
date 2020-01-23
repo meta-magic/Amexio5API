@@ -342,7 +342,7 @@
         {
           "name": "closeAll()",
           "version": "5.6.1 onwards",
-          "description": "Method to close all tabs(even if closable flag is true)"
+          "description": "Method to close all tabs(even if closable flag is true/false)"
         },
         {
           "name": "showTab(title: string)",
