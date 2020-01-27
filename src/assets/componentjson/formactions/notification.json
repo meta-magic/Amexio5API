@@ -104,6 +104,18 @@
                     "version": "4.2 onwards",
                     "type": "string",
                     "default": "none"
+                },
+                {
+                    "name": "type",
+                    "type": "string",
+                    "default": "",
+                    "description": "Set type to the notification with BG/Color e.g(warning/error/success)."
+                },
+                {
+                    "name": "amexio-color",
+                    "type": "string",
+                    "default": "",
+                    "description": "Set amexio-color to the notification with BG/Color e.g(amexio-red)."
                 }
             ]
         }
