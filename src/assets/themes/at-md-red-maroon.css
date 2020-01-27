@@ -4652,6 +4652,13 @@ input:checked + .largeType2ToggleSlider:before {
   color: var(--appHeaderHoverFontColor);
   background: var(--appHeaderHoverBGColor); }
 
+.multidisable {
+  opacity: .40;
+  cursor: not-allowed;
+  background-color: none;
+  border-color: none;
+  color: none; }
+
 .dropicon {
   color: var(--themePrimaryColor);
   font-weight: bolder; }
