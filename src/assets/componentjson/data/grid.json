@@ -79,7 +79,7 @@
           "name": "height",
           "type": "number",
           "default": "",
-          "description": "Height for grid.",
+          "description": "Height for grid In (PX)",
           "version": "4.0.0 onwards"
         },
         {
