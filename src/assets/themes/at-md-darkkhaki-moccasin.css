@@ -1416,6 +1416,20 @@ button {
 .dropdown-list::-webkit-scrollbar-thumb {
   background-color: var(--componentHeaderBGColor); }
 
+.dropdown-list .list-item-hover:hover {
+  color: var(--componentHoverFontColor) !important;
+  background-color: var(--componentHoverBGColor) !important; }
+
+.dropdown-list .list-item-hover1:hover {
+  color: var(--componentHoverFontColor) !important;
+  background-color: var(--componentHoverBGColor) !important; }
+
+.dropdown-list .list-item-hover {
+  cursor: pointer; }
+
+.dropdown-list .list-item-hover1 {
+  cursor: pointer; }
+
 /** dropdown - Structure CSS **/
 .dropdown {
   display: block;
