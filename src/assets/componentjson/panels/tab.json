@@ -372,12 +372,22 @@
         {
           "name": "disableTab(index: any)",
           "version": "5.10.4 onwards",
-          "description": "Method to disable tab,If tab index matches with input or array of inputs, method will disable those tabs."
+          "description": "Method to disable tab, If tab index matches with input or array of inputs, method will disable those tabs."
         },
         {
           "name": "disableTab(title: any)",
           "version": "5.10.4 onwards",
-          "description": "Method to disable tab,If tab title matches with input or array of inputs, method will disable those tab."
+          "description": "Method to disable tab, If tab title matches with input or array of inputs, method will disable those tab."
+        },
+        {
+          "name": "enableTab(index: any)",
+          "version": "5.21 onwards",
+          "description": "Method to enable tab, If tab index matches with input or array of inputs, method will disable those tabs."
+        },
+        {
+          "name": "enableTab(title: any)",
+          "version": "5.21 onwards",
+          "description": "Method to enable tab, If tab title matches with input or array of inputs, method will disable those tab."
         },
         {
           "name": "deleteTab(title: any)",
