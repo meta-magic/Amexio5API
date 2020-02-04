@@ -165,7 +165,7 @@
   },
   "apiaccessibledata": [
     {
-      "gridTitle": "Properties  <amexio-dropdown>",
+      "gridTitle": "Properties  <amexio-tree-dropdown>",
       "columnDefinition": [
         {
           "dataindex": "name",
