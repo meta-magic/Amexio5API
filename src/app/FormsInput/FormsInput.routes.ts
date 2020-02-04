@@ -36,6 +36,7 @@ import { MultipleDateTimePickerDemo } from './multipledatepicker/multipledatepic
 import { GeoLocationDemo } from './geolocation/geolocation.demo';
 import { MultipleRangeDateTimePickerDemo } from './multirangedatepicker/multirangedatepicker.demo';
 import { DialpadDemo } from "./dialpad/dialpad.demo";
+import { TreeDropDownDemo } from './dropdownwithtree/treedropdown.demo';
 
 export const FORMSINPUT_ROUTE: Routes = [
 
@@ -141,5 +142,7 @@ export const FORMSINPUT_ROUTE: Routes = [
     {
         path: 'dialpad-demo', component: DialpadDemo,
     },
-    
+    {
+        path: 'tree-dropdown', component: TreeDropDownDemo,
+    },
 ]

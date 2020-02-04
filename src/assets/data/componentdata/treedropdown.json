@@ -1,0 +1,126 @@
+[
+    {
+        "id": "0",
+        "primaryValue": "0",
+        "primaryDisplay": "India",
+        "childrens": [
+            {
+                "id": "1",
+                "primaryValue": "1",
+                "primaryDisplay": "Maharashtra",
+                "childrens": [
+                    {
+                        "id": "2",
+                        "primaryValue": "2",
+                        "primaryDisplay": "Pune",
+                        "childrens": [
+                            {
+                                "id": "4",
+                                "primaryValue": "4",
+                                "primaryDisplay": "ram",
+                                "childrens": [
+                                    {
+                                        "id": "4",
+                                        "primaryValue": "4",
+                                        "primaryDisplay": "xyz",
+                                        "childrens": [
+                                            {
+                                                "id": "5",
+                                                "primaryValue": "5",
+                                                "primaryDisplay": "kanpur"
+                                            },
+                                            {
+                                                "id": "62",
+                                                "primaryValue": "62",
+                                                "primaryDisplay": "kolhapur"
+                                            },
+                                            {
+                                                "id": "611",
+                                                "primaryValue": "611",
+                                                "primaryDisplay": "karad"
+                                            },
+                                            {
+                                                "id": "61",
+                                                "primaryValue": "61",
+                                                "primaryDisplay": "satara"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "25",
+                "primaryValue": "25",
+                "primaryDisplay": "Punjab"
+            },
+            {
+                "id": "31",
+                "primaryValue": "31",
+                "primaryDisplay": "Kerala"
+            },
+            {
+                "id": "45",
+                "primaryValue": "45",
+                "primaryDisplay": "Gujarat"
+            }
+        ]
+    },
+    {
+        "id": "16",
+        "primaryValue": "16",
+        "primaryDisplay": "Australia",
+        "childrens": [
+            {
+                "id": "14",
+                "primaryValue": "14",
+                "primaryDisplay": "Queensland"
+            },
+            {
+                "id": "26",
+                "primaryValue": "26",
+                "primaryDisplay": "South Australia"
+            },
+            {
+                "id": "36",
+                "primaryValue": "36",
+                "primaryDisplay": "Tasmania"
+            },
+            {
+                "id": "48",
+                "primaryValue": "48",
+                "primaryDisplay": "Victoria"
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "primaryValue": "27",
+        "primaryDisplay": "New Zealand",
+        "childrens": [
+            {
+                "id": "15",
+                "primaryValue": "15",
+                "primaryDisplay": "Auckland"
+            },
+            {
+                "id": "29",
+                "primaryValue": "29",
+                "primaryDisplay": "Bay Of Plenty"
+            },
+            {
+                "id": "33",
+                "primaryValue": "33",
+                "primaryDisplay": "Canterbury"
+            },
+            {
+                "id": "44",
+                "primaryValue": "44",
+                "primaryDisplay": "Gisborne"
+            }
+        ]
+    }
+]

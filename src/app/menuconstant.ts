@@ -161,12 +161,12 @@ export const MENUCONSTANT = {
           link: "layout/banner-demo"
         },
         
-        {
-          text: "Browser Panel",
-          icon: "fa fa-id-card-o  ",
-          badge: "NEW",
-          link: "data/browserpanel-demo"
-        },
+        // {
+        //   text: "Browser Panel",
+        //   icon: "fa fa-id-card-o  ",
+        //   badge: "NEW",
+        //   link: "data/browserpanel-demo"
+        // },
         {
           text: "Calendar",
           icon: "fa fa-calendar  ",
@@ -450,7 +450,7 @@ export const MENUCONSTANT = {
     {
       text: "Form Inputs",
       icon: "fa fa-clone  ",
-      badge: "6",
+      badge: "7",
       children: [
         {
           text: "Badge",
@@ -481,7 +481,7 @@ export const MENUCONSTANT = {
         {
           text: "DropDown",
           icon: "fa fa-caret-square-o-down  ",
-          badge: "U",
+          badge: "1",
           children: [
             {
               text: "Basic",
@@ -502,7 +502,14 @@ export const MENUCONSTANT = {
               text: "Template",
               icon: "fa fa-chevron-circle-down  ",
               link: "forms-Input/dropdowntemplate"
+            },
+            {
+              text: "Tree Dropdown",
+              badge: "NEW",
+              icon: "fa fa-toggle-down  ",
+              link: "forms-Input/tree-dropdown"
             }
+            // 
           ]
         },
         {

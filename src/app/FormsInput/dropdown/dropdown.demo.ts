@@ -12,9 +12,10 @@ import { ComponentDataStructure } from '../../apimetadata/models/component.struc
 })
 export class DropDownDemo implements OnInit {
   copyMsgArray: any[];
-  countryCode1:string;
+  // countryCode1:string;
   personName:string;
   fruitName: string;
+  countryCode1 ="MM"
 
   customSourceData: ComponentDataStructure;
   constructor() {

@@ -41,7 +41,7 @@
       "deprecated":false,
       "name": "height",
       "type": "number",
-      "default": "",
+      "default": "In PX",
       "description":"Height for grid.",
       "version": "4.0.0 onwards"
 

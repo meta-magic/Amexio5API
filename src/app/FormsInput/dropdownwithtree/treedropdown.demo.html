@@ -1,0 +1,34 @@
+<amexio-api-structure [url]="'assets/componentjson/forminputs/treedropdown.json'">
+  <amexio-api-accessible>
+    <amexio-box border-color="blue" border="left" [padding]="true" align="left">
+      <p>The Dropdown is WAI ARIA-accessible through the Tab key.</p>
+      <p> Role:Combobox-The Combobox role is defined for Input when first tabs over input.This consist of attribute
+        consist of aria-complete,aria-expanded,and aria-activedescendant.</p>
+      <p> Role:Listbox-The Listbox role for list in a dropdown which has attribute aria-expanded</p>
+      <p> Role:Option- The Option role for individual element in list which has attribute aria-labelleby and dynamic id
+        is set which accordingily moves the focus.</p>
+    </amexio-box>
+  </amexio-api-accessible>
+  <amexio-api-demo>
+    <amexio-row>
+      <amexio-column size="6">
+        <amexio-card header="true">
+          <amexio-header>
+            Tree Dropdown Component
+          </amexio-header>
+          <amexio-body>
+            <amexio-row>
+              <amexio-column size="12">
+                <amexio-tree-dropdown [(ngModel)]="model" [group]="true" [search]="true"
+                  [place-holder]="'Please select field'" [name]="'reiId'" [data]="treeDropdown"
+                  [display-field]="'primaryDisplay'" [value-field]="'id'" [allow-blank]="true">
+                </amexio-tree-dropdown>
+              </amexio-column>
+            </amexio-row>
+          </amexio-body>
+        </amexio-card>
+      </amexio-column>
+    </amexio-row>
+
+  </amexio-api-demo>
+</amexio-api-structure>
