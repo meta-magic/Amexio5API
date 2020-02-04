@@ -62,7 +62,7 @@ export class ColorPaletteDemo implements OnInit {
         paletteColorTheme(data: any) {
                 this.themeData = JSON.parse(this._cookieService.get('theme-info'));
                 let response: any;
-                this.httpService.fetch('https://api.amexio.org/api/mda/' + this.themeData.themeName + '.json').subscribe(data => {
+                this.httpService.fetch('https://api.amexio.org/api/mda/' + this.themeData.themeName + '.json', 'get').subscribe(data => {
                         response = data;
                 }, error => {
                 }, () => {
@@ -142,7 +142,7 @@ export class ColorPaletteDemo implements OnInit {
 
         fetchJsonData() {
                 let response: any;
-                this.httpService.fetch('assets/theme.json').subscribe(data => {
+                this.httpService.fetch('assets/theme.json', 'get').subscribe(data => {
                         response = data;
                 }, error => {
                 }, () => {
