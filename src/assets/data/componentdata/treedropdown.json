@@ -15,38 +15,24 @@
                         "primaryDisplay": "Pune",
                         "childrens": [
                             {
-                                "id": "4",
-                                "primaryValue": "4",
-                                "primaryDisplay": "ram",
-                                "childrens": [
-                                    {
-                                        "id": "4",
-                                        "primaryValue": "4",
-                                        "primaryDisplay": "xyz",
-                                        "childrens": [
-                                            {
-                                                "id": "5",
-                                                "primaryValue": "5",
-                                                "primaryDisplay": "kanpur"
-                                            },
-                                            {
-                                                "id": "62",
-                                                "primaryValue": "62",
-                                                "primaryDisplay": "kolhapur"
-                                            },
-                                            {
-                                                "id": "611",
-                                                "primaryValue": "611",
-                                                "primaryDisplay": "karad"
-                                            },
-                                            {
-                                                "id": "61",
-                                                "primaryValue": "61",
-                                                "primaryDisplay": "satara"
-                                            }
-                                        ]
-                                    }
-                                ]
+                                "id": "5",
+                                "primaryValue": "5",
+                                "primaryDisplay": "kanpur"
+                            },
+                            {
+                                "id": "62",
+                                "primaryValue": "62",
+                                "primaryDisplay": "kolhapur"
+                            },
+                            {
+                                "id": "611",
+                                "primaryValue": "611",
+                                "primaryDisplay": "karad"
+                            },
+                            {
+                                "id": "61",
+                                "primaryValue": "61",
+                                "primaryDisplay": "satara"
                             }
                         ]
                     }
