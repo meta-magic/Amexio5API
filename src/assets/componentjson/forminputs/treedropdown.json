@@ -157,7 +157,7 @@
   "sourceMetadata": {
     "htmlUrl": "forms/dropdowntree/form.html",
     "tsUrl": "forms/dropdowntree/form.text",
-    "datasourceUrl": ""
+    "datasourceUrl": "assets/data/componentdata/treedropdown.json"
   },
   "liveMetadata": {
     "disabled": true,
