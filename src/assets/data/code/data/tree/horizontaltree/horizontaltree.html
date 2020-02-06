@@ -5,4 +5,13 @@
                             [label]="'Menu'"
                             (nodeClick)="getNodeData($event)"
                             [http-url]="'assets/data/componentdata/sidenav.json'">
+
+                            
+                            <ng-template #amexioTreeTemplate let-icon="icon" let-node="node">
+                                    <i [attr.class]="node.icon"></i> &nbsp;
+                                    <amexio-label>
+                                        {{node.text}}
+                                    </amexio-label>
+                            </ng-template>
+           
 </amexio-horizontal-treeview>
