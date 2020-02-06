@@ -15,7 +15,7 @@
             Horizontal Tree
           </amexio-header>
           <amexio-body>
-            <amexio-horizontal-treeview [data-reader]="'data'" [http-method]="'get'" [label]="'Menu'"
+            <amexio-horizontal-treeview [data-reader]="'data'" [http-method]="'get'" [label]="'Product'"
               (nodeClick)="getNodeData($event)" [http-url]="'assets/data/componentdata/sidenav.json'">
                     <ng-template #amexioTreeTemplate let-icon="icon" let-node="node">
                       <i [attr.class]="node.icon"></i> &nbsp;
@@ -28,6 +28,22 @@
         </amexio-card>
       </amexio-column>
     </amexio-row>
+
+    <amexio-row>
+        <amexio-column size="12">
+          <amexio-card [header]="true">
+            <amexio-header>
+              Horizontal Tree With Template
+            </amexio-header>
+            <amexio-body>
+              <amexio-horizontal-treeview [data-reader]="'data'" [http-method]="'get'" [label]="'Menu'"
+                (nodeClick)="getItemData($event)" [http-url]="'assets/data/componentdata/horizontaltemplate.json'">
+              </amexio-horizontal-treeview>
+            </amexio-body>
+          </amexio-card>
+        </amexio-column>
+      </amexio-row>
+
     <amexio-row>
       <amexio-column size="6">
         <amexio-card [header]="true">
@@ -35,7 +51,7 @@
             Selected Data
           </amexio-header>
           <amexio-body>
-            <pre><code>{{selectedData | json}}</code></pre>
+            <pre><code>{{selectedItem | json}}</code></pre>
           </amexio-body>
         </amexio-card>
       </amexio-column>

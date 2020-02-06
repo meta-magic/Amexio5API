@@ -1,7 +1,7 @@
 {
   "data": [
     {
-      "text": "Home",
+      "text": "Features",
       "icon": "fa fa-home fa-fw",
       "mdaIcon": "home",
       "link": "/home/dashboard",
@@ -9,21 +9,21 @@
       "badge": "12"
     },
     {
-      "text": "Email",
+      "text": "Roadmap",
       "icon": "fa fa-envelope fa-fw",
       "mdaIcon": "email",
       "link": "/home/email",
       "badge": "21"
     },
     {
-      "text": "Profile",
+      "text": "Downloads",
       "icon": "fa fa-user fa-fw",
       "mdaIcon": "account_box",
       "link": "/home/profile",
       "badge": "32"
     },
     {
-      "text": "Pages",
+      "text": "Forum",
       "icon": "fa fa-id-card-o fa-fw",
       "mdaIcon": "pages",
       "expand": false,
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "text": "Reports",
+      "text": "Blogs",
       "icon": "fa fa-picture-o fa-fw",
       "mdaIcon": "assignment",
       "expand": false,
@@ -78,19 +78,19 @@
       ]
     },
     {
-      "text": "Charts",
+      "text": "Products",
       "icon": "fa fa-bar-chart fa-fw",
       "mdaIcon": "insert_chart",
       "link": "/home/charts"
     },
     {
-      "text": "Maps",
+      "text": "Start Using",
       "icon": "fa fa-map-marker fa-fw",
       "mdaIcon": "location_on",
       "link": "/home/maps"
     },
     {
-      "text": "Dashboard",
+      "text": "Pricing",
       "icon": "fa fa-television fa-fw",
       "mdaIcon": "dashboard",
       "link": "/home/dashboard-template"

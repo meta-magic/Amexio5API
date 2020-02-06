@@ -16,6 +16,7 @@ export class HorizontalTreeDemo implements OnInit{
  
   copyMsgArray: any[];
   selectedData: any;
+  selectedItem: any;
   treeLocalData: any;
   customSourceData: ComponentDataStructure;
   constructor(private http: HttpClient) {
@@ -129,6 +130,10 @@ export class HorizontalTreeDemo implements OnInit{
 
   getNodeData(data: any) {
     this.selectedData = data;
+  }
+
+  getItemData(data: any) {
+    this.selectedItem = data;
   }
 }
 
