@@ -171,7 +171,14 @@
           "version":"5.14.1 onwards",
           "default": "10px",
           "description": "provides padding for the sub node of navbar"
-        }
+        },
+        {
+          "name": "display-key",
+          "version": "5.21 onwards",
+          "type": "string",
+          "default": "text",
+          "description": "Display Key provides the user defined key to parent json (parent key name can be changed)"
+      }
       ]
     },
     {
