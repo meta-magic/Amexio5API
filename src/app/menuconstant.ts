@@ -161,12 +161,12 @@ export const MENUCONSTANT = {
           link: "layout/banner-demo"
         },
         
-        // {
-        //   text: "Browser Panel",
-        //   icon: "fa fa-id-card-o  ",
-        //   badge: "NEW",
-        //   link: "data/browserpanel-demo"
-        // },
+        {
+          text: "Browser Panel",
+          icon: "fa fa-id-card-o  ",
+          badge: "NEW",
+          link: "data/browserpanel-demo"
+        },
         {
           text: "Calendar",
           icon: "fa fa-calendar  ",

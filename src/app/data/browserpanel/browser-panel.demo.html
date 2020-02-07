@@ -1,17 +1,47 @@
 <amexio-api-structure [url]="'assets/componentjson/data/browserpanel.json'">
 
     <amexio-api-demo>
-        <amexio-card header="true">
-            <amexio-header> Amexio Browser Panel</amexio-header>
-            <amexio-body>
-                <amexio-browser-panel 
-                                        [url]="'https://api.amexio.org/api/v5.20/index.html'"
-                                        [url-field-editable]="false"
-                                        [browser-in-window]= "false"
-                                        [reload-button]="true">
-                </amexio-browser-panel>
-            </amexio-body>
-        </amexio-card>
+         <amexio-row>
+            <amexio-column *ngFor="let item of currentNews" size="6" [fit]="true">
+                <amexio-card-ce [align]="'center'">
+                    <amexio-header-ce [height]="'150px'" [color]="'white'" [bg-image]="item.image">
+                        <amexio-badge [absolute]="true" [background]="'#e74c3c'" [color]="'white'" [top]="'0px'"
+                            [right]="'5%'">
+                            <amexio-label>{{item.date}}</amexio-label>
+                        </amexio-badge>
+                    </amexio-header-ce>
+                    <amexio-body-ce [height]="'250px'">
+                        <amexio-label size="medium-bold">
+                            {{item.headline}}
+                        </amexio-label>
+                        <p>
+                            {{item.content}}
+                        </p>
+
+                    </amexio-body-ce>
+                    <amexio-action-ce [align]="'space-between'">
+                        <amexio-button (onClick)="openTab(item)" [label]="'READ MORE'" [type]="'red'"
+                            [tooltip]="'READ MORE'">
+                        </amexio-button>
+                        <amexio-image [icon-class]="'fa fa-heart fa-2x'" [tooltip]="'Like'"></amexio-image>
+                        <amexio-image [icon-class]="'fa fa-share-alt-square fa-2x'" [tooltip]="'Fontawesome apple'">
+                        </amexio-image>
+                    </amexio-action-ce>
+                </amexio-card-ce>
+            </amexio-column>
+        </amexio-row> 
+
+
+         <ng-container *ngIf="showInfoWindow">
+            <amexio-browser-panel [url-field-editable]="false" [url]="link"
+            [browser-name]="'site no 1'"
+             [(show)]="showInfoWindow"
+                [browser-in-window]="true" [reload-button]="true">
+            </amexio-browser-panel>
+        </ng-container> 
+
+
+
 
     </amexio-api-demo>
 </amexio-api-structure>

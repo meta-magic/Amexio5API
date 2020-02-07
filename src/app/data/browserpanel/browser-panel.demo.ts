@@ -2,6 +2,7 @@
  * Created by kedar on 1/11/19.
  */
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -12,8 +13,16 @@ import { Component } from '@angular/core';
 export class BrowserPanelDemoComponent {
 
   copyMsgArray: any[];
-  constructor() {
-
+  link: any;
+  showInfoWindow= false;
+  currentNews: any;
+  d1: any;
+  d2: any;
+  constructor(private http: HttpClient) {
+    
+    this.http.get('assets/apireference/data/browser-panel.json').subscribe((res) => {
+      this.currentNews = res;
+    })
   }
 
   //THIS METHOD USED FOR COPY THE HTML & TYPESCRIPT CODE
@@ -24,5 +33,10 @@ export class BrowserPanelDemoComponent {
     } else {
       this.copyMsgArray.push({ 'msg': 'Code Copied', 'type': 'info' });
     }
+  }
+
+  openTab(data: any){
+    this.showInfoWindow = !this.showInfoWindow;
+    this.link = data.link;
   }
 }
